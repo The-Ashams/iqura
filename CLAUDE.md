@@ -38,6 +38,14 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 
 Le MVP (v0.1) prend une première tranche des phases 1 à 6 : voir `docs/ARCHITECTURE.md` §9.
 
+## Commandes
+
+- Installer Flutter + SDK Android (session cloud) : `tools/setup_cloud.sh` (lancé automatiquement par `.claude/hooks/session-start.sh`).
+- Base de contenu : `python3 tools/build_content/build_content.py` (obligatoire avant `flutter build`).
+- Vérifications : `dart format lib test`, `flutter analyze`, `flutter test`, `python3 -m unittest discover -s tools/build_content`.
+- Compilation : `flutter build apk --release` ; Windows uniquement via GitHub Actions (`.github/workflows/build.yml`).
+- Inventaire des licences : `python3 tools/third_party/list_dart_packages.py`.
+
 ## Doutes de licence à garder en tête
 
 - Traduction Hamidullah : aucune licence publiée.
