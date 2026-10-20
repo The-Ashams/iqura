@@ -13,6 +13,7 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 5. **Open source vérifié** : chaque dépendance est auditée (licence, mainteneur, popularité) et listée dans `THIRD_PARTY_LICENSES.md`. Signaler à l'utilisateur tout point douteux.
 6. **Aucun bouton décoratif ni fausse fonctionnalité.** Ce qui n'est pas fait est indiqué comme tel.
 7. **Respect du Coran dans le jeu : le Coran est la connaissance étudiée, jamais l'ennemi combattu.**
+   - **Tout ce qui vient du Coran** (versets, mots, racines, lemmes) **est objet d'étude, jamais cible de combat**.
    - Un monstre représente une **difficulté de mémorisation** (l'oubli, la confusion, la distraction), **jamais un mot**. Pour le vaincre, le joueur **retrouve une connaissance** (ex. le sens de « رَحْمَة », miséricorde).
    - **Aucun mot coranique** n'est affiché sur un monstre, frappé, détruit ou « tué » : ni dans les visuels, ni dans les animations, ni dans les textes. Le mot apparaît **uniquement dans un panneau de question séparé et neutre**.
    - Les **versets n'apparaissent jamais en combat**. Noms divins, noms de prophètes et formules sacrées sont **exclus des questions de combat**.

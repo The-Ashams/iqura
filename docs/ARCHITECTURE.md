@@ -49,6 +49,7 @@ Cette règle prime sur toute autre mécanique de jeu. Elle s'applique au code, a
 #### Principe
 
 - **Le Coran est la connaissance étudiée, jamais l'ennemi combattu.**
+- **Tout ce qui vient du Coran** (versets, mots, racines, lemmes) **est objet d'étude, jamais cible de combat.**
 - Un monstre représente une **difficulté de mémorisation** (l'Oubli, la Confusion, la Distraction…), **jamais un mot**.
 - Pour le vaincre, le joueur **retrouve une connaissance** : par exemple le sens de « رَحْمَة », miséricorde.
 - **Aucun mot coranique** n'est affiché sur un monstre, frappé, détruit ou « tué » : ni dans les visuels, ni dans les animations, ni dans les textes.
@@ -151,7 +152,7 @@ Les exercices qui demandent le schème (Deviner puis vérifier, Forge des mots) 
 En combat, ces exercices respectent la règle du §2 bis :
 - le mot n'apparaît que dans le panneau de question ;
 - noms divins, noms de prophètes et formules sacrées sont exclus ;
-- رَحْمَٰن et رَحِيم, noms divins dans la basmala, ne servent donc jamais de question de combat, même s'ils restent étudiables sur la fiche de leur racine.
+- رَحْمَٰن et رَحِيم, noms divins dans la basmala, ne servent donc jamais de question de combat ; ils s'étudient sur la fiche de leur racine.
 
 ### Maîtrise
 
