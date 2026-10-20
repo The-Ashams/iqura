@@ -1,0 +1,76 @@
+{
+  "id": "lire-03",
+  "etape": 1,
+  "ordre": 3,
+  "titre": "ج ح خ et la ḍamma",
+  "objectif": "Reconnaître ǧīm, ḥāʾ et ḫāʾ, distinguer ḥ et ḫ, lire la ḍamma (u).",
+  "statut": "ia_non_verifie",
+  "prerequis": ["lire-02"],
+  "introduit": { "lettres": ["ج", "ح", "خ"], "signes": ["damma"] },
+  "sections": [
+    {
+      "type": "texte",
+      "titre": "Une nouvelle famille",
+      "corps": "ج, ح et خ ont la même silhouette, comme un crochet ouvert vers la gauche. Le point fait la différence : un point dans le creux (ǧ), aucun point (ḥ), un point au-dessus (ḫ)."
+    },
+    { "type": "lettres", "lettres": ["ج", "ح", "خ"] },
+    {
+      "type": "encadre",
+      "corps": "ح et خ n'existent pas en français. ح est un souffle chuchoté, serré, au milieu de la gorge ; خ est un son raclé, plus haut, presque dans la bouche. Ne les remplacez pas par un « h » ou un « k » : en arabe, ils changent le sens des mots."
+    },
+    {
+      "type": "regle",
+      "titre": "La ḍamma : le son « u »",
+      "corps": "La ḍamma est un petit wāw (و) au-dessus de la consonne : ـُ. Elle se prononce « u », comme le « ou » de « loup » (et non comme le « u » de « lune »). بُ = bu, حُ = ḥu, جُ = ǧu."
+    },
+    {
+      "type": "syllabes",
+      "items": [
+        { "ar": "جَ", "translit": "ǧa" },
+        { "ar": "حَ", "translit": "ḥa" },
+        { "ar": "خَ", "translit": "ḫa" },
+        { "ar": "حِ", "translit": "ḥi" },
+        { "ar": "خُ", "translit": "ḫu" },
+        { "ar": "بُ", "translit": "bu" },
+        { "ar": "جَا", "translit": "ǧā" },
+        { "ar": "حَا", "translit": "ḥā" }
+      ]
+    },
+    {
+      "type": "exemples",
+      "titre": "Mots",
+      "items": [
+        { "ar": "بَحَثَ", "translit": "baḥaṯa", "fr": "il a cherché" },
+        { "ar": "نَجَحَ", "translit": "naǧaḥa", "fr": "il a réussi" },
+        { "ar": "حَجَبَ", "translit": "ḥaǧaba", "fr": "il a caché" },
+        { "ar": "خَابَ", "translit": "ḫāba", "fr": "il a échoué" },
+        { "ar": "نَجَا", "translit": "naǧā", "fr": "il a été sauvé" },
+        { "ar": "حُجِبَ", "translit": "ḥuǧiba", "fr": "il a été caché" },
+        { "ar": "بُنِيَ", "translit": "buniya", "fr": "il a été construit" }
+      ]
+    },
+    {
+      "type": "encadre",
+      "corps": "Comparez حَجَبَ (ḥaǧaba, il a caché) et حُجِبَ (ḥuǧiba, il a été caché) : mêmes lettres, voyelles différentes, sens différent. Les petits signes comptent autant que les lettres."
+    },
+    {
+      "type": "coran",
+      "titre": "Dans le Coran",
+      "corps": "Repérez ج, ح et خ dans ces versets.",
+      "extraits": [
+        { "verset": "89:1", "mots": ["89:1:1"], "lettres": ["ج"] },
+        { "verset": "93:1", "mots": ["93:1:1"], "lettres": ["ح"] },
+        { "verset": "78:8", "mots": ["78:8:1", "78:8:2"], "lettres": ["خ", "ج"] }
+      ]
+    }
+  ],
+  "exercices": [
+    { "type": "reconnaitre_lettre", "lettres": ["ج", "ح", "خ"] },
+    { "type": "formes", "lettres": ["ج", "ح", "خ"] },
+    { "type": "points", "lettres": ["ج", "ح", "خ"] },
+    { "type": "lire", "source": "syllabes" },
+    { "type": "lire", "source": "exemples" },
+    { "type": "reconstruire", "source": "exemples" },
+    { "type": "reperer", "source": "coran" }
+  ]
+}

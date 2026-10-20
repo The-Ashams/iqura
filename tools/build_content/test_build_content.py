@@ -12,6 +12,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import align  # noqa: E402
 import build_content  # noqa: E402
 import buckwalter  # noqa: E402
+import copy  # noqa: E402
+import lessons  # noqa: E402
 import qac  # noqa: E402
 import sources  # noqa: E402
 import tanzil  # noqa: E402
@@ -181,6 +183,53 @@ class BuildTest(unittest.TestCase):
     def test_every_source_is_cited(self):
         ids = {r[0] for r in self.q("SELECT id FROM source")}
         self.assertEqual(ids, set(sources.load_manifest()))
+
+    def test_lessons_are_stored_with_their_quran_references(self):
+        self.assertEqual(
+            [r[0] for r in self.q("SELECT id FROM lesson ORDER BY stage, ordinal")][:4],
+            ["lire-00", "lire-01", "lire-02", "lire-03"],
+        )
+        refs = self.q("SELECT COUNT(*) FROM lesson_quran_ref WHERE token_id IS NOT NULL")
+        self.assertGreater(refs[0][0], 0)
+        self.assertEqual(self.q(
+            "SELECT COUNT(*) FROM lesson_quran_ref r LEFT JOIN token t ON t.id = r.token_id "
+            "WHERE r.token_id IS NOT NULL AND t.id IS NULL"), [(0,)])
+
+    def _validate(self, mutate):
+        data = lessons.load()
+        data = lessons.LessonData(copy.deepcopy(data.letters), copy.deepcopy(data.lessons))
+        mutate(data)
+        lessons.validate(data, self.con)
+
+    def test_validation_accepts_current_lessons(self):
+        self._validate(lambda d: None)
+
+    def test_validation_rejects_untaught_letter(self):
+        def mutate(d):
+            ex = next(s for s in d.lessons[1]["sections"] if s["type"] == "exemples")
+            ex["items"].append({"ar": "كَتَبَ", "translit": "kataba", "fr": "x"})
+        with self.assertRaisesRegex(lessons.LessonError, "pas encore enseigné"):
+            self._validate(mutate)
+
+    def test_validation_rejects_copied_quran_text(self):
+        def mutate(d):
+            sec = next(s for s in d.lessons[1]["sections"] if s["type"] == "coran")
+            sec["extraits"][0]["ar"] = "texte recopié"
+        with self.assertRaisesRegex(lessons.LessonError, "jamais recopié"):
+            self._validate(mutate)
+
+    def test_validation_rejects_wrong_reference_or_letter(self):
+        def bad_token(d):
+            sec = next(s for s in d.lessons[1]["sections"] if s["type"] == "coran")
+            sec["extraits"][0]["mots"] = ["78:7:99"]
+        with self.assertRaisesRegex(lessons.LessonError, "inexistant"):
+            self._validate(bad_token)
+
+        def bad_letter(d):
+            sec = next(s for s in d.lessons[1]["sections"] if s["type"] == "coran")
+            sec["extraits"][0]["lettres"] = ["خ"]
+        with self.assertRaisesRegex(lessons.LessonError, "aucun mot cité"):
+            self._validate(bad_letter)
 
     def test_rebuild_replaces_file(self):
         build_content.build(self.out)

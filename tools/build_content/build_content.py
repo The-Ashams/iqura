@@ -29,14 +29,15 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import align  # noqa: E402
 import buckwalter  # noqa: E402
+import lessons  # noqa: E402
 import qac  # noqa: E402
 import sources  # noqa: E402
 import tanzil  # noqa: E402
 
 # Version du schéma de la base de contenu (lue par l'application).
-CONTENT_SCHEMA_VERSION = 3
+CONTENT_SCHEMA_VERSION = 4
 # Version des données ; à augmenter à chaque changement de contenu.
-CONTENT_VERSION = "0.3.1-coran"
+CONTENT_VERSION = "0.4.0-lire"
 
 DEFAULT_OUT = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
@@ -138,6 +139,36 @@ SCHEMA = [
         token_id TEXT NOT NULL REFERENCES token(id),
         segment_id TEXT NOT NULL REFERENCES segment(id),
         PRIMARY KEY (token_id, segment_id)
+    ) STRICT""",
+    # Académie : fiches des lettres et leçons (rédigées, statut non vérifié).
+    """CREATE TABLE articulation_zone (
+        id TEXT NOT NULL PRIMARY KEY,
+        description TEXT NOT NULL
+    ) STRICT""",
+    """CREATE TABLE letter (
+        letter TEXT NOT NULL PRIMARY KEY,
+        name TEXT NOT NULL,
+        name_ar TEXT NOT NULL,
+        joins_left INTEGER NOT NULL,
+        zone_id TEXT NOT NULL REFERENCES articulation_zone(id),
+        pronunciation TEXT NOT NULL,
+        status TEXT NOT NULL
+    ) STRICT""",
+    """CREATE TABLE lesson (
+        id TEXT NOT NULL PRIMARY KEY,
+        stage INTEGER NOT NULL,
+        ordinal INTEGER NOT NULL,
+        title TEXT NOT NULL,
+        objective TEXT NOT NULL,
+        status TEXT NOT NULL,
+        content TEXT NOT NULL,
+        UNIQUE (stage, ordinal)
+    ) STRICT""",
+    # Références coraniques des leçons : le texte n'est jamais recopié.
+    """CREATE TABLE lesson_quran_ref (
+        lesson_id TEXT NOT NULL REFERENCES lesson(id),
+        verse_id INTEGER NOT NULL REFERENCES verse(id),
+        token_id TEXT REFERENCES token(id)
     ) STRICT""",
     "CREATE INDEX segment_lemma ON segment(lemma_id)",
     "CREATE INDEX segment_root ON segment(root_id)",
@@ -325,6 +356,10 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
     )
     con.executemany("INSERT INTO token_segment VALUES (?,?)", link_rows)
 
+    lesson_data = data.get("lessons") or lessons.load()
+    lessons.validate(lesson_data, con)
+    lesson_counts = lessons.write(con, lesson_data)
+
     counts = {
         "surahs": len(meta.surahs),
         "verses": len(uthmani.verses),
@@ -332,6 +367,7 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
         "segments": len(segment_rows),
         "roots": len(root_count),
         "lemmas": len(lemma_count),
+        **lesson_counts,
     }
     content_meta = {
         "schema_version": str(CONTENT_SCHEMA_VERSION),
@@ -394,7 +430,8 @@ def main() -> int:
     args = parser.parse_args()
     try:
         build(args.out)
-    except (BuildError, sources.SourceError, tanzil.TanzilError, qac.QacError) as e:
+    except (BuildError, sources.SourceError, tanzil.TanzilError, qac.QacError,
+            lessons.LessonError) as e:
         print(f"[build_content] ÉCHEC : {e}", file=sys.stderr)
         return 1
     return 0

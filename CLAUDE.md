@@ -75,6 +75,7 @@ La révision espacée, les mini-jeux et le RPG s'appuient sur ce parcours. Déta
 - Vérifications : `dart format lib test`, `flutter analyze`, `flutter test`, `python3 -m unittest discover -s tools/build_content`.
 - Compilation : `flutter build apk --release` ; Windows uniquement via GitHub Actions (`.github/workflows/build.yml`).
 - Inventaire des licences : `python3 tools/third_party/list_dart_packages.py`.
+- Leçons : données dans `tools/build_content/lessons/` (fiches des lettres, une leçon par fichier JSON), contrôlées par le pipeline. Aperçu pour relecture : `python3 tools/build_content/preview_lessons.py SORTIE.html --etape 1 --jusqua N`.
 
 ## Doutes de licence à garder en tête
 
