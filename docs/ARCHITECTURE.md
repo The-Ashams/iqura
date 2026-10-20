@@ -16,6 +16,8 @@ IQURA est faisable en une seule base de code Flutter. Mais le cahier des charges
 - **Audio hors Coran** : il n'existe pas de banque libre et de qualité pour les lettres, syllabes et phrases d'exemple. Décision : voix de synthèse, ajoutée après le MVP.
 - **Reconnaissance vocale** : techniquement possible, mais pas assez fiable sur l'arabe vocalisé et les lettres emphatiques pour être plus qu'un indice. Elle n'arrive qu'en phase 7.
 
+**Orientation du MVP (décision du 20 octobre 2026).** La priorité est l'apprentissage de la **langue arabe elle-même**, plus précisément l'arabe littéraire tel qu'il est employé dans le Coran : lire, comprendre la grammaire de base, conjuguer, reconnaître les racines et acquérir le vocabulaire le plus fréquent. Le Coran sert de **référence et de source d'exemples authentiques**, et les fréquences du Quranic Arabic Corpus guident le choix du vocabulaire. Le **lecteur coranique complet** (114 sourates, analyse mot par mot de chaque verset, audio des versets, % de vocabulaire reconnu par sourate) est **reporté après le MVP**. La base de contenu coranique déjà construite (§12) sert dès maintenant aux exemples, aux fréquences et aux racines.
+
 **Positionnement du RPG (choix validé).** IQURA est un vrai RPG 2D classique dans lequel on apprend l'arabe : carte du monde, donjons, boss, équipement améliorable jusqu'à +15 avec pity. L'apprentissage est réel et structuré (FSRS, leçons, racines), mais il prend la forme du jeu : combattre, explorer, forger. La section 2 bis décrit ce pont.
 
 ## 2. Méthodes pédagogiques retenues
@@ -312,35 +314,85 @@ Cinq espaces : barre en bas sur Android, rail latéral sur Windows.
 
 ## 8. Phases et dépendances
 
-1. **Socle technique** : architecture, interface principale, bases SQLite, profil, sauvegardes, export/import, premières compilations APK et Windows. *MVP : phase complète.*
-2. **Académie de l'arabe** (dépend de 1) : alphabet, leçons, exercices, audio, prérequis. *MVP : alphabet + environ 10 leçons du niveau 1.*
-3. **Arabe coranique** (dépend de 1, en parallèle de 2) : pipeline du corpus, lecteur, mot par mot, racines. *MVP : 114 sourates, sens FR du juzʾ ʿAmma.*
-4. **Mémorisation** (dépend de 2 et 3) : FSRS, bibliothèque, listes, statistiques. *MVP : tout sauf recommandations avancées.*
-5. **Mini-jeux** (dépend de 4). *MVP : jeux A, B, D, E, F.*
-6. **RPG** (dépend de 4). *MVP : carte, combats, donjons, boss, enchantement +15.*
-7. **Améliorations avancées** : analyse vocale, contenus avancés, accessibilité, tests complets, distribution finale.
+1. **Socle technique** : architecture, interface principale, bases SQLite, profil, sauvegardes, export/import, premières compilations APK et Windows. *Terminé.*
+2. **Académie de l'arabe** (dépend de 1) : parcours en cinq étapes (Lire, Bases de la grammaire, Verbes, Racines et schèmes, Vocabulaire), leçons, exemples, exercices, prérequis entre leçons. *MVP : les cinq étapes (voir §9).*
+3. **Données coraniques** (dépend de 1, en parallèle de 2) : pipeline du corpus (fait, §12), fréquences des lemmes, racines, extraits cités dans les leçons. *MVP : données et extraits ; le lecteur complet est reporté (phase 8).*
+4. **Mémorisation** (dépend de 2) : FSRS sur les lettres, règles, mots et racines du parcours ; bibliothèque, listes, statistiques. *MVP : tout sauf recommandations avancées.*
+5. **Mini-jeux** (dépend de 4). *MVP : voir §9.*
+6. **RPG** (dépend de 4) : une région par étape du parcours. *MVP : carte, combats, donjons, boss, enchantement +15.*
+7. **Améliorations avancées** : analyse vocale, voix de synthèse hors Coran, contenus avancés, accessibilité, tests complets, distribution finale.
+8. **Lecteur coranique complet** (après le MVP) : 114 sourates, analyse mot par mot de chaque verset, audio des versets et des mots, % de vocabulaire reconnu par sourate, recherche, signets.
 
 Chaque phase se termine par une compilation testée et ses critères d'acceptation cochés.
 
 ## 9. Définition du MVP (version 0.1)
 
-Un débutant apprend l'alphabet, lit et comprend une part mesurable d'Al-Fātiḥa et du juzʾ ʿAmma, révise avec FSRS et transfère sa progression du PC au téléphone. Critères d'acceptation 1 à 12, 14 et 15 du cahier des charges.
+Un débutant apprend à **lire** un mot entièrement vocalisé, acquiert les **bases de la grammaire** et de la **conjugaison**, **reconnaît les racines** et retient le **vocabulaire le plus fréquent du Coran**. Il révise avec FSRS, joue au RPG et transfère sa progression du PC au téléphone.
 
-**Inclus**
+### Parcours (une région du RPG par étape)
 
-- **Socle** : APK et exécutable Windows compilés et testés ; profil ; clair/sombre ; réglages police et translittération ; export, import (restauration complète et fusion) avec sauvegarde automatique avant import.
-- **Alphabet** : 28 lettres et la hamza, 4 formes, nom, translittération, point d'articulation, 3 exemples par lettre, schémas d'articulation ; voyelles courtes et longues, sukūn, shadda, tanwīn, alif lam ; reconnaissance visuelle (et auditive quand l'audio sera disponible).
-- **Niveau 1 (début)** : environ 10 leçons (lecture de mots vocalisés, pronoms personnels, démonstratifs, genre, article défini et indéfinition).
-- **Coran** : 114 sourates (6 236 versets), texte Tanzil, traduction française, navigation sourate / juzʾ, recherche par mot et racine, signets ; analyse mot par mot pour tout le Coran ; sens contextuel français pour Al-Fātiḥa et le juzʾ ʿAmma ; audio verset et mot (un récitateur, par packs) ; % de vocabulaire reconnu.
-- **Racines (priorité majeure, §2 ter)** : toutes les racines coraniques (1 642) avec lemmes et occurrences ; **arbre complet pour toutes les racines** ; **fiches enrichies** (sens, relations de sens, nuances) pour les 100 racines les plus fréquentes ; **leçon d'avertissement** « la racine ne suffit pas à déduire le sens » ; exercices **Détective des racines**, **Famille de mots** et **L'intrus** ; une carte de révision par racine.
-- **Mémorisation** : FSRS, révision du jour, 5 états de mot, bibliothèque et listes personnelles.
-- **Mini-jeux** : A Reconstruction, B Arabe → français, D Quiz sur une liste, E Reconnaissance audio, F Association.
-- **Labo de prononciation (base)** : écouter, s'enregistrer, réécouter, comparer, recommencer ; sans score.
-- **Jeu RPG 2D** : carte à 2 régions (alphabet, niveau 1) + Sanctuaire ; combats au tour par tour ; 5 à 8 types de monstres (difficultés de mémorisation, §2 bis) ; mini-donjons, un boss par région, Faille des Oubliés ; XP, or, pierres de savoir, encre ; boutique, inventaire, équipement visible ; enchantement +1 à +15 avec pity ; quêtes quotidiennes et hebdomadaires ; mode « apprentissage seul ».
+| Étape | Contenu | Objectif |
+| --- | --- | --- |
+| 1. **Lire** | Alphabet : 28 lettres et la hamza, 4 formes, nom, prononciation, point d'articulation, exemples. Voyelles courtes et longues, sukūn, shadda, tanwīn, article « al ». | Lire un mot entièrement vocalisé. |
+| 2. **Bases de la grammaire** | Nom / verbe / particule ; pronoms personnels et démonstratifs ; genre ; nombre (singulier, duel, pluriel) ; défini / indéfini ; phrase nominale ; prépositions ; iḍāfa. | Comprendre la structure d'une phrase simple. |
+| 3. **Verbes** | Passé (accompli), inaccompli, impératif ; conjugaison des verbes réguliers. | Reconnaître et conjuguer un verbe régulier. |
+| 4. **Racines et schèmes** | §2 ter : arbre des racines, étiquettes de relation de sens, leçon d'avertissement, exercices Détective des racines, Famille de mots, L'intrus. | Relier les mots d'une même famille sans en déduire le sens. |
+| 5. **Vocabulaire** | Lemmes les plus fréquents du Coran, avec fréquence, racine, catégorie (et schème quand une source le permet). | Reconnaître les mots qui couvrent la plus grande part du texte. |
+
+**Données du vocabulaire.**
+- Fréquences, racines et catégories : calculées à partir du Quranic Arabic Corpus, source citée, rien d'inventé.
+- Schèmes : seulement quand une source ouverte vérifiée existe (aucune trouvée à ce jour, §2 ter).
+- Sens français : rédigés et marqués « rédigé par IA — non vérifié ».
+
+### Exemples dans les leçons
+
+Chaque leçon mélange deux sortes d'exemples, et chaque exemple affiche sa source.
+
+| Sorte | Rôle | Règles |
+| --- | --- | --- |
+| **Phrase ou mot construit** | Découvrir une règle sur un cas simple. | Entièrement vocalisé, marqué « rédigé par IA — non vérifié ». |
+| **Court extrait coranique** | Illustrer la règle en contexte authentique. | Texte Tanzil sans modification, vérifié par SHA-256, traduction Hamidullah, référence sourate:verset. |
+
+Pour les extraits coraniques :
+- Le contenu des leçons ne contient **jamais** le texte d'un extrait : il ne stocke qu'une **référence** (verset, ou plage de mots `sourate:verset:mot`).
+- Le texte est lu dans la base de contenu, dont l'empreinte est vérifiée au démarrage.
+- Un test vérifie que toutes les références existent.
+
+Les extraits n'apparaissent que dans les salles d'étude des mini-donjons, dans le Grimoire et dans le Sanctuaire, **jamais en combat** (§2 bis).
+
+### Inclus
+
+- **Socle** : APK et exécutable Windows compilés et testés ; profil ; clair/sombre ; réglages police et translittération ; export, import (restauration complète et fusion) avec sauvegarde automatique avant import. *Fait.*
+- **Parcours en cinq étapes** (ci-dessus), avec prérequis entre leçons.
+- **Racines (§2 ter)** :
+  - toutes les racines coraniques (1 642) avec lemmes et occurrences ;
+  - arbre complet pour toutes les racines ;
+  - fiches enrichies pour les 100 racines les plus fréquentes ;
+  - leçon d'avertissement ;
+  - exercices Détective des racines, Famille de mots et L'intrus ;
+  - une carte de révision par racine.
+- **Mémorisation** : FSRS sur les lettres, règles, mots et racines du parcours ; révision du jour ; 5 états de mot ; bibliothèque et listes personnelles.
+- **Mini-jeux** : A Reconstruction, B Arabe → français, D Quiz sur une liste, F Association. Le jeu E (reconnaissance audio) attend l'audio.
+- **Sanctuaire minimal** : consultation des extraits cités dans les leçons (texte Tanzil, traduction, référence), zone sans combat.
+- **Jeu RPG 2D** :
+  - carte à 5 régions, une par étape du parcours, et le Sanctuaire ;
+  - combats au tour par tour ;
+  - 5 à 8 types de monstres (difficultés de mémorisation, §2 bis) ;
+  - mini-donjons, un boss par région, Faille des Oubliés ;
+  - XP, or, pierres de savoir, encre ;
+  - boutique, inventaire, équipement visible ;
+  - enchantement +1 à +15 avec pity ;
+  - quêtes quotidiennes et hebdomadaires ;
+  - mode « apprentissage seul ».
 - **Statistiques** : calendrier d'activité, mots et racines par état, temps d'étude.
 - **Documentation** : installation, sauvegarde et restauration, format d'export, sources et licences.
 
-**Exclus du MVP** : exercices de racines Relation de sens, Deviner puis vérifier et Forge des mots (phase 5), niveaux 2 à 4, test de positionnement complet, jeu C et jeux supplémentaires, arbre de compétences, régions au-delà du niveau 1, analyse vocale, audio hors Coran (voix de synthèse), sens contextuels au-delà du juzʾ ʿAmma.
+### Exclus du MVP
+
+- **Lecteur coranique complet** (phase 8) : 114 sourates, analyse mot par mot de chaque verset, audio des versets et des mots, % de vocabulaire reconnu par sourate, navigation sourate / juzʾ, recherche, signets.
+- **Audio** : audio hors Coran (voix de synthèse, phase 7), donc pas d'écoute des lettres ni de jeu E ; labo de prononciation.
+- **Racines et contenus** : exercices de racines Relation de sens, Deviner puis vérifier et Forge des mots (phase 5) ; niveaux au-delà du parcours ; sens contextuels mot par mot des versets.
+- **Divers** : test de positionnement complet, jeu C et jeux supplémentaires, arbre de compétences, analyse vocale.
 
 ## 10. Décisions validées
 

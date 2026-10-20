@@ -6,7 +6,7 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 
 ## Règles absolues
 
-1. **Ne jamais générer, reconstituer ni modifier le texte coranique.** Il vient uniquement de Tanzil (CC BY 3.0, modification interdite) et il est vérifié par empreinte SHA-256 dans les tests.
+1. **Ne jamais générer, reconstituer ni modifier le texte coranique.** Il vient uniquement de Tanzil (CC BY 3.0, modification interdite) et il est vérifié par empreinte SHA-256 dans les tests et au démarrage. Dans les leçons, un extrait coranique n'est **jamais recopié** : le contenu stocke une référence (`sourate:verset` ou plage de mots), et le texte est lu dans la base vérifiée.
 2. **Ne rien inventer** : pas de racine, d'occurrence, de traduction attribuée à un auteur, ni d'analyse grammaticale présentée comme certaine. Racines, lemmes et occurrences viennent du corpus (Quranic Arabic Corpus / QUL).
 3. **Aucun relecteur humain.** Tout texte rédigé par IA (explications, sens français mot par mot, significations des racines) porte le statut visible « rédigé par IA — non vérifié ». Toujours citer la source des données.
 4. **Ne jamais prétendre avoir compilé ou testé** sans l'avoir réellement fait. Lire les résultats de GitHub Actions avant d'annoncer quoi que ce soit.
@@ -39,12 +39,32 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 | Synchronisation | Sans serveur : export/import d'une archive ZIP versionnée (JSON + SHA-256), restauration complète ou fusion (UUID v7, journaux en ajout seul, HLC) |
 | Compilation | GitHub Actions : tests, APK Android, exécutable Windows |
 
+## Orientation du MVP
+
+Priorité : **apprendre la langue arabe elle-même**, l'arabe littéraire tel qu'il est employé dans le Coran. Le **lecteur coranique complet** (114 sourates, mot par mot de chaque verset, audio des versets, % par sourate) est **reporté après le MVP** (phase 8).
+
+Parcours du MVP, **une région du RPG par étape** :
+
+1. **Lire** : alphabet (4 formes, nom, prononciation, point d'articulation, exemples), voyelles courtes et longues, sukūn, shadda, tanwīn, article « al ». Objectif : lire un mot entièrement vocalisé.
+2. **Bases de la grammaire** : nom / verbe / particule, pronoms personnels et démonstratifs, genre, nombre (singulier, duel, pluriel), défini / indéfini, phrase nominale, prépositions, iḍāfa.
+3. **Verbes** : passé, inaccompli, impératif, conjugaison des verbes réguliers.
+4. **Racines et schèmes** : `docs/ARCHITECTURE.md` §2 ter.
+5. **Vocabulaire** : lemmes les plus fréquents du Coran. Fréquences, racines et catégories calculées depuis le Quranic Arabic Corpus (source citée, rien d'inventé) ; schèmes seulement avec une source vérifiée ; sens français rédigés et marqués « rédigé par IA — non vérifié ».
+
+**Exemples dans les leçons** :
+- des phrases simples **construites**, entièrement vocalisées et marquées « rédigé par IA — non vérifié », pour découvrir une règle ;
+- de **courts extraits coraniques** pour l'illustrer en contexte authentique : texte Tanzil sans modification, vérifié par SHA-256, traduction Hamidullah, référence sourate:verset.
+
+Chaque exemple affiche sa source. Les extraits ne paraissent jamais en combat (règle 7).
+
+La révision espacée, les mini-jeux et le RPG s'appuient sur ce parcours. Détail : `docs/ARCHITECTURE.md` §9.
+
 ## Phases
 
-1. Socle technique (terminé) : architecture, interface principale, bases SQLite, profil, sauvegardes, export/import, première compilation APK et Windows.
-2. Académie de l'arabe. 3. Arabe coranique (en cours : pipeline de contenu fait). 4. Mémorisation. 5. Mini-jeux. 6. RPG. 7. Améliorations avancées.
-
-Le MVP (v0.1) prend une première tranche des phases 1 à 6 : voir `docs/ARCHITECTURE.md` §9.
+1. Socle technique (terminé).
+2. Académie de l'arabe : parcours en cinq étapes (cœur du MVP).
+3. Données coraniques : pipeline fait ; fréquences, racines, extraits pour les leçons.
+4. Mémorisation. 5. Mini-jeux. 6. RPG (une région par étape). 7. Améliorations avancées. 8. Lecteur coranique complet (après le MVP).
 
 ## Commandes
 

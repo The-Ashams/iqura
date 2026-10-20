@@ -47,8 +47,9 @@ class _AppShellState extends ConsumerState<AppShell> {
           textAlign: TextAlign.center,
         ),
         description:
-            'La carte à étapes (régions, mini-donjons, boss, '
-            'Faille des Oubliés) sera construite avec le jeu RPG.',
+            'La carte à étapes (une région par étape du parcours : Lire, '
+            'Grammaire, Verbes, Racines, Vocabulaire) sera construite avec '
+            'le jeu RPG.',
         plannedPhase: 'phase 6 (RPG)',
       ),
       1 => const PlannedSpaceScreen(
@@ -63,9 +64,9 @@ class _AppShellState extends ConsumerState<AppShell> {
         title: 'Sanctuaire',
         icon: Icons.local_library,
         description:
-            'Lecture du Coran (texte Tanzil), traduction, analyse '
-            'mot par mot et racines. Zone sans combat.',
-        plannedPhase: 'phase 3 (arabe coranique)',
+            'Extraits coraniques cités dans les leçons (texte Tanzil, '
+            'traduction Hamidullah), puis lecteur complet. Zone sans combat.',
+        plannedPhase: 'extraits : MVP ; lecteur complet : après le MVP',
       ),
       3 => const PlannedSpaceScreen(
         title: 'Héros',
