@@ -8,19 +8,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/providers.dart';
+import '../../engines/transliteration/transliterator.dart';
 import '../../data/user_db/schema.dart';
 import '../../data/user_db/user_database.dart';
 
 enum TransliterationStyle {
-  /// ā, ḍ, ʿ… (par défaut)
+  /// Norme Arabica : ṯ, ǧ, ḫ, ā… (par défaut)
   scholarly('savante', 'Savante'),
 
-  /// Lettres simples, sans signes diacritiques.
+  /// th, j, kh, â… (docs/TRANSLITTERATION.md)
   simplified('simplifiee', 'Simplifiée');
 
   const TransliterationStyle(this.storageValue, this.label);
   final String storageValue;
   final String label;
+
+  TranslitStyle get engineStyle => switch (this) {
+    TransliterationStyle.scholarly => TranslitStyle.scholarly,
+    TransliterationStyle.simplified => TranslitStyle.simplified,
+  };
 
   static TransliterationStyle fromStorage(Object? v) =>
       values.firstWhere((s) => s.storageValue == v, orElse: () => scholarly);

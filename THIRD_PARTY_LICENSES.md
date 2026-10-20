@@ -63,7 +63,16 @@ dans l'application (Paramètres › Sources des données).
 | Morphologie : segments, racines, lemmes, traits (version 0.4) | [Quranic Arabic Corpus](https://corpus.quran.com), Kais Dukes, Université de Leeds | GNU GPL ; copie verbatim autorisée, modification interdite ; citer la source avec un lien | ⚠️ La FAQ du Corpus parle d'un usage « de recherche » ; une confirmation écrite des auteurs reste souhaitable. Téléchargé le 20/10/2026 avec l'adresse e-mail du porteur du projet (exigée par le site). |
 | Table de translittération Buckwalter étendue | [Quranic Arabic Corpus](https://corpus.quran.com/java/buckwalter.jsp) | Documentation publique du Corpus | Recopiée dans `tools/build_content/buckwalter.py` pour convertir lemmes et racines en écriture arabe. |
 
-Pas encore intégrés : audio, polices arabes dédiées, sprites.
+## Polices
+
+| Police | Version | Auteurs | Licence | Provenance | Vérifications |
+| --- | --- | --- | --- | --- | --- |
+| Amiri (Regular, Bold) | 1.002 | Khaled Hosny, Sebastian Kosch (projet [aliftype/amiri](https://github.com/aliftype/amiri)) | SIL Open Font License 1.1 (`assets/fonts/OFL-Amiri.txt`) | Dépôt officiel Google Fonts `google/fonts`, `ofl/amiri` (source : commit 04d40ee de aliftype/amiri) | Police de référence pour le naskh, maintenue depuis 2010, distribuée par Google Fonts. Couvre les 69 caractères du texte Tanzil (contrôlé). |
+| Amiri Quran | 1.003 | Mêmes auteurs | SIL OFL 1.1 (`assets/fonts/OFL-AmiriQuran.txt`) | `google/fonts`, `ofl/amiriquran` (commit 480bb74) | Conçue pour le texte coranique. Couvre les 69 caractères du texte Tanzil (contrôlé). |
+
+L'OFL autorise l'intégration dans une application GPL. Les noms de police réservés (« Amiri ») ne sont pas modifiés, puisque les fichiers sont copiés tels quels. Les licences sont affichées dans Paramètres › Licences des bibliothèques.
+
+Pas encore intégrés : audio, sprites.
 
 ## Inventaire complet des paquets Dart
 

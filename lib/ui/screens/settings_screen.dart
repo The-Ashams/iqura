@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/app_info.dart';
 import '../../core/providers.dart';
 import '../../features/profile/profile.dart';
+import '../../engines/transliteration/transliterator.dart';
 import '../../features/settings/settings.dart';
 import '../widgets/ai_content_badge.dart';
 import '../widgets/arabic_text.dart';
@@ -152,16 +153,19 @@ class SettingsScreen extends ConsumerWidget {
   }
 }
 
+/// Exemple construit (« bonjour »), translittéré par le moteur.
+const _exampleArabic = 'صَبَاحُ الْخَيْرِ';
+
 class _TransliterationExample extends ConsumerWidget {
   const _TransliterationExample();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final style = ref.watch(settingsProvider.select((s) => s.transliteration));
-    final example = switch (style) {
-      TransliterationStyle.scholarly => 'ṣabāḥu l-khayri',
-      TransliterationStyle.simplified => 'sabahu l-khayri',
-    };
+    final example = const Transliterator().transliterate(
+      _exampleArabic,
+      style: style.engineStyle,
+    );
     return Wrap(
       spacing: 8,
       runSpacing: 4,

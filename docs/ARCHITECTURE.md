@@ -13,7 +13,7 @@ IQURA est faisable en une seule base de code Flutter. Mais le cahier des charges
 **Les trois zones de risque principales.**
 
 - **Licences** : plusieurs sources clés sont libres seulement pour un usage non commercial ou sous GPL. L'app étant gratuite et open source, elles sont utilisables.
-- **Audio hors Coran** : il n'existe pas de banque libre et de qualité pour les lettres, syllabes et phrases d'exemple. Décision : voix de synthèse, ajoutée après le MVP.
+- **Audio hors Coran** : il n'existe pas de banque libre et de qualité pour les lettres, syllabes et phrases d'exemple. Décision : dans le MVP, la prononciation est **décrite par écrit** (point d'articulation, comparaisons, translittération) ; l'**audio des lettres et des exemples est la première priorité après le MVP** (voix de synthèse ou enregistrements sous licence libre).
 - **Reconnaissance vocale** : techniquement possible, mais pas assez fiable sur l'arabe vocalisé et les lettres emphatiques pour être plus qu'un indice. Elle n'arrive qu'en phase 7.
 
 **Orientation du MVP (décision du 20 octobre 2026).** La priorité est l'apprentissage de la **langue arabe elle-même**, plus précisément l'arabe littéraire tel qu'il est employé dans le Coran : lire, comprendre la grammaire de base, conjuguer, reconnaître les racines et acquérir le vocabulaire le plus fréquent. Le Coran sert de **référence et de source d'exemples authentiques**, et les fréquences du Quranic Arabic Corpus guident le choix du vocabulaire. Le **lecteur coranique complet** (114 sourates, analyse mot par mot de chaque verset, audio des versets, % de vocabulaire reconnu par sourate) est **reporté après le MVP**. La base de contenu coranique déjà construite (§12) sert dès maintenant aux exemples, aux fréquences et aux racines.
@@ -55,7 +55,8 @@ Cette règle prime sur toute autre mécanique de jeu. Elle s'applique au code, a
 - Un monstre représente une **difficulté de mémorisation** (l'Oubli, la Confusion, la Distraction…), **jamais un mot**.
 - Pour le vaincre, le joueur **retrouve une connaissance** : par exemple le sens de « رَحْمَة », miséricorde.
 - **Aucun mot coranique** n'est affiché sur un monstre, frappé, détruit ou « tué » : ni dans les visuels, ni dans les animations, ni dans les textes.
-- Le mot apparaît **uniquement dans un panneau de question séparé et neutre**.
+- Le mot apparaît **uniquement dans un panneau de question séparé et neutre**. Les mots du vocabulaire, lemmes coraniques compris, y figurent **seuls, sous leur forme de dictionnaire**, sans verset ni référence.
+- **Aucun extrait ni verset coranique en combat** : les extraits restent dans les salles d'étude, le Grimoire et le Sanctuaire.
 - Les **versets n'apparaissent jamais en combat**.
 - Noms divins, noms de prophètes et formules sacrées sont **exclus des questions de combat**.
 - Le Coran se lit et s'étudie dans le Sanctuaire, zone sans combat.
@@ -69,7 +70,7 @@ Cette règle prime sur toute autre mécanique de jeu. Elle s'applique au code, a
 | Scène de jeu (Flame) | Ne dessine jamais de texte arabe issu du contenu. Les sprites, effets de coup, de dégâts et de disparition ne portent sur aucun mot. |
 | Panneau de question | Widget Flutter distinct, posé au-dessus de la scène, au style neutre (pas d'effet de coup, de flammes, de tremblement ni de disparition sur le mot). Il affiche la question, les réponses et l'explication après une erreur. |
 | Textes et animations | Les verbes de combat (frapper, détruire, vaincre, « tuer »…) ne s'appliquent qu'aux difficultés, jamais à un mot. On écrit « Vous avez vaincu la Confusion », jamais « Vous avez détruit رَحْمَة ». |
-| Questions de combat | Jamais de verset ni d'extrait de verset. Les mots exclus (noms divins, noms de prophètes, formules sacrées) sont filtrés par le générateur **avant** toute question de combat. En cas de doute sur un mot, il est exclu. |
+| Questions de combat | Jamais de verset ni d'extrait de verset, ni de référence (sourate:verset). Un mot du vocabulaire, lemme coranique compris, n'y paraît que seul, sous sa forme de dictionnaire. Les mots exclus (noms divins, noms de prophètes, formules sacrées) sont filtrés par le générateur **avant** toute question de combat. En cas de doute sur un mot, il est exclu. |
 | Liste d'exclusion | Issue de sources citées (étiquettes du corpus, par exemple les noms propres, et listes publiées), jamais inventée ; sa provenance est documentée. Les mots exclus restent étudiables au Sanctuaire et dans le Grimoire, hors combat. |
 | Tests | Tests automatiques obligatoires : aucune question de combat ne contient un mot exclu ni un verset ; le modèle de monstre n'a aucun champ lié au contenu ; la scène de combat ne reçoit jamais le texte d'une question. |
 
@@ -182,7 +183,7 @@ Les tables rédigées (sens des racines, étiquettes de relation, nuances) porte
 | Récitations EveryAyah | Équipe quran.com selon [Islamic Network](https://community.islamic.network/d/257-commercial-use-of-quran-audio-text-via-your-cdnapi-educational-app) | Aucune condition publiée ; droits aux récitateurs | MP3 par verset | **Téléchargement à la demande** (packs par sourate), récitateur crédité. Défaut : al-Ḥuṣarī. |
 | Audio mot par mot | Dérivé | Lecture du segment du verset via horodatages QUL | Horodatages (QUL) | **Solution retenue.** |
 | [API Quran Foundation](https://api-docs.quran.foundation/legal/developer-terms/) | Quran Foundation | Cache limité à 1 semaine, base pré-empaquetée interdite | API REST | **Non retenue** comme source embarquée. |
-| Polices KFGQPC Hafs, Amiri, Scheherazade New | Complexe Roi Fahd ; SIL / K. Hosny | KFGQPC : usage gratuit, licence à joindre ; Amiri et Scheherazade : SIL OFL | TTF | **Retenues.** |
+| Polices KFGQPC Hafs, Amiri / Amiri Quran, Scheherazade New | Complexe Roi Fahd ; SIL / K. Hosny | KFGQPC : usage gratuit, licence à joindre ; Amiri et Scheherazade : SIL OFL | TTF | **Retenues.** |
 | [FSRS (Dart)](https://pub.dev/packages/fsrs) | Open Spaced Repetition | MIT | Package 2.0.1 | **Retenu.** |
 | [coran-seul.com](https://coran-seul.com/) | Non identifié | Aucune licence ; orientation « Coran seul » | HTML | **Inspiration fonctionnelle uniquement.** |
 | Audio lettres, syllabes, exemples | — | Aucune banque libre de qualité | — | **Reporté** : voix de synthèse après le MVP. |
@@ -250,7 +251,7 @@ Racine, lemme, forme de mot et occurrence ont chacun leur identifiant. Identifia
 | `course`, `chapter`, `lesson` | `id` | titre, ordre, niveau, contenu (JSON), prérequis | lesson → chapter → course |
 | `lesson_item` | `lesson_id`, `item` | lettre, lemme, racine ou règle enseignée | → lesson |
 | `exercise`, `question`, `answer` | `id` | type, consigne, réponses acceptées, explication | → lesson |
-| `letter` | `id` | 4 formes, nom, translittération, articulation, illustration | → audio |
+| `letter` | `id` | nom, translittération, liaison à gauche, zone et description d'articulation (rédigée, statut), schéma (dessin simple, « IA — non vérifié ») ; les 4 formes sont produites par le moteur de rendu | → audio (après le MVP) |
 | `audio_asset` | `id` | chemin/URL, récitateur/locuteur, durée, licence | — |
 | `item_def`, `quest_def`, `skill_node`, `monster_def`, `region`, `map_node` | `id` | équipements, quêtes, compétences, monstres (difficultés de mémorisation, sans aucun champ de mot : §2 bis), carte | — |
 | `content_meta` | clé | version du contenu, empreintes SHA-256 du texte coranique | — |
@@ -320,7 +321,7 @@ Cinq espaces : barre en bas sur Android, rail latéral sur Windows.
 4. **Mémorisation** (dépend de 2) : FSRS sur les lettres, règles, mots et racines du parcours ; bibliothèque, listes, statistiques. *MVP : tout sauf recommandations avancées.*
 5. **Mini-jeux** (dépend de 4). *MVP : voir §9.*
 6. **RPG** (dépend de 4) : une région par étape du parcours. *MVP : carte, combats, donjons, boss, enchantement +15.*
-7. **Améliorations avancées** : analyse vocale, voix de synthèse hors Coran, contenus avancés, accessibilité, tests complets, distribution finale.
+7. **Améliorations avancées** : **audio des lettres et des exemples (première priorité après le MVP)**, analyse vocale, contenus avancés, accessibilité, tests complets, distribution finale.
 8. **Lecteur coranique complet** (après le MVP) : 114 sourates, analyse mot par mot de chaque verset, audio des versets et des mots, % de vocabulaire reconnu par sourate, recherche, signets.
 
 Chaque phase se termine par une compilation testée et ses critères d'acceptation cochés.
@@ -338,6 +339,13 @@ Un débutant apprend à **lire** un mot entièrement vocalisé, acquiert les **b
 | 3. **Verbes** | Passé (accompli), inaccompli, impératif ; conjugaison des verbes réguliers. | Reconnaître et conjuguer un verbe régulier. |
 | 4. **Racines et schèmes** | §2 ter : arbre des racines, étiquettes de relation de sens, leçon d'avertissement, exercices Détective des racines, Famille de mots, L'intrus. | Relier les mots d'une même famille sans en déduire le sens. |
 | 5. **Vocabulaire** | Lemmes les plus fréquents du Coran, avec fréquence, racine, catégorie (et schème quand une source le permet). | Reconnaître les mots qui couvrent la plus grande part du texte. |
+
+**Lecture et prononciation (étape 1).**
+- Prononciation décrite par écrit : point d'articulation, comparaisons, translittération.
+- Schémas d'articulation : dessins simples faits pour IQURA, marqués « rédigé par IA — non vérifié ».
+- Audio des lettres et des exemples : première priorité après le MVP.
+- Police arabe : Amiri, et Amiri Quran pour le texte coranique (SIL OFL).
+- Translittération *Arabica* par défaut, simplifiée au choix (`docs/TRANSLITTERATION.md`).
 
 **Données du vocabulaire.**
 - Fréquences, racines et catégories : calculées à partir du Quranic Arabic Corpus, source citée, rien d'inventé.
@@ -390,7 +398,7 @@ Les extraits n'apparaissent que dans les salles d'étude des mini-donjons, dans 
 ### Exclus du MVP
 
 - **Lecteur coranique complet** (phase 8) : 114 sourates, analyse mot par mot de chaque verset, audio des versets et des mots, % de vocabulaire reconnu par sourate, navigation sourate / juzʾ, recherche, signets.
-- **Audio** : audio hors Coran (voix de synthèse, phase 7), donc pas d'écoute des lettres ni de jeu E ; labo de prononciation.
+- **Audio** : pas d'écoute des lettres ni des exemples, pas de jeu E ni de labo de prononciation. C'est la **première priorité après le MVP**.
 - **Racines et contenus** : exercices de racines Relation de sens, Deviner puis vérifier et Forge des mots (phase 5) ; niveaux au-delà du parcours ; sens contextuels mot par mot des versets.
 - **Divers** : test de positionnement complet, jeu C et jeux supplémentaires, arbre de compétences, analyse vocale.
 
@@ -399,13 +407,13 @@ Les extraits n'apparaissent que dans les salles d'étude des mini-donjons, dans 
 | N° | Sujet | Décision |
 | --- | --- | --- |
 | 1 | Licence | Open source GPL-3.0 ; chaque dépendance auditée et listée ; tout point douteux signalé |
-| 2 | Audio hors Coran | Reporté : voix de synthèse après le MVP ; emplacements prévus dès le départ |
+| 2 | Audio hors Coran | Prononciation décrite par écrit dans le MVP ; audio des lettres et des exemples = **première priorité après le MVP** ; emplacements prévus dès le départ |
 | 3 | Relecture | Aucun relecteur : données linguistiques uniquement sourcées ; texte IA marqué « non vérifié » |
 | 4 | Compilation | Claude Code cloud + GitHub Actions (dépôt public `The-Ashams/iqura`) |
 | 5 | Place du RPG | Vrai RPG 2D dès le MVP |
 | 6 | Récitateur par défaut | al-Ḥuṣarī |
 | 7 | Traduction | Hamidullah (diffusion Tanzil, usage non commercial ; l'édition révisée de 2000 n'est pas confirmée), créditée, remplaçable |
-| 8 | Translittération | Savante par défaut, simplifiée au choix |
+| 8 | Translittération | Savante par défaut : norme *Arabica* (ʾ, ṯ, ǧ, ḥ, ḫ, ḏ, š, ṣ, ḍ, ṭ, ẓ, ʿ, ġ, ā, ī, ū), table dans `docs/TRANSLITTERATION.md`. Simplifiée au choix dans les paramètres (th, j, h, kh, dh, sh, s, d, t, z, gh…) |
 | 9 | Style de l'avatar | Illustré plat / sprites libres, sans figures sacrées |
 | 10 | Carte du monde | Carte à étapes (nœuds cliquables) |
 | 11 | Respect du Coran dans le jeu | Le Coran est la connaissance étudiée, jamais l'ennemi : monstres = difficultés de mémorisation, mot seulement dans un panneau de question neutre, ni versets ni noms sacrés en combat (§2 bis) |

@@ -15,8 +15,8 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 7. **Respect du Coran dans le jeu : le Coran est la connaissance étudiée, jamais l'ennemi combattu.**
    - **Tout ce qui vient du Coran** (versets, mots, racines, lemmes) **est objet d'étude, jamais cible de combat**.
    - Un monstre représente une **difficulté de mémorisation** (l'oubli, la confusion, la distraction), **jamais un mot**. Pour le vaincre, le joueur **retrouve une connaissance** (ex. le sens de « رَحْمَة », miséricorde).
-   - **Aucun mot coranique** n'est affiché sur un monstre, frappé, détruit ou « tué » : ni dans les visuels, ni dans les animations, ni dans les textes. Le mot apparaît **uniquement dans un panneau de question séparé et neutre**.
-   - Les **versets n'apparaissent jamais en combat**. Noms divins, noms de prophètes et formules sacrées sont **exclus des questions de combat**.
+   - **Aucun mot coranique** n'est affiché sur un monstre, frappé, détruit ou « tué » : ni dans les visuels, ni dans les animations, ni dans les textes. Le mot apparaît **uniquement dans un panneau de question séparé et neutre** ; un mot du vocabulaire (lemme coranique compris) y figure seul, sous sa forme de dictionnaire, sans verset ni référence.
+   - **Aucun extrait ni verset coranique en combat** (les extraits restent dans les salles d'étude, le Grimoire et le Sanctuaire). Noms divins, noms de prophètes et formules sacrées sont **exclus des questions de combat**.
    - Le Coran se lit et s'étudie dans le **Sanctuaire**, zone sans combat.
    - Exigences pour le code : `docs/ARCHITECTURE.md` §2 bis.
 8. **Racines : la racine ne suffit pas à déduire le sens.** Toute fiche, leçon ou exercice sur les racines montre les liens entre les mots d'une famille sans laisser croire qu'ils ont le même sens. Structure (racine, lemmes, forme verbale, dérivation, catégorie) uniquement depuis le Quranic Arabic Corpus ; sens, relations de sens et nuances rédigés et marqués « rédigé par IA — non vérifié ». Voir `docs/ARCHITECTURE.md` §2 ter.
@@ -34,8 +34,10 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 | Racines (priorité majeure) | Fiche racine (sens généraux, famille, étiquette de relation de sens par dérivé : proche, intensif, spécialisé, figuré, éloigné ; nuances ; occurrences), arbre interactif racine → formes verbales → dérivés → sens → occurrences, leçon et encart d'avertissement, 6 exercices (Détective des racines, Famille de mots et L'intrus dans le MVP ; Relation de sens, Deviner puis vérifier et Forge des mots en phase 5). Une carte de révision par racine, indépendante des dérivés |
 | Statistiques de jeu | Elles n'influencent jamais les notes FSRS ni les statuts de maîtrise |
 | Sources | Texte : Tanzil. Morphologie : Quranic Arabic Corpus / QUL. Traduction : Hamidullah (via Tanzil, usage non commercial), créditée et remplaçable. Audio versets : EveryAyah, récitateur par défaut al-Ḥuṣarī, packs téléchargeables. Audio mot : segments horodatés (QUL) |
-| Audio hors Coran | **Reporté** : voix de synthèse après le MVP. Prévoir les emplacements audio dès maintenant ; l'app fonctionne sans |
-| Translittération | Savante par défaut (ā, ḍ, ʿ), simplifiée au choix |
+| Audio hors Coran | Dans le MVP, prononciation **décrite par écrit**. **Audio des lettres et des exemples = première priorité après le MVP.** Emplacements audio prévus dès maintenant ; l'app fonctionne sans |
+| Translittération | Savante par défaut : norme *Arabica* (ṯ, ǧ, ḫ, ḏ, ġ, ā…), table citée dans `docs/TRANSLITTERATION.md`. Simplifiée (th, j, kh, dh, gh…) au choix dans les paramètres |
+| Polices arabes | Amiri (texte) et Amiri Quran (texte coranique), SIL OFL, auditées dans `THIRD_PARTY_LICENSES.md` |
+| Schémas d'articulation | Dessins simples faits pour IQURA, marqués « rédigé par IA — non vérifié » |
 | Synchronisation | Sans serveur : export/import d'une archive ZIP versionnée (JSON + SHA-256), restauration complète ou fusion (UUID v7, journaux en ajout seul, HLC) |
 | Compilation | GitHub Actions : tests, APK Android, exécutable Windows |
 
@@ -55,7 +57,7 @@ Parcours du MVP, **une région du RPG par étape** :
 - des phrases simples **construites**, entièrement vocalisées et marquées « rédigé par IA — non vérifié », pour découvrir une règle ;
 - de **courts extraits coraniques** pour l'illustrer en contexte authentique : texte Tanzil sans modification, vérifié par SHA-256, traduction Hamidullah, référence sourate:verset.
 
-Chaque exemple affiche sa source. Les extraits ne paraissent jamais en combat (règle 7).
+Chaque exemple affiche sa source. Aucun extrait ni verset coranique en combat (règle 7).
 
 La révision espacée, les mini-jeux et le RPG s'appuient sur ce parcours. Détail : `docs/ARCHITECTURE.md` §9.
 

@@ -92,7 +92,7 @@ void main() {
 
     await tester.tap(find.text('Simplifiée'));
     await tester.pumpAndSettle();
-    expect(find.textContaining('sabahu l-khayri'), findsOneWidget);
+    expect(find.textContaining('sabâhu l-khayri'), findsOneWidget);
   });
 
   testWidgets('paramètres : les sources des données sont citées', (
