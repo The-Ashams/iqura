@@ -253,3 +253,24 @@ Un débutant apprend l'alphabet, lit et comprend une part mesurable d'Al-Fāti�
 | 8 | Translittération | Savante par défaut, simplifiée au choix |
 | 9 | Style de l'avatar | Illustré plat / sprites libres, sans figures sacrées |
 | 10 | Carte du monde | Carte à étapes (nœuds cliquables) |
+
+## 11. Choix techniques de la phase 1
+
+Précisions et écarts par rapport aux sections précédentes, décidés en
+construisant le socle (octobre 2026).
+
+| Sujet | Choix | Raison |
+| --- | --- | --- |
+| Accès SQLite | Paquet `sqlite3` (3.x) directement, sans Drift | Moins de dépendances, pas de génération de code ; SQLite est embarqué par le paquet sur Android et Windows. Drift reste possible plus tard. |
+| Navigation | Pile Flutter standard, sans go_router | Cinq espaces fixes ; go_router sera réévalué si besoin. |
+| État | Riverpod 3 | Prévu au §4. |
+| Profil | Une seule ligne d'identifiant fixe `main` (au lieu d'un UUID) | Sinon chaque appareil créerait son propre profil et la fusion en produirait deux. |
+| Journal `change_log` | Remplacé par deux colonnes sur chaque table modifiable : `updated_hlc` et `deleted` | Même information pour la règle « la dernière modification l'emporte », sans table à maintenir en parallèle. |
+| Tables utilisateur créées | `profile`, `settings`, `review_log`, `xp_ledger`, `local_meta` | Les autres tables du §5 seront ajoutées par migration dans leur phase. `review_log` et `xp_ledger` existent déjà pour tester la fusion des journaux. |
+| Migrations | `PRAGMA user_version` + liste de migrations figées | Une migration publiée ne se modifie jamais ; un test vérifie que la base obtenue correspond au schéma déclaré. |
+| Archives d'une version antérieure | À traiter au premier changement de schéma | Le format 1 ne connaît que le schéma 1 ; une archive plus récente que l'application est refusée. |
+| Base de contenu | Générée par `tools/build_content/build_content.py`, non versionnée dans Git, copiée au démarrage si sa version change | En phase 1 elle ne contient que `content_meta`. |
+| Sélection de fichiers | `file_picker` (enregistrer / ouvrir) | Fonctionne sur Android (sélecteur système, aucune permission) et Windows. |
+| Identifiant de l'application | `io.github.theashams.iqura` | Lié au compte GitHub du projet plutôt qu'à un nom de domaine non détenu. Ne plus le changer après la première diffusion (sinon Android le voit comme une autre application). |
+| Signature | APK signé avec la clé de débogage, exécutable Windows non signé | Une clé de publication (secret GitHub) sera nécessaire avant toute diffusion publique. |
+| Compilation | GitHub Actions sans action tierce ; Flutter téléchargé depuis l'archive officielle et vérifié par SHA-256 | Limiter la chaîne d'approvisionnement. |

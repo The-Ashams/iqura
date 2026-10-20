@@ -1,0 +1,122 @@
+# Tests, APK Android et exécutable Windows.
+# Flutter est téléchargé depuis l'archive officielle de Google et vérifié par
+# empreinte SHA-256 (aucune action tierce n'est utilisée).
+name: Compilation
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FLUTTER_VERSION: "3.47.7"
+  FLUTTER_SHA256_LINUX: "af7455f540df951184c7953fbe3cf884766e7541dacf8571f9f582db03dd6230"
+  FLUTTER_SHA256_WINDOWS: "c2c875da25a1a1448d18ee4e8f398b2f6fce888b4775d8f9130538e16d826cb4"
+
+jobs:
+  tests:
+    name: Tests et analyse
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Installer Flutter
+        run: |
+          archive="flutter_linux_${FLUTTER_VERSION}-stable.tar.xz"
+          curl -sSfL -o "$RUNNER_TEMP/$archive" \
+            "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/$archive"
+          echo "$FLUTTER_SHA256_LINUX  $RUNNER_TEMP/$archive" | sha256sum -c -
+          tar -xf "$RUNNER_TEMP/$archive" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/flutter/bin" >> "$GITHUB_PATH"
+
+      - name: Générer et tester la base de contenu
+        run: |
+          python3 -m unittest discover -s tools/build_content -v
+          python3 tools/build_content/build_content.py
+
+      - name: Dépendances
+        run: flutter pub get
+
+      - name: Format
+        run: dart format --output=none --set-exit-if-changed lib test
+
+      - name: Analyse
+        run: flutter analyze
+
+      - name: Tests
+        run: flutter test
+
+  android:
+    name: APK Android
+    needs: tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Installer Flutter
+        run: |
+          archive="flutter_linux_${FLUTTER_VERSION}-stable.tar.xz"
+          curl -sSfL -o "$RUNNER_TEMP/$archive" \
+            "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/$archive"
+          echo "$FLUTTER_SHA256_LINUX  $RUNNER_TEMP/$archive" | sha256sum -c -
+          tar -xf "$RUNNER_TEMP/$archive" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/flutter/bin" >> "$GITHUB_PATH"
+
+      - name: Générer la base de contenu
+        run: python3 tools/build_content/build_content.py
+
+      - name: Compiler l'APK
+        run: flutter build apk --release
+
+      - name: Empreinte de l'APK
+        run: sha256sum build/app/outputs/flutter-apk/app-release.apk | tee build/app/outputs/flutter-apk/app-release.apk.sha256
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: iqura-android
+          path: |
+            build/app/outputs/flutter-apk/app-release.apk
+            build/app/outputs/flutter-apk/app-release.apk.sha256
+          if-no-files-found: error
+
+  windows:
+    name: Exécutable Windows
+    needs: tests
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Installer Flutter
+        shell: pwsh
+        run: |
+          $archive = "flutter_windows_$env:FLUTTER_VERSION-stable.zip"
+          $zip = Join-Path $env:RUNNER_TEMP $archive
+          Invoke-WebRequest -Uri "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/$archive" -OutFile $zip
+          $hash = (Get-FileHash -Algorithm SHA256 $zip).Hash.ToLower()
+          if ($hash -ne $env:FLUTTER_SHA256_WINDOWS) { throw "Empreinte Flutter incorrecte : $hash" }
+          tar -xf $zip -C $env:RUNNER_TEMP
+          Add-Content -Path $env:GITHUB_PATH -Value (Join-Path $env:RUNNER_TEMP "flutter\bin")
+
+      - name: Générer la base de contenu
+        run: python tools/build_content/build_content.py
+
+      - name: Compiler l'exécutable
+        run: flutter build windows --release
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: iqura-windows
+          path: build/windows/x64/runner/Release/
+          if-no-files-found: error
