@@ -34,9 +34,9 @@ import sources  # noqa: E402
 import tanzil  # noqa: E402
 
 # Version du schéma de la base de contenu (lue par l'application).
-CONTENT_SCHEMA_VERSION = 2
+CONTENT_SCHEMA_VERSION = 3
 # Version des données ; à augmenter à chaque changement de contenu.
-CONTENT_VERSION = "0.3.0-coran"
+CONTENT_VERSION = "0.3.1-coran"
 
 DEFAULT_OUT = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
@@ -99,10 +99,18 @@ SCHEMA = [
         letters TEXT NOT NULL,
         occurrence_count INTEGER NOT NULL
     ) STRICT""",
+    # Données nécessaires à l'arbre des racines (ARCHITECTURE §2 ter).
+    # pattern (schème) : aucune source ouverte, reste NULL ; rien n'est deviné.
     """CREATE TABLE lemma (
         id TEXT NOT NULL PRIMARY KEY,
         form TEXT NOT NULL,
         root_id TEXT REFERENCES root(id),
+        pos TEXT NOT NULL,
+        pos_all TEXT NOT NULL,
+        verb_form TEXT CHECK (verb_form IN
+            ('I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII')),
+        derivation TEXT CHECK (derivation IN ('ACT_PCPL','PASS_PCPL','VN')),
+        pattern TEXT,
         occurrence_count INTEGER NOT NULL
     ) STRICT""",
     """CREATE TABLE token (
@@ -136,6 +144,7 @@ SCHEMA = [
     "CREATE INDEX token_verse ON token(verse_id)",
     "CREATE INDEX token_segment_segment ON token_segment(segment_id)",
     "CREATE INDEX lemma_root ON lemma(root_id)",
+    "CREATE INDEX lemma_root_form ON lemma(root_id, verb_form, derivation)",
 ]
 
 
@@ -250,6 +259,8 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
     root_count: Counter = Counter()
     lemma_count: Counter = Counter()
     lemma_root: dict[str, str | None] = {}
+    lemma_pos: dict[str, Counter] = {}
+    lemma_form: dict[str, tuple[str | None, str | None]] = {}
     for segs in data["segments"].values():
         for s in segs:
             if s.root:
@@ -259,14 +270,37 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
                 previous = lemma_root.setdefault(s.lemma, s.root)
                 if previous != s.root:
                     raise BuildError(f"lemme {s.lemma} avec deux racines")
+                lemma_pos.setdefault(s.lemma, Counter())[s.pos] += 1
+                # Forme verbale et dérivation doivent être constantes pour un
+                # lemme ; sinon on s'arrête plutôt que de choisir.
+                form = (s.verb_form, s.derivation)
+                if lemma_form.setdefault(s.lemma, form) != form:
+                    raise BuildError(
+                        f"lemme {s.lemma} : forme/dérivation variable "
+                        f"{lemma_form[s.lemma]} et {form}"
+                    )
     con.executemany(
         "INSERT INTO root VALUES (?,?,?)",
         [(r, buckwalter.to_arabic(r), n) for r, n in sorted(root_count.items())],
     )
+    def main_pos(c: Counter) -> str:
+        # Catégorie la plus fréquente ; égalité départagée par ordre alphabétique.
+        return sorted(c.items(), key=lambda kv: (-kv[1], kv[0]))[0][0]
+
     con.executemany(
-        "INSERT INTO lemma VALUES (?,?,?,?)",
+        "INSERT INTO lemma VALUES (?,?,?,?,?,?,?,?,?)",
         [
-            (lem, buckwalter.to_arabic(qac.lemma_display_bw(lem)), lemma_root[lem], n)
+            (
+                lem,
+                buckwalter.to_arabic(qac.lemma_display_bw(lem)),
+                lemma_root[lem],
+                main_pos(lemma_pos[lem]),
+                ",".join(sorted(lemma_pos[lem])),
+                lemma_form[lem][0],
+                lemma_form[lem][1],
+                None,
+                n,
+            )
             for lem, n in sorted(lemma_count.items())
         ],
     )

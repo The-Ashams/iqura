@@ -15,6 +15,7 @@ from dataclasses import dataclass
 import buckwalter
 
 MEMBER = "quranic-corpus-morphology-0.4.txt"
+VERB_FORMS = ("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII")
 _LINE = re.compile(r"^\((\d+):(\d+):(\d+):(\d+)\)\t([^\t]*)\t([^\t]*)\t([^\t]*)$")
 
 
@@ -62,6 +63,38 @@ class Segment:
     @property
     def root(self) -> str | None:
         return self.feature("ROOT")
+
+    def _flags(self) -> set[str]:
+        return {p for p in self.features.split("|")[1:] if ":" not in p}
+
+    @property
+    def verb_form(self) -> str | None:
+        """Forme verbale I à XII d'un verbe ou d'un nom dérivé d'un verbe.
+
+        Le Corpus ne marque pas la forme I : il l'affiche « Verb (form I) »
+        dans son dictionnaire. Un verbe sans marque, ou un participe / nom
+        d'action sans marque, est donc de forme I. Les autres noms n'ont pas
+        de forme verbale.
+        """
+        for flag in self._flags():
+            if flag.startswith("(") and flag.endswith(")") and flag[1:-1] in VERB_FORMS:
+                return flag[1:-1]
+        if self.pos == "V" or self.derivation is not None:
+            return "I"
+        return None
+
+    @property
+    def derivation(self) -> str | None:
+        """ACT_PCPL (participe actif), PASS_PCPL (participe passif), VN (nom
+        d'action) ou None."""
+        flags = self._flags()
+        if "PCPL" in flags and "ACT" in flags:
+            return "ACT_PCPL"
+        if "PCPL" in flags and "PASS" in flags:
+            return "PASS_PCPL"
+        if "VN" in flags:
+            return "VN"
+        return None
 
 
 def read_zip(path: str) -> tuple[dict[tuple[int, int], list[Segment]], list[str]]:

@@ -12,14 +12,13 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 4. **Ne jamais prétendre avoir compilé ou testé** sans l'avoir réellement fait. Lire les résultats de GitHub Actions avant d'annoncer quoi que ce soit.
 5. **Open source vérifié** : chaque dépendance est auditée (licence, mainteneur, popularité) et listée dans `THIRD_PARTY_LICENSES.md`. Signaler à l'utilisateur tout point douteux.
 6. **Aucun bouton décoratif ni fausse fonctionnalité.** Ce qui n'est pas fait est indiqué comme tel.
-7. **Le Coran est la connaissance étudiée, jamais l'ennemi combattu.**
-   - Un monstre représente une **difficulté de mémorisation** (l'oubli, la confusion, la distraction), **jamais un mot**.
-   - Pour le vaincre, le joueur **retrouve une connaissance** (ex. le sens de « رَحْمَة », miséricorde).
-   - **Aucun mot coranique** n'est affiché sur un monstre, frappé, détruit ou « tué » : ni dans les visuels, ni dans les animations, ni dans les textes.
-   - Le mot apparaît **uniquement dans un panneau de question séparé et neutre**.
+7. **Respect du Coran dans le jeu : le Coran est la connaissance étudiée, jamais l'ennemi combattu.**
+   - Un monstre représente une **difficulté de mémorisation** (l'oubli, la confusion, la distraction), **jamais un mot**. Pour le vaincre, le joueur **retrouve une connaissance** (ex. le sens de « رَحْمَة », miséricorde).
+   - **Aucun mot coranique** n'est affiché sur un monstre, frappé, détruit ou « tué » : ni dans les visuels, ni dans les animations, ni dans les textes. Le mot apparaît **uniquement dans un panneau de question séparé et neutre**.
    - Les **versets n'apparaissent jamais en combat**. Noms divins, noms de prophètes et formules sacrées sont **exclus des questions de combat**.
-   - Le Coran s'étudie dans le Sanctuaire, une zone sans combat.
-   - Détails et exigences pour le code : `docs/ARCHITECTURE.md` §2 ter.
+   - Le Coran se lit et s'étudie dans le **Sanctuaire**, zone sans combat.
+   - Exigences pour le code : `docs/ARCHITECTURE.md` §2 bis.
+8. **Racines : la racine ne suffit pas à déduire le sens.** Toute fiche, leçon ou exercice sur les racines montre les liens entre les mots d'une famille sans laisser croire qu'ils ont le même sens. Structure (racine, lemmes, forme verbale, dérivation, catégorie) uniquement depuis le Quranic Arabic Corpus ; sens, relations de sens et nuances rédigés et marqués « rédigé par IA — non vérifié ». Voir `docs/ARCHITECTURE.md` §2 ter.
 
 ## Décisions validées
 
@@ -31,6 +30,7 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 | Jeu | Vrai RPG 2D. Carte du monde **à étapes** (nœuds cliquables). Combats au tour par tour où chaque action consiste à retrouver une connaissance dans un panneau de question neutre. Mini-donjon = leçon. Boss = examen de chapitre. Monstres = difficultés de mémorisation (l'oubli, la confusion, la distraction), jamais des mots ; la Faille des Oubliés propose les révisions FSRS du jour (règle 7) |
 | Ressources | XP, or, **pierres de savoir** (gagnées uniquement quand un mot ou une racine progresse réellement dans FSRS ; impossibles à farmer), encre de scribe, fragments de boss |
 | Enchantement | +1 à +15, taux décroissants, +5 points par échec, pity (3 / 5 / 8 échecs selon le palier), jamais de destruction ni de perte de niveau, effets visuels à +5 / +10 / +15. Valeurs dans `docs/ARCHITECTURE.md` §2 bis |
+| Racines (priorité majeure) | Fiche racine (sens généraux, famille, étiquette de relation de sens par dérivé : proche, intensif, spécialisé, figuré, éloigné ; nuances ; occurrences), arbre interactif racine → formes verbales → dérivés → sens → occurrences, leçon et encart d'avertissement, 6 exercices (Détective des racines, Famille de mots et L'intrus dans le MVP ; Relation de sens, Deviner puis vérifier et Forge des mots en phase 5). Une carte de révision par racine, indépendante des dérivés |
 | Statistiques de jeu | Elles n'influencent jamais les notes FSRS ni les statuts de maîtrise |
 | Sources | Texte : Tanzil. Morphologie : Quranic Arabic Corpus / QUL. Traduction : Hamidullah (via Tanzil, usage non commercial), créditée et remplaçable. Audio versets : EveryAyah, récitateur par défaut al-Ḥuṣarī, packs téléchargeables. Audio mot : segments horodatés (QUL) |
 | Audio hors Coran | **Reporté** : voix de synthèse après le MVP. Prévoir les emplacements audio dès maintenant ; l'app fonctionne sans |
@@ -40,8 +40,8 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 
 ## Phases
 
-1. Socle technique (en cours) : architecture, interface principale, bases SQLite, profil, sauvegardes, export/import, première compilation APK et Windows.
-2. Académie de l'arabe. 3. Arabe coranique. 4. Mémorisation. 5. Mini-jeux. 6. RPG. 7. Améliorations avancées.
+1. Socle technique (terminé) : architecture, interface principale, bases SQLite, profil, sauvegardes, export/import, première compilation APK et Windows.
+2. Académie de l'arabe. 3. Arabe coranique (en cours : pipeline de contenu fait). 4. Mémorisation. 5. Mini-jeux. 6. RPG. 7. Améliorations avancées.
 
 Le MVP (v0.1) prend une première tranche des phases 1 à 6 : voir `docs/ARCHITECTURE.md` §9.
 

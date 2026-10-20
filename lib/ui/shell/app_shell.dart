@@ -55,8 +55,8 @@ class _AppShellState extends ConsumerState<AppShell> {
         title: 'Grimoire',
         icon: Icons.menu_book,
         description:
-            'Alphabet, dictionnaire, racines et bibliothèque de '
-            'mots.',
+            'Alphabet, dictionnaire, fiches et arbre des racines, '
+            'bibliothèque de mots.',
         plannedPhase: 'phases 2 à 4',
       ),
       2 => const PlannedSpaceScreen(

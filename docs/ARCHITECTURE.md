@@ -40,7 +40,38 @@ Le moteur pédagogique repose sur la répétition espacée FSRS et le rappel act
 
 ## 2 bis. Conception du jeu : apprendre sans s'en rendre compte
 
-Chaque mécanique de RPG classique est branchée sur une activité d'apprentissage réelle. Le joueur ne voit pas de « cours » ni de « quiz » ; il voit des donjons, des monstres et du stuff. Les monstres incarnent les obstacles de l'apprentissage, jamais ce qu'on apprend : voir la règle du §2 ter, qui prime sur tout ce tableau.
+Chaque mécanique de RPG classique est branchée sur une activité d'apprentissage réelle. Le joueur ne voit pas de « cours » ni de « quiz » ; il voit des donjons, des monstres et du stuff. Les monstres incarnent les obstacles de l'apprentissage, jamais ce qu'on apprend : la règle ci-dessous prime sur toutes les mécaniques de cette section.
+
+### Respect du Coran dans le jeu (règle absolue)
+
+Cette règle prime sur toute autre mécanique de jeu. Elle s'applique au code, aux données, aux visuels, aux animations, aux sons et aux textes.
+
+#### Principe
+
+- **Le Coran est la connaissance étudiée, jamais l'ennemi combattu.**
+- Un monstre représente une **difficulté de mémorisation** (l'Oubli, la Confusion, la Distraction…), **jamais un mot**.
+- Pour le vaincre, le joueur **retrouve une connaissance** : par exemple le sens de « رَحْمَة », miséricorde.
+- **Aucun mot coranique** n'est affiché sur un monstre, frappé, détruit ou « tué » : ni dans les visuels, ni dans les animations, ni dans les textes.
+- Le mot apparaît **uniquement dans un panneau de question séparé et neutre**.
+- Les **versets n'apparaissent jamais en combat**.
+- Noms divins, noms de prophètes et formules sacrées sont **exclus des questions de combat**.
+- Le Coran se lit et s'étudie dans le Sanctuaire, zone sans combat.
+
+#### Exigences pour le code (phase 6 et suivantes)
+
+| Élément | Exigence |
+| --- | --- |
+| Données des monstres (`monster_def`) | Décrivent une difficulté (nom, apparence, comportement). Aucun champ ne référence un mot, un lemme, une racine, un verset ou une carte FSRS. |
+| Lien question ↔ combat | La question est produite par le générateur d'exercices et passée au **panneau de question**, jamais au monstre ni à la scène Flame. Le moteur de combat ne reçoit que le résultat (juste/faux, temps de réponse). |
+| Scène de jeu (Flame) | Ne dessine jamais de texte arabe issu du contenu. Les sprites, effets de coup, de dégâts et de disparition ne portent sur aucun mot. |
+| Panneau de question | Widget Flutter distinct, posé au-dessus de la scène, au style neutre (pas d'effet de coup, de flammes, de tremblement ni de disparition sur le mot). Il affiche la question, les réponses et l'explication après une erreur. |
+| Textes et animations | Les verbes de combat (frapper, détruire, vaincre, « tuer »…) ne s'appliquent qu'aux difficultés, jamais à un mot. On écrit « Vous avez vaincu la Confusion », jamais « Vous avez détruit رَحْمَة ». |
+| Questions de combat | Jamais de verset ni d'extrait de verset. Les mots exclus (noms divins, noms de prophètes, formules sacrées) sont filtrés par le générateur **avant** toute question de combat. En cas de doute sur un mot, il est exclu. |
+| Liste d'exclusion | Issue de sources citées (étiquettes du corpus, par exemple les noms propres, et listes publiées), jamais inventée ; sa provenance est documentée. Les mots exclus restent étudiables au Sanctuaire et dans le Grimoire, hors combat. |
+| Tests | Tests automatiques obligatoires : aucune question de combat ne contient un mot exclu ni un verset ; le modèle de monstre n'a aucun champ lié au contenu ; la scène de combat ne reçoit jamais le texte d'une question. |
+
+### Mécaniques de jeu
+
 
 | Mécanique de jeu | Activité d'apprentissage derrière |
 | --- | --- |
@@ -55,7 +86,7 @@ Chaque mécanique de RPG classique est branchée sur une activité d'apprentissa
 | **Encre de scribe** | Leçons et donjons terminés ; débloque de nouvelles compétences de combat (nouveaux types de questions). |
 | **Fragments de boss** | Butin de boss ; fabrication de l'équipement légendaire de la région. |
 | **Grimoire** | Dictionnaire, bibliothèque de mots et explorateur de racines, présentés comme le livre de connaissances du héros. |
-| **Sanctuaire (Bibliothèque du Coran)** | Zone sans aucun combat : lecture des sourates, analyse mot par mot, quêtes d'étude. Les versets n'apparaissent jamais en combat ; noms divins, noms de prophètes et formules sacrées sont exclus des questions de combat (§2 ter). |
+| **Sanctuaire (Bibliothèque du Coran)** | Zone sans aucun combat : lecture des sourates, analyse mot par mot, quêtes d'étude. Les versets n'apparaissent jamais en combat ; noms divins, noms de prophètes et formules sacrées sont exclus des questions de combat (§2 bis, respect du Coran). |
 
 **Enchantement de +1 à +15 (valeurs initiales à équilibrer).** Coût : or + pierres de savoir, croissant avec le niveau. Un échec consomme les ressources mais ne fait jamais perdre de niveau ni détruire l'objet. Chaque échec ajoute +5 points au taux suivant ; la pity garantit la réussite après un nombre d'échecs fixe. Les taux sont affichés avant chaque tentative.
 
@@ -69,32 +100,73 @@ Chaque mécanique de RPG classique est branchée sur une activité d'apprentissa
 
 **Ce qui reste visible.** Le Grimoire montre honnêtement ce qui est appris (mots, racines, % de vocabulaire reconnu par sourate).
 
-## 2 ter. Règle : le Coran est la connaissance étudiée, jamais l'ennemi combattu
+## 2 ter. Apprentissage des racines (priorité majeure)
 
-Cette règle prime sur toute autre mécanique de jeu. Elle s'applique au code, aux données, aux visuels, aux animations, aux sons et aux textes.
+**Objectif.** Reconnaître les liens entre les mots d'une même famille **sans supposer qu'ils ont tous le même sens**. Connaître une racine aide à repérer et à retenir les mots ; elle ne permet pas de deviner le sens précis de chaque dérivé.
 
-**Principe.**
+### Fiche racine
 
-- Un monstre représente une **difficulté de mémorisation** (l'Oubli, la Confusion, la Distraction…), **jamais un mot**.
-- Pour le vaincre, le joueur **retrouve une connaissance** : par exemple le sens de « رَحْمَة », miséricorde.
-- **Aucun mot coranique** n'est affiché sur un monstre, frappé, détruit ou « tué » : ni dans les visuels, ni dans les animations, ni dans les textes.
-- Le mot apparaît **uniquement dans un panneau de question séparé et neutre**.
-- Les **versets n'apparaissent jamais en combat**.
-- Noms divins, noms de prophètes et formules sacrées sont **exclus des questions de combat**.
-- Le Coran s'étudie dans le Sanctuaire, zone sans combat.
+Exemple à partir de رَحْمَةٌ (miséricorde) :
 
-**Exigences pour le code (phase 6 et suivantes).**
+- **Racine** ر ح م (r-ḥ-m) et son ou ses sens généraux.
+- **Mots de la famille** : رَحِيمٌ (Miséricordieux), رَحْمَٰنُ (Tout Miséricordieux), رَحِمَ (faire miséricorde)…
+- **Relation de sens** : une étiquette par dérivé, parmi *proche*, *intensif*, *spécialisé*, *figuré* et *éloigné*.
+- **Nuances** entre mots proches (ex. رَحْمَٰن et رَحِيم), avec les sources citées et le statut « rédigé par IA — non vérifié » quand c'est le cas.
+- **Occurrences** : nombre d'occurrences coraniques par mot, avec accès aux versets (dans le Sanctuaire, hors combat).
 
-| Élément | Exigence |
+### Arbre des racines interactif
+
+Chemin de lecture : racine → formes verbales attestées (I à X, plus les rares XI et XII du Corpus) → noms dérivés regroupés par type → sens de chaque mot → occurrences coraniques. Chaque nœud est cliquable.
+
+Les noms dérivés sont regroupés en participes, noms d'action, noms de lieu, intensifs, etc.
+
+**Provenance de chaque élément.**
+
+| Élément | Provenance |
 | --- | --- |
-| Données des monstres (`monster_def`) | Décrivent une difficulté (nom, apparence, comportement). Aucun champ ne référence un mot, un lemme, une racine, un verset ou une carte FSRS. |
-| Lien question ↔ combat | La question est produite par le générateur d'exercices et passée au **panneau de question**, jamais au monstre ni à la scène Flame. Le moteur de combat ne reçoit que le résultat (juste/faux, temps de réponse). |
-| Scène de jeu (Flame) | Ne dessine jamais de texte arabe issu du contenu. Les sprites, effets de coup, de dégâts et de disparition ne portent sur aucun mot. |
-| Panneau de question | Widget Flutter distinct, posé au-dessus de la scène, au style neutre (pas d'effet de coup, de flammes, de tremblement ni de disparition sur le mot). Il affiche la question, les réponses et l'explication après une erreur. |
-| Textes et animations | Les verbes de combat (frapper, détruire, vaincre, « tuer »…) ne s'appliquent qu'aux difficultés, jamais à un mot. On écrit « Vous avez vaincu la Confusion », jamais « Vous avez détruit رَحْمَة ». |
-| Questions de combat | Jamais de verset ni d'extrait de verset. Les mots exclus (noms divins, noms de prophètes, formules sacrées) sont filtrés par le générateur **avant** toute question de combat. En cas de doute sur un mot, il est exclu. |
-| Liste d'exclusion | Issue de sources citées (étiquettes du corpus, par exemple les noms propres, et listes publiées), jamais inventée ; sa provenance est documentée. Les mots exclus restent étudiables au Sanctuaire et dans le Grimoire, hors combat. |
-| Tests | Tests automatiques obligatoires : aucune question de combat ne contient un mot exclu ni un verset ; le modèle de monstre n'a aucun champ lié au contenu ; la scène de combat ne reçoit jamais le texte d'une question. |
+| Racine, lemmes, catégorie grammaticale | Quranic Arabic Corpus |
+| Forme verbale (I à XII) | Quranic Arabic Corpus. Un verbe sans marque est de forme I : convention du Corpus, qui l'affiche « Verb (form I) » dans son dictionnaire. |
+| Participe actif, participe passif, nom d'action | Quranic Arabic Corpus (traits `ACT PCPL`, `PASS PCPL`, `VN`) |
+| Schème (wazn), nom de lieu, intensif | **Aucune source ouverte identifiée** : le Corpus 0.4 ne les fournit pas. Rien n'est inventé ; ces groupes restent vides tant qu'une source citée ou une méthode vérifiable n'est pas validée. |
+| Occurrences | Calculées depuis le Corpus aligné sur Tanzil |
+| Sens français, étiquette de relation, nuances | Rédigés (IA), toujours marqués « rédigé par IA — non vérifié » |
+
+### Avertissement pédagogique
+
+Une **leçon dédiée** et un **encart sur chaque fiche de racine** rappellent, exemples à l'appui, que la racine ne suffit pas à déduire le sens exact d'un dérivé.
+
+### Exercices sur les racines
+
+| Exercice | Principe | Arrivée |
+| --- | --- | --- |
+| Détective des racines | Trouver la racine d'un mot | MVP |
+| Famille de mots | Regrouper des mots par racine | MVP |
+| L'intrus | Repérer le mot hors de la famille, y compris les faux amis aux lettres proches | MVP |
+| Relation de sens | Dire si un dérivé a un sens proche, spécialisé ou éloigné | Phase 5 |
+| Deviner puis vérifier | Proposer un sens à partir de la racine et du schème, puis comparer avec le vrai sens | Phase 5 |
+| Forge des mots | Construire un dérivé à partir d'une racine et d'un schème | Phase 5 |
+
+Les exercices qui demandent le schème (Deviner puis vérifier, Forge des mots) dépendent de la source de schèmes encore manquante.
+
+En combat, ces exercices respectent la règle du §2 bis :
+- le mot n'apparaît que dans le panneau de question ;
+- noms divins, noms de prophètes et formules sacrées sont exclus ;
+- رَحْمَٰن et رَحِيم, noms divins dans la basmala, ne servent donc jamais de question de combat, même s'ils restent étudiables sur la fiche de leur racine.
+
+### Maîtrise
+
+Chaque racine a sa propre carte de révision FSRS, indépendante de ses dérivés : la maîtrise d'une racine n'est jamais déduite de celle de ses mots, ni l'inverse.
+
+### Données nécessaires (pipeline coranique)
+
+Pour chaque lemme, la base de contenu conserve :
+- la racine ;
+- la forme verbale (I à XII) ;
+- le type de dérivé (participe actif, participe passif, nom d'action) ;
+- le schème (colonne prévue, vide faute de source) ;
+- la catégorie grammaticale principale et toutes celles attestées.
+
+Les tables rédigées (sens des racines, étiquettes de relation, nuances) portent un statut de vérification et une source.
 
 ## 3. Ressources linguistiques et coraniques
 
@@ -166,8 +238,9 @@ Racine, lemme, forme de mot et occurrence ont chacun leur identifiant. Identifia
 | `verse_translation` | `verse`, `translation_id` | texte français | → verse, translation |
 | `translation` | `id` | auteur, édition, licence, source | — |
 | `root` | `id` | lettres arabes, sens généraux, statut de vérification | — |
+| `root_note` | `root_id`, `n` | encart, nuance ou exemple rédigé, statut, source | → root |
 | `pattern` | `id` | schème, valeur sémantique typique, explication | — |
-| `lemma` | `id` | forme arabe, catégorie, sens lexical français, fréquence coranique | → root, pattern |
+| `lemma` | `id` | forme arabe, catégorie principale et catégories attestées, forme verbale (I–XII), type de dérivé (participe actif / passif, nom d'action), schème, sens lexical français, relation de sens à la racine (proche, intensif, spécialisé, figuré, éloigné) avec statut, fréquence coranique | → root, pattern |
 | `word_form` | `id` | forme vocalisée unique, translittération | → lemma |
 | `token` | `id` (`s:a:w`) | position, texte affiché, sens contextuel français, début/fin audio (ms) | → verse, word_form |
 | `segment` | `token_id`, `n` | préfixe/radical/suffixe, catégorie, traits | → token |
@@ -176,7 +249,7 @@ Racine, lemme, forme de mot et occurrence ont chacun leur identifiant. Identifia
 | `exercise`, `question`, `answer` | `id` | type, consigne, réponses acceptées, explication | → lesson |
 | `letter` | `id` | 4 formes, nom, translittération, articulation, illustration | → audio |
 | `audio_asset` | `id` | chemin/URL, récitateur/locuteur, durée, licence | — |
-| `item_def`, `quest_def`, `skill_node`, `monster_def`, `region`, `map_node` | `id` | équipements, quêtes, compétences, monstres (difficultés de mémorisation, sans aucun champ de mot : §2 ter), carte | — |
+| `item_def`, `quest_def`, `skill_node`, `monster_def`, `region`, `map_node` | `id` | équipements, quêtes, compétences, monstres (difficultés de mémorisation, sans aucun champ de mot : §2 bis), carte | — |
 | `content_meta` | clé | version du contenu, empreintes SHA-256 du texte coranique | — |
 
 **Base utilisateur (`iqura_user.db`)**
@@ -231,7 +304,8 @@ Cinq espaces : barre en bas sur Android, rail latéral sur Windows.
 | Perte de progression à l'import ou à la fusion | Critique | Sauvegarde avant import, transactions, journaux en ajout seul, tests multi-appareils |
 | Archives malveillantes | Moyenne | Taille décompressée plafonnée, liste blanche, chemins normalisés, schéma JSON validé |
 | Droits flous (Hamidullah, récitations) | Moyenne | Attribution, écran « Sources et licences », éléments interchangeables |
-| Mot coranique traité comme un ennemi (visuel, animation, texte) | Critique | Règle du §2 ter : monstres sans champ de contenu, panneau de question séparé, tests automatiques |
+| Mot coranique traité comme un ennemi (visuel, animation, texte) | Critique | Règle du §2 bis : monstres sans champ de contenu, panneau de question séparé, tests automatiques |
+| Sens d'un dérivé déduit à tort de sa racine | Élevée | Avertissement sur chaque fiche et leçon dédiée ; étiquette de relation de sens ; sens toujours propres au mot |
 | Contenu IA non relu (aucun relecteur) | Élevée | Statut visible ; données linguistiques uniquement issues de sources citées |
 | Volume du projet | Élevée | Phases closes par critères d'acceptation testés ; aucun bouton sans fonction |
 
@@ -257,15 +331,15 @@ Un débutant apprend l'alphabet, lit et comprend une part mesurable d'Al-Fāti�
 - **Alphabet** : 28 lettres et la hamza, 4 formes, nom, translittération, point d'articulation, 3 exemples par lettre, schémas d'articulation ; voyelles courtes et longues, sukūn, shadda, tanwīn, alif lam ; reconnaissance visuelle (et auditive quand l'audio sera disponible).
 - **Niveau 1 (début)** : environ 10 leçons (lecture de mots vocalisés, pronoms personnels, démonstratifs, genre, article défini et indéfinition).
 - **Coran** : 114 sourates (6 236 versets), texte Tanzil, traduction française, navigation sourate / juzʾ, recherche par mot et racine, signets ; analyse mot par mot pour tout le Coran ; sens contextuel français pour Al-Fātiḥa et le juzʾ ʿAmma ; audio verset et mot (un récitateur, par packs) ; % de vocabulaire reconnu.
-- **Racines** : toutes les racines coraniques (environ 1 600) avec lemmes et occurrences ; arbre morphologique ; significations françaises pour les 100 racines les plus fréquentes.
+- **Racines (priorité majeure, §2 ter)** : toutes les racines coraniques (1 642) avec lemmes et occurrences ; **arbre complet pour toutes les racines** ; **fiches enrichies** (sens, relations de sens, nuances) pour les 100 racines les plus fréquentes ; **leçon d'avertissement** « la racine ne suffit pas à déduire le sens » ; exercices **Détective des racines**, **Famille de mots** et **L'intrus** ; une carte de révision par racine.
 - **Mémorisation** : FSRS, révision du jour, 5 états de mot, bibliothèque et listes personnelles.
 - **Mini-jeux** : A Reconstruction, B Arabe → français, D Quiz sur une liste, E Reconnaissance audio, F Association.
 - **Labo de prononciation (base)** : écouter, s'enregistrer, réécouter, comparer, recommencer ; sans score.
-- **Jeu RPG 2D** : carte à 2 régions (alphabet, niveau 1) + Sanctuaire ; combats au tour par tour ; 5 à 8 types de monstres (difficultés de mémorisation, §2 ter) ; mini-donjons, un boss par région, Faille des Oubliés ; XP, or, pierres de savoir, encre ; boutique, inventaire, équipement visible ; enchantement +1 à +15 avec pity ; quêtes quotidiennes et hebdomadaires ; mode « apprentissage seul ».
+- **Jeu RPG 2D** : carte à 2 régions (alphabet, niveau 1) + Sanctuaire ; combats au tour par tour ; 5 à 8 types de monstres (difficultés de mémorisation, §2 bis) ; mini-donjons, un boss par région, Faille des Oubliés ; XP, or, pierres de savoir, encre ; boutique, inventaire, équipement visible ; enchantement +1 à +15 avec pity ; quêtes quotidiennes et hebdomadaires ; mode « apprentissage seul ».
 - **Statistiques** : calendrier d'activité, mots et racines par état, temps d'étude.
 - **Documentation** : installation, sauvegarde et restauration, format d'export, sources et licences.
 
-**Exclus du MVP** : niveaux 2 à 4, test de positionnement complet, jeu C et jeux supplémentaires, arbre de compétences, régions au-delà du niveau 1, analyse vocale, audio hors Coran (voix de synthèse), sens contextuels au-delà du juzʾ ʿAmma.
+**Exclus du MVP** : exercices de racines Relation de sens, Deviner puis vérifier et Forge des mots (phase 5), niveaux 2 à 4, test de positionnement complet, jeu C et jeux supplémentaires, arbre de compétences, régions au-delà du niveau 1, analyse vocale, audio hors Coran (voix de synthèse), sens contextuels au-delà du juzʾ ʿAmma.
 
 ## 10. Décisions validées
 
@@ -277,10 +351,12 @@ Un débutant apprend l'alphabet, lit et comprend une part mesurable d'Al-Fāti�
 | 4 | Compilation | Claude Code cloud + GitHub Actions (dépôt public `The-Ashams/iqura`) |
 | 5 | Place du RPG | Vrai RPG 2D dès le MVP |
 | 6 | Récitateur par défaut | al-Ḥuṣarī |
-| 7 | Traduction | Hamidullah révisée (2000), créditée, remplaçable |
+| 7 | Traduction | Hamidullah (diffusion Tanzil, usage non commercial ; l'édition révisée de 2000 n'est pas confirmée), créditée, remplaçable |
 | 8 | Translittération | Savante par défaut, simplifiée au choix |
 | 9 | Style de l'avatar | Illustré plat / sprites libres, sans figures sacrées |
 | 10 | Carte du monde | Carte à étapes (nœuds cliquables) |
+| 11 | Respect du Coran dans le jeu | Le Coran est la connaissance étudiée, jamais l'ennemi : monstres = difficultés de mémorisation, mot seulement dans un panneau de question neutre, ni versets ni noms sacrés en combat (§2 bis) |
+| 12 | Racines | Priorité majeure : fiches, arbre interactif, avertissement « la racine ne suffit pas », exercices, carte de révision par racine (§2 ter) |
 
 ## 11. Choix techniques de la phase 1
 
@@ -305,7 +381,7 @@ construisant le socle (octobre 2026).
 
 ## 12. Pipeline de contenu coranique (phase 3)
 
-`tools/build_content/build_content.py` produit `iqura_content.db` (schéma 2) à partir des fichiers de `tools/build_content/sources/`, versionnés dans Git et vérifiés par SHA-256 avant toute lecture. Python 3 seul, sans dépendance.
+`tools/build_content/build_content.py` produit `iqura_content.db` (schéma 3) à partir des fichiers de `tools/build_content/sources/`, versionnés dans Git et vérifiés par SHA-256 avant toute lecture. Python 3 seul, sans dépendance.
 
 **Sources retenues.**
 
@@ -339,7 +415,7 @@ construisant le socle (octobre 2026).
 - Ce squelette sert uniquement à comparer : aucun texte n'est modifié.
 - Résultat : **100 % des 6 236 versets alignés**. Seuls 4 versets ont un nombre de mots différent entre les deux sources (2:181, 8:6, 13:37, 37:130) ; ils sont listés dans `content_meta` et testés.
 
-**Contenu de la base (schéma 2).**
+**Contenu de la base (schéma 3).**
 
 | Table | Contenu |
 | --- | --- |
@@ -348,15 +424,19 @@ construisant le socle (octobre 2026).
 | `verse` | 6 236 versets : texte Uthmani, texte de recherche, juzʾ, quart de hizb, page, prosternation |
 | `translation`, `verse_translation` | Traduction Hamidullah |
 | `root` | 1 642 racines (forme Buckwalter et arabe, nombre de segments) |
-| `lemma` | 4 832 lemmes (forme arabe sans le chiffre de désambiguïsation du Corpus, racine, nombre de segments) |
+| `lemma` | 4 832 lemmes : forme arabe (sans le chiffre de désambiguïsation du Corpus), racine, catégorie principale et catégories attestées, forme verbale (I à XII), type de dérivé (participe actif / passif, nom d'action), schème (vide : pas de source), nombre de segments |
 | `token`, `segment`, `token_segment` | 77 433 mots Tanzil, 128 219 segments du Corpus et leurs liens |
+
+**Particularité du Corpus.** Certains lemmes gardent la shadda de l'article assimilé (ex. `r~aHiym` → رَّحِيم). La donnée est conservée telle quelle ; l'affichage d'un lemme sous sa forme de dictionnaire sera traité à l'écran, avec une règle documentée et testée.
 
 **Pas encore fait.**
 
 - Noms français des sourates : aucune source ouverte trouvée pour l'instant, donc rien n'est inventé.
-- Schèmes (`pattern`) et formes uniques (`word_form`).
+- Schèmes (`pattern`), noms de lieu et intensifs : absents du Corpus 0.4, aucune autre source ouverte identifiée (§2 ter).
+- Formes uniques (`word_form`).
+- Sens des racines, étiquettes de relation de sens, nuances et encarts (rédigés, statut « non vérifié »).
 - Sens français mot par mot (rédigés par IA, à marquer « non vérifié »).
 - Index de recherche plein texte.
-- Liste d'exclusion des questions de combat (§2 ter).
+- Liste d'exclusion des questions de combat (§2 bis, respect du Coran).
 
 La base pèse 35 Mo et l'APK passe de 60 à 71 Mo. Découper l'APK par architecture le ramènerait à environ un tiers.

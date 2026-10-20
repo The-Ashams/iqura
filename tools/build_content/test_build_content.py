@@ -144,6 +144,30 @@ class BuildTest(unittest.TestCase):
         self.assertEqual(rows, [("بِ", None, None), ("سْمِ", "{som", "smw")])
         self.assertEqual(self.q("SELECT letters FROM root WHERE id = 'smw'"), [("سمو",)])
 
+    def test_lemma_root_tree_data(self):
+        def lemma(lid):
+            return self.q(
+                "SELECT root_id, pos, pos_all, verb_form, derivation, pattern "
+                "FROM lemma WHERE id = ?", lid)[0]
+        # Verbe sans marque dans le Corpus = forme I (convention du Corpus).
+        self.assertEqual(lemma("r~aHima"), ("rHm", "V", "V", "I", None, None))
+        # Forme IV marquée, participe actif de forme VIII.
+        self.assertEqual(lemma(">anoEama")[3], "IV")
+        self.assertEqual(lemma("mut~aqiyn")[3:5], ("VIII", "ACT_PCPL"))
+        # Participe actif sans marque : forme I ; participe passif.
+        self.assertEqual(lemma("ma`lik")[3:5], ("I", "ACT_PCPL"))
+        self.assertEqual(lemma("magoDuwb")[3:5], ("I", "PASS_PCPL"))
+        # Catégorie principale et catégories attestées.
+        self.assertEqual(lemma("r~aHoma`n")[1:3], ("N", "ADJ,N"))
+        # Nom simple : ni forme verbale ni dérivation.
+        self.assertEqual(lemma("raHomap")[3:5], (None, None))
+        # Schème : aucune source, jamais rempli.
+        self.assertEqual(self.q("SELECT COUNT(*) FROM lemma WHERE pattern IS NOT NULL"), [(0,)])
+        self.assertEqual(
+            {r[0] for r in self.q("SELECT DISTINCT verb_form FROM lemma WHERE verb_form IS NOT NULL")},
+            {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"},
+        )
+
     def test_translation_and_divisions(self):
         self.assertEqual(self.q("SELECT COUNT(*) FROM verse_translation"), [(6236,)])
         self.assertEqual(

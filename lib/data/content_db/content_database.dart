@@ -50,7 +50,7 @@ class ContentDatabase {
   static const versionAssetPath = 'assets/content/iqura_content.db.version';
 
   /// Version du schéma de la base de contenu gérée par cette application.
-  static const int schemaVersion = 2;
+  static const int schemaVersion = 3;
 
   /// Copie (si besoin) puis ouvre la base dans [directory], et vérifie le
   /// texte coranique. Si la copie est altérée, elle est refaite une fois
