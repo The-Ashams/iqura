@@ -12,7 +12,14 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 4. **Ne jamais prétendre avoir compilé ou testé** sans l'avoir réellement fait. Lire les résultats de GitHub Actions avant d'annoncer quoi que ce soit.
 5. **Open source vérifié** : chaque dépendance est auditée (licence, mainteneur, popularité) et listée dans `THIRD_PARTY_LICENSES.md`. Signaler à l'utilisateur tout point douteux.
 6. **Aucun bouton décoratif ni fausse fonctionnalité.** Ce qui n'est pas fait est indiqué comme tel.
-7. **Respect du Coran dans le jeu** : les versets n'apparaissent jamais en combat. Noms divins, noms de prophètes et formules sacrées sont exclus des questions de combat. Le Coran s'étudie dans le Sanctuaire, une zone sans combat.
+7. **Le Coran est la connaissance étudiée, jamais l'ennemi combattu.**
+   - Un monstre représente une **difficulté de mémorisation** (l'oubli, la confusion, la distraction), **jamais un mot**.
+   - Pour le vaincre, le joueur **retrouve une connaissance** (ex. le sens de « رَحْمَة », miséricorde).
+   - **Aucun mot coranique** n'est affiché sur un monstre, frappé, détruit ou « tué » : ni dans les visuels, ni dans les animations, ni dans les textes.
+   - Le mot apparaît **uniquement dans un panneau de question séparé et neutre**.
+   - Les **versets n'apparaissent jamais en combat**. Noms divins, noms de prophètes et formules sacrées sont **exclus des questions de combat**.
+   - Le Coran s'étudie dans le Sanctuaire, une zone sans combat.
+   - Détails et exigences pour le code : `docs/ARCHITECTURE.md` §2 ter.
 
 ## Décisions validées
 
@@ -21,7 +28,7 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 | Pile technique | Flutter (Dart) + Flame (moteur 2D, MIT) + SQLite |
 | Bases | `iqura_content.db` (lecture seule, générée par `tools/build_content/`) et `iqura_user.db` (progression, seule base exportée) |
 | Mémorisation | FSRS (package `fsrs`, MIT). Note déduite automatiquement de la justesse et du temps de réponse |
-| Jeu | Vrai RPG 2D. Carte du monde **à étapes** (nœuds cliquables). Combats au tour par tour où chaque action est une question. Mini-donjon = leçon. Boss = examen de chapitre. Monstres « Oubliés » = cartes FSRS à échéance |
+| Jeu | Vrai RPG 2D. Carte du monde **à étapes** (nœuds cliquables). Combats au tour par tour où chaque action consiste à retrouver une connaissance dans un panneau de question neutre. Mini-donjon = leçon. Boss = examen de chapitre. Monstres = difficultés de mémorisation (l'oubli, la confusion, la distraction), jamais des mots ; la Faille des Oubliés propose les révisions FSRS du jour (règle 7) |
 | Ressources | XP, or, **pierres de savoir** (gagnées uniquement quand un mot ou une racine progresse réellement dans FSRS ; impossibles à farmer), encre de scribe, fragments de boss |
 | Enchantement | +1 à +15, taux décroissants, +5 points par échec, pity (3 / 5 / 8 échecs selon le palier), jamais de destruction ni de perte de niveau, effets visuels à +5 / +10 / +15. Valeurs dans `docs/ARCHITECTURE.md` §2 bis |
 | Statistiques de jeu | Elles n'influencent jamais les notes FSRS ni les statuts de maîtrise |

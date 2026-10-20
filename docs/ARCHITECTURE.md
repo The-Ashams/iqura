@@ -40,22 +40,22 @@ Le moteur pédagogique repose sur la répétition espacée FSRS et le rappel act
 
 ## 2 bis. Conception du jeu : apprendre sans s'en rendre compte
 
-Chaque mécanique de RPG classique est branchée sur une activité d'apprentissage réelle. Le joueur ne voit pas de « cours » ni de « quiz » ; il voit des donjons, des monstres et du stuff.
+Chaque mécanique de RPG classique est branchée sur une activité d'apprentissage réelle. Le joueur ne voit pas de « cours » ni de « quiz » ; il voit des donjons, des monstres et du stuff. Les monstres incarnent les obstacles de l'apprentissage, jamais ce qu'on apprend : voir la règle du §2 ter, qui prime sur tout ce tableau.
 
 | Mécanique de jeu | Activité d'apprentissage derrière |
 | --- | --- |
 | **Carte du monde à étapes** | Lieux reliés par des chemins, on clique pour s'y rendre. Chaque région = un chapitre du cursus (ex. « Désert des Lettres » = alphabet, « Oasis des Pronoms » = niveau 1). La région suivante s'ouvre quand le boss est vaincu. |
 | **Mini-donjon** | Une leçon. Salles de dialogue avec un PNJ (explication de la règle), salles d'entraînement (exercices), mini-boss (contrôle de compréhension). |
-| **Boss de région** | L'examen du chapitre : plusieurs phases, questions mélangées (vocabulaire, racines, grammaire). |
-| **Combat au tour par tour** | Chaque action = une question. Attaque = vocabulaire ; Sort de racine = trouver la racine (dégâts de zone) ; Bouclier = question de grammaire ; Ultime = reconstruire un mot. Bonne réponse = coup porté, réponse rapide = critique ; erreur = le monstre frappe et un court message explique la bonne réponse. |
-| **Monstres « Oubliés »** | Les cartes FSRS arrivées à échéance. La « Faille des Oubliés », donjon quotidien, contient exactement les révisions du jour. La note FSRS est déduite automatiquement de la justesse et du temps de réponse : aucun bouton « facile / difficile ». |
+| **Boss de région** | L'examen du chapitre, incarné par une grande difficulté (ex. « le Grand Oubli ») : plusieurs phases, questions mélangées (vocabulaire, racines, grammaire). |
+| **Combat au tour par tour** | Chaque action = retrouver une connaissance, posée dans un panneau de question séparé et neutre. Attaque = sens d'un mot ; Sort de racine = retrouver la racine (effet de zone) ; Bouclier = question de grammaire ; Ultime = reconstruire un mot. Bonne réponse = le héros affaiblit la difficulté (l'oubli, la confusion…), réponse rapide = critique ; erreur = la difficulté riposte et le panneau explique la bonne réponse. Le mot n'est jamais la cible : il reste dans le panneau. |
+| **Monstres** | Des difficultés de mémorisation personnifiées : l'Oubli, la Confusion, la Distraction… Jamais un mot. La « Faille des Oubliés », donjon quotidien, propose exactement les révisions FSRS du jour : chaque carte à réviser devient une question posée par l'Oubli, pas un monstre. La note FSRS est déduite automatiquement de la justesse et du temps de réponse : aucun bouton « facile / difficile ». |
 | **Expérience** | Combats gagnés, leçons, mots qui progressent d'état. Rendement décroissant sur les cartes déjà très faciles (anti-farming). |
 | **Or (dinars)** | Combats, coffres, quêtes. Achat d'équipement et de consommables. |
 | **Pierres de savoir** | Ressource d'enchantement. 1 pierre quand un mot passe à « reconnu », 3 quand il passe à « maîtrisé », 5 par racine maîtrisée. Impossible à farmer. |
 | **Encre de scribe** | Leçons et donjons terminés ; débloque de nouvelles compétences de combat (nouveaux types de questions). |
 | **Fragments de boss** | Butin de boss ; fabrication de l'équipement légendaire de la région. |
 | **Grimoire** | Dictionnaire, bibliothèque de mots et explorateur de racines, présentés comme le livre de connaissances du héros. |
-| **Sanctuaire (Bibliothèque du Coran)** | Zone sans aucun combat : lecture des sourates, analyse mot par mot, quêtes d'étude. Les versets n'apparaissent jamais en combat ; noms divins, noms de prophètes et formules sacrées sont exclus des questions de combat. |
+| **Sanctuaire (Bibliothèque du Coran)** | Zone sans aucun combat : lecture des sourates, analyse mot par mot, quêtes d'étude. Les versets n'apparaissent jamais en combat ; noms divins, noms de prophètes et formules sacrées sont exclus des questions de combat (§2 ter). |
 
 **Enchantement de +1 à +15 (valeurs initiales à équilibrer).** Coût : or + pierres de savoir, croissant avec le niveau. Un échec consomme les ressources mais ne fait jamais perdre de niveau ni détruire l'objet. Chaque échec ajoute +5 points au taux suivant ; la pity garantit la réussite après un nombre d'échecs fixe. Les taux sont affichés avant chaque tentative.
 
@@ -68,6 +68,33 @@ Chaque mécanique de RPG classique est branchée sur une activité d'apprentissa
 **Statistiques du héros.** PV, Attaque, Défense, Critique, Concentration (bonus de temps de réponse). Elles influencent uniquement les combats, jamais les notes FSRS ni les statuts de maîtrise. Chronomètre désactivable.
 
 **Ce qui reste visible.** Le Grimoire montre honnêtement ce qui est appris (mots, racines, % de vocabulaire reconnu par sourate).
+
+## 2 ter. Règle : le Coran est la connaissance étudiée, jamais l'ennemi combattu
+
+Cette règle prime sur toute autre mécanique de jeu. Elle s'applique au code, aux données, aux visuels, aux animations, aux sons et aux textes.
+
+**Principe.**
+
+- Un monstre représente une **difficulté de mémorisation** (l'Oubli, la Confusion, la Distraction…), **jamais un mot**.
+- Pour le vaincre, le joueur **retrouve une connaissance** : par exemple le sens de « رَحْمَة », miséricorde.
+- **Aucun mot coranique** n'est affiché sur un monstre, frappé, détruit ou « tué » : ni dans les visuels, ni dans les animations, ni dans les textes.
+- Le mot apparaît **uniquement dans un panneau de question séparé et neutre**.
+- Les **versets n'apparaissent jamais en combat**.
+- Noms divins, noms de prophètes et formules sacrées sont **exclus des questions de combat**.
+- Le Coran s'étudie dans le Sanctuaire, zone sans combat.
+
+**Exigences pour le code (phase 6 et suivantes).**
+
+| Élément | Exigence |
+| --- | --- |
+| Données des monstres (`monster_def`) | Décrivent une difficulté (nom, apparence, comportement). Aucun champ ne référence un mot, un lemme, une racine, un verset ou une carte FSRS. |
+| Lien question ↔ combat | La question est produite par le générateur d'exercices et passée au **panneau de question**, jamais au monstre ni à la scène Flame. Le moteur de combat ne reçoit que le résultat (juste/faux, temps de réponse). |
+| Scène de jeu (Flame) | Ne dessine jamais de texte arabe issu du contenu. Les sprites, effets de coup, de dégâts et de disparition ne portent sur aucun mot. |
+| Panneau de question | Widget Flutter distinct, posé au-dessus de la scène, au style neutre (pas d'effet de coup, de flammes, de tremblement ni de disparition sur le mot). Il affiche la question, les réponses et l'explication après une erreur. |
+| Textes et animations | Les verbes de combat (frapper, détruire, vaincre, « tuer »…) ne s'appliquent qu'aux difficultés, jamais à un mot. On écrit « Vous avez vaincu la Confusion », jamais « Vous avez détruit رَحْمَة ». |
+| Questions de combat | Jamais de verset ni d'extrait de verset. Les mots exclus (noms divins, noms de prophètes, formules sacrées) sont filtrés par le générateur **avant** toute question de combat. En cas de doute sur un mot, il est exclu. |
+| Liste d'exclusion | Issue de sources citées (étiquettes du corpus, par exemple les noms propres, et listes publiées), jamais inventée ; sa provenance est documentée. Les mots exclus restent étudiables au Sanctuaire et dans le Grimoire, hors combat. |
+| Tests | Tests automatiques obligatoires : aucune question de combat ne contient un mot exclu ni un verset ; le modèle de monstre n'a aucun champ lié au contenu ; la scène de combat ne reçoit jamais le texte d'une question. |
 
 ## 3. Ressources linguistiques et coraniques
 
@@ -149,7 +176,7 @@ Racine, lemme, forme de mot et occurrence ont chacun leur identifiant. Identifia
 | `exercise`, `question`, `answer` | `id` | type, consigne, réponses acceptées, explication | → lesson |
 | `letter` | `id` | 4 formes, nom, translittération, articulation, illustration | → audio |
 | `audio_asset` | `id` | chemin/URL, récitateur/locuteur, durée, licence | — |
-| `item_def`, `quest_def`, `skill_node`, `monster_def`, `region`, `map_node` | `id` | équipements, quêtes, compétences, monstres, carte | — |
+| `item_def`, `quest_def`, `skill_node`, `monster_def`, `region`, `map_node` | `id` | équipements, quêtes, compétences, monstres (difficultés de mémorisation, sans aucun champ de mot : §2 ter), carte | — |
 | `content_meta` | clé | version du contenu, empreintes SHA-256 du texte coranique | — |
 
 **Base utilisateur (`iqura_user.db`)**
@@ -204,6 +231,7 @@ Cinq espaces : barre en bas sur Android, rail latéral sur Windows.
 | Perte de progression à l'import ou à la fusion | Critique | Sauvegarde avant import, transactions, journaux en ajout seul, tests multi-appareils |
 | Archives malveillantes | Moyenne | Taille décompressée plafonnée, liste blanche, chemins normalisés, schéma JSON validé |
 | Droits flous (Hamidullah, récitations) | Moyenne | Attribution, écran « Sources et licences », éléments interchangeables |
+| Mot coranique traité comme un ennemi (visuel, animation, texte) | Critique | Règle du §2 ter : monstres sans champ de contenu, panneau de question séparé, tests automatiques |
 | Contenu IA non relu (aucun relecteur) | Élevée | Statut visible ; données linguistiques uniquement issues de sources citées |
 | Volume du projet | Élevée | Phases closes par critères d'acceptation testés ; aucun bouton sans fonction |
 
@@ -233,7 +261,7 @@ Un débutant apprend l'alphabet, lit et comprend une part mesurable d'Al-Fāti�
 - **Mémorisation** : FSRS, révision du jour, 5 états de mot, bibliothèque et listes personnelles.
 - **Mini-jeux** : A Reconstruction, B Arabe → français, D Quiz sur une liste, E Reconnaissance audio, F Association.
 - **Labo de prononciation (base)** : écouter, s'enregistrer, réécouter, comparer, recommencer ; sans score.
-- **Jeu RPG 2D** : carte à 2 régions (alphabet, niveau 1) + Sanctuaire ; combats au tour par tour ; 5 à 8 types de monstres ; mini-donjons, un boss par région, Faille des Oubliés ; XP, or, pierres de savoir, encre ; boutique, inventaire, équipement visible ; enchantement +1 à +15 avec pity ; quêtes quotidiennes et hebdomadaires ; mode « apprentissage seul ».
+- **Jeu RPG 2D** : carte à 2 régions (alphabet, niveau 1) + Sanctuaire ; combats au tour par tour ; 5 à 8 types de monstres (difficultés de mémorisation, §2 ter) ; mini-donjons, un boss par région, Faille des Oubliés ; XP, or, pierres de savoir, encre ; boutique, inventaire, équipement visible ; enchantement +1 à +15 avec pity ; quêtes quotidiennes et hebdomadaires ; mode « apprentissage seul ».
 - **Statistiques** : calendrier d'activité, mots et racines par état, temps d'étude.
 - **Documentation** : installation, sauvegarde et restauration, format d'export, sources et licences.
 
