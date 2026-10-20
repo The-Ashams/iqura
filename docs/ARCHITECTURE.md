@@ -297,8 +297,66 @@ construisant le socle (octobre 2026).
 | Tables utilisateur créées | `profile`, `settings`, `review_log`, `xp_ledger`, `local_meta` | Les autres tables du §5 seront ajoutées par migration dans leur phase. `review_log` et `xp_ledger` existent déjà pour tester la fusion des journaux. |
 | Migrations | `PRAGMA user_version` + liste de migrations figées | Une migration publiée ne se modifie jamais ; un test vérifie que la base obtenue correspond au schéma déclaré. |
 | Archives d'une version antérieure | À traiter au premier changement de schéma | Le format 1 ne connaît que le schéma 1 ; une archive plus récente que l'application est refusée. |
-| Base de contenu | Générée par `tools/build_content/build_content.py`, non versionnée dans Git, copiée au démarrage si sa version change | En phase 1 elle ne contient que `content_meta`. |
+| Base de contenu | Générée par `tools/build_content/build_content.py`, non versionnée dans Git (ses sources le sont), copiée au démarrage si sa version change | Voir §12. |
 | Sélection de fichiers | `file_picker` (enregistrer / ouvrir) | Fonctionne sur Android (sélecteur système, aucune permission) et Windows. |
 | Identifiant de l'application | `io.github.theashams.iqura` | Lié au compte GitHub du projet plutôt qu'à un nom de domaine non détenu. Ne plus le changer après la première diffusion (sinon Android le voit comme une autre application). |
 | Signature | APK signé avec la clé de débogage, exécutable Windows non signé | Une clé de publication (secret GitHub) sera nécessaire avant toute diffusion publique. |
 | Compilation | GitHub Actions sans action tierce ; Flutter téléchargé depuis l'archive officielle et vérifié par SHA-256 | Limiter la chaîne d'approvisionnement. |
+
+## 12. Pipeline de contenu coranique (phase 3)
+
+`tools/build_content/build_content.py` produit `iqura_content.db` (schéma 2) à partir des fichiers de `tools/build_content/sources/`, versionnés dans Git et vérifiés par SHA-256 avant toute lecture. Python 3 seul, sans dépendance.
+
+**Sources retenues.**
+
+- **Texte** : Tanzil Uthmani 1.1, format XML (la basmala y est séparée du verset 1, alors que le format texte la colle au verset). Options de téléchargement figées : celles par défaut du site (signes de pause, signe de prosternation, alif suscrit, tatwîl ; sans rub el-hizb), car elles changent le texte.
+- **Recherche** : Tanzil « simple-clean » (sans voyelles), téléchargé tel quel plutôt que calculé.
+- **Traduction** : Hamidullah via Tanzil (usage non commercial). La version de QUL demande un compte.
+- **Morphologie** : Quranic Arabic Corpus 0.4. Le téléchargement exige une adresse e-mail ; celle du porteur du projet a été utilisée avec son accord.
+
+**Intégrité du texte.**
+
+- L'empreinte est le SHA-256 des lignes `sourate|0|basmala` puis `sourate|verset|texte`.
+- Elle est vérifiée trois fois :
+  - par les tests Python, contre une valeur figée ;
+  - par les tests Dart ;
+  - à chaque démarrage de l'application, contre une constante de `lib/data/content_db/quran_integrity.dart`.
+- Si la copie locale de la base est altérée, elle est recopiée une fois depuis l'application ; si le contrôle échoue encore, l'application refuse de démarrer.
+
+**Mots et segments.**
+
+- Un *mot* (`token`, identifiant `sourate:verset:position`) est un mot du texte Tanzil, découpé sur les espaces, sans les signes de pause isolés : c'est une sous-chaîne exacte du verset.
+- Un *segment* (identifiant = emplacement dans le Corpus `s:v:mot:segment`) est un préfixe, un radical ou un suffixe du Corpus, avec son étiquette, ses traits bruts, son lemme et sa racine.
+- `token_segment` relie les deux.
+
+**Alignement Tanzil ↔ Corpus.**
+
+- Les deux sources ne découpent pas toujours les mots de la même façon. Par exemple, « بَعْدَ مَا » fait deux mots chez Tanzil et un seul dans le Corpus ; « إِلْ يَاسِينَ » est un seul segment du Corpus.
+- Elles n'écrivent pas toujours les supports de hamza de la même façon.
+- L'alignement compare donc un squelette de lettres :
+  - supports de hamza ramenés à la lettre de base, hamza isolée et tatwîl ignorées ;
+  - « ى + alif suscrit » équivalent à l'alif suscrit seul.
+- Ce squelette sert uniquement à comparer : aucun texte n'est modifié.
+- Résultat : **100 % des 6 236 versets alignés**. Seuls 4 versets ont un nombre de mots différent entre les deux sources (2:181, 8:6, 13:37, 37:130) ; ils sont listés dans `content_meta` et testés.
+
+**Contenu de la base (schéma 2).**
+
+| Table | Contenu |
+| --- | --- |
+| `source` | Sources citées : titre, attribution, licence, lien, empreinte |
+| `surah` | 114 sourates : nom arabe, translittéré et anglais (Tanzil), lieu et ordre de révélation, basmala |
+| `verse` | 6 236 versets : texte Uthmani, texte de recherche, juzʾ, quart de hizb, page, prosternation |
+| `translation`, `verse_translation` | Traduction Hamidullah |
+| `root` | 1 642 racines (forme Buckwalter et arabe, nombre de segments) |
+| `lemma` | 4 832 lemmes (forme arabe sans le chiffre de désambiguïsation du Corpus, racine, nombre de segments) |
+| `token`, `segment`, `token_segment` | 77 433 mots Tanzil, 128 219 segments du Corpus et leurs liens |
+
+**Pas encore fait.**
+
+- Noms français des sourates : aucune source ouverte trouvée pour l'instant, donc rien n'est inventé.
+- Schèmes (`pattern`) et formes uniques (`word_form`).
+- Sens français mot par mot (rédigés par IA, à marquer « non vérifié »).
+- Index de recherche plein texte.
+- Liste d'exclusion des questions de combat (§2 ter).
+
+La base pèse 35 Mo et l'APK passe de 60 à 71 Mo. Découper l'APK par architecture le ramènerait à environ un tiers.

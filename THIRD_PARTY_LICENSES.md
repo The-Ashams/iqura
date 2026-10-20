@@ -4,7 +4,7 @@ IQURA est distribué sous licence **GPL-3.0** (voir `LICENSE`). Ce fichier
 liste tout ce que l'application utilise qui n'a pas été écrit pour elle, avec
 la licence et les points à surveiller.
 
-Dernier audit : 20 octobre 2026 (phase 1).
+Dernier audit : 20 octobre 2026 (phases 1 et 3).
 
 ## Méthode d'audit
 
@@ -49,11 +49,21 @@ Outils de développement (non embarqués) : `flutter_test` (SDK, BSD-3-Clause),
 | Actions GitHub `actions/checkout`, `actions/setup-java`, `actions/upload-artifact` | MIT | Actions officielles de GitHub. Aucune action tierce. |
 | Python 3 (`sqlite3`, `unittest`) | PSF | Génération de la base de contenu. |
 
-## Données et ressources
+## Données intégrées
 
-Aucune donnée coranique, linguistique, audio, police ou graphique n'est
-encore intégrée (phase 1). Les sources prévues et leurs doutes de licence
-sont décrits dans `docs/ARCHITECTURE.md` §3.
+Fichiers copiés tels quels dans `tools/build_content/sources/` (copie verbatim
+autorisée par leurs auteurs), vérifiés par SHA-256 (`sources.json`) et cités
+dans l'application (Paramètres › Sources des données).
+
+| Donnée | Source | Licence / conditions | Points de vigilance |
+| --- | --- | --- | --- |
+| Texte coranique Uthmani (version 1.1) et texte sans voyelles (recherche) | [Tanzil Project](https://tanzil.net) | CC BY 3.0 ; copie verbatim autorisée, **modification interdite** ; citer Tanzil avec un lien | Texte jamais modifié : empreinte SHA-256 vérifiée par les tests et à chaque démarrage. |
+| Métadonnées (sourates, juzʾ, hizb, pages, prosternations) | Tanzil Project | CC BY | — |
+| Traduction française de Muhammad Hamidullah (`fr.hamidullah`) | Diffusée par [Tanzil](https://tanzil.net/trans/) | **Usage non commercial uniquement** (conditions Tanzil) ; aucune licence publiée par l'éditeur | ⚠️ Tanzil n'indique pas l'édition exacte : la révision du Complexe Roi Fahd (2000) n'est pas confirmée. IQURA est gratuit, donc dans les conditions ; toute utilisation commerciale exigerait l'accord de l'éditeur. Traduction remplaçable. |
+| Morphologie : segments, racines, lemmes, traits (version 0.4) | [Quranic Arabic Corpus](https://corpus.quran.com), Kais Dukes, Université de Leeds | GNU GPL ; copie verbatim autorisée, modification interdite ; citer la source avec un lien | ⚠️ La FAQ du Corpus parle d'un usage « de recherche » ; une confirmation écrite des auteurs reste souhaitable. Téléchargé le 20/10/2026 avec l'adresse e-mail du porteur du projet (exigée par le site). |
+| Table de translittération Buckwalter étendue | [Quranic Arabic Corpus](https://corpus.quran.com/java/buckwalter.jsp) | Documentation publique du Corpus | Recopiée dans `tools/build_content/buckwalter.py` pour convertir lemmes et racines en écriture arabe. |
+
+Pas encore intégrés : audio, polices arabes dédiées, sprites.
 
 ## Inventaire complet des paquets Dart
 

@@ -1,0 +1,69 @@
+{
+  "_comment": "Fichiers sources copiés tels quels (copie verbatim autorisée). Toute modification est détectée par l'empreinte SHA-256. Voir tools/build_content/fetch_sources.py pour les retélécharger.",
+  "sources": [
+    {
+      "id": "tanzil-uthmani",
+      "path": "tanzil/quran-uthmani.xml",
+      "sha256": "8c5aeae20363a98f6963720d29fce040ca8b56a8e75f8b564c257fce7f6d0417",
+      "url": "https://tanzil.net/pub/download/index.php?quranType=uthmani&outType=xml&marks=true&sajdah=true&alef=true&tatweel=true&agree=true",
+      "retrieved": "2026-10-20",
+      "title": "Tanzil Quran Text (Uthmani, Version 1.1)",
+      "publisher": "Tanzil Project",
+      "license": "CC BY 3.0 — copie verbatim autorisée, modification interdite",
+      "attribution": "Texte coranique : Tanzil Project (tanzil.net)",
+      "link": "https://tanzil.net",
+      "notes": "Options de téléchargement = options par défaut du site : signes de pause, signe de prosternation, alif suscrit, tatwîl ; sans rub el-hizb."
+    },
+    {
+      "id": "tanzil-simple-clean",
+      "path": "tanzil/quran-simple-clean.xml",
+      "sha256": "140787b7c399b11d54bfa72c237075916084232efa8a4cddf704cc8a2a74b1fe",
+      "url": "https://tanzil.net/pub/download/index.php?quranType=simple-clean&outType=xml&agree=true",
+      "retrieved": "2026-10-20",
+      "title": "Tanzil Quran Text (Simple Clean, Version 1.1)",
+      "publisher": "Tanzil Project",
+      "license": "CC BY 3.0 — copie verbatim autorisée, modification interdite",
+      "attribution": "Texte coranique : Tanzil Project (tanzil.net)",
+      "link": "https://tanzil.net",
+      "notes": "Texte sans voyelles, utilisé uniquement pour la recherche."
+    },
+    {
+      "id": "tanzil-metadata",
+      "path": "tanzil/quran-data.xml",
+      "sha256": "8867c1d88191472adec9db694b3cd9f135b1a2ef580574d32cf888dcb22c5c7a",
+      "url": "https://tanzil.net/res/text/metadata/quran-data.xml",
+      "retrieved": "2026-10-20",
+      "title": "Tanzil Quran Metadata 1.0",
+      "publisher": "Tanzil Project",
+      "license": "CC BY",
+      "attribution": "Métadonnées (sourates, juzʾ, hizb, pages, prosternations) : Tanzil Project (tanzil.net)",
+      "link": "https://tanzil.net"
+    },
+    {
+      "id": "tanzil-fr-hamidullah",
+      "path": "tanzil/fr.hamidullah.txt",
+      "sha256": "9834cfcd14b506a6c0223d86ac259e896f2bfb44c0823d83d827c27ffea57f03",
+      "url": "https://tanzil.net/trans/?transID=fr.hamidullah&type=txt-2",
+      "retrieved": "2026-10-20",
+      "title": "Traduction française de Muhammad Hamidullah (fr.hamidullah, mise à jour Tanzil du 18 juillet 2011)",
+      "publisher": "Tanzil Project (diffusion)",
+      "license": "Usage non commercial uniquement (conditions Tanzil) ; aucune licence publiée par l'éditeur",
+      "attribution": "Traduction : Muhammad Hamidullah, via Tanzil (tanzil.net/trans)",
+      "link": "https://tanzil.net/trans/",
+      "notes": "Tanzil n'indique pas l'édition exacte (la révision du Complexe Roi Fahd de 2000 n'est pas confirmée)."
+    },
+    {
+      "id": "qac-morphology",
+      "path": "qac/quranic-corpus-morphology-0.4.zip",
+      "sha256": "fda26f87cc58b42fc992a3ad666a562805b636f34bcecb46326d048337ca7999",
+      "url": "https://corpus.quran.com/download/",
+      "retrieved": "2026-10-20",
+      "title": "Quranic Arabic Corpus, données morphologiques version 0.4",
+      "publisher": "Kais Dukes, Université de Leeds",
+      "license": "GNU GPL ; copie verbatim autorisée, modification interdite ; citer la source avec un lien",
+      "attribution": "Morphologie (segments, racines, lemmes) : Quranic Arabic Corpus (corpus.quran.com)",
+      "link": "https://corpus.quran.com",
+      "notes": "Téléchargement soumis à la saisie d'une adresse e-mail ; pas de retéléchargement automatique."
+    }
+  ]
+}

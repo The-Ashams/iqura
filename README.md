@@ -4,11 +4,12 @@ Application **gratuite et open source** (GPL-3.0) pour apprendre l'arabe et
 l'arabe coranique, sous la forme d'un RPG 2D. Interface en français.
 Plateformes : Android et Windows.
 
-> **État : phase 1 (socle technique), version 0.1.0 en développement.**
-> L'application démarre, crée un profil, gère les réglages, les sauvegardes
-> et l'export/import de la progression. Les espaces Carte, Grimoire,
-> Sanctuaire et Héros sont affichés comme « Pas encore disponible ».
-> Aucune donnée coranique n'est encore intégrée.
+> **État : version 0.1.0 en développement.** Phase 1 (socle) terminée ;
+> phase 3 en cours : le texte coranique (Tanzil), la traduction Hamidullah
+> et la morphologie du Quranic Arabic Corpus sont intégrés dans la base de
+> contenu, mais pas encore affichés (le lecteur du Sanctuaire reste à faire).
+> Les espaces Carte, Grimoire, Sanctuaire et Héros sont affichés comme
+> « Pas encore disponible ».
 
 Dossier d'architecture : [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 

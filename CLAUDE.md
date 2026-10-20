@@ -32,7 +32,7 @@ Le dossier complet d'analyse et d'architecture est dans `docs/ARCHITECTURE.md`. 
 | Ressources | XP, or, **pierres de savoir** (gagnées uniquement quand un mot ou une racine progresse réellement dans FSRS ; impossibles à farmer), encre de scribe, fragments de boss |
 | Enchantement | +1 à +15, taux décroissants, +5 points par échec, pity (3 / 5 / 8 échecs selon le palier), jamais de destruction ni de perte de niveau, effets visuels à +5 / +10 / +15. Valeurs dans `docs/ARCHITECTURE.md` §2 bis |
 | Statistiques de jeu | Elles n'influencent jamais les notes FSRS ni les statuts de maîtrise |
-| Sources | Texte : Tanzil. Morphologie : Quranic Arabic Corpus / QUL. Traduction : Hamidullah (rév. 2000), créditée et remplaçable. Audio versets : EveryAyah, récitateur par défaut al-Ḥuṣarī, packs téléchargeables. Audio mot : segments horodatés (QUL) |
+| Sources | Texte : Tanzil. Morphologie : Quranic Arabic Corpus / QUL. Traduction : Hamidullah (via Tanzil, usage non commercial), créditée et remplaçable. Audio versets : EveryAyah, récitateur par défaut al-Ḥuṣarī, packs téléchargeables. Audio mot : segments horodatés (QUL) |
 | Audio hors Coran | **Reporté** : voix de synthèse après le MVP. Prévoir les emplacements audio dès maintenant ; l'app fonctionne sans |
 | Translittération | Savante par défaut (ā, ḍ, ʿ), simplifiée au choix |
 | Synchronisation | Sans serveur : export/import d'une archive ZIP versionnée (JSON + SHA-256), restauration complète ou fusion (UUID v7, journaux en ajout seul, HLC) |
@@ -48,13 +48,13 @@ Le MVP (v0.1) prend une première tranche des phases 1 à 6 : voir `docs/ARCHITE
 ## Commandes
 
 - Installer Flutter + SDK Android (session cloud) : `tools/setup_cloud.sh` (lancé automatiquement par `.claude/hooks/session-start.sh`).
-- Base de contenu : `python3 tools/build_content/build_content.py` (obligatoire avant `flutter build`).
+- Base de contenu : `python3 tools/build_content/build_content.py` (obligatoire avant `flutter build` et `flutter test`). Sources versionnées et vérifiées par SHA-256 dans `tools/build_content/sources/` ; `fetch_sources.py` compare avec les versions en ligne.
 - Vérifications : `dart format lib test`, `flutter analyze`, `flutter test`, `python3 -m unittest discover -s tools/build_content`.
 - Compilation : `flutter build apk --release` ; Windows uniquement via GitHub Actions (`.github/workflows/build.yml`).
 - Inventaire des licences : `python3 tools/third_party/list_dart_packages.py`.
 
 ## Doutes de licence à garder en tête
 
-- Traduction Hamidullah : aucune licence publiée.
+- Traduction Hamidullah : aucune licence publiée ; Tanzil la diffuse pour un usage non commercial, sans préciser l'édition.
 - Récitations EveryAyah : aucune condition publiée ; les droits restent aux récitateurs.
 - Quranic Arabic Corpus : la FAQ mentionne un usage « de recherche ». Une confirmation écrite des auteurs est souhaitable.

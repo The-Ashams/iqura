@@ -9,6 +9,7 @@ import '../widgets/ai_content_badge.dart';
 import '../widgets/arabic_text.dart';
 import 'backups_screen.dart';
 import 'pseudo_dialog.dart';
+import 'sources_screen.dart';
 import 'transfer_actions.dart';
 
 class SettingsScreen extends ConsumerWidget {
@@ -191,14 +192,17 @@ class _AboutTile extends ConsumerWidget {
             'Version du contenu : ${content.contentVersion}',
           ),
         ),
-        const ListTile(
-          leading: Icon(Icons.source_outlined),
-          title: Text('Données linguistiques'),
-          subtitle: Text(
-            'Aucune donnée coranique ni linguistique n’est encore intégrée. '
-            'Le texte du Coran viendra de Tanzil (CC BY 3.0) et la '
-            'morphologie du Quranic Arabic Corpus / QUL ; chaque source sera '
-            'citée ici.',
+        ListTile(
+          leading: const Icon(Icons.source_outlined),
+          title: const Text('Sources des données'),
+          subtitle: const Text(
+            'Tanzil (texte coranique, traduction), Quranic Arabic Corpus '
+            '(morphologie).',
+          ),
+          trailing: const Icon(Icons.chevron_right),
+          onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute<void>(builder: (_) => const SourcesScreen()),
           ),
         ),
         ListTile(
