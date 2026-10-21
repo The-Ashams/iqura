@@ -35,6 +35,12 @@ class TrimTest(unittest.TestCase):
         r = trim.trim_first_utterance(x, SR)
         self.assertAlmostEqual(r.speech_end, 0.95, delta=0.03)
 
+    def test_soft_vowel_ending_is_kept(self):
+        # Voyelle longue dont la fin s'éteint sous le seuil de détection.
+        x = np.concatenate([tone(0.3), tone(0.2, 0.015), silence(0.8), tone(0.5)])
+        r = trim.trim_first_utterance(x, SR)
+        self.assertAlmostEqual(r.speech_end, 0.5, delta=0.03)
+
     def test_ends_with_a_fade(self):
         r = trim.trim_first_utterance(np.concatenate([tone(0.5), silence(0.5)]), SR)
         self.assertLess(abs(float(r.audio[-1])), 1e-3)

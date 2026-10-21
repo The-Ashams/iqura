@@ -9,8 +9,11 @@ de parole :
    maximale ;
 3. les zones parlées séparées par moins de `max_gap` sont fusionnées (pauses
    normales entre les mots d'une phrase) ;
-4. on garde la première zone, avec une petite marge avant et après, et un
-   fondu de fin pour éviter un clic.
+4. la fin de la première zone est prolongée tant que l'énergie reste au-dessus
+   d'un seuil plus bas (`decay_threshold`) : la fin d'une voyelle longue
+   s'éteint doucement et ne doit pas être coupée ;
+5. on garde cette zone, avec une petite marge avant et après, et un fondu de
+   fin pour éviter un clic.
 
 `expected_min_duration` permet de détecter un résultat tronqué : l'appelant
 régénère alors avec une autre graine.
@@ -37,15 +40,19 @@ class TrimResult:
         return self.speech_end - self.speech_start
 
 
+def frame_energy(x: np.ndarray, sr: int) -> np.ndarray:
+    fr = max(1, int(sr * FRAME))
+    n = len(x) // fr
+    return np.sqrt(np.mean(x[: n * fr].reshape(n, fr) ** 2, axis=1))
+
+
 def voiced_regions(x: np.ndarray, sr: int, rel_threshold: float = 0.05,
                    max_gap: float = 0.25) -> list[tuple[float, float]]:
     """Zones parlées (début, fin) en secondes, pauses courtes fusionnées."""
-    fr = max(1, int(sr * FRAME))
-    n = len(x) // fr
+    energy = frame_energy(x, sr)
+    n = len(energy)
     if n == 0:
         return []
-    frames = x[: n * fr].reshape(n, fr)
-    energy = np.sqrt(np.mean(frames ** 2, axis=1))
     peak = float(energy.max())
     if peak <= 0:
         return []
@@ -72,13 +79,23 @@ def voiced_regions(x: np.ndarray, sr: int, rel_threshold: float = 0.05,
 
 def trim_first_utterance(x: np.ndarray, sr: int, *, rel_threshold: float = 0.05,
                          max_gap: float = 0.25, lead: float = 0.05,
-                         tail: float = 0.12, fade: float = 0.03) -> TrimResult:
+                         tail: float = 0.12, fade: float = 0.03,
+                         decay_threshold: float = 0.01,
+                         max_decay: float = 0.3) -> TrimResult:
     if x.ndim > 1:
         x = x.mean(axis=1)
     regions = voiced_regions(x, sr, rel_threshold, max_gap)
     if not regions:
         raise ValueError("aucune parole détectée")
     start, end = regions[0]
+    energy = frame_energy(x, sr)
+    floor = float(energy.max()) * decay_threshold
+    limit = regions[1][0] if len(regions) > 1 else len(x) / sr
+    limit = min(limit, end + max_decay)
+    j = int(round(end / FRAME))
+    while j < len(energy) and (j + 1) * FRAME <= limit and energy[j] > floor:
+        j += 1
+    end = max(end, j * FRAME)
     dropped = sum(b - a for a, b in regions[1:])
     a = max(0, int((start - lead) * sr))
     b = min(len(x), int((end + tail) * sr))
