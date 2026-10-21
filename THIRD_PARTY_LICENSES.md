@@ -72,7 +72,21 @@ dans l'application (Paramètres › Sources des données).
 
 L'OFL autorise l'intégration dans une application GPL. Les noms de police réservés (« Amiri ») ne sont pas modifiés, puisque les fichiers sont copiés tels quels. Les licences sont affichées dans Paramètres › Licences des bibliothèques.
 
-Pas encore intégrés : audio, sprites.
+## Synthèse vocale (outil de génération, non embarqué)
+
+Les enregistrements des leçons sont produits une fois par
+`tools/build_audio/generate.py`, puis livrés comme fichiers audio. Le modèle
+n'est pas intégré à l'application. Chaque enregistrement est marqué
+« synthèse » dans la base de contenu et dans l'application.
+
+| Composant | Version | Licence | Remarques |
+| --- | --- | --- | --- |
+| [Chatterbox Multilingual](https://huggingface.co/ResembleAI/chatterbox) (Resemble AI) : poids du modèle | révision HF `5bb1f6e` | MIT (fiche du modèle) | ⚠️ Données d'entraînement non publiées (« 0,5 M heures de données nettoyées ») ; la voix par défaut provient, selon la fiche, de « données librement disponibles sur Internet ». Les sorties ne font l'objet d'aucune restriction dans la licence. |
+| [chatterbox-tts](https://pypi.org/project/chatterbox-tts/) | 0.1.7 | MIT | Code d'inférence. |
+| [resemble-perth](https://pypi.org/project/resemble-perth/) | 1.0.1 | MIT | Filigrane inaudible ajouté par Chatterbox à chaque fichier : les enregistrements restent identifiables comme synthèse. |
+| PyTorch, NumPy, soundfile | — | BSD | Dépendances de l'outil de génération. |
+
+Pas encore intégrés : fichiers audio, sprites.
 
 ## Inventaire complet des paquets Dart
 

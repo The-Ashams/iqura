@@ -60,7 +60,7 @@ Gratuit, sans publicité ni achat, open source **GPL-3.0**, en français, pour *
 | Hors ligne | Tout, sauf téléchargement des récitations, mises à jour de contenu et option IA |
 | Affichage | Arabe RTL, diacritiques corrects, taille réglable ; polices Amiri et Amiri Quran (SIL OFL) ; translittération *Arabica* par défaut, simplifiée au choix, masquable (`docs/TRANSLITTERATION.md`) ; clair/sombre ; animations désactivables |
 | Ergonomie | Souris et clavier (Windows), tactile (Android), plusieurs tailles d'écran |
-| Audio | **Obligatoire dès le MVP.** Coran : EveryAyah (al-Ḥuṣarī par défaut), mots par découpage horodaté (QUL), packs par sourate. Leçons et dialogues : **décision ouverte n° 1** |
+| Audio | **Obligatoire dès le MVP.** Coran : EveryAyah (al-Ḥuṣarī par défaut), mots par découpage horodaté (QUL), packs par sourate. Leçons et dialogues : **Chatterbox Multilingual** (MIT, décision n° 1 tranchée le 21/10/2026), généré une fois par `tools/build_audio/`, coupé après la première prise de parole, signalé « synthèse » |
 | Compilation | Claude Code + GitHub Actions (APK et exe) sur `The-Ashams/iqura` |
 
 ## Jalons (cahier §10)
@@ -72,7 +72,7 @@ Gratuit, sans publicité ni achat, open source **GPL-3.0**, en français, pour *
 | J2 à J5 | Régions 2 à 5 (Fondations, Moteur de la langue, Lire et parler, Le Coran) | Voir cahier §10 |
 
 **Ordre de travail pour J1** :
-1. Solution audio (décision n° 1).
+1. Solution audio (décision n° 1) : **fait**, Chatterbox Multilingual ; reste à générer tous les enregistrements des leçons.
 2. Pipeline de données (fait en grande partie : Tanzil vérifié, Quranic Arabic Corpus aligné).
 3. Contenus de l'étape 1, validés par l'utilisateur leçon par leçon.
 4. Coquille du jeu.
@@ -110,4 +110,5 @@ On avance région par région, chaque région complète et jouable.
 
 - **Traduction Hamidullah** : aucune licence publiée ; Tanzil la diffuse pour un usage non commercial.
 - **EveryAyah** : aucune condition publiée ; les droits restent aux récitateurs.
+- **Chatterbox** : poids MIT, mais Resemble AI ne publie ni ses données d'entraînement ni l'origine exacte de la voix par défaut (« prompts sourced from freely available data on the internet »).
 - **Quranic Arabic Corpus** : la FAQ parle d'un « usage de recherche » ; un mail aux auteurs est à envoyer par l'utilisateur (décision ouverte n° 7).
