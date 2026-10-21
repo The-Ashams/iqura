@@ -258,7 +258,7 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 1 | Audio des leçons et dialogues | **Décidé le 21/10/2026 : Chatterbox Multilingual** (voir section 13) |
 | 2 | Univers et style graphique | **Décidé le 21/10/2026 : pixel art libre**, monde inspiré des cités de savoir historiques, sans figures sacrées (voir section 13) |
 | 3 | Nom et scénario de l'Histoire | **Décidé le 21/10/2026** : *La Bibliothèque oubliée*, cité Madīnat al-Ḥikma ; synopsis du chapitre 1 dans `docs/HISTOIRE.md` (voir section 13) |
-| 4 | Seuil « sourate prête à étudier » | 80 % de mots reconnus ; Al-Fātiḥa ouverte d'office |
+| 4 | Seuil « sourate prête à étudier » | **Décidé le 21/10/2026 : 80 %** de mots reconnus ; Al-Fātiḥa ouverte d'office (voir section 13) |
 | 5 | Récitateur par défaut | al-Ḥuṣarī |
 | 6 | Conversation avec une IA (J4) | Option en ligne, désactivée par défaut |
 | 7 | Licence du Quranic Arabic Corpus | Mail aux auteurs à envoyer par l'utilisateur |
@@ -295,6 +295,12 @@ Décisions prises par l'utilisateur, consignées par Claude Code. Les détails t
 - Méthode : Claude propose un synopsis du chapitre 1 et quelques noms ; l'utilisateur valide ou corrige **avant** toute écriture des dialogues. Les dialogues sont marqués « rédigé par IA — non vérifié ».
 - Aucun prophète ni aucune figure religieuse n'est représenté ni ne prend la parole.
 - **Validé par l'utilisateur** : synopsis du chapitre 1 (`docs/HISTOIRE.md`), titre *La Bibliothèque oubliée*, cité Madīnat al-Ḥikma (مَدِينَةُ الْحِكْمَةِ, « la cité de la sagesse », traduction rédigée par IA, non vérifiée).
+
+### Décision n° 4 : seuil « sourate prête à étudier » (21 octobre 2026)
+
+- **Retenu : 80 % de mots reconnus** (valeur par défaut du cahier, recommandée) ; **Al-Fātiḥa ouverte d'office**.
+- Le texte coranique ne peut pas être simplifié : ce seuil est donc distinct des 95 % exigés pour les textes gradués. L'appui sur un mot inconnu affiche son sens et crée une carte de révision.
+- Écartés : 90 % (sourates ouvertes trop tard) ; toutes les sourates ouvertes sans seuil.
 
 ### Environnement de développement (session cloud)
 
