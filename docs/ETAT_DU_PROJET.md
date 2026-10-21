@@ -42,17 +42,13 @@ Pour régénérer l'audio : voir `CLAUDE.md`, section « Commandes ». L'environ
    - la place de ā / ī dans les leçons.
 2. **Écoute des 44 enregistrements des leçons** (page d'écoute à produire en début de session suivante si l'utilisateur le souhaite).
 3. **Décisions ouvertes du cahier §12**, à poser une à la fois, avec une recommandation :
-   - n° 2 : univers et style graphique (prochaine question) ;
-   - n° 3 : nom et scénario de l'Histoire ;
-   - n° 4 : seuil « sourate prête à étudier » ;
-   - n° 5 : récitateur par défaut ;
-   - n° 6 : conversation avec une IA ;
-   - n° 7 : mail aux auteurs du Quranic Arabic Corpus (à envoyer par l'utilisateur).
-4. **Fusion de la pull request n° 2** dans `main`.
+   - n° 6 : conversation avec une IA, **reportée à J4** par l'utilisateur ;
+   - n° 7 : licence du Quranic Arabic Corpus, doute levé par la notice du fichier (voir cahier §13) ; reste à savoir si l'utilisateur veut quand même écrire aux auteurs.
+4. Pull request n° 2 fusionnée dans `main` le 21/10/2026.
 
 ## 4. Prochaine étape prévue
 
-1. Poser la décision ouverte n° 2 (univers et style graphique), avec une recommandation.
+1. Décisions n° 2 (pixel art libre) et n° 3 (*La Bibliothèque oubliée*, synopsis dans `docs/HISTOIRE.md`) tranchées, ainsi que n° 4 (seuil de 80 %) et n° 5 (al-Ḥuṣarī murattal ; horodatages QUL à vérifier). Décision n° 6 reportée à J4. Décision n° 7 : doute levé par la notice du fichier. Ensuite, chercher et auditer des packs pixel art libres cohérents avec l'univers.
 2. Obtenir la validation des leçons 0 à 3, puis rédiger les leçons 4 à 14 et le boss.
 3. Intégrer la lecture audio dans l'application (paquet audité), avec la mention « synthèse ».
 4. Suite de l'ordre de travail J1 (`CLAUDE.md`) : coquille du jeu, chapitre 1, Expédition, Sanctuaire (Al-Fātiḥa).
@@ -61,7 +57,7 @@ Pour régénérer l'audio : voir `CLAUDE.md`, section « Commandes ». L'environ
 
 - **Schèmes** : absents du Quranic Arabic Corpus 0.4 ; aucune source ouverte fiable trouvée ; rien n'est inventé.
 - **Traduction Hamidullah** : édition exacte non indiquée par Tanzil ; usage non commercial uniquement.
-- **Quranic Arabic Corpus** : la FAQ parle d'un « usage de recherche » ; confirmation des auteurs souhaitable (décision n° 7).
+- **Quranic Arabic Corpus** : licence vérifiée dans la notice du fichier ; conditions respectées (source, lien, notice reproduite dans l'écran des sources).
 - **Police du Mushaf** : le cahier cite KFGQPC Hafs ; IQURA utilise Amiri Quran (licence KFGQPC à auditer avant tout changement).
 - **Chatterbox** : données d'entraînement et origine de la voix par défaut non publiées. Le modèle prononce parfois mal une voyelle longue isolée (بَا aussi court que بَ) : à juger à l'écoute.
 - **Synthèse non reproductible en CI** : le modèle est trop lourd ; les MP3 sont donc versionnés, et la CI vérifie seulement leur empreinte.

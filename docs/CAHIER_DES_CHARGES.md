@@ -188,7 +188,7 @@ Toute donnée linguistique vient d'une source citée ; tout texte rédigé par I
 - Bouton « Signaler une erreur » sur chaque fiche.
 - Toute dépendance et ressource auditée et listée dans `THIRD_PARTY_LICENSES.md` ; tout point douteux signalé.
 
-**Points douteux connus** : traduction Hamidullah (aucune licence publiée) ; EveryAyah (aucune condition publiée) ; Quranic Arabic Corpus (FAQ « usage de recherche » : confirmation écrite souhaitable).
+**Points douteux connus** : traduction Hamidullah (aucune licence publiée) ; EveryAyah (aucune condition publiée) ; Quranic Arabic Corpus : doute levé par la notice du fichier, qui autorise l'usage dans toute application (voir section 13).
 
 ## 9. Technique
 
@@ -256,12 +256,12 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | N° | Question | Valeur par défaut |
 | --- | --- | --- |
 | 1 | Audio des leçons et dialogues | **Décidé le 21/10/2026 : Chatterbox Multilingual** (voir section 13) |
-| 2 | Univers et style graphique | Monde inspiré des cités de savoir historiques, sans figures sacrées ; pixel art à partir de packs libres |
-| 3 | Nom et scénario de l'Histoire | Le voyageur et la bibliothèque oubliée, à détailler avec l'utilisateur au début de J1 |
-| 4 | Seuil « sourate prête à étudier » | 80 % de mots reconnus ; Al-Fātiḥa ouverte d'office |
-| 5 | Récitateur par défaut | al-Ḥuṣarī |
-| 6 | Conversation avec une IA (J4) | Option en ligne, désactivée par défaut |
-| 7 | Licence du Quranic Arabic Corpus | Mail aux auteurs à envoyer par l'utilisateur |
+| 2 | Univers et style graphique | **Décidé le 21/10/2026 : pixel art libre**, monde inspiré des cités de savoir historiques, sans figures sacrées (voir section 13) |
+| 3 | Nom et scénario de l'Histoire | **Décidé le 21/10/2026** : *La Bibliothèque oubliée*, cité Madīnat al-Ḥikma ; synopsis du chapitre 1 dans `docs/HISTOIRE.md` (voir section 13) |
+| 4 | Seuil « sourate prête à étudier » | **Décidé le 21/10/2026 : 80 %** de mots reconnus ; Al-Fātiḥa ouverte d'office (voir section 13) |
+| 5 | Récitateur par défaut | **Décidé le 21/10/2026 : al-Ḥuṣarī, murattal** (EveryAyah `Husary_128kbps`) (voir section 13) |
+| 6 | Conversation avec une IA (J4) | **Reportée à J4** par l'utilisateur le 21/10/2026 (voir section 13) |
+| 7 | Licence du Quranic Arabic Corpus | **Doute levé le 21/10/2026** par la notice du fichier ; mail aux auteurs facultatif (voir section 13) |
 
 ## 13. Journal des décisions
 
@@ -281,6 +281,48 @@ Décisions prises par l'utilisateur, consignées par Claude Code. Les détails t
 - **Refusés** par l'utilisateur : eSpeak NG, eSpeak NG avec les voix MBROLA ar1/ar2, Azure Neural TTS (service payant avec compte).
 - **Comparés, non retenus** : VoxCPM2 (Apache-2.0), Piper « kareem » (licence des données de la voix inconnue), MMS-TTS de Meta (non commercial, supprime les voyelles). MOSS-TTS n'a pas pu être testé (17 Go).
 - Point douteux : Resemble AI ne publie ni ses données d'entraînement ni l'origine exacte de la voix par défaut.
+
+### Décision n° 2 : univers et style graphique (21 octobre 2026)
+
+- **Retenu : pixel art à partir de packs libres** (valeur par défaut du cahier, recommandée).
+- Univers : monde inspiré des cités de savoir historiques (bibliothèques, observatoires, caravansérails), sans aucune figure sacrée ni représentation de prophète.
+- Chaque pack graphique est audité avant intégration (licence CC0 de préférence) et listé dans `THIRD_PARTY_LICENSES.md`.
+- Écartés : illustration 2D vectorielle (peu de packs libres cohérents) et style minimaliste ou abstrait (moins « jeu »).
+
+### Décision n° 3 : nom et scénario de l'Histoire (21 octobre 2026)
+
+- **Retenu : la base du cahier**. Un voyageur arrive dans une cité de savoir où l'on parle arabe et où une grande bibliothèque a été oubliée ; en comprenant la langue, il reconstruit la cité.
+- Méthode : Claude propose un synopsis du chapitre 1 et quelques noms ; l'utilisateur valide ou corrige **avant** toute écriture des dialogues. Les dialogues sont marqués « rédigé par IA — non vérifié ».
+- Aucun prophète ni aucune figure religieuse n'est représenté ni ne prend la parole.
+- **Validé par l'utilisateur** : synopsis du chapitre 1 (`docs/HISTOIRE.md`), titre *La Bibliothèque oubliée*, cité Madīnat al-Ḥikma (مَدِينَةُ الْحِكْمَةِ, « la cité de la sagesse », traduction rédigée par IA, non vérifiée).
+
+### Décision n° 4 : seuil « sourate prête à étudier » (21 octobre 2026)
+
+- **Retenu : 80 % de mots reconnus** (valeur par défaut du cahier, recommandée) ; **Al-Fātiḥa ouverte d'office**.
+- Le texte coranique ne peut pas être simplifié : ce seuil est donc distinct des 95 % exigés pour les textes gradués. L'appui sur un mot inconnu affiche son sens et crée une carte de révision.
+- Écartés : 90 % (sourates ouvertes trop tard) ; toutes les sourates ouvertes sans seuil.
+
+### Décision n° 5 : récitateur par défaut (21 octobre 2026)
+
+- **Retenu : al-Ḥuṣarī en récitation murattal** (valeur par défaut du cahier, recommandée) : EveryAyah, dossier `Husary_128kbps` (présence vérifiée le 21/10/2026). Le joueur pourra en changer plus tard.
+- Écartés comme valeur par défaut : al-Ḥuṣarī *muʿallim* (contenu non vérifié à l'écoute) et *mujawwad* (plus orné, moins adapté au mot à mot).
+- **À vérifier** : disponibilité des horodatages mot par mot de QUL pour cette récitation (nécessaires pour écouter un mot isolé).
+
+### Décision n° 6 : conversation avec une IA (21 octobre 2026)
+
+- **Reportée à J4** par l'utilisateur : la décision reste entièrement ouverte jusqu'à l'étape 4. Rien n'est prévu ni développé d'ici là.
+- Pistes présentées, non retenues pour l'instant : option en ligne désactivée par défaut (valeur du cahier) ; aucune IA.
+- D'ici J4, « Répondre aux personnages » se fait hors ligne (choix ou reconstitution).
+
+### Décision n° 7 : licence du Quranic Arabic Corpus (21 octobre 2026)
+
+- L'utilisateur a relevé sur le site du Corpus la notice de la version 0.4 (GNU GPL, Kais Dukes, 2011), identique à celle du fichier téléchargé.
+- Conditions d'utilisation de la notice du fichier : usage autorisé « dans tout site web ou application », à condition de citer clairement la source avec un lien vers corpus.quran.com et de reproduire la notice dans les œuvres dérivées.
+- IQURA respecte ces trois conditions :
+  - archive conservée telle quelle, vérifiée par SHA-256 ;
+  - source et lien dans Paramètres › Sources des données ;
+  - notice reproduite mot pour mot sur ce même écran.
+- La FAQ du site parle d'un usage « de recherche », mais la notice du fichier, plus précise, autorise les applications. Le mail aux auteurs n'est donc plus nécessaire ; il reste possible si l'utilisateur le souhaite.
 
 ### Environnement de développement (session cloud)
 

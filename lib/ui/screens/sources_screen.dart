@@ -11,6 +11,7 @@ class SourcesScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final content = ref.watch(contentDatabaseProvider);
     final sources = content.sources();
+    final notices = content.sourceNotices();
     final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(title: const Text('Sources des données')),
@@ -45,6 +46,19 @@ class SourcesScreen extends ConsumerWidget {
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(s.notes!, style: theme.textTheme.bodySmall),
+                      ),
+                    if (notices[s.id] != null)
+                      ExpansionTile(
+                        tilePadding: EdgeInsets.zero,
+                        title: const Text('Notice de copyright d\'origine'),
+                        children: [
+                          SelectableText(
+                            notices[s.id]!,
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              fontFamily: 'monospace',
+                            ),
+                          ),
+                        ],
                       ),
                   ],
                 ),

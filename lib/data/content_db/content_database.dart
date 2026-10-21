@@ -159,5 +159,18 @@ class ContentDatabase {
 
   String get contentVersion => meta()['content_version'] ?? 'inconnue';
 
+  /// Notices de copyright d'origine, reproduites mot pour mot (conditions du
+  /// Quranic Arabic Corpus et de la traduction), par identifiant de source.
+  Map<String, String> sourceNotices() {
+    final m = meta();
+    return {
+      for (final e in const {
+        'qac-morphology': 'qac_header',
+        'tanzil-fr-hamidullah': 'translation_header',
+      }.entries)
+        if (m[e.value] != null) e.key: m[e.value]!,
+    };
+  }
+
   void close() => _db.close();
 }

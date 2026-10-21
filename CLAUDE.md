@@ -60,7 +60,9 @@ Gratuit, sans publicité ni achat, open source **GPL-3.0**, en français, pour *
 | Hors ligne | Tout, sauf téléchargement des récitations, mises à jour de contenu et option IA |
 | Affichage | Arabe RTL, diacritiques corrects, taille réglable ; polices Amiri et Amiri Quran (SIL OFL) ; translittération *Arabica* par défaut, simplifiée au choix, masquable (`docs/TRANSLITTERATION.md`) ; clair/sombre ; animations désactivables |
 | Ergonomie | Souris et clavier (Windows), tactile (Android), plusieurs tailles d'écran |
-| Audio | **Obligatoire dès le MVP.** Coran : EveryAyah (al-Ḥuṣarī par défaut), mots par découpage horodaté (QUL), packs par sourate. Leçons et dialogues : **Chatterbox Multilingual** (MIT, décision n° 1 tranchée le 21/10/2026), généré une fois par `tools/build_audio/`, coupé après la première prise de parole, signalé « synthèse » |
+| Audio | **Obligatoire dès le MVP.** Coran : EveryAyah (al-Ḥuṣarī murattal par défaut, `Husary_128kbps`, décision n° 5), mots par découpage horodaté (QUL), packs par sourate. Leçons et dialogues : **Chatterbox Multilingual** (MIT, décision n° 1 tranchée le 21/10/2026), généré une fois par `tools/build_audio/`, coupé après la première prise de parole, signalé « synthèse » |
+| Graphismes | **Pixel art libre** (décision n° 2, 21/10/2026) : cités de savoir historiques, sans figures sacrées ; chaque pack audité (CC0 de préférence) |
+| Histoire | *La Bibliothèque oubliée*, cité Madīnat al-Ḥikma (décision n° 3) ; synopsis validé dans `docs/HISTOIRE.md` |
 | Compilation | Claude Code + GitHub Actions (APK et exe) sur `The-Ashams/iqura` |
 
 ## Jalons (cahier §10)
@@ -119,4 +121,4 @@ On avance région par région, chaque région complète et jouable.
 - **Traduction Hamidullah** : aucune licence publiée ; Tanzil la diffuse pour un usage non commercial.
 - **EveryAyah** : aucune condition publiée ; les droits restent aux récitateurs.
 - **Chatterbox** : poids MIT, mais Resemble AI ne publie ni ses données d'entraînement ni l'origine exacte de la voix par défaut (« prompts sourced from freely available data on the internet »).
-- **Quranic Arabic Corpus** : la FAQ parle d'un « usage de recherche » ; un mail aux auteurs est à envoyer par l'utilisateur (décision ouverte n° 7).
+- **Quranic Arabic Corpus** : doute levé le 21/10/2026 par la notice du fichier (usage autorisé dans toute application, avec source citée, lien vers corpus.quran.com et notice reproduite, ce que fait l'écran des sources). Le mail aux auteurs n'est plus nécessaire, sauf si l'utilisateur le souhaite.
