@@ -34,6 +34,8 @@ Compilations GitHub Actions (tests, APK Android, exécutable Windows) : entière
 
 Pour régénérer l'audio : voir `CLAUDE.md`, section « Commandes ». L'environnement Python de synthèse n'est pas dans le dépôt (le conteneur de session est éphémère) : il faut le réinstaller, et le modèle (plusieurs Go) se retélécharge depuis `huggingface.co` et `us.aws.cdn.hf.co`.
 
+- **Corrections audio en cours** (retours de l'utilisateur sur l'aperçu des leçons) : تَ (leçon 1) et يَ (leçon 2) étaient allongés, نَابَ (leçon 2) tronqué (seul « na » audible). Nouvelles versions générées (graines 1 à 3), page d'écoute envoyée à l'utilisateur ; **en attente de son choix** avant de remplacer les MP3 et `clips.json`. Contrôle de durée amélioré : plafond selon la longueur des voyelles (`trim.vowel_units`).
+
 ## 3. Décisions en attente de l'utilisateur
 
 1. **Validation des leçons 0 à 3** (aperçu : `python3 tools/build_content/preview_lessons.py SORTIE.html --etape 1 --jusqua 3`). Questions posées et sans réponse :

@@ -140,7 +140,7 @@ SCHEMA = [
         segment_id TEXT NOT NULL REFERENCES segment(id),
         PRIMARY KEY (token_id, segment_id)
     ) STRICT""",
-    # Académie : fiches des lettres et leçons (rédigées, statut non vérifié).
+    # Académie : fiches des lettres et leçons (rédigées par IA).
     """CREATE TABLE articulation_zone (
         id TEXT NOT NULL PRIMARY KEY,
         description TEXT NOT NULL

@@ -1,5 +1,5 @@
 {
-  "_comment": "Fiches des lettres. Noms et translittérations : norme Arabica (docs/TRANSLITTERATION.md). Descriptions d'articulation rédigées par IA, non vérifiées. Les quatre formes sont produites par le moteur de rendu, pas stockées.",
+  "_comment": "Fiches des lettres. Noms et translittérations : norme Arabica (docs/TRANSLITTERATION.md). Descriptions d'articulation rédigées par IA. Les quatre formes sont produites par le moteur de rendu, pas stockées.",
   "statut": "ia_non_verifie",
   "zones": {
     "cavite": "Cavité de la bouche et de la gorge (voyelles longues)",

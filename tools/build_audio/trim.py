@@ -106,6 +106,36 @@ def trim_first_utterance(x: np.ndarray, sr: int, *, rel_threshold: float = 0.05,
     return TrimResult(out, start, end, dropped)
 
 
+SHORT_VOWELS = "\u064e\u064f\u0650"  # fatḥa, ḍamma, kasra
+TANWIN = "\u064b\u064c\u064d"
+LONG_AFTER = {"\u064e": "\u0627", "\u0650": "\u064a", "\u064f": "\u0648"}
+
+
+def vowel_units(text: str) -> int:
+    """Durée vocalique attendue, en unités : 1 par voyelle brève ou tanwīn,
+    1 de plus quand la voyelle est allongée (fatḥa + ا, kasra + ي,
+    ḍamma + و)."""
+    units = 0
+    prev = None
+    for c in text:
+        if c in SHORT_VOWELS or c in TANWIN:
+            units += 1
+        elif prev is not None and LONG_AFTER.get(prev) == c:
+            units += 1
+        if c in SHORT_VOWELS:
+            prev = c
+        elif c not in "\u0651\u0652":  # shadda et sukūn ne coupent pas
+            prev = None
+    return units
+
+
+def expected_max_duration(text: str) -> float:
+    """Durée maximale plausible de la parole : 0,25 s + 0,15 s par unité
+    vocalique. Une syllabe à voyelle brève dépasse donc 0,40 s seulement si
+    le modèle l'a allongée (relevé à l'écoute par l'utilisateur sur تَ et يَ)."""
+    return 0.25 + 0.15 * max(1, vowel_units(text))
+
+
 def expected_min_duration(text: str) -> float:
     """Durée minimale plausible d'une lecture : 45 ms par lettre arabe
     (signes vocaliques exclus), au moins 0,12 s. Sert à repérer une coupure

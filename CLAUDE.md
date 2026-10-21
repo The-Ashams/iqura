@@ -28,7 +28,7 @@ Gratuit, sans publicité ni achat, open source **GPL-3.0**, en français, pour *
    - Il vient de Tanzil, stocké une seule fois, et il est vérifié par SHA-256 dans les tests et au démarrage.
    - Les leçons le **référencent** (sourate:verset ou plage de mots) sans le recopier.
 3. **Aucune donnée inventée** : pas de racine, d'occurrence, de schème, ni de traduction attribuée à un auteur. Toute donnée linguistique vient d'une **source citée**.
-4. **Aucun relecteur humain.** Tout texte rédigé par IA (sens des mots, explications, nuances, dialogues, récits, exemples) porte le statut visible **« rédigé par IA — non vérifié »**. Chaque exemple affiche sa source (« exemple construit » ou référence coranique). Tout audio de synthèse est signalé comme tel.
+4. **Aucun relecteur humain.** Tout texte rédigé par IA (sens des mots, explications, nuances, dialogues, récits, exemples) porte la mention visible **« rédigé par IA »** (formulation choisie par l'utilisateur le 21/10/2026 ; avant : « rédigé par IA — non vérifié »). Chaque exemple affiche sa source (« exemple construit » ou référence coranique). Tout audio de synthèse est signalé comme tel.
 5. **Ne jamais prétendre avoir compilé ou testé** sans l'avoir réellement fait. Lire les résultats de GitHub Actions avant d'annoncer quoi que ce soit.
 6. **Licences** : chaque dépendance et ressource (code, polices, audio, graphismes, données) est auditée et listée dans `THIRD_PARTY_LICENSES.md` ; tout point douteux est signalé à l'utilisateur.
 7. **Aucun bouton décoratif ni fausse fonctionnalité** : ce qui n'est pas fait est indiqué comme tel.

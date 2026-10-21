@@ -85,7 +85,7 @@ void main() {
     await tester.tap(find.text('Paramètres'));
     await tester.pumpAndSettle();
     expect(find.text('Exporter ma progression'), findsOneWidget);
-    expect(find.text('Rédigé par IA — non vérifié'), findsOneWidget);
+    expect(find.text('Rédigé par IA'), findsOneWidget);
 
     await tester.tap(find.text('Sombre'));
     await tester.pumpAndSettle();

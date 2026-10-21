@@ -1,11 +1,11 @@
 # L'Histoire d'IQURA : « La Bibliothèque oubliée »
 
-> **Rédigé par IA — non vérifié.** Synopsis validé par l'utilisateur le 21 octobre 2026 (décision n° 3). Les dialogues seront écrits à partir de ce document, dans des fichiers de contenu, et porteront eux aussi la mention « rédigé par IA — non vérifié ».
+> **Rédigé par IA.** Synopsis validé par l'utilisateur le 21 octobre 2026 (décision n° 3). Les dialogues seront écrits à partir de ce document, dans des fichiers de contenu, et porteront eux aussi la mention « rédigé par IA ».
 
 ## Cadre
 
 - **Titre** : *La Bibliothèque oubliée*.
-- **Cité** : Madīnat al-Ḥikma (مَدِينَةُ الْحِكْمَةِ), « la cité de la sagesse » (traduction rédigée par IA, non vérifiée).
+- **Cité** : Madīnat al-Ḥikma (مَدِينَةُ الْحِكْمَةِ), « la cité de la sagesse » (traduction rédigée par IA).
 - **Héros** : un voyageur qui arrive dans un monde où l'on parle arabe et où une grande bibliothèque a été oubliée. En comprenant la langue, il reconstruit la cité du savoir.
 - **Style** : pixel art libre, cités de savoir historiques (décision n° 2).
 - **Règles** (cahier §6) :

@@ -170,15 +170,15 @@ L'audio est obligatoire dès le MVP.
 
 ## 8. Contenus et sources
 
-Toute donnée linguistique vient d'une source citée ; tout texte rédigé par IA est marqué « rédigé par IA — non vérifié ». Pas de relecteur humain : rien n'est inventé (ni racine, ni occurrence, ni traduction attribuée).
+Toute donnée linguistique vient d'une source citée ; tout texte rédigé par IA est marqué « rédigé par IA ». Pas de relecteur humain : rien n'est inventé (ni racine, ni occurrence, ni traduction attribuée).
 
 | Contenu | Source | Statut |
 | --- | --- | --- |
 | Texte coranique | Tanzil (CC BY 3.0, modification interdite) | Vérifié par empreinte |
 | Racines, lemmes, catégories, formes verbales, schèmes, fréquences | Quranic Arabic Corpus (licence GNU, non commercial), via QUL si besoin | Sourcé |
 | Traduction des versets | Hamidullah, rév. Complexe Roi Fahd (2000) ; droits flous, remplaçable | Créditée |
-| Sens français des mots, explications, nuances | Rédigés à partir des données sourcées | « Rédigé par IA — non vérifié » |
-| Dialogues, récits gradués, exemples | Rédigés en arabe entièrement vocalisé, vocabulaire contrôlé (≥ 95 % de mots connus) | « Rédigé par IA — non vérifié » |
+| Sens français des mots, explications, nuances | Rédigés à partir des données sourcées | « Rédigé par IA » |
+| Dialogues, récits gradués, exemples | Rédigés en arabe entièrement vocalisé, vocabulaire contrôlé (≥ 95 % de mots connus) | « Rédigé par IA » |
 | Polices | Amiri ou Scheherazade New (SIL OFL) ; KFGQPC Hafs pour le Mushaf | Licences jointes |
 | Récitations | EveryAyah ; droits aux récitateurs | Créditées |
 | Graphismes | Packs libres (ex. LPC, Kenney) | À auditer pack par pack |
@@ -240,7 +240,7 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 - [ ] Texte coranique identique octet pour octet à Tanzil (test d'empreinte).
 - [ ] Aucun mot ni extrait coranique sur un monstre ou dans une attaque ; aucun verset en combat (test automatisé).
 - [ ] Chaque texte à lire respecte la règle des 95 % au moment où il est proposé.
-- [ ] Chaque fiche affiche sa source ou « rédigé par IA — non vérifié ».
+- [ ] Chaque fiche affiche sa source ou « rédigé par IA ».
 - [ ] Chaque mot, lettre et phrase des leçons du jalon a son audio (signalé « synthèse » si c'est le cas).
 - [ ] Révisions planifiées par FSRS ; jamais « maîtrisé » après une seule réussite.
 - [ ] Jamais deux réponses justes par erreur (test des distracteurs).
@@ -292,9 +292,9 @@ Décisions prises par l'utilisateur, consignées par Claude Code. Les détails t
 ### Décision n° 3 : nom et scénario de l'Histoire (21 octobre 2026)
 
 - **Retenu : la base du cahier**. Un voyageur arrive dans une cité de savoir où l'on parle arabe et où une grande bibliothèque a été oubliée ; en comprenant la langue, il reconstruit la cité.
-- Méthode : Claude propose un synopsis du chapitre 1 et quelques noms ; l'utilisateur valide ou corrige **avant** toute écriture des dialogues. Les dialogues sont marqués « rédigé par IA — non vérifié ».
+- Méthode : Claude propose un synopsis du chapitre 1 et quelques noms ; l'utilisateur valide ou corrige **avant** toute écriture des dialogues. Les dialogues sont marqués « rédigé par IA ».
 - Aucun prophète ni aucune figure religieuse n'est représenté ni ne prend la parole.
-- **Validé par l'utilisateur** : synopsis du chapitre 1 (`docs/HISTOIRE.md`), titre *La Bibliothèque oubliée*, cité Madīnat al-Ḥikma (مَدِينَةُ الْحِكْمَةِ, « la cité de la sagesse », traduction rédigée par IA, non vérifiée).
+- **Validé par l'utilisateur** : synopsis du chapitre 1 (`docs/HISTOIRE.md`), titre *La Bibliothèque oubliée*, cité Madīnat al-Ḥikma (مَدِينَةُ الْحِكْمَةِ, « la cité de la sagesse », traduction rédigée par IA).
 
 ### Décision n° 4 : seuil « sourate prête à étudier » (21 octobre 2026)
 
@@ -324,6 +324,11 @@ Décisions prises par l'utilisateur, consignées par Claude Code. Les détails t
   - notice reproduite mot pour mot sur ce même écran.
 - La FAQ du site parle d'un usage « de recherche », mais la notice du fichier, plus précise, autorise les applications. Le mail aux auteurs n'est donc plus nécessaire ; il reste possible si l'utilisateur le souhaite.
 
+### Mention des contenus rédigés par IA (21 octobre 2026)
+
+- À la demande de l'utilisateur, la mention devient **« rédigé par IA »** (ou « … par IA » selon le contenu : « Exemples construits — rédigés par IA », « Description et schéma rédigés par IA »), sans « non vérifié ».
+- La règle reste la même : tout contenu rédigé par IA porte une mention visible ; aucun relecteur humain n'a vérifié ces contenus.
+
 ### Environnement de développement (session cloud)
 
 Domaines ajoutés par l'utilisateur aux domaines autorisés, pour installer et faire tourner les modèles de synthèse :
@@ -341,7 +346,7 @@ Toujours bloqués à ce jour : `download-r2.pytorch.org` (PyTorch installé depu
 - **Quranic Arabic Corpus** : téléchargé avec l'adresse e-mail de l'utilisateur, exigée par le site.
 - **Polices** : Amiri et Amiri Quran (SIL OFL).
 - **Translittération** : norme *Arabica* (ḫ, ǧ, ṯ, ḏ, ġ…) par défaut, style simplifié (kh, j, th, dh, gh…) au choix, masquable.
-- **Schémas d'articulation** : dessins simples, marqués « IA — non vérifié ».
+- **Schémas d'articulation** : dessins simples, marqués « rédigé par IA ».
 - **Plan de l'étape 1** accepté ; leçons 0 à 3 rédigées, **en attente de validation** par l'utilisateur.
 - **Adaptation au cahier v2** acceptée en entier : navigation (Carte du monde, Cité, Grimoire, Sanctuaire, Paramètres), étape renommée « Déchiffrer », contrôle final obligatoire, translittération masquable, animations désactivables.
 

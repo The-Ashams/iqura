@@ -49,6 +49,19 @@ class TrimTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             trim.trim_first_utterance(silence(1.0), SR)
 
+    def test_vowel_units(self):
+        self.assertEqual(trim.vowel_units("تَ"), 1)
+        self.assertEqual(trim.vowel_units("تَا"), 2)
+        self.assertEqual(trim.vowel_units("نَابَ"), 3)
+        self.assertEqual(trim.vowel_units("كِتَابٌ"), 4)
+        self.assertEqual(trim.vowel_units("الشَّمْسُ"), 2)
+        self.assertEqual(trim.vowel_units("تِي"), 2)
+
+    def test_short_syllable_drawn_out_is_rejected(self):
+        # تَ allongé par le modèle (0,58 s) : hors de l'intervalle plausible.
+        self.assertGreater(0.58, trim.expected_max_duration("تَ"))
+        self.assertLess(0.30, trim.expected_max_duration("تَ"))
+
     def test_expected_min_duration(self):
         self.assertAlmostEqual(trim.expected_min_duration("بَ"), 0.12)
         self.assertAlmostEqual(trim.expected_min_duration("كِتَابٌ"), 0.18, places=2)

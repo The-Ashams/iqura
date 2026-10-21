@@ -60,7 +60,7 @@ void main() {
     },
   );
 
-  test('toute leçon est marquée « rédigé par IA — non vérifié »', () {
+  test('toute leçon est marquée « rédigé par IA »', () {
     for (final lesson in lessons()) {
       expect(
         lesson['statut'],

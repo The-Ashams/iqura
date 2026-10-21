@@ -119,7 +119,7 @@ def letter_card(card: sqlite3.Row, zone_label: str) -> str:
   {liaison}
   <div class="artic">{articulation_svg(card["zone_id"], zone_label)}
     <div><p class="zone-l">{e(zone_label)}</p><p>{fr(card["pronunciation"])}</p>
-    <p class="ia">Description et schéma rédigés par IA — non vérifiés</p></div></div>
+    <p class="ia">Description et schéma rédigés par IA</p></div></div>
 </article>"""
 
 
@@ -177,7 +177,7 @@ def section_html(con, sec: dict, cards: dict, zones: dict) -> str:
             for i in sec["items"])
         return (f'<section>{title}<div class="tbl"><table><thead><tr><th>Mot</th><th>Translittération</th>'
                 f'<th>Sens</th></tr></thead><tbody>{rows}</tbody></table></div>'
-                f'<p class="ia">Exemples construits — rédigés par IA, non vérifiés</p></section>')
+                f'<p class="ia">Exemples construits — rédigés par IA</p></section>')
     if t == "decomposition":
         parts = " + ".join(ar(c) for c in sec["lettres"])
         return (f'<section class="decomp"><div class="eq">{parts} → {ar(sec["ar"], cls="xl")}</div>{snd(sec["ar"])}'
@@ -292,7 +292,7 @@ def render(stage: int, upto: int | None) -> str:
         secs = "".join(section_html(con, s, cards, zones) for s in l["sections"])
         body.append(f"""<article class="lesson" id="{e(l['id'])}">
   <header><div class="lh"><span class="num">Leçon {l['ordre']}</span><h2>{fr(l['titre'])}</h2></div>
-  <p class="obj">{fr(l['objectif'])}</p><span class="ia">Leçon rédigée par IA — non vérifiée</span></header>
+  <p class="obj">{fr(l['objectif'])}</p><span class="ia">Leçon rédigée par IA</span></header>
   {secs}{exercises_html(l['exercices'])}
 </article>""")
     return f"""<title>Leçons Déchiffrer IQURA</title>
