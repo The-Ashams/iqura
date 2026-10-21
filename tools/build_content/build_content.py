@@ -37,7 +37,7 @@ import tanzil  # noqa: E402
 # Version du schéma de la base de contenu (lue par l'application).
 CONTENT_SCHEMA_VERSION = 5
 # Version des données ; à augmenter à chaque changement de contenu.
-CONTENT_VERSION = "0.4.1-dechiffrer"
+CONTENT_VERSION = "0.4.2-dechiffrer"
 
 DEFAULT_OUT = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),

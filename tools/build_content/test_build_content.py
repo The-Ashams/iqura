@@ -202,8 +202,31 @@ class BuildTest(unittest.TestCase):
                 if section["type"] in ("syllabes", "exemples"):
                     for item in section["items"]:
                         self.assertIn(lessons.audio_key(item["ar"]), keys, item["ar"])
-        # Pas encore d'audio : aucune ligne ne prétend en avoir.
-        self.assertEqual(self.q("SELECT COUNT(*) FROM audio_clip WHERE file IS NOT NULL"), [(0,)])
+        # Chaque enregistrement est livré, signalé comme synthèse et sourcé.
+        self.assertEqual(self.q(
+            "SELECT COUNT(*) FROM audio_clip WHERE file IS NULL OR synthetic IS NOT 1 "
+            "OR origin IS NULL"), [(0,)])
+        for (f,) in self.q("SELECT file FROM audio_clip"):
+            self.assertTrue(os.path.exists(os.path.join(lessons.REPO_ROOT, "assets", f)), f)
+
+    def test_audio_manifest_is_checked(self):
+        with tempfile.TemporaryDirectory() as root:
+            os.makedirs(os.path.join(root, "assets", "audio"))
+            with open(os.path.join(root, "assets", "audio", "a.mp3"), "wb") as f:
+                f.write(b"son")
+            import hashlib
+            sha = hashlib.sha256(b"son").hexdigest()
+            clips = {"k": ("mot", "بَ")}
+            entry = {"texte": "بَ", "fichier": "assets/audio/a.mp3", "sha256": sha}
+            m = {"origine": "test", "synthese": True, "clips": {"k": entry}}
+            self.assertEqual(lessons.audio_rows(clips, m, root),
+                             [("k", "mot", "بَ", "audio/a.mp3", "test", 1)])
+            with self.assertRaisesRegex(lessons.LessonError, "SHA-256"):
+                lessons.audio_rows(clips, {**m, "clips": {"k": {**entry, "sha256": "0"}}}, root)
+            with self.assertRaisesRegex(lessons.LessonError, "texte"):
+                lessons.audio_rows(clips, {**m, "clips": {"k": {**entry, "texte": "بِ"}}}, root)
+            with self.assertRaisesRegex(lessons.LessonError, "sans leçon"):
+                lessons.audio_rows({}, m, root)
 
     def test_validation_requires_a_final_check(self):
         def mutate(d):

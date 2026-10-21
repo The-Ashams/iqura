@@ -26,6 +26,8 @@ import unicodedata
 from dataclasses import dataclass
 
 LESSONS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lessons")
+REPO_ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+AUDIO_MANIFEST = os.path.join(REPO_ROOT, "tools", "build_audio", "clips.json")
 
 SIGNS = {
     "fatha": "َ",
@@ -229,6 +231,45 @@ def audio_clips(data: LessonData) -> dict[str, tuple[str, str]]:
     return clips
 
 
+def load_audio_manifest(path: str = AUDIO_MANIFEST) -> dict:
+    """Manifeste des enregistrements livrés (tools/build_audio/clips.json),
+    vide s'il n'existe pas encore."""
+    if not os.path.exists(path):
+        return {"origine": None, "synthese": True, "clips": {}}
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def audio_rows(clips: dict[str, tuple[str, str]], manifest: dict,
+               root: str = REPO_ROOT) -> list[tuple]:
+    """Lignes de `audio_clip`. Un enregistrement du manifeste n'est retenu que
+    si son texte est identique à celui de la leçon et si l'empreinte SHA-256
+    du fichier correspond ; sinon LessonError. Un enregistrement que plus
+    aucune leçon n'utilise est aussi refusé (à régénérer ou retirer)."""
+    entries = manifest.get("clips", {})
+    orphans = sorted(set(entries) - set(clips))
+    if orphans:
+        raise LessonError(f"enregistrements audio sans leçon : {orphans}")
+    rows = []
+    for key, (kind, text) in sorted(clips.items()):
+        e = entries.get(key)
+        if e is None:
+            rows.append((key, kind, text, None, None, None))
+            continue
+        if e["texte"] != text:
+            raise LessonError(f"audio {key} : texte différent de la leçon")
+        path = os.path.join(root, e["fichier"])
+        if not os.path.exists(path):
+            raise LessonError(f"audio {key} : fichier absent {e['fichier']}")
+        with open(path, "rb") as f:
+            if hashlib.sha256(f.read()).hexdigest() != e["sha256"]:
+                raise LessonError(f"audio {key} : empreinte SHA-256 différente")
+        asset = e["fichier"].removeprefix("assets/")
+        rows.append((key, kind, text, asset, manifest["origine"],
+                     1 if manifest.get("synthese", True) else 0))
+    return rows
+
+
 def write(con: sqlite3.Connection, data: LessonData) -> dict[str, int]:
     con.executemany(
         "INSERT INTO articulation_zone VALUES (?, ?)",
@@ -264,11 +305,9 @@ def write(con: sqlite3.Connection, data: LessonData) -> dict[str, int]:
                     refs.append((lesson["id"], vid, tok))
     con.executemany("INSERT INTO lesson_quran_ref VALUES (?,?,?)", refs)
     clips = audio_clips(data)
-    # Fichier, origine et indication « synthèse » : remplis quand la solution
-    # audio sera choisie (décision ouverte n° 1). NULL = pas encore d'audio.
-    con.executemany(
-        "INSERT INTO audio_clip (key, kind, text) VALUES (?,?,?)",
-        [(k, kind, text) for k, (kind, text) in sorted(clips.items())],
-    )
+    # Fichier relatif à assets/, origine, synthèse (1) : NULL = pas d'audio.
+    rows = audio_rows(clips, load_audio_manifest())
+    con.executemany("INSERT INTO audio_clip VALUES (?,?,?,?,?,?)", rows)
     return {"lessons": len(data.lessons), "letters": len(data.letters["lettres"]),
-            "audio_clips": len(clips)}
+            "audio_clips": len(clips),
+            "audio_files": sum(1 for r in rows if r[3] is not None)}

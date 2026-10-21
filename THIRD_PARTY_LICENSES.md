@@ -86,7 +86,12 @@ n'est pas intégré à l'application. Chaque enregistrement est marqué
 | [resemble-perth](https://pypi.org/project/resemble-perth/) | 1.0.1 | MIT | Filigrane inaudible ajouté par Chatterbox à chaque fichier : les enregistrements restent identifiables comme synthèse. |
 | PyTorch, NumPy, soundfile | — | BSD | Dépendances de l'outil de génération. |
 
-Pas encore intégrés : fichiers audio, sprites.
+**Fichiers livrés** : 44 enregistrements MP3 des leçons 0 à 3 dans
+`assets/audio/lecons/` (308 Ko), générés le 21/10/2026, listés avec leur
+empreinte SHA-256 dans `tools/build_audio/clips.json`. Conversion MP3 par
+ffmpeg (outil non embarqué ; le format MP3 n'est plus soumis à brevet).
+
+Pas encore intégrés : lecteur audio dans l'application, sprites.
 
 ## Inventaire complet des paquets Dart
 

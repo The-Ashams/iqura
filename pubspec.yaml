@@ -36,6 +36,8 @@ flutter:
     - assets/content/iqura_content.db.version
     - assets/fonts/OFL-Amiri.txt
     - assets/fonts/OFL-AmiriQuran.txt
+    # Enregistrements des leçons (synthèse Chatterbox, tools/build_audio/).
+    - assets/audio/lecons/
   # Polices arabes sous SIL Open Font License 1.1 (voir THIRD_PARTY_LICENSES.md).
   fonts:
     - family: Amiri
