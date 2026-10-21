@@ -259,7 +259,7 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2 | Univers et style graphique | **Décidé le 21/10/2026 : pixel art libre**, monde inspiré des cités de savoir historiques, sans figures sacrées (voir section 13) |
 | 3 | Nom et scénario de l'Histoire | **Décidé le 21/10/2026** : *La Bibliothèque oubliée*, cité Madīnat al-Ḥikma ; synopsis du chapitre 1 dans `docs/HISTOIRE.md` (voir section 13) |
 | 4 | Seuil « sourate prête à étudier » | **Décidé le 21/10/2026 : 80 %** de mots reconnus ; Al-Fātiḥa ouverte d'office (voir section 13) |
-| 5 | Récitateur par défaut | al-Ḥuṣarī |
+| 5 | Récitateur par défaut | **Décidé le 21/10/2026 : al-Ḥuṣarī, murattal** (EveryAyah `Husary_128kbps`) (voir section 13) |
 | 6 | Conversation avec une IA (J4) | Option en ligne, désactivée par défaut |
 | 7 | Licence du Quranic Arabic Corpus | Mail aux auteurs à envoyer par l'utilisateur |
 
@@ -301,6 +301,12 @@ Décisions prises par l'utilisateur, consignées par Claude Code. Les détails t
 - **Retenu : 80 % de mots reconnus** (valeur par défaut du cahier, recommandée) ; **Al-Fātiḥa ouverte d'office**.
 - Le texte coranique ne peut pas être simplifié : ce seuil est donc distinct des 95 % exigés pour les textes gradués. L'appui sur un mot inconnu affiche son sens et crée une carte de révision.
 - Écartés : 90 % (sourates ouvertes trop tard) ; toutes les sourates ouvertes sans seuil.
+
+### Décision n° 5 : récitateur par défaut (21 octobre 2026)
+
+- **Retenu : al-Ḥuṣarī en récitation murattal** (valeur par défaut du cahier, recommandée) : EveryAyah, dossier `Husary_128kbps` (présence vérifiée le 21/10/2026). Le joueur pourra en changer plus tard.
+- Écartés comme valeur par défaut : al-Ḥuṣarī *muʿallim* (contenu non vérifié à l'écoute) et *mujawwad* (plus orné, moins adapté au mot à mot).
+- **À vérifier** : disponibilité des horodatages mot par mot de QUL pour cette récitation (nécessaires pour écouter un mot isolé).
 
 ### Environnement de développement (session cloud)
 
