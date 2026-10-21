@@ -24,7 +24,7 @@ Tests locaux à la fin de la session (21/10/2026) :
 - `dart format lib test` : aucun changement ; `flutter analyze` : aucun problème ;
 - `flutter test` : 83 tests OK.
 
-Compilations GitHub Actions (tests, APK Android, exécutable Windows) : dernière compilation entièrement réussie sur `5d8b203` ([run 39668690267](https://github.com/The-Ashams/iqura/actions/runs/39668690267)). Pour les commits suivants, voir la pull request n° 2.
+Compilations GitHub Actions (tests, APK Android, exécutable Windows) : entièrement réussies sur `39871ea` (audio des leçons), [run 39672913852](https://github.com/The-Ashams/iqura/actions/runs/39672913852) et [run 39672903212](https://github.com/The-Ashams/iqura/actions/runs/39672903212). Un échec antérieur de l'APK sur `b75856a` venait d'un refus passager de Maven Central (erreur 429), pas du code ; les compilations suivantes sont passées.
 
 ## 2. En cours, et où je me suis arrêté
 

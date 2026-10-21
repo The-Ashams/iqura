@@ -72,7 +72,7 @@ Gratuit, sans publicité ni achat, open source **GPL-3.0**, en français, pour *
 | J2 à J5 | Régions 2 à 5 (Fondations, Moteur de la langue, Lire et parler, Le Coran) | Voir cahier §10 |
 
 **Ordre de travail pour J1** :
-1. Solution audio (décision n° 1) : **fait**, Chatterbox Multilingual ; reste à générer tous les enregistrements des leçons.
+1. Solution audio (décision n° 1) : **fait**, Chatterbox Multilingual ; enregistrements des leçons 0 à 3 livrés (44 MP3). Reste : lecteur audio dans l'application, et l'audio des leçons suivantes au fur et à mesure.
 2. Pipeline de données (fait en grande partie : Tanzil vérifié, Quranic Arabic Corpus aligné).
 3. Contenus de l'étape 1, validés par l'utilisateur leçon par leçon.
 4. Coquille du jeu.
