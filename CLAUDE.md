@@ -1,6 +1,6 @@
 # IQURA — instructions pour Claude
 
-**Référence unique du projet : `docs/CAHIER_DES_CHARGES.md` (v2, 21 octobre 2026).** Lis-le avant toute tâche importante. L'ancien dossier d'architecture est archivé dans `docs/archive/ARCHITECTURE.md` (historique seulement).
+**Référence unique du projet : `docs/CAHIER_DES_CHARGES.md` (v2, 21 octobre 2026).** Lis-le avant toute tâche importante, avec son journal des décisions (§13). **État courant, travail en cours et prochaine étape : `docs/ETAT_DU_PROJET.md`** (à lire en début de session, à tenir à jour en fin de session). L'ancien dossier d'architecture est archivé dans `docs/archive/ARCHITECTURE.md` (historique seulement).
 
 ## Vision
 
@@ -88,7 +88,9 @@ On avance région par région, chaque région complète et jouable.
   - pipeline coranique (Tanzil Uthmani vérifié, Quranic Arabic Corpus aligné à 100 %, traduction Hamidullah via Tanzil) ;
   - polices Amiri / Amiri Quran ;
   - moteur de translittération ;
-  - leçons 0 à 3 de l'étape 1 sous forme de données, en attente de validation.
+  - leçons 0 à 3 de l'étape 1 sous forme de données, en attente de validation ;
+  - décision n° 1 (audio) : Chatterbox Multilingual, outil `tools/build_audio/` (génération, coupure des sons parasites validée à l'écoute, livraison MP3 vérifiée par SHA-256).
+- **Audio dans l'application** : les fichiers sont livrés et référencés par la base de contenu, mais aucun lecteur audio n'est encore intégré (choix du paquet Flutter à auditer).
 - **Schèmes** : le cahier les attribue au Quranic Arabic Corpus, mais la version 0.4 ne les fournit pas. Aucune source ouverte fiable trouvée à ce jour ; rien n'est inventé.
 - **Traduction** : le cahier indique « rév. Complexe Roi Fahd (2000) », mais Tanzil ne précise pas l'édition diffusée.
 - **Police du Mushaf** : le cahier cite KFGQPC Hafs ; IQURA utilise aujourd'hui Amiri Quran (OFL, couverture du texte Tanzil vérifiée). La licence de KFGQPC est à auditer avant tout changement.
@@ -102,6 +104,12 @@ On avance région par région, chaque région complète et jouable.
 - Vérifications : `dart format lib test`, `flutter analyze`, `flutter test`, `python3 -m unittest discover -s tools/build_content`.
 - Compilation : `flutter build apk --release` ; Windows uniquement via GitHub Actions (`.github/workflows/build.yml`).
 - Inventaire des licences : `python3 tools/third_party/list_dart_packages.py`.
+- Audio des leçons (hors CI : modèle de plusieurs Go, processeur suffisant) :
+  - environnement Python à part avec `torch` (PyPI), `chatterbox-tts` 0.1.7 installé avec `--no-deps` plus ses dépendances, `setuptools<81` (Perth utilise `pkg_resources`), `soundfile` ; `ffmpeg` pour le MP3 ;
+  - `python tools/build_audio/generate.py --lecons DOSSIER` génère tous les enregistrements des leçons (rapport JSON, graine retenue, parasites retirés) ;
+  - `python tools/build_audio/package.py DOSSIER` convertit en MP3 dans `assets/audio/lecons/` et met à jour `tools/build_audio/clips.json` ;
+  - tests de la coupure : `python -m unittest discover -s tools/build_audio` (numpy requis).
+- Réseau de la session cloud : `huggingface.co`, `us.aws.cdn.hf.co` et `download.pytorch.org` sont autorisés (ajoutés par l'utilisateur) ; `download-r2.pytorch.org` est bloqué, installer PyTorch depuis PyPI.
 - Leçons :
   - données dans `tools/build_content/lessons/`, contrôlées par le pipeline ;
   - aperçu pour relecture : `python3 tools/build_content/preview_lessons.py SORTIE.html --etape 1 --jusqua N`.

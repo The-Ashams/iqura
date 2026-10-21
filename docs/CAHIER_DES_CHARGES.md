@@ -160,7 +160,7 @@ L'audio est obligatoire dès le MVP.
 | Besoin | Source envisagée | Statut |
 | --- | --- | --- |
 | Versets et mots coraniques | Récitations publiques (EveryAyah, al-Ḥuṣarī par défaut) ; mots isolés par découpage horodaté (QUL) | Retenu ; packs téléchargeables par sourate |
-| Lettres, syllabes, mots, phrases des leçons et dialogues | Synthèse vocale arabe sur texte entièrement vocalisé, générée une fois et livrée avec l'app ; ou enregistrements humains | Décision ouverte n° 1 |
+| Lettres, syllabes, mots, phrases des leçons et dialogues | Synthèse vocale **Chatterbox Multilingual** (Resemble AI, MIT) sur texte entièrement vocalisé, générée une fois par `tools/build_audio/` et livrée avec l'app ; coupure automatique des sons parasites après le mot | **Décidé le 21/10/2026** (décision n° 1) |
 
 - Tout audio de synthèse est signalé comme tel. Sons difficiles : description écrite + schéma d'articulation.
 - **Répétition à voix haute** : écouter, répéter, s'enregistrer, réécouter en alternance, recommencer ; vitesse réglable, boucle. Aucune note automatique de prononciation.
@@ -255,10 +255,51 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 
 | N° | Question | Valeur par défaut |
 | --- | --- | --- |
-| 1 | Audio des leçons et dialogues | **Bloquant.** Comparer 2 ou 3 solutions (qualité sur texte vocalisé, licence, coût, hors ligne) et fournir des échantillons à écouter |
+| 1 | Audio des leçons et dialogues | **Décidé le 21/10/2026 : Chatterbox Multilingual** (voir section 13) |
 | 2 | Univers et style graphique | Monde inspiré des cités de savoir historiques, sans figures sacrées ; pixel art à partir de packs libres |
 | 3 | Nom et scénario de l'Histoire | Le voyageur et la bibliothèque oubliée, à détailler avec l'utilisateur au début de J1 |
 | 4 | Seuil « sourate prête à étudier » | 80 % de mots reconnus ; Al-Fātiḥa ouverte d'office |
 | 5 | Récitateur par défaut | al-Ḥuṣarī |
 | 6 | Conversation avec une IA (J4) | Option en ligne, désactivée par défaut |
 | 7 | Licence du Quranic Arabic Corpus | Mail aux auteurs à envoyer par l'utilisateur |
+
+## 13. Journal des décisions
+
+Décisions prises par l'utilisateur, consignées par Claude Code. Les détails techniques sont dans `CLAUDE.md` et `docs/ETAT_DU_PROJET.md`.
+
+### Décision n° 1 : audio des leçons (21 octobre 2026)
+
+- **Retenu : Chatterbox Multilingual** (Resemble AI), poids et code sous licence MIT. La voix par défaut est utilisée.
+- **Coupure automatique** : le modèle ajoute souvent des sons parasites après le mot. L'outil `tools/build_audio/trim.py` ne garde que la première prise de parole :
+  - les pauses de moins de 0,25 s restent (entre les mots d'une phrase) ;
+  - la fin des voyelles est suivie jusqu'au silence ;
+  - marges de 0,05 s avant et 0,12 s après, puis fondu final ;
+  - nouvel essai avec une autre graine si la durée est invraisemblable.
+  Résultat validé à l'écoute par l'utilisateur sur 17 échantillons : « on entend très bien le son, pas de coupure brute ni de bruit de fond ».
+- Chaque fichier porte le filigrane inaudible Perth de Chatterbox et la mention « synthèse » dans l'application.
+- Format livré : MP3 mono 64 kbit/s, dans `assets/audio/lecons/`, vérifié par SHA-256 (`tools/build_audio/clips.json`).
+- **Refusés** par l'utilisateur : eSpeak NG, eSpeak NG avec les voix MBROLA ar1/ar2, Azure Neural TTS (service payant avec compte).
+- **Comparés, non retenus** : VoxCPM2 (Apache-2.0), Piper « kareem » (licence des données de la voix inconnue), MMS-TTS de Meta (non commercial, supprime les voyelles). MOSS-TTS n'a pas pu être testé (17 Go).
+- Point douteux : Resemble AI ne publie ni ses données d'entraînement ni l'origine exacte de la voix par défaut.
+
+### Environnement de développement (session cloud)
+
+Domaines ajoutés par l'utilisateur aux domaines autorisés, pour installer et faire tourner les modèles de synthèse :
+- `huggingface.co` (fiches et petits fichiers des modèles) ;
+- `us.aws.cdn.hf.co` (fichiers lourds des modèles) ;
+- `download.pytorch.org` (index de PyTorch).
+
+Toujours bloqués à ce jour : `download-r2.pytorch.org` (PyTorch installé depuis PyPI à la place) et les autres sous-domaines de `hf.co` (non nécessaires). Ces domaines ne servent qu'à générer l'audio ; l'application n'en a pas besoin.
+
+### Autres décisions de l'utilisateur (20 et 21 octobre 2026)
+
+- **J0 validé** : profil créé sur PC, importé sur Android sans problème. Pull request n° 1 fusionnée.
+- **Respect du Coran** : tout ce qui vient du Coran est étudié, jamais combattu. En combat, un mot du vocabulaire (lemme coranique compris) peut apparaître seul, sous forme de dictionnaire, dans le panneau de question neutre ; la règle est « aucun extrait ni verset coranique en combat ». Noms divins, noms de prophètes et formules sacrées exclus du combat.
+- **Racines** : la racine ne suffit pas à déduire le sens d'un dérivé (avertissement visible). Pour les schèmes, absents du Quranic Arabic Corpus 0.4 : chercher une autre source ouverte ; rien n'est inventé en attendant.
+- **Quranic Arabic Corpus** : téléchargé avec l'adresse e-mail de l'utilisateur, exigée par le site.
+- **Polices** : Amiri et Amiri Quran (SIL OFL).
+- **Translittération** : norme *Arabica* (ḫ, ǧ, ṯ, ḏ, ġ…) par défaut, style simplifié (kh, j, th, dh, gh…) au choix, masquable.
+- **Schémas d'articulation** : dessins simples, marqués « IA — non vérifié ».
+- **Plan de l'étape 1** accepté ; leçons 0 à 3 rédigées, **en attente de validation** par l'utilisateur.
+- **Adaptation au cahier v2** acceptée en entier : navigation (Carte du monde, Cité, Grimoire, Sanctuaire, Paramètres), étape renommée « Déchiffrer », contrôle final obligatoire, translittération masquable, animations désactivables.
+
