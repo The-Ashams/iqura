@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'app.dart';
 import 'core/app_paths.dart';
+import 'core/licenses.dart';
 import 'core/providers.dart';
 import 'data/content_db/content_database.dart';
 import 'data/user_db/user_database.dart';
@@ -11,6 +12,7 @@ import 'features/profile/profile.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  registerBundledLicenses();
   try {
     final paths = await AppPaths.resolve();
     final content = await ContentDatabase.install(paths.contentDir);

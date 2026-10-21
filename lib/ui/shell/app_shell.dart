@@ -14,13 +14,13 @@ class _Space {
 
 const _spaces = [
   _Space('Carte', Icons.map_outlined, Icons.map),
+  _Space('Cité', Icons.castle_outlined, Icons.castle),
   _Space('Grimoire', Icons.menu_book_outlined, Icons.menu_book),
   _Space('Sanctuaire', Icons.local_library_outlined, Icons.local_library),
-  _Space('Héros', Icons.shield_outlined, Icons.shield),
   _Space('Paramètres', Icons.settings_outlined, Icons.settings),
 ];
 
-/// Les cinq espaces de l'application : barre en bas sur écran étroit
+/// Les cinq espaces de l'application (cahier des charges §4) : barre en bas sur écran étroit
 /// (téléphone), rail latéral sur écran large (Windows, tablette).
 class AppShell extends ConsumerStatefulWidget {
   const AppShell({super.key});
@@ -47,33 +47,35 @@ class _AppShellState extends ConsumerState<AppShell> {
           textAlign: TextAlign.center,
         ),
         description:
-            'La carte à étapes (régions, mini-donjons, boss, '
-            'Faille des Oubliés) sera construite avec le jeu RPG.',
-        plannedPhase: 'phase 6 (RPG)',
+            'Une région par étape du cursus, en commençant par « Déchiffrer ». '
+            "On y vit l'Histoire (personnages, enquêtes, inscriptions à "
+            "déchiffrer) et l'Expédition quotidienne dans la Faille des "
+            'Oubliés (révisions et boss).',
+        plannedPhase: 'jalon J1 (région 1)',
       ),
       1 => const PlannedSpaceScreen(
+        title: 'Cité',
+        icon: Icons.castle,
+        description:
+            'Reconstruire la cité du savoir ; boutique, équipement, '
+            'enchantement de +1 à +15 ; Forge des mots.',
+        plannedPhase: 'jalon J1 (Cité minimale), Forge au jalon J2',
+      ),
+      2 => const PlannedSpaceScreen(
         title: 'Grimoire',
         icon: Icons.menu_book,
         description:
-            'Alphabet, dictionnaire, racines et bibliothèque de '
-            'mots.',
-        plannedPhase: 'phases 2 à 4',
+            'Dictionnaire personnel, alphabet, règles apprises, racines et '
+            'arbre des racines, listes personnelles.',
+        plannedPhase: 'jalon J1 (alphabet, premiers mots)',
       ),
-      2 => const PlannedSpaceScreen(
+      3 => const PlannedSpaceScreen(
         title: 'Sanctuaire',
         icon: Icons.local_library,
         description:
-            'Lecture du Coran (texte Tanzil), traduction, analyse '
-            'mot par mot et racines. Zone sans combat.',
-        plannedPhase: 'phase 3 (arabe coranique)',
-      ),
-      3 => const PlannedSpaceScreen(
-        title: 'Héros',
-        icon: Icons.shield,
-        description:
-            'Avatar, équipement, inventaire, forge, boutique, '
-            'quêtes et statistiques.',
-        plannedPhase: 'phase 6 (RPG)',
+            'Lecture et étude du Coran, sans aucun combat : texte Tanzil, '
+            'traduction Hamidullah, sens des mots, récitation.',
+        plannedPhase: 'jalon J1 (Al-Fātiḥa)',
       ),
       _ => const SettingsScreen(),
     };

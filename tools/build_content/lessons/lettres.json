@@ -1,0 +1,89 @@
+{
+  "_comment": "Fiches des lettres. Noms et translittérations : norme Arabica (docs/TRANSLITTERATION.md). Descriptions d'articulation rédigées par IA, non vérifiées. Les quatre formes sont produites par le moteur de rendu, pas stockées.",
+  "statut": "ia_non_verifie",
+  "zones": {
+    "cavite": "Cavité de la bouche et de la gorge (voyelles longues)",
+    "gorge_fond": "Fond de la gorge, près de la poitrine",
+    "gorge_milieu": "Milieu de la gorge",
+    "gorge_haut": "Haut de la gorge, près de la bouche",
+    "langue_milieu": "Milieu de la langue contre le palais",
+    "langue_bout_racine": "Bout de la langue contre la racine des incisives supérieures",
+    "langue_bout_gencive": "Bout de la langue contre la gencive, derrière les incisives supérieures",
+    "langue_bout_dents": "Bout de la langue contre l'extrémité des incisives supérieures",
+    "levres": "Les deux lèvres"
+  },
+  "lettres": [
+    {
+      "lettre": "ا",
+      "nom": "alif",
+      "nom_ar": "أَلِف",
+      "liaison_gauche": false,
+      "zone": "cavite",
+      "prononciation": "L'alif ne note pas de consonne. Après une fatḥa, il allonge le son « a » : بَا se lit « bā », un « a » tenu deux fois plus longtemps. En début de mot, il sert de support à une hamza ou à une voyelle (leçons suivantes)."
+    },
+    {
+      "lettre": "ب",
+      "nom": "bāʾ",
+      "nom_ar": "بَاء",
+      "liaison_gauche": true,
+      "zone": "levres",
+      "prononciation": "Comme le « b » français : les deux lèvres se ferment puis s'ouvrent. Un point sous la ligne."
+    },
+    {
+      "lettre": "ت",
+      "nom": "tāʾ",
+      "nom_ar": "تَاء",
+      "liaison_gauche": true,
+      "zone": "langue_bout_racine",
+      "prononciation": "Comme le « t » français, le bout de la langue contre la racine des incisives supérieures. Deux points au-dessus."
+    },
+    {
+      "lettre": "ث",
+      "nom": "ṯāʾ",
+      "nom_ar": "ثَاء",
+      "liaison_gauche": true,
+      "zone": "langue_bout_dents",
+      "prononciation": "Comme le « th » anglais de « think » : le bout de la langue touche l'extrémité des incisives supérieures et l'air passe. Ce n'est ni un « t » ni un « s ». Trois points au-dessus."
+    },
+    {
+      "lettre": "ن",
+      "nom": "nūn",
+      "nom_ar": "نُون",
+      "liaison_gauche": true,
+      "zone": "langue_bout_gencive",
+      "prononciation": "Comme le « n » français : le bout de la langue contre la gencive derrière les incisives supérieures, avec une résonance dans le nez. Un point au-dessus ; en fin de mot, la lettre descend sous la ligne."
+    },
+    {
+      "lettre": "ي",
+      "nom": "yāʾ",
+      "nom_ar": "يَاء",
+      "liaison_gauche": true,
+      "zone": "langue_milieu",
+      "prononciation": "Consonne : comme le « y » de « yaourt », le milieu de la langue monte vers le palais. Après une kasra, elle allonge le son « i » : بِي se lit « bī ». Deux points sous la ligne."
+    },
+    {
+      "lettre": "ج",
+      "nom": "ǧīm",
+      "nom_ar": "جِيم",
+      "liaison_gauche": true,
+      "zone": "langue_milieu",
+      "prononciation": "Comme « dj » dans « djinn » : le milieu de la langue s'appuie contre le palais puis se relâche. Un point dans le creux de la lettre."
+    },
+    {
+      "lettre": "ح",
+      "nom": "ḥāʾ",
+      "nom_ar": "حَاء",
+      "liaison_gauche": true,
+      "zone": "gorge_milieu",
+      "prononciation": "Un souffle chuchoté venant du milieu de la gorge, plus serré qu'un « h » : comme quand on souffle sur des lunettes pour les nettoyer. Sans point. Le français n'a pas ce son."
+    },
+    {
+      "lettre": "خ",
+      "nom": "ḫāʾ",
+      "nom_ar": "خَاء",
+      "liaison_gauche": true,
+      "zone": "gorge_haut",
+      "prononciation": "Un son raclé en haut de la gorge, comme la « jota » espagnole ou le « ch » allemand de « Bach ». Un point au-dessus."
+    }
+  ]
+}

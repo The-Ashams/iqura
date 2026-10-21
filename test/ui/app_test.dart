@@ -9,7 +9,6 @@ import 'package:iqura/core/providers.dart';
 import 'package:iqura/data/content_db/content_database.dart';
 import 'package:iqura/data/user_db/user_database.dart';
 import 'package:iqura/features/settings/settings.dart';
-import 'package:sqlite3/sqlite3.dart';
 
 late Directory tmp;
 late UserDatabase userDb;
@@ -33,12 +32,8 @@ void setSize(WidgetTester tester, Size size) {
 void main() {
   setUp(() {
     tmp = Directory.systemTemp.createTempSync('iqura-ui');
-    final contentPath = '${tmp.path}/c.db';
-    sqlite3.open(contentPath)
-      ..execute('CREATE TABLE content_meta (key TEXT PRIMARY KEY, value TEXT)')
-      ..execute("INSERT INTO content_meta VALUES ('content_version', 'test')")
-      ..close();
-    contentDb = ContentDatabase.openFile(contentPath);
+    // Base de contenu réelle, générée par tools/build_content/.
+    contentDb = ContentDatabase.openVerified(ContentDatabase.assetPath);
     userDb = UserDatabase.open(null);
   });
 
@@ -65,6 +60,9 @@ void main() {
     expect(find.text('Bienvenue, Amina'), findsOneWidget);
     expect(find.byType(NavigationBar), findsOneWidget);
     expect(find.text('Pas encore disponible'), findsOneWidget);
+    for (final label in ['Carte', 'Cité', 'Grimoire', 'Sanctuaire']) {
+      expect(find.text(label), findsOneWidget);
+    }
   });
 
   testWidgets('écran large : rail latéral', (tester) async {
@@ -78,7 +76,7 @@ void main() {
   });
 
   testWidgets('paramètres : thème enregistré en base', (tester) async {
-    setSize(tester, const Size(400, 900));
+    setSize(tester, const Size(400, 1600));
     await tester.pumpWidget(app());
     await tester.enterText(find.byType(TextField), 'Amina');
     await tester.tap(find.text('Commencer'));
@@ -95,8 +93,36 @@ void main() {
     final material = tester.widget<MaterialApp>(find.byType(MaterialApp));
     expect(material.themeMode, ThemeMode.dark);
 
+    await tester.tap(find.text('Animations'));
+    await tester.pumpAndSettle();
+    expect(SettingsRepository(userDb).load().animations, isFalse);
+    final ctx = tester.element(find.text('Paramètres').first);
+    expect(MediaQuery.of(ctx).disableAnimations, isTrue);
+
     await tester.tap(find.text('Simplifiée'));
     await tester.pumpAndSettle();
-    expect(find.textContaining('sabahu l-khayri'), findsOneWidget);
+    expect(find.textContaining('sabâhu l-khayri'), findsOneWidget);
+  });
+
+  testWidgets('paramètres : les sources des données sont citées', (
+    tester,
+  ) async {
+    setSize(tester, const Size(400, 2400));
+    await tester.pumpWidget(app());
+    await tester.enterText(find.byType(TextField), 'Amina');
+    await tester.tap(find.text('Commencer'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Paramètres'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Sources des données'));
+    await tester.pumpAndSettle();
+    expect(
+      find.text('Tanzil Quran Text (Uthmani, Version 1.1)'),
+      findsOneWidget,
+    );
+    expect(
+      find.textContaining('Quranic Arabic Corpus, données'),
+      findsOneWidget,
+    );
   });
 }

@@ -16,6 +16,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  # Python en UTF-8 partout (console Windows comprise).
+  PYTHONUTF8: "1"
   FLUTTER_VERSION: "3.47.7"
   FLUTTER_SHA256_LINUX: "af7455f540df951184c7953fbe3cf884766e7541dacf8571f9f582db03dd6230"
   FLUTTER_SHA256_WINDOWS: "c2c875da25a1a1448d18ee4e8f398b2f6fce888b4775d8f9130538e16d826cb4"

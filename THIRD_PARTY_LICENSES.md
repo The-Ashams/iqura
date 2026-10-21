@@ -4,7 +4,7 @@ IQURA est distribué sous licence **GPL-3.0** (voir `LICENSE`). Ce fichier
 liste tout ce que l'application utilise qui n'a pas été écrit pour elle, avec
 la licence et les points à surveiller.
 
-Dernier audit : 20 octobre 2026 (phase 1).
+Dernier audit : 20 octobre 2026 (phases 1 et 3).
 
 ## Méthode d'audit
 
@@ -49,11 +49,49 @@ Outils de développement (non embarqués) : `flutter_test` (SDK, BSD-3-Clause),
 | Actions GitHub `actions/checkout`, `actions/setup-java`, `actions/upload-artifact` | MIT | Actions officielles de GitHub. Aucune action tierce. |
 | Python 3 (`sqlite3`, `unittest`) | PSF | Génération de la base de contenu. |
 
-## Données et ressources
+## Données intégrées
 
-Aucune donnée coranique, linguistique, audio, police ou graphique n'est
-encore intégrée (phase 1). Les sources prévues et leurs doutes de licence
-sont décrits dans `docs/ARCHITECTURE.md` §3.
+Fichiers copiés tels quels dans `tools/build_content/sources/` (copie verbatim
+autorisée par leurs auteurs), vérifiés par SHA-256 (`sources.json`) et cités
+dans l'application (Paramètres › Sources des données).
+
+| Donnée | Source | Licence / conditions | Points de vigilance |
+| --- | --- | --- | --- |
+| Texte coranique Uthmani (version 1.1) et texte sans voyelles (recherche) | [Tanzil Project](https://tanzil.net) | CC BY 3.0 ; copie verbatim autorisée, **modification interdite** ; citer Tanzil avec un lien | Texte jamais modifié : empreinte SHA-256 vérifiée par les tests et à chaque démarrage. |
+| Métadonnées (sourates, juzʾ, hizb, pages, prosternations) | Tanzil Project | CC BY | — |
+| Traduction française de Muhammad Hamidullah (`fr.hamidullah`) | Diffusée par [Tanzil](https://tanzil.net/trans/) | **Usage non commercial uniquement** (conditions Tanzil) ; aucune licence publiée par l'éditeur | ⚠️ Tanzil n'indique pas l'édition exacte : la révision du Complexe Roi Fahd (2000) n'est pas confirmée. IQURA est gratuit, donc dans les conditions ; toute utilisation commerciale exigerait l'accord de l'éditeur. Traduction remplaçable. |
+| Morphologie : segments, racines, lemmes, traits (version 0.4) | [Quranic Arabic Corpus](https://corpus.quran.com), Kais Dukes, Université de Leeds | GNU GPL ; copie verbatim autorisée, modification interdite ; citer la source avec un lien | ⚠️ La FAQ du Corpus parle d'un usage « de recherche » ; une confirmation écrite des auteurs reste souhaitable. Téléchargé le 20/10/2026 avec l'adresse e-mail du porteur du projet (exigée par le site). |
+| Table de translittération Buckwalter étendue | [Quranic Arabic Corpus](https://corpus.quran.com/java/buckwalter.jsp) | Documentation publique du Corpus | Recopiée dans `tools/build_content/buckwalter.py` pour convertir lemmes et racines en écriture arabe. |
+
+## Polices
+
+| Police | Version | Auteurs | Licence | Provenance | Vérifications |
+| --- | --- | --- | --- | --- | --- |
+| Amiri (Regular, Bold) | 1.002 | Khaled Hosny, Sebastian Kosch (projet [aliftype/amiri](https://github.com/aliftype/amiri)) | SIL Open Font License 1.1 (`assets/fonts/OFL-Amiri.txt`) | Dépôt officiel Google Fonts `google/fonts`, `ofl/amiri` (source : commit 04d40ee de aliftype/amiri) | Police de référence pour le naskh, maintenue depuis 2010, distribuée par Google Fonts. Couvre les 69 caractères du texte Tanzil (contrôlé). |
+| Amiri Quran | 1.003 | Mêmes auteurs | SIL OFL 1.1 (`assets/fonts/OFL-AmiriQuran.txt`) | `google/fonts`, `ofl/amiriquran` (commit 480bb74) | Conçue pour le texte coranique. Couvre les 69 caractères du texte Tanzil (contrôlé). |
+
+L'OFL autorise l'intégration dans une application GPL. Les noms de police réservés (« Amiri ») ne sont pas modifiés, puisque les fichiers sont copiés tels quels. Les licences sont affichées dans Paramètres › Licences des bibliothèques.
+
+## Synthèse vocale (outil de génération, non embarqué)
+
+Les enregistrements des leçons sont produits une fois par
+`tools/build_audio/generate.py`, puis livrés comme fichiers audio. Le modèle
+n'est pas intégré à l'application. Chaque enregistrement est marqué
+« synthèse » dans la base de contenu et dans l'application.
+
+| Composant | Version | Licence | Remarques |
+| --- | --- | --- | --- |
+| [Chatterbox Multilingual](https://huggingface.co/ResembleAI/chatterbox) (Resemble AI) : poids du modèle | révision HF `5bb1f6e` | MIT (fiche du modèle) | ⚠️ Données d'entraînement non publiées (« 0,5 M heures de données nettoyées ») ; la voix par défaut provient, selon la fiche, de « données librement disponibles sur Internet ». Les sorties ne font l'objet d'aucune restriction dans la licence. |
+| [chatterbox-tts](https://pypi.org/project/chatterbox-tts/) | 0.1.7 | MIT | Code d'inférence. |
+| [resemble-perth](https://pypi.org/project/resemble-perth/) | 1.0.1 | MIT | Filigrane inaudible ajouté par Chatterbox à chaque fichier : les enregistrements restent identifiables comme synthèse. |
+| PyTorch, NumPy, soundfile | — | BSD | Dépendances de l'outil de génération. |
+
+**Fichiers livrés** : 44 enregistrements MP3 des leçons 0 à 3 dans
+`assets/audio/lecons/` (308 Ko), générés le 21/10/2026, listés avec leur
+empreinte SHA-256 dans `tools/build_audio/clips.json`. Conversion MP3 par
+ffmpeg (outil non embarqué ; le format MP3 n'est plus soumis à brevet).
+
+Pas encore intégrés : lecteur audio dans l'application, sprites.
 
 ## Inventaire complet des paquets Dart
 

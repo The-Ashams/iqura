@@ -1,0 +1,117 @@
+{
+  "id": "dechiffrer-00",
+  "etape": 1,
+  "ordre": 0,
+  "titre": "Découvrir l'écriture arabe",
+  "objectif": "Comprendre comment fonctionne l'écriture arabe avant d'apprendre les lettres.",
+  "statut": "ia_non_verifie",
+  "prerequis": [],
+  "introduit": {
+    "lettres": [],
+    "signes": []
+  },
+  "sections": [
+    {
+      "type": "texte",
+      "titre": "De droite à gauche",
+      "corps": "L'arabe s'écrit et se lit de droite à gauche. Un livre arabe s'ouvre donc « à l'envers » pour un lecteur français."
+    },
+    {
+      "type": "texte",
+      "titre": "Des consonnes et de petits signes",
+      "corps": "L'alphabet compte 28 lettres, presque toutes des consonnes. Les voyelles brèves (a, i, u) ne sont pas des lettres : ce sont de petits signes placés au-dessus ou au-dessous des consonnes. Un texte qui porte tous ces signes est dit « vocalisé ». Le Coran et les manuels pour débutants sont entièrement vocalisés : c'est ce que vous apprendrez à lire."
+    },
+    {
+      "type": "texte",
+      "titre": "Des lettres liées, jusqu'à quatre formes",
+      "corps": "Dans un mot, les lettres se lient entre elles, un peu comme l'écriture cursive. Une même lettre change donc de forme selon sa place : seule (isolée), au début, au milieu ou à la fin du mot. Ces formes se ressemblent : c'est la même lettre, raccourcie ou prolongée pour se lier. Six lettres ne se lient jamais à la lettre qui les suit : ا د ذ ر ز و."
+    },
+    {
+      "type": "decomposition",
+      "ar": "ثَبَتَ",
+      "translit": "ṯabata",
+      "fr": "il est resté ferme",
+      "lettres": [
+        "ث",
+        "ب",
+        "ت"
+      ],
+      "note": "Trois lettres séparées, puis liées dans le mot. Vous apprendrez à les lire dans la leçon 1."
+    },
+    {
+      "type": "texte",
+      "titre": "Les points font la différence",
+      "corps": "Beaucoup de lettres ont la même silhouette et ne se distinguent que par le nombre et la place de leurs points. Par exemple ب, ت et ث ont le même dessin : un point dessous, deux points dessus, trois points dessus. Regardez toujours les points."
+    },
+    {
+      "type": "texte",
+      "titre": "La translittération",
+      "corps": "Pour vous aider, chaque mot est aussi écrit en lettres latines : c'est la translittération. Par défaut, IQURA utilise la norme savante Arabica (ṯ, ǧ, ḫ, ā…), précise : une lettre arabe = un signe latin. Vous pouvez choisir une version simplifiée (th, j, kh, â…) dans les paramètres. La translittération est une béquille : l'objectif est de lire l'écriture arabe."
+    },
+    {
+      "type": "texte",
+      "titre": "Écouter et répéter",
+      "corps": "Chaque lettre, syllabe et mot des leçons a un enregistrement à écouter, puis à répéter à voix haute : écoutez, répétez, enregistrez-vous et comparez. Quand l'enregistrement est produit par une voix de synthèse, c'est indiqué. Pour les sons qui n'existent pas en français, une description écrite et un petit schéma montrent en plus où et comment le son se forme."
+    },
+    {
+      "type": "coran",
+      "titre": "Un verset du Coran",
+      "corps": "Voici un verset très court. Ne cherchez pas encore à le lire : observez le sens de l'écriture, les lettres liées et les petits signes au-dessus et au-dessous des lettres. L'écriture du Coran comporte aussi quelques signes particuliers, que vous apprendrez à reconnaître dans la leçon 14.",
+      "extraits": [
+        {
+          "verset": "89:1"
+        }
+      ]
+    }
+  ],
+  "exercices": [
+    {
+      "type": "qcm",
+      "items": [
+        {
+          "question": "Dans quel sens s'écrit l'arabe ?",
+          "choix": [
+            "De droite à gauche",
+            "De gauche à droite"
+          ],
+          "reponse": 0,
+          "explication": "L'arabe s'écrit et se lit de droite à gauche."
+        },
+        {
+          "question": "Comment sont notées les voyelles brèves a, i, u ?",
+          "choix": [
+            "Par de petits signes au-dessus ou au-dessous des lettres",
+            "Par des lettres comme en français"
+          ],
+          "reponse": 0,
+          "explication": "Les voyelles brèves sont de petits signes ; un texte qui les porte tous est « vocalisé »."
+        },
+        {
+          "question": "Pourquoi une lettre arabe peut-elle avoir plusieurs formes ?",
+          "choix": [
+            "Elle change selon sa place dans le mot",
+            "Elle change selon le sens du mot"
+          ],
+          "reponse": 0,
+          "explication": "Isolée, au début, au milieu ou à la fin : la forme dépend de la position, pas du sens."
+        },
+        {
+          "question": "Qu'est-ce qui distingue ب, ت et ث ?",
+          "choix": [
+            "Leurs points",
+            "Leur longueur"
+          ],
+          "reponse": 0,
+          "explication": "Même silhouette ; un point dessous, deux dessus, trois dessus."
+        }
+      ]
+    },
+    {
+      "type": "controle_final",
+      "sources": [
+        "qcm"
+      ],
+      "seuil": 0.75
+    }
+  ]
+}

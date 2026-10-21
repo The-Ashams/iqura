@@ -8,19 +8,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/providers.dart';
+import '../../engines/transliteration/transliterator.dart';
 import '../../data/user_db/schema.dart';
 import '../../data/user_db/user_database.dart';
 
 enum TransliterationStyle {
-  /// ā, ḍ, ʿ… (par défaut)
+  /// Norme Arabica : ṯ, ǧ, ḫ, ā… (par défaut)
   scholarly('savante', 'Savante'),
 
-  /// Lettres simples, sans signes diacritiques.
+  /// th, j, kh, â… (docs/TRANSLITTERATION.md)
   simplified('simplifiee', 'Simplifiée');
 
   const TransliterationStyle(this.storageValue, this.label);
   final String storageValue;
   final String label;
+
+  TranslitStyle get engineStyle => switch (this) {
+    TransliterationStyle.scholarly => TranslitStyle.scholarly,
+    TransliterationStyle.simplified => TranslitStyle.simplified,
+  };
 
   static TransliterationStyle fromStorage(Object? v) =>
       values.firstWhere((s) => s.storageValue == v, orElse: () => scholarly);
@@ -32,6 +38,8 @@ class AppSettings {
     this.themeMode = ThemeMode.system,
     this.transliteration = TransliterationStyle.scholarly,
     this.arabicFontScale = 1.0,
+    this.showTransliteration = true,
+    this.animations = true,
   });
 
   final ThemeMode themeMode;
@@ -40,6 +48,12 @@ class AppSettings {
   /// Facteur appliqué à la taille du texte arabe.
   final double arabicFontScale;
 
+  /// Afficher la translittération sous l'arabe.
+  final bool showTransliteration;
+
+  /// Animations et transitions (désactivables pour le confort).
+  final bool animations;
+
   static const double minArabicScale = 0.8;
   static const double maxArabicScale = 2.0;
 
@@ -47,10 +61,14 @@ class AppSettings {
     ThemeMode? themeMode,
     TransliterationStyle? transliteration,
     double? arabicFontScale,
+    bool? showTransliteration,
+    bool? animations,
   }) => AppSettings(
     themeMode: themeMode ?? this.themeMode,
     transliteration: transliteration ?? this.transliteration,
     arabicFontScale: arabicFontScale ?? this.arabicFontScale,
+    showTransliteration: showTransliteration ?? this.showTransliteration,
+    animations: animations ?? this.animations,
   );
 }
 
@@ -61,6 +79,8 @@ class SettingsRepository {
   static const _theme = 'theme_mode';
   static const _translit = 'transliteration';
   static const _arabicScale = 'arabic_font_scale';
+  static const _showTranslit = 'show_transliteration';
+  static const _animations = 'animations';
 
   AppSettings load() {
     final rows = _db.select(
@@ -82,6 +102,12 @@ class SettingsRepository {
               AppSettings.maxArabicScale,
             )
           : 1.0,
+      showTransliteration: values[_showTranslit] is bool
+          ? values[_showTranslit]! as bool
+          : true,
+      animations: values[_animations] is bool
+          ? values[_animations]! as bool
+          : true,
     );
   }
 
@@ -100,6 +126,8 @@ class SettingsRepository {
   void saveTransliteration(TransliterationStyle s) =>
       _put(_translit, s.storageValue);
   void saveArabicFontScale(double v) => _put(_arabicScale, v);
+  void saveShowTransliteration(bool v) => _put(_showTranslit, v);
+  void saveAnimations(bool v) => _put(_animations, v);
 }
 
 final settingsRepositoryProvider = Provider<SettingsRepository>(
@@ -135,6 +163,16 @@ class SettingsNotifier extends Notifier<AppSettings> {
     );
     if (persist) _repo.saveArabicFontScale(clamped);
     state = state.copyWith(arabicFontScale: clamped);
+  }
+
+  void setShowTransliteration(bool v) {
+    _repo.saveShowTransliteration(v);
+    state = state.copyWith(showTransliteration: v);
+  }
+
+  void setAnimations(bool v) {
+    _repo.saveAnimations(v);
+    state = state.copyWith(animations: v);
   }
 
   /// Relit la base (après un import ou une restauration).

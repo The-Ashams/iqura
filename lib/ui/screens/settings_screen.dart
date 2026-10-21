@@ -4,11 +4,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/app_info.dart';
 import '../../core/providers.dart';
 import '../../features/profile/profile.dart';
+import '../../engines/transliteration/transliterator.dart';
 import '../../features/settings/settings.dart';
 import '../widgets/ai_content_badge.dart';
 import '../widgets/arabic_text.dart';
 import 'backups_screen.dart';
 import 'pseudo_dialog.dart';
+import 'sources_screen.dart';
 import 'transfer_actions.dart';
 
 class SettingsScreen extends ConsumerWidget {
@@ -92,6 +94,20 @@ class SettingsScreen extends ConsumerWidget {
               ],
             ),
           ),
+          SwitchListTile(
+            title: const Text('Afficher la translittération'),
+            subtitle: const Text('Lettres latines sous le texte arabe.'),
+            value: settings.showTransliteration,
+            onChanged: notifier.setShowTransliteration,
+          ),
+          SwitchListTile(
+            title: const Text('Animations'),
+            subtitle: const Text(
+              'Désactivées : pas de transitions entre les écrans.',
+            ),
+            value: settings.animations,
+            onChanged: notifier.setAnimations,
+          ),
           ListTile(
             title: const Text('Taille du texte arabe'),
             subtitle: Column(
@@ -151,16 +167,21 @@ class SettingsScreen extends ConsumerWidget {
   }
 }
 
+/// Exemple construit (« bonjour »), translittéré par le moteur.
+const _exampleArabic = 'صَبَاحُ الْخَيْرِ';
+
 class _TransliterationExample extends ConsumerWidget {
   const _TransliterationExample();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final style = ref.watch(settingsProvider.select((s) => s.transliteration));
-    final example = switch (style) {
-      TransliterationStyle.scholarly => 'ṣabāḥu l-khayri',
-      TransliterationStyle.simplified => 'sabahu l-khayri',
-    };
+    final settings = ref.watch(settingsProvider);
+    final example = settings.showTransliteration
+        ? const Transliterator().transliterate(
+            _exampleArabic,
+            style: settings.transliteration.engineStyle,
+          )
+        : '(translittération masquée)';
     return Wrap(
       spacing: 8,
       runSpacing: 4,
@@ -191,14 +212,17 @@ class _AboutTile extends ConsumerWidget {
             'Version du contenu : ${content.contentVersion}',
           ),
         ),
-        const ListTile(
-          leading: Icon(Icons.source_outlined),
-          title: Text('Données linguistiques'),
-          subtitle: Text(
-            'Aucune donnée coranique ni linguistique n’est encore intégrée. '
-            'Le texte du Coran viendra de Tanzil (CC BY 3.0) et la '
-            'morphologie du Quranic Arabic Corpus / QUL ; chaque source sera '
-            'citée ici.',
+        ListTile(
+          leading: const Icon(Icons.source_outlined),
+          title: const Text('Sources des données'),
+          subtitle: const Text(
+            'Tanzil (texte coranique, traduction), Quranic Arabic Corpus '
+            '(morphologie).',
+          ),
+          trailing: const Icon(Icons.chevron_right),
+          onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute<void>(builder: (_) => const SourcesScreen()),
           ),
         ),
         ListTile(

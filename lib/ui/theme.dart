@@ -3,11 +3,36 @@ import 'package:flutter/material.dart';
 /// Couleur de base : sable du désert.
 const Color _seed = Color(0xFFB8860B);
 
-ThemeData buildTheme(Brightness brightness) {
+ThemeData buildTheme(Brightness brightness, {bool animations = true}) {
   final scheme = ColorScheme.fromSeed(seedColor: _seed, brightness: brightness);
   return ThemeData(
     colorScheme: scheme,
     useMaterial3: true,
     visualDensity: VisualDensity.adaptivePlatformDensity,
+    pageTransitionsTheme: animations
+        ? const PageTransitionsTheme()
+        : const PageTransitionsTheme(
+            builders: {
+              TargetPlatform.android: _NoTransition(),
+              TargetPlatform.windows: _NoTransition(),
+              TargetPlatform.linux: _NoTransition(),
+              TargetPlatform.macOS: _NoTransition(),
+              TargetPlatform.iOS: _NoTransition(),
+            },
+          ),
   );
+}
+
+/// Changement d'écran sans animation.
+class _NoTransition extends PageTransitionsBuilder {
+  const _NoTransition();
+
+  @override
+  Widget buildTransitions<T>(
+    PageRoute<T> route,
+    BuildContext context,
+    Animation<double> animation,
+    Animation<double> secondaryAnimation,
+    Widget child,
+  ) => child;
 }
