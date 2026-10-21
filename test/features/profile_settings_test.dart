@@ -43,6 +43,18 @@ void main() {
     db.close();
   });
 
+  test('translittération masquable et animations désactivables', () {
+    final db = UserDatabase.open(null);
+    final repo = SettingsRepository(db);
+    expect(repo.load().showTransliteration, isTrue);
+    expect(repo.load().animations, isTrue);
+    repo.saveShowTransliteration(false);
+    repo.saveAnimations(false);
+    expect(repo.load().showTransliteration, isFalse);
+    expect(repo.load().animations, isFalse);
+    db.close();
+  });
+
   test('réglage invalide en base : valeur par défaut', () {
     final db = UserDatabase.open(null);
     final repo = SettingsRepository(db)..saveArabicFontScale(1.2);

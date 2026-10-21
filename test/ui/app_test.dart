@@ -60,6 +60,9 @@ void main() {
     expect(find.text('Bienvenue, Amina'), findsOneWidget);
     expect(find.byType(NavigationBar), findsOneWidget);
     expect(find.text('Pas encore disponible'), findsOneWidget);
+    for (final label in ['Carte', 'Cité', 'Grimoire', 'Sanctuaire']) {
+      expect(find.text(label), findsOneWidget);
+    }
   });
 
   testWidgets('écran large : rail latéral', (tester) async {
@@ -73,7 +76,7 @@ void main() {
   });
 
   testWidgets('paramètres : thème enregistré en base', (tester) async {
-    setSize(tester, const Size(400, 900));
+    setSize(tester, const Size(400, 1600));
     await tester.pumpWidget(app());
     await tester.enterText(find.byType(TextField), 'Amina');
     await tester.tap(find.text('Commencer'));
@@ -89,6 +92,12 @@ void main() {
     expect(SettingsRepository(userDb).load().themeMode, ThemeMode.dark);
     final material = tester.widget<MaterialApp>(find.byType(MaterialApp));
     expect(material.themeMode, ThemeMode.dark);
+
+    await tester.tap(find.text('Animations'));
+    await tester.pumpAndSettle();
+    expect(SettingsRepository(userDb).load().animations, isFalse);
+    final ctx = tester.element(find.text('Paramètres').first);
+    expect(MediaQuery.of(ctx).disableAnimations, isTrue);
 
     await tester.tap(find.text('Simplifiée'));
     await tester.pumpAndSettle();

@@ -21,13 +21,22 @@ class IquraApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final themeMode = ref.watch(settingsProvider.select((s) => s.themeMode));
+    final animations = ref.watch(settingsProvider.select((s) => s.animations));
     final hasProfile = ref.watch(profileProvider) != null;
     return MaterialApp(
       title: appName,
       debugShowCheckedModeBanner: false,
-      theme: buildTheme(Brightness.light),
-      darkTheme: buildTheme(Brightness.dark),
+      theme: buildTheme(Brightness.light, animations: animations),
+      darkTheme: buildTheme(Brightness.dark, animations: animations),
       themeMode: themeMode,
+      // Animations désactivées : le signal est transmis à tous les widgets
+      // (MediaQuery.disableAnimations) et les transitions de page supprimées.
+      builder: (context, child) => animations
+          ? child!
+          : MediaQuery(
+              data: MediaQuery.of(context).copyWith(disableAnimations: true),
+              child: child!,
+            ),
       locale: const Locale('fr'),
       supportedLocales: const [Locale('fr')],
       localizationsDelegates: _localizations,

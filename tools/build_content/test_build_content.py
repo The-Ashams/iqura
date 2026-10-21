@@ -187,13 +187,29 @@ class BuildTest(unittest.TestCase):
     def test_lessons_are_stored_with_their_quran_references(self):
         self.assertEqual(
             [r[0] for r in self.q("SELECT id FROM lesson ORDER BY stage, ordinal")][:4],
-            ["lire-00", "lire-01", "lire-02", "lire-03"],
+            ["dechiffrer-00", "dechiffrer-01", "dechiffrer-02", "dechiffrer-03"],
         )
         refs = self.q("SELECT COUNT(*) FROM lesson_quran_ref WHERE token_id IS NOT NULL")
         self.assertGreater(refs[0][0], 0)
         self.assertEqual(self.q(
             "SELECT COUNT(*) FROM lesson_quran_ref r LEFT JOIN token t ON t.id = r.token_id "
             "WHERE r.token_id IS NOT NULL AND t.id IS NULL"), [(0,)])
+
+    def test_every_lesson_item_has_an_audio_slot(self):
+        keys = {r[0] for r in self.q("SELECT key FROM audio_clip")}
+        for (content,) in self.q("SELECT content FROM lesson"):
+            for section in json.loads(content)["sections"]:
+                if section["type"] in ("syllabes", "exemples"):
+                    for item in section["items"]:
+                        self.assertIn(lessons.audio_key(item["ar"]), keys, item["ar"])
+        # Pas encore d'audio : aucune ligne ne prétend en avoir.
+        self.assertEqual(self.q("SELECT COUNT(*) FROM audio_clip WHERE file IS NOT NULL"), [(0,)])
+
+    def test_validation_requires_a_final_check(self):
+        def mutate(d):
+            d.lessons[1]["exercices"] = d.lessons[1]["exercices"][:-1]
+        with self.assertRaisesRegex(lessons.LessonError, "contrôle final"):
+            self._validate(mutate)
 
     def _validate(self, mutate):
         data = lessons.load()

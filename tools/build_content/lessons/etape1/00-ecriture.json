@@ -1,12 +1,15 @@
 {
-  "id": "lire-00",
+  "id": "dechiffrer-00",
   "etape": 1,
   "ordre": 0,
   "titre": "Découvrir l'écriture arabe",
   "objectif": "Comprendre comment fonctionne l'écriture arabe avant d'apprendre les lettres.",
   "statut": "ia_non_verifie",
   "prerequis": [],
-  "introduit": { "lettres": [], "signes": [] },
+  "introduit": {
+    "lettres": [],
+    "signes": []
+  },
   "sections": [
     {
       "type": "texte",
@@ -28,7 +31,11 @@
       "ar": "ثَبَتَ",
       "translit": "ṯabata",
       "fr": "il est resté ferme",
-      "lettres": ["ث", "ب", "ت"],
+      "lettres": [
+        "ث",
+        "ب",
+        "ت"
+      ],
       "note": "Trois lettres séparées, puis liées dans le mot. Vous apprendrez à les lire dans la leçon 1."
     },
     {
@@ -43,14 +50,18 @@
     },
     {
       "type": "texte",
-      "titre": "La prononciation",
-      "corps": "IQURA n'a pas encore de sons : ils arriveront juste après cette première version. En attendant, chaque lettre est décrite par écrit (où et comment le son se forme) avec un petit schéma. Quand une lettre n'existe pas en français, la description le dit clairement."
+      "titre": "Écouter et répéter",
+      "corps": "Chaque lettre, syllabe et mot des leçons a un enregistrement à écouter, puis à répéter à voix haute : écoutez, répétez, enregistrez-vous et comparez. Quand l'enregistrement est produit par une voix de synthèse, c'est indiqué. Pour les sons qui n'existent pas en français, une description écrite et un petit schéma montrent en plus où et comment le son se forme."
     },
     {
       "type": "coran",
       "titre": "Un verset du Coran",
       "corps": "Voici un verset très court. Ne cherchez pas encore à le lire : observez le sens de l'écriture, les lettres liées et les petits signes au-dessus et au-dessous des lettres. L'écriture du Coran comporte aussi quelques signes particuliers, que vous apprendrez à reconnaître dans la leçon 14.",
-      "extraits": [{ "verset": "89:1" }]
+      "extraits": [
+        {
+          "verset": "89:1"
+        }
+      ]
     }
   ],
   "exercices": [
@@ -59,29 +70,48 @@
       "items": [
         {
           "question": "Dans quel sens s'écrit l'arabe ?",
-          "choix": ["De droite à gauche", "De gauche à droite"],
+          "choix": [
+            "De droite à gauche",
+            "De gauche à droite"
+          ],
           "reponse": 0,
           "explication": "L'arabe s'écrit et se lit de droite à gauche."
         },
         {
           "question": "Comment sont notées les voyelles brèves a, i, u ?",
-          "choix": ["Par de petits signes au-dessus ou au-dessous des lettres", "Par des lettres comme en français"],
+          "choix": [
+            "Par de petits signes au-dessus ou au-dessous des lettres",
+            "Par des lettres comme en français"
+          ],
           "reponse": 0,
           "explication": "Les voyelles brèves sont de petits signes ; un texte qui les porte tous est « vocalisé »."
         },
         {
           "question": "Pourquoi une lettre arabe peut-elle avoir plusieurs formes ?",
-          "choix": ["Elle change selon sa place dans le mot", "Elle change selon le sens du mot"],
+          "choix": [
+            "Elle change selon sa place dans le mot",
+            "Elle change selon le sens du mot"
+          ],
           "reponse": 0,
           "explication": "Isolée, au début, au milieu ou à la fin : la forme dépend de la position, pas du sens."
         },
         {
           "question": "Qu'est-ce qui distingue ب, ت et ث ?",
-          "choix": ["Leurs points", "Leur longueur"],
+          "choix": [
+            "Leurs points",
+            "Leur longueur"
+          ],
           "reponse": 0,
           "explication": "Même silhouette ; un point dessous, deux dessus, trois dessus."
         }
       ]
+    },
+    {
+      "type": "controle_final",
+      "sources": [
+        "qcm"
+      ],
+      "seuil": 0.75
     }
   ]
 }

@@ -1,19 +1,39 @@
 {
-  "id": "lire-01",
+  "id": "dechiffrer-01",
   "etape": 1,
   "ordre": 1,
   "titre": "ا ب ت ث et la fatḥa",
   "objectif": "Reconnaître alif, bāʾ, tāʾ et ṯāʾ dans toutes leurs formes, lire la fatḥa (a) et le « ā » long.",
   "statut": "ia_non_verifie",
-  "prerequis": ["lire-00"],
-  "introduit": { "lettres": ["ا", "ب", "ت", "ث"], "signes": ["fatha"] },
+  "prerequis": [
+    "dechiffrer-00"
+  ],
+  "introduit": {
+    "lettres": [
+      "ا",
+      "ب",
+      "ت",
+      "ث"
+    ],
+    "signes": [
+      "fatha"
+    ]
+  },
   "sections": [
     {
       "type": "texte",
       "titre": "Une famille de trois lettres… et l'alif",
       "corps": "ب, ت et ث partagent la même silhouette, une petite barque. Seuls les points changent : un dessous (b), deux dessus (t), trois dessus (ṯ). L'alif ا est un simple trait vertical ; il ne se lie jamais à la lettre qui suit."
     },
-    { "type": "lettres", "lettres": ["ا", "ب", "ت", "ث"] },
+    {
+      "type": "lettres",
+      "lettres": [
+        "ا",
+        "ب",
+        "ت",
+        "ث"
+      ]
+    },
     {
       "type": "regle",
       "titre": "La fatḥa : le son « a »",
@@ -27,22 +47,56 @@
     {
       "type": "syllabes",
       "items": [
-        { "ar": "بَ", "translit": "ba" },
-        { "ar": "تَ", "translit": "ta" },
-        { "ar": "ثَ", "translit": "ṯa" },
-        { "ar": "بَا", "translit": "bā" },
-        { "ar": "تَا", "translit": "tā" },
-        { "ar": "ثَا", "translit": "ṯā" }
+        {
+          "ar": "بَ",
+          "translit": "ba"
+        },
+        {
+          "ar": "تَ",
+          "translit": "ta"
+        },
+        {
+          "ar": "ثَ",
+          "translit": "ṯa"
+        },
+        {
+          "ar": "بَا",
+          "translit": "bā"
+        },
+        {
+          "ar": "تَا",
+          "translit": "tā"
+        },
+        {
+          "ar": "ثَا",
+          "translit": "ṯā"
+        }
       ]
     },
     {
       "type": "exemples",
       "titre": "Premiers mots",
       "items": [
-        { "ar": "ثَبَتَ", "translit": "ṯabata", "fr": "il est resté ferme" },
-        { "ar": "بَاتَ", "translit": "bāta", "fr": "il a passé la nuit" },
-        { "ar": "تَابَ", "translit": "tāba", "fr": "il est revenu (de ses fautes)" },
-        { "ar": "ثَابَ", "translit": "ṯāba", "fr": "il est revenu" }
+        {
+          "ar": "ثَبَتَ",
+          "translit": "ṯabata",
+          "fr": "il est resté ferme"
+        },
+        {
+          "ar": "بَاتَ",
+          "translit": "bāta",
+          "fr": "il a passé la nuit"
+        },
+        {
+          "ar": "تَابَ",
+          "translit": "tāba",
+          "fr": "il est revenu (de ses fautes)"
+        },
+        {
+          "ar": "ثَابَ",
+          "translit": "ṯāba",
+          "fr": "il est revenu"
+        }
       ]
     },
     {
@@ -54,18 +108,80 @@
       "titre": "Dans le Coran",
       "corps": "Repérez les lettres de la leçon dans ces versets. Vous ne pouvez pas encore tout lire : cherchez seulement les formes de ب, ت, ث et ا.",
       "extraits": [
-        { "verset": "78:7", "mots": ["78:7:1", "78:7:2"], "lettres": ["ب", "ت", "ا"] },
-        { "verset": "86:3", "mots": ["86:3:2"], "lettres": ["ث", "ب"] }
+        {
+          "verset": "78:7",
+          "mots": [
+            "78:7:1",
+            "78:7:2"
+          ],
+          "lettres": [
+            "ب",
+            "ت",
+            "ا"
+          ]
+        },
+        {
+          "verset": "86:3",
+          "mots": [
+            "86:3:2"
+          ],
+          "lettres": [
+            "ث",
+            "ب"
+          ]
+        }
       ]
     }
   ],
   "exercices": [
-    { "type": "reconnaitre_lettre", "lettres": ["ا", "ب", "ت", "ث"] },
-    { "type": "formes", "lettres": ["ب", "ت", "ث"] },
-    { "type": "points", "lettres": ["ب", "ت", "ث"] },
-    { "type": "lire", "source": "syllabes" },
-    { "type": "lire", "source": "exemples" },
-    { "type": "reconstruire", "source": "exemples" },
-    { "type": "reperer", "source": "coran" }
+    {
+      "type": "reconnaitre_lettre",
+      "lettres": [
+        "ا",
+        "ب",
+        "ت",
+        "ث"
+      ]
+    },
+    {
+      "type": "formes",
+      "lettres": [
+        "ب",
+        "ت",
+        "ث"
+      ]
+    },
+    {
+      "type": "points",
+      "lettres": [
+        "ب",
+        "ت",
+        "ث"
+      ]
+    },
+    {
+      "type": "lire",
+      "source": "syllabes"
+    },
+    {
+      "type": "lire",
+      "source": "exemples"
+    },
+    {
+      "type": "reconstruire",
+      "source": "exemples"
+    },
+    {
+      "type": "reperer",
+      "source": "coran"
+    },
+    {
+      "type": "controle_final",
+      "sources": [
+        "syllabes",
+        "exemples"
+      ],
+      "seuil": 0.8
+    }
   ]
 }

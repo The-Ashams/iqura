@@ -1,19 +1,35 @@
 {
-  "id": "lire-02",
+  "id": "dechiffrer-02",
   "etape": 1,
   "ordre": 2,
   "titre": "ن ي et la kasra",
   "objectif": "Reconnaître nūn et yāʾ, lire la kasra (i) et le « ī » long.",
   "statut": "ia_non_verifie",
-  "prerequis": ["lire-01"],
-  "introduit": { "lettres": ["ن", "ي"], "signes": ["kasra"] },
+  "prerequis": [
+    "dechiffrer-01"
+  ],
+  "introduit": {
+    "lettres": [
+      "ن",
+      "ي"
+    ],
+    "signes": [
+      "kasra"
+    ]
+  },
   "sections": [
     {
       "type": "texte",
       "titre": "Encore la même silhouette",
       "corps": "Au début et au milieu d'un mot, ن et ي ont la même forme que ب, ت et ث : seuls les points les distinguent. ن a un point dessus, ي deux points dessous. Isolées ou en fin de mot, elles prennent une forme plus ronde qui descend sous la ligne."
     },
-    { "type": "lettres", "lettres": ["ن", "ي"] },
+    {
+      "type": "lettres",
+      "lettres": [
+        "ن",
+        "ي"
+      ]
+    },
     {
       "type": "encadre",
       "corps": "Au début ou au milieu d'un mot, comptez les points : ـبـ (1 dessous), ـتـ (2 dessus), ـثـ (3 dessus), ـنـ (1 dessus), ـيـ (2 dessous)."
@@ -31,23 +47,60 @@
     {
       "type": "syllabes",
       "items": [
-        { "ar": "نَ", "translit": "na" },
-        { "ar": "يَ", "translit": "ya" },
-        { "ar": "بِ", "translit": "bi" },
-        { "ar": "نِ", "translit": "ni" },
-        { "ar": "بِي", "translit": "bī" },
-        { "ar": "تِي", "translit": "tī" },
-        { "ar": "نَا", "translit": "nā" }
+        {
+          "ar": "نَ",
+          "translit": "na"
+        },
+        {
+          "ar": "يَ",
+          "translit": "ya"
+        },
+        {
+          "ar": "بِ",
+          "translit": "bi"
+        },
+        {
+          "ar": "نِ",
+          "translit": "ni"
+        },
+        {
+          "ar": "بِي",
+          "translit": "bī"
+        },
+        {
+          "ar": "تِي",
+          "translit": "tī"
+        },
+        {
+          "ar": "نَا",
+          "translit": "nā"
+        }
       ]
     },
     {
       "type": "exemples",
       "titre": "Mots",
       "items": [
-        { "ar": "نَبَتَ", "translit": "nabata", "fr": "il a poussé (une plante)" },
-        { "ar": "نَابَ", "translit": "nāba", "fr": "il a remplacé" },
-        { "ar": "بِنَا", "translit": "binā", "fr": "avec nous" },
-        { "ar": "بِي", "translit": "bī", "fr": "avec moi" }
+        {
+          "ar": "نَبَتَ",
+          "translit": "nabata",
+          "fr": "il a poussé (une plante)"
+        },
+        {
+          "ar": "نَابَ",
+          "translit": "nāba",
+          "fr": "il a remplacé"
+        },
+        {
+          "ar": "بِنَا",
+          "translit": "binā",
+          "fr": "avec nous"
+        },
+        {
+          "ar": "بِي",
+          "translit": "bī",
+          "fr": "avec moi"
+        }
       ]
     },
     {
@@ -55,18 +108,79 @@
       "titre": "Dans le Coran",
       "corps": "Repérez ن et ي (et les lettres de la leçon 1) dans ces versets.",
       "extraits": [
-        { "verset": "80:29", "mots": ["80:29:1", "80:29:2"], "lettres": ["ي", "ت", "ن"] },
-        { "verset": "78:16", "mots": ["78:16:1"], "lettres": ["ن", "ت"] }
+        {
+          "verset": "80:29",
+          "mots": [
+            "80:29:1",
+            "80:29:2"
+          ],
+          "lettres": [
+            "ي",
+            "ت",
+            "ن"
+          ]
+        },
+        {
+          "verset": "78:16",
+          "mots": [
+            "78:16:1"
+          ],
+          "lettres": [
+            "ن",
+            "ت"
+          ]
+        }
       ]
     }
   ],
   "exercices": [
-    { "type": "reconnaitre_lettre", "lettres": ["ن", "ي"] },
-    { "type": "formes", "lettres": ["ن", "ي"] },
-    { "type": "points", "lettres": ["ب", "ت", "ث", "ن", "ي"] },
-    { "type": "lire", "source": "syllabes" },
-    { "type": "lire", "source": "exemples" },
-    { "type": "reconstruire", "source": "exemples" },
-    { "type": "reperer", "source": "coran" }
+    {
+      "type": "reconnaitre_lettre",
+      "lettres": [
+        "ن",
+        "ي"
+      ]
+    },
+    {
+      "type": "formes",
+      "lettres": [
+        "ن",
+        "ي"
+      ]
+    },
+    {
+      "type": "points",
+      "lettres": [
+        "ب",
+        "ت",
+        "ث",
+        "ن",
+        "ي"
+      ]
+    },
+    {
+      "type": "lire",
+      "source": "syllabes"
+    },
+    {
+      "type": "lire",
+      "source": "exemples"
+    },
+    {
+      "type": "reconstruire",
+      "source": "exemples"
+    },
+    {
+      "type": "reperer",
+      "source": "coran"
+    },
+    {
+      "type": "controle_final",
+      "sources": [
+        "syllabes",
+        "exemples"
+      ],
+      "seuil": 0.8
+    }
   ]
 }

@@ -17,6 +17,7 @@ vérifiée par les tests Dart (test/data/lessons_test.dart).
 from __future__ import annotations
 
 import glob
+import hashlib
 import json
 import os
 import re
@@ -43,7 +44,7 @@ SECTION_TYPES = {
 }
 EXERCISE_TYPES = {
     "qcm", "reconnaitre_lettre", "formes", "points", "lire", "reconstruire",
-    "reperer",
+    "reperer", "controle_final",
 }
 VERSE_REF = re.compile(r"^(\d+):(\d+)$")
 TOKEN_REF = re.compile(r"^(\d+):(\d+):(\d+)$")
@@ -150,6 +151,9 @@ def validate(data: LessonData, con: sqlite3.Connection) -> None:
                 if kind == "coran":
                     _check_quran_section(section, con, where)
 
+            finals = [ex for ex in lesson["exercices"] if ex.get("type") == "controle_final"]
+            if len(finals) != 1 or lesson["exercices"][-1] is not finals[0]:
+                raise LessonError(f"{where} : un contrôle final, en dernier, est obligatoire")
             for ex in lesson["exercices"]:
                 if ex.get("type") not in EXERCISE_TYPES:
                     raise LessonError(f"{where} : exercice inconnu {ex.get('type')}")
@@ -192,6 +196,39 @@ def _check_quran_section(section: dict, con: sqlite3.Connection, where: str) -> 
                 )
 
 
+def audio_key(text: str) -> str:
+    """Identifiant stable d'un enregistrement : empreinte du texte arabe
+    (forme NFC)."""
+    norm = unicodedata.normalize("NFC", text)
+    return "ar-" + hashlib.sha256(norm.encode("utf-8")).hexdigest()[:16]
+
+
+def audio_clips(data: LessonData) -> dict[str, tuple[str, str]]:
+    """Enregistrements nécessaires aux leçons : clé → (genre, texte arabe).
+
+    Lettres (le nom de la lettre), syllabes, mots et décompositions. Les
+    extraits coraniques n'en font pas partie : ils viendront des récitations.
+    """
+    clips: dict[str, tuple[str, str]] = {}
+
+    def add(kind: str, text: str) -> None:
+        clips.setdefault(audio_key(text), (kind, text))
+
+    for card in data.letters["lettres"]:
+        add("lettre", card["nom_ar"])
+    for lesson in data.lessons:
+        for section in lesson["sections"]:
+            if section["type"] == "syllabes":
+                for item in section["items"]:
+                    add("syllabe", item["ar"])
+            elif section["type"] == "exemples":
+                for item in section["items"]:
+                    add("mot" if " " not in item["ar"] else "phrase", item["ar"])
+            elif section["type"] == "decomposition":
+                add("mot", section["ar"])
+    return clips
+
+
 def write(con: sqlite3.Connection, data: LessonData) -> dict[str, int]:
     con.executemany(
         "INSERT INTO articulation_zone VALUES (?, ?)",
@@ -226,4 +263,12 @@ def write(con: sqlite3.Connection, data: LessonData) -> dict[str, int]:
                 for tok in extract.get("mots", []):
                     refs.append((lesson["id"], vid, tok))
     con.executemany("INSERT INTO lesson_quran_ref VALUES (?,?,?)", refs)
-    return {"lessons": len(data.lessons), "letters": len(data.letters["lettres"])}
+    clips = audio_clips(data)
+    # Fichier, origine et indication « synthèse » : remplis quand la solution
+    # audio sera choisie (décision ouverte n° 1). NULL = pas encore d'audio.
+    con.executemany(
+        "INSERT INTO audio_clip (key, kind, text) VALUES (?,?,?)",
+        [(k, kind, text) for k, (kind, text) in sorted(clips.items())],
+    )
+    return {"lessons": len(data.lessons), "letters": len(data.letters["lettres"]),
+            "audio_clips": len(clips)}

@@ -94,6 +94,20 @@ class SettingsScreen extends ConsumerWidget {
               ],
             ),
           ),
+          SwitchListTile(
+            title: const Text('Afficher la translittération'),
+            subtitle: const Text('Lettres latines sous le texte arabe.'),
+            value: settings.showTransliteration,
+            onChanged: notifier.setShowTransliteration,
+          ),
+          SwitchListTile(
+            title: const Text('Animations'),
+            subtitle: const Text(
+              'Désactivées : pas de transitions entre les écrans.',
+            ),
+            value: settings.animations,
+            onChanged: notifier.setAnimations,
+          ),
           ListTile(
             title: const Text('Taille du texte arabe'),
             subtitle: Column(
@@ -161,11 +175,13 @@ class _TransliterationExample extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final style = ref.watch(settingsProvider.select((s) => s.transliteration));
-    final example = const Transliterator().transliterate(
-      _exampleArabic,
-      style: style.engineStyle,
-    );
+    final settings = ref.watch(settingsProvider);
+    final example = settings.showTransliteration
+        ? const Transliterator().transliterate(
+            _exampleArabic,
+            style: settings.transliteration.engineStyle,
+          )
+        : '(translittération masquée)';
     return Wrap(
       spacing: 8,
       runSpacing: 4,

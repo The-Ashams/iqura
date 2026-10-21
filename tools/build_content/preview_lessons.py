@@ -43,6 +43,7 @@ EXERCISE_TEXT = {
     "reconstruire": "Reconstruire (jeu A) : assembler lettres et voyelles pour écrire un mot donné en translittération.",
     "reperer": "Repérer (salle d'étude, jamais en combat) : toucher la lettre demandée dans un mot du Coran.",
     "qcm": "Questions de compréhension.",
+    "controle_final": "Contrôle final : questions tirées de la leçon ; seuil de réussite",
 }
 SOURCE_TEXT = {"syllabes": "syllabes de la leçon", "exemples": "mots de la leçon",
                "coran": "mots coraniques cités"}
@@ -185,6 +186,8 @@ def exercises_html(exs: list[dict]) -> str:
                 extra = " Lettres : " + " ".join(ar(c) for c in ex["lettres"])
             if ex.get("source"):
                 extra = f" Sur : {e(SOURCE_TEXT[ex['source']])}."
+            if ex["type"] == "controle_final":
+                extra = f" {round(ex['seuil'] * 100)} %."
             items.append(f"<li>{e(EXERCISE_TEXT[ex['type']])}{extra}</li>")
     return "<section class='ex'><h3>Exercices</h3><ul>" + "".join(items) + "</ul></section>"
 
@@ -271,16 +274,16 @@ def render(stage: int, upto: int | None) -> str:
   <p class="obj">{fr(l['objectif'])}</p><span class="ia">Leçon rédigée par IA — non vérifiée</span></header>
   {secs}{exercises_html(l['exercices'])}
 </article>""")
-    return f"""<title>Leçons de lecture IQURA</title>
+    return f"""<title>Leçons Déchiffrer IQURA</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri&family=Amiri+Quran&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@600&display=swap">
 <style>{CSS}</style>
 <div class="wrap">
-<h1>Étape 1 · Lire</h1>
+<h1>Étape 1 · Déchiffrer</h1>
 <p class="lead">Aperçu pour relecture des leçons {lessons[0]['ordre']} à {lessons[-1]['ordre']}, généré depuis la base de contenu IQURA (version {e(version)}).
 Les versets sont lus dans la base vérifiée (texte Tanzil, traduction Hamidullah) ; les mots surlignés sont ceux que la leçon cite.
-Pas d'audio dans cette version : la prononciation est décrite par écrit.</p>
+L'audio de chaque lettre, syllabe et mot est prévu ; il n'est pas encore produit (solution audio en cours de choix).</p>
 <nav class="toc">{toc}</nav>
 {''.join(body)}
 <footer>Texte coranique : Tanzil Project (tanzil.net), CC BY 3.0. Traduction : Muhammad Hamidullah, via Tanzil.

@@ -35,9 +35,9 @@ import sources  # noqa: E402
 import tanzil  # noqa: E402
 
 # Version du schéma de la base de contenu (lue par l'application).
-CONTENT_SCHEMA_VERSION = 4
+CONTENT_SCHEMA_VERSION = 5
 # Version des données ; à augmenter à chaque changement de contenu.
-CONTENT_VERSION = "0.4.0-lire"
+CONTENT_VERSION = "0.4.1-dechiffrer"
 
 DEFAULT_OUT = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
@@ -169,6 +169,15 @@ SCHEMA = [
         lesson_id TEXT NOT NULL REFERENCES lesson(id),
         verse_id INTEGER NOT NULL REFERENCES verse(id),
         token_id TEXT REFERENCES token(id)
+    ) STRICT""",
+    # Enregistrements audio nécessaires aux leçons (cahier §7).
+    """CREATE TABLE audio_clip (
+        key TEXT NOT NULL PRIMARY KEY,
+        kind TEXT NOT NULL CHECK (kind IN ('lettre','syllabe','mot','phrase')),
+        text TEXT NOT NULL,
+        file TEXT,
+        origin TEXT,
+        synthetic INTEGER
     ) STRICT""",
     "CREATE INDEX segment_lemma ON segment(lemma_id)",
     "CREATE INDEX segment_root ON segment(root_id)",
