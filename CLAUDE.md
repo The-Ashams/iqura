@@ -121,4 +121,4 @@ On avance région par région, chaque région complète et jouable.
 - **Traduction Hamidullah** : aucune licence publiée ; Tanzil la diffuse pour un usage non commercial.
 - **EveryAyah** : aucune condition publiée ; les droits restent aux récitateurs.
 - **Chatterbox** : poids MIT, mais Resemble AI ne publie ni ses données d'entraînement ni l'origine exacte de la voix par défaut (« prompts sourced from freely available data on the internet »).
-- **Quranic Arabic Corpus** : la FAQ parle d'un « usage de recherche » ; un mail aux auteurs est à envoyer par l'utilisateur (décision ouverte n° 7).
+- **Quranic Arabic Corpus** : doute levé le 21/10/2026 par la notice du fichier (usage autorisé dans toute application, avec source citée, lien vers corpus.quran.com et notice reproduite, ce que fait l'écran des sources). Le mail aux auteurs n'est plus nécessaire, sauf si l'utilisateur le souhaite.

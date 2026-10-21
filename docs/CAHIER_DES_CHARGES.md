@@ -188,7 +188,7 @@ Toute donnée linguistique vient d'une source citée ; tout texte rédigé par I
 - Bouton « Signaler une erreur » sur chaque fiche.
 - Toute dépendance et ressource auditée et listée dans `THIRD_PARTY_LICENSES.md` ; tout point douteux signalé.
 
-**Points douteux connus** : traduction Hamidullah (aucune licence publiée) ; EveryAyah (aucune condition publiée) ; Quranic Arabic Corpus (FAQ « usage de recherche » : confirmation écrite souhaitable).
+**Points douteux connus** : traduction Hamidullah (aucune licence publiée) ; EveryAyah (aucune condition publiée) ; Quranic Arabic Corpus : doute levé par la notice du fichier, qui autorise l'usage dans toute application (voir section 13).
 
 ## 9. Technique
 
@@ -261,7 +261,7 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 4 | Seuil « sourate prête à étudier » | **Décidé le 21/10/2026 : 80 %** de mots reconnus ; Al-Fātiḥa ouverte d'office (voir section 13) |
 | 5 | Récitateur par défaut | **Décidé le 21/10/2026 : al-Ḥuṣarī, murattal** (EveryAyah `Husary_128kbps`) (voir section 13) |
 | 6 | Conversation avec une IA (J4) | **Reportée à J4** par l'utilisateur le 21/10/2026 (voir section 13) |
-| 7 | Licence du Quranic Arabic Corpus | Mail aux auteurs à envoyer par l'utilisateur |
+| 7 | Licence du Quranic Arabic Corpus | **Doute levé le 21/10/2026** par la notice du fichier ; mail aux auteurs facultatif (voir section 13) |
 
 ## 13. Journal des décisions
 
@@ -313,6 +313,16 @@ Décisions prises par l'utilisateur, consignées par Claude Code. Les détails t
 - **Reportée à J4** par l'utilisateur : la décision reste entièrement ouverte jusqu'à l'étape 4. Rien n'est prévu ni développé d'ici là.
 - Pistes présentées, non retenues pour l'instant : option en ligne désactivée par défaut (valeur du cahier) ; aucune IA.
 - D'ici J4, « Répondre aux personnages » se fait hors ligne (choix ou reconstitution).
+
+### Décision n° 7 : licence du Quranic Arabic Corpus (21 octobre 2026)
+
+- L'utilisateur a relevé sur le site du Corpus la notice de la version 0.4 (GNU GPL, Kais Dukes, 2011), identique à celle du fichier téléchargé.
+- Conditions d'utilisation de la notice du fichier : usage autorisé « dans tout site web ou application », à condition de citer clairement la source avec un lien vers corpus.quran.com et de reproduire la notice dans les œuvres dérivées.
+- IQURA respecte ces trois conditions :
+  - archive conservée telle quelle, vérifiée par SHA-256 ;
+  - source et lien dans Paramètres › Sources des données ;
+  - notice reproduite mot pour mot sur ce même écran.
+- La FAQ du site parle d'un usage « de recherche », mais la notice du fichier, plus précise, autorise les applications. Le mail aux auteurs n'est donc plus nécessaire ; il reste possible si l'utilisateur le souhaite.
 
 ### Environnement de développement (session cloud)
 

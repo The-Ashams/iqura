@@ -28,6 +28,9 @@ void main() {
     final db = ContentDatabase.openVerified(path);
     final ids = db.sources().map((s) => s.id).toSet();
     expect(ids, containsAll(['tanzil-uthmani', 'qac-morphology']));
+    final notices = db.sourceNotices();
+    expect(notices['qac-morphology'], contains('Kais Dukes'));
+    expect(notices['qac-morphology'], contains('http://corpus.quran.com'));
     expect(db.contentVersion, isNot('inconnue'));
     db.close();
   });
