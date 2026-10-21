@@ -11,6 +11,7 @@ Usage : python3 tools/build_content/preview_lessons.py SORTIE.html [--etape 1] [
 from __future__ import annotations
 
 import argparse
+import base64
 import html
 import json
 import os
@@ -20,6 +21,25 @@ import sys
 
 DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..",
                   "assets", "content", "iqura_content.db")
+ASSETS = os.path.join(os.path.dirname(DB), "..")
+
+# Texte arabe → enregistrement (data URI), rempli par render().
+AUDIO: dict[str, str] = {}
+
+
+def snd(text: str) -> str:
+    """Lecteur de l'enregistrement de synthèse du texte, s'il existe."""
+    src = AUDIO.get(text)
+    if not src:
+        return ""
+    return f'<audio class="snd" controls preload="none" src="{src}" title="Synthèse vocale"></audio>'
+
+
+def load_audio(con: sqlite3.Connection) -> None:
+    AUDIO.clear()
+    for text, f in con.execute("SELECT text, file FROM audio_clip WHERE file IS NOT NULL"):
+        with open(os.path.join(ASSETS, f), "rb") as fh:
+            AUDIO[text] = "data:audio/mpeg;base64," + base64.b64encode(fh.read()).decode()
 ZWJ = "‍"
 
 # Positions des zones sur le schéma (coordonnées du viewBox 0 0 220 170).
@@ -94,7 +114,7 @@ def letter_card(card: sqlite3.Row, zone_label: str) -> str:
     liaison = "" if card["joins_left"] else '<p class="note">Ne se lie pas à la lettre suivante.</p>'
     return f"""<article class="card">
   <header class="card-h"><div class="big">{ar(c)}</div>
-    <div><div class="lname">{e(card["name"])}</div><div class="arname">{ar(card["name_ar"])}</div></div></header>
+    <div><div class="lname">{e(card["name"])}</div><div class="arname">{ar(card["name_ar"])}</div>{snd(card["name_ar"])}</div></header>
   <div class="forms">{forms_html}</div>
   {liaison}
   <div class="artic">{articulation_svg(card["zone_id"], zone_label)}
@@ -148,19 +168,19 @@ def section_html(con, sec: dict, cards: dict, zones: dict) -> str:
         return '<div class="cards">' + "".join(
             letter_card(cards[c], zones[cards[c]["zone_id"]]) for c in sec["lettres"]) + "</div>"
     if t == "syllabes":
-        cells = "".join(f'<div class="syl">{ar(i["ar"])}<span>{e(i["translit"])}</span></div>'
+        cells = "".join(f'<div class="syl">{ar(i["ar"])}<span>{e(i["translit"])}</span>{snd(i["ar"])}</div>'
                         for i in sec["items"])
         return f'<section><h3>Syllabes</h3><div class="syls">{cells}</div></section>'
     if t == "exemples":
         rows = "".join(
-            f'<tr><td class="w">{ar(i["ar"])}</td><td class="tl">{e(i["translit"])}</td><td>{e(i["fr"])}</td></tr>'
+            f'<tr><td class="w">{ar(i["ar"])}{snd(i["ar"])}</td><td class="tl">{e(i["translit"])}</td><td>{e(i["fr"])}</td></tr>'
             for i in sec["items"])
         return (f'<section>{title}<div class="tbl"><table><thead><tr><th>Mot</th><th>Translittération</th>'
                 f'<th>Sens</th></tr></thead><tbody>{rows}</tbody></table></div>'
                 f'<p class="ia">Exemples construits — rédigés par IA, non vérifiés</p></section>')
     if t == "decomposition":
         parts = " + ".join(ar(c) for c in sec["lettres"])
-        return (f'<section class="decomp"><div class="eq">{parts} → {ar(sec["ar"], cls="xl")}</div>'
+        return (f'<section class="decomp"><div class="eq">{parts} → {ar(sec["ar"], cls="xl")}</div>{snd(sec["ar"])}'
                 f'<p><span class="tl">{e(sec["translit"])}</span> — {e(sec["fr"])}</p>'
                 f'<p class="note">{fr(sec["note"])}</p></section>')
     if t == "coran":
@@ -258,6 +278,7 @@ footer{margin-top:32px;font-size:.85rem;color:var(--muted)}
 def render(stage: int, upto: int | None) -> str:
     con = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
     con.row_factory = sqlite3.Row
+    load_audio(con)
     cards = {r["letter"]: r for r in con.execute("SELECT * FROM letter")}
     zones = dict(con.execute("SELECT id, description FROM articulation_zone"))
     version = con.execute("SELECT value FROM content_meta WHERE key='content_version'").fetchone()[0]
@@ -278,12 +299,13 @@ def render(stage: int, upto: int | None) -> str:
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri&family=Amiri+Quran&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@600&display=swap">
-<style>{CSS}</style>
+<style>{CSS}
+.snd{{display:block;width:150px;height:30px;margin-top:4px}}</style>
 <div class="wrap">
 <h1>Étape 1 · Déchiffrer</h1>
 <p class="lead">Aperçu pour relecture des leçons {lessons[0]['ordre']} à {lessons[-1]['ordre']}, généré depuis la base de contenu IQURA (version {e(version)}).
 Les versets sont lus dans la base vérifiée (texte Tanzil, traduction Hamidullah) ; les mots surlignés sont ceux que la leçon cite.
-L'audio de chaque lettre, syllabe et mot est prévu ; il n'est pas encore produit (solution audio en cours de choix).</p>
+Chaque lettre, syllabe et mot a son enregistrement : <b>voix de synthèse</b> (Chatterbox Multilingual), coupée automatiquement après le mot. Les extraits coraniques n'ont pas d'audio ici : ils viendront des récitations (al-Ḥuṣarī).</p>
 <nav class="toc">{toc}</nav>
 {''.join(body)}
 <footer>Texte coranique : Tanzil Project (tanzil.net), CC BY 3.0. Traduction : Muhammad Hamidullah, via Tanzil.
