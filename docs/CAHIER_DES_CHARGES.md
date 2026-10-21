@@ -257,7 +257,7 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | --- | --- | --- |
 | 1 | Audio des leçons et dialogues | **Décidé le 21/10/2026 : Chatterbox Multilingual** (voir section 13) |
 | 2 | Univers et style graphique | **Décidé le 21/10/2026 : pixel art libre**, monde inspiré des cités de savoir historiques, sans figures sacrées (voir section 13) |
-| 3 | Nom et scénario de l'Histoire | **Base décidée le 21/10/2026** : le voyageur et la bibliothèque oubliée ; synopsis du chapitre 1 et nom à valider (voir section 13) |
+| 3 | Nom et scénario de l'Histoire | **Décidé le 21/10/2026** : *La Bibliothèque oubliée*, cité Madīnat al-Ḥikma ; synopsis du chapitre 1 dans `docs/HISTOIRE.md` (voir section 13) |
 | 4 | Seuil « sourate prête à étudier » | 80 % de mots reconnus ; Al-Fātiḥa ouverte d'office |
 | 5 | Récitateur par défaut | al-Ḥuṣarī |
 | 6 | Conversation avec une IA (J4) | Option en ligne, désactivée par défaut |
@@ -294,7 +294,7 @@ Décisions prises par l'utilisateur, consignées par Claude Code. Les détails t
 - **Retenu : la base du cahier**. Un voyageur arrive dans une cité de savoir où l'on parle arabe et où une grande bibliothèque a été oubliée ; en comprenant la langue, il reconstruit la cité.
 - Méthode : Claude propose un synopsis du chapitre 1 et quelques noms ; l'utilisateur valide ou corrige **avant** toute écriture des dialogues. Les dialogues sont marqués « rédigé par IA — non vérifié ».
 - Aucun prophète ni aucune figure religieuse n'est représenté ni ne prend la parole.
-- **En attente** : validation du synopsis du chapitre 1 et du nom.
+- **Validé par l'utilisateur** : synopsis du chapitre 1 (`docs/HISTOIRE.md`), titre *La Bibliothèque oubliée*, cité Madīnat al-Ḥikma (مَدِينَةُ الْحِكْمَةِ, « la cité de la sagesse », traduction rédigée par IA, non vérifiée).
 
 ### Environnement de développement (session cloud)
 
