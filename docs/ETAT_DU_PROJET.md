@@ -42,17 +42,16 @@ Pour régénérer l'audio : voir `CLAUDE.md`, section « Commandes ». L'environ
    - la place de ā / ī dans les leçons.
 2. **Écoute des 44 enregistrements des leçons** (page d'écoute à produire en début de session suivante si l'utilisateur le souhaite).
 3. **Décisions ouvertes du cahier §12**, à poser une à la fois, avec une recommandation :
-   - n° 2 : univers et style graphique (prochaine question) ;
-   - n° 3 : nom et scénario de l'Histoire ;
+   - n° 3 : nom et scénario de l'Histoire (prochaine question) ;
    - n° 4 : seuil « sourate prête à étudier » ;
    - n° 5 : récitateur par défaut ;
    - n° 6 : conversation avec une IA ;
    - n° 7 : mail aux auteurs du Quranic Arabic Corpus (à envoyer par l'utilisateur).
-4. **Fusion de la pull request n° 2** dans `main`.
+4. Pull request n° 2 fusionnée dans `main` le 21/10/2026.
 
 ## 4. Prochaine étape prévue
 
-1. Poser la décision ouverte n° 2 (univers et style graphique), avec une recommandation.
+1. Décision n° 2 tranchée (pixel art libre). Poser la décision n° 3 (nom et scénario de l'Histoire), avec une recommandation. Ensuite, chercher et auditer des packs pixel art libres cohérents avec l'univers.
 2. Obtenir la validation des leçons 0 à 3, puis rédiger les leçons 4 à 14 et le boss.
 3. Intégrer la lecture audio dans l'application (paquet audité), avec la mention « synthèse ».
 4. Suite de l'ordre de travail J1 (`CLAUDE.md`) : coquille du jeu, chapitre 1, Expédition, Sanctuaire (Al-Fātiḥa).

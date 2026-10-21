@@ -256,7 +256,7 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | N° | Question | Valeur par défaut |
 | --- | --- | --- |
 | 1 | Audio des leçons et dialogues | **Décidé le 21/10/2026 : Chatterbox Multilingual** (voir section 13) |
-| 2 | Univers et style graphique | Monde inspiré des cités de savoir historiques, sans figures sacrées ; pixel art à partir de packs libres |
+| 2 | Univers et style graphique | **Décidé le 21/10/2026 : pixel art libre**, monde inspiré des cités de savoir historiques, sans figures sacrées (voir section 13) |
 | 3 | Nom et scénario de l'Histoire | Le voyageur et la bibliothèque oubliée, à détailler avec l'utilisateur au début de J1 |
 | 4 | Seuil « sourate prête à étudier » | 80 % de mots reconnus ; Al-Fātiḥa ouverte d'office |
 | 5 | Récitateur par défaut | al-Ḥuṣarī |
@@ -281,6 +281,13 @@ Décisions prises par l'utilisateur, consignées par Claude Code. Les détails t
 - **Refusés** par l'utilisateur : eSpeak NG, eSpeak NG avec les voix MBROLA ar1/ar2, Azure Neural TTS (service payant avec compte).
 - **Comparés, non retenus** : VoxCPM2 (Apache-2.0), Piper « kareem » (licence des données de la voix inconnue), MMS-TTS de Meta (non commercial, supprime les voyelles). MOSS-TTS n'a pas pu être testé (17 Go).
 - Point douteux : Resemble AI ne publie ni ses données d'entraînement ni l'origine exacte de la voix par défaut.
+
+### Décision n° 2 : univers et style graphique (21 octobre 2026)
+
+- **Retenu : pixel art à partir de packs libres** (valeur par défaut du cahier, recommandée).
+- Univers : monde inspiré des cités de savoir historiques (bibliothèques, observatoires, caravansérails), sans aucune figure sacrée ni représentation de prophète.
+- Chaque pack graphique est audité avant intégration (licence CC0 de préférence) et listé dans `THIRD_PARTY_LICENSES.md`.
+- Écartés : illustration 2D vectorielle (peu de packs libres cohérents) et style minimaliste ou abstrait (moins « jeu »).
 
 ### Environnement de développement (session cloud)
 
