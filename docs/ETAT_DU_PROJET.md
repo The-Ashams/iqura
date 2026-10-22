@@ -5,7 +5,7 @@ Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026**, référen
 
 Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` après la fusion de la pull request n° 3).
 
-**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape en cours : 1, liste des changements. Liste A1 à A7 acceptée en entier le 22/10/2026 ; points du §3 en cours de clarification.**
+**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape 1 terminée le 22/10/2026** (liste A1 à A7 acceptée, points du §3 tranchés). **Étape en cours : 2, noms des lieux et personnages de la région 1 et découpage en lieux, à proposer à l'utilisateur.**
 
 ## 1. Ce qui existe déjà (gardé, cahier §0.1 point 4)
 
@@ -54,15 +54,15 @@ Derniers résultats : tests locaux du 22/10/2026 (Python : contenu et audio OK ;
 3. **Schèmes** : le v3 les attribue au Corpus (« via QUL si besoin ») ; la version 0.4 n'en contient pas. QUL est à examiner (contenu et licence) avant de s'y fier. **Tranché le 22/10/2026 : QUL sera examiné avant la région 3 ; rien n'est inventé d'ici là.**
 4. **Traduction** : « révision du Complexe Roi Fahd (2000) » n'est pas confirmée par Tanzil. **Tranché le 22/10/2026 : « édition non précisée » ; cahier corrigé.**
 5. **Police du Mushaf** : le v3 cite KFGQPC Hafs ; IQURA utilise Amiri Quran ; la licence de KFGQPC est à auditer avant tout changement. **Tranché le 22/10/2026 : Amiri Quran pour J1a ; audit de KFGQPC avant la leçon 14.**
-6. **« Signaler une erreur »** dans une application hors ligne : par quel moyen (fichier exporté, mail préparé, autre) ? **Tranché le 22/10/2026 : mail prérempli envoyé par le joueur depuis sa messagerie ; adresse dédiée au projet, **à créer par l'utilisateur** ; en attendant, signalements gardés sur l'appareil, envoi indiqué « pas encore configuré ».**
-7. **Sort de racine** : « débloqué en région 3 ; familles simples avant » (§8.5) : la commande existe-t-elle dès la région 1 sous une forme simple ?
+6. **« Signaler une erreur »** dans une application hors ligne : par quel moyen (fichier exporté, mail préparé, autre) ? **Tranché le 22/10/2026 : mail prérempli envoyé par le joueur depuis sa messagerie ; adresse : contact@edelwa.com.**
+7. **Sort de racine** : « débloqué en région 3 ; familles simples avant » (§8.5) : la commande existe-t-elle dès la région 1 sous une forme simple ? **Tranché le 22/10/2026 : forme simple dès la leçon 7, forme complète en région 3.**
 
 Changements du v3 notés sans question, car le v3 fait foi : option IA décidée « à partir de J4, désactivée par défaut » (l'utilisateur avait dit « décider à J4 » le 21/10) ; noms de l'Histoire à revalider en J1a.
 
 ## 4. Prochaine étape
 
-1. Obtenir l'accord de l'utilisateur sur la liste du §2 et les réponses aux points du §3.
-2. Ensuite, cahier §13.1 point 2 : proposer les noms des lieux et personnages de la région 1 et son découpage en 8 à 12 lieux.
+1. Fait : accord sur la liste du §2 et réponses aux points du §3.
+2. En cours, cahier §13.1 point 2 : proposer les noms des lieux et personnages de la région 1 et son découpage en 8 à 12 lieux.
 
 ## 5. Problèmes connus
 
