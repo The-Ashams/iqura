@@ -642,7 +642,7 @@ Lieu calme de la cité, sans aucun combat, où le Coran se lit et s'étudie.
 | Contenu | Source | Statut |
 | --- | --- | --- |
 | Texte coranique | Tanzil (CC BY 3.0, modification interdite) | Vérifié par SHA-256 |
-| Racines, lemmes, catégories, formes, schèmes, fréquences | Quranic Arabic Corpus (licence GNU, non commercial), via QUL si besoin | Sourcé |
+| Racines, lemmes, catégories, formes, schèmes, fréquences | Quranic Arabic Corpus (GNU GPL ; source citée avec lien et notice reproduite), via QUL si besoin | Sourcé |
 | Traduction des versets | Hamidullah, révision du Complexe Roi Fahd (2000), créditée, remplaçable | Crédité |
 | Sens français, explications, nuances | Rédigés à partir des données sourcées | « Rédigé par IA » |
 | Dialogues, récits, exemples | Rédigés en arabe classique entièrement vocalisé, vocabulaire contrôlé | « Rédigé par IA » |
@@ -651,7 +651,7 @@ Lieu calme de la cité, sans aucun combat, où le Coran se lit et s'étudie.
 | Audio | Chatterbox (MIT) ; EveryAyah (droits aux récitateurs) | Crédités |
 | Graphismes | Packs libres ou créations, licence vérifiée pack par pack | À auditer |
 
-**Points douteux connus** : traduction Hamidullah (aucune licence publiée) ; EveryAyah (aucune condition publiée) ; Quranic Arabic Corpus (la FAQ parle d'usage « de recherche » : mail de confirmation aux auteurs à envoyer par l'utilisateur — Claude Code peut rédiger le mail).
+**Points douteux connus** : traduction Hamidullah (aucune licence publiée) ; EveryAyah (aucune condition publiée). Quranic Arabic Corpus : doute levé par la notice du fichier (GNU GPL ; usage autorisé « dans tout site web ou application », à condition de citer la source avec un lien vers corpus.quran.com et de reproduire la notice) ; la FAQ du site parle d'usage « de recherche », mais la notice, plus précise, fait foi ; mail aux auteurs facultatif.
 
 ---
 
@@ -738,7 +738,7 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 12 | Relecture | Aucun relecteur : sources citées, contenu IA marqué « rédigé par IA » |
 | 13 | Compilation | Claude Code + GitHub Actions |
 
-**Reste à faire côté utilisateur** : envoyer le mail de confirmation de licence aux auteurs du Quranic Arabic Corpus (Claude Code peut le rédiger).
+**Reste à faire côté utilisateur** : rien d'obligatoire. Le mail de confirmation aux auteurs du Quranic Arabic Corpus est facultatif (Claude Code peut le rédiger).
 
 ---
 
@@ -751,3 +751,4 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-22 | Format mini-donjon, précisions des leçons ; corrections des leçons 0 à 3 ; style pixel art type RPG japonais classique ; programme complet des 5 régions ; racines dès la région 1 ; Coran à chaque région ; vocabulaire adaptatif et passif/actif ; trois évaluations par examen ; objectifs intermédiaires ; gameplay détaillé ; prototype avant production ; arabe classique pour la conversation ; ordre des sourates et Histoire validés |
 | 2026-10-22 | Cahier v3 appliqué : v2 archivée, `CLAUDE.md` réécrit ; liste des changements A1 à A7 de `docs/ETAT_DU_PROJET.md` acceptée en entier (leçons 0 à 3 réécrites au format mini-donjon avec les corrections du §5.5, sons des éléments retirés supprimés et nouveaux mots générés, coquille actuelle remplacée par le jeu en pixel art, aperçu adapté, noms de l'Histoire à revalider) |
 | 2026-10-22 | Mention des contenus écrits par IA : « rédigé par IA » (sans « non vérifié »), comme demandé le 21/10/2026 ; passages du v3 corrigés en ce sens (§3.2, §7, §10, §11, §14, §15) |
+| 2026-10-22 | Licence du Quranic Arabic Corpus : cahier corrigé d'après la notice du fichier (GNU GPL, usage dans toute application avec source, lien et notice) ; mail aux auteurs facultatif |
