@@ -647,7 +647,7 @@ Lieu calme de la cité, sans aucun combat, où le Coran se lit et s'étudie.
 | Sens français, explications, nuances | Rédigés à partir des données sourcées | « Rédigé par IA » |
 | Dialogues, récits, exemples | Rédigés en arabe classique entièrement vocalisé, vocabulaire contrôlé | « Rédigé par IA » |
 | Textes classiques (région 4) | Œuvres classiques profanes du domaine public, édition citée | Sourcé |
-| Polices | Amiri ou Scheherazade New (SIL OFL) ; KFGQPC Hafs pour le Mushaf | Licences jointes |
+| Polices | Amiri et Amiri Quran (SIL OFL), en place ; KFGQPC Hafs pour le Mushaf seulement après audit de sa licence (avant la leçon 14) | Licences jointes |
 | Audio | Chatterbox (MIT) ; EveryAyah (droits aux récitateurs) | Crédités |
 | Graphismes | Packs libres ou créations, licence vérifiée pack par pack | À auditer |
 
@@ -754,3 +754,4 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-22 | Licence du Quranic Arabic Corpus : cahier corrigé d'après la notice du fichier (GNU GPL, usage dans toute application avec source, lien et notice) ; mail aux auteurs facultatif |
 | 2026-10-22 | Schèmes : absents du Quranic Arabic Corpus 0.4 ; QUL (contenu et licence) sera examiné avant la région 3 ; rien n'est inventé d'ici là, la région 1 n'en a pas besoin |
 | 2026-10-22 | Traduction : « Hamidullah, version diffusée par Tanzil (édition non précisée) » ; la révision du Complexe Roi Fahd (2000) n'est pas affirmée, faute de confirmation |
+| 2026-10-22 | Police du Mushaf : Amiri Quran (OFL) gardée pour J1a ; licence de KFGQPC Hafs auditée avant la leçon 14, résultat présenté à l'utilisateur |
