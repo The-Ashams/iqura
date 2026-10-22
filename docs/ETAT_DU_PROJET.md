@@ -1,67 +1,74 @@
 # État du projet IQURA
 
-Mis à jour le 21 octobre 2026, en fin de session. **À lire en début de session, à tenir à jour en fin de session.**
-Référence : `docs/CAHIER_DES_CHARGES.md` (décisions : §12 et §13). Règles : `CLAUDE.md`.
+Mis à jour le 22 octobre 2026. **À lire en début de session, à mettre à jour à chaque étape importante et avant la fin d'une session.**
+Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026**, référence unique). Règles : `CLAUDE.md`. Anciennes versions : `docs/archive/`.
 
-Branche de travail : `claude/laughing-ramanujan-axcixk`. Pull request ouverte : [The-Ashams/iqura#2](https://github.com/The-Ashams/iqura/pull/2).
+Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` après la fusion de la pull request n° 3).
 
-## 1. Terminé et testé
+**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape en cours : 1, liste des changements, en attente de l'accord de l'utilisateur.**
+
+## 1. Ce qui existe déjà (gardé, cahier §0.1 point 4)
 
 | Élément | Preuve |
 | --- | --- |
-| **J0 — Socle** : app Windows et Android, profil, base utilisateur, sauvegardes, export, import, fusion | Pull request n° 1 fusionnée. Transfert PC → Android validé par l'utilisateur. |
-| **Pipeline coranique** : Tanzil Uthmani 1.1 (SHA-256 `351c2dcb…e189e` vérifié par les tests et à chaque démarrage), Quranic Arabic Corpus 0.4 aligné sur 100 % des 6 236 versets, traduction Hamidullah via Tanzil | Tests Python (`tools/build_content`) et Dart (`test/data`). |
-| **Polices** Amiri et Amiri Quran (OFL), couverture des 69 caractères du texte Tanzil | Contrôlée par test. |
-| **Translittération** Arabica et simplifiée, masquable | Tests du moteur ; les translittérations des leçons sont comparées au moteur. |
-| **Adaptation au cahier v2** : navigation (Carte du monde, Cité, Grimoire, Sanctuaire, Paramètres), étape « Déchiffrer », animations désactivables | Tests d'interface. |
-| **Leçons 0 à 3** de l'étape 1, sous forme de données contrôlées par le pipeline | Tests Python. **Contenu non validé par l'utilisateur** (voir §3). |
-| **Décision n° 1 (audio)** : Chatterbox Multilingual ; outil `tools/build_audio/` (génération, coupure des sons parasites, livraison MP3) | Coupure validée à l'écoute par l'utilisateur sur 17 échantillons. Tests de la coupure. |
-| **Audio des leçons 0 à 3** : 44 enregistrements (9 noms de lettres, 21 syllabes, 14 mots), MP3 mono 64 kbit/s, 308 Ko, tous obtenus au premier essai ; table `audio_clip` remplie (fichier, origine, synthèse = 1) | Le pipeline vérifie l'empreinte SHA-256 de chaque fichier et refuse un texte différent ou un enregistrement orphelin (tests). |
+| **Socle J0** : app Windows et Android, profil, base utilisateur, sauvegardes, export, import, fusion, CI | Pull request n° 1 fusionnée ; transfert PC → Android validé par l'utilisateur |
+| **Pipeline coranique** : Tanzil Uthmani 1.1 vérifié par SHA-256 (tests et démarrage), Quranic Arabic Corpus 0.4 aligné sur 100 % des 6 236 versets, traduction Hamidullah via Tanzil, notice du Corpus affichée dans l'application | Tests Python et Dart |
+| **Polices** Amiri et Amiri Quran (OFL) | Couverture du texte Tanzil contrôlée par test |
+| **Translittération** Arabica et simplifiée, masquable | Tests du moteur |
+| **Outil audio** Chatterbox avec coupure automatique et contrôle de durée selon la longueur des voyelles | Coupure validée à l'écoute ; 8 tests |
+| **Audio des leçons 0 à 3** : 44 MP3, dont تَ, يَ et نَابَ corrigés et validés à l'écoute le 22/10/2026 | Empreintes SHA-256 vérifiées par le pipeline |
+| **Leçons 0 à 3** (ancien format, fiches de cours) | Tests Python ; à refaire au format mini-donjon (voir §2) |
+| **Maquettes** « Histoire — La porte de la bibliothèque » et « Expédition — Combat contre l'Oubli » | Base de référence du style (cahier §8.1) ; [page des maquettes](https://claude.ai/artifact/9CuoZib7eH4rfxH7eBNLFd), hors dépôt |
 
-Tests locaux à la fin de la session (21/10/2026) :
-- `python3 -m unittest discover -s tools/build_content` : 27 tests OK ;
-- `python -m unittest discover -s tools/build_audio` : 6 tests OK ;
-- `dart format lib test` : aucun changement ; `flutter analyze` : aucun problème ;
-- `flutter test` : 83 tests OK.
+Derniers résultats : tests locaux du 22/10/2026 (Python : contenu et audio OK ; Flutter : 83 tests OK ; `flutter analyze` sans remarque) ; compilations GitHub Actions réussies (tests, APK, Windows) sur `80f8d48`, dernier commit de la pull request n° 3.
 
-Compilations GitHub Actions (tests, APK Android, exécutable Windows) : entièrement réussies sur `39871ea` (audio des leçons), [run 39672913852](https://github.com/The-Ashams/iqura/actions/runs/39672913852) et [run 39672903212](https://github.com/The-Ashams/iqura/actions/runs/39672903212). Un échec antérieur de l'APK sur `b75856a` venait d'un refus passager de Maven Central (erreur 429), pas du code ; les compilations suivantes sont passées.
+## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
-## 2. En cours, et où je me suis arrêté
+### A. Modifications fortes ou suppressions — accord de l'utilisateur nécessaire
 
-- **Audio dans l'application** : les fichiers MP3 sont livrés (`assets/audio/lecons/`) et référencés par la table `audio_clip` de la base de contenu, avec leur origine et l'indication « synthèse ». **Aucun lecteur audio n'est encore intégré à l'application**, et aucun bouton « écouter » n'existe. Prochaine action : choisir et auditer un paquet Flutter de lecture audio (Android et Windows, hors ligne), puis l'écran de leçon.
-- **Enregistrements des leçons non écoutés** : l'utilisateur a validé la coupure sur 17 textes de test, pas encore les 44 enregistrements des leçons. Aucun n'est marqué `"a_ecouter": true` dans `tools/build_audio/clips.json` (ce marqueur signale un enregistrement sans durée plausible après 5 essais).
-- **Leçons 4 à 14 et boss de l'étape 1** : non commencées ; elles attendent la validation des leçons 0 à 3.
+| N° | Existant | Changement prévu | Raison (cahier) |
+| --- | --- | --- | --- |
+| A1 | Leçons 0 à 3 : fiches de cours (sections de texte, puis exercices) | Réécriture complète au format mini-donjon : écrans d'entrée, échauffement, découverte, éléments, règle, entraînement, salle d'étude, mini-boss, fin. Nouveau format de données, nouveaux contrôles du pipeline, nouveaux tests. Les textes utiles sont repris. | §6, §5.5 point 9 |
+| A2 | Leçon 0 : texte suivi de questions à **2 choix**, contrôle final à **75 %** | Énigme de déchiffrage ; questions à 3 ou 4 choix ; 80 % | §5.5 points 5, 6, 8 |
+| A3 | Contenu des leçons 0 à 3 | Corrections : alif (retirer « ou à une voyelle »), نَجَا (« il s'est sauvé, il a échappé »), ح (le « ahh » soufflé), décomposition de la leçon 0 de droite à gauche, nouveaux mots بَاب, بَنَات, نَبَات, ثَابِت, تَاج, جَنَاح, حَبِيب | §5.5 points 1 à 4 et 7 |
+| A4 | 44 enregistrements audio | Ceux des éléments retirés sont supprimés ; ceux des nouveaux mots sont générés puis soumis à l'écoute | Conséquence de A1 à A3 |
+| A5 | Coquille actuelle : 5 espaces « Pas encore disponible » (Carte, Cité, Grimoire, Sanctuaire, Paramètres) | Remplacée par la coquille du jeu en pixel art (carte à étapes, dialogue, combat, Cité, Grimoire, Sanctuaire). Profil, Paramètres, sauvegarde, export et import sont gardés. | §8, §13.1 point 3 |
+| A6 | Page d'aperçu des leçons (`preview_lessons.py`) | Adaptée au nouveau format, ou remplacée par le jeu lui-même | Conséquence de A1 |
+| A7 | `docs/HISTOIRE.md` : *La Bibliothèque oubliée*, Madīnat al-Ḥikma, l'archiviste, l'apprenti copiste | Gardé comme proposition ; noms définitifs et lieux de la région 1 (« Le Désert des Lettres ») à revalider à l'étape 2 | §8.2, §13.1 point 2 |
 
-Pour régénérer l'audio : voir `CLAUDE.md`, section « Commandes ». L'environnement Python de synthèse n'est pas dans le dépôt (le conteneur de session est éphémère) : il faut le réinstaller, et le modèle (plusieurs Go) se retélécharge depuis `huggingface.co` et `us.aws.cdn.hf.co`.
+### B. Ajouts (rien n'est supprimé)
 
-- **Corrections audio faites le 22/10/2026** (retours de l'utilisateur sur l'aperçu des leçons) : تَ (leçon 1) et يَ (leçon 2) étaient allongés, نَابَ (leçon 2) tronqué. Remplacés par de nouvelles versions validées à l'écoute par l'utilisateur (تَ graine 3, يَ graine 1, نَابَ graine 1 « version A »). Contrôle de durée amélioré : plafond selon la longueur des voyelles (`trim.vowel_units`). Le reste des leçons 0 à 3 (contenu, translittération, autres sons) attend encore la validation de l'utilisateur.
+| N° | Ajout | Cahier |
+| --- | --- | --- |
+| B1 | Base utilisateur, nouvelle version avec migration : cartes et états FSRS (passif et actif séparés), progression par écran, ressources, équipement, enchantement, séries, enregistrements (sur l'appareil, exclus de l'export par défaut) ; export, import et fusion étendus | §4, §6.3, §8.6, §10 |
+| B2 | Base de contenu : fréquences des lemmes (calculées à partir du Corpus), lieux, dialogues, monstres, objets ; liste d'environ 100 mots de la région 1 (choisis par script, soumise à l'utilisateur) | §5.5, §12 |
+| B3 | Paquets Flutter, chacun audité avant ajout : Flame, FSRS, lecture audio, enregistrement micro | §3.3, §12 |
+| B4 | Réglages : vitesse audio, nouveaux mots par jour (5 à 30, 15 par défaut), chronomètre, mode « apprentissage seul » | §4, §6.2, §8.3 |
+| B5 | Bouton « Signaler une erreur » sur chaque fiche | §3.2 |
+| B6 | Graphismes pixel art : packs libres audités ou créations | §8.1 |
 
-## 3. Décisions en attente de l'utilisateur
+## 3. Points ambigus ou contradictoires (à poser un par un, cahier §0.2)
 
-1. **Validation des leçons 0 à 3** (aperçu : `python3 tools/build_content/preview_lessons.py SORTIE.html --etape 1 --jusqua 3`). Questions posées et sans réponse :
-   - le tableau de translittération Arabica ;
-   - le style simplifié ;
-   - la place de ā / ī dans les leçons.
-2. **Écoute des 44 enregistrements des leçons** (page d'écoute à produire en début de session suivante si l'utilisateur le souhaite).
-3. **Décisions ouvertes du cahier §12**, à poser une à la fois, avec une recommandation :
-   - n° 6 : conversation avec une IA, **reportée à J4** par l'utilisateur ;
-   - n° 7 : licence du Quranic Arabic Corpus, doute levé par la notice du fichier (voir cahier §13) ; reste à savoir si l'utilisateur veut quand même écrire aux auteurs.
-4. Pull request n° 2 fusionnée dans `main` le 21/10/2026.
+1. **Mention des contenus IA** : le v3 écrit « rédigé par IA — non vérifié » (§3.2, §10, §11, §14, §15), alors que l'utilisateur a demandé « rédigé par IA » le 21/10/2026, et que c'est ce qui est appliqué aujourd'hui. **Question posée le 22/10/2026.**
+2. **Licence du Quranic Arabic Corpus** : le v3 indique « licence GNU, non commercial » et un mail à envoyer ; la notice du fichier (relevée par l'utilisateur le 21/10/2026) dit GNU GPL et autorise l'usage « dans tout site web ou application », sans mention « non commercial ».
+3. **Schèmes** : le v3 les attribue au Corpus (« via QUL si besoin ») ; la version 0.4 n'en contient pas. QUL est à examiner (contenu et licence) avant de s'y fier.
+4. **Traduction** : « révision du Complexe Roi Fahd (2000) » n'est pas confirmée par Tanzil.
+5. **Police du Mushaf** : le v3 cite KFGQPC Hafs ; IQURA utilise Amiri Quran ; la licence de KFGQPC est à auditer avant tout changement.
+6. **« Signaler une erreur »** dans une application hors ligne : par quel moyen (fichier exporté, mail préparé, autre) ?
+7. **Sort de racine** : « débloqué en région 3 ; familles simples avant » (§8.5) : la commande existe-t-elle dès la région 1 sous une forme simple ?
 
-## 4. Prochaine étape prévue
+Changements du v3 notés sans question, car le v3 fait foi : option IA décidée « à partir de J4, désactivée par défaut » (l'utilisateur avait dit « décider à J4 » le 21/10) ; noms de l'Histoire à revalider en J1a.
 
-1. Décisions n° 2 (pixel art libre) et n° 3 (*La Bibliothèque oubliée*, synopsis dans `docs/HISTOIRE.md`) tranchées, ainsi que n° 4 (seuil de 80 %) et n° 5 (al-Ḥuṣarī murattal ; horodatages QUL à vérifier). Décision n° 6 reportée à J4. Décision n° 7 : doute levé par la notice du fichier. Ensuite, chercher et auditer des packs pixel art libres cohérents avec l'univers.
-2. Obtenir la validation des leçons 0 à 3, puis rédiger les leçons 4 à 14 et le boss.
-3. Intégrer la lecture audio dans l'application (paquet audité), avec la mention « synthèse ».
-4. Suite de l'ordre de travail J1 (`CLAUDE.md`) : coquille du jeu, chapitre 1, Expédition, Sanctuaire (Al-Fātiḥa).
+## 4. Prochaine étape
+
+1. Obtenir l'accord de l'utilisateur sur la liste du §2 et les réponses aux points du §3.
+2. Ensuite, cahier §13.1 point 2 : proposer les noms des lieux et personnages de la région 1 et son découpage en 8 à 12 lieux.
 
 ## 5. Problèmes connus
 
-- **Schèmes** : absents du Quranic Arabic Corpus 0.4 ; aucune source ouverte fiable trouvée ; rien n'est inventé.
-- **Traduction Hamidullah** : édition exacte non indiquée par Tanzil ; usage non commercial uniquement.
-- **Quranic Arabic Corpus** : licence vérifiée dans la notice du fichier ; conditions respectées (source, lien, notice reproduite dans l'écran des sources).
-- **Police du Mushaf** : le cahier cite KFGQPC Hafs ; IQURA utilise Amiri Quran (licence KFGQPC à auditer avant tout changement).
-- **Chatterbox** : données d'entraînement et origine de la voix par défaut non publiées. Le modèle prononce parfois mal une voyelle longue isolée (بَا aussi court que بَ) : à juger à l'écoute.
-- **Synthèse non reproductible en CI** : le modèle est trop lourd ; les MP3 sont donc versionnés, et la CI vérifie seulement leur empreinte.
-- **Réseau de la session cloud** : `download-r2.pytorch.org` bloqué (PyTorch installé depuis PyPI) ; `github.com` et quelques sites de référence (Mendeley, Inalco, Brill) bloqués.
-- **Compilation Windows** : uniquement via GitHub Actions (pas de Windows dans la session).
+- **Audio dans l'application** : les MP3 sont livrés, mais aucun lecteur n'est encore intégré (paquet à auditer).
+- **Chatterbox** : données d'entraînement et origine de la voix par défaut non publiées ; une voyelle brève isolée peut être allongée, et un mot tronqué n'est pas détecté automatiquement : l'écoute de l'utilisateur reste nécessaire.
+- **Synthèse non reproductible en CI** (modèle trop lourd) : les MP3 sont versionnés et la CI vérifie leur empreinte.
+- **Réseau de la session cloud** : `download-r2.pytorch.org`, `github.com` et quelques sites de référence bloqués.
+- **Compilation Windows** : uniquement via GitHub Actions.
+- **Maven Central** refuse parfois les téléchargements (erreur 429) pendant la compilation de l'APK ; une nouvelle compilation passe.

@@ -1,124 +1,69 @@
 # IQURA — instructions pour Claude
 
-**Référence unique du projet : `docs/CAHIER_DES_CHARGES.md` (v2, 21 octobre 2026).** Lis-le avant toute tâche importante, avec son journal des décisions (§13). **État courant, travail en cours et prochaine étape : `docs/ETAT_DU_PROJET.md`** (à lire en début de session, à tenir à jour en fin de session). L'ancien dossier d'architecture est archivé dans `docs/archive/ARCHITECTURE.md` (historique seulement).
+**Référence unique : `docs/CAHIER_DES_CHARGES.md` (v3, 22 octobre 2026).** Il remplace tous les documents précédents (archivés dans `docs/archive/`) et fait foi en cas de contradiction. Le détail est là-bas ; ce fichier n'en garde que l'essentiel.
+**État courant, travail en cours, prochaine étape : `docs/ETAT_DU_PROJET.md`** (à lire en début de session, à mettre à jour à chaque étape importante et avant la fin d'une session).
 
-## Vision
+## Vision (cahier §1)
 
-IQURA est un **RPG d'aventure narrative** dont la mécanique centrale est de comprendre l'arabe : plus le joueur comprend, plus le monde s'ouvre. Il mène un francophone débutant jusqu'à lire couramment l'arabe littéraire, le comprendre, le parler et surtout **comprendre directement le Coran**.
+RPG d'aventure narrative en pixel art dont la mécanique centrale est de comprendre l'arabe littéraire classique (fuṣḥā), jusqu'à comprendre directement le Coran. Un vrai cursus (≈ 130 leçons, 5 régions, inspiré de la méthode de Médine) intégré à un vrai jeu : le joueur ne doit pas avoir l'impression de suivre un cours. Les racines comme signature, le Coran à chaque région, toujours avec respect. Gratuit, sans publicité ni achat, GPL-3.0, en français, Windows 10/11 et Android, hors ligne.
 
-- Un vrai cursus, inspiré de la méthode de Médine, en cinq étapes (une région du jeu par étape).
-- Un vrai jeu : le déchiffrement de la langue est le gameplay (*Heaven's Vault*, *Chants of Sennaar*), avec les codes du RPG (équipement, enchantement, donjons, boss).
-- Les racines comme signature.
-- Le respect du Coran : il est la connaissance étudiée, jamais l'ennemi.
+## Règles de travail (cahier §0.2)
 
-Gratuit, sans publicité ni achat, open source **GPL-3.0**, en français, pour **Windows et Android**, utilisable hors ligne.
+- **Ne jamais deviner.** Point ambigu, contradictoire ou impossible : s'arrêter et demander à l'utilisateur, avec une recommandation et une alternative. Une question à la fois.
+- **Montrer avant de produire en masse** : un ou deux exemples de chaque nouveau type de contenu, validés avant la suite.
+- **Prototype avant production** : rien n'est produit en masse avant la validation du prototype jouable (jalon J1a).
+- **Ne jamais annoncer** une compilation, un test ou une vérification non exécutés ; donner les preuves (lire les résultats de GitHub Actions).
+- Avant de supprimer ou de modifier fortement du code ou du contenu existant : présenter la liste et attendre l'accord.
+- Parler à l'utilisateur en français simple, sans jargon ; lui dire clairement ce qu'il doit faire lui-même (tester, valider, fusionner une pull request).
+- Toute décision nouvelle est ajoutée au cahier (§16), avec sa date.
 
-## Règles absolues
+## Règles absolues (cahier §3, résumé)
 
-1. **Respect du Coran (cahier §6, non négociable).**
-   - Le Coran est la connaissance étudiée, jamais l'ennemi combattu. Il se lit et s'étudie dans le **Sanctuaire**, sans aucun combat.
-   - Aucun mot coranique affiché sur un monstre, frappé, détruit ou « tué », ni dans les visuels, ni dans les animations, ni dans les textes.
-   - En combat, un mot du vocabulaire peut apparaître **seul, sous forme de dictionnaire**, dans un **panneau de question neutre**, sans verset ni référence.
-   - **Aucun verset ni extrait coranique en combat.**
-   - Noms divins, noms de prophètes et formules sacrées sont **exclus de toute question de combat**.
-   - Les monstres représentent des difficultés (l'Oubli, la Confusion, la Distraction), jamais des mots.
-   - Aucune représentation de prophètes ni de figures sacrées ; aucune parole attribuée à un prophète ou à une figure religieuse.
-   - Récompenses du Sanctuaire discrètes (XP, avancement de la cité), jamais de butin ni de combat liés au texte.
-2. **Texte coranique jamais généré, reconstitué ni modifié.**
-   - Il vient de Tanzil, stocké une seule fois, et il est vérifié par SHA-256 dans les tests et au démarrage.
-   - Les leçons le **référencent** (sourate:verset ou plage de mots) sans le recopier.
-3. **Aucune donnée inventée** : pas de racine, d'occurrence, de schème, ni de traduction attribuée à un auteur. Toute donnée linguistique vient d'une **source citée**.
-4. **Aucun relecteur humain.** Tout texte rédigé par IA (sens des mots, explications, nuances, dialogues, récits, exemples) porte la mention visible **« rédigé par IA »** (formulation choisie par l'utilisateur le 21/10/2026 ; avant : « rédigé par IA — non vérifié »). Chaque exemple affiche sa source (« exemple construit » ou référence coranique). Tout audio de synthèse est signalé comme tel.
-5. **Ne jamais prétendre avoir compilé ou testé** sans l'avoir réellement fait. Lire les résultats de GitHub Actions avant d'annoncer quoi que ce soit.
-6. **Licences** : chaque dépendance et ressource (code, polices, audio, graphismes, données) est auditée et listée dans `THIRD_PARTY_LICENSES.md` ; tout point douteux est signalé à l'utilisateur.
-7. **Aucun bouton décoratif ni fausse fonctionnalité** : ce qui n'est pas fait est indiqué comme tel.
-8. **Racines** : la racine ne suffit pas à déduire le sens exact d'un dérivé. Toute fiche, leçon ou exercice le montre (avertissement visible) ; structure issue du Quranic Arabic Corpus, sens rédigés et marqués.
-9. **Décisions** : ne rien choisir à la place de l'utilisateur sur les décisions ouvertes (cahier §12). Poser les questions une à la fois, avec une recommandation. Avant de supprimer ou de modifier fortement du code existant, présenter la liste et attendre son accord.
+1. **Coran** : connaissance étudiée, jamais l'ennemi. Monstres = difficultés (l'Oubli, la Confusion, la Précipitation, la Distraction, l'Impatience), jamais des mots. Aucun mot coranique sur un monstre, frappé ou détruit. En combat, un mot du vocabulaire seul, sous forme de dictionnaire, dans un panneau neutre ; **aucun verset ni extrait en combat** (extraits : salles d'étude et Sanctuaire seulement). Noms divins, de prophètes et formules sacrées exclus du combat. Aucune représentation ni parole de prophète ou de figure sacrée. Quand la langue ne suffit pas, le dire et renvoyer vers les savants.
+2. **Texte coranique** jamais généré, reconstitué ni modifié : Tanzil, stocké une fois, vérifié par SHA-256 (tests et démarrage) ; les leçons le référencent sans le recopier.
+3. **Aucune donnée inventée** (racine, lemme, occurrence, schème, traduction, analyse présentée comme certaine) ; sources citées.
+4. **Contenu rédigé par IA** : mention visible. ⚠️ Formulation exacte en attente : le cahier v3 écrit « rédigé par IA — non vérifié », l'utilisateur avait demandé « rédigé par IA » le 21/10/2026 (voir `docs/ETAT_DU_PROJET.md`). Chaque exemple affiche sa source ; tout audio de synthèse est signalé « synthèse » ; bouton « Signaler une erreur » sur chaque fiche.
+5. **Honnêteté** : aucun bouton décoratif ni fausse fonctionnalité ; aucune note automatique de prononciation ; les statistiques de jeu ne modifient jamais les révisions ni la maîtrise.
+6. **Licences** : chaque dépendance et ressource auditée et listée dans `THIRD_PARTY_LICENSES.md` ; tout point douteux signalé.
+7. **Racines** : la racine ne suffit pas à déduire le sens d'un dérivé (avertissement visible).
 
-## Pédagogie (cahier §2 et §3)
-
-- **Quatre compétences par session** : comprendre (lire, écouter), mémoriser (FSRS), comprendre la mécanique (grammaire, schèmes, racines), produire (parler, écrire).
-- **Textes gradués** : tout texte à lire contient **au moins 95 % de mots connus** du joueur (calcul automatique).
-- **Révision et rappel** :
-  - un appui sur un mot inconnu affiche son sens et crée une carte de révision ;
-  - FSRS pour les mots, racines, conjugaisons et règles, avec une note déduite de la justesse et du temps de réponse ;
-  - toujours demander avant de montrer (rappel actif), avec un feedback qui explique, et des révisions entrelacées.
-- **Progression** : bascule progressive des dialogues du français vers l'arabe ; fréquence d'abord ; répétition à voix haute sans note automatique de prononciation.
-- **États d'un mot** : découvert → en apprentissage → reconnu → maîtrisé, plus « à réviser ». Jamais « maîtrisé » après une seule réussite.
-- **Cursus** : 1 Déchiffrer, 2 Fondations, 3 Le moteur de la langue, 4 Lire et parler, 5 Le Coran. Chaque étape se termine par un boss-examen. Le Coran est présent dès l'étape 1.
-- **Leçon (mini-donjon)** : découverte par l'exemple, règle courte, pratique corrigée, un ou deux extraits coraniques référencés, contrôle final, cartes de révision.
-
-## Décisions techniques (cahier §9)
+## Décisions techniques (cahier §12)
 
 | Sujet | Décision |
 | --- | --- |
-| Framework | Flutter (Dart), Windows et Android ; moteur 2D Flame (MIT) ; menus, questions et Grimoire en widgets Flutter |
+| Framework | Flutter (Dart), Windows et Android ; Flame (MIT) pour le 2D ; menus, questions, Grimoire en widgets |
 | Données | SQLite : `iqura_content.db` en lecture seule, générée par `tools/build_content/` ; `iqura_user.db`, seule base exportée |
-| Contenu | Piloté par les données : leçons, dialogues, récits, quêtes, monstres, objets, régions dans des fichiers de contenu (JSON), pas dans le code |
-| Révision | FSRS |
-| Sauvegarde | Archive ZIP versionnée et vérifiée, restauration complète ou fusion (fait, J0) |
-| Hors ligne | Tout, sauf téléchargement des récitations, mises à jour de contenu et option IA |
-| Affichage | Arabe RTL, diacritiques corrects, taille réglable ; polices Amiri et Amiri Quran (SIL OFL) ; translittération *Arabica* par défaut, simplifiée au choix, masquable (`docs/TRANSLITTERATION.md`) ; clair/sombre ; animations désactivables |
-| Ergonomie | Souris et clavier (Windows), tactile (Android), plusieurs tailles d'écran |
-| Audio | **Obligatoire dès le MVP.** Coran : EveryAyah (al-Ḥuṣarī murattal par défaut, `Husary_128kbps`, décision n° 5), mots par découpage horodaté (QUL), packs par sourate. Leçons et dialogues : **Chatterbox Multilingual** (MIT, décision n° 1 tranchée le 21/10/2026), généré une fois par `tools/build_audio/`, coupé après la première prise de parole, signalé « synthèse » |
-| Graphismes | **Pixel art libre** (décision n° 2, 21/10/2026) : cités de savoir historiques, sans figures sacrées ; chaque pack audité (CC0 de préférence) |
-| Histoire | *La Bibliothèque oubliée*, cité Madīnat al-Ḥikma (décision n° 3) ; synopsis validé dans `docs/HISTOIRE.md` |
-| Compilation | Claude Code + GitHub Actions (APK et exe) sur `The-Ashams/iqura` |
+| Contenu | Leçons, dialogues, récits, quêtes, monstres, objets, régions, lieux : fichiers JSON, pas de code |
+| Révision | FSRS (notes : cahier §6.3) |
+| Audio | Leçons : Chatterbox Multilingual, généré une fois (`tools/build_audio/`), coupure automatique, « synthèse ». Coran : EveryAyah, al-Ḥuṣarī, jamais de synthèse |
+| Graphismes | Pixel art type RPG japonais classique (§8.1), packs libres audités ou créations ; référence : les deux maquettes du 22/10/2026 |
+| Affichage | Arabe RTL, polices Amiri / Amiri Quran (OFL) ; translittération Arabica par défaut, simplifiée au choix (règles d'affichage : §6.2) ; clair/sombre ; animations désactivables |
+| Sauvegarde | ZIP versionnée et vérifiée, restauration ou fusion (en place) |
+| Compilation | Claude Code + GitHub Actions (APK et .exe) sur `The-Ashams/iqura` ; Windows uniquement via Actions |
 
-## Jalons (cahier §10)
+## Ordre de travail (cahier §13)
 
-| Jalon | Contenu | Condition de passage |
-| --- | --- | --- |
-| J0 — Socle | **Fait** : app Windows et Android, profil, sauvegarde, export, import, fusion | Transfert PC → Android validé ✅ |
-| J1 — MVP, région 1 « Déchiffrer » | Toute l'étape 1 avec audio ; chapitre 1 de l'Histoire ; Expédition et boss ; Grimoire ; Cité minimale (boutique, équipement, enchantement +1 à +15) ; Sanctuaire avec Al-Fātiḥa ; séries ; mode « apprentissage seul » | Un débutant lit des mots vocalisés seul ; il revient plusieurs jours ; aucun bug bloquant |
-| J2 à J5 | Régions 2 à 5 (Fondations, Moteur de la langue, Lire et parler, Le Coran) | Voir cahier §10 |
+On avance région par région. **Jalon en cours : J1a, tranche verticale** (leçons 0 à 3 au format mini-donjon, jouables de bout en bout). Condition : l'utilisateur joue 30 minutes et valide que c'est amusant et efficace.
 
-**Ordre de travail pour J1** :
-1. Solution audio (décision n° 1) : **fait**, Chatterbox Multilingual ; enregistrements des leçons 0 à 3 livrés (44 MP3). Reste : lecteur audio dans l'application, et l'audio des leçons suivantes au fur et à mesure.
-2. Pipeline de données (fait en grande partie : Tanzil vérifié, Quranic Arabic Corpus aligné).
-3. Contenus de l'étape 1, validés par l'utilisateur leçon par leçon.
-4. Coquille du jeu.
-5. Chapitre 1, Expédition, Sanctuaire (Al-Fātiḥa).
-6. Tests et compilations.
-
-On avance région par région, chaque région complète et jouable.
-
-## État et écarts connus
-
-- **Fait (J0 et pipeline)** :
-  - socle de la phase 1 ;
-  - pipeline coranique (Tanzil Uthmani vérifié, Quranic Arabic Corpus aligné à 100 %, traduction Hamidullah via Tanzil) ;
-  - polices Amiri / Amiri Quran ;
-  - moteur de translittération ;
-  - leçons 0 à 3 de l'étape 1 sous forme de données, en attente de validation ;
-  - décision n° 1 (audio) : Chatterbox Multilingual, outil `tools/build_audio/` (génération, coupure des sons parasites validée à l'écoute, livraison MP3 vérifiée par SHA-256).
-- **Audio dans l'application** : les fichiers sont livrés et référencés par la base de contenu, mais aucun lecteur audio n'est encore intégré (choix du paquet Flutter à auditer).
-- **Schèmes** : le cahier les attribue au Quranic Arabic Corpus, mais la version 0.4 ne les fournit pas. Aucune source ouverte fiable trouvée à ce jour ; rien n'est inventé.
-- **Traduction** : le cahier indique « rév. Complexe Roi Fahd (2000) », mais Tanzil ne précise pas l'édition diffusée.
-- **Police du Mushaf** : le cahier cite KFGQPC Hafs ; IQURA utilise aujourd'hui Amiri Quran (OFL, couverture du texte Tanzil vérifiée). La licence de KFGQPC est à auditer avant tout changement.
+1. Liste de ce qui change dans l'existant, accord de l'utilisateur.
+2. Noms des lieux et personnages de la région 1, découpage en 8 à 12 lieux, validation.
+3. Coquille du jeu en pixel art : carte, dialogue, combat, Cité, Grimoire, Sanctuaire minimal.
+4. Leçons 0 et 1 au format mini-donjon, montrées et validées.
+5. Leçons 2 et 3 sur le même modèle.
+6. FSRS, Expédition, ressources, équipement, enchantement.
+7. Tests et compilations ; marche à suivre de test envoyée à l'utilisateur.
+8. Retours, corrections, mise à jour du cahier et de l'état.
 
 ## Commandes
 
-- Installer Flutter + SDK Android (session cloud) : `tools/setup_cloud.sh` (lancé automatiquement par `.claude/hooks/session-start.sh`).
-- Base de contenu : `python3 tools/build_content/build_content.py`, obligatoire avant `flutter build` et `flutter test`.
-  - Les sources sont versionnées et vérifiées par SHA-256 dans `tools/build_content/sources/`.
-  - `fetch_sources.py` les compare aux versions en ligne.
+- Session cloud : `tools/setup_cloud.sh` (Flutter + SDK Android, lancé par `.claude/hooks/session-start.sh`).
+- Base de contenu (avant `flutter test` et `flutter build`) : `python3 tools/build_content/build_content.py` ; sources vérifiées par SHA-256 dans `tools/build_content/sources/`.
 - Vérifications : `dart format lib test`, `flutter analyze`, `flutter test`, `python3 -m unittest discover -s tools/build_content`.
-- Compilation : `flutter build apk --release` ; Windows uniquement via GitHub Actions (`.github/workflows/build.yml`).
-- Inventaire des licences : `python3 tools/third_party/list_dart_packages.py`.
-- Audio des leçons (hors CI : modèle de plusieurs Go, processeur suffisant) :
-  - environnement Python à part avec `torch` (PyPI), `chatterbox-tts` 0.1.7 installé avec `--no-deps` plus ses dépendances, `setuptools<81` (Perth utilise `pkg_resources`), `soundfile` ; `ffmpeg` pour le MP3 ;
-  - `python tools/build_audio/generate.py --lecons DOSSIER` génère tous les enregistrements des leçons (rapport JSON, graine retenue, parasites retirés) ;
-  - `python tools/build_audio/package.py DOSSIER` convertit en MP3 dans `assets/audio/lecons/` et met à jour `tools/build_audio/clips.json` ;
-  - tests de la coupure : `python -m unittest discover -s tools/build_audio` (numpy requis).
-- Réseau de la session cloud : `huggingface.co`, `us.aws.cdn.hf.co` et `download.pytorch.org` sont autorisés (ajoutés par l'utilisateur) ; `download-r2.pytorch.org` est bloqué, installer PyTorch depuis PyPI.
-- Leçons :
-  - données dans `tools/build_content/lessons/`, contrôlées par le pipeline ;
-  - aperçu pour relecture : `python3 tools/build_content/preview_lessons.py SORTIE.html --etape 1 --jusqua N`.
-
-## Points de licence douteux
-
-- **Traduction Hamidullah** : aucune licence publiée ; Tanzil la diffuse pour un usage non commercial.
-- **EveryAyah** : aucune condition publiée ; les droits restent aux récitateurs.
-- **Chatterbox** : poids MIT, mais Resemble AI ne publie ni ses données d'entraînement ni l'origine exacte de la voix par défaut (« prompts sourced from freely available data on the internet »).
-- **Quranic Arabic Corpus** : doute levé le 21/10/2026 par la notice du fichier (usage autorisé dans toute application, avec source citée, lien vers corpus.quran.com et notice reproduite, ce que fait l'écran des sources). Le mail aux auteurs n'est plus nécessaire, sauf si l'utilisateur le souhaite.
+- Compilation : `flutter build apk --release` ; Windows : `.github/workflows/build.yml`.
+- Licences des paquets Dart : `python3 tools/third_party/list_dart_packages.py`.
+- Leçons : données dans `tools/build_content/lessons/` ; aperçu : `python3 tools/build_content/preview_lessons.py SORTIE.html --etape 1 --jusqua N`.
+- Audio (hors CI, modèle de plusieurs Go) : environnement Python à part (`torch` depuis PyPI, `chatterbox-tts` 0.1.7 en `--no-deps` et ses dépendances, `setuptools<81`, `soundfile`, `ffmpeg`).
+  - `python tools/build_audio/generate.py --lecons DOSSIER [--seulement TEXTE…] [--premiere-graine N] [--brut]` ;
+  - `python tools/build_audio/package.py DOSSIER` (MP3 dans `assets/audio/lecons/`, manifeste `tools/build_audio/clips.json`) ;
+  - tests : `python -m unittest discover -s tools/build_audio`.
+- Réseau de la session cloud : `huggingface.co`, `us.aws.cdn.hf.co`, `download.pytorch.org` autorisés ; `download-r2.pytorch.org` bloqué (PyTorch depuis PyPI).

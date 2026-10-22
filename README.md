@@ -9,7 +9,7 @@ Plateformes : Android et Windows.
 > Hamidullah, morphologie du Quranic Arabic Corpus) sont intégrées. Les espaces
 > du jeu sont encore affichés comme « Pas encore disponible ».
 
-Référence du projet : [`docs/CAHIER_DES_CHARGES.md`](docs/CAHIER_DES_CHARGES.md).
+Référence du projet : [`docs/CAHIER_DES_CHARGES.md`](docs/CAHIER_DES_CHARGES.md) (v3). État : [`docs/ETAT_DU_PROJET.md`](docs/ETAT_DU_PROJET.md).
 L'ancien dossier d'architecture est archivé dans `docs/archive/`.
 
 ## Télécharger
