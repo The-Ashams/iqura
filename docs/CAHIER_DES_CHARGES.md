@@ -643,7 +643,7 @@ Lieu calme de la cité, sans aucun combat, où le Coran se lit et s'étudie.
 | --- | --- | --- |
 | Texte coranique | Tanzil (CC BY 3.0, modification interdite) | Vérifié par SHA-256 |
 | Racines, lemmes, catégories, formes, schèmes, fréquences | Quranic Arabic Corpus (GNU GPL ; source citée avec lien et notice reproduite), via QUL si besoin | Sourcé |
-| Traduction des versets | Hamidullah, révision du Complexe Roi Fahd (2000), créditée, remplaçable | Crédité |
+| Traduction des versets | Hamidullah, version diffusée par Tanzil (édition non précisée), créditée, remplaçable ; usage non commercial | Crédité |
 | Sens français, explications, nuances | Rédigés à partir des données sourcées | « Rédigé par IA » |
 | Dialogues, récits, exemples | Rédigés en arabe classique entièrement vocalisé, vocabulaire contrôlé | « Rédigé par IA » |
 | Textes classiques (région 4) | Œuvres classiques profanes du domaine public, édition citée | Sourcé |
@@ -753,3 +753,4 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-22 | Mention des contenus écrits par IA : « rédigé par IA » (sans « non vérifié »), comme demandé le 21/10/2026 ; passages du v3 corrigés en ce sens (§3.2, §7, §10, §11, §14, §15) |
 | 2026-10-22 | Licence du Quranic Arabic Corpus : cahier corrigé d'après la notice du fichier (GNU GPL, usage dans toute application avec source, lien et notice) ; mail aux auteurs facultatif |
 | 2026-10-22 | Schèmes : absents du Quranic Arabic Corpus 0.4 ; QUL (contenu et licence) sera examiné avant la région 3 ; rien n'est inventé d'ici là, la région 1 n'en a pas besoin |
+| 2026-10-22 | Traduction : « Hamidullah, version diffusée par Tanzil (édition non précisée) » ; la révision du Complexe Roi Fahd (2000) n'est pas affirmée, faute de confirmation |
