@@ -5,7 +5,7 @@ Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026**, référen
 
 Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` après la fusion de la pull request n° 3).
 
-**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape en cours : 1, liste des changements, en attente de l'accord de l'utilisateur.**
+**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape en cours : 1, liste des changements. Liste A1 à A7 acceptée en entier le 22/10/2026 ; points du §3 en cours de clarification.**
 
 ## 1. Ce qui existe déjà (gardé, cahier §0.1 point 4)
 
@@ -24,7 +24,7 @@ Derniers résultats : tests locaux du 22/10/2026 (Python : contenu et audio OK ;
 
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
-### A. Modifications fortes ou suppressions — accord de l'utilisateur nécessaire
+### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
 
 | N° | Existant | Changement prévu | Raison (cahier) |
 | --- | --- | --- | --- |
