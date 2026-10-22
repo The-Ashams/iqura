@@ -738,7 +738,7 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 12 | Relecture | Aucun relecteur : sources citées, contenu IA marqué « rédigé par IA » |
 | 13 | Compilation | Claude Code + GitHub Actions |
 
-**Reste à faire côté utilisateur** : rien d'obligatoire. Le mail de confirmation aux auteurs du Quranic Arabic Corpus est facultatif (Claude Code peut le rédiger).
+**Reste à faire côté utilisateur** : créer une adresse mail dédiée aux signalements d'erreur et la communiquer à Claude Code. Le mail de confirmation aux auteurs du Quranic Arabic Corpus est facultatif (Claude Code peut le rédiger).
 
 ---
 
@@ -756,3 +756,4 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-22 | Traduction : « Hamidullah, version diffusée par Tanzil (édition non précisée) » ; la révision du Complexe Roi Fahd (2000) n'est pas affirmée, faute de confirmation |
 | 2026-10-22 | Police du Mushaf : Amiri Quran (OFL) gardée pour J1a ; licence de KFGQPC Hafs auditée avant la leçon 14, résultat présenté à l'utilisateur |
 | 2026-10-22 | « Signaler une erreur » : petit formulaire, signalement gardé sur l'appareil, puis bouton « Envoyer » qui ouvre la messagerie du joueur avec un mail prérempli (fiche, version du contenu, description) ; rien n'est envoyé sans son action |
+| 2026-10-22 | Adresse des signalements : une adresse dédiée au projet, à créer par l'utilisateur ; en attendant, le bouton garde les signalements sur l'appareil et indique que l'envoi n'est pas encore configuré |

@@ -54,7 +54,7 @@ Derniers résultats : tests locaux du 22/10/2026 (Python : contenu et audio OK ;
 3. **Schèmes** : le v3 les attribue au Corpus (« via QUL si besoin ») ; la version 0.4 n'en contient pas. QUL est à examiner (contenu et licence) avant de s'y fier. **Tranché le 22/10/2026 : QUL sera examiné avant la région 3 ; rien n'est inventé d'ici là.**
 4. **Traduction** : « révision du Complexe Roi Fahd (2000) » n'est pas confirmée par Tanzil. **Tranché le 22/10/2026 : « édition non précisée » ; cahier corrigé.**
 5. **Police du Mushaf** : le v3 cite KFGQPC Hafs ; IQURA utilise Amiri Quran ; la licence de KFGQPC est à auditer avant tout changement. **Tranché le 22/10/2026 : Amiri Quran pour J1a ; audit de KFGQPC avant la leçon 14.**
-6. **« Signaler une erreur »** dans une application hors ligne : par quel moyen (fichier exporté, mail préparé, autre) ? **Tranché le 22/10/2026 : mail prérempli envoyé par le joueur depuis sa messagerie ; adresse de réception à choisir.**
+6. **« Signaler une erreur »** dans une application hors ligne : par quel moyen (fichier exporté, mail préparé, autre) ? **Tranché le 22/10/2026 : mail prérempli envoyé par le joueur depuis sa messagerie ; adresse dédiée au projet, **à créer par l'utilisateur** ; en attendant, signalements gardés sur l'appareil, envoi indiqué « pas encore configuré ».**
 7. **Sort de racine** : « débloqué en région 3 ; familles simples avant » (§8.5) : la commande existe-t-elle dès la région 1 sous une forme simple ?
 
 Changements du v3 notés sans question, car le v3 fait foi : option IA décidée « à partir de J4, désactivée par défaut » (l'utilisateur avait dit « décider à J4 » le 21/10) ; noms de l'Histoire à revalider en J1a.
