@@ -5,7 +5,7 @@ Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026**, référen
 
 Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` après la fusion de la pull request n° 3).
 
-**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape 1 terminée le 22/10/2026** (liste A1 à A7 acceptée, points du §3 tranchés). **Étape en cours : 2, noms des lieux et personnages de la région 1 et découpage en lieux, à proposer à l'utilisateur.**
+**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape 1 terminée le 22/10/2026** (liste A1 à A7 acceptée, points du §3 tranchés). **Étape 2 terminée le 22/10/2026** (lieux et personnages de la région 1 validés, `docs/HISTOIRE.md`). **Étape en cours : 3, coquille du jeu en pixel art.**
 
 ## 1. Ce qui existe déjà (gardé, cahier §0.1 point 4)
 
@@ -62,7 +62,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 ## 4. Prochaine étape
 
 1. Fait : accord sur la liste du §2 et réponses aux points du §3.
-2. En cours, cahier §13.1 point 2 : proposer les noms des lieux et personnages de la région 1 et son découpage en 8 à 12 lieux.
+2. Fait : noms des lieux et personnages de la région 1 et découpage en 12 lieux, validés.
+3. En cours, cahier §13.1 point 3 : coquille du jeu en pixel art (carte, dialogue, combat, Cité, Grimoire, Sanctuaire minimal), en commençant par l'audit des paquets (Flame, lecture audio) et des graphismes.
 
 ## 5. Problèmes connus
 
