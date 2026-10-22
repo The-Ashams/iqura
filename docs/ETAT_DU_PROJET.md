@@ -51,7 +51,7 @@ Derniers résultats : tests locaux du 22/10/2026 (Python : contenu et audio OK ;
 
 1. **Mention des contenus IA** : le v3 écrit « rédigé par IA — non vérifié » (§3.2, §10, §11, §14, §15), alors que l'utilisateur a demandé « rédigé par IA » le 21/10/2026. **Tranché le 22/10/2026 : « rédigé par IA »** ; cahier corrigé.
 2. **Licence du Quranic Arabic Corpus** : le v3 indique « licence GNU, non commercial » et un mail à envoyer ; la notice du fichier (relevée par l'utilisateur le 21/10/2026) dit GNU GPL et autorise l'usage « dans tout site web ou application », sans mention « non commercial ». **Tranché le 22/10/2026 : cahier corrigé d'après la notice, mail facultatif.**
-3. **Schèmes** : le v3 les attribue au Corpus (« via QUL si besoin ») ; la version 0.4 n'en contient pas. QUL est à examiner (contenu et licence) avant de s'y fier.
+3. **Schèmes** : le v3 les attribue au Corpus (« via QUL si besoin ») ; la version 0.4 n'en contient pas. QUL est à examiner (contenu et licence) avant de s'y fier. **Tranché le 22/10/2026 : QUL sera examiné avant la région 3 ; rien n'est inventé d'ici là.**
 4. **Traduction** : « révision du Complexe Roi Fahd (2000) » n'est pas confirmée par Tanzil.
 5. **Police du Mushaf** : le v3 cite KFGQPC Hafs ; IQURA utilise Amiri Quran ; la licence de KFGQPC est à auditer avant tout changement.
 6. **« Signaler une erreur »** dans une application hors ligne : par quel moyen (fichier exporté, mail préparé, autre) ?
