@@ -73,7 +73,7 @@ Application gratuite, sans publicité ni achat, open source (GPL-3.0), en franç
 ### 3.2 Données et contenus
 
 1. **Aucune donnée inventée** : ni racine, ni lemme, ni occurrence, ni traduction attribuée à un auteur, ni analyse grammaticale présentée comme certaine. Racines, lemmes, catégories, formes verbales, schèmes et fréquences viennent du Quranic Arabic Corpus (via QUL si besoin).
-2. **Aucun relecteur humain** : tout texte rédigé par IA (explications, sens français, dialogues, récits, exemples construits, descriptions d'articulation) porte le statut visible **« rédigé par IA — non vérifié »**.
+2. **Aucun relecteur humain** : tout texte rédigé par IA (explications, sens français, dialogues, récits, exemples construits, descriptions d'articulation) porte le statut visible **« rédigé par IA »**.
 3. Chaque exemple affiche sa source : « exemple construit » ou référence coranique.
 4. Tout audio de synthèse est signalé « synthèse ».
 5. Un bouton « Signaler une erreur » existe sur chaque fiche.
@@ -513,7 +513,7 @@ Objectif : reconnaître les liens entre les mots d'une même famille **sans supp
 - **Progression** : région 1, familles montrées sans analyse (dès la leçon 7) ; région 2, famille et racine surlignée pour chaque nouveau mot et mini-forges intuitives ; région 3, étude méthodique (schèmes, formes, dérivés) ; régions 4 et 5, application aux textes et au Coran.
 - **Fiche racine** (ex. ر ح م : رَحْمَةٌ miséricorde, رَحِيمٌ Miséricordieux, رَحْمَٰنُ Tout Miséricordieux, رَحِمَ faire miséricorde) : sens généraux, mots de la famille, occurrences coraniques, nuances entre mots proches.
 - **Étiquette de relation de sens** par dérivé : proche, intensif, spécialisé, figuré, éloigné.
-- **Arbre des racines** : racine → formes verbales attestées (I à X) → noms dérivés par schème → sens → occurrences. Structure issue du Quranic Arabic Corpus ; seuls les sens et explications sont rédigés (« non vérifié »).
+- **Arbre des racines** : racine → formes verbales attestées (I à X) → noms dérivés par schème → sens → occurrences. Structure issue du Quranic Arabic Corpus ; seuls les sens et explications sont rédigés (« rédigé par IA »).
 - **Avertissement visible** : leçon 3.10 et encart sur chaque fiche de racine.
 - **Exercices** : Détective des racines (trouver la racine), Famille de mots (regrouper), L'intrus (y compris faux amis), Relation de sens, Deviner puis vérifier, Forge des mots (racine + schème → mot).
 - **Maîtrise** : carte de révision propre à chaque racine, indépendante des dérivés.
@@ -629,7 +629,7 @@ Lieu calme de la cité, sans aucun combat, où le Coran se lit et s'étudie.
 | Lettres, syllabes, mots, phrases des leçons, dialogues, récits | **Chatterbox Multilingual** (MIT), généré une fois et livré avec l'app, coupé automatiquement après le mot (outil existant), mention « synthèse » | ✅ Décidé et en place |
 | Versets et mots coraniques | Récitations EveryAyah, **al-Ḥuṣarī** par défaut ; mots isolés par découpage horodaté (QUL, à vérifier) ; jamais de synthèse pour le Coran | ✅ Décidé |
 
-- Sons difficiles : description écrite + schéma d'articulation (« rédigé par IA — non vérifié »).
+- Sons difficiles : description écrite + schéma d'articulation (« rédigé par IA »).
 - **Répétition à voix haute** : écouter, répéter, s'enregistrer, réécouter en alternance ; vitesse réglable, boucle. Enregistrements **uniquement sur l'appareil**, jamais envoyés en ligne ; seul le dernier par élément est gardé ; exclus de l'export par défaut (option pour les inclure) ; micro demandé à la première utilisation.
 - **Répondre aux personnages** : hors ligne, choix ou reconstitution ; à partir de J4, option en ligne avec une IA en arabe classique, présentée comme entraînement, désactivée par défaut.
 - **Écrire** : tracé guidé (région 1), puis clavier arabe.
@@ -644,8 +644,8 @@ Lieu calme de la cité, sans aucun combat, où le Coran se lit et s'étudie.
 | Texte coranique | Tanzil (CC BY 3.0, modification interdite) | Vérifié par SHA-256 |
 | Racines, lemmes, catégories, formes, schèmes, fréquences | Quranic Arabic Corpus (licence GNU, non commercial), via QUL si besoin | Sourcé |
 | Traduction des versets | Hamidullah, révision du Complexe Roi Fahd (2000), créditée, remplaçable | Crédité |
-| Sens français, explications, nuances | Rédigés à partir des données sourcées | « Rédigé par IA — non vérifié » |
-| Dialogues, récits, exemples | Rédigés en arabe classique entièrement vocalisé, vocabulaire contrôlé | « Rédigé par IA — non vérifié » |
+| Sens français, explications, nuances | Rédigés à partir des données sourcées | « Rédigé par IA » |
+| Dialogues, récits, exemples | Rédigés en arabe classique entièrement vocalisé, vocabulaire contrôlé | « Rédigé par IA » |
 | Textes classiques (région 4) | Œuvres classiques profanes du domaine public, édition citée | Sourcé |
 | Polices | Amiri ou Scheherazade New (SIL OFL) ; KFGQPC Hafs pour le Mushaf | Licences jointes |
 | Audio | Chatterbox (MIT) ; EveryAyah (droits aux récitateurs) | Crédités |
@@ -707,7 +707,7 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 - [ ] Texte coranique identique octet pour octet à Tanzil (test d'empreinte).
 - [ ] Aucun mot ni extrait coranique sur un monstre ou dans une attaque ; aucun verset en combat (test automatisé sur les contenus de combat).
 - [ ] Chaque texte à lire respecte la règle des 95 % au moment où il est proposé.
-- [ ] Chaque fiche affiche sa source ou « rédigé par IA — non vérifié ».
+- [ ] Chaque fiche affiche sa source ou « rédigé par IA ».
 - [ ] Chaque mot, lettre et phrase des leçons du jalon a son audio, signalé « synthèse ».
 - [ ] Révisions planifiées par FSRS ; jamais « maîtrisé » après une seule réussite ; vocabulaire adaptatif fonctionnel.
 - [ ] Jamais deux réponses justes par erreur (test des distracteurs).
@@ -735,7 +735,7 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 9 | Ordre des sourates | Celui du §5.9 |
 | 10 | Carte du monde | Carte à étapes |
 | 11 | Licence | GPL-3.0, dépendances auditées |
-| 12 | Relecture | Aucun relecteur : sources citées, contenu IA marqué « non vérifié » |
+| 12 | Relecture | Aucun relecteur : sources citées, contenu IA marqué « rédigé par IA » |
 | 13 | Compilation | Claude Code + GitHub Actions |
 
 **Reste à faire côté utilisateur** : envoyer le mail de confirmation de licence aux auteurs du Quranic Arabic Corpus (Claude Code peut le rédiger).
@@ -750,3 +750,4 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-21 | Cahier des charges v2 ; Coran jamais l'ennemi ; racines priorité majeure ; audio Chatterbox |
 | 2026-10-22 | Format mini-donjon, précisions des leçons ; corrections des leçons 0 à 3 ; style pixel art type RPG japonais classique ; programme complet des 5 régions ; racines dès la région 1 ; Coran à chaque région ; vocabulaire adaptatif et passif/actif ; trois évaluations par examen ; objectifs intermédiaires ; gameplay détaillé ; prototype avant production ; arabe classique pour la conversation ; ordre des sourates et Histoire validés |
 | 2026-10-22 | Cahier v3 appliqué : v2 archivée, `CLAUDE.md` réécrit ; liste des changements A1 à A7 de `docs/ETAT_DU_PROJET.md` acceptée en entier (leçons 0 à 3 réécrites au format mini-donjon avec les corrections du §5.5, sons des éléments retirés supprimés et nouveaux mots générés, coquille actuelle remplacée par le jeu en pixel art, aperçu adapté, noms de l'Histoire à revalider) |
+| 2026-10-22 | Mention des contenus écrits par IA : « rédigé par IA » (sans « non vérifié »), comme demandé le 21/10/2026 ; passages du v3 corrigés en ce sens (§3.2, §7, §10, §11, §14, §15) |
