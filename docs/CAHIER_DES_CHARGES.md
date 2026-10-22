@@ -755,3 +755,4 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-22 | Schèmes : absents du Quranic Arabic Corpus 0.4 ; QUL (contenu et licence) sera examiné avant la région 3 ; rien n'est inventé d'ici là, la région 1 n'en a pas besoin |
 | 2026-10-22 | Traduction : « Hamidullah, version diffusée par Tanzil (édition non précisée) » ; la révision du Complexe Roi Fahd (2000) n'est pas affirmée, faute de confirmation |
 | 2026-10-22 | Police du Mushaf : Amiri Quran (OFL) gardée pour J1a ; licence de KFGQPC Hafs auditée avant la leçon 14, résultat présenté à l'utilisateur |
+| 2026-10-22 | « Signaler une erreur » : petit formulaire, signalement gardé sur l'appareil, puis bouton « Envoyer » qui ouvre la messagerie du joueur avec un mail prérempli (fiche, version du contenu, description) ; rien n'est envoyé sans son action |
