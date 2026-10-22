@@ -34,7 +34,7 @@ Compilations GitHub Actions (tests, APK Android, exécutable Windows) : entière
 
 Pour régénérer l'audio : voir `CLAUDE.md`, section « Commandes ». L'environnement Python de synthèse n'est pas dans le dépôt (le conteneur de session est éphémère) : il faut le réinstaller, et le modèle (plusieurs Go) se retélécharge depuis `huggingface.co` et `us.aws.cdn.hf.co`.
 
-- **Corrections audio en cours** (retours de l'utilisateur sur l'aperçu des leçons) : تَ (leçon 1) et يَ (leçon 2) étaient allongés, نَابَ (leçon 2) tronqué (seul « na » audible). Nouvelles versions générées (graines 1 à 3), page d'écoute envoyée à l'utilisateur ; **en attente de son choix** avant de remplacer les MP3 et `clips.json`. Contrôle de durée amélioré : plafond selon la longueur des voyelles (`trim.vowel_units`).
+- **Corrections audio faites le 22/10/2026** (retours de l'utilisateur sur l'aperçu des leçons) : تَ (leçon 1) et يَ (leçon 2) étaient allongés, نَابَ (leçon 2) tronqué. Remplacés par de nouvelles versions validées à l'écoute par l'utilisateur (تَ graine 3, يَ graine 1, نَابَ graine 1 « version A »). Contrôle de durée amélioré : plafond selon la longueur des voyelles (`trim.vowel_units`). Le reste des leçons 0 à 3 (contenu, translittération, autres sons) attend encore la validation de l'utilisateur.
 
 ## 3. Décisions en attente de l'utilisateur
 

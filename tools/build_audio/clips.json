@@ -24,10 +24,10 @@
    "genre": "syllabe",
    "texte": "يَ",
    "fichier": "assets/audio/lecons/ar-08208c74a20d7933.mp3",
-   "sha256": "e99b528df41b6823a22d2607e628ddd13ff67a580eca51d21cd86f0705aa71b0",
-   "graine": 0,
+   "sha256": "0f4ad7f986ed14a29c47702a61f6c4981ffec313740b970b1e09d0b32515b53c",
+   "graine": 1,
    "a_ecouter": false,
-   "genere_le": "2026-10-21"
+   "genere_le": "2026-10-22"
   },
   "ar-0a7da92452aac585": {
    "genre": "lettre",
@@ -87,10 +87,10 @@
    "genre": "syllabe",
    "texte": "تَ",
    "fichier": "assets/audio/lecons/ar-2d6a557df5ca357e.mp3",
-   "sha256": "ab3e83036295ca762ba20b99afc07720e03926f61e61ba1cd4b3e8524753a39f",
-   "graine": 0,
+   "sha256": "f68cb1a0b0c17a23f4da0fd68da0d00cca646b60b5590fc821a97f3cc34e99a3",
+   "graine": 3,
    "a_ecouter": false,
-   "genere_le": "2026-10-21"
+   "genere_le": "2026-10-22"
   },
   "ar-3bc5f0ae9739d60e": {
    "genre": "syllabe",
@@ -348,10 +348,10 @@
    "genre": "mot",
    "texte": "نَابَ",
    "fichier": "assets/audio/lecons/ar-e75adb2bca05d9a9.mp3",
-   "sha256": "82dee253fb03321d31aae312e116435faa3f594e43205148b6b96da44478bad2",
-   "graine": 0,
+   "sha256": "9f1bda03647cba96ccce7af1b4dd116b936475d39102e40a3d3e899af12263d3",
+   "graine": 1,
    "a_ecouter": false,
-   "genere_le": "2026-10-21"
+   "genere_le": "2026-10-22"
   },
   "ar-e7757adcd3765b0f": {
    "genre": "syllabe",
