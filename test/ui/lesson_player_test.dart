@@ -9,6 +9,7 @@ import 'package:iqura/core/providers.dart';
 import 'package:iqura/data/content_db/content_database.dart';
 import 'package:iqura/data/user_db/user_database.dart';
 import 'package:iqura/engines/audio/audio_service.dart';
+import 'package:iqura/engines/voice/voice_recorder.dart';
 import 'package:iqura/features/progress/lesson_progress.dart';
 import 'package:iqura/features/resources/resources.dart';
 import 'package:iqura/features/review/review.dart';
@@ -18,6 +19,7 @@ import 'package:iqura/ui/game/expedition_screen.dart';
 import 'package:iqura/ui/game/lesson/boss_view.dart';
 import 'package:iqura/ui/game/lesson/lesson_screen.dart';
 import 'package:iqura/ui/game/lesson/question_view.dart';
+import 'package:iqura/ui/game/pixel.dart';
 
 class FakeSfx implements SfxPlayer {
   final played = <Sfx>[];
@@ -27,10 +29,31 @@ class FakeSfx implements SfxPlayer {
   Future<void> dispose() async {}
 }
 
+class FakeRecorder implements VoiceRecorder {
+  final saved = <String, String>{};
+  String? _current;
+  @override
+  Future<bool> allowed() async => true;
+  @override
+  Future<void> start(String key) async => _current = key;
+  @override
+  Future<String?> stop() async {
+    final k = _current!;
+    return saved[k] = '/enregistrements/${saved.length}.m4a';
+  }
+
+  @override
+  String? last(String key) => saved[key];
+  @override
+  Future<void> dispose() async {}
+}
+
 class FakeAudio implements AudioService {
   final played = <String>[];
   @override
   Future<void> playAsset(String path) async => played.add(path);
+  @override
+  Future<void> playFile(String path) async => played.add(path);
   @override
   Future<void> dispose() async {}
 }
@@ -40,6 +63,7 @@ late UserDatabase userDb;
 late ContentDatabase contentDb;
 late FakeAudio audio;
 late FakeSfx sfx;
+late FakeRecorder recorder;
 
 Widget app(String lessonId) =>
     appWith(LessonScreen(lessonId: lessonId, random: Random(7)));
@@ -51,6 +75,7 @@ Widget appWith(Widget home) => ProviderScope(
     contentDatabaseProvider.overrideWithValue(contentDb),
     audioServiceProvider.overrideWithValue(audio),
     sfxPlayerProvider.overrideWithValue(sfx),
+    voiceRecorderProvider.overrideWithValue(recorder),
   ],
   child: MaterialApp(home: home),
 );
@@ -106,7 +131,11 @@ Future<void> answer(WidgetTester tester, {bool right = true}) async {
       await tapOn(tester, find.text("J'ai tracé"));
       return;
     case QuestionKind.repeter:
-      await tapOn(tester, find.text("Je l'ai répété"));
+      // S'enregistrer, s'arrêter, réécouter sa voix, puis continuer.
+      await tapOn(tester, find.text("M'enregistrer"));
+      await tapOn(tester, find.text('Arrêter'));
+      await tapOn(tester, find.text('Ma voix'));
+      await tapOn(tester, find.text("J'ai répété"));
       return;
     case QuestionKind.reconstruire:
       final parts = right ? q.solution : q.solution.reversed.toList();
@@ -192,6 +221,7 @@ void main() {
     userDb = UserDatabase.open(null);
     audio = FakeAudio();
     sfx = FakeSfx();
+    recorder = FakeRecorder();
   });
 
   tearDown(() {
@@ -252,6 +282,11 @@ void main() {
         find.textContaining('nouvelles cartes'),
         cards.isEmpty ? findsNothing : findsOneWidget,
       );
+      // Répéter à voix haute : la voix enregistrée est réécoutée.
+      if (lesson.ordinal > 0) {
+        expect(recorder.saved, isNotEmpty);
+        expect(audio.played.any((p) => p.endsWith('.m4a')), isTrue);
+      }
       // Bruitages : réponses, combat, sceau de fin.
       expect(sfx.played, containsAll([Sfx.juste, Sfx.coup, Sfx.victoire]));
       expect(sfx.played.last, Sfx.sceau);
@@ -375,6 +410,93 @@ void main() {
     await settle(tester);
     expect(find.textContaining('Rien à réviser'), findsOneWidget);
     expect(find.text('Entraînement libre'), findsOneWidget);
+  });
+
+  testWidgets('tracé guidé : suivre les points dans l’ordre réussit, à '
+      'l’envers non (sans sanction)', (tester) async {
+    tester.view.physicalSize = const Size(800, 1200);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(
+      appWith(
+        Scaffold(
+          body: Center(
+            child: GuidedTrace(letter: 'ب', onDone: () {}),
+          ),
+        ),
+      ),
+    );
+    final guide = contentDb.letterTrace('ب')!;
+    final pad = tester.getTopLeft(find.byKey(const Key('trace-pad')));
+    const k = GuidedTrace.size / 100;
+    Future<void> draw(List<Offset> pts) async {
+      final g = await tester.startGesture(
+        pad + pts.first * k + const Offset(2, 2),
+      );
+      for (final p in pts.skip(1)) {
+        await g.moveTo(pad + p * k + const Offset(2, 2));
+      }
+      await g.up();
+      await tester.pump();
+    }
+
+    Future<void> tapAt(Offset p) async {
+      await tester.tapAt(pad + p * k + const Offset(2, 2));
+      await tester.pump();
+    }
+
+    // Dans l'ordre : le corps de la lettre, puis le point.
+    await draw(guide[0]);
+    await tapAt(guide[1].first);
+    await tester.tap(find.text('Vérifier'));
+    await tester.pump();
+    expect(find.text('Bien tracé !'), findsOneWidget);
+    // À l'envers : refusé, mais on peut toujours continuer.
+    await tester.tap(find.text('Effacer'));
+    await tester.pump();
+    await draw(guide[0].reversed.toList());
+    await tapAt(guide[1].first);
+    await tester.tap(find.text('Vérifier'));
+    await tester.pump();
+    expect(find.textContaining('Pas tout à fait'), findsOneWidget);
+    expect(
+      tester.widget<PanelButton>(find.byType(PanelButton)).onPressed,
+      isNotNull,
+    );
+  });
+
+  test('tracés : chaque lettre enseignée au niveau a son tracé guidé', () {
+    for (final l in [
+      'ا',
+      'ب',
+      'ت',
+      'ث',
+      'ن',
+      'ي',
+      'ج',
+      'ح',
+      'خ',
+      'د',
+      'ذ',
+      'ر',
+      'ز',
+    ]) {
+      expect(contentDb.letterTrace(l), isNotNull, reason: l);
+    }
+  });
+
+  testWidgets('apprentissage seul : leçon sans scène ni combat, même '
+      'progression', (tester) async {
+    SettingsRepository(userDb).saveLearningOnly(true);
+    const id = 'dechiffrer-01';
+    final lesson = contentDb.lesson(id)!;
+    await open(tester, id);
+    // Pas de scène d'Histoire : l'objectif tout de suite.
+    expect(find.text('Entrer'), findsOneWidget);
+    expect(find.byType(SceneView), findsNothing);
+    expect(await playLesson(tester, lesson), isTrue);
+    expect(find.byType(CombatSceneBox), findsNothing);
+    expect(LessonProgressRepository(userDb).get(id).completed, isTrue);
   });
 
   group('règles du mini-boss', () {

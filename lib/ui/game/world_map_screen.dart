@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../features/profile/profile.dart';
+import '../../features/settings/settings.dart';
 import '../../game/world.dart';
 import '../../game/world_providers.dart';
 import 'pixel.dart';
+import 'learning_list_screen.dart';
 import 'place_screen.dart';
 import 'status_bar.dart';
 
@@ -22,6 +24,9 @@ class WorldMapScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    if (ref.watch(settingsProvider.select((s) => s.learningOnly))) {
+      return const LearningListView();
+    }
     final region = ref.watch(currentRegionProvider);
     final places = ref.watch(regionPlacesProvider);
     final pseudo = ref.watch(profileProvider)?.pseudo ?? '';

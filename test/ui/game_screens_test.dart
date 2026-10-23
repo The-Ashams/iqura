@@ -26,6 +26,8 @@ class FakeAudio implements AudioService {
   @override
   Future<void> playAsset(String path) async => played.add(path);
   @override
+  Future<void> playFile(String path) async => played.add(path);
+  @override
   Future<void> dispose() async {}
 }
 

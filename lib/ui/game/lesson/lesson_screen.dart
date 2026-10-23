@@ -13,6 +13,7 @@ import '../../../engines/audio/audio_service.dart';
 import '../../../features/progress/lesson_progress.dart';
 import '../../../features/resources/resources.dart';
 import '../../../features/review/review.dart';
+import '../../../features/settings/settings.dart';
 import '../../../game/lesson/lesson.dart';
 import '../../../game/world.dart';
 import '../../../game/world_providers.dart';
@@ -212,7 +213,10 @@ class _EntryView extends ConsumerStatefulWidget {
 }
 
 class _EntryViewState extends ConsumerState<_EntryView> {
-  int _line = 0;
+  // Apprentissage seul : pas de scène d'Histoire, directement l'objectif.
+  late int _line = ref.read(settingsProvider).learningOnly
+      ? widget.step.lines.length
+      : 0;
 
   @override
   Widget build(BuildContext context) {
@@ -232,7 +236,8 @@ class _EntryViewState extends ConsumerState<_EntryView> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        if (place?.sceneImage != null)
+        if (place?.sceneImage != null &&
+            !ref.watch(settingsProvider.select((s) => s.learningOnly)))
           ClipRRect(
             borderRadius: BorderRadius.circular(6),
             child: SceneView(

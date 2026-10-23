@@ -10,7 +10,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/providers.dart';
 import '../../../engines/audio/audio_service.dart';
+import '../../../engines/voice/voice_recorder.dart';
 import '../../../game/lesson/lesson.dart';
+import '../../../game/lesson/trace.dart';
 import '../../widgets/arabic_text.dart';
 
 /// Couleurs du panneau de question (clair, neutre).
@@ -224,9 +226,6 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
   // Reconstruire : tuiles placées (indices dans [_tiles]).
   late final List<String> _tiles;
   final List<int> _placed = [];
-
-  // Tracer : traits dessinés.
-  final List<List<Offset>> _strokes = [];
 
   LessonQuestion get q => widget.question;
 
@@ -455,66 +454,13 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
   }
 
   List<Widget> _trace() => [
-    SizedBox(
-      width: 240,
-      height: 240,
-      child: Stack(
-        children: [
-          Positioned.fill(
-            child: Center(
-              child: ArabicText(
-                q.letter!,
-                baseSize: 150,
-                style: const TextStyle(color: Color(0x33000000)),
-              ),
-            ),
-          ),
-          Positioned.fill(
-            child: GestureDetector(
-              key: const Key('trace-pad'),
-              onPanStart: (d) =>
-                  setState(() => _strokes.add([d.localPosition])),
-              onPanUpdate: (d) =>
-                  setState(() => _strokes.last.add(d.localPosition)),
-              child: CustomPaint(painter: _StrokePainter(_strokes)),
-            ),
-          ),
-        ],
-      ),
-    ),
-    const Text(
-      'Repasse la lettre avec le doigt, dans le sens de l\'écriture. Tracé '
-      'libre, sans vérification : les points numérotés arriveront plus tard.',
-      textAlign: TextAlign.center,
-      style: TextStyle(color: PanelColors.muted, fontSize: 13),
-    ),
-    const SizedBox(height: 8),
-    if (!_done)
-      Wrap(
-        spacing: 10,
-        children: [
-          OutlinedButton(
-            onPressed: _strokes.isEmpty ? null : () => setState(_strokes.clear),
-            child: const Text('Effacer'),
-          ),
-          PanelButton(
-            label: 'J\'ai tracé',
-            onPressed: _strokes.isEmpty ? null : _finishUngraded,
-          ),
-        ],
-      ),
+    GuidedTrace(letter: q.letter!, onDone: _done ? null : _finishUngraded),
   ];
 
   List<Widget> _repeat() => [
-    const Text(
-      'Écoute, puis répète à voix haute. Il n\'y a pas de note : '
-      'l\'enregistrement de ta voix pour comparer arrivera plus tard.',
-      textAlign: TextAlign.center,
-      style: TextStyle(color: PanelColors.muted, fontSize: 13),
-    ),
+    RepeatAloud(text: q.arabic!),
     const SizedBox(height: 8),
-    if (!_done)
-      PanelButton(label: 'Je l\'ai répété', onPressed: _finishUngraded),
+    if (!_done) PanelButton(label: 'J\'ai répété', onPressed: _finishUngraded),
   ];
 
   List<Widget> _feedback() => [
@@ -543,32 +489,316 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
   ];
 }
 
-class _StrokePainter extends CustomPainter {
-  _StrokePainter(this.strokes);
+/// Répéter à voix haute (cahier v3 §10) : écouter le modèle, s'enregistrer,
+/// réécouter en alternance. Aucune note : le joueur compare lui-même.
+class RepeatAloud extends ConsumerStatefulWidget {
+  const RepeatAloud({super.key, required this.text});
 
+  final String text;
+
+  @override
+  ConsumerState<RepeatAloud> createState() => _RepeatAloudState();
+}
+
+class _RepeatAloudState extends ConsumerState<RepeatAloud> {
+  bool _recording = false;
+  String? _mine;
+  String? _error;
+
+  String get _key => 'repeter:${widget.text}';
+
+  @override
+  void initState() {
+    super.initState();
+    _mine = ref.read(voiceRecorderProvider).last(_key);
+  }
+
+  Future<void> _toggle() async {
+    final rec = ref.read(voiceRecorderProvider);
+    try {
+      if (_recording) {
+        final path = await rec.stop();
+        setState(() {
+          _recording = false;
+          _mine = path ?? _mine;
+        });
+        return;
+      }
+      if (!await rec.allowed()) {
+        setState(
+          () => _error =
+              'Le micro n\'est pas autorisé : tu peux répéter sans '
+              't\'enregistrer.',
+        );
+        return;
+      }
+      await rec.start(_key);
+      setState(() {
+        _recording = true;
+        _error = null;
+      });
+    } catch (_) {
+      setState(() {
+        _recording = false;
+        _error = 'Enregistrement impossible sur cet appareil.';
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) => Column(
+    children: [
+      const Text(
+        'Écoute le modèle, enregistre-toi, puis compare. Pas de note : '
+        'c\'est toi qui juges. Ta voix reste sur cet appareil.',
+        textAlign: TextAlign.center,
+        style: TextStyle(color: PanelColors.muted, fontSize: 13),
+      ),
+      const SizedBox(height: 8),
+      Wrap(
+        spacing: 10,
+        runSpacing: 8,
+        alignment: WrapAlignment.center,
+        children: [
+          FilledButton.icon(
+            onPressed: _toggle,
+            style: FilledButton.styleFrom(
+              backgroundColor: _recording ? PanelColors.wrong : PanelColors.ink,
+              foregroundColor: PanelColors.background,
+              minimumSize: const Size(150, 48),
+              shape: const RoundedRectangleBorder(),
+            ),
+            icon: Icon(_recording ? Icons.stop : Icons.mic),
+            label: Text(
+              _recording ? 'Arrêter' : 'M\'enregistrer',
+              style: const TextStyle(fontSize: 18),
+            ),
+          ),
+          if (_mine != null && !_recording)
+            OutlinedButton.icon(
+              onPressed: () => ref.read(audioServiceProvider).playFile(_mine!),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: PanelColors.ink,
+                minimumSize: const Size(150, 48),
+                side: const BorderSide(color: PanelColors.ink, width: 2),
+                shape: const RoundedRectangleBorder(),
+              ),
+              icon: const Icon(Icons.record_voice_over),
+              label: const Text('Ma voix', style: TextStyle(fontSize: 18)),
+            ),
+        ],
+      ),
+      if (_error != null)
+        Padding(
+          padding: const EdgeInsets.only(top: 6),
+          child: Text(
+            _error!,
+            textAlign: TextAlign.center,
+            style: const TextStyle(color: PanelColors.wrong, fontSize: 13),
+          ),
+        ),
+    ],
+  );
+}
+
+/// Tracé guidé (cahier v3 §6.4) : points numérotés, sens du geste indiqué
+/// par une flèche, vérification tolérante et sans sanction.
+class GuidedTrace extends ConsumerStatefulWidget {
+  const GuidedTrace({super.key, required this.letter, required this.onDone});
+
+  final String letter;
+
+  /// Nul une fois l'exercice terminé.
+  final VoidCallback? onDone;
+
+  static const double size = 240;
+
+  @override
+  ConsumerState<GuidedTrace> createState() => _GuidedTraceState();
+}
+
+class _GuidedTraceState extends ConsumerState<GuidedTrace> {
+  final List<List<Offset>> _strokes = [];
+  bool? _ok;
+
+  void _check(Strokes guide) {
+    setState(() {
+      _ok = traceMatches(guide, [
+        for (final s in _strokes) toUnit(s, GuidedTrace.size),
+      ]);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final guide = ref.watch(contentDatabaseProvider).letterTrace(widget.letter);
+    return Column(
+      children: [
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text('Modèle : ', style: TextStyle(fontSize: 16)),
+            ArabicText(
+              widget.letter,
+              baseSize: 44,
+              style: const TextStyle(color: PanelColors.ink),
+            ),
+          ],
+        ),
+        Container(
+          key: const Key('trace-pad'),
+          width: GuidedTrace.size,
+          height: GuidedTrace.size,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            border: Border.all(color: PanelColors.ink, width: 2),
+          ),
+          child: GestureDetector(
+            onPanStart: (d) => setState(() {
+              _strokes.add([d.localPosition]);
+              _ok = null;
+            }),
+            onPanUpdate: (d) =>
+                setState(() => _strokes.last.add(d.localPosition)),
+            onTapUp: (d) => setState(() {
+              _strokes.add([d.localPosition]);
+              _ok = null;
+            }),
+            child: CustomPaint(
+              size: const Size.square(GuidedTrace.size),
+              painter: _TracePainter(guide ?? const [], _strokes),
+            ),
+          ),
+        ),
+        const SizedBox(height: 4),
+        const Text(
+          'Suis les points dans l\'ordre des numéros, dans le sens de la '
+          'flèche ; les points de la lettre se posent à la fin.',
+          textAlign: TextAlign.center,
+          style: TextStyle(color: PanelColors.muted, fontSize: 13),
+        ),
+        if (_ok != null)
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Text(
+              _ok!
+                  ? 'Bien tracé !'
+                  : 'Pas tout à fait : suis les numéros dans l\'ordre. Tu '
+                        'peux effacer et recommencer, ou continuer.',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: _ok! ? PanelColors.right : PanelColors.wrong,
+              ),
+            ),
+          ),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 10,
+          runSpacing: 8,
+          alignment: WrapAlignment.center,
+          children: [
+            OutlinedButton(
+              onPressed: _strokes.isEmpty
+                  ? null
+                  : () => setState(() {
+                      _strokes.clear();
+                      _ok = null;
+                    }),
+              child: const Text('Effacer'),
+            ),
+            if (guide != null)
+              OutlinedButton(
+                onPressed: _strokes.isEmpty ? null : () => _check(guide),
+                child: const Text('Vérifier'),
+              ),
+            if (widget.onDone != null)
+              PanelButton(
+                label: 'J\'ai tracé',
+                onPressed: _strokes.isEmpty ? null : widget.onDone,
+              ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _TracePainter extends CustomPainter {
+  _TracePainter(this.guide, this.strokes);
+
+  final Strokes guide;
   final List<List<Offset>> strokes;
 
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = PanelColors.ink
-      ..strokeWidth = 8
+    final k = size.width / 100;
+    final guidePaint = Paint()
+      ..color = const Color(0x33000000)
+      ..strokeWidth = 14
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round
+      ..style = PaintingStyle.stroke;
+    var n = 1;
+    for (final stroke in guide) {
+      final pts = [for (final p in stroke) p * k];
+      if (pts.length > 1) {
+        final path = Path()..moveTo(pts.first.dx, pts.first.dy);
+        for (final p in pts.skip(1)) {
+          path.lineTo(p.dx, p.dy);
+        }
+        canvas.drawPath(path, guidePaint);
+        // Flèche : sens du geste, au départ du trait.
+        final a = pts[0];
+        final b = pts[1];
+        final dir = (b - a) / (b - a).distance;
+        final tip = a + dir * 22;
+        final side = Offset(-dir.dy, dir.dx);
+        canvas.drawPath(
+          Path()
+            ..moveTo(tip.dx, tip.dy)
+            ..lineTo(
+              (tip - dir * 9 + side * 6).dx,
+              (tip - dir * 9 + side * 6).dy,
+            )
+            ..lineTo(
+              (tip - dir * 9 - side * 6).dx,
+              (tip - dir * 9 - side * 6).dy,
+            )
+            ..close(),
+          Paint()..color = const Color(0xFFB0412E),
+        );
+      }
+      for (final p in pts) {
+        canvas.drawCircle(p, 9, Paint()..color = const Color(0xFFF2C45A));
+        final tp = TextPainter(
+          text: TextSpan(
+            text: '$n',
+            style: const TextStyle(color: Color(0xFF23202C), fontSize: 11),
+          ),
+          textDirection: TextDirection.ltr,
+        )..layout();
+        tp.paint(canvas, p - Offset(tp.width / 2, tp.height / 2));
+        n++;
+      }
+    }
+    final ink = Paint()
+      ..color = const Color(0xFF23202C)
+      ..strokeWidth = 6
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
     for (final s in strokes) {
       if (s.length == 1) {
-        canvas.drawCircle(s.first, 4, paint..style = PaintingStyle.fill);
-        paint.style = PaintingStyle.stroke;
+        canvas.drawCircle(s.first, 4, Paint()..color = ink.color);
         continue;
       }
       final path = Path()..moveTo(s.first.dx, s.first.dy);
       for (final p in s.skip(1)) {
         path.lineTo(p.dx, p.dy);
       }
-      canvas.drawPath(path, paint);
+      canvas.drawPath(path, ink);
     }
   }
 
   @override
-  bool shouldRepaint(_StrokePainter old) => true;
+  bool shouldRepaint(_TracePainter old) => true;
 }

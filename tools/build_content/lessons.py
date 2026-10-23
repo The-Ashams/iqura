@@ -363,3 +363,42 @@ def write(con: sqlite3.Connection, data: LessonData) -> dict[str, int]:
     return {"lessons": len(data.lessons), "letters": len(data.letters["lettres"]),
             "audio_clips": len(clips),
             "audio_files": sum(1 for r in rows if r[3] is not None)}
+
+
+# ---------------------------------------------------------------------------
+# Tracé guidé
+
+TRACES_FILE = os.path.join(LESSONS_DIR, "traces.json")
+
+
+def load_traces(path: str = TRACES_FILE) -> dict:
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def validate_traces(traces: dict, data: LessonData) -> None:
+    letters = {c["lettre"] for c in data.letters["lettres"]}
+    if traces.get("statut") != "ia_non_verifie":
+        raise LessonError("traces.json : statut « ia_non_verifie » attendu")
+    for letter, strokes in traces["traces"].items():
+        if letter not in letters:
+            raise LessonError(f"tracé de {letter} : lettre sans fiche")
+        if not strokes or not strokes[0] or len(strokes[0]) < 2:
+            raise LessonError(f"tracé de {letter} : le premier trait doit avoir 2 points au moins")
+        for stroke in strokes:
+            for pt in stroke:
+                if len(pt) != 2 or not all(0 <= v <= 100 for v in pt):
+                    raise LessonError(f"tracé de {letter} : point hors du carré {pt}")
+    for lesson in data.lessons:
+        for screen in lesson.get("ecrans", []):
+            for q in screen.get("exercices", []) + [screen.get("question") or {}]:
+                if q.get("type") == "tracer" and q["lettre"] not in traces["traces"]:
+                    raise LessonError(f"{lesson['_file']} : pas de tracé guidé pour {q['lettre']}")
+
+
+def write_traces(con: sqlite3.Connection, traces: dict) -> int:
+    con.executemany(
+        "INSERT INTO letter_trace VALUES (?, ?)",
+        [(k, json.dumps(v)) for k, v in sorted(traces["traces"].items())],
+    )
+    return len(traces["traces"])

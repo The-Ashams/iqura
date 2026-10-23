@@ -156,6 +156,10 @@ SCHEMA = [
         pronunciation TEXT NOT NULL,
         status TEXT NOT NULL
     ) STRICT""",
+    """CREATE TABLE letter_trace (
+        letter TEXT NOT NULL PRIMARY KEY REFERENCES letter(letter),
+        strokes_json TEXT NOT NULL
+    ) STRICT""",
     """CREATE TABLE lesson (
         id TEXT NOT NULL PRIMARY KEY,
         stage INTEGER NOT NULL,
@@ -413,6 +417,9 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
     lesson_data = data.get("lessons") or lessons.load()
     lessons.validate(lesson_data, con)
     lesson_counts = lessons.write(con, lesson_data)
+    traces = data.get("traces") or lessons.load_traces()
+    lessons.validate_traces(traces, lesson_data)
+    lesson_counts["traces"] = lessons.write_traces(con, traces)
     world_data = data.get("world") or world.load()
     world.validate(world_data, con)
     world_counts = world.write(con, world_data)

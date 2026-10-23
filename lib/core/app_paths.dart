@@ -19,6 +19,10 @@ class AppPaths {
   /// Signalements d'erreur, gardés sur l'appareil (non exportés).
   String get errorReports => p.join(root, 'signalements.jsonl');
 
+  /// Enregistrements de la voix du joueur (« répéter à voix haute ») :
+  /// le dernier par élément, sur l'appareil seulement, jamais exportés.
+  String get recordingsDir => p.join(root, 'enregistrements');
+
   static Future<AppPaths> resolve() async {
     final dir = await getApplicationSupportDirectory();
     final paths = AppPaths(dir.path);

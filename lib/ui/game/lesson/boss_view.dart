@@ -170,29 +170,41 @@ class _BossViewState extends ConsumerState<BossView> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        CombatSceneBox(child: GameWidget(game: _scene)),
-        const SizedBox(height: 12),
-        Row(
-          children: [
-            Expanded(
-              child: HpWindow(
-                name: 'Le voyageur',
-                hp: _fight.heroHp,
-                max: _fight.heroMaxHp,
-                color: GameColors.good,
-              ),
+        if (ref.watch(settingsProvider.select((s) => s.learningOnly)))
+          // Apprentissage seul : une série de questions, sans combat.
+          PixelWindow(
+            padding: const EdgeInsets.all(10),
+            child: Text(
+              'Série finale : ${_fight.correct} bonne(s) réponse(s) sur '
+              '${_fight.passMark} nécessaires ; ${_fight.wrong} erreur(s) '
+              'sur ${_fight.allowedErrors} permises.',
             ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: HpWindow(
-                name: widget.adversary,
-                hp: _fight.foeHp,
-                max: _fight.foeMaxHp,
-                color: GameColors.bad,
+          )
+        else ...[
+          CombatSceneBox(child: GameWidget(game: _scene)),
+          const SizedBox(height: 12),
+          Row(
+            children: [
+              Expanded(
+                child: HpWindow(
+                  name: 'Le voyageur',
+                  hp: _fight.heroHp,
+                  max: _fight.heroMaxHp,
+                  color: GameColors.good,
+                ),
               ),
-            ),
-          ],
-        ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: HpWindow(
+                  name: widget.adversary,
+                  hp: _fight.foeHp,
+                  max: _fight.foeMaxHp,
+                  color: GameColors.bad,
+                ),
+              ),
+            ],
+          ),
+        ],
         const SizedBox(height: 12),
         if (ended)
           _endPanel()

@@ -305,29 +305,39 @@ class _ExpeditionScreenState extends ConsumerState<ExpeditionScreen> {
   List<Widget> _combat(ExpeditionFight fight) {
     final foe = fight.current ?? fight.foes.last;
     return [
-      CombatSceneBox(child: GameWidget(game: _scene)),
-      const SizedBox(height: 12),
-      Row(
-        children: [
-          Expanded(
-            child: HpWindow(
-              name: 'Le voyageur',
-              hp: fight.heroHp,
-              max: fight.hero.pv,
-              color: GameColors.good,
-            ),
+      if (ref.watch(settingsProvider.select((s) => s.learningOnly)))
+        // Apprentissage seul : les révisions en série, sans combat.
+        PixelWindow(
+          padding: const EdgeInsets.all(10),
+          child: Text(
+            '${fight.correct} bonne(s) réponse(s), ${fight.wrong} erreur(s).',
           ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: HpWindow(
-              name: foe.name,
-              hp: foe.hp,
-              max: foe.maxHp,
-              color: GameColors.bad,
+        )
+      else ...[
+        CombatSceneBox(child: GameWidget(game: _scene)),
+        const SizedBox(height: 12),
+        Row(
+          children: [
+            Expanded(
+              child: HpWindow(
+                name: 'Le voyageur',
+                hp: fight.heroHp,
+                max: fight.hero.pv,
+                color: GameColors.good,
+              ),
             ),
-          ),
-        ],
-      ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: HpWindow(
+                name: foe.name,
+                hp: foe.hp,
+                max: foe.maxHp,
+                color: GameColors.bad,
+              ),
+            ),
+          ],
+        ),
+      ],
       const SizedBox(height: 12),
       if (_ended)
         _endPanel(fight)

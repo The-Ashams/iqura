@@ -243,6 +243,26 @@ class ContentDatabase {
       ),
   ];
 
+  /// Tracé guidé d'une lettre (traits de points 0 à 100), s'il existe.
+  List<List<Offset>>? letterTrace(String letter) {
+    final rows = _db.select(
+      'SELECT strokes_json FROM letter_trace WHERE letter = ?',
+      [letter],
+    );
+    if (rows.isEmpty) return null;
+    return [
+      for (final stroke
+          in jsonDecode(rows.first['strokes_json'] as String) as List)
+        [
+          for (final pt in stroke as List)
+            Offset(
+              ((pt as List)[0] as num).toDouble(),
+              (pt[1] as num).toDouble(),
+            ),
+        ],
+    ];
+  }
+
   /// Objets de la boutique.
   List<Item> items() => [
     for (final r in _db.select('SELECT * FROM item ORDER BY price, id'))

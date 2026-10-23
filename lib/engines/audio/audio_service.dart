@@ -14,6 +14,9 @@ abstract class AudioService {
   /// `assets/` (par exemple `audio/lecons/ar-….mp3`).
   Future<void> playAsset(String path);
 
+  /// Joue un fichier de l'appareil (enregistrement de la voix du joueur).
+  Future<void> playFile(String path);
+
   Future<void> dispose();
 }
 
@@ -26,6 +29,12 @@ class AudioPlayersService implements AudioService {
   Future<void> playAsset(String path) async {
     await _player.stop();
     await _player.play(AssetSource(path));
+  }
+
+  @override
+  Future<void> playFile(String path) async {
+    await _player.stop();
+    await _player.play(DeviceFileSource(path));
   }
 
   @override

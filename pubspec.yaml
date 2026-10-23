@@ -21,6 +21,7 @@ dependencies:
   fsrs: 2.0.1
   path: ^1.9.1
   path_provider: ^2.1.6
+  record: 7.1.2
   sqlite3: ^3.7.1
   url_launcher: ^6.3.3
   uuid: ^4.6.0
