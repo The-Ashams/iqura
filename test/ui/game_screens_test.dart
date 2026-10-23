@@ -116,6 +116,11 @@ void main() {
     for (var n = 0; n < 6 && !sawExplanation; n++) {
       await tester.tap(find.byType(OutlinedButton).first);
       await tester.pump(const Duration(milliseconds: 100));
+      // Choisir ne suffit pas : il faut valider.
+      expect(find.textContaining('Juste'), findsNothing);
+      expect(find.textContaining('se lit «'), findsNothing);
+      await tester.tap(find.text('Valider'));
+      await tester.pump(const Duration(milliseconds: 100));
       final right = find.textContaining('Juste').evaluate().isNotEmpty;
       sawExplanation = find.textContaining('se lit «').evaluate().isNotEmpty;
       expect(right || sawExplanation, isTrue);

@@ -34,6 +34,11 @@ class _CombatScreenState extends ConsumerState<CombatScreen> {
   late PracticeCombat _combat;
   late PracticeQuestion _question;
   final _clock = Stopwatch();
+
+  /// Choix sélectionné, pas encore validé.
+  int? _selected;
+
+  /// Choix validé.
   int? _picked;
   String? _feedback;
 
@@ -52,6 +57,7 @@ class _CombatScreenState extends ConsumerState<CombatScreen> {
 
   void _next() {
     _question = buildQuestion(_items, _random);
+    _selected = null;
     _picked = null;
     _feedback = null;
     _clock
@@ -59,8 +65,9 @@ class _CombatScreenState extends ConsumerState<CombatScreen> {
       ..start();
   }
 
-  void _answer(int i) {
-    if (_picked != null) return;
+  void _validate() {
+    final i = _selected;
+    if (i == null || _picked != null) return;
     _clock.stop();
     final right = i == _question.answer;
     final dmg = _combat.answer(right: right, time: _clock.elapsed);
@@ -226,16 +233,23 @@ class _CombatScreenState extends ConsumerState<CombatScreen> {
                 _ChoiceButton(
                   label: c,
                   state: _picked == null
-                      ? _Choice.open
+                      ? (i == _selected ? _Choice.selected : _Choice.open)
                       : i == _question.answer
                       ? _Choice.right
                       : i == _picked
                       ? _Choice.wrong
                       : _Choice.closed,
-                  onPressed: () => _answer(i),
+                  onPressed: () => setState(() => _selected = i),
                 ),
             ],
           ),
+          if (_picked == null) ...[
+            const SizedBox(height: 12),
+            FilledButton(
+              onPressed: _selected == null ? null : _validate,
+              child: const Text('Valider'),
+            ),
+          ],
           if (_feedback != null) ...[
             const SizedBox(height: 12),
             Text(_feedback!, textAlign: TextAlign.center),
@@ -285,7 +299,7 @@ class _CombatScreenState extends ConsumerState<CombatScreen> {
   );
 }
 
-enum _Choice { open, right, wrong, closed }
+enum _Choice { open, selected, right, wrong, closed }
 
 class _ChoiceButton extends StatelessWidget {
   const _ChoiceButton({
@@ -303,13 +317,16 @@ class _ChoiceButton extends StatelessWidget {
     final (bg, fg) = switch (state) {
       _Choice.right => (const Color(0xFF2E7D4F), Colors.white),
       _Choice.wrong => (const Color(0xFFB0412E), Colors.white),
+      _Choice.selected => (const Color(0xFFF2C45A), const Color(0xFF23202C)),
       _ => (Colors.white, const Color(0xFF23202C)),
     };
     return SizedBox(
       width: 120,
       height: 52,
       child: OutlinedButton(
-        onPressed: state == _Choice.open ? onPressed : null,
+        onPressed: state == _Choice.open || state == _Choice.selected
+            ? onPressed
+            : null,
         style: OutlinedButton.styleFrom(
           backgroundColor: bg,
           foregroundColor: fg,
