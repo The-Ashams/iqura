@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// Police des textes du jeu (Pixelify Sans, SIL OFL 1.1).
+const String gameFont = 'PixelifySans';
+
 /// Couleur de base : sable du désert.
 const Color _seed = Color(0xFFB8860B);
 
@@ -8,6 +11,10 @@ ThemeData buildTheme(Brightness brightness, {bool animations = true}) {
   return ThemeData(
     colorScheme: scheme,
     useMaterial3: true,
+    // Police pixel du jeu (OFL) ; Amiri complète les lettres qui lui manquent
+    // (translittération : ḥ, ṯ, ǧ, ʿ…).
+    fontFamily: gameFont,
+    fontFamilyFallback: const ['Amiri'],
     visualDensity: VisualDensity.adaptivePlatformDensity,
     pageTransitionsTheme: animations
         ? const PageTransitionsTheme()

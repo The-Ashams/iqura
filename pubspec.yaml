@@ -9,8 +9,10 @@ environment:
 
 dependencies:
   archive: ^4.5.2
+  audioplayers: ^6.8.1
   crypto: ^3.0.7
   file_picker: ^13.1.0
+  flame: ^1.38.2
   flutter:
     sdk: flutter
   flutter_localizations:
@@ -19,6 +21,7 @@ dependencies:
   path: ^1.9.1
   path_provider: ^2.1.6
   sqlite3: ^3.7.1
+  url_launcher: ^6.3.3
   uuid: ^4.6.0
 
 dev_dependencies:
@@ -36,6 +39,9 @@ flutter:
     - assets/content/iqura_content.db.version
     - assets/fonts/OFL-Amiri.txt
     - assets/fonts/OFL-AmiriQuran.txt
+    - assets/fonts/OFL-PixelifySans.txt
+    # Pixel art créé pour le projet (tools/build_art/).
+    - assets/art/
     # Enregistrements des leçons (synthèse Chatterbox, tools/build_audio/).
     - assets/audio/lecons/
   # Polices arabes sous SIL Open Font License 1.1 (voir THIRD_PARTY_LICENSES.md).
@@ -48,4 +54,8 @@ flutter:
     - family: AmiriQuran
       fonts:
         - asset: assets/fonts/AmiriQuran-Regular.ttf
+    # Police pixel (SIL OFL 1.1), textes du jeu ; police variable 400 à 700.
+    - family: PixelifySans
+      fonts:
+        - asset: assets/fonts/PixelifySans.ttf
 

@@ -5,7 +5,7 @@ Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026**, référen
 
 Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` après la fusion de la pull request n° 3).
 
-**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape 1 terminée le 22/10/2026** (liste A1 à A7 acceptée, points du §3 tranchés). **Étape 2 terminée le 22/10/2026** (lieux et personnages de la région 1 validés, `docs/HISTOIRE.md`). **Étape en cours : 3, coquille du jeu en pixel art.**
+**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape 1 terminée le 22/10/2026** (liste A1 à A7 acceptée, points du §3 tranchés). **Étape 2 terminée le 22/10/2026** (lieux et personnages de la région 1 validés, `docs/HISTOIRE.md`). **Étape 3 (coquille du jeu) faite le 23/10/2026, en attente des retours de l'utilisateur. Étape suivante : 4, leçons 0 et 1 au format mini-donjon.**
 
 ## 1. Ce qui existe déjà (gardé, cahier §0.1 point 4)
 
@@ -21,6 +21,24 @@ Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` apr�
 | **Maquettes** « Histoire — La porte de la bibliothèque » et « Expédition — Combat contre l'Oubli » | Base de référence du style (cahier §8.1) ; [page des maquettes](https://claude.ai/artifact/9CuoZib7eH4rfxH7eBNLFd), hors dépôt |
 
 Derniers résultats : tests locaux du 22/10/2026 (Python : contenu et audio OK ; Flutter : 83 tests OK ; `flutter analyze` sans remarque) ; compilations GitHub Actions réussies (tests, APK, Windows) sur `80f8d48`, dernier commit de la pull request n° 3.
+
+## 1 bis. Coquille du jeu (étape 3, 23/10/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Graphismes | Pixel art créé pour le projet : `tools/build_art/` (rectangles JSON → PNG, bibliothèque standard), 13 images dans `assets/art/` (7 scènes, 6 personnages). Vérifiées par tests et en CI |
+| Police | Pixelify Sans (OFL) pour les textes du jeu ; Amiri en secours pour la translittération |
+| Monde | `tools/build_content/world/region1.json` → tables `region`, `place`, `character` (schéma de contenu 6, contenu 0.5.0-j1a) |
+| Carte | Désert des Lettres : 12 lieux reliés ; les 4 lieux de la tranche (Puits, Porte, Marché, Faille) s'ouvrent, les 8 autres sont indiqués « À venir (jalon J1b) » |
+| Lieux | Scène, personnages, fenêtre de dialogue (« Rédigé par IA ») ; leçons indiquées « Jouable à l'étape 4 » |
+| Combat | Faille des Oubliés : scène Flame (brume animée), panneau de question neutre (syllabes et mots construits des leçons 0 à 3, jamais de verset), 3 ou 4 choix, critique si réponse en moins de 3 s, explication après une erreur. Entraînement : rien n'est enregistré avant l'étape 6. Seule l'Attaque est active ; les autres commandes sont grisées avec leur raison |
+| Grimoire | Alphabet (9 lettres) et fiches (formes, nom avec audio « synthèse », articulation « Rédigé par IA », « Signaler une erreur ») |
+| Signalements | Gardés sur l'appareil (`signalements.jsonl`), envoi par mail prérempli à contact@edelwa.com |
+| Sanctuaire | Al-Fātiḥa : texte Tanzil vérifié et traduction Hamidullah ; récitation et part des mots reconnus indiquées « pas encore disponibles » |
+| Cité | Vue de la cité, 5 bâtiments « À reconstruire » ; boutique, équipement, enchantement à l'étape 6 |
+| Paquets ajoutés | flame 1.38.2 (MIT), audioplayers 6.8.1 (MIT), url_launcher 6.3.3 (BSD) : audités, `THIRD_PARTY_LICENSES.md` |
+
+Tests locaux du 23/10/2026 : Flutter 99 tests OK, `flutter analyze` sans remarque ; Python : contenu (31) et graphismes (5) OK.
 
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
@@ -63,7 +81,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 
 1. Fait : accord sur la liste du §2 et réponses aux points du §3.
 2. Fait : noms des lieux et personnages de la région 1 et découpage en 12 lieux, validés.
-3. En cours, cahier §13.1 point 3 : coquille du jeu en pixel art (carte, dialogue, combat, Cité, Grimoire, Sanctuaire minimal), en commençant par l'audit des paquets (Flame, lecture audio) et des graphismes.
+3. Fait (23/10/2026) : coquille du jeu en pixel art (voir §1 bis) ; retours de l'utilisateur attendus.
+4. Suivant, cahier §13.1 point 4 : réécrire les leçons 0 et 1 au format mini-donjon, avec les corrections du §5.5, les montrer et attendre la validation.
 
 ## 5. Problèmes connus
 

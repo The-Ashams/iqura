@@ -16,6 +16,9 @@ class AppPaths {
   String get backupsDir => p.join(root, 'sauvegardes');
   String get contentDir => p.join(root, 'contenu');
 
+  /// Signalements d'erreur, gardés sur l'appareil (non exportés).
+  String get errorReports => p.join(root, 'signalements.jsonl');
+
   static Future<AppPaths> resolve() async {
     final dir = await getApplicationSupportDirectory();
     final paths = AppPaths(dir.path);

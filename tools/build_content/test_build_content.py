@@ -17,6 +17,7 @@ import lessons  # noqa: E402
 import qac  # noqa: E402
 import sources  # noqa: E402
 import tanzil  # noqa: E402
+import world  # noqa: E402
 
 # Empreinte de référence du texte Tanzil Uthmani 1.1 (définition dans
 # tanzil.integrity_sha256). La même valeur est figée dans l'application :
@@ -233,6 +234,38 @@ class BuildTest(unittest.TestCase):
             d.lessons[1]["exercices"] = d.lessons[1]["exercices"][:-1]
         with self.assertRaisesRegex(lessons.LessonError, "contrôle final"):
             self._validate(mutate)
+
+    def test_region_1_places_and_characters(self):
+        self.assertEqual(self.q("SELECT name, adversary FROM region"),
+                         [("Le Désert des Lettres", "L'Oubli")])
+        self.assertEqual(self.q("SELECT COUNT(*) FROM place"), [(12,)])
+        j1a = {r[0] for r in self.q("SELECT id FROM place WHERE in_j1a = 1")}
+        self.assertEqual(j1a, {"puits", "porte", "marche", "faille"})
+        self.assertEqual(self.q("SELECT COUNT(*) FROM place WHERE in_j1a = 1 AND scene_image IS NULL"), [(0,)])
+        self.assertEqual(self.q("SELECT name FROM character WHERE id = 'nura'"), [("Nūra",)])
+
+    def _validate_world(self, mutate):
+        data = copy.deepcopy(world.load())
+        mutate(data)
+        world.validate(data, self.con)
+
+    def test_world_validation_rejects_unknown_link(self):
+        def mutate(d):
+            d[0]["lieux"][0]["liens"].append("nulle-part")
+        with self.assertRaisesRegex(world.WorldError, "lieu inconnu"):
+            self._validate_world(mutate)
+
+    def test_world_validation_rejects_missing_lesson_in_j1a(self):
+        def mutate(d):
+            d[0]["lieux"][0]["lecons"] = [42]
+        with self.assertRaisesRegex(world.WorldError, "leçons inexistantes"):
+            self._validate_world(mutate)
+
+    def test_world_validation_rejects_position_off_map(self):
+        def mutate(d):
+            d[0]["lieux"][0]["position"] = [200, 10]
+        with self.assertRaisesRegex(world.WorldError, "hors de la carte"):
+            self._validate_world(mutate)
 
     def _validate(self, mutate):
         data = lessons.load()

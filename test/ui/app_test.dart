@@ -59,7 +59,11 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Bienvenue, Amina'), findsOneWidget);
     expect(find.byType(NavigationBar), findsOneWidget);
-    expect(find.text('Pas encore disponible'), findsOneWidget);
+    // Carte de la région 1 : lieux de la tranche J1a ouverts, les autres
+    // indiqués « à venir ».
+    expect(find.text('Le Désert des Lettres'), findsOneWidget);
+    expect(find.text("1. Le Puits de l'arrivée"), findsOneWidget);
+    expect(find.text('Pas encore disponible'), findsNothing);
     for (final label in ['Carte', 'Cité', 'Grimoire', 'Sanctuaire']) {
       expect(find.text(label), findsOneWidget);
     }

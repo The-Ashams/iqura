@@ -61,6 +61,8 @@ On avance région par région. **Jalon en cours : J1a, tranche verticale** (leç
 - Vérifications : `dart format lib test`, `flutter analyze`, `flutter test`, `python3 -m unittest discover -s tools/build_content`.
 - Compilation : `flutter build apk --release` ; Windows : `.github/workflows/build.yml`.
 - Licences des paquets Dart : `python3 tools/third_party/list_dart_packages.py`.
+- Graphismes pixel art : sources `tools/build_art/art/*.json` ; `python3 tools/build_art/build_art.py` (écrit `assets/art/*.png`), `--verifier` en CI ; tests : `python3 -m unittest discover -s tools/build_art`.
+- Monde du jeu : `tools/build_content/world/region*.json` (lieux, personnages), contrôlé par le pipeline de contenu.
 - Leçons : données dans `tools/build_content/lessons/` ; aperçu : `python3 tools/build_content/preview_lessons.py SORTIE.html --etape 1 --jusqua N`.
 - Audio (hors CI, modèle de plusieurs Go) : environnement Python à part (`torch` depuis PyPI, `chatterbox-tts` 0.1.7 en `--no-deps` et ses dépendances, `setuptools<81`, `soundfile`, `ffmpeg`).
   - `python tools/build_audio/generate.py --lecons DOSSIER [--seulement TEXTE…] [--premiere-graine N] [--brut]` ;

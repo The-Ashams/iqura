@@ -33,11 +33,12 @@ import lessons  # noqa: E402
 import qac  # noqa: E402
 import sources  # noqa: E402
 import tanzil  # noqa: E402
+import world  # noqa: E402
 
 # Version du schéma de la base de contenu (lue par l'application).
-CONTENT_SCHEMA_VERSION = 5
+CONTENT_SCHEMA_VERSION = 6
 # Version des données ; à augmenter à chaque changement de contenu.
-CONTENT_VERSION = "0.4.2-dechiffrer"
+CONTENT_VERSION = "0.5.0-j1a"
 
 DEFAULT_OUT = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
@@ -178,6 +179,37 @@ SCHEMA = [
         file TEXT,
         origin TEXT,
         synthetic INTEGER
+    ) STRICT""",
+    """CREATE TABLE region (
+        id TEXT NOT NULL PRIMARY KEY,
+        number INTEGER NOT NULL,
+        name TEXT NOT NULL,
+        skill TEXT NOT NULL,
+        adversary TEXT NOT NULL,
+        map_image TEXT NOT NULL
+    ) STRICT""",
+    """CREATE TABLE place (
+        id TEXT NOT NULL PRIMARY KEY,
+        region_id TEXT NOT NULL REFERENCES region(id),
+        number INTEGER NOT NULL,
+        name TEXT NOT NULL,
+        description TEXT NOT NULL,
+        map_x INTEGER NOT NULL,
+        map_y INTEGER NOT NULL,
+        scene_image TEXT,
+        ground_y INTEGER,
+        in_j1a INTEGER NOT NULL,
+        lessons_json TEXT NOT NULL,
+        links_json TEXT NOT NULL
+    ) STRICT""",
+    """CREATE TABLE character (
+        id TEXT NOT NULL PRIMARY KEY,
+        region_id TEXT NOT NULL REFERENCES region(id),
+        name TEXT NOT NULL,
+        name_ar TEXT NOT NULL,
+        role TEXT NOT NULL,
+        sprite TEXT,
+        places_json TEXT NOT NULL
     ) STRICT""",
     "CREATE INDEX segment_lemma ON segment(lemma_id)",
     "CREATE INDEX segment_root ON segment(root_id)",
@@ -368,6 +400,9 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
     lesson_data = data.get("lessons") or lessons.load()
     lessons.validate(lesson_data, con)
     lesson_counts = lessons.write(con, lesson_data)
+    world_data = data.get("world") or world.load()
+    world.validate(world_data, con)
+    world_counts = world.write(con, world_data)
 
     counts = {
         "surahs": len(meta.surahs),
@@ -377,6 +412,7 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
         "roots": len(root_count),
         "lemmas": len(lemma_count),
         **lesson_counts,
+        **world_counts,
     }
     content_meta = {
         "schema_version": str(CONTENT_SCHEMA_VERSION),
@@ -440,7 +476,7 @@ def main() -> int:
     try:
         build(args.out)
     except (BuildError, sources.SourceError, tanzil.TanzilError, qac.QacError,
-            lessons.LessonError) as e:
+            lessons.LessonError, world.WorldError) as e:
         print(f"[build_content] ÉCHEC : {e}", file=sys.stderr)
         return 1
     return 0

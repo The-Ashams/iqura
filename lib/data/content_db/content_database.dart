@@ -6,12 +6,14 @@
 /// puis ouverte en lecture seule.
 library;
 
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqlite3/sqlite3.dart';
 
+import '../../game/world.dart';
 import 'quran_integrity.dart';
 
 /// La base de contenu est absente, d'une autre version ou altérée.
@@ -50,7 +52,7 @@ class ContentDatabase {
   static const versionAssetPath = 'assets/content/iqura_content.db.version';
 
   /// Version du schéma de la base de contenu gérée par cette application.
-  static const int schemaVersion = 5;
+  static const int schemaVersion = 6;
 
   /// Copie (si besoin) puis ouvre la base dans [directory], et vérifie le
   /// texte coranique. Si la copie est altérée, elle est refaite une fois
@@ -171,6 +173,126 @@ class ContentDatabase {
         if (m[e.value] != null) e.key: m[e.value]!,
     };
   }
+
+  /// Régions du jeu, dans l'ordre.
+  List<Region> regions() => [
+    for (final r in _db.select('SELECT * FROM region ORDER BY number'))
+      Region(
+        id: r['id'] as String,
+        number: r['number'] as int,
+        name: r['name'] as String,
+        skill: r['skill'] as String,
+        adversary: r['adversary'] as String,
+        mapImage: r['map_image'] as String,
+      ),
+  ];
+
+  /// Lieux d'une région, dans l'ordre.
+  List<Place> places(String regionId) => [
+    for (final r in _db.select(
+      'SELECT * FROM place WHERE region_id = ? ORDER BY number',
+      [regionId],
+    ))
+      Place(
+        id: r['id'] as String,
+        regionId: r['region_id'] as String,
+        number: r['number'] as int,
+        name: r['name'] as String,
+        description: r['description'] as String,
+        mapX: r['map_x'] as int,
+        mapY: r['map_y'] as int,
+        sceneImage: r['scene_image'] as String?,
+        groundY: r['ground_y'] as int?,
+        inVerticalSlice: r['in_j1a'] == 1,
+        lessons: (jsonDecode(r['lessons_json'] as String) as List).cast<int>(),
+        links: (jsonDecode(r['links_json'] as String) as List).cast<String>(),
+      ),
+  ];
+
+  /// Personnages d'une région.
+  List<GameCharacter> characters(String regionId) => [
+    for (final r in _db.select(
+      'SELECT * FROM character WHERE region_id = ? ORDER BY rowid',
+      [regionId],
+    ))
+      GameCharacter(
+        id: r['id'] as String,
+        name: r['name'] as String,
+        nameAr: r['name_ar'] as String,
+        role: r['role'] as String,
+        sprite: r['sprite'] as String?,
+        places: (jsonDecode(r['places_json'] as String) as List).cast<String>(),
+      ),
+  ];
+
+  /// Fiches des lettres déjà rédigées, dans l'ordre des leçons.
+  List<LetterCard> letters() => [
+    for (final r in _db.select(
+      'SELECT l.*, z.description AS zone FROM letter l '
+      'JOIN articulation_zone z ON z.id = l.zone_id ORDER BY l.rowid',
+    ))
+      LetterCard(
+        letter: r['letter'] as String,
+        name: r['name'] as String,
+        nameAr: r['name_ar'] as String,
+        joinsLeft: r['joins_left'] == 1,
+        zone: r['zone'] as String,
+        pronunciation: r['pronunciation'] as String,
+      ),
+  ];
+
+  /// Syllabes et mots à lire des leçons d'une étape, jusqu'à la leçon
+  /// [upTo] comprise.
+  List<ReadingItem> readingItems({required int stage, required int upTo}) {
+    final items = <ReadingItem>[];
+    for (final r in _db.select(
+      'SELECT ordinal, content FROM lesson WHERE stage = ? AND ordinal <= ? '
+      'ORDER BY ordinal',
+      [stage, upTo],
+    )) {
+      final content = jsonDecode(r['content'] as String) as Map;
+      for (final section in content['sections'] as List) {
+        if (section['type'] != 'syllabes' && section['type'] != 'exemples') {
+          continue;
+        }
+        for (final item in section['items'] as List) {
+          items.add(
+            ReadingItem(
+              arabic: item['ar'] as String,
+              translit: item['translit'] as String,
+              lessonOrdinal: r['ordinal'] as int,
+            ),
+          );
+        }
+      }
+    }
+    return items;
+  }
+
+  /// Fichier audio (chemin sous `assets/`) d'un texte des leçons, s'il existe.
+  String? audioFile(String arabic) {
+    final rows = _db.select(
+      'SELECT file FROM audio_clip WHERE text = ? AND file IS NOT NULL',
+      [arabic],
+    );
+    return rows.isEmpty ? null : rows.first['file'] as String;
+  }
+
+  /// Versets d'une sourate (texte Tanzil vérifié et traduction Hamidullah).
+  List<VerseText> surahVerses(int surah) => [
+    for (final r in _db.select(
+      'SELECT v.surah_id, v.ayah, v.text_uthmani, t.text FROM verse v '
+      'JOIN verse_translation t ON t.verse_id = v.id '
+      'WHERE v.surah_id = ? ORDER BY v.ayah',
+      [surah],
+    ))
+      VerseText(
+        surah: r['surah_id'] as int,
+        ayah: r['ayah'] as int,
+        arabic: r['text_uthmani'] as String,
+        translation: r['text'] as String,
+      ),
+  ];
 
   void close() => _db.close();
 }

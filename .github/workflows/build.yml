@@ -43,6 +43,11 @@ jobs:
           python3 -m unittest discover -s tools/build_content -v
           python3 tools/build_content/build_content.py
 
+      - name: Graphismes à jour (pixel art)
+        run: |
+          python3 -m unittest discover -s tools/build_art -v
+          python3 tools/build_art/build_art.py --verifier
+
       - name: Dépendances
         run: flutter pub get
 
