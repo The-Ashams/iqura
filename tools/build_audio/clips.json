@@ -24,9 +24,9 @@
    "genre": "mot",
    "texte": "بَاب",
    "fichier": "assets/audio/lecons/ar-06740eb42b1dda4b.mp3",
-   "sha256": "0889f54187025ef04b70aa269ce145602666e9cc5ae8ef814623e69845ac19a0",
-   "graine": 0,
-   "a_ecouter": true,
+   "sha256": "c235222f9ecd36e46f5472fd9317969921beb405ee357a0a2cff0bcf067c80aa",
+   "graine": 1,
+   "a_ecouter": false,
    "genere_le": "2026-10-23"
   },
   "ar-08208c74a20d7933": {
@@ -51,11 +51,10 @@
    "genre": "mot",
    "texte": "تَابَ",
    "fichier": "assets/audio/lecons/ar-0f26c15ecb1064f2.mp3",
-   "sha256": "66d3a1ef1f9b3b0fbec2db85987b9cd54e01592cffd1830a6857a93a114c209d",
-   "graine": 6,
-   "a_ecouter": true,
-   "genere_le": "2026-10-23",
-   "ecrit": "تَابَ،"
+   "sha256": "c00d6201e8747549f332bf37d21a8ac7d6a03743f500ae9468abda76da0748c4",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
   },
   "ar-147954761063a663": {
    "genre": "syllabe",
@@ -160,11 +159,10 @@
    "genre": "mot",
    "texte": "ثَبَتَ",
    "fichier": "assets/audio/lecons/ar-65c326c5b23a4fe0.mp3",
-   "sha256": "1181a620ba61a93ab99381cd9a8b076c474940d4205ce6164a592a4f20f669c2",
+   "sha256": "c7a79ce0ec02381f2ed69ceb0d63480526f99c97745ba238cb7166e5f624b3dd",
    "graine": 0,
-   "a_ecouter": true,
-   "genere_le": "2026-10-23",
-   "ecrit": "ثَبَتَ،"
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
   },
   "ar-69afc767b1dbd8e8": {
    "genre": "lettre",
@@ -314,10 +312,10 @@
    "genre": "mot",
    "texte": "بَاتَ",
    "fichier": "assets/audio/lecons/ar-cf6ecbfc61152fd3.mp3",
-   "sha256": "13062054b4f4b774dbd77b4261ae052a2aeb0bffe129fc5474971ed266eba1be",
-   "graine": 4,
-   "a_ecouter": true,
-   "genere_le": "2026-10-23"
+   "sha256": "27d969ed7a73b5e867fd34bfec50d01a2c0e482e694440f9955903bfb131049e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
   },
   "ar-d4221add8206568c": {
    "genre": "syllabe",
