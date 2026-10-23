@@ -1,7 +1,8 @@
 """Contrôle des leçons au format mini-donjon (format 2, cahier v3 §6).
 
 Règles vérifiées (cahier v3 §6.1, §6.2, §3.1) :
-- écrans dans l'ordre : entrée au début, mini-boss puis fin à la fin ;
+- écrans dans l'ordre : entrée au début, échauffement juste après (dès la
+  leçon 2), mini-boss puis fin à la fin ;
 - un écran = une idée : au plus 2 phrases et 40 mots par réplique,
   règle ou explication ; jamais deux écrans d'explication de suite (chaque
   découverte, élément et règle porte sa question) ;
@@ -167,6 +168,8 @@ def validate(lesson: dict, *, known_letters: set[str], known_signs: set[str],
     for a, b in zip(types, types[1:]):
         if a in EXPLANATION_ONLY and b in EXPLANATION_ONLY:
             raise LessonError(f"{where} : deux écrans d'explication à la suite")
+    if lesson["ordre"] >= 2 and types[1] != "echauffement":
+        raise LessonError(f"{where} : échauffement attendu juste après l'entrée (dès la leçon 2)")
     elements = [s["lettre"] for s in screens if s["type"] == "element"]
     if sorted(elements) != sorted(lesson["introduit"]["lettres"]):
         raise LessonError(f"{where} : un écran « élément » par lettre introduite")

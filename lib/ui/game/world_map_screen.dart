@@ -12,7 +12,7 @@ import 'place_screen.dart';
 class WorldMapScreen extends ConsumerWidget {
   const WorldMapScreen({super.key});
 
-  static const String lockedDetail = 'À venir (jalon J1b)';
+  static const String lockedDetail = 'À venir (prochains niveaux)';
 
   void _open(BuildContext context, Place place) => Navigator.push(
     context,

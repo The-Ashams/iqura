@@ -11,12 +11,12 @@
   },
   "lieux": [
     {"id": "puits", "numero": 1, "nom": "Le Puits de l'arrivée", "position": [21, 64], "lecons": [0], "scene": "scene_puits", "sol": 74, "tranche_j1a": true, "liens": ["porte"],
-     "description": "Une inscription est gravée sur la margelle du vieux puits. Personne ne sait plus la lire."},
+     "description": "Une inscription est gravée sur le bord du vieux puits. Personne ne sait plus la lire."},
     {"id": "porte", "numero": 2, "nom": "La Porte de la bibliothèque", "position": [80, 48], "lecons": [1], "scene": "scene_porte", "sol": 62, "tranche_j1a": true, "liens": ["marche", "faille"],
      "description": "La grande porte est fermée par quatorze sceaux. Une étiquette y est encore accrochée."},
     {"id": "marche", "numero": 3, "nom": "Le Marché aux enseignes", "position": [65, 55], "lecons": [2, 3], "scene": "scene_marche", "sol": 74, "tranche_j1a": true, "liens": ["caravanserail"],
      "description": "Les marchands ont oublié comment se lisent leurs propres enseignes."},
-    {"id": "caravanserail", "numero": 4, "nom": "Le Caravansérail", "position": [34, 36], "lecons": [4], "scene": null, "tranche_j1a": false, "liens": ["dunes"],
+    {"id": "caravanserail", "numero": 4, "nom": "Le Caravansérail", "position": [34, 36], "lecons": [4], "scene": "scene_caravanserail", "sol": 86, "tranche_j1a": true, "liens": ["dunes"],
      "description": "Les caravanes y laissent leurs marques."},
     {"id": "dunes", "numero": 5, "nom": "Les Dunes chantantes", "position": [146, 42], "lecons": [5, 6], "scene": null, "tranche_j1a": false, "liens": ["atelier"],
      "description": "Le vent y porte des sons étranges."},
@@ -39,7 +39,7 @@
     {"id": "nura", "nom": "Nūra", "nom_ar": "نُورَة", "role": "L'archiviste", "sprite": "nura", "lieux": ["puits", "porte"]},
     {"id": "samir", "nom": "Samīr", "nom_ar": "سَمِير", "role": "L'apprenti copiste", "sprite": "samir", "lieux": ["marche"]},
     {"id": "layla", "nom": "Laylā", "nom_ar": "لَيْلَى", "role": "La marchande d'enseignes", "sprite": "layla", "lieux": ["marche"]},
-    {"id": "rashid", "nom": "Rāšid", "nom_ar": "رَاشِد", "role": "Le caravanier", "sprite": null, "lieux": ["caravanserail"]},
+    {"id": "rashid", "nom": "Rāšid", "nom_ar": "رَاشِد", "role": "Le caravanier", "sprite": "rashid", "lieux": ["caravanserail"]},
     {"id": "suhayl", "nom": "Suhayl", "nom_ar": "سُهَيْل", "role": "L'astronome", "sprite": null, "lieux": ["observatoire"]}
   ]
 }

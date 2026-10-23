@@ -2,9 +2,12 @@
   "id": "dechiffrer-02",
   "etape": 1,
   "ordre": 2,
-  "titre": "ن ي et la kasra",
-  "objectif": "Reconnaître nūn et yāʾ, lire la kasra (i) et le « ī » long.",
+  "format": 2,
+  "titre": "L'enseigne de l'herboriste",
+  "objectif": "Reconnaître ن et ي, lire la kasra (i) et le « ī » long ; lire نَبَات, بَنَات, ثَابِت, نَبَتَ, تِين.",
   "statut": "ia_non_verifie",
+  "lieu": "marche",
+  "maitre": "layla",
   "prerequis": [
     "dechiffrer-01"
   ],
@@ -17,170 +20,551 @@
       "kasra"
     ]
   },
-  "sections": [
+  "apercu": [
+    "ـنـ",
+    "ـيـ",
+    "ـبـ",
+    "ـتـ",
+    "ـثـ",
+    "نـ",
+    "يـ"
+  ],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "نَ",
+        "translit": "na"
+      },
+      {
+        "ar": "يَ",
+        "translit": "ya"
+      },
+      {
+        "ar": "بِ",
+        "translit": "bi"
+      },
+      {
+        "ar": "نِ",
+        "translit": "ni"
+      },
+      {
+        "ar": "بِي",
+        "translit": "bī"
+      },
+      {
+        "ar": "نِي",
+        "translit": "nī"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "نَبَات",
+        "translit": "nabāt",
+        "fr": "plantes, végétation"
+      },
+      {
+        "ar": "بَنَات",
+        "translit": "banāt",
+        "fr": "filles"
+      },
+      {
+        "ar": "ثَابِت",
+        "translit": "ṯābit",
+        "fr": "ferme, stable"
+      },
+      {
+        "ar": "نَبَتَ",
+        "translit": "nabata",
+        "fr": "il a poussé (une plante)"
+      },
+      {
+        "ar": "تِين",
+        "translit": "tīn",
+        "fr": "figues"
+      }
+    ]
+  },
+  "ecrans": [
     {
-      "type": "texte",
-      "titre": "Encore la même silhouette",
-      "corps": "Au début et au milieu d'un mot, ن et ي ont la même forme que ب, ت et ث : seuls les points les distinguent. ن a un point dessus, ي deux points dessous. Isolées ou en fin de mot, elles prennent une forme plus ronde qui descend sous la ligne."
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "layla",
+          "texte": "Bienvenue au marché, voyageur. Je suis Laylā : je peins les enseignes des échoppes."
+        },
+        {
+          "qui": "layla",
+          "texte": "L'herboriste ne sait plus lire la sienne, et ses clients passent sans s'arrêter. Aide-moi à la déchiffrer."
+        }
+      ],
+      "objectif": "Lire l'enseigne de l'herboriste."
     },
     {
-      "type": "lettres",
-      "lettres": [
-        "ن",
-        "ي"
-      ]
-    },
-    {
-      "type": "encadre",
-      "corps": "Au début ou au milieu d'un mot, comptez les points : ـبـ (1 dessous), ـتـ (2 dessus), ـثـ (3 dessus), ـنـ (1 dessus), ـيـ (2 dessous)."
-    },
-    {
-      "type": "regle",
-      "titre": "La kasra : le son « i »",
-      "corps": "La kasra est un petit trait oblique sous la consonne : ـِ. Elle se prononce « i ». بِ = bi, نِ = ni, تِ = ti."
-    },
-    {
-      "type": "regle",
-      "titre": "Le « ī » long avec le yāʾ",
-      "corps": "Une kasra suivie d'un yāʾ sans voyelle donne un « i » long : بِي = bī, نِي = nī. C'est le même principe que fatḥa + alif = ā."
-    },
-    {
-      "type": "syllabes",
-      "items": [
+      "type": "echauffement",
+      "exercices": [
         {
-          "ar": "نَ",
-          "translit": "na"
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "تَا",
+          "choix_ar": [
+            "تَا",
+            "بَا",
+            "ثَا"
+          ],
+          "reponse": 0,
+          "explication": "C'était « tā » : deux points au-dessus, fatḥa et alif."
         },
         {
-          "ar": "يَ",
-          "translit": "ya"
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "تَابَ",
+          "choix_audio": [
+            "بَاتَ",
+            "تَابَ",
+            "بَاب"
+          ],
+          "reponse": 1,
+          "explication": "تَابَ se lit « tāba »."
         },
         {
-          "ar": "بِ",
-          "translit": "bi"
-        },
-        {
-          "ar": "نِ",
-          "translit": "ni"
-        },
-        {
-          "ar": "بِي",
-          "translit": "bī"
-        },
-        {
-          "ar": "تِي",
-          "translit": "tī"
-        },
-        {
-          "ar": "نَا",
-          "translit": "nā"
+          "type": "points",
+          "consigne": "Laquelle a trois points ?",
+          "choix_ar": [
+            "ت",
+            "ث",
+            "ب"
+          ],
+          "reponse": 1,
+          "explication": "ث porte trois points au-dessus."
         }
       ]
     },
     {
-      "type": "exemples",
-      "titre": "Mots",
-      "items": [
+      "type": "decouverte",
+      "support": [
+        "نَبَات"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Tu connais déjà trois lettres de cette enseigne. Lesquelles ?",
+        "choix": [
+          "ب, l'alif et ت",
+          "ب, ث et l'alif",
+          "ت, ث et l'alif"
+        ],
+        "reponse": 0,
+        "explication": "Tu reconnais ب, l'alif et ت. La première lettre, à droite, porte un point au-dessus : c'est une nouvelle lettre, ن."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ن",
+      "question": {
+        "type": "points",
+        "consigne": "Laquelle est ن ?",
+        "choix_ar": [
+          "ب",
+          "ن",
+          "ت"
+        ],
+        "reponse": 1,
+        "explication": "ن porte un seul point, au-dessus. ب a son point dessous."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ي",
+      "question": {
+        "type": "formes",
+        "consigne": "Au milieu d'un mot, laquelle est ي ?",
+        "choix_ar": [
+          "ـيـ",
+          "ـبـ",
+          "ـتـ"
+        ],
+        "reponse": 0,
+        "explication": "Au milieu d'un mot, ي a la même petite dent que ب et ت, avec deux points dessous."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La kasra",
+      "texte": "La kasra est un petit trait sous la lettre. Elle se lit « i » après la consonne.",
+      "exemples": [
+        "بِ",
+        "نِ"
+      ],
+      "question": {
+        "type": "ecouter",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "نِ",
+        "choix_ar": [
+          "نَ",
+          "نِ",
+          "بِ"
+        ],
+        "reponse": 1,
+        "explication": "Tu as entendu « ni » : un point au-dessus, et la kasra dessous."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le « ī » long",
+      "texte": "Une kasra suivie d'un ي donne un « ī » long, tenu deux fois plus longtemps. C'est comme fatḥa et alif pour le « ā ».",
+      "exemples": [
+        "بِي",
+        "نِي"
+      ],
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "بِي",
+        "choix_ar": [
+          "بِ",
+          "بِي",
+          "بَا"
+        ],
+        "reponse": 1,
+        "explication": "C'était « bī », long : la kasra suivie de ي."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
         {
-          "ar": "نَبَتَ",
-          "translit": "nabata",
-          "fr": "il a poussé (une plante)"
+          "type": "reconnaitre",
+          "consigne": "Comment s'appelle cette lettre ?",
+          "ar": "ن",
+          "choix": [
+            "nūn",
+            "bāʾ",
+            "yāʾ"
+          ],
+          "reponse": 0,
+          "explication": "Un point au-dessus, une forme ronde qui descend : nūn."
         },
         {
-          "ar": "نَابَ",
-          "translit": "nāba",
-          "fr": "il a remplacé"
+          "type": "points",
+          "consigne": "Laquelle a deux points dessous ?",
+          "choix_ar": [
+            "ت",
+            "ي",
+            "ث"
+          ],
+          "reponse": 1,
+          "explication": "ي porte deux points sous la ligne ; ت a ses deux points au-dessus."
         },
         {
-          "ar": "بِنَا",
-          "translit": "binā",
-          "fr": "avec nous"
+          "type": "formes",
+          "consigne": "De quelle lettre est cette forme ?",
+          "ar": "ـنـ",
+          "choix_ar": [
+            "ب",
+            "ن",
+            "ت"
+          ],
+          "reponse": 1,
+          "explication": "Un point au-dessus : ن, au milieu d'un mot."
         },
         {
-          "ar": "بِي",
-          "translit": "bī",
-          "fr": "avec moi"
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بِ",
+          "choix_ar": [
+            "بَ",
+            "بِ",
+            "بِي"
+          ],
+          "reponse": 1,
+          "explication": "C'était « bi » : un « i » bref, la kasra seule."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "يَ",
+          "choix_ar": [
+            "تَ",
+            "نَ",
+            "يَ"
+          ],
+          "reponse": 2,
+          "explication": "C'était « ya » : ي comme consonne, avec la fatḥa."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "نِي",
+          "choix_ar": [
+            "نِ",
+            "نِي",
+            "نَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « nī », long : kasra et ي."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "نَبَات",
+          "choix_audio": [
+            "بَنَات",
+            "نَبَات",
+            "نَبَتَ"
+          ],
+          "reponse": 1,
+          "explication": "نَبَات se lit « nabāt » : na, bā, puis ت sans voyelle."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "ثَابِت",
+          "choix_audio": [
+            "ثَبَتَ",
+            "ثَابِت",
+            "نَبَات"
+          ],
+          "reponse": 1,
+          "explication": "ثَابِت se lit « ṯābit » : ṯā, bi, puis ت sans voyelle."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "تِين",
+          "choix_audio": [
+            "ثَابِت",
+            "تِين",
+            "بَنَات"
+          ],
+          "reponse": 1,
+          "explication": "تِين se lit « tīn » : ti, ī long avec ي, puis ن sans voyelle."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "بَنَات",
+          "tuiles": [
+            "بَ",
+            "نَ",
+            "ا",
+            "ت",
+            "نِ"
+          ],
+          "solution": [
+            "بَ",
+            "نَ",
+            "ا",
+            "ت"
+          ],
+          "explication": "بَنَات : بَ, نَ, l'alif, puis ت sans voyelle."
+        },
+        {
+          "type": "tracer",
+          "consigne": "Trace la lettre ن en suivant les points.",
+          "lettre": "ن"
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "نَبَات"
         }
       ]
     },
     {
       "type": "coran",
-      "titre": "Dans le Coran",
-      "corps": "Repérez ن et ي (et les lettres de la leçon 1) dans ces versets.",
+      "texte": "ن et ي se retrouvent dans le Coran : compte-les dans ces mots. D'autres petits signes, que tu apprendras plus tard, sont aussi présents.",
       "extraits": [
+        {
+          "verset": "95:2",
+          "mots": [
+            "95:2:2"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ي vois-tu dans ce mot ?",
+            "mot": "95:2:2",
+            "lettre": "ي"
+          }
+        },
+        {
+          "verset": "95:2",
+          "mots": [
+            "95:2:2"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Et combien de ن ?",
+            "mot": "95:2:2",
+            "lettre": "ن"
+          }
+        },
         {
           "verset": "80:29",
           "mots": [
-            "80:29:1",
-            "80:29:2"
+            "80:29:1"
           ],
-          "lettres": [
-            "ي",
-            "ت",
-            "ن"
-          ]
-        },
-        {
-          "verset": "78:16",
-          "mots": [
-            "78:16:1"
-          ],
-          "lettres": [
-            "ن",
-            "ت"
-          ]
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ن vois-tu dans ce mot ?",
+            "mot": "80:29:1",
+            "lettre": "ن"
+          }
         }
       ]
-    }
-  ],
-  "exercices": [
+    },
     {
-      "type": "reconnaitre_lettre",
-      "lettres": [
-        "ن",
-        "ي"
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "نِ",
+          "choix_ar": [
+            "نِ",
+            "بِ",
+            "نَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ni »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "يَ",
+          "choix_ar": [
+            "تَ",
+            "نَ",
+            "يَ"
+          ],
+          "reponse": 2,
+          "explication": "C'était « ya » : deux points dessous, fatḥa."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "نِي",
+          "choix_ar": [
+            "نِي",
+            "نِ",
+            "بِي"
+          ],
+          "reponse": 0,
+          "explication": "C'était « nī », long."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بِ",
+          "choix_ar": [
+            "بِي",
+            "بِ",
+            "بَا"
+          ],
+          "reponse": 1,
+          "explication": "C'était « bi », bref."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "بَنَات",
+          "choix_audio": [
+            "نَبَات",
+            "بَنَات",
+            "ثَابِت"
+          ],
+          "reponse": 1,
+          "explication": "بَنَات se lit « banāt »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "تِين",
+          "choix_audio": [
+            "تِين",
+            "ثَابِت",
+            "نَبَتَ"
+          ],
+          "reponse": 0,
+          "explication": "تِين se lit « tīn »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "ثَابِت",
+          "choix_audio": [
+            "بَنَات",
+            "ثَبَتَ",
+            "ثَابِت"
+          ],
+          "reponse": 2,
+          "explication": "ثَابِت se lit « ṯābit »."
+        },
+        {
+          "type": "ecouter_lettre",
+          "consigne": "Écoute et choisis la lettre.",
+          "choix_ar": [
+            "ي",
+            "ن",
+            "ب"
+          ],
+          "reponse": 1,
+          "explication": "C'était ن (nūn) : un point au-dessus."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle a un seul point, au-dessus ?",
+          "choix_ar": [
+            "ب",
+            "ي",
+            "ن"
+          ],
+          "reponse": 2,
+          "explication": "ن porte un point au-dessus."
+        },
+        {
+          "type": "ecouter",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "ثَا",
+          "choix_ar": [
+            "تَا",
+            "ثَا",
+            "بَا"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ṯā » (leçon 1)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "بَاب",
+          "choix_audio": [
+            "بَاب",
+            "بَاتَ",
+            "تَابَ"
+          ],
+          "reponse": 0,
+          "explication": "بَاب se lit « bāb » (leçon 1)."
+        },
+        {
+          "type": "ecouter_lettre",
+          "revision": true,
+          "consigne": "Écoute et choisis la lettre.",
+          "choix_ar": [
+            "ت",
+            "ث",
+            "ب"
+          ],
+          "reponse": 1,
+          "explication": "C'était ث (ṯāʾ) : trois points au-dessus (leçon 1)."
+        }
       ]
     },
     {
-      "type": "formes",
-      "lettres": [
-        "ن",
-        "ي"
-      ]
-    },
-    {
-      "type": "points",
-      "lettres": [
-        "ب",
-        "ت",
-        "ث",
-        "ن",
-        "ي"
-      ]
-    },
-    {
-      "type": "lire",
-      "source": "syllabes"
-    },
-    {
-      "type": "lire",
-      "source": "exemples"
-    },
-    {
-      "type": "reconstruire",
-      "source": "exemples"
-    },
-    {
-      "type": "reperer",
-      "source": "coran"
-    },
-    {
-      "type": "controle_final",
-      "sources": [
-        "syllabes",
-        "exemples"
-      ],
-      "seuil": 0.8
+      "type": "fin",
+      "acquis": "Tu sais lire ن et ي, la kasra et le « ī » long : نَبَات, بَنَات, ثَابِت, نَبَتَ, تِين.",
+      "suite": "L'herboriste retrouve son enseigne, et le deuxième sceau de la porte se brise."
     }
   ]
 }

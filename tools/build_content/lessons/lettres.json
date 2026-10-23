@@ -10,7 +10,8 @@
     "langue_bout_racine": "Bout de la langue contre la racine des incisives supérieures",
     "langue_bout_gencive": "Bout de la langue contre la gencive, derrière les incisives supérieures",
     "langue_bout_dents": "Bout de la langue contre l'extrémité des incisives supérieures",
-    "levres": "Les deux lèvres"
+    "levres": "Les deux lèvres",
+    "langue_bout_incisives_inf": "Bout de la langue près des incisives inférieures ; l'air siffle entre les dents"
   },
   "lettres": [
     {
@@ -84,6 +85,38 @@
       "liaison_gauche": true,
       "zone": "gorge_haut",
       "prononciation": "Un son raclé en haut de la gorge, comme la « jota » espagnole ou le « ch » allemand de « Bach ». Un point au-dessus."
+    },
+    {
+      "lettre": "د",
+      "nom": "dāl",
+      "nom_ar": "دَال",
+      "liaison_gauche": false,
+      "zone": "langue_bout_racine",
+      "prononciation": "Comme le « d » français : le bout de la langue contre la racine des incisives supérieures. Sans point ; ne s'attache jamais à la lettre suivante."
+    },
+    {
+      "lettre": "ذ",
+      "nom": "ḏāl",
+      "nom_ar": "ذَال",
+      "liaison_gauche": false,
+      "zone": "langue_bout_dents",
+      "prononciation": "Comme le « th » anglais de « this » : le bout de la langue touche l'extrémité des incisives supérieures, et la voix vibre. C'est le pendant sonore de ث. Un point au-dessus ; ne s'attache jamais à la lettre suivante."
+    },
+    {
+      "lettre": "ر",
+      "nom": "rāʾ",
+      "nom_ar": "رَاء",
+      "liaison_gauche": false,
+      "zone": "langue_bout_gencive",
+      "prononciation": "Un « r » battu, comme le « r » simple de l'espagnol « pero » : le bout de la langue frappe une seule fois la gencive, derrière les incisives supérieures. Ce n'est pas le « r » de la gorge du français. Sans point ; ne s'attache jamais à la lettre suivante."
+    },
+    {
+      "lettre": "ز",
+      "nom": "zāy",
+      "nom_ar": "زَاي",
+      "liaison_gauche": false,
+      "zone": "langue_bout_incisives_inf",
+      "prononciation": "Comme le « z » de « zéro » : le bout de la langue près des incisives inférieures, l'air siffle et la voix vibre. Même forme que ر, avec un point au-dessus ; ne s'attache jamais à la lettre suivante."
     }
   ]
 }

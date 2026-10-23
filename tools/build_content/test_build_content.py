@@ -234,18 +234,12 @@ class BuildTest(unittest.TestCase):
             with self.assertRaisesRegex(lessons.LessonError, "sans leçon"):
                 lessons.audio_rows({}, m, root)
 
-    def test_validation_requires_a_final_check(self):
-        def mutate(d):
-            d.lessons[2]["exercices"] = d.lessons[2]["exercices"][:-1]
-        with self.assertRaisesRegex(lessons.LessonError, "contrôle final"):
-            self._validate(mutate)
-
     def test_region_1_places_and_characters(self):
         self.assertEqual(self.q("SELECT name, adversary FROM region"),
                          [("Le Désert des Lettres", "L'Oubli")])
         self.assertEqual(self.q("SELECT COUNT(*) FROM place"), [(12,)])
         j1a = {r[0] for r in self.q("SELECT id FROM place WHERE in_j1a = 1")}
-        self.assertEqual(j1a, {"puits", "porte", "marche", "faille"})
+        self.assertEqual(j1a, {"puits", "porte", "marche", "caravanserail", "faille"})
         self.assertEqual(self.q("SELECT COUNT(*) FROM place WHERE in_j1a = 1 AND scene_image IS NULL"), [(0,)])
         self.assertEqual(self.q("SELECT name FROM character WHERE id = 'nura'"), [("Nūra",)])
 
@@ -281,34 +275,6 @@ class BuildTest(unittest.TestCase):
     def test_validation_accepts_current_lessons(self):
         self._validate(lambda d: None)
 
-    def test_validation_rejects_untaught_letter(self):
-        def mutate(d):
-            ex = next(s for s in d.lessons[2]["sections"] if s["type"] == "exemples")
-            ex["items"].append({"ar": "كَتَبَ", "translit": "kataba", "fr": "x"})
-        with self.assertRaisesRegex(lessons.LessonError, "pas encore enseigné"):
-            self._validate(mutate)
-
-    def test_validation_rejects_copied_quran_text(self):
-        def mutate(d):
-            sec = next(s for s in d.lessons[2]["sections"] if s["type"] == "coran")
-            sec["extraits"][0]["ar"] = "texte recopié"
-        with self.assertRaisesRegex(lessons.LessonError, "jamais recopié"):
-            self._validate(mutate)
-
-    def test_validation_rejects_wrong_reference_or_letter(self):
-        def bad_token(d):
-            sec = next(s for s in d.lessons[2]["sections"] if s["type"] == "coran")
-            sec["extraits"][0]["mots"] = ["80:29:99"]
-        with self.assertRaisesRegex(lessons.LessonError, "inexistant"):
-            self._validate(bad_token)
-
-        def bad_letter(d):
-            sec = next(s for s in d.lessons[2]["sections"] if s["type"] == "coran")
-            sec["extraits"][0]["lettres"] = ["ق"]
-        with self.assertRaisesRegex(lessons.LessonError, "aucun mot cité"):
-            self._validate(bad_letter)
-
-    # Format mini-donjon (leçons 0 et 1).
     def _screen(self, d, kind, lesson=1):
         return next(s for s in d.lessons[lesson]["ecrans"] if s["type"] == kind)
 
@@ -355,6 +321,20 @@ class BuildTest(unittest.TestCase):
         def mutate(d):
             self._screen(d, "mini_boss")["questions"][0]["type"] = "reperer_mot"
         with self.assertRaisesRegex(lessons.LessonError, "interdit au combat"):
+            self._validate(mutate)
+
+    def test_mini_donjon_rejects_wrong_quran_reference(self):
+        def mutate(d):
+            q = self._screen(d, "coran")["extraits"][0]["question"]
+            q["mot"] = q["mot"].rsplit(":", 1)[0] + ":99"
+        with self.assertRaisesRegex(lessons.LessonError, "inexistant"):
+            self._validate(mutate)
+
+    def test_mini_donjon_requires_warm_up_from_lesson_2(self):
+        def mutate(d):
+            d.lessons[2]["ecrans"] = [s for s in d.lessons[2]["ecrans"]
+                                      if s["type"] != "echauffement"]
+        with self.assertRaisesRegex(lessons.LessonError, "échauffement"):
             self._validate(mutate)
 
     def test_rebuild_replaces_file(self):

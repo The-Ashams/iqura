@@ -6,5 +6,6 @@ const Map<String, (int, int)> spriteSizes = {
   'nura': (16, 26),
   'samir': (10, 22),
   'layla': (12, 26),
+  'rashid': (12, 24),
   'brume': (43, 46),
 };
