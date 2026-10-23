@@ -7,7 +7,7 @@ library;
 import '../../engines/sync/table_def.dart';
 
 /// Version du schéma (stockée dans `PRAGMA user_version`).
-const int userSchemaVersion = 1;
+const int userSchemaVersion = 2;
 
 const _hlc = ColumnDef(TableDef.hlcColumn, ColumnType.text);
 const _deleted = ColumnDef(TableDef.deletedColumn, ColumnType.integer);
@@ -73,6 +73,28 @@ const xpLedgerTable = TableDef(
   ],
 );
 
+/// Progression dans les leçons (mini-donjons), une ligne par leçon
+/// (schéma 2). La progression est sauvegardée à chaque écran (cahier v3 §6.2).
+const lessonProgressTable = TableDef(
+  name: 'lesson_progress',
+  kind: SyncKind.lastWriterWins,
+  primaryKey: 'lesson_id',
+  sinceSchema: 2,
+  columns: [
+    ColumnDef('lesson_id', ColumnType.text),
+    // Écran où reprendre (indice dans la leçon).
+    ColumnDef('step', ColumnType.integer),
+    // Date de la première réussite du mini-boss (millisecondes), sinon nul.
+    ColumnDef('completed_at', ColumnType.integer, nullable: true),
+    // Meilleur score au mini-boss (bonnes réponses), et échecs depuis la
+    // dernière réussite (après deux, la salle d'entraînement est proposée).
+    ColumnDef('best_score', ColumnType.integer),
+    ColumnDef('boss_failures', ColumnType.integer),
+    _hlc,
+    _deleted,
+  ],
+);
+
 /// Données propres à l'appareil (identifiant, horloge). Jamais exportée.
 const localMetaTable = TableDef(
   name: 'local_meta',
@@ -89,6 +111,7 @@ const List<TableDef> userSchema = [
   settingsTable,
   reviewLogTable,
   xpLedgerTable,
+  lessonProgressTable,
   localMetaTable,
 ];
 
@@ -113,5 +136,12 @@ const List<List<String>> userMigrations = [
         'created_at INTEGER NOT NULL, unique_key TEXT NOT NULL UNIQUE) STRICT',
     'CREATE TABLE local_meta (key TEXT NOT NULL PRIMARY KEY, '
         'value TEXT NOT NULL) STRICT',
+  ],
+  // 1 → 2
+  [
+    'CREATE TABLE lesson_progress (lesson_id TEXT NOT NULL PRIMARY KEY, '
+        'step INTEGER NOT NULL, completed_at INTEGER, '
+        'best_score INTEGER NOT NULL, boss_failures INTEGER NOT NULL, '
+        'updated_hlc TEXT NOT NULL, deleted INTEGER NOT NULL) STRICT',
   ],
 ];

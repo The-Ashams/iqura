@@ -73,22 +73,33 @@ void main() {
     expect(find.byType(PlaceScreen), findsNothing);
   });
 
-  testWidgets(
-    'lieu : scène, personnage, leçon indiquée comme pas encore jouable',
-    (tester) async {
-      await start(tester);
-      await tester.tap(find.text("1. Le Puits de l'arrivée"));
-      await tester.pumpAndSettle();
-      expect(find.byType(PlaceScreen), findsOneWidget);
-      expect(find.text("Nūra, l'archiviste"), findsOneWidget);
-      expect(find.text('Rédigé par IA'), findsOneWidget);
-      expect(find.text('Leçon 0'), findsOneWidget);
-      expect(find.text(PlaceScreen.lessonNotReady), findsOneWidget);
-      await tester.tap(find.text('Retour à la carte'));
-      await tester.pumpAndSettle();
-      expect(find.byType(PlaceScreen), findsNothing);
-    },
-  );
+  testWidgets('lieu : scène, personnage, leçon jouable ou fermée', (
+    tester,
+  ) async {
+    await start(tester);
+    await tester.tap(find.text("1. Le Puits de l'arrivée"));
+    await tester.pumpAndSettle();
+    expect(find.byType(PlaceScreen), findsOneWidget);
+    expect(find.text("Nūra, l'archiviste"), findsOneWidget);
+    expect(find.text('Rédigé par IA'), findsOneWidget);
+    expect(find.text("Leçon 0 · L'énigme du puits"), findsOneWidget);
+    expect(find.text('Nouvelle'), findsOneWidget);
+    await tester.tap(find.text('Retour à la carte'));
+    await tester.pumpAndSettle();
+    expect(find.byType(PlaceScreen), findsNothing);
+
+    // Leçon 1 fermée tant que le mini-boss de la leçon 0 n'est pas réussi.
+    await tester.tap(find.text('2. La Porte de la bibliothèque'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('Fermée'), findsOneWidget);
+    await tester.tap(find.text('Retour à la carte'));
+    await tester.pumpAndSettle();
+
+    // Leçons 2 et 3 : pas encore réécrites au format mini-donjon.
+    await tester.tap(find.text('3. Le Marché aux enseignes'));
+    await tester.pumpAndSettle();
+    expect(find.text(PlaceScreen.lessonNotReady), findsNWidgets(2));
+  });
 
   testWidgets('combat d’entraînement : question neutre, réponse, explication', (
     tester,

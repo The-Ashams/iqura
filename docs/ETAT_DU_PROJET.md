@@ -30,13 +30,25 @@ Derniers résultats : tests locaux du 22/10/2026 (Python : contenu et audio OK ;
 | Police | DotGothic16 (OFL) pour les textes du jeu, choisie par l'utilisateur le 23/10/2026 (chiffres plus lisibles que Pixelify Sans) ; Amiri en secours pour la translittération |
 | Monde | `tools/build_content/world/region1.json` → tables `region`, `place`, `character` (schéma de contenu 6, contenu 0.5.0-j1a) |
 | Carte | Désert des Lettres : 12 lieux reliés ; les 4 lieux de la tranche (Puits, Porte, Marché, Faille) s'ouvrent, les 8 autres sont indiqués « À venir (jalon J1b) » |
-| Lieux | Scène, personnages, fenêtre de dialogue (« Rédigé par IA ») ; leçons indiquées « Jouable à l'étape 4 » |
+| Lieux | Scène, personnages, fenêtre de dialogue (« Rédigé par IA ») ; leçons de l'étape avec leur état (nouvelle, en cours, terminée, fermée, ou « Jouable à l'étape 5 » pour les leçons 2 et 3) |
 | Combat | Faille des Oubliés : scène Flame (brume animée), panneau de question neutre (syllabes et mots construits des leçons 0 à 3, jamais de verset), 3 ou 4 choix, critique si réponse en moins de 3 s, explication après une erreur. Entraînement : rien n'est enregistré avant l'étape 6. Seule l'Attaque est active ; les autres commandes sont grisées avec leur raison |
 | Grimoire | Alphabet (9 lettres) et fiches (formes, nom avec audio « synthèse », articulation « Rédigé par IA », « Signaler une erreur ») |
 | Signalements | Gardés sur l'appareil (`signalements.jsonl`), envoi par mail prérempli à contact@edelwa.com |
 | Sanctuaire | Al-Fātiḥa : texte Tanzil vérifié et traduction Hamidullah ; récitation et part des mots reconnus indiquées « pas encore disponibles » |
 | Cité | Vue de la cité, 5 bâtiments « À reconstruire » ; boutique, équipement, enchantement à l'étape 6 |
 | Paquets ajoutés | flame 1.38.2 (MIT), audioplayers 6.8.1 (MIT), url_launcher 6.3.3 (BSD) : audités, `THIRD_PARTY_LICENSES.md` |
+
+## 1 ter. Lecteur de leçons (étape 4, 23/10/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Code | `lib/game/lesson/lesson.dart` (modèle du format 2), `lib/ui/game/lesson/` (écran de leçon, questions, mini-boss), `lib/features/progress/lesson_progress.dart` |
+| Écrans | Entrée (scène du lieu, répliques du maître, objectif) ; découverte, élément, règle (explication puis sa question) ; salle d'entraînement (une erreur revient en fin de salle) ; salle d'étude (verset Tanzil mot à mot, mots cités surlignés, traduction créditée ; « toucher le mot », « compter la lettre » calculé sur le texte Tanzil) ; mini-boss ; fin |
+| Questions | qcm, points, formes, reconnaître, écouter, paires, écouter la lettre (nom joué), lire (choix de sons), reconstruire (tuiles), tracer, répéter ; choix puis « Valider » ; son joué à l'affichage, mention « synthèse » ; « exemple construit » sous les mots hors Coran ; aucune translittération dans les questions |
+| Mini-boss | Scène Flame contre l'Oubli ; PV réglés sur le seuil : la difficulté tombe à 80 % de bonnes réponses, le voyageur se replie à la première erreur de trop ; « rapide ! » sous 3 s sans effet sur le score ; pas d'explication pendant le combat, revue des erreurs expliquées à la fin ; retenter (mêmes questions, autre ordre) ou revoir la salle d'entraînement, conseillée après deux échecs |
+| Progression | Table `lesson_progress` (schéma utilisateur 2) : écran sauvegardé à chaque changement et repris, réussite du mini-boss, meilleur score, échecs ; leçon suivante ouverte après la réussite. Exportée et fusionnée ; une sauvegarde du schéma 1 reste importable |
+| Fiche « élément » | Nom de la lettre joué automatiquement ; nom arabe écrit masqué (hamza pas encore enseignée, relecture du 23/10) |
+| Simplifications provisoires, à valider | Tracer : tracé libre au doigt sur la lettre, sans points numérotés ni vérification (cahier §6.4). Répéter : écouter puis « Je l'ai répété », sans enregistrement de la voix (paquet `record` à auditer). Mini-boss : pas d'autres questions en réserve pour un nouvel essai. Salle d'étude : pas de récitation d'al-Ḥuṣarī. Récompenses et cartes : étape 6 |
 
 Tests locaux du 23/10/2026 : Flutter 99 tests OK, `flutter analyze` sans remarque ; Python : contenu (31) et graphismes (5) OK.
 
@@ -85,10 +97,11 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 4. En cours, cahier §13.1 point 4 :
    - fait : leçons 0 (« L'énigme du puits ») et 1 (« L'étiquette de la porte ») réécrites au format mini-donjon (format 2), contrôlées par `tools/build_content/mini_donjon.py` (ordre des écrans, 40 mots et 2 phrases au plus, 3 ou 4 choix, mini-boss de 10 à 12 questions à 80 % avec 20 à 30 % de révision, aucun texte coranique recopié, lettres déjà enseignées seulement) ; aperçu : `preview_lessons.py` ;
    - fait : voyelle finale avalée par la synthèse (« baḥaṯ » au lieu de « baḥaṯa ») mesurée automatiquement (régularité du son sur les 70 dernières millisecondes) ; aucune astuce d'écriture ne la corrige à coup sûr, on génère donc plusieurs tirages et on garde les meilleurs ;
-   - fait : relecture par l'agent relecteur-arabe, verdict « Validé avec doutes », 4 doutes transmis à l'utilisateur (`docs/relectures/2026-10-23-lecons-0-1.md`) ; mineurs simples corrigés ; à faire avec le lecteur de leçons : nom arabe des lettres (hamza non enseignée) et mention « exemple construit » ;
+   - fait : relecture par l'agent relecteur-arabe, verdict « Validé avec doutes », 4 doutes transmis à l'utilisateur (`docs/relectures/2026-10-23-lecons-0-1.md`) ; 2e passage sur la leçon 1 après les décisions de l'utilisateur : « Validé avec doutes » (`docs/relectures/2026-10-23-lecon-1-passage-2.md`) ; mineurs simples corrigés ; à faire avec le lecteur de leçons : nom arabe des lettres (hamza non enseignée) et mention « exemple construit » ;
    - fait : sons choisis (بَاب B ; تَابَ, ثَبَتَ inchangés ; ثَ, بَا, تَا, بَاتَ nouvelles versions) ; leçons 0 et 1 validées par l'utilisateur le 23/10/2026 ; réponses aux 4 doutes de la relecture appliquées (cahier §16) ;
    - à ne pas oublier : expliquer la forme complète بَابٌ aux leçons 4 (sukūn) et 12 (tanwīn) ;
-   - ensuite : lecteur de leçons dans l'application (écrans, exercices, tracé, enregistrement de la voix, mini-boss en combat, progression enregistrée, leçon suivante débloquée).
+   - fait : lecteur de leçons dans l'application (§1 ter), leçons 0 et 1 jouées de bout en bout par les tests ;
+   - attendu de l'utilisateur : jouer les leçons 0 et 1 sur l'APK et dire si elles sont amusantes et claires ; trancher les simplifications provisoires (§1 ter).
 
 ## 5. Problèmes connus
 

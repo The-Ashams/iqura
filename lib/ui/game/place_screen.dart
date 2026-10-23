@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/providers.dart';
+import '../../features/progress/lesson_progress.dart';
+import '../../game/lesson/lesson.dart';
 import '../../game/world.dart';
 import '../../game/world_providers.dart';
 import 'combat_screen.dart';
+import 'lesson/lesson_screen.dart';
 import 'pixel.dart';
 import 'sprites.dart';
 
@@ -14,9 +18,26 @@ class PlaceScreen extends ConsumerWidget {
 
   final Place place;
 
-  /// Les leçons au format mini-donjon arrivent à l'étape 4 du jalon J1a.
+  /// Leçons pas encore réécrites au format mini-donjon.
   static const String lessonNotReady =
-      "Jouable à l'étape 4 du jalon J1a (leçons en mini-donjon)";
+      "Jouable à l'étape 5 du jalon J1a (réécriture en mini-donjon)";
+
+  /// État d'une leçon, affiché sous son nom.
+  static String lessonStatus(
+    LessonSummary lesson,
+    List<LessonSummary> stage,
+    Map<String, LessonProgress> progress,
+  ) {
+    if (!lesson.playable) return lessonNotReady;
+    if (!lessonUnlocked(lesson, stage, progress)) {
+      return 'Fermée : réussis d\'abord le mini-boss de la leçon '
+          '${lesson.ordinal - 1}';
+    }
+    final p = progress[lesson.id];
+    if (p == null) return 'Nouvelle';
+    if (p.completed) return 'Terminée · rejouer';
+    return 'En cours · reprendre à l\'écran ${p.step + 1}';
+  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -25,6 +46,9 @@ class PlaceScreen extends ConsumerWidget {
         if (c.places.contains(place.id) && c.sprite != null) c,
     ];
     final ground = (place.groundY ?? 62).toDouble();
+    // Leçons de l'étape 1 (région 1, jalon J1a).
+    final stage = ref.watch(contentDatabaseProvider).lessons(1);
+    final progress = ref.watch(lessonProgressProvider);
     final parts = <ScenePart>[
       for (final (i, c) in characters.indexed)
         _sprite(c.sprite!, 26.0 + i * 20, ground),
@@ -77,11 +101,21 @@ class PlaceScreen extends ConsumerWidget {
               padding: const EdgeInsets.all(8),
               child: Column(
                 children: [
-                  for (final n in place.lessons)
+                  for (final l in stage.where(
+                    (l) => place.lessons.contains(l.ordinal),
+                  ))
                     PixelCommand(
-                      label: 'Leçon $n',
-                      detail: lessonNotReady,
-                      onPressed: null,
+                      label: 'Leçon ${l.ordinal} · ${l.title}',
+                      detail: lessonStatus(l, stage, progress),
+                      onPressed:
+                          l.playable && lessonUnlocked(l, stage, progress)
+                          ? () => Navigator.push(
+                              context,
+                              MaterialPageRoute<void>(
+                                builder: (_) => LessonScreen(lessonId: l.id),
+                              ),
+                            )
+                          : null,
                     ),
                   if (place.lessons.isEmpty)
                     PixelCommand(

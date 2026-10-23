@@ -13,6 +13,7 @@ import 'package:flutter/services.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqlite3/sqlite3.dart';
 
+import '../../game/lesson/lesson.dart';
 import '../../game/world.dart';
 import 'quran_integrity.dart';
 
@@ -240,6 +241,74 @@ class ContentDatabase {
         pronunciation: r['pronunciation'] as String,
       ),
   ];
+
+  /// Leçons d'une étape, dans l'ordre.
+  List<LessonSummary> lessons(int stage) => [
+    for (final r in _db.select(
+      'SELECT id, stage, ordinal, title, content FROM lesson WHERE stage = ? '
+      'ORDER BY ordinal',
+      [stage],
+    ))
+      LessonSummary(
+        id: r['id'] as String,
+        stage: r['stage'] as int,
+        ordinal: r['ordinal'] as int,
+        title: r['title'] as String,
+        playable: (jsonDecode(r['content'] as String) as Map)['format'] == 2,
+      ),
+  ];
+
+  /// Une leçon au format mini-donjon ; `null` si absente ou d'un autre
+  /// format.
+  Lesson? lesson(String id) {
+    final rows = _db.select('SELECT content FROM lesson WHERE id = ?', [id]);
+    if (rows.isEmpty) return null;
+    return Lesson.fromJson(
+      jsonDecode(rows.first['content'] as String) as Map<String, dynamic>,
+    );
+  }
+
+  /// Mots d'un verset (texte Tanzil vérifié), dans l'ordre.
+  List<QuranToken> verseTokens(int surah, int ayah) => [
+    for (final r in _db.select(
+      'SELECT t.id, t.text FROM token t JOIN verse v ON v.id = t.verse_id '
+      'WHERE v.surah_id = ? AND v.ayah = ? ORDER BY t.position',
+      [surah, ayah],
+    ))
+      QuranToken(id: r['id'] as String, text: r['text'] as String),
+  ];
+
+  /// Un verset et sa traduction.
+  VerseText? verse(int surah, int ayah) {
+    final rows = _db.select(
+      'SELECT v.surah_id, v.ayah, v.text_uthmani, t.text FROM verse v '
+      'JOIN verse_translation t ON t.verse_id = v.id '
+      'WHERE v.surah_id = ? AND v.ayah = ?',
+      [surah, ayah],
+    );
+    if (rows.isEmpty) return null;
+    final r = rows.first;
+    return VerseText(
+      surah: r['surah_id'] as int,
+      ayah: r['ayah'] as int,
+      arabic: r['text_uthmani'] as String,
+      translation: r['text'] as String,
+    );
+  }
+
+  /// Texte d'un mot coranique (sourate:verset:mot).
+  String? tokenText(String id) {
+    final rows = _db.select('SELECT text FROM token WHERE id = ?', [id]);
+    return rows.isEmpty ? null : rows.first['text'] as String;
+  }
+
+  /// Fiche d'une lettre.
+  LetterCard? letter(String letter) {
+    for (final l in letters()) {
+      if (l.letter == letter) return l;
+    }
+    return null;
+  }
 
   /// Syllabes et mots à lire des leçons d'une étape, jusqu'à la leçon
   /// [upTo] comprise.

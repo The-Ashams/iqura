@@ -124,3 +124,12 @@ class VerseText {
   final String arabic;
   final String translation;
 }
+
+/// Un mot d'un verset (texte Tanzil vérifié).
+class QuranToken {
+  const QuranToken({required this.id, required this.text});
+
+  /// « sourate:verset:mot ».
+  final String id;
+  final String text;
+}

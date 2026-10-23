@@ -93,10 +93,11 @@ class LetterSheet extends StatelessWidget {
 
   static const String _zwj = '‍';
 
-  @override
-  Widget build(BuildContext context) {
+  /// Formes de la lettre selon sa place dans le mot (isolée, début, milieu,
+  /// fin) ; deux seulement si elle ne se lie pas à la suivante.
+  static List<(String, String)> formsOf(LetterCard letter) {
     final l = letter.letter;
-    final forms = letter.joinsLeft
+    return letter.joinsLeft
         ? [
             ('isolée', l),
             ('début', '$l$_zwj'),
@@ -104,6 +105,12 @@ class LetterSheet extends StatelessWidget {
             ('fin', '$_zwj$l'),
           ]
         : [('isolée', l), ('fin', '$_zwj$l')];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l = letter.letter;
+    final forms = formsOf(letter);
     return Scaffold(
       backgroundColor: GameColors.night,
       appBar: AppBar(
