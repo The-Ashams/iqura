@@ -159,9 +159,15 @@ void main() {
         find.byType(TextField),
         'Une coquille dans le nom',
       );
+      // Attendre l'écriture du fichier (jusqu'à 10 s si la machine est
+      // chargée), au lieu d'un délai fixe.
+      final file = File(AppPaths(tmp.path).errorReports);
       await tester.runAsync(() async {
         await tester.tap(find.text('Enregistrer'));
-        await Future<void>.delayed(const Duration(milliseconds: 200));
+        for (var i = 0; i < 200 && !file.existsSync(); i++) {
+          await Future<void>.delayed(const Duration(milliseconds: 50));
+        }
+        await Future<void>.delayed(const Duration(milliseconds: 50));
       });
       await tester.pumpAndSettle();
       expect(
@@ -169,7 +175,7 @@ void main() {
         findsOneWidget,
       );
       expect(find.text('Envoyer par mail'), findsOneWidget);
-      final saved = File(AppPaths(tmp.path).errorReports).readAsStringSync();
+      final saved = file.readAsStringSync();
       expect(saved, contains('Une coquille dans le nom'));
     },
   );
