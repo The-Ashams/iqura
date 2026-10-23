@@ -98,109 +98,106 @@ class _CombatScreenState extends ConsumerState<CombatScreen> {
         foregroundColor: GameColors.text,
       ),
       body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(12),
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(6),
-              child: AspectRatio(
-                aspectRatio: 16 / 9,
-                child: GameWidget(game: _scene),
-              ),
-            ),
-            const SizedBox(height: 12),
-            Row(
-              children: [
-                Expanded(
-                  child: _HpWindow(
-                    name: 'Le voyageur',
-                    hp: _combat.heroHp,
-                    max: _combat.heroMaxHp,
-                    color: GameColors.good,
-                  ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: _HpWindow(
-                    name: "Brume d'oubli",
-                    hp: _combat.foeHp,
-                    max: _combat.foeMaxHp,
-                    color: GameColors.bad,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 12),
-            if (outcome == CombatOutcome.ongoing)
-              _questionPanel()
-            else
-              _endPanel(outcome),
-            const SizedBox(height: 12),
-            PixelWindow(
-              padding: const EdgeInsets.all(8),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+        child: GameBody(
+          child: ListView(
+            padding: const EdgeInsets.all(12),
+            children: [
+              CombatSceneBox(child: GameWidget(game: _scene)),
+              const SizedBox(height: 12),
+              Row(
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 6, horizontal: 4),
-                    child: Row(
-                      children: [
-                        SizedBox(width: 22, child: MenuCursor()),
-                        Expanded(
-                          child: Text.rich(
-                            TextSpan(
-                              text: 'Attaque',
-                              style: TextStyle(fontSize: 18),
-                              children: [
-                                TextSpan(
-                                  text: '   lire une syllabe ou un mot',
-                                  style: TextStyle(
-                                    color: GameColors.muted,
-                                    fontSize: 14,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
+                  Expanded(
+                    child: _HpWindow(
+                      name: 'Le voyageur',
+                      hp: _combat.heroHp,
+                      max: _combat.heroMaxHp,
+                      color: GameColors.good,
                     ),
                   ),
-                  const PixelCommand(
-                    label: 'Bouclier',
-                    detail: 'Une règle : arrive avec les leçons en mini-donjon',
-                    onPressed: null,
-                  ),
-                  const PixelCommand(
-                    label: 'Ultime',
-                    detail: 'Reconstruire un mot : arrive avec les leçons',
-                    onPressed: null,
-                  ),
-                  const PixelCommand(
-                    label: 'Objet',
-                    detail: "Aucun objet avant l'étape 6",
-                    onPressed: null,
-                  ),
-                  const PixelCommand(
-                    label: 'Sort de racine',
-                    detail: 'Débloqué à la leçon 7',
-                    onPressed: null,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(26, 4, 4, 4),
-                    child: Text(
-                      'Seule l\'Attaque est disponible pour l\'instant. '
-                      '${CombatScreen.practiceNotice}',
-                      style: const TextStyle(
-                        color: GameColors.muted,
-                        fontSize: 14,
-                      ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: _HpWindow(
+                      name: "Brume d'oubli",
+                      hp: _combat.foeHp,
+                      max: _combat.foeMaxHp,
+                      color: GameColors.bad,
                     ),
                   ),
                 ],
               ),
-            ),
-          ],
+              const SizedBox(height: 12),
+              if (outcome == CombatOutcome.ongoing)
+                _questionPanel()
+              else
+                _endPanel(outcome),
+              const SizedBox(height: 12),
+              PixelWindow(
+                padding: const EdgeInsets.all(8),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 6, horizontal: 4),
+                      child: Row(
+                        children: [
+                          SizedBox(width: 22, child: MenuCursor()),
+                          Expanded(
+                            child: Text.rich(
+                              TextSpan(
+                                text: 'Attaque',
+                                style: TextStyle(fontSize: 18),
+                                children: [
+                                  TextSpan(
+                                    text: '   lire une syllabe ou un mot',
+                                    style: TextStyle(
+                                      color: GameColors.muted,
+                                      fontSize: 14,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const PixelCommand(
+                      label: 'Bouclier',
+                      detail:
+                          'Une règle : arrive avec les leçons en mini-donjon',
+                      onPressed: null,
+                    ),
+                    const PixelCommand(
+                      label: 'Ultime',
+                      detail: 'Reconstruire un mot : arrive avec les leçons',
+                      onPressed: null,
+                    ),
+                    const PixelCommand(
+                      label: 'Objet',
+                      detail: "Aucun objet avant l'étape 6",
+                      onPressed: null,
+                    ),
+                    const PixelCommand(
+                      label: 'Sort de racine',
+                      detail: 'Débloqué à la leçon 7',
+                      onPressed: null,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(26, 4, 4, 4),
+                      child: Text(
+                        'Seule l\'Attaque est disponible pour l\'instant. '
+                        '${CombatScreen.practiceNotice}',
+                        style: const TextStyle(
+                          color: GameColors.muted,
+                          fontSize: 14,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

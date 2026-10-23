@@ -265,6 +265,24 @@ void main() {
     expect(find.text('synthèse'), findsWidgets);
   });
 
+  testWidgets('PC (2000 × 1125) : au mini-boss, la question est visible sans '
+      'défiler', (tester) async {
+    const id = 'dechiffrer-00';
+    final lesson = contentDb.lesson(id)!;
+    LessonProgressRepository(userDb)
+        .saveStep(id, lesson.steps.indexWhere((s) => s is BossStep));
+    tester.view.physicalSize = const Size(2000, 1125);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(app(id));
+    await settle(tester);
+    final valider = tester.getRect(find.text('Valider'));
+    expect(valider.bottom, lessThan(1125));
+    // Contenu centré, pas étiré sur toute la largeur.
+    final panel = tester.getRect(find.byType(QuestionPanel));
+    expect(panel.width, lessThanOrEqualTo(760));
+  });
+
   group('règles du mini-boss', () {
     test('le seuil de 80 % est arrondi au supérieur', () {
       expect(bossPassMark(12, 0.8), 10);

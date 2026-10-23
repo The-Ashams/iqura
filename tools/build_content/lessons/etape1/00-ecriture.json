@@ -17,7 +17,7 @@
       "type": "entree",
       "repliques": [
         {"qui": "nura", "texte": "Bienvenue au Puits de l'arrivée, voyageur. Je suis Nūra, gardienne des registres de la bibliothèque."},
-        {"qui": "nura", "texte": "Regarde la margelle : une inscription que plus personne ne sait lire. Commençons par comprendre comment on écrit ici."}
+        {"qui": "nura", "texte": "Regarde le bord du puits : une inscription que plus personne ne sait lire. Commençons par comprendre comment on écrit ici."}
       ],
       "objectif": "Percer le secret de l'inscription du puits."
     },
@@ -48,7 +48,7 @@
       "support": ["ثَبَتَ"],
       "question": {
         "type": "qcm",
-        "consigne": "Sur la margelle, ces trois mêmes signes sont…",
+        "consigne": "Sur le bord du puits, ces trois mêmes signes sont…",
         "choix": ["attachés les uns aux autres", "séparés par des espaces", "écrits de haut en bas"],
         "reponse": 0,
         "explication": "Dans un mot, les lettres s'attachent entre elles. Leur forme se raccourcit un peu pour se lier."

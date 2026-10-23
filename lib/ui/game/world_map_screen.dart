@@ -28,82 +28,84 @@ class WorldMapScreen extends ConsumerWidget {
     return Scaffold(
       backgroundColor: GameColors.night,
       body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(12),
-          children: [
-            PixelWindow(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Bienvenue, $pseudo',
-                    style: const TextStyle(fontSize: 16),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    'RÉGION ${region.number} · ${region.skill.toUpperCase()}',
-                    style: const TextStyle(
-                      color: GameColors.accent,
-                      fontSize: 14,
-                      letterSpacing: 1,
+        child: GameBody(
+          child: ListView(
+            padding: const EdgeInsets.all(12),
+            children: [
+              PixelWindow(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Bienvenue, $pseudo',
+                      style: const TextStyle(fontSize: 16),
                     ),
-                  ),
-                  Text(region.name, style: const TextStyle(fontSize: 24)),
-                  Text(
-                    'Adversaire : ${region.adversary}',
-                    style: const TextStyle(color: GameColors.muted),
-                  ),
-                ],
+                    const SizedBox(height: 4),
+                    Text(
+                      'RÉGION ${region.number} · ${region.skill.toUpperCase()}',
+                      style: const TextStyle(
+                        color: GameColors.accent,
+                        fontSize: 14,
+                        letterSpacing: 1,
+                      ),
+                    ),
+                    Text(region.name, style: const TextStyle(fontSize: 24)),
+                    Text(
+                      'Adversaire : ${region.adversary}',
+                      style: const TextStyle(color: GameColors.muted),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(height: 12),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(6),
-              child: SceneView(
-                background: region.mapImage,
-                parts: [
-                  ScenePart(
-                    x: 0,
-                    y: 0,
-                    width: sceneWidth,
-                    height: sceneHeight,
-                    child: CustomPaint(painter: _PathsPainter(places, byId)),
-                  ),
-                  for (final p in places)
+              const SizedBox(height: 12),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(6),
+                child: SceneView(
+                  background: region.mapImage,
+                  parts: [
                     ScenePart(
-                      x: p.mapX - 4,
-                      y: p.mapY - 4,
-                      width: 8,
-                      height: 8,
-                      child: _PlaceMarker(
-                        place: p,
-                        onTap: p.inVerticalSlice
+                      x: 0,
+                      y: 0,
+                      width: sceneWidth,
+                      height: sceneHeight,
+                      child: CustomPaint(painter: _PathsPainter(places, byId)),
+                    ),
+                    for (final p in places)
+                      ScenePart(
+                        x: p.mapX - 4,
+                        y: p.mapY - 4,
+                        width: 8,
+                        height: 8,
+                        child: _PlaceMarker(
+                          place: p,
+                          onTap: p.inVerticalSlice
+                              ? () => _open(context, p)
+                              : null,
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 12),
+              PixelWindow(
+                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                child: Column(
+                  children: [
+                    for (final p in places)
+                      PixelCommand(
+                        label: '${p.number}. ${p.name}',
+                        detail: p.inVerticalSlice
+                            ? _lessonsLabel(p)
+                            : lockedDetail,
+                        onPressed: p.inVerticalSlice
                             ? () => _open(context, p)
                             : null,
                       ),
-                    ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(height: 12),
-            PixelWindow(
-              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-              child: Column(
-                children: [
-                  for (final p in places)
-                    PixelCommand(
-                      label: '${p.number}. ${p.name}',
-                      detail: p.inVerticalSlice
-                          ? _lessonsLabel(p)
-                          : lockedDetail,
-                      onPressed: p.inVerticalSlice
-                          ? () => _open(context, p)
-                          : null,
-                    ),
-                ],
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

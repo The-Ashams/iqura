@@ -89,38 +89,43 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         foregroundColor: GameColors.text,
       ),
       body: SafeArea(
-        child: ListView(
-          controller: _scroll,
-          padding: const EdgeInsets.all(12),
-          children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Text(
-                    _stepName,
-                    style: const TextStyle(
-                      color: GameColors.accent,
-                      fontSize: 18,
+        child: GameBody(
+          child: ListView(
+            controller: _scroll,
+            padding: const EdgeInsets.all(12),
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      _stepName,
+                      style: const TextStyle(
+                        color: GameColors.accent,
+                        fontSize: 18,
+                      ),
                     ),
                   ),
-                ),
-                Text(
-                  'Écran ${_step + 1} / ${_lesson.steps.length}',
-                  style: const TextStyle(color: GameColors.muted, fontSize: 14),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            KeyedSubtree(key: ValueKey(_step), child: _stepView(step)),
-            const SizedBox(height: 12),
-            Row(
-              children: [
-                const AiTag(),
-                const Spacer(),
-                ReportErrorButton(subject: subject),
-              ],
-            ),
-          ],
+                  Text(
+                    'Écran ${_step + 1} / ${_lesson.steps.length}',
+                    style: const TextStyle(
+                      color: GameColors.muted,
+                      fontSize: 14,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              KeyedSubtree(key: ValueKey(_step), child: _stepView(step)),
+              const SizedBox(height: 12),
+              Row(
+                children: [
+                  const AiTag(),
+                  const Spacer(),
+                  ReportErrorButton(subject: subject),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

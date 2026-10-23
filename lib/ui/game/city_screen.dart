@@ -22,43 +22,45 @@ class CityScreen extends StatelessWidget {
   Widget build(BuildContext context) => Scaffold(
     backgroundColor: GameColors.night,
     body: SafeArea(
-      child: ListView(
-        padding: const EdgeInsets.all(12),
-        children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(6),
-            child: const SceneView(background: 'scene_cite'),
-          ),
-          const SizedBox(height: 12),
-          PixelWindow(
-            padding: const EdgeInsets.all(8),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Padding(
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                    'La Cité du savoir',
-                    style: TextStyle(fontSize: 24),
-                  ),
-                ),
-                for (final b in buildings)
-                  PixelCommand(
-                    label: b,
-                    detail: 'À reconstruire',
-                    onPressed: null,
-                  ),
-                const Padding(
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                    laterNotice,
-                    style: TextStyle(color: GameColors.muted, fontSize: 14),
-                  ),
-                ),
-              ],
+      child: GameBody(
+        child: ListView(
+          padding: const EdgeInsets.all(12),
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(6),
+              child: const SceneView(background: 'scene_cite'),
             ),
-          ),
-        ],
+            const SizedBox(height: 12),
+            PixelWindow(
+              padding: const EdgeInsets.all(8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.all(8),
+                    child: Text(
+                      'La Cité du savoir',
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ),
+                  for (final b in buildings)
+                    PixelCommand(
+                      label: b,
+                      detail: 'À reconstruire',
+                      onPressed: null,
+                    ),
+                  const Padding(
+                    padding: EdgeInsets.all(8),
+                    child: Text(
+                      laterNotice,
+                      style: TextStyle(color: GameColors.muted, fontSize: 14),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     ),
   );

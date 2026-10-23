@@ -269,3 +269,48 @@ class SpokenArabic extends ConsumerWidget {
     );
   }
 }
+
+/// Largeur maximale du contenu du jeu : sur un grand écran (PC), le contenu
+/// est centré au lieu de s'étirer, et la scène ne remplit plus la fenêtre.
+const double gameMaxWidth = 760;
+
+/// Corps d'un écran du jeu : centré, largeur limitée à [gameMaxWidth].
+class GameBody extends StatelessWidget {
+  const GameBody({super.key, required this.child});
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) => Align(
+    alignment: Alignment.topCenter,
+    child: ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: gameMaxWidth),
+      child: child,
+    ),
+  );
+}
+
+/// Scène de combat 16:9, haute d'au plus un tiers de la fenêtre, pour que
+/// la question reste visible sans défiler.
+class CombatSceneBox extends StatelessWidget {
+  const CombatSceneBox({super.key, required this.child});
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    final maxHeight = MediaQuery.sizeOf(context).height * 0.36;
+    return Center(
+      child: ConstrainedBox(
+        constraints: BoxConstraints(maxHeight: maxHeight),
+        child: AspectRatio(
+          aspectRatio: 16 / 9,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(6),
+            child: child,
+          ),
+        ),
+      ),
+    );
+  }
+}

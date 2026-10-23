@@ -167,13 +167,7 @@ class _BossViewState extends ConsumerState<BossView> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(6),
-          child: AspectRatio(
-            aspectRatio: 16 / 9,
-            child: GameWidget(game: _scene),
-          ),
-        ),
+        CombatSceneBox(child: GameWidget(game: _scene)),
         const SizedBox(height: 12),
         Row(
           children: [

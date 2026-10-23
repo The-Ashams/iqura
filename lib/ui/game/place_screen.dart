@@ -63,79 +63,84 @@ class PlaceScreen extends ConsumerWidget {
         foregroundColor: GameColors.text,
       ),
       body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(12),
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(6),
-              child: SceneView(background: place.sceneImage!, parts: parts),
-            ),
-            const SizedBox(height: 12),
-            PixelWindow(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          speaker == null
-                              ? 'Le voyageur'
-                              : '${speaker.name}, ${speaker.role.toLowerCase()}',
-                          style: const TextStyle(
-                            color: GameColors.accent,
-                            fontSize: 20,
+        child: GameBody(
+          child: ListView(
+            padding: const EdgeInsets.all(12),
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(6),
+                child: SceneView(background: place.sceneImage!, parts: parts),
+              ),
+              const SizedBox(height: 12),
+              PixelWindow(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            speaker == null
+                                ? 'Le voyageur'
+                                : '${speaker.name}, ${speaker.role.toLowerCase()}',
+                            style: const TextStyle(
+                              color: GameColors.accent,
+                              fontSize: 20,
+                            ),
+                          ),
+                        ),
+                        const AiTag(),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      place.description,
+                      style: const TextStyle(height: 1.4),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 12),
+              PixelWindow(
+                padding: const EdgeInsets.all(8),
+                child: Column(
+                  children: [
+                    for (final l in stage.where(
+                      (l) => place.lessons.contains(l.ordinal),
+                    ))
+                      PixelCommand(
+                        label: 'Leçon ${l.ordinal} · ${l.title}',
+                        detail: lessonStatus(l, stage, progress),
+                        onPressed:
+                            l.playable && lessonUnlocked(l, stage, progress)
+                            ? () => Navigator.push(
+                                context,
+                                MaterialPageRoute<void>(
+                                  builder: (_) => LessonScreen(lessonId: l.id),
+                                ),
+                              )
+                            : null,
+                      ),
+                    if (place.lessons.isEmpty)
+                      PixelCommand(
+                        label: "Affronter les brumes d'oubli",
+                        detail: CombatScreen.practiceNotice,
+                        onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute<void>(
+                            builder: (_) => const CombatScreen(),
                           ),
                         ),
                       ),
-                      const AiTag(),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  Text(place.description, style: const TextStyle(height: 1.4)),
-                ],
-              ),
-            ),
-            const SizedBox(height: 12),
-            PixelWindow(
-              padding: const EdgeInsets.all(8),
-              child: Column(
-                children: [
-                  for (final l in stage.where(
-                    (l) => place.lessons.contains(l.ordinal),
-                  ))
                     PixelCommand(
-                      label: 'Leçon ${l.ordinal} · ${l.title}',
-                      detail: lessonStatus(l, stage, progress),
-                      onPressed:
-                          l.playable && lessonUnlocked(l, stage, progress)
-                          ? () => Navigator.push(
-                              context,
-                              MaterialPageRoute<void>(
-                                builder: (_) => LessonScreen(lessonId: l.id),
-                              ),
-                            )
-                          : null,
+                      label: 'Retour à la carte',
+                      onPressed: () => Navigator.pop(context),
                     ),
-                  if (place.lessons.isEmpty)
-                    PixelCommand(
-                      label: "Affronter les brumes d'oubli",
-                      detail: CombatScreen.practiceNotice,
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute<void>(
-                          builder: (_) => const CombatScreen(),
-                        ),
-                      ),
-                    ),
-                  PixelCommand(
-                    label: 'Retour à la carte',
-                    onPressed: () => Navigator.pop(context),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

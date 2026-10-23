@@ -21,64 +21,68 @@ class GrimoireScreen extends ConsumerWidget {
     return Scaffold(
       backgroundColor: GameColors.night,
       body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(12),
-          children: [
-            const PixelWindow(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Grimoire', style: TextStyle(fontSize: 24)),
-                  Text(
-                    'Alphabet',
-                    style: TextStyle(color: GameColors.accent, fontSize: 16),
-                  ),
-                  SizedBox(height: 6),
-                  Text(
-                    laterNotice,
-                    style: TextStyle(color: GameColors.muted, fontSize: 14),
-                  ),
-                ],
+        child: GameBody(
+          child: ListView(
+            padding: const EdgeInsets.all(12),
+            children: [
+              const PixelWindow(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Grimoire', style: TextStyle(fontSize: 24)),
+                    Text(
+                      'Alphabet',
+                      style: TextStyle(color: GameColors.accent, fontSize: 16),
+                    ),
+                    SizedBox(height: 6),
+                    Text(
+                      laterNotice,
+                      style: TextStyle(color: GameColors.muted, fontSize: 14),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(height: 12),
-            Wrap(
-              spacing: 10,
-              runSpacing: 10,
-              children: [
-                for (final l in letters)
-                  Semantics(
-                    button: true,
-                    label: 'Lettre ${l.name}',
-                    excludeSemantics: true,
-                    child: InkWell(
-                      onTap: () => Navigator.push(
-                        context,
-                        MaterialPageRoute<void>(
-                          builder: (_) => LetterSheet(letter: l),
+              const SizedBox(height: 12),
+              Wrap(
+                spacing: 10,
+                runSpacing: 10,
+                children: [
+                  for (final l in letters)
+                    Semantics(
+                      button: true,
+                      label: 'Lettre ${l.name}',
+                      excludeSemantics: true,
+                      child: InkWell(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute<void>(
+                            builder: (_) => LetterSheet(letter: l),
+                          ),
                         ),
-                      ),
-                      child: SizedBox(
-                        width: 96,
-                        child: PixelWindow(
-                          padding: const EdgeInsets.all(8),
-                          child: Column(
-                            children: [
-                              ArabicText(
-                                l.letter,
-                                baseSize: 40,
-                                style: const TextStyle(color: GameColors.text),
-                              ),
-                              Text(l.name, textAlign: TextAlign.center),
-                            ],
+                        child: SizedBox(
+                          width: 96,
+                          child: PixelWindow(
+                            padding: const EdgeInsets.all(8),
+                            child: Column(
+                              children: [
+                                ArabicText(
+                                  l.letter,
+                                  baseSize: 40,
+                                  style: const TextStyle(
+                                    color: GameColors.text,
+                                  ),
+                                ),
+                                Text(l.name, textAlign: TextAlign.center),
+                              ],
+                            ),
                           ),
                         ),
                       ),
                     ),
-                  ),
-              ],
-            ),
-          ],
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -119,84 +123,87 @@ class LetterSheet extends StatelessWidget {
         foregroundColor: GameColors.text,
       ),
       body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(12),
-          children: [
-            PixelWindow(
-              child: Column(
-                children: [
-                  ArabicText(
-                    l,
-                    baseSize: 72,
-                    style: const TextStyle(color: GameColors.text),
-                  ),
-                  SpokenArabic(letter.nameAr, size: 30),
-                  Text(letter.name, style: const TextStyle(fontSize: 20)),
-                  const SizedBox(height: 12),
-                  Wrap(
-                    spacing: 18,
-                    runSpacing: 8,
-                    alignment: WrapAlignment.center,
-                    children: [
-                      for (final (name, glyph) in forms)
-                        Column(
-                          children: [
-                            ArabicText(
-                              glyph,
-                              baseSize: 40,
-                              style: const TextStyle(color: GameColors.text),
-                            ),
-                            Text(
-                              name,
-                              style: const TextStyle(
-                                color: GameColors.muted,
-                                fontSize: 14,
-                              ),
-                            ),
-                          ],
-                        ),
-                    ],
-                  ),
-                  if (!letter.joinsLeft)
-                    const Padding(
-                      padding: EdgeInsets.only(top: 8),
-                      child: Text('Ne se lie pas à la lettre suivante.'),
+        child: GameBody(
+          child: ListView(
+            padding: const EdgeInsets.all(12),
+            children: [
+              PixelWindow(
+                child: Column(
+                  children: [
+                    ArabicText(
+                      l,
+                      baseSize: 72,
+                      style: const TextStyle(color: GameColors.text),
                     ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 12),
-            PixelWindow(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          letter.zone,
-                          style: const TextStyle(color: GameColors.accent),
-                        ),
+                    SpokenArabic(letter.nameAr, size: 30),
+                    Text(letter.name, style: const TextStyle(fontSize: 20)),
+                    const SizedBox(height: 12),
+                    Wrap(
+                      spacing: 18,
+                      runSpacing: 8,
+                      alignment: WrapAlignment.center,
+                      children: [
+                        for (final (name, glyph) in forms)
+                          Column(
+                            children: [
+                              ArabicText(
+                                glyph,
+                                baseSize: 40,
+                                style: const TextStyle(color: GameColors.text),
+                              ),
+                              Text(
+                                name,
+                                style: const TextStyle(
+                                  color: GameColors.muted,
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ],
+                          ),
+                      ],
+                    ),
+                    if (!letter.joinsLeft)
+                      const Padding(
+                        padding: EdgeInsets.only(top: 8),
+                        child: Text('Ne se lie pas à la lettre suivante.'),
                       ),
-                      const AiTag(),
-                    ],
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    letter.pronunciation,
-                    style: const TextStyle(height: 1.4),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(height: 8),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: ReportErrorButton(
-                subject: 'Fiche de la lettre ${letter.letter} (${letter.name})',
+              const SizedBox(height: 12),
+              PixelWindow(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            letter.zone,
+                            style: const TextStyle(color: GameColors.accent),
+                          ),
+                        ),
+                        const AiTag(),
+                      ],
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      letter.pronunciation,
+                      style: const TextStyle(height: 1.4),
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
+              const SizedBox(height: 8),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: ReportErrorButton(
+                  subject:
+                      'Fiche de la lettre ${letter.letter} (${letter.name})',
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
