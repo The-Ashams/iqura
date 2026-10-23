@@ -247,7 +247,15 @@ class _CombatScreenState extends ConsumerState<CombatScreen> {
             const SizedBox(height: 12),
             FilledButton(
               onPressed: _selected == null ? null : _validate,
-              child: const Text('Valider'),
+              style: FilledButton.styleFrom(
+                backgroundColor: const Color(0xFF23202C),
+                foregroundColor: const Color(0xFFF1EDE4),
+                disabledBackgroundColor: const Color(0xFFD6D1C4),
+                disabledForegroundColor: const Color(0xFF6B6577),
+                minimumSize: const Size(160, 48),
+                shape: const RoundedRectangleBorder(),
+              ),
+              child: const Text('Valider', style: TextStyle(fontSize: 20)),
             ),
           ],
           if (_feedback != null) ...[

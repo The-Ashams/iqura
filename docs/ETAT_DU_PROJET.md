@@ -27,7 +27,7 @@ Derniers résultats : tests locaux du 22/10/2026 (Python : contenu et audio OK ;
 | Élément | Détail |
 | --- | --- |
 | Graphismes | Pixel art créé pour le projet : `tools/build_art/` (rectangles JSON → PNG, bibliothèque standard), 13 images dans `assets/art/` (7 scènes, 6 personnages). Vérifiées par tests et en CI |
-| Police | Pixelify Sans (OFL) pour les textes du jeu ; Amiri en secours pour la translittération |
+| Police | DotGothic16 (OFL) pour les textes du jeu, choisie par l'utilisateur le 23/10/2026 (chiffres plus lisibles que Pixelify Sans) ; Amiri en secours pour la translittération |
 | Monde | `tools/build_content/world/region1.json` → tables `region`, `place`, `character` (schéma de contenu 6, contenu 0.5.0-j1a) |
 | Carte | Désert des Lettres : 12 lieux reliés ; les 4 lieux de la tranche (Puits, Porte, Marché, Faille) s'ouvrent, les 8 autres sont indiqués « À venir (jalon J1b) » |
 | Lieux | Scène, personnages, fenêtre de dialogue (« Rédigé par IA ») ; leçons indiquées « Jouable à l'étape 4 » |

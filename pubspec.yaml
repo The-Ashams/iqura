@@ -39,7 +39,7 @@ flutter:
     - assets/content/iqura_content.db.version
     - assets/fonts/OFL-Amiri.txt
     - assets/fonts/OFL-AmiriQuran.txt
-    - assets/fonts/OFL-PixelifySans.txt
+    - assets/fonts/OFL-DotGothic16.txt
     # Pixel art créé pour le projet (tools/build_art/).
     - assets/art/
     # Enregistrements des leçons (synthèse Chatterbox, tools/build_audio/).
@@ -54,8 +54,8 @@ flutter:
     - family: AmiriQuran
       fonts:
         - asset: assets/fonts/AmiriQuran-Regular.ttf
-    # Police pixel (SIL OFL 1.1), textes du jeu ; police variable 400 à 700.
-    - family: PixelifySans
+    # Police pixel (SIL OFL 1.1), textes du jeu (choisie le 23/10/2026).
+    - family: DotGothic16
       fonts:
-        - asset: assets/fonts/PixelifySans.ttf
+        - asset: assets/fonts/DotGothic16-Regular.ttf
 

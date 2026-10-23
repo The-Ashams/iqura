@@ -14,7 +14,7 @@ void registerBundledLicenses() {
       'Police Amiri Quran',
     ], await rootBundle.loadString('assets/fonts/OFL-AmiriQuran.txt'));
     yield LicenseEntryWithLineBreaks(const [
-      'Police Pixelify Sans',
-    ], await rootBundle.loadString('assets/fonts/OFL-PixelifySans.txt'));
+      'Police DotGothic16',
+    ], await rootBundle.loadString('assets/fonts/OFL-DotGothic16.txt'));
   });
 }

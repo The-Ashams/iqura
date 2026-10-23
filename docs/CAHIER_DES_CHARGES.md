@@ -760,3 +760,5 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-22 | Adresse des signalements d'erreur : contact@edelwa.com (visible dans le code public) |
 | 2026-10-22 | Sort de racine : forme simple dès la leçon 7 (« ces mots sont-ils de la même famille ? ») jusqu'à la région 2, forme complète (racine, schème) en région 3 ; grisé avant la leçon 7 avec « débloqué à la leçon 7 » |
 | 2026-10-22 | Région 1 « Le Désert des Lettres » : 12 lieux (Puits de l'arrivée, Porte de la bibliothèque, Marché aux enseignes, Caravansérail, Dunes chantantes, Atelier des copistes, Observatoire, Archives ensablées, Fontaine aux échos, Cour du cadran solaire, Salle des manuscrits, Faille des Oubliés) et Sanctuaire ; personnages Nūra (archiviste), Samīr (apprenti copiste), Laylā, Rāšid, Suhayl ; boss : le Gardien de l'Oubli ; porte fermée par 14 sceaux, un par leçon. Détail : `docs/HISTOIRE.md` |
+| 2026-10-23 | Police des textes du jeu : DotGothic16 (OFL), pour la lisibilité des chiffres ; Amiri en secours pour la translittération |
+| 2026-10-23 | Combat : on choisit une réponse, puis on la valide (bouton « Valider ») |
