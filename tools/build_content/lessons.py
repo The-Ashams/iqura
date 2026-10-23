@@ -25,6 +25,9 @@ import sqlite3
 import unicodedata
 from dataclasses import dataclass
 
+import mini_donjon
+import world
+
 LESSONS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lessons")
 REPO_ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 AUDIO_MANIFEST = os.path.join(REPO_ROOT, "tools", "build_audio", "clips.json")
@@ -90,8 +93,10 @@ def validate(data: LessonData, con: sqlite3.Connection) -> None:
     by_stage: dict[int, list[dict]] = {}
     for lesson in data.lessons:
         where = lesson["_file"]
-        for key in ("id", "etape", "ordre", "titre", "objectif", "statut",
-                    "prerequis", "introduit", "sections", "exercices"):
+        common = ("id", "etape", "ordre", "titre", "objectif", "statut",
+                  "prerequis", "introduit")
+        specific = ("ecrans",) if lesson.get("format") == 2 else ("sections", "exercices")
+        for key in common + specific:
             if key not in lesson:
                 raise LessonError(f"{where} : champ « {key} » absent")
         if lesson["id"] in ids:
@@ -108,6 +113,10 @@ def validate(data: LessonData, con: sqlite3.Connection) -> None:
             raise LessonError(f"étape {stage} : ordre des leçons non continu")
         for l in lessons:
             order_of[l["id"]] = (stage, l["ordre"])
+
+    regions = world.load()
+    places = {p["id"] for r in regions for p in r["lieux"]}
+    characters = {c["id"] for r in regions for c in r["personnages"]}
 
     for stage, lessons in sorted(by_stage.items()):
         known_letters: set[str] = set()
@@ -136,6 +145,16 @@ def validate(data: LessonData, con: sqlite3.Connection) -> None:
                         f"{where} : {what} « {text} » utilise {ch} ({name}), "
                         "pas encore enseigné"
                     )
+
+            if lesson.get("format") == 2:
+                try:
+                    mini_donjon.validate(
+                        lesson, known_letters=known_letters, known_signs=known_signs,
+                        letter_cards=letter_cards, con=con, places=places,
+                        characters=characters)
+                except mini_donjon.LessonError as e:
+                    raise LessonError(str(e)) from None
+                continue
 
             for section in lesson["sections"]:
                 kind = section.get("type")
@@ -219,6 +238,25 @@ def audio_clips(data: LessonData) -> dict[str, tuple[str, str]]:
     for card in data.letters["lettres"]:
         add("lettre", card["nom_ar"])
     for lesson in data.lessons:
+        if lesson.get("format") == 2:
+            syll = {i["ar"] for i in lesson["elements"]["syllabes"]}
+            words = {i["ar"] for i in lesson["elements"]["mots"]}
+            for t in mini_donjon.arabic_strings(lesson):
+                # Seuls les textes vocalisés se lisent à voix haute ; une
+                # lettre seule ou une forme isolée n'a pas d'enregistrement.
+                if not any(ch in SIGNS.values() for ch in t):
+                    continue
+                if t in syll:
+                    kind = "syllabe"
+                elif t in words:
+                    kind = "mot"
+                elif " " in t:
+                    kind = "phrase"
+                else:
+                    letters = sum(1 for ch in t if "\u0621" <= ch <= "\u064A")
+                    kind = "syllabe" if letters <= 2 else "mot"
+                add(kind, t)
+            continue
         for section in lesson["sections"]:
             if section["type"] == "syllabes":
                 for item in section["items"]:
@@ -292,6 +330,20 @@ def write(con: sqlite3.Connection, data: LessonData) -> dict[str, int]:
              lesson["objectif"], lesson["statut"],
              json.dumps(content, ensure_ascii=False, sort_keys=True)),
         )
+        if lesson.get("format") == 2:
+            seen = set()
+            for screen in lesson["ecrans"]:
+                for extract in screen.get("extraits", []):
+                    s_, a_ = (int(x) for x in extract["verset"].split(":"))
+                    vid = con.execute(
+                        "SELECT id FROM verse WHERE surah_id = ? AND ayah = ?", (s_, a_)
+                    ).fetchone()[0]
+                    for ref in [(lesson["id"], vid, None)] + [
+                            (lesson["id"], vid, tok) for tok in extract["mots"]]:
+                        if ref not in seen:
+                            seen.add(ref)
+                            refs.append(ref)
+            continue
         for section in lesson["sections"]:
             if section["type"] != "coran":
                 continue

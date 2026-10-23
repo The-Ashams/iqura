@@ -101,15 +101,6 @@
    "a_ecouter": false,
    "genere_le": "2026-10-21"
   },
-  "ar-457700cec90846af": {
-   "genre": "mot",
-   "texte": "ثَابَ",
-   "fichier": "assets/audio/lecons/ar-457700cec90846af.mp3",
-   "sha256": "03341e406d1c2adc54b239169490ee2b5a7c5032d8d08f2c0db0e3533ac31df8",
-   "graine": 0,
-   "a_ecouter": false,
-   "genere_le": "2026-10-21"
-  },
   "ar-45d4256ab31eee4f": {
    "genre": "syllabe",
    "texte": "بِي",

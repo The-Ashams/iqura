@@ -19,7 +19,7 @@
       "nom_ar": "أَلِف",
       "liaison_gauche": false,
       "zone": "cavite",
-      "prononciation": "L'alif ne note pas de consonne. Après une fatḥa, il allonge le son « a » : بَا se lit « bā », un « a » tenu deux fois plus longtemps. En début de mot, il sert de support à une hamza ou à une voyelle (leçons suivantes)."
+      "prononciation": "L'alif ne note pas de consonne. Après une fatḥa, il allonge le son « a » : بَا se lit « bā », un « a » tenu deux fois plus longtemps. En début de mot, il sert de support à la hamza (leçon 9)."
     },
     {
       "lettre": "ب",
@@ -75,7 +75,7 @@
       "nom_ar": "حَاء",
       "liaison_gauche": true,
       "zone": "gorge_milieu",
-      "prononciation": "Un souffle chuchoté venant du milieu de la gorge, plus serré qu'un « h » : comme quand on souffle sur des lunettes pour les nettoyer. Sans point. Le français n'a pas ce son."
+      "prononciation": "Un « ahh » soufflé et serré, venu du milieu de la gorge, comme après avoir bu quelque chose de très chaud. Sans point. Le français n'a pas ce son."
     },
     {
       "lettre": "خ",

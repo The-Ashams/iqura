@@ -1,11 +1,11 @@
 # État du projet IQURA
 
-Mis à jour le 22 octobre 2026. **À lire en début de session, à mettre à jour à chaque étape importante et avant la fin d'une session.**
+Mis à jour le 23 octobre 2026. **À lire en début de session, à mettre à jour à chaque étape importante et avant la fin d'une session.**
 Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026**, référence unique). Règles : `CLAUDE.md`. Anciennes versions : `docs/archive/`.
 
 Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` après la fusion de la pull request n° 3).
 
-**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape 1 terminée le 22/10/2026** (liste A1 à A7 acceptée, points du §3 tranchés). **Étape 2 terminée le 22/10/2026** (lieux et personnages de la région 1 validés, `docs/HISTOIRE.md`). **Étape 3 (coquille du jeu) faite le 23/10/2026, en attente des retours de l'utilisateur. Étape suivante : 4, leçons 0 et 1 au format mini-donjon.**
+**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape 1 terminée le 22/10/2026** (liste A1 à A7 acceptée, points du §3 tranchés). **Étape 2 terminée le 22/10/2026** (lieux et personnages de la région 1 validés, `docs/HISTOIRE.md`). **Étape 3 (coquille du jeu) faite le 23/10/2026, retours de l'utilisateur pris en compte (police DotGothic16, bouton « Valider » en combat). Étape 4 en cours : leçons 0 et 1 réécrites au format mini-donjon, en attente de validation.**
 
 ## 1. Ce qui existe déjà (gardé, cahier §0.1 point 4)
 
@@ -82,12 +82,15 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 1. Fait : accord sur la liste du §2 et réponses aux points du §3.
 2. Fait : noms des lieux et personnages de la région 1 et découpage en 12 lieux, validés.
 3. Fait (23/10/2026) : coquille du jeu en pixel art (voir §1 bis) ; retours de l'utilisateur attendus.
-4. Suivant, cahier §13.1 point 4 : réécrire les leçons 0 et 1 au format mini-donjon, avec les corrections du §5.5, les montrer et attendre la validation.
+4. En cours, cahier §13.1 point 4 :
+   - fait : leçons 0 (« L'énigme du puits ») et 1 (« L'étiquette de la porte ») réécrites au format mini-donjon (format 2), contrôlées par `tools/build_content/mini_donjon.py` (ordre des écrans, 40 mots et 2 phrases au plus, 3 ou 4 choix, mini-boss de 10 à 12 questions à 80 % avec 20 à 30 % de révision, aucun texte coranique recopié, lettres déjà enseignées seulement) ; aperçu : `preview_lessons.py` ;
+   - fait : voyelle finale avalée par la synthèse (« baḥaṯ » au lieu de « baḥaṯa ») mesurée automatiquement (régularité du son sur les 70 dernières millisecondes) ; aucune astuce d'écriture ne la corrige à coup sûr, on génère donc plusieurs tirages et on garde les meilleurs ;
+   - attendu de l'utilisateur : choisir à l'écoute les versions de بَاتَ, تَابَ, ثَبَتَ et بَاب, puis valider les leçons 0 et 1 ;
+   - ensuite : lecteur de leçons dans l'application (écrans, exercices, tracé, enregistrement de la voix, mini-boss en combat, progression enregistrée, leçon suivante débloquée).
 
 ## 5. Problèmes connus
 
-- **Audio dans l'application** : les MP3 sont livrés, mais aucun lecteur n'est encore intégré (paquet à auditer).
-- **Chatterbox** : données d'entraînement et origine de la voix par défaut non publiées ; une voyelle brève isolée peut être allongée, et un mot tronqué n'est pas détecté automatiquement : l'écoute de l'utilisateur reste nécessaire.
+- **Chatterbox** : données d'entraînement et origine de la voix par défaut non publiées ; une voyelle brève isolée peut être allongée, la voyelle brève finale d'un mot est souvent avalée (8 mots sur 11 lors de la mesure du 23/10/2026 ; à corriger aussi pour les leçons 2 et 3 : بَاتَ, تَابَ, ثَبَتَ, بُنِيَ, خَابَ, نَابَ, نَجَحَ, بَحَثَ), et un mot tronqué n'est pas détecté automatiquement : l'écoute de l'utilisateur reste nécessaire.
 - **Synthèse non reproductible en CI** (modèle trop lourd) : les MP3 sont versionnés et la CI vérifie leur empreinte.
 - **Réseau de la session cloud** : `download-r2.pytorch.org`, `github.com` et quelques sites de référence bloqués.
 - **Compilation Windows** : uniquement via GitHub Actions.

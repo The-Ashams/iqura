@@ -251,11 +251,22 @@ class ContentDatabase {
       [stage, upTo],
     )) {
       final content = jsonDecode(r['content'] as String) as Map;
-      for (final section in content['sections'] as List) {
-        if (section['type'] != 'syllabes' && section['type'] != 'exemples') {
-          continue;
+      final lists = <List>[];
+      if (content['format'] == 2) {
+        // Format mini-donjon : syllabes et mots dans « elements ».
+        final elements = content['elements'] as Map;
+        lists
+          ..add(elements['syllabes'] as List)
+          ..add(elements['mots'] as List);
+      } else {
+        for (final section in content['sections'] as List) {
+          if (section['type'] == 'syllabes' || section['type'] == 'exemples') {
+            lists.add(section['items'] as List);
+          }
         }
-        for (final item in section['items'] as List) {
+      }
+      for (final list in lists) {
+        for (final item in list) {
           items.add(
             ReadingItem(
               arabic: item['ar'] as String,

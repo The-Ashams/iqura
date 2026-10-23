@@ -24,6 +24,20 @@ void main() {
     const t = Transliterator();
     var checked = 0;
     for (final lesson in lessons()) {
+      if (lesson['format'] == 2) {
+        final elements = lesson['elements'] as Map;
+        for (final kind in ['syllabes', 'mots']) {
+          for (final item in (elements[kind] as List).cast<Map>()) {
+            expect(
+              t.transliterate(item['ar'] as String),
+              item['translit'],
+              reason: '${lesson['id']} : ${item['ar']}',
+            );
+            checked++;
+          }
+        }
+        continue;
+      }
       for (final section in (lesson['sections'] as List).cast<Map>()) {
         final items = switch (section['type']) {
           'syllabes' || 'exemples' => (section['items'] as List).cast<Map>(),
@@ -47,13 +61,23 @@ void main() {
     'les leçons ne contiennent aucun texte coranique, seulement des références',
     () {
       for (final lesson in lessons()) {
-        for (final section in (lesson['sections'] as List).cast<Map>()) {
-          if (section['type'] != 'coran') continue;
-          for (final e in (section['extraits'] as List).cast<Map>()) {
+        final format2 = lesson['format'] == 2;
+        final parts = (lesson[format2 ? 'ecrans' : 'sections'] as List)
+            .cast<Map>();
+        for (final part in parts) {
+          if (part['type'] != 'coran') continue;
+          for (final e in (part['extraits'] as List).cast<Map>()) {
             expect(
-              e.keys.toSet().difference({'verset', 'mots', 'lettres'}),
+              e.keys.toSet().difference({
+                'verset',
+                'mots',
+                format2 ? 'question' : 'lettres',
+              }),
               isEmpty,
             );
+            if (format2) {
+              expect((e['question'] as Map).containsKey('ar'), isFalse);
+            }
           }
         }
       }

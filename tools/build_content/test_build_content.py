@@ -199,10 +199,15 @@ class BuildTest(unittest.TestCase):
     def test_every_lesson_item_has_an_audio_slot(self):
         keys = {r[0] for r in self.q("SELECT key FROM audio_clip")}
         for (content,) in self.q("SELECT content FROM lesson"):
-            for section in json.loads(content)["sections"]:
-                if section["type"] in ("syllabes", "exemples"):
-                    for item in section["items"]:
-                        self.assertIn(lessons.audio_key(item["ar"]), keys, item["ar"])
+            lesson = json.loads(content)
+            if lesson.get("format") == 2:
+                groups = [lesson["elements"]["syllabes"], lesson["elements"]["mots"]]
+            else:
+                groups = [s["items"] for s in lesson["sections"]
+                          if s["type"] in ("syllabes", "exemples")]
+            for items in groups:
+                for item in items:
+                    self.assertIn(lessons.audio_key(item["ar"]), keys, item["ar"])
         # Chaque enregistrement est livré, signalé comme synthèse et sourcé.
         self.assertEqual(self.q(
             "SELECT COUNT(*) FROM audio_clip WHERE file IS NULL OR synthetic IS NOT 1 "
@@ -231,7 +236,7 @@ class BuildTest(unittest.TestCase):
 
     def test_validation_requires_a_final_check(self):
         def mutate(d):
-            d.lessons[1]["exercices"] = d.lessons[1]["exercices"][:-1]
+            d.lessons[2]["exercices"] = d.lessons[2]["exercices"][:-1]
         with self.assertRaisesRegex(lessons.LessonError, "contrôle final"):
             self._validate(mutate)
 
@@ -278,30 +283,79 @@ class BuildTest(unittest.TestCase):
 
     def test_validation_rejects_untaught_letter(self):
         def mutate(d):
-            ex = next(s for s in d.lessons[1]["sections"] if s["type"] == "exemples")
+            ex = next(s for s in d.lessons[2]["sections"] if s["type"] == "exemples")
             ex["items"].append({"ar": "كَتَبَ", "translit": "kataba", "fr": "x"})
         with self.assertRaisesRegex(lessons.LessonError, "pas encore enseigné"):
             self._validate(mutate)
 
     def test_validation_rejects_copied_quran_text(self):
         def mutate(d):
-            sec = next(s for s in d.lessons[1]["sections"] if s["type"] == "coran")
+            sec = next(s for s in d.lessons[2]["sections"] if s["type"] == "coran")
             sec["extraits"][0]["ar"] = "texte recopié"
         with self.assertRaisesRegex(lessons.LessonError, "jamais recopié"):
             self._validate(mutate)
 
     def test_validation_rejects_wrong_reference_or_letter(self):
         def bad_token(d):
-            sec = next(s for s in d.lessons[1]["sections"] if s["type"] == "coran")
-            sec["extraits"][0]["mots"] = ["78:7:99"]
+            sec = next(s for s in d.lessons[2]["sections"] if s["type"] == "coran")
+            sec["extraits"][0]["mots"] = ["80:29:99"]
         with self.assertRaisesRegex(lessons.LessonError, "inexistant"):
             self._validate(bad_token)
 
         def bad_letter(d):
-            sec = next(s for s in d.lessons[1]["sections"] if s["type"] == "coran")
-            sec["extraits"][0]["lettres"] = ["خ"]
+            sec = next(s for s in d.lessons[2]["sections"] if s["type"] == "coran")
+            sec["extraits"][0]["lettres"] = ["ق"]
         with self.assertRaisesRegex(lessons.LessonError, "aucun mot cité"):
             self._validate(bad_letter)
+
+    # Format mini-donjon (leçons 0 et 1).
+    def _screen(self, d, kind, lesson=1):
+        return next(s for s in d.lessons[lesson]["ecrans"] if s["type"] == kind)
+
+    def test_mini_donjon_rejects_untaught_letter(self):
+        def mutate(d):
+            d.lessons[1]["elements"]["mots"].append({"ar": "كَتَبَ", "translit": "kataba", "fr": "x"})
+        with self.assertRaisesRegex(lessons.LessonError, "pas encore enseigné"):
+            self._validate(mutate)
+
+    def test_mini_donjon_rejects_copied_quran_text(self):
+        def mutate(d):
+            self._screen(d, "coran")["extraits"][0]["texte"] = "recopié"
+        with self.assertRaisesRegex(lessons.LessonError, "jamais recopié"):
+            self._validate(mutate)
+
+    def test_mini_donjon_rejects_short_boss(self):
+        def mutate(d):
+            boss = self._screen(d, "mini_boss")
+            boss["questions"] = boss["questions"][:9]
+        with self.assertRaisesRegex(lessons.LessonError, "10 à 12 questions"):
+            self._validate(mutate)
+
+    def test_mini_donjon_requires_revision_share(self):
+        def mutate(d):
+            for q in self._screen(d, "mini_boss")["questions"]:
+                q.pop("revision", None)
+        with self.assertRaisesRegex(lessons.LessonError, "révision"):
+            self._validate(mutate)
+
+    def test_mini_donjon_rejects_long_text(self):
+        def mutate(d):
+            self._screen(d, "entree", 0)["repliques"][0]["texte"] = "Un. Deux. Trois."
+        with self.assertRaisesRegex(lessons.LessonError, "2 phrases"):
+            self._validate(mutate)
+
+    def test_mini_donjon_rejects_wrong_listening_answer(self):
+        def mutate(d):
+            q = next(q for q in self._screen(d, "entrainement")["exercices"] if q["type"] == "ecouter")
+            q["reponse"] = (q["reponse"] + 1) % len(q["choix_ar"])
+        with self.assertRaisesRegex(lessons.LessonError, "son entendu"):
+            self._validate(mutate)
+
+    def test_mini_donjon_rejects_verse_in_combat(self):
+        def mutate(d):
+            self._screen(d, "mini_boss")["questions"][0]["type"] = "reperer_mot"
+        with self.assertRaisesRegex(lessons.LessonError, "interdit au combat"):
+            self._validate(mutate)
 
     def test_rebuild_replaces_file(self):
         build_content.build(self.out)
