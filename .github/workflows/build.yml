@@ -89,8 +89,29 @@ jobs:
       - name: Générer la base de contenu
         run: python3 tools/build_content/build_content.py
 
+      # Clé de signature fixe (secrets du dépôt) : la nouvelle version
+      # s'installe par-dessus l'ancienne et la progression est gardée.
+      - name: Clé de signature
+        env:
+          KEYSTORE_B64: ${{ secrets.IQURA_KEYSTORE_B64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.IQURA_KEYSTORE_PASSWORD }}
+        run: |
+          if [ -z "$KEYSTORE_B64" ]; then
+            echo "::warning::Secrets IQURA_KEYSTORE_B64 / IQURA_KEYSTORE_PASSWORD absents : APK signé avec une clé de débogage (pas de mise à jour par-dessus la version précédente)."
+            exit 0
+          fi
+          echo "$KEYSTORE_B64" | base64 -d > android/iqura.jks
+          printf 'storeFile=iqura.jks\nalias=iqura\npassword=%s\n' "$KEYSTORE_PASSWORD" > android/key.properties
+
+      # Numéro de version croissant à chaque compilation (Android refuse une
+      # version plus ancienne que celle installée).
       - name: Compiler l'APK
-        run: flutter build apk --release
+        run: flutter build apk --release --build-number=${{ github.run_number }}
+
+      - name: Signature de l'APK
+        run: |
+          apksigner=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)apksigner
+          "$apksigner" verify --print-certs build/app/outputs/flutter-apk/app-release.apk | grep -i "SHA-256 digest" | head -1
 
       - name: Empreinte de l'APK
         run: sha256sum build/app/outputs/flutter-apk/app-release.apk | tee build/app/outputs/flutter-apk/app-release.apk.sha256
