@@ -106,6 +106,14 @@ rectangles dans `tools/build_art/art/*.json`, converti en PNG par
 reprennent les maquettes du 22/10/2026, réalisées pour IQURA. Licence : celle
 du projet (GPL-3.0). Aucun personnage, monstre ni élément d'un jeu existant.
 
+## Bruitages
+
+Bruitages rétro **créés pour le projet** (aucune banque de sons externe) :
+décrits en notes dans `tools/build_sfx/sons.json`, convertis en WAV par
+`tools/build_sfx/build_sfx.py` (bibliothèque standard Python, sortie
+déterministe). Licence : celle du projet (GPL-3.0). Aucun son repris d'un jeu
+existant.
+
 ## Inventaire complet des paquets Dart
 
 Généré le 23 octobre 2026 depuis `pubspec.lock` (`python3 tools/third_party/list_dart_packages.py`). Certains paquets ne servent

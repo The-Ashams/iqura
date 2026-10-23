@@ -48,6 +48,11 @@ jobs:
           python3 -m unittest discover -s tools/build_art -v
           python3 tools/build_art/build_art.py --verifier
 
+      - name: Bruitages à jour
+        run: |
+          python3 -m unittest discover -s tools/build_sfx -v
+          python3 tools/build_sfx/build_sfx.py --verifier
+
       - name: Dépendances
         run: flutter pub get
 

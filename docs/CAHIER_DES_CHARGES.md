@@ -768,3 +768,6 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-23 | Salles d'étude : le maître signale que d'autres petits signes, appris plus tard, sont présents dans les mots coraniques |
 | 2026-10-23 | Mots présents dans le Coran admis seuls au mini-boss, en dictionnaire, dans un panneau neutre (conforme au §3.1, inchangé) |
 | 2026-10-23 | Audio : voyelle finale avalée par la synthèse ; plusieurs tirages, texte donné à la synthèse ajusté si besoin (virgule finale, alif doublé : champ « ecrit » du manifeste), choix à l'écoute par l'utilisateur |
+| 2026-10-23 | Bruitages : oui, sans musique pour l'instant (elle gênerait l'écoute des lettres) ; sons rétro créés pour le projet (`tools/build_sfx/`), les banques de sons libres n'étant pas joignables depuis la session ; désactivables dans les réglages ; écoutés par l'utilisateur avant d'être branchés |
+| 2026-10-23 | Affichage sur PC : contenu du jeu centré et limité en largeur, scène de combat limitée en hauteur |
+| 2026-10-23 | Leçon 0 : « margelle » remplacé par « le bord du puits » (mot trop rare) |
