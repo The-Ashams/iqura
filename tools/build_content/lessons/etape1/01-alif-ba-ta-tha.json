@@ -118,7 +118,7 @@
         {"type": "points", "consigne": "Laquelle a trois points ?", "choix_ar": ["ت", "ب", "ث"], "reponse": 2, "explication": "ث porte trois points."},
         {"type": "formes", "consigne": "De quelle lettre est cette forme ?", "ar": "ـبـ", "choix_ar": ["ت", "ب", "ث"], "reponse": 1, "explication": "Un point dessous : ب, au milieu d'un mot."},
         {"type": "qcm", "revision": true, "consigne": "Dans quel sens se lit l'arabe ?", "choix": ["De gauche à droite", "De droite à gauche", "De haut en bas"], "reponse": 1, "explication": "De droite à gauche."},
-        {"type": "qcm", "revision": true, "consigne": "Dans un mot, les lettres…", "choix": ["restent séparées", "s'écrivent l'une sous l'autre", "s'attachent entre elles"], "reponse": 2, "explication": "Elles s'attachent, sauf quelques lettres comme l'alif."},
+        {"type": "qcm", "revision": true, "consigne": "Dans un mot, les lettres…", "choix": ["restent séparées", "s'écrivent l'une sous l'autre", "s'attachent entre elles"], "reponse": 2, "explication": "Elles s'attachent ; quelques lettres, comme l'alif, ne s'attachent pas à la suivante."},
         {"type": "formes", "revision": true, "consigne": "Laquelle est la forme du début ?", "choix_ar": ["ـب", "ـبـ", "بـ"], "reponse": 2, "explication": "Au début, la lettre s'ouvre vers la gauche : بـ."}
       ]
     },

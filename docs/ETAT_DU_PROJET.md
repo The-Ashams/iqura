@@ -85,6 +85,7 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 4. En cours, cahier §13.1 point 4 :
    - fait : leçons 0 (« L'énigme du puits ») et 1 (« L'étiquette de la porte ») réécrites au format mini-donjon (format 2), contrôlées par `tools/build_content/mini_donjon.py` (ordre des écrans, 40 mots et 2 phrases au plus, 3 ou 4 choix, mini-boss de 10 à 12 questions à 80 % avec 20 à 30 % de révision, aucun texte coranique recopié, lettres déjà enseignées seulement) ; aperçu : `preview_lessons.py` ;
    - fait : voyelle finale avalée par la synthèse (« baḥaṯ » au lieu de « baḥaṯa ») mesurée automatiquement (régularité du son sur les 70 dernières millisecondes) ; aucune astuce d'écriture ne la corrige à coup sûr, on génère donc plusieurs tirages et on garde les meilleurs ;
+   - fait : relecture par l'agent relecteur-arabe, verdict « Validé avec doutes », 4 doutes transmis à l'utilisateur (`docs/relectures/2026-10-23-lecons-0-1.md`) ; mineurs simples corrigés ; à faire avec le lecteur de leçons : nom arabe des lettres (hamza non enseignée) et mention « exemple construit » ;
    - attendu de l'utilisateur : choisir à l'écoute les versions de بَاتَ, تَابَ, ثَبَتَ et بَاب, puis valider les leçons 0 et 1 ;
    - ensuite : lecteur de leçons dans l'application (écrans, exercices, tracé, enregistrement de la voix, mini-boss en combat, progression enregistrée, leçon suivante débloquée).
 

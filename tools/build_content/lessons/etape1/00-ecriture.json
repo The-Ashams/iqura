@@ -40,7 +40,7 @@
         "consigne": "Ces trois signes ont la même forme de barque. Qu'est-ce qui les distingue ?",
         "choix": ["Leurs points", "Leur taille", "Leur épaisseur"],
         "reponse": 0,
-        "explication": "Seuls les points changent : un dessous, deux dessus, trois dessus. Un point de plus ou de moins, et c'est une autre lettre."
+        "explication": "Seuls les points changent : ث en a trois dessus, ب un dessous, ت deux dessus. Un point de plus ou de moins, et c'est une autre lettre."
       }
     },
     {
@@ -70,7 +70,7 @@
     {
       "type": "regle",
       "titre": "Les petits signes",
-      "texte": "Les lettres notent les consonnes. Les voyelles brèves a, i, u sont de petits signes au-dessus ou au-dessous de la lettre.",
+      "texte": "Les lettres notent surtout les consonnes. Les voyelles brèves a, i, u sont de petits signes au-dessus ou au-dessous de la lettre.",
       "exemples": ["بَ", "بِ", "بُ"],
       "question": {
         "type": "qcm",

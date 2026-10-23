@@ -8,7 +8,8 @@ Règles vérifiées (cahier v3 §6.1, §6.2, §3.1) :
 - chaque lettre introduite a son écran « élément » ;
 - questions à 3 ou 4 choix distincts, une seule bonne réponse ;
 - mini-boss : 10 à 12 questions, seuil 80 %, 20 à 30 % sur les leçons
-  précédentes (à partir de la leçon 1), jamais de verset ni de mot coranique ;
+  précédentes (à partir de la leçon 1), jamais de verset ni d'extrait
+  coranique (un mot du vocabulaire seul, en dictionnaire, est permis : §3.1) ;
 - le Coran n'est jamais recopié : les salles d'étude ne citent que des
   références (sourate:verset, sourate:verset:mot) ;
 - tout texte arabe n'utilise que des lettres et signes déjà enseignés, sauf
