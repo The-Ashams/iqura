@@ -763,3 +763,8 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-23 | Police des textes du jeu : DotGothic16 (OFL), pour la lisibilité des chiffres ; Amiri en secours pour la translittération |
 | 2026-10-23 | Combat : on choisit une réponse, puis on la valide (bouton « Valider ») |
 | 2026-10-23 | Relecture systématique par l'agent relecteur-arabe (`.claude/agents/relecteur-arabe.md`) |
+| 2026-10-23 | Combat : plus de nom de lettre en lettres latines ; question « Écoute et choisis la lettre » (le nom de la lettre est joué, le joueur choisit parmi les lettres arabes). Les noms écrits restent dans les écrans de découverte |
+| 2026-10-23 | بَاب gardé sous sa forme de pause en leçon 1 ; la forme complète بَابٌ est expliquée aux leçons 4 (sukūn) et 12 (tanwīn) |
+| 2026-10-23 | Salles d'étude : le maître signale que d'autres petits signes, appris plus tard, sont présents dans les mots coraniques |
+| 2026-10-23 | Mots présents dans le Coran admis seuls au mini-boss, en dictionnaire, dans un panneau neutre (conforme au §3.1, inchangé) |
+| 2026-10-23 | Audio : voyelle finale avalée par la synthèse ; plusieurs tirages, texte donné à la synthèse ajusté si besoin (virgule finale, alif doublé : champ « ecrit » du manifeste), choix à l'écoute par l'utilisateur |

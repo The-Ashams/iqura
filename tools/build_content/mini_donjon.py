@@ -29,8 +29,10 @@ SCREEN_TYPES = {"entree", "echauffement", "decouverte", "element", "regle",
                 "entrainement", "coran", "mini_boss", "fin"}
 QUESTION_TYPES = {"qcm", "points", "formes", "reconnaitre", "ecouter", "paires",
                   "lire", "reconstruire", "tracer", "repeter", "reperer_mot",
-                  "compter"}
-BOSS_TYPES = {"qcm", "points", "formes", "reconnaitre", "ecouter", "paires", "lire"}
+                  "compter", "ecouter_lettre"}
+# Au combat : jamais de translittération (§6.2) ; le nom d'une lettre se fait
+# écouter (« ecouter_lettre »), il ne s'affiche pas en lettres latines.
+BOSS_TYPES = {"qcm", "points", "formes", "ecouter", "paires", "lire", "ecouter_lettre"}
 EXPLANATION_ONLY = {"entree", "fin"}
 TOKEN_REF = re.compile(r"^(\d+):(\d+):(\d+)$")
 VERSE_REF = re.compile(r"^(\d+):(\d+)$")
@@ -69,7 +71,7 @@ def _choices(q: dict, where: str) -> list[str]:
 
 
 def check_question(q: dict, where: str, check_ar, con: sqlite3.Connection,
-                   verse: str | None = None) -> None:
+                   verse: str | None = None, letter_cards: dict | None = None) -> None:
     kind = q.get("type")
     if kind not in QUESTION_TYPES:
         raise LessonError(f"{where} : type de question inconnu {kind}")
@@ -86,7 +88,12 @@ def check_question(q: dict, where: str, check_ar, con: sqlite3.Connection,
     for key in ("choix_ar", "choix_audio", "tuiles", "solution"):
         for t in q.get(key, []):
             check_ar(t)
-    if kind in ("qcm", "points", "formes", "reconnaitre", "ecouter", "paires", "lire"):
+    if kind == "ecouter_lettre":
+        # Le son joué est le nom de la bonne lettre (fiche de la lettre).
+        choices = _choices(q, where)
+        if "choix_ar" not in q or any(c not in (letter_cards or {}) for c in choices):
+            raise LessonError(f"{where} : choix attendus parmi les lettres qui ont une fiche")
+    elif kind in ("qcm", "points", "formes", "reconnaitre", "ecouter", "paires", "lire"):
         choices = _choices(q, where)
         if kind in ("ecouter", "paires") and choices[q["reponse"]] != q["audio"]:
             raise LessonError(f"{where} : la bonne réponse doit être le son entendu")
@@ -184,12 +191,12 @@ def validate(lesson: dict, *, known_letters: set[str], known_signs: set[str],
                     raise LessonError(f"{here} : lettre sans fiche")
             if t == "regle":
                 check_short(s["texte"], "règle", here)
-            check_question(s["question"], here, check_ar, con)
+            check_question(s["question"], here, check_ar, con, letter_cards=letter_cards)
         elif t == "entrainement":
             if not 3 <= len(s["exercices"]) <= 12:
                 raise LessonError(f"{here} : 3 à 12 exercices attendus")
             for j, q in enumerate(s["exercices"]):
-                check_question(q, f"{here} exercice {j + 1}", check_ar, con)
+                check_question(q, f"{here} exercice {j + 1}", check_ar, con, letter_cards=letter_cards)
         elif t == "coran":
             check_short(s["texte"], "texte", here)
             for e in s["extraits"]:
@@ -217,7 +224,7 @@ def validate(lesson: dict, *, known_letters: set[str], known_signs: set[str],
             for j, q in enumerate(qs):
                 if q["type"] not in BOSS_TYPES:
                     raise LessonError(f"{here} question {j + 1} : type interdit au combat {q['type']}")
-                check_question(q, f"{here} question {j + 1}", check_ar, con)
+                check_question(q, f"{here} question {j + 1}", check_ar, con, letter_cards=letter_cards)
             rev = sum(1 for q in qs if q.get("revision"))
             if lesson["ordre"] >= 1 and not (math.ceil(0.2 * len(qs)) <= rev <= math.floor(0.3 * len(qs))):
                 raise LessonError(f"{here} : 20 à 30 % de questions de révision attendues ({rev}/{len(qs)})")

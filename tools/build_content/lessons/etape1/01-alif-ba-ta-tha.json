@@ -97,7 +97,7 @@
     },
     {
       "type": "coran",
-      "texte": "Ces lettres se retrouvent dans le Coran. Compte-les dans ces mots.",
+      "texte": "Ces lettres se retrouvent dans le Coran : compte-les dans ces mots. D'autres petits signes, que tu apprendras plus tard, sont aussi présents.",
       "extraits": [
         {"verset": "78:7", "mots": ["78:7:1", "78:7:2"], "question": {"type": "compter", "consigne": "Combien de ب vois-tu dans le premier mot ?", "mot": "78:7:1", "lettre": "ب"}},
         {"verset": "78:7", "mots": ["78:7:2"], "question": {"type": "compter", "consigne": "Combien de ت vois-tu dans ce mot ?", "mot": "78:7:2", "lettre": "ت"}},
@@ -114,7 +114,7 @@
         {"type": "lire", "consigne": "Comment se lit ce mot ?", "ar": "تَابَ", "choix_audio": ["بَاتَ", "تَابَ", "ثَبَتَ"], "reponse": 1, "explication": "تَابَ se lit « tāba »."},
         {"type": "lire", "consigne": "Comment se lit ce mot ?", "ar": "بَاتَ", "choix_audio": ["بَاتَ", "بَاب", "تَابَ"], "reponse": 0, "explication": "بَاتَ se lit « bāta »."},
         {"type": "lire", "consigne": "Comment se lit ce mot ?", "ar": "بَاب", "choix_audio": ["ثَبَتَ", "بَاتَ", "بَاب"], "reponse": 2, "explication": "بَاب se lit « bāb »."},
-        {"type": "reconnaitre", "consigne": "Comment s'appelle cette lettre ?", "ar": "ت", "choix": ["bāʾ", "tāʾ", "ṯāʾ"], "reponse": 1, "explication": "Deux points au-dessus : tāʾ."},
+        {"type": "ecouter_lettre", "consigne": "Écoute et choisis la lettre.", "choix_ar": ["ب", "ت", "ث"], "reponse": 1, "explication": "C'était ت (tāʾ) : deux points au-dessus."},
         {"type": "points", "consigne": "Laquelle a trois points ?", "choix_ar": ["ت", "ب", "ث"], "reponse": 2, "explication": "ث porte trois points."},
         {"type": "formes", "consigne": "De quelle lettre est cette forme ?", "ar": "ـبـ", "choix_ar": ["ت", "ب", "ث"], "reponse": 1, "explication": "Un point dessous : ب, au milieu d'un mot."},
         {"type": "qcm", "revision": true, "consigne": "Dans quel sens se lit l'arabe ?", "choix": ["De gauche à droite", "De droite à gauche", "De haut en bas"], "reponse": 1, "explication": "De droite à gauche."},

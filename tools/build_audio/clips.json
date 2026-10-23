@@ -105,10 +105,11 @@
    "genre": "syllabe",
    "texte": "تَا",
    "fichier": "assets/audio/lecons/ar-3bc5f0ae9739d60e.mp3",
-   "sha256": "b814db931792b22e0db2e0385093cadb13ec96ebd5ae9e62998f8bc1b93d14cf",
-   "graine": 0,
+   "sha256": "01d7f969dd25f761ca2b361cbe9128e4f7ee24bc32064971624b71e6f66d8655",
+   "graine": 2,
    "a_ecouter": false,
-   "genere_le": "2026-10-21"
+   "genere_le": "2026-10-23",
+   "ecrit": "تَا،"
   },
   "ar-45d4256ab31eee4f": {
    "genre": "syllabe",
@@ -204,19 +205,20 @@
    "genre": "syllabe",
    "texte": "ثَ",
    "fichier": "assets/audio/lecons/ar-79a5e4461bac4446.mp3",
-   "sha256": "793b216eebf78809f03aa2d2dc9994c5ab4f71c2d5f1fdb76a8cabddf9154628",
-   "graine": 0,
+   "sha256": "fb36b35ab51f6773b72f76e4517b0a160e02f3410c57f719d4d207c23463717c",
+   "graine": 1,
    "a_ecouter": false,
-   "genere_le": "2026-10-21"
+   "genere_le": "2026-10-23"
   },
   "ar-7c7afb90ab104a22": {
    "genre": "syllabe",
    "texte": "بَا",
    "fichier": "assets/audio/lecons/ar-7c7afb90ab104a22.mp3",
-   "sha256": "7378cbb4027df9063e8434a06ed01083bfd508507fb2f9cf5a9568c64ad1208b",
-   "graine": 0,
+   "sha256": "63fd467d067388178c3c7d588f6ec64b4fbec262512b463dc58cd37fbdb7d14d",
+   "graine": 3,
    "a_ecouter": false,
-   "genere_le": "2026-10-21"
+   "genere_le": "2026-10-23",
+   "ecrit": "بَاا"
   },
   "ar-80cdd720e239b6fd": {
    "genre": "syllabe",
@@ -312,10 +314,11 @@
    "genre": "mot",
    "texte": "بَاتَ",
    "fichier": "assets/audio/lecons/ar-cf6ecbfc61152fd3.mp3",
-   "sha256": "27d969ed7a73b5e867fd34bfec50d01a2c0e482e694440f9955903bfb131049e",
-   "graine": 0,
+   "sha256": "0ea3335a80f1637054ad44168482aa27bff4ffcf2610a640bbbca54de5fbdb97",
+   "graine": 10,
    "a_ecouter": false,
-   "genere_le": "2026-10-21"
+   "genere_le": "2026-10-23",
+   "ecrit": "بَاتَ،"
   },
   "ar-d4221add8206568c": {
    "genre": "syllabe",
