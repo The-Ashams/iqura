@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'equipment_screens.dart';
+import 'status_bar.dart';
+
 import 'pixel.dart';
 
-/// Cité minimale (jalon J1a) : vue de la cité à reconstruire. Boutique,
-/// équipement et enchantement arrivent à l'étape 6.
+/// La Cité (cahier v3 §8.3, §8.6) : boutique, équipement et enchantement ;
+/// les bâtiments seront reconstruits avec les matériaux des quêtes.
 class CityScreen extends StatelessWidget {
   const CityScreen({super.key});
 
@@ -16,7 +19,8 @@ class CityScreen extends StatelessWidget {
   ];
 
   static const String laterNotice =
-      "Boutique, équipement et enchantement : à l'étape 6 du jalon J1a.";
+      'Les bâtiments se reconstruiront avec les matériaux des quêtes de '
+      "l'Histoire (prochains niveaux).";
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -29,6 +33,36 @@ class CityScreen extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(6),
               child: const SceneView(background: 'scene_cite'),
+            ),
+            const SizedBox(height: 12),
+            const HeroStatusBar(),
+            const SizedBox(height: 12),
+            PixelWindow(
+              padding: const EdgeInsets.all(8),
+              child: Column(
+                children: [
+                  PixelCommand(
+                    label: 'Boutique du marché',
+                    detail: 'Armes, capes, accessoires…',
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute<void>(
+                        builder: (_) => const ShopScreen(),
+                      ),
+                    ),
+                  ),
+                  PixelCommand(
+                    label: 'Équipement et enchantement',
+                    detail: 'Équiper ses objets, les enchanter de +1 à +15',
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute<void>(
+                        builder: (_) => const EquipmentScreen(),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
             const SizedBox(height: 12),
             PixelWindow(

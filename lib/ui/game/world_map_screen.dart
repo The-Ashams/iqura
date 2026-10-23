@@ -6,6 +6,7 @@ import '../../game/world.dart';
 import '../../game/world_providers.dart';
 import 'pixel.dart';
 import 'place_screen.dart';
+import 'status_bar.dart';
 
 /// Carte à étapes de la région en cours (cahier v3 §8.3) : lieux reliés par
 /// des chemins ; on touche un lieu pour s'y rendre.
@@ -57,6 +58,8 @@ class WorldMapScreen extends ConsumerWidget {
                   ],
                 ),
               ),
+              const SizedBox(height: 12),
+              const HeroStatusBar(),
               const SizedBox(height: 12),
               ClipRRect(
                 borderRadius: BorderRadius.circular(6),

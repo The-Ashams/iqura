@@ -9,6 +9,7 @@ import 'package:iqura/core/providers.dart';
 import 'package:iqura/data/content_db/content_database.dart';
 import 'package:iqura/data/user_db/user_database.dart';
 import 'package:iqura/engines/audio/audio_service.dart';
+import 'package:iqura/features/resources/resources.dart';
 import 'package:iqura/ui/game/place_screen.dart';
 import 'package:iqura/ui/game/world_map_screen.dart';
 
@@ -166,5 +167,40 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('La bibliothèque'), findsOneWidget);
     expect(find.text('À reconstruire'), findsNWidgets(5));
+  });
+
+  testWidgets('Cité : acheter, équiper, enchanter (taux affiché)', (
+    tester,
+  ) async {
+    ResourceRepository(userDb)
+      ..grant(Currency.dinars, 200, key: 't-d', source: 'test')
+      ..grant(Currency.pierres, 5, key: 't-p', source: 'test');
+    await start(tester);
+    await tester.tap(find.text('Cité'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Boutique du marché'));
+    await tester.pumpAndSettle();
+    expect(find.text('Bâton de voyageur'), findsOneWidget);
+    await tester.tap(find.text('Acheter (30 dinars)').first);
+    await tester.pumpAndSettle();
+    expect(find.text('Déjà possédé'), findsOneWidget);
+    await tester.tap(find.byType(BackButton));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Équipement et enchantement'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Équiper'));
+    await tester.pumpAndSettle();
+    expect(find.text('Retirer'), findsOneWidget);
+    // Statistiques du voyageur : 10 d'attaque de base + 2 du bâton.
+    expect(find.textContaining('Attaque +12'), findsOneWidget);
+    expect(find.text('Enchanter → +1 (95 % de réussite)'), findsOneWidget);
+    await tester.tap(find.text('Enchanter → +1 (95 % de réussite)'));
+    await tester.pumpAndSettle();
+    expect(
+      find.textContaining('passe à +1').evaluate().isNotEmpty ||
+          find.textContaining('échoue').evaluate().isNotEmpty,
+      isTrue,
+    );
+    expect(sfx.played, isNotEmpty);
   });
 }
