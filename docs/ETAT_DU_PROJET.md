@@ -5,7 +5,7 @@ Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026**, référen
 
 Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` après la fusion de la pull request n° 3).
 
-**Jalon en cours : J1a, tranche verticale** (cahier §13). **Étape 1 terminée le 22/10/2026** (liste A1 à A7 acceptée, points du §3 tranchés). **Étape 2 terminée le 22/10/2026** (lieux et personnages de la région 1 validés, `docs/HISTOIRE.md`). **Étape 3 (coquille du jeu) faite le 23/10/2026, retours de l'utilisateur pris en compte (police DotGothic16, bouton « Valider » en combat). Étape 4 en cours : leçons 0 et 1 réécrites au format mini-donjon, en attente de validation.**
+**Organisation par niveaux depuis le 23/10/2026** (cahier §13.0) : on construit un niveau entier, on le fait relire, on le teste, puis on publie une version. **Niveau en cours : Débutant 1 (leçons 0 à 4), construit, en attente du test de l'utilisateur.** Niveau suivant : Débutant 2 (leçons 5 à 9). Étapes 1 à 3 du jalon J1a faites (cahier v3 appliqué, région 1 validée, coquille du jeu).
 
 ## 1. Ce qui existe déjà (gardé, cahier §0.1 point 4)
 
@@ -51,6 +51,20 @@ Derniers résultats : tests locaux du 22/10/2026 (Python : contenu et audio OK ;
 | Simplifications provisoires, à valider | Tracer : tracé libre au doigt sur la lettre, sans points numérotés ni vérification (cahier §6.4). Répéter : écouter puis « Je l'ai répété », sans enregistrement de la voix (paquet `record` à auditer). Mini-boss : pas d'autres questions en réserve pour un nouvel essai. Salle d'étude : pas de récitation d'al-Ḥuṣarī. Récompenses et cartes : étape 6 |
 
 Tests locaux du 23/10/2026 : Flutter 99 tests OK, `flutter analyze` sans remarque ; Python : contenu (31) et graphismes (5) OK.
+
+## 1 quater. Niveau Débutant 1 (leçons 0 à 4, 23/10/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Leçons | 0 Puits, 1 Porte, 2 et 3 Marché (Laylā, Samīr), 4 Caravansérail (Rāšid, scène et personnage créés) ; échauffement exigé dès la leçon 2 ; 55 enregistrements |
+| Relectures | `docs/relectures/2026-10-23-*.md` : leçons 0-1 validé avec doutes ; 2 validé avec doutes ; 3, 4 validé ; tracés validé. Décisions du conseiller : `docs/relectures/decisions-debutant-1.md` |
+| Révisions | FSRS-6 (paquet `fsrs`) ; cartes créées à la première réussite d'une leçon (reconnaître, écouter, signe, lire) ; note par justesse et temps (§6.3) ; états reconnu (stabilité ≥ 7 j) et maîtrisé (≥ 21 j) |
+| Expédition | Faille des Oubliés : vagues de brumes puis un gardien, nourris par les révisions dues (20 au plus) ; entraînement libre sans enregistrement quand rien n'est dû |
+| Économie | XP et niveau, dinars, pierres de savoir (à « reconnu » 1, « maîtrisé » 3), encre ; séries (un jour de repos permis) ; boutique (8 objets, `world/objets.json`), équipement, ensemble à 3 pièces, enchantement +1 à +15 (taux, +5 points par échec, pity) |
+| Parole, écriture | Répéter : s'enregistrer, réécouter (paquet `record`), sur l'appareil seulement ; tracé guidé par points numérotés (`lessons/traces.json`) |
+| Modes et réglages | Apprentissage seul (liste de leçons, sans scènes ni combats) ; chronomètre ; bruitages |
+| Technique | Schéma utilisateur 3 (cartes, ressources, inventaire, jours d'activité) ; schéma de contenu 7 (objets, tracés) ; version de contenu avec empreinte ; APK signé avec une clé fixe (secrets `IQURA_KEYSTORE_B64`, `IQURA_KEYSTORE_PASSWORD`) |
+| Tests | 129 tests Flutter (dont les 5 leçons jouées de bout en bout, l'Expédition, l'économie, l'enchantement sur 20 000 tirages), tests Python du contenu |
 
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
@@ -102,12 +116,16 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
    - à ne pas oublier : expliquer la forme complète بَابٌ aux leçons 4 (sukūn) et 12 (tanwīn) ;
    - fait : lecteur de leçons dans l'application (§1 ter), leçons 0 et 1 jouées de bout en bout par les tests ;
    - retours du 1er test de l'APK (23/10) : son de ثَبَتَ refait (version B, virgule finale), « margelle » remplacé, affichage PC centré et scène limitée en hauteur ; bruitages rétro créés (`tools/build_sfx/`), validés à l'écoute et branchés (menus, choix, juste/faux, coups, victoire, repli, sceau), désactivables dans les réglages ;
-   - attendu de l'utilisateur : jouer les leçons 0 et 1 sur l'APK et dire si elles sont amusantes et claires ; trancher les simplifications provisoires (§1 ter).
+   - remplacé le 23/10/2026 par l'organisation par niveaux : voir §1 quater.
+5. Débutant 1 construit (§1 quater) : attendu de l'utilisateur, le test du niveau sur l'APK ou Windows.
+6. Ensuite : Débutant 2 (leçons 5 à 9, lieux 5 à 7), commencé pendant le test.
 
 ## 5. Problèmes connus
 
-- **Chatterbox** : données d'entraînement et origine de la voix par défaut non publiées ; une voyelle brève isolée peut être allongée, la voyelle brève finale d'un mot est souvent avalée (8 mots sur 11 lors de la mesure du 23/10/2026 ; à corriger aussi pour les leçons 2 et 3 : بَاتَ, تَابَ, ثَبَتَ, بُنِيَ, خَابَ, نَابَ, نَجَحَ, بَحَثَ), et un mot tronqué n'est pas détecté automatiquement : l'écoute de l'utilisateur reste nécessaire.
+- **Chatterbox** : données d'entraînement et origine de la voix par défaut non publiées ; une voyelle brève isolée peut être allongée, la voyelle brève finale d'un mot est souvent avalée (on génère plusieurs tirages et on garde le meilleur ; خَابَ et حُجِبَ de la leçon 3 sont à écouter en priorité), et un mot tronqué n'est pas détecté automatiquement : l'écoute de l'utilisateur reste nécessaire.
 - **Synthèse non reproductible en CI** (modèle trop lourd) : les MP3 sont versionnés et la CI vérifie leur empreinte.
 - **Réseau de la session cloud** : `download-r2.pytorch.org`, `github.com` et quelques sites de référence bloqués.
 - **Compilation Windows** : uniquement via GitHub Actions.
 - **Maven Central** refuse parfois les téléchargements (erreur 429) pendant la compilation de l'APK ; une nouvelle compilation passe.
+
+- **Simplifications restantes (Débutant 1)** : récitation d'al-Ḥuṣarī absente (téléchargement non autorisé dans la session) ; objets non dessinés sur le personnage ; enregistrements de la voix jamais exportés (pas encore d'option pour les inclure).

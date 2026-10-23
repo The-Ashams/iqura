@@ -69,7 +69,7 @@ On ne teste plus leçon par leçon, mais **niveau par niveau** (14 niveaux) :
 3. Pendant que l'utilisateur teste un niveau, commencer le suivant ; intégrer ses retours dès qu'ils arrivent.
 4. La progression de l'utilisateur est conservée d'une version à l'autre (migrations de la base utilisateur, identifiants de leçons stables, APK signé avec la même clé).
 
-**Niveau en cours : Débutant 1 (leçons 0 à 4).** Les leçons 0 et 1 sont faites (format mini-donjon) ; restent les leçons 2, 3, 4, les révisions (FSRS, Expédition) et le lieu de la leçon 4.
+**Niveau en cours : Débutant 1 (leçons 0 à 4), construit et en attente du test de l'utilisateur** (détail : `docs/ETAT_DU_PROJET.md` §1 quater). Niveau suivant : Débutant 2 (leçons 5 à 9).
 
 ## Commandes
 
