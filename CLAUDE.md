@@ -9,9 +9,8 @@ RPG d'aventure narrative en pixel art dont la mécanique centrale est de compren
 
 ## Règles de travail (cahier §0.2)
 
-- **Ne jamais deviner.** Point ambigu, contradictoire ou impossible : s'arrêter et demander à l'utilisateur, avec une recommandation et une alternative. Une question à la fois.
-- **Montrer avant de produire en masse** : un ou deux exemples de chaque nouveau type de contenu, validés avant la suite.
-- **Prototype avant production** : rien n'est produit en masse avant la validation du prototype jouable (jalon J1a).
+- **Ne jamais deviner.** Point ambigu, contradictoire ou impossible : s'arrêter et demander, avec une recommandation et une alternative. Une question à la fois. Questions de langue arabe : à l'agent `conseiller-arabe` ; le reste (jeu, technique, organisation) : à l'utilisateur.
+- **Tester par niveau** (voir plus bas) : l'utilisateur teste un niveau entier, pas chaque leçon.
 - **Ne jamais annoncer** une compilation, un test ou une vérification non exécutés ; donner les preuves (lire les résultats de GitHub Actions).
 - Avant de supprimer ou de modifier fortement du code ou du contenu existant : présenter la liste et attendre l'accord.
 - Parler à l'utilisateur en français simple, sans jargon ; lui dire clairement ce qu'il doit faire lui-même (tester, valider, fusionner une pull request).
@@ -31,10 +30,11 @@ RPG d'aventure narrative en pixel art dont la mécanique centrale est de compren
 
 - **Quand** : après avoir écrit ou modifié tout contenu en arabe ou sur l'arabe (leçon, fiche de lettre ou de racine, exercice, dialogue, récit gradué, quête, vocabulaire, texte de combat), **avant** de le montrer à l'utilisateur ou de le fusionner dans `main`. Gros lot : par paquets (une leçon ou cinq récits à la fois).
 - **Ce qu'on lui donne** : les fichiers à relire, la région et la leçon, les lettres et notions déjà enseignées.
-- **Son rapport** : tout point **Bloquant** est corrigé avant de continuer ; tout point **Important** est corrigé, ou l'on explique à l'utilisateur pourquoi pas ; les **Mineurs** sont corrigés quand c'est simple ; les **Doutes** sont transmis tels quels à l'utilisateur, sans les trancher.
+- **Son rapport** : tout point **Bloquant** est corrigé avant de continuer ; tout point **Important** est corrigé, ou soumis à `conseiller-arabe` ; les **Mineurs** sont corrigés quand c'est simple ; les **Doutes** sont tranchés par `conseiller-arabe` (décision du 23/10/2026), puis listés dans les décisions de fin de niveau.
 - Après corrections, le relancer sur les fichiers modifiés jusqu'au verdict « Validé » ou « Validé avec doutes » ; trois allers-retours au plus, sinon expliquer le blocage à l'utilisateur.
 - Chaque rapport est enregistré dans `docs/relectures/AAAA-MM-JJ-<sujet>.md` et cité dans `docs/ETAT_DU_PROJET.md`.
-- En présentant un contenu : « Relu par l'agent relecteur : verdict X, N doutes restants ». Jamais présenté comme une validation humaine ou religieuse.
+- En présentant un niveau : « Relu par l'agent relecteur : verdict X, N doutes tranchés par le conseiller ». Jamais présenté comme une validation humaine ou religieuse.
+- Réponses de `conseiller-arabe` enregistrées dans `docs/relectures/decisions-<niveau>.md`.
 
 ## Décisions techniques (cahier §12)
 
@@ -50,18 +50,26 @@ RPG d'aventure narrative en pixel art dont la mécanique centrale est de compren
 | Sauvegarde | ZIP versionnée et vérifiée, restauration ou fusion (en place) |
 | Compilation | Claude Code + GitHub Actions (APK et .exe) sur `The-Ashams/iqura` ; Windows uniquement via Actions |
 
-## Ordre de travail (cahier §13)
+## Organisation par niveaux (cahier §13.0, décision du 23/10/2026)
 
-On avance région par région. **Jalon en cours : J1a, tranche verticale** (leçons 0 à 3 au format mini-donjon, jouables de bout en bout). Condition : l'utilisateur joue 30 minutes et valide que c'est amusant et efficace.
+On ne teste plus leçon par leçon, mais **niveau par niveau** (14 niveaux) :
 
-1. Liste de ce qui change dans l'existant, accord de l'utilisateur.
-2. Noms des lieux et personnages de la région 1, découpage en 8 à 12 lieux, validation.
-3. Coquille du jeu en pixel art : carte, dialogue, combat, Cité, Grimoire, Sanctuaire minimal.
-4. Leçons 0 et 1 au format mini-donjon, montrées et validées.
-5. Leçons 2 et 3 sur le même modèle.
-6. FSRS, Expédition, ressources, équipement, enchantement.
-7. Tests et compilations ; marche à suivre de test envoyée à l'utilisateur.
-8. Retours, corrections, mise à jour du cahier et de l'état.
+| Niveau | Leçons | Niveau | Leçons |
+| --- | --- | --- | --- |
+| Débutant 1 | 0 à 4 | Intermédiaire 2 | 3.11 à 3.21 |
+| Débutant 2 | 5 à 9 | Intermédiaire 3 | 3.22 à 3.32 + boss région 3 |
+| Débutant 3 | 10 à 14 + boss région 1 | Avancé 1 | 4.1 à 4.14 |
+| Élémentaire 1 | 2.1 à 2.10 | Avancé 2 | 4.15 à 4.28 + boss région 4 |
+| Élémentaire 2 | 2.11 à 2.20 | Coran 1 | 5.1 à 5.12 |
+| Élémentaire 3 | 2.21 à 2.30 + boss région 2 | Coran 2 | 5.13 à 5.20 |
+| Intermédiaire 1 | 3.1 à 3.10 | Coran 3 | 5.21 à 5.24 |
+
+1. Construire un niveau entier (leçons, révisions, récits, parties du jeu nécessaires), le faire relire par `relecteur-arabe`, le tester soi-même, puis publier **une** version et demander à l'utilisateur de le tester. Pas avant.
+2. Questions de langue et doutes du relecteur : réglés avec l'agent `conseiller-arabe`, sans l'utilisateur. À la fin de chaque niveau, présenter seulement la liste des décisions prises (10 points au plus).
+3. Pendant que l'utilisateur teste un niveau, commencer le suivant ; intégrer ses retours dès qu'ils arrivent.
+4. La progression de l'utilisateur est conservée d'une version à l'autre (migrations de la base utilisateur, identifiants de leçons stables, APK signé avec la même clé).
+
+**Niveau en cours : Débutant 1 (leçons 0 à 4).** Les leçons 0 et 1 sont faites (format mini-donjon) ; restent les leçons 2, 3, 4, les révisions (FSRS, Expédition) et le lieu de la leçon 4.
 
 ## Commandes
 

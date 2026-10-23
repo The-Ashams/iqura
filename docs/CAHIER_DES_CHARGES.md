@@ -687,6 +687,36 @@ On avance **région par région**, chaque région complète et jouable. Le MVP e
 | J4 — Région 4 | 28 leçons, 100 récits et dialogues, écriture, option IA | Lecture courante |
 | J5 — Région 5 | 24 leçons, sourates étudiées, lecteur coranique complet | Compréhension directe de sourates |
 
+### 13.0 Niveaux de test (décision du 23/10/2026)
+
+On ne teste plus leçon par leçon, mais **niveau par niveau**. Le programme est découpé en 14 niveaux :
+
+| Niveau | Leçons |
+| --- | --- |
+| Débutant 1 | leçons 0 à 4 |
+| Débutant 2 | leçons 5 à 9 |
+| Débutant 3 | leçons 10 à 14 + boss de la région 1 |
+| Élémentaire 1 | leçons 2.1 à 2.10 |
+| Élémentaire 2 | leçons 2.11 à 2.20 |
+| Élémentaire 3 | leçons 2.21 à 2.30 + boss de la région 2 |
+| Intermédiaire 1 | leçons 3.1 à 3.10 |
+| Intermédiaire 2 | leçons 3.11 à 3.21 |
+| Intermédiaire 3 | leçons 3.22 à 3.32 + boss de la région 3 |
+| Avancé 1 | leçons 4.1 à 4.14 |
+| Avancé 2 | leçons 4.15 à 4.28 + boss de la région 4 |
+| Coran 1 | leçons 5.1 à 5.12 |
+| Coran 2 | leçons 5.13 à 5.20 |
+| Coran 3 | leçons 5.21 à 5.24 |
+
+Règles :
+
+1. Claude Code construit un niveau entier (leçons, révisions, récits, parties du jeu nécessaires), le fait relire par l'agent `relecteur-arabe`, le teste lui-même, puis publie **une** version et demande à l'utilisateur de le tester. Pas avant.
+2. Les questions de langue et les doutes du relecteur se règlent avec l'agent `conseiller-arabe`, sans l'utilisateur. À la fin de chaque niveau, Claude Code présente seulement la liste des décisions prises (10 points au plus).
+3. Pendant que l'utilisateur teste un niveau, Claude Code commence le suivant. Les retours de l'utilisateur sont intégrés dès qu'ils arrivent.
+4. La progression de l'utilisateur est conservée d'une version à l'autre.
+
+Les jalons J1a à J5 ci-dessus décrivent le contenu de chaque région ; l'unité de construction et de test est désormais le niveau. Débutant 1 remplace la validation de J1a (leçons 0 à 3) et y ajoute la leçon 4.
+
 ### 13.1 Ordre de travail détaillé pour J1a
 
 1. Présenter à l'utilisateur la liste de ce qui change dans l'existant (§0.1, point 5) et obtenir son accord.
@@ -771,3 +801,5 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-23 | Bruitages : oui, sans musique pour l'instant (elle gênerait l'écoute des lettres) ; sons rétro créés pour le projet (`tools/build_sfx/`), les banques de sons libres n'étant pas joignables depuis la session ; désactivables dans les réglages ; écoutés par l'utilisateur avant d'être branchés |
 | 2026-10-23 | Affichage sur PC : contenu du jeu centré et limité en largeur, scène de combat limitée en hauteur |
 | 2026-10-23 | Leçon 0 : « margelle » remplacé par « le bord du puits » (mot trop rare) |
+| 2026-10-23 | Tests par niveau (14 niveaux, §13.0) au lieu de leçon par leçon ; un niveau entier construit, relu, testé, puis une seule version publiée ; questions de langue réglées avec l'agent `conseiller-arabe` ; décisions présentées en fin de niveau (10 au plus) ; progression conservée d'une version à l'autre |
+| 2026-10-23 | Agent `conseiller-arabe` rédigé par Claude Code à la demande de l'utilisateur (`.claude/agents/conseiller-arabe.md`) : tranche les questions de langue, motive chaque décision, choisit l'option la plus prudente en cas d'incertitude, ne tranche jamais l'exégèse |
