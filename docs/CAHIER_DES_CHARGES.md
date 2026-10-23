@@ -762,3 +762,4 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-22 | Région 1 « Le Désert des Lettres » : 12 lieux (Puits de l'arrivée, Porte de la bibliothèque, Marché aux enseignes, Caravansérail, Dunes chantantes, Atelier des copistes, Observatoire, Archives ensablées, Fontaine aux échos, Cour du cadran solaire, Salle des manuscrits, Faille des Oubliés) et Sanctuaire ; personnages Nūra (archiviste), Samīr (apprenti copiste), Laylā, Rāšid, Suhayl ; boss : le Gardien de l'Oubli ; porte fermée par 14 sceaux, un par leçon. Détail : `docs/HISTOIRE.md` |
 | 2026-10-23 | Police des textes du jeu : DotGothic16 (OFL), pour la lisibilité des chiffres ; Amiri en secours pour la translittération |
 | 2026-10-23 | Combat : on choisit une réponse, puis on la valide (bouton « Valider ») |
+| 2026-10-23 | Relecture systématique par l'agent relecteur-arabe (`.claude/agents/relecteur-arabe.md`) |

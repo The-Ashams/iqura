@@ -27,6 +27,15 @@ RPG d'aventure narrative en pixel art dont la mécanique centrale est de compren
 6. **Licences** : chaque dépendance et ressource auditée et listée dans `THIRD_PARTY_LICENSES.md` ; tout point douteux signalé.
 7. **Racines** : la racine ne suffit pas à déduire le sens d'un dérivé (avertissement visible).
 
+## Relecture obligatoire (agent `relecteur-arabe`, décision du 23/10/2026)
+
+- **Quand** : après avoir écrit ou modifié tout contenu en arabe ou sur l'arabe (leçon, fiche de lettre ou de racine, exercice, dialogue, récit gradué, quête, vocabulaire, texte de combat), **avant** de le montrer à l'utilisateur ou de le fusionner dans `main`. Gros lot : par paquets (une leçon ou cinq récits à la fois).
+- **Ce qu'on lui donne** : les fichiers à relire, la région et la leçon, les lettres et notions déjà enseignées.
+- **Son rapport** : tout point **Bloquant** est corrigé avant de continuer ; tout point **Important** est corrigé, ou l'on explique à l'utilisateur pourquoi pas ; les **Mineurs** sont corrigés quand c'est simple ; les **Doutes** sont transmis tels quels à l'utilisateur, sans les trancher.
+- Après corrections, le relancer sur les fichiers modifiés jusqu'au verdict « Validé » ou « Validé avec doutes » ; trois allers-retours au plus, sinon expliquer le blocage à l'utilisateur.
+- Chaque rapport est enregistré dans `docs/relectures/AAAA-MM-JJ-<sujet>.md` et cité dans `docs/ETAT_DU_PROJET.md`.
+- En présentant un contenu : « Relu par l'agent relecteur : verdict X, N doutes restants ». Jamais présenté comme une validation humaine ou religieuse.
+
 ## Décisions techniques (cahier §12)
 
 | Sujet | Décision |
