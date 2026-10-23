@@ -117,6 +117,24 @@ class SettingsScreen extends ConsumerWidget {
             value: settings.soundEffects,
             onChanged: notifier.setSoundEffects,
           ),
+          SwitchListTile(
+            title: const Text('Chronomètre des révisions'),
+            subtitle: const Text(
+              'Désactivé : toute réponse juste compte « bien », sans coup '
+              'critique.',
+            ),
+            value: settings.timer,
+            onChanged: notifier.setTimer,
+          ),
+          SwitchListTile(
+            title: const Text('Apprentissage seul'),
+            subtitle: const Text(
+              'Mêmes leçons, sans scènes d\'Histoire ni combats : carte en '
+              'liste, questions en séries. Réversible, progression commune.',
+            ),
+            value: settings.learningOnly,
+            onChanged: notifier.setLearningOnly,
+          ),
           ListTile(
             title: const Text('Taille du texte arabe'),
             subtitle: Column(

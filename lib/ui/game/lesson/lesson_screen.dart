@@ -11,6 +11,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/providers.dart';
 import '../../../engines/audio/audio_service.dart';
 import '../../../features/progress/lesson_progress.dart';
+import '../../../features/resources/resources.dart';
+import '../../../features/review/review.dart';
 import '../../../game/lesson/lesson.dart';
 import '../../../game/world.dart';
 import '../../../game/world_providers.dart';
@@ -39,6 +41,32 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   late int _step;
   final _scroll = ScrollController();
 
+  /// Récompense du dernier mini-boss réussi, montrée à l'écran de fin.
+  LessonReward? _reward;
+
+  void _onBossResult({required bool passed, required int score}) {
+    final before = ref.read(lessonProgressProvider)[_lesson.id];
+    final first = !(before?.completed ?? false);
+    ref
+        .read(lessonProgressProvider.notifier)
+        .recordBoss(_lesson.id, score: score, passed: passed);
+    _recordActivity();
+    if (!passed) return;
+    _reward = rewardLesson(
+      _lesson,
+      first: first,
+      resources: ref.read(resourceRepositoryProvider),
+      reviews: ref.read(reviewRepositoryProvider),
+    );
+    ref.read(walletProvider.notifier).refresh();
+    ref.read(dueCountProvider.notifier).refresh();
+  }
+
+  void _recordActivity() {
+    ref.read(resourceRepositoryProvider).recordActivity();
+    ref.read(walletProvider.notifier).refresh();
+  }
+
   @override
   void initState() {
     super.initState();
@@ -59,6 +87,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   void _goTo(int step) {
     setState(() => _step = step);
     ref.read(lessonProgressProvider.notifier).saveStep(_lesson.id, step);
+    _recordActivity();
     if (_scroll.hasClients) _scroll.jumpTo(0);
   }
 
@@ -151,9 +180,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
       failuresBefore:
           ref.read(lessonProgressProvider)[_lesson.id]?.bossFailures ?? 0,
       random: widget.random,
-      onResult: ({required passed, required score}) => ref
-          .read(lessonProgressProvider.notifier)
-          .recordBoss(_lesson.id, score: score, passed: passed),
+      onResult: _onBossResult,
       onVictoryContinue: _next,
       onReplayPractice: () {
         final i = _lesson.steps.lastIndexWhere(
@@ -162,7 +189,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         if (i >= 0) _goTo(i);
       },
     ),
-    EndStep() => _EndView(lesson: _lesson, step: step),
+    EndStep() => _EndView(lesson: _lesson, step: step, reward: _reward),
   };
 }
 
@@ -738,14 +765,11 @@ class _QuranWord extends StatelessWidget {
 // 9. Fin : l'obstacle s'ouvre, ce que le joueur sait lire maintenant.
 
 class _EndView extends ConsumerStatefulWidget {
-  const _EndView({required this.lesson, required this.step});
+  const _EndView({required this.lesson, required this.step, this.reward});
 
   final Lesson lesson;
   final EndStep step;
-
-  static const String rewardsNotice =
-      'Récompenses et cartes de révision : arrivent à l\'étape 6 du jalon '
-      'J1a.';
+  final LessonReward? reward;
 
   @override
   ConsumerState<_EndView> createState() => _EndViewState();
@@ -792,10 +816,19 @@ class _EndViewState extends ConsumerState<_EndView> {
               'Leçon ${next.ordinal} ouverte : ${next.title}.',
               style: const TextStyle(color: GameColors.good),
             ),
-          const Text(
-            _EndView.rewardsNotice,
-            style: TextStyle(color: GameColors.muted, fontSize: 14),
-          ),
+          if (widget.reward case final r?) ...[
+            const SizedBox(height: 6),
+            Text(
+              r.first
+                  ? 'Récompenses : +${r.xp} XP, +${r.dinars} dinars, '
+                        '+${r.ink} encre de scribe.'
+                        '${r.newCards > 0 ? ' ${r.newCards} nouvelles cartes à réviser dans l\'Expédition (Faille des Oubliés).' : ''}'
+                  : r.xp > 0
+                  ? 'Leçon rejouée : +${r.xp} XP.'
+                  : 'Leçon rejouée (XP déjà reçue aujourd\'hui).',
+              style: const TextStyle(color: GameColors.accent),
+            ),
+          ],
           const SizedBox(height: 8),
           PixelCommand(
             label: 'Reprendre l\'Histoire',

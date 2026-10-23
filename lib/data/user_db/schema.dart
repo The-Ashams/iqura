@@ -7,7 +7,7 @@ library;
 import '../../engines/sync/table_def.dart';
 
 /// Version du schéma (stockée dans `PRAGMA user_version`).
-const int userSchemaVersion = 2;
+const int userSchemaVersion = 3;
 
 const _hlc = ColumnDef(TableDef.hlcColumn, ColumnType.text);
 const _deleted = ColumnDef(TableDef.deletedColumn, ColumnType.integer);
@@ -95,6 +95,80 @@ const lessonProgressTable = TableDef(
   ],
 );
 
+/// Cartes de révision (schéma 3) : une ligne par carte, état FSRS en JSON.
+/// `best_level` (0 en apprentissage, 1 reconnu, 2 maîtrisé) ne baisse
+/// jamais : il sert à n'attribuer qu'une fois les pierres de savoir.
+const cardTable = TableDef(
+  name: 'card',
+  kind: SyncKind.lastWriterWins,
+  primaryKey: 'id',
+  sinceSchema: 3,
+  columns: [
+    ColumnDef('id', ColumnType.text),
+    ColumnDef('lesson_id', ColumnType.text),
+    ColumnDef('kind', ColumnType.text),
+    ColumnDef('target', ColumnType.text),
+    ColumnDef('fsrs', ColumnType.text),
+    ColumnDef('due', ColumnType.integer),
+    ColumnDef('best_level', ColumnType.integer),
+    ColumnDef('created_at', ColumnType.integer),
+    _hlc,
+    _deleted,
+  ],
+);
+
+/// Ressources du jeu (schéma 3) : XP, dinars, pierres de savoir, encre de
+/// scribe. Journal en ajout seul ; `unique_key` empêche de compter deux
+/// fois le même gain (après une fusion par exemple). Une dépense est une
+/// ligne négative.
+const resourceLedgerTable = TableDef(
+  name: 'resource_ledger',
+  kind: SyncKind.appendOnly,
+  primaryKey: 'id',
+  uniqueColumns: ['unique_key'],
+  sinceSchema: 3,
+  columns: [
+    ColumnDef('id', ColumnType.text),
+    ColumnDef('currency', ColumnType.text),
+    ColumnDef('amount', ColumnType.integer),
+    ColumnDef('created_at', ColumnType.integer),
+    ColumnDef('unique_key', ColumnType.text),
+    ColumnDef('source', ColumnType.text),
+  ],
+);
+
+/// Objets possédés (schéma 3) : niveau d'enchantement, échecs depuis la
+/// dernière réussite (garantie « pity »), équipé ou non.
+const inventoryTable = TableDef(
+  name: 'inventory',
+  kind: SyncKind.lastWriterWins,
+  primaryKey: 'id',
+  sinceSchema: 3,
+  columns: [
+    ColumnDef('id', ColumnType.text),
+    ColumnDef('item_id', ColumnType.text),
+    ColumnDef('level', ColumnType.integer),
+    ColumnDef('fails', ColumnType.integer),
+    ColumnDef('equipped', ColumnType.integer),
+    ColumnDef('acquired_at', ColumnType.integer),
+    _hlc,
+    _deleted,
+  ],
+);
+
+/// Jours d'activité (schéma 3), pour les séries : une ligne par jour
+/// (identifiant AAAA-MM-JJ, heure locale).
+const activityDayTable = TableDef(
+  name: 'activity_day',
+  kind: SyncKind.appendOnly,
+  primaryKey: 'id',
+  sinceSchema: 3,
+  columns: [
+    ColumnDef('id', ColumnType.text),
+    ColumnDef('created_at', ColumnType.integer),
+  ],
+);
+
 /// Données propres à l'appareil (identifiant, horloge). Jamais exportée.
 const localMetaTable = TableDef(
   name: 'local_meta',
@@ -112,6 +186,10 @@ const List<TableDef> userSchema = [
   reviewLogTable,
   xpLedgerTable,
   lessonProgressTable,
+  cardTable,
+  resourceLedgerTable,
+  inventoryTable,
+  activityDayTable,
   localMetaTable,
 ];
 
@@ -143,5 +221,25 @@ const List<List<String>> userMigrations = [
         'step INTEGER NOT NULL, completed_at INTEGER, '
         'best_score INTEGER NOT NULL, boss_failures INTEGER NOT NULL, '
         'updated_hlc TEXT NOT NULL, deleted INTEGER NOT NULL) STRICT',
+  ],
+  // 2 → 3
+  [
+    'CREATE TABLE card (id TEXT NOT NULL PRIMARY KEY, '
+        'lesson_id TEXT NOT NULL, kind TEXT NOT NULL, target TEXT NOT NULL, '
+        'fsrs TEXT NOT NULL, due INTEGER NOT NULL, '
+        'best_level INTEGER NOT NULL, created_at INTEGER NOT NULL, '
+        'updated_hlc TEXT NOT NULL, deleted INTEGER NOT NULL) STRICT',
+    'CREATE INDEX card_due ON card(due)',
+    'CREATE TABLE resource_ledger (id TEXT NOT NULL PRIMARY KEY, '
+        'currency TEXT NOT NULL, amount INTEGER NOT NULL, '
+        'created_at INTEGER NOT NULL, unique_key TEXT NOT NULL UNIQUE, '
+        'source TEXT NOT NULL) STRICT',
+    'CREATE TABLE inventory (id TEXT NOT NULL PRIMARY KEY, '
+        'item_id TEXT NOT NULL, level INTEGER NOT NULL, '
+        'fails INTEGER NOT NULL, equipped INTEGER NOT NULL, '
+        'acquired_at INTEGER NOT NULL, updated_hlc TEXT NOT NULL, '
+        'deleted INTEGER NOT NULL) STRICT',
+    'CREATE TABLE activity_day (id TEXT NOT NULL PRIMARY KEY, '
+        'created_at INTEGER NOT NULL) STRICT',
   ],
 ];

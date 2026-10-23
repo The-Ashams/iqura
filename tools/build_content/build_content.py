@@ -18,6 +18,7 @@ Usage : python3 tools/build_content/build_content.py [--out CHEMIN]
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import sqlite3
@@ -36,9 +37,9 @@ import tanzil  # noqa: E402
 import world  # noqa: E402
 
 # Version du schéma de la base de contenu (lue par l'application).
-CONTENT_SCHEMA_VERSION = 6
+CONTENT_SCHEMA_VERSION = 7
 # Version des données ; à augmenter à chaque changement de contenu.
-CONTENT_VERSION = "0.5.0-j1a"
+CONTENT_VERSION = "0.6.0-debutant1"
 
 DEFAULT_OUT = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
@@ -210,6 +211,18 @@ SCHEMA = [
         role TEXT NOT NULL,
         sprite TEXT,
         places_json TEXT NOT NULL
+    ) STRICT""",
+    """CREATE TABLE item (
+        id TEXT NOT NULL PRIMARY KEY,
+        name TEXT NOT NULL,
+        slot TEXT NOT NULL,
+        rarity TEXT NOT NULL,
+        price INTEGER NOT NULL,
+        region_id TEXT NOT NULL REFERENCES region(id),
+        stats_json TEXT NOT NULL,
+        set_id TEXT,
+        set_json TEXT,
+        description TEXT NOT NULL
     ) STRICT""",
     "CREATE INDEX segment_lemma ON segment(lemma_id)",
     "CREATE INDEX segment_root ON segment(root_id)",
@@ -403,6 +416,9 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
     world_data = data.get("world") or world.load()
     world.validate(world_data, con)
     world_counts = world.write(con, world_data)
+    item_data = data.get("items") or world.load_items()
+    world.validate_items(item_data, {d["region"]["id"] for d in world_data})
+    world_counts["items"] = world.write_items(con, item_data)
 
     counts = {
         "surahs": len(meta.surahs),
@@ -453,9 +469,13 @@ def build(out_path: str, data: dict | None = None) -> dict[str, int]:
             con.close()
         os.chmod(tmp, 0o644)
         os.replace(tmp, out_path)
-        # Petit fichier lu au démarrage pour savoir s'il faut recopier la base.
+        # Petit fichier lu au démarrage pour savoir s'il faut recopier la base :
+        # la version et l'empreinte de la base, pour que tout changement de
+        # contenu soit recopié sur l'appareil, même sans changer de version.
+        with open(out_path, "rb") as f:
+            digest = hashlib.sha256(f.read()).hexdigest()[:16]
         with open(out_path + ".version", "w", encoding="utf-8") as f:
-            f.write(CONTENT_VERSION)
+            f.write(f"{CONTENT_VERSION}+{digest}")
     except BaseException:
         if os.path.exists(tmp):
             os.remove(tmp)

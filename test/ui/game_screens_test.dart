@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -10,7 +9,6 @@ import 'package:iqura/core/providers.dart';
 import 'package:iqura/data/content_db/content_database.dart';
 import 'package:iqura/data/user_db/user_database.dart';
 import 'package:iqura/engines/audio/audio_service.dart';
-import 'package:iqura/ui/game/combat_screen.dart';
 import 'package:iqura/ui/game/place_screen.dart';
 import 'package:iqura/ui/game/world_map_screen.dart';
 
@@ -106,52 +104,11 @@ void main() {
     await tester.tap(find.text('Retour à la carte'));
     await tester.pumpAndSettle();
 
-    // Leçons 2 et 3 : pas encore réécrites au format mini-donjon.
+    // Leçons 2 et 3 au marché : fermées tant que la leçon précédente
+    // n'est pas réussie.
     await tester.tap(find.text('3. Le Marché aux enseignes'));
     await tester.pumpAndSettle();
-    expect(find.text(PlaceScreen.lessonNotReady), findsNWidgets(2));
-  });
-
-  testWidgets('combat d’entraînement : question neutre, réponse, explication', (
-    tester,
-  ) async {
-    tester.view.physicalSize = const Size(700, 3200);
-    tester.view.devicePixelRatio = 1;
-    addTearDown(tester.view.reset);
-    await tester.pumpWidget(app(home: CombatScreen(random: Random(3))));
-    await tester.pump(const Duration(milliseconds: 100));
-    expect(find.text('Comment se lit… ?'), findsOneWidget);
-    expect(find.text(CombatScreen.practiceNotice), findsNothing);
-    expect(find.textContaining(CombatScreen.practiceNotice), findsOneWidget);
-    expect(find.text('Débloqué à la leçon 7'), findsOneWidget);
-
-    // Écouter la syllabe : voix de synthèse.
-    expect(find.text('synthèse'), findsOneWidget);
-    await tester.tap(find.text('synthèse'));
-    expect(audio.played.single, startsWith('audio/lecons/'));
-
-    // Répondre : soit « Juste », soit l'explication avec la bonne lecture,
-    // et les points de vie bougent en conséquence.
-    final buttons = find.byType(OutlinedButton);
-    expect(buttons, findsAtLeastNWidgets(3));
-    var sawExplanation = false;
-    for (var n = 0; n < 6 && !sawExplanation; n++) {
-      await tester.tap(find.byType(OutlinedButton).first);
-      await tester.pump(const Duration(milliseconds: 100));
-      // Choisir ne suffit pas : il faut valider.
-      expect(find.textContaining('Juste'), findsNothing);
-      expect(find.textContaining('se lit «'), findsNothing);
-      await tester.tap(find.text('Valider'));
-      await tester.pump(const Duration(milliseconds: 100));
-      final right = find.textContaining('Juste').evaluate().isNotEmpty;
-      sawExplanation = find.textContaining('se lit «').evaluate().isNotEmpty;
-      expect(right || sawExplanation, isTrue);
-      if (find.text('Question suivante').evaluate().isEmpty) break;
-      await tester.tap(find.text('Question suivante'));
-      await tester.pump(const Duration(milliseconds: 100));
-    }
-    expect(sawExplanation, isTrue);
-    expect(find.text('PV 50 / 50'), findsNothing);
+    expect(find.textContaining('Fermée'), findsNWidgets(2));
   });
 
   testWidgets(

@@ -270,6 +270,9 @@ class Lesson {
     required this.place,
     required this.master,
     required this.steps,
+    this.letters = const [],
+    this.signs = const [],
+    this.readings = const [],
   });
 
   /// Leçon au format 2 ; `null` pour une leçon d'un ancien format.
@@ -287,6 +290,13 @@ class Lesson {
         for (final s in j['ecrans'] as List)
           LessonStep.fromJson(s as Map<String, dynamic>),
       ],
+      letters: ((j['introduit'] as Map)['lettres'] as List).cast<String>(),
+      signs: ((j['introduit'] as Map)['signes'] as List).cast<String>(),
+      readings: [
+        for (final kind in ['syllabes', 'mots'])
+          for (final e in ((j['elements'] as Map)[kind] as List).cast<Map>())
+            e['ar'] as String,
+      ],
     );
   }
 
@@ -300,6 +310,13 @@ class Lesson {
   final String place;
   final String master;
   final List<LessonStep> steps;
+
+  /// Lettres et signes introduits (noms : `fatha`, `kasra`…).
+  final List<String> letters;
+  final List<String> signs;
+
+  /// Syllabes puis mots à lire.
+  final List<String> readings;
 }
 
 /// Résumé d'une leçon, pour la liste d'un lieu.

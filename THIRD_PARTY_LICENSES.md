@@ -33,6 +33,7 @@ compatibles avec la GPL-3.0.
 | [flame](https://pub.dev/packages/flame) | 1.38.2 | MIT | flame-engine.org (vérifié) | 2 335 ♥, 146 k | Moteur 2D (scène de combat) | Ajouté le 23/10/2026 (jalon J1a). Dépendances : `ordered_set` (MIT, blue-fire.xyz), `vector_math`, `collection`, `meta`. |
 | [audioplayers](https://pub.dev/packages/audioplayers) | 6.8.1 | MIT | blue-fire.xyz (vérifié, équipe de Flame) | 3 448 ♥, 1,5 M | Lecture des enregistrements des leçons | Ajouté le 23/10/2026. Implémentations officielles Android et Windows (`audioplayers_android`, `audioplayers_windows`, MIT). Tire `http` (BSD, dart.dev) et `synchronized` (MIT, tekartik.com) ; aucune lecture en ligne n'est utilisée par IQURA. |
 | [url_launcher](https://pub.dev/packages/url_launcher) | 6.3.3 | BSD-3-Clause | flutter.dev (vérifié) | 8 188 ♥ | Ouvrir la messagerie pour « Signaler une erreur » | Ajouté le 23/10/2026. Sur Android, déclaration `SENDTO mailto` dans le manifeste ; aucune autre permission. |
+| [fsrs](https://pub.dev/packages/fsrs) | 2.0.1 | MIT | Open Spaced Repetition (github.com/open-spaced-repetition/dart-fsrs) | — | Planification des révisions (algorithme FSRS-6, paramètres par défaut officiels) | Ajouté le 23/10/2026 (niveau Débutant 1). Une seule dépendance : `meta` (BSD, dart.dev). Code lu : calcul pur, aucun accès réseau ni fichier. |
 
 Outils de développement (non embarqués) : `flutter_test` (SDK, BSD-3-Clause),
 `flutter_lints` 6.0.0 (BSD-3-Clause, flutter.dev).

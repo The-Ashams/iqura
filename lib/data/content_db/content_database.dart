@@ -13,6 +13,7 @@ import 'package:flutter/services.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqlite3/sqlite3.dart';
 
+import '../../game/equipment/equipment.dart';
 import '../../game/lesson/lesson.dart';
 import '../../game/world.dart';
 import 'quran_integrity.dart';
@@ -53,7 +54,7 @@ class ContentDatabase {
   static const versionAssetPath = 'assets/content/iqura_content.db.version';
 
   /// Version du schéma de la base de contenu gérée par cette application.
-  static const int schemaVersion = 6;
+  static const int schemaVersion = 7;
 
   /// Copie (si besoin) puis ouvre la base dans [directory], et vérifie le
   /// texte coranique. Si la copie est altérée, elle est refaite une fois
@@ -242,6 +243,12 @@ class ContentDatabase {
       ),
   ];
 
+  /// Objets de la boutique.
+  List<Item> items() => [
+    for (final r in _db.select('SELECT * FROM item ORDER BY price, id'))
+      Item.fromRow(r),
+  ];
+
   /// Leçons d'une étape, dans l'ordre.
   List<LessonSummary> lessons(int stage) => [
     for (final r in _db.select(
@@ -320,27 +327,16 @@ class ContentDatabase {
       [stage, upTo],
     )) {
       final content = jsonDecode(r['content'] as String) as Map;
-      final lists = <List>[];
-      if (content['format'] == 2) {
-        // Format mini-donjon : syllabes et mots dans « elements ».
-        final elements = content['elements'] as Map;
-        lists
-          ..add(elements['syllabes'] as List)
-          ..add(elements['mots'] as List);
-      } else {
-        for (final section in content['sections'] as List) {
-          if (section['type'] == 'syllabes' || section['type'] == 'exemples') {
-            lists.add(section['items'] as List);
-          }
-        }
-      }
-      for (final list in lists) {
-        for (final item in list) {
+      if (content['format'] != 2) continue;
+      final elements = content['elements'] as Map;
+      for (final (kind, word) in [('syllabes', false), ('mots', true)]) {
+        for (final item in (elements[kind] as List).cast<Map>()) {
           items.add(
             ReadingItem(
               arabic: item['ar'] as String,
               translit: item['translit'] as String,
               lessonOrdinal: r['ordinal'] as int,
+              word: word,
             ),
           );
         }

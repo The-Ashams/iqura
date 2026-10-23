@@ -11,6 +11,8 @@ import '../../core/providers.dart';
 import '../../data/user_db/schema.dart';
 import '../../data/user_db/user_database.dart';
 import '../../game/lesson/lesson.dart';
+import '../resources/resources.dart';
+import '../review/review.dart';
 
 @immutable
 class LessonProgress {
@@ -149,4 +151,85 @@ bool lessonUnlocked(
   if (before.isEmpty) return true;
   final previous = before.reduce((a, b) => a.ordinal > b.ordinal ? a : b);
   return progress[previous.id]?.completed ?? false;
+}
+
+/// Ce que rapporte un mini-boss réussi.
+class LessonReward {
+  const LessonReward({
+    required this.first,
+    required this.xp,
+    required this.dinars,
+    required this.ink,
+    required this.newCards,
+  });
+
+  final bool first;
+  final int xp;
+  final int dinars;
+  final int ink;
+  final int newCards;
+}
+
+/// Récompenses d'une leçon (cahier §8.6) et cartes de révision (§6.3) :
+/// première réussite 50 XP, 20 dinars, 1 encre et les cartes de la leçon ;
+/// en rejouant, 10 XP une fois par jour. La leçon fait passer ses éléments
+/// « en apprentissage », jamais plus (§4).
+LessonReward rewardLesson(
+  Lesson lesson, {
+  required bool first,
+  required ResourceRepository resources,
+  required ReviewRepository reviews,
+  DateTime? now,
+}) {
+  final t = now ?? DateTime.now();
+  if (!first) {
+    final ok = resources.grant(
+      Currency.xp,
+      Rewards.lessonReplayXp,
+      key: 'lecon-rejouee:${lesson.id}:${ResourceRepository.dayId(t)}',
+      source: 'leçon ${lesson.id} rejouée',
+    );
+    return LessonReward(
+      first: false,
+      xp: ok ? Rewards.lessonReplayXp : 0,
+      dinars: 0,
+      ink: 0,
+      newCards: 0,
+    );
+  }
+  resources
+    ..grant(
+      Currency.xp,
+      Rewards.lessonFirstXp,
+      key: 'lecon:${lesson.id}:xp',
+      source: 'leçon ${lesson.id}',
+    )
+    ..grant(
+      Currency.dinars,
+      Rewards.lessonFirstDinars,
+      key: 'lecon:${lesson.id}:dinars',
+      source: 'leçon ${lesson.id}',
+    )
+    ..grant(
+      Currency.encre,
+      Rewards.lessonFirstInk,
+      key: 'lecon:${lesson.id}:encre',
+      source: 'leçon ${lesson.id}',
+    );
+  final created = reviews.createCards(
+    lesson.id,
+    cardsOfLesson(
+      lesson,
+      letters: lesson.letters,
+      signs: lesson.signs,
+      readings: lesson.readings,
+    ),
+  );
+  return LessonReward(
+    first: true,
+    xp: Rewards.lessonFirstXp,
+    dinars: Rewards.lessonFirstDinars,
+    ink: Rewards.lessonFirstInk,
+    newCards: created,
+  );
 }

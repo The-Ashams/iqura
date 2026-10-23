@@ -10,8 +10,11 @@ import 'package:iqura/data/content_db/content_database.dart';
 import 'package:iqura/data/user_db/user_database.dart';
 import 'package:iqura/engines/audio/audio_service.dart';
 import 'package:iqura/features/progress/lesson_progress.dart';
+import 'package:iqura/features/resources/resources.dart';
+import 'package:iqura/features/review/review.dart';
 import 'package:iqura/features/settings/settings.dart';
 import 'package:iqura/game/lesson/lesson.dart';
+import 'package:iqura/ui/game/expedition_screen.dart';
 import 'package:iqura/ui/game/lesson/boss_view.dart';
 import 'package:iqura/ui/game/lesson/lesson_screen.dart';
 import 'package:iqura/ui/game/lesson/question_view.dart';
@@ -38,7 +41,10 @@ late ContentDatabase contentDb;
 late FakeAudio audio;
 late FakeSfx sfx;
 
-Widget app(String lessonId) => ProviderScope(
+Widget app(String lessonId) =>
+    appWith(LessonScreen(lessonId: lessonId, random: Random(7)));
+
+Widget appWith(Widget home) => ProviderScope(
   overrides: [
     appPathsProvider.overrideWithValue(AppPaths(tmp.path)),
     userDatabaseProvider.overrideWithValue(userDb),
@@ -46,9 +52,7 @@ Widget app(String lessonId) => ProviderScope(
     audioServiceProvider.overrideWithValue(audio),
     sfxPlayerProvider.overrideWithValue(sfx),
   ],
-  child: MaterialApp(
-    home: LessonScreen(lessonId: lessonId, random: Random(7)),
-  ),
+  child: MaterialApp(home: home),
 );
 
 /// Laisse passer le temps sans attendre la fin des animations sans fin de
@@ -204,7 +208,13 @@ void main() {
     await settle(tester);
   }
 
-  for (final id in ['dechiffrer-00', 'dechiffrer-01']) {
+  for (final id in [
+    'dechiffrer-00',
+    'dechiffrer-01',
+    'dechiffrer-02',
+    'dechiffrer-03',
+    'dechiffrer-04',
+  ]) {
     testWidgets('$id : jouée de bout en bout, la leçon suivante s’ouvre', (
       tester,
     ) async {
@@ -216,10 +226,31 @@ void main() {
       expect(p.completed, isTrue);
       expect(p.step, lesson.steps.length - 1);
       final stage = contentDb.lessons(1);
-      final next = stage.firstWhere((l) => l.ordinal == lesson.ordinal + 1);
+      final next = stage.where((l) => l.ordinal == lesson.ordinal + 1);
+      if (next.isNotEmpty) {
+        expect(
+          lessonUnlocked(
+            next.first,
+            stage,
+            LessonProgressRepository(userDb).loadAll(),
+          ),
+          isTrue,
+        );
+      }
+      // Première réussite : récompenses et cartes de révision (§6.3).
+      final wallet = ResourceRepository(userDb).wallet();
+      expect(wallet[Currency.xp], greaterThanOrEqualTo(Rewards.lessonFirstXp));
+      expect(wallet[Currency.encre], 1);
+      final cards = ReviewRepository(userDb, ResourceRepository(userDb)).all();
       expect(
-        lessonUnlocked(next, stage, LessonProgressRepository(userDb).loadAll()),
-        isTrue,
+        cards.length,
+        lesson.letters.length * 2 +
+            lesson.signs.length +
+            lesson.readings.length,
+      );
+      expect(
+        find.textContaining('nouvelles cartes'),
+        cards.isEmpty ? findsNothing : findsOneWidget,
       );
       // Bruitages : réponses, combat, sceau de fin.
       expect(sfx.played, containsAll([Sfx.juste, Sfx.coup, Sfx.victoire]));
@@ -309,6 +340,41 @@ void main() {
     await tapOn(tester, find.text('Entrer'));
     await answer(tester);
     expect(sfx.played, isEmpty);
+  });
+
+  testWidgets('Expédition : les cartes de la leçon 1 sont révisées, la '
+      'brume tombe, les gains sont comptés', (tester) async {
+    final res = ResourceRepository(userDb);
+    final reviews = ReviewRepository(userDb, res);
+    rewardLesson(
+      contentDb.lesson('dechiffrer-01')!,
+      first: true,
+      resources: res,
+      reviews: reviews,
+    );
+    final due = reviews.due().length;
+    expect(due, greaterThan(10));
+    tester.view.physicalSize = const Size(800, 4000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(appWith(ExpeditionScreen(random: Random(3))));
+    await settle(tester);
+    var guard = 0;
+    while (find.byType(QuestionView).evaluate().isNotEmpty && guard++ < 60) {
+      await answer(tester);
+    }
+    expect(find.text("Les brumes d'oubli se dissipent !"), findsOneWidget);
+    // Chaque révision est notée et replanifiée par FSRS.
+    expect(userDb.select('SELECT * FROM review_log'), hasLength(due));
+    expect(reviews.due(), isEmpty);
+    expect(res.wallet()[Currency.xp], greaterThan(Rewards.lessonFirstXp));
+    expect(sfx.played, contains(Sfx.victoire));
+    // Les cartes ne sont plus dues : l'Expédition propose l'entraînement.
+    await tester.pumpWidget(const SizedBox());
+    await tester.pumpWidget(appWith(ExpeditionScreen(random: Random(3))));
+    await settle(tester);
+    expect(find.textContaining('Rien à réviser'), findsOneWidget);
+    expect(find.text('Entraînement libre'), findsOneWidget);
   });
 
   group('règles du mini-boss', () {

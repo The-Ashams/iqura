@@ -109,16 +109,16 @@
           "explication": "C'était « ḥa », soufflé, sans point."
         },
         {
-          "type": "ecouter",
+          "type": "paires",
           "consigne": "Quelle syllabe entends-tu ?",
-          "audio": "بُ",
+          "audio": "نِي",
           "choix_ar": [
-            "بِ",
-            "بُ",
-            "بَ"
+            "نِي",
+            "نِ",
+            "نَ"
           ],
-          "reponse": 1,
-          "explication": "C'était « bu » : la ḍamma."
+          "reponse": 0,
+          "explication": "C'était « nī », long : kasra et ي (leçon 2)."
         },
         {
           "type": "lire",
@@ -194,7 +194,7 @@
           "دَ"
         ],
         "reponse": 0,
-        "explication": "C'était « ri » : le r roulé, avec la kasra."
+        "explication": "C'était « ri » : le r battu, avec la kasra."
       }
     },
     {
@@ -236,7 +236,7 @@
     {
       "type": "regle",
       "titre": "La fin du mot",
-      "texte": "Quand on s'arrête sur un mot, sa dernière lettre se lit sans voyelle, même sans sukūn écrit : بَحْر se lit « baḥr ». Dans une phrase, cette lettre porte une fin que tu apprendras plus tard.",
+      "texte": "Quand on s'arrête sur un mot, sa dernière lettre se lit sans voyelle, même sans sukūn écrit : بَحْر se lit « baḥr ». Dans une phrase, cette lettre porte en général une voyelle : tu l'apprendras plus tard.",
       "exemples": [
         "بَحْر",
         "دَار"
@@ -250,7 +250,7 @@
           "Elle se lit avec un « a »"
         ],
         "reponse": 0,
-        "explication": "À l'arrêt, la dernière lettre se lit sans voyelle : « badr ». La fin complète du mot viendra à la leçon 12."
+        "explication": "À l'arrêt, la dernière lettre se lit sans voyelle : « badr ». D'autres fins de mot viendront plus tard, dont le tanwīn à la leçon 12."
       }
     },
     {
@@ -389,7 +389,7 @@
     },
     {
       "type": "coran",
-      "texte": "د, ذ, ر et ز se retrouvent dans le Coran : compte-les dans ces mots. D'autres petits signes, que tu apprendras plus tard, sont aussi présents.",
+      "texte": "د, ذ, ر et ز se retrouvent dans le Coran : compte-les dans ces mots. Ici, le sukūn s'écrit comme le haut d'un petit ح, et d'autres petits signes, appris plus tard, sont aussi présents.",
       "extraits": [
         {
           "verset": "104:2",

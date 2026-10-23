@@ -100,3 +100,55 @@ def write(con: sqlite3.Connection, regions: list[dict]) -> dict[str, int]:
                          json.dumps(c["lieux"])))
             n_chars += 1
     return {"regions": len(regions), "places": n_places, "characters": n_chars}
+
+
+# ---------------------------------------------------------------------------
+# Objets (boutique, équipement)
+
+STATS = {"pv", "attaque", "defense", "critique", "concentration"}
+ITEMS_FILE = os.path.join(WORLD_DIR, "objets.json")
+
+
+def load_items(path: str = ITEMS_FILE) -> dict:
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def validate_items(data: dict, region_ids: set[str]) -> None:
+    if data.get("statut") != "ia":
+        raise WorldError("objets : statut « ia » attendu (descriptions rédigées par IA)")
+    seen = set()
+    for it in data["objets"]:
+        where = f"objet {it.get('id')}"
+        if it["id"] in seen:
+            raise WorldError(f"{where} : en double")
+        seen.add(it["id"])
+        if it["emplacement"] not in data["emplacements"]:
+            raise WorldError(f"{where} : emplacement inconnu {it['emplacement']}")
+        if it["rarete"] not in data["raretes"]:
+            raise WorldError(f"{where} : rareté inconnue {it['rarete']}")
+        if not isinstance(it["prix"], int) or it["prix"] <= 0:
+            raise WorldError(f"{where} : prix invalide")
+        if it["region"] not in region_ids:
+            raise WorldError(f"{where} : région inconnue {it['region']}")
+        if not it["stats"] or set(it["stats"]) - STATS or any(
+                not isinstance(v, int) or v <= 0 for v in it["stats"].values()):
+            raise WorldError(f"{where} : statistiques invalides")
+        if "ensemble" in it and it["ensemble"] not in data["ensembles"]:
+            raise WorldError(f"{where} : ensemble inconnu {it['ensemble']}")
+    for sid, e in data["ensembles"].items():
+        if set(e["bonus"]) - STATS:
+            raise WorldError(f"ensemble {sid} : bonus invalide")
+
+
+def write_items(con: sqlite3.Connection, data: dict) -> int:
+    for it in data["objets"]:
+        e = data["ensembles"].get(it.get("ensemble", ""))
+        con.execute(
+            "INSERT INTO item VALUES (?,?,?,?,?,?,?,?,?,?)",
+            (it["id"], it["nom"], it["emplacement"], it["rarete"], it["prix"], it["region"],
+             json.dumps(it["stats"]), it.get("ensemble"),
+             json.dumps({"nom": e["nom"], "pieces": e["pieces"], "bonus": e["bonus"]}) if e else None,
+             it["description"]),
+        )
+    return len(data["objets"])

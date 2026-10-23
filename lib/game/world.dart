@@ -103,11 +103,15 @@ class ReadingItem {
     required this.arabic,
     required this.translit,
     required this.lessonOrdinal,
+    this.word = false,
   });
 
   final String arabic;
   final String translit;
   final int lessonOrdinal;
+
+  /// Mot (sinon syllabe).
+  final bool word;
 }
 
 /// Verset lu dans la base vérifiée (texte Tanzil, traduction).

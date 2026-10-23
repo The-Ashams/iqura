@@ -80,7 +80,7 @@
       {
         "ar": "تِين",
         "translit": "tīn",
-        "fr": "figues"
+        "fr": "figues, figuier"
       }
     ]
   },
@@ -336,7 +336,7 @@
             "بَنَات"
           ],
           "reponse": 1,
-          "explication": "تِين se lit « tīn » : ti, ī long avec ي, puis ن sans voyelle."
+          "explication": "تِين se lit « tīn » : ت avec la kasra, allongée par ي (tī), puis ن sans voyelle."
         },
         {
           "type": "reconstruire",

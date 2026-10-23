@@ -6,7 +6,8 @@ import '../../features/progress/lesson_progress.dart';
 import '../../game/lesson/lesson.dart';
 import '../../game/world.dart';
 import '../../game/world_providers.dart';
-import 'combat_screen.dart';
+import '../../features/review/review.dart';
+import 'expedition_screen.dart';
 import 'lesson/lesson_screen.dart';
 import 'pixel.dart';
 import 'sprites.dart';
@@ -49,6 +50,7 @@ class PlaceScreen extends ConsumerWidget {
     // Leçons de l'étape 1 (région 1, jalon J1a).
     final stage = ref.watch(contentDatabaseProvider).lessons(1);
     final progress = ref.watch(lessonProgressProvider);
+    final due = ref.watch(dueCountProvider);
     final parts = <ScenePart>[
       for (final (i, c) in characters.indexed)
         _sprite(c.sprite!, 26.0 + i * 20, ground),
@@ -123,12 +125,14 @@ class PlaceScreen extends ConsumerWidget {
                       ),
                     if (place.lessons.isEmpty)
                       PixelCommand(
-                        label: "Affronter les brumes d'oubli",
-                        detail: CombatScreen.practiceNotice,
+                        label: "L'Expédition : affronter les brumes d'oubli",
+                        detail: due == 0
+                            ? 'Aucune révision due pour l\'instant'
+                            : '$due révision${due > 1 ? 's' : ''} à faire',
                         onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute<void>(
-                            builder: (_) => const CombatScreen(),
+                            builder: (_) => const ExpeditionScreen(),
                           ),
                         ),
                       ),
