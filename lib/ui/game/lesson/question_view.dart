@@ -78,7 +78,7 @@ class ListenButton extends ConsumerWidget {
 
 enum AnswerState { open, selected, right, wrong, closed }
 
-class AnswerButton extends StatelessWidget {
+class AnswerButton extends ConsumerWidget {
   const AnswerButton({
     super.key,
     required this.child,
@@ -95,7 +95,7 @@ class AnswerButton extends StatelessWidget {
   final String? semanticLabel;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final (bg, fg) = switch (state) {
       AnswerState.right => (PanelColors.right, Colors.white),
       AnswerState.wrong => (PanelColors.wrong, Colors.white),
@@ -110,7 +110,12 @@ class AnswerButton extends StatelessWidget {
       child: SizedBox(
         width: width,
         child: OutlinedButton(
-          onPressed: open ? onPressed : null,
+          onPressed: open
+              ? () {
+                  playSfx(ref, Sfx.choix);
+                  onPressed();
+                }
+              : null,
           style: OutlinedButton.styleFrom(
             backgroundColor: bg,
             foregroundColor: fg,
@@ -188,6 +193,7 @@ class QuestionView extends ConsumerStatefulWidget {
     this.showExplanation = true,
     this.continueLabel = 'Continuer',
     this.random,
+    this.feedbackSound = true,
   });
 
   final LessonQuestion question;
@@ -197,6 +203,10 @@ class QuestionView extends ConsumerStatefulWidget {
   /// Faux au mini-boss : les explications viennent à la revue des erreurs.
   final bool showExplanation;
   final String continueLabel;
+
+  /// Bruitage « juste » ou « faux » à la validation (faux au mini-boss, qui
+  /// joue ses propres bruitages de combat).
+  final bool feedbackSound;
 
   /// Ordre des tuiles à reconstruire (tests : tirage reproductible).
   final Random? random;
@@ -250,6 +260,7 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
     } else {
       right = _selected == q.answer;
     }
+    if (widget.feedbackSound) playSfx(ref, right ? Sfx.juste : Sfx.faux);
     setState(() => _right = right);
     widget.onAnswered?.call(right, _clock.elapsed);
   }

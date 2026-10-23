@@ -108,6 +108,15 @@ class SettingsScreen extends ConsumerWidget {
             value: settings.animations,
             onChanged: notifier.setAnimations,
           ),
+          SwitchListTile(
+            title: const Text('Bruitages'),
+            subtitle: const Text(
+              'Sons du jeu (menus, réponses, combats). Les sons des leçons '
+              'restent disponibles.',
+            ),
+            value: settings.soundEffects,
+            onChanged: notifier.setSoundEffects,
+          ),
           ListTile(
             title: const Text('Taille du texte arabe'),
             subtitle: Column(

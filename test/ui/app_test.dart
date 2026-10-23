@@ -8,17 +8,26 @@ import 'package:iqura/core/app_paths.dart';
 import 'package:iqura/core/providers.dart';
 import 'package:iqura/data/content_db/content_database.dart';
 import 'package:iqura/data/user_db/user_database.dart';
+import 'package:iqura/engines/audio/audio_service.dart';
 import 'package:iqura/features/settings/settings.dart';
 
 late Directory tmp;
 late UserDatabase userDb;
 late ContentDatabase contentDb;
 
+class SilentSfx implements SfxPlayer {
+  @override
+  Future<void> play(Sfx sound) async {}
+  @override
+  Future<void> dispose() async {}
+}
+
 Widget app() => ProviderScope(
   overrides: [
     appPathsProvider.overrideWithValue(AppPaths(tmp.path)),
     userDatabaseProvider.overrideWithValue(userDb),
     contentDatabaseProvider.overrideWithValue(contentDb),
+    sfxPlayerProvider.overrideWithValue(SilentSfx()),
   ],
   child: const IquraApp(),
 );

@@ -44,6 +44,7 @@ flutter:
     - assets/art/
     # Enregistrements des leçons (synthèse Chatterbox, tools/build_audio/).
     - assets/audio/lecons/
+    - assets/sfx/
   # Polices arabes sous SIL Open Font License 1.1 (voir THIRD_PARTY_LICENSES.md).
   fonts:
     - family: Amiri

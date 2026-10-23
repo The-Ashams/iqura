@@ -10,10 +10,19 @@ import 'package:iqura/data/content_db/content_database.dart';
 import 'package:iqura/data/user_db/user_database.dart';
 import 'package:iqura/engines/audio/audio_service.dart';
 import 'package:iqura/features/progress/lesson_progress.dart';
+import 'package:iqura/features/settings/settings.dart';
 import 'package:iqura/game/lesson/lesson.dart';
 import 'package:iqura/ui/game/lesson/boss_view.dart';
 import 'package:iqura/ui/game/lesson/lesson_screen.dart';
 import 'package:iqura/ui/game/lesson/question_view.dart';
+
+class FakeSfx implements SfxPlayer {
+  final played = <Sfx>[];
+  @override
+  Future<void> play(Sfx sound) async => played.add(sound);
+  @override
+  Future<void> dispose() async {}
+}
 
 class FakeAudio implements AudioService {
   final played = <String>[];
@@ -27,6 +36,7 @@ late Directory tmp;
 late UserDatabase userDb;
 late ContentDatabase contentDb;
 late FakeAudio audio;
+late FakeSfx sfx;
 
 Widget app(String lessonId) => ProviderScope(
   overrides: [
@@ -34,6 +44,7 @@ Widget app(String lessonId) => ProviderScope(
     userDatabaseProvider.overrideWithValue(userDb),
     contentDatabaseProvider.overrideWithValue(contentDb),
     audioServiceProvider.overrideWithValue(audio),
+    sfxPlayerProvider.overrideWithValue(sfx),
   ],
   child: MaterialApp(
     home: LessonScreen(lessonId: lessonId, random: Random(7)),
@@ -176,6 +187,7 @@ void main() {
     contentDb = ContentDatabase.openVerified(ContentDatabase.assetPath);
     userDb = UserDatabase.open(null);
     audio = FakeAudio();
+    sfx = FakeSfx();
   });
 
   tearDown(() {
@@ -209,6 +221,9 @@ void main() {
         lessonUnlocked(next, stage, LessonProgressRepository(userDb).loadAll()),
         isTrue,
       );
+      // Bruitages : réponses, combat, sceau de fin.
+      expect(sfx.played, containsAll([Sfx.juste, Sfx.coup, Sfx.victoire]));
+      expect(sfx.played.last, Sfx.sceau);
       // Chaque écran porte la mention IA et le signalement d'erreur.
       expect(find.text('Rédigé par IA'), findsOneWidget);
       expect(find.text('Signaler une erreur'), findsOneWidget);
@@ -222,6 +237,7 @@ void main() {
     await open(tester, id);
     expect(await playLesson(tester, lesson, bossErrors: 3), isFalse);
     expect(find.textContaining("s'échappe"), findsOneWidget);
+    expect(sfx.played, containsAll([Sfx.degats, Sfx.repli]));
     expect(find.text('Tes erreurs, expliquées :'), findsOneWidget);
     final p = LessonProgressRepository(userDb).get(id);
     expect(p.completed, isFalse);
@@ -281,6 +297,18 @@ void main() {
     // Contenu centré, pas étiré sur toute la largeur.
     final panel = tester.getRect(find.byType(QuestionPanel));
     expect(panel.width, lessThanOrEqualTo(760));
+  });
+
+  testWidgets('bruitages désactivés dans les réglages : aucun son de jeu', (
+    tester,
+  ) async {
+    SettingsRepository(userDb).saveSoundEffects(false);
+    await open(tester, 'dechiffrer-00');
+    await tapOn(tester, find.text('Suite'));
+    await tapOn(tester, find.text('Suite'));
+    await tapOn(tester, find.text('Entrer'));
+    await answer(tester);
+    expect(sfx.played, isEmpty);
   });
 
   group('règles du mini-boss', () {

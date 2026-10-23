@@ -10,6 +10,7 @@ import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../engines/audio/audio_service.dart';
 import '../../../features/settings/settings.dart';
 import '../../../game/combat/combat_scene.dart';
 import '../../../game/lesson/lesson.dart';
@@ -131,6 +132,7 @@ class _BossViewState extends ConsumerState<BossView> {
 
   void _onAnswered(bool right, Duration time) {
     _fight.answer(right);
+    playSfx(ref, right ? Sfx.coup : Sfx.degats);
     if (right) {
       _scene.foeHit();
     } else {
@@ -149,6 +151,7 @@ class _BossViewState extends ConsumerState<BossView> {
     if (_fight.over) {
       if (!_reported) {
         _reported = true;
+        playSfx(ref, _fight.won ? Sfx.victoire : Sfx.repli);
         widget.onResult(passed: _fight.won, score: _fight.correct);
       }
       setState(() {});
@@ -203,6 +206,7 @@ class _BossViewState extends ConsumerState<BossView> {
             key: ValueKey('boss-$_attempt-$_index'),
             question: _order[_index],
             showExplanation: false,
+            feedbackSound: false,
             onAnswered: _onAnswered,
             onContinue: _next,
             continueLabel: _fight.over ? 'Voir le résultat' : 'Suite',

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/providers.dart';
+import '../../engines/audio/audio_service.dart';
 import '../../features/settings/settings.dart';
 import '../../game/combat/combat_scene.dart';
 import '../../game/combat/practice_combat.dart';
@@ -71,6 +72,11 @@ class _CombatScreenState extends ConsumerState<CombatScreen> {
     _clock.stop();
     final right = i == _question.answer;
     final dmg = _combat.answer(right: right, time: _clock.elapsed);
+    playSfx(ref, switch (_combat.outcome) {
+      CombatOutcome.victory => Sfx.victoire,
+      CombatOutcome.retreat => Sfx.repli,
+      _ => right ? Sfx.coup : Sfx.degats,
+    });
     if (right) {
       _scene.foeHit();
     } else {
@@ -236,7 +242,10 @@ class _CombatScreenState extends ConsumerState<CombatScreen> {
                       : i == _picked
                       ? _Choice.wrong
                       : _Choice.closed,
-                  onPressed: () => setState(() => _selected = i),
+                  onPressed: () {
+                    playSfx(ref, Sfx.choix);
+                    setState(() => _selected = i);
+                  },
                 ),
             ],
           ),

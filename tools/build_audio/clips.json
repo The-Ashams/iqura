@@ -160,10 +160,11 @@
    "genre": "mot",
    "texte": "ثَبَتَ",
    "fichier": "assets/audio/lecons/ar-65c326c5b23a4fe0.mp3",
-   "sha256": "c7a79ce0ec02381f2ed69ceb0d63480526f99c97745ba238cb7166e5f624b3dd",
-   "graine": 0,
+   "sha256": "06de15cccb2bec9bbdd4ec1a78ef50422c6eb0fafb498344a7ffedf728c0ad54",
+   "graine": 23,
    "a_ecouter": false,
-   "genere_le": "2026-10-21"
+   "genere_le": "2026-10-23",
+   "ecrit": "ثَبَتَ،"
   },
   "ar-69afc767b1dbd8e8": {
    "genre": "lettre",

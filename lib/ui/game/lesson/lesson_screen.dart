@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/providers.dart';
+import '../../../engines/audio/audio_service.dart';
 import '../../../features/progress/lesson_progress.dart';
 import '../../../game/lesson/lesson.dart';
 import '../../../game/world.dart';
@@ -514,6 +515,11 @@ class _QuranViewState extends ConsumerState<_QuranView> {
 
   QuranExtract get _e => widget.step.extracts[_extract];
 
+  void _answer(bool right) {
+    playSfx(ref, right ? Sfx.juste : Sfx.faux);
+    setState(() => _right = right);
+  }
+
   void _nextExtract() {
     if (_extract + 1 >= widget.step.extracts.length) {
       widget.onNext();
@@ -566,7 +572,10 @@ class _QuranViewState extends ConsumerState<_QuranView> {
                                 (_right != null && t.id == q.token)
                           : cited.contains(t.id),
                       onTap: q.kind == QuestionKind.repererMot && _right == null
-                          ? () => setState(() => _tapped = t.id)
+                          ? () {
+                              playSfx(ref, Sfx.choix);
+                              setState(() => _tapped = t.id);
+                            }
                           : null,
                     ),
                 ],
@@ -615,7 +624,7 @@ class _QuranViewState extends ConsumerState<_QuranView> {
             label: 'Valider',
             onPressed: _tapped == null
                 ? null
-                : () => setState(() => _right = _tapped == q.token),
+                : () => _answer(_tapped == q.token),
           ),
         ] else
           ..._feedback(q.explanation),
@@ -664,7 +673,7 @@ class _QuranViewState extends ConsumerState<_QuranView> {
               label: 'Valider',
               onPressed: _selected == null
                   ? null
-                  : () => setState(() => _right = _selected == n),
+                  : () => _answer(_selected == n),
             ),
           ] else
             ..._feedback(
@@ -728,7 +737,7 @@ class _QuranWord extends StatelessWidget {
 // ---------------------------------------------------------------------------
 // 9. Fin : l'obstacle s'ouvre, ce que le joueur sait lire maintenant.
 
-class _EndView extends ConsumerWidget {
+class _EndView extends ConsumerStatefulWidget {
   const _EndView({required this.lesson, required this.step});
 
   final Lesson lesson;
@@ -739,7 +748,24 @@ class _EndView extends ConsumerWidget {
       'J1a.';
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<_EndView> createState() => _EndViewState();
+}
+
+class _EndViewState extends ConsumerState<_EndView> {
+  Lesson get lesson => widget.lesson;
+  EndStep get step => widget.step;
+
+  @override
+  void initState() {
+    super.initState();
+    // L'obstacle s'ouvre : un sceau se brise.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) playSfx(ref, Sfx.sceau);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final progress = ref.watch(lessonProgressProvider);
     final completed = progress[lesson.id]?.completed ?? false;
     final stage = ref.watch(contentDatabaseProvider).lessons(lesson.stage);
@@ -767,7 +793,7 @@ class _EndView extends ConsumerWidget {
               style: const TextStyle(color: GameColors.good),
             ),
           const Text(
-            rewardsNotice,
+            _EndView.rewardsNotice,
             style: TextStyle(color: GameColors.muted, fontSize: 14),
           ),
           const SizedBox(height: 8),

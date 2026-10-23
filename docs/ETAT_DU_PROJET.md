@@ -101,6 +101,7 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
    - fait : sons choisis (بَاب B ; تَابَ, ثَبَتَ inchangés ; ثَ, بَا, تَا, بَاتَ nouvelles versions) ; leçons 0 et 1 validées par l'utilisateur le 23/10/2026 ; réponses aux 4 doutes de la relecture appliquées (cahier §16) ;
    - à ne pas oublier : expliquer la forme complète بَابٌ aux leçons 4 (sukūn) et 12 (tanwīn) ;
    - fait : lecteur de leçons dans l'application (§1 ter), leçons 0 et 1 jouées de bout en bout par les tests ;
+   - retours du 1er test de l'APK (23/10) : son de ثَبَتَ refait (version B, virgule finale), « margelle » remplacé, affichage PC centré et scène limitée en hauteur ; bruitages rétro créés (`tools/build_sfx/`), validés à l'écoute et branchés (menus, choix, juste/faux, coups, victoire, repli, sceau), désactivables dans les réglages ;
    - attendu de l'utilisateur : jouer les leçons 0 et 1 sur l'APK et dire si elles sont amusantes et claires ; trancher les simplifications provisoires (§1 ter).
 
 ## 5. Problèmes connus

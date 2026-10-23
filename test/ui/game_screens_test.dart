@@ -14,6 +14,14 @@ import 'package:iqura/ui/game/combat_screen.dart';
 import 'package:iqura/ui/game/place_screen.dart';
 import 'package:iqura/ui/game/world_map_screen.dart';
 
+class FakeSfx implements SfxPlayer {
+  final played = <Sfx>[];
+  @override
+  Future<void> play(Sfx sound) async => played.add(sound);
+  @override
+  Future<void> dispose() async {}
+}
+
 class FakeAudio implements AudioService {
   final played = <String>[];
   @override
@@ -26,6 +34,7 @@ late Directory tmp;
 late UserDatabase userDb;
 late ContentDatabase contentDb;
 late FakeAudio audio;
+late FakeSfx sfx;
 
 Widget app({Widget? home}) => ProviderScope(
   overrides: [
@@ -33,6 +42,7 @@ Widget app({Widget? home}) => ProviderScope(
     userDatabaseProvider.overrideWithValue(userDb),
     contentDatabaseProvider.overrideWithValue(contentDb),
     audioServiceProvider.overrideWithValue(audio),
+    sfxPlayerProvider.overrideWithValue(sfx),
   ],
   child: home == null ? const IquraApp() : MaterialApp(home: home),
 );
@@ -53,6 +63,7 @@ void main() {
     contentDb = ContentDatabase.openVerified(ContentDatabase.assetPath);
     userDb = UserDatabase.open(null);
     audio = FakeAudio();
+    sfx = FakeSfx();
   });
 
   tearDown(() {

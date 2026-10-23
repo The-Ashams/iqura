@@ -121,7 +121,7 @@ class PixelWindow extends StatelessWidget {
 
 /// Commande de menu : « ▶ » devant l'élément survolé ou sélectionné au
 /// clavier, comme dans les RPG classiques.
-class PixelCommand extends StatefulWidget {
+class PixelCommand extends ConsumerStatefulWidget {
   const PixelCommand({
     super.key,
     required this.label,
@@ -138,10 +138,10 @@ class PixelCommand extends StatefulWidget {
   final VoidCallback? onPressed;
 
   @override
-  State<PixelCommand> createState() => _PixelCommandState();
+  ConsumerState<PixelCommand> createState() => _PixelCommandState();
 }
 
-class _PixelCommandState extends State<PixelCommand> {
+class _PixelCommandState extends ConsumerState<PixelCommand> {
   bool _active = false;
 
   @override
@@ -156,7 +156,12 @@ class _PixelCommandState extends State<PixelCommand> {
           : '${widget.label}. ${widget.detail}',
       excludeSemantics: true,
       child: InkWell(
-        onTap: widget.onPressed,
+        onTap: widget.onPressed == null
+            ? null
+            : () {
+                playSfx(ref, Sfx.menu);
+                widget.onPressed!();
+              },
         onHover: (v) => setState(() => _active = v),
         onFocusChange: (v) => setState(() => _active = v),
         child: ConstrainedBox(
