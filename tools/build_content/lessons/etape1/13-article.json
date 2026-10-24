@@ -314,10 +314,10 @@
       "texte": "Autour du cadran solaire, des mots sont gravés. Compte les ل de l'article.",
       "inscription": [
         "الشَّمْس",
-        "الْقَمَر",
-        "النُّور",
         "الْبَاب",
-        "الدَّار"
+        "النُّور",
+        "الدَّار",
+        "الْقَمَر"
       ],
       "questions": [
         {
@@ -335,7 +335,7 @@
         {
           "type": "compter",
           "consigne": "Combien de shadda vois-tu dans ce mot ? Elle double la lettre solaire.",
-          "mot": 4,
+          "mot": 3,
           "lettre": "ّ"
         },
         {

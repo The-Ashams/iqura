@@ -185,7 +185,7 @@
     {
       "type": "regle",
       "titre": "Petits wāw et petits yāʾ",
-      "texte": "Après une lettre, un petit و ou un petit ي indique une voyelle longue à prononcer quand on enchaîne avec le mot suivant, même si la lettre n'est pas écrite en entier.",
+      "texte": "Un petit و ou un petit ي après une lettre indique une voyelle longue « ū » ou « ī ». Après le ه de لَهُۥ et بِهِۦ, cette voyelle longue ne se prononce qu'en enchaînant avec le mot suivant.",
       "question": {
         "type": "qcm",
         "consigne": "Un petit و écrit après une ḍamma indique…",
