@@ -353,6 +353,7 @@ class _ExplainViewState extends ConsumerState<_ExplainView> {
                       for (final a in s.arabic)
                         SpokenArabic(
                           a,
+                          mushaf: s.mushaf,
                           size: s.kind == ExplainKind.discovery ? 64 : 44,
                         ),
                     ],

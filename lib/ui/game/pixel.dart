@@ -273,7 +273,16 @@ class AiTag extends StatelessWidget {
 /// Texte arabe d'une leçon que l'on touche pour l'entendre. La mention
 /// « synthèse » accompagne toujours le son.
 class SpokenArabic extends ConsumerWidget {
-  const SpokenArabic(this.text, {super.key, this.size = 34, this.color});
+  const SpokenArabic(
+    this.text, {
+    super.key,
+    this.size = 34,
+    this.color,
+    this.mushaf = false,
+  });
+
+  /// Écriture du Mushaf (police Amiri Quran).
+  final bool mushaf;
 
   final String text;
   final double size;
@@ -287,8 +296,7 @@ class SpokenArabic extends ConsumerWidget {
     final word = ArabicText(
       text,
       baseSize: size,
-      // Petits wāw et yāʾ, petit zéro : signes propres au Mushaf (leçon 14).
-      mushaf: RegExp('[\u06DF\u06E5\u06E6]').hasMatch(text),
+      mushaf: mushaf,
       style: TextStyle(color: color ?? GameColors.text),
     );
     if (file == null) return word;

@@ -39,3 +39,18 @@ Aucun point bloquant.
 - Toutes les réponses aux questions « compter ».
 - Prérequis.
 - Mention « Exemple construit · rédigé par IA ».
+
+---
+
+# 2e passage (24/10/2026) — Verdict : Validé avec doutes
+
+Fichiers relus : leçons 02, 03, 07, 09, 12, 13 et 14 corrigées. Aucun point bloquant ni important.
+
+Points mineurs, tous corrigés :
+
+- leçon 3 : « enseigne » est employé partout ;
+- leçon 14 : les exemples des règles sont en police Amiri Quran (`"mushaf": true`) ;
+- leçon 14 : « Un copiste a écrit des mots isolés » ;
+- leçon 14 : les réponses « … à prononcer » sont reformulées d'après la décision du conseiller.
+
+Doute : la lecture de لَهُۥ et بِهِۦ à l'arrêt. Il est soumis au conseiller (voir `decisions-debutant-3.md`).

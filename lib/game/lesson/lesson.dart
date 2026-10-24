@@ -185,6 +185,7 @@ sealed class LessonStep {
         title: _fr(j['titre']),
         text: _fr(j['texte']),
         arabic: [...strings(j['support']), ...strings(j['exemples'])],
+        mushaf: j['mushaf'] == true,
         letter: j['lettre'] as String?,
         question: q(j['question'])!,
       ),
@@ -240,7 +241,11 @@ class ExplainStep extends LessonStep {
     this.text,
     this.arabic = const [],
     this.letter,
+    this.mushaf = false,
   });
+
+  /// Exemples écrits à la manière du Mushaf (leçon 14).
+  final bool mushaf;
 
   final ExplainKind kind;
   final String? title;

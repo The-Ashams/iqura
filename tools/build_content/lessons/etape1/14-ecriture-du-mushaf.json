@@ -201,7 +201,8 @@
         "لَهُۥ",
         "بِهِۦ"
       ],
-      "sans_son": true
+      "sans_son": true,
+      "mushaf": true
     },
     {
       "type": "regle",
@@ -221,7 +222,8 @@
       "exemples": [
         "جَآءَ"
       ],
-      "sans_son": true
+      "sans_son": true,
+      "mushaf": true
     },
     {
       "type": "regle",
@@ -241,7 +243,8 @@
       "exemples": [
         "قَالُوا۟"
       ],
-      "sans_son": true
+      "sans_son": true,
+      "mushaf": true
     },
     {
       "type": "regle",
@@ -360,7 +363,7 @@
     {
       "type": "lecture",
       "titre": "La liste du copiste",
-      "texte": "Un copiste a recopié des mots isolés à la manière du Mushaf. Repère ses petits signes ; leurs règles de récitation s'apprennent auprès d'un enseignant.",
+      "texte": "Un copiste a écrit des mots isolés à la manière du Mushaf. Repère ses petits signes ; leurs règles de récitation s'apprennent auprès d'un enseignant.",
       "inscription": [
         "ذَٰلِكَ",
         "بِهِۦ",
