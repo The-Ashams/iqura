@@ -12,13 +12,16 @@ import 'package:flame/game.dart';
 import 'package:flutter/animation.dart';
 
 class CombatScene extends FlameGame {
-  CombatScene({required this.animations})
+  CombatScene({required this.animations, this.boss = false})
     : super(
         camera: CameraComponent.withFixedResolution(width: 160, height: 90),
       );
 
   /// Animations désactivées dans les réglages : aucun effet.
   final bool animations;
+
+  /// Boss de région : le Gardien de l'Oubli au lieu d'une brume.
+  final bool boss;
 
   // Nuls tant que la scène charge : un coup reçu avant ne fait rien.
   SpriteComponent? _hero;
@@ -44,9 +47,9 @@ class CombatScene extends FlameGame {
       paint: _pixelPaint(),
     );
     final foe = SpriteComponent(
-      sprite: await loadSprite('brume.png'),
-      position: Vector2(98, 14),
-      size: Vector2(43, 46),
+      sprite: await loadSprite(boss ? 'gardien.png' : 'brume.png'),
+      position: boss ? Vector2(96, 8) : Vector2(98, 14),
+      size: boss ? Vector2(48, 56) : Vector2(43, 46),
       paint: _pixelPaint(),
     );
     world

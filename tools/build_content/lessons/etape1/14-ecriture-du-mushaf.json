@@ -5,7 +5,7 @@
   "format": 2,
   "sans_combat": true,
   "titre": "La salle des manuscrits",
-  "objectif": "Reconnaître les signes propres à l'écriture du Mushaf : alif suscrit ٰ, alif waṣla ٱ, petits wāw et yāʾ, signe d'allongement ٓ, petit rond des lettres muettes, signes de pause. Reconnaissance seulement, sans règles de récitation.",
+  "objectif": "Reconnaître les signes propres à l'écriture du Mushaf : alif suscrit ٰ, alif waṣla ٱ, petits wāw et yāʾ, signe d'allongement ٓ, petit zéro des lettres muettes, signes de pause. Reconnaissance seulement, sans règles de récitation.",
   "statut": "ia_non_verifie",
   "lieu": "manuscrits",
   "maitre": "nura",
@@ -196,7 +196,7 @@
     {
       "type": "regle",
       "titre": "La vague d'allongement",
-      "texte": "Dans le Mushaf, la vague ٓ de آ se pose aussi sur une lettre longue, sans hamza : on tient la voyelle plus longtemps. La durée exacte s'apprend auprès d'un enseignant de récitation.",
+      "texte": "Dans le Mushaf, la vague ٓ de آ se pose aussi sur une lettre d'allongement (ا, و, ي) : elle n'ajoute pas de hamza, mais fait tenir la voyelle plus longtemps. La durée s'apprend auprès d'un enseignant de récitation.",
       "question": {
         "type": "qcm",
         "consigne": "Dans le Mushaf, la vague ٓ sur une lettre longue indique…",
@@ -228,7 +228,7 @@
     {
       "type": "regle",
       "titre": "D'autres habitudes d'écriture",
-      "texte": "Dans certains Mushafs et manuels, un sukūn ْ est aussi posé sur la lettre qui allonge (نُوْر) : il ne change rien à la lecture.",
+      "texte": "Dans certains manuels et livres de lecture, un sukūn ْ est aussi posé sur la lettre qui allonge (نُوْر) : il ne change rien à la lecture.",
       "exemples": [
         "نُوْر"
       ],
@@ -241,7 +241,7 @@
           "« nar »"
         ],
         "reponse": 0,
-        "explication": "Le petit rond ne change rien ici : on lit « nūr »."
+        "explication": "Le sukūn ne change rien ici : on lit « nūr »."
       }
     },
     {
@@ -582,7 +582,7 @@
     },
     {
       "type": "fin",
-      "acquis": "Tu reconnais les signes du Mushaf : alif suscrit, alif waṣla, petits wāw et yāʾ, signe d'allongement, petit rond des lettres muettes, signes de pause.",
+      "acquis": "Tu reconnais les signes du Mushaf : alif suscrit, alif waṣla, petits wāw et yāʾ, signe d'allongement, petit zéro des lettres muettes, signes de pause.",
       "suite": "Le quatorzième sceau se brise. Il ne reste que le Gardien de l'Oubli, devant la porte de la bibliothèque."
     }
   ]

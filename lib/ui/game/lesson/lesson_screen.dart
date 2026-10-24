@@ -621,7 +621,14 @@ class _QuranViewState extends ConsumerState<_QuranView> {
         if (q.kind == QuestionKind.repererMot)
           _locate(q)
         else if (q.kind == QuestionKind.compter)
-          _count(q, db.tokenText(q.token!) ?? ''),
+          _count(q, db.tokenText(q.token!) ?? '')
+        else
+          // Question à choix sur le verset affiché (leçon 14 : signes).
+          QuestionView(
+            key: ValueKey('coran-$_extract'),
+            question: q,
+            onContinue: _nextExtract,
+          ),
       ],
     );
   }
@@ -694,8 +701,12 @@ class _QuranViewState extends ConsumerState<_QuranView> {
             ),
           ] else
             ..._feedback(
-              'Ce mot contient $n fois la lettre ${q.letter}. D\'autres '
-              'petits signes l\'accompagnent : tu les apprendras plus tard.',
+              frenchWithArabic(
+                'Ce mot contient $n fois '
+                '${isArabicMark(q.letter!) ? 'le signe' : 'la lettre'} '
+                '${showMark(q.letter!)}. D\'autres lettres et signes '
+                'l\'accompagnent.',
+              ),
             ),
         ],
       ),

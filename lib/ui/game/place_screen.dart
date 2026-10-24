@@ -8,12 +8,16 @@ import '../../game/world.dart';
 import '../../game/world_providers.dart';
 import '../../features/review/review.dart';
 import 'expedition_screen.dart';
+import 'exam/region_exam_screen.dart';
 import 'lesson/lesson_screen.dart';
 import 'pixel.dart';
 import 'sprites.dart';
 
 /// Un lieu de la carte : sa scène, ses personnages et une fenêtre de
 /// dialogue (cahier v3 §8.3).
+/// Lieu de l'examen de la région 1 (la porte de la bibliothèque).
+const String regionExamPlace = 'porte';
+
 class PlaceScreen extends ConsumerWidget {
   const PlaceScreen({super.key, required this.place});
 
@@ -123,6 +127,8 @@ class PlaceScreen extends ConsumerWidget {
                               )
                             : null,
                       ),
+                    if (place.id == regionExamPlace)
+                      _examCommand(context, stage, progress),
                     if (place.lessons.isEmpty)
                       PixelCommand(
                         label: "L'Expédition : affronter les brumes d'oubli",
@@ -158,6 +164,31 @@ class PlaceScreen extends ConsumerWidget {
       width: w.toDouble(),
       height: h.toDouble(),
       child: PixelImage(name, fit: BoxFit.fill),
+    );
+  }
+
+  /// Le boss de la région : ouvert quand toutes les leçons de l'étape sont
+  /// terminées (les 14 sceaux brisés).
+  Widget _examCommand(
+    BuildContext context,
+    List<LessonSummary> stage,
+    Map<String, LessonProgress> progress,
+  ) {
+    final open = stage.every((l) => progress[l.id]?.completed ?? false);
+    final done = progress[RegionExamScreen.examId]?.completed ?? false;
+    return PixelCommand(
+      label: "Le Gardien de l'Oubli · examen de la région",
+      detail: !open
+          ? 'Brise d\'abord les 14 sceaux (leçons 0 à 14)'
+          : done
+          ? 'Réussi · le rejouer'
+          : 'Trois épreuves : lecture, écoute, prononciation',
+      onPressed: open
+          ? () => Navigator.push(
+              context,
+              MaterialPageRoute<void>(builder: (_) => const RegionExamScreen()),
+            )
+          : null,
     );
   }
 }

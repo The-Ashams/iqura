@@ -314,14 +314,14 @@
           }
         },
         {
-          "verset": "113:4",
+          "verset": "108:2",
           "mots": [
-            "113:4:3"
+            "108:2:1"
           ],
           "question": {
             "type": "compter",
             "consigne": "Combien de shadda vois-tu dans ce mot ?",
-            "mot": "113:4:3",
+            "mot": "108:2:1",
             "lettre": "ّ"
           }
         }

@@ -182,7 +182,7 @@
     {
       "type": "regle",
       "titre": "L'alif de l'article",
-      "texte": "Cet alif s'appelle hamzat al-waṣl : il se prononce « a » seulement en début de phrase. Après un autre mot, il tombe : بَابُ الدَّار se dit « bābu d-dār ».",
+      "texte": "Cet alif s'appelle hamzat al-waṣl : il se prononce « a » seulement en début de phrase. Après un autre mot, il tombe : بَابُ الدَّار se dit « bābu d-dār », la porte de la maison.",
       "exemples": [
         "بَابُ الدَّار"
       ],
@@ -195,7 +195,7 @@
           "Seulement à la fin"
         ],
         "reponse": 0,
-        "explication": "Après un mot, l'alif de l'article tombe : on dit « bābu d-dār », la porte de la maison (translittération : bābu l-dār)."
+        "explication": "Après un mot, l'alif de l'article tombe : on dit « bābu d-dār » (translittération : bābu l-dār). Le « u » final de بَابُ s'explique plus tard."
       }
     },
     {

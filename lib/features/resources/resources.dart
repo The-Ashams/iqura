@@ -205,4 +205,8 @@ abstract final class Rewards {
   static const waveDinars = 2;
   static const guardianXp = 15;
   static const guardianDinars = 10;
+
+  /// Examen de région réussi (une seule fois).
+  static const regionExamXp = 200;
+  static const regionExamDinars = 100;
 }

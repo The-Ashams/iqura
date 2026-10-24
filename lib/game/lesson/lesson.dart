@@ -16,8 +16,25 @@ final RegExp _arabicRun = RegExp(
 /// Texte français qui cite de l'arabe : une marque invisible suit chaque
 /// passage arabe, pour que deux passages séparés par « : » ou « , » restent
 /// dans l'ordre de la phrase française (« بَ : بَاب » et non « بَاب : بَ »).
-String frenchWithArabic(String text) =>
-    text.replaceAllMapped(_arabicRun, (m) => '${m[0]}$_lrm');
+String frenchWithArabic(String text) => text
+    .replaceAllMapped(_lonelyMark, (m) => '${m[1]}ـ${m[2]}')
+    .replaceAllMapped(_arabicRun, (m) => '${m[0]}$_lrm');
+
+// Signe arabe isolé (voyelle, tanwīn, signe du Mushaf) : posé sur un trait
+// (tatwīl) pour être lisible.
+final RegExp _lonelyMark = RegExp(
+  r'(^|[\s(«])([\u064B-\u065F\u0670\u06D6-\u06ED])',
+);
+
+/// Vrai pour un signe (voyelle, shadda, tanwīn, signe du Mushaf), faux pour
+/// une lettre.
+bool isArabicMark(String c) =>
+    c.runes.length == 1 &&
+    RegExp(r'^[\u064B-\u065F\u0670\u06D6-\u06ED]$').hasMatch(c);
+
+/// Un signe seul s'affiche posé sur un trait (tatwīl) ; une lettre telle
+/// quelle.
+String showMark(String c) => isArabicMark(c) ? 'ـ$c' : c;
 
 String? _fr(Object? v) => v == null ? null : frenchWithArabic(v as String);
 
