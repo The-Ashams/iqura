@@ -67,6 +67,19 @@ Tests locaux du 23/10/2026 : Flutter 99 tests OK, `flutter analyze` sans remarqu
 | Retours du 1er test (24/10) | Police de translittération corrigée (copie « DotGothic16 IQURA » sans accents séparés : ḥ, ḫ, ǧ lisibles) ; thème clair appliqué aux écrans du jeu ; réponses déplacées quand une question revient ; interface agrandie sur grand écran ; ordre « بَ : بَاب » corrigé dans les phrases françaises ; sons refaits et choisis à l'écoute par l'utilisateur : ثَا (version D, souffle de ث gardé par la coupure corrigée) et تَاج (version B, ج final voisé) |
 | Tests | 132 tests Flutter (dont les 5 leçons jouées de bout en bout, l'Expédition, l'économie, l'enchantement sur 20 000 tirages), tests Python du contenu |
 
+## 1 quinquies. Niveaux Débutant 2 et 3 (leçons 5 à 14 et examen de la région 1, 24/10/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Leçons | 5 (س ش ص ض) et 6 (ط ظ ع غ) aux Dunes avec Rāšid ; 7 (ف ق ك ل, لا, famille ك ت ب) à l'Atelier avec Samīr ; 8 (م ه و, voyelles longues) et 9 (hamza, supports, madda) à l'Observatoire avec Suhayl ; 10 (ة ى) et 12 (tanwīn, forme complète de بَابٌ) aux Archives avec Nūra ; 11 (shadda) à la Fontaine avec Laylā ; 13 (article) au Cadran avec Suhayl ; 14 (signes du Mushaf, sans combat) aux Manuscrits avec Nūra |
+| Examen de la région 1 | Le Gardien de l'Oubli, à la porte de la bibliothèque, ouvert quand les 15 leçons sont réussies : lecture de 20 mots (90 %), écoute de 10 mots (80 %, seuil à valider), prononciation de 5 mots auto-évaluée, temps de lecture affiché sans compter |
+| Relectures | `docs/relectures/2026-10-24-*.md` : leçons 5-6 et fiches « Validé avec doutes » (2e passage), 7-8-9 « Validé avec doutes » (2e passage), 10-11-12 corrigées après le 2e passage, 13-14 « Validé avec doutes » (2e passage). Décisions du conseiller : `decisions-debutant-2.md`, `decisions-debutant-3.md` |
+| Fiches et tracés | 16 lettres (س à ء), 5 zones d'articulation ; « formes » sans fiche (أ إ ؤ ئ آ, ة ى, ٱ) ; signes du Mushaf (alif suscrit, vague ٓ, petits wāw et yāʾ, petit zéro ۟) reconnus sans carte de révision |
+| Graphismes | Scènes des 7 nouveaux lieux, Suhayl, le Gardien de l'Oubli ; les 12 lieux de la région 1 sont ouverts |
+| Jeu | Leçon sans combat (série finale calme) ; questions à choix dans la salle d'étude ; signes isolés affichés sur un trait ; cartes de révision pour la shadda et le tanwīn |
+| Audio | Génération Chatterbox en cours (environ 150 sons) ; formes fragiles (ة, tanwīn seuls, article solaire, doublement, hamza, ظَبْي) à confirmer à l'écoute par l'utilisateur, sinon lecture seule (décisions D2-9, D3-10) |
+| Tests | 15 leçons jouées de bout en bout, examen complet, logique de l'examen |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -119,7 +132,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
    - retours du 1er test de l'APK (23/10) : son de ثَبَتَ refait (version B, virgule finale), « margelle » remplacé, affichage PC centré et scène limitée en hauteur ; bruitages rétro créés (`tools/build_sfx/`), validés à l'écoute et branchés (menus, choix, juste/faux, coups, victoire, repli, sceau), désactivables dans les réglages ;
    - remplacé le 23/10/2026 par l'organisation par niveaux : voir §1 quater.
 5. Débutant 1 construit (§1 quater), testé une première fois par l'utilisateur le 24/10/2026 ; retours intégrés (§1 quater), nouvelle version à publier.
-6. Ensuite : Débutant 2 (leçons 5 à 9, lieux 5 à 7), commencé pendant le test.
+6. Débutant 2 et Débutant 3 construits le 24/10/2026 (§1 quinquies), à la demande de l'utilisateur, avant son nouveau test : sons à terminer et à faire écouter, puis une version à publier.
+7. Ensuite : région 2 (Élémentaire 1, leçons 2.1 à 2.10).
 
 ## 5. Problèmes connus
 

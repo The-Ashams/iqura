@@ -361,7 +361,7 @@
           "choix_audio": [
             "الدَّار",
             "الشَّمْس",
-            "النُّور"
+            "الْبَاب"
           ],
           "reponse": 1,
           "explication": "الشَّمْس se dit « aš-šams »."
@@ -372,23 +372,22 @@
           "ar": "الدَّار",
           "choix_audio": [
             "الْبَاب",
-            "النُّور",
+            "الشَّمْس",
             "الدَّار"
           ],
           "reponse": 2,
           "explication": "الدَّار se dit « ad-dār »."
         },
         {
-          "type": "lire",
-          "consigne": "Comment se lit ce mot ?",
-          "ar": "النُّور",
-          "choix_audio": [
-            "النُّور",
-            "نُور",
-            "الْقَمَر"
+          "type": "qcm",
+          "consigne": "ش est une lettre…",
+          "choix": [
+            "solaire",
+            "lunaire",
+            "sans article"
           ],
           "reponse": 0,
-          "explication": "النُّور se dit « an-nūr »."
+          "explication": "ش est solaire : « aš-šams »."
         },
         {
           "type": "lire",

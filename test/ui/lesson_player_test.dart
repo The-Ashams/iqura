@@ -15,6 +15,8 @@ import 'package:iqura/features/resources/resources.dart';
 import 'package:iqura/features/review/review.dart';
 import 'package:iqura/features/settings/settings.dart';
 import 'package:iqura/game/lesson/lesson.dart';
+import 'package:iqura/game/exam/region_exam.dart';
+import 'package:iqura/ui/game/exam/region_exam_screen.dart';
 import 'package:iqura/ui/game/expedition_screen.dart';
 import 'package:iqura/ui/game/lesson/boss_view.dart';
 import 'package:iqura/ui/game/lesson/lesson_screen.dart';
@@ -191,6 +193,12 @@ Future<bool> playLesson(
       case QuranStep():
         for (final e in step.extracts) {
           final q = e.question;
+          if (q.kind != QuestionKind.repererMot &&
+              q.kind != QuestionKind.compter) {
+            // Question à choix sur le verset (leçon 14).
+            await answer(tester);
+            continue;
+          }
           if (q.kind == QuestionKind.repererMot) {
             await tapOn(
               tester,
@@ -243,12 +251,9 @@ void main() {
     await settle(tester);
   }
 
+  // Les 15 leçons de la région 1 (niveaux Débutant 1 à 3).
   for (final id in [
-    'dechiffrer-00',
-    'dechiffrer-01',
-    'dechiffrer-02',
-    'dechiffrer-03',
-    'dechiffrer-04',
+    for (var i = 0; i <= 14; i++) 'dechiffrer-${i.toString().padLeft(2, '0')}',
   ]) {
     testWidgets('$id : jouée de bout en bout, la leçon suivante s’ouvre', (
       tester,
@@ -280,7 +285,7 @@ void main() {
       expect(
         cards.length,
         lesson.letters.length * 2 +
-            lesson.signs.length +
+            lesson.signs.where(signMarks.containsKey).length +
             lesson.readings.length,
       );
       expect(
@@ -293,7 +298,16 @@ void main() {
         expect(audio.played.any((p) => p.endsWith('.m4a')), isTrue);
       }
       // Bruitages : réponses, combat, sceau de fin.
-      expect(sfx.played, containsAll([Sfx.juste, Sfx.coup, Sfx.victoire]));
+      expect(
+        sfx.played,
+        containsAll([
+          Sfx.juste,
+          // Leçon sans combat (salle des manuscrits) : aucun coup.
+          if (!lesson.noCombat) Sfx.coup,
+          Sfx.victoire,
+        ]),
+      );
+      if (lesson.noCombat) expect(sfx.played, isNot(contains(Sfx.coup)));
       expect(sfx.played.last, Sfx.sceau);
       // Chaque écran porte la mention IA et le signalement d'erreur.
       expect(find.text('Rédigé par IA'), findsOneWidget);
@@ -610,5 +624,38 @@ void main() {
     final moved = await shown(true);
     expect(moved.toSet(), {'أ', 'ب', 'ت', 'ث'});
     expect(moved.indexOf('ت'), isNot(2));
+  });
+
+  testWidgets('examen de la région 1 : trois épreuves, le Gardien se '
+      'dissipe, la réussite est enregistrée', (tester) async {
+    tester.view.physicalSize = const Size(800, 4000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(appWith(RegionExamScreen(random: Random(4))));
+    await settle(tester);
+    await tapOn(tester, find.text('Commencer'));
+    var guard = 0;
+    while (find.byType(QuestionView).evaluate().isNotEmpty && guard++ < 40) {
+      await answer(tester);
+    }
+    expect(
+      guard,
+      RegionExamRules.readingCount + RegionExamRules.listeningCount,
+    );
+    for (var i = 0; i < RegionExamRules.speakingCount; i++) {
+      expect(find.byType(RepeatAloud), findsOneWidget);
+      await tapOn(tester, find.text('Je le dis bien'));
+    }
+    expect(find.textContaining('se dissipe'), findsOneWidget);
+    expect(find.textContaining('Temps de lecture'), findsOneWidget);
+    expect(
+      LessonProgressRepository(userDb).get(RegionExamScreen.examId).completed,
+      isTrue,
+    );
+    expect(
+      ResourceRepository(userDb).wallet()[Currency.xp],
+      Rewards.regionExamXp,
+    );
+    expect(sfx.played, contains(Sfx.victoire));
   });
 }

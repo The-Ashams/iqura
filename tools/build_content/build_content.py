@@ -39,7 +39,7 @@ import world  # noqa: E402
 # Version du schéma de la base de contenu (lue par l'application).
 CONTENT_SCHEMA_VERSION = 7
 # Version des données ; à augmenter à chaque changement de contenu.
-CONTENT_VERSION = "0.6.0-debutant1"
+CONTENT_VERSION = "0.7.0-region1"
 
 DEFAULT_OUT = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),

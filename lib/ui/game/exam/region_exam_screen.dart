@@ -105,7 +105,11 @@ class _RegionExamScreenState extends ConsumerState<RegionExamScreen> {
     playSfx(ref, right ? Sfx.juste : Sfx.faux);
     setState(() {
       _answered = true;
-      _flash = right ? 'Juste !' : 'Pas tout à fait.';
+      _flash = _calm
+          ? null
+          : right
+          ? 'Le Gardien recule !'
+          : 'Le Gardien résiste.';
     });
   }
 
