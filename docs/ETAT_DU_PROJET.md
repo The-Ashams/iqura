@@ -64,7 +64,7 @@ Tests locaux du 23/10/2026 : Flutter 99 tests OK, `flutter analyze` sans remarqu
 | Parole, écriture | Répéter : s'enregistrer, réécouter (paquet `record`), sur l'appareil seulement ; tracé guidé par points numérotés (`lessons/traces.json`) |
 | Modes et réglages | Apprentissage seul (liste de leçons, sans scènes ni combats) ; chronomètre ; bruitages |
 | Technique | Schéma utilisateur 3 (cartes, ressources, inventaire, jours d'activité) ; schéma de contenu 7 (objets, tracés) ; version de contenu avec empreinte ; APK signé avec une clé fixe (secrets `IQURA_KEYSTORE_B64`, `IQURA_KEYSTORE_PASSWORD`) |
-| Retours du 1er test (24/10) | Police de translittération corrigée (copie « DotGothic16 IQURA » sans accents séparés : ḥ, ḫ, ǧ lisibles) ; thème clair appliqué aux écrans du jeu ; réponses déplacées quand une question revient ; interface agrandie sur grand écran ; ordre « بَ : بَاب » corrigé dans les phrases françaises ; sons ثَا et تَاج en cours de refonte |
+| Retours du 1er test (24/10) | Police de translittération corrigée (copie « DotGothic16 IQURA » sans accents séparés : ḥ, ḫ, ǧ lisibles) ; thème clair appliqué aux écrans du jeu ; réponses déplacées quand une question revient ; interface agrandie sur grand écran ; ordre « بَ : بَاب » corrigé dans les phrases françaises ; sons refaits et choisis à l'écoute par l'utilisateur : ثَا (version D, souffle de ث gardé par la coupure corrigée) et تَاج (version B, ج final voisé) |
 | Tests | 132 tests Flutter (dont les 5 leçons jouées de bout en bout, l'Expédition, l'économie, l'enchantement sur 20 000 tirages), tests Python du contenu |
 
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)

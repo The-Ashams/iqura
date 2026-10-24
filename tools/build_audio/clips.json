@@ -123,10 +123,10 @@
    "genre": "mot",
    "texte": "تَاج",
    "fichier": "assets/audio/lecons/ar-2ef4055917e610c9.mp3",
-   "sha256": "ee4526ee3a02de1c2b8419796ed33f714d83f40843583b232bc19ca13cdb37db",
-   "graine": 0,
+   "sha256": "e16fcff8f3be499f86829bf18d2cafbabd4b29b52c04d23f5a3084b1c4ee950f",
+   "graine": 9,
    "a_ecouter": false,
-   "genere_le": "2026-10-23"
+   "genere_le": "2026-10-24"
   },
   "ar-3bc5f0ae9739d60e": {
    "genre": "syllabe",
@@ -297,10 +297,11 @@
    "genre": "syllabe",
    "texte": "ثَا",
    "fichier": "assets/audio/lecons/ar-80cdd720e239b6fd.mp3",
-   "sha256": "19b3e772a7c740670fb7b725383055a70219c2c9818e3641db8eb2a0e50e3a25",
-   "graine": 0,
+   "sha256": "67d2b2619939b395798d0a7a42345fc89cf0ded682428436b424b2c517bb8268",
+   "graine": 10,
    "a_ecouter": false,
-   "genere_le": "2026-10-21"
+   "genere_le": "2026-10-24",
+   "ecrit": "ثَا،"
   },
   "ar-80e3026ea41cb8b4": {
    "genre": "mot",
