@@ -292,18 +292,6 @@
         {
           "type": "lire",
           "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
-          "ar": "إِبِل",
-          "choix_audio": [
-            "بِئْر",
-            "آبَار",
-            "إِبِل"
-          ],
-          "reponse": 2,
-          "explication": "إِبِل se lit « ibil », les chameaux : la hamza sous l'alif porte la kasra."
-        },
-        {
-          "type": "lire",
-          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
           "ar": "سُؤَال",
           "choix_audio": [
             "سَمَاء",

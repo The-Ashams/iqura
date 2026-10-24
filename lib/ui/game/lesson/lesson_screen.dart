@@ -175,6 +175,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
       failuresBefore:
           ref.read(lessonProgressProvider)[_lesson.id]?.bossFailures ?? 0,
       random: widget.random,
+      noCombat: _lesson.noCombat,
       onResult: _onBossResult,
       onVictoryContinue: _next,
       onReplayPractice: () {

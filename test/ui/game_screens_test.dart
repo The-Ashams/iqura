@@ -73,16 +73,16 @@ void main() {
     tmp.deleteSync(recursive: true);
   });
 
-  testWidgets('carte : lieux de la tranche ouverts, les autres « à venir »', (
+  testWidgets('carte : les douze lieux de la région 1 sont ouverts', (
     tester,
   ) async {
     await start(tester);
     expect(find.text('Le Désert des Lettres'), findsOneWidget);
-    expect(find.text(WorldMapScreen.lockedDetail), findsNWidgets(4));
-    // Un lieu à venir ne s'ouvre pas.
+    expect(find.text(WorldMapScreen.lockedDetail), findsNothing);
+    await tester.ensureVisible(find.text('8. Les Archives ensablées'));
     await tester.tap(find.text('8. Les Archives ensablées'));
     await tester.pumpAndSettle();
-    expect(find.byType(PlaceScreen), findsNothing);
+    expect(find.byType(PlaceScreen), findsOneWidget);
   });
 
   testWidgets('lieu : scène, personnage, leçon jouable ou fermée', (

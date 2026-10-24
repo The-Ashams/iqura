@@ -298,6 +298,7 @@ class Lesson {
     this.letters = const [],
     this.signs = const [],
     this.readings = const [],
+    this.noCombat = false,
   });
 
   /// Leçon au format 2 ; `null` pour une leçon d'un ancien format.
@@ -317,6 +318,7 @@ class Lesson {
       ],
       letters: ((j['introduit'] as Map)['lettres'] as List).cast<String>(),
       signs: ((j['introduit'] as Map)['signes'] as List).cast<String>(),
+      noCombat: j['sans_combat'] == true,
       readings: [
         for (final kind in ['syllabes', 'mots'])
           for (final e in ((j['elements'] as Map)[kind] as List).cast<Map>())
@@ -342,6 +344,10 @@ class Lesson {
 
   /// Syllabes puis mots à lire.
   final List<String> readings;
+
+  /// Lieu calme, sans combat (leçon 14, salle des manuscrits) : le
+  /// mini-boss devient une série finale de questions.
+  final bool noCombat;
 }
 
 /// Résumé d'une leçon, pour la liste d'un lieu.

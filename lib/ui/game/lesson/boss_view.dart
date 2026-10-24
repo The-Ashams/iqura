@@ -71,6 +71,7 @@ class BossView extends ConsumerStatefulWidget {
     required this.onVictoryContinue,
     required this.onReplayPractice,
     this.random,
+    this.noCombat = false,
   });
 
   final BossStep step;
@@ -91,6 +92,9 @@ class BossView extends ConsumerStatefulWidget {
   /// Revenir à la salle d'entraînement.
   final VoidCallback onReplayPractice;
   final Random? random;
+
+  /// Leçon sans combat : série finale, comme en apprentissage seul.
+  final bool noCombat;
 
   @override
   ConsumerState<BossView> createState() => _BossViewState();
@@ -130,9 +134,16 @@ class _BossViewState extends ConsumerState<BossView> {
     _attempt++;
   }
 
+  /// Série finale sans combat (leçon sans combat ou apprentissage seul).
+  bool get _calm => widget.noCombat || ref.read(settingsProvider).learningOnly;
+
   void _onAnswered(bool right, Duration time) {
     _fight.answer(right);
-    playSfx(ref, right ? Sfx.coup : Sfx.degats);
+    if (_calm) {
+      playSfx(ref, right ? Sfx.juste : Sfx.faux);
+    } else {
+      playSfx(ref, right ? Sfx.coup : Sfx.degats);
+    }
     if (right) {
       _scene.foeHit();
     } else {
@@ -143,6 +154,8 @@ class _BossViewState extends ConsumerState<BossView> {
       _answered = true;
       _flash = right
           ? (time < BossFight.quick ? 'Juste, et rapide !' : 'Juste !')
+          : _calm
+          ? 'Pas tout à fait.'
           : '${widget.adversary} frappe.';
     });
   }
@@ -170,7 +183,8 @@ class _BossViewState extends ConsumerState<BossView> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        if (ref.watch(settingsProvider.select((s) => s.learningOnly)))
+        if (widget.noCombat ||
+            ref.watch(settingsProvider.select((s) => s.learningOnly)))
           // Apprentissage seul : une série de questions, sans combat.
           PixelWindow(
             padding: const EdgeInsets.all(10),
@@ -247,12 +261,13 @@ class _BossViewState extends ConsumerState<BossView> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            won
-                ? '${widget.adversary} se dissipe !'
-                : '${widget.adversary} s\'échappe… Rien n\'est perdu.',
-            style: TextStyle(fontSize: 22, color: GameColors.accent),
-          ),
+          Text(switch ((won, _calm)) {
+            (true, true) => 'Série réussie !',
+            (false, true) => 'Série pas encore réussie… Rien n\'est perdu.',
+            (true, false) => '${widget.adversary} se dissipe !',
+            (false, false) =>
+              '${widget.adversary} s\'échappe… Rien n\'est perdu.',
+          }, style: TextStyle(fontSize: 22, color: GameColors.accent)),
           const SizedBox(height: 6),
           Text(
             '${_fight.correct} bonne(s) réponse(s), ${_fight.wrong} '
@@ -292,7 +307,7 @@ class _BossViewState extends ConsumerState<BossView> {
               onPressed: widget.onReplayPractice,
             ),
             PixelCommand(
-              label: 'Retenter le combat',
+              label: _calm ? 'Recommencer la série' : 'Retenter le combat',
               detail: 'Les mêmes questions, dans un autre ordre',
               onPressed: () => setState(_start),
             ),

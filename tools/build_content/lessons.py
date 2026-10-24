@@ -41,6 +41,12 @@ SIGNS = {
     "fathatan": "ً",
     "kasratan": "ٍ",
     "dammatan": "ٌ",
+    # Signes de l'écriture du Mushaf (leçon 14, reconnaissance seulement).
+    "alif_suscrit": "\u0670",
+    "madda": "\u0653",
+    "petit_waw": "\u06e5",
+    "petit_ya": "\u06e6",
+    "rond_muet": "\u06df",
 }
 
 # Formes d'écriture enseignées par une règle, sans fiche de lettre : supports
@@ -53,6 +59,7 @@ FORMS = {
     "آ": "alif madda",
     "ة": "tāʾ marbūṭa",
     "ى": "alif maqṣūra",
+    "ٱ": "alif waṣla (écriture du Mushaf)",
 }
 
 SECTION_TYPES = {

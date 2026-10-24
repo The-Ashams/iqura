@@ -11,7 +11,7 @@ void main() {
   setUpAll(() => db = ContentDatabase.openVerified(ContentDatabase.assetPath));
   tearDownAll(() => db.close());
 
-  test('région 1 : 12 lieux, 8 construits (Débutant 1 et 2), personnages', () {
+  test('région 1 : 12 lieux tous construits, personnages', () {
     final region = db.regions().single;
     expect(region.name, 'Le Désert des Lettres');
     final places = db.places(region.id);
@@ -24,6 +24,10 @@ void main() {
       'dunes',
       'atelier',
       'observatoire',
+      'archives',
+      'fontaine',
+      'cadran',
+      'manuscrits',
       'faille',
     ]);
     for (final p in places.where((p) => p.inVerticalSlice)) {

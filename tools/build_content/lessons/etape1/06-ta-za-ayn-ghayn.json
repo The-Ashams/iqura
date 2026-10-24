@@ -220,8 +220,8 @@
     },
     {
       "type": "regle",
-      "titre": "Quatre lettres épaisses",
-      "texte": "ص, ض, ط et ظ sont les quatre lettres emphatiques. Chacune a une sœur claire : س, د, ت et ذ.",
+      "titre": "Les lettres emphatiques",
+      "texte": "ص, ض, ط et ظ sont les quatre lettres emphatiques ; chacune a une sœur claire : س, د, ت et ذ. D'autres lettres, comme خ et غ, sont aussi un peu épaisses : tu le verras plus tard.",
       "exemples": [
         "تَ",
         "طَ"
@@ -404,14 +404,14 @@
           }
         },
         {
-          "verset": "113:4",
+          "verset": "81:17",
           "mots": [
-            "113:4:5"
+            "81:17:3"
           ],
           "question": {
             "type": "compter",
             "consigne": "Combien de ع vois-tu dans ce mot ?",
-            "mot": "113:4:5",
+            "mot": "81:17:3",
             "lettre": "ع"
           }
         },
@@ -571,9 +571,9 @@
           "consigne": "Quelle syllabe entends-tu ?",
           "audio": "رِ",
           "choix_ar": [
-            "زُ",
+            "زِ",
             "رِ",
-            "دَ"
+            "دِ"
           ],
           "reponse": 1,
           "explication": "C'était « ri » (leçon 4)."

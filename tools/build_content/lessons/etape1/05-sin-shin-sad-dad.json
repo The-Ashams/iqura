@@ -99,9 +99,9 @@
           "consigne": "Quelle syllabe entends-tu ?",
           "audio": "زُ",
           "choix_ar": [
-            "رِ",
+            "رُ",
             "زُ",
-            "ذَ"
+            "ذُ"
           ],
           "reponse": 1,
           "explication": "C'était « zu » : ز et la ḍamma (leçon 4)."
@@ -144,7 +144,7 @@
         "choix": [
           "Non : صَ est plus épais, plus sombre",
           "Oui, exactement pareil",
-          "La deuxième ne se prononce pas"
+          "صَ ne se prononce pas"
         ],
         "reponse": 0,
         "explication": "سَ est un « s » clair ; صَ est un « s » épais : l'arrière de la langue se relève."

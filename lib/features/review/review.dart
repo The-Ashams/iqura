@@ -95,6 +95,10 @@ const Map<String, String> signMarks = {
   'kasra': 'ِ',
   'damma': 'ُ',
   'sukun': 'ْ',
+  'shadda': 'ّ',
+  'fathatan': 'ً',
+  'kasratan': 'ٍ',
+  'dammatan': 'ٌ',
 };
 
 /// Cartes d'une leçon réussie (cahier §6.3, région 1) : pour chaque lettre
@@ -111,7 +115,10 @@ List<({String id, CardKind kind, String target})> cardsOfLesson(
     (id: 'reconnaitre:$l', kind: CardKind.reconnaitre, target: l),
     (id: 'ecouter:$l', kind: CardKind.ecouter, target: l),
   ],
-  for (final s in signs) (id: 'signe:$s', kind: CardKind.signe, target: s),
+  // Les signes du Mushaf (leçon 14) se reconnaissent sans carte de révision.
+  for (final s in signs)
+    if (signMarks.containsKey(s))
+      (id: 'signe:$s', kind: CardKind.signe, target: s),
   for (final r in readings) (id: 'lire:$r', kind: CardKind.lire, target: r),
 ];
 
