@@ -26,7 +26,7 @@ abstract final class PanelColors {
   static const muted = Color(0xFF5E5869);
 }
 
-/// Mention de la source d'un exemple qui ne vient pas du Coran (§3.2).
+/// Mention de la source d'un exemple construit (§3.2).
 class ConstructedExampleTag extends StatelessWidget {
   const ConstructedExampleTag({super.key, this.color = PanelColors.muted});
 

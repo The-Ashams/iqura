@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../game/city_screen.dart';
 import '../game/grimoire_screen.dart';
 import '../game/pixel.dart';
-import '../game/sanctuary_screen.dart';
 import '../game/world_map_screen.dart';
 import '../screens/settings_screen.dart';
 
@@ -19,11 +18,11 @@ const _spaces = [
   _Space('Carte', Icons.map_outlined, Icons.map),
   _Space('Cité', Icons.castle_outlined, Icons.castle),
   _Space('Grimoire', Icons.menu_book_outlined, Icons.menu_book),
-  _Space('Sanctuaire', Icons.local_library_outlined, Icons.local_library),
   _Space('Paramètres', Icons.settings_outlined, Icons.settings),
 ];
 
-/// Les cinq espaces du jeu (cahier v3 §8.3) : barre en bas sur écran étroit
+/// Les espaces du jeu (cahier §8.3 ; plus de Sanctuaire depuis l'avenant
+/// n° 1) : barre en bas sur écran étroit
 /// (téléphone), rail latéral sur écran large (Windows, tablette).
 class AppShell extends ConsumerStatefulWidget {
   const AppShell({super.key});
@@ -42,7 +41,6 @@ class _AppShellState extends ConsumerState<AppShell> {
     0 => const WorldMapScreen(),
     1 => const CityScreen(),
     2 => const GrimoireScreen(),
-    3 => const SanctuaryScreen(),
     _ => const SettingsScreen(),
   };
 

@@ -9,10 +9,11 @@ Règles vérifiées (cahier v3 §6.1, §6.2, §3.1) :
 - chaque lettre introduite a son écran « élément » ;
 - questions à 3 ou 4 choix distincts, une seule bonne réponse ;
 - mini-boss : 10 à 12 questions, seuil 80 %, 20 à 30 % sur les leçons
-  précédentes (à partir de la leçon 1), jamais de verset ni d'extrait
-  coranique (un mot du vocabulaire seul, en dictionnaire, est permis : §3.1) ;
-- le Coran n'est jamais recopié : les salles d'étude ne citent que des
-  références (sourate:verset, sourate:verset:mot) ;
+  précédentes (à partir de la leçon 1) ;
+- salle de lecture (avenant n° 1, 24/10/2026) : une inscription d'exemples
+  construits, faite uniquement de mots déjà lus dans les leçons (ou montrés
+  en aperçu), et 1 à 4 questions (compter, repérer un mot, QCM) ; aucun
+  verset, aucune référence coranique ;
 - tout texte arabe n'utilise que des lettres et signes déjà enseignés, sauf
   les formes listées dans « apercu » (montrées, pas encore enseignées).
 """
@@ -21,13 +22,14 @@ from __future__ import annotations
 
 import math
 import re
-import sqlite3
 import unicodedata
 
 TATWEEL = "ـ"
 MAX_WORDS = 40
 SCREEN_TYPES = {"entree", "echauffement", "decouverte", "element", "regle",
-                "entrainement", "coran", "mini_boss", "fin"}
+                "entrainement", "lecture", "mini_boss", "fin"}
+# Questions de la salle de lecture.
+READING_TYPES = {"compter", "reperer_mot", "qcm"}
 QUESTION_TYPES = {"qcm", "points", "formes", "reconnaitre", "ecouter", "paires",
                   "lire", "reconstruire", "tracer", "repeter", "reperer_mot",
                   "compter", "ecouter_lettre"}
@@ -35,8 +37,6 @@ QUESTION_TYPES = {"qcm", "points", "formes", "reconnaitre", "ecouter", "paires",
 # écouter (« ecouter_lettre »), il ne s'affiche pas en lettres latines.
 BOSS_TYPES = {"qcm", "points", "formes", "ecouter", "paires", "lire", "ecouter_lettre"}
 EXPLANATION_ONLY = {"entree", "fin"}
-TOKEN_REF = re.compile(r"^(\d+):(\d+):(\d+)$")
-VERSE_REF = re.compile(r"^(\d+):(\d+)$")
 ARABIC = re.compile(r"[؀-ۿ]")
 
 
@@ -71,8 +71,8 @@ def _choices(q: dict, where: str) -> list[str]:
     return choices
 
 
-def check_question(q: dict, where: str, check_ar, con: sqlite3.Connection,
-                   verse: str | None = None, letter_cards: dict | None = None) -> None:
+def check_question(q: dict, where: str, check_ar, inscription: list[str] | None = None,
+                   letter_cards: dict | None = None) -> None:
     kind = q.get("type")
     if kind not in QUESTION_TYPES:
         raise LessonError(f"{where} : type de question inconnu {kind}")
@@ -84,7 +84,7 @@ def check_question(q: dict, where: str, check_ar, con: sqlite3.Connection,
             raise LessonError(f"{where} : explication absente")
         check_short(q["explication"], "explication", where)
     for key in ("ar", "audio", "lettre"):
-        if key in q and kind not in ("compter",):
+        if key in q:
             check_ar(q[key])
     for key in ("choix_ar", "choix_audio", "tuiles", "solution"):
         for t in q.get(key, []):
@@ -115,21 +115,22 @@ def check_question(q: dict, where: str, check_ar, con: sqlite3.Connection,
         if not q.get("ar"):
             raise LessonError(f"{where} : texte à répéter absent")
     elif kind in ("reperer_mot", "compter"):
-        tok = q.get("mot", "")
-        m = TOKEN_REF.match(tok)
-        if not m or verse is None or f"{m[1]}:{m[2]}" != verse:
-            raise LessonError(f"{where} : mot {tok} hors du verset {verse}")
-        row = con.execute("SELECT text FROM token WHERE id = ?", (tok,)).fetchone()
-        if row is None:
-            raise LessonError(f"{where} : mot inexistant {tok}")
+        i = q.get("mot")
+        if inscription is None or not isinstance(i, int) or not 0 <= i < len(inscription):
+            raise LessonError(f"{where} : mot {i} hors de l'inscription")
         if kind == "compter":
-            n = row[0].count(q["lettre"])
+            # Un signe seul se compte sur la forme décomposée : آ compte
+            # aussi comme ا + ٓ.
+            lettre = q["lettre"]
+            form = "NFD" if unicodedata.combining(lettre[:1]) and len(lettre) == 1 else "NFC"
+            n = unicodedata.normalize(form, inscription[i]).count(lettre)
             if not 1 <= n <= 3:
-                raise LessonError(f"{where} : {q['lettre']} apparaît {n} fois dans {tok} (1 à 3 attendu)")
+                raise LessonError(
+                    f"{where} : {q['lettre']} apparaît {n} fois dans {inscription[i]} (1 à 3 attendu)")
 
 
 def validate(lesson: dict, *, known_letters: set[str], known_signs: set[str],
-             letter_cards: dict, con: sqlite3.Connection, places: set[str],
+             known_readings: set[str], letter_cards: dict, places: set[str],
              characters: set[str]) -> None:
     where = lesson["_file"]
     for key in ("lieu", "maitre", "apercu", "elements", "ecrans"):
@@ -194,30 +195,32 @@ def validate(lesson: dict, *, known_letters: set[str], known_signs: set[str],
                     raise LessonError(f"{here} : lettre sans fiche")
             if t == "regle":
                 check_short(s["texte"], "règle", here)
-            check_question(s["question"], here, check_ar, con, letter_cards=letter_cards)
+            check_question(s["question"], here, check_ar, letter_cards=letter_cards)
         elif t == "entrainement":
             if not 3 <= len(s["exercices"]) <= 12:
                 raise LessonError(f"{here} : 3 à 12 exercices attendus")
             for j, q in enumerate(s["exercices"]):
-                check_question(q, f"{here} exercice {j + 1}", check_ar, con, letter_cards=letter_cards)
-        elif t == "coran":
+                check_question(q, f"{here} exercice {j + 1}", check_ar, letter_cards=letter_cards)
+        elif t == "lecture":
             check_short(s["texte"], "texte", here)
-            for e in s["extraits"]:
-                extra = set(e) - {"verset", "mots", "question"}
-                if extra:
-                    raise LessonError(f"{here} : champ interdit dans un extrait {sorted(extra)} "
-                                      "(le texte coranique n'est jamais recopié)")
-                if "ar" in e.get("question", {}):
-                    raise LessonError(f"{here} : aucun texte arabe recopié dans une salle d'étude")
-                m = VERSE_REF.match(e["verset"])
-                if not m or con.execute("SELECT 1 FROM verse WHERE surah_id = ? AND ayah = ?",
-                                        (int(m[1]), int(m[2]))).fetchone() is None:
-                    raise LessonError(f"{here} : verset inexistant {e['verset']}")
-                for tok in e["mots"]:
-                    tm = TOKEN_REF.match(tok)
-                    if not tm or f"{tm[1]}:{tm[2]}" != e["verset"]:
-                        raise LessonError(f"{here} : mot {tok} hors du verset")
-                check_question(e["question"], here, check_ar, con, verse=e["verset"])
+            words = s.get("inscription", [])
+            if not 1 <= len(words) <= 6:
+                raise LessonError(f"{here} : inscription de 1 à 6 mots attendue")
+            for w in words:
+                check_ar(w)
+                if w not in known_readings and w not in apercu:
+                    raise LessonError(
+                        f"{here} : « {w} » n'a pas encore été lu dans une leçon "
+                        "(salle de lecture : mots connus seulement)")
+            qs = s.get("questions", [])
+            if not 1 <= len(qs) <= 4:
+                raise LessonError(f"{here} : 1 à 4 questions attendues")
+            for j, q in enumerate(qs):
+                if q.get("type") not in READING_TYPES:
+                    raise LessonError(f"{here} question {j + 1} : type {q.get('type')} hors salle de lecture")
+                check_question(q, f"{here} question {j + 1}", check_ar, inscription=words)
+            if "extraits" in s or "verset" in s:
+                raise LessonError(f"{here} : aucun verset ni extrait coranique (avenant n° 1)")
         elif t == "mini_boss":
             if s.get("seuil") != 0.8:
                 raise LessonError(f"{here} : seuil de réussite de 80 % attendu")
@@ -227,7 +230,7 @@ def validate(lesson: dict, *, known_letters: set[str], known_signs: set[str],
             for j, q in enumerate(qs):
                 if q["type"] not in BOSS_TYPES:
                     raise LessonError(f"{here} question {j + 1} : type interdit au combat {q['type']}")
-                check_question(q, f"{here} question {j + 1}", check_ar, con, letter_cards=letter_cards)
+                check_question(q, f"{here} question {j + 1}", check_ar, letter_cards=letter_cards)
             rev = sum(1 for q in qs if q.get("revision"))
             if lesson["ordre"] >= 1 and not (math.ceil(0.2 * len(qs)) <= rev <= math.floor(0.3 * len(qs))):
                 raise LessonError(f"{here} : 20 à 30 % de questions de révision attendues ({rev}/{len(qs)})")
@@ -237,7 +240,8 @@ def validate(lesson: dict, *, known_letters: set[str], known_signs: set[str],
 
 
 def arabic_strings(lesson: dict) -> list[str]:
-    """Tous les textes arabes d'une leçon au format 2, hors Coran (référencé)."""
+    """Textes arabes d'une leçon qui se lisent à voix haute (hors salle de
+    lecture, dont l'inscription se lit sans son)."""
     out: list[str] = []
 
     def add(t):

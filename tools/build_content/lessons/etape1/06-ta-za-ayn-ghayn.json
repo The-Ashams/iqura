@@ -376,56 +376,40 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "ط, ظ, ع et غ se retrouvent dans le Coran : compte-les dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "La pierre de la source",
+      "texte": "Près de la source cachée, une pierre porte des mots. Compte les nouvelles lettres.",
+      "inscription": [
+        "طَيْر",
+        "عِنَب",
+        "عَيْن",
+        "غَار",
+        "ظَبْي"
+      ],
+      "questions": [
         {
-          "verset": "105:3",
-          "mots": [
-            "105:3:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ط vois-tu dans ce mot ?",
-            "mot": "105:3:3",
-            "lettre": "ط"
-          }
+          "type": "compter",
+          "consigne": "Combien de ط vois-tu dans ce mot ?",
+          "mot": 0,
+          "lettre": "ط"
         },
         {
-          "verset": "94:3",
-          "mots": [
-            "94:3:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ظ vois-tu dans ce mot ?",
-            "mot": "94:3:3",
-            "lettre": "ظ"
-          }
+          "type": "compter",
+          "consigne": "Combien de ظ vois-tu dans ce mot ?",
+          "mot": 4,
+          "lettre": "ظ"
         },
         {
-          "verset": "81:17",
-          "mots": [
-            "81:17:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ع vois-tu dans ce mot ?",
-            "mot": "81:17:3",
-            "lettre": "ع"
-          }
+          "type": "compter",
+          "consigne": "Combien de ع vois-tu dans ce mot ?",
+          "mot": 1,
+          "lettre": "ع"
         },
         {
-          "verset": "113:3",
-          "mots": [
-            "113:3:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de غ vois-tu dans ce mot ?",
-            "mot": "113:3:3",
-            "lettre": "غ"
-          }
+          "type": "compter",
+          "consigne": "Combien de غ vois-tu dans ce mot ?",
+          "mot": 3,
+          "lettre": "غ"
         }
       ]
     },

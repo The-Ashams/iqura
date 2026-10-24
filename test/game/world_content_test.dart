@@ -38,12 +38,6 @@ void main() {
     expect(nura.places, contains('puits'));
   });
 
-  test('Al-Fātiḥa : 7 versets avec traduction', () {
-    final verses = db.surahVerses(1);
-    expect(verses.length, 7);
-    expect(verses.every((v) => v.translation.isNotEmpty), isTrue);
-  });
-
   test('audio des leçons : chaque syllabe et mot a son fichier', () {
     for (final i in db.readingItems(stage: 1, upTo: 3)) {
       final f = db.audioFile(i.arabic);

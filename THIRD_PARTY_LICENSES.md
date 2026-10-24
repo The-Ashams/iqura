@@ -59,11 +59,15 @@ Fichiers copiés tels quels dans `tools/build_content/sources/` (copie verbatim
 autorisée par leurs auteurs), vérifiés par SHA-256 (`sources.json`) et cités
 dans l'application (Paramètres › Sources des données).
 
+Depuis l'avenant n° 1 (24/10/2026), l'application ne contient plus le texte du
+Coran : le texte Tanzil, ses métadonnées et la traduction Hamidullah ont été
+retirés du dépôt, et aucune récitation (EveryAyah) n'est utilisée. Seul le
+Quranic Arabic Corpus reste (racines, lemmes, fréquences) ; ses suites de mots
+servent aussi, à la construction seulement, à vérifier qu'aucun passage du
+Coran n'apparaît dans le contenu (rien n'en est écrit dans la base).
+
 | Donnée | Source | Licence / conditions | Points de vigilance |
 | --- | --- | --- | --- |
-| Texte coranique Uthmani (version 1.1) et texte sans voyelles (recherche) | [Tanzil Project](https://tanzil.net) | CC BY 3.0 ; copie verbatim autorisée, **modification interdite** ; citer Tanzil avec un lien | Texte jamais modifié : empreinte SHA-256 vérifiée par les tests et à chaque démarrage. |
-| Métadonnées (sourates, juzʾ, hizb, pages, prosternations) | Tanzil Project | CC BY | — |
-| Traduction française de Muhammad Hamidullah (`fr.hamidullah`) | Diffusée par [Tanzil](https://tanzil.net/trans/) | **Usage non commercial uniquement** (conditions Tanzil) ; aucune licence publiée par l'éditeur | ⚠️ Tanzil n'indique pas l'édition exacte : la révision du Complexe Roi Fahd (2000) n'est pas confirmée. IQURA est gratuit, donc dans les conditions ; toute utilisation commerciale exigerait l'accord de l'éditeur. Traduction remplaçable. |
 | Morphologie : segments, racines, lemmes, traits (version 0.4) | [Quranic Arabic Corpus](https://corpus.quran.com), Kais Dukes, Université de Leeds | GNU GPL ; copie verbatim autorisée, modification interdite ; citer la source avec un lien | Vérifié dans la notice du fichier (relevée par l'utilisateur le 21/10/2026) : conditions d'utilisation de la notice du fichier : usage autorisé « dans tout site web ou application », à condition de citer clairement la source avec un lien vers corpus.quran.com et de reproduire la notice dans les œuvres dérivées. Respecté : fichier conservé tel quel, source et lien dans Paramètres › Sources des données, notice reproduite mot pour mot sur le même écran. La FAQ du site parle d'un usage « de recherche », mais la notice du fichier, plus précise, autorise les applications. Téléchargé le 20/10/2026 avec l'adresse e-mail du porteur du projet (exigée par le site). |
 | Table de translittération Buckwalter étendue | [Quranic Arabic Corpus](https://corpus.quran.com/java/buckwalter.jsp) | Documentation publique du Corpus | Recopiée dans `tools/build_content/buckwalter.py` pour convertir lemmes et racines en écriture arabe. |
 
@@ -71,8 +75,8 @@ dans l'application (Paramètres › Sources des données).
 
 | Police | Version | Auteurs | Licence | Provenance | Vérifications |
 | --- | --- | --- | --- | --- | --- |
-| Amiri (Regular, Bold) | 1.002 | Khaled Hosny, Sebastian Kosch (projet [aliftype/amiri](https://github.com/aliftype/amiri)) | SIL Open Font License 1.1 (`assets/fonts/OFL-Amiri.txt`) | Dépôt officiel Google Fonts `google/fonts`, `ofl/amiri` (source : commit 04d40ee de aliftype/amiri) | Police de référence pour le naskh, maintenue depuis 2010, distribuée par Google Fonts. Couvre les 69 caractères du texte Tanzil (contrôlé). |
-| Amiri Quran | 1.003 | Mêmes auteurs | SIL OFL 1.1 (`assets/fonts/OFL-AmiriQuran.txt`) | `google/fonts`, `ofl/amiriquran` (commit 480bb74) | Conçue pour le texte coranique. Couvre les 69 caractères du texte Tanzil (contrôlé). |
+| Amiri (Regular, Bold) | 1.002 | Khaled Hosny, Sebastian Kosch (projet [aliftype/amiri](https://github.com/aliftype/amiri)) | SIL Open Font License 1.1 (`assets/fonts/OFL-Amiri.txt`) | Dépôt officiel Google Fonts `google/fonts`, `ofl/amiri` (source : commit 04d40ee de aliftype/amiri) | Police de référence pour le naskh, maintenue depuis 2010, distribuée par Google Fonts. Couvre l'arabe vocalisé des leçons. |
+| Amiri Quran | 1.003 | Mêmes auteurs | SIL OFL 1.1 (`assets/fonts/OFL-AmiriQuran.txt`) | `google/fonts`, `ofl/amiriquran` (commit 480bb74) | Conçue pour l'écriture du Mushaf ; sert aux mots isolés de la leçon 14 (alif suscrit, petits wāw et yāʾ…). |
 | DotGothic16 | — | Fontworks Inc. ([fontworks-fonts/DotGothic16](https://github.com/fontworks-fonts/DotGothic16)) | SIL OFL 1.1 (`assets/fonts/OFL-DotGothic16.txt`) | `google/fonts`, `ofl/dotgothic16` (source : commit e44ca7b), téléchargée le 23/10/2026, SHA-256 `3ad9af88…21150b8f1` | Textes du jeu (style pixel), choisie par l'utilisateur le 23/10/2026 pour la lisibilité des chiffres (remplace Pixelify Sans). Couvre le français ; **ne couvre pas** ā ī ū, les lettres pointées de la translittération (ḥ, ṯ, ǧ, ṣ…) ni ʿ ʾ : Amiri les complète (police de secours). **Version modifiée** (24/10/2026) : `assets/fonts/DotGothic16-IQURA-Regular.ttf`, produite par `tools/fonts/build_game_font.py` (fontTools, MIT) qui retire les accents combinants U+0300–036F de la table des caractères et renomme la police « DotGothic16 IQURA » ; sans ce retrait, ā ḥ ḫ ǧ s'affichaient décomposés (« ḥa¯ »). L'OFL l'autorise (aucun nom réservé déclaré) ; la version modifiée reste sous OFL 1.1. |
 
 L'OFL autorise l'intégration dans une application GPL. Les noms de police réservés (« Amiri ») ne sont pas modifiés, puisque les fichiers sont copiés tels quels. Les licences sont affichées dans Paramètres › Licences des bibliothèques.

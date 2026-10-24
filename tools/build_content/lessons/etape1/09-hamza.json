@@ -331,56 +331,39 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "La hamza et ses supports se retrouvent dans le Coran : compte-les dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "La margelle des étoiles",
+      "texte": "Au bord du puits des étoiles, quatre mots sont gravés. Compte chaque forme de la hamza.",
+      "inscription": [
+        "سَمَاء",
+        "أَرْض",
+        "بِئْر",
+        "سُؤَال"
+      ],
+      "questions": [
         {
-          "verset": "107:1",
-          "mots": [
-            "107:1:1"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ء, seule, vois-tu dans ce mot ?",
-            "mot": "107:1:1",
-            "lettre": "ء"
-          }
+          "type": "compter",
+          "consigne": "Combien de ء, seule, vois-tu dans ce mot ?",
+          "mot": 0,
+          "lettre": "ء"
         },
         {
-          "verset": "110:2",
-          "mots": [
-            "110:2:1"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de أ vois-tu dans ce mot ?",
-            "mot": "110:2:1",
-            "lettre": "أ"
-          }
+          "type": "compter",
+          "consigne": "Combien de أ vois-tu dans ce mot ?",
+          "mot": 1,
+          "lettre": "أ"
         },
         {
-          "verset": "104:8",
-          "mots": [
-            "104:8:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ؤ vois-tu dans ce mot ?",
-            "mot": "104:8:3",
-            "lettre": "ؤ"
-          }
+          "type": "compter",
+          "consigne": "Combien de ئ vois-tu dans ce mot ?",
+          "mot": 2,
+          "lettre": "ئ"
         },
         {
-          "verset": "99:4",
-          "mots": [
-            "99:4:1"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ئ vois-tu dans ce mot ?",
-            "mot": "99:4:1",
-            "lettre": "ئ"
-          }
+          "type": "compter",
+          "consigne": "Combien de ؤ vois-tu dans ce mot ?",
+          "mot": 3,
+          "lettre": "ؤ"
         }
       ]
     },

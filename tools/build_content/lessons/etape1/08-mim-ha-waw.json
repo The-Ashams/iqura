@@ -362,44 +362,40 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "م, ه et و se retrouvent dans le Coran : compte-les dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "La carte du ciel",
+      "texte": "Sur la carte du ciel, Suhayl a noté des mots. Compte les lettres et trouve l'étoile.",
+      "inscription": [
+        "قَمَر",
+        "نَجْم",
+        "شَهْر",
+        "نُور",
+        "يَوْم"
+      ],
+      "questions": [
         {
-          "verset": "111:2",
-          "mots": [
-            "111:2:4"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de م vois-tu dans ce mot ?",
-            "mot": "111:2:4",
-            "lettre": "م"
-          }
+          "type": "compter",
+          "consigne": "Combien de م vois-tu dans ce mot ?",
+          "mot": 0,
+          "lettre": "م"
         },
         {
-          "verset": "111:1",
-          "mots": [
-            "111:1:4"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ه vois-tu dans ce mot ?",
-            "mot": "111:1:4",
-            "lettre": "ه"
-          }
+          "type": "compter",
+          "consigne": "Combien de ه vois-tu dans ce mot ?",
+          "mot": 2,
+          "lettre": "ه"
         },
         {
-          "verset": "114:5",
-          "mots": [
-            "114:5:4"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de و vois-tu dans ce mot ?",
-            "mot": "114:5:4",
-            "lettre": "و"
-          }
+          "type": "compter",
+          "consigne": "Combien de و vois-tu dans ce mot ?",
+          "mot": 4,
+          "lettre": "و"
+        },
+        {
+          "type": "reperer_mot",
+          "consigne": "Touche le mot qui veut dire « étoile ».",
+          "mot": 1,
+          "explication": "نَجْم se lit « naǧm » : étoile."
         }
       ]
     },

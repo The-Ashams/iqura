@@ -148,27 +148,16 @@ void main() {
     },
   );
 
-  testWidgets('Sanctuaire : Al-Fātiḥa, texte vérifié et traduction citée', (
-    tester,
-  ) async {
-    await start(tester);
-    await tester.tap(find.text('Sanctuaire'));
-    await tester.pumpAndSettle();
-    for (var a = 1; a <= 7; a++) {
-      expect(find.textContaining('1:$a — '), findsOneWidget);
-    }
-    expect(find.textContaining('édition non précisée'), findsOneWidget);
-    expect(find.textContaining('pas encore disponible'), findsOneWidget);
-  });
-
   testWidgets('Cité : bâtiments à reconstruire, sans faux bouton', (
     tester,
   ) async {
     await start(tester);
     await tester.tap(find.text('Cité'));
     await tester.pumpAndSettle();
+    expect(find.text('Sanctuaire'), findsNothing);
     expect(find.text('La bibliothèque'), findsOneWidget);
-    expect(find.text('À reconstruire'), findsNWidgets(5));
+    expect(find.text('La Grande Salle de lecture'), findsOneWidget);
+    expect(find.text('À reconstruire'), findsNWidgets(6));
   });
 
   testWidgets('Cité : acheter, équiper, enchanter (taux affiché)', (

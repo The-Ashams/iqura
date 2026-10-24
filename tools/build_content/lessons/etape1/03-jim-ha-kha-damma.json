@@ -362,44 +362,32 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "ج, ح et خ se retrouvent dans le Coran : compte-les dans ces mots. D'autres petits signes, que tu apprendras plus tard, sont aussi présents.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "La couronne du joaillier",
+      "texte": "Sur la couronne, le joaillier a gravé des mots. Compte les lettres et trouve l'aile.",
+      "inscription": [
+        "تَاج",
+        "جَنَاح",
+        "حَبِيب"
+      ],
+      "questions": [
         {
-          "verset": "78:14",
-          "mots": [
-            "78:14:5"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ج vois-tu dans ce mot ?",
-            "mot": "78:14:5",
-            "lettre": "ج"
-          }
+          "type": "compter",
+          "consigne": "Combien de ج vois-tu dans ce mot ?",
+          "mot": 0,
+          "lettre": "ج"
         },
         {
-          "verset": "93:1",
-          "mots": [
-            "93:1:1"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ح vois-tu dans ce mot ?",
-            "mot": "93:1:1",
-            "lettre": "ح"
-          }
+          "type": "compter",
+          "consigne": "Combien de ح vois-tu dans ce mot ?",
+          "mot": 2,
+          "lettre": "ح"
         },
         {
-          "verset": "78:8",
-          "mots": [
-            "78:8:1"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de خ vois-tu dans ce mot ?",
-            "mot": "78:8:1",
-            "lettre": "خ"
-          }
+          "type": "reperer_mot",
+          "consigne": "Touche le mot qui veut dire « aile ».",
+          "mot": 1,
+          "explication": "جَنَاح se lit « ǧanāḥ » : aile."
         }
       ]
     },

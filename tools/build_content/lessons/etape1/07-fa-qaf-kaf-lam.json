@@ -379,56 +379,39 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "ف, ق, ك et ل se retrouvent dans le Coran : compte-les dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "Les rayons du copiste",
+      "texte": "Dans l'atelier, un copiste a étiqueté ses rayons. Compte les lettres et trouve le scribe.",
+      "inscription": [
+        "كِتَاب",
+        "كَاتِب",
+        "قَلْب",
+        "كَلْب"
+      ],
+      "questions": [
         {
-          "verset": "110:1",
-          "mots": [
-            "110:1:5"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ف vois-tu dans ce mot ?",
-            "mot": "110:1:5",
-            "lettre": "ف"
-          }
+          "type": "compter",
+          "consigne": "Combien de ك vois-tu dans ce mot ?",
+          "mot": 0,
+          "lettre": "ك"
         },
         {
-          "verset": "113:3",
-          "mots": [
-            "113:3:5"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ق vois-tu dans ce mot ?",
-            "mot": "113:3:5",
-            "lettre": "ق"
-          }
+          "type": "compter",
+          "consigne": "Combien de ق vois-tu dans ce mot ?",
+          "mot": 2,
+          "lettre": "ق"
         },
         {
-          "verset": "111:2",
-          "mots": [
-            "111:2:6"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ك vois-tu dans ce mot ?",
-            "mot": "111:2:6",
-            "lettre": "ك"
-          }
+          "type": "compter",
+          "consigne": "Combien de ل vois-tu dans ce mot ?",
+          "mot": 3,
+          "lettre": "ل"
         },
         {
-          "verset": "113:1",
-          "mots": [
-            "113:1:4"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ل vois-tu dans ce mot ?",
-            "mot": "113:1:4",
-            "lettre": "ل"
-          }
+          "type": "reperer_mot",
+          "consigne": "Touche le mot qui veut dire « scribe ».",
+          "mot": 1,
+          "explication": "كَاتِب se lit « kātib » : scribe."
         }
       ]
     },

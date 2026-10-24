@@ -5,7 +5,7 @@
   "format": 2,
   "sans_combat": true,
   "titre": "La salle des manuscrits",
-  "objectif": "Reconnaître les signes propres à l'écriture du Mushaf : alif suscrit ٰ, alif waṣla ٱ, petits wāw et yāʾ, signe d'allongement ٓ, petit zéro des lettres muettes, signes de pause. Reconnaissance seulement, sans règles de récitation.",
+  "objectif": "Préparer la lecture de l'écriture coranique : reconnaître, sur des mots isolés, les signes propres au Mushaf (alif suscrit ٰ, alif waṣla ٱ, petits wāw et yāʾ, signe d'allongement ٓ, petit zéro des lettres muettes, signes de pause). Reconnaissance seulement, sans verset ni règles de récitation.",
   "statut": "ia_non_verifie",
   "lieu": "manuscrits",
   "maitre": "nura",
@@ -25,7 +25,12 @@
       "ٱ"
     ]
   },
-  "apercu": [],
+  "apercu": [
+    "لَهُۥ",
+    "بِهِۦ",
+    "جَآءَ",
+    "قَالُوا۟"
+  ],
   "elements": {
     "syllabes": [
       {
@@ -69,11 +74,11 @@
       "repliques": [
         {
           "qui": "nura",
-          "texte": "Voici la salle des manuscrits, tout près du Sanctuaire. Ici, pas de combat : on regarde, on reconnaît, on prend son temps."
+          "texte": "Voici la salle des manuscrits. Ici, pas de combat : on regarde, on reconnaît, on prend son temps."
         },
         {
           "qui": "nura",
-          "texte": "Dans les copies du Coran, les copistes ajoutent de petits signes. Apprenons à les reconnaître."
+          "texte": "Dans les copies du Coran, les copistes ajoutent de petits signes. Apprenons à les reconnaître sur des mots isolés."
         }
       ],
       "objectif": "Reconnaître les petits signes des manuscrits."
@@ -212,7 +217,7 @@
     {
       "type": "regle",
       "titre": "Le petit zéro",
-      "texte": "Dans le Mushaf, le sukūn a la forme du haut d'un petit ح (leçon 4). Le petit zéro ۟, bien rond, marque au contraire une lettre écrite qui ne se prononce pas du tout.",
+      "texte": "Dans le Mushaf, le sukūn a la forme du haut d'un petit ح. Le petit zéro ۟, bien rond, marque au contraire une lettre écrite qui ne se prononce pas du tout.",
       "question": {
         "type": "qcm",
         "consigne": "Le petit zéro ۟ posé sur une lettre veut dire…",
@@ -340,95 +345,40 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "Voici ces signes dans le Coran. Repère-les et compte-les ; tu n'as pas besoin de connaître leurs règles de récitation.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "La liste du copiste",
+      "texte": "Un copiste a recopié des mots isolés à la manière du Mushaf. Repère ses petits signes ; leurs règles de récitation s'apprennent auprès d'un enseignant.",
+      "inscription": [
+        "ذَٰلِكَ",
+        "لَهُۥ",
+        "بِهِۦ",
+        "جَآءَ",
+        "قَالُوا۟"
+      ],
+      "questions": [
         {
-          "verset": "113:4",
-          "mots": [
-            "113:4:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien d'alifs suscrits ٰ vois-tu dans ce mot ?",
-            "mot": "113:4:3",
-            "lettre": "ٰ"
-          }
+          "type": "compter",
+          "consigne": "Combien de petits و vois-tu dans ce mot ?",
+          "mot": 1,
+          "lettre": "ۥ"
         },
         {
-          "verset": "114:1",
-          "mots": [
-            "114:1:4"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ٱ vois-tu dans ce mot ?",
-            "mot": "114:1:4",
-            "lettre": "ٱ"
-          }
+          "type": "compter",
+          "consigne": "Combien de petits ي vois-tu dans ce mot ?",
+          "mot": 2,
+          "lettre": "ۦ"
         },
         {
-          "verset": "112:4",
-          "mots": [
-            "112:4:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de petits و vois-tu dans ce mot ?",
-            "mot": "112:4:3",
-            "lettre": "ۥ"
-          }
+          "type": "compter",
+          "consigne": "Combien de signes d'allongement ٓ vois-tu dans ce mot ?",
+          "mot": 3,
+          "lettre": "ٓ"
         },
         {
-          "verset": "100:4",
-          "mots": [
-            "100:4:2"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de petits ي vois-tu dans ce mot ?",
-            "mot": "100:4:2",
-            "lettre": "ۦ"
-          }
-        },
-        {
-          "verset": "109:2",
-          "mots": [
-            "109:2:1"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de signes d'allongement ٓ vois-tu dans ce mot ?",
-            "mot": "109:2:1",
-            "lettre": "ٓ"
-          }
-        },
-        {
-          "verset": "103:3",
-          "mots": [
-            "103:3:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de petits zéros ۟ vois-tu dans ce mot ?",
-            "mot": "103:3:3",
-            "lettre": "۟"
-          }
-        },
-        {
-          "verset": "104:4",
-          "mots": [],
-          "question": {
-            "type": "qcm",
-            "consigne": "Dans ce verset, repère le petit signe placé entre le premier et le deuxième mot. Que t'indique-t-il ?",
-            "choix": [
-              "S'il convient de s'arrêter ou non à cet endroit",
-              "Le début d'une sourate",
-              "Le nom du copiste"
-            ],
-            "reponse": 0,
-            "explication": "C'est un signe de pause. Ses règles précises s'apprennent auprès d'un enseignant de récitation."
-          }
+          "type": "compter",
+          "consigne": "Combien de petits zéros ۟ vois-tu dans ce mot ?",
+          "mot": 4,
+          "lettre": "۟"
         }
       ]
     },

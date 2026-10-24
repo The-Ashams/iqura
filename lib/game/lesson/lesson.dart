@@ -92,7 +92,7 @@ class LessonQuestion {
     this.tiles = const [],
     this.solution = const [],
     this.letter,
-    this.token,
+    this.word,
     this.revision = false,
   });
 
@@ -120,7 +120,7 @@ class LessonQuestion {
       tiles: ((j['tuiles'] as List?) ?? const []).cast<String>(),
       solution: ((j['solution'] as List?) ?? const []).cast<String>(),
       letter: j['lettre'] as String?,
-      token: j['mot'] as String?,
+      word: j['mot'] as int?,
       revision: j['revision'] == true,
     );
   }
@@ -146,11 +146,11 @@ class LessonQuestion {
   final List<String> tiles;
   final List<String> solution;
 
-  /// Lettre à tracer, ou à compter dans un mot coranique.
+  /// Lettre à tracer, ou à compter dans un mot de la salle de lecture.
   final String? letter;
 
-  /// Mot coranique visé (sourate:verset:mot), salle d'étude seulement.
-  final String? token;
+  /// Mot visé dans l'inscription (indice), salle de lecture seulement.
+  final int? word;
 
   /// Question de révision (leçons précédentes), au mini-boss.
   final bool revision;
@@ -195,15 +195,13 @@ sealed class LessonStep {
             LessonQuestion.fromJson(e as Map<String, dynamic>),
         ],
       ),
-      'coran' => QuranStep(
+      'lecture' => ReadingStep(
+        title: _fr(j['titre']),
         text: frenchWithArabic(j['texte'] as String),
-        extracts: [
-          for (final e in (j['extraits'] as List).cast<Map>())
-            QuranExtract(
-              verse: e['verset'] as String,
-              tokens: strings(e['mots']),
-              question: q(e['question'])!,
-            ),
+        inscription: strings(j['inscription']),
+        questions: [
+          for (final e in j['questions'] as List)
+            LessonQuestion.fromJson(e as Map<String, dynamic>),
         ],
       ),
       'mini_boss' => BossStep(
@@ -262,30 +260,23 @@ class PracticeStep extends LessonStep {
   final bool warmUp;
 }
 
-class QuranExtract {
-  const QuranExtract({
-    required this.verse,
-    required this.tokens,
-    required this.question,
+/// Salle de lecture (avenant n° 1) : une inscription d'exemples construits,
+/// faite de mots déjà lus, et ses questions. Lieu calme, sans combat ;
+/// aucun verset ni extrait coranique.
+class ReadingStep extends LessonStep {
+  const ReadingStep({
+    required this.text,
+    required this.inscription,
+    required this.questions,
+    this.title,
   });
 
-  /// Référence « sourate:verset ».
-  final String verse;
-
-  /// Mots cités (sourate:verset:mot), surlignés.
-  final List<String> tokens;
-  final LessonQuestion question;
-
-  int get surah => int.parse(verse.split(':')[0]);
-  int get ayah => int.parse(verse.split(':')[1]);
-}
-
-/// Salle d'étude « Dans le Coran » : lieu calme, sans combat.
-class QuranStep extends LessonStep {
-  const QuranStep({required this.text, required this.extracts});
-
+  final String? title;
   final String text;
-  final List<QuranExtract> extracts;
+
+  /// Mots de l'inscription, dans l'ordre de lecture (de droite à gauche).
+  final List<String> inscription;
+  final List<LessonQuestion> questions;
 }
 
 class BossStep extends LessonStep {
@@ -386,10 +377,25 @@ class LessonSummary {
   final bool playable;
 }
 
-/// Nombre de fois où [letter] apparaît dans un mot coranique (réponse d'une
-/// question « compter », calculée sur le texte Tanzil, jamais recopiée).
-int countLetter(String tokenText, String letter) =>
-    letter.allMatches(tokenText).length;
+/// Lettres arabes précomposées et leur forme décomposée (Unicode).
+const _decomposed = {
+  'آ': 'ا\u0653',
+  'أ': 'ا\u0654',
+  'إ': 'ا\u0655',
+  'ؤ': 'و\u0654',
+  'ئ': 'ي\u0654',
+};
+
+/// Nombre de fois où [letter] apparaît dans [word] (réponse d'une question
+/// « compter », calculée, jamais recopiée). Un signe seul se compte aussi
+/// dans les lettres qui le portent : آ contient ٓ.
+int countLetter(String word, String letter) {
+  var text = word;
+  if (letter.length == 1 && isArabicMark(letter)) {
+    text = text.split('').map((c) => _decomposed[c] ?? c).join();
+  }
+  return letter.allMatches(text).length;
+}
 
 /// Score minimal au mini-boss : [threshold] des questions notées, arrondi au
 /// supérieur (80 % de 12 = 9,6 → 10).

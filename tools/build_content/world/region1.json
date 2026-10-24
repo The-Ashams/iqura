@@ -20,7 +20,7 @@
     {"id": "archives", "numero": 8, "nom": "Les Archives ensablées", "position": [48, 80], "lecons": [10, 12], "scene": "scene_archives", "sol": 84, "tranche_j1a": true, "liens": ["fontaine"], "description": "Des registres à moitié recouverts de sable."},
     {"id": "fontaine", "numero": 9, "nom": "La Fontaine aux échos", "position": [62, 32], "lecons": [11], "scene": "scene_fontaine", "sol": 84, "tranche_j1a": true, "liens": ["cadran"], "description": "Chaque son y revient deux fois."},
     {"id": "cadran", "numero": 10, "nom": "La Cour du cadran solaire", "position": [98, 31], "lecons": [13], "scene": "scene_cadran", "sol": 84, "tranche_j1a": true, "liens": ["manuscrits"], "description": "Le soleil et la lune y marquent les heures."},
-    {"id": "manuscrits", "numero": 11, "nom": "La Salle des manuscrits", "position": [80, 29], "lecons": [14], "scene": "scene_manuscrits", "sol": 84, "tranche_j1a": true, "liens": [], "description": "Une salle calme, près du Sanctuaire. Aucun combat."},
+    {"id": "manuscrits", "numero": 11, "nom": "La Salle des manuscrits", "position": [80, 29], "lecons": [14], "scene": "scene_manuscrits", "sol": 84, "tranche_j1a": true, "liens": [], "description": "Une salle calme où l'on étudie les manuscrits. Aucun combat."},
     {"id": "faille", "numero": 12, "nom": "La Faille des Oubliés", "position": [129, 17], "lecons": [], "scene": "scene_faille", "sol": 62, "tranche_j1a": true, "liens": [], "description": "Sous la bibliothèque, les brumes d'oubli effacent les étiquettes des livres."}
   ],
   "personnages": [

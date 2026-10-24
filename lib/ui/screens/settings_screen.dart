@@ -243,8 +243,7 @@ class _AboutTile extends ConsumerWidget {
           leading: const Icon(Icons.source_outlined),
           title: const Text('Sources des données'),
           subtitle: const Text(
-            'Tanzil (texte coranique, traduction), Quranic Arabic Corpus '
-            '(morphologie).',
+            'Quranic Arabic Corpus (racines, lemmes, fréquences).',
           ),
           trailing: const Icon(Icons.chevron_right),
           onTap: () => Navigator.push(

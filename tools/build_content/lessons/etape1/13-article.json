@@ -309,32 +309,40 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "L'article se retrouve partout dans le Coran : compte les ل dans ces mots. Son alif s'y écrit ٱ, avec un petit signe que tu verras à la leçon 14.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "Les mots du cadran",
+      "texte": "Autour du cadran solaire, des mots sont gravés. Compte les ل de l'article.",
+      "inscription": [
+        "الشَّمْس",
+        "الْقَمَر",
+        "النُّور",
+        "الْبَاب",
+        "الدَّار"
+      ],
+      "questions": [
         {
-          "verset": "114:1",
-          "mots": [
-            "114:1:4"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ل vois-tu dans ce mot ? (lettre solaire : il ne s'entend pas)",
-            "mot": "114:1:4",
-            "lettre": "ل"
-          }
+          "type": "compter",
+          "consigne": "Combien de ل vois-tu dans ce mot ? (lettre solaire : il ne s'entend pas)",
+          "mot": 0,
+          "lettre": "ل"
         },
         {
-          "verset": "114:4",
-          "mots": [
-            "114:4:4"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ل vois-tu dans ce mot ? (lettre lunaire : il s'entend)",
-            "mot": "114:4:4",
-            "lettre": "ل"
-          }
+          "type": "compter",
+          "consigne": "Combien de ل vois-tu dans ce mot ? (lettre lunaire : il s'entend)",
+          "mot": 1,
+          "lettre": "ل"
+        },
+        {
+          "type": "compter",
+          "consigne": "Combien de shadda vois-tu dans ce mot ? Elle double la lettre solaire.",
+          "mot": 4,
+          "lettre": "ّ"
+        },
+        {
+          "type": "reperer_mot",
+          "consigne": "Touche le mot qui veut dire « le soleil ».",
+          "mot": 0,
+          "explication": "الشَّمْس se lit « aš-šams » : le soleil."
         }
       ]
     },

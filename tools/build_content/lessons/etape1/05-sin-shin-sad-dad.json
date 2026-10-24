@@ -383,56 +383,39 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "س, ش, ص et ض se retrouvent dans le Coran : compte-les dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "Les mots du sable",
+      "texte": "Dans le sable des dunes, un voyageur a tracé quatre mots. Compte les nouvelles lettres.",
+      "inscription": [
+        "دَرْس",
+        "شَجَر",
+        "صَبْر",
+        "بَيْض"
+      ],
+      "questions": [
         {
-          "verset": "114:4",
-          "mots": [
-            "114:4:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de س vois-tu dans ce mot ?",
-            "mot": "114:4:3",
-            "lettre": "س"
-          }
+          "type": "compter",
+          "consigne": "Combien de س vois-tu dans ce mot ?",
+          "mot": 0,
+          "lettre": "س"
         },
         {
-          "verset": "113:2",
-          "mots": [
-            "113:2:2"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ش vois-tu dans ce mot ?",
-            "mot": "113:2:2",
-            "lettre": "ش"
-          }
+          "type": "compter",
+          "consigne": "Combien de ش vois-tu dans ce mot ?",
+          "mot": 1,
+          "lettre": "ش"
         },
         {
-          "verset": "110:1",
-          "mots": [
-            "110:1:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ص vois-tu dans ce mot ?",
-            "mot": "110:1:3",
-            "lettre": "ص"
-          }
+          "type": "compter",
+          "consigne": "Combien de ص vois-tu dans ce mot ?",
+          "mot": 2,
+          "lettre": "ص"
         },
         {
-          "verset": "100:1",
-          "mots": [
-            "100:1:2"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ض vois-tu dans ce mot ?",
-            "mot": "100:1:2",
-            "lettre": "ض"
-          }
+          "type": "compter",
+          "consigne": "Combien de ض vois-tu dans ce mot ?",
+          "mot": 3,
+          "lettre": "ض"
         }
       ]
     },

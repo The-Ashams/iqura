@@ -10,7 +10,7 @@
 - **Style** : pixel art dans l'esprit des RPG japonais classiques (cahier §8.1) ; maquettes de référence du 22/10/2026.
 - **Règles** (cahier §3.1) :
   - aucun prophète ni aucune figure religieuse n'est représenté ni ne prend la parole ; aucun personnage n'a de rôle religieux ; aucun nom de prophète ;
-  - le Coran n'apparaît que dans les salles d'étude et le Sanctuaire, sans combat ;
+  - aucun verset ni extrait coranique, nulle part (avenant n° 1 du 24/10/2026) ; seul le vocabulaire du Coran est enseigné, sous forme de dictionnaire ;
   - les adversaires sont des difficultés, jamais des mots.
 - **Langue des dialogues** : d'abord en français, puis de plus en plus de mots arabes déjà appris ; arabe classique.
 - Une mauvaise compréhension n'est jamais punitive : impasse, indice ou autre piste.
@@ -23,7 +23,7 @@
 | 2. L'Oasis des Fondations | Vit avec une caravane et au marché | La Confusion |
 | 3. Les Montagnes du Moteur | Apprend chez les forgerons et les copistes comment les mots se fabriquent | La Précipitation |
 | 4. La Cité des Lecteurs | Lit des lettres et des récits, débat, rédige | La Distraction |
-| 5. Les Jardins du Sens | Étudie au Sanctuaire | L'Impatience (jamais lié au texte sacré) |
+| 5. Les Jardins du Sens | Étudie les grands livres classiques de la bibliothèque rouverte et en maîtrise la langue | L'Impatience (jamais lié au texte sacré) |
 
 ## Région 1 : « Le Désert des Lettres » (validée le 22/10/2026)
 
@@ -43,12 +43,12 @@
 | 8 | Les Archives ensablées | 10 et 12 | Registres abîmés : fins de mots, tanwīn |
 | 9 | La Fontaine aux échos | 11 | La shadda |
 | 10 | La Cour du cadran solaire | 13 | L'article : lettres solaires et lunaires |
-| 11 | La Salle des manuscrits, à côté du Sanctuaire | 14 | Les signes du Mushaf (reconnaissance seulement, sans combat) |
+| 11 | La Salle des manuscrits | 14 | Préparer la lecture de l'écriture coranique : signes du Mushaf sur des mots isolés (reconnaissance seulement, sans combat) |
 | 12 | La Faille des Oubliés, sous la bibliothèque | Expédition, boss | Révisions quotidiennes ; le Gardien de l'Oubli |
 
-Le **Sanctuaire** est une salle calme de la bibliothèque, ouverte dès le début, où l'on lit Al-Fātiḥa.
+Le Sanctuaire est supprimé (avenant n° 1). Dans la Cité, le bâtiment correspondant devient la **Grande Salle de lecture** : bibliothèque des récits gradués et des textes classiques profanes, lieu calme, sans combat.
 
-**Tranche verticale J1a** : lieux 1, 2, 3, 12 et le Sanctuaire (leçons 0 à 3).
+**Tranche verticale J1a** : lieux 1, 2, 3 et 12 (leçons 0 à 3) ; depuis le 24/10/2026, les 12 lieux sont ouverts.
 
 ### Personnages
 

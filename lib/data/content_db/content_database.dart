@@ -16,7 +16,6 @@ import 'package:sqlite3/sqlite3.dart';
 import '../../game/equipment/equipment.dart';
 import '../../game/lesson/lesson.dart';
 import '../../game/world.dart';
-import 'quran_integrity.dart';
 
 /// La base de contenu est absente, d'une autre version ou altérée.
 class ContentIntegrityException implements Exception {
@@ -54,10 +53,25 @@ class ContentDatabase {
   static const versionAssetPath = 'assets/content/iqura_content.db.version';
 
   /// Version du schéma de la base de contenu gérée par cette application.
-  static const int schemaVersion = 7;
+  static const int schemaVersion = 8;
 
-  /// Copie (si besoin) puis ouvre la base dans [directory], et vérifie le
-  /// texte coranique. Si la copie est altérée, elle est refaite une fois
+  /// Tables indispensables au jeu.
+  static const requiredTables = [
+    'content_meta',
+    'source',
+    'root',
+    'lemma',
+    'letter',
+    'lesson',
+    'audio_clip',
+    'region',
+    'place',
+    'character',
+    'item',
+  ];
+
+  /// Copie (si besoin) puis ouvre la base dans [directory], et la vérifie
+  /// (schéma, intégrité SQLite). Si la copie est altérée, elle est refaite une fois
   /// depuis les ressources de l'application ; si le contrôle échoue encore,
   /// lève [ContentIntegrityException].
   static Future<ContentDatabase> install(
@@ -98,7 +112,7 @@ class ContentDatabase {
     await versionFile.writeAsString(version, flush: true);
   }
 
-  /// Ouvre en lecture seule et vérifie schéma et texte coranique.
+  /// Ouvre en lecture seule et vérifie le schéma et l'intégrité.
   static ContentDatabase openVerified(String path) {
     final db = openFile(path);
     try {
@@ -112,30 +126,35 @@ class ContentDatabase {
 
   /// Lève [ContentIntegrityException] si la base n'est pas celle attendue.
   void verify() {
-    final int version;
-    final String digest;
     try {
-      version = _db.select('PRAGMA user_version').first.columnAt(0) as int;
+      final version = _db.select('PRAGMA user_version').first.columnAt(0);
       if (version != schemaVersion) {
         throw ContentIntegrityException(
           'Base de contenu de schéma $version (attendu $schemaVersion).',
         );
       }
-      digest = quranTextSha256(_db);
-    } on ContentIntegrityException {
-      rethrow;
+      final check = _db.select('PRAGMA quick_check').first.columnAt(0);
+      if (check != 'ok') {
+        throw ContentIntegrityException('Base de contenu altérée : $check');
+      }
+      final tables = {
+        for (final r in _db.select(
+          "SELECT name FROM sqlite_master WHERE type = 'table'",
+        ))
+          r['name'] as String,
+      };
+      final missing = requiredTables.where((t) => !tables.contains(t));
+      if (missing.isNotEmpty) {
+        throw ContentIntegrityException(
+          'Base de contenu incomplète (tables absentes : ${missing.join(', ')}).',
+        );
+      }
     } on SqliteException catch (e) {
       throw ContentIntegrityException('Base de contenu illisible : $e');
     }
-    if (digest != expectedQuranTextSha256) {
-      throw const ContentIntegrityException(
-        'Le texte coranique de la base de contenu ne correspond pas à '
-        'celui de Tanzil (empreinte SHA-256 différente).',
-      );
-    }
   }
 
-  /// Sources citées (texte, traduction, morphologie…).
+  /// Sources citées (morphologie du Quranic Arabic Corpus…).
   List<ContentSource> sources() => [
     for (final r in _db.select(
       'SELECT id, title, attribution, license, link, notes FROM source '
@@ -164,16 +183,10 @@ class ContentDatabase {
   String get contentVersion => meta()['content_version'] ?? 'inconnue';
 
   /// Notices de copyright d'origine, reproduites mot pour mot (conditions du
-  /// Quranic Arabic Corpus et de la traduction), par identifiant de source.
+  /// Quranic Arabic Corpus), par identifiant de source.
   Map<String, String> sourceNotices() {
-    final m = meta();
-    return {
-      for (final e in const {
-        'qac-morphology': 'qac_header',
-        'tanzil-fr-hamidullah': 'translation_header',
-      }.entries)
-        if (m[e.value] != null) e.key: m[e.value]!,
-    };
+    final header = meta()['qac_header'];
+    return {'qac-morphology': ?header};
   }
 
   /// Régions du jeu, dans l'ordre.
@@ -295,40 +308,6 @@ class ContentDatabase {
     );
   }
 
-  /// Mots d'un verset (texte Tanzil vérifié), dans l'ordre.
-  List<QuranToken> verseTokens(int surah, int ayah) => [
-    for (final r in _db.select(
-      'SELECT t.id, t.text FROM token t JOIN verse v ON v.id = t.verse_id '
-      'WHERE v.surah_id = ? AND v.ayah = ? ORDER BY t.position',
-      [surah, ayah],
-    ))
-      QuranToken(id: r['id'] as String, text: r['text'] as String),
-  ];
-
-  /// Un verset et sa traduction.
-  VerseText? verse(int surah, int ayah) {
-    final rows = _db.select(
-      'SELECT v.surah_id, v.ayah, v.text_uthmani, t.text FROM verse v '
-      'JOIN verse_translation t ON t.verse_id = v.id '
-      'WHERE v.surah_id = ? AND v.ayah = ?',
-      [surah, ayah],
-    );
-    if (rows.isEmpty) return null;
-    final r = rows.first;
-    return VerseText(
-      surah: r['surah_id'] as int,
-      ayah: r['ayah'] as int,
-      arabic: r['text_uthmani'] as String,
-      translation: r['text'] as String,
-    );
-  }
-
-  /// Texte d'un mot coranique (sourate:verset:mot).
-  String? tokenText(String id) {
-    final rows = _db.select('SELECT text FROM token WHERE id = ?', [id]);
-    return rows.isEmpty ? null : rows.first['text'] as String;
-  }
-
   /// Fiche d'une lettre.
   LetterCard? letter(String letter) {
     for (final l in letters()) {
@@ -373,22 +352,6 @@ class ContentDatabase {
     );
     return rows.isEmpty ? null : rows.first['file'] as String;
   }
-
-  /// Versets d'une sourate (texte Tanzil vérifié et traduction Hamidullah).
-  List<VerseText> surahVerses(int surah) => [
-    for (final r in _db.select(
-      'SELECT v.surah_id, v.ayah, v.text_uthmani, t.text FROM verse v '
-      'JOIN verse_translation t ON t.verse_id = v.id '
-      'WHERE v.surah_id = ? ORDER BY v.ayah',
-      [surah],
-    ))
-      VerseText(
-        surah: r['surah_id'] as int,
-        ayah: r['ayah'] as int,
-        arabic: r['text_uthmani'] as String,
-        translation: r['text'] as String,
-      ),
-  ];
 
   void close() => _db.close();
 }

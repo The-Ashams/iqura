@@ -313,44 +313,40 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "Les tanwīn se retrouvent dans le Coran : compte-les dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "Le registre complet",
+      "texte": "Le registre complet liste les objets des archives. Compte les tanwīn.",
+      "inscription": [
+        "بَابٌ",
+        "كِتَابٌ",
+        "وَرَقَةٌ",
+        "بَابًا",
+        "بَابٍ"
+      ],
+      "questions": [
         {
-          "verset": "111:5",
-          "mots": [
-            "111:5:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ٌ vois-tu dans ce mot ?",
-            "mot": "111:5:3",
-            "lettre": "ٌ"
-          }
+          "type": "compter",
+          "consigne": "Combien de ٌ vois-tu dans ce mot ?",
+          "mot": 1,
+          "lettre": "ٌ"
         },
         {
-          "verset": "104:2",
-          "mots": [
-            "104:2:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ً vois-tu dans ce mot ?",
-            "mot": "104:2:3",
-            "lettre": "ً"
-          }
+          "type": "compter",
+          "consigne": "Combien de ً vois-tu dans ce mot ?",
+          "mot": 3,
+          "lettre": "ً"
         },
         {
-          "verset": "111:1",
-          "mots": [
-            "111:1:4"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ٍ vois-tu dans ce mot ?",
-            "mot": "111:1:4",
-            "lettre": "ٍ"
-          }
+          "type": "compter",
+          "consigne": "Combien de ٍ vois-tu dans ce mot ?",
+          "mot": 4,
+          "lettre": "ٍ"
+        },
+        {
+          "type": "reperer_mot",
+          "consigne": "Touche le mot qui veut dire « une feuille ».",
+          "mot": 2,
+          "explication": "وَرَقَةٌ se lit « waraqatun » : une feuille."
         }
       ]
     },

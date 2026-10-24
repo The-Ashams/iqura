@@ -298,32 +298,34 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "La shadda se retrouve très souvent dans le Coran : compte-la dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "Les mots de la fontaine",
+      "texte": "Sur le bord de la fontaine, des enfants ont écrit des mots. Compte les shadda et trouve la mère.",
+      "inscription": [
+        "أُمّ",
+        "سُكَّر",
+        "قِطَّة",
+        "جَدَّة",
+        "مُعَلِّم"
+      ],
+      "questions": [
         {
-          "verset": "114:4",
-          "mots": [
-            "114:4:2"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de shadda vois-tu dans ce mot ?",
-            "mot": "114:4:2",
-            "lettre": "ّ"
-          }
+          "type": "compter",
+          "consigne": "Combien de shadda vois-tu dans ce mot ?",
+          "mot": 1,
+          "lettre": "ّ"
         },
         {
-          "verset": "108:2",
-          "mots": [
-            "108:2:1"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de shadda vois-tu dans ce mot ?",
-            "mot": "108:2:1",
-            "lettre": "ّ"
-          }
+          "type": "compter",
+          "consigne": "Combien de shadda vois-tu dans ce mot ?",
+          "mot": 4,
+          "lettre": "ّ"
+        },
+        {
+          "type": "reperer_mot",
+          "consigne": "Touche le mot qui veut dire « mère ».",
+          "mot": 0,
+          "explication": "أُمّ se lit « umm » : mère."
         }
       ]
     },

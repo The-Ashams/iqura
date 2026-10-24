@@ -370,44 +370,32 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "ن et ي se retrouvent dans le Coran : compte-les dans ces mots. D'autres petits signes, que tu apprendras plus tard, sont aussi présents.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "L'enseigne de l'herboriste",
+      "texte": "L'enseigne de l'herboriste annonce ce qu'il vend. Compte les lettres et trouve les figues.",
+      "inscription": [
+        "نَبَات",
+        "تِين",
+        "بَنَات"
+      ],
+      "questions": [
         {
-          "verset": "95:2",
-          "mots": [
-            "95:2:2"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ي vois-tu dans ce mot ?",
-            "mot": "95:2:2",
-            "lettre": "ي"
-          }
+          "type": "compter",
+          "consigne": "Combien de ي vois-tu dans ce mot ?",
+          "mot": 1,
+          "lettre": "ي"
         },
         {
-          "verset": "95:2",
-          "mots": [
-            "95:2:2"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Et combien de ن ?",
-            "mot": "95:2:2",
-            "lettre": "ن"
-          }
+          "type": "compter",
+          "consigne": "Combien de ن vois-tu dans ce mot ?",
+          "mot": 2,
+          "lettre": "ن"
         },
         {
-          "verset": "80:29",
-          "mots": [
-            "80:29:1"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ن vois-tu dans ce mot ?",
-            "mot": "80:29:1",
-            "lettre": "ن"
-          }
+          "type": "reperer_mot",
+          "consigne": "Touche le mot qui veut dire « figues ».",
+          "mot": 1,
+          "explication": "تِين se lit « tīn » : figues."
         }
       ]
     },

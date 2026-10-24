@@ -1,13 +1,13 @@
 # IQURA
 
-Application **gratuite et open source** (GPL-3.0) pour apprendre l'arabe et
-l'arabe coranique, sous la forme d'un RPG 2D. Interface en français.
+Application **gratuite et open source** (GPL-3.0) pour apprendre l'arabe
+littéraire classique, la langue du Coran, sous la forme d'un RPG 2D. Elle
+prépare à la compréhension du Coran sans afficher aucun verset. Interface en français.
 Plateformes : Android et Windows.
 
-> **État : jalon J0 (socle) terminé ; J1 (MVP, région 1 « Déchiffrer ») en
-> préparation.** Les données coraniques (texte Tanzil vérifié, traduction
-> Hamidullah, morphologie du Quranic Arabic Corpus) sont intégrées. Les espaces
-> du jeu sont encore affichés comme « Pas encore disponible ».
+> **État : région 1 « Le Désert des Lettres » construite (leçons 0 à 14 et
+> examen).** Données linguistiques : Quranic Arabic Corpus (racines, lemmes,
+> fréquences). Détail : `docs/ETAT_DU_PROJET.md`.
 
 Référence du projet : [`docs/CAHIER_DES_CHARGES.md`](docs/CAHIER_DES_CHARGES.md) (v3). État : [`docs/ETAT_DU_PROJET.md`](docs/ETAT_DU_PROJET.md).
 L'ancien dossier d'architecture est archivé dans `docs/archive/`.

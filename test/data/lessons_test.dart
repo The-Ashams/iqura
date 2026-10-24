@@ -57,32 +57,21 @@ void main() {
     expect(checked, greaterThan(20));
   });
 
-  test(
-    'les leçons ne contiennent aucun texte coranique, seulement des références',
-    () {
-      for (final lesson in lessons()) {
-        final format2 = lesson['format'] == 2;
-        final parts = (lesson[format2 ? 'ecrans' : 'sections'] as List)
-            .cast<Map>();
-        for (final part in parts) {
-          if (part['type'] != 'coran') continue;
-          for (final e in (part['extraits'] as List).cast<Map>()) {
-            expect(
-              e.keys.toSet().difference({
-                'verset',
-                'mots',
-                format2 ? 'question' : 'lettres',
-              }),
-              isEmpty,
-            );
-            if (format2) {
-              expect((e['question'] as Map).containsKey('ar'), isFalse);
-            }
-          }
+  test('aucun verset ni extrait coranique dans les leçons (avenant n° 1)', () {
+    for (final lesson in lessons()) {
+      for (final part in (lesson['ecrans'] as List).cast<Map>()) {
+        expect(part['type'], isNot('coran'), reason: lesson['id'] as String);
+        expect(part.containsKey('extraits'), isFalse);
+        expect(part.containsKey('verset'), isFalse);
+        for (final q in [
+          ...((part['questions'] as List?) ?? const []),
+          ...((part['exercices'] as List?) ?? const []),
+        ].cast<Map>()) {
+          expect(q['mot'], anyOf(isNull, isA<int>()));
         }
       }
-    },
-  );
+    }
+  });
 
   test('toute leçon est marquée « rédigé par IA »', () {
     for (final lesson in lessons()) {

@@ -388,44 +388,39 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "د, ذ, ر et ز se retrouvent dans le Coran : compte-les dans ces mots. Ici, le sukūn s'écrit comme le haut d'un petit ح, et d'autres petits signes, appris plus tard, sont aussi présents.",
-      "extraits": [
+      "type": "lecture",
+      "titre": "Les caisses de la caravane",
+      "texte": "Sur les caisses de la caravane, des mots sont peints. Compte les lettres et trouve la mer.",
+      "inscription": [
+        "خُبْز",
+        "بَحْر",
+        "بَدْر",
+        "دَار"
+      ],
+      "questions": [
         {
-          "verset": "104:2",
-          "mots": [
-            "104:2:4"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de د vois-tu dans ce mot ?",
-            "mot": "104:2:4",
-            "lettre": "د"
-          }
+          "type": "compter",
+          "consigne": "Combien de ز vois-tu dans ce mot ?",
+          "mot": 0,
+          "lettre": "ز"
         },
         {
-          "verset": "99:1",
-          "mots": [
-            "99:1:2"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ز vois-tu dans ce mot ?",
-            "mot": "99:1:2",
-            "lettre": "ز"
-          }
+          "type": "compter",
+          "consigne": "Combien de د vois-tu dans ce mot ?",
+          "mot": 3,
+          "lettre": "د"
         },
         {
-          "verset": "94:4",
-          "mots": [
-            "94:4:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ذ vois-tu dans ce mot ?",
-            "mot": "94:4:3",
-            "lettre": "ذ"
-          }
+          "type": "compter",
+          "consigne": "Combien de sukūn vois-tu dans ce mot ?",
+          "mot": 2,
+          "lettre": "ْ"
+        },
+        {
+          "type": "reperer_mot",
+          "consigne": "Touche le mot qui veut dire « mer ».",
+          "mot": 1,
+          "explication": "بَحْر se lit « baḥr » : mer."
         }
       ]
     },

@@ -15,7 +15,6 @@ import '../../../features/resources/resources.dart';
 import '../../../features/review/review.dart';
 import '../../../features/settings/settings.dart';
 import '../../../game/lesson/lesson.dart';
-import '../../../game/world.dart';
 import '../../../game/world_providers.dart';
 import '../../widgets/arabic_text.dart';
 import '../grimoire_screen.dart';
@@ -101,7 +100,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     ExplainStep(kind: ExplainKind.rule) => 'La règle',
     PracticeStep(warmUp: true) => 'Échauffement',
     PracticeStep() => 'Salle d\'entraînement',
-    QuranStep() => 'Salle d\'étude « Dans le Coran »',
+    ReadingStep() => 'Salle de lecture',
     BossStep() => 'Mini-boss',
     EndStep() => 'Fin',
   };
@@ -168,7 +167,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
       onNext: _next,
       random: widget.random,
     ),
-    QuranStep() => _QuranView(step: step, onNext: _next),
+    ReadingStep() => _ReadingView(lesson: _lesson, step: step, onNext: _next),
     BossStep() => BossView(
       step: step,
       adversary: ref.read(currentRegionProvider).adversary,
@@ -505,45 +504,51 @@ class _PracticeViewState extends State<_PracticeView> {
 }
 
 // ---------------------------------------------------------------------------
-// 7. Salle d'étude « Dans le Coran » : lieu calme, sans combat. Le texte vient
-// de la base vérifiée (Tanzil) ; rien n'est recopié dans la leçon.
+// 7. Salle de lecture (avenant n° 1) : lieu calme, sans combat. Une
+// inscription d'exemples construits, faite de mots déjà lus ; aucun verset ni
+// extrait coranique.
 
-class _QuranView extends ConsumerStatefulWidget {
-  const _QuranView({required this.step, required this.onNext});
+/// Mot écrit avec des signes du Mushaf (leçon 14) : police Amiri Quran.
+bool _mushafStyle(String word) =>
+    RegExp('[\u0653\u0670\u0671\u06D6-\u06ED]').hasMatch(word);
 
-  final QuranStep step;
+class _ReadingView extends ConsumerStatefulWidget {
+  const _ReadingView({
+    required this.lesson,
+    required this.step,
+    required this.onNext,
+  });
+
+  final Lesson lesson;
+  final ReadingStep step;
   final VoidCallback onNext;
 
-  static const String credit =
-      'Texte : Tanzil (copie vérifiée). Traduction : Muhammad Hamidullah, '
-      'version diffusée par Tanzil (édition non précisée).';
-  static const String recitationNotice =
-      "Récitation d'al-Ḥuṣarī : pas encore disponible.";
+  static const String source = 'Exemple construit';
 
   @override
-  ConsumerState<_QuranView> createState() => _QuranViewState();
+  ConsumerState<_ReadingView> createState() => _ReadingViewState();
 }
 
-class _QuranViewState extends ConsumerState<_QuranView> {
-  int _extract = 0;
-  String? _tapped;
+class _ReadingViewState extends ConsumerState<_ReadingView> {
+  int _question = 0;
+  int? _tapped;
   int? _selected;
   bool? _right;
 
-  QuranExtract get _e => widget.step.extracts[_extract];
+  LessonQuestion get _q => widget.step.questions[_question];
 
   void _answer(bool right) {
     playSfx(ref, right ? Sfx.juste : Sfx.faux);
     setState(() => _right = right);
   }
 
-  void _nextExtract() {
-    if (_extract + 1 >= widget.step.extracts.length) {
+  void _nextQuestion() {
+    if (_question + 1 >= widget.step.questions.length) {
       widget.onNext();
       return;
     }
     setState(() {
-      _extract++;
+      _question++;
       _tapped = null;
       _selected = null;
       _right = null;
@@ -552,20 +557,36 @@ class _QuranViewState extends ConsumerState<_QuranView> {
 
   @override
   Widget build(BuildContext context) {
-    final db = ref.watch(contentDatabaseProvider);
-    final verse = db.verse(_e.surah, _e.ayah);
-    final tokens = db.verseTokens(_e.surah, _e.ayah);
-    final q = _e.question;
-    final cited = _e.tokens.toSet();
+    final place = ref
+        .watch(regionPlacesProvider)
+        .where((p) => p.id == widget.lesson.place)
+        .firstOrNull;
+    final q = _q;
+    final words = widget.step.inscription;
+    final locate = q.kind == QuestionKind.repererMot;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(6),
-          child: const SceneView(background: 'scene_sanctuaire'),
-        ),
+        if (place?.sceneImage != null &&
+            !ref.watch(settingsProvider.select((s) => s.learningOnly)))
+          ClipRRect(
+            borderRadius: BorderRadius.circular(6),
+            child: SceneView(background: place!.sceneImage!),
+          ),
         const SizedBox(height: 12),
-        PixelWindow(child: Text(widget.step.text)),
+        PixelWindow(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              if (widget.step.title != null)
+                Text(
+                  widget.step.title!,
+                  style: TextStyle(color: GameColors.accent, fontSize: 18),
+                ),
+              Text(widget.step.text),
+            ],
+          ),
+        ),
         const SizedBox(height: 12),
         Container(
           padding: const EdgeInsets.all(16),
@@ -573,61 +594,43 @@ class _QuranViewState extends ConsumerState<_QuranView> {
             color: const Color(0xFFF6EFDF),
             borderRadius: BorderRadius.circular(6),
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+          child: Wrap(
+            alignment: WrapAlignment.center,
+            textDirection: TextDirection.rtl,
+            spacing: 14,
+            runSpacing: 4,
             children: [
-              Wrap(
-                textDirection: TextDirection.rtl,
-                spacing: 10,
-                runSpacing: 4,
-                children: [
-                  for (final t in tokens)
-                    _QuranWord(
-                      token: t,
-                      highlighted: q.kind == QuestionKind.repererMot
-                          ? _tapped == t.id ||
-                                (_right != null && t.id == q.token)
-                          : cited.contains(t.id),
-                      onTap: q.kind == QuestionKind.repererMot && _right == null
-                          ? () {
-                              playSfx(ref, Sfx.choix);
-                              setState(() => _tapped = t.id);
-                            }
-                          : null,
-                    ),
-                ],
-              ),
-              if (verse != null) ...[
-                const SizedBox(height: 6),
-                Text(
-                  '${verse.surah}:${verse.ayah} — ${verse.translation}',
-                  style: const TextStyle(
-                    color: Color(0xFF4A3F33),
-                    fontFamily: 'Amiri',
-                    fontSize: 17,
-                    height: 1.4,
-                  ),
+              for (final (i, w) in words.indexed)
+                _InscriptionWord(
+                  text: w,
+                  highlighted: locate
+                      ? _tapped == i || (_right != null && i == q.word)
+                      : q.kind == QuestionKind.compter && i == q.word,
+                  onTap: locate && _right == null
+                      ? () {
+                          playSfx(ref, Sfx.choix);
+                          setState(() => _tapped = i);
+                        }
+                      : null,
                 ),
-              ],
             ],
           ),
         ),
         const SizedBox(height: 6),
         Text(
-          '${_QuranView.credit} ${_QuranView.recitationNotice}',
+          '${_ReadingView.source} · rédigé par IA',
           style: TextStyle(color: GameColors.muted, fontSize: 13),
         ),
         const SizedBox(height: 12),
-        if (q.kind == QuestionKind.repererMot)
+        if (locate)
           _locate(q)
         else if (q.kind == QuestionKind.compter)
-          _count(q, db.tokenText(q.token!) ?? '')
+          _count(q, words[q.word!])
         else
-          // Question à choix sur le verset affiché (leçon 14 : signes).
           QuestionView(
-            key: ValueKey('coran-$_extract'),
+            key: ValueKey('lecture-$_question'),
             question: q,
-            onContinue: _nextExtract,
+            onContinue: _nextQuestion,
           ),
       ],
     );
@@ -640,7 +643,7 @@ class _QuranViewState extends ConsumerState<_QuranView> {
         if (_right == null) ...[
           const SizedBox(height: 8),
           const Text(
-            'Touche un mot du verset, puis valide.',
+            'Touche un mot de l\'inscription, puis valide.',
             style: TextStyle(color: PanelColors.muted, fontSize: 13),
           ),
           const SizedBox(height: 8),
@@ -648,7 +651,7 @@ class _QuranViewState extends ConsumerState<_QuranView> {
             label: 'Valider',
             onPressed: _tapped == null
                 ? null
-                : () => _answer(_tapped == q.token),
+                : () => _answer(_tapped == q.word),
           ),
         ] else
           ..._feedback(q.explanation),
@@ -666,7 +669,7 @@ class _QuranViewState extends ConsumerState<_QuranView> {
           const SizedBox(height: 8),
           ArabicText(
             word,
-            quran: true,
+            mushaf: _mushafStyle(word),
             baseSize: 44,
             style: const TextStyle(color: PanelColors.ink),
           ),
@@ -704,8 +707,7 @@ class _QuranViewState extends ConsumerState<_QuranView> {
               frenchWithArabic(
                 'Ce mot contient $n fois '
                 '${isArabicMark(q.letter!) ? 'le signe' : 'la lettre'} '
-                '${showMark(q.letter!)}. D\'autres lettres et signes '
-                'l\'accompagnent.',
+                '${showMark(q.letter!)}.',
               ),
             ),
         ],
@@ -724,18 +726,18 @@ class _QuranViewState extends ConsumerState<_QuranView> {
     ),
     if (explanation != null) Text(explanation, textAlign: TextAlign.center),
     const SizedBox(height: 8),
-    PanelButton(label: 'Continuer', onPressed: _nextExtract),
+    PanelButton(label: 'Continuer', onPressed: _nextQuestion),
   ];
 }
 
-class _QuranWord extends StatelessWidget {
-  const _QuranWord({
-    required this.token,
+class _InscriptionWord extends StatelessWidget {
+  const _InscriptionWord({
+    required this.text,
     required this.highlighted,
     required this.onTap,
   });
 
-  final QuranToken token;
+  final String text;
   final bool highlighted;
   final VoidCallback? onTap;
 
@@ -752,9 +754,9 @@ class _QuranWord extends StatelessWidget {
           borderRadius: BorderRadius.circular(4),
         ),
         child: ArabicText(
-          token.text,
-          quran: true,
-          baseSize: 30,
+          text,
+          mushaf: _mushafStyle(text),
+          baseSize: 32,
           style: const TextStyle(color: Color(0xFF2A1F18)),
         ),
       ),

@@ -15,7 +15,8 @@ class CityScreen extends StatelessWidget {
     "L'école",
     'Le marché',
     'La forge',
-    'Le sanctuaire',
+    'La Grande Salle de lecture',
+    "L'Atelier des phrases",
   ];
 
   static const String laterNotice =

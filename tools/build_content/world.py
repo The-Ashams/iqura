@@ -152,3 +152,14 @@ def write_items(con: sqlite3.Connection, data: dict) -> int:
              it["description"]),
         )
     return len(data["objets"])
+
+
+def arabic_texts(regions: list[dict]) -> dict[str, str]:
+    """Textes arabes du monde (noms de personnages), pour le garde-fou
+    coranique."""
+    out = {}
+    for r in regions:
+        for c in r["personnages"]:
+            if c.get("nom_ar"):
+                out[f"monde · {c['id']}"] = c["nom_ar"]
+    return out

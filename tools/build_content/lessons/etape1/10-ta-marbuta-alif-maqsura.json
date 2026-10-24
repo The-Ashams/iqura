@@ -315,32 +315,34 @@
       ]
     },
     {
-      "type": "coran",
-      "texte": "Compte ة et ى dans ces mots du Coran. Dans le Mushaf, ي final s'écrit souvent sans points (ٱلَّتِى finit par « ī ») ; en enchaînant, le « ā » de عَلَى devient bref : « ʿala l-afʾida ».",
-      "extraits": [
+      "type": "lecture",
+      "titre": "La page du registre",
+      "texte": "Dans les registres, un archiviste a noté des mots. Compte ة et ى, puis trouve la ville.",
+      "inscription": [
+        "وَرَقَة",
+        "مَدِينَة",
+        "شَجَرَة",
+        "فَتَى",
+        "عَلَى"
+      ],
+      "questions": [
         {
-          "verset": "106:2",
-          "mots": [
-            "106:2:2"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ة vois-tu dans ce mot ?",
-            "mot": "106:2:2",
-            "lettre": "ة"
-          }
+          "type": "compter",
+          "consigne": "Combien de ة vois-tu dans ce mot ?",
+          "mot": 0,
+          "lettre": "ة"
         },
         {
-          "verset": "104:7",
-          "mots": [
-            "104:7:3"
-          ],
-          "question": {
-            "type": "compter",
-            "consigne": "Combien de ى vois-tu dans ce mot ?",
-            "mot": "104:7:3",
-            "lettre": "ى"
-          }
+          "type": "compter",
+          "consigne": "Combien de ى vois-tu dans ce mot ?",
+          "mot": 3,
+          "lettre": "ى"
+        },
+        {
+          "type": "reperer_mot",
+          "consigne": "Touche le mot qui veut dire « ville ».",
+          "mot": 1,
+          "explication": "مَدِينَة se lit « madīna » : ville."
         }
       ]
     },

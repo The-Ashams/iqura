@@ -113,27 +113,3 @@ class ReadingItem {
   /// Mot (sinon syllabe).
   final bool word;
 }
-
-/// Verset lu dans la base vérifiée (texte Tanzil, traduction).
-class VerseText {
-  const VerseText({
-    required this.surah,
-    required this.ayah,
-    required this.arabic,
-    required this.translation,
-  });
-
-  final int surah;
-  final int ayah;
-  final String arabic;
-  final String translation;
-}
-
-/// Un mot d'un verset (texte Tanzil vérifié).
-class QuranToken {
-  const QuranToken({required this.id, required this.text});
-
-  /// « sourate:verset:mot ».
-  final String id;
-  final String text;
-}

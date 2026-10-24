@@ -1,6 +1,6 @@
 # IQURA — Cahier des charges v3 (document de référence unique)
 
-Version du 22 octobre 2026. **Ce document remplace tous les précédents** : le cahier des charges initial, `docs/ARCHITECTURE.md`, le cahier des charges v2 et le programme pédagogique séparé. En cas de contradiction avec un autre document, c'est celui-ci qui fait foi.
+Version du 22 octobre 2026, **modifiée par l'avenant n° 1 « La langue sans les versets » et l'avenant n° 2 « Vers l'autonomie dans la langue » (24 octobre 2026), intégrés ci-dessous**. **Ce document remplace tous les précédents** : le cahier des charges initial, `docs/ARCHITECTURE.md`, le cahier des charges v2 et le programme pédagogique séparé. En cas de contradiction avec un autre document, c'est celui-ci qui fait foi.
 
 ---
 
@@ -29,12 +29,15 @@ Version du 22 octobre 2026. **Ce document remplace tous les précédents** : le 
 
 ## 1. Vision
 
-IQURA est un **RPG d'aventure narrative en pixel art** dont la mécanique centrale est de comprendre l'arabe : plus le joueur comprend, plus le monde s'ouvre. Il mène un francophone débutant complet jusqu'à lire couramment l'arabe littéraire classique, le comprendre, s'exprimer, et surtout comprendre directement le Coran dans sa langue.
+IQURA est un **RPG d'aventure narrative en pixel art** dont la mécanique centrale est de comprendre l'arabe : plus le joueur comprend, plus le monde s'ouvre. Il mène un francophone débutant complet jusqu'à lire couramment l'arabe littéraire classique — la langue du Coran —, le comprendre et s'exprimer avec autonomie.
+
+**IQURA enseigne la langue arabe littéraire classique et prépare à la compréhension du Coran, sans la faire dans l'application** (avenant n° 1). À la fin du parcours, le joueur sait lire, parler et comprendre l'arabe classique, et il est familier du vocabulaire et des tournures du Coran. La compréhension du Coran lui-même est un travail qu'il mènera ensuite, en dehors de l'application, facilité par ce qu'il aura appris. **L'application n'affiche aucun verset ni extrait coranique, ne contient pas le texte du Coran et ne fait entendre aucune récitation.** Elle conserve le vocabulaire choisi par fréquence dans le Coran (Quranic Arabic Corpus), toute la grammaire classique et les tournures propres à la langue coranique, enseignées avec des exemples construits ou tirés de textes classiques profanes.
 
 - **Un vrai cursus**, inspiré de la méthode de Médine, rendu interactif : environ 130 leçons en 5 régions.
 - **Un vrai jeu** : le joueur passe la majorité de son temps dans l'aventure (explorer, parler, combattre, forger, reconstruire). L'apprentissage est intégré au jeu ; il ne doit pas avoir l'impression de suivre un cours. Modèles : les jeux où déchiffrer une langue est le gameplay (*Heaven's Vault*, *Chants of Sennaar*) et les RPG japonais classiques (équipement, enchantement, donjons, boss).
 - **Les racines comme signature**, présentes dès la première région.
-- **Le Coran à chaque région**, toujours avec respect : il est la connaissance étudiée, jamais l'ennemi.
+- **Le vocabulaire du Coran à chaque région**, toujours avec respect, sans aucun verset ; l'indicateur « les mots que tu connais représentent X % des mots du Coran » mesure cette familiarité.
+- **Vers l'autonomie** (avenant n° 2) : un vocabulaire riche (≈ 3 500 mots par fréquence et par thèmes de la vie), connu en profondeur, et beaucoup de production (construire des phrases, s'exprimer, chercher dans un dictionnaire).
 
 Application gratuite, sans publicité ni achat, open source (GPL-3.0), en français, pour Windows 10/11 et Android, utilisable hors ligne.
 
@@ -44,7 +47,7 @@ Application gratuite, sans publicité ni achat, open source (GPL-3.0), en franç
 
 | Sujet | Décision |
 | --- | --- |
-| Objectif final | L'arabe littéraire classique comme seconde langue : lire de façon fluide, comprendre, s'exprimer, comprendre le Coran |
+| Objectif final | L'arabe littéraire classique comme seconde langue : lire de façon fluide, comprendre, s'exprimer avec autonomie ; être familier du vocabulaire et des tournures du Coran pour en aborder ensuite l'étude hors de l'application |
 | Public | Francophones, adultes et adolescents, débutants complets. Test de positionnement à partir de J2 pour les plus avancés |
 | Profil type | N'aime pas apprendre de façon scolaire ; aime jouer ; 15 à 30 minutes par jour |
 | Langue enseignée | **Arabe littéraire classique (fuṣḥā)**, celui du Coran et des textes classiques, **y compris pour la conversation et les dialogues**. Pas d'arabe standard moderne comme registre de référence, pas de dialecte. Un mot moderne n'est utilisé que s'il est indispensable à une scène (ex. un objet du quotidien sans équivalent classique simple), et il est alors signalé comme tel |
@@ -52,29 +55,28 @@ Application gratuite, sans publicité ni achat, open source (GPL-3.0), en franç
 | Plateformes | Windows 10/11 (.exe) et Android (.apk) |
 | Modèle | Gratuit, sans publicité ni achat, GPL-3.0 |
 
-**Hors périmètre** : dialectes ; arabe standard moderne comme registre de conversation ; certification de prononciation ou de tajwīd ; tafsīr (exégèse) au-delà du sens linguistique des mots et des tournures ; remplacement d'un professeur humain.
+**Hors périmètre** : dialectes ; arabe standard moderne comme registre de conversation ; certification de prononciation ou de tajwīd ; tafsīr (exégèse) ; tout sens religieux ou exégétique ; affichage ou lecture de versets, d'extraits ou de citations du Coran, et récitations (avenant n° 1) ; remplacement d'un professeur humain.
 
 ---
 
 ## 3. Règles absolues (non négociables)
 
-### 3.1 Respect du Coran
+### 3.1 Respect du Coran (avenant n° 1)
 
-1. Le Coran est la connaissance étudiée, **jamais l'ennemi combattu**.
-2. Un monstre représente une difficulté d'apprentissage (l'Oubli, la Confusion, la Précipitation, la Distraction, l'Impatience), **jamais un mot**.
-3. Aucun mot coranique n'est affiché sur un monstre, frappé, détruit ou « tué », ni dans les visuels, ni dans les animations, ni dans les textes.
-4. En combat, un mot du vocabulaire (y compris un mot fréquent du Coran) peut apparaître **seul, sous sa forme de dictionnaire**, dans un panneau de question neutre, sans verset ni référence.
-5. **Aucun verset ni extrait coranique en combat.** Les extraits n'apparaissent que dans les salles d'étude et le Sanctuaire.
-6. Noms divins, noms de prophètes et formules sacrées sont exclus de toute question de combat.
-7. Aucune représentation de prophètes ni de figures sacrées ; aucune parole attribuée à un prophète ou à une figure religieuse dans les récits.
-8. Le texte coranique n'est **jamais généré, reconstitué ni modifié** : il vient uniquement de Tanzil, est stocké une seule fois dans la base de contenu et vérifié par empreinte SHA-256. Les leçons le **référencent** (sourate:verset) sans le recopier.
-9. Quand la langue seule ne suffit pas à trancher le sens d'un passage, IQURA le dit et renvoie vers les savants et les ouvrages de tafsīr.
+Le Coran n'apparaît plus dans l'application, mais son vocabulaire si.
+
+1. Un mot du vocabulaire (y compris un mot fréquent du Coran) apparaît sous sa **forme de dictionnaire**, avec son sens général, dans les leçons, les exercices et les questions de combat (panneau neutre).
+2. Aucun mot n'est affiché sur un monstre, frappé, détruit ou « tué » ; les monstres représentent des difficultés d'apprentissage (l'Oubli, la Confusion, la Précipitation, la Distraction, l'Impatience), **jamais des mots**.
+3. Noms divins, noms de prophètes et formules sacrées : **jamais dans une question de combat**, et présentés avec respect quand ils apparaissent dans une leçon de vocabulaire.
+4. Aucune représentation de prophètes ni de figures sacrées ; aucune parole attribuée à un prophète ou à une figure religieuse ; les récits restent profanes.
+5. Aucun sens religieux ou exégétique n'est affirmé : l'application donne le sens linguistique des mots, rien de plus ; quand la langue ne suffit pas, elle le dit et renvoie vers les savants et les ouvrages.
+6. **Aucun verset, extrait ou citation coranique n'est affiché ou lu, même partiellement.**
 
 ### 3.2 Données et contenus
 
 1. **Aucune donnée inventée** : ni racine, ni lemme, ni occurrence, ni traduction attribuée à un auteur, ni analyse grammaticale présentée comme certaine. Racines, lemmes, catégories, formes verbales, schèmes et fréquences viennent du Quranic Arabic Corpus (via QUL si besoin).
 2. **Aucun relecteur humain** : tout texte rédigé par IA (explications, sens français, dialogues, récits, exemples construits, descriptions d'articulation) porte le statut visible **« rédigé par IA »**.
-3. Chaque exemple affiche sa source : « exemple construit » ou référence coranique.
+3. Chaque exemple affiche sa source : « exemple construit » ou œuvre classique profane citée.
 4. Tout audio de synthèse est signalé « synthèse ».
 5. Un bouton « Signaler une erreur » existe sur chaque fiche.
 
@@ -93,10 +95,10 @@ Chaque session travaille quatre compétences, par ordre d'importance :
 
 | Compétence | Pourquoi | Comment dans IQURA |
 | --- | --- | --- |
-| Comprendre (lire et écouter) | La fluidité vient d'une grande quantité de textes compris | Dialogues, récits gradués, Sanctuaire |
+| Comprendre (lire et écouter) | La fluidité vient d'une grande quantité de textes compris | Dialogues, récits gradués, salles de lecture |
 | Mémoriser | Sans révision, on oublie en quelques jours | Révision espacée FSRS dans l'Expédition |
 | Comprendre la mécanique | Grammaire, schèmes et racines rendent l'arabe prévisible | Leçons courtes données par des personnages, Forge |
-| Produire (parler, écrire) | On ne parle qu'en parlant | Répétition à voix haute, réponses aux personnages, écriture |
+| Produire (parler, écrire) | On ne parle qu'en parlant | Répétition à voix haute, réponses aux personnages, Atelier des phrases, carnet du voyageur, écriture |
 
 **Méthodes obligatoires.**
 
@@ -114,6 +116,15 @@ Chaque session travaille quatre compétences, par ordre d'importance :
 
 **Deux niveaux de connaissance d'un mot**, suivis séparément : **passif** (reconnaître le mot, son sens, à partir de l'arabe) et **actif** (le retrouver à partir du français, l'utiliser dans une phrase). Les cartes actives d'un mot n'apparaissent qu'une fois le passif « reconnu ».
 
+**Rééquilibrer comprendre et produire** (avenant n° 2, repères pour concevoir leçons, Atelier des phrases, quêtes et Expédition) :
+
+| Région | Comprendre (lire, écouter) | Produire (construire, écrire, parler) |
+| --- | --- | --- |
+| 1 | environ 80 % | environ 20 % (répéter, tracer, reconstruire) |
+| 2 | environ 50 % | environ 50 % |
+| 3 | environ 50 % | environ 50 % |
+| 4 et 5 | environ 40 % | environ 60 % |
+
 **États d'un élément** : découvert → en apprentissage → reconnu → maîtrisé, plus « à réviser » quand l'échéance est passée. Une leçon réussie fait passer ses éléments à « en apprentissage », jamais plus. Jamais « maîtrisé » après une seule réussite.
 
 ---
@@ -128,13 +139,13 @@ Une seule question guide tout le programme : **« qu'est-ce que le joueur sait f
 2. **Comprendre une phrase** : qui fait quoi, à qui, où (région 2).
 3. **Décoder un mot inconnu** grâce à sa racine et à son schème (région 3).
 4. **Lire et parler couramment** en arabe classique (région 4).
-5. **Comprendre le Coran directement** (région 5).
+5. **Maîtriser la langue coranique avancée** : tournures classiques, analyse de phrases, textes classiques longs (région 5, sans verset).
 
-Trois fils traversent toutes les régions : le vocabulaire par fréquence, la bibliothèque de récits gradués (moteur de la progression à long terme), et le Coran (§5.4).
+Trois fils traversent toutes les régions : le vocabulaire par fréquence et par thèmes, la bibliothèque de récits gradués (moteur de la progression à long terme), et la production (Atelier des phrases, carnet du voyageur, réponses aux personnages).
 
 ### 5.2 Vue d'ensemble
 
-Les heures sont un **objectif de conception, pas une garantie** ; elles varient beaucoup selon les personnes. À 30 minutes par jour, 800 heures représentent environ 4 ans et demi : d'où les objectifs intermédiaires (§5.3). Repère : selon le Foreign Service Institute américain, l'arabe demande environ 2 200 heures de cours à un anglophone pour un niveau professionnel ; IQURA vise une compréhension solide de l'arabe classique et du Coran, pas un niveau professionnel.
+Les heures sont un **objectif de conception, pas une garantie** ; elles varient beaucoup selon les personnes. À 30 minutes par jour, 800 heures représentent environ 4 ans et demi : d'où les objectifs intermédiaires (§5.3). Repère : selon le Foreign Service Institute américain, l'arabe demande environ 2 200 heures de cours à un anglophone pour un niveau professionnel ; IQURA vise une compréhension solide de l'arabe classique et une familiarité avec la langue du Coran, pas un niveau professionnel.
 
 | Région | Leçons | Heures (cumul) | Vocabulaire cumulé | Récits gradués | À la fin, le joueur sait… |
 | --- | --- | --- | --- | --- | --- |
@@ -142,7 +153,7 @@ Les heures sont un **objectif de conception, pas une garantie** ; elles varient 
 | 2. L'Oasis des Fondations | 30 + boss | ≈ 120 h | ≈ 1 000 mots | 60 récits de 50 à 150 mots | comprendre des phrases simples et de courts récits |
 | 3. Les Montagnes du Moteur | 32 + boss | ≈ 300 h | ≈ 2 000 mots | 80 récits de 150 à 400 mots | décoder la forme et la famille d'un mot inconnu ; lire des textes simples |
 | 4. La Cité des Lecteurs | 28 + boss | ≈ 550 h | ≈ 3 500 mots | 100 récits et dialogues de 400 à 1 000 mots | lire couramment, converser simplement, écrire un court texte |
-| 5. Les Jardins du Sens | 24 + sourates étudiées | ≈ 800 h et plus | vocabulaire coranique fréquent maîtrisé | sourates et textes classiques | comprendre directement des sourates entières |
+| 5. Les Jardins du Sens — la langue coranique avancée | 20 + boss | ≈ 800 h et plus | vocabulaire coranique fréquent maîtrisé | textes classiques profanes | lire et comprendre des textes classiques avancés ; analyser les tournures classiques ; aborder ensuite l'étude du Coran hors de l'application |
 
 Les volumes de vocabulaire sont indicatifs, à ajuster une fois les fréquences calculées à partir du corpus.
 
@@ -152,29 +163,29 @@ Affichés dans le jeu comme des succès, avec un résultat concret (repères ind
 
 | Repère | Ce que le joueur sait faire |
 | --- | --- |
-| 1 semaine | Lire ses premières syllabes et ses premiers mots ; reconnaître des lettres d'Al-Fātiḥa |
-| 1 mois | Lire n'importe quel mot vocalisé ; lire les mots d'Al-Fātiḥa et en connaître plusieurs |
-| 3 mois | Comprendre des phrases simples ; plusieurs centaines de mots ; une première part mesurable des mots du Coran reconnue |
-| 6 mois | Comprendre de courts récits ; comprendre mot à mot les sourates courtes de la prière |
+| 1 semaine | Lire ses premières syllabes et ses premiers mots |
+| 1 mois | Lire n'importe quel mot vocalisé, y compris en écriture coranique (mots isolés) |
+| 3 mois | Comprendre des phrases simples ; plusieurs centaines de mots ; premier pourcentage du vocabulaire coranique |
+| 6 mois | Comprendre de courts récits |
 | 1 an | Fin de la région 2, début de la région 3 ; décoder les familles de mots |
-| 2 ans | Lire des textes simples ; comprendre la construction des mots et des verbes ; analyser des versets |
-| 3 ans et plus | Lire couramment, converser simplement, comprendre directement des sourates entières |
+| 2 ans | Lire des textes simples ; comprendre la construction des mots et des verbes |
+| 3 ans et plus | Lire couramment, converser simplement ; à la fin du parcours, maîtrise du vocabulaire coranique le plus fréquent |
 
-### 5.4 Le Coran à chaque région
+### 5.4 Le vocabulaire coranique à chaque région (avenant n° 1)
 
-Toujours dans les salles d'étude et le Sanctuaire, jamais en combat.
+Supprimé : plus aucun verset dans l'application. Ce qui reste à chaque région : le vocabulaire choisi par fréquence dans le Coran (Quranic Arabic Corpus), sous sa forme de dictionnaire, et l'indicateur **« Les mots que tu connais représentent X % des mots du Coran »** (§5.11), calculé à partir des seules fréquences, sans afficher aucun texte, libellé comme une familiarité avec le vocabulaire, jamais comme une compréhension du Coran.
 
-| Région | Ce que le joueur fait avec des versets |
-| --- | --- |
-| 1 | Repérer les lettres apprises, lire des mots, écouter la récitation |
-| 2 | Identifier noms, verbes, particules et pronoms ; comprendre des phrases nominales et verbales simples |
-| 3 | Analyser racines, schèmes, formes verbales, conjugaisons ; expliquer la fin d'un mot par son cas |
-| 4 | Comprendre des phrases et passages complets ; suivre conditions, compléments et liens logiques |
-| 5 | Étudier les structures propres au Coran et les nuances ; lire des sourates entières |
+### 5.4 bis Vocabulaire, Atelier des phrases, s'exprimer, dictionnaire (avenant n° 2)
+
+- **Environ 3 500 mots**, choisis par fréquence (Coran et arabe classique) **et** regroupés par thèmes de la vie (maison, corps, famille, nature, temps, émotions, travail, voyage, marché, savoir…), chaque thème au moment où la grammaire permet de s'en servir.
+- **Fiche de mot complète** : sens, racine et famille, pluriel (noms), passé et inaccompli (verbes), un ou deux exemples, contraire et quasi-synonymes quand ils sont utiles. Connaissance **passive et active** (§4) appliquée systématiquement.
+- **L'Atelier des phrases** (nouveau lieu de la Cité, à partir de la région 2) : construire une phrase à partir de mots donnés ; transformer (pluriel, féminin, passé, futur, négation, question) ; compléter ; corriger ; traduire du français vers l'arabe. De la phrase simple à la phrase complexe, au rythme des notions enseignées ; les phrases réussies alimentent la révision.
+- **S'exprimer** : répondre aux personnages avec ses propres mots (choix de réponse en région 1 et début de région 2, reconstitution ensuite, réponse libre à partir de la fin de la région 2) ; décrire une scène, un objet ou une image du jeu ; **le carnet du voyageur** (une ou deux phrases par jour, avec des modèles au début) ; reformuler, résumer un récit. Correction hors ligne de ce qui est vérifiable (mots connus, accords simples, ordre) avec un modèle de réponse ; option en ligne (désactivée par défaut) : une IA corrige en arabe classique et propose une meilleure formulation, présentée comme un conseil, jamais comme une certification.
+- **Dictionnaire intégré** : accessible à tout moment (même pendant une leçon ou un dialogue) et hors ligne ; recherche en arabe (avec ou sans voyelles), en français et par racine ; pour chaque entrée : sens, exemples, famille, pluriel, conjugaison, « déjà appris / pas encore appris » ; ajout aux révisions en un geste. Source : une source libre compatible GPL-3.0 (Wiktionnaire ou autre) si elle convient, sinon structure du Quranic Arabic Corpus et définitions « rédigé par IA » ; la source de chaque définition est notée (décision prise par Claude Code, consignée dans `docs/DECISIONS_A_REVOIR.md`). Il complète la leçon 4.25.
 
 ### 5.5 Région 1 « Déchiffrer » — 15 leçons
 
-Objectif : lire à voix haute n'importe quel mot entièrement vocalisé, y compris dans l'écriture du Mushaf. Lettres regroupées par famille de forme ; au plus 4 lettres et 1 signe par leçon.
+Objectif : lire à voix haute n'importe quel mot entièrement vocalisé, y compris les mots isolés en écriture coranique. Lettres regroupées par famille de forme ; au plus 4 lettres et 1 signe par leçon.
 
 | N° | Titre | Objectif | Contenu |
 | --- | --- | --- | --- |
@@ -192,10 +203,10 @@ Objectif : lire à voix haute n'importe quel mot entièrement vocalisé, y compr
 | 11 | La shadda | Lire une consonne doublée | Shadda seule et avec voyelle |
 | 12 | Le tanwīn | Lire -un, -an, -in | Trois tanwīn, alif du tanwīn |
 | 13 | L'article | Lire « al- » correctement | Lettres solaires et lunaires, hamzat al-waṣl |
-| 14 | L'écriture du Mushaf | Reconnaître les signes du Coran | ٱ, alif suscrit, petits wāw et yāʾ, signes de pause (reconnaissance seulement, pas de règles de tajwīd) |
-| Boss | Examen de la région | Voir §5.11 | Mélange de toutes les leçons, lecture chronométrée |
+| 14 | Préparer la lecture de l'écriture coranique | Ne pas être dérouté le jour où l'on ouvrira un Mushaf | ٱ, alif suscrit, petits wāw et yāʾ, signes de pause, reconnus sur des **mots isolés** présentés comme dans un dictionnaire, sans verset ni règles de tajwīd (avenant n° 1) |
+| Boss | Examen de la région | Voir §5.11 | Mélange de toutes les leçons, lecture chronométrée, épreuve de production |
 
-En parallèle : environ 100 mots (noms concrets formés des lettres déjà vues, choisis par script parmi les mots du corpus, classés par fréquence, liste soumise à l'utilisateur) ; familles de mots dès la leçon 7 ; Sanctuaire : lecture et reconnaissance des mots d'Al-Fātiḥa.
+En parallèle : environ 100 mots (noms concrets formés des lettres déjà vues, choisis par script parmi les mots du corpus, classés par fréquence, liste soumise à l'utilisateur) ; familles de mots dès la leçon 7 ; une salle de lecture par leçon (inscription ou étiquette, §6.1).
 
 **Corrections à appliquer aux leçons 0 à 3 existantes** (relecture du 22 octobre 2026) :
 
@@ -259,7 +270,7 @@ Objectif : comprendre et produire des phrases simples, lire de courts récits. O
 | 2.30 | Celui qui… | Relier deux phrases | الَّذِي، الَّتِي، الَّذِينَ |
 | Boss | Examen de la région | Voir §5.11 | Mélange de toute la région |
 
-En parallèle : environ 900 nouveaux mots par fréquence ; chaque nouveau mot montré avec sa **famille** et sa racine surlignée ; une **mini-forge intuitive** à la fin de chaque chapitre (regrouper des mots par racine, sans théorie des schèmes) ; 60 récits gradués ; Sanctuaire : repérer noms, verbes et pronoms dans les sourates courtes de la prière.
+En parallèle : environ 900 nouveaux mots par fréquence ; chaque nouveau mot montré avec sa **famille** et sa racine surlignée ; une **mini-forge intuitive** à la fin de chaque chapitre (regrouper des mots par racine, sans théorie des schèmes) ; 60 récits gradués ; Atelier des phrases et carnet du voyageur (§5.4 bis).
 
 ### 5.7 Région 3 « Le moteur de la langue » — 32 leçons
 
@@ -320,7 +331,7 @@ Les valeurs de sens des formes sont des tendances, pas des règles : chaque leç
 | 3.32 | « Il était… » | Comprendre كَانَ et ses sœurs | كَانَ، صَارَ، لَيْسَ… |
 | Boss | Examen de la région | Voir §5.11 | |
 
-En parallèle : 1 000 nouveaux mots, 80 récits, arbre des racines et tous les exercices de racines (§7), Sanctuaire : analyse des mots des sourates déjà rencontrées.
+En parallèle : 1 000 nouveaux mots, 80 récits, arbre des racines et tous les exercices de racines (§7), Atelier des phrases.
 
 ### 5.8 Région 4 « Lire et parler » — 28 leçons
 
@@ -372,73 +383,59 @@ Objectif : lire couramment des textes longs, tenir une conversation simple et é
 
 En parallèle : 1 500 nouveaux mots, 100 récits et dialogues, option de conversation avec une IA (en arabe classique), recommandation de pratiquer avec un professeur ou des locuteurs.
 
-### 5.9 Région 5 « Le Coran » — 24 leçons et sourates étudiées
+### 5.9 Région 5 « Les Jardins du Sens — la langue coranique avancée » — 20 leçons (avenant n° 1)
 
-Entièrement dans le Sanctuaire, sans combat. Enseigne la langue du Coran, pas son exégèse (§3.1, règle 9).
+Toujours sans verset : exemples construits ou textes classiques profanes. Enseigne la langue, jamais l'exégèse (§3.1).
 
-**Chapitre A — Les tournures propres au Coran**
-
-| N° | Titre | Contenu |
+| N° | Titre | Contenu (exemples construits ou textes classiques profanes) |
 | --- | --- | --- |
 | 5.1 | Les serments | وَ et تَ de serment, لَا أُقْسِمُ |
 | 5.2 | Les particules fréquentes | إِنَّمَا، كَلَّا، بَلَى، أَلَا |
-| 5.3 | La question qui affirme | أَ، أَلَمْ، هَلْ |
-| 5.4 | Les négations du Coran | لَنْ، لَمَّا، إِنْ de négation |
-| 5.5 | L'ordre des mots | Taqdīm (ex. la tournure de 1:5, par référence) |
+| 5.3 | La question qui affirme | أَ، أَلَمْ، هَلْ rhétoriques |
+| 5.4 | Les négations classiques | لَنْ، لَمَّا، إِنْ de négation |
+| 5.5 | L'ordre des mots et l'insistance | Taqdīm |
 | 5.6 | Les mots sous-entendus | Ḥaḏf |
 | 5.7 | Le changement de personne | Iltifāt |
-| 5.8 | Les récits | وَإِذْ، فَلَمَّا، ثُمَّ ; dialogues rapportés |
-| 5.9 | Les formes verbales dans le Coran | Révision appliquée de la région 3 |
-| 5.10 | Le vocabulaire thématique | Champs de mots les plus fréquents |
-| 5.11 | Un mot, plusieurs sens | Sens lexical général et sens contextuel |
-| 5.12 | Mots proches, sens distincts | Nuances entre quasi-synonymes, sourcées |
-
-**Chapitre B — Les méthodes de lecture**
-
-| N° | Titre |
-| --- | --- |
-| 5.13 | Analyser un verset mot par mot (racine, schème, nature, fonction) |
-| 5.14 | Analyser la phrase (iʿrāb appliqué) |
-| 5.15 | Suivre le fil d'une sourate (parties, refrains, transitions) |
-| 5.16 | Se servir de la traduction (sens littéral et sens traduit) |
-| 5.17 | Lire sans traduction |
-| 5.18 | Les limites de la langue (rôle de l'exégèse, renvoi vers les savants) |
-
-**Chapitre C — Les sourates étudiées (ordre validé)**
-
-| N° | Parcours |
-| --- | --- |
-| 5.19 | Al-Fātiḥa en profondeur |
-| 5.20 | Les sourates courtes de la prière (Al-Iḫlāṣ, Al-Falaq, An-Nās, Al-Kawṯar, Al-ʿAṣr…) |
-| 5.21 | Le juzʾ ʿAmma |
-| 5.22 | Le juzʾ Tabārak (ex. Al-Mulk) |
-| 5.23 | Un long récit par extraits progressifs (ex. sourate Yūsuf) |
-| 5.24 | Parcours libre, guidé par le pourcentage de mots connus |
+| 5.8 | La narration classique | وَإِذْ، فَلَمَّا، ثُمَّ ; dialogues rapportés |
+| 5.9 | Les formes verbales en contexte | Révision appliquée de la région 3 |
+| 5.10 | Le vocabulaire coranique par thèmes (1) | Création, nature, temps |
+| 5.11 | Le vocabulaire coranique par thèmes (2) | Actions humaines, qualités morales, récits |
+| 5.12 | Un mot, plusieurs sens | Sens général et sens selon le contexte |
+| 5.13 | Mots proches, sens distincts | Nuances entre quasi-synonymes, sourcées |
+| 5.14 | Analyser une phrase mot par mot | Racine, schème, nature, fonction |
+| 5.15 | L'iʿrāb appliqué | Expliquer la fonction de chaque mot |
+| 5.16 | Suivre un texte long | Structure, transitions, reprises |
+| 5.17 | La prose classique | Lecture de textes classiques profanes vocalisés |
+| 5.18 | Lire un texte classique non vocalisé | Lecture autonome |
+| 5.19 | Le vocabulaire coranique fréquent : bilan | Révision des lemmes les plus fréquents du Coran |
+| 5.20 | Vers le Coran | Ce que le joueur sait désormais faire, et comment aborder ensuite l'étude du Coran avec des ouvrages et des enseignants (sans aucun contenu exégétique) |
+| Boss | Examen final | Lire et comprendre un texte classique avancé ; analyser des phrases aux tournures classiques ; bilan du vocabulaire coranique |
 
 ### 5.10 Les fils continus
 
 | Fil | Ce que c'est | Volume | Où dans le jeu |
 | --- | --- | --- | --- |
-| Vocabulaire | Mots par fréquence (Coran et arabe classique), chacun rattaché à sa racine et à un exemple ; rythme adaptatif (§4) | ≈ 3 500 mots | Leçons, Histoire, Grimoire, Expédition |
+| Vocabulaire | Mots par fréquence (Coran et arabe classique) et par thèmes de la vie, fiche complète (§5.4 bis) ; rythme adaptatif (§4) | ≈ 3 500 mots | Leçons, Histoire, Grimoire, dictionnaire, Expédition |
 | Récits gradués | Histoires originales en arabe classique entièrement vocalisé (non vocalisé progressivement en région 4), ≥ 95 % de mots connus, audio de synthèse, questions de compréhension, profanes (voyages, marché, métiers, nature, sagesse) | ≈ 255 récits | Quêtes, bibliothèque de la Cité |
-| Sanctuaire | Part du Coran reconnue qui grandit, sourates qui s'ouvrent (§5.4, §9) | Toutes régions | Sanctuaire |
+| Vocabulaire coranique | Part des mots du Coran que représentent les mots connus (fréquences seulement, §5.4) | Toutes régions | Grimoire |
+| Production | Atelier des phrases, carnet du voyageur, réponses libres (§5.4 bis) | Dès la région 2 | Cité, Histoire |
 | Oral | Répétition à voix haute, réponses aux personnages, conversation | Quotidien | Leçons, Histoire |
 | Révision | FSRS | 10 à 20 min/jour | Expédition |
 | Forge | Exercices de racines et de schèmes | Toutes les racines rencontrées | Forge |
 
 ### 5.11 Mesurer les progrès
 
-**Chaque examen de région comporte trois évaluations distinctes** : lecture ou compréhension (corrigée automatiquement), écoute, production (prononciation par auto-évaluation, puis réponses écrites ou orales). La prononciation n'est jamais notée automatiquement : le joueur compare son enregistrement à la référence et s'auto-évalue ; l'application ne prétend jamais la certifier.
+**Chaque examen de région comporte trois évaluations distinctes** : lecture ou compréhension (corrigée automatiquement), écoute, production (prononciation par auto-évaluation, puis construire, transformer, écrire, répondre, selon le niveau ; avenant n° 2). La prononciation n'est jamais notée automatiquement : le joueur compare son enregistrement à la référence et s'auto-évalue ; l'application ne prétend jamais la certifier.
 
 | Région | Ce que l'examen vérifie |
 | --- | --- |
-| 1 | Lecture visuelle : associer 20 mots vocalisés à leur lecture, ≥ 90 % ; écoute : reconnaître des mots entendus ; prononciation : lire à voix haute, s'enregistrer, comparer et s'auto-évaluer ; temps de lecture affiché (repère indicatif 1 minute, non bloquant) |
+| 1 | Lecture visuelle : associer 20 mots vocalisés à leur lecture, ≥ 90 % (mots isolés en écriture coranique possibles, jamais de verset) ; écoute : reconnaître des mots entendus ; prononciation : lire à voix haute, s'enregistrer, comparer et s'auto-évaluer ; temps de lecture affiché (repère indicatif 1 minute, non bloquant) |
 | 2 | Comprendre un récit de 150 mots, ≥ 80 % aux questions ; écoute ; répondre à un personnage |
 | 3 | Décoder 20 mots inconnus (racine, schème, sens probable) ; lire un texte de 300 mots |
 | 4 | Lire un récit de 800 mots, tenir un dialogue avec un personnage, écrire 5 phrases |
-| 5 | Comprendre une sourate courte non étudiée en détail (sens des mots et des tournures), dans le Sanctuaire, sans combat |
+| 5 | Examen final (§5.9) : lire et comprendre un texte classique avancé ; analyser des phrases aux tournures classiques ; bilan du vocabulaire coranique |
 
-**Indicateurs du Grimoire** : mots par état (passif et actif séparés) ; part du Coran reconnue (occurrences dont le lemme est au moins « reconnu », libellée « reconnaissance de vocabulaire », jamais « compréhension ») ; racines rencontrées et maîtrisées ; vitesse de lecture (mots par minute et erreurs) ; compréhension des récits ; temps d'étude et série.
+**Indicateurs du Grimoire** : mots par état (passif et actif séparés) ; **« Les mots que tu connais représentent X % des mots du Coran »** (part des occurrences du Quranic Arabic Corpus dont le lemme est au moins « reconnu », sans afficher aucun texte, libellée comme une familiarité avec le vocabulaire, jamais comme une compréhension) ; mots connus activement ; phrases construites correctement ; entrées du carnet écrites ; racines rencontrées et maîtrisées ; vitesse de lecture (mots par minute et erreurs) ; compréhension des récits ; temps d'étude et série.
 
 **Test de positionnement** (à partir de J2) : il reprend les examens pour faire commencer le joueur à la bonne région ; il crée les cartes correspondantes.
 
@@ -458,11 +455,11 @@ Une leçon n'est jamais un texte à lire : c'est **une scène de l'Histoire jou�
 | 4. Les éléments | Une fiche par lettre : grande lettre, 4 formes, nom et audio, articulation et schéma si le son est difficile | Écoute, puis mini-question immédiate |
 | 5. La règle | Règle courte avec audio | Identifie une syllabe entendue ; distingue brève et longue |
 | 6. Salle d'entraînement | Exercices mélangés : reconnaître, points, formes, écouter, lire, reconstruire, tracer, répéter à voix haute | Répond ; chaque erreur est expliquée et la question revient plus tard, réponses déplacées |
-| 7. Salle d'étude « Dans le Coran » | Lieu calme, sans combat : extraits référencés (Tanzil + traduction Hamidullah), récitation d'al-Ḥuṣarī | Touche les lettres ou mots de la leçon |
+| 7. Salle de lecture | Lieu calme, sans combat : une inscription, une étiquette ou un court texte gradué (exemples construits, ≥ 95 % de mots connus) où s'applique la notion de la leçon (avenant n° 1) | Lit, repère, compte ou répond |
 | 8. Mini-boss | Combat contre une difficulté ; questions dans un panneau neutre, jamais de verset | 10 à 12 questions sans translittération, dont 20 à 30 % sur les leçons précédentes ; réussite à 80 % |
 | 9. Fin | L'obstacle s'ouvre ; « ce que tu sais lire maintenant » ; récompenses ; nouvelles cartes | Reprend l'Histoire |
 
-À partir de la région 2 : découverte par l'exemple dans un dialogue, règle courte donnée par le maître, pratique, texte gradué à lire, salle d'étude coranique, mini-boss. Le détail des écrans de chaque région est proposé par Claude Code et validé par l'utilisateur avant rédaction.
+À partir de la région 2 : découverte par l'exemple dans un dialogue, règle courte donnée par le maître, pratique, texte gradué à lire (salle de lecture), production (Atelier des phrases), mini-boss. Le détail des écrans de chaque région est proposé par Claude Code et validé par l'utilisateur avant rédaction.
 
 ### 6.2 Règles de conception
 
@@ -494,7 +491,7 @@ Une leçon n'est jamais un texte à lire : c'est **une scène de l'Histoire jou�
 | Reconstruire | Assembler lettres et voyelles pour former un mot | 1 à 3 |
 | Tracer | Tracer une lettre guidé par des points numérotés et le sens du geste ; vérification tolérante, sans sanction | 1 |
 | Dictée | Entendre et écrire au clavier arabe | 1 à 4 |
-| Repérer | Toucher une lettre ou un mot dans un extrait coranique (salle d'étude uniquement) | 1 à 5 |
+| Repérer | Toucher une lettre ou un mot dans une inscription ou un texte gradué (salle de lecture) | 1 à 5 |
 | Lecture chronométrée | Lire une liste de mots vite et sans erreur, contre soi-même | 1 (fin) à 2 |
 | Sens du mot | Associer arabe et sens, dans les deux sens | 2 à 5 |
 | Compléter ou accorder | Choisir le bon pronom, accord, démonstratif, cas | 2 à 4 |
@@ -502,7 +499,8 @@ Une leçon n'est jamais un texte à lire : c'est **une scène de l'Histoire jou�
 | Comprendre un récit | Questions sur un texte gradué | 2 à 4 |
 | Répondre au personnage | Choisir, reconstituer ou écrire une réplique | 2 à 4 |
 | Exercices de racines | Détective, Famille, Intrus, Relation de sens, Deviner puis vérifier, Forge (§7) | 1 (familles) à 5 |
-| Étude d'un verset | Comprendre mot à mot, Sanctuaire uniquement | 1 (repérage) à 5 |
+| Construire, transformer, compléter, corriger, traduire | Atelier des phrases (§5.4 bis) | 2 à 5 |
+| Décrire, carnet, reformuler | S'exprimer librement, correction de ce qui est vérifiable et modèle de réponse | 2 à 5 |
 
 ---
 
@@ -510,8 +508,8 @@ Une leçon n'est jamais un texte à lire : c'est **une scène de l'Histoire jou�
 
 Objectif : reconnaître les liens entre les mots d'une même famille **sans supposer qu'ils ont tous le même sens**. La racine aide à repérer et retenir les mots ; elle ne permet pas de deviner le sens précis de chaque dérivé.
 
-- **Progression** : région 1, familles montrées sans analyse (dès la leçon 7) ; région 2, famille et racine surlignée pour chaque nouveau mot et mini-forges intuitives ; région 3, étude méthodique (schèmes, formes, dérivés) ; régions 4 et 5, application aux textes et au Coran.
-- **Fiche racine** (ex. ر ح م : رَحْمَةٌ miséricorde, رَحِيمٌ Miséricordieux, رَحْمَٰنُ Tout Miséricordieux, رَحِمَ faire miséricorde) : sens généraux, mots de la famille, occurrences coraniques, nuances entre mots proches.
+- **Progression** : région 1, familles montrées sans analyse (dès la leçon 7) ; région 2, famille et racine surlignée pour chaque nouveau mot et mini-forges intuitives ; région 3, étude méthodique (schèmes, formes, dérivés) ; régions 4 et 5, application aux textes classiques et au vocabulaire coranique.
+- **Fiche racine** (ex. ر ح م : رَحْمَةٌ miséricorde, رَحِيمٌ Miséricordieux, رَحْمَٰنُ Tout Miséricordieux, رَحِمَ faire miséricorde) : sens généraux, mots de la famille, nombre d'occurrences dans le Coran (fréquences du corpus, sans texte), nuances entre mots proches.
 - **Étiquette de relation de sens** par dérivé : proche, intensif, spécialisé, figuré, éloigné.
 - **Arbre des racines** : racine → formes verbales attestées (I à X) → noms dérivés par schème → sens → occurrences. Structure issue du Quranic Arabic Corpus ; seuls les sens et explications sont rédigés (« rédigé par IA »).
 - **Avertissement visible** : leçon 3.10 et encart sur chaque fiche de racine.
@@ -537,7 +535,7 @@ Le voyageur arrive dans une cité du savoir dont la grande bibliothèque a été
 | 2. L'Oasis des Fondations | Vit avec une caravane et au marché : se présenter, acheter, comprendre les gens | La Confusion |
 | 3. Les Montagnes du Moteur | Apprend chez les forgerons et les copistes comment les mots se fabriquent ; déchiffre d'anciennes inscriptions | La Précipitation |
 | 4. La Cité des Lecteurs | Lit des lettres et des récits, débat avec les savants, rédige | La Distraction |
-| 5. Les Jardins du Sens | Étudie au Sanctuaire, comprend les sourates dans leur langue | L'Impatience (jamais lié au texte sacré) |
+| 5. Les Jardins du Sens | Étudie les grands livres classiques de la bibliothèque rouverte et en maîtrise la langue | L'Impatience |
 
 Une leçon est une scène d'un chapitre ; une région = un chapitre. Dans l'Histoire, une mauvaise compréhension n'est jamais punitive : impasse, indice ou autre piste ; on peut relire, toucher les mots inconnus, demander de l'aide.
 
@@ -548,11 +546,11 @@ Une leçon est une scène d'un chapitre ; une région = un chapitre. Dans l'Hist
 | L'Histoire (cœur) | Voyager, parler, enquêter, déchiffrer, choisir | Dialogues et textes gradués ; leçons données par les personnages |
 | L'Expédition (quotidienne) | Combats dans la Faille des Oubliés, boss | Révisions FSRS, contrôles |
 | La Forge | Racine + schème → mot ; remplir le Grimoire | Racines, schèmes |
-| La Cité | Reconstruire la cité (bibliothèque, école, marché, forge, sanctuaire), s'équiper, enchanter | Motivation à long terme |
+| La Cité | Reconstruire la cité (bibliothèque, école, marché, forge, Grande Salle de lecture, Atelier des phrases), s'équiper, enchanter | Motivation à long terme |
 
 **Carte du monde à étapes** : lieux reliés par des chemins, on clique pour s'y rendre ; chaque région compte 8 à 12 lieux. Un lieu contient une scène principale (la leçon), des personnages à qui parler (dialogues gradués), des quêtes secondaires, des inscriptions à déchiffrer, parfois une boutique. En revenant, le joueur découvre de nouveaux dialogues, de plus en plus en arabe, et des inscriptions devenues lisibles.
 
-**Grimoire** : dictionnaire personnel, racines et arbre, règles apprises, listes personnelles, alphabet, indicateurs (§5.11).
+**Grimoire** : dictionnaire intégré (§5.4 bis), dictionnaire personnel, racines et arbre, règles apprises, listes personnelles, alphabet, indicateurs (§5.11).
 
 **Mode « apprentissage seul »** : réglage réversible ; mêmes écrans de leçon sans scènes d'Histoire ; la carte devient une liste de leçons ; les combats deviennent des séries de questions simples ; progression commune aux deux modes.
 
@@ -563,7 +561,7 @@ Une leçon est une scène d'un chapitre ; une région = un chapitre. Dans l'Hist
 | Arrivée | 1 min | Récompense de série, quêtes du jour, événement du jour |
 | Expédition | 8 à 12 min | 3 ou 4 vagues de combats puis un gardien, nourris par les révisions du jour |
 | Aventure | 10 à 15 min | Une leçon ou une scène de l'Histoire, et un récit gradué |
-| Temps libre | 3 à 5 min | Forge, Sanctuaire, Cité, quêtes secondaires |
+| Temps libre | 3 à 5 min | Forge, Atelier des phrases, carnet du voyageur, Cité, quêtes secondaires |
 
 Session courte possible (10 minutes) : l'Expédition seule. Séries quotidiennes avec un jour de repos possible sans perdre la série.
 
@@ -602,7 +600,7 @@ Tour par tour. À chaque tour, le joueur choisit une commande — **Attaque** (v
 
 ### 8.7 Quêtes et vie du jeu sur des centaines d'heures
 
-- **Quêtes principales** = les leçons dans l'ordre. **Secondaires** = lire un récit, aider un personnage, forger des mots, étudier une sourate, retrouver un mot dans une inscription. **Quotidiennes** et **hebdomadaires** renouvelées. Chaque quête a un objectif d'apprentissage réel.
+- **Quêtes principales** = les leçons dans l'ordre. **Secondaires** = lire un récit, aider un personnage, forger des mots, construire des phrases à l'Atelier, retrouver un mot dans une inscription. **Quotidiennes** et **hebdomadaires** renouvelées. Chaque quête a un objectif d'apprentissage réel.
 - **La Tour du Savoir** (à partir de J2) : donjon sans fin dont les étages se nourrissent de tout ce qui a été appris, avec records personnels.
 - **Collections** : Grimoire, bestiaire des difficultés, titres, équipement +15, cité reconstruite.
 - Un monde qui change avec le niveau d'arabe du joueur.
@@ -610,15 +608,9 @@ Tour par tour. À chaque tour, le joueur choisit une commande — **Attaque** (v
 
 ---
 
-## 9. Le Sanctuaire
+## 9. La Grande Salle de lecture (remplace le Sanctuaire, avenant n° 1)
 
-Lieu calme de la cité, sans aucun combat, où le Coran se lit et s'étudie.
-
-- Chaque sourate affiche la part de ses mots que le joueur reconnaît (« reconnaissance de vocabulaire », jamais « compréhension »).
-- Une sourate devient « prête à étudier » à **80 % de mots reconnus** ; Al-Fātiḥa est ouverte d'office.
-- Étude : lecture, écoute de la récitation (al-Ḥuṣarī), sens de chaque mot dans son verset et sens général, racine, construction, méditation libre ; ajout des mots inconnus aux révisions.
-- Récompenses discrètes (XP, avancement de la cité), jamais de butin ni de combat lié au texte.
-- Le lecteur coranique complet (114 sourates, navigation par juzʾ) arrive avec la région 5 (J5) ; avant, le Sanctuaire propose les sourates accessibles selon la progression.
+Le Sanctuaire est supprimé (lieu, lecture et étude des sourates, seuil « sourate prête », lecteur coranique). Le bâtiment correspondant de la Cité devient la **Grande Salle de lecture** : bibliothèque des récits gradués et des textes classiques profanes, lieu calme, sans combat.
 
 ---
 
@@ -627,7 +619,8 @@ Lieu calme de la cité, sans aucun combat, où le Coran se lit et s'étudie.
 | Besoin | Source | Statut |
 | --- | --- | --- |
 | Lettres, syllabes, mots, phrases des leçons, dialogues, récits | **Chatterbox Multilingual** (MIT), généré une fois et livré avec l'app, coupé automatiquement après le mot (outil existant), mention « synthèse » | ✅ Décidé et en place |
-| Versets et mots coraniques | Récitations EveryAyah, **al-Ḥuṣarī** par défaut ; mots isolés par découpage horodaté (QUL, à vérifier) ; jamais de synthèse pour le Coran | ✅ Décidé |
+| Les 28 lettres | Enregistrements humains sous licence libre si une source fiable est trouvée (avenant n° 1) ; sinon synthèse | À rechercher |
+| Récitations | **Aucune** (avenant n° 1) | Supprimé |
 
 - Sons difficiles : description écrite + schéma d'articulation (« rédigé par IA »).
 - **Répétition à voix haute** : écouter, répéter, s'enregistrer, réécouter en alternance ; vitesse réglable, boucle. Enregistrements **uniquement sur l'appareil**, jamais envoyés en ligne ; seul le dernier par élément est gardé ; exclus de l'export par défaut (option pour les inclure) ; micro demandé à la première utilisation.
@@ -641,17 +634,16 @@ Lieu calme de la cité, sans aucun combat, où le Coran se lit et s'étudie.
 
 | Contenu | Source | Statut |
 | --- | --- | --- |
-| Texte coranique | Tanzil (CC BY 3.0, modification interdite) | Vérifié par SHA-256 |
 | Racines, lemmes, catégories, formes, schèmes, fréquences | Quranic Arabic Corpus (GNU GPL ; source citée avec lien et notice reproduite), via QUL si besoin | Sourcé |
-| Traduction des versets | Hamidullah, version diffusée par Tanzil (édition non précisée), créditée, remplaçable ; usage non commercial | Crédité |
 | Sens français, explications, nuances | Rédigés à partir des données sourcées | « Rédigé par IA » |
 | Dialogues, récits, exemples | Rédigés en arabe classique entièrement vocalisé, vocabulaire contrôlé | « Rédigé par IA » |
 | Textes classiques (région 4) | Œuvres classiques profanes du domaine public, édition citée | Sourcé |
-| Polices | Amiri et Amiri Quran (SIL OFL), en place ; KFGQPC Hafs pour le Mushaf seulement après audit de sa licence (avant la leçon 14) | Licences jointes |
-| Audio | Chatterbox (MIT) ; EveryAyah (droits aux récitateurs) | Crédités |
+| Polices | Amiri et Amiri Quran (SIL OFL), en place | Licences jointes |
+| Dictionnaire | Source libre compatible GPL-3.0 si elle convient, sinon structure du Quranic Arabic Corpus et définitions « rédigé par IA » ; source notée par définition (§5.4 bis) | À décider (`docs/DECISIONS_A_REVOIR.md`) |
+| Audio | Chatterbox (MIT) ; enregistrements humains libres pour les lettres si trouvés | Crédités |
 | Graphismes | Packs libres ou créations, licence vérifiée pack par pack | À auditer |
 
-**Points douteux connus** : traduction Hamidullah (aucune licence publiée) ; EveryAyah (aucune condition publiée). Quranic Arabic Corpus : doute levé par la notice du fichier (GNU GPL ; usage autorisé « dans tout site web ou application », à condition de citer la source avec un lien vers corpus.quran.com et de reproduire la notice) ; la FAQ du site parle d'usage « de recherche », mais la notice, plus précise, fait foi ; mail aux auteurs facultatif.
+**Points douteux connus** (Tanzil, Hamidullah et EveryAyah retirés par l'avenant n° 1) : ils se limitent au Quranic Arabic Corpus : doute levé par la notice du fichier (GNU GPL ; usage autorisé « dans tout site web ou application », à condition de citer la source avec un lien vers corpus.quran.com et de reproduire la notice) ; la FAQ du site parle d'usage « de recherche », mais la notice, plus précise, fait foi ; mail aux auteurs facultatif.
 
 ---
 
@@ -663,13 +655,14 @@ Lieu calme de la cité, sans aucun combat, où le Coran se lit et s'étudie.
 | Moteur 2D | Flame (MIT) ; menus, questions, Grimoire en widgets Flutter |
 | Données | SQLite : base de contenu en lecture seule générée par `tools/build_content/` ; base utilisateur, seule exportée |
 | Révision | FSRS |
-| Hors ligne | Tout, sauf téléchargement des récitations, mises à jour de contenu, option IA |
+| Hors ligne | Tout, sauf mises à jour de contenu et options IA (conversation, correction) |
 | Sauvegarde | Archive ZIP versionnée et vérifiée (en place), restauration complète ou fusion |
 | Compilation | Sessions Claude Code + GitHub Actions (APK et .exe) sur `The-Ashams/iqura` |
 | Affichage | Arabe RTL, diacritiques corrects, taille réglable ; translittération Arabica par défaut, simplifiée au choix (§6.2) ; clair et sombre ; animations désactivables |
 | Ergonomie | Souris et clavier (Windows), tactile (Android), plusieurs tailles d'écran |
-| Contenu | Leçons, dialogues, récits, quêtes, monstres, objets, régions, lieux : fichiers de données (JSON), pas de code |
-| Lisibilité | Calcul automatique de la part de mots connus pour chaque texte (règle des 95 %, pourcentages du Sanctuaire) |
+| Contenu | Leçons, dialogues, récits, quêtes, monstres, objets, régions, lieux, phrases de l'Atelier : fichiers de données (JSON), pas de code |
+| Dictionnaire | Intégré, hors ligne, recherche arabe (avec ou sans voyelles), français et par racine (§5.4 bis) |
+| Lisibilité | Calcul automatique de la part de mots connus pour chaque texte (règle des 95 %) ; indicateur de vocabulaire coranique calculé à partir des seules fréquences |
 
 ---
 
@@ -680,12 +673,12 @@ On avance **région par région**, chaque région complète et jouable. Le MVP e
 | Jalon | Contenu | Condition pour passer au suivant |
 | --- | --- | --- |
 | J0 — Socle | App Windows et Android, profil, sauvegarde, export, import, fusion, CI, audio | ✅ Fait |
-| **J1a — Tranche verticale** | Leçons 0 à 3 complètes au format mini-donjon (§6) avec les corrections du §5.5, jouables de bout en bout dans le jeu : carte (premiers lieux de la région 1), scène d'Histoire, dialogues, mini-boss en combat, Expédition avec ces révisions, Grimoire minimal, Cité minimale (boutique, équipement, enchantement), Sanctuaire avec Al-Fātiḥa (repérage), audio, tracé, enregistrement, séries, mode « apprentissage seul » | **L'utilisateur joue 30 minutes et valide que c'est amusant et efficace.** Rien d'autre n'est produit en masse avant cette validation |
+| **J1a — Tranche verticale** | Leçons 0 à 3 complètes au format mini-donjon (§6) avec les corrections du §5.5, jouables de bout en bout dans le jeu : carte (premiers lieux de la région 1), scène d'Histoire, dialogues, mini-boss en combat, Expédition avec ces révisions, Grimoire minimal, Cité minimale (boutique, équipement, enchantement), audio, tracé, enregistrement, séries, mode « apprentissage seul » | **L'utilisateur joue 30 minutes et valide que c'est amusant et efficace.** Rien d'autre n'est produit en masse avant cette validation |
 | J1b — Région 1 complète | Leçons 4 à 14, boss de région (trois évaluations), 100 mots, familles de mots dès la leçon 7, tous les lieux de la région 1 | Un débutant lit des mots vocalisés seul ; il revient plusieurs jours ; aucun bug bloquant |
-| J2 — Région 2 | 30 leçons, 60 récits, mini-forges, Tour du Savoir, test de positionnement, sourates courtes au Sanctuaire | Compréhension de courts récits |
+| J2 — Région 2 | 30 leçons, 60 récits, mini-forges, Tour du Savoir, test de positionnement, Atelier des phrases, carnet du voyageur, dictionnaire intégré | Compréhension de courts récits ; premières phrases produites |
 | J3 — Région 3 | 32 leçons, 80 récits, arbre des racines complet, tous les exercices de racines, Sort de racine | Décodage des familles de mots |
 | J4 — Région 4 | 28 leçons, 100 récits et dialogues, écriture, option IA | Lecture courante |
-| J5 — Région 5 | 24 leçons, sourates étudiées, lecteur coranique complet | Compréhension directe de sourates |
+| J5 — Région 5 | 20 leçons de langue coranique avancée, sans verset (§5.9) | Lecture de textes classiques avancés |
 
 ### 13.0 Niveaux de test (décision du 23/10/2026)
 
@@ -704,9 +697,9 @@ On ne teste plus leçon par leçon, mais **niveau par niveau**. Le programme est
 | Intermédiaire 3 | leçons 3.22 à 3.32 + boss de la région 3 |
 | Avancé 1 | leçons 4.1 à 4.14 |
 | Avancé 2 | leçons 4.15 à 4.28 + boss de la région 4 |
-| Coran 1 | leçons 5.1 à 5.12 |
-| Coran 2 | leçons 5.13 à 5.20 |
-| Coran 3 | leçons 5.21 à 5.24 |
+| Classique avancé 1 | leçons 5.1 à 5.7 |
+| Classique avancé 2 | leçons 5.8 à 5.13 |
+| Classique avancé 3 | leçons 5.14 à 5.20 + boss de la région 5 |
 
 Règles :
 
@@ -721,7 +714,7 @@ Les jalons J1a à J5 ci-dessus décrivent le contenu de chaque région ; l'unit�
 
 1. Présenter à l'utilisateur la liste de ce qui change dans l'existant (§0.1, point 5) et obtenir son accord.
 2. Proposer les noms des lieux et personnages de la région 1 et le découpage de la région 1 en lieux (8 à 12), puis attendre la validation.
-3. Construire la coquille du jeu en pixel art (§8.1) : carte à étapes, scène de dialogue, combat, Cité, Grimoire, Sanctuaire minimal — avec les maquettes existantes comme référence.
+3. Construire la coquille du jeu en pixel art (§8.1) : carte à étapes, scène de dialogue, combat, Cité, Grimoire — avec les maquettes existantes comme référence.
 4. Réécrire les leçons 0 et 1 au format mini-donjon ; les montrer à l'utilisateur ; attendre sa validation.
 5. Réécrire les leçons 2 et 3 sur le même modèle.
 6. Brancher la révision FSRS, l'Expédition, les ressources, l'équipement et l'enchantement.
@@ -734,8 +727,8 @@ Les jalons J1a à J5 ci-dessus décrivent le contenu de chaque région ; l'unit�
 
 Démontrés sur Windows et Android, compilations et tests réellement exécutés.
 
-- [ ] Texte coranique identique octet pour octet à Tanzil (test d'empreinte).
-- [ ] Aucun mot ni extrait coranique sur un monstre ou dans une attaque ; aucun verset en combat (test automatisé sur les contenus de combat).
+- [ ] Aucun verset, extrait ou citation coranique n'apparaît dans l'application (test automatisé sur tout le contenu).
+- [ ] Aucun mot sur un monstre ; aucun nom divin, nom de prophète ou formule sacrée en combat.
 - [ ] Chaque texte à lire respecte la règle des 95 % au moment où il est proposé.
 - [ ] Chaque fiche affiche sa source ou « rédigé par IA ».
 - [ ] Chaque mot, lettre et phrase des leçons du jalon a son audio, signalé « synthèse ».
@@ -754,15 +747,15 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 
 | N° | Sujet | Décision |
 | --- | --- | --- |
-| 1 | Audio | Chatterbox Multilingual avec coupure automatique ; récitations al-Ḥuṣarī pour le Coran |
+| 1 | Audio | Chatterbox Multilingual avec coupure automatique ; aucune récitation (avenant n° 1) |
 | 2 | Style graphique | Pixel art type RPG japonais classique (§8.1) |
 | 3 | Histoire | Cité du savoir, bibliothèque oubliée, 5 régions et adversaires (§8.2) ; noms définitifs à proposer en J1a |
-| 4 | Seuil « sourate prête » | 80 % ; Al-Fātiḥa ouverte d'office |
-| 5 | Récitateur | al-Ḥuṣarī |
+| 4 | Seuil « sourate prête » | Supprimé (avenant n° 1) |
+| 5 | Récitateur | Supprimé (avenant n° 1) |
 | 6 | Conversation IA | Option en ligne à partir de J4, en arabe classique, désactivée par défaut |
 | 7 | Registre de langue | Arabe classique partout, y compris la conversation |
 | 8 | Ordre grammatical | Celui des §5.6 et §5.7, inchangé |
-| 9 | Ordre des sourates | Celui du §5.9 |
+| 9 | Ordre des sourates | Supprimé (avenant n° 1) ; région 5 : ordre du §5.9 |
 | 10 | Carte du monde | Carte à étapes |
 | 11 | Licence | GPL-3.0, dépendances auditées |
 | 12 | Relecture | Aucun relecteur : sources citées, contenu IA marqué « rédigé par IA » |
@@ -819,3 +812,6 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-24 | Examen de la région 1 à la porte de la bibliothèque, ouvert quand les 15 leçons sont réussies : lecture de 20 mots (90 %), écoute de 10 mots (seuil de 80 %, comme les mini-boss, **à valider par l'utilisateur**), prononciation de 5 mots auto-évaluée, temps de lecture affiché sans compter ; réussite : 200 XP et 100 dinars une fois |
 | 2026-10-24 | « Formes » enseignées par une règle, sans fiche de lettre : أ إ ؤ ئ آ (leçon 9), ة ى (leçon 10), ٱ (leçon 14) ; signes du Mushaf reconnus sans carte de révision ; trois tanwīn (leçon 12) et signes du Mushaf (leçon 14) comptés chacun comme une seule notion ; la leçon 14 ajoute la vague ٓ et le petit zéro ۟ à la liste du §5.1 (**à valider par l'utilisateur**) |
 | 2026-10-24 | Décisions de langue des niveaux Débutant 2 et 3 : `docs/relectures/decisions-debutant-2.md` et `decisions-debutant-3.md` |
+| 2026-10-24 | **Avenant n° 1 « La langue sans les versets »** (décision de l'utilisateur) : IQURA enseigne la langue du Coran et prépare à sa compréhension sans la faire dans l'application ; plus aucun verset, extrait, citation ni récitation ; Tanzil, Hamidullah et EveryAyah retirés ; Sanctuaire supprimé (la Grande Salle de lecture le remplace) ; salle d'étude « Dans le Coran » remplacée par la salle de lecture ; leçon 14 « Préparer la lecture de l'écriture coranique » sur mots isolés ; région 5 « langue coranique avancée » en 20 leçons ; niveaux « Classique avancé 1 à 3 » ; indicateur « X % des mots du Coran » à partir des seules fréquences ; test automatisé : aucun verset dans tout le contenu |
+| 2026-10-24 | **Avenant n° 2 « Vers l'autonomie dans la langue »** (décision de l'utilisateur) : ≈ 3 500 mots par fréquence et par thèmes, fiche de mot complète, passif et actif ; Atelier des phrases (région 2) ; s'exprimer (réponses libres, décrire, carnet du voyageur, reformuler ; correction IA en option, désactivée par défaut) ; dictionnaire intégré hors ligne ; équilibre comprendre / produire par région ; épreuve de production dans chaque examen ; rien de ce qui a été validé n'est refait (l'élément validé l'emporte en cas de conflit) |
+| 2026-10-24 | Application des avenants (décisions de Claude Code, notées dans `docs/DECISIONS_A_REVOIR.md`) : salles de lecture de la région 1 = inscriptions des lieux faites de mots déjà lus ; garde-fou automatique : aucune suite de 3 mots du Coran dans le contenu ; dictionnaire : structure du Quranic Arabic Corpus et définitions « rédigé par IA » (Wiktionnaire écarté pour l'instant : contributions anciennes en CC BY-SA 3.0, données inaccessibles depuis la session) ; noms des lettres en synthèse tant qu'aucun enregistrement humain libre et complet n'est trouvé |

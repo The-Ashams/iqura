@@ -1,11 +1,11 @@
 # État du projet IQURA
 
-Mis à jour le 23 octobre 2026. **À lire en début de session, à mettre à jour à chaque étape importante et avant la fin d'une session.**
-Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026**, référence unique). Règles : `CLAUDE.md`. Anciennes versions : `docs/archive/`.
+Mis à jour le 24 octobre 2026. **À lire en début de session, à mettre à jour à chaque étape importante et avant la fin d'une session.**
+Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026, avenants n° 1 et n° 2 du 24/10/2026 intégrés**, référence unique). Décisions prises seul, à revoir : `docs/DECISIONS_A_REVOIR.md`. Règles : `CLAUDE.md`. Anciennes versions : `docs/archive/`.
 
 Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` après la fusion de la pull request n° 3).
 
-**Organisation par niveaux depuis le 23/10/2026** (cahier §13.0) : on construit un niveau entier, on le fait relire, on le teste, puis on publie une version. **Niveau en cours : Débutant 1 (leçons 0 à 4), construit, en attente du test de l'utilisateur.** Niveau suivant : Débutant 2 (leçons 5 à 9). Étapes 1 à 3 du jalon J1a faites (cahier v3 appliqué, région 1 validée, coquille du jeu).
+**Organisation par niveaux depuis le 23/10/2026** (cahier §13.0) : on construit un niveau entier, on le fait relire, on le teste, puis on publie une version. **Niveaux construits : Débutant 1 à 3 (région 1 entière), mis à jour pour l'avenant n° 1 (§1 sexies) ; Débutant 1 testé une première fois, Débutant 2 et 3 en attente du test de l'utilisateur.** Niveau suivant : Élémentaire 1 (leçons 2.1 à 2.10), qui reçoit les premiers ajouts de l'avenant n° 2. Étapes 1 à 3 du jalon J1a faites (cahier v3 appliqué, région 1 validée, coquille du jeu).
 
 ## 1. Ce qui existe déjà (gardé, cahier §0.1 point 4)
 
@@ -80,6 +80,36 @@ Tests locaux du 23/10/2026 : Flutter 99 tests OK, `flutter analyze` sans remarqu
 | Audio | Génération Chatterbox en cours (environ 150 sons) ; formes fragiles (ة, tanwīn seuls, article solaire, doublement, hamza, ظَبْي) à confirmer à l'écoute par l'utilisateur, sinon lecture seule (décisions D2-9, D3-10) |
 | Tests | 15 leçons jouées de bout en bout, examen complet, logique de l'examen |
 
+## 1 sexies. Avenants n° 1 « La langue sans les versets » et n° 2 « Vers l'autonomie » (24/10/2026)
+
+### Retraits faits pour l'avenant n° 1 (décidés par l'avenant, sans accord à demander)
+
+| Retiré | Où | Remplacé par |
+| --- | --- | --- |
+| Texte coranique Tanzil (Uthmani, sans voyelles), métadonnées, traduction Hamidullah | `tools/build_content/sources/tanzil/`, `tanzil.py`, `align.py`, `fetch_sources.py` ; tables `surah`, `verse`, `translation`, `verse_translation`, `token`, `segment`, `token_segment`, `lesson_quran_ref` | Rien : la base ne contient plus le texte du Coran (0,8 Mo) ; seul le Quranic Arabic Corpus reste (racines, lemmes, fréquences) |
+| Vérification SHA-256 du texte coranique (tests et démarrage) | `lib/data/content_db/quran_integrity.dart`, tests Python et Dart | Contrôle du schéma, des tables et de l'intégrité SQLite au démarrage ; garde-fou `quran_guard.py` : la construction échoue si une suite de 3 mots du Coran apparaît dans le contenu |
+| Sanctuaire (Al-Fātiḥa, traduction, « récitation pas encore disponible ») | `lib/ui/game/sanctuary_screen.dart`, onglet du menu, test | Bâtiment « La Grande Salle de lecture » dans la Cité (à reconstruire) ; image renommée `scene_grande_salle` |
+| Salle d'étude « Dans le Coran » des 15 leçons (versets 1:1, 78:7, 95:2… ; compter et repérer dans un verset) | écrans `coran` des leçons, `_QuranView`, `QuranStep` | **Salle de lecture** (écran `lecture`) : inscription d'un lieu du jeu faite de mots déjà lus, questions compter, repérer, QCM ; mention « exemple construit · rédigé par IA » |
+| Extraits coraniques des leçons 0 et 1 (Al-Fātiḥa, 78:7, 86:3) | leçons 0 et 1 | Signes de la margelle (بَ بِ بُ), étiquette de la porte (بَاب ثَبَتَ تَابَ) |
+| Mentions « dans le Coran » des textes des leçons, « près du Sanctuaire » (leçon 14, Salle des manuscrits) | leçons, `world/region1.json` | Leçon 14 « Préparer la lecture de l'écriture coranique » sur mots isolés (لَهُۥ, بِهِۦ, جَآءَ, قَالُوا۟ en aperçu) |
+| Récitations EveryAyah / al-Ḥuṣarī (jamais intégrées) | cahier, `CLAUDE.md` | Aucune récitation |
+| Mentions Tanzil et Hamidullah | Paramètres, Sources des données, `THIRD_PARTY_LICENSES.md`, `README.md`, `preview_lessons.py` | Quranic Arabic Corpus seul |
+
+Gardé : la police Amiri Quran (mots isolés de la leçon 14), le Quranic Arabic Corpus, tout le reste des leçons, du jeu et des réglages. Cahier, `CLAUDE.md`, `docs/HISTOIRE.md` et les agents `relecteur-arabe` et `conseiller-arabe` sont mis à jour. Schéma de contenu 8, contenu 0.8.0-sans-versets.
+
+### Bilan d'écart de l'avenant n° 2 (§A)
+
+| Point | Existe déjà (gardé) | Existe en partie (à compléter) | Manque (prévu) |
+| --- | --- | --- | --- |
+| A.1 Vocabulaire riche | 4 832 lemmes et 1 642 racines du Corpus avec fréquences dans la base ; ≈ 60 mots de la région 1 avec sens ; cartes FSRS « reconnaître, écouter, lire » | Connaissance passive seulement (pas de carte « du français vers l'arabe ») ; aucune fiche de mot dans le Grimoire | Liste d'≈ 3 500 mots par fréquence et par thèmes ; fiche complète (sens, racine et famille, pluriel, passé et inaccompli, exemples, contraires) ; cartes actives : à partir d'Élémentaire 1 |
+| A.2 Atelier des phrases | — | Bâtiment « L'Atelier des phrases » listé dans la Cité (à reconstruire) | Le lieu et ses 5 exercices (construire, transformer, compléter, corriger, traduire) : Élémentaire 1, dès que la phrase nominale est enseignée |
+| A.3 S'exprimer | Répéter à voix haute avec enregistrement, reconstruire un mot entendu, tracer (région 1) | Les personnages parlent, mais le joueur ne leur répond pas encore | Réponses aux personnages (choix, puis reconstitution, puis libre) ; décrire ; carnet du voyageur ; reformuler ; correction hors ligne ; correction IA en ligne en option (désactivée par défaut, jalon J4) |
+| A.4 Dictionnaire intégré | Structure du Corpus (lemmes, racines, catégories, formes verbales) dans la base | — | Écran accessible partout, hors ligne ; recherche en arabe (avec ou sans voyelles), en français et par racine ; « déjà appris / pas encore » ; ajout aux révisions. Source décidée : Corpus + définitions « rédigé par IA » (`docs/DECISIONS_A_REVOIR.md` n° 1). Élémentaire 1 |
+| A.5 Comprendre / produire | Région 1 : repère « environ 80 / 20 » | Mesuré sur les questions des 15 leçons : 7 % de production (36 sur 495 : répéter, reconstruire, tracer) ; à cela s'ajoutent la prononciation de l'examen et les tracés libres. Les leçons validées ne sont pas refaites (avenant n° 2, instruction 1) | Révisions de production dans l'Expédition (reconstruire, répéter) ; 50 / 50 dès la région 2 |
+| A.6 Mesurer l'autonomie | Grimoire : lettres et états des cartes ; examen de la région 1 avec une épreuve de parole (5 mots, auto-évaluée) | L'épreuve de production de la région 1 est orale seulement | Indicateurs du Grimoire (mots connus activement, phrases construites, entrées du carnet) ; épreuves « construire, transformer, écrire, répondre » aux examens des régions 2 à 5 |
+
+Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la région 1 (7 % au lieu d'environ 20 %) reste tel quel, puisque le niveau Débutant 1 est validé ; ce point sera signalé dans le bilan de fin de niveau.
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -132,8 +162,9 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
    - retours du 1er test de l'APK (23/10) : son de ثَبَتَ refait (version B, virgule finale), « margelle » remplacé, affichage PC centré et scène limitée en hauteur ; bruitages rétro créés (`tools/build_sfx/`), validés à l'écoute et branchés (menus, choix, juste/faux, coups, victoire, repli, sceau), désactivables dans les réglages ;
    - remplacé le 23/10/2026 par l'organisation par niveaux : voir §1 quater.
 5. Débutant 1 construit (§1 quater), testé une première fois par l'utilisateur le 24/10/2026 ; retours intégrés (§1 quater), nouvelle version à publier.
-6. Débutant 2 et Débutant 3 construits le 24/10/2026 (§1 quinquies), à la demande de l'utilisateur, avant son nouveau test : sons à terminer et à faire écouter, puis une version à publier.
-7. Ensuite : région 2 (Élémentaire 1, leçons 2.1 à 2.10).
+6. Débutant 2 et Débutant 3 construits le 24/10/2026 (§1 quinquies), à la demande de l'utilisateur, avant son nouveau test : sons générés (204), à faire écouter, puis une version à publier.
+7. Fait (24/10/2026) : avenants n° 1 et n° 2 appliqués (§1 sexies) ; salles de lecture relues par l'agent relecteur.
+8. Ensuite : région 2 (Élémentaire 1, leçons 2.1 à 2.10), avec les premiers ajouts de l'avenant n° 2 (vocabulaire par thèmes, fiche de mot, Atelier des phrases, dictionnaire).
 
 ## 5. Problèmes connus
 
@@ -143,4 +174,4 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 - **Compilation Windows** : uniquement via GitHub Actions.
 - **Maven Central** refuse parfois les téléchargements (erreur 429) pendant la compilation de l'APK ; une nouvelle compilation passe.
 
-- **Simplifications restantes (Débutant 1)** : récitation d'al-Ḥuṣarī absente (téléchargement non autorisé dans la session) ; objets non dessinés sur le personnage ; enregistrements de la voix jamais exportés (pas encore d'option pour les inclure).
+- **Simplifications restantes (Débutant 1)** : objets non dessinés sur le personnage ; enregistrements de la voix jamais exportés (pas encore d'option pour les inclure).

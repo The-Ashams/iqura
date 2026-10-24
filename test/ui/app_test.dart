@@ -73,7 +73,7 @@ void main() {
     expect(find.text('Le Désert des Lettres'), findsOneWidget);
     expect(find.text("1. Le Puits de l'arrivée"), findsOneWidget);
     expect(find.text('Pas encore disponible'), findsNothing);
-    for (final label in ['Carte', 'Cité', 'Grimoire', 'Sanctuaire']) {
+    for (final label in ['Carte', 'Cité', 'Grimoire', 'Paramètres']) {
       expect(find.text(label), findsOneWidget);
     }
   });
@@ -129,10 +129,7 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('Sources des données'));
     await tester.pumpAndSettle();
-    expect(
-      find.text('Tanzil Quran Text (Uthmani, Version 1.1)'),
-      findsOneWidget,
-    );
+    expect(find.textContaining('Tanzil'), findsNothing);
     expect(
       find.textContaining('Quranic Arabic Corpus, données'),
       findsOneWidget,

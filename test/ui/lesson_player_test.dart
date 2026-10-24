@@ -190,22 +190,18 @@ Future<bool> playLesson(
         } else {
           await tapOn(tester, find.text('Continuer'));
         }
-      case QuranStep():
-        for (final e in step.extracts) {
-          final q = e.question;
+      case ReadingStep():
+        for (final q in step.questions) {
           if (q.kind != QuestionKind.repererMot &&
               q.kind != QuestionKind.compter) {
-            // Question à choix sur le verset (leçon 14).
             await answer(tester);
             continue;
           }
+          final word = step.inscription[q.word!];
           if (q.kind == QuestionKind.repererMot) {
-            await tapOn(
-              tester,
-              find.text(contentDb.tokenText(q.token!)!).first,
-            );
+            await tapOn(tester, find.text(word).first);
           } else {
-            final n = countLetter(contentDb.tokenText(q.token!)!, q.letter!);
+            final n = countLetter(word, q.letter!);
             await tapOn(tester, answerButton(tester, '$n'));
           }
           await tapOn(tester, find.text('Valider'));
