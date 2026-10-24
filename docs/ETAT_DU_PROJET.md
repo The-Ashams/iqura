@@ -163,7 +163,7 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
    - remplacé le 23/10/2026 par l'organisation par niveaux : voir §1 quater.
 5. Débutant 1 construit (§1 quater), testé une première fois par l'utilisateur le 24/10/2026 ; retours intégrés (§1 quater), nouvelle version à publier.
 6. Débutant 2 et Débutant 3 construits le 24/10/2026 (§1 quinquies), à la demande de l'utilisateur, avant son nouveau test : sons générés (204), à faire écouter, puis une version à publier.
-7. Fait (24/10/2026) : avenants n° 1 et n° 2 appliqués (§1 sexies) ; salles de lecture relues par l'agent relecteur.
+7. Fait (24/10/2026) : avenants n° 1 et n° 2 appliqués (§1 sexies) ; salles de lecture relues par l'agent relecteur : verdict « Validé avec doutes » au 2e passage, 5 doutes tranchés par le conseiller (`docs/relectures/2026-10-24-salles-de-lecture.md`, `decisions-debutant-3.md`).
 8. Ensuite : région 2 (Élémentaire 1, leçons 2.1 à 2.10), avec les premiers ajouts de l'avenant n° 2 (vocabulaire par thèmes, fiche de mot, Atelier des phrases, dictionnaire).
 
 ## 5. Problèmes connus
