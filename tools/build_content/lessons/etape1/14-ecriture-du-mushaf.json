@@ -185,17 +185,17 @@
     {
       "type": "regle",
       "titre": "Petits wāw et petits yāʾ",
-      "texte": "Un petit و ou un petit ي après une lettre indique une voyelle longue « ū » ou « ī ». Après le ه de لَهُۥ et بِهِۦ, cette voyelle longue ne se prononce qu'en enchaînant avec le mot suivant.",
+      "texte": "Un petit و ou ي après une lettre indique un « ū » ou un « ī » long. Après le ه de لَهُۥ et بِهِۦ, il ne se lit qu'en enchaînant ; l'arrêt s'apprend avec un enseignant.",
       "question": {
         "type": "qcm",
         "consigne": "Un petit و écrit après une ḍamma indique…",
         "choix": [
-          "un « u » long à prononcer",
+          "un « u » long",
           "une lettre muette",
           "un arrêt"
         ],
         "reponse": 0,
-        "explication": "Le petit و indique un « ū » long à prononcer."
+        "explication": "Le petit و indique un « u » long (ū)."
       },
       "exemples": [
         "لَهُۥ",
@@ -466,12 +466,12 @@
           "type": "qcm",
           "consigne": "Un petit ي après une kasra indique…",
           "choix": [
-            "un « ī » long à prononcer",
+            "un « i » long",
             "une lettre muette",
             "un signe de pause"
           ],
           "reponse": 0,
-          "explication": "Un « ī » long à prononcer."
+          "explication": "Le petit ي indique un « i » long (ī)."
         },
         {
           "type": "qcm",

@@ -22,3 +22,4 @@ Agent : conseiller-arabe. Les doutes viennent de `2026-10-24-salles-de-lecture.m
 1. **Leçon 13, cadran** : « soleil » et « lune » ne sont plus côte à côte, pour ne pas rappeler le texte du Coran. Nouvel ordre : الشَّمْس · الْبَاب · النُّور · الدَّار · الْقَمَر. Confiance haute.
 2. **Leçon 14, petits و et ي** : ils indiquent une voyelle longue « ū » ou « ī ». L'allongement qui ne se prononce qu'en enchaînant avec le mot suivant vaut seulement après le ه de لَهُۥ et بِهِۦ. Confiance haute.
 3. **Leçon 14, zéro allongé ۠** : rien n'est ajouté. C'est une règle de récitation, à apprendre avec un enseignant (même décision que le point 1 plus haut). Confiance haute.
+4. **Leçon 14, لَهُۥ et بِهِۦ à l'arrêt** (précise le point 2) : le texte dit que ce signe ne se lit qu'en enchaînant, et que la lecture à l'arrêt s'apprend avec un enseignant. Aucune règle d'arrêt n'est donnée. Les QCM disent simplement « un « u » long » et « un « i » long ». Confiance haute.
