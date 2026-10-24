@@ -368,7 +368,8 @@
       "inscription": [
         "تَاج",
         "جَنَاح",
-        "حَبِيب"
+        "حَبِيب",
+        "حُجِبَ"
       ],
       "questions": [
         {
@@ -379,9 +380,15 @@
         },
         {
           "type": "compter",
-          "consigne": "Combien de ح vois-tu dans ce mot ?",
+          "consigne": "Combien de ب vois-tu dans ce mot ?",
           "mot": 2,
-          "lettre": "ح"
+          "lettre": "ب"
+        },
+        {
+          "type": "compter",
+          "consigne": "Combien de ḍamma vois-tu dans ce mot ?",
+          "mot": 3,
+          "lettre": "ُ"
         },
         {
           "type": "reperer_mot",

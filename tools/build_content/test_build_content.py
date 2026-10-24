@@ -52,6 +52,14 @@ class QuranGuardTest(unittest.TestCase):
         with self.assertRaises(quran_guard.QuranGuardError):
             quran_guard.check({"x": "دَ اَ بِ جُ"}, grams)
 
+    def test_inscriptions_are_checked_on_two_words(self):
+        # « لَهُۥ بِهِۦ » se suit dans le Coran (relecture du 24/10/2026).
+        data = build_content.collect()
+        with self.assertRaises(quran_guard.QuranGuardError):
+            quran_guard.check({"x": "لَهُۥ بِهِۦ"}, data["quran_pairs"], quran_guard.PAIR)
+        quran_guard.check(lessons.inscriptions(lessons.load()), data["quran_pairs"],
+                          quran_guard.PAIR)
+
 
 class SourcesTest(unittest.TestCase):
     def test_all_sources_match_their_fingerprint(self):

@@ -239,7 +239,7 @@ def validate(lesson: dict, *, known_letters: set[str], known_signs: set[str],
                 raise LessonError(f"{here} : « ce que tu sais maintenant » attendu")
 
 
-def arabic_strings(lesson: dict) -> list[str]:
+def arabic_strings(lesson: dict, silent: bool = False) -> list[str]:
     """Textes arabes d'une leçon qui se lisent à voix haute (hors salle de
     lecture, dont l'inscription se lit sans son)."""
     out: list[str] = []
@@ -260,8 +260,11 @@ def arabic_strings(lesson: dict) -> list[str]:
                 add(t)
 
     for s in lesson["ecrans"]:
-        for t in s.get("support", []) + s.get("exemples", []):
-            add(t)
+        # « sans_son » : exemples montrés sans enregistrement (mots isolés
+        # en écriture du Mushaf, leçon 14) ; comptés seulement si `silent`.
+        if silent or not s.get("sans_son"):
+            for t in s.get("support", []) + s.get("exemples", []):
+                add(t)
         if "question" in s:
             from_question(s["question"])
         for q in s.get("exercices", []) + s.get("questions", []):

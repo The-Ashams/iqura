@@ -333,12 +333,13 @@
     {
       "type": "lecture",
       "titre": "La margelle des étoiles",
-      "texte": "Au bord du puits des étoiles, quatre mots sont gravés. Compte chaque forme de la hamza.",
+      "texte": "Au bord du puits des étoiles, cinq mots sont gravés. Compte les formes de la hamza.",
       "inscription": [
         "سَمَاء",
         "أَرْض",
         "بِئْر",
-        "سُؤَال"
+        "سُؤَال",
+        "آبَار"
       ],
       "questions": [
         {
@@ -349,9 +350,9 @@
         },
         {
           "type": "compter",
-          "consigne": "Combien de أ vois-tu dans ce mot ?",
-          "mot": 1,
-          "lettre": "أ"
+          "consigne": "Combien de آ vois-tu dans ce mot ?",
+          "mot": 4,
+          "lettre": "آ"
         },
         {
           "type": "compter",

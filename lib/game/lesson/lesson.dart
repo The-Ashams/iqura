@@ -197,6 +197,7 @@ sealed class LessonStep {
       ),
       'lecture' => ReadingStep(
         title: _fr(j['titre']),
+        mushaf: j['mushaf'] == true,
         text: frenchWithArabic(j['texte'] as String),
         inscription: strings(j['inscription']),
         questions: [
@@ -269,9 +270,13 @@ class ReadingStep extends LessonStep {
     required this.inscription,
     required this.questions,
     this.title,
+    this.mushaf = false,
   });
 
   final String? title;
+
+  /// Mots écrits à la manière du Mushaf (leçon 14) : police Amiri Quran.
+  final bool mushaf;
   final String text;
 
   /// Mots de l'inscription, dans l'ordre de lecture (de droite à gauche).

@@ -375,8 +375,7 @@
       "texte": "L'enseigne de l'herboriste annonce ce qu'il vend. Compte les lettres et trouve les figues.",
       "inscription": [
         "نَبَات",
-        "تِين",
-        "بَنَات"
+        "تِين"
       ],
       "questions": [
         {
@@ -388,7 +387,7 @@
         {
           "type": "compter",
           "consigne": "Combien de ن vois-tu dans ce mot ?",
-          "mot": 2,
+          "mot": 0,
           "lettre": "ن"
         },
         {

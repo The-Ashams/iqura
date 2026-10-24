@@ -287,6 +287,8 @@ class SpokenArabic extends ConsumerWidget {
     final word = ArabicText(
       text,
       baseSize: size,
+      // Petits wāw et yāʾ, petit zéro : signes propres au Mushaf (leçon 14).
+      mushaf: RegExp('[\u06DF\u06E5\u06E6]').hasMatch(text),
       style: TextStyle(color: color ?? GameColors.text),
     );
     if (file == null) return word;

@@ -508,10 +508,6 @@ class _PracticeViewState extends State<_PracticeView> {
 // inscription d'exemples construits, faite de mots déjà lus ; aucun verset ni
 // extrait coranique.
 
-/// Mot écrit avec des signes du Mushaf (leçon 14) : police Amiri Quran.
-bool _mushafStyle(String word) =>
-    RegExp('[\u0653\u0670\u0671\u06D6-\u06ED]').hasMatch(word);
-
 class _ReadingView extends ConsumerStatefulWidget {
   const _ReadingView({
     required this.lesson,
@@ -603,6 +599,7 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
               for (final (i, w) in words.indexed)
                 _InscriptionWord(
                   text: w,
+                  mushaf: widget.step.mushaf,
                   highlighted: locate
                       ? _tapped == i || (_right != null && i == q.word)
                       : q.kind == QuestionKind.compter && i == q.word,
@@ -669,7 +666,7 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
           const SizedBox(height: 8),
           ArabicText(
             word,
-            mushaf: _mushafStyle(word),
+            mushaf: widget.step.mushaf,
             baseSize: 44,
             style: const TextStyle(color: PanelColors.ink),
           ),
@@ -735,9 +732,11 @@ class _InscriptionWord extends StatelessWidget {
     required this.text,
     required this.highlighted,
     required this.onTap,
+    this.mushaf = false,
   });
 
   final String text;
+  final bool mushaf;
   final bool highlighted;
   final VoidCallback? onTap;
 
@@ -755,7 +754,7 @@ class _InscriptionWord extends StatelessWidget {
         ),
         child: ArabicText(
           text,
-          mushaf: _mushafStyle(text),
+          mushaf: mushaf,
           baseSize: 32,
           style: const TextStyle(color: Color(0xFF2A1F18)),
         ),

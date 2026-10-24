@@ -177,6 +177,7 @@ def collect(manifest: dict[str, dict] | None = None) -> dict:
         "qac_header": qac_header,
         # Suites de mots du corpus, pour le garde-fou ; jamais écrites.
         "quran_ngrams": quran_guard.ngrams_from_segments(segments),
+        "quran_pairs": quran_guard.ngrams_from_segments(segments, quran_guard.PAIR),
     }
 
 
@@ -258,6 +259,7 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
         {**lessons.arabic_texts(lesson_data), **world.arabic_texts(world_data)},
         data["quran_ngrams"],
     )
+    quran_guard.check(lessons.inscriptions(lesson_data), data["quran_pairs"], quran_guard.PAIR)
     item_data = data.get("items") or world.load_items()
     world.validate_items(item_data, {d["region"]["id"] for d in world_data})
     world_counts["items"] = world.write_items(con, item_data)

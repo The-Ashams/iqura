@@ -380,8 +380,8 @@
     },
     {
       "type": "lecture",
-      "titre": "Les rayons du copiste",
-      "texte": "Dans l'atelier, un copiste a étiqueté ses rayons. Compte les lettres et trouve le scribe.",
+      "titre": "La table du copiste",
+      "texte": "Sur sa table, un copiste a écrit des mots. Compte les lettres et trouve le scribe.",
       "inscription": [
         "كِتَاب",
         "كَاتِب",

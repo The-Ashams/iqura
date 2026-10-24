@@ -158,6 +158,16 @@ def validate(data: LessonData) -> None:
                 raise LessonError(str(e)) from None
 
 
+def inscriptions(data: LessonData) -> dict[str, str]:
+    """Inscriptions des salles de lecture (mots isolés), contrôlées sur
+    2 mots voisins par le garde-fou coranique."""
+    out: dict[str, str] = {}
+    for lesson in data.lessons:
+        for i, s in enumerate(x for x in lesson["ecrans"] if x["type"] == "lecture"):
+            out[f"{lesson['_file']} · salle de lecture {i + 1}"] = " ".join(s["inscription"])
+    return out
+
+
 def arabic_texts(data: LessonData) -> dict[str, str]:
     """Tous les textes arabes des leçons et des fiches (garde-fou coranique),
     inscriptions des salles de lecture comprises."""
@@ -165,7 +175,7 @@ def arabic_texts(data: LessonData) -> dict[str, str]:
     for card in data.letters["lettres"]:
         out[f"fiche {card['lettre']}"] = card["nom_ar"]
     for lesson in data.lessons:
-        for i, t in enumerate(mini_donjon.arabic_strings(lesson)):
+        for i, t in enumerate(mini_donjon.arabic_strings(lesson, silent=True)):
             out[f"{lesson['_file']} · texte {i + 1}"] = t
         for i, s in enumerate(lesson["ecrans"]):
             if s.get("type") == "lecture":
