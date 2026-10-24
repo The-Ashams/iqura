@@ -45,6 +45,18 @@ class TrimTest(unittest.TestCase):
         r = trim.trim_first_utterance(np.concatenate([tone(0.5), silence(0.5)]), SR)
         self.assertLess(abs(float(r.audio[-1])), 1e-3)
 
+    def test_soft_onset_is_kept(self):
+        # Souffle faible (ث) de 120 ms avant la voyelle : gardé en entier.
+        rng = np.random.default_rng(0)
+        hiss = (0.012 * rng.standard_normal(int(0.12 * SR))).astype(np.float32)
+        x = np.concatenate([silence(0.3), hiss, tone(0.4), silence(0.5)])
+        r = trim.trim_first_utterance(x, SR)
+        self.assertAlmostEqual(r.speech_start, 0.3, delta=0.03)
+
+    def test_starts_with_a_fade(self):
+        r = trim.trim_first_utterance(np.concatenate([tone(0.5), silence(0.5)]), SR)
+        self.assertLess(abs(float(r.audio[0])), 1e-3)
+
     def test_silence_is_rejected(self):
         with self.assertRaises(ValueError):
             trim.trim_first_utterance(silence(1.0), SR)
