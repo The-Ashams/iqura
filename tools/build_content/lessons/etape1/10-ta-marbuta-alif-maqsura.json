@@ -1,0 +1,503 @@
+{
+  "id": "dechiffrer-10",
+  "etape": 1,
+  "ordre": 10,
+  "format": 2,
+  "titre": "Les registres ensablés",
+  "objectif": "Reconnaître deux fins de mots fréquentes : la tāʾ marbūṭa ة et l'alif maqṣūra ى ; lire وَرَقَة, مَدِينَة, شَجَرَة, فَتَى, عَلَى.",
+  "statut": "ia_non_verifie",
+  "lieu": "archives",
+  "maitre": "nura",
+  "prerequis": [
+    "dechiffrer-09"
+  ],
+  "introduit": {
+    "lettres": [],
+    "signes": [],
+    "formes": [
+      "ة",
+      "ى"
+    ]
+  },
+  "apercu": [
+    "ـة",
+    "ـى"
+  ],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "رَة",
+        "translit": "ra"
+      },
+      {
+        "ar": "نَة",
+        "translit": "na"
+      },
+      {
+        "ar": "تَى",
+        "translit": "tā"
+      },
+      {
+        "ar": "لَى",
+        "translit": "lā"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "وَرَقَة",
+        "translit": "waraqa",
+        "fr": "feuille"
+      },
+      {
+        "ar": "مَدِينَة",
+        "translit": "madīna",
+        "fr": "ville"
+      },
+      {
+        "ar": "شَجَرَة",
+        "translit": "šaǧara",
+        "fr": "arbre"
+      },
+      {
+        "ar": "فَتَى",
+        "translit": "fatā",
+        "fr": "jeune homme"
+      },
+      {
+        "ar": "عَلَى",
+        "translit": "ʿalā",
+        "fr": "sur"
+      }
+    ]
+  },
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nura",
+          "texte": "Te voilà aux Archives ! Le vent a couvert de sable les registres de la cité."
+        },
+        {
+          "qui": "nura",
+          "texte": "La fin des mots est souvent effacée. Aide-moi à reconnaître les deux fins de mots les plus fréquentes."
+        }
+      ],
+      "objectif": "Déchiffrer la fin des mots des registres."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "سَمَاء",
+          "choix_audio": [
+            "سُؤَال",
+            "سَمَاء",
+            "آبَار"
+          ],
+          "reponse": 1,
+          "explication": "سَمَاء se lit « samāʾ » (leçon 9)."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بُو",
+          "choix_ar": [
+            "بُو",
+            "بِي",
+            "بَا"
+          ],
+          "reponse": 0,
+          "explication": "C'était « bū » (leçon 8)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "كِتَاب",
+          "choix_audio": [
+            "كِتَاب",
+            "كَاتِب",
+            "قَلْب"
+          ],
+          "reponse": 0,
+          "explication": "كِتَاب se lit « kitāb » (leçon 7)."
+        }
+      ]
+    },
+    {
+      "type": "decouverte",
+      "support": [
+        "وَرَقَة"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "La dernière lettre ressemble à ه, avec deux points au-dessus. À ton avis, qu'est-ce que c'est ?",
+        "choix": [
+          "Une sorte de ت, qui ne vient qu'en fin de mot",
+          "Un ه ordinaire",
+          "Une décoration"
+        ],
+        "reponse": 0,
+        "explication": "C'est la tāʾ marbūṭa ة, un « t » qui ne vient qu'en fin de mot. وَرَقَة, c'est une feuille."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La tāʾ marbūṭa",
+      "texte": "ة ne vient qu'à la fin d'un mot. Quand on s'arrête sur le mot, on la prononce comme un ه léger ; la translittération note seulement « a ».",
+      "exemples": [
+        "وَرَقَة",
+        "مَدِينَة"
+      ],
+      "question": {
+        "type": "lire",
+        "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+        "ar": "مَدِينَة",
+        "choix_audio": [
+          "مَدِينَة",
+          "وَرَقَة",
+          "شَجَرَة"
+        ],
+        "reponse": 0,
+        "explication": "مَدِينَة se lit « madīna », la ville."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "ة dans une phrase",
+      "texte": "Quand le mot continue dans une phrase, ة porte une voyelle et se prononce « t ». Tu le verras à la leçon 12.",
+      "question": {
+        "type": "qcm",
+        "consigne": "À l'arrêt, comment se prononce la fin de شَجَرَة ?",
+        "choix": [
+          "Comme un ه léger",
+          "Comme un « t » bien net",
+          "Comme un « n »"
+        ],
+        "reponse": 0,
+        "explication": "À l'arrêt, ة se prononce comme un ه léger : « šaǧara »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'alif maqṣūra",
+      "texte": "ى ressemble à ي sans points, à la fin d'un mot. Après une fatḥa, elle se lit comme l'alif : un « a » long.",
+      "exemples": [
+        "فَتَى",
+        "عَلَى"
+      ],
+      "question": {
+        "type": "ecouter",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "تَى",
+        "choix_ar": [
+          "تِي",
+          "تَى",
+          "تُو"
+        ],
+        "reponse": 1,
+        "explication": "C'était « tā » : ى allonge la fatḥa, comme l'alif."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Comment s'appelle la fin de mot ة ?",
+          "choix": [
+            "tāʾ marbūṭa",
+            "alif maqṣūra",
+            "hamza"
+          ],
+          "reponse": 0,
+          "explication": "ة est la tāʾ marbūṭa."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle est l'alif maqṣūra ?",
+          "choix_ar": [
+            "ي",
+            "ى",
+            "ئ"
+          ],
+          "reponse": 1,
+          "explication": "ى : comme ي, mais sans points, en fin de mot."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "لَى",
+          "choix_ar": [
+            "لِي",
+            "لَى",
+            "لُو"
+          ],
+          "reponse": 1,
+          "explication": "C'était « lā » : ى après la fatḥa."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "رَة",
+          "choix_ar": [
+            "رَة",
+            "رِي",
+            "رُو"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ra » : رَ, puis ة à l'arrêt."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "وَرَقَة",
+          "choix_audio": [
+            "مَدِينَة",
+            "وَرَقَة",
+            "شَجَر"
+          ],
+          "reponse": 1,
+          "explication": "وَرَقَة se lit « waraqa », la feuille."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "شَجَرَة",
+          "choix_audio": [
+            "شَجَر",
+            "شَجَرَة",
+            "وَرَقَة"
+          ],
+          "reponse": 1,
+          "explication": "شَجَرَة se lit « šaǧara », un arbre."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "فَتَى",
+          "choix_audio": [
+            "فَتَى",
+            "عَلَى",
+            "فِيل"
+          ],
+          "reponse": 0,
+          "explication": "فَتَى se lit « fatā » : ى allonge la fatḥa."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "مَدِينَة",
+          "tuiles": [
+            "مَ",
+            "دِ",
+            "ي",
+            "نَ",
+            "ة",
+            "ت"
+          ],
+          "solution": [
+            "مَ",
+            "دِ",
+            "ي",
+            "نَ",
+            "ة"
+          ],
+          "explication": "مَدِينَة : مَ, دِي long, نَ, puis ة."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "شَجَرَة"
+        }
+      ]
+    },
+    {
+      "type": "coran",
+      "texte": "Compte ة et ى dans ces mots du Coran. Dans le Mushaf, ي final s'écrit souvent sans points (ٱلَّتِى finit par « ī ») ; en enchaînant, le « ā » de عَلَى devient bref : « ʿala l-afʾida ».",
+      "extraits": [
+        {
+          "verset": "106:2",
+          "mots": [
+            "106:2:2"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ة vois-tu dans ce mot ?",
+            "mot": "106:2:2",
+            "lettre": "ة"
+          }
+        },
+        {
+          "verset": "104:7",
+          "mots": [
+            "104:7:3"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ى vois-tu dans ce mot ?",
+            "mot": "104:7:3",
+            "lettre": "ى"
+          }
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "مَدِينَة",
+          "choix_audio": [
+            "وَرَقَة",
+            "مَدِينَة",
+            "شَجَرَة"
+          ],
+          "reponse": 1,
+          "explication": "مَدِينَة se lit « madīna »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "عَلَى",
+          "choix_audio": [
+            "عَلَى",
+            "فَتَى",
+            "عَيْن"
+          ],
+          "reponse": 0,
+          "explication": "عَلَى se lit « ʿalā »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "شَجَرَة",
+          "choix_audio": [
+            "شَجَر",
+            "مَدِينَة",
+            "شَجَرَة"
+          ],
+          "reponse": 2,
+          "explication": "شَجَرَة se lit « šaǧara », un arbre."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "فَتَى",
+          "choix_audio": [
+            "عَلَى",
+            "فَتَى",
+            "كِتَاب"
+          ],
+          "reponse": 1,
+          "explication": "فَتَى se lit « fatā »."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "تَى",
+          "choix_ar": [
+            "تِي",
+            "تُو",
+            "تَى"
+          ],
+          "reponse": 2,
+          "explication": "C'était « tā »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "نَة",
+          "choix_ar": [
+            "نَة",
+            "نِي",
+            "نُو"
+          ],
+          "reponse": 0,
+          "explication": "C'était « na »."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle est la tāʾ marbūṭa ?",
+          "choix_ar": [
+            "ه",
+            "ة",
+            "ت"
+          ],
+          "reponse": 1,
+          "explication": "ة : la forme de ه avec deux points."
+        },
+        {
+          "type": "qcm",
+          "consigne": "En écriture courante, où trouve-t-on ة et ى ?",
+          "choix": [
+            "À la fin d'un mot",
+            "Au début d'un mot",
+            "N'importe où"
+          ],
+          "reponse": 0,
+          "explication": "En écriture courante, ة et ى ne viennent qu'à la fin d'un mot."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après une fatḥa, ى se lit…",
+          "choix": [
+            "comme un « a » long",
+            "comme un « i » long",
+            "comme un « y »"
+          ],
+          "reponse": 0,
+          "explication": "Comme l'alif : un « a » long."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "بِئْر",
+          "choix_audio": [
+            "بِئْر",
+            "آبَار",
+            "أَرْض"
+          ],
+          "reponse": 0,
+          "explication": "بِئْر se lit « biʾr » (leçon 9)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "نُور",
+          "choix_audio": [
+            "نَجْم",
+            "نُور",
+            "يَوْم"
+          ],
+          "reponse": 1,
+          "explication": "نُور se lit « nūr » (leçon 8)."
+        },
+        {
+          "type": "paires",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "قَ",
+          "choix_ar": [
+            "كَ",
+            "قَ",
+            "غَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « qa » (leçon 7)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais deux fins de mots : la tāʾ marbūṭa ة et l'alif maqṣūra ى : وَرَقَة, مَدِينَة, شَجَرَة, فَتَى, عَلَى.",
+      "suite": "Nūra relit le premier registre, et le dixième sceau de la porte se brise."
+    }
+  ]
+}

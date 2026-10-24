@@ -17,6 +17,7 @@ import lessons  # noqa: E402
 import qac  # noqa: E402
 import sources  # noqa: E402
 import tanzil  # noqa: E402
+import world  # noqa: E402
 
 # Empreinte de référence du texte Tanzil Uthmani 1.1 (définition dans
 # tanzil.integrity_sha256). La même valeur est figée dans l'application :
@@ -198,10 +199,15 @@ class BuildTest(unittest.TestCase):
     def test_every_lesson_item_has_an_audio_slot(self):
         keys = {r[0] for r in self.q("SELECT key FROM audio_clip")}
         for (content,) in self.q("SELECT content FROM lesson"):
-            for section in json.loads(content)["sections"]:
-                if section["type"] in ("syllabes", "exemples"):
-                    for item in section["items"]:
-                        self.assertIn(lessons.audio_key(item["ar"]), keys, item["ar"])
+            lesson = json.loads(content)
+            if lesson.get("format") == 2:
+                groups = [lesson["elements"]["syllabes"], lesson["elements"]["mots"]]
+            else:
+                groups = [s["items"] for s in lesson["sections"]
+                          if s["type"] in ("syllabes", "exemples")]
+            for items in groups:
+                for item in items:
+                    self.assertIn(lessons.audio_key(item["ar"]), keys, item["ar"])
         # Chaque enregistrement est livré, signalé comme synthèse et sourcé.
         self.assertEqual(self.q(
             "SELECT COUNT(*) FROM audio_clip WHERE file IS NULL OR synthetic IS NOT 1 "
@@ -228,11 +234,37 @@ class BuildTest(unittest.TestCase):
             with self.assertRaisesRegex(lessons.LessonError, "sans leçon"):
                 lessons.audio_rows({}, m, root)
 
-    def test_validation_requires_a_final_check(self):
+    def test_region_1_places_and_characters(self):
+        self.assertEqual(self.q("SELECT name, adversary FROM region"),
+                         [("Le Désert des Lettres", "L'Oubli")])
+        self.assertEqual(self.q("SELECT COUNT(*) FROM place"), [(12,)])
+        j1a = {r[0] for r in self.q("SELECT id FROM place WHERE in_j1a = 1")}
+        self.assertEqual(len(j1a), 12)
+        self.assertEqual(self.q("SELECT COUNT(*) FROM place WHERE in_j1a = 1 AND scene_image IS NULL"), [(0,)])
+        self.assertEqual(self.q("SELECT name FROM character WHERE id = 'nura'"), [("Nūra",)])
+
+    def _validate_world(self, mutate):
+        data = copy.deepcopy(world.load())
+        mutate(data)
+        world.validate(data, self.con)
+
+    def test_world_validation_rejects_unknown_link(self):
         def mutate(d):
-            d.lessons[1]["exercices"] = d.lessons[1]["exercices"][:-1]
-        with self.assertRaisesRegex(lessons.LessonError, "contrôle final"):
-            self._validate(mutate)
+            d[0]["lieux"][0]["liens"].append("nulle-part")
+        with self.assertRaisesRegex(world.WorldError, "lieu inconnu"):
+            self._validate_world(mutate)
+
+    def test_world_validation_rejects_missing_lesson_in_j1a(self):
+        def mutate(d):
+            d[0]["lieux"][0]["lecons"] = [42]
+        with self.assertRaisesRegex(world.WorldError, "leçons inexistantes"):
+            self._validate_world(mutate)
+
+    def test_world_validation_rejects_position_off_map(self):
+        def mutate(d):
+            d[0]["lieux"][0]["position"] = [200, 10]
+        with self.assertRaisesRegex(world.WorldError, "hors de la carte"):
+            self._validate_world(mutate)
 
     def _validate(self, mutate):
         data = lessons.load()
@@ -243,32 +275,67 @@ class BuildTest(unittest.TestCase):
     def test_validation_accepts_current_lessons(self):
         self._validate(lambda d: None)
 
-    def test_validation_rejects_untaught_letter(self):
+    def _screen(self, d, kind, lesson=1):
+        return next(s for s in d.lessons[lesson]["ecrans"] if s["type"] == kind)
+
+    def test_mini_donjon_rejects_untaught_letter(self):
         def mutate(d):
-            ex = next(s for s in d.lessons[1]["sections"] if s["type"] == "exemples")
-            ex["items"].append({"ar": "كَتَبَ", "translit": "kataba", "fr": "x"})
+            d.lessons[1]["elements"]["mots"].append({"ar": "كَتَبَ", "translit": "kataba", "fr": "x"})
         with self.assertRaisesRegex(lessons.LessonError, "pas encore enseigné"):
             self._validate(mutate)
 
-    def test_validation_rejects_copied_quran_text(self):
+    def test_mini_donjon_rejects_copied_quran_text(self):
         def mutate(d):
-            sec = next(s for s in d.lessons[1]["sections"] if s["type"] == "coran")
-            sec["extraits"][0]["ar"] = "texte recopié"
+            self._screen(d, "coran")["extraits"][0]["texte"] = "recopié"
         with self.assertRaisesRegex(lessons.LessonError, "jamais recopié"):
             self._validate(mutate)
 
-    def test_validation_rejects_wrong_reference_or_letter(self):
-        def bad_token(d):
-            sec = next(s for s in d.lessons[1]["sections"] if s["type"] == "coran")
-            sec["extraits"][0]["mots"] = ["78:7:99"]
-        with self.assertRaisesRegex(lessons.LessonError, "inexistant"):
-            self._validate(bad_token)
+    def test_mini_donjon_rejects_short_boss(self):
+        def mutate(d):
+            boss = self._screen(d, "mini_boss")
+            boss["questions"] = boss["questions"][:9]
+        with self.assertRaisesRegex(lessons.LessonError, "10 à 12 questions"):
+            self._validate(mutate)
 
-        def bad_letter(d):
-            sec = next(s for s in d.lessons[1]["sections"] if s["type"] == "coran")
-            sec["extraits"][0]["lettres"] = ["خ"]
-        with self.assertRaisesRegex(lessons.LessonError, "aucun mot cité"):
-            self._validate(bad_letter)
+    def test_mini_donjon_requires_revision_share(self):
+        def mutate(d):
+            for q in self._screen(d, "mini_boss")["questions"]:
+                q.pop("revision", None)
+        with self.assertRaisesRegex(lessons.LessonError, "révision"):
+            self._validate(mutate)
+
+    def test_mini_donjon_rejects_long_text(self):
+        def mutate(d):
+            self._screen(d, "entree", 0)["repliques"][0]["texte"] = "Un. Deux. Trois."
+        with self.assertRaisesRegex(lessons.LessonError, "2 phrases"):
+            self._validate(mutate)
+
+    def test_mini_donjon_rejects_wrong_listening_answer(self):
+        def mutate(d):
+            q = next(q for q in self._screen(d, "entrainement")["exercices"] if q["type"] == "ecouter")
+            q["reponse"] = (q["reponse"] + 1) % len(q["choix_ar"])
+        with self.assertRaisesRegex(lessons.LessonError, "son entendu"):
+            self._validate(mutate)
+
+    def test_mini_donjon_rejects_verse_in_combat(self):
+        def mutate(d):
+            self._screen(d, "mini_boss")["questions"][0]["type"] = "reperer_mot"
+        with self.assertRaisesRegex(lessons.LessonError, "interdit au combat"):
+            self._validate(mutate)
+
+    def test_mini_donjon_rejects_wrong_quran_reference(self):
+        def mutate(d):
+            q = self._screen(d, "coran")["extraits"][0]["question"]
+            q["mot"] = q["mot"].rsplit(":", 1)[0] + ":99"
+        with self.assertRaisesRegex(lessons.LessonError, "inexistant"):
+            self._validate(mutate)
+
+    def test_mini_donjon_requires_warm_up_from_lesson_2(self):
+        def mutate(d):
+            d.lessons[2]["ecrans"] = [s for s in d.lessons[2]["ecrans"]
+                                      if s["type"] != "echauffement"]
+        with self.assertRaisesRegex(lessons.LessonError, "échauffement"):
+            self._validate(mutate)
 
     def test_rebuild_replaces_file(self):
         build_content.build(self.out)

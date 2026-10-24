@@ -1,0 +1,589 @@
+{
+  "id": "dechiffrer-14",
+  "etape": 1,
+  "ordre": 14,
+  "format": 2,
+  "sans_combat": true,
+  "titre": "La salle des manuscrits",
+  "objectif": "Reconnaître les signes propres à l'écriture du Mushaf : alif suscrit ٰ, alif waṣla ٱ, petits wāw et yāʾ, signe d'allongement ٓ, petit zéro des lettres muettes, signes de pause. Reconnaissance seulement, sans règles de récitation.",
+  "statut": "ia_non_verifie",
+  "lieu": "manuscrits",
+  "maitre": "nura",
+  "prerequis": [
+    "dechiffrer-13"
+  ],
+  "introduit": {
+    "lettres": [],
+    "signes": [
+      "alif_suscrit",
+      "madda",
+      "petit_waw",
+      "petit_ya",
+      "rond_muet"
+    ],
+    "formes": [
+      "ٱ"
+    ]
+  },
+  "apercu": [],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "هَٰ",
+        "translit": "hā"
+      },
+      {
+        "ar": "ذَٰ",
+        "translit": "ḏā"
+      },
+      {
+        "ar": "لَٰ",
+        "translit": "lā"
+      },
+      {
+        "ar": "نَٰ",
+        "translit": "nā"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "هَٰذَا",
+        "translit": "hāḏā",
+        "fr": "ceci"
+      },
+      {
+        "ar": "ذَٰلِكَ",
+        "translit": "ḏālika",
+        "fr": "cela"
+      },
+      {
+        "ar": "ٱلْكِتَاب",
+        "translit": "al-kitāb",
+        "fr": "le livre"
+      }
+    ]
+  },
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nura",
+          "texte": "Voici la salle des manuscrits, tout près du Sanctuaire. Ici, pas de combat : on regarde, on reconnaît, on prend son temps."
+        },
+        {
+          "qui": "nura",
+          "texte": "Dans les copies du Coran, les copistes ajoutent de petits signes. Apprenons à les reconnaître."
+        }
+      ],
+      "objectif": "Reconnaître les petits signes des manuscrits."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "الشَّمْس",
+          "choix_audio": [
+            "الشَّمْس",
+            "الْقَمَر",
+            "النُّور"
+          ],
+          "reponse": 0,
+          "explication": "الشَّمْس se dit « aš-šams » (leçon 13)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "كِتَابٌ",
+          "choix_audio": [
+            "كِتَاب",
+            "كِتَابٌ",
+            "كَاتِب"
+          ],
+          "reponse": 1,
+          "explication": "كِتَابٌ se lit « kitābun » (leçon 12)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "مُعَلِّم",
+          "choix_audio": [
+            "مُعَلِّم",
+            "سُكَّر",
+            "مَدِينَة"
+          ],
+          "reponse": 0,
+          "explication": "مُعَلِّم se lit « muʿallim » (leçon 11)."
+        }
+      ]
+    },
+    {
+      "type": "decouverte",
+      "support": [
+        "هَٰذَا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Au-dessus du ه, il y a un tout petit alif debout. À ton avis, que fait-il ?",
+        "choix": [
+          "Il allonge la fatḥa, comme un alif : « hā »",
+          "Il double le ه",
+          "Il ne se lit pas"
+        ],
+        "reponse": 0,
+        "explication": "C'est l'alif suscrit : un petit alif qui allonge le « a ». هَٰذَا se lit « hāḏā », ceci."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'alif suscrit",
+      "texte": "L'alif suscrit ٰ est un petit alif écrit au-dessus de la lettre. Il se lit comme un alif : un « a » long.",
+      "exemples": [
+        "هَٰذَا",
+        "ذَٰلِكَ"
+      ],
+      "question": {
+        "type": "lire",
+        "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+        "ar": "ذَٰلِكَ",
+        "choix_audio": [
+          "ذَٰلِكَ",
+          "هَٰذَا",
+          "ٱلْكِتَاب"
+        ],
+        "reponse": 0,
+        "explication": "ذَٰلِكَ se lit « ḏālika », cela : l'alif suscrit allonge le « a »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'alif waṣla",
+      "texte": "C'est la hamzat al-waṣl de la leçon 13, écrite ٱ dans le Mushaf : elle tombe après un mot. En début de lecture, on la prononce.",
+      "exemples": [
+        "ٱلْكِتَاب"
+      ],
+      "question": {
+        "type": "lire",
+        "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+        "ar": "ٱلْكِتَاب",
+        "choix_audio": [
+          "ٱلْكِتَاب",
+          "كِتَابٌ",
+          "الْبَاب"
+        ],
+        "reponse": 0,
+        "explication": "ٱلْكِتَاب se lit « al-kitāb », le livre : ٱ, c'est l'alif de l'article écrit à la manière du Mushaf."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Petits wāw et petits yāʾ",
+      "texte": "Après une lettre, un petit و ou un petit ي indique une voyelle longue à prononcer quand on enchaîne avec le mot suivant, même si la lettre n'est pas écrite en entier.",
+      "question": {
+        "type": "qcm",
+        "consigne": "Un petit و écrit après une ḍamma indique…",
+        "choix": [
+          "un « u » long à prononcer",
+          "une lettre muette",
+          "un arrêt"
+        ],
+        "reponse": 0,
+        "explication": "Le petit و indique un « ū » long à prononcer."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La vague d'allongement",
+      "texte": "Dans le Mushaf, la vague ٓ de آ se pose aussi sur une lettre d'allongement (ا, و, ي) : elle n'ajoute pas de hamza, mais fait tenir la voyelle plus longtemps. La durée s'apprend auprès d'un enseignant de récitation.",
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans le Mushaf, la vague ٓ sur une lettre longue indique…",
+        "choix": [
+          "qu'on tient la voyelle plus longtemps",
+          "une hamza à prononcer",
+          "une lettre muette"
+        ],
+        "reponse": 0,
+        "explication": "Sur une lettre longue, la vague ٓ demande de tenir la voyelle plus longtemps ; elle n'ajoute pas de hamza."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le petit zéro",
+      "texte": "Dans le Mushaf, le sukūn a la forme du haut d'un petit ح (leçon 4). Le petit zéro ۟, bien rond, marque au contraire une lettre écrite qui ne se prononce pas du tout.",
+      "question": {
+        "type": "qcm",
+        "consigne": "Le petit zéro ۟ posé sur une lettre veut dire…",
+        "choix": [
+          "qu'elle ne se prononce pas du tout",
+          "qu'elle se prononce sans voyelle",
+          "qu'elle est doublée"
+        ],
+        "reponse": 0,
+        "explication": "La lettre est écrite mais muette. Avec le sukūn, au contraire, elle se prononce sans voyelle."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "D'autres habitudes d'écriture",
+      "texte": "Dans certains manuels et livres de lecture, un sukūn ْ est aussi posé sur la lettre qui allonge (نُوْر) : il ne change rien à la lecture.",
+      "exemples": [
+        "نُوْر"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Si tu vois نُوْر, comment le lis-tu ?",
+        "choix": [
+          "« nūr », comme نُور",
+          "« nuwr »",
+          "« nar »"
+        ],
+        "reponse": 0,
+        "explication": "Le sukūn ne change rien ici : on lit « nūr »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les signes de pause",
+      "texte": "Entre deux mots, au-dessus de la ligne, de petits signes indiquent s'il convient de s'arrêter ou non. Leurs règles précises s'apprennent auprès d'un enseignant de récitation.",
+      "question": {
+        "type": "qcm",
+        "consigne": "Les petits signes placés entre deux mots, au-dessus de la ligne, indiquent…",
+        "choix": [
+          "s'il convient de s'arrêter ou non",
+          "le nom du copiste",
+          "des fautes de copie"
+        ],
+        "reponse": 0,
+        "explication": "Ce sont des signes de pause. Pour leurs règles, on s'adresse à un enseignant de récitation."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Comment s'appelle le petit alif écrit au-dessus d'une lettre ?",
+          "choix": [
+            "l'alif suscrit",
+            "l'alif waṣla",
+            "l'alif madda"
+          ],
+          "reponse": 0,
+          "explication": "C'est l'alif suscrit : il se lit comme un alif."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "هَٰ",
+          "choix_ar": [
+            "هَٰ",
+            "هَ",
+            "هِ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « hā » : l'alif suscrit allonge le « a »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "لَٰ",
+          "choix_ar": [
+            "لِ",
+            "لَ",
+            "لَٰ"
+          ],
+          "reponse": 2,
+          "explication": "C'était « lā »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "هَٰذَا",
+          "choix_audio": [
+            "ذَٰلِكَ",
+            "هَٰذَا",
+            "ٱلْكِتَاب"
+          ],
+          "reponse": 1,
+          "explication": "هَٰذَا se lit « hāḏā », ceci."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le signe ٓ au-dessus d'une lettre longue demande…",
+          "choix": [
+            "de tenir la voyelle plus longtemps",
+            "de ne pas la lire",
+            "de la doubler"
+          ],
+          "reponse": 0,
+          "explication": "On tient la voyelle longue plus longtemps."
+        },
+        {
+          "type": "qcm",
+          "consigne": "ٱ en début de lecture…",
+          "choix": [
+            "se prononce",
+            "ne se prononce jamais",
+            "se lit « i » long"
+          ],
+          "reponse": 0,
+          "explication": "En début de lecture, on le prononce ; après un mot, il tombe."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "ذَٰلِكَ"
+        }
+      ]
+    },
+    {
+      "type": "coran",
+      "texte": "Voici ces signes dans le Coran. Repère-les et compte-les ; tu n'as pas besoin de connaître leurs règles de récitation.",
+      "extraits": [
+        {
+          "verset": "113:4",
+          "mots": [
+            "113:4:3"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien d'alifs suscrits ٰ vois-tu dans ce mot ?",
+            "mot": "113:4:3",
+            "lettre": "ٰ"
+          }
+        },
+        {
+          "verset": "114:1",
+          "mots": [
+            "114:1:4"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ٱ vois-tu dans ce mot ?",
+            "mot": "114:1:4",
+            "lettre": "ٱ"
+          }
+        },
+        {
+          "verset": "112:4",
+          "mots": [
+            "112:4:3"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de petits و vois-tu dans ce mot ?",
+            "mot": "112:4:3",
+            "lettre": "ۥ"
+          }
+        },
+        {
+          "verset": "100:4",
+          "mots": [
+            "100:4:2"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de petits ي vois-tu dans ce mot ?",
+            "mot": "100:4:2",
+            "lettre": "ۦ"
+          }
+        },
+        {
+          "verset": "109:2",
+          "mots": [
+            "109:2:1"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de signes d'allongement ٓ vois-tu dans ce mot ?",
+            "mot": "109:2:1",
+            "lettre": "ٓ"
+          }
+        },
+        {
+          "verset": "103:3",
+          "mots": [
+            "103:3:3"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de petits zéros ۟ vois-tu dans ce mot ?",
+            "mot": "103:3:3",
+            "lettre": "۟"
+          }
+        },
+        {
+          "verset": "104:4",
+          "mots": [],
+          "question": {
+            "type": "qcm",
+            "consigne": "Dans ce verset, repère le petit signe placé entre le premier et le deuxième mot. Que t'indique-t-il ?",
+            "choix": [
+              "S'il convient de s'arrêter ou non à cet endroit",
+              "Le début d'une sourate",
+              "Le nom du copiste"
+            ],
+            "reponse": 0,
+            "explication": "C'est un signe de pause. Ses règles précises s'apprennent auprès d'un enseignant de récitation."
+          }
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "هَٰذَا",
+          "choix_audio": [
+            "هَٰذَا",
+            "ذَٰلِكَ",
+            "الدَّار"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذَا se lit « hāḏā »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "ذَٰلِكَ",
+          "choix_audio": [
+            "هَٰذَا",
+            "ٱلْكِتَاب",
+            "ذَٰلِكَ"
+          ],
+          "reponse": 2,
+          "explication": "ذَٰلِكَ se lit « ḏālika »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "ٱلْكِتَاب",
+          "choix_audio": [
+            "كِتَابٌ",
+            "ٱلْكِتَاب",
+            "الْبَاب"
+          ],
+          "reponse": 1,
+          "explication": "ٱلْكِتَاب se lit « al-kitāb »."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "ذَٰ",
+          "choix_ar": [
+            "ذِ",
+            "ذَ",
+            "ذَٰ"
+          ],
+          "reponse": 2,
+          "explication": "C'était « ḏā »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "L'alif suscrit se lit…",
+          "choix": [
+            "comme un alif : un « a » long",
+            "comme un « i »",
+            "ne se lit pas"
+          ],
+          "reponse": 0,
+          "explication": "Comme un alif : un « a » long."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Un petit ي après une kasra indique…",
+          "choix": [
+            "un « ī » long à prononcer",
+            "une lettre muette",
+            "un signe de pause"
+          ],
+          "reponse": 0,
+          "explication": "Un « ī » long à prononcer."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le petit zéro ۟ sur une lettre du Mushaf veut dire…",
+          "choix": [
+            "qu'elle ne se prononce pas",
+            "qu'elle se prononce sans voyelle",
+            "qu'il faut s'arrêter"
+          ],
+          "reponse": 0,
+          "explication": "La lettre ne se prononce pas."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Les petits signes entre deux mots, au-dessus de la ligne, sont…",
+          "choix": [
+            "des signes de pause",
+            "des voyelles",
+            "des numéros de page"
+          ],
+          "reponse": 0,
+          "explication": "Des signes de pause ; leurs règles s'apprennent auprès d'un enseignant."
+        },
+        {
+          "type": "qcm",
+          "consigne": "ٱ, c'est…",
+          "choix": [
+            "l'alif waṣla",
+            "l'alif madda",
+            "l'alif suscrit"
+          ],
+          "reponse": 0,
+          "explication": "L'alif waṣla, qui tombe après un mot."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "الْقَمَر",
+          "choix_audio": [
+            "الشَّمْس",
+            "الْقَمَر",
+            "قَمَر"
+          ],
+          "reponse": 1,
+          "explication": "الْقَمَر se lit « al-qamar » (leçon 13)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "وَرَقَةٌ",
+          "choix_audio": [
+            "وَرَقَةٌ",
+            "وَرَقَة",
+            "شَجَرَة"
+          ],
+          "reponse": 0,
+          "explication": "وَرَقَةٌ se lit « waraqatun » (leçon 12)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "أُمّ",
+          "choix_audio": [
+            "أُمّ",
+            "أَرْض",
+            "جَدَّة"
+          ],
+          "reponse": 0,
+          "explication": "أُمّ se lit « umm » (leçon 11)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais les signes du Mushaf : alif suscrit, alif waṣla, petits wāw et yāʾ, signe d'allongement, petit zéro des lettres muettes, signes de pause.",
+      "suite": "Le quatorzième sceau se brise. Il ne reste que le Gardien de l'Oubli, devant la porte de la bibliothèque."
+    }
+  ]
+}

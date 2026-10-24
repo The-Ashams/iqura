@@ -119,7 +119,7 @@ def letter_card(card: sqlite3.Row, zone_label: str) -> str:
   {liaison}
   <div class="artic">{articulation_svg(card["zone_id"], zone_label)}
     <div><p class="zone-l">{e(zone_label)}</p><p>{fr(card["pronunciation"])}</p>
-    <p class="ia">Description et schéma rédigés par IA — non vérifiés</p></div></div>
+    <p class="ia">Description et schéma rédigés par IA</p></div></div>
 </article>"""
 
 
@@ -177,7 +177,7 @@ def section_html(con, sec: dict, cards: dict, zones: dict) -> str:
             for i in sec["items"])
         return (f'<section>{title}<div class="tbl"><table><thead><tr><th>Mot</th><th>Translittération</th>'
                 f'<th>Sens</th></tr></thead><tbody>{rows}</tbody></table></div>'
-                f'<p class="ia">Exemples construits — rédigés par IA, non vérifiés</p></section>')
+                f'<p class="ia">Exemples construits — rédigés par IA</p></section>')
     if t == "decomposition":
         parts = " + ".join(ar(c) for c in sec["lettres"])
         return (f'<section class="decomp"><div class="eq">{parts} → {ar(sec["ar"], cls="xl")}</div>{snd(sec["ar"])}'
@@ -210,6 +210,101 @@ def exercises_html(exs: list[dict]) -> str:
                 extra = f" {round(ex['seuil'] * 100)} %."
             items.append(f"<li>{e(EXERCISE_TEXT[ex['type']])}{extra}</li>")
     return "<section class='ex'><h3>Exercices</h3><ul>" + "".join(items) + "</ul></section>"
+
+
+SCREEN_LABEL = {
+    "entree": "Entrée", "echauffement": "Échauffement", "decouverte": "Découverte",
+    "element": "La lettre", "regle": "La règle", "entrainement": "Salle d'entraînement",
+    "coran": "Salle d'étude « Dans le Coran » (sans combat)", "mini_boss": "Mini-boss",
+    "fin": "Fin",
+}
+QUESTION_LABEL = {
+    "qcm": "Question", "points": "Les points", "formes": "Les formes",
+    "reconnaitre": "Reconnaître", "ecouter": "Écouter et choisir",
+    "paires": "Paires proches", "lire": "Lire (choisir le bon son)",
+    "reconstruire": "Reconstruire", "tracer": "Tracer", "repeter": "Répéter à voix haute",
+    "reperer_mot": "Repérer", "compter": "Compter",
+}
+
+
+def question_html(q: dict, con=None) -> str:
+    kind = q["type"]
+    head = (f'<p class="qk">{e(QUESTION_LABEL[kind])}'
+            + (' · <span class="rev">révision</span>' if q.get("revision") else "")
+            + f'</p><p class="qc">{fr(q["consigne"])}</p>')
+    body = ""
+    if q.get("audio"):
+        body += f'<p class="heard">Son joué : {snd(q["audio"]) or ar(q["audio"])}</p>'
+    if q.get("ar") and kind != "repeter":
+        body += f'<p>{ar(q["ar"], cls="xl")}</p>'
+    if kind == "lire":
+        opts = "".join(
+            f'<li{" class=ok" if i == q["reponse"] else ""}>Son {i + 1} {snd(c)}'
+            f'{" ✔ " + ar(c) if i == q["reponse"] else ""}</li>'
+            for i, c in enumerate(q["choix_audio"]))
+        body += f'<ol class="opts">{opts}</ol>'
+    elif "choix_ar" in q or "choix" in q:
+        choices = q.get("choix_ar") or q["choix"]
+        fmt = ar if "choix_ar" in q else fr
+        opts = "".join(f'<li{" class=ok" if i == q["reponse"] else ""}>{fmt(c)}'
+                       f'{" ✔" if i == q["reponse"] else ""}</li>' for i, c in enumerate(choices))
+        body += f'<ul class="opts row">{opts}</ul>'
+    elif kind == "reconstruire":
+        body += ('<p>Tuiles : ' + " ".join(ar(t) for t in q["tuiles"])
+                 + ' — solution : ' + " + ".join(ar(t) for t in q["solution"]) + "</p>")
+    elif kind == "tracer":
+        body += f'<p>Lettre à tracer : {ar(q["lettre"], cls="xl")}</p>'
+    elif kind == "repeter":
+        body += f'<p>{ar(q["ar"], cls="xl")} {snd(q["ar"])}</p>'
+    elif kind == "compter" and con is not None:
+        text = con.execute("SELECT text FROM token WHERE id = ?", (q["mot"],)).fetchone()[0]
+        body += f'<p>Réponse (calculée sur le texte Tanzil) : {text.count(q["lettre"])}</p>'
+    if q.get("explication"):
+        body += f'<p class="expl">Après une erreur : {fr(q["explication"])}</p>'
+    return f'<div class="question">{head}{body}</div>'
+
+
+def screens_html(con, lesson: dict, cards: dict, zones: dict, names: dict) -> str:
+    out = []
+    for n, s in enumerate(lesson["ecrans"], 1):
+        t = s["type"]
+        inner = ""
+        if t == "entree":
+            inner += "".join(f'<p class="line"><b>{e(names[r["qui"]])}</b> : {fr(r["texte"])}</p>'
+                             for r in s["repliques"])
+            inner += f'<p class="goal">Objectif : {fr(s["objectif"])}</p>'
+        elif t == "decouverte":
+            inner += '<p class="support">' + " ".join(
+                f'{ar(a, cls="xl")}{snd(a)}' for a in s["support"]) + "</p>"
+            inner += question_html(s["question"])
+        elif t == "element":
+            inner += '<div class="cards">' + letter_card(
+                cards[s["lettre"]], zones[cards[s["lettre"]]["zone_id"]]) + "</div>"
+            inner += question_html(s["question"])
+        elif t == "regle":
+            inner += f'<p class="rulet"><b>{fr(s["titre"])}</b> — {fr(s["texte"])}</p>'
+            inner += '<div class="syls">' + "".join(
+                f'<div class="syl">{ar(a)}{snd(a)}</div>' for a in s["exemples"]) + "</div>"
+            inner += question_html(s["question"])
+        elif t == "entrainement":
+            inner += "".join(question_html(q) for q in s["exercices"])
+        elif t == "coran":
+            inner += f'<p>{fr(s["texte"])}</p>'
+            for x in s["extraits"]:
+                inner += quran_extract(con, x) + question_html(x["question"], con)
+        elif t == "mini_boss":
+            qs = s["questions"]
+            rev = sum(1 for q in qs if q.get("revision"))
+            inner += (f'<p class="goal">Combat contre une brume d\'oubli : {len(qs)} questions dans un panneau '
+                      f'neutre, sans translittération ni verset ; réussite à {round(s["seuil"] * 100)} % ; '
+                      f'{rev} question(s) de révision.</p>')
+            inner += "".join(question_html(q) for q in qs)
+        elif t == "fin":
+            inner += f'<p class="goal">Ce que tu sais maintenant : {fr(s["acquis"])}</p>'
+            if s.get("suite"):
+                inner += f'<p>{fr(s["suite"])}</p>'
+        out.append(f'<section class="screen"><p class="sn">Écran {n} · {e(SCREEN_LABEL[t])}</p>{inner}</section>')
+    return "".join(out)
 
 
 CSS = """
@@ -270,6 +365,15 @@ figcaption{display:flex;flex-direction:column;gap:2px;margin-top:6px}
 .ex ul{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:6px}
 .ex .ar{font-size:1.3rem}.qcm{margin-top:6px;display:flex;flex-direction:column;gap:6px}
 .choices{color:var(--muted)}.expl{font-size:.88rem;color:var(--muted)}
+.screen{border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.sn{font-family:var(--f-head);color:var(--accent);font-size:.9rem;letter-spacing:.03em;text-transform:uppercase;margin:0}
+.line{margin:0}.goal{font-weight:600}.support{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.question{border-top:1px dashed var(--line);padding-top:8px}
+.qk{margin:0;font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.qc{margin:0 0 4px;font-weight:600}.rev{color:var(--ia)}
+.opts{margin:4px 0;padding-left:1.2rem}.opts.row{display:flex;flex-wrap:wrap;gap:6px 18px;list-style:none;padding:0}
+.opts .ok{font-weight:700;color:var(--accent)}.opts .ar{font-size:1.4rem}
+.heard .snd{display:inline-block;vertical-align:middle}
 footer{margin-top:32px;font-size:.85rem;color:var(--muted)}
 @media (max-width:520px){.artic{grid-template-columns:1fr}.svg{width:140px}}
 """
@@ -286,14 +390,22 @@ def render(stage: int, upto: int | None) -> str:
         "SELECT content FROM lesson WHERE stage = ? ORDER BY ordinal", (stage,))]
     if upto is not None:
         lessons = [l for l in lessons if l["ordre"] <= upto]
+    names = {r["id"]: r["name"] for r in con.execute("SELECT id, name FROM character")}
     toc = "".join(f'<a href="#{e(l["id"])}">{l["ordre"]}. {fr(l["titre"])}</a>' for l in lessons)
     body = []
     for l in lessons:
-        secs = "".join(section_html(con, s, cards, zones) for s in l["sections"])
+        if l.get("format") == 2:
+            place = con.execute("SELECT name FROM place WHERE id = ?", (l["lieu"],)).fetchone()[0]
+            secs = (f'<p class="obj">Lieu : {e(place)} · maître : {e(names[l["maitre"]])}</p>'
+                    + screens_html(con, l, cards, zones, names))
+            ex = ""
+        else:
+            secs = "".join(section_html(con, s, cards, zones) for s in l["sections"])
+            ex = exercises_html(l["exercices"])
         body.append(f"""<article class="lesson" id="{e(l['id'])}">
   <header><div class="lh"><span class="num">Leçon {l['ordre']}</span><h2>{fr(l['titre'])}</h2></div>
-  <p class="obj">{fr(l['objectif'])}</p><span class="ia">Leçon rédigée par IA — non vérifiée</span></header>
-  {secs}{exercises_html(l['exercices'])}
+  <p class="obj">{fr(l['objectif'])}</p><span class="ia">Leçon rédigée par IA</span></header>
+  {secs}{ex}
 </article>""")
     return f"""<title>Leçons Déchiffrer IQURA</title>
 <meta name="claude:viewport-fit-sides" content="cover">

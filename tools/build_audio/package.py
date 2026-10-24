@@ -65,6 +65,10 @@ def main() -> None:
             "a_ecouter": entry["a_ecouter"],
             "genere_le": today,
         }
+        if entry.get("ecrit") and entry["ecrit"] != entry["text"]:
+            # Texte donné à la synthèse, s'il diffère (ex. virgule finale
+            # pour que la voyelle brève finale soit prononcée).
+            manifest["clips"][entry["key"]]["ecrit"] = entry["ecrit"]
     manifest["clips"] = dict(sorted(manifest["clips"].items()))
     with open(MANIFEST, "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=1)

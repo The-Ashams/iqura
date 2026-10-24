@@ -1,0 +1,495 @@
+{
+  "id": "dechiffrer-13",
+  "etape": 1,
+  "ordre": 13,
+  "format": 2,
+  "titre": "Le soleil et la lune",
+  "objectif": "Lire l'article « al- » : devant une lettre lunaire on prononce le ل, devant une lettre solaire il se fond dans la lettre suivante ; l'alif de l'article tombe après un mot ; lire الْقَمَر, الشَّمْس, الْبَاب, الدَّار, النُّور.",
+  "statut": "ia_non_verifie",
+  "lieu": "cadran",
+  "maitre": "suhayl",
+  "prerequis": [
+    "dechiffrer-12"
+  ],
+  "introduit": {
+    "lettres": [],
+    "signes": []
+  },
+  "apercu": [],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "الْقَ",
+        "translit": "al-qa"
+      },
+      {
+        "ar": "الْبَا",
+        "translit": "al-bā"
+      },
+      {
+        "ar": "الشَّ",
+        "translit": "al-ša"
+      },
+      {
+        "ar": "الدَّا",
+        "translit": "al-dā"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "الْقَمَر",
+        "translit": "al-qamar",
+        "fr": "la lune"
+      },
+      {
+        "ar": "الشَّمْس",
+        "translit": "al-šams",
+        "fr": "le soleil"
+      },
+      {
+        "ar": "الْبَاب",
+        "translit": "al-bāb",
+        "fr": "la porte"
+      },
+      {
+        "ar": "الدَّار",
+        "translit": "al-dār",
+        "fr": "la maison"
+      },
+      {
+        "ar": "النُّور",
+        "translit": "al-nūr",
+        "fr": "la lumière"
+      }
+    ]
+  },
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "suhayl",
+          "texte": "Bienvenue dans la cour du cadran solaire. Ici, le soleil et la lune marquent les heures."
+        },
+        {
+          "qui": "suhayl",
+          "texte": "Sur le cadran, chaque nom commence par le même petit mot. Mais il ne se prononce pas toujours de la même façon !"
+        }
+      ],
+      "objectif": "Lire les noms gravés sur le cadran."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "بَابٌ",
+          "choix_audio": [
+            "بَابٌ",
+            "بَابًا",
+            "بَابٍ"
+          ],
+          "reponse": 0,
+          "explication": "بَابٌ se lit « bābun » (leçon 12)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "قِطَّة",
+          "choix_audio": [
+            "قِطَّة",
+            "جَدَّة",
+            "قَمَر"
+          ],
+          "reponse": 0,
+          "explication": "قِطَّة se lit « qiṭṭa » (leçon 11)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "قَمَر",
+          "choix_audio": [
+            "نُور",
+            "قَمَر",
+            "شَهْر"
+          ],
+          "reponse": 1,
+          "explication": "قَمَر se lit « qamar » (leçon 8)."
+        }
+      ]
+    },
+    {
+      "type": "decouverte",
+      "support": [
+        "قَمَر",
+        "الْقَمَر"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Le deuxième mot commence par ال. À ton avis, que veut-il dire ?",
+        "choix": [
+          "la lune",
+          "une lune",
+          "deux lunes"
+        ],
+        "reponse": 0,
+        "explication": "ال est l'article, comme « le » ou « la » en français. الْقَمَر se lit « al-qamar », la lune."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les lettres lunaires",
+      "texte": "Devant une lettre lunaire, comme ق ou ب, on prononce le ل de l'article, avec un sukūn : الْقَمَر se lit « al-qamar ». Il y a 14 lettres lunaires et 14 solaires.",
+      "exemples": [
+        "الْقَمَر",
+        "الْبَاب"
+      ],
+      "question": {
+        "type": "lire",
+        "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+        "ar": "الْبَاب",
+        "choix_audio": [
+          "الْبَاب",
+          "بَاب",
+          "الدَّار"
+        ],
+        "reponse": 0,
+        "explication": "الْبَاب se lit « al-bāb », la porte : on entend le ل."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les lettres solaires",
+      "texte": "Devant une lettre solaire, comme ش, د ou ن, le ل ne se prononce pas : la lettre suivante est doublée par une shadda. On dit « aš-šams », même si la translittération garde « al- ».",
+      "exemples": [
+        "الشَّمْس",
+        "الدَّار"
+      ],
+      "question": {
+        "type": "lire",
+        "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+        "ar": "الشَّمْس",
+        "choix_audio": [
+          "الْقَمَر",
+          "الشَّمْس",
+          "شَهْر"
+        ],
+        "reponse": 1,
+        "explication": "الشَّمْس se dit « aš-šams » : le ل ne s'entend pas, ش est doublé."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'alif de l'article",
+      "texte": "Cet alif s'appelle hamzat al-waṣl : il se prononce « a » seulement en début de phrase. Après un autre mot, il tombe : بَابُ الدَّار se dit « bābu d-dār », la porte de la maison.",
+      "exemples": [
+        "بَابُ الدَّار"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans بَابُ الدَّار, entend-on le « a » de l'article ?",
+        "choix": [
+          "Non, il tombe après un mot",
+          "Oui, toujours",
+          "Seulement à la fin"
+        ],
+        "reponse": 0,
+        "explication": "Après un mot, l'alif de l'article tombe : on dit « bābu d-dār » (translittération : bābu l-dār). Le « u » final de بَابُ s'explique plus tard."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "ق est une lettre…",
+          "choix": [
+            "lunaire : on prononce le ل",
+            "solaire : le ل ne se prononce pas",
+            "qui n'accepte pas l'article"
+          ],
+          "reponse": 0,
+          "explication": "ق est lunaire : « al-qamar »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "ن est une lettre…",
+          "choix": [
+            "lunaire : on prononce le ل",
+            "solaire : le ل ne se prononce pas",
+            "qui n'accepte pas l'article"
+          ],
+          "reponse": 1,
+          "explication": "ن est solaire : النُّور se dit « an-nūr »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après l'article, que porte une lettre solaire ?",
+          "choix": [
+            "Une shadda",
+            "Un sukūn",
+            "Un tanwīn"
+          ],
+          "reponse": 0,
+          "explication": "La lettre solaire est doublée : elle porte une shadda."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "النُّور",
+          "choix_audio": [
+            "النُّور",
+            "نُور",
+            "الْقَمَر"
+          ],
+          "reponse": 0,
+          "explication": "النُّور se dit « an-nūr », la lumière."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "الدَّار",
+          "choix_audio": [
+            "دَار",
+            "الْبَاب",
+            "الدَّار"
+          ],
+          "reponse": 2,
+          "explication": "الدَّار se dit « ad-dār », la maison."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "الْقَمَر",
+          "choix_audio": [
+            "الشَّمْس",
+            "الْقَمَر",
+            "قَمَر"
+          ],
+          "reponse": 1,
+          "explication": "الْقَمَر se lit « al-qamar »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "الشَّ",
+          "choix_ar": [
+            "الشَّ",
+            "الْقَ",
+            "الْبَا"
+          ],
+          "reponse": 0,
+          "explication": "C'était « aš-ša » : le ل ne s'entend pas."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "الْقَمَر",
+          "tuiles": [
+            "الْ",
+            "قَ",
+            "مَ",
+            "ر",
+            "ال"
+          ],
+          "solution": [
+            "الْ",
+            "قَ",
+            "مَ",
+            "ر"
+          ],
+          "explication": "الْقَمَر : l'article avec le ل au sukūn, puis قَمَر."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "الشَّمْس"
+        }
+      ]
+    },
+    {
+      "type": "coran",
+      "texte": "L'article se retrouve partout dans le Coran : compte les ل dans ces mots. Son alif s'y écrit ٱ, avec un petit signe que tu verras à la leçon 14.",
+      "extraits": [
+        {
+          "verset": "114:1",
+          "mots": [
+            "114:1:4"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ل vois-tu dans ce mot ? (lettre solaire : il ne s'entend pas)",
+            "mot": "114:1:4",
+            "lettre": "ل"
+          }
+        },
+        {
+          "verset": "114:4",
+          "mots": [
+            "114:4:4"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ل vois-tu dans ce mot ? (lettre lunaire : il s'entend)",
+            "mot": "114:4:4",
+            "lettre": "ل"
+          }
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "الْقَمَر",
+          "choix_audio": [
+            "الْقَمَر",
+            "الشَّمْس",
+            "الْبَاب"
+          ],
+          "reponse": 0,
+          "explication": "الْقَمَر se lit « al-qamar »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "الشَّمْس",
+          "choix_audio": [
+            "الدَّار",
+            "الشَّمْس",
+            "الْبَاب"
+          ],
+          "reponse": 1,
+          "explication": "الشَّمْس se dit « aš-šams »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "الدَّار",
+          "choix_audio": [
+            "الْبَاب",
+            "الشَّمْس",
+            "الدَّار"
+          ],
+          "reponse": 2,
+          "explication": "الدَّار se dit « ad-dār »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "ش est une lettre…",
+          "choix": [
+            "solaire",
+            "lunaire",
+            "sans article"
+          ],
+          "reponse": 0,
+          "explication": "ش est solaire : « aš-šams »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "الْبَاب",
+          "choix_audio": [
+            "بَاب",
+            "الْبَاب",
+            "الدَّار"
+          ],
+          "reponse": 1,
+          "explication": "الْبَاب se lit « al-bāb »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "د est une lettre…",
+          "choix": [
+            "solaire",
+            "lunaire",
+            "sans article"
+          ],
+          "reponse": 0,
+          "explication": "د est solaire : « ad-dār »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "ب est une lettre…",
+          "choix": [
+            "solaire",
+            "lunaire",
+            "sans article"
+          ],
+          "reponse": 1,
+          "explication": "ب est lunaire : « al-bāb »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après un autre mot, l'alif de l'article…",
+          "choix": [
+            "tombe",
+            "se prononce « a »",
+            "devient « i »"
+          ],
+          "reponse": 0,
+          "explication": "Il tombe : on dit « bābu d-dār »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Devant une lettre lunaire, le ل de l'article porte…",
+          "choix": [
+            "un sukūn",
+            "une shadda",
+            "une fatḥa"
+          ],
+          "reponse": 0,
+          "explication": "Un sukūn : on l'entend, sans voyelle."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "كِتَابٌ",
+          "choix_audio": [
+            "كِتَابٌ",
+            "كِتَاب",
+            "كَاتِب"
+          ],
+          "reponse": 0,
+          "explication": "كِتَابٌ se lit « kitābun » (leçon 12)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "جَدَّة",
+          "choix_audio": [
+            "قِطَّة",
+            "جَدَّة",
+            "مَدِينَة"
+          ],
+          "reponse": 1,
+          "explication": "جَدَّة se lit « ǧadda » (leçon 11)."
+        },
+        {
+          "type": "paires",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بًا",
+          "choix_ar": [
+            "بٌ",
+            "بًا",
+            "بٍ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ban » (leçon 12)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais lire l'article « al- » devant les lettres lunaires et solaires : الْقَمَر, الشَّمْس, الْبَاب, الدَّار, النُّور.",
+      "suite": "Le soleil touche la dernière heure du cadran, et le treizième sceau de la porte se brise."
+    }
+  ]
+}

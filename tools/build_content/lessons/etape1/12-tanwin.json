@@ -1,0 +1,513 @@
+{
+  "id": "dechiffrer-12",
+  "etape": 1,
+  "ordre": 12,
+  "format": 2,
+  "titre": "Le registre complet",
+  "objectif": "Lire les trois tanwīn ً ٍ ٌ (-an, -in, -un) et l'alif du tanwīn, et savoir ce qu'ils deviennent à l'arrêt ; lire بَابٌ, بَابًا, بَابٍ, كِتَابٌ, وَرَقَةٌ.",
+  "statut": "ia_non_verifie",
+  "lieu": "archives",
+  "maitre": "nura",
+  "prerequis": [
+    "dechiffrer-11"
+  ],
+  "introduit": {
+    "lettres": [],
+    "signes": [
+      "fathatan",
+      "kasratan",
+      "dammatan"
+    ]
+  },
+  "apercu": [],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "بٌ",
+        "translit": "bun"
+      },
+      {
+        "ar": "بًا",
+        "translit": "ban"
+      },
+      {
+        "ar": "بٍ",
+        "translit": "bin"
+      },
+      {
+        "ar": "نٌ",
+        "translit": "nun"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "بَابٌ",
+        "translit": "bābun",
+        "fr": "une porte"
+      },
+      {
+        "ar": "بَابًا",
+        "translit": "bāban",
+        "fr": "une porte (même mot ; la fin change selon son rôle dans la phrase)"
+      },
+      {
+        "ar": "بَابٍ",
+        "translit": "bābin",
+        "fr": "une porte (même mot ; la fin change selon son rôle dans la phrase)"
+      },
+      {
+        "ar": "كِتَابٌ",
+        "translit": "kitābun",
+        "fr": "un livre"
+      },
+      {
+        "ar": "وَرَقَةٌ",
+        "translit": "waraqatun",
+        "fr": "une feuille"
+      }
+    ]
+  },
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nura",
+          "texte": "Ce registre n'a pas été ensablé : les mots y sont écrits en entier, avec leur fin complète."
+        },
+        {
+          "qui": "nura",
+          "texte": "Tu vas enfin voir la forme complète de بَاب, le premier mot que tu as lu à la porte."
+        }
+      ],
+      "objectif": "Lire les mots complets du registre."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "سُكَّر",
+          "choix_audio": [
+            "سُكَّر",
+            "صَبْر",
+            "قِطَّة"
+          ],
+          "reponse": 0,
+          "explication": "سُكَّر se lit « sukkar » (leçon 11)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "وَرَقَة",
+          "choix_audio": [
+            "شَجَرَة",
+            "وَرَقَة",
+            "مَدِينَة"
+          ],
+          "reponse": 1,
+          "explication": "وَرَقَة se lit « waraqa » (leçon 10)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "بَاب",
+          "choix_audio": [
+            "بَاب",
+            "دَار",
+            "بَحْر"
+          ],
+          "reponse": 0,
+          "explication": "بَاب se lit « bāb » (leçon 1)."
+        }
+      ]
+    },
+    {
+      "type": "decouverte",
+      "support": [
+        "بَاب",
+        "بَابٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans le deuxième mot, la ḍamma est doublée sur la dernière lettre. À ton avis, qu'ajoute-t-elle ?",
+        "choix": [
+          "Un son « n » à la fin : « bābun »",
+          "Un deuxième ب",
+          "Rien du tout"
+        ],
+        "reponse": 0,
+        "explication": "C'est le tanwīn : une voyelle doublée ajoute « n ». بَابٌ se lit « bābun », une porte."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les trois tanwīn",
+      "texte": "En fin de mot, une voyelle doublée ajoute le son « n » : ٌ se lit « un », ً « an » et ٍ « in ». Le mot change de fin selon sa place dans la phrase.",
+      "exemples": [
+        "بَابٌ",
+        "بَابًا",
+        "بَابٍ"
+      ],
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "بٍ",
+        "choix_ar": [
+          "بٌ",
+          "بًا",
+          "بٍ"
+        ],
+        "reponse": 2,
+        "explication": "C'était « bin » : la kasra doublée."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'alif du tanwīn",
+      "texte": "Le tanwīn « an » s'écrit d'habitude avec un alif en plus, qui ne se prononce pas dans le mot complet : بَابًا se lit « bāban ». Après ة, on n'ajoute pas cet alif.",
+      "exemples": [
+        "بَابًا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Au milieu d'une phrase, l'alif de la fin de بَابًا se prononce-t-il ?",
+        "choix": [
+          "Non : on lit « bāban »",
+          "Oui : on lit « bābana »",
+          "Oui : on lit « bābān »"
+        ],
+        "reponse": 0,
+        "explication": "Dans le mot complet, l'alif du tanwīn ne se prononce pas : « bāban »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "À l'arrêt",
+      "texte": "À l'arrêt, « un » et « in » disparaissent, et « an » devient un « a » long ; sur ة, on lit simplement « a ». C'est la forme courte lue depuis la leçon 1 : بَاب.",
+      "exemples": [
+        "بَابٌ",
+        "بَاب"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "À l'arrêt, comment se prononce بَابٌ ?",
+        "choix": [
+          "« bāb »",
+          "« bābun »",
+          "« bābā »"
+        ],
+        "reponse": 0,
+        "explication": "À l'arrêt, « un » disparaît : « bāb »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Comment s'appelle une voyelle doublée en fin de mot ?",
+          "choix": [
+            "le tanwīn",
+            "la shadda",
+            "le sukūn"
+          ],
+          "reponse": 0,
+          "explication": "C'est le tanwīn : il ajoute un son « n »."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بٌ",
+          "choix_ar": [
+            "بٌ",
+            "بٍ",
+            "بًا"
+          ],
+          "reponse": 0,
+          "explication": "C'était « bun »."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بًا",
+          "choix_ar": [
+            "بٍ",
+            "بًا",
+            "بٌ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ban » : l'alif ne se prononce pas."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "نٌ",
+          "choix_ar": [
+            "نٌ",
+            "نُ",
+            "نَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « nun » : la ḍamma doublée ajoute « n »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "كِتَابٌ",
+          "choix_audio": [
+            "كِتَاب",
+            "كِتَابٌ",
+            "كَاتِب"
+          ],
+          "reponse": 1,
+          "explication": "كِتَابٌ se lit « kitābun » dans une phrase."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "وَرَقَةٌ",
+          "choix_audio": [
+            "وَرَقَة",
+            "وَرَقَةٌ",
+            "شَجَرَة"
+          ],
+          "reponse": 1,
+          "explication": "وَرَقَةٌ se lit « waraqatun » : avec une voyelle, ة se prononce « t »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "بَابًا",
+          "choix_audio": [
+            "بَابٌ",
+            "بَابٍ",
+            "بَابًا"
+          ],
+          "reponse": 2,
+          "explication": "بَابًا se lit « bāban »."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "بَابٍ",
+          "tuiles": [
+            "بَ",
+            "ا",
+            "بٍ",
+            "بٌ"
+          ],
+          "solution": [
+            "بَ",
+            "ا",
+            "بٍ"
+          ],
+          "explication": "بَابٍ : بَ, l'alif, puis ب avec la kasra doublée."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "كِتَابٌ"
+        }
+      ]
+    },
+    {
+      "type": "coran",
+      "texte": "Les tanwīn se retrouvent dans le Coran : compte-les dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
+      "extraits": [
+        {
+          "verset": "111:5",
+          "mots": [
+            "111:5:3"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ٌ vois-tu dans ce mot ?",
+            "mot": "111:5:3",
+            "lettre": "ٌ"
+          }
+        },
+        {
+          "verset": "104:2",
+          "mots": [
+            "104:2:3"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ً vois-tu dans ce mot ?",
+            "mot": "104:2:3",
+            "lettre": "ً"
+          }
+        },
+        {
+          "verset": "111:1",
+          "mots": [
+            "111:1:4"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ٍ vois-tu dans ce mot ?",
+            "mot": "111:1:4",
+            "lettre": "ٍ"
+          }
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بٌ",
+          "choix_ar": [
+            "بٍ",
+            "بٌ",
+            "بًا"
+          ],
+          "reponse": 1,
+          "explication": "C'était « bun »."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بٍ",
+          "choix_ar": [
+            "بٍ",
+            "بًا",
+            "بٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « bin »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "بَابٌ",
+          "choix_audio": [
+            "بَابٌ",
+            "بَابًا",
+            "بَاب"
+          ],
+          "reponse": 0,
+          "explication": "بَابٌ se lit « bābun »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "بَابًا",
+          "choix_audio": [
+            "بَابٍ",
+            "بَابٌ",
+            "بَابًا"
+          ],
+          "reponse": 2,
+          "explication": "بَابًا se lit « bāban »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "كِتَابٌ",
+          "choix_audio": [
+            "كِتَابٌ",
+            "كِتَاب",
+            "بَابٌ"
+          ],
+          "reponse": 0,
+          "explication": "كِتَابٌ se lit « kitābun »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "وَرَقَةٌ",
+          "choix_audio": [
+            "وَرَقَة",
+            "بَابٌ",
+            "وَرَقَةٌ"
+          ],
+          "reponse": 2,
+          "explication": "وَرَقَةٌ se lit « waraqatun »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le tanwīn ٍ se lit…",
+          "choix": [
+            "« in »",
+            "« an »",
+            "« un »"
+          ],
+          "reponse": 0,
+          "explication": "La kasra doublée se lit « in »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "À l'arrêt, le « an » de بَابًا devient…",
+          "choix": [
+            "un « a » long",
+            "« un »",
+            "rien du tout"
+          ],
+          "reponse": 0,
+          "explication": "À l'arrêt, « an » devient un « a » long."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Au milieu d'une phrase, l'alif du tanwīn de بَابًا…",
+          "choix": [
+            "ne se prononce pas dans le mot complet",
+            "double le ب",
+            "se lit « i »"
+          ],
+          "reponse": 0,
+          "explication": "Il ne se prononce pas : « bāban »."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "مُعَلِّم",
+          "choix_audio": [
+            "مُعَلِّم",
+            "مَدِينَة",
+            "سُكَّر"
+          ],
+          "reponse": 0,
+          "explication": "مُعَلِّم se lit « muʿallim » (leçon 11)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "فَتَى",
+          "choix_audio": [
+            "عَلَى",
+            "فَتَى",
+            "قَمَر"
+          ],
+          "reponse": 1,
+          "explication": "فَتَى se lit « fatā » (leçon 10)."
+        },
+        {
+          "type": "paires",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "قِطَّ",
+          "choix_ar": [
+            "قِطْ",
+            "قِطَّ",
+            "قِطَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « qiṭṭa » (leçon 11)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais lire les trois tanwīn et l'alif du tanwīn, et ce qu'ils deviennent à l'arrêt : بَابٌ, بَابًا, بَابٍ, كِتَابٌ, وَرَقَةٌ.",
+      "suite": "Le registre complet est relu, et le douzième sceau de la porte se brise."
+    }
+  ]
+}

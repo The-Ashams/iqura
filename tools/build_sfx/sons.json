@@ -1,0 +1,35 @@
+{
+ "frequence": 22050,
+ "sons": {
+  "menu": {"role": "Toucher une commande de menu", "notes": [
+   {"forme": "carree", "freq": 880, "duree": 0.04, "volume": 0.25}]},
+  "choix": {"role": "Sélectionner une réponse (avant de valider)", "notes": [
+   {"forme": "triangle", "freq": 660, "duree": 0.05, "volume": 0.35}]},
+  "juste": {"role": "Bonne réponse", "notes": [
+   {"forme": "carree", "freq": 1047, "duree": 0.07, "volume": 0.22},
+   {"forme": "carree", "freq": 1319, "duree": 0.07, "volume": 0.22},
+   {"forme": "carree", "freq": 1568, "duree": 0.14, "volume": 0.22}]},
+  "faux": {"role": "Mauvaise réponse", "notes": [
+   {"forme": "carree", "freq": 233, "freq_fin": 196, "duree": 0.12, "volume": 0.2},
+   {"forme": "carree", "freq": 185, "freq_fin": 147, "duree": 0.2, "volume": 0.2}]},
+  "coup": {"role": "Le voyageur frappe la difficulté", "notes": [
+   {"forme": "bruit", "freq": 1800, "freq_fin": 300, "duree": 0.14, "volume": 0.35}]},
+  "degats": {"role": "Le voyageur est touché", "notes": [
+   {"forme": "carree", "freq": 130, "freq_fin": 70, "duree": 0.18, "volume": 0.25},
+   {"forme": "bruit", "freq": 400, "freq_fin": 100, "duree": 0.1, "volume": 0.2}]},
+  "victoire": {"role": "Mini-boss vaincu", "notes": [
+   {"forme": "carree", "freq": 523, "duree": 0.1, "volume": 0.2},
+   {"forme": "carree", "freq": 659, "duree": 0.1, "volume": 0.2},
+   {"forme": "carree", "freq": 784, "duree": 0.1, "volume": 0.2},
+   {"forme": "carree", "freq": 1047, "duree": 0.35, "volume": 0.2}]},
+  "repli": {"role": "La difficulté s'échappe (rien n'est perdu)", "notes": [
+   {"forme": "triangle", "freq": 392, "duree": 0.16, "volume": 0.35},
+   {"forme": "triangle", "freq": 330, "duree": 0.16, "volume": 0.35},
+   {"forme": "triangle", "freq": 262, "duree": 0.3, "volume": 0.35}]},
+  "sceau": {"role": "Leçon terminée : un sceau de la porte se brise", "notes": [
+   {"forme": "triangle", "freq": 784, "duree": 0.08, "volume": 0.35},
+   {"forme": "triangle", "freq": 988, "duree": 0.08, "volume": 0.35},
+   {"forme": "triangle", "freq": 1175, "duree": 0.08, "volume": 0.35},
+   {"forme": "triangle", "freq": 1568, "duree": 0.4, "volume": 0.3}]}
+ }
+}

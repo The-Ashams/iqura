@@ -2,186 +2,130 @@
   "id": "dechiffrer-01",
   "etape": 1,
   "ordre": 1,
-  "titre": "ا ب ت ث et la fatḥa",
-  "objectif": "Reconnaître alif, bāʾ, tāʾ et ṯāʾ dans toutes leurs formes, lire la fatḥa (a) et le « ā » long.",
+  "format": 2,
+  "titre": "L'étiquette de la porte",
+  "objectif": "Lire ا ب ت ث avec la fatḥa (ba, ta, ṯa) et le « ā » long ; lire بَاب, ثَبَتَ, بَاتَ, تَابَ.",
   "statut": "ia_non_verifie",
-  "prerequis": [
-    "dechiffrer-00"
-  ],
-  "introduit": {
-    "lettres": [
-      "ا",
-      "ب",
-      "ت",
-      "ث"
+  "lieu": "porte",
+  "maitre": "nura",
+  "prerequis": ["dechiffrer-00"],
+  "introduit": {"lettres": ["ا", "ب", "ت", "ث"], "signes": ["fatha"]},
+  "apercu": ["ـتـ", "ـثـ", "ـبـ", "بـ", "ـب"],
+  "elements": {
+    "syllabes": [
+      {"ar": "بَ", "translit": "ba"},
+      {"ar": "تَ", "translit": "ta"},
+      {"ar": "ثَ", "translit": "ṯa"},
+      {"ar": "بَا", "translit": "bā"},
+      {"ar": "تَا", "translit": "tā"},
+      {"ar": "ثَا", "translit": "ṯā"}
     ],
-    "signes": [
-      "fatha"
+    "mots": [
+      {"ar": "بَاب", "translit": "bāb", "fr": "porte"},
+      {"ar": "ثَبَتَ", "translit": "ṯabata", "fr": "il est resté ferme"},
+      {"ar": "بَاتَ", "translit": "bāta", "fr": "il a passé la nuit"},
+      {"ar": "تَابَ", "translit": "tāba", "fr": "il est revenu (de ses fautes)"}
     ]
   },
-  "sections": [
+  "ecrans": [
     {
-      "type": "texte",
-      "titre": "Une famille de trois lettres… et l'alif",
-      "corps": "ب, ت et ث partagent la même silhouette, une petite barque. Seuls les points changent : un dessous (b), deux dessus (t), trois dessus (ṯ). L'alif ا est un simple trait vertical ; il ne se lie jamais à la lettre qui suit."
+      "type": "entree",
+      "repliques": [
+        {"qui": "nura", "texte": "Voici la grande porte de la bibliothèque. Quatorze sceaux la ferment."},
+        {"qui": "nura", "texte": "Le premier cédera à qui saura lire l'étiquette accrochée ici."}
+      ],
+      "objectif": "Lire l'étiquette de la porte."
     },
     {
-      "type": "lettres",
-      "lettres": [
-        "ا",
-        "ب",
-        "ت",
-        "ث"
-      ]
+      "type": "decouverte",
+      "support": ["بَاب"],
+      "question": {
+        "type": "qcm",
+        "consigne": "L'étiquette a trois lettres. Lesquelles sont identiques ?",
+        "choix": ["La première et la dernière", "Les trois", "Aucune"],
+        "reponse": 0,
+        "explication": "La première et la dernière sont la même barque à un point dessous. Le trait du milieu est une autre lettre : l'alif."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ب",
+      "question": {"type": "reconnaitre", "consigne": "Comment s'appelle cette lettre ?", "ar": "ب", "choix": ["bāʾ", "tāʾ", "ṯāʾ"], "reponse": 0, "explication": "C'est bāʾ : un seul point, dessous."}
+    },
+    {
+      "type": "element",
+      "lettre": "ت",
+      "question": {"type": "formes", "consigne": "Quelle est la forme de ت au milieu d'un mot ?", "choix_ar": ["ـبـ", "ـتـ", "ـثـ"], "reponse": 1, "explication": "Au milieu, ت garde ses deux points au-dessus : ـتـ."}
+    },
+    {
+      "type": "element",
+      "lettre": "ث",
+      "question": {"type": "qcm", "consigne": "Combien de points porte ث ?", "choix": ["trois", "deux", "un"], "reponse": 0, "explication": "Trois points au-dessus : c'est ce qui distingue ث."}
+    },
+    {
+      "type": "element",
+      "lettre": "ا",
+      "question": {"type": "qcm", "consigne": "L'alif s'attache-t-il à la lettre qui le suit ?", "choix": ["Non, jamais", "Oui, toujours", "Seulement à la fin d'un mot"], "reponse": 0, "explication": "Jamais : c'est pourquoi بَاب s'écrit en deux morceaux, tout en étant un seul mot."}
     },
     {
       "type": "regle",
-      "titre": "La fatḥa : le son « a »",
-      "corps": "La fatḥa est un petit trait oblique au-dessus de la consonne : ـَ. Elle se prononce « a » après la consonne. بَ = ba, تَ = ta, ثَ = ṯa."
+      "titre": "La fatḥa",
+      "texte": "La fatḥa est un petit trait au-dessus de la lettre. Elle se lit « a » après la consonne.",
+      "exemples": ["بَ", "تَ", "ثَ"],
+      "question": {"type": "ecouter", "consigne": "Quelle syllabe entends-tu ?", "audio": "تَ", "choix_ar": ["بَ", "تَ", "ثَ"], "reponse": 1, "explication": "Tu as entendu « ta » : la barque à deux points, avec la fatḥa."}
     },
     {
       "type": "regle",
-      "titre": "Le « ā » long avec l'alif",
-      "corps": "Une fatḥa suivie d'un alif donne un « a » long, tenu deux fois plus longtemps : بَا = bā, تَا = tā, ثَا = ṯā. Dans la translittération, le trait sur la voyelle (ā) indique cette longueur."
+      "titre": "Le « ā » long",
+      "texte": "Une fatḥa suivie d'un alif donne un « ā » long, tenu deux fois plus longtemps.",
+      "exemples": ["بَا", "تَا", "ثَا"],
+      "question": {"type": "paires", "consigne": "Quelle syllabe entends-tu ?", "audio": "بَا", "choix_ar": ["بَا", "بَ", "تَا"], "reponse": 0, "explication": "C'était « bā », long : la fatḥa suivie de l'alif."}
     },
     {
-      "type": "syllabes",
-      "items": [
-        {
-          "ar": "بَ",
-          "translit": "ba"
-        },
-        {
-          "ar": "تَ",
-          "translit": "ta"
-        },
-        {
-          "ar": "ثَ",
-          "translit": "ṯa"
-        },
-        {
-          "ar": "بَا",
-          "translit": "bā"
-        },
-        {
-          "ar": "تَا",
-          "translit": "tā"
-        },
-        {
-          "ar": "ثَا",
-          "translit": "ṯā"
-        }
+      "type": "entrainement",
+      "exercices": [
+        {"type": "reconnaitre", "consigne": "Comment s'appelle cette lettre ?", "ar": "ث", "choix": ["ṯāʾ", "tāʾ", "bāʾ"], "reponse": 0, "explication": "Trois points au-dessus : ṯāʾ."},
+        {"type": "points", "consigne": "Laquelle a deux points au-dessus ?", "choix_ar": ["ب", "ت", "ث"], "reponse": 1, "explication": "ت porte deux points au-dessus."},
+        {"type": "formes", "consigne": "De quelle lettre est cette forme ?", "ar": "ـثـ", "choix_ar": ["ث", "ت", "ب"], "reponse": 0, "explication": "Trois points au-dessus : c'est ث, au milieu d'un mot."},
+        {"type": "ecouter", "consigne": "Quelle syllabe entends-tu ?", "audio": "ثَا", "choix_ar": ["تَا", "ثَا", "بَا"], "reponse": 1, "explication": "C'était « ṯā » : trois points, fatḥa et alif."},
+        {"type": "lire", "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.", "ar": "بَاب", "choix_audio": ["بَاتَ", "بَاب", "تَابَ"], "reponse": 1, "explication": "بَاب se lit « bāb » : ba, alif, puis ب sans voyelle."},
+        {"type": "lire", "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.", "ar": "ثَبَتَ", "choix_audio": ["ثَبَتَ", "تَابَ", "بَاتَ"], "reponse": 0, "explication": "ثَبَتَ se lit « ṯabata » : trois syllabes brèves, ṯa-ba-ta."},
+        {"type": "reconstruire", "consigne": "Écoute le mot, puis assemble-le.", "audio": "بَاب", "tuiles": ["بَ", "ا", "ب", "تَ"], "solution": ["بَ", "ا", "ب"], "explication": "بَاب : بَ, puis l'alif, puis ب sans voyelle."},
+        {"type": "tracer", "consigne": "Trace la lettre ب en suivant les points.", "lettre": "ب"},
+        {"type": "repeter", "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.", "ar": "بَاب"}
       ]
-    },
-    {
-      "type": "exemples",
-      "titre": "Premiers mots",
-      "items": [
-        {
-          "ar": "ثَبَتَ",
-          "translit": "ṯabata",
-          "fr": "il est resté ferme"
-        },
-        {
-          "ar": "بَاتَ",
-          "translit": "bāta",
-          "fr": "il a passé la nuit"
-        },
-        {
-          "ar": "تَابَ",
-          "translit": "tāba",
-          "fr": "il est revenu (de ses fautes)"
-        },
-        {
-          "ar": "ثَابَ",
-          "translit": "ṯāba",
-          "fr": "il est revenu"
-        }
-      ]
-    },
-    {
-      "type": "encadre",
-      "corps": "Lisez de droite à gauche, consonne puis voyelle : ثَبَتَ = ṯa + ba + ta. Dans بَاتَ, l'alif ne se lie pas au tāʾ qui suit : le mot est coupé en deux morceaux, mais c'est un seul mot."
     },
     {
       "type": "coran",
-      "titre": "Dans le Coran",
-      "corps": "Repérez les lettres de la leçon dans ces versets. Vous ne pouvez pas encore tout lire : cherchez seulement les formes de ب, ت, ث et ا.",
+      "texte": "Ces lettres se retrouvent dans le Coran : compte-les dans ces mots. D'autres petits signes, que tu apprendras plus tard, sont aussi présents.",
       "extraits": [
-        {
-          "verset": "78:7",
-          "mots": [
-            "78:7:1",
-            "78:7:2"
-          ],
-          "lettres": [
-            "ب",
-            "ت",
-            "ا"
-          ]
-        },
-        {
-          "verset": "86:3",
-          "mots": [
-            "86:3:2"
-          ],
-          "lettres": [
-            "ث",
-            "ب"
-          ]
-        }
-      ]
-    }
-  ],
-  "exercices": [
-    {
-      "type": "reconnaitre_lettre",
-      "lettres": [
-        "ا",
-        "ب",
-        "ت",
-        "ث"
+        {"verset": "78:7", "mots": ["78:7:1", "78:7:2"], "question": {"type": "compter", "consigne": "Combien de ب vois-tu dans le premier mot ?", "mot": "78:7:1", "lettre": "ب"}},
+        {"verset": "78:7", "mots": ["78:7:2"], "question": {"type": "compter", "consigne": "Combien de ت vois-tu dans ce mot ?", "mot": "78:7:2", "lettre": "ت"}},
+        {"verset": "86:3", "mots": ["86:3:2"], "question": {"type": "compter", "consigne": "Combien de ث vois-tu dans ce mot ?", "mot": "86:3:2", "lettre": "ث"}}
       ]
     },
     {
-      "type": "formes",
-      "lettres": [
-        "ب",
-        "ت",
-        "ث"
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {"type": "ecouter", "consigne": "Quelle syllabe entends-tu ?", "audio": "بَ", "choix_ar": ["تَ", "بَ", "ثَ"], "reponse": 1, "explication": "C'était « ba »."},
+        {"type": "ecouter", "consigne": "Quelle syllabe entends-tu ?", "audio": "ثَا", "choix_ar": ["ثَا", "ثَ", "تَا"], "reponse": 0, "explication": "C'était « ṯā », avec l'alif d'allongement."},
+        {"type": "ecouter", "consigne": "Quelle syllabe entends-tu ?", "audio": "تَا", "choix_ar": ["بَا", "تَ", "تَا"], "reponse": 2, "explication": "C'était « tā », long."},
+        {"type": "lire", "consigne": "Comment se lit ce mot ?", "ar": "تَابَ", "choix_audio": ["بَاتَ", "تَابَ", "ثَبَتَ"], "reponse": 1, "explication": "تَابَ se lit « tāba »."},
+        {"type": "lire", "consigne": "Comment se lit ce mot ?", "ar": "بَاتَ", "choix_audio": ["بَاتَ", "بَاب", "تَابَ"], "reponse": 0, "explication": "بَاتَ se lit « bāta »."},
+        {"type": "lire", "consigne": "Comment se lit ce mot ?", "ar": "بَاب", "choix_audio": ["ثَبَتَ", "بَاتَ", "بَاب"], "reponse": 2, "explication": "بَاب se lit « bāb »."},
+        {"type": "ecouter_lettre", "consigne": "Écoute et choisis la lettre.", "choix_ar": ["ب", "ت", "ث"], "reponse": 1, "explication": "C'était ت (tāʾ) : deux points au-dessus."},
+        {"type": "points", "consigne": "Laquelle a trois points ?", "choix_ar": ["ت", "ب", "ث"], "reponse": 2, "explication": "ث porte trois points."},
+        {"type": "formes", "consigne": "De quelle lettre est cette forme ?", "ar": "ـبـ", "choix_ar": ["ت", "ب", "ث"], "reponse": 1, "explication": "Un point dessous : ب, au milieu d'un mot."},
+        {"type": "qcm", "revision": true, "consigne": "Dans quel sens se lit l'arabe ?", "choix": ["De gauche à droite", "De droite à gauche", "De haut en bas"], "reponse": 1, "explication": "De droite à gauche."},
+        {"type": "qcm", "revision": true, "consigne": "Dans un mot, les lettres…", "choix": ["restent séparées", "s'écrivent l'une sous l'autre", "s'attachent entre elles"], "reponse": 2, "explication": "Elles s'attachent ; quelques lettres, comme l'alif, ne s'attachent pas à la suivante."},
+        {"type": "formes", "revision": true, "consigne": "Laquelle est la forme du début ?", "choix_ar": ["ـب", "ـبـ", "بـ"], "reponse": 2, "explication": "Au début, la lettre s'ouvre vers la gauche : بـ."}
       ]
     },
     {
-      "type": "points",
-      "lettres": [
-        "ب",
-        "ت",
-        "ث"
-      ]
-    },
-    {
-      "type": "lire",
-      "source": "syllabes"
-    },
-    {
-      "type": "lire",
-      "source": "exemples"
-    },
-    {
-      "type": "reconstruire",
-      "source": "exemples"
-    },
-    {
-      "type": "reperer",
-      "source": "coran"
-    },
-    {
-      "type": "controle_final",
-      "sources": [
-        "syllabes",
-        "exemples"
-      ],
-      "seuil": 0.8
+      "type": "fin",
+      "acquis": "Tu sais lire ا ب ت ث avec la fatḥa et le « ā » long : بَاب, ثَبَتَ, بَاتَ, تَابَ.",
+      "suite": "Le premier sceau de la porte se brise."
     }
   ]
 }

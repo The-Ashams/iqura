@@ -1,0 +1,588 @@
+{
+  "id": "dechiffrer-04",
+  "etape": 1,
+  "ordre": 4,
+  "format": 2,
+  "titre": "Les marques des caravanes",
+  "objectif": "Reconnaître د ذ ر ز, qui ne s'attachent pas à la lettre suivante, et lire une consonne sans voyelle (sukūn) ; lire خُبْز, بَحْر, بَدْر, دَار.",
+  "statut": "ia_non_verifie",
+  "lieu": "caravanserail",
+  "maitre": "rashid",
+  "prerequis": [
+    "dechiffrer-03"
+  ],
+  "introduit": {
+    "lettres": [
+      "د",
+      "ذ",
+      "ر",
+      "ز"
+    ],
+    "signes": [
+      "sukun"
+    ]
+  },
+  "apercu": [
+    "ـد",
+    "ـر",
+    "ـز",
+    "ـذ"
+  ],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "دَ",
+        "translit": "da"
+      },
+      {
+        "ar": "ذَ",
+        "translit": "ḏa"
+      },
+      {
+        "ar": "رِ",
+        "translit": "ri"
+      },
+      {
+        "ar": "زُ",
+        "translit": "zu"
+      },
+      {
+        "ar": "بَدْ",
+        "translit": "bad"
+      },
+      {
+        "ar": "جَرْ",
+        "translit": "ǧar"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "خُبْز",
+        "translit": "ḫubz",
+        "fr": "pain"
+      },
+      {
+        "ar": "بَحْر",
+        "translit": "baḥr",
+        "fr": "mer"
+      },
+      {
+        "ar": "بَدْر",
+        "translit": "badr",
+        "fr": "pleine lune"
+      },
+      {
+        "ar": "دَار",
+        "translit": "dār",
+        "fr": "maison, demeure"
+      }
+    ]
+  },
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rashid",
+          "texte": "Halte, voyageur ! Je suis Rāšid, et mes chameaux portent les marques de leurs maîtres."
+        },
+        {
+          "qui": "rashid",
+          "texte": "La brume a mêlé les sacs : je ne sais plus lequel contient le pain. Lis les marques avec moi."
+        }
+      ],
+      "objectif": "Retrouver le sac de pain."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "حَ",
+          "choix_ar": [
+            "خَ",
+            "جَ",
+            "حَ"
+          ],
+          "reponse": 2,
+          "explication": "C'était « ḥa », soufflé, sans point."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "نِي",
+          "choix_ar": [
+            "نِي",
+            "نِ",
+            "نَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « nī », long : kasra et ي (leçon 2)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "تَاج",
+          "choix_audio": [
+            "تَاج",
+            "جَنَاح",
+            "حَبِيب"
+          ],
+          "reponse": 0,
+          "explication": "تَاج se lit « tāǧ »."
+        }
+      ]
+    },
+    {
+      "type": "decouverte",
+      "support": [
+        "خُبْز"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Au-dessus de la deuxième lettre, il y a un petit rond. À ton avis, que veut-il dire ?",
+        "choix": [
+          "Pas de voyelle sur cette lettre",
+          "Un « o »",
+          "Une lettre doublée"
+        ],
+        "reponse": 0,
+        "explication": "Ce petit rond est le sukūn : la lettre se prononce sans voyelle. On lit « ḫub », d'un seul souffle."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "د",
+      "question": {
+        "type": "qcm",
+        "consigne": "د s'attache-t-il à la lettre qui le suit ?",
+        "choix": [
+          "Non, jamais",
+          "Oui, toujours",
+          "Seulement au début d'un mot"
+        ],
+        "reponse": 0,
+        "explication": "Comme l'alif, د ne s'attache jamais à la lettre suivante."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ذ",
+      "question": {
+        "type": "points",
+        "consigne": "Laquelle est ذ ?",
+        "choix_ar": [
+          "د",
+          "ذ",
+          "ز"
+        ],
+        "reponse": 1,
+        "explication": "ذ, c'est la forme de د avec un point au-dessus."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ر",
+      "question": {
+        "type": "ecouter",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "رِ",
+        "choix_ar": [
+          "رِ",
+          "زُ",
+          "دَ"
+        ],
+        "reponse": 0,
+        "explication": "C'était « ri » : le r battu, avec la kasra."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ز",
+      "question": {
+        "type": "points",
+        "consigne": "Laquelle est ز ?",
+        "choix_ar": [
+          "ر",
+          "د",
+          "ز"
+        ],
+        "reponse": 2,
+        "explication": "ز, c'est la forme de ر avec un point au-dessus."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le sukūn",
+      "texte": "Le sukūn est un petit rond au-dessus de la lettre. La lettre se prononce sans voyelle et ferme la syllabe.",
+      "exemples": [
+        "بَدْ",
+        "جَرْ"
+      ],
+      "question": {
+        "type": "ecouter",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "بَدْ",
+        "choix_ar": [
+          "بَدْ",
+          "بَ",
+          "دَ"
+        ],
+        "reponse": 0,
+        "explication": "C'était « bad » : ب avec la fatḥa, puis د sans voyelle."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La fin du mot",
+      "texte": "Quand on s'arrête sur un mot, sa dernière lettre se lit sans voyelle, même sans sukūn écrit : بَحْر se lit « baḥr ». Dans une phrase, cette lettre porte en général une voyelle : tu l'apprendras plus tard.",
+      "exemples": [
+        "بَحْر",
+        "دَار"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pourquoi la dernière lettre de بَدْر n'a-t-elle aucun signe ?",
+        "choix": [
+          "On s'arrête sur le mot : elle se lit sans voyelle",
+          "C'est une faute",
+          "Elle se lit avec un « a »"
+        ],
+        "reponse": 0,
+        "explication": "À l'arrêt, la dernière lettre se lit sans voyelle : « badr ». D'autres fins de mot viendront plus tard, dont le tanwīn à la leçon 12."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Des lettres qui ne s'attachent pas",
+      "texte": "ا, د, ذ, ر et ز ne s'attachent jamais à la lettre suivante ; tu en verras une autre plus tard. Après elles, le mot continue avec un petit espace.",
+      "exemples": [
+        "دَار"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans دَار, pourquoi les trois lettres sont-elles séparées ?",
+        "choix": [
+          "د et l'alif ne s'attachent pas à la suivante",
+          "Ce sont trois mots",
+          "C'est une faute"
+        ],
+        "reponse": 0,
+        "explication": "C'est un seul mot : د et l'alif ne s'attachent jamais à la lettre qui suit."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "reconnaitre",
+          "consigne": "Comment s'appelle cette lettre ?",
+          "ar": "ر",
+          "choix": [
+            "rāʾ",
+            "zāy",
+            "dāl"
+          ],
+          "reponse": 0,
+          "explication": "Sans point, la forme courbée qui descend : rāʾ."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle n'a aucun point ?",
+          "choix_ar": [
+            "ذ",
+            "د",
+            "ز"
+          ],
+          "reponse": 1,
+          "explication": "د n'a aucun point ; ذ et ز ont un point au-dessus."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "ذَ",
+          "choix_ar": [
+            "دَ",
+            "ذَ",
+            "زُ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ḏa », comme le « th » de « this »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "زُ",
+          "choix_ar": [
+            "رِ",
+            "زُ",
+            "ذَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « zu » : ز et la ḍamma."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "جَرْ",
+          "choix_ar": [
+            "جَرْ",
+            "جَ",
+            "بَدْ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ǧar » : ر sans voyelle ferme la syllabe."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "بَحْر",
+          "choix_audio": [
+            "بَدْر",
+            "بَحْر",
+            "خُبْز"
+          ],
+          "reponse": 1,
+          "explication": "بَحْر se lit « baḥr » : ba, ḥ sans voyelle, puis r, sans voyelle à la fin du mot."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "بَدْر",
+          "choix_audio": [
+            "بَدْر",
+            "دَار",
+            "بَحْر"
+          ],
+          "reponse": 0,
+          "explication": "بَدْر se lit « badr » : ba, d sans voyelle, puis r, sans voyelle à la fin du mot."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "دَار",
+          "tuiles": [
+            "دَ",
+            "ا",
+            "ر",
+            "ز"
+          ],
+          "solution": [
+            "دَ",
+            "ا",
+            "ر"
+          ],
+          "explication": "دَار : دَ, l'alif, puis ر, sans voyelle à la fin du mot."
+        },
+        {
+          "type": "tracer",
+          "consigne": "Trace la lettre د en suivant les points.",
+          "lettre": "د"
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "خُبْز"
+        }
+      ]
+    },
+    {
+      "type": "coran",
+      "texte": "د, ذ, ر et ز se retrouvent dans le Coran : compte-les dans ces mots. Ici, le sukūn s'écrit comme le haut d'un petit ح, et d'autres petits signes, appris plus tard, sont aussi présents.",
+      "extraits": [
+        {
+          "verset": "104:2",
+          "mots": [
+            "104:2:4"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de د vois-tu dans ce mot ?",
+            "mot": "104:2:4",
+            "lettre": "د"
+          }
+        },
+        {
+          "verset": "99:1",
+          "mots": [
+            "99:1:2"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ز vois-tu dans ce mot ?",
+            "mot": "99:1:2",
+            "lettre": "ز"
+          }
+        },
+        {
+          "verset": "94:4",
+          "mots": [
+            "94:4:3"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ذ vois-tu dans ce mot ?",
+            "mot": "94:4:3",
+            "lettre": "ذ"
+          }
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "دَ",
+          "choix_ar": [
+            "ذَ",
+            "دَ",
+            "زُ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « da »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بَدْ",
+          "choix_ar": [
+            "بَ",
+            "دَ",
+            "بَدْ"
+          ],
+          "reponse": 2,
+          "explication": "C'était « bad », avec le sukūn sur د."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "رِ",
+          "choix_ar": [
+            "رِ",
+            "زُ",
+            "بِ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ri »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "خُبْز",
+          "choix_audio": [
+            "بَحْر",
+            "خُبْز",
+            "بَدْر"
+          ],
+          "reponse": 1,
+          "explication": "خُبْز se lit « ḫubz »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "دَار",
+          "choix_audio": [
+            "دَار",
+            "بَدْر",
+            "تَاج"
+          ],
+          "reponse": 0,
+          "explication": "دَار se lit « dār »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "بَحْر",
+          "choix_audio": [
+            "خُبْز",
+            "بَدْر",
+            "بَحْر"
+          ],
+          "reponse": 2,
+          "explication": "بَحْر se lit « baḥr »."
+        },
+        {
+          "type": "ecouter_lettre",
+          "consigne": "Écoute et choisis la lettre.",
+          "choix_ar": [
+            "ر",
+            "ز",
+            "د"
+          ],
+          "reponse": 1,
+          "explication": "C'était ز (zāy) : un point au-dessus."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle a un point au-dessus et la forme de د ?",
+          "choix_ar": [
+            "ز",
+            "ذ",
+            "د"
+          ],
+          "reponse": 1,
+          "explication": "ذ : la forme de د, avec un point."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le petit rond au-dessus d'une lettre veut dire…",
+          "choix": [
+            "pas de voyelle",
+            "un « a » long",
+            "une lettre doublée"
+          ],
+          "reponse": 0,
+          "explication": "C'est le sukūn : la lettre n'a pas de voyelle."
+        },
+        {
+          "type": "paires",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "خَ",
+          "choix_ar": [
+            "حَ",
+            "خَ",
+            "جَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ḫa », raclé (leçon 3)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "جَنَاح",
+          "choix_audio": [
+            "جَنَاح",
+            "حَبِيب",
+            "تَاج"
+          ],
+          "reponse": 0,
+          "explication": "جَنَاح se lit « ǧanāḥ » (leçon 3)."
+        },
+        {
+          "type": "ecouter",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "نِ",
+          "choix_ar": [
+            "بِ",
+            "نِ",
+            "نَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ni » (leçon 2)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais lire د ذ ر ز, qui ne s'attachent pas à la suivante, et une consonne sans voyelle : خُبْز, بَحْر, بَدْر, دَار.",
+      "suite": "Rāšid retrouve son sac de pain, et le quatrième sceau de la porte se brise."
+    }
+  ]
+}

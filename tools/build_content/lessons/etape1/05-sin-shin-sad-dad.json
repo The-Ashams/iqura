@@ -1,0 +1,596 @@
+{
+  "id": "dechiffrer-05",
+  "etape": 1,
+  "ordre": 5,
+  "format": 2,
+  "titre": "Les voix des dunes",
+  "objectif": "Reconnaître س ش ص ض, entendre la différence entre s et ṣ, d et ḍ ; lire دَرْس, شَجَر, صَبْر, بَيْض.",
+  "statut": "ia_non_verifie",
+  "lieu": "dunes",
+  "maitre": "rashid",
+  "prerequis": [
+    "dechiffrer-04"
+  ],
+  "introduit": {
+    "lettres": [
+      "س",
+      "ش",
+      "ص",
+      "ض"
+    ],
+    "signes": []
+  },
+  "apercu": [
+    "سـ",
+    "ـسـ",
+    "صـ",
+    "ـصـ"
+  ],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "سَ",
+        "translit": "sa"
+      },
+      {
+        "ar": "صَ",
+        "translit": "ṣa"
+      },
+      {
+        "ar": "شِ",
+        "translit": "ši"
+      },
+      {
+        "ar": "ضُ",
+        "translit": "ḍu"
+      },
+      {
+        "ar": "سَا",
+        "translit": "sā"
+      },
+      {
+        "ar": "صَا",
+        "translit": "ṣā"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "دَرْس",
+        "translit": "dars",
+        "fr": "leçon"
+      },
+      {
+        "ar": "شَجَر",
+        "translit": "šaǧar",
+        "fr": "arbres"
+      },
+      {
+        "ar": "صَبْر",
+        "translit": "ṣabr",
+        "fr": "patience"
+      },
+      {
+        "ar": "بَيْض",
+        "translit": "bayḍ",
+        "fr": "œufs"
+      }
+    ]
+  },
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rashid",
+          "texte": "Te revoilà, voyageur ! Pour traverser les Dunes chantantes, il faut écouter le vent."
+        },
+        {
+          "qui": "rashid",
+          "texte": "Il souffle des sons presque pareils, et les pierres du chemin portent des mots. Lis-les, sinon nous tournerons en rond."
+        }
+      ],
+      "objectif": "Suivre les pierres du chemin à travers les dunes."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "زُ",
+          "choix_ar": [
+            "رُ",
+            "زُ",
+            "ذُ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « zu » : ز et la ḍamma (leçon 4)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "بَدْر",
+          "choix_audio": [
+            "بَحْر",
+            "بَدْر",
+            "دَار"
+          ],
+          "reponse": 1,
+          "explication": "بَدْر se lit « badr » : د porte un sukūn (leçon 4)."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "جَرْ",
+          "choix_ar": [
+            "جَ",
+            "بَدْ",
+            "جَرْ"
+          ],
+          "reponse": 2,
+          "explication": "C'était « ǧar » : ر sans voyelle ferme la syllabe."
+        }
+      ]
+    },
+    {
+      "type": "decouverte",
+      "support": [
+        "سَ",
+        "صَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Voici deux lettres différentes. À ton avis, se prononcent-elles de la même façon ?",
+        "choix": [
+          "Non : صَ est plus épais, plus sombre",
+          "Oui, exactement pareil",
+          "صَ ne se prononce pas"
+        ],
+        "reponse": 0,
+        "explication": "سَ est un « s » clair ; صَ est un « s » épais : l'arrière de la langue se relève."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "س",
+      "question": {
+        "type": "ecouter",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "سَ",
+        "choix_ar": [
+          "ثَ",
+          "سَ",
+          "شِ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « sa », un « s » qui siffle ; pour ث, le bout de la langue touche le bord des dents du haut."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ش",
+      "question": {
+        "type": "points",
+        "consigne": "Laquelle est ش ?",
+        "choix_ar": [
+          "س",
+          "ث",
+          "ش"
+        ],
+        "reponse": 2,
+        "explication": "ش, c'est la forme de س avec trois points au-dessus."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ص",
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "صَ",
+        "choix_ar": [
+          "سَ",
+          "صَ",
+          "ثَ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « ṣa », le « s » épais : la voyelle sonne plus sombre."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ض",
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "ضُ",
+        "choix_ar": [
+          "دُ",
+          "ضُ",
+          "زُ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « ḍu », le « d » épais ; دُ est le « d » clair."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les lettres épaisses",
+      "texte": "ص et ض sont des lettres emphatiques : l'arrière de la langue se relève et le son devient plus sombre. Le « a » qui suit devient plus grave, sans aller jusqu'au « o ».",
+      "exemples": [
+        "سَا",
+        "صَا"
+      ],
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "صَا",
+        "choix_ar": [
+          "سَا",
+          "صَا",
+          "شِ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « ṣā » : le « a » long sonne plus sombre après ص."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Deux formes, quatre lettres",
+      "texte": "س et ش ont la même forme, ص et ض aussi : seuls les points les distinguent. Au début et au milieu d'un mot, elles perdent leur courbe finale.",
+      "exemples": [
+        "سَ",
+        "صَ"
+      ],
+      "question": {
+        "type": "formes",
+        "consigne": "De quelle lettre est cette forme ?",
+        "ar": "صـ",
+        "choix_ar": [
+          "س",
+          "ص",
+          "ض"
+        ],
+        "reponse": 1,
+        "explication": "Une boucle sans point : ص, au début d'un mot."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "reconnaitre",
+          "consigne": "Comment s'appelle cette lettre ?",
+          "ar": "ض",
+          "choix": [
+            "ḍād",
+            "ṣād",
+            "dāl"
+          ],
+          "reponse": 0,
+          "explication": "La boucle avec un point au-dessus : ḍād."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle n'a aucun point ?",
+          "choix_ar": [
+            "ش",
+            "ض",
+            "س"
+          ],
+          "reponse": 2,
+          "explication": "س n'a aucun point ; ش en a trois, ض en a un."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "سَا",
+          "choix_ar": [
+            "صَا",
+            "سَا",
+            "سَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « sā » : un « s » clair et un « a » long."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "شِ",
+          "choix_ar": [
+            "سِ",
+            "شِ",
+            "ثِ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ši », comme « chi »."
+        },
+        {
+          "type": "formes",
+          "consigne": "De quelle lettre est cette forme ?",
+          "ar": "ـسـ",
+          "choix_ar": [
+            "س",
+            "ب",
+            "ص"
+          ],
+          "reponse": 0,
+          "explication": "Trois petites dents sans point : س, au milieu d'un mot."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "شَجَر",
+          "choix_audio": [
+            "شَجَر",
+            "صَبْر",
+            "دَرْس"
+          ],
+          "reponse": 0,
+          "explication": "شَجَر se lit « šaǧar » : ša, ǧa, puis ر sans voyelle."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "صَبْر",
+          "choix_audio": [
+            "بَيْض",
+            "دَرْس",
+            "صَبْر"
+          ],
+          "reponse": 2,
+          "explication": "صَبْر se lit « ṣabr » : un « s » épais, puis ب et ر sans voyelle."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "بَيْض",
+          "choix_audio": [
+            "بَيْض",
+            "بَدْر",
+            "دَرْس"
+          ],
+          "reponse": 0,
+          "explication": "بَيْض se lit « bayḍ » : ي porte un sukūn ; après la fatḥa, on entend « ay »."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "دَرْس",
+          "tuiles": [
+            "دَ",
+            "رْ",
+            "س",
+            "ص"
+          ],
+          "solution": [
+            "دَ",
+            "رْ",
+            "س"
+          ],
+          "explication": "دَرْس : دَ, ر avec un sukūn, puis س sans voyelle."
+        },
+        {
+          "type": "tracer",
+          "consigne": "Trace la lettre ص en suivant les points.",
+          "lettre": "ص"
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "بَيْض"
+        }
+      ]
+    },
+    {
+      "type": "coran",
+      "texte": "س, ش, ص et ض se retrouvent dans le Coran : compte-les dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
+      "extraits": [
+        {
+          "verset": "114:4",
+          "mots": [
+            "114:4:3"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de س vois-tu dans ce mot ?",
+            "mot": "114:4:3",
+            "lettre": "س"
+          }
+        },
+        {
+          "verset": "113:2",
+          "mots": [
+            "113:2:2"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ش vois-tu dans ce mot ?",
+            "mot": "113:2:2",
+            "lettre": "ش"
+          }
+        },
+        {
+          "verset": "110:1",
+          "mots": [
+            "110:1:3"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ص vois-tu dans ce mot ?",
+            "mot": "110:1:3",
+            "lettre": "ص"
+          }
+        },
+        {
+          "verset": "100:1",
+          "mots": [
+            "100:1:2"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ض vois-tu dans ce mot ?",
+            "mot": "100:1:2",
+            "lettre": "ض"
+          }
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "صَ",
+          "choix_ar": [
+            "صَ",
+            "سَ",
+            "ثَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ṣa », le « s » épais."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "سَ",
+          "choix_ar": [
+            "صَ",
+            "ثَ",
+            "سَ"
+          ],
+          "reponse": 2,
+          "explication": "C'était « sa », le « s » clair."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "ضُ",
+          "choix_ar": [
+            "ضُ",
+            "دُ",
+            "زُ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ḍu », le « d » épais."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "صَا",
+          "choix_ar": [
+            "سَا",
+            "صَا",
+            "صَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ṣā », long et sombre."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "دَرْس",
+          "choix_audio": [
+            "دَرْس",
+            "دَار",
+            "شَجَر"
+          ],
+          "reponse": 0,
+          "explication": "دَرْس se lit « dars »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "بَيْض",
+          "choix_audio": [
+            "صَبْر",
+            "بَيْض",
+            "بَدْر"
+          ],
+          "reponse": 1,
+          "explication": "بَيْض se lit « bayḍ » : ي porte un sukūn ; après la fatḥa, on entend « ay »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "شَجَر",
+          "choix_audio": [
+            "بَحْر",
+            "صَبْر",
+            "شَجَر"
+          ],
+          "reponse": 2,
+          "explication": "شَجَر se lit « šaǧar »."
+        },
+        {
+          "type": "ecouter_lettre",
+          "consigne": "Écoute et choisis la lettre.",
+          "choix_ar": [
+            "س",
+            "ش",
+            "ص"
+          ],
+          "reponse": 1,
+          "explication": "C'était ش (šīn) : trois points au-dessus."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle a une boucle et un point au-dessus ?",
+          "choix_ar": [
+            "ص",
+            "ض",
+            "ش"
+          ],
+          "reponse": 1,
+          "explication": "ض : la boucle de ص, avec un point."
+        },
+        {
+          "type": "paires",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "ذَ",
+          "choix_ar": [
+            "دَ",
+            "ذَ",
+            "زُ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ḏa », comme le « th » de « this » (leçon 4)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "خُبْز",
+          "choix_audio": [
+            "خُبْز",
+            "دَار",
+            "بَحْر"
+          ],
+          "reponse": 0,
+          "explication": "خُبْز se lit « ḫubz » (leçon 4)."
+        },
+        {
+          "type": "ecouter",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "حَ",
+          "choix_ar": [
+            "خَ",
+            "حَ",
+            "جَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ḥa », soufflé et serré (leçon 3)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais lire س ش ص ض et entendre le « s » et le « d » épais : دَرْس, شَجَر, صَبْر, بَيْض.",
+      "suite": "Le vent se calme, les dunes s'arrêtent de chanter, et le cinquième sceau de la porte se brise."
+    }
+  ]
+}

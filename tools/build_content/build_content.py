@@ -18,6 +18,7 @@ Usage : python3 tools/build_content/build_content.py [--out CHEMIN]
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import sqlite3
@@ -33,11 +34,12 @@ import lessons  # noqa: E402
 import qac  # noqa: E402
 import sources  # noqa: E402
 import tanzil  # noqa: E402
+import world  # noqa: E402
 
 # Version du schéma de la base de contenu (lue par l'application).
-CONTENT_SCHEMA_VERSION = 5
+CONTENT_SCHEMA_VERSION = 7
 # Version des données ; à augmenter à chaque changement de contenu.
-CONTENT_VERSION = "0.4.2-dechiffrer"
+CONTENT_VERSION = "0.7.0-region1"
 
 DEFAULT_OUT = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
@@ -140,7 +142,7 @@ SCHEMA = [
         segment_id TEXT NOT NULL REFERENCES segment(id),
         PRIMARY KEY (token_id, segment_id)
     ) STRICT""",
-    # Académie : fiches des lettres et leçons (rédigées, statut non vérifié).
+    # Académie : fiches des lettres et leçons (rédigées par IA).
     """CREATE TABLE articulation_zone (
         id TEXT NOT NULL PRIMARY KEY,
         description TEXT NOT NULL
@@ -153,6 +155,10 @@ SCHEMA = [
         zone_id TEXT NOT NULL REFERENCES articulation_zone(id),
         pronunciation TEXT NOT NULL,
         status TEXT NOT NULL
+    ) STRICT""",
+    """CREATE TABLE letter_trace (
+        letter TEXT NOT NULL PRIMARY KEY REFERENCES letter(letter),
+        strokes_json TEXT NOT NULL
     ) STRICT""",
     """CREATE TABLE lesson (
         id TEXT NOT NULL PRIMARY KEY,
@@ -178,6 +184,49 @@ SCHEMA = [
         file TEXT,
         origin TEXT,
         synthetic INTEGER
+    ) STRICT""",
+    """CREATE TABLE region (
+        id TEXT NOT NULL PRIMARY KEY,
+        number INTEGER NOT NULL,
+        name TEXT NOT NULL,
+        skill TEXT NOT NULL,
+        adversary TEXT NOT NULL,
+        map_image TEXT NOT NULL
+    ) STRICT""",
+    """CREATE TABLE place (
+        id TEXT NOT NULL PRIMARY KEY,
+        region_id TEXT NOT NULL REFERENCES region(id),
+        number INTEGER NOT NULL,
+        name TEXT NOT NULL,
+        description TEXT NOT NULL,
+        map_x INTEGER NOT NULL,
+        map_y INTEGER NOT NULL,
+        scene_image TEXT,
+        ground_y INTEGER,
+        in_j1a INTEGER NOT NULL,
+        lessons_json TEXT NOT NULL,
+        links_json TEXT NOT NULL
+    ) STRICT""",
+    """CREATE TABLE character (
+        id TEXT NOT NULL PRIMARY KEY,
+        region_id TEXT NOT NULL REFERENCES region(id),
+        name TEXT NOT NULL,
+        name_ar TEXT NOT NULL,
+        role TEXT NOT NULL,
+        sprite TEXT,
+        places_json TEXT NOT NULL
+    ) STRICT""",
+    """CREATE TABLE item (
+        id TEXT NOT NULL PRIMARY KEY,
+        name TEXT NOT NULL,
+        slot TEXT NOT NULL,
+        rarity TEXT NOT NULL,
+        price INTEGER NOT NULL,
+        region_id TEXT NOT NULL REFERENCES region(id),
+        stats_json TEXT NOT NULL,
+        set_id TEXT,
+        set_json TEXT,
+        description TEXT NOT NULL
     ) STRICT""",
     "CREATE INDEX segment_lemma ON segment(lemma_id)",
     "CREATE INDEX segment_root ON segment(root_id)",
@@ -368,6 +417,15 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
     lesson_data = data.get("lessons") or lessons.load()
     lessons.validate(lesson_data, con)
     lesson_counts = lessons.write(con, lesson_data)
+    traces = data.get("traces") or lessons.load_traces()
+    lessons.validate_traces(traces, lesson_data)
+    lesson_counts["traces"] = lessons.write_traces(con, traces)
+    world_data = data.get("world") or world.load()
+    world.validate(world_data, con)
+    world_counts = world.write(con, world_data)
+    item_data = data.get("items") or world.load_items()
+    world.validate_items(item_data, {d["region"]["id"] for d in world_data})
+    world_counts["items"] = world.write_items(con, item_data)
 
     counts = {
         "surahs": len(meta.surahs),
@@ -377,6 +435,7 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
         "roots": len(root_count),
         "lemmas": len(lemma_count),
         **lesson_counts,
+        **world_counts,
     }
     content_meta = {
         "schema_version": str(CONTENT_SCHEMA_VERSION),
@@ -417,9 +476,13 @@ def build(out_path: str, data: dict | None = None) -> dict[str, int]:
             con.close()
         os.chmod(tmp, 0o644)
         os.replace(tmp, out_path)
-        # Petit fichier lu au démarrage pour savoir s'il faut recopier la base.
+        # Petit fichier lu au démarrage pour savoir s'il faut recopier la base :
+        # la version et l'empreinte de la base, pour que tout changement de
+        # contenu soit recopié sur l'appareil, même sans changer de version.
+        with open(out_path, "rb") as f:
+            digest = hashlib.sha256(f.read()).hexdigest()[:16]
         with open(out_path + ".version", "w", encoding="utf-8") as f:
-            f.write(CONTENT_VERSION)
+            f.write(f"{CONTENT_VERSION}+{digest}")
     except BaseException:
         if os.path.exists(tmp):
             os.remove(tmp)
@@ -440,7 +503,7 @@ def main() -> int:
     try:
         build(args.out)
     except (BuildError, sources.SourceError, tanzil.TanzilError, qac.QacError,
-            lessons.LessonError) as e:
+            lessons.LessonError, world.WorldError) as e:
         print(f"[build_content] ÉCHEC : {e}", file=sys.stderr)
         return 1
     return 0

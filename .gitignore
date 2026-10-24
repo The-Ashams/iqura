@@ -49,3 +49,8 @@ app.*.map.json
 
 # Base de contenu générée par tools/build_content/
 /assets/content/
+
+# Clé de signature Android (secrets du dépôt, jamais versionnée)
+android/key.properties
+android/*.jks
+*.jks
