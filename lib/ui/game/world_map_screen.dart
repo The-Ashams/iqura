@@ -49,7 +49,7 @@ class WorldMapScreen extends ConsumerWidget {
                     const SizedBox(height: 4),
                     Text(
                       'RÉGION ${region.number} · ${region.skill.toUpperCase()}',
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: GameColors.accent,
                         fontSize: 14,
                         letterSpacing: 1,
@@ -58,7 +58,7 @@ class WorldMapScreen extends ConsumerWidget {
                     Text(region.name, style: const TextStyle(fontSize: 24)),
                     Text(
                       'Adversaire : ${region.adversary}',
-                      style: const TextStyle(color: GameColors.muted),
+                      style: TextStyle(color: GameColors.muted),
                     ),
                   ],
                 ),

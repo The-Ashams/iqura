@@ -38,7 +38,7 @@ Scaffold _page(String title, List<Widget> children) => Scaffold(
           const SizedBox(height: 12),
           ...children,
           const SizedBox(height: 8),
-          const Text(
+          Text(
             'L\'équipement change les combats de l\'Expédition, jamais '
             'l\'apprentissage : ni les questions, ni les révisions, ni les '
             'mini-boss des leçons.',
@@ -71,12 +71,12 @@ class ShopScreen extends ConsumerWidget {
                 Text(
                   '${it.slotLabel} · ${it.rarityLabel}'
                   '${it.set != null ? ' · ensemble « ${it.set!.name} »' : ''}',
-                  style: const TextStyle(color: GameColors.muted, fontSize: 14),
+                  style: TextStyle(color: GameColors.muted, fontSize: 14),
                 ),
                 Text(_stats(it.stats)),
                 Text(
                   it.description,
-                  style: const TextStyle(color: GameColors.muted, fontSize: 14),
+                  style: TextStyle(color: GameColors.muted, fontSize: 14),
                 ),
                 PixelCommand(
                   label: 'Acheter (${it.price} dinars)',
@@ -146,7 +146,7 @@ class _EquipmentScreenState extends ConsumerState<EquipmentScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
+            Text(
               'Le voyageur',
               style: TextStyle(color: GameColors.accent, fontSize: 18),
             ),
@@ -158,10 +158,7 @@ class _EquipmentScreenState extends ConsumerState<EquipmentScreen> {
       if (_message != null)
         Padding(
           padding: const EdgeInsets.only(bottom: 8),
-          child: Text(
-            _message!,
-            style: const TextStyle(color: GameColors.accent),
-          ),
+          child: Text(_message!, style: TextStyle(color: GameColors.accent)),
         ),
       if (owned.isEmpty)
         const PixelWindow(
@@ -182,7 +179,7 @@ class _EquipmentScreenState extends ConsumerState<EquipmentScreen> {
                 ),
                 Text(
                   '${o.item.slotLabel} · ${_stats(o.stats)}',
-                  style: const TextStyle(color: GameColors.muted, fontSize: 14),
+                  style: TextStyle(color: GameColors.muted, fontSize: 14),
                 ),
                 PixelCommand(
                   label: o.equipped ? 'Retirer' : 'Équiper',

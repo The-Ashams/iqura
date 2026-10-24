@@ -130,18 +130,12 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                   Expanded(
                     child: Text(
                       _stepName,
-                      style: const TextStyle(
-                        color: GameColors.accent,
-                        fontSize: 18,
-                      ),
+                      style: TextStyle(color: GameColors.accent, fontSize: 18),
                     ),
                   ),
                   Text(
                     'Écran ${_step + 1} / ${_lesson.steps.length}',
-                    style: const TextStyle(
-                      color: GameColors.muted,
-                      fontSize: 14,
-                    ),
+                    style: TextStyle(color: GameColors.muted, fontSize: 14),
                   ),
                 ],
               ),
@@ -257,10 +251,7 @@ class _EntryViewState extends ConsumerState<_EntryView> {
               if (line != null) ...[
                 Text(
                   speaker?.name ?? line.speaker,
-                  style: const TextStyle(
-                    color: GameColors.accent,
-                    fontSize: 20,
-                  ),
+                  style: TextStyle(color: GameColors.accent, fontSize: 20),
                 ),
                 const SizedBox(height: 6),
                 Text(line.text, style: const TextStyle(height: 1.4)),
@@ -270,7 +261,7 @@ class _EntryViewState extends ConsumerState<_EntryView> {
                   onPressed: () => setState(() => _line++),
                 ),
               ] else ...[
-                const Text(
+                Text(
                   'Objectif',
                   style: TextStyle(color: GameColors.accent, fontSize: 20),
                 ),
@@ -345,10 +336,7 @@ class _ExplainViewState extends ConsumerState<_ExplainView> {
                 if (s.title != null)
                   Text(
                     s.title!,
-                    style: const TextStyle(
-                      color: GameColors.accent,
-                      fontSize: 22,
-                    ),
+                    style: TextStyle(color: GameColors.accent, fontSize: 22),
                   ),
                 if (s.text != null) ...[
                   const SizedBox(height: 6),
@@ -369,7 +357,7 @@ class _ExplainViewState extends ConsumerState<_ExplainView> {
                         ),
                     ],
                   ),
-                  const ConstructedExampleTag(color: GameColors.muted),
+                  ConstructedExampleTag(color: GameColors.muted),
                 ],
               ],
             ),
@@ -403,7 +391,7 @@ class _LetterCardView extends ConsumerWidget {
           ArabicText(
             card.letter,
             baseSize: 80,
-            style: const TextStyle(color: GameColors.text),
+            style: TextStyle(color: GameColors.text),
           ),
           Text(card.name, style: const TextStyle(fontSize: 22)),
           const SizedBox(height: 6),
@@ -420,14 +408,11 @@ class _LetterCardView extends ConsumerWidget {
                     ArabicText(
                       glyph,
                       baseSize: 40,
-                      style: const TextStyle(color: GameColors.text),
+                      style: TextStyle(color: GameColors.text),
                     ),
                     Text(
                       name,
-                      style: const TextStyle(
-                        color: GameColors.muted,
-                        fontSize: 14,
-                      ),
+                      style: TextStyle(color: GameColors.muted, fontSize: 14),
                     ),
                   ],
                 ),
@@ -441,10 +426,7 @@ class _LetterCardView extends ConsumerWidget {
           const SizedBox(height: 10),
           Align(
             alignment: Alignment.centerLeft,
-            child: Text(
-              card.zone,
-              style: const TextStyle(color: GameColors.accent),
-            ),
+            child: Text(card.zone, style: TextStyle(color: GameColors.accent)),
           ),
           const SizedBox(height: 4),
           Text(card.pronunciation, style: const TextStyle(height: 1.4)),
@@ -491,7 +473,7 @@ class _PracticeViewState extends State<_PracticeView> {
               widget.step.warmUp
                   ? 'Échauffement terminé.'
                   : 'Salle d\'entraînement terminée.',
-              style: const TextStyle(fontSize: 20, color: GameColors.accent),
+              style: TextStyle(fontSize: 20, color: GameColors.accent),
             ),
             const SizedBox(height: 8),
             PixelCommand(label: 'Continuer', onPressed: widget.onNext),
@@ -504,7 +486,7 @@ class _PracticeViewState extends State<_PracticeView> {
       children: [
         Text(
           'Exercice ${_index + 1} sur ${_queue.length}',
-          style: const TextStyle(color: GameColors.muted, fontSize: 14),
+          style: TextStyle(color: GameColors.muted, fontSize: 14),
         ),
         const SizedBox(height: 4),
         QuestionView(
@@ -513,6 +495,8 @@ class _PracticeViewState extends State<_PracticeView> {
           onAnswered: _answered,
           onContinue: () => setState(() => _index++),
           random: widget.random,
+          // Question revenue après une erreur : réponses déplacées.
+          shuffleChoices: _queue.indexOf(_queue[_index]) != _index,
         ),
       ],
     );
@@ -628,7 +612,7 @@ class _QuranViewState extends ConsumerState<_QuranView> {
           ),
         ),
         const SizedBox(height: 6),
-        const Text(
+        Text(
           '${_QuranView.credit} ${_QuranView.recitationNotice}',
           style: TextStyle(color: GameColors.muted, fontSize: 13),
         ),
@@ -805,7 +789,7 @@ class _EndViewState extends ConsumerState<_EndView> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             'Ce que tu sais lire maintenant',
             style: TextStyle(color: GameColors.accent, fontSize: 20),
           ),
@@ -819,7 +803,7 @@ class _EndViewState extends ConsumerState<_EndView> {
           if (completed && next != null)
             Text(
               'Leçon ${next.ordinal} ouverte : ${next.title}.',
-              style: const TextStyle(color: GameColors.good),
+              style: TextStyle(color: GameColors.good),
             ),
           if (widget.reward case final r?) ...[
             const SizedBox(height: 6),
@@ -831,7 +815,7 @@ class _EndViewState extends ConsumerState<_EndView> {
                   : r.xp > 0
                   ? 'Leçon rejouée : +${r.xp} XP.'
                   : 'Leçon rejouée (XP déjà reçue aujourd\'hui).',
-              style: const TextStyle(color: GameColors.accent),
+              style: TextStyle(color: GameColors.accent),
             ),
           ],
           const SizedBox(height: 8),

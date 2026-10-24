@@ -51,7 +51,7 @@ class HeroStatusBar extends ConsumerWidget {
                     child: FractionallySizedBox(
                       alignment: Alignment.centerLeft,
                       widthFactor: ((xp - from) / (to - from)).clamp(0, 1),
-                      child: const ColoredBox(color: GameColors.accent),
+                      child: ColoredBox(color: GameColors.accent),
                     ),
                   ),
                 ),
@@ -59,7 +59,7 @@ class HeroStatusBar extends ConsumerWidget {
               const SizedBox(width: 8),
               Text(
                 '$xp XP',
-                style: const TextStyle(color: GameColors.muted, fontSize: 14),
+                style: TextStyle(color: GameColors.muted, fontSize: 14),
               ),
             ],
           ),

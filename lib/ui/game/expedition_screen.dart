@@ -238,7 +238,7 @@ class _ExpeditionScreenState extends ConsumerState<ExpeditionScreen> {
             children: [
               if (fight == null) _empty() else ..._combat(fight),
               if (widget.practice)
-                const Padding(
+                Padding(
                   padding: EdgeInsets.only(top: 8),
                   child: Text(
                     ExpeditionScreen.practiceNotice,
@@ -344,7 +344,7 @@ class _ExpeditionScreenState extends ConsumerState<ExpeditionScreen> {
       else ...[
         Text(
           'Révision ${_index + 1} sur ${_queue.length}',
-          style: const TextStyle(color: GameColors.muted, fontSize: 14),
+          style: TextStyle(color: GameColors.muted, fontSize: 14),
         ),
         const SizedBox(height: 4),
         QuestionView(
@@ -356,6 +356,8 @@ class _ExpeditionScreenState extends ConsumerState<ExpeditionScreen> {
           onContinue: _next,
           continueLabel: 'Suite',
           random: _random,
+          // Carte revenue après une erreur : réponses déplacées.
+          shuffleChoices: _queue.indexOf(_queue[_index]) != _index,
         ),
         if (_answered && _flash != null)
           Padding(
@@ -363,7 +365,7 @@ class _ExpeditionScreenState extends ConsumerState<ExpeditionScreen> {
             child: Text(
               _flash!,
               textAlign: TextAlign.center,
-              style: const TextStyle(color: GameColors.accent),
+              style: TextStyle(color: GameColors.accent),
             ),
           ),
       ],
@@ -378,7 +380,7 @@ class _ExpeditionScreenState extends ConsumerState<ExpeditionScreen> {
           fight.lost
               ? 'Tu te replies, sans rien perdre : les révisions faites comptent.'
               : 'Les brumes d\'oubli se dissipent !',
-          style: const TextStyle(fontSize: 20, color: GameColors.accent),
+          style: TextStyle(fontSize: 20, color: GameColors.accent),
         ),
         const SizedBox(height: 6),
         Text('${fight.correct} bonne(s) réponse(s), ${fight.wrong} erreur(s).'),
@@ -389,7 +391,7 @@ class _ExpeditionScreenState extends ConsumerState<ExpeditionScreen> {
           ),
         if (_mistakes.isNotEmpty) ...[
           const SizedBox(height: 10),
-          const Text(
+          Text(
             'Tes erreurs, expliquées :',
             style: TextStyle(color: GameColors.accent),
           ),

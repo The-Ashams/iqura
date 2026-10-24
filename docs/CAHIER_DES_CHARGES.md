@@ -457,7 +457,7 @@ Une leçon n'est jamais un texte à lire : c'est **une scène de l'Histoire jou�
 | 3. Découverte | L'obstacle en grand et une question | Cherche avant qu'on lui montre |
 | 4. Les éléments | Une fiche par lettre : grande lettre, 4 formes, nom et audio, articulation et schéma si le son est difficile | Écoute, puis mini-question immédiate |
 | 5. La règle | Règle courte avec audio | Identifie une syllabe entendue ; distingue brève et longue |
-| 6. Salle d'entraînement | Exercices mélangés : reconnaître, points, formes, écouter, lire, reconstruire, tracer, répéter à voix haute | Répond ; chaque erreur est expliquée et la question revient plus tard |
+| 6. Salle d'entraînement | Exercices mélangés : reconnaître, points, formes, écouter, lire, reconstruire, tracer, répéter à voix haute | Répond ; chaque erreur est expliquée et la question revient plus tard, réponses déplacées |
 | 7. Salle d'étude « Dans le Coran » | Lieu calme, sans combat : extraits référencés (Tanzil + traduction Hamidullah), récitation d'al-Ḥuṣarī | Touche les lettres ou mots de la leçon |
 | 8. Mini-boss | Combat contre une difficulté ; questions dans un panneau neutre, jamais de verset | 10 à 12 questions sans translittération, dont 20 à 30 % sur les leçons précédentes ; réussite à 80 % |
 | 9. Fin | L'obstacle s'ouvre ; « ce que tu sais lire maintenant » ; récompenses ; nouvelles cartes | Reprend l'Histoire |
@@ -807,3 +807,9 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-23 | États des éléments : « reconnu » à partir d'une stabilité FSRS de 7 jours, « maîtrisé » à partir de 21 jours (jamais après une seule réussite) ; cartes créées à la première réussite d'une leçon ; 20 révisions au plus par Expédition |
 | 2026-10-23 | Valeurs initiales, à équilibrer : niveau n → n+1 = 100 × n XP ; révision juste 2 XP (1 si la carte est déjà très stable) ; vague 5 XP et 2 dinars, gardien 15 XP et 10 dinars ; série 5 dinars + 1 par jour (7 au plus) ; enchantement 10 × niveau dinars et (niveau + 2) / 3 pierres ; héros 50 PV et 10 d'attaque, +5 et +1 par niveau |
 | 2026-10-23 | Combat d'entraînement de la Faille (qui proposait des translittérations) remplacé par l'Expédition et l'entraînement libre ; la translittération reste dans les explications montrées après les combats |
+| 2026-10-24 | Retours du test de Débutant 1 : une question qui revient après une erreur (salle d'entraînement, Expédition, nouvelle tentative du mini-boss) affiche ses réponses à d'autres places, la bonne réponse n'étant jamais au même endroit |
+| 2026-10-24 | Le thème clair s'applique aussi aux écrans du jeu (palette « parchemin ») ; il suit le réglage clair, sombre ou système |
+| 2026-10-24 | Grand écran (PC, tablette) : toute l'interface est agrandie en gardant ses proportions (référence 1000 × 800, ×2,5 au plus) ; scène de combat haute de 30 % de la fenêtre au plus, pour que la question reste visible |
+| 2026-10-24 | Translittération : la police du jeu est une copie de DotGothic16 sans ses accents séparés (« DotGothic16 IQURA », OFL, `tools/fonts/build_game_font.py`) ; ā, ḥ, ḫ, ǧ, ṯ viennent alors entiers d'Amiri (avant : « ḥa¯ » pour ḥāʾ et ḫāʾ) |
+| 2026-10-24 | Texte français qui cite plusieurs mots arabes : une marque invisible suit chaque passage arabe pour garder l'ordre de la phrase (« بَ : بَاب ») |
+| 2026-10-24 | Idées de l'utilisateur retenues pour les niveaux suivants : « reconstruire » décliné en modes (mot français → l'écrire en arabe, l'inverse, définition → retrouver le mot ou la racine) ; un mode consacré à l'écriture, jusqu'à des textes entiers ; le comptage des lettres en salle d'étude est apprécié |

@@ -183,6 +183,28 @@ class QuestionPanel extends StatelessWidget {
   );
 }
 
+/// Ordre d'affichage de [count] réponses. Sans [shuffle], l'ordre écrit
+/// dans la leçon ; avec, un ordre mélangé où la bonne réponse ([answer])
+/// change de place quand c'est possible.
+List<int> shuffledChoiceOrder(
+  int count,
+  int? answer,
+  Random random, {
+  required bool shuffle,
+}) {
+  final order = List<int>.generate(count, (i) => i);
+  if (!shuffle || count < 2) return order;
+  for (var attempt = 0; attempt < 20; attempt++) {
+    order.shuffle(random);
+    final moved = answer == null
+        ? order.indexed.any((e) => e.$1 != e.$2)
+        : order.indexOf(answer) != answer;
+    if (moved) return order;
+  }
+  // Tirage malchanceux : on décale tout d'un cran.
+  return List<int>.generate(count, (i) => (i + 1) % count);
+}
+
 /// Une question de leçon. [onAnswered] est appelé à la validation (nul
 /// pour un exercice non noté : tracer, répéter) ; [onContinue] quand le
 /// joueur passe à la suite.
@@ -196,6 +218,7 @@ class QuestionView extends ConsumerStatefulWidget {
     this.continueLabel = 'Continuer',
     this.random,
     this.feedbackSound = true,
+    this.shuffleChoices = false,
   });
 
   final LessonQuestion question;
@@ -213,6 +236,10 @@ class QuestionView extends ConsumerStatefulWidget {
   /// Ordre des tuiles à reconstruire (tests : tirage reproductible).
   final Random? random;
 
+  /// Vrai quand la question revient après une erreur : les réponses
+  /// changent de place, et la bonne réponse n'est plus au même endroit.
+  final bool shuffleChoices;
+
   @override
   ConsumerState<QuestionView> createState() => _QuestionViewState();
 }
@@ -227,6 +254,9 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
   late final List<String> _tiles;
   final List<int> _placed = [];
 
+  // Ordre d'affichage des réponses (indices dans `q.choices`).
+  late final List<int> _order;
+
   LessonQuestion get q => widget.question;
 
   /// Texte joué par la question, s'il y en a un.
@@ -240,7 +270,14 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
   @override
   void initState() {
     super.initState();
-    _tiles = [...q.tiles]..shuffle(widget.random ?? Random());
+    final random = widget.random ?? Random();
+    _tiles = [...q.tiles]..shuffle(random);
+    _order = shuffledChoiceOrder(
+      q.choices.length,
+      q.answer,
+      random,
+      shuffle: widget.shuffleChoices,
+    );
     // Le son de la question est joué dès qu'elle s'affiche (§6.2).
     final spoken = _spoken;
     if (spoken != null) {
@@ -334,7 +371,7 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
         runSpacing: 10,
         alignment: WrapAlignment.center,
         children: [
-          for (final (i, c) in q.choices.indexed)
+          for (final (pos, i) in _order.indexed)
             AnswerButton(
               width: wide
                   ? 260
@@ -343,24 +380,29 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
                   : 120,
               state: _stateOf(i),
               semanticLabel: q.choiceKind == ChoiceKind.audio
-                  ? 'Son ${i + 1}'
+                  ? 'Son ${pos + 1}'
                   : null,
               onPressed: () {
-                if (q.choiceKind == ChoiceKind.audio) playLessonAudio(ref, c);
+                if (q.choiceKind == ChoiceKind.audio) {
+                  playLessonAudio(ref, q.choices[i]);
+                }
                 setState(() => _selected = i);
               },
               child: switch (q.choiceKind) {
-                ChoiceKind.arabic => ArabicText(c, baseSize: 30),
+                ChoiceKind.arabic => ArabicText(q.choices[i], baseSize: 30),
                 ChoiceKind.audio => Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     const Icon(Icons.volume_up),
                     const SizedBox(width: 6),
-                    Text('Son ${i + 1}', style: const TextStyle(fontSize: 18)),
+                    Text(
+                      'Son ${pos + 1}',
+                      style: const TextStyle(fontSize: 18),
+                    ),
                   ],
                 ),
                 _ => Text(
-                  c,
+                  q.choices[i],
                   textAlign: TextAlign.center,
                   style: const TextStyle(fontSize: 18),
                 ),

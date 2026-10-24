@@ -3,6 +3,24 @@
 /// `tools/build_content/lessons/` et contrôlé par `mini_donjon.py`.
 library;
 
+/// Marque « gauche à droite » (U+200E), invisible.
+const String _lrm = '\u200E';
+
+// Suite de mots arabes (lettres, voyelles, ponctuation arabe), espaces
+// intérieurs compris.
+final RegExp _arabicRun = RegExp(
+  r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]+'
+  r'(?:\s+[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]+)*',
+);
+
+/// Texte français qui cite de l'arabe : une marque invisible suit chaque
+/// passage arabe, pour que deux passages séparés par « : » ou « , » restent
+/// dans l'ordre de la phrase française (« بَ : بَاب » et non « بَاب : بَ »).
+String frenchWithArabic(String text) =>
+    text.replaceAllMapped(_arabicRun, (m) => '${m[0]}$_lrm');
+
+String? _fr(Object? v) => v == null ? null : frenchWithArabic(v as String);
+
 /// Sorte de question (cahier v3 §6.4).
 enum QuestionKind {
   qcm,
@@ -71,11 +89,11 @@ class LessonQuestion {
         : (const [], ChoiceKind.none);
     return LessonQuestion(
       kind: QuestionKind.parse(j['type'] as String),
-      prompt: j['consigne'] as String,
+      prompt: frenchWithArabic(j['consigne'] as String),
       choices: choices.cast<String>(),
       choiceKind: choiceKind,
       answer: j['reponse'] as int?,
-      explanation: j['explication'] as String?,
+      explanation: _fr(j['explication']),
       arabic: j['ar'] as String?,
       audio: j['audio'] as String?,
       tiles: ((j['tuiles'] as List?) ?? const []).cast<String>(),
@@ -130,9 +148,12 @@ sealed class LessonStep {
       'entree' => EntryStep(
         lines: [
           for (final r in (j['repliques'] as List).cast<Map>())
-            (speaker: r['qui'] as String, text: r['texte'] as String),
+            (
+              speaker: r['qui'] as String,
+              text: frenchWithArabic(r['texte'] as String),
+            ),
         ],
-        objective: j['objectif'] as String,
+        objective: frenchWithArabic(j['objectif'] as String),
       ),
       'decouverte' || 'element' || 'regle' => ExplainStep(
         kind: switch (type) {
@@ -140,8 +161,8 @@ sealed class LessonStep {
           'element' => ExplainKind.element,
           _ => ExplainKind.rule,
         },
-        title: j['titre'] as String?,
-        text: j['texte'] as String?,
+        title: _fr(j['titre']),
+        text: _fr(j['texte']),
         arabic: [...strings(j['support']), ...strings(j['exemples'])],
         letter: j['lettre'] as String?,
         question: q(j['question'])!,
@@ -154,7 +175,7 @@ sealed class LessonStep {
         ],
       ),
       'coran' => QuranStep(
-        text: j['texte'] as String,
+        text: frenchWithArabic(j['texte'] as String),
         extracts: [
           for (final e in (j['extraits'] as List).cast<Map>())
             QuranExtract(
@@ -172,8 +193,8 @@ sealed class LessonStep {
         ],
       ),
       'fin' => EndStep(
-        learned: j['acquis'] as String,
-        next: j['suite'] as String?,
+        learned: frenchWithArabic(j['acquis'] as String),
+        next: _fr(j['suite']),
       ),
       _ => throw FormatException('écran inconnu : $type'),
     };
@@ -283,7 +304,7 @@ class Lesson {
       stage: j['etape'] as int,
       ordinal: j['ordre'] as int,
       title: j['titre'] as String,
-      objective: j['objectif'] as String,
+      objective: frenchWithArabic(j['objectif'] as String),
       place: j['lieu'] as String,
       master: j['maitre'] as String,
       steps: [

@@ -60,5 +60,5 @@ flutter:
     # Police pixel (SIL OFL 1.1), textes du jeu (choisie le 23/10/2026).
     - family: DotGothic16
       fonts:
-        - asset: assets/fonts/DotGothic16-Regular.ttf
+        - asset: assets/fonts/DotGothic16-IQURA-Regular.ttf
 

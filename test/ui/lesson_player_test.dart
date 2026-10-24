@@ -20,6 +20,8 @@ import 'package:iqura/ui/game/lesson/boss_view.dart';
 import 'package:iqura/ui/game/lesson/lesson_screen.dart';
 import 'package:iqura/ui/game/lesson/question_view.dart';
 import 'package:iqura/ui/game/pixel.dart';
+import 'package:iqura/ui/widgets/arabic_text.dart';
+import 'package:iqura/ui/widgets/screen_scaler.dart';
 
 class FakeSfx implements SfxPlayer {
   final played = <Sfx>[];
@@ -77,7 +79,10 @@ Widget appWith(Widget home) => ProviderScope(
     sfxPlayerProvider.overrideWithValue(sfx),
     voiceRecorderProvider.overrideWithValue(recorder),
   ],
-  child: MaterialApp(home: home),
+  child: MaterialApp(
+    builder: (context, child) => ScreenScaler(child: child!),
+    home: home,
+  ),
 );
 
 /// Laisse passer le temps sans attendre la fin des animations sans fin de
@@ -360,9 +365,13 @@ void main() {
     await settle(tester);
     final valider = tester.getRect(find.text('Valider'));
     expect(valider.bottom, lessThan(1125));
-    // Contenu centré, pas étiré sur toute la largeur.
+    // Interface agrandie (×1,4) : le contenu occupe l'écran sans être
+    // étiré sur toute la largeur.
+    final scale = ScreenScaler.scaleFor(const Size(2000, 1125));
+    expect(scale, closeTo(1.40625, 0.001));
     final panel = tester.getRect(find.byType(QuestionPanel));
-    expect(panel.width, lessThanOrEqualTo(760));
+    expect(panel.width, greaterThan(1000));
+    expect(panel.width, lessThanOrEqualTo(760 * scale + 1));
   });
 
   testWidgets('bruitages désactivés dans les réglages : aucun son de jeu', (
@@ -542,5 +551,64 @@ void main() {
     expect(p.completed, isTrue);
     expect(p.completedAt!.isAtSameMomentAs(DateTime.utc(2026, 10, 23)), isTrue);
     expect(p.bestScore, 11);
+  });
+
+  test('question revenue après une erreur : la bonne réponse change de '
+      'place', () {
+    final random = Random(3);
+    for (var n = 2; n <= 6; n++) {
+      for (var answer = 0; answer < n; answer++) {
+        for (var k = 0; k < 20; k++) {
+          final order = shuffledChoiceOrder(n, answer, random, shuffle: true);
+          expect(order.toSet(), {for (var i = 0; i < n; i++) i});
+          expect(order.indexOf(answer), isNot(answer));
+        }
+      }
+    }
+    expect(shuffledChoiceOrder(4, 1, random, shuffle: false), [0, 1, 2, 3]);
+  });
+
+  testWidgets('salle d’entraînement : la question ratée revient avec ses '
+      'réponses déplacées', (tester) async {
+    final q = LessonQuestion.fromJson({
+      'type': 'qcm',
+      'consigne': 'Quelle lettre ?',
+      'choix_ar': ['أ', 'ب', 'ت', 'ث'],
+      'reponse': 2,
+    });
+    Future<List<String>> shown(bool shuffle) async {
+      await tester.pumpWidget(
+        appWith(
+          Scaffold(
+            body: SingleChildScrollView(
+              child: QuestionView(
+                key: UniqueKey(),
+                question: q,
+                onContinue: () {},
+                random: Random(5),
+                shuffleChoices: shuffle,
+              ),
+            ),
+          ),
+        ),
+      );
+      await settle(tester);
+      return [
+        for (final e in find.byType(AnswerButton).evaluate())
+          tester
+              .widget<ArabicText>(
+                find.descendant(
+                  of: find.byWidget(e.widget),
+                  matching: find.byType(ArabicText),
+                ),
+              )
+              .text,
+      ];
+    }
+
+    expect(await shown(false), ['أ', 'ب', 'ت', 'ث']);
+    final moved = await shown(true);
+    expect(moved.toSet(), {'أ', 'ب', 'ت', 'ث'});
+    expect(moved.indexOf('ت'), isNot(2));
   });
 }

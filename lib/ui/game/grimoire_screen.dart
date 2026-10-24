@@ -25,7 +25,7 @@ class GrimoireScreen extends ConsumerWidget {
           child: ListView(
             padding: const EdgeInsets.all(12),
             children: [
-              const PixelWindow(
+              PixelWindow(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -68,9 +68,7 @@ class GrimoireScreen extends ConsumerWidget {
                                 ArabicText(
                                   l.letter,
                                   baseSize: 40,
-                                  style: const TextStyle(
-                                    color: GameColors.text,
-                                  ),
+                                  style: TextStyle(color: GameColors.text),
                                 ),
                                 Text(l.name, textAlign: TextAlign.center),
                               ],
@@ -133,7 +131,7 @@ class LetterSheet extends StatelessWidget {
                     ArabicText(
                       l,
                       baseSize: 72,
-                      style: const TextStyle(color: GameColors.text),
+                      style: TextStyle(color: GameColors.text),
                     ),
                     SpokenArabic(letter.nameAr, size: 30),
                     Text(letter.name, style: const TextStyle(fontSize: 20)),
@@ -149,11 +147,11 @@ class LetterSheet extends StatelessWidget {
                               ArabicText(
                                 glyph,
                                 baseSize: 40,
-                                style: const TextStyle(color: GameColors.text),
+                                style: TextStyle(color: GameColors.text),
                               ),
                               Text(
                                 name,
-                                style: const TextStyle(
+                                style: TextStyle(
                                   color: GameColors.muted,
                                   fontSize: 14,
                                 ),
@@ -180,7 +178,7 @@ class LetterSheet extends StatelessWidget {
                         Expanded(
                           child: Text(
                             letter.zone,
-                            style: const TextStyle(color: GameColors.accent),
+                            style: TextStyle(color: GameColors.accent),
                           ),
                         ),
                         const AiTag(),

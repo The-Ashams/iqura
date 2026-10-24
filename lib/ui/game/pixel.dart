@@ -10,15 +10,62 @@ import '../../core/providers.dart';
 import '../../engines/audio/audio_service.dart';
 import '../widgets/arabic_text.dart';
 
+/// Couleurs du jeu. Deux palettes : nuit (sombre) et parchemin (clair),
+/// suivant le réglage « Thème » (cahier v3 §12, clair/sombre). La palette
+/// active est choisie par [GameThemeScope].
 abstract final class GameColors {
-  static const window = Color(0xF0101422);
-  static const windowBorder = Color(0xFFF4F1E8);
-  static const text = Color(0xFFF4F1E8);
-  static const muted = Color(0xFFB9B4C8);
-  static const accent = Color(0xFFF2C45A);
-  static const good = Color(0xFF6FCF7A);
-  static const bad = Color(0xFFE0805A);
-  static const night = Color(0xFF14121F);
+  static bool _light = false;
+
+  /// Vrai quand la palette claire est active.
+  static bool get light => _light;
+
+  static Color get window =>
+      _light ? const Color(0xF5F6EFDF) : const Color(0xF0101422);
+  static Color get windowBorder =>
+      _light ? const Color(0xFF3A2E22) : const Color(0xFFF4F1E8);
+  static Color get text =>
+      _light ? const Color(0xFF231C14) : const Color(0xFFF4F1E8);
+  static Color get muted =>
+      _light ? const Color(0xFF65594C) : const Color(0xFFB9B4C8);
+  static Color get accent =>
+      _light ? const Color(0xFF8A5A00) : const Color(0xFFF2C45A);
+  static Color get good =>
+      _light ? const Color(0xFF2E7D3A) : const Color(0xFF6FCF7A);
+  static Color get bad =>
+      _light ? const Color(0xFFB0412E) : const Color(0xFFE0805A);
+  static Color get night =>
+      _light ? const Color(0xFFE6DCC6) : const Color(0xFF14121F);
+}
+
+/// Applique la palette du jeu selon la luminosité du thème, et reconstruit
+/// tous les écrans ouverts quand elle change (les écrans gardent leur état).
+class GameThemeScope extends StatefulWidget {
+  const GameThemeScope({super.key, required this.child});
+
+  final Widget child;
+
+  @override
+  State<GameThemeScope> createState() => _GameThemeScopeState();
+}
+
+class _GameThemeScopeState extends State<GameThemeScope> {
+  @override
+  Widget build(BuildContext context) {
+    final light = Theme.of(context).brightness == Brightness.light;
+    if (light != GameColors._light) {
+      GameColors._light = light;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        void rebuild(Element e) {
+          e.markNeedsBuild();
+          e.visitChildren(rebuild);
+        }
+
+        (context as Element).visitChildren(rebuild);
+      });
+    }
+    return widget.child;
+  }
 }
 
 /// Taille d'une scène en pixels d'origine.
@@ -112,7 +159,7 @@ class PixelWindow extends StatelessWidget {
     child: Padding(
       padding: padding,
       child: DefaultTextStyle.merge(
-        style: const TextStyle(color: GameColors.text, fontSize: 18),
+        style: TextStyle(color: GameColors.text, fontSize: 18),
         child: child,
       ),
     ),
@@ -186,7 +233,7 @@ class _PixelCommandState extends ConsumerState<PixelCommand> {
                       if (widget.detail != null)
                         Text(
                           widget.detail!,
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: GameColors.muted,
                             fontSize: 14,
                           ),
@@ -209,7 +256,7 @@ class MenuCursor extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) =>
-      const Icon(Icons.play_arrow, size: 18, color: GameColors.accent);
+      Icon(Icons.play_arrow, size: 18, color: GameColors.accent);
 }
 
 /// Mention « Rédigé par IA » dans le style du jeu.
@@ -219,25 +266,20 @@ class AiTag extends StatelessWidget {
   static const String label = 'Rédigé par IA';
 
   @override
-  Widget build(BuildContext context) => const Text(
-    label,
-    style: TextStyle(color: GameColors.muted, fontSize: 13),
-  );
+  Widget build(BuildContext context) =>
+      Text(label, style: TextStyle(color: GameColors.muted, fontSize: 13));
 }
 
 /// Texte arabe d'une leçon que l'on touche pour l'entendre. La mention
 /// « synthèse » accompagne toujours le son.
 class SpokenArabic extends ConsumerWidget {
-  const SpokenArabic(
-    this.text, {
-    super.key,
-    this.size = 34,
-    this.color = GameColors.text,
-  });
+  const SpokenArabic(this.text, {super.key, this.size = 34, this.color});
 
   final String text;
   final double size;
-  final Color color;
+
+  /// Couleur du texte ; par défaut celle du jeu ([GameColors.text]).
+  final Color? color;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -245,7 +287,7 @@ class SpokenArabic extends ConsumerWidget {
     final word = ArabicText(
       text,
       baseSize: size,
-      style: TextStyle(color: color),
+      style: TextStyle(color: color ?? GameColors.text),
     );
     if (file == null) return word;
     return Semantics(
@@ -257,7 +299,7 @@ class SpokenArabic extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             word,
-            const Row(
+            Row(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Icon(Icons.volume_up, size: 14, color: GameColors.muted),
@@ -304,7 +346,7 @@ class CombatSceneBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final maxHeight = MediaQuery.sizeOf(context).height * 0.36;
+    final maxHeight = MediaQuery.sizeOf(context).height * 0.3;
     return Center(
       child: ConstrainedBox(
         constraints: BoxConstraints(maxHeight: maxHeight),

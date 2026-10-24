@@ -211,7 +211,7 @@ class _BossViewState extends ConsumerState<BossView> {
         else ...[
           Text(
             'Question ${_index + 1} sur ${_order.length}',
-            style: const TextStyle(color: GameColors.muted, fontSize: 14),
+            style: TextStyle(color: GameColors.muted, fontSize: 14),
           ),
           const SizedBox(height: 4),
           QuestionView(
@@ -223,6 +223,8 @@ class _BossViewState extends ConsumerState<BossView> {
             onContinue: _next,
             continueLabel: _fight.over ? 'Voir le résultat' : 'Suite',
             random: _random,
+            // Nouvelle tentative : réponses déplacées.
+            shuffleChoices: _attempt > 1,
           ),
           if (_answered && _flash != null)
             Padding(
@@ -230,7 +232,7 @@ class _BossViewState extends ConsumerState<BossView> {
               child: Text(
                 _flash!,
                 textAlign: TextAlign.center,
-                style: const TextStyle(color: GameColors.accent),
+                style: TextStyle(color: GameColors.accent),
               ),
             ),
         ],
@@ -249,7 +251,7 @@ class _BossViewState extends ConsumerState<BossView> {
             won
                 ? '${widget.adversary} se dissipe !'
                 : '${widget.adversary} s\'échappe… Rien n\'est perdu.',
-            style: const TextStyle(fontSize: 22, color: GameColors.accent),
+            style: TextStyle(fontSize: 22, color: GameColors.accent),
           ),
           const SizedBox(height: 6),
           Text(
@@ -259,7 +261,7 @@ class _BossViewState extends ConsumerState<BossView> {
           ),
           if (_mistakes.isNotEmpty) ...[
             const SizedBox(height: 10),
-            const Text(
+            Text(
               'Tes erreurs, expliquées :',
               style: TextStyle(color: GameColors.accent),
             ),
@@ -277,7 +279,7 @@ class _BossViewState extends ConsumerState<BossView> {
             )
           else ...[
             if (failures >= 2)
-              const Padding(
+              Padding(
                 padding: EdgeInsets.only(bottom: 6),
                 child: Text(
                   'Deux essais sans réussite : rejouer la salle '
@@ -341,7 +343,7 @@ class HpWindow extends StatelessWidget {
         ),
         Text(
           'PV $hp / $max',
-          style: const TextStyle(color: GameColors.muted, fontSize: 14),
+          style: TextStyle(color: GameColors.muted, fontSize: 14),
         ),
       ],
     ),

@@ -85,7 +85,7 @@ class PlaceScreen extends ConsumerWidget {
                             speaker == null
                                 ? 'Le voyageur'
                                 : '${speaker.name}, ${speaker.role.toLowerCase()}',
-                            style: const TextStyle(
+                            style: TextStyle(
                               color: GameColors.accent,
                               fontSize: 20,
                             ),

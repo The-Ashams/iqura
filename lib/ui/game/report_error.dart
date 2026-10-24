@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../core/providers.dart';
 import '../../features/reports/error_report.dart';
+import 'pixel.dart';
 
 /// Bouton « Signaler une erreur » présent sur chaque fiche.
 class ReportErrorButton extends ConsumerWidget {
@@ -14,7 +15,7 @@ class ReportErrorButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) => TextButton.icon(
-    style: TextButton.styleFrom(foregroundColor: const Color(0xFFF2C45A)),
+    style: TextButton.styleFrom(foregroundColor: GameColors.accent),
     onPressed: () => showDialog<void>(
       context: context,
       builder: (_) => _ReportDialog(subject: subject),

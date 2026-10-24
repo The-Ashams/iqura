@@ -64,7 +64,8 @@ Tests locaux du 23/10/2026 : Flutter 99 tests OK, `flutter analyze` sans remarqu
 | Parole, écriture | Répéter : s'enregistrer, réécouter (paquet `record`), sur l'appareil seulement ; tracé guidé par points numérotés (`lessons/traces.json`) |
 | Modes et réglages | Apprentissage seul (liste de leçons, sans scènes ni combats) ; chronomètre ; bruitages |
 | Technique | Schéma utilisateur 3 (cartes, ressources, inventaire, jours d'activité) ; schéma de contenu 7 (objets, tracés) ; version de contenu avec empreinte ; APK signé avec une clé fixe (secrets `IQURA_KEYSTORE_B64`, `IQURA_KEYSTORE_PASSWORD`) |
-| Tests | 129 tests Flutter (dont les 5 leçons jouées de bout en bout, l'Expédition, l'économie, l'enchantement sur 20 000 tirages), tests Python du contenu |
+| Retours du 1er test (24/10) | Police de translittération corrigée (copie « DotGothic16 IQURA » sans accents séparés : ḥ, ḫ, ǧ lisibles) ; thème clair appliqué aux écrans du jeu ; réponses déplacées quand une question revient ; interface agrandie sur grand écran ; ordre « بَ : بَاب » corrigé dans les phrases françaises ; sons ثَا et تَاج en cours de refonte |
+| Tests | 132 tests Flutter (dont les 5 leçons jouées de bout en bout, l'Expédition, l'économie, l'enchantement sur 20 000 tirages), tests Python du contenu |
 
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
@@ -117,7 +118,7 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
    - fait : lecteur de leçons dans l'application (§1 ter), leçons 0 et 1 jouées de bout en bout par les tests ;
    - retours du 1er test de l'APK (23/10) : son de ثَبَتَ refait (version B, virgule finale), « margelle » remplacé, affichage PC centré et scène limitée en hauteur ; bruitages rétro créés (`tools/build_sfx/`), validés à l'écoute et branchés (menus, choix, juste/faux, coups, victoire, repli, sceau), désactivables dans les réglages ;
    - remplacé le 23/10/2026 par l'organisation par niveaux : voir §1 quater.
-5. Débutant 1 construit (§1 quater) : attendu de l'utilisateur, le test du niveau sur l'APK ou Windows.
+5. Débutant 1 construit (§1 quater), testé une première fois par l'utilisateur le 24/10/2026 ; retours intégrés (§1 quater), nouvelle version à publier.
 6. Ensuite : Débutant 2 (leçons 5 à 9, lieux 5 à 7), commencé pendant le test.
 
 ## 5. Problèmes connus

@@ -59,12 +59,10 @@ class _AppShellState extends ConsumerState<AppShell> {
             NavigationRail(
               backgroundColor: GameColors.window,
               indicatorColor: GameColors.accent,
-              unselectedIconTheme: const IconThemeData(color: GameColors.muted),
-              selectedIconTheme: const IconThemeData(color: GameColors.night),
-              unselectedLabelTextStyle: const TextStyle(
-                color: GameColors.muted,
-              ),
-              selectedLabelTextStyle: const TextStyle(color: GameColors.text),
+              unselectedIconTheme: IconThemeData(color: GameColors.muted),
+              selectedIconTheme: IconThemeData(color: GameColors.night),
+              unselectedLabelTextStyle: TextStyle(color: GameColors.muted),
+              selectedLabelTextStyle: TextStyle(color: GameColors.text),
               selectedIndex: _index,
               onDestinationSelected: select,
               labelType: NavigationRailLabelType.all,
@@ -88,7 +86,7 @@ class _AppShellState extends ConsumerState<AppShell> {
       bottomNavigationBar: NavigationBar(
         backgroundColor: GameColors.window,
         indicatorColor: GameColors.accent,
-        labelTextStyle: const WidgetStatePropertyAll(
+        labelTextStyle: WidgetStatePropertyAll(
           TextStyle(color: GameColors.text, fontSize: 13),
         ),
         selectedIndex: _index,

@@ -83,7 +83,7 @@ class CityScreen extends StatelessWidget {
                       detail: 'À reconstruire',
                       onPressed: null,
                     ),
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.all(8),
                     child: Text(
                       laterNotice,

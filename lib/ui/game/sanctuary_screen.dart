@@ -32,7 +32,7 @@ class SanctuaryScreen extends ConsumerWidget {
                 child: const SceneView(background: 'scene_sanctuaire'),
               ),
               const SizedBox(height: 12),
-              const PixelWindow(
+              PixelWindow(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -82,7 +82,7 @@ class SanctuaryScreen extends ConsumerWidget {
                     ),
                   ),
                 ),
-              const Text(
+              Text(
                 'Texte : Tanzil (copie vérifiée). Traduction : Muhammad '
                 'Hamidullah, version diffusée par Tanzil (édition non précisée).',
                 style: TextStyle(color: GameColors.muted, fontSize: 13),
