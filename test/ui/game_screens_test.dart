@@ -78,9 +78,9 @@ void main() {
   ) async {
     await start(tester);
     expect(find.text('Le Désert des Lettres'), findsOneWidget);
-    expect(find.text(WorldMapScreen.lockedDetail), findsNWidgets(7));
+    expect(find.text(WorldMapScreen.lockedDetail), findsNWidgets(4));
     // Un lieu à venir ne s'ouvre pas.
-    await tester.tap(find.text('5. Les Dunes chantantes'));
+    await tester.tap(find.text('8. Les Archives ensablées'));
     await tester.pumpAndSettle();
     expect(find.byType(PlaceScreen), findsNothing);
   });

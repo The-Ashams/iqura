@@ -11,7 +11,12 @@
     "langue_bout_gencive": "Bout de la langue contre la gencive, derrière les incisives supérieures",
     "langue_bout_dents": "Bout de la langue contre l'extrémité des incisives supérieures",
     "levres": "Les deux lèvres",
-    "langue_bout_incisives_inf": "Bout de la langue près des incisives inférieures ; l'air siffle entre les dents"
+    "langue_bout_incisives_inf": "Bout de la langue près des incisives inférieures ; l'air siffle entre les dents",
+    "langue_cotes": "Un côté de la langue (ou les deux) contre les molaires supérieures",
+    "langue_fond": "Le fond de la langue contre le voile du palais, tout au fond de la bouche",
+    "langue_fond_avant": "Le fond de la langue contre le palais, un peu plus en avant que pour ق",
+    "langue_bord_avant": "Le bord avant de la langue contre la gencive des incisives supérieures",
+    "levre_dents": "La lèvre inférieure contre l'extrémité des incisives supérieures"
   },
   "lettres": [
     {
@@ -117,6 +122,134 @@
       "liaison_gauche": false,
       "zone": "langue_bout_incisives_inf",
       "prononciation": "Comme le « z » de « zéro » : le bout de la langue près des incisives inférieures, l'air siffle et la voix vibre. Même forme que ر, avec un point au-dessus ; ne s'attache jamais à la lettre suivante."
+    },
+    {
+      "lettre": "س",
+      "nom": "sīn",
+      "nom_ar": "سِين",
+      "liaison_gauche": true,
+      "zone": "langue_bout_incisives_inf",
+      "prononciation": "Comme le « s » de « sac » : le bout de la langue près des incisives inférieures, l'air siffle. Trois petites dents, sans point."
+    },
+    {
+      "lettre": "ش",
+      "nom": "šīn",
+      "nom_ar": "شِين",
+      "liaison_gauche": true,
+      "zone": "langue_milieu",
+      "prononciation": "Comme le « ch » de « chat » : le milieu de la langue monte vers le palais et l'air se répand. La forme de س, avec trois points au-dessus."
+    },
+    {
+      "lettre": "ص",
+      "nom": "ṣād",
+      "nom_ar": "صَاد",
+      "liaison_gauche": true,
+      "zone": "langue_bout_incisives_inf",
+      "prononciation": "Un « s » épais : la langue est placée comme pour س, mais l'arrière de la langue se relève : c'est une lettre « emphatique ». Le son devient plus sombre : le « a » qui suit devient plus grave, sans aller jusqu'au « o ». Sans point."
+    },
+    {
+      "lettre": "ض",
+      "nom": "ḍād",
+      "nom_ar": "ضَاد",
+      "liaison_gauche": true,
+      "zone": "langue_cotes",
+      "prononciation": "Un « d » épais : un côté de la langue s'appuie contre les molaires supérieures, et l'arrière de la langue se relève : c'est une lettre « emphatique ». Le son devient plus sombre : le « a » qui suit devient plus grave, sans aller jusqu'au « o ». La forme de ص, avec un point au-dessus."
+    },
+    {
+      "lettre": "ط",
+      "nom": "ṭāʾ",
+      "nom_ar": "طَاء",
+      "liaison_gauche": true,
+      "zone": "langue_bout_racine",
+      "prononciation": "Un « t » épais : la langue est placée comme pour ت, mais l'arrière de la langue se relève : c'est une lettre « emphatique ». Le son devient plus sombre : le « a » qui suit devient plus grave, sans aller jusqu'au « o ». Une boucle et une barre droite, sans point."
+    },
+    {
+      "lettre": "ظ",
+      "nom": "ẓāʾ",
+      "nom_ar": "ظَاء",
+      "liaison_gauche": true,
+      "zone": "langue_bout_dents",
+      "prononciation": "Un « th » de « this » épais : la langue est placée comme pour ذ, mais l'arrière de la langue se relève : c'est une lettre « emphatique ». Le son devient plus sombre : le « a » qui suit devient plus grave, sans aller jusqu'au « o ». La forme de ط, avec un point au-dessus."
+    },
+    {
+      "lettre": "ع",
+      "nom": "ʿayn",
+      "nom_ar": "عَيْن",
+      "liaison_gauche": true,
+      "zone": "gorge_milieu",
+      "prononciation": "Un son serré au milieu de la gorge, proche de ح, mais la voix vibre. Le français n'a pas ce son : écoute-le souvent. Sans point."
+    },
+    {
+      "lettre": "غ",
+      "nom": "ġayn",
+      "nom_ar": "غَيْن",
+      "liaison_gauche": true,
+      "zone": "gorge_haut",
+      "prononciation": "Comme le « r » de la gorge du français de « Paris », raclé en haut de la gorge : c'est le pendant sonore de خ. La forme de ع, avec un point au-dessus."
+    },
+    {
+      "lettre": "ف",
+      "nom": "fāʾ",
+      "nom_ar": "فَاء",
+      "liaison_gauche": true,
+      "zone": "levre_dents",
+      "prononciation": "Comme le « f » français : la lèvre inférieure contre l'extrémité des incisives supérieures. Un point au-dessus."
+    },
+    {
+      "lettre": "ق",
+      "nom": "qāf",
+      "nom_ar": "قَاف",
+      "liaison_gauche": true,
+      "zone": "langue_fond",
+      "prononciation": "Un « k » très profond : le fond de la langue touche le voile du palais, tout au fond de la bouche. Ce n'est pas le « k » de ك. Deux points au-dessus."
+    },
+    {
+      "lettre": "ك",
+      "nom": "kāf",
+      "nom_ar": "كَاف",
+      "liaison_gauche": true,
+      "zone": "langue_fond_avant",
+      "prononciation": "Comme le « k » français, un peu plus en avant que ق. Sans point ; un petit signe à l'intérieur de la lettre isolée."
+    },
+    {
+      "lettre": "ل",
+      "nom": "lām",
+      "nom_ar": "لَام",
+      "liaison_gauche": true,
+      "zone": "langue_bord_avant",
+      "prononciation": "Comme le « l » français : le bord avant de la langue contre la gencive des incisives supérieures. Une haute barre qui descend en courbe, sans point."
+    },
+    {
+      "lettre": "م",
+      "nom": "mīm",
+      "nom_ar": "مِيم",
+      "liaison_gauche": true,
+      "zone": "levres",
+      "prononciation": "Comme le « m » français : les deux lèvres se ferment, et le son passe par le nez. Une petite boucle, sans point."
+    },
+    {
+      "lettre": "ه",
+      "nom": "hāʾ",
+      "nom_ar": "هَاء",
+      "liaison_gauche": true,
+      "zone": "gorge_fond",
+      "prononciation": "Un « h » soufflé et léger, venu du fond de la gorge, comme dans l'anglais « house ». Ce n'est pas ح, qui est serré. Sans point."
+    },
+    {
+      "lettre": "و",
+      "nom": "wāw",
+      "nom_ar": "وَاو",
+      "liaison_gauche": false,
+      "zone": "levres",
+      "prononciation": "Consonne : comme le « w » de « watt », les lèvres s'arrondissent. Sans signe, après une ḍamma, elle allonge le son « u » : بُو se lit « bū ». Ne s'attache jamais à la lettre suivante."
+    },
+    {
+      "lettre": "ء",
+      "nom": "hamza",
+      "nom_ar": "هَمْزَة",
+      "liaison_gauche": false,
+      "zone": "gorge_fond",
+      "prononciation": "Un petit arrêt de la voix au fond de la gorge, comme entre les deux « a » de « ah ! ah ! ». Elle s'écrit seule (ء) ou posée sur un support : أ, إ, ؤ, ئ."
     }
   ]
 }

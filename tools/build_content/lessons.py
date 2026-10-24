@@ -43,6 +43,18 @@ SIGNS = {
     "dammatan": "ٌ",
 }
 
+# Formes d'écriture enseignées par une règle, sans fiche de lettre : supports
+# de la hamza, madda, fins de mots (cahier v3 §5.1, leçons 9 et 10).
+FORMS = {
+    "أ": "hamza sur alif",
+    "إ": "hamza sous alif",
+    "ؤ": "hamza sur wāw",
+    "ئ": "hamza sur yāʾ sans points",
+    "آ": "alif madda",
+    "ة": "tāʾ marbūṭa",
+    "ى": "alif maqṣūra",
+}
+
 SECTION_TYPES = {
     "texte", "regle", "encadre", "lettres", "syllabes", "exemples",
     "decomposition", "coran",
@@ -133,7 +145,10 @@ def validate(data: LessonData, con: sqlite3.Connection) -> None:
             for sign in intro["signes"]:
                 if sign not in SIGNS:
                     raise LessonError(f"{where} : signe inconnu {sign}")
-            known_letters |= set(intro["lettres"])
+            for form in intro.get("formes", []):
+                if form not in FORMS:
+                    raise LessonError(f"{where} : forme inconnue {form}")
+            known_letters |= set(intro["lettres"]) | set(intro.get("formes", []))
             known_signs |= {SIGNS[s] for s in intro["signes"]}
 
             def check_text(text: str, what: str) -> None:

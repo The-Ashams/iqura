@@ -90,7 +90,11 @@ class LessonQuestion {
     return LessonQuestion(
       kind: QuestionKind.parse(j['type'] as String),
       prompt: frenchWithArabic(j['consigne'] as String),
-      choices: choices.cast<String>(),
+      // Réponses en français : l'arabe cité garde l'ordre de la phrase.
+      choices: [
+        for (final c in choices.cast<String>())
+          choiceKind == ChoiceKind.text ? frenchWithArabic(c) : c,
+      ],
       choiceKind: choiceKind,
       answer: j['reponse'] as int?,
       explanation: _fr(j['explication']),

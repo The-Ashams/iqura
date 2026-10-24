@@ -239,7 +239,8 @@ class BuildTest(unittest.TestCase):
                          [("Le Désert des Lettres", "L'Oubli")])
         self.assertEqual(self.q("SELECT COUNT(*) FROM place"), [(12,)])
         j1a = {r[0] for r in self.q("SELECT id FROM place WHERE in_j1a = 1")}
-        self.assertEqual(j1a, {"puits", "porte", "marche", "caravanserail", "faille"})
+        self.assertEqual(j1a, {"puits", "porte", "marche", "caravanserail", "dunes", "atelier",
+                               "observatoire", "faille"})
         self.assertEqual(self.q("SELECT COUNT(*) FROM place WHERE in_j1a = 1 AND scene_image IS NULL"), [(0,)])
         self.assertEqual(self.q("SELECT name FROM character WHERE id = 'nura'"), [("Nūra",)])
 

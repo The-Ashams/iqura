@@ -1,0 +1,555 @@
+{
+  "id": "dechiffrer-09",
+  "etape": 1,
+  "ordre": 9,
+  "format": 2,
+  "titre": "Le puits des étoiles",
+  "objectif": "Reconnaître la hamza ء et ses supports أ إ ؤ ئ, lire l'alif madda آ ; lire سَمَاء, أَرْض, بِئْر, سُؤَال, آبَار.",
+  "statut": "ia_non_verifie",
+  "lieu": "observatoire",
+  "maitre": "suhayl",
+  "prerequis": [
+    "dechiffrer-08"
+  ],
+  "introduit": {
+    "lettres": [
+      "ء"
+    ],
+    "signes": [],
+    "formes": [
+      "أ",
+      "إ",
+      "ؤ",
+      "ئ",
+      "آ"
+    ]
+  },
+  "apercu": [
+    "ـئـ",
+    "ـؤ"
+  ],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "أَ",
+        "translit": "a"
+      },
+      {
+        "ar": "إِ",
+        "translit": "i"
+      },
+      {
+        "ar": "أُ",
+        "translit": "u"
+      },
+      {
+        "ar": "سَأَ",
+        "translit": "saʾa"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "سَمَاء",
+        "translit": "samāʾ",
+        "fr": "ciel"
+      },
+      {
+        "ar": "أَرْض",
+        "translit": "arḍ",
+        "fr": "terre"
+      },
+      {
+        "ar": "بِئْر",
+        "translit": "biʾr",
+        "fr": "puits"
+      },
+      {
+        "ar": "سُؤَال",
+        "translit": "suʾāl",
+        "fr": "question"
+      },
+      {
+        "ar": "آبَار",
+        "translit": "ābār",
+        "fr": "des puits"
+      }
+    ]
+  },
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "suhayl",
+          "texte": "Dernière énigme de l'observatoire : sur ma carte, un mot relie la terre et le ciel."
+        },
+        {
+          "qui": "suhayl",
+          "texte": "Il contient un petit signe que tu n'as jamais lu, un arrêt de la voix. Cherchons-le ensemble."
+        }
+      ],
+      "objectif": "Lire le mot qui relie la terre et le ciel."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بُو",
+          "choix_ar": [
+            "بَا",
+            "بُو",
+            "بِي"
+          ],
+          "reponse": 1,
+          "explication": "C'était « bū » (leçon 8)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "يَوْم",
+          "choix_audio": [
+            "نُور",
+            "يَوْم",
+            "نَجْم"
+          ],
+          "reponse": 1,
+          "explication": "يَوْم se lit « yawm » (leçon 8)."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "هَ",
+          "choix_ar": [
+            "حَ",
+            "هَ",
+            "عَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ha », léger (leçon 8)."
+        }
+      ]
+    },
+    {
+      "type": "decouverte",
+      "support": [
+        "سَمَاء"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "À la fin de ce mot, il y a un petit signe ء. À ton avis, que fait-il ?",
+        "choix": [
+          "La voix s'arrête net : « samāʾ »",
+          "Il allonge encore le « a »",
+          "C'est une décoration"
+        ],
+        "reponse": 0,
+        "explication": "ء est la hamza : un petit arrêt de la voix au fond de la gorge. سَمَاء, c'est le ciel ; la translittération note la hamza ʾ."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ء",
+      "question": {
+        "type": "lire",
+        "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+        "ar": "سَمَاء",
+        "choix_audio": [
+          "سَمَاء",
+          "شَمْس",
+          "سُؤَال"
+        ],
+        "reponse": 0,
+        "explication": "سَمَاء se lit « samāʾ » : la voix s'arrête net à la fin."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les supports de la hamza",
+      "texte": "La hamza reste seule (ء) ou se pose sur un support : l'alif (أ, إ), و (ؤ) ou ي sans points (ئ). Le support ne se prononce pas : seule la hamza compte.",
+      "exemples": [
+        "أَرْض",
+        "بِئْر",
+        "سُؤَال"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans بِئْر, sur quoi est posée la hamza ?",
+        "choix": [
+          "Sur ي sans points",
+          "Sur l'alif",
+          "Sur و"
+        ],
+        "reponse": 0,
+        "explication": "ئ : la hamza sur ي sans points. On lit « biʾr » ; dans la translittération, la hamza s'écrit ʾ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "En haut ou en bas de l'alif",
+      "texte": "En début de mot, la hamza se pose sur l'alif avec la fatḥa ou la ḍamma (أَ, أُ), et sous l'alif avec la kasra (إِ).",
+      "exemples": [
+        "أَ",
+        "إِ",
+        "أُ"
+      ],
+      "question": {
+        "type": "ecouter",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "إِ",
+        "choix_ar": [
+          "أَ",
+          "إِ",
+          "أُ"
+        ],
+        "reponse": 1,
+        "explication": "C'était إِ : la hamza sous l'alif, avec la kasra."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'alif madda",
+      "texte": "آ, c'est l'alif avec une vague au-dessus, la madda. On lit une hamza suivie d'un « a » long.",
+      "exemples": [
+        "آبَار"
+      ],
+      "question": {
+        "type": "lire",
+        "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+        "ar": "آبَار",
+        "choix_audio": [
+          "آبَار",
+          "بِئْر",
+          "أَرْض"
+        ],
+        "reponse": 0,
+        "explication": "آبَار se lit « ābār » : la madda, c'est une hamza puis un « a » long."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "reconnaitre",
+          "consigne": "Comment s'appelle ce signe ?",
+          "ar": "ء",
+          "choix": [
+            "hamza",
+            "ʿayn",
+            "kāf"
+          ],
+          "reponse": 0,
+          "explication": "ء est la hamza, l'arrêt de la voix."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "أُ",
+          "choix_ar": [
+            "أَ",
+            "إِ",
+            "أُ"
+          ],
+          "reponse": 2,
+          "explication": "C'était أُ : la hamza avec la ḍamma."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "سَأَ",
+          "choix_ar": [
+            "سَا",
+            "سَأَ",
+            "صَا"
+          ],
+          "reponse": 1,
+          "explication": "C'était « saʾa » : la voix s'arrête entre les deux « a »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans سُؤَال, sur quoi est posée la hamza ?",
+          "choix": [
+            "Sur و",
+            "Sur l'alif",
+            "Sur ي sans points"
+          ],
+          "reponse": 0,
+          "explication": "ؤ : la hamza sur و. On lit « suʾāl », la question."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "أَرْض",
+          "choix_audio": [
+            "أَرْض",
+            "إِبِل",
+            "بِئْر"
+          ],
+          "reponse": 0,
+          "explication": "أَرْض se lit « arḍ », la terre ; en début de mot, la translittération ne note pas la hamza."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "إِبِل",
+          "choix_audio": [
+            "بِئْر",
+            "آبَار",
+            "إِبِل"
+          ],
+          "reponse": 2,
+          "explication": "إِبِل se lit « ibil », les chameaux : la hamza sous l'alif porte la kasra."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "سُؤَال",
+          "choix_audio": [
+            "سَمَاء",
+            "سُؤَال",
+            "صَبْر"
+          ],
+          "reponse": 1,
+          "explication": "سُؤَال se lit « suʾāl »."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "بِئْر",
+          "tuiles": [
+            "بِ",
+            "ئْ",
+            "ر",
+            "أَ"
+          ],
+          "solution": [
+            "بِ",
+            "ئْ",
+            "ر"
+          ],
+          "explication": "بِئْر : بِ, la hamza sur ي sans points avec un sukūn, puis ر."
+        },
+        {
+          "type": "tracer",
+          "consigne": "Trace la hamza en suivant les points.",
+          "lettre": "ء"
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "سَمَاء"
+        }
+      ]
+    },
+    {
+      "type": "coran",
+      "texte": "La hamza et ses supports se retrouvent dans le Coran : compte-les dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
+      "extraits": [
+        {
+          "verset": "107:1",
+          "mots": [
+            "107:1:1"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ء, seule, vois-tu dans ce mot ?",
+            "mot": "107:1:1",
+            "lettre": "ء"
+          }
+        },
+        {
+          "verset": "110:2",
+          "mots": [
+            "110:2:1"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de أ vois-tu dans ce mot ?",
+            "mot": "110:2:1",
+            "lettre": "أ"
+          }
+        },
+        {
+          "verset": "104:8",
+          "mots": [
+            "104:8:3"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ؤ vois-tu dans ce mot ?",
+            "mot": "104:8:3",
+            "lettre": "ؤ"
+          }
+        },
+        {
+          "verset": "99:4",
+          "mots": [
+            "99:4:1"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ئ vois-tu dans ce mot ?",
+            "mot": "99:4:1",
+            "lettre": "ئ"
+          }
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "إِ",
+          "choix_ar": [
+            "أَ",
+            "إِ",
+            "أُ"
+          ],
+          "reponse": 1,
+          "explication": "C'était إِ, avec la kasra."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "سَأَ",
+          "choix_ar": [
+            "سَأَ",
+            "سَا",
+            "سَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « saʾa »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "سَمَاء",
+          "choix_audio": [
+            "شَمْس",
+            "سَمَاء",
+            "سُؤَال"
+          ],
+          "reponse": 1,
+          "explication": "سَمَاء se lit « samāʾ »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "بِئْر",
+          "choix_audio": [
+            "بِئْر",
+            "آبَار",
+            "أَرْض"
+          ],
+          "reponse": 0,
+          "explication": "بِئْر se lit « biʾr »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "آبَار",
+          "choix_audio": [
+            "إِبِل",
+            "بِئْر",
+            "آبَار"
+          ],
+          "reponse": 2,
+          "explication": "آبَار se lit « ābār » : la madda, c'est une hamza puis un « a » long."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "أَرْض",
+          "choix_audio": [
+            "أَرْض",
+            "بَيْض",
+            "دَرْس"
+          ],
+          "reponse": 0,
+          "explication": "أَرْض se lit « arḍ », la terre ; en début de mot, la translittération ne note pas la hamza."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle porte la hamza sous l'alif ?",
+          "choix_ar": [
+            "أ",
+            "إ",
+            "آ"
+          ],
+          "reponse": 1,
+          "explication": "إ : la hamza sous l'alif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le signe ء se prononce…",
+          "choix": [
+            "comme un arrêt de la voix",
+            "comme un « a » long",
+            "comme un « h »"
+          ],
+          "reponse": 0,
+          "explication": "La hamza est un arrêt de la voix au fond de la gorge."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le support de la hamza se prononce-t-il ?",
+          "choix": [
+            "Non, seule la hamza compte",
+            "Oui, toujours",
+            "Seulement à la fin"
+          ],
+          "reponse": 0,
+          "explication": "Le support ne se prononce pas."
+        },
+        {
+          "type": "paires",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "مُو",
+          "choix_ar": [
+            "مُو",
+            "مَ",
+            "بُو"
+          ],
+          "reponse": 0,
+          "explication": "C'était « mū » (leçon 8)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "قَمَر",
+          "choix_audio": [
+            "قَمَر",
+            "قَلْب",
+            "شَهْر"
+          ],
+          "reponse": 0,
+          "explication": "قَمَر se lit « qamar » (leçon 8)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "كَاتِب",
+          "choix_audio": [
+            "كِتَاب",
+            "كَاتِب",
+            "كَتَبَ"
+          ],
+          "reponse": 1,
+          "explication": "كَاتِب se lit « kātib » (leçon 7)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais lire la hamza seule ou sur son support, et l'alif madda : سَمَاء, أَرْض, بِئْر, سُؤَال, آبَار.",
+      "suite": "Suhayl relit sa carte du ciel en entier, et le neuvième sceau de la porte se brise."
+    }
+  ]
+}

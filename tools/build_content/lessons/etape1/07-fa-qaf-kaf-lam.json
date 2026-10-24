@@ -1,0 +1,591 @@
+{
+  "id": "dechiffrer-07",
+  "etape": 1,
+  "ordre": 7,
+  "format": 2,
+  "titre": "Les livres des copistes",
+  "objectif": "Reconnaître ف ق ك ل, distinguer q et k, lire لَا ; voir que كَتَبَ, كِتَاب et كَاتِب ont les mêmes trois lettres ; lire قَلْب et كَلْب.",
+  "statut": "ia_non_verifie",
+  "lieu": "atelier",
+  "maitre": "samir",
+  "prerequis": [
+    "dechiffrer-06"
+  ],
+  "introduit": {
+    "lettres": [
+      "ف",
+      "ق",
+      "ك",
+      "ل"
+    ],
+    "signes": []
+  },
+  "apercu": [
+    "فـ",
+    "قـ",
+    "كـ",
+    "لـ",
+    "ـكـ",
+    "ـلـ"
+  ],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "فَ",
+        "translit": "fa"
+      },
+      {
+        "ar": "قَ",
+        "translit": "qa"
+      },
+      {
+        "ar": "كَ",
+        "translit": "ka"
+      },
+      {
+        "ar": "لِ",
+        "translit": "li"
+      },
+      {
+        "ar": "قُ",
+        "translit": "qu"
+      },
+      {
+        "ar": "لَا",
+        "translit": "lā"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "كَتَبَ",
+        "translit": "kataba",
+        "fr": "il a écrit"
+      },
+      {
+        "ar": "كِتَاب",
+        "translit": "kitāb",
+        "fr": "livre"
+      },
+      {
+        "ar": "كَاتِب",
+        "translit": "kātib",
+        "fr": "scribe, celui qui écrit"
+      },
+      {
+        "ar": "قَلْب",
+        "translit": "qalb",
+        "fr": "cœur"
+      },
+      {
+        "ar": "كَلْب",
+        "translit": "kalb",
+        "fr": "chien"
+      }
+    ]
+  },
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir",
+          "texte": "Bienvenue à l'atelier des copistes ! C'est ici que j'apprends à recopier les livres de la bibliothèque."
+        },
+        {
+          "qui": "samir",
+          "texte": "La brume a effacé les étiquettes des étagères. Aide-moi à les relire, et je te montrerai un secret des mots."
+        }
+      ],
+      "objectif": "Relire les étiquettes des étagères."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "طَ",
+          "choix_ar": [
+            "تَ",
+            "طَ",
+            "دَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ṭa », le « t » épais (leçon 6)."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "عَ",
+          "choix_ar": [
+            "عَ",
+            "حَ",
+            "غَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ʿa » (leçon 6)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "غَار",
+          "choix_audio": [
+            "عَيْن",
+            "غَار",
+            "طَيْر"
+          ],
+          "reponse": 1,
+          "explication": "غَار se lit « ġār » (leçon 6)."
+        }
+      ]
+    },
+    {
+      "type": "decouverte",
+      "support": [
+        "كَتَبَ",
+        "كِتَاب",
+        "كَاتِب"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Regarde ces trois mots. Quelles lettres ont-ils en commun, dans le même ordre ?",
+        "choix": [
+          "ك, ت et ب",
+          "ا, ت et ب",
+          "ك, ا et ت"
+        ],
+        "reponse": 0,
+        "explication": "Les trois mots portent ك, ت et ب, dans cet ordre. Ces trois mots parlent tous d'écriture."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ف",
+      "question": {
+        "type": "points",
+        "consigne": "Laquelle est ف ?",
+        "choix_ar": [
+          "ق",
+          "ف",
+          "غ"
+        ],
+        "reponse": 1,
+        "explication": "ف : une petite boucle avec un point au-dessus."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ق",
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "قَ",
+        "choix_ar": [
+          "كَ",
+          "قَ",
+          "غَ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « qa », un « k » tout au fond de la bouche."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ك",
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "كَ",
+        "choix_ar": [
+          "قَ",
+          "كَ",
+          "خَ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « ka », le « k » français, plus en avant que ق."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ل",
+      "question": {
+        "type": "ecouter",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "لِ",
+        "choix_ar": [
+          "لِ",
+          "نِ",
+          "رِ"
+        ],
+        "reponse": 0,
+        "explication": "C'était « li » : ل et la kasra."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "لَا, deux lettres en une",
+      "texte": "Quand ل est suivi de l'alif, les deux lettres se croisent et s'écrivent لا. On lit « lā ».",
+      "exemples": [
+        "لَا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelles lettres forment لا ?",
+        "choix": [
+          "ل et l'alif",
+          "ا et ن",
+          "ك et l'alif"
+        ],
+        "reponse": 0,
+        "explication": "لا, c'est ل suivi de l'alif, écrits en une seule forme."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les familles de mots",
+      "texte": "Beaucoup de mots arabes forment des familles : ils partagent trois lettres dans le même ordre, la racine. Mais la racine seule ne suffit pas pour deviner le sens d'un mot.",
+      "exemples": [
+        "كِتَاب",
+        "كَاتِب"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que peut-on dire de كِتَاب et كَاتِب ?",
+        "choix": [
+          "Ils partagent les lettres ك, ت, ب",
+          "Ce sont deux fois le même mot",
+          "Ils n'ont aucune lettre en commun"
+        ],
+        "reponse": 0,
+        "explication": "Ce sont deux mots différents, « livre » et « scribe », de la même famille ك ت ب."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "reconnaitre",
+          "consigne": "Comment s'appelle cette lettre ?",
+          "ar": "ق",
+          "choix": [
+            "fāʾ",
+            "qāf",
+            "kāf"
+          ],
+          "reponse": 1,
+          "explication": "Une boucle, deux points et une courbe profonde : qāf."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "قُ",
+          "choix_ar": [
+            "قُ",
+            "كَ",
+            "غُ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « qu » : ق et la ḍamma."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "فَ",
+          "choix_ar": [
+            "فَ",
+            "قَ",
+            "ثَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « fa »."
+        },
+        {
+          "type": "formes",
+          "consigne": "De quelle lettre est cette forme ?",
+          "ar": "كـ",
+          "choix_ar": [
+            "ل",
+            "ك",
+            "ق"
+          ],
+          "reponse": 1,
+          "explication": "Une barre penchée et un trait : ك, au début d'un mot."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "قَلْب",
+          "choix_audio": [
+            "كَلْب",
+            "قَلْب",
+            "كِتَاب"
+          ],
+          "reponse": 1,
+          "explication": "قَلْب se lit « qalb », avec le « k » profond."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "كَلْب",
+          "choix_audio": [
+            "قَلْب",
+            "كَاتِب",
+            "كَلْب"
+          ],
+          "reponse": 2,
+          "explication": "كَلْب se lit « kalb », avec le « k » français."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "كَاتِب",
+          "choix_audio": [
+            "كِتَاب",
+            "كَتَبَ",
+            "كَاتِب"
+          ],
+          "reponse": 2,
+          "explication": "كَاتِب se lit « kātib » : kā long, puis ti, puis ب."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "كِتَاب",
+          "tuiles": [
+            "كِ",
+            "تَ",
+            "ا",
+            "ب",
+            "قِ"
+          ],
+          "solution": [
+            "كِ",
+            "تَ",
+            "ا",
+            "ب"
+          ],
+          "explication": "كِتَاب : كِ, تَ, l'alif, puis ب sans voyelle."
+        },
+        {
+          "type": "tracer",
+          "consigne": "Trace la lettre ق en suivant les points.",
+          "lettre": "ق"
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "قَلْب"
+        }
+      ]
+    },
+    {
+      "type": "coran",
+      "texte": "ف, ق, ك et ل se retrouvent dans le Coran : compte-les dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
+      "extraits": [
+        {
+          "verset": "110:1",
+          "mots": [
+            "110:1:5"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ف vois-tu dans ce mot ?",
+            "mot": "110:1:5",
+            "lettre": "ف"
+          }
+        },
+        {
+          "verset": "113:3",
+          "mots": [
+            "113:3:5"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ق vois-tu dans ce mot ?",
+            "mot": "113:3:5",
+            "lettre": "ق"
+          }
+        },
+        {
+          "verset": "111:2",
+          "mots": [
+            "111:2:6"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ك vois-tu dans ce mot ?",
+            "mot": "111:2:6",
+            "lettre": "ك"
+          }
+        },
+        {
+          "verset": "113:1",
+          "mots": [
+            "113:1:4"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ل vois-tu dans ce mot ?",
+            "mot": "113:1:4",
+            "lettre": "ل"
+          }
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "قَ",
+          "choix_ar": [
+            "كَ",
+            "قَ",
+            "غَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « qa », le « k » profond."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "كَ",
+          "choix_ar": [
+            "كَ",
+            "قَ",
+            "خَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ka »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "لَا",
+          "choix_ar": [
+            "لِ",
+            "نَ",
+            "لَا"
+          ],
+          "reponse": 2,
+          "explication": "C'était « lā », écrit لا."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "قَلْب",
+          "choix_audio": [
+            "قَلْب",
+            "كَلْب",
+            "صَبْر"
+          ],
+          "reponse": 0,
+          "explication": "قَلْب se lit « qalb »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "كِتَاب",
+          "choix_audio": [
+            "كَاتِب",
+            "كِتَاب",
+            "كَتَبَ"
+          ],
+          "reponse": 1,
+          "explication": "كِتَاب se lit « kitāb »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "كَتَبَ",
+          "choix_audio": [
+            "كَتَبَ",
+            "كَلْب",
+            "كِتَاب"
+          ],
+          "reponse": 0,
+          "explication": "كَتَبَ se lit « kataba » : ici la fatḥa finale est écrite, on la lit."
+        },
+        {
+          "type": "ecouter_lettre",
+          "consigne": "Écoute et choisis la lettre.",
+          "choix_ar": [
+            "ف",
+            "ق",
+            "ك"
+          ],
+          "reponse": 0,
+          "explication": "C'était ف (fāʾ)."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle a deux points au-dessus ?",
+          "choix_ar": [
+            "ف",
+            "ق",
+            "ل"
+          ],
+          "reponse": 1,
+          "explication": "ق a deux points ; ف en a un ; ل n'en a pas."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelles lettres partagent كَتَبَ, كِتَاب et كَاتِب ?",
+          "choix": [
+            "ك, ت, ب",
+            "ك, ل, ب",
+            "ق, ت, ب"
+          ],
+          "reponse": 0,
+          "explication": "La famille ك ت ب."
+        },
+        {
+          "type": "paires",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "غُ",
+          "choix_ar": [
+            "عِ",
+            "غُ",
+            "خَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ġu » (leçon 6)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "ظَبْي",
+          "choix_audio": [
+            "طَيْر",
+            "ظَبْي",
+            "بَيْض"
+          ],
+          "reponse": 1,
+          "explication": "ظَبْي se lit « ẓaby » (leçon 6)."
+        },
+        {
+          "type": "ecouter",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "شِ",
+          "choix_ar": [
+            "سَ",
+            "شِ",
+            "صَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ši » (leçon 5)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais lire ف ق ك ل et لا, distinguer qāf et kāf, et repérer une famille de mots : كَتَبَ, كِتَاب, كَاتِب.",
+      "suite": "Samīr range les livres sur leurs étagères, et le septième sceau de la porte se brise."
+    }
+  ]
+}

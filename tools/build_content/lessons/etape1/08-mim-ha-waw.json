@@ -1,0 +1,562 @@
+{
+  "id": "dechiffrer-08",
+  "etape": 1,
+  "ordre": 8,
+  "format": 2,
+  "titre": "La carte du ciel",
+  "objectif": "Reconnaître م ه و, lire le ū long, savoir quand و et ي sont des consonnes ou allongent une voyelle ; lire قَمَر, نَجْم, شَهْر, نُور, يَوْم.",
+  "statut": "ia_non_verifie",
+  "lieu": "observatoire",
+  "maitre": "suhayl",
+  "prerequis": [
+    "dechiffrer-07"
+  ],
+  "introduit": {
+    "lettres": [
+      "م",
+      "ه",
+      "و"
+    ],
+    "signes": []
+  },
+  "apercu": [
+    "مـ",
+    "ـمـ",
+    "هـ",
+    "ـهـ",
+    "ـه"
+  ],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "مَ",
+        "translit": "ma"
+      },
+      {
+        "ar": "هَ",
+        "translit": "ha"
+      },
+      {
+        "ar": "وَ",
+        "translit": "wa"
+      },
+      {
+        "ar": "بُو",
+        "translit": "bū"
+      },
+      {
+        "ar": "بِي",
+        "translit": "bī"
+      },
+      {
+        "ar": "مُو",
+        "translit": "mū"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "قَمَر",
+        "translit": "qamar",
+        "fr": "lune"
+      },
+      {
+        "ar": "نَجْم",
+        "translit": "naǧm",
+        "fr": "étoile"
+      },
+      {
+        "ar": "شَهْر",
+        "translit": "šahr",
+        "fr": "mois"
+      },
+      {
+        "ar": "نُور",
+        "translit": "nūr",
+        "fr": "lumière"
+      },
+      {
+        "ar": "يَوْم",
+        "translit": "yawm",
+        "fr": "jour"
+      }
+    ]
+  },
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "suhayl",
+          "texte": "Bonsoir, voyageur. Je suis Suhayl, l'astronome : mon nom est celui d'une étoile du sud."
+        },
+        {
+          "qui": "suhayl",
+          "texte": "La brume a brouillé ma carte du ciel. Aide-moi à relire les noms écrits à côté des astres."
+        }
+      ],
+      "objectif": "Relire la carte du ciel."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "قَ",
+          "choix_ar": [
+            "كَ",
+            "قَ",
+            "غَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « qa », le « k » profond (leçon 7)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "كِتَاب",
+          "choix_audio": [
+            "كَاتِب",
+            "كِتَاب",
+            "كَلْب"
+          ],
+          "reponse": 1,
+          "explication": "كِتَاب se lit « kitāb » (leçon 7)."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "لَا",
+          "choix_ar": [
+            "لِ",
+            "لَا",
+            "فَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « lā », écrit لا (leçon 7)."
+        }
+      ]
+    },
+    {
+      "type": "decouverte",
+      "support": [
+        "نُور"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Après نُ vient و, sans aucun signe. À ton avis, que fait-il ?",
+        "choix": [
+          "Il allonge le « u » : on lit « nūr »",
+          "On dit « nu-war »",
+          "Il ne se prononce pas du tout"
+        ],
+        "reponse": 0,
+        "explication": "Comme l'alif après une fatḥa, و sans signe après une ḍamma allonge le son : « nūr », la lumière."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "م",
+      "question": {
+        "type": "ecouter",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "مَ",
+        "choix_ar": [
+          "مَ",
+          "نَ",
+          "بَ"
+        ],
+        "reponse": 0,
+        "explication": "C'était « ma »."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ه",
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "هَ",
+        "choix_ar": [
+          "حَ",
+          "هَ",
+          "خَ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « ha », un souffle léger ; ح est plus serré."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "و",
+      "question": {
+        "type": "ecouter",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "وَ",
+        "choix_ar": [
+          "وَ",
+          "فَ",
+          "بَ"
+        ],
+        "reponse": 0,
+        "explication": "C'était « wa » : ici, و porte une voyelle, c'est une consonne."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les trois voyelles longues",
+      "texte": "L'alif allonge la fatḥa, ي allonge la kasra et و allonge la ḍamma. On tient alors la voyelle deux fois plus longtemps.",
+      "exemples": [
+        "بَا",
+        "بِي",
+        "بُو"
+      ],
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "بُو",
+        "choix_ar": [
+          "بَا",
+          "بِي",
+          "بُو"
+        ],
+        "reponse": 2,
+        "explication": "C'était « bū » : ḍamma, puis و qui l'allonge."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Consonne ou voyelle longue ?",
+      "texte": "و et ي sont des consonnes quand ils portent une voyelle ou un sukūn : يَوْم se lit « yawm ». Sans signe, و après une ḍamma et ي après une kasra allongent la voyelle.",
+      "exemples": [
+        "يَوْم",
+        "نُور"
+      ],
+      "question": {
+        "type": "lire",
+        "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+        "ar": "يَوْم",
+        "choix_audio": [
+          "يَوْم",
+          "نُور",
+          "قَمَر"
+        ],
+        "reponse": 0,
+        "explication": "يَوْم se lit « yawm » : و porte un sukūn, c'est une consonne."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "reconnaitre",
+          "consigne": "Comment s'appelle cette lettre ?",
+          "ar": "ه",
+          "choix": [
+            "hāʾ",
+            "ḥāʾ",
+            "mīm"
+          ],
+          "reponse": 0,
+          "explication": "hāʾ, le « h » léger."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "مُو",
+          "choix_ar": [
+            "مُو",
+            "مُ",
+            "نُو"
+          ],
+          "reponse": 0,
+          "explication": "C'était « mū », long ; مُ serait bref."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بِي",
+          "choix_ar": [
+            "بَا",
+            "بِي",
+            "بُو"
+          ],
+          "reponse": 1,
+          "explication": "C'était « bī » : kasra, puis ي qui l'allonge."
+        },
+        {
+          "type": "formes",
+          "consigne": "De quelle lettre est cette forme ?",
+          "ar": "هـ",
+          "choix_ar": [
+            "ه",
+            "م",
+            "ع"
+          ],
+          "reponse": 0,
+          "explication": "هـ : ه au début d'un mot."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "قَمَر",
+          "choix_audio": [
+            "قَمَر",
+            "شَهْر",
+            "نَجْم"
+          ],
+          "reponse": 0,
+          "explication": "قَمَر se lit « qamar », la lune."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "شَهْر",
+          "choix_audio": [
+            "قَمَر",
+            "شَهْر",
+            "بَحْر"
+          ],
+          "reponse": 1,
+          "explication": "شَهْر se lit « šahr » : ه sans voyelle, un souffle léger."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "نُور",
+          "choix_audio": [
+            "نَجْم",
+            "يَوْم",
+            "نُور"
+          ],
+          "reponse": 2,
+          "explication": "نُور se lit « nūr » : le « u » est long."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "نَجْم",
+          "tuiles": [
+            "نَ",
+            "جْ",
+            "م",
+            "مَ"
+          ],
+          "solution": [
+            "نَ",
+            "جْ",
+            "م"
+          ],
+          "explication": "نَجْم : نَ, ج avec un sukūn, puis م sans voyelle."
+        },
+        {
+          "type": "tracer",
+          "consigne": "Trace la lettre م en suivant les points.",
+          "lettre": "م"
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "قَمَر"
+        }
+      ]
+    },
+    {
+      "type": "coran",
+      "texte": "م, ه et و se retrouvent dans le Coran : compte-les dans ces mots. D'autres lettres et petits signes, appris plus tard, sont aussi présents.",
+      "extraits": [
+        {
+          "verset": "111:2",
+          "mots": [
+            "111:2:4"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de م vois-tu dans ce mot ?",
+            "mot": "111:2:4",
+            "lettre": "م"
+          }
+        },
+        {
+          "verset": "111:1",
+          "mots": [
+            "111:1:4"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de ه vois-tu dans ce mot ?",
+            "mot": "111:1:4",
+            "lettre": "ه"
+          }
+        },
+        {
+          "verset": "114:5",
+          "mots": [
+            "114:5:4"
+          ],
+          "question": {
+            "type": "compter",
+            "consigne": "Combien de و vois-tu dans ce mot ?",
+            "mot": "114:5:4",
+            "lettre": "و"
+          }
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "هَ",
+          "choix_ar": [
+            "هَ",
+            "حَ",
+            "خَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ha », léger."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بُو",
+          "choix_ar": [
+            "بَا",
+            "بُو",
+            "بِي"
+          ],
+          "reponse": 1,
+          "explication": "C'était « bū »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "وَ",
+          "choix_ar": [
+            "فَ",
+            "وَ",
+            "مَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « wa »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "نَجْم",
+          "choix_audio": [
+            "نَجْم",
+            "نُور",
+            "شَهْر"
+          ],
+          "reponse": 0,
+          "explication": "نَجْم se lit « naǧm »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "قَمَر",
+          "choix_audio": [
+            "شَهْر",
+            "نُور",
+            "قَمَر"
+          ],
+          "reponse": 2,
+          "explication": "قَمَر se lit « qamar »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "يَوْم",
+          "choix_audio": [
+            "نُور",
+            "يَوْم",
+            "قَمَر"
+          ],
+          "reponse": 1,
+          "explication": "يَوْم se lit « yawm »."
+        },
+        {
+          "type": "ecouter_lettre",
+          "consigne": "Écoute et choisis la lettre.",
+          "choix_ar": [
+            "م",
+            "ه",
+            "و"
+          ],
+          "reponse": 2,
+          "explication": "C'était و (wāw)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans نُور, que fait و ?",
+          "choix": [
+            "Il allonge le « u »",
+            "Il se dit « w »",
+            "Il ne se lit pas"
+          ],
+          "reponse": 0,
+          "explication": "Sans signe, après une ḍamma, و allonge le son : « nūr »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle lettre allonge la kasra ?",
+          "choix": [
+            "ي",
+            "و",
+            "ا"
+          ],
+          "reponse": 0,
+          "explication": "ي allonge la kasra : بِي se lit « bī »."
+        },
+        {
+          "type": "paires",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "كَ",
+          "choix_ar": [
+            "قَ",
+            "كَ",
+            "خَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ka » (leçon 7)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "قَلْب",
+          "choix_audio": [
+            "كَلْب",
+            "قَلْب",
+            "طَيْر"
+          ],
+          "reponse": 1,
+          "explication": "قَلْب se lit « qalb » (leçon 7)."
+        },
+        {
+          "type": "ecouter",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "طَا",
+          "choix_ar": [
+            "تَا",
+            "طَا",
+            "صَا"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ṭā » (leçon 6)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais lire م ه و et les trois voyelles longues : قَمَر, نَجْم, شَهْر, نُور, يَوْم.",
+      "suite": "La carte du ciel brille à nouveau, et le huitième sceau de la porte se brise."
+    }
+  ]
+}
