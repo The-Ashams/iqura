@@ -30,13 +30,14 @@ import buckwalter  # noqa: E402
 import lessons  # noqa: E402
 import qac  # noqa: E402
 import quran_guard  # noqa: E402
+import vocab  # noqa: E402
 import sources  # noqa: E402
 import world  # noqa: E402
 
 # Version du schéma de la base de contenu (lue par l'application).
-CONTENT_SCHEMA_VERSION = 8
+CONTENT_SCHEMA_VERSION = 9
 # Version des données ; à augmenter à chaque changement de contenu.
-CONTENT_VERSION = "0.8.0-sans-versets"
+CONTENT_VERSION = "0.9.0-fondations"
 
 DEFAULT_OUT = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
@@ -248,6 +249,19 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
     lesson_data = data.get("lessons") or lessons.load()
     lessons.validate(lesson_data)
     lesson_counts = lessons.write(con, lesson_data)
+    # Vocabulaire (avenant n° 2) : fiches de mots, liées au Corpus.
+    words = lesson_data.words or []
+    allowed = ({c["lettre"] for c in lesson_data.letters["lettres"]} | set(lessons.FORMS)
+               | set(lessons.SIGNS.values()) | {" ", "ـ"})
+
+    def vocab_ar(text: str, where: str) -> None:
+        for ch in text:
+            if ch not in allowed and not vocab.PUNCT.match(ch):
+                raise BuildError(f"{where} : caractère inattendu {ch!r} dans « {text} »")
+
+    order = {l["id"]: (l["etape"], l["ordre"]) for l in lesson_data.lessons}
+    vocab.validate(words, con, set(order), vocab_ar)
+    lesson_counts["words"] = vocab.write(con, words, order)
     traces = data.get("traces") or lessons.load_traces()
     lessons.validate_traces(traces, lesson_data)
     lesson_counts["traces"] = lessons.write_traces(con, traces)
@@ -331,6 +345,7 @@ def main() -> int:
     try:
         build(args.out)
     except (BuildError, sources.SourceError, qac.QacError, quran_guard.QuranGuardError,
+            vocab.VocabError,
             lessons.LessonError, world.WorldError) as e:
         print(f"[build_content] ÉCHEC : {e}", file=sys.stderr)
         return 1

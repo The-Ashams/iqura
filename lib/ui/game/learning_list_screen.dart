@@ -10,6 +10,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/providers.dart';
 import '../../features/progress/lesson_progress.dart';
 import '../../features/review/review.dart';
+import '../../game/lesson/lesson.dart';
+import '../../game/world_providers.dart';
 import 'expedition_screen.dart';
 import 'lesson/lesson_screen.dart';
 import 'pixel.dart';
@@ -21,7 +23,10 @@ class LearningListView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final stage = ref.watch(contentDatabaseProvider).lessons(1);
+    final db = ref.watch(contentDatabaseProvider);
+    final regions = ref.watch(unlockedRegionsProvider);
+    final stage = db.lessons(1);
+    final later = [for (final r in regions.skip(1)) ...db.lessons(r.number)];
     final progress = ref.watch(lessonProgressProvider);
     final due = ref.watch(dueCountProvider);
     return Scaffold(
@@ -56,20 +61,16 @@ class LearningListView extends ConsumerWidget {
                         ),
                       ),
                     ),
-                    for (final l in stage)
-                      PixelCommand(
-                        label: 'Leçon ${l.ordinal} · ${l.title}',
-                        detail: PlaceScreen.lessonStatus(l, stage, progress),
-                        onPressed:
-                            l.playable && lessonUnlocked(l, stage, progress)
-                            ? () => Navigator.push(
-                                context,
-                                MaterialPageRoute<void>(
-                                  builder: (_) => LessonScreen(lessonId: l.id),
-                                ),
-                              )
-                            : null,
-                      ),
+                    for (final l in stage) _lesson(context, l, stage, progress),
+                    PlaceScreen.examCommand(context, stage, progress),
+                    for (final r in regions.skip(1))
+                      for (final l in later.where((l) => l.stage == r.number))
+                        _lesson(
+                          context,
+                          l,
+                          later.where((x) => x.stage == r.number).toList(),
+                          progress,
+                        ),
                   ],
                 ),
               ),
@@ -79,4 +80,22 @@ class LearningListView extends ConsumerWidget {
       ),
     );
   }
+
+  Widget _lesson(
+    BuildContext context,
+    LessonSummary l,
+    List<LessonSummary> stage,
+    Map<String, LessonProgress> progress,
+  ) => PixelCommand(
+    label: 'Leçon ${l.number} · ${l.title}',
+    detail: PlaceScreen.lessonStatus(l, stage, progress),
+    onPressed: l.playable && lessonUnlocked(l, stage, progress)
+        ? () => Navigator.push(
+            context,
+            MaterialPageRoute<void>(
+              builder: (_) => LessonScreen(lessonId: l.id),
+            ),
+          )
+        : null,
+  );
 }

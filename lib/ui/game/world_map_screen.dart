@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../features/profile/profile.dart';
 import '../../features/settings/settings.dart';
+import '../../game/lesson/lesson.dart';
 import '../../game/world.dart';
 import '../../game/world_providers.dart';
 import 'pixel.dart';
@@ -63,6 +64,23 @@ class WorldMapScreen extends ConsumerWidget {
                   ],
                 ),
               ),
+              if (ref.watch(unlockedRegionsProvider) case final open
+                  when open.length > 1) ...[
+                const SizedBox(height: 8),
+                Wrap(
+                  spacing: 8,
+                  children: [
+                    for (final r in open)
+                      ChoiceChip(
+                        label: Text('Région ${r.number}'),
+                        selected: r.number == region.number,
+                        onSelected: (_) => ref
+                            .read(selectedRegionProvider.notifier)
+                            .select(r.number),
+                      ),
+                  ],
+                ),
+              ],
               const SizedBox(height: 12),
               const HeroStatusBar(),
               const SizedBox(height: 12),
@@ -103,7 +121,7 @@ class WorldMapScreen extends ConsumerWidget {
                       PixelCommand(
                         label: '${p.number}. ${p.name}',
                         detail: p.inVerticalSlice
-                            ? _lessonsLabel(p)
+                            ? _lessonsLabel(p, region.number)
                             : lockedDetail,
                         onPressed: p.inVerticalSlice
                             ? () => _open(context, p)
@@ -119,11 +137,14 @@ class WorldMapScreen extends ConsumerWidget {
     );
   }
 
-  static String? _lessonsLabel(Place p) => switch (p.lessons.length) {
-    0 => 'Expédition quotidienne',
-    1 => 'Leçon ${p.lessons.first}',
-    _ => 'Leçons ${p.lessons.join(' et ')}',
-  };
+  static String? _lessonsLabel(Place p, int region) {
+    final n = [for (final o in p.lessons) lessonNumber(region, o)];
+    return switch (n.length) {
+      0 => 'Expédition quotidienne',
+      1 => 'Leçon ${n.first}',
+      _ => 'Leçons ${n.join(' et ')}',
+    };
+  }
 }
 
 class _PlaceMarker extends StatelessWidget {

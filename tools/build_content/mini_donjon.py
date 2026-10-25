@@ -32,7 +32,11 @@ SCREEN_TYPES = {"entree", "echauffement", "decouverte", "element", "regle",
 READING_TYPES = {"compter", "reperer_mot", "qcm"}
 QUESTION_TYPES = {"qcm", "points", "formes", "reconnaitre", "ecouter", "paires",
                   "lire", "reconstruire", "tracer", "repeter", "reperer_mot",
-                  "compter", "ecouter_lettre"}
+                  "compter", "ecouter_lettre",
+                  # Région 2 (cahier §6.4) : sens du mot (arabe → français),
+                  # traduire (français → arabe), compléter, ordonner une
+                  # phrase, répondre à un personnage.
+                  "sens", "traduire", "completer", "ordonner", "repondre"}
 # Au combat : jamais de translittération (§6.2) ; le nom d'une lettre se fait
 # écouter (« ecouter_lettre »), il ne s'affiche pas en lettres latines.
 BOSS_TYPES = {"qcm", "points", "formes", "ecouter", "paires", "lire", "ecouter_lettre"}
@@ -94,6 +98,30 @@ def check_question(q: dict, where: str, check_ar, inscription: list[str] | None 
         choices = _choices(q, where)
         if "choix_ar" not in q or any(c not in (letter_cards or {}) for c in choices):
             raise LessonError(f"{where} : choix attendus parmi les lettres qui ont une fiche")
+    elif kind in ("sens", "traduire", "completer", "repondre"):
+        choices = _choices(q, where)
+        if kind == "sens" and ("ar" not in q or "choix" not in q):
+            raise LessonError(f"{where} : mot arabe et sens en français attendus")
+        if kind in ("traduire", "completer", "repondre") and "choix_ar" not in q:
+            raise LessonError(f"{where} : choix en arabe attendus")
+        if kind == "completer" and "…" not in q.get("ar", ""):
+            raise LessonError(f"{where} : phrase à compléter (avec « … ») attendue")
+        if kind == "repondre":
+            r = q.get("replique") or {}
+            if not r.get("qui") or not r.get("ar"):
+                raise LessonError(f"{where} : réplique du personnage attendue")
+            check_ar(r["ar"])
+    elif kind == "ordonner":
+        tiles, sol = q.get("tuiles", []), q.get("solution", [])
+        if not 2 <= len(sol) <= 7 or not len(sol) <= len(tiles) <= 9:
+            raise LessonError(f"{where} : 2 à 7 mots à ordonner attendus")
+        rest = list(tiles)
+        for t in sol:
+            if t not in rest:
+                raise LessonError(f"{where} : la solution utilise une tuile absente ({t})")
+            rest.remove(t)
+        if not q.get("explication"):
+            raise LessonError(f"{where} : explication absente")
     elif kind in ("qcm", "points", "formes", "reconnaitre", "ecouter", "paires", "lire"):
         choices = _choices(q, where)
         if kind in ("ecouter", "paires") and choices[q["reponse"]] != q["audio"]:
@@ -152,7 +180,7 @@ def validate(lesson: dict, *, known_letters: set[str], known_signs: set[str],
             raise LessonError(f"{where} : « {text} » utilise {ch} ({name}), pas encore enseigné")
 
     for kind in ("syllabes", "mots"):
-        for item in lesson["elements"][kind]:
+        for item in lesson.get("elements", {}).get(kind, []):
             if not item.get("translit"):
                 raise LessonError(f"{where} : translittération absente pour {item.get('ar')}")
             check_ar(item["ar"])
@@ -249,12 +277,22 @@ def arabic_strings(lesson: dict, silent: bool = False) -> list[str]:
             out.append(t)
 
     for kind in ("syllabes", "mots"):
-        for item in lesson["elements"][kind]:
+        for item in lesson.get("elements", {}).get(kind, []):
             add(item["ar"])
 
     def from_question(q):
         for key in ("ar", "audio"):
+            if q.get("type") == "completer" and key == "ar":
+                continue  # phrase à trou : jamais lue telle quelle
             add(q.get(key))
+        if q.get("type") == "ordonner":
+            add(" ".join(q["solution"]))
+        if q.get("replique"):
+            add(q["replique"]["ar"])
+        # Région 2 : les choix et les tuiles ne se font pas entendre (le son
+        # donnerait la réponse) ; la phrase complète, oui.
+        if q.get("type") in ("sens", "traduire", "completer", "ordonner", "repondre"):
+            return
         for key in ("choix_ar", "choix_audio", "tuiles"):
             for t in q.get(key, []):
                 add(t)
@@ -265,6 +303,11 @@ def arabic_strings(lesson: dict, silent: bool = False) -> list[str]:
         if silent or not s.get("sans_son"):
             for t in s.get("support", []) + s.get("exemples", []):
                 add(t)
+        # Région 2 : répliques du dialogue et phrases du texte à lire.
+        for r in s.get("repliques", []):
+            add(r.get("ar"))
+        for t in s.get("phrases", []):
+            add(t)
         if "question" in s:
             from_question(s["question"])
         for q in s.get("exercices", []) + s.get("questions", []):

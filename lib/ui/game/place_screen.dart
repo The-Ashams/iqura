@@ -35,8 +35,9 @@ class PlaceScreen extends ConsumerWidget {
   ) {
     if (!lesson.playable) return lessonNotReady;
     if (!lessonUnlocked(lesson, stage, progress)) {
+      final previous = stage.lastWhere((l) => l.ordinal < lesson.ordinal);
       return 'Fermée : réussis d\'abord le mini-boss de la leçon '
-          '${lesson.ordinal - 1}';
+          '${previous.number}';
     }
     final p = progress[lesson.id];
     if (p == null) return 'Nouvelle';
@@ -51,8 +52,9 @@ class PlaceScreen extends ConsumerWidget {
         if (c.places.contains(place.id) && c.sprite != null) c,
     ];
     final ground = (place.groundY ?? 62).toDouble();
-    // Leçons de l'étape 1 (région 1, jalon J1a).
-    final stage = ref.watch(contentDatabaseProvider).lessons(1);
+    // Leçons de l'étape de la région en cours.
+    final region = ref.watch(currentRegionProvider);
+    final stage = ref.watch(contentDatabaseProvider).lessons(region.number);
     final progress = ref.watch(lessonProgressProvider);
     final due = ref.watch(dueCountProvider);
     final parts = <ScenePart>[
@@ -115,7 +117,7 @@ class PlaceScreen extends ConsumerWidget {
                       (l) => place.lessons.contains(l.ordinal),
                     ))
                       PixelCommand(
-                        label: 'Leçon ${l.ordinal} · ${l.title}',
+                        label: 'Leçon ${l.number} · ${l.title}',
                         detail: lessonStatus(l, stage, progress),
                         onPressed:
                             l.playable && lessonUnlocked(l, stage, progress)
@@ -127,11 +129,14 @@ class PlaceScreen extends ConsumerWidget {
                               )
                             : null,
                       ),
-                    if (place.id == regionExamPlace)
-                      _examCommand(context, stage, progress),
+                    if (place.id == regionExamPlace && region.number == 1)
+                      examCommand(context, stage, progress),
                     if (place.lessons.isEmpty)
                       PixelCommand(
-                        label: "L'Expédition : affronter les brumes d'oubli",
+                        label: region.number == 1
+                            ? "L'Expédition : affronter les brumes d'oubli"
+                            : "L'Expédition : affronter les mirages de la "
+                                  'Confusion',
                         detail: due == 0
                             ? 'Aucune révision due pour l\'instant'
                             : '$due révision${due > 1 ? 's' : ''} à faire',
@@ -169,7 +174,7 @@ class PlaceScreen extends ConsumerWidget {
 
   /// Le boss de la région : ouvert quand toutes les leçons de l'étape sont
   /// terminées (les 14 sceaux brisés).
-  Widget _examCommand(
+  static Widget examCommand(
     BuildContext context,
     List<LessonSummary> stage,
     Map<String, LessonProgress> progress,

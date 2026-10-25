@@ -12,7 +12,7 @@ void main() {
   tearDownAll(() => db.close());
 
   test('région 1 : 12 lieux tous construits, personnages', () {
-    final region = db.regions().single;
+    final region = db.regions().first;
     expect(region.name, 'Le Désert des Lettres');
     final places = db.places(region.id);
     expect(places.length, 12);
@@ -36,6 +36,17 @@ void main() {
     }
     final nura = db.characters(region.id).firstWhere((c) => c.id == 'nura');
     expect(nura.places, contains('puits'));
+  });
+
+  test('région 2 : le chapitre A (lieux 1 à 4) et les Sables du mirage', () {
+    final region = db.regions()[1];
+    expect(region.name, 'L\'Oasis des Fondations');
+    expect(region.adversary, 'La Confusion');
+    final open = [
+      for (final p in db.places(region.id))
+        if (p.inVerticalSlice) p.id,
+    ];
+    expect(open, ['campement', 'tente', 'palmiers', 'veillee', 'sables']);
   });
 
   test('audio des leçons : chaque syllabe et mot a son fichier', () {

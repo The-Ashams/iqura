@@ -291,8 +291,11 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
     if (_right != null) return;
     _clock.stop();
     final bool right;
-    if (q.kind == QuestionKind.reconstruire) {
-      right = [for (final i in _placed) _tiles[i]].join() == q.solution.join();
+    if (q.kind.tiled) {
+      final sep = q.kind == QuestionKind.ordonner ? ' ' : '';
+      right =
+          [for (final i in _placed) _tiles[i]].join(sep) ==
+          q.solution.join(sep);
     } else {
       right = _selected == q.answer;
     }
@@ -327,6 +330,10 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
             style: const TextStyle(fontSize: 20),
           ),
           const SizedBox(height: 10),
+          if (q.reply != null) ...[
+            ReplyLine(speaker: q.reply!.speaker, arabic: q.reply!.arabic),
+            const SizedBox(height: 8),
+          ],
           if (q.arabic != null && q.kind != QuestionKind.repeter) ...[
             // Jamais touchable ici : le son donnerait la réponse.
             ArabicText(
@@ -357,7 +364,7 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
   }
 
   List<Widget> _body() => switch (q.kind) {
-    QuestionKind.reconstruire => _rebuild(),
+    QuestionKind.reconstruire || QuestionKind.ordonner => _rebuild(),
     QuestionKind.tracer => _trace(),
     QuestionKind.repeter => _repeat(),
     _ => _choices(),
@@ -449,8 +456,10 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
                       ? () => setState(() => _placed.removeAt(k))
                       : null,
                   child: ArabicText(
-                    _tiles[i],
-                    baseSize: 40,
+                    q.kind == QuestionKind.ordonner
+                        ? '${_tiles[i]} '
+                        : _tiles[i],
+                    baseSize: q.kind == QuestionKind.ordonner ? 32 : 40,
                     style: const TextStyle(color: PanelColors.ink),
                   ),
                 ),
@@ -459,9 +468,12 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
         ),
       ),
       const SizedBox(height: 4),
-      const Text(
-        'Touche les morceaux dans l\'ordre (de droite à gauche). Touche un '
-        'morceau placé pour le retirer.',
+      Text(
+        q.kind == QuestionKind.ordonner
+            ? 'Touche les mots dans l\'ordre (de droite à gauche). Touche un '
+                  'mot placé pour le retirer.'
+            : 'Touche les morceaux dans l\'ordre (de droite à gauche). Touche '
+                  'un morceau placé pour le retirer.',
         textAlign: TextAlign.center,
         style: TextStyle(color: PanelColors.muted, fontSize: 13),
       ),
@@ -475,7 +487,7 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
           children: [
             for (final (i, t) in _tiles.indexed)
               AnswerButton(
-                width: 80,
+                width: q.kind == QuestionKind.ordonner ? 110 : 80,
                 state: _placed.contains(i) || !open
                     ? AnswerState.closed
                     : AnswerState.open,
@@ -514,10 +526,14 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
         color: _right! ? PanelColors.right : PanelColors.wrong,
       ),
     ),
-    if (q.kind == QuestionKind.reconstruire && !_right!) ...[
-      const Text('Le mot était :'),
+    if (q.kind.tiled && !_right!) ...[
+      Text(
+        q.kind == QuestionKind.ordonner
+            ? 'La phrase était :'
+            : 'Le mot était :',
+      ),
       ArabicText(
-        q.solution.join(),
+        q.solution.join(q.kind == QuestionKind.ordonner ? ' ' : ''),
         baseSize: 40,
         style: const TextStyle(color: PanelColors.ink),
       ),
@@ -843,4 +859,36 @@ class _TracePainter extends CustomPainter {
 
   @override
   bool shouldRepaint(_TracePainter old) => true;
+}
+
+/// Réplique d'un personnage, dans une question « répondre » (région 2).
+class ReplyLine extends ConsumerWidget {
+  const ReplyLine({super.key, required this.speaker, required this.arabic});
+
+  final String speaker;
+  final String arabic;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final name = [
+      for (final c in ref.watch(contentDatabaseProvider).allCharacters())
+        if (c.id == speaker) c.name,
+    ].firstOrNull;
+    return Column(
+      children: [
+        Text(
+          '${name ?? speaker} :',
+          style: const TextStyle(color: PanelColors.muted, fontSize: 15),
+        ),
+        InkWell(
+          onTap: () => playLessonAudio(ref, arabic),
+          child: ArabicText(
+            arabic,
+            baseSize: 34,
+            style: const TextStyle(color: PanelColors.ink),
+          ),
+        ),
+      ],
+    );
+  }
 }

@@ -15,6 +15,7 @@ import 'package:sqlite3/sqlite3.dart';
 
 import '../../game/equipment/equipment.dart';
 import '../../game/lesson/lesson.dart';
+import '../../game/vocab/word.dart';
 import '../../game/world.dart';
 
 /// La base de contenu est absente, d'une autre version ou altérée.
@@ -53,7 +54,7 @@ class ContentDatabase {
   static const versionAssetPath = 'assets/content/iqura_content.db.version';
 
   /// Version du schéma de la base de contenu gérée par cette application.
-  static const int schemaVersion = 8;
+  static const int schemaVersion = 9;
 
   /// Tables indispensables au jeu.
   static const requiredTables = [
@@ -63,6 +64,7 @@ class ContentDatabase {
     'lemma',
     'letter',
     'lesson',
+    'word',
     'audio_clip',
     'region',
     'place',
@@ -240,6 +242,11 @@ class ContentDatabase {
       ),
   ];
 
+  /// Tous les personnages, toutes régions confondues.
+  List<GameCharacter> allCharacters() => [
+    for (final region in regions()) ...characters(region.id),
+  ];
+
   /// Fiches des lettres déjà rédigées, dans l'ordre des leçons.
   List<LetterCard> letters() => [
     for (final r in _db.select(
@@ -294,7 +301,10 @@ class ContentDatabase {
         stage: r['stage'] as int,
         ordinal: r['ordinal'] as int,
         title: r['title'] as String,
-        playable: (jsonDecode(r['content'] as String) as Map)['format'] == 2,
+        playable: const {
+          2,
+          3,
+        }.contains((jsonDecode(r['content'] as String) as Map)['format']),
       ),
   ];
 
@@ -306,6 +316,60 @@ class ContentDatabase {
     return Lesson.fromJson(
       jsonDecode(rows.first['content'] as String) as Map<String, dynamic>,
     );
+  }
+
+  /// Fiches de mots (vocabulaire), dans l'ordre des leçons.
+  List<Word> words() => [
+    for (final r in _db.select(
+      'SELECT w.*, l.occurrence_count AS occ, '
+      'ro.letters AS root_letters FROM word w '
+      'LEFT JOIN lemma l ON l.id = w.lemma_id '
+      'LEFT JOIN root ro ON ro.id = w.root_id '
+      'ORDER BY w.lesson_stage, w.lesson_ordinal, w.rowid',
+    ))
+      Word(
+        id: r['id'] as String,
+        arabic: r['ar'] as String,
+        translit: r['translit'] as String,
+        french: r['fr'] as String,
+        nature: r['nature'] as String,
+        gender: r['gender'] as String?,
+        plural: r['plural'] as String?,
+        past: r['past'] as String?,
+        present: r['present'] as String?,
+        lemmaId: r['lemma_id'] as String?,
+        rootId: r['root_id'] as String?,
+        rootLetters: r['root_letters'] as String?,
+        occurrences: r['occ'] as int?,
+        exampleArabic: r['example_ar'] as String?,
+        exampleFrench: r['example_fr'] as String?,
+        theme: r['theme'] as String?,
+        lessonId: r['lesson_id'] as String,
+        lessonStage: r['lesson_stage'] as int,
+        lessonOrdinal: r['lesson_ordinal'] as int,
+        meaningSource: r['meaning_source'] as String,
+        keys: (jsonDecode(r['keys_json'] as String) as List).cast<String>(),
+      ),
+  ];
+
+  /// Fiche d'un mot par son identifiant.
+  Word? word(String id) {
+    for (final w in words()) {
+      if (w.id == id) return w;
+    }
+    return null;
+  }
+
+  /// Fiche du mot touché dans une phrase (article et préfixes d'une lettre
+  /// retirés), s'il est au vocabulaire.
+  Word? wordForToken(String token) {
+    final all = words();
+    for (final k in keyCandidates(token)) {
+      for (final w in all) {
+        if (w.keys.contains(k)) return w;
+      }
+    }
+    return null;
   }
 
   /// Fiche d'une lettre.

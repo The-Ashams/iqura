@@ -22,6 +22,7 @@ import '../pixel.dart';
 import '../report_error.dart';
 import '../sprites.dart';
 import 'boss_view.dart';
+import 'fondations_views.dart';
 import 'question_view.dart';
 
 class LessonScreen extends ConsumerStatefulWidget {
@@ -99,6 +100,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     ExplainStep(kind: ExplainKind.element) => 'Les éléments',
     ExplainStep(kind: ExplainKind.rule) => 'La règle',
     PracticeStep(warmUp: true) => 'Échauffement',
+    PracticeStep(atelier: true) => 'L\'Atelier des phrases',
+    DialogueStep() => 'Dialogue',
+    WordsStep() => 'Les mots',
     PracticeStep() => 'Salle d\'entraînement',
     ReadingStep() => 'Salle de lecture',
     BossStep() => 'Mini-boss',
@@ -109,12 +113,15 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   Widget build(BuildContext context) {
     final step = _lesson.steps[_step];
     final subject =
-        'Leçon ${_lesson.ordinal} « ${_lesson.title} », écran ${_step + 1} '
+        'Leçon ${lessonNumber(_lesson.stage, _lesson.ordinal)} « ${_lesson.title} », écran ${_step + 1} '
         '($_stepName)';
     return Scaffold(
       backgroundColor: GameColors.night,
       appBar: AppBar(
-        title: Text('Leçon ${_lesson.ordinal} · ${_lesson.title}'),
+        title: Text(
+          'Leçon ${lessonNumber(_lesson.stage, _lesson.ordinal)} · '
+          '${_lesson.title}',
+        ),
         backgroundColor: GameColors.night,
         foregroundColor: GameColors.text,
       ),
@@ -167,6 +174,8 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
       onNext: _next,
       random: widget.random,
     ),
+    DialogueStep() => DialogueView(step: step, onNext: _next),
+    WordsStep() => WordsView(step: step, onNext: _next),
     ReadingStep() => _ReadingView(lesson: _lesson, step: step, onNext: _next),
     BossStep() => BossView(
       step: step,
@@ -585,35 +594,38 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
           ),
         ),
         const SizedBox(height: 12),
-        Container(
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: const Color(0xFFF6EFDF),
-            borderRadius: BorderRadius.circular(6),
+        if (widget.step.sentences.isNotEmpty)
+          GradedText(sentences: widget.step.sentences)
+        else
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: const Color(0xFFF6EFDF),
+              borderRadius: BorderRadius.circular(6),
+            ),
+            child: Wrap(
+              alignment: WrapAlignment.center,
+              textDirection: TextDirection.rtl,
+              spacing: 14,
+              runSpacing: 4,
+              children: [
+                for (final (i, w) in words.indexed)
+                  _InscriptionWord(
+                    text: w,
+                    mushaf: widget.step.mushaf,
+                    highlighted: locate
+                        ? _tapped == i || (_right != null && i == q.word)
+                        : q.kind == QuestionKind.compter && i == q.word,
+                    onTap: locate && _right == null
+                        ? () {
+                            playSfx(ref, Sfx.choix);
+                            setState(() => _tapped = i);
+                          }
+                        : null,
+                  ),
+              ],
+            ),
           ),
-          child: Wrap(
-            alignment: WrapAlignment.center,
-            textDirection: TextDirection.rtl,
-            spacing: 14,
-            runSpacing: 4,
-            children: [
-              for (final (i, w) in words.indexed)
-                _InscriptionWord(
-                  text: w,
-                  mushaf: widget.step.mushaf,
-                  highlighted: locate
-                      ? _tapped == i || (_right != null && i == q.word)
-                      : q.kind == QuestionKind.compter && i == q.word,
-                  onTap: locate && _right == null
-                      ? () {
-                          playSfx(ref, Sfx.choix);
-                          setState(() => _tapped = i);
-                        }
-                      : null,
-                ),
-            ],
-          ),
-        ),
         const SizedBox(height: 6),
         Text(
           '${_ReadingView.source} · rédigé par IA',
@@ -816,7 +828,7 @@ class _EndViewState extends ConsumerState<_EndView> {
           const SizedBox(height: 8),
           if (completed && next != null)
             Text(
-              'Leçon ${next.ordinal} ouverte : ${next.title}.',
+              'Leçon ${next.number} ouverte : ${next.title}.',
               style: TextStyle(color: GameColors.good),
             ),
           if (widget.reward case final r?) ...[

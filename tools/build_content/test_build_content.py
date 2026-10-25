@@ -156,7 +156,8 @@ class BuildTest(unittest.TestCase):
         keys = {r[0] for r in self.q("SELECT key FROM audio_clip")}
         for (content,) in self.q("SELECT content FROM lesson"):
             lesson = json.loads(content)
-            groups = [lesson["elements"]["syllabes"], lesson["elements"]["mots"]]
+            elements = lesson.get("elements", {})
+            groups = [elements.get("syllabes", []), elements.get("mots", [])]
             for items in groups:
                 for item in items:
                     self.assertIn(lessons.audio_key(item["ar"]), keys, item["ar"])
@@ -187,10 +188,11 @@ class BuildTest(unittest.TestCase):
                 lessons.audio_rows({}, m, root)
 
     def test_region_1_places_and_characters(self):
-        self.assertEqual(self.q("SELECT name, adversary FROM region"),
-                         [("Le Désert des Lettres", "L'Oubli")])
-        self.assertEqual(self.q("SELECT COUNT(*) FROM place"), [(12,)])
-        j1a = {r[0] for r in self.q("SELECT id FROM place WHERE in_j1a = 1")}
+        self.assertEqual(self.q("SELECT name, adversary FROM region ORDER BY number"),
+                         [("Le Désert des Lettres", "L'Oubli"),
+                          ("L'Oasis des Fondations", "La Confusion")])
+        self.assertEqual(self.q("SELECT COUNT(*) FROM place WHERE region_id = 'r1'"), [(12,)])
+        j1a = {r[0] for r in self.q("SELECT id FROM place WHERE in_j1a = 1 AND region_id = 'r1'")}
         self.assertEqual(len(j1a), 12)
         self.assertEqual(self.q("SELECT COUNT(*) FROM place WHERE in_j1a = 1 AND scene_image IS NULL"), [(0,)])
         self.assertEqual(self.q("SELECT name FROM character WHERE id = 'nura'"), [("Nūra",)])
@@ -220,7 +222,8 @@ class BuildTest(unittest.TestCase):
 
     def _validate(self, mutate):
         data = lessons.load()
-        data = lessons.LessonData(copy.deepcopy(data.letters), copy.deepcopy(data.lessons))
+        data = lessons.LessonData(copy.deepcopy(data.letters), copy.deepcopy(data.lessons),
+                                  copy.deepcopy(data.words))
         mutate(data)
         lessons.validate(data)
 

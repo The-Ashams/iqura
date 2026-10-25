@@ -24,6 +24,7 @@ import '../../game/lesson/lesson.dart';
 import '../../game/review/review_question.dart';
 import 'lesson/boss_view.dart' show HpWindow;
 import 'lesson/question_view.dart';
+import '../../game/world_providers.dart';
 import 'pixel.dart';
 
 /// Révisions par Expédition, au plus (le reste attend la suivante).
@@ -71,7 +72,10 @@ class _ExpeditionScreenState extends ConsumerState<ExpeditionScreen> {
   @override
   void initState() {
     super.initState();
-    _scene = CombatScene(animations: ref.read(settingsProvider).animations);
+    _scene = CombatScene(
+      animations: ref.read(settingsProvider).animations,
+      region: ref.read(currentRegionProvider).number,
+    );
     _prepare();
   }
 
@@ -87,7 +91,15 @@ class _ExpeditionScreenState extends ConsumerState<ExpeditionScreen> {
       for (final c in learned)
         if (c.kind == CardKind.lire) c.target,
     };
+    final wordIds = {
+      for (final c in learned)
+        if (c.kind == CardKind.sens || c.kind == CardKind.produire) c.target,
+    };
     return ReviewPools(
+      words: [
+        for (final w in content.words())
+          if (wordIds.contains(w.id)) w,
+      ],
       letters: [
         for (final l in content.letters())
           if (letters.contains(l.letter)) l,

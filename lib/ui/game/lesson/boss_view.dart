@@ -14,6 +14,7 @@ import '../../../engines/audio/audio_service.dart';
 import '../../../features/settings/settings.dart';
 import '../../../game/combat/combat_scene.dart';
 import '../../../game/lesson/lesson.dart';
+import '../../../game/world_providers.dart';
 import '../pixel.dart';
 import 'question_view.dart';
 
@@ -115,7 +116,10 @@ class _BossViewState extends ConsumerState<BossView> {
   @override
   void initState() {
     super.initState();
-    _scene = CombatScene(animations: ref.read(settingsProvider).animations);
+    _scene = CombatScene(
+      animations: ref.read(settingsProvider).animations,
+      region: ref.read(currentRegionProvider).number,
+    );
     _start();
   }
 

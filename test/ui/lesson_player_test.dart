@@ -144,7 +144,7 @@ Future<void> answer(WidgetTester tester, {bool right = true}) async {
       await tapOn(tester, find.text('Ma voix'));
       await tapOn(tester, find.text("J'ai répété"));
       return;
-    case QuestionKind.reconstruire:
+    case QuestionKind.reconstruire || QuestionKind.ordonner:
       final parts = right ? q.solution : q.solution.reversed.toList();
       for (final t in parts) {
         await tapOn(tester, answerButton(tester, t));
@@ -182,7 +182,7 @@ Future<bool> playLesson(
         } else {
           await tapOn(tester, find.text('Suite'));
         }
-      case ExplainStep():
+      case ExplainStep() || DialogueStep() || WordsStep():
         await answer(tester);
       case PracticeStep():
         if (find.byType(QuestionView).evaluate().isNotEmpty) {
@@ -247,9 +247,11 @@ void main() {
     await settle(tester);
   }
 
-  // Les 15 leçons de la région 1 (niveaux Débutant 1 à 3).
+  // Les 15 leçons de la région 1 (niveaux Débutant 1 à 3) et celles de la
+  // région 2 déjà écrites (Élémentaire 1).
   for (final id in [
     for (var i = 0; i <= 14; i++) 'dechiffrer-${i.toString().padLeft(2, '0')}',
+    for (var i = 1; i <= 1; i++) 'fondations-${i.toString().padLeft(2, '0')}',
   ]) {
     testWidgets('$id : jouée de bout en bout, la leçon suivante s’ouvre', (
       tester,
@@ -261,7 +263,7 @@ void main() {
       final p = LessonProgressRepository(userDb).get(id);
       expect(p.completed, isTrue);
       expect(p.step, lesson.steps.length - 1);
-      final stage = contentDb.lessons(1);
+      final stage = contentDb.lessons(lesson.stage);
       final next = stage.where((l) => l.ordinal == lesson.ordinal + 1);
       if (next.isNotEmpty) {
         expect(
@@ -282,7 +284,8 @@ void main() {
         cards.length,
         lesson.letters.length * 2 +
             lesson.signs.where(signMarks.containsKey).length +
-            lesson.readings.length,
+            lesson.readings.length +
+            lesson.words.length,
       );
       expect(
         find.textContaining('nouvelles cartes'),

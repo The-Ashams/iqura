@@ -1,0 +1,142 @@
+{
+ "_comment": "Vocabulaire de la région 2 (avenant n° 2). Sens, pluriels, conjugaisons et exemples rédigés par IA, relus (agent relecteur) ; conventions : docs/relectures/decisions-elementaire-1.md. Lemme et racine : Quranic Arabic Corpus, vérifiés à la construction.",
+ "mots": [
+  {
+   "id": "rajul",
+   "ar": "رَجُلٌ",
+   "translit": "raǧulun",
+   "fr": "homme",
+   "nature": "nom",
+   "genre": "m",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "pluriel": "رِجَالٌ",
+   "lemme": "rajul",
+   "exemple": {
+    "ar": "هَٰذَا رَجُلٌ.",
+    "fr": "Ceci est un homme."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "jamal",
+   "ar": "جَمَلٌ",
+   "translit": "ǧamalun",
+   "fr": "chameau",
+   "nature": "nom",
+   "genre": "m",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "pluriel": "جِمَالٌ",
+   "lemme": "jamal",
+   "exemple": {
+    "ar": "هَٰذَا جَمَلٌ.",
+    "fr": "Ceci est un chameau."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "bayt",
+   "ar": "بَيْتٌ",
+   "translit": "baytun",
+   "fr": "maison",
+   "nature": "nom",
+   "genre": "m",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "pluriel": "بُيُوتٌ",
+   "lemme": "bayot",
+   "exemple": {
+    "ar": "هَٰذَا بَيْتٌ.",
+    "fr": "Ceci est une maison."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "ma",
+   "ar": "مَاءٌ",
+   "translit": "māʾun",
+   "fr": "eau",
+   "nature": "nom",
+   "genre": "m",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "pluriel": "مِيَاهٌ",
+   "lemme": "maA^'",
+   "exemple": {
+    "ar": "هَٰذَا مَاءٌ.",
+    "fr": "Ceci est de l'eau."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "dhahaba",
+   "ar": "ذَهَبَ",
+   "translit": "ḏahaba",
+   "fr": "il est allé, il est parti",
+   "nature": "verbe",
+   "passe": "ذَهَبَ",
+   "inaccompli": "يَذْهَبُ",
+   "lemme": "*ahaba",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "theme": "voyage"
+  },
+  {
+   "id": "kharaja",
+   "ar": "خَرَجَ",
+   "translit": "ḫaraǧa",
+   "fr": "il est sorti",
+   "nature": "verbe",
+   "passe": "خَرَجَ",
+   "inaccompli": "يَخْرُجُ",
+   "lemme": "xaraja",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "theme": "voyage"
+  },
+  {
+   "id": "dakhala",
+   "ar": "دَخَلَ",
+   "translit": "daḫala",
+   "fr": "il est entré",
+   "nature": "verbe",
+   "passe": "دَخَلَ",
+   "inaccompli": "يَدْخُلُ",
+   "lemme": "daxala",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "theme": "voyage"
+  },
+  {
+   "id": "fi",
+   "ar": "فِي",
+   "translit": "fī",
+   "fr": "dans",
+   "nature": "particule",
+   "lemme": "fiY",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "min",
+   "ar": "مِنْ",
+   "translit": "min",
+   "fr": "de, depuis (point de départ)",
+   "nature": "particule",
+   "lemme": "min",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "ila",
+   "ar": "إِلَى",
+   "translit": "ilā",
+   "fr": "vers, jusqu'à",
+   "nature": "particule",
+   "lemme": "<ilaY`",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA"
+  }
+ ]
+}

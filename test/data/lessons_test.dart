@@ -24,27 +24,10 @@ void main() {
     const t = Transliterator();
     var checked = 0;
     for (final lesson in lessons()) {
-      if (lesson['format'] == 2) {
-        final elements = lesson['elements'] as Map;
-        for (final kind in ['syllabes', 'mots']) {
-          for (final item in (elements[kind] as List).cast<Map>()) {
-            expect(
-              t.transliterate(item['ar'] as String),
-              item['translit'],
-              reason: '${lesson['id']} : ${item['ar']}',
-            );
-            checked++;
-          }
-        }
-        continue;
-      }
-      for (final section in (lesson['sections'] as List).cast<Map>()) {
-        final items = switch (section['type']) {
-          'syllabes' || 'exemples' => (section['items'] as List).cast<Map>(),
-          'decomposition' => [section],
-          _ => const <Map>[],
-        };
-        for (final item in items) {
+      final elements = (lesson['elements'] as Map?) ?? const {};
+      for (final kind in ['syllabes', 'mots']) {
+        for (final item
+            in ((elements[kind] as List?) ?? const []).cast<Map>()) {
           expect(
             t.transliterate(item['ar'] as String),
             item['translit'],
@@ -53,6 +36,15 @@ void main() {
           checked++;
         }
       }
+    }
+    // Fiches de mots (région 2).
+    for (final r in db.select('SELECT ar, translit FROM word')) {
+      expect(
+        t.transliterate(r['ar'] as String),
+        r['translit'],
+        reason: r['ar'] as String,
+      );
+      checked++;
     }
     expect(checked, greaterThan(20));
   });

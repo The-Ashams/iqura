@@ -25,7 +25,9 @@ import sqlite3
 import unicodedata
 from dataclasses import dataclass
 
+import fondations
 import mini_donjon
+import vocab
 import world
 
 LESSONS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lessons")
@@ -72,6 +74,7 @@ class LessonError(Exception):
 class LessonData:
     letters: dict
     lessons: list[dict]
+    words: list[dict] | None = None
 
 
 def load(base: str = LESSONS_DIR) -> LessonData:
@@ -83,7 +86,7 @@ def load(base: str = LESSONS_DIR) -> LessonData:
             lesson = json.load(f)
         lesson["_file"] = os.path.relpath(path, base)
         lessons.append(lesson)
-    return LessonData(letters, lessons)
+    return LessonData(letters, lessons, vocab.load())
 
 
 def validate(data: LessonData) -> None:
@@ -101,10 +104,13 @@ def validate(data: LessonData) -> None:
     by_stage: dict[int, list[dict]] = {}
     for lesson in data.lessons:
         where = lesson["_file"]
-        if lesson.get("format") != 2:
-            raise LessonError(f"{where} : seul le format mini-donjon (format 2) est accepté")
-        for key in ("id", "etape", "ordre", "titre", "objectif", "statut",
-                    "prerequis", "introduit", "ecrans"):
+        fmt = 2 if lesson.get("etape") == 1 else 3
+        if lesson.get("format") != fmt:
+            raise LessonError(f"{where} : format {fmt} attendu à l'étape {lesson.get('etape')}")
+        required = ["id", "etape", "ordre", "titre", "objectif", "statut", "prerequis", "ecrans"]
+        if fmt == 2:
+            required.append("introduit")
+        for key in required:
             if key not in lesson:
                 raise LessonError(f"{where} : champ « {key} » absent")
         if lesson["id"] in ids:
@@ -117,7 +123,9 @@ def validate(data: LessonData) -> None:
     order_of = {}
     for stage, lessons in by_stage.items():
         lessons.sort(key=lambda l: l["ordre"])
-        if [l["ordre"] for l in lessons] != list(range(len(lessons))):
+        # Région 1 : leçons 0 à 14 ; ensuite, leçons 2.1, 2.2… (ordre 1, 2…).
+        first = 0 if stage == 1 else 1
+        if [l["ordre"] for l in lessons] != list(range(first, first + len(lessons))):
             raise LessonError(f"étape {stage} : ordre des leçons non continu")
         for l in lessons:
             order_of[l["id"]] = (stage, l["ordre"])
@@ -126,15 +134,41 @@ def validate(data: LessonData) -> None:
     places = {p["id"] for r in regions for p in r["lieux"]}
     characters = {c["id"] for r in regions for c in r["personnages"]}
 
+    words = data.words or []
+    for w in words:
+        if w["lecon"] not in order_of:
+            raise LessonError(f"vocab · {w['id']} : leçon inconnue {w['lecon']}")
+    known_letters: set[str] = set()
+    known_signs: set[str] = set()
+    known_keys: set[str] = set()
     for stage, lessons in sorted(by_stage.items()):
-        known_letters: set[str] = set()
-        known_signs: set[str] = set()
         known_readings: set[str] = set()
         for lesson in lessons:
             where = lesson["_file"]
             for pre in lesson["prerequis"]:
                 if pre not in order_of or order_of[pre] >= order_of[lesson["id"]]:
                     raise LessonError(f"{where} : prérequis invalide {pre}")
+            if lesson["format"] == 3:
+                lesson_words = [w for w in words if w["lecon"] == lesson["id"]]
+                for w in lesson_words:
+                    known_keys |= vocab.word_keys(w)
+                known_keys |= {vocab.key(f) for f in lesson.get("apercu", [])}
+
+                def check_ar(text: str, _l=lesson) -> None:
+                    for ch in text:
+                        if ch in known_letters or ch in known_signs or ch in (" ", "ـ") \
+                                or vocab.PUNCT.match(ch):
+                            continue
+                        name = unicodedata.name(ch, hex(ord(ch)))
+                        raise LessonError(f"{_l['_file']} : « {text} » utilise {ch} ({name}), pas encore enseigné")
+                try:
+                    fondations.validate(
+                        lesson, check_ar=check_ar, known_keys=known_keys,
+                        lesson_words=lesson_words, letter_cards=letter_cards,
+                        places=places, characters=characters)
+                except mini_donjon.LessonError as e:
+                    raise LessonError(str(e)) from None
+                continue
             intro = lesson["introduit"]
             for c in intro["lettres"]:
                 if c not in letter_cards:
@@ -149,6 +183,7 @@ def validate(data: LessonData) -> None:
             known_signs |= {SIGNS[s] for s in intro["signes"]}
             for kind in ("syllabes", "mots"):
                 known_readings |= {i["ar"] for i in lesson.get("elements", {}).get(kind, [])}
+            known_keys |= {vocab.key(i["ar"]) for i in lesson.get("elements", {}).get("mots", [])}
             try:
                 mini_donjon.validate(
                     lesson, known_letters=known_letters, known_signs=known_signs,
@@ -163,7 +198,7 @@ def inscriptions(data: LessonData) -> dict[str, str]:
     2 mots voisins par le garde-fou coranique."""
     out: dict[str, str] = {}
     for lesson in data.lessons:
-        for i, s in enumerate(x for x in lesson["ecrans"] if x["type"] == "lecture"):
+        for i, s in enumerate(x for x in lesson["ecrans"] if x.get("inscription")):
             out[f"{lesson['_file']} · salle de lecture {i + 1}"] = " ".join(s["inscription"])
     return out
 
@@ -178,8 +213,12 @@ def arabic_texts(data: LessonData) -> dict[str, str]:
         for i, t in enumerate(mini_donjon.arabic_strings(lesson, silent=True)):
             out[f"{lesson['_file']} · texte {i + 1}"] = t
         for i, s in enumerate(lesson["ecrans"]):
-            if s.get("type") == "lecture":
+            if s.get("inscription"):
                 out[f"{lesson['_file']} · salle de lecture {i + 1}"] = " ".join(s["inscription"])
+    for w in data.words or []:
+        out[f"vocab · {w['id']}"] = w["ar"]
+        if w.get("exemple"):
+            out[f"vocab · {w['id']} · exemple"] = w["exemple"]["ar"]
     return out
 
 
@@ -203,9 +242,13 @@ def audio_clips(data: LessonData) -> dict[str, tuple[str, str]]:
 
     for card in data.letters["lettres"]:
         add("lettre", card["nom_ar"])
+    for w in data.words or []:
+        add("mot", w["ar"])
+        if w.get("exemple"):
+            add("phrase", w["exemple"]["ar"])
     for lesson in data.lessons:
-        syll = {i["ar"] for i in lesson["elements"]["syllabes"]}
-        words = {i["ar"] for i in lesson["elements"]["mots"]}
+        syll = {i["ar"] for i in lesson.get("elements", {}).get("syllabes", [])}
+        words = {i["ar"] for i in lesson.get("elements", {}).get("mots", [])}
         for t in mini_donjon.arabic_strings(lesson):
             # Seuls les textes vocalisés se lisent à voix haute ; une
             # lettre seule ou une forme isolée n'a pas d'enregistrement.

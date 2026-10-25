@@ -1,0 +1,168 @@
+"""Vocabulaire : fiches de mots (avenant n° 2, cahier §5.4 bis).
+
+Source : `tools/build_content/vocab/mots.json`. Chaque mot a une fiche
+complète : forme vocalisée, translittération, sens, nature, genre et pluriel
+(noms), passé et inaccompli (verbes), exemple construit, leçon qui l'introduit.
+
+Données sourcées : le lien vers un lemme du Quranic Arabic Corpus (`lemme`)
+donne la racine et la fréquence ; il est vérifié dans la table `lemma`.
+Un mot sans lemme (pronoms, mots absents du Corpus) n'a ni racine ni
+fréquence : rien n'est inventé. Sens, exemples, pluriels et conjugaisons sont
+rédigés par IA et relus (agent relecteur).
+
+Ce module sert aussi à reconnaître un mot dans une phrase (`key`), pour la
+règle des 95 % de mots connus (cahier §4) et pour le sens au toucher.
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import re
+import sqlite3
+
+import quran_guard
+
+VOCAB_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vocab", "mots.json")
+
+NATURES = {"nom", "adjectif", "verbe", "particule", "pronom", "demonstratif",
+           "interrogatif", "adverbe"}
+GENRES = {"m", "f"}
+# Préfixes d'une lettre collés au mot (et, alors, avec/par, pour, comme).
+PREFIXES = ("و", "ف", "ب", "ل", "ك")
+PUNCT = re.compile(r"[،؛؟.!?,:«»\"()…]")
+
+
+class VocabError(Exception):
+    pass
+
+
+def load(path: str = VOCAB_FILE) -> list[dict]:
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)["mots"]
+
+
+def key(token: str) -> str:
+    """Squelette d'un mot (sans voyelles ni signes, alifs et hamzas unifiés)."""
+    return quran_guard.skeleton(PUNCT.sub("", token)).replace("ٱ", "ا")
+
+
+def candidates(token: str) -> list[str]:
+    """Formes de base possibles d'un mot d'une phrase : le mot lui-même, sans
+    l'article, sans un préfixe d'une lettre (et sans l'article qui suit)."""
+    k = key(token)
+    out = [k]
+    if k.startswith("ال") and len(k) > 3:
+        out.append(k[2:])
+    if k[:1] in PREFIXES and len(k) > 2:
+        rest = k[1:]
+        out.append(rest)
+        if rest.startswith("ال") and len(rest) > 3:
+            out.append(rest[2:])
+        if k.startswith("لل") and len(k) > 3:  # li- + al-
+            out.append(k[2:])
+    return out
+
+
+def word_keys(word: dict) -> set[str]:
+    keys = {key(word["ar"])}
+    for k in ("pluriel", "passe", "inaccompli"):
+        if word.get(k):
+            keys.add(key(word[k]))
+    for f in word.get("formes", []):
+        keys.add(key(f))
+    return keys
+
+
+def tokens(text: str) -> list[str]:
+    return [t for t in PUNCT.sub(" ", text).split() if quran_guard.words_of(t)]
+
+
+def unknown(text: str, known: set[str]) -> list[str]:
+    """Mots de `text` qui ne se ramènent à aucune forme connue."""
+    return [t for t in tokens(text) if not any(c in known for c in candidates(t))]
+
+
+def validate(words: list[dict], con: sqlite3.Connection, lesson_ids: set[str],
+             check_ar) -> None:
+    """`check_ar(texte, où)` vérifie lettres et signes (région 1 acquise)."""
+    ids = set()
+    for w in words:
+        where = f"vocab · {w.get('id')}"
+        for k in ("id", "ar", "translit", "fr", "nature", "lecon", "source_sens"):
+            if not w.get(k):
+                raise VocabError(f"{where} : champ « {k} » absent")
+        if w["id"] in ids:
+            raise VocabError(f"{where} : identifiant en double")
+        ids.add(w["id"])
+        if w["nature"] not in NATURES:
+            raise VocabError(f"{where} : nature inconnue {w['nature']}")
+        if w["lecon"] not in lesson_ids:
+            raise VocabError(f"{where} : leçon inconnue {w['lecon']}")
+        if w["nature"] in ("nom", "adjectif") and w.get("genre") not in GENRES:
+            raise VocabError(f"{where} : genre attendu (m ou f)")
+        if w["nature"] == "verbe" and not (w.get("passe") and w.get("inaccompli")):
+            raise VocabError(f"{where} : passé et inaccompli attendus")
+        for k in ("ar", "pluriel", "passe", "inaccompli"):
+            if w.get(k):
+                check_ar(w[k], where)
+        for f in w.get("formes", []):
+            check_ar(f, where)
+        ex = w.get("exemple")
+        if ex:
+            if not ex.get("ar") or not ex.get("fr"):
+                raise VocabError(f"{where} : exemple incomplet")
+            check_ar(ex["ar"], where)
+        if w.get("lemme"):
+            row = con.execute("SELECT root_id FROM lemma WHERE id = ?", (w["lemme"],)).fetchone()
+            if row is None:
+                raise VocabError(f"{where} : lemme {w['lemme']} absent du Corpus")
+            if w.get("racine") and w["racine"] != row[0]:
+                raise VocabError(f"{where} : racine {w['racine']} différente du Corpus ({row[0]})")
+        elif w.get("racine"):
+            # Mot absent du Corpus dont la racine y existe (décision du
+            # conseiller, 25/10/2026) : la racine est montrée, sans fréquence.
+            if con.execute("SELECT 1 FROM root WHERE id = ?", (w["racine"],)).fetchone() is None:
+                raise VocabError(f"{where} : racine {w['racine']} absente du Corpus")
+
+
+def write(con: sqlite3.Connection, words: list[dict], lesson_order: dict[str, tuple]) -> int:
+    con.execute("""CREATE TABLE word (
+        id TEXT NOT NULL PRIMARY KEY,
+        ar TEXT NOT NULL,
+        translit TEXT NOT NULL,
+        fr TEXT NOT NULL,
+        nature TEXT NOT NULL,
+        gender TEXT,
+        plural TEXT,
+        past TEXT,
+        present TEXT,
+        lemma_id TEXT REFERENCES lemma(id),
+        root_id TEXT REFERENCES root(id),
+        lesson_id TEXT NOT NULL REFERENCES lesson(id),
+        lesson_stage INTEGER NOT NULL,
+        lesson_ordinal INTEGER NOT NULL,
+        example_ar TEXT,
+        example_fr TEXT,
+        theme TEXT,
+        meaning_source TEXT NOT NULL,
+        keys_json TEXT NOT NULL
+    ) STRICT""")
+    con.execute("CREATE INDEX word_lemma ON word(lemma_id)")
+    rows = []
+    for w in words:
+        root = w.get("racine")
+        if w.get("lemme"):
+            root = con.execute("SELECT root_id FROM lemma WHERE id = ?", (w["lemme"],)).fetchone()[0]
+        stage, ordinal = lesson_order[w["lecon"]]
+        ex = w.get("exemple") or {}
+        rows.append((
+            w["id"], w["ar"], w["translit"], w["fr"], w["nature"], w.get("genre"),
+            w.get("pluriel"), w.get("passe"), w.get("inaccompli"), w.get("lemme"), root,
+            w["lecon"], stage, ordinal, ex.get("ar"), ex.get("fr"), w.get("theme"),
+            w["source_sens"], json.dumps(sorted(word_keys(w)), ensure_ascii=False),
+        ))
+    con.executemany(f"INSERT INTO word VALUES ({','.join('?' * 19)})", rows)
+    return len(rows)

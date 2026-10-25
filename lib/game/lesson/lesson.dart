@@ -52,7 +52,13 @@ enum QuestionKind {
   tracer,
   repeter,
   repererMot,
-  compter;
+  compter,
+  // Région 2 (cahier §6.4).
+  sens,
+  traduire,
+  completer,
+  ordonner,
+  repondre;
 
   static QuestionKind parse(String s) => switch (s) {
     'qcm' => qcm,
@@ -68,12 +74,30 @@ enum QuestionKind {
     'repeter' => repeter,
     'reperer_mot' => repererMot,
     'compter' => compter,
+    'sens' => sens,
+    'traduire' => traduire,
+    'completer' => completer,
+    'ordonner' => ordonner,
+    'repondre' => repondre,
     _ => throw FormatException('type de question inconnu : $s'),
   };
 
   /// Exercice sans bonne ou mauvaise réponse (tracer, répéter à voix
   /// haute) : jamais noté (cahier v3 §3.5, pas de note automatique).
   bool get ungraded => this == tracer || this == repeter;
+
+  /// Tuiles à assembler : lettres d'un mot ([reconstruire]) ou mots d'une
+  /// phrase ([ordonner]).
+  bool get tiled => this == reconstruire || this == ordonner;
+
+  /// Exercice de production (avenant n° 2) : construire, écrire, parler.
+  bool get production =>
+      this == ordonner ||
+      this == traduire ||
+      this == completer ||
+      this == repondre ||
+      this == repeter ||
+      this == reconstruire;
 }
 
 /// Ce que représentent les choix d'une question.
@@ -93,6 +117,7 @@ class LessonQuestion {
     this.solution = const [],
     this.letter,
     this.word,
+    this.reply,
     this.revision = false,
   });
 
@@ -121,6 +146,12 @@ class LessonQuestion {
       solution: ((j['solution'] as List?) ?? const []).cast<String>(),
       letter: j['lettre'] as String?,
       word: j['mot'] as int?,
+      reply: j['replique'] == null
+          ? null
+          : (
+              speaker: (j['replique'] as Map)['qui'] as String,
+              arabic: (j['replique'] as Map)['ar'] as String,
+            ),
       revision: j['revision'] == true,
     );
   }
@@ -151,6 +182,9 @@ class LessonQuestion {
 
   /// Mot visé dans l'inscription (indice), salle de lecture seulement.
   final int? word;
+
+  /// Réplique d'un personnage à laquelle répondre (« répondre »).
+  final ({String speaker, String arabic})? reply;
 
   /// Question de révision (leçons précédentes), au mini-boss.
   final bool revision;
@@ -189,8 +223,24 @@ sealed class LessonStep {
         letter: j['lettre'] as String?,
         question: q(j['question'])!,
       ),
-      'echauffement' || 'entrainement' => PracticeStep(
+      'dialogue' => DialogueStep(
+        lines: [
+          for (final r in (j['repliques'] as List).cast<Map>())
+            (
+              speaker: r['qui'] as String,
+              arabic: r['ar'] as String,
+              french: r['fr'] as String,
+            ),
+        ],
+        question: q(j['question'])!,
+      ),
+      'mots' => WordsStep(
+        words: strings(j['mots']),
+        question: q(j['question'])!,
+      ),
+      'echauffement' || 'entrainement' || 'atelier' => PracticeStep(
         warmUp: type == 'echauffement',
+        atelier: type == 'atelier',
         exercises: [
           for (final e in ((j['exercices'] ?? j['questions']) as List))
             LessonQuestion.fromJson(e as Map<String, dynamic>),
@@ -201,6 +251,7 @@ sealed class LessonStep {
         mushaf: j['mushaf'] == true,
         text: frenchWithArabic(j['texte'] as String),
         inscription: strings(j['inscription']),
+        sentences: strings(j['phrases']),
         questions: [
           for (final e in j['questions'] as List)
             LessonQuestion.fromJson(e as Map<String, dynamic>),
@@ -260,10 +311,36 @@ class ExplainStep extends LessonStep {
 }
 
 class PracticeStep extends LessonStep {
-  const PracticeStep({required this.exercises, this.warmUp = false});
+  const PracticeStep({
+    required this.exercises,
+    this.warmUp = false,
+    this.atelier = false,
+  });
 
   final List<LessonQuestion> exercises;
   final bool warmUp;
+
+  /// L'Atelier des phrases (région 2) : exercices de production.
+  final bool atelier;
+}
+
+/// Dialogue (région 2) : découverte par l'exemple, en arabe vocalisé avec sa
+/// traduction à la demande, puis une question.
+class DialogueStep extends LessonStep {
+  const DialogueStep({required this.lines, required this.question});
+
+  final List<({String speaker, String arabic, String french})> lines;
+  final LessonQuestion question;
+}
+
+/// Les mots (région 2) : fiches des mots nouveaux (table `word`), puis une
+/// question.
+class WordsStep extends LessonStep {
+  const WordsStep({required this.words, required this.question});
+
+  /// Identifiants des mots (vocabulaire).
+  final List<String> words;
+  final LessonQuestion question;
 }
 
 /// Salle de lecture (avenant n° 1) : une inscription d'exemples construits,
@@ -274,9 +351,13 @@ class ReadingStep extends LessonStep {
     required this.text,
     required this.inscription,
     required this.questions,
+    this.sentences = const [],
     this.title,
     this.mushaf = false,
   });
+
+  /// Court texte gradué (région 2) : phrases, mots touchables.
+  final List<String> sentences;
 
   final String? title;
 
@@ -317,11 +398,14 @@ class Lesson {
     this.signs = const [],
     this.readings = const [],
     this.noCombat = false,
+    this.words = const [],
   });
 
-  /// Leçon au format 2 ; `null` pour une leçon d'un ancien format.
+  /// Leçon au format 2 (région 1) ou 3 (région 2) ; `null` sinon.
   static Lesson? fromJson(Map<String, dynamic> j) {
-    if (j['format'] != 2) return null;
+    if (j['format'] != 2 && j['format'] != 3) return null;
+    final intro = (j['introduit'] as Map?) ?? const {};
+    final elements = (j['elements'] as Map?) ?? const {};
     return Lesson(
       id: j['id'] as String,
       stage: j['etape'] as int,
@@ -334,12 +418,16 @@ class Lesson {
         for (final s in j['ecrans'] as List)
           LessonStep.fromJson(s as Map<String, dynamic>),
       ],
-      letters: ((j['introduit'] as Map)['lettres'] as List).cast<String>(),
-      signs: ((j['introduit'] as Map)['signes'] as List).cast<String>(),
+      letters: ((intro['lettres'] as List?) ?? const []).cast<String>(),
+      signs: ((intro['signes'] as List?) ?? const []).cast<String>(),
       noCombat: j['sans_combat'] == true,
+      words: [
+        for (final s in (j['ecrans'] as List).cast<Map>())
+          if (s['type'] == 'mots') ...(s['mots'] as List).cast<String>(),
+      ],
       readings: [
         for (final kind in ['syllabes', 'mots'])
-          for (final e in ((j['elements'] as Map)[kind] as List).cast<Map>())
+          for (final e in ((elements[kind] as List?) ?? const []).cast<Map>())
             e['ar'] as String,
       ],
     );
@@ -363,10 +451,17 @@ class Lesson {
   /// Syllabes puis mots à lire.
   final List<String> readings;
 
+  /// Mots nouveaux (identifiants du vocabulaire, région 2).
+  final List<String> words;
+
   /// Lieu calme, sans combat (leçon 14, salle des manuscrits) : le
   /// mini-boss devient une série finale de questions.
   final bool noCombat;
 }
+
+/// Numéro affiché d'une leçon : « 7 » en région 1, « 2.3 » ensuite.
+String lessonNumber(int stage, int ordinal) =>
+    stage == 1 ? '$ordinal' : '$stage.$ordinal';
 
 /// Résumé d'une leçon, pour la liste d'un lieu.
 class LessonSummary {
@@ -385,6 +480,8 @@ class LessonSummary {
 
   /// Au format mini-donjon (les autres arrivent à l'étape 5).
   final bool playable;
+
+  String get number => lessonNumber(stage, ordinal);
 }
 
 /// Lettres arabes précomposées et leur forme décomposée (Unicode).

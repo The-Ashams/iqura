@@ -28,7 +28,15 @@ enum CardKind {
   signe,
 
   /// Une syllabe ou un mot écrit : on choisit sa lecture entendue.
-  lire;
+  lire,
+
+  /// Sens d'un mot (connaissance passive, région 2) : le mot arabe est
+  /// montré, on choisit son sens.
+  sens,
+
+  /// Le mot à partir du français (connaissance active, cahier §4) : créée
+  /// quand la carte « sens » du mot est « reconnue ».
+  produire;
 
   static CardKind parse(String s) => values.byName(s);
 }
@@ -110,6 +118,7 @@ List<({String id, CardKind kind, String target})> cardsOfLesson(
   required List<String> letters,
   required List<String> signs,
   required List<String> readings,
+  List<String> words = const [],
 }) => [
   for (final l in letters) ...[
     (id: 'reconnaitre:$l', kind: CardKind.reconnaitre, target: l),
@@ -120,6 +129,9 @@ List<({String id, CardKind kind, String target})> cardsOfLesson(
     if (signMarks.containsKey(s))
       (id: 'signe:$s', kind: CardKind.signe, target: s),
   for (final r in readings) (id: 'lire:$r', kind: CardKind.lire, target: r),
+  // Région 2 : une carte « sens » par mot nouveau (la carte active vient
+  // quand celle-ci est reconnue).
+  for (final w in words) (id: 'sens:$w', kind: CardKind.sens, target: w),
 ];
 
 class ReviewRepository {
@@ -267,6 +279,13 @@ class ReviewRepository {
         );
         stones += gain;
       }
+    }
+    // Connaissance active (cahier §4) : la carte « produire » d'un mot
+    // apparaît une fois sa carte « sens » reconnue.
+    if (c.kind == CardKind.sens && best.index >= MasteryLevel.reconnu.index) {
+      createCards(c.lessonId, [
+        (id: 'produire:${c.target}', kind: CardKind.produire, target: c.target),
+      ]);
     }
     return (rating: rating, stones: stones, card: get(id)!);
   }

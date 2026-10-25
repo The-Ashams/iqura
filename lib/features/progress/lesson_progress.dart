@@ -223,6 +223,7 @@ LessonReward rewardLesson(
       letters: lesson.letters,
       signs: lesson.signs,
       readings: lesson.readings,
+      words: lesson.words,
     ),
   );
   return LessonReward(

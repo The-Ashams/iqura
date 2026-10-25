@@ -8,6 +8,7 @@ import 'dart:math';
 
 import '../../features/review/review.dart';
 import '../lesson/lesson.dart';
+import '../vocab/word.dart';
 import '../world.dart';
 
 class ReviewPools {
@@ -16,7 +17,11 @@ class ReviewPools {
     required this.readings,
     required this.translit,
     required this.syllables,
+    this.words = const [],
   });
+
+  /// Mots appris (région 2) : cartes « sens » et « produire ».
+  final List<Word> words;
 
   /// Fiches des lettres apprises (cartes « reconnaître » ou « écouter »).
   final List<LetterCard> letters;
@@ -132,6 +137,48 @@ LessonQuestion? questionFor(ReviewCard card, ReviewPools p, Random r) {
         ),
         answer,
         others,
+        r,
+      );
+    case CardKind.sens:
+    case CardKind.produire:
+      final word = p.words.where((w) => w.id == card.target);
+      if (word.isEmpty) return null;
+      final w = word.first;
+      final others = _distractors(
+        p.words,
+        w,
+        2,
+        r,
+        close: (o) => o.nature == w.nature,
+      ).where((o) => o.french != w.french && o.arabic != w.arabic).toList();
+      if (others.length < 2) return null;
+      if (card.kind == CardKind.sens) {
+        return _withChoices(
+          (c, a) => LessonQuestion(
+            kind: QuestionKind.sens,
+            prompt: 'Que veut dire ce mot ?',
+            arabic: w.arabic,
+            choices: c,
+            choiceKind: ChoiceKind.text,
+            answer: a,
+            explanation: frenchWithArabic('${w.arabic} : « ${w.french} ».'),
+          ),
+          w.french,
+          [for (final o in others) o.french],
+          r,
+        );
+      }
+      return _withChoices(
+        (c, a) => LessonQuestion(
+          kind: QuestionKind.traduire,
+          prompt: 'Comment dit-on « ${w.french} » ?',
+          choices: c,
+          choiceKind: ChoiceKind.arabic,
+          answer: a,
+          explanation: frenchWithArabic('« ${w.french} » : ${w.arabic}.'),
+        ),
+        w.arabic,
+        [for (final o in others) o.arabic],
         r,
       );
     case CardKind.lire:
