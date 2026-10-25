@@ -305,3 +305,12 @@ Moyenne dans l'ensemble, haute sur les règles de grammaire. Ce qui reste incert
 
 Plan du marché prêt : 68 mots nouveaux (5 à 10 par leçon), des phrases sans verbe, « il n'est pas » (لَيْسَ) présenté comme un mot de négation un peu spécial, et les formes difficiles (nombres au féminin, pluriels sans tanwīn) seulement montrées, pas encore exercées.
 
+
+## Doutes des relectures de 2.11 à 2.13 (25/10/2026)
+
+1. **Fiche « livre »** : l'exemple « هَٰذَا كِتَابٌ جَدِيدٌ. » devient « الْكِتَابُ قَدِيمٌ. ». Dans le Coran, « هَٰذَا كِتَابٌ » renvoie au Livre lui-même. Ce n'est pas une règle générale.
+2. **إِلَى أَيْنَ؟** est gardé comme formule figée, sans verbe, avec sa réponse إِلَى السُّوقِ. Aucun autre emploi de إِلَى avant 2.21.
+3. **Tanwīn (2.12)** : « la plupart des noms » ; on ajoute que quelques noms, comme دَرَاهِمُ, n'en prennent jamais. L'exemple isolé دِرْهَمٍ est remplacé par فِي بَيْتٍ.
+4. **Écoute** : on n'oppose jamais -un et -in sur un mot isolé. L'exercice de 2.12 porte sur فِضَّةٌ / حَدِيدٌ / ذَهَبٌ.
+5. **فَوْقَ** = « au-dessus de » seulement. Remarque sur la fiche : « عَلَى : posé sur ; فَوْقَ : plus haut que ».
+6. **صُنْدُوقٌ** est gardé avec une ḍamma, sans variante affichée.

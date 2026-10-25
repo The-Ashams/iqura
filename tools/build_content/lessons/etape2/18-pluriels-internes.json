@@ -1,0 +1,546 @@
+{
+  "id": "fondations-18",
+  "etape": 2,
+  "ordre": 18,
+  "format": 3,
+  "titre": "Les pluriels internes",
+  "objectif": "Reconnaître un pluriel qui change la forme du mot ; accorder un pluriel de choses.",
+  "statut": "ia_non_verifie",
+  "lieu": "maison_salma",
+  "maitre": "salma",
+  "prerequis": [
+    "fondations-17"
+  ],
+  "apercu": [
+    "سَلْمَى"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "salma",
+          "texte": "Les invités sont là, et les voisins aussi !"
+        },
+        {
+          "qui": "salma",
+          "texte": "Beaucoup de mots changent de forme au pluriel, sans terminaison. Regarde bien leurs lettres."
+        }
+      ],
+      "objectif": "Reconnaître les pluriels internes."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des boulangers » ?",
+          "choix_ar": [
+            "خَبَّازُونَ",
+            "خَبَّازَانِ",
+            "خَبَّازٌ"
+          ],
+          "reponse": 0,
+          "explication": "-ūna : plusieurs (leçon 2.17)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَرِحٌ",
+          "choix": [
+            "joyeux",
+            "occupé",
+            "petit"
+          ],
+          "reponse": 0,
+          "explication": "فَرِحٌ veut dire « joyeux » (leçon 2.17)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les enseignantes sont occupées. »",
+          "ar": "الْمُعَلِّمَاتُ …",
+          "choix_ar": [
+            "مَشْغُولَاتٌ",
+            "مَشْغُولٌ",
+            "مَشْغُولُونَ"
+          ],
+          "reponse": 0,
+          "explication": "Féminin pluriel : -āt (leçon 2.17)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَنْ هَٰؤُلَاءِ؟",
+          "fr": "Qui sont ces gens ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "هَٰؤُلَاءِ جِيرَانٌ، وَهَٰؤُلَاءِ ضُيُوفٌ.",
+          "fr": "Ceux-ci sont des voisins, et ceux-là des invités."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَمَا هَٰذِهِ؟",
+          "fr": "Et qu'est-ce que c'est que ça ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "هَٰذِهِ سُيُوفٌ قَدِيمَةٌ.",
+          "fr": "Ce sont de vieilles épées."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment sont les épées ?",
+        "choix": [
+          "anciennes",
+          "neuves",
+          "petites"
+        ],
+        "reponse": 0,
+        "explication": "سُيُوفٌ قَدِيمَةٌ : anciennes."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "dayf",
+        "jar",
+        "sayf",
+        "himar",
+        "kalb",
+        "najm"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "جَارٌ",
+        "choix": [
+          "voisin",
+          "invité",
+          "ami"
+        ],
+        "reponse": 0,
+        "explication": "جَارٌ veut dire « voisin »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le pluriel interne",
+      "texte": "Beaucoup de noms changent de forme à l'intérieur au pluriel (voyelles, lettres ajoutées), sans terminaison : كِتَابٌ, pluriel كُتُبٌ ; بَيْتٌ, pluriel بُيُوتٌ. Ce pluriel s'apprend avec le mot : il est sur chaque fiche.",
+      "exemples": [
+        "أَقْلَامٌ",
+        "أَوْلَادٌ",
+        "أَبْوَابٌ",
+        "رِجَالٌ",
+        "جِبَالٌ",
+        "ثِيَابٌ",
+        "بُيُوتٌ",
+        "خُيُوطٌ",
+        "كُتُبٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le pluriel de « قَلَمٌ » ?",
+        "choix": [
+          "أَقْلَامٌ",
+          "قَلَمُونَ",
+          "قَلَمَانِ"
+        ],
+        "reponse": 0,
+        "explication": "قَلَمٌ fait أَقْلَامٌ : un pluriel interne."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'accord d'un pluriel de choses",
+      "texte": "Un pluriel de choses ou d'animaux s'accorde comme un féminin singulier : هَٰذِهِ كُتُبٌ، الْكُتُبُ جَدِيدَةٌ. Pour des personnes, l'adjectif reste au pluriel : الْجِيرَانُ فَرِحُونَ.",
+      "exemples": [
+        "هَٰذِهِ كُتُبٌ.",
+        "الْكُتُبُ جَدِيدَةٌ.",
+        "الْجِيرَانُ فَرِحُونَ."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Les épées sont anciennes. »",
+        "ar": "السُّيُوفُ …",
+        "choix_ar": [
+          "قَدِيمَةٌ",
+          "قَدِيمٌ",
+          "قَدِيمُونَ"
+        ],
+        "reponse": 0,
+        "explication": "Pluriel de choses : féminin singulier."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَجْمٌ",
+          "choix": [
+            "étoile",
+            "montagne",
+            "fleuve"
+          ],
+          "reponse": 0,
+          "explication": "نَجْمٌ veut dire « étoile »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حِمَارٌ",
+          "choix": [
+            "âne",
+            "chien",
+            "chameau"
+          ],
+          "reponse": 0,
+          "explication": "حِمَارٌ veut dire « âne »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des chiens » ?",
+          "choix_ar": [
+            "كِلَابٌ",
+            "كَلْبَانِ",
+            "كَلْبٌ"
+          ],
+          "reponse": 0,
+          "explication": "كَلْبٌ fait كِلَابٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des invités » ?",
+          "choix_ar": [
+            "ضُيُوفٌ",
+            "ضَيْفٌ",
+            "ضَيْفَانِ"
+          ],
+          "reponse": 0,
+          "explication": "« des invités » se dit ضُيُوفٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ce sont des calames neufs. »",
+          "ar": "هَٰذِهِ أَقْلَامٌ …",
+          "choix_ar": [
+            "جَدِيدَةٌ",
+            "جَدِيدٌ",
+            "جَدِيدُونَ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de choses : féminin singulier."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les étoiles sont nombreuses. »",
+          "ar": "النُّجُومُ …",
+          "choix_ar": [
+            "كَثِيرَةٌ",
+            "كَثِيرٌ",
+            "كَثِيرُونَ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de choses : féminin singulier."
+        },
+        {
+          "type": "qcm",
+          "consigne": "« هَٰذِهِ بُيُوتٌ » : pourquoi هَٰذِهِ (féminin) ?",
+          "choix": [
+            "un pluriel de choses s'accorde au féminin singulier",
+            "بَيْتٌ est féminin",
+            "c'est une erreur"
+          ],
+          "reponse": 0,
+          "explication": "بُيُوتٌ est un pluriel de choses : on dit هَٰذِهِ."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "سُيُوفٌ",
+          "choix_ar": [
+            "سُيُوفٌ",
+            "ضُيُوفٌ",
+            "بُيُوتٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était سُيُوفٌ « épées »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Les invités sont dans la maison. »",
+          "tuiles": [
+            "فِي",
+            "الضُّيُوفُ",
+            "الْبَيْتِ",
+            "الضَّيْفُ"
+          ],
+          "solution": [
+            "الضُّيُوفُ",
+            "فِي",
+            "الْبَيْتِ"
+          ],
+          "explication": "الضُّيُوفُ فِي الْبَيْتِ."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "السُّيُوفُ قَدِيمَةٌ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La soirée chez Salmā",
+      "texte": "La nuit tombe sur la maison de Salmā. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "الضُّيُوفُ وَالْجِيرَانُ فِي بَيْتِ سَلْمَى.",
+        "فِي الْغُرْفَةِ ثِيَابٌ جَدِيدَةٌ وَسُيُوفٌ قَدِيمَةٌ.",
+        "الْحَمِيرُ وَالْكِلَابُ هُنَاكَ.",
+        "وَالنُّجُومُ كَثِيرَةٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'y a-t-il dans la chambre ?",
+          "choix": [
+            "des vêtements neufs et de vieilles épées",
+            "des chiens",
+            "des étoiles"
+          ],
+          "reponse": 0,
+          "explication": "ثِيَابٌ جَدِيدَةٌ وَسُيُوفٌ قَدِيمَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Où sont les ânes et les chiens ?",
+          "choix": [
+            "là-bas",
+            "dans la chambre",
+            "ici"
+          ],
+          "reponse": 0,
+          "explication": "الْحَمِيرُ وَالْكِلَابُ هُنَاكَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim montre des livres. Dis que ce sont des livres neufs.",
+          "replique": {
+            "qui": "basim",
+            "ar": "مَا هَٰذِهِ؟"
+          },
+          "choix_ar": [
+            "هَٰذِهِ كُتُبٌ جَدِيدَةٌ.",
+            "هَٰذَا كُتُبٌ جَدِيدٌ.",
+            "هَٰذِهِ كِتَابٌ جَدِيدَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de choses : هَٰذِهِ et جَدِيدَةٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « les maisons sont grandes » ?",
+          "choix_ar": [
+            "الْبُيُوتُ كَبِيرَةٌ.",
+            "الْبُيُوتُ كَبِيرٌ.",
+            "الْبَيْتُ كَبِيرَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de choses : féminin singulier."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Les chiens sont là-bas. »",
+          "tuiles": [
+            "هُنَاكَ",
+            "الْكِلَابُ",
+            "الْكَلْبُ"
+          ],
+          "solution": [
+            "الْكِلَابُ",
+            "هُنَاكَ"
+          ],
+          "explication": "الْكِلَابُ هُنَاكَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les montagnes sont loin. »",
+          "ar": "الْجِبَالُ …",
+          "choix_ar": [
+            "بَعِيدَةٌ",
+            "بَعِيدٌ",
+            "بَعِيدُونَ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de choses : féminin singulier."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ضَيْفٌ",
+          "choix": [
+            "invité",
+            "voisin",
+            "marchand"
+          ],
+          "reponse": 0,
+          "explication": "ضَيْفٌ veut dire « invité »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَيْفٌ",
+          "choix": [
+            "épée",
+            "clé",
+            "fil"
+          ],
+          "reponse": 0,
+          "explication": "سَيْفٌ veut dire « épée »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَلْبٌ",
+          "choix": [
+            "chien",
+            "âne",
+            "chameau"
+          ],
+          "reponse": 0,
+          "explication": "كَلْبٌ veut dire « chien »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des étoiles » ?",
+          "choix_ar": [
+            "نُجُومٌ",
+            "نَجْمَانِ",
+            "نَجْمٌ"
+          ],
+          "reponse": 0,
+          "explication": "« des étoiles » se dit نُجُومٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des voisins » ?",
+          "choix_ar": [
+            "جِيرَانٌ",
+            "جَارَانِ",
+            "جَارٌ"
+          ],
+          "reponse": 0,
+          "explication": "جِيرَانٌ : le ن fait partie du mot, ce n'est pas le ن du duel."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les vêtements sont neufs. »",
+          "ar": "الثِّيَابُ …",
+          "choix_ar": [
+            "جَدِيدَةٌ",
+            "جَدِيدٌ",
+            "جَدِيدُونَ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de choses : féminin singulier."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ce sont des épées. »",
+          "ar": "… سُيُوفٌ.",
+          "choix_ar": [
+            "هَٰذِهِ",
+            "هَٰذَا",
+            "ذَٰلِكَ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de choses : هَٰذِهِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le pluriel de كِتَابٌ est…",
+          "choix": [
+            "كُتُبٌ",
+            "كِتَابُونَ",
+            "كِتَابَاتٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le pluriel de كِتَابٌ est كُتُبٌ."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "نُجُومٌ",
+          "choix_ar": [
+            "نُجُومٌ",
+            "لُحُومٌ",
+            "بُيُوتٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était نُجُومٌ « étoiles »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « avec les tailleurs » ?",
+          "choix_ar": [
+            "مَعَ الْخَيَّاطِينَ",
+            "مَعَ الْخَيَّاطُونَ",
+            "مَعَ الْخَيَّاطِ"
+          ],
+          "reponse": 0,
+          "explication": "« avec les tailleurs » se dit مَعَ الْخَيَّاطِينَ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وِسَادَةٌ",
+          "choix": [
+            "coussin",
+            "lit",
+            "mur"
+          ],
+          "reponse": 0,
+          "explication": "وِسَادَةٌ veut dire « coussin ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَعَ",
+          "choix": [
+            "avec",
+            "chez",
+            "sous"
+          ],
+          "reponse": 0,
+          "explication": "مَعَ veut dire « avec ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais les pluriels internes (كُتُبٌ، بُيُوتٌ، رِجَالٌ) et tu accordes un pluriel de choses au féminin singulier.",
+      "suite": "Prochaine étape : la balance du changeur, pour compter jusqu'à dix."
+    }
+  ]
+}

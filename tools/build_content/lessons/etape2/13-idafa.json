@@ -1,0 +1,554 @@
+{
+  "id": "fondations-13",
+  "etape": 2,
+  "ordre": 13,
+  "format": 3,
+  "titre": "« La porte de la maison »",
+  "objectif": "Dire « le … de … » avec deux noms côte à côte (l'iḍāfa).",
+  "statut": "ia_non_verifie",
+  "lieu": "souk",
+  "maitre": "salma",
+  "prerequis": [
+    "fondations-12"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "salma",
+          "texte": "La bourse ! Où est la bourse du marchand ?"
+        },
+        {
+          "qui": "salma",
+          "texte": "Pour dire « la bourse du marchand », l'arabe met deux noms côte à côte. Aide-moi à chercher !"
+        }
+      ],
+      "objectif": "Dire « le … de … »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Dans « الدِّينَارُ مِنَ الذَّهَبِ », الذَّهَبِ est…",
+          "choix": [
+            "au génitif (-i)",
+            "au nominatif (-u)",
+            "à l'accusatif (-a)"
+          ],
+          "reponse": 0,
+          "explication": "Après مِنْ : génitif (leçon 2.12)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَابٌ",
+          "choix": [
+            "porte",
+            "livre",
+            "panier"
+          ],
+          "reponse": 0,
+          "explication": "بَابٌ veut dire « porte » (leçon 2.11)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le livre est sur la chaise. »",
+          "ar": "الْكِتَابُ عَلَى …",
+          "choix_ar": [
+            "الْكُرْسِيِّ",
+            "الْكُرْسِيُّ",
+            "كُرْسِيٌّ"
+          ],
+          "reponse": 0,
+          "explication": "Après عَلَى, le nom est au génitif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "salma",
+          "ar": "أَيْنَ كِيسُ التَّاجِرِ؟",
+          "fr": "Où est la bourse du marchand ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "كِيسُ التَّاجِرِ فِي الصُّنْدُوقِ.",
+          "fr": "La bourse du marchand est dans le coffre."
+        },
+        {
+          "qui": "salma",
+          "ar": "وَأَيْنَ الْمِفْتَاحُ؟",
+          "fr": "Et où est la clé ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "الْمِفْتَاحُ تَحْتَ الْكِيسِ.",
+          "fr": "La clé est sous la bourse."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où est la clé ?",
+        "choix": [
+          "sous la bourse",
+          "au-dessus du coffre",
+          "sur la chaise"
+        ],
+        "reponse": 0,
+        "explication": "الْمِفْتَاحُ تَحْتَ الْكِيسِ : sous la bourse."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "kis",
+        "miftah",
+        "sunduq",
+        "bai"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مِفْتَاحٌ",
+        "choix": [
+          "clé",
+          "coffre",
+          "bourse"
+        ],
+        "reponse": 0,
+        "explication": "مِفْتَاحٌ veut dire « clé »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "taht",
+        "fawq"
+      ],
+      "question": {
+        "type": "traduire",
+        "consigne": "Comment dit-on « sous » ?",
+        "choix_ar": [
+          "تَحْتَ",
+          "فَوْقَ",
+          "عَلَى"
+        ],
+        "reponse": 0,
+        "explication": "« sous » se dit تَحْتَ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Deux noms côte à côte",
+      "texte": "On met deux noms côte à côte : le premier n'a ni article ni tanwīn et garde la fin de son rôle, le second est au génitif. بَابُ الْبَيْتِ كَبِيرٌ « la porte de la maison est grande ».",
+      "exemples": [
+        "بَابُ الْبَيْتِ",
+        "كِيسُ التَّاجِرِ",
+        "مِفْتَاحُ الصُّنْدُوقِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment dit-on « la clé du coffre » ?",
+        "choix_ar": [
+          "مِفْتَاحُ الصُّنْدُوقِ",
+          "الْمِفْتَاحُ الصُّنْدُوقِ",
+          "مِفْتَاحٌ الصُّنْدُوقُ"
+        ],
+        "reponse": 0,
+        "explication": "Premier nom sans article ni tanwīn, second au génitif."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "تَحْتَ et فَوْقَ",
+      "texte": "تَحْتَ « sous » et فَوْقَ « au-dessus de » se construisent comme un premier nom : le nom qui suit est au génitif. Leur fin en a ne change pas ici.",
+      "exemples": [
+        "تَحْتَ الْكُرْسِيِّ",
+        "فَوْقَ الصُّنْدُوقِ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « sous la chaise ».",
+        "ar": "تَحْتَ …",
+        "choix_ar": [
+          "الْكُرْسِيِّ",
+          "الْكُرْسِيُّ",
+          "كُرْسِيٌّ"
+        ],
+        "reponse": 0,
+        "explication": "Après تَحْتَ : génitif."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صُنْدُوقٌ",
+          "choix": [
+            "coffre",
+            "clé",
+            "porte"
+          ],
+          "reponse": 0,
+          "explication": "صُنْدُوقٌ veut dire « coffre »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَوْقَ",
+          "choix": [
+            "au-dessus de",
+            "sous",
+            "dans"
+          ],
+          "reponse": 0,
+          "explication": "فَوْقَ veut dire « au-dessus de »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la porte de la maison » ?",
+          "choix_ar": [
+            "بَابُ الْبَيْتِ",
+            "الْبَابُ الْبَيْتِ",
+            "بَابٌ الْبَيْتُ"
+          ],
+          "reponse": 0,
+          "explication": "بَابُ sans article ni tanwīn, puis الْبَيْتِ au génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « la bourse du vendeur ».",
+          "ar": "كِيسُ …",
+          "choix_ar": [
+            "الْبَائِعِ",
+            "الْبَائِعُ",
+            "بَائِعٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le second nom est au génitif : الْبَائِعِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « la clé de la maison ».",
+          "ar": "… الْبَيْتِ",
+          "choix_ar": [
+            "مِفْتَاحُ",
+            "الْمِفْتَاحُ",
+            "مِفْتَاحٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le premier nom n'a ni article ni tanwīn : مِفْتَاحُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans كِيسُ التَّاجِرِ, le premier nom…",
+          "choix": [
+            "n'a ni article ni tanwīn",
+            "a l'article",
+            "est au génitif"
+          ],
+          "reponse": 0,
+          "explication": "Le premier nom perd l'article et le tanwīn."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "كِيسٌ",
+          "choix_ar": [
+            "كِيسٌ",
+            "كِتَابٌ",
+            "بَابٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était كِيسٌ « bourse »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « La clé est sous la bourse. »",
+          "tuiles": [
+            "تَحْتَ",
+            "الْمِفْتَاحُ",
+            "الْكِيسِ",
+            "فَوْقَ"
+          ],
+          "solution": [
+            "الْمِفْتَاحُ",
+            "تَحْتَ",
+            "الْكِيسِ"
+          ],
+          "explication": "الْمِفْتَاحُ تَحْتَ الْكِيسِ."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "بَابُ الْبَيْتِ كَبِيرٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « au-dessus du coffre » ?",
+          "choix_ar": [
+            "فَوْقَ الصُّنْدُوقِ",
+            "تَحْتَ الصُّنْدُوقِ",
+            "فَوْقَ الصُّنْدُوقُ"
+          ],
+          "reponse": 0,
+          "explication": "فَوْقَ, puis le génitif."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La bourse retrouvée",
+      "texte": "Bāsim et Salmā cherchent dans l'étal. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "بَابُ الْبَيْتِ كَبِيرٌ.",
+        "الصُّنْدُوقُ تَحْتَ الْكُرْسِيِّ.",
+        "كِيسُ التَّاجِرِ فِي الصُّنْدُوقِ.",
+        "وَمِفْتَاحُ الصُّنْدُوقِ فِي الْكِيسِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où est le coffre ?",
+          "choix": [
+            "sous la chaise",
+            "sur la chaise",
+            "dans la tente"
+          ],
+          "reponse": 0,
+          "explication": "الصُّنْدُوقُ تَحْتَ الْكُرْسِيِّ : sous la chaise."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Où est la clé du coffre ?",
+          "choix": [
+            "dans la bourse",
+            "sous la chaise",
+            "chez le vendeur"
+          ],
+          "reponse": 0,
+          "explication": "مِفْتَاحُ الصُّنْدُوقِ فِي الْكِيسِ : dans la bourse."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Salmā cherche sa clé. Elle est au-dessus du coffre.",
+          "replique": {
+            "qui": "salma",
+            "ar": "أَيْنَ الْمِفْتَاحُ؟"
+          },
+          "choix_ar": [
+            "الْمِفْتَاحُ فَوْقَ الصُّنْدُوقِ.",
+            "الْمِفْتَاحُ فَوْقَ الصُّنْدُوقُ.",
+            "مِفْتَاحُ الصُّنْدُوقِ."
+          ],
+          "reponse": 0,
+          "explication": "فَوْقَ, puis le génitif : فَوْقَ الصُّنْدُوقِ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « La porte de la maison est grande. »",
+          "tuiles": [
+            "كَبِيرٌ",
+            "بَابُ",
+            "الْبَيْتِ",
+            "الْبَابُ"
+          ],
+          "solution": [
+            "بَابُ",
+            "الْبَيْتِ",
+            "كَبِيرٌ"
+          ],
+          "explication": "بَابُ الْبَيْتِ كَبِيرٌ : l'iḍāfa, puis l'attribut."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la bourse du marchand » ?",
+          "choix_ar": [
+            "كِيسُ التَّاجِرِ",
+            "الْكِيسُ التَّاجِرِ",
+            "كِيسُ التَّاجِرُ"
+          ],
+          "reponse": 0,
+          "explication": "« la bourse du marchand » se dit كِيسُ التَّاجِرِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La clé de la maison est petite. »",
+          "ar": "مِفْتَاحُ … صَغِيرٌ.",
+          "choix_ar": [
+            "الْبَيْتِ",
+            "الْبَيْتُ",
+            "بَيْتٌ"
+          ],
+          "reponse": 0,
+          "explication": "Second nom au génitif : مِفْتَاحُ الْبَيْتِ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَحْتَ",
+          "choix": [
+            "sous",
+            "au-dessus de",
+            "dans"
+          ],
+          "reponse": 0,
+          "explication": "تَحْتَ veut dire « sous »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كِيسٌ",
+          "choix": [
+            "sac, bourse",
+            "coffre",
+            "clé"
+          ],
+          "reponse": 0,
+          "explication": "كِيسٌ veut dire « sac, bourse »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَائِعٌ",
+          "choix": [
+            "vendeur",
+            "enseignant",
+            "voyageur"
+          ],
+          "reponse": 0,
+          "explication": "بَائِعٌ veut dire « vendeur »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la clé » ?",
+          "choix_ar": [
+            "الْمِفْتَاحُ",
+            "الصُّنْدُوقُ",
+            "الْكِيسُ"
+          ],
+          "reponse": 0,
+          "explication": "« la clé » se dit الْمِفْتَاحُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la porte de la maison » ?",
+          "choix_ar": [
+            "بَابُ الْبَيْتِ",
+            "الْبَابُ الْبَيْتِ",
+            "بَابُ الْبَيْتُ"
+          ],
+          "reponse": 0,
+          "explication": "« la porte de la maison » se dit بَابُ الْبَيْتِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « la bourse du marchand ».",
+          "ar": "كِيسُ …",
+          "choix_ar": [
+            "التَّاجِرِ",
+            "التَّاجِرُ",
+            "تَاجِرٌ"
+          ],
+          "reponse": 0,
+          "explication": "Second nom au génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « au-dessus de la tente ».",
+          "ar": "فَوْقَ …",
+          "choix_ar": [
+            "الْخَيْمَةِ",
+            "الْخَيْمَةُ",
+            "خَيْمَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après فَوْقَ : génitif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans une iḍāfa, le premier nom…",
+          "choix": [
+            "n'a ni article ni tanwīn",
+            "est toujours au génitif",
+            "a toujours l'article"
+          ],
+          "reponse": 0,
+          "explication": "Ni article ni tanwīn ; son cas dépend de son rôle."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "صُنْدُوقٌ",
+          "choix_ar": [
+            "صُنْدُوقٌ",
+            "مِفْتَاحٌ",
+            "دِينَارٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était صُنْدُوقٌ « coffre »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فِضَّةٌ",
+          "choix": [
+            "argent (le métal)",
+            "or",
+            "fer"
+          ],
+          "reponse": 0,
+          "explication": "فِضَّةٌ veut dire « argent (le métal) ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « dans le panier » ?",
+          "choix_ar": [
+            "فِي السَّلَّةِ",
+            "فِي السَّلَّةُ",
+            "عَلَى السَّلَّةِ"
+          ],
+          "reponse": 0,
+          "explication": "« dans le panier » se dit فِي السَّلَّةِ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هُنَاكَ",
+          "choix": [
+            "là-bas",
+            "ici",
+            "où ?"
+          ],
+          "reponse": 0,
+          "explication": "هُنَاكَ veut dire « là-bas ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu dis « la porte de la maison » : deux noms côte à côte, le premier sans article ni tanwīn, le second au génitif. Tu situes avec تَحْتَ et فَوْقَ.",
+      "suite": "Prochaine étape : l'échoppe du tisserand, pour dire « mon », « ton », « son »."
+    }
+  ]
+}

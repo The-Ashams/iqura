@@ -77,6 +77,9 @@ class Word {
     'demonstratif' => 'nom (démonstratif)',
     'demonstratif_lieu' => 'nom (démonstratif de lieu)',
     'interrogatif' => 'nom (interrogatif)',
+    // تَحْتَ، فَوْقَ، مَعَ، عِنْدَ (décision n° 3, Élémentaire 2).
+    'nom_lieu' => 'nom de lieu, employé comme une préposition',
+    'nombre' => 'nom (nombre)',
     'adverbe' => 'adverbe',
     _ => nature,
   };

@@ -57,9 +57,14 @@ class QuranGuardTest(unittest.TestCase):
         words = [{"ar": "نَاقَةٌ", "nature": "nom"}, {"ar": "هَٰذِهِ", "nature": "demonstratif"},
                  {"ar": "جَمِيلَةٌ", "nature": "adjectif"}]
         pairs = {("ناقه", "جميله"), ("هذه", "ناقه")}
-        w = vocab.quran_pair_warnings({"x": "النَّاقَةُ نَاقَةٌ جَمِيلَةٌ.", "y": "هَٰذِهِ نَاقَةٌ."}, words, pairs)
-        self.assertEqual(len(w), 1)
-        self.assertIn("x", w[0])
+        words.append({"ar": "هُمْ", "nature": "pronom"})
+        pairs |= {("وهم", "ناقه"), ("هذه", "هم")}
+        w = vocab.quran_pair_warnings(
+            {"x": "النَّاقَةُ نَاقَةٌ جَمِيلَةٌ.", "y": "هَٰذِهِ نَاقَةٌ.", "z": "وَهُمْ نَاقَةٌ.",
+             "t": "هَٰذِهِ هُمْ."}, words, pairs)
+        # Mot plein + mot plein, démonstratif ou pronom + mot plein : signalés ;
+        # deux mots outils seuls : non.
+        self.assertEqual(sorted(x[0] for x in w), ["x", "y", "z"])
 
     def test_inscriptions_are_checked_on_two_words(self):
         # « لَهُۥ بِهِۦ » se suit dans le Coran (relecture du 24/10/2026).

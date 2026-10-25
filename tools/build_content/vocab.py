@@ -26,9 +26,12 @@ import quran_guard
 VOCAB_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vocab", "mots.json")
 
 NATURES = {"nom", "adjectif", "verbe", "particule", "pronom", "demonstratif",
-           "demonstratif_lieu", "interrogatif", "adverbe"}
+           "demonstratif_lieu", "interrogatif", "adverbe", "nom_lieu", "nombre"}
 # Mots pleins (pour l'avertissement sur les paires coraniques).
-FULL_NATURES = {"nom", "adjectif", "verbe"}
+FULL_NATURES = {"nom", "adjectif", "verbe", "nombre"}
+# Pronoms et démonstratifs : une paire « pronom + mot plein » qui se suit
+# dans le Coran est signalée aussi (relecture du 25/10/2026 : وَهُمْ فَرِحُونَ).
+PAIRED_NATURES = {"pronom", "demonstratif"}
 GENRES = {"m", "f"}
 # Préfixes d'une lettre collés au mot (et, alors, avec/par, pour, comme).
 PREFIXES = ("و", "ف", "ب", "ل", "ك")
@@ -142,7 +145,9 @@ def validate(words: list[dict], con: sqlite3.Connection, lesson_ids: set[str],
             raise VocabError(f"{where} : leçon inconnue {w['lecon']}")
         if w["nature"] in ("nom", "adjectif") and w.get("genre") not in GENRES:
             raise VocabError(f"{where} : genre attendu (m ou f)")
-        if w["nature"] == "verbe" and not (w.get("passe") and w.get("inaccompli")):
+        # Verbe figé (لَيْسَ) : pas d'inaccompli, signalé par « fige ».
+        if w["nature"] == "verbe" and not w.get("fige") \
+                and not (w.get("passe") and w.get("inaccompli")):
             raise VocabError(f"{where} : passé et inaccompli attendus")
         for k in ("ar", "pluriel", "passe", "inaccompli"):
             if w.get(k):
@@ -211,13 +216,25 @@ def write(con: sqlite3.Connection, words: list[dict], lesson_order: dict[str, tu
 
 def quran_pair_warnings(texts: dict[str, str], words: list[dict],
                         pairs: set[tuple[str, ...]]) -> list[str]:
-    """Paires de deux mots pleins (noms, adjectifs, verbes du vocabulaire)
-    qui se suivent dans le Coran (décision du conseiller, 25/10/2026) :
-    signalées à la construction, sans bloquer. Le blocage reste à 3 mots."""
-    full = set()
+    """Paires qui se suivent dans le Coran (décision du conseiller,
+    25/10/2026) : deux mots pleins (noms, adjectifs, verbes, nombres), ou un
+    pronom ou démonstratif et un mot plein. Signalées à la construction, sans
+    bloquer ; le blocage reste à 3 mots."""
+    full, paired = set(), set()
     for w in words:
         if w["nature"] in FULL_NATURES:
             full |= word_keys(w)
+        elif w["nature"] in PAIRED_NATURES:
+            paired |= word_keys(w)
+
+    def kind(t: str) -> str | None:
+        cs = candidates(t)
+        if any(c in full for c in cs):
+            return "plein"
+        if any(c in paired for c in cs):
+            return "pronom"
+        return None
+
     out = []
     for where, text in texts.items():
         ws = quran_guard.words_of(text)
@@ -225,7 +242,9 @@ def quran_pair_warnings(texts: dict[str, str], words: list[dict],
         if len(ws) != len(toks):
             continue
         for i in range(len(ws) - 1):
-            if (ws[i], ws[i + 1]) in pairs and all(
-                    any(c in full for c in candidates(t)) for t in toks[i:i + 2]):
+            if (ws[i], ws[i + 1]) not in pairs:
+                continue
+            kinds = [kind(t) for t in toks[i:i + 2]]
+            if None not in kinds and "plein" in kinds:
                 out.append(f"{where} : « {toks[i]} {toks[i + 1]} » se suit dans le Coran")
     return out

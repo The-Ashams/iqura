@@ -1,0 +1,550 @@
+{
+  "id": "fondations-14",
+  "etape": 2,
+  "ordre": 14,
+  "format": 3,
+  "titre": "Mon livre, ton livre",
+  "objectif": "Dire « mon, ton, son, notre » avec un pronom collé au nom.",
+  "statut": "ia_non_verifie",
+  "lieu": "echoppe",
+  "maitre": "salma",
+  "prerequis": [
+    "fondations-13"
+  ],
+  "terminaisons": [
+    "pronoms"
+  ],
+  "apercu": [
+    "ثَوْبُكُمْ",
+    "ثَوْبُكُنَّ",
+    "ثَوْبُهُمْ",
+    "ثَوْبُهُنَّ",
+    "ثَوْبُكُمَا",
+    "ثَوْبُهُمَا"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "salma",
+          "texte": "Voici l'échoppe du tisserand : fils, laine et soie."
+        },
+        {
+          "qui": "salma",
+          "texte": "Ici, chacun dit « mon fil », « ton aiguille ». Apprends les petits pronoms collés au nom."
+        }
+      ],
+      "objectif": "Dire à qui appartient une chose."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « la clé de la maison ».",
+          "ar": "مِفْتَاحُ …",
+          "choix_ar": [
+            "الْبَيْتِ",
+            "الْبَيْتُ",
+            "بَيْتٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le second nom est au génitif (leçon 2.13)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَوْبٌ",
+          "choix": [
+            "vêtement",
+            "fil",
+            "laine"
+          ],
+          "reponse": 0,
+          "explication": "ثَوْبٌ veut dire « vêtement » (leçon 2.4)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je » ?",
+          "choix_ar": [
+            "أَنَا",
+            "أَنْتَ",
+            "هُوَ"
+          ],
+          "reponse": 0,
+          "explication": "« je » se dit أَنَا (leçon 2.7)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "salma",
+          "ar": "هَٰذَا ثَوْبِي، وَهُوَ مِنَ الصُّوفِ.",
+          "fr": "Voici mon vêtement, il est en laine."
+        },
+        {
+          "qui": "basim",
+          "ar": "ثَوْبُكِ جَمِيلٌ!",
+          "fr": "Ton vêtement est beau !"
+        },
+        {
+          "qui": "salma",
+          "ar": "وَأَيْنَ ثَوْبُكَ؟",
+          "fr": "Et où est ton vêtement ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "ثَوْبِي فِي الْخَيْمَةِ.",
+          "fr": "Mon vêtement est dans la tente."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "En quoi est le vêtement de Salmā ?",
+        "choix": [
+          "en laine",
+          "en soie",
+          "en fer"
+        ],
+        "reponse": 0,
+        "explication": "ثَوْبِي مِنَ الصُّوفِ : en laine."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "nassaj",
+        "khayt",
+        "suf",
+        "harir",
+        "qamis",
+        "ibra"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "إِبْرَةٌ",
+        "choix": [
+          "aiguille",
+          "fil",
+          "soie"
+        ],
+        "reponse": 0,
+        "explication": "إِبْرَةٌ veut dire « aiguille »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les pronoms collés",
+      "texte": "Un petit pronom collé au nom lui fait perdre article et tanwīn : -ī mon, -ka ton (homme), -ki ton (femme), -hu son (à lui), -hā son (à elle), -nā notre. Le ة devient ت : إِبْرَتِي.",
+      "exemples": [
+        "ثَوْبِي",
+        "ثَوْبُكَ",
+        "ثَوْبُكِ",
+        "ثَوْبُهُ",
+        "ثَوْبُهَا",
+        "ثَوْبُنَا",
+        "إِبْرَتِي"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire ثَوْبُهَا ?",
+        "choix": [
+          "son vêtement (à elle)",
+          "son vêtement (à lui)",
+          "mon vêtement"
+        ],
+        "reponse": 0,
+        "explication": "-hā : « à elle »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Au pluriel",
+      "texte": "Pour plusieurs : -kum votre (hommes), -kunna votre (femmes), -hum leur (à eux), -hunna leur (à elles) ; pour deux : -kumā votre, -humā leur. Retiens-les pour les reconnaître, tu les exerceras plus tard.",
+      "exemples": [
+        "ثَوْبُكُمْ",
+        "ثَوْبُهُمْ",
+        "ثَوْبُهُنَّ",
+        "ثَوْبُهُمَا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire ثَوْبُهُمْ ?",
+        "choix": [
+          "leur vêtement (à eux)",
+          "votre vêtement",
+          "notre vêtement"
+        ],
+        "reponse": 0,
+        "explication": "-hum : « à eux »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خَيْطٌ",
+          "choix": [
+            "fil",
+            "aiguille",
+            "chemise"
+          ],
+          "reponse": 0,
+          "explication": "خَيْطٌ veut dire « fil »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَرِيرٌ",
+          "choix": [
+            "soie",
+            "laine",
+            "fer"
+          ],
+          "reponse": 0,
+          "explication": "حَرِيرٌ veut dire « soie »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « mon fil » ?",
+          "choix_ar": [
+            "خَيْطِي",
+            "خَيْطُكَ",
+            "الْخَيْطُ"
+          ],
+          "reponse": 0,
+          "explication": "-ī : « mon »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ton aiguille (à un homme) » ?",
+          "choix_ar": [
+            "إِبْرَتُكَ",
+            "إِبْرَتُكِ",
+            "إِبْرَتِي"
+          ],
+          "reponse": 0,
+          "explication": "-ka pour un homme, et ة devient ت."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Son fil (à lui) est long. »",
+          "ar": "… طَوِيلٌ.",
+          "choix_ar": [
+            "خَيْطُهُ",
+            "خَيْطُهَا",
+            "خَيْطِي"
+          ],
+          "reponse": 0,
+          "explication": "-hu « à lui », et le nom perd l'article."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Notre tente est grande. »",
+          "ar": "… كَبِيرَةٌ.",
+          "choix_ar": [
+            "خَيْمَتُنَا",
+            "خَيْمَةُنَا",
+            "خَيْمَتِي"
+          ],
+          "reponse": 0,
+          "explication": "-nā « notre », et ة devient ت : خَيْمَتُنَا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi ne dit-on pas « الثَّوْبِي » ?",
+          "choix": [
+            "avec un pronom collé, le nom perd l'article",
+            "ثَوْبٌ est féminin",
+            "l'article vient à la fin"
+          ],
+          "reponse": 0,
+          "explication": "Le pronom collé rend le nom défini : pas d'article."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "قَمِيصٌ",
+          "choix_ar": [
+            "قَمِيصٌ",
+            "خَيْطٌ",
+            "صُوفٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était قَمِيصٌ « chemise »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Ton vêtement est beau. » (à une femme)",
+          "tuiles": [
+            "جَمِيلٌ",
+            "ثَوْبُكِ",
+            "ثَوْبِي"
+          ],
+          "solution": [
+            "ثَوْبُكِ",
+            "جَمِيلٌ"
+          ],
+          "explication": "ثَوْبُكِ جَمِيلٌ : -ki pour une femme."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "هَٰذَا ثَوْبِي."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Dans l'échoppe",
+      "texte": "Le tisserand montre son travail ; il parle à Bāsim et à Salmā. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "النَّسَّاجُ فِي السُّوقِ، وَصُوفُهُ كَثِيرٌ.",
+        "هَٰذَا قَمِيصٌ مِنَ الْحَرِيرِ.",
+        "خَيْطُكَ طَوِيلٌ، وَإِبْرَتُهَا صَغِيرَةٌ.",
+        "ثَوْبُنَا جَدِيدٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "En quoi est la chemise ?",
+          "choix": [
+            "en soie",
+            "en laine",
+            "en argent"
+          ],
+          "reponse": 0,
+          "explication": "قَمِيصٌ مِنَ الْحَرِيرِ : en soie."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment est son aiguille (à elle) ?",
+          "choix": [
+            "petite",
+            "longue",
+            "vieille"
+          ],
+          "reponse": 0,
+          "explication": "إِبْرَتُهَا صَغِيرَةٌ : petite."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Salmā te montre un vêtement. Dis que c'est le tien.",
+          "replique": {
+            "qui": "salma",
+            "ar": "مَا هَٰذَا؟"
+          },
+          "choix_ar": [
+            "هَٰذَا ثَوْبِي.",
+            "هَٰذَا ثَوْبُكِ.",
+            "هَٰذِهِ ثَوْبِي."
+          ],
+          "reponse": 0,
+          "explication": "« mon vêtement » : ثَوْبِي ; ثَوْبٌ est masculin, donc هَٰذَا."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « notre maison » ?",
+          "choix_ar": [
+            "بَيْتُنَا",
+            "بَيْتِي",
+            "بَيْتُكَ"
+          ],
+          "reponse": 0,
+          "explication": "« notre maison » se dit بَيْتُنَا."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Son aiguille (à elle) est petite. »",
+          "tuiles": [
+            "صَغِيرَةٌ",
+            "إِبْرَتُهَا",
+            "إِبْرَتُهُ"
+          ],
+          "solution": [
+            "إِبْرَتُهَا",
+            "صَغِيرَةٌ"
+          ],
+          "explication": "إِبْرَتُهَا صَغِيرَةٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ton fil est long. » (à un homme)",
+          "ar": "… طَوِيلٌ.",
+          "choix_ar": [
+            "خَيْطُكَ",
+            "خَيْطُكِ",
+            "خَيْطُهُ"
+          ],
+          "reponse": 0,
+          "explication": "-ka pour un homme."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صُوفٌ",
+          "choix": [
+            "laine",
+            "soie",
+            "fil"
+          ],
+          "reponse": 0,
+          "explication": "صُوفٌ veut dire « laine »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَسَّاجٌ",
+          "choix": [
+            "tisserand",
+            "vendeur",
+            "marchand"
+          ],
+          "reponse": 0,
+          "explication": "نَسَّاجٌ veut dire « tisserand »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَمِيصٌ",
+          "choix": [
+            "chemise, tunique",
+            "aiguille",
+            "coffre"
+          ],
+          "reponse": 0,
+          "explication": "قَمِيصٌ veut dire « chemise, tunique »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « mon vêtement » ?",
+          "choix_ar": [
+            "ثَوْبِي",
+            "ثَوْبُكَ",
+            "ثَوْبُهُ"
+          ],
+          "reponse": 0,
+          "explication": "« mon vêtement » se dit ثَوْبِي."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « son fil (à elle) » ?",
+          "choix_ar": [
+            "خَيْطُهَا",
+            "خَيْطُهُ",
+            "خَيْطُنَا"
+          ],
+          "reponse": 0,
+          "explication": "« son fil (à elle) » se dit خَيْطُهَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Notre chemise est neuve. »",
+          "ar": "… جَدِيدٌ.",
+          "choix_ar": [
+            "قَمِيصُنَا",
+            "قَمِيصِي",
+            "قَمِيصُكَ"
+          ],
+          "reponse": 0,
+          "explication": "-nā « notre » ; قَمِيصٌ est masculin : جَدِيدٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ton aiguille est petite. » (à une femme)",
+          "ar": "… صَغِيرَةٌ.",
+          "choix_ar": [
+            "إِبْرَتُكِ",
+            "إِبْرَتُكَ",
+            "إِبْرَةُكِ"
+          ],
+          "reponse": 0,
+          "explication": "-ki pour une femme, ة devient ت."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Avec un pronom collé, le nom…",
+          "choix": [
+            "perd l'article et le tanwīn",
+            "garde l'article",
+            "prend toujours i"
+          ],
+          "reponse": 0,
+          "explication": "Le nom perd l'article et le tanwīn."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "حَرِيرٌ",
+          "choix_ar": [
+            "حَرِيرٌ",
+            "حَدِيدٌ",
+            "خَيْطٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était حَرِيرٌ « soie »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَوْقَ",
+          "choix": [
+            "au-dessus de",
+            "sous",
+            "dans"
+          ],
+          "reponse": 0,
+          "explication": "فَوْقَ veut dire « au-dessus de ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la clé » ?",
+          "choix_ar": [
+            "الْمِفْتَاحُ",
+            "الْكِيسُ",
+            "الصُّنْدُوقُ"
+          ],
+          "reponse": 0,
+          "explication": "« la clé » se dit الْمِفْتَاحُ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ذَهَبٌ",
+          "choix": [
+            "or (le métal)",
+            "argent",
+            "fer"
+          ],
+          "reponse": 0,
+          "explication": "ذَهَبٌ veut dire « or (le métal) ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu dis « mon, ton, son, notre » : ثَوْبِي، ثَوْبُكَ، ثَوْبُكِ، ثَوْبُهُ، ثَوْبُهَا، ثَوْبُنَا.",
+      "suite": "Prochaine leçon : les mêmes pronoms après une préposition, « avec moi, sur lui »."
+    }
+  ]
+}
