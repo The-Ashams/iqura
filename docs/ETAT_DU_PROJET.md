@@ -122,7 +122,7 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Dictionnaire intégré | Grimoire et pendant une leçon : arabe avec ou sans voyelles, français, racine ; « déjà appris » ; ajout aux révisions |
 | Indicateur | Grimoire : « Les mots que tu connais représentent X % des mots du Coran » (fréquences du Corpus, mots au moins « reconnus ») |
 | Relectures | `docs/relectures/2026-10-25-elementaire-1-lecons-2.1-a-2.5.md`, `…-2.6-a-2.10.md` ; deux passages chacune, verdict « Validé avec doutes » ; décisions du conseiller : `decisions-elementaire-1.md` (trois séries, 11 doutes tranchés, liste de fin de niveau) |
-| Audio | Environ 230 sons de synthèse en cours de génération (mots, phrases des dialogues et des textes) |
+| Audio | 226 sons de synthèse (mots, phrases des dialogues et des textes) ; 1 son signalé « à écouter » par la coupure automatique : التَّمْرُ |
 
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
