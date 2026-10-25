@@ -1619,82 +1619,6 @@
    "theme": "travail"
   },
   {
-   "id": "li",
-   "ar": "لِـ",
-   "translit": "li-",
-   "fr": "à, pour (collé au mot)",
-   "nature": "particule",
-   "lecon": "fondations-15",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "لِي قَمِيصٌ جَدِيدٌ.",
-    "fr": "J'ai une chemise neuve."
-   }
-  },
-  {
-   "id": "maa",
-   "ar": "مَعَ",
-   "translit": "maʿa",
-   "fr": "avec",
-   "nature": "nom_lieu",
-   "lecon": "fondations-15",
-   "source_sens": "rédigé par IA",
-   "lemme": "maE",
-   "exemple": {
-    "ar": "الصَّدِيقُ مَعِي.",
-    "fr": "L'ami est avec moi."
-   }
-  },
-  {
-   "id": "inda",
-   "ar": "عِنْدَ",
-   "translit": "ʿinda",
-   "fr": "chez, auprès de",
-   "nature": "nom_lieu",
-   "lecon": "fondations-15",
-   "source_sens": "rédigé par IA",
-   "lemme": "Eind",
-   "exemple": {
-    "ar": "الْكِتَابُ عِنْدَ الْبَائِعِ.",
-    "fr": "Le livre est chez le vendeur."
-   }
-  },
-  {
-   "id": "sadiq",
-   "ar": "صَدِيقٌ",
-   "translit": "ṣadīqun",
-   "fr": "ami",
-   "nature": "nom",
-   "lecon": "fondations-15",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "أَصْدِقَاءُ",
-   "lemme": "Sadiyq",
-   "exemple": {
-    "ar": "صَدِيقِي فِي السُّوقِ.",
-    "fr": "Mon ami est au marché."
-   },
-   "theme": "personnes"
-  },
-  {
-   "id": "qita",
-   "ar": "قِطْعَةٌ",
-   "translit": "qiṭʿatun",
-   "fr": "morceau, pièce",
-   "nature": "nom",
-   "lecon": "fondations-15",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "pluriel": "قِطَعٌ",
-   "racine": "qTE",
-   "remarque": "قِطْعَةُ حَرِيرٍ : « un morceau de soie », le second nom peut être indéfini",
-   "exemple": {
-    "ar": "فِي الصُّنْدُوقِ قِطْعَةُ حَرِيرٍ.",
-    "fr": "Dans le coffre, il y a un morceau de soie."
-   },
-   "theme": "marché"
-  },
-  {
    "id": "dayf",
    "ar": "ضَيْفٌ",
    "translit": "ḍayfun",
@@ -2034,6 +1958,82 @@
     "fr": "Le panier est petit."
    },
    "theme": "maison"
+  },
+  {
+   "id": "li",
+   "ar": "لِـ",
+   "translit": "li",
+   "fr": "à, pour (collé au mot)",
+   "nature": "particule",
+   "lecon": "fondations-15",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "لِي قَمِيصٌ جَدِيدٌ.",
+    "fr": "J'ai une chemise neuve."
+   }
+  },
+  {
+   "id": "maa",
+   "ar": "مَعَ",
+   "translit": "maʿa",
+   "fr": "avec",
+   "nature": "nom_lieu",
+   "lecon": "fondations-15",
+   "source_sens": "rédigé par IA",
+   "lemme": "maE",
+   "exemple": {
+    "ar": "الصَّدِيقُ مَعِي.",
+    "fr": "L'ami est avec moi."
+   }
+  },
+  {
+   "id": "inda",
+   "ar": "عِنْدَ",
+   "translit": "ʿinda",
+   "fr": "chez, auprès de",
+   "nature": "nom_lieu",
+   "lecon": "fondations-15",
+   "source_sens": "rédigé par IA",
+   "lemme": "Eind",
+   "exemple": {
+    "ar": "الْكِتَابُ عِنْدَ الْبَائِعِ.",
+    "fr": "Le livre est chez le vendeur."
+   }
+  },
+  {
+   "id": "sadiq",
+   "ar": "صَدِيقٌ",
+   "translit": "ṣadīqun",
+   "fr": "ami",
+   "nature": "nom",
+   "lecon": "fondations-15",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَصْدِقَاءُ",
+   "lemme": "Sadiyq",
+   "exemple": {
+    "ar": "صَدِيقِي فِي السُّوقِ.",
+    "fr": "Mon ami est au marché."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "qita",
+   "ar": "قِطْعَةٌ",
+   "translit": "qiṭʿatun",
+   "fr": "morceau, pièce",
+   "nature": "nom",
+   "lecon": "fondations-15",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "قِطَعٌ",
+   "racine": "qTE",
+   "remarque": "قِطْعَةُ حَرِيرٍ : « un morceau de soie », le second nom peut être indéfini",
+   "exemple": {
+    "ar": "فِي الصُّنْدُوقِ قِطْعَةُ حَرِيرٍ.",
+    "fr": "Dans le coffre, il y a un morceau de soie."
+   },
+   "theme": "marché"
   }
  ]
 }

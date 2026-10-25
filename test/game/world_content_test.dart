@@ -38,7 +38,7 @@ void main() {
     expect(nura.places, contains('puits'));
   });
 
-  test('région 2 : le chapitre A (lieux 1 à 4) et les Sables du mirage', () {
+  test('région 2 : chapitres A et B (lieux 1 à 8) et les Sables du mirage', () {
     final region = db.regions()[1];
     expect(region.name, 'L\'Oasis des Fondations');
     expect(region.adversary, 'La Confusion');
@@ -46,7 +46,17 @@ void main() {
       for (final p in db.places(region.id))
         if (p.inVerticalSlice) p.id,
     ];
-    expect(open, ['campement', 'tente', 'palmiers', 'veillee', 'sables']);
+    expect(open, [
+      'campement',
+      'tente',
+      'palmiers',
+      'veillee',
+      'souk',
+      'echoppe',
+      'maison_salma',
+      'balance',
+      'sables',
+    ]);
   });
 
   test('audio des leçons : chaque syllabe et mot a son fichier', () {

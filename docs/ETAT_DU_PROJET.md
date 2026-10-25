@@ -124,6 +124,17 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Relectures | `docs/relectures/2026-10-25-elementaire-1-lecons-2.1-a-2.5.md`, `…-2.6-a-2.10.md` ; deux passages chacune, verdict « Validé avec doutes » ; décisions du conseiller : `decisions-elementaire-1.md` (trois séries, 11 doutes tranchés, liste de fin de niveau) |
 | Audio | 226 sons de synthèse (mots, phrases des dialogues et des textes) ; 1 son signalé « à écouter » par la coupure automatique : التَّمْرُ |
 
+## 1 octies. Niveau Élémentaire 2 (leçons 2.11 à 2.20, région 2, 25/10/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Leçons | Chapitre B « Le marché », maîtresse Salmā : 2.11 où est-il ? (prépositions), 2.12 les fins de mots (trois cas), 2.13 « la porte de la maison » (iḍāfa, تَحْتَ / فَوْقَ) au Souk ; 2.14 mon, ton, son (pronoms collés), 2.15 avec moi, sur lui (« j'ai », « il y a ») à l'Échoppe du tisserand ; 2.16 le duel, 2.17 pluriels réguliers, 2.18 pluriels internes à la Maison de Salmā ; 2.19 compter jusqu'à 10, 2.20 لَيْسَ à la Balance du changeur |
+| Vocabulaire | 62 nouvelles fiches (134 en tout), avec des thèmes (marché, nourriture, maison, travail, nombres…) ; natures « nom de lieu, employé comme une préposition » (تَحْتَ، فَوْقَ، مَعَ، عِنْدَ) et « nom (nombre) » ; لَيْسَ verbe figé |
+| Contrôles automatiques | Terminaisons reconnues à partir de la leçon qui les enseigne (pronoms collés 2.14, duel 2.16, pluriel 2.17, alif du tanwīn -an 2.20) ; paires coraniques signalées aussi pour pronom ou démonstratif + mot plein |
+| Jeu | Quatre nouveaux décors (souk, échoppe, maison de Salmā, balance du changeur) et Salmā ; un mot touché qui a plusieurs lectures (ذَهَبٌ « or » / ذَهَبَ « il est allé ») montre toutes ses fiches |
+| Relectures | `docs/relectures/2026-10-25-elementaire-2-lecons-2.11-a-2.15.md` (3 passages, verdict « Validé ») et `…-2.16-a-2.20.md` (2 passages, verdict « Validé avec doutes ») ; plan et décisions du conseiller : `decisions-elementaire-2.md` (17 décisions, liste de fin de niveau) |
+| Audio | 299 sons de synthèse ; 2 signalés « à écouter » par la coupure automatique : سَيْفٌ, زَيْتٌ |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -178,8 +189,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 5. Débutant 1 construit (§1 quater), testé une première fois par l'utilisateur le 24/10/2026 ; retours intégrés (§1 quater), nouvelle version à publier.
 6. Débutant 2 et Débutant 3 construits le 24/10/2026 (§1 quinquies), à la demande de l'utilisateur, avant son nouveau test : sons générés (204), à faire écouter, puis une version à publier.
 7. Fait (24/10/2026) : avenants n° 1 et n° 2 appliqués (§1 sexies) ; salles de lecture relues par l'agent relecteur : verdict « Validé avec doutes » au 2e passage, 5 doutes tranchés par le conseiller (`docs/relectures/2026-10-24-salles-de-lecture.md`, `decisions-debutant-3.md`).
-8. Élémentaire 1 construit le 25/10/2026 (§1 septies) : sons, test, puis une version à publier.
-9. Ensuite : Élémentaire 2 (leçons 2.11 à 2.20, chapitre B « Le marché »).
+8. Élémentaire 1 (§1 septies) et Élémentaire 2 (§1 octies) construits le 25/10/2026, relus, sons générés : à tester par l'utilisateur.
+9. Ensuite : Élémentaire 3 (leçons 2.21 à 2.30, chapitre C « Le caravansérail », les verbes, et boss de la région 2).
 
 ## 5. Problèmes connus
 

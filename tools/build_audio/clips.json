@@ -20,6 +20,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-015456cd7d3d8b6a": {
+   "genre": "mot",
+   "texte": "أَقْلَامٌ",
+   "fichier": "assets/audio/lecons/ar-015456cd7d3d8b6a.mp3",
+   "sha256": "d4cd13566295dba47c87148d74c50dce21a430fdf6e349a4cf2011c9e5f50c33",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-0164b42df8cebd48": {
+   "genre": "phrase",
+   "texte": "ثَوْبُكِ جَمِيلٌ",
+   "fichier": "assets/audio/lecons/ar-0164b42df8cebd48.mp3",
+   "sha256": "365391ebc561f6ff41c89c904884f7483d6c75e6596416f6d51e11b23d00a56c",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-0212f796cd4fe86f": {
    "genre": "lettre",
    "texte": "أَلِف",
@@ -29,11 +47,56 @@
    "a_ecouter": false,
    "genere_le": "2026-10-21"
   },
+  "ar-02402ddced2e549f": {
+   "genre": "mot",
+   "texte": "بُيُوتٌ",
+   "fichier": "assets/audio/lecons/ar-02402ddced2e549f.mp3",
+   "sha256": "acee0d2bd78410923f3da581d4decca236c1aa1381f6b4aea9cd52f6d1fdebc2",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-0337ec1e00279db3": {
+   "genre": "phrase",
+   "texte": "الدِّينَارُ لَيْسَ فِي الْكِيسِ، هُوَ عَلَى الْكِفَّةِ.",
+   "fichier": "assets/audio/lecons/ar-0337ec1e00279db3.mp3",
+   "sha256": "f1086dc5ae6c41e5f731eade73f5cf1913dc9323ecfbdd5df7485bd1b13a6c3c",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-0343768ed15b8e99": {
+   "genre": "phrase",
+   "texte": "فِي الْبَيْتِ غُرْفَةٌ كَبِيرَةٌ وَمَطْبَخٌ صَغِيرٌ.",
+   "fichier": "assets/audio/lecons/ar-0343768ed15b8e99.mp3",
+   "sha256": "9e1d3b34147669abd21c79686eabde9ba9b47986df53b2fb0aa782daae7498e2",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-03451195bd22bd0e": {
+   "genre": "mot",
+   "texte": "صَدِيقٌ",
+   "fichier": "assets/audio/lecons/ar-03451195bd22bd0e.mp3",
+   "sha256": "867b58981c194a10a2928cbaf7dac9a83c70b0dd5ef037ae5b87aeeebfa362b8",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-037c5d0f4f2a4ed9": {
    "genre": "phrase",
    "texte": "وَلَدٌ وَبِنْتٌ",
    "fichier": "assets/audio/lecons/ar-037c5d0f4f2a4ed9.mp3",
    "sha256": "8c64aa53df830b8120ae818a313c5d0527d2c3055fd39d59923e9a910dfd3d9d",
+   "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-03b3bd1c205e2539": {
+   "genre": "mot",
+   "texte": "سَبْعَةٌ",
+   "fichier": "assets/audio/lecons/ar-03b3bd1c205e2539.mp3",
+   "sha256": "bb3ce3409f26760522f66c552c4a7c91bfb44babf55d6a3f26f7678e58490cc6",
    "graine": 1,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -74,6 +137,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-0469a8a1fb17c93c": {
+   "genre": "mot",
+   "texte": "سَرِيرٌ",
+   "fichier": "assets/audio/lecons/ar-0469a8a1fb17c93c.mp3",
+   "sha256": "e830b857b6ae43d5c20e797f8684522afaa08a9bc0f206345b982c65ed514b46",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-04ba9dafecf0fb69": {
    "genre": "syllabe",
    "texte": "قِطْ",
@@ -82,6 +154,24 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-04bb45521ccd61e6": {
+   "genre": "phrase",
+   "texte": "ثَوْبُنَا جَدِيدٌ.",
+   "fichier": "assets/audio/lecons/ar-04bb45521ccd61e6.mp3",
+   "sha256": "b78422128b9604c0517ac89d776d923b43b2186b01052918c82c38b9c52b70b7",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-05421ac62e287ea9": {
+   "genre": "phrase",
+   "texte": "إِلَى أَيْنَ؟",
+   "fichier": "assets/audio/lecons/ar-05421ac62e287ea9.mp3",
+   "sha256": "f3002aaf30acd103b54b3a706461c46615bfdca0931265b1b2e3ab38284980fa",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-0596b897010e741b": {
    "genre": "mot",
@@ -146,6 +236,33 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-06f07ec0c8c4757c": {
+   "genre": "phrase",
+   "texte": "كِتَابٌ وَاحِدٌ",
+   "fichier": "assets/audio/lecons/ar-06f07ec0c8c4757c.mp3",
+   "sha256": "cbbadb3af06d42df74b679e86e4e135de701ddef5f5dd7183cc11d7d582c30d3",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-0751a67daf201817": {
+   "genre": "mot",
+   "texte": "فَرِحُونَ",
+   "fichier": "assets/audio/lecons/ar-0751a67daf201817.mp3",
+   "sha256": "9131f24924572665991adca5a84bbadd98101306b1e59309076d5d3bc028e0bb",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-07958ea7f4e27a1a": {
+   "genre": "mot",
+   "texte": "ثَوْبُكِ",
+   "fichier": "assets/audio/lecons/ar-07958ea7f4e27a1a.mp3",
+   "sha256": "dc74e976c6e6ead45f787de18b716cd727fa4b7425f20159b57a1f18b226609c",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-08208c74a20d7933": {
    "genre": "syllabe",
    "texte": "يَ",
@@ -173,6 +290,33 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-097945b37c63d60b": {
+   "genre": "phrase",
+   "texte": "وَمَا فِي الْكِيسِ؟",
+   "fichier": "assets/audio/lecons/ar-097945b37c63d60b.mp3",
+   "sha256": "6a39ae694f883d815e1a118e9a2a4073d982ea9247c5db3075eb1d6620c802b9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-0994a5a09838d1f3": {
+   "genre": "phrase",
+   "texte": "الْكِتَابُ عِنْدَ الْبَائِعِ.",
+   "fichier": "assets/audio/lecons/ar-0994a5a09838d1f3.mp3",
+   "sha256": "08971597a23a1158f953cce54bb15d5850a1b60469a10159de9eea7f6ecdd72e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-09bb1c16a068bd44": {
+   "genre": "phrase",
+   "texte": "الذَّهَبُ لَيْسَ خَفِيفًا، وَالْفِضَّةُ لَيْسَتْ كَثِيرَةً.",
+   "fichier": "assets/audio/lecons/ar-09bb1c16a068bd44.mp3",
+   "sha256": "3087d56b2ca937d6d323a12cffb01bc52d29118eea1169ddb9f113e9ea12a439",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-0a7da92452aac585": {
    "genre": "lettre",
    "texte": "حَاء",
@@ -181,6 +325,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-21"
+  },
+  "ar-0b1baeddca61658a": {
+   "genre": "phrase",
+   "texte": "الْحِمَارُ صَغِيرٌ.",
+   "fichier": "assets/audio/lecons/ar-0b1baeddca61658a.mp3",
+   "sha256": "e799be58fb21c9218803b7df078a49f57deb417ff7ffe6f0da989fcce4d909a9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-0bd5c25cc99f82ff": {
    "genre": "lettre",
@@ -218,6 +371,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-0d564846753ec359": {
+   "genre": "phrase",
+   "texte": "الْجِدَارُ قَدِيمٌ.",
+   "fichier": "assets/audio/lecons/ar-0d564846753ec359.mp3",
+   "sha256": "7fbed1530025b656ec29be520aa3737a421f599bb9a6aa9899f81d9899275f57",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-0da8f263c28d0e2d": {
+   "genre": "phrase",
+   "texte": "بَابُ الْبَيْتِ",
+   "fichier": "assets/audio/lecons/ar-0da8f263c28d0e2d.mp3",
+   "sha256": "64974cf006d6f1aede8e4b96db458d1bc3d2efb8cbfd82e5b8168d3a600f2d58",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-0ec7200822253da5": {
    "genre": "mot",
    "texte": "تَاجِرٌ",
@@ -244,6 +415,33 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-21"
+  },
+  "ar-0faf287926bdec0b": {
+   "genre": "phrase",
+   "texte": "هَٰؤُلَاءِ جِيرَانٌ، وَهَٰؤُلَاءِ ضُيُوفٌ.",
+   "fichier": "assets/audio/lecons/ar-0faf287926bdec0b.mp3",
+   "sha256": "b6baded8305368634fa51835173681d29b9db4df1823f2df41c5b974ab3384c1",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-0fcad3dbb8868f72": {
+   "genre": "mot",
+   "texte": "قَمِيصٌ",
+   "fichier": "assets/audio/lecons/ar-0fcad3dbb8868f72.mp3",
+   "sha256": "37fd2210a3063ca614f6e0f30aae109233b87abe99164cae64d19cee1fc25431",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-10c10faca347188a": {
+   "genre": "phrase",
+   "texte": "هَٰذِهِ كُتُبٌ.",
+   "fichier": "assets/audio/lecons/ar-10c10faca347188a.mp3",
+   "sha256": "e0f173f8f5f26a5c3cd800267f4f8b413c17882bf338d22b40ca546a4cfa81bd",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-11371d6feda2095b": {
    "genre": "lettre",
@@ -281,6 +479,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-128f2bf1e2a0281f": {
+   "genre": "phrase",
+   "texte": "الْبَابَانِ قَدِيمَانِ، وَالسَّقْفُ جَدِيدٌ.",
+   "fichier": "assets/audio/lecons/ar-128f2bf1e2a0281f.mp3",
+   "sha256": "6e93c508a62a1f82380ac8590cf9a89bbea9c3df670eb3ecb5606d2a6aa2a1cf",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-12bacfec20bf4a92": {
    "genre": "lettre",
    "texte": "هَاء",
@@ -289,6 +496,24 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-12cb2b91e4ab689a": {
+   "genre": "phrase",
+   "texte": "الْوِسَادَتَانِ عَلَى السَّرِيرِ",
+   "fichier": "assets/audio/lecons/ar-12cb2b91e4ab689a.mp3",
+   "sha256": "c675a5fdcb911923caa4b6eb820576370eda8a0f23c323f5cc36c5dbdacf61a0",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-1374d6eb72139a11": {
+   "genre": "phrase",
+   "texte": "فِي بَيْتٍ",
+   "fichier": "assets/audio/lecons/ar-1374d6eb72139a11.mp3",
+   "sha256": "d8033f4c79f270420637f732fffc8f5a61c25c0573f0efadf0c1781961e9a48e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-139a6ba5cae19dca": {
    "genre": "syllabe",
@@ -344,11 +569,47 @@
    "a_ecouter": false,
    "genere_le": "2026-10-23"
   },
+  "ar-16c907d44f087342": {
+   "genre": "mot",
+   "texte": "كِيسٌ",
+   "fichier": "assets/audio/lecons/ar-16c907d44f087342.mp3",
+   "sha256": "7d96365fbead266994e5c55e1c88a053e116c5aacb1fcfa9f675cba77f652eff",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-171f8f20b31e7fcf": {
    "genre": "phrase",
    "texte": "الْجَبَلُ كَبِيرٌ",
    "fichier": "assets/audio/lecons/ar-171f8f20b31e7fcf.mp3",
    "sha256": "a8e001a33f0e938df1c1fa0c7f1299272a0b9f2c0fd90da67d9b4ee572bbec80",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-17444749e042547a": {
+   "genre": "phrase",
+   "texte": "الْخَبَّازُونَ فِي السُّوقِ.",
+   "fichier": "assets/audio/lecons/ar-17444749e042547a.mp3",
+   "sha256": "6d582cc5b8aeb951e8e55120b9183ba615111d803712d566b5a1d0bc6c01e9dd",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-17eace471f4c454c": {
+   "genre": "phrase",
+   "texte": "إِبْرَتُهَا صَغِيرَةٌ",
+   "fichier": "assets/audio/lecons/ar-17eace471f4c454c.mp3",
+   "sha256": "59cf9aab1b903a3c1dc51aedb91b725c65ceee66f44e4a45d9bbb80084dccf28",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-17ef5fcd8c2f04c9": {
+   "genre": "phrase",
+   "texte": "وَمِفْتَاحُ الصُّنْدُوقِ فِي الْكِيسِ.",
+   "fichier": "assets/audio/lecons/ar-17ef5fcd8c2f04c9.mp3",
+   "sha256": "5ab800017c645d6efbab8ba596376ad2dde0b3c00988035a10eaa888889fdad2",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -425,6 +686,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-199f59bbf4b08693": {
+   "genre": "phrase",
+   "texte": "الْكِفَّةُ لَيْسَتْ ثَقِيلَةً.",
+   "fichier": "assets/audio/lecons/ar-199f59bbf4b08693.mp3",
+   "sha256": "f0c651918ceb8a56214fdb0b480c06122ebf0d71c0ef2ce59cf504546e269ee4",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-19a34c8b7ee35cb2": {
    "genre": "mot",
    "texte": "أَنْتُمَا",
@@ -443,6 +713,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-1bfa7120c45bff23": {
+   "genre": "mot",
+   "texte": "ثَوْبِي",
+   "fichier": "assets/audio/lecons/ar-1bfa7120c45bff23.mp3",
+   "sha256": "910a1c804ddba025f1ba413e735bb6c51455ca97d18b4db3accf06cee170e5f0",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-1c1984d26bca40ed": {
+   "genre": "mot",
+   "texte": "لَنَا",
+   "fichier": "assets/audio/lecons/ar-1c1984d26bca40ed.mp3",
+   "sha256": "bf048962b66c2e0afd217da731cf1f2fce2bd77446e0c31e4a2e688fe553146a",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-1c28268d8a531caa": {
    "genre": "syllabe",
    "texte": "لَٰ",
@@ -452,11 +740,47 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-1d7405fcc72fb58e": {
+   "genre": "phrase",
+   "texte": "بَابُ الْبَيْتِ كَبِيرٌ",
+   "fichier": "assets/audio/lecons/ar-1d7405fcc72fb58e.mp3",
+   "sha256": "38cff52b4080bee7585d4a21d4f82505f4364045cb7f7d4955ba8bd841c49c0d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-1d7b23c24d0c2e4a": {
+   "genre": "mot",
+   "texte": "جَارٌ",
+   "fichier": "assets/audio/lecons/ar-1d7b23c24d0c2e4a.mp3",
+   "sha256": "0ef58ea7ffbc47d6d133ba7510a9aa13915abbc7d85b2cc5652599a4feaf3231",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-1d8714993fde126b": {
+   "genre": "phrase",
+   "texte": "فَوْقَ الصُّنْدُوقِ",
+   "fichier": "assets/audio/lecons/ar-1d8714993fde126b.mp3",
+   "sha256": "5b1f045a50cd541420aa471ec86096880a321ad0fa64ec39c2dfe749edb3575d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-1da56b2873d90118": {
    "genre": "mot",
    "texte": "بَارِدٌ",
    "fichier": "assets/audio/lecons/ar-1da56b2873d90118.mp3",
    "sha256": "14759f34da91b540bbfecfac34d5d216a0b16d9ca1b6d9ba3812b68daa895817",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-1deb08782c64c153": {
+   "genre": "phrase",
+   "texte": "السَّلَّةُ صَغِيرَةٌ.",
+   "fichier": "assets/audio/lecons/ar-1deb08782c64c153.mp3",
+   "sha256": "fe94f09d15a213d17c102380350ce22db7cd1ff03e97236844de21c05325a25b",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -497,6 +821,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-202064d926c7ac66": {
+   "genre": "phrase",
+   "texte": "الْخَيَّاطُونَ مَشْغُولُونَ.",
+   "fichier": "assets/audio/lecons/ar-202064d926c7ac66.mp3",
+   "sha256": "0e53d491f247567081fff4578ce88b97b1d60783e44af43b6ced52af9b420fcd",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-2042ad0d5d091ffa": {
    "genre": "phrase",
    "texte": "النَّهْرُ الطَّوِيلُ هُنَاكَ.",
@@ -532,6 +865,15 @@
    "graine": 1,
    "a_ecouter": false,
    "genere_le": "2026-10-23"
+  },
+  "ar-22916885e86f918f": {
+   "genre": "mot",
+   "texte": "مُعَلِّمَاتٌ",
+   "fichier": "assets/audio/lecons/ar-22916885e86f918f.mp3",
+   "sha256": "bdc9897c376092489b16d79919ffb38d9104fcdd8494be0100ede66eaa939ed7",
+   "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-22ade8d388eae25c": {
    "genre": "phrase",
@@ -569,6 +911,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-2422b5d927b039bf": {
+   "genre": "mot",
+   "texte": "وِسَادَتَانِ",
+   "fichier": "assets/audio/lecons/ar-2422b5d927b039bf.mp3",
+   "sha256": "f4eef1268c48d755e1fa78590dd86a9034137f4f7d6ecb30b5e7622d0196e7ea",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-24a289e02af708ef": {
    "genre": "syllabe",
    "texte": "نِي",
@@ -596,11 +947,29 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-25e0db77ae384538": {
+   "genre": "mot",
+   "texte": "ثَوْبُكُمْ",
+   "fichier": "assets/audio/lecons/ar-25e0db77ae384538.mp3",
+   "sha256": "82df207818aac7bb8160b4ef27b7817b8718341f6d49d5ed9920a7239ec480b5",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-261d6223d370adc7": {
    "genre": "phrase",
    "texte": "أَيْنَ النَّاقَةُ؟",
    "fichier": "assets/audio/lecons/ar-261d6223d370adc7.mp3",
    "sha256": "405310038e4607be861e07698f52c29b129ae2281a42bf19cef5c8eb5bb105e0",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-26538899464ded30": {
+   "genre": "mot",
+   "texte": "فِضَّةً",
+   "fichier": "assets/audio/lecons/ar-26538899464ded30.mp3",
+   "sha256": "4344500e3a8fe6ebdfd8fe3e530505c516bf00c37b75b4c2ebbb87fb0ec2706b",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -628,6 +997,24 @@
    "texte": "الْبَيْتُ كَبِيرٌ.",
    "fichier": "assets/audio/lecons/ar-280fb1cee0c91999.mp3",
    "sha256": "981d25b69bd132e99135780e89876503b296f75e9db527155003b967e9d91612",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-284534f284100a5f": {
+   "genre": "phrase",
+   "texte": "الدِّرْهَمُ مِنَ الْفِضَّةِ.",
+   "fichier": "assets/audio/lecons/ar-284534f284100a5f.mp3",
+   "sha256": "1fa23bc9ee90381db2ba8f51478be1a7f5ffd3b541f85d62069b4267bbe952f3",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-28a1744a69c5cc39": {
+   "genre": "mot",
+   "texte": "كَثِيرٌ",
+   "fichier": "assets/audio/lecons/ar-28a1744a69c5cc39.mp3",
+   "sha256": "137b5af32db1133f7b59efdc96bb7471d6495b114f54f6d9c7b542e077e873d7",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -686,6 +1073,33 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-2af7eaae4e5b48ed": {
+   "genre": "mot",
+   "texte": "هَاتَانِ",
+   "fichier": "assets/audio/lecons/ar-2af7eaae4e5b48ed.mp3",
+   "sha256": "88eca664b2d3f05df85fde7c34ea066e180cb9d9753dda8e2eb7daf77e3d43db",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-2b2b116e859e8fd7": {
+   "genre": "phrase",
+   "texte": "ثَوْبُكِ جَمِيلٌ!",
+   "fichier": "assets/audio/lecons/ar-2b2b116e859e8fd7.mp3",
+   "sha256": "df8814533f2952adfadd3d2549f48bef3ba5e8303ad636eebedcbc8a25bd567b",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-2b3da37b13002a5c": {
+   "genre": "mot",
+   "texte": "سَيْفٌ",
+   "fichier": "assets/audio/lecons/ar-2b3da37b13002a5c.mp3",
+   "sha256": "f9dfc686c3609827e46ef6a1ad87462944f61f77607dd0ae1831d1ce1ca02a5a",
+   "graine": 1,
+   "a_ecouter": true,
+   "genere_le": "2026-10-25"
+  },
   "ar-2b8af86d7225d523": {
    "genre": "syllabe",
    "texte": "دِ",
@@ -694,6 +1108,15 @@
    "graine": 1,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-2c1ee20b71dd762e": {
+   "genre": "phrase",
+   "texte": "هَٰؤُلَاءِ حَدَّادُونَ",
+   "fichier": "assets/audio/lecons/ar-2c1ee20b71dd762e.mp3",
+   "sha256": "a53983a796cbfc1d1a138fc8aee26786e7f60dd22096e1612932c01893b343b3",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-2c51242cc8f24d54": {
    "genre": "phrase",
@@ -722,6 +1145,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-2d63abbcbc5fbd22": {
+   "genre": "phrase",
+   "texte": "الْإِبْرَةُ فِي كِيسِهِ",
+   "fichier": "assets/audio/lecons/ar-2d63abbcbc5fbd22.mp3",
+   "sha256": "3987b6409213bfac66795053b2f1ee678ea2b9687ab932ef52a9ed0ee87924d5",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-2d6a557df5ca357e": {
    "genre": "syllabe",
    "texte": "تَ",
@@ -730,6 +1162,24 @@
    "graine": 3,
    "a_ecouter": false,
    "genere_le": "2026-10-22"
+  },
+  "ar-2dd5ebe596a85912": {
+   "genre": "phrase",
+   "texte": "الْمِفْتَاحُ تَحْتَ الْكِيسِ",
+   "fichier": "assets/audio/lecons/ar-2dd5ebe596a85912.mp3",
+   "sha256": "b6ad41fb53b83b533f1ce8de553b319429adabc067ee311f3a8019a8aa3234ca",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-2e196d8c8ce9e68d": {
+   "genre": "mot",
+   "texte": "كَلْبٌ",
+   "fichier": "assets/audio/lecons/ar-2e196d8c8ce9e68d.mp3",
+   "sha256": "df2d4844545734ec4e45d9776fca703df16080bef53eec81ed40756624398c9a",
+   "graine": 2,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-2e79340aefcee7c4": {
    "genre": "phrase",
@@ -745,6 +1195,15 @@
    "texte": "رَاشِدٌ وَبَاسِمٌ هُنَاكَ.",
    "fichier": "assets/audio/lecons/ar-2e7b3e460db3bb28.mp3",
    "sha256": "bc89da2b05ffa441a3c987016b6ea29f17faabfb4fd0437a486c86ca4ee87eb3",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-2edce30a3a89a6b2": {
+   "genre": "mot",
+   "texte": "مِفْتَاحٌ",
+   "fichier": "assets/audio/lecons/ar-2edce30a3a89a6b2.mp3",
+   "sha256": "5ca7a71973d504b0f4c9210693a9a86064f68971f4bdb6330572ecb75672fac1",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -785,6 +1244,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-2f8691c4f913ffc9": {
+   "genre": "phrase",
+   "texte": "الْحَدَّادُونَ مَشْغُولُونَ.",
+   "fichier": "assets/audio/lecons/ar-2f8691c4f913ffc9.mp3",
+   "sha256": "4514f5bdab6372e4eaf7dc02ba5f613e071fe26a7e5b42e21b6b65cedfe7d797",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-2ff28c4d08cde9e4": {
    "genre": "mot",
    "texte": "رَجُلٌ",
@@ -799,6 +1267,33 @@
    "texte": "الْقَمَرُ",
    "fichier": "assets/audio/lecons/ar-30828856ca627dde.mp3",
    "sha256": "4dbc94d23805e1a76ade8e7df009f0140cbbd6fb131de73259204f25fef588b0",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-30c593d3e73bed10": {
+   "genre": "mot",
+   "texte": "وَالْخَيْطُ؟",
+   "fichier": "assets/audio/lecons/ar-30c593d3e73bed10.mp3",
+   "sha256": "0505522642609ad483ecfbed41a4ec2764829dc5c199b0fab8b9884f3e70d6c7",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-30e39171432572d5": {
+   "genre": "mot",
+   "texte": "رِجَالٌ",
+   "fichier": "assets/audio/lecons/ar-30e39171432572d5.mp3",
+   "sha256": "dc6a2577fae4d376bcb346d61446cd23efe17e0bf054f34704e463ff6880a2fc",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-314ca8af36e0f89c": {
+   "genre": "phrase",
+   "texte": "وَالْإِبْرَةُ فِي كِيسِهِ!",
+   "fichier": "assets/audio/lecons/ar-314ca8af36e0f89c.mp3",
+   "sha256": "bd29608fcca2f9e05a54ffe72cce33ca805bc157eafeeb1d606e66b2442928d2",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -821,6 +1316,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-31fcc9c362b84164": {
+   "genre": "phrase",
+   "texte": "مَا فِي الْمَطْبَخِ؟",
+   "fichier": "assets/audio/lecons/ar-31fcc9c362b84164.mp3",
+   "sha256": "76d44fc389a6f032d752a91dbd1763060588e8749264d05fcd88188246dce851",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-32d62113c60aa5e4": {
    "genre": "phrase",
    "texte": "وَلَدٌ وَبِنْتٌ.",
@@ -835,6 +1339,24 @@
    "texte": "نَاقَةٌ",
    "fichier": "assets/audio/lecons/ar-32f0d8f458d0a448.mp3",
    "sha256": "1335999cc961e888d2c7256b69266fc9d72d065cee4a3b39bdf66bdd878b5c2d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-333f53d8ead5ebcc": {
+   "genre": "mot",
+   "texte": "نُجُومٌ",
+   "fichier": "assets/audio/lecons/ar-333f53d8ead5ebcc.mp3",
+   "sha256": "a5d6562bf92fa3d76aa2796c17abc2817f9d947ad6b9dc9aa41a921ecae7931d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-33628f5d78cd0efd": {
+   "genre": "phrase",
+   "texte": "عَلَى الْكُرْسِيِّ",
+   "fichier": "assets/audio/lecons/ar-33628f5d78cd0efd.mp3",
+   "sha256": "f02a46d8edebfd1aea2801a20462c2907dcc47dbf48d6e87bcea503658b870fd",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -866,11 +1388,29 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-352e44fe8ed2d6f9": {
+   "genre": "phrase",
+   "texte": "مَا هَٰذِهِ؟",
+   "fichier": "assets/audio/lecons/ar-352e44fe8ed2d6f9.mp3",
+   "sha256": "0ee137805c18a0cdfb1b81a11353b7c005287c527607899e2c2e3da70e1aaada",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-359a3fc1669f5f04": {
    "genre": "mot",
    "texte": "طَرِيقٌ",
    "fichier": "assets/audio/lecons/ar-359a3fc1669f5f04.mp3",
    "sha256": "8b536c5162122b20ef2ecc17e32b2c4049ec887ea9fdcdc949a7420979aef8aa",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-35cd584d08bd60a8": {
+   "genre": "phrase",
+   "texte": "الْبَنَاتُ فَرِحَاتٌ.",
+   "fichier": "assets/audio/lecons/ar-35cd584d08bd60a8.mp3",
+   "sha256": "9cbfda649d13465b84ced87b6cb6371a7a575dfe8e8d7b85d2a43df939b86aa0",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -901,6 +1441,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-36b080917e1b6d08": {
+   "genre": "mot",
+   "texte": "ثَوْبُهُمَا",
+   "fichier": "assets/audio/lecons/ar-36b080917e1b6d08.mp3",
+   "sha256": "64c559b91967a2c8f26e4dfa1a814a1ed871ac093c159a2f56bb86496db6ab9f",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-36b299f7313bbaf6": {
    "genre": "phrase",
@@ -944,6 +1493,24 @@
    "fichier": "assets/audio/lecons/ar-39c9cbaf1a2a3aec.mp3",
    "sha256": "6c548a745df21b36cda80b9308c3303620c3836eed16604460012fb5cbd2ccb8",
    "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-39fa4c3c4dd2068f": {
+   "genre": "mot",
+   "texte": "جِدَارَانِ",
+   "fichier": "assets/audio/lecons/ar-39fa4c3c4dd2068f.mp3",
+   "sha256": "4ba56c51baf309b160a31f611ee89a35371c7e241573790cac643cd68d1783cd",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-3b666a9c2a26010b": {
+   "genre": "phrase",
+   "texte": "فِي الْغُرْفَةِ كُرْسِيٌّ.",
+   "fichier": "assets/audio/lecons/ar-3b666a9c2a26010b.mp3",
+   "sha256": "49d5f25ed296278ddd19613ee621e983e0dd71f6923bee16a371544f5cf4e6d5",
+   "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
@@ -993,6 +1560,15 @@
    "genere_le": "2026-10-23",
    "ecrit": "تَا،"
   },
+  "ar-3c056f3ef7211e10": {
+   "genre": "phrase",
+   "texte": "الْخُبْزُ كَثِيرٌ.",
+   "fichier": "assets/audio/lecons/ar-3c056f3ef7211e10.mp3",
+   "sha256": "39faa93ef76de47b334abe0ac5244098bfd0b997b7a1933a971f2b97b394269e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-3c135dda137d2c3e": {
    "genre": "phrase",
    "texte": "هَٰذِهِ ثَوْبٌ.",
@@ -1020,11 +1596,29 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-3ce21e775d5e935e": {
+   "genre": "phrase",
+   "texte": "مَا الثَّمَنُ؟",
+   "fichier": "assets/audio/lecons/ar-3ce21e775d5e935e.mp3",
+   "sha256": "006978d92a4858e0a5e37a295d687cb6aa41a44b3d7c4e8801a3ba3bfb817f66",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-3f195cc4b1551b2a": {
    "genre": "mot",
    "texte": "هَلْ",
    "fichier": "assets/audio/lecons/ar-3f195cc4b1551b2a.mp3",
    "sha256": "ae77c761220e9e9a260e8f468fd9ed5f9f17a65f0629d2e5b77a4e14e0cd75e9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-3f367fe107ef8182": {
+   "genre": "mot",
+   "texte": "ثَمَنٌ",
+   "fichier": "assets/audio/lecons/ar-3f367fe107ef8182.mp3",
+   "sha256": "9d91b1debcbe2073e8a6976bcec1226ee715442083da80cb7c8b0d351dd58e32",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -1037,6 +1631,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-4104505f55bf2dc5": {
+   "genre": "mot",
+   "texte": "إِبْرَتِي",
+   "fichier": "assets/audio/lecons/ar-4104505f55bf2dc5.mp3",
+   "sha256": "2eed55d124c587ef735a6cd9aef2ecc9882314408bf3f0b02abcb20a0ae9f1b1",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-413cd9ef96150556": {
    "genre": "syllabe",
@@ -1056,6 +1659,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-421ee3273813e630": {
+   "genre": "mot",
+   "texte": "فِيهِ",
+   "fichier": "assets/audio/lecons/ar-421ee3273813e630.mp3",
+   "sha256": "fa19c6458e0367cab0d91d07270c06cab9809045e7ef31f066187c664f772022",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-429a390cb83f58f4": {
    "genre": "lettre",
    "texte": "وَاو",
@@ -1064,6 +1676,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-42d48f3666b65b26": {
+   "genre": "phrase",
+   "texte": "وَالْمُعَلِّمَاتُ مَعَ الْبَنَاتِ فِي الْغُرْفَةِ.",
+   "fichier": "assets/audio/lecons/ar-42d48f3666b65b26.mp3",
+   "sha256": "39421d18e27da3aaf8e5a80de2e809d5861c1e325e0a9c6ced821dbc5255177b",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-4308424f3e40935f": {
    "genre": "syllabe",
@@ -1091,6 +1712,33 @@
    "graine": 1,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-43a5dce68f876807": {
+   "genre": "mot",
+   "texte": "خُبْزٌ",
+   "fichier": "assets/audio/lecons/ar-43a5dce68f876807.mp3",
+   "sha256": "1b7d36486246c4f97a3906c832601d0aeaead1e0bf4b97fd93f8aad851a77bc7",
+   "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-447e692e899b1752": {
+   "genre": "mot",
+   "texte": "مَعِي",
+   "fichier": "assets/audio/lecons/ar-447e692e899b1752.mp3",
+   "sha256": "cce538e705c70d0d5d9ec7b4da667126e7ecb51282c5149ff24cb48dcfeb727e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-44d726c4fe6d592c": {
+   "genre": "phrase",
+   "texte": "مَنْ هَٰؤُلَاءِ؟",
+   "fichier": "assets/audio/lecons/ar-44d726c4fe6d592c.mp3",
+   "sha256": "1e938b278cd9553b418f3d8988d313d3d71632e42a136e1fb0480f11ecb8e6aa",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-450820f1788a6367": {
    "genre": "lettre",
@@ -1137,6 +1785,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-23"
   },
+  "ar-46e6dac253536236": {
+   "genre": "mot",
+   "texte": "مُسَافِرُونَ",
+   "fichier": "assets/audio/lecons/ar-46e6dac253536236.mp3",
+   "sha256": "2ae141877379d79156c4ed2b4aef17345118ad5cab9a4edab082091fa3c84cb5",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-470dbb77d4df236c": {
    "genre": "syllabe",
    "texte": "عَ",
@@ -1164,11 +1821,47 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-47fba24a69a34ecd": {
+   "genre": "phrase",
+   "texte": "الذَّهَبُ قَلِيلٌ",
+   "fichier": "assets/audio/lecons/ar-47fba24a69a34ecd.mp3",
+   "sha256": "d694332b4948932f324d55e798b66b02b1801c1e0ece7f8826f15b9d60017c07",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-487769730bff7e5e": {
    "genre": "mot",
    "texte": "جَبَلٌ",
    "fichier": "assets/audio/lecons/ar-487769730bff7e5e.mp3",
    "sha256": "4518119c64d20a2f46057ae406464eed4f7bd315348677ff5797e2ce2c423add",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-489d09538c3d08fc": {
+   "genre": "phrase",
+   "texte": "خَيْطُكَ طَوِيلٌ.",
+   "fichier": "assets/audio/lecons/ar-489d09538c3d08fc.mp3",
+   "sha256": "74ed7e9956df26872d277b0f979db742dc8061ecfe485cff9fdda1c0c059fb25",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-48c40329f0cd8634": {
+   "genre": "phrase",
+   "texte": "الذَّهَبُ قَلِيلٌ.",
+   "fichier": "assets/audio/lecons/ar-48c40329f0cd8634.mp3",
+   "sha256": "d694332b4948932f324d55e798b66b02b1801c1e0ece7f8826f15b9d60017c07",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-48c61be109dbff30": {
+   "genre": "phrase",
+   "texte": "الدِّرْهَمُ فِي السَّلَّةِ.",
+   "fichier": "assets/audio/lecons/ar-48c61be109dbff30.mp3",
+   "sha256": "174a7ff0b0cb5d5c559ab4783740344e33a27fa26e49d3c58751df22bfcaeacb",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -1182,6 +1875,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-49ed34148b7750e9": {
+   "genre": "phrase",
+   "texte": "فِي الصُّنْدُوقِ قِطْعَةُ حَرِيرٍ.",
+   "fichier": "assets/audio/lecons/ar-49ed34148b7750e9.mp3",
+   "sha256": "a2f27463a457d4bc1834c47eccdfdabe8f47cfef366f1d58845220a0a511a794",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-4a2278aa91edaf92": {
    "genre": "lettre",
    "texte": "قَاف",
@@ -1191,12 +1893,48 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-4a412ad3dffa8fe3": {
+   "genre": "mot",
+   "texte": "فِضَّةٌ",
+   "fichier": "assets/audio/lecons/ar-4a412ad3dffa8fe3.mp3",
+   "sha256": "b7a8f8a739cddab595daa58c8f217a9bd64a69e1005cd8d236c1a72c3632a87c",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-4a8fe544b5d84b58": {
+   "genre": "mot",
+   "texte": "سَرِيرَانِ",
+   "fichier": "assets/audio/lecons/ar-4a8fe544b5d84b58.mp3",
+   "sha256": "b83c19a569a0c4ec57e4c422e419f998396e1d2a1c832cbd368bea64e4cea922",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-4b08243503a9c831": {
    "genre": "phrase",
    "texte": "وَأَنَا رَاشِدٌ، أَنَا تَاجِرٌ.",
    "fichier": "assets/audio/lecons/ar-4b08243503a9c831.mp3",
    "sha256": "0b7976d4f841437fd52909fee6700fd1c35844ba14a2fa76545423ad0d82734f",
    "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-4b50ae9610dcd295": {
+   "genre": "phrase",
+   "texte": "التَّاجِرُ فِي السُّوقِ.",
+   "fichier": "assets/audio/lecons/ar-4b50ae9610dcd295.mp3",
+   "sha256": "629182af2c9619166e4c04ad6f38967bb7773972441e3ea3dcda19a926b63d3f",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-4bfb5562e5dc864f": {
+   "genre": "mot",
+   "texte": "خَبَّازٌ",
+   "fichier": "assets/audio/lecons/ar-4bfb5562e5dc864f.mp3",
+   "sha256": "65c50ff1cc8113ff7a542794744d9ac64185a6009c36677c237b5021e2185c1d",
+   "graine": 1,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
@@ -1272,6 +2010,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-50068f85874f70df": {
+   "genre": "mot",
+   "texte": "حِمَارٌ",
+   "fichier": "assets/audio/lecons/ar-50068f85874f70df.mp3",
+   "sha256": "8a6a2d876423b6aa12df555e77d294831d3fd186ae65b7347cd867bd99660373",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-50e6cddd272bd2ab": {
    "genre": "syllabe",
    "texte": "حُ",
@@ -1280,6 +2027,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-23"
+  },
+  "ar-5131b748e986884c": {
+   "genre": "phrase",
+   "texte": "السِّرَاجُ فَوْقَ الصُّنْدُوقِ.",
+   "fichier": "assets/audio/lecons/ar-5131b748e986884c.mp3",
+   "sha256": "3fc1142ae111edc44d25fe3a94ab8c5b67dd94996f107050f7ddcd6d5ffc2527",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-5160b310a6c8f832": {
    "genre": "phrase",
@@ -1353,6 +2109,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-54709059304b545d": {
+   "genre": "phrase",
+   "texte": "الصَّرَّافُ فِي السُّوقِ، وَالْمِيزَانُ عِنْدَهُ.",
+   "fichier": "assets/audio/lecons/ar-54709059304b545d.mp3",
+   "sha256": "98e0172d468dff76f0f98b0f226f3cb32197d06aaf50f525ae41b89b2c17db6c",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-54989949b91b6201": {
    "genre": "mot",
    "texte": "النَّخْلَةُ",
@@ -1367,6 +2132,24 @@
    "texte": "شَمْسٌ",
    "fichier": "assets/audio/lecons/ar-54ce37143a5b98d8.mp3",
    "sha256": "a3c44ef02652ba641f46e6231269eeca7087d57feea08f00fa759ca4f31daa6b",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-54d3509ab47fe143": {
+   "genre": "phrase",
+   "texte": "التَّاجِرُ مَعَ الْحَدَّادِينَ",
+   "fichier": "assets/audio/lecons/ar-54d3509ab47fe143.mp3",
+   "sha256": "4297d42f0bae486b6d0ab9ba68dc6af269f9d291ceee2c32606ecc928cba39f5",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-54ed26363629ceb1": {
+   "genre": "phrase",
+   "texte": "أَيْنَ الْمِفْتَاحُ؟",
+   "fichier": "assets/audio/lecons/ar-54ed26363629ceb1.mp3",
+   "sha256": "3117369c5ebb4984bc666d94a074436fd9834aeab81ee4370887ba7ca73fd8ed",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -1389,11 +2172,47 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-5755a13dc1f1d5f3": {
+   "genre": "phrase",
+   "texte": "فِي الْبَيْتِ",
+   "fichier": "assets/audio/lecons/ar-5755a13dc1f1d5f3.mp3",
+   "sha256": "2c57eabec5d8bcc341bb927bf283bd715559042a032d13638ad58674afbb8db6",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-57db73f1ee7f858c": {
+   "genre": "mot",
+   "texte": "سُيُوفٌ",
+   "fichier": "assets/audio/lecons/ar-57db73f1ee7f858c.mp3",
+   "sha256": "224c3137c7f0b937c033f45153862ee67b2eb87494e3efa62a3c6d167d8eb8c3",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-57db7e149defc8c1": {
    "genre": "phrase",
    "texte": "خَيْمَةٌ جَدِيدَةٌ",
    "fichier": "assets/audio/lecons/ar-57db7e149defc8c1.mp3",
    "sha256": "5ba010a0296aba72323d7d5944b31fc7cff4173c63375197fc27537c28fa077a",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-5844273f735cdfae": {
+   "genre": "phrase",
+   "texte": "مِفْتَاحٌ الصُّنْدُوقُ",
+   "fichier": "assets/audio/lecons/ar-5844273f735cdfae.mp3",
+   "sha256": "b9908ec6ae891a64bed64b3899a4861bbed90f23d354ae7980ca9c97594d6a53",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-590aff3f6e883801": {
+   "genre": "phrase",
+   "texte": "السُّيُوفُ قَدِيمَةٌ.",
+   "fichier": "assets/audio/lecons/ar-590aff3f6e883801.mp3",
+   "sha256": "c8280a380c94bb5ca0b16fdfb7810f9a21ebcd712bcbf47aefb34ebf1b1cf342",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -1434,6 +2253,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-5c21ab3664d8658f": {
+   "genre": "phrase",
+   "texte": "مَا ثَمَنُ الْقَمِيصِ؟",
+   "fichier": "assets/audio/lecons/ar-5c21ab3664d8658f.mp3",
+   "sha256": "a975bf3e98600394f35e91dc0aefcd94dd098e651fc14dab93c9df1320d13159",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-5c76ab55cdfb06a6": {
+   "genre": "mot",
+   "texte": "خَفِيفٌ",
+   "fichier": "assets/audio/lecons/ar-5c76ab55cdfb06a6.mp3",
+   "sha256": "f1435c2bf9129fd1d71ec883fa3cb435d7d9bf37311afb72e86bcc588aabb3a2",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-5c870c1178d86cf3": {
    "genre": "mot",
    "texte": "بَابٍ",
@@ -1443,11 +2280,83 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-5d5f5f98cb332b29": {
+   "genre": "phrase",
+   "texte": "الْمِفْتَاحُ الصُّنْدُوقِ",
+   "fichier": "assets/audio/lecons/ar-5d5f5f98cb332b29.mp3",
+   "sha256": "25a7cb9225c46ba046cc448d0370eafd495364e573de68e06f702b04e8fce3fa",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-5d89449bb27df6b5": {
+   "genre": "mot",
+   "texte": "وِسَادَةٌ",
+   "fichier": "assets/audio/lecons/ar-5d89449bb27df6b5.mp3",
+   "sha256": "184cd3d814c357e6bed20804c6f6d4016c1d9dd0d4a19fd6ee4fe94cd4c77c4f",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-5e85a42c25895af4": {
+   "genre": "mot",
+   "texte": "هَٰذَانِ",
+   "fichier": "assets/audio/lecons/ar-5e85a42c25895af4.mp3",
+   "sha256": "ddb15aac74ac3da39a032b30ce3069506a983183d97fe8c2d9b74d70dceacdb2",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-5e9606cb286fba9f": {
+   "genre": "phrase",
+   "texte": "قَلَمٌ وَاحِدٌ",
+   "fichier": "assets/audio/lecons/ar-5e9606cb286fba9f.mp3",
+   "sha256": "f949856e00d29a3e12835e0fca0006591fca8dad5427968b5844d284d7daa4e2",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-5fa1625295b9b0a3": {
+   "genre": "phrase",
+   "texte": "الذَّهَبُ لَيْسَ خَفِيفًا.",
+   "fichier": "assets/audio/lecons/ar-5fa1625295b9b0a3.mp3",
+   "sha256": "9a5b6d227d0833a7257ee5ee9cd941d42b14834aa95015b28e6e6a2a45a4e7a6",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-5ff5a273321830f5": {
    "genre": "phrase",
    "texte": "هَٰذَا رَجُلٌ.",
    "fichier": "assets/audio/lecons/ar-5ff5a273321830f5.mp3",
    "sha256": "1451c3b563cabe0e60b2072a1573b7015ea904edc43cf1120f1d1778a154fefc",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-601b708171d3f333": {
+   "genre": "phrase",
+   "texte": "التَّاجِرُ مَعَ الْخَيَّاطِينَ.",
+   "fichier": "assets/audio/lecons/ar-601b708171d3f333.mp3",
+   "sha256": "ff9a7393008e5946cb780c95014949516e034d3bd8d371256ea18b9c89c200d9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-6020c52c239eeb98": {
+   "genre": "mot",
+   "texte": "ثَوْبُكَ",
+   "fichier": "assets/audio/lecons/ar-6020c52c239eeb98.mp3",
+   "sha256": "8118d51710557152b68d014a3dc9f266e67d8307ba53a0f0d2421660f7c6bb07",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-602175264831e95d": {
+   "genre": "mot",
+   "texte": "لَهَا",
+   "fichier": "assets/audio/lecons/ar-602175264831e95d.mp3",
+   "sha256": "8aa7505a8adbc6bb1f587f74fb6e5ccb20689622a9b796b44f463955dcc2699f",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -1461,6 +2370,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-60724edb383c8593": {
+   "genre": "phrase",
+   "texte": "قَلَمٌ وَاحِدَةٌ",
+   "fichier": "assets/audio/lecons/ar-60724edb383c8593.mp3",
+   "sha256": "5d68de1e2da5da93e9b9157a456125afe70181429ced1a8436313b1dbcff0c85",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-6083cd1447ae4488": {
    "genre": "phrase",
    "texte": "هَٰذَا بَيْتٌ.",
@@ -1470,11 +2388,38 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-618fbf1787237e78": {
+   "genre": "phrase",
+   "texte": "هَٰؤُلَاءِ خَبَّازُونَ.",
+   "fichier": "assets/audio/lecons/ar-618fbf1787237e78.mp3",
+   "sha256": "43cb7a5d8437732d1e01ed0d39bdb84ae050c29df6029ae84b8c096fc3e14e74",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-6198d5d8784b82db": {
    "genre": "phrase",
    "texte": "التَّمْرُ وَاللَّبَنُ… وَالْمَاءُ!",
    "fichier": "assets/audio/lecons/ar-6198d5d8784b82db.mp3",
    "sha256": "b11741122f9ca886cc72954ba1f0a0d859865dc83481d842a521f3fb6651e6a4",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-61a331e0a9835e08": {
+   "genre": "phrase",
+   "texte": "الدِّينَارُ مِنَ الذَّهَبِ، وَالدِّرْهَمُ مِنَ الْفِضَّةِ.",
+   "fichier": "assets/audio/lecons/ar-61a331e0a9835e08.mp3",
+   "sha256": "d993c0a4f18f3cea0395cf2a44f138dd830c03457a29e7847309b6a202ab9a9d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-61e691baf592c3c8": {
+   "genre": "mot",
+   "texte": "حَدَّادٌ",
+   "fichier": "assets/audio/lecons/ar-61e691baf592c3c8.mp3",
+   "sha256": "009c6a0a39faf8339914cb3014214e5f09a249d7984fd8a0c787327295934010",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -1533,6 +2478,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-23"
   },
+  "ar-6481619daf6b22db": {
+   "genre": "mot",
+   "texte": "دِرْهَمٌ",
+   "fichier": "assets/audio/lecons/ar-6481619daf6b22db.mp3",
+   "sha256": "c7d7186eeec058fc2d5839a85a674e0829fda94d8980d0056378efe8e52d8bb4",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-64cbd95c7cd800c7": {
    "genre": "syllabe",
    "texte": "زَ",
@@ -1579,6 +2533,15 @@
    "genere_le": "2026-10-23",
    "ecrit": "ثَبَتَ،"
   },
+  "ar-65e374911b07da36": {
+   "genre": "phrase",
+   "texte": "هَٰذِهِ سُيُوفٌ قَدِيمَةٌ.",
+   "fichier": "assets/audio/lecons/ar-65e374911b07da36.mp3",
+   "sha256": "82bd4c65fdb0be5224bc8460ec49e5e79c212108f9e3143c6250757d0bbbd45e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-65e557d9993eaaf0": {
    "genre": "mot",
    "texte": "ظَبْي",
@@ -1615,11 +2578,38 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-6781b92013319db1": {
+   "genre": "phrase",
+   "texte": "التَّاجِرُ مِنَ الْقَرْيَةِ.",
+   "fichier": "assets/audio/lecons/ar-6781b92013319db1.mp3",
+   "sha256": "1c7c9647868fdad09b2147a2d705bbdead3a87580b89a1d57bf3d0ff2c5fd9ae",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-67fdb4364173e82c": {
+   "genre": "phrase",
+   "texte": "هَٰؤُلَاءِ خَبَّازُونَ مِنَ الْقَرْيَةِ.",
+   "fichier": "assets/audio/lecons/ar-67fdb4364173e82c.mp3",
+   "sha256": "f63203ce257eff947fd59b9b2752033ad280f62f9018db919e5e8fa49ce43184",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-6819fc36636c1601": {
    "genre": "mot",
    "texte": "جَمِيلٌ",
    "fichier": "assets/audio/lecons/ar-6819fc36636c1601.mp3",
    "sha256": "ced3150f46669edaf69eceed3c6d32117b52a436adf3acfb119d202a9fa5f2ff",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-68338930ddeab55f": {
+   "genre": "mot",
+   "texte": "ثَقِيلٌ",
+   "fichier": "assets/audio/lecons/ar-68338930ddeab55f.mp3",
+   "sha256": "3d4f8b8b8b1c14060e08144ce2e5bc26b6eb6b89c2f437995c0d232f77eea500",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -1642,6 +2632,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-692b7f3bee4282b1": {
+   "genre": "phrase",
+   "texte": "الْبَيْتُ لَيْسَ كَبِيرًا.",
+   "fichier": "assets/audio/lecons/ar-692b7f3bee4282b1.mp3",
+   "sha256": "7bf4cb333f34d5f2ab3c0fd1f25551118f50d12c364934b54675038f054104cf",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-69afc767b1dbd8e8": {
    "genre": "lettre",
    "texte": "تَاء",
@@ -1650,6 +2649,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-21"
+  },
+  "ar-6bba458a17e045c3": {
+   "genre": "mot",
+   "texte": "مَطْبَخٌ",
+   "fichier": "assets/audio/lecons/ar-6bba458a17e045c3.mp3",
+   "sha256": "da313bbe71fcca35adb643a891789c01d867f4cd5ac99aa31651376293b5225f",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-6bd59ee063d85b4b": {
    "genre": "mot",
@@ -1669,6 +2677,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-6c440702dce032db": {
+   "genre": "mot",
+   "texte": "قِطْعَةٌ",
+   "fichier": "assets/audio/lecons/ar-6c440702dce032db.mp3",
+   "sha256": "bbb901be1a75a0de7520aeaed2f8ee54b65acc116dc4424bd8ed006fb5ccc917",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-6c964684310349d5": {
    "genre": "mot",
    "texte": "خَابَ",
@@ -1677,6 +2694,51 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-21"
+  },
+  "ar-6cc7a7d0c04f01e8": {
+   "genre": "phrase",
+   "texte": "خَيْطُكَ طَوِيلٌ، وَإِبْرَتُهَا صَغِيرَةٌ.",
+   "fichier": "assets/audio/lecons/ar-6cc7a7d0c04f01e8.mp3",
+   "sha256": "42dd77ff74ae6318837e92cb15819fd79a006f5ed420df62a2a0e2c0f7bd7688",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-6cfbf4e57370d216": {
+   "genre": "phrase",
+   "texte": "صَدِيقِي فِي السُّوقِ.",
+   "fichier": "assets/audio/lecons/ar-6cfbf4e57370d216.mp3",
+   "sha256": "80080adb423cd40b3ca530787383691fe940336ec7fdaf1bf455d63893a0ef98",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-6d802796e699af7c": {
+   "genre": "phrase",
+   "texte": "مَعَ الْخَبَّازِينَ",
+   "fichier": "assets/audio/lecons/ar-6d802796e699af7c.mp3",
+   "sha256": "805af26a3af4d045a4682489d228656fd460b600077ce87bc00b3af5b6888632",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-6defda97c1a08814": {
+   "genre": "phrase",
+   "texte": "تَحْتَ الْكُرْسِيِّ",
+   "fichier": "assets/audio/lecons/ar-6defda97c1a08814.mp3",
+   "sha256": "c81977e90606d5a140f4e1b6495b27b291387b97c54eaf718842a84b66a32b54",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-6e3aecceef507e7f": {
+   "genre": "mot",
+   "texte": "ثَوْبُنَا",
+   "fichier": "assets/audio/lecons/ar-6e3aecceef507e7f.mp3",
+   "sha256": "9b59655c3363d984319a8f0af1eb84e0b21d0f89584f865a26ec0e09d86cf20b",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-6eb70ea902be3196": {
    "genre": "mot",
@@ -1776,6 +2838,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-71cac5239eddc082": {
+   "genre": "phrase",
+   "texte": "النُّجُومُ كَثِيرَةٌ.",
+   "fichier": "assets/audio/lecons/ar-71cac5239eddc082.mp3",
+   "sha256": "7472f83d53cee623673f1cfdd37c0afe7fb1d4ef1d532b65ab495bb2f86f1b25",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-7233c7edf4665204": {
    "genre": "mot",
@@ -1894,6 +2965,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-773638a3aab1af0e": {
+   "genre": "phrase",
+   "texte": "الْجِيرَانُ فَرِحُونَ.",
+   "fichier": "assets/audio/lecons/ar-773638a3aab1af0e.mp3",
+   "sha256": "21378ce32515e668f2e24f014f839802ac2dbf7c775c29badfbfbcb98b633738",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-77a94e82b66c400e": {
+   "genre": "mot",
+   "texte": "صَرَّافٌ",
+   "fichier": "assets/audio/lecons/ar-77a94e82b66c400e.mp3",
+   "sha256": "46755f622f9e47df76f2fb1346b5e7ba730a16e1b5c4d29728332228621e78b1",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-780f94e600871699": {
    "genre": "syllabe",
    "texte": "حَ",
@@ -1902,6 +2991,24 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-21"
+  },
+  "ar-7884b918868d9884": {
+   "genre": "phrase",
+   "texte": "هَٰذَا قَمِيصٌ جَدِيدٌ.",
+   "fichier": "assets/audio/lecons/ar-7884b918868d9884.mp3",
+   "sha256": "ec4d06e67108b3d18ac52f1f88cff39a99f80c86c1871c9a4e747e396f5ac33a",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-789c460b9951c847": {
+   "genre": "phrase",
+   "texte": "عِنْدِي إِبْرَةٌ.",
+   "fichier": "assets/audio/lecons/ar-789c460b9951c847.mp3",
+   "sha256": "6b9c387a4c9eebc582227ba1718c4b81d14fc2b51679bcbcbefb93b4191635f4",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-78bc7d1c65c71f25": {
    "genre": "mot",
@@ -1921,11 +3028,38 @@
    "a_ecouter": false,
    "genere_le": "2026-10-23"
   },
+  "ar-7a3d3a86fba37b27": {
+   "genre": "phrase",
+   "texte": "خَيْمَةٌ وَاحِدَةٌ",
+   "fichier": "assets/audio/lecons/ar-7a3d3a86fba37b27.mp3",
+   "sha256": "ffed1d806a0f1e4f4bf959ac3b3a5b95023d610837f2f1aa2cf4e6b65930a474",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-7ab8c0850ed14aa0": {
+   "genre": "phrase",
+   "texte": "وَأَيْنَ ثَوْبُكَ؟",
+   "fichier": "assets/audio/lecons/ar-7ab8c0850ed14aa0.mp3",
+   "sha256": "75f4e06086454e1061e79e2497b403406dbb29d018c4ad75c6b6ba03d9fd6bff",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-7af96a47a4b6cd36": {
    "genre": "mot",
    "texte": "هُوَ",
    "fichier": "assets/audio/lecons/ar-7af96a47a4b6cd36.mp3",
    "sha256": "35aa9ab7a4f131813b8d4fd54295cb9773bcfa82d59507d879c9022ed8cb824e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-7b167b61a16bf904": {
+   "genre": "mot",
+   "texte": "ثَوْبُهُمْ",
+   "fichier": "assets/audio/lecons/ar-7b167b61a16bf904.mp3",
+   "sha256": "293e8abdf7c5e248ca424d553f155ad513af9979283847b53b7af2fb6b35a66e",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -1985,6 +3119,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-7e48b817efb473d0": {
+   "genre": "phrase",
+   "texte": "السَّقْفُ جَدِيدٌ.",
+   "fichier": "assets/audio/lecons/ar-7e48b817efb473d0.mp3",
+   "sha256": "b0359002874c591385b139487b9384d1b497638703cf32d8470e8c6477cd7e37",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-7e7c516b1aedc31c": {
+   "genre": "mot",
+   "texte": "تِسْعَةٌ",
+   "fichier": "assets/audio/lecons/ar-7e7c516b1aedc31c.mp3",
+   "sha256": "f6ce73650b68487cd7bf33cca92b5769dff5044a3782a7f3e1f6415152d05e79",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-7e98f248bcc69407": {
    "genre": "mot",
    "texte": "سُكَّر",
@@ -1994,6 +3146,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-7ead6d674816460a": {
+   "genre": "phrase",
+   "texte": "عَشَرَةُ أَقْلَامٍ",
+   "fichier": "assets/audio/lecons/ar-7ead6d674816460a.mp3",
+   "sha256": "4ee4db44ce1723fe7bd6a05e52450b66a949179a47dd8b3d270cb7847af12e65",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-7ef4234357ba7102": {
    "genre": "mot",
    "texte": "كَتَبَ",
@@ -2002,6 +3163,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-7f37591bde1b0a69": {
+   "genre": "mot",
+   "texte": "لُحُومٌ",
+   "fichier": "assets/audio/lecons/ar-7f37591bde1b0a69.mp3",
+   "sha256": "9817f78c04a6b1503303a440703a4e5e0b9b90a4ba4dac340ccf21239acd48df",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-80226ecadf667517": {
    "genre": "phrase",
@@ -2017,6 +3187,15 @@
    "texte": "هَٰذِهِ خَيْمَةٌ، وَهَٰذَا جَمَلٌ.",
    "fichier": "assets/audio/lecons/ar-8072a093deefa12b.mp3",
    "sha256": "fcedd8c1b75f11f22ea84fcbfe9735955cd868c80f71a11c845cf14274d70fd4",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-80a650653115e92f": {
+   "genre": "mot",
+   "texte": "أَرْبَعَةٌ",
+   "fichier": "assets/audio/lecons/ar-80a650653115e92f.mp3",
+   "sha256": "2db63299eed4ab454b51cb09734c508a63391242078e5017d44b685cb3ad1cd9",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2067,6 +3246,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-82f6cf84aee4621d": {
+   "genre": "mot",
+   "texte": "ثَمَانِيَةٌ",
+   "fichier": "assets/audio/lecons/ar-82f6cf84aee4621d.mp3",
+   "sha256": "b6fe639b38bb714fda1982e479f72fc7cd3cfcb908a7e44c699bc80422697071",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-83548667084cb285": {
    "genre": "lettre",
    "texte": "جِيم",
@@ -2094,6 +3282,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-837cfa930ee9623c": {
+   "genre": "mot",
+   "texte": "سُوقٌ",
+   "fichier": "assets/audio/lecons/ar-837cfa930ee9623c.mp3",
+   "sha256": "08de76dc3beb9009150f79cf689254843ad0d6c494554f50879adbdce04344f4",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-84557e261f8cfce8": {
    "genre": "syllabe",
    "texte": "هَٰ",
@@ -2102,6 +3299,15 @@
    "graine": 1,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-84dbcf48da88b62a": {
+   "genre": "phrase",
+   "texte": "صَدِيقِي مَعِي، وَعِنْدَهُ قِطْعَةُ صُوفٍ.",
+   "fichier": "assets/audio/lecons/ar-84dbcf48da88b62a.mp3",
+   "sha256": "853498d57a8567902a348d82dfe72d9fcca98e13859d35eca62e49a97300f8b2",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-84e9e184b660cddc": {
    "genre": "syllabe",
@@ -2130,6 +3336,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-860c78eee9eff38a": {
+   "genre": "mot",
+   "texte": "وَاحِدٌ",
+   "fichier": "assets/audio/lecons/ar-860c78eee9eff38a.mp3",
+   "sha256": "726822bc7893d0adb13af039a415bd38d77b2c73650b93a3b519922c0b7294d6",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-86364dcb75d888d8": {
    "genre": "mot",
    "texte": "حَارٌّ",
@@ -2157,6 +3372,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-874a78db74aa3ddc": {
+   "genre": "phrase",
+   "texte": "فِي الْغُرْفَةِ سَرِيرَانِ اثْنَانِ.",
+   "fichier": "assets/audio/lecons/ar-874a78db74aa3ddc.mp3",
+   "sha256": "d73bfa349a5183d5f139042a0b4a9290304c8c54600c22bd8ab6c3a77f134f42",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-875ff90371bca316": {
    "genre": "syllabe",
    "texte": "نَ",
@@ -2165,6 +3389,24 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-21"
+  },
+  "ar-87842af882ecd3d8": {
+   "genre": "phrase",
+   "texte": "وَفِي الصُّنْدُوقِ عَشَرَةُ سُيُوفٍ.",
+   "fichier": "assets/audio/lecons/ar-87842af882ecd3d8.mp3",
+   "sha256": "ba0721871fbb2c789890c4238f69e39796caba37ffdbf2cbb7c873ac57757908",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-87b0b79b1f2e20d3": {
+   "genre": "mot",
+   "texte": "هَٰؤُلَاءِ",
+   "fichier": "assets/audio/lecons/ar-87b0b79b1f2e20d3.mp3",
+   "sha256": "0abffce06f135d5531ead21e966390d9d8b760020a012721511825b7090c3f64",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-87d609775d3b21dc": {
    "genre": "phrase",
@@ -2202,6 +3444,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-8935eaf829ef7b40": {
+   "genre": "mot",
+   "texte": "نَسَّاجٌ",
+   "fichier": "assets/audio/lecons/ar-8935eaf829ef7b40.mp3",
+   "sha256": "1ca9969d30bb220a8f73b83c2ff078c4cc5203ef85a95c8dbc5213fc39f71317",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-896736f310f4b19a": {
+   "genre": "phrase",
+   "texte": "أَيْنَ الْخُبْزُ؟",
+   "fichier": "assets/audio/lecons/ar-896736f310f4b19a.mp3",
+   "sha256": "939f5b1298038c3362dfdcedf2da8bdd2ae547f9f9e38483993bc237bdc573fa",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-899917db1c13b651": {
    "genre": "syllabe",
    "texte": "رِي",
@@ -2229,11 +3489,38 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-8a27e7fd82bda713": {
+   "genre": "mot",
+   "texte": "خَيْطٌ",
+   "fichier": "assets/audio/lecons/ar-8a27e7fd82bda713.mp3",
+   "sha256": "3cee2e2d4320805cb6d0d378747ca6adf5080f3c3e275d89d2a1fdf73ff2cac9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-8a2f41e5f0b2669a": {
    "genre": "phrase",
    "texte": "هَلْ هَٰذَا بَيْتٌ",
    "fichier": "assets/audio/lecons/ar-8a2f41e5f0b2669a.mp3",
    "sha256": "d2b0266d89112ef5d6d3a82e0f94e070276fbe50b6282c359e31aa6c081d75ea",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-8a5fad753ff0c478": {
+   "genre": "phrase",
+   "texte": "فِي الْكِفَّةِ دِينَارٌ وَاحِدٌ، وَالْكِفَّةُ لَيْسَتْ ثَقِيلَةً.",
+   "fichier": "assets/audio/lecons/ar-8a5fad753ff0c478.mp3",
+   "sha256": "0465366239eaa641933aae17977124ea3065ae78106feeadbb433a65f5db41cd",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-8a700b5f3964460b": {
+   "genre": "phrase",
+   "texte": "ثَلَاثَةُ كُتُبٍ",
+   "fichier": "assets/audio/lecons/ar-8a700b5f3964460b.mp3",
+   "sha256": "c1e471fa8be0a2688445748c22e991b631c2a8aee9ab8513135f4211c92ace5a",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2247,11 +3534,29 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-8c1bd064fb3ba74c": {
+   "genre": "mot",
+   "texte": "فَوْقَ",
+   "fichier": "assets/audio/lecons/ar-8c1bd064fb3ba74c.mp3",
+   "sha256": "ba2ed8e1df39124ca70a15b4ef3f3115109218b66040485ca943c764b2d6f57a",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-8c478c6fc216c4b8": {
    "genre": "phrase",
    "texte": "هَٰذِهِ وَلَدٌ.",
    "fichier": "assets/audio/lecons/ar-8c478c6fc216c4b8.mp3",
    "sha256": "b336e97126f475532ab0ceff31693f2c9afb6bef4118dd40e07af7b491311f38",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-8cbbc5c25b02467c": {
+   "genre": "phrase",
+   "texte": "الصُّنْدُوقُ ثَقِيلٌ.",
+   "fichier": "assets/audio/lecons/ar-8cbbc5c25b02467c.mp3",
+   "sha256": "5bc4274cd21fb2cfb3fef388f5c47f0fc1af968620c263634fc258dfb17577f2",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2264,6 +3569,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-8d349f7acf3d92e6": {
+   "genre": "phrase",
+   "texte": "فِي السَّلَّتَيْنِ",
+   "fichier": "assets/audio/lecons/ar-8d349f7acf3d92e6.mp3",
+   "sha256": "684b0742237493c2bae08f35aeeb6d8e92fa7aa82009f89bc396fb2d50ae9a11",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-8d3d7c3e12a4d68b": {
    "genre": "phrase",
@@ -2283,6 +3597,33 @@
    "a_ecouter": false,
    "genere_le": "2026-10-21"
   },
+  "ar-8e584d63a7750022": {
+   "genre": "syllabe",
+   "texte": "لَكَ",
+   "fichier": "assets/audio/lecons/ar-8e584d63a7750022.mp3",
+   "sha256": "9499724c523d19c64bdd3ee94a3a2136412f440432ab11473aed5916d8016d82",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-8ea1e24580c7b3a8": {
+   "genre": "mot",
+   "texte": "حَرِيرٌ",
+   "fichier": "assets/audio/lecons/ar-8ea1e24580c7b3a8.mp3",
+   "sha256": "35e951378814baece3d87e11604b4ab0a9560c97fca156d5f868f7868a86ee48",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-8ec8859e690f6f5c": {
+   "genre": "phrase",
+   "texte": "هَٰذَا ثَوْبِي.",
+   "fichier": "assets/audio/lecons/ar-8ec8859e690f6f5c.mp3",
+   "sha256": "c8a251dbac023c479e6e0c63e14a90013f9ea9da66d443d6cc55388356b82d78",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-8fd6af79945eb10b": {
    "genre": "mot",
    "texte": "شَجَر",
@@ -2297,6 +3638,15 @@
    "texte": "الْبِنْتُ صَغِيرَةٌ.",
    "fichier": "assets/audio/lecons/ar-9013bb0c24d16c66.mp3",
    "sha256": "10ea364ce682ac235245d0dab7edfc6facbd86050366e7c19716098974c2d536",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-90289110ec07a5ef": {
+   "genre": "mot",
+   "texte": "عِنْدَ",
+   "fichier": "assets/audio/lecons/ar-90289110ec07a5ef.mp3",
+   "sha256": "7ea396a6101b9ed6ac50941afd1a646dc0b340b2648ba4d8d8699854e22684e8",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2319,6 +3669,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-91a1043b7e440a36": {
+   "genre": "mot",
+   "texte": "ثِيَابٌ",
+   "fichier": "assets/audio/lecons/ar-91a1043b7e440a36.mp3",
+   "sha256": "ebac7ded63ae49ebd134c3e2e726876c5d6143d0109846f4220e03adf096a467",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-91accb5963aafe59": {
    "genre": "mot",
    "texte": "وَرَقَة",
@@ -2336,6 +3695,24 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-23"
+  },
+  "ar-9278ebc01841bb94": {
+   "genre": "phrase",
+   "texte": "لِي قَمِيصٌ.",
+   "fichier": "assets/audio/lecons/ar-9278ebc01841bb94.mp3",
+   "sha256": "75cceb7c6745ec1d69cff39c36f23cb46a48b4b0429f040cf2a3c1291db58a3e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-92f99ad1edadfafa": {
+   "genre": "phrase",
+   "texte": "هَٰذَا ثَوْبِي، وَهُوَ مِنَ الصُّوفِ.",
+   "fichier": "assets/audio/lecons/ar-92f99ad1edadfafa.mp3",
+   "sha256": "2cc1c36e3464ee23c5c011b97b8b413df6f314112e5730c5a38bee2df417f891",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-936727144613e449": {
    "genre": "mot",
@@ -2355,6 +3732,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-93c1f2cf84f3cee9": {
+   "genre": "phrase",
+   "texte": "الْبَائِعُ فِي السُّوقِ.",
+   "fichier": "assets/audio/lecons/ar-93c1f2cf84f3cee9.mp3",
+   "sha256": "326a9a602a6f77ab1294d6ac01033adf1b65571af9fdb5e7d7402d9e531edf4a",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-93e2a86a67d096c8": {
    "genre": "syllabe",
    "texte": "سُكَ",
@@ -2364,11 +3750,29 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-93f5b549587b039e": {
+   "genre": "phrase",
+   "texte": "الصُّنْدُوقُ كَبِيرٌ.",
+   "fichier": "assets/audio/lecons/ar-93f5b549587b039e.mp3",
+   "sha256": "48053f7b90dfb880c14d4d3f9d11f7f7ee7d57f866ae74bb5ccbb5582ff9bb69",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-94a68e27842d217c": {
    "genre": "mot",
    "texte": "رَاشِدٌ",
    "fichier": "assets/audio/lecons/ar-94a68e27842d217c.mp3",
    "sha256": "c18bf942aca48f19a9b37cb659f94071b6faf3f7cea7b18f43a0b3841390b4d8",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-95301f61bd08ea02": {
+   "genre": "phrase",
+   "texte": "بَيْتُ سَلْمَى قَرِيبٌ مِنَ السُّوقِ.",
+   "fichier": "assets/audio/lecons/ar-95301f61bd08ea02.mp3",
+   "sha256": "834a8340c09ce3d0830bbd945856dd0cb71767aa777d183bcd402748b5b2944c",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2382,6 +3786,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-956891cf22522aa1": {
+   "genre": "phrase",
+   "texte": "الْخُبْزُ كَثِيرٌ، وَاللَّحْمُ قَلِيلٌ.",
+   "fichier": "assets/audio/lecons/ar-956891cf22522aa1.mp3",
+   "sha256": "227106e5bd8baa640858633f3a212063a548c36772f5d8b822e2fec0b831816d",
+   "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-9599556b88695b57": {
+   "genre": "phrase",
+   "texte": "الْكِلَابُ هُنَاكَ.",
+   "fichier": "assets/audio/lecons/ar-9599556b88695b57.mp3",
+   "sha256": "d292a49f602ac77bc7d78400693453dab0e0873e571d4d48fe64573d17519dfd",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-95d0ceca7ea42dff": {
    "genre": "phrase",
    "texte": "أَيْنَ الْجَمَلُ",
@@ -2391,11 +3813,38 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-95ebfdf1261f9ff0": {
+   "genre": "phrase",
+   "texte": "كِيسُ التَّاجِرِ فِي الصُّنْدُوقِ.",
+   "fichier": "assets/audio/lecons/ar-95ebfdf1261f9ff0.mp3",
+   "sha256": "9fdec4688eb26389d28949140399b6644c3d63fab592de529602ebad67b9344b",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-95fc3fdae3d76aa5": {
+   "genre": "phrase",
+   "texte": "لِي ثَلَاثَةُ أَكْيَاسٍ وَدِينَارٌ وَاحِدٌ.",
+   "fichier": "assets/audio/lecons/ar-95fc3fdae3d76aa5.mp3",
+   "sha256": "7dde8db2ac191b45799fed3c206ac38183d6e4fb5e942aa8f1f50a6cdfab0b9c",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-9652383f9698da82": {
    "genre": "phrase",
    "texte": "هَٰذَا قَلَمٌ.",
    "fichier": "assets/audio/lecons/ar-9652383f9698da82.mp3",
    "sha256": "79e12ac4bc2e4a4545cd482253a752e79c61f83ed48e507ceaea9b2837747bd0",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-96832fa4648a15c9": {
+   "genre": "phrase",
+   "texte": "الْيَدُ صَغِيرَةٌ.",
+   "fichier": "assets/audio/lecons/ar-96832fa4648a15c9.mp3",
+   "sha256": "9eb920afc6a6fc25e6f5b83c079167e3cb024e33a938b5daaabf45cc73ca2afa",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2427,6 +3876,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-979de6bf496b26e2": {
+   "genre": "phrase",
+   "texte": "فِي الصُّنْدُوقِ عَشَرَةُ سُيُوفٍ",
+   "fichier": "assets/audio/lecons/ar-979de6bf496b26e2.mp3",
+   "sha256": "83b8a653eeeab2d61317c3a05a4a5e4be98be85dccc80e4487215b9572e91390",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-97eed4f499be801f": {
    "genre": "syllabe",
    "texte": "مُو",
@@ -2454,6 +3912,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-984f87660bed6c0b": {
+   "genre": "phrase",
+   "texte": "الصَّدِيقُ مَعِي.",
+   "fichier": "assets/audio/lecons/ar-984f87660bed6c0b.mp3",
+   "sha256": "f1bfb5215bca20b43fe2df8f1b6ef904a9b05a4ccacd29ef83bdd49fb06c3a9f",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-99a280f455731977": {
+   "genre": "phrase",
+   "texte": "فِي الْغُرْفَةِ سَرِيرَانِ.",
+   "fichier": "assets/audio/lecons/ar-99a280f455731977.mp3",
+   "sha256": "a79874dee39317e4e1d741c0194bac68b6beea26e6ef5e0ebb3c5cb1ee179720",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-9a5e5477275387d4": {
    "genre": "mot",
    "texte": "قَلَمٌ",
@@ -2463,11 +3939,29 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-9aa011ac5a758c00": {
+   "genre": "phrase",
+   "texte": "الصَّرَّافُ لَيْسَ هُنَا.",
+   "fichier": "assets/audio/lecons/ar-9aa011ac5a758c00.mp3",
+   "sha256": "b5673ae07e50cafd1a545408273df4adae9c9b65ec7048dc55ce9ce35de18c9a",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-9b063b95c4c5d4d3": {
    "genre": "phrase",
    "texte": "اللَّبَنُ وَالتَّمْرُ",
    "fichier": "assets/audio/lecons/ar-9b063b95c4c5d4d3.mp3",
    "sha256": "6d0f5b30f76feb6ad52cf43c7e8361934b0da07eb63e3d893a30ad8f4eb25242",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-9b4f52cd6845a4da": {
+   "genre": "phrase",
+   "texte": "الْخُبْزُ فِي السَّلَّةِ",
+   "fichier": "assets/audio/lecons/ar-9b4f52cd6845a4da.mp3",
+   "sha256": "4b6a42cf3701b0978a73694a522cc03c83f424699d235567c227db8169f3e8e6",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2486,6 +3980,24 @@
    "texte": "نَعَمْ",
    "fichier": "assets/audio/lecons/ar-9bf161cba0415c23.mp3",
    "sha256": "b6907c426b57bd87c1353c21c7c74c23f9b9f53e3973e48f3f00160c958229f1",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-9c06462c59bdb5e5": {
+   "genre": "mot",
+   "texte": "لَحْمٌ",
+   "fichier": "assets/audio/lecons/ar-9c06462c59bdb5e5.mp3",
+   "sha256": "ffee25ccdfda193d11da8f39bac55257e371d628dc04cf3a85555411c1262fd7",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-9c184e9ec8d53ff8": {
+   "genre": "mot",
+   "texte": "ثَوْبُهُنَّ",
+   "fichier": "assets/audio/lecons/ar-9c184e9ec8d53ff8.mp3",
+   "sha256": "de1a0214cd92266bb69d8bbbbb60f2c5777a87b6186469c19c0ad92c94dfabe2",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2516,6 +4028,24 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-9db8ee897917db4f": {
+   "genre": "phrase",
+   "texte": "الْخَيْطُ عِنْدِي.",
+   "fichier": "assets/audio/lecons/ar-9db8ee897917db4f.mp3",
+   "sha256": "d880d224d14961213ddef4e2917a43c5fdbbdff4d6f5465539dea2be9a370528",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-9dd9d0fe5a71b2ab": {
+   "genre": "phrase",
+   "texte": "أَيْنَ الْكِتَابُ؟",
+   "fichier": "assets/audio/lecons/ar-9dd9d0fe5a71b2ab.mp3",
+   "sha256": "69b4428b606665d55210c82f4d8e1f212c3fce2f141402c29a1567e3dc2340b9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-9e19f3484ca7f9ff": {
    "genre": "phrase",
@@ -2589,6 +4119,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-a3f2d7b535de7df8": {
+   "genre": "phrase",
+   "texte": "اللَّحْمُ فِي الْخَيْمَةِ",
+   "fichier": "assets/audio/lecons/ar-a3f2d7b535de7df8.mp3",
+   "sha256": "334c8bb23956d9c885cc64cfe7c50daf5afce94a5f62b368c791c9e5fbbf4fdb",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-a4213b07104e5a1b": {
    "genre": "phrase",
    "texte": "أَنَا بَاسِمٌ، وَأَنَا صَغِيرٌ.",
@@ -2625,6 +4164,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-a4cdb481bbf93d46": {
+   "genre": "phrase",
+   "texte": "الْمِيزَانُ لَيْسَ قَدِيمًا.",
+   "fichier": "assets/audio/lecons/ar-a4cdb481bbf93d46.mp3",
+   "sha256": "9817766a48ae38185b44815a29332af4e5d3387e7b1b1a014e44adf0c2d005d5",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-a4e8ac8696fd9d09": {
    "genre": "syllabe",
    "texte": "لَا",
@@ -2633,6 +4181,33 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-a53d5121c4ad0c9c": {
+   "genre": "phrase",
+   "texte": "فِي الصُّنْدُوقِ عَشَرَةُ أَكْيَاسٍ.",
+   "fichier": "assets/audio/lecons/ar-a53d5121c4ad0c9c.mp3",
+   "sha256": "1e201304bd0b4bf44ce059920526a4878efea293b0832e49587a8faa6dc75662",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-a58e878b7c9aa433": {
+   "genre": "mot",
+   "texte": "مِنْهُ",
+   "fichier": "assets/audio/lecons/ar-a58e878b7c9aa433.mp3",
+   "sha256": "fcf3aef8d71f75fefccacd018319897d6cb3af0f2ad84f74f9f0889ea7cba708",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-a5a0bff92487f8b3": {
+   "genre": "phrase",
+   "texte": "النَّسَّاجُ فِي السُّوقِ، وَصُوفُهُ كَثِيرٌ.",
+   "fichier": "assets/audio/lecons/ar-a5a0bff92487f8b3.mp3",
+   "sha256": "d254df11f060a4e171dfc824a6762107c52abd939acfa5004c734a78001b2417",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-a5ad4f283ff17aa4": {
    "genre": "syllabe",
@@ -2648,6 +4223,15 @@
    "texte": "أَرْضٌ",
    "fichier": "assets/audio/lecons/ar-a5c4147dfd69c928.mp3",
    "sha256": "e0f5f4d6ba60d375a12632e859e5fb89025e0917286433d6ad6bd385b10a8873",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-a64b75ee03276a6b": {
+   "genre": "phrase",
+   "texte": "الْحَدِيدُ فِي الْخَيْمَةِ",
+   "fichier": "assets/audio/lecons/ar-a64b75ee03276a6b.mp3",
+   "sha256": "d79601349c9ae998b9e493d87bd58d75c09b811458a084519a02a457df049bf0",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2679,6 +4263,42 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-a725d90a928eed5a": {
+   "genre": "mot",
+   "texte": "مَعَ",
+   "fichier": "assets/audio/lecons/ar-a725d90a928eed5a.mp3",
+   "sha256": "be44a1c955302f6a01ce6d0b13193920852336655d9c0af353e836fbeb05717e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-a7a8e2ac536ad267": {
+   "genre": "phrase",
+   "texte": "الذَّهَبُ فِي السُّوقِ قَلِيلٌ.",
+   "fichier": "assets/audio/lecons/ar-a7a8e2ac536ad267.mp3",
+   "sha256": "86f0fc87bdeca2d1ea6c46859cf9e214aec29340d932911ecca2414eb0f7e4a8",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-a7ccaf0f1752414f": {
+   "genre": "mot",
+   "texte": "تَحْتَ",
+   "fichier": "assets/audio/lecons/ar-a7ccaf0f1752414f.mp3",
+   "sha256": "271cbfc2410cddb25d5cda0a4a1775214b5446deadb0e83bf0ccecfadf78129c",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-a7e9992b8900f9b5": {
+   "genre": "phrase",
+   "texte": "الْكِفَّةُ لَيْسَتْ هُنَا.",
+   "fichier": "assets/audio/lecons/ar-a7e9992b8900f9b5.mp3",
+   "sha256": "841421e8b02013b0e53bc0f026b0d873054339c652f9807772d113585a0d1a03",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-a7f24ff9085cd577": {
    "genre": "mot",
    "texte": "بَنَات",
@@ -2688,11 +4308,38 @@
    "a_ecouter": false,
    "genere_le": "2026-10-23"
   },
+  "ar-a86d23ad9bfcc35c": {
+   "genre": "phrase",
+   "texte": "مِفْتَاحُ الصُّنْدُوقِ",
+   "fichier": "assets/audio/lecons/ar-a86d23ad9bfcc35c.mp3",
+   "sha256": "b9ee665e4759647f8c7afc539e4e0def45bd95e49e75316fcc65a4de4d4876c9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-a8b37b66cf820286": {
    "genre": "mot",
    "texte": "نَارٌ",
    "fichier": "assets/audio/lecons/ar-a8b37b66cf820286.mp3",
    "sha256": "951c6ab3a99e26b84e528bf90e7b33f87658618ec95e15ada98267f533c2f6fa",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-a93567c6d8d233a1": {
+   "genre": "phrase",
+   "texte": "هُمْ نَجَّارُونَ.",
+   "fichier": "assets/audio/lecons/ar-a93567c6d8d233a1.mp3",
+   "sha256": "7d6020e4b6944b3ecea7b17048349e19343dc61db2768f5be68f6b1367f6c887",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-a935fb859eaa1ffa": {
+   "genre": "mot",
+   "texte": "أَوْلَادٌ",
+   "fichier": "assets/audio/lecons/ar-a935fb859eaa1ffa.mp3",
+   "sha256": "c02c67bfcb68277a1d1d86428cbf27d799bc5bfcff0bb3aefec26d62195e1793",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2706,11 +4353,38 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-a9aaa2c3c1aef00b": {
+   "genre": "mot",
+   "texte": "وَالدِّرْهَمُ؟",
+   "fichier": "assets/audio/lecons/ar-a9aaa2c3c1aef00b.mp3",
+   "sha256": "397998c053fe465ef3c78dd3eb91095c209f4775b96e275d54f9ca70b392e379",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-a9c8e31d19fc9ea9": {
    "genre": "phrase",
    "texte": "مَنْ هُوَ؟ هُوَ تَاجِرٌ.",
    "fichier": "assets/audio/lecons/ar-a9c8e31d19fc9ea9.mp3",
    "sha256": "a8f90e127721b8399d21a73ebd626a08ee7547dbf6a8b2e578e86fbb7d0eef9a",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-a9f92bffe6f7227a": {
+   "genre": "mot",
+   "texte": "دِينَارٌ",
+   "fichier": "assets/audio/lecons/ar-a9f92bffe6f7227a.mp3",
+   "sha256": "70fff8f0fb012fa5f6319359255f58e2189190831b2595bc2f5f1f4c3edf15bc",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-aad94886c03729a5": {
+   "genre": "phrase",
+   "texte": "فِي الْكِيسِ دِينَارٌ وَاحِدٌ.",
+   "fichier": "assets/audio/lecons/ar-aad94886c03729a5.mp3",
+   "sha256": "563d1bd1f9ede688150db27c1f03f1f4bd393f5bd6a71409d5276861653a3a83",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2733,11 +4407,47 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-ad1f86639a9568f4": {
+   "genre": "phrase",
+   "texte": "هَلْ لَكَ قَمِيصٌ؟",
+   "fichier": "assets/audio/lecons/ar-ad1f86639a9568f4.mp3",
+   "sha256": "55fb93e95b60fa42e2bab89dd84311d4bf07e138bbaaa1e54596ab40470f8d67",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-ad2699d54386ef5f": {
+   "genre": "phrase",
+   "texte": "لِي قَمِيصٌ جَدِيدٌ.",
+   "fichier": "assets/audio/lecons/ar-ad2699d54386ef5f.mp3",
+   "sha256": "6d91d7e984da6edc9efbbdd84c2231d166ad604b24dde42edb3370e8e2df27ca",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-ad9d8476c83826da": {
    "genre": "phrase",
    "texte": "الْقَرْيَةُ بَعِيدَةٌ.",
    "fichier": "assets/audio/lecons/ar-ad9d8476c83826da.mp3",
    "sha256": "fbde6ac9f822bb17fbb60ddf39aa604d5a30fc7e6ea36eab209722d1d75fc534",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-adf847aab26265a2": {
+   "genre": "phrase",
+   "texte": "هَلْ أَنْتَ تَاجِرٌ؟",
+   "fichier": "assets/audio/lecons/ar-adf847aab26265a2.mp3",
+   "sha256": "d4394614a7eded85484cb2abb1d88899960c4f944ca575afb581a0a07797ce1d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-aeb6c2591a625e3f": {
+   "genre": "phrase",
+   "texte": "هَٰذَا دِينَارٌ، وَهَٰذَا دِرْهَمٌ.",
+   "fichier": "assets/audio/lecons/ar-aeb6c2591a625e3f.mp3",
+   "sha256": "ed70fe60f886e114b6de3f8c27d6df49b06827ffbb6e6acbdeb0989c5e2ea059",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2759,6 +4469,15 @@
    "graine": 1,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-b08b0182919ed0d4": {
+   "genre": "mot",
+   "texte": "ذَهَبٌ",
+   "fichier": "assets/audio/lecons/ar-b08b0182919ed0d4.mp3",
+   "sha256": "8cb979f5ae6d2d76aca6f57e901f0bd2b1a828242b4e1ef5973c64d052d73e98",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-b0ef0de94f244bc5": {
    "genre": "phrase",
@@ -2787,6 +4506,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-23"
   },
+  "ar-b321cb95b89b9ffc": {
+   "genre": "mot",
+   "texte": "خَمْسَةٌ",
+   "fichier": "assets/audio/lecons/ar-b321cb95b89b9ffc.mp3",
+   "sha256": "89d9b835523fe3515154ef766bbd768e45dc2d6fded3f29a6b57289bc84c00cc",
+   "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-b3282e8cf16c61e6": {
    "genre": "mot",
    "texte": "الْبَاب",
@@ -2814,6 +4542,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-b454db642a6df05e": {
+   "genre": "mot",
+   "texte": "فَرِحٌ",
+   "fichier": "assets/audio/lecons/ar-b454db642a6df05e.mp3",
+   "sha256": "661f225c31f0454953817cbfc5e14e02e99c0963a91c4c5b1355818135abefe7",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-b49450735a14bdfb": {
    "genre": "syllabe",
    "texte": "نُ",
@@ -2822,6 +4559,24 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-b4be4d8c9423ca1c": {
+   "genre": "phrase",
+   "texte": "فِي الصُّنْدُوقِ ثَلَاثَةُ أَكْيَاسٍ.",
+   "fichier": "assets/audio/lecons/ar-b4be4d8c9423ca1c.mp3",
+   "sha256": "4031a6fa70f94ba54a7eba851de3126c5ea93f7c66e91d6eef7b4f2352067061",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-b4e88d88bd2b4de4": {
+   "genre": "mot",
+   "texte": "مَشْغُولُونَ",
+   "fichier": "assets/audio/lecons/ar-b4e88d88bd2b4de4.mp3",
+   "sha256": "3f6ddba39bf80b4965b765adfa8813327f5de34f80b43372d099559e636b0252",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-b50458c0542fff1d": {
    "genre": "mot",
@@ -2832,6 +4587,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-23"
   },
+  "ar-b52ee8697e280cb4": {
+   "genre": "phrase",
+   "texte": "الصُّنْدُوقُ تَحْتَ الْكُرْسِيِّ.",
+   "fichier": "assets/audio/lecons/ar-b52ee8697e280cb4.mp3",
+   "sha256": "03df425648f7d58709fb088107db713e5a33e83af991d2b60fa3174d1baf9292",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-b59ec6f158c42076": {
+   "genre": "phrase",
+   "texte": "اللَّحْمُ فِي الْخَيْمَةِ.",
+   "fichier": "assets/audio/lecons/ar-b59ec6f158c42076.mp3",
+   "sha256": "334c8bb23956d9c885cc64cfe7c50daf5afce94a5f62b368c791c9e5fbbf4fdb",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-b69115c6a1c92ecb": {
    "genre": "mot",
    "texte": "نَبَات",
@@ -2841,11 +4614,29 @@
    "a_ecouter": false,
    "genere_le": "2026-10-23"
   },
+  "ar-b69643a04dfb1302": {
+   "genre": "mot",
+   "texte": "وَالْوِسَادَتَانِ؟",
+   "fichier": "assets/audio/lecons/ar-b69643a04dfb1302.mp3",
+   "sha256": "b3f538fd3a8f31b17908bad0ffab35fd14f3a740701b6621577d3e3e57bc2d96",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-b6eba3eac2d8551e": {
    "genre": "mot",
    "texte": "سِرَاجٌ",
    "fichier": "assets/audio/lecons/ar-b6eba3eac2d8551e.mp3",
    "sha256": "a64a7bfa1b5727869b9c10ebdf32bf294d12650530c7091ecfb21392252081c6",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-b742db75bac2eebd": {
+   "genre": "phrase",
+   "texte": "لِي ثَلَاثَةُ أَقْلَامٍ",
+   "fichier": "assets/audio/lecons/ar-b742db75bac2eebd.mp3",
+   "sha256": "5cd5133a22e504056375b92e68718243cdc9edd49753a72433fb2b5afdd08d39",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -2868,6 +4659,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-b81895632c7c1491": {
+   "genre": "phrase",
+   "texte": "الْحَدَّادُونَ فِي السُّوقِ، وَهُمْ مَشْغُولُونَ.",
+   "fichier": "assets/audio/lecons/ar-b81895632c7c1491.mp3",
+   "sha256": "4357c9f7da5b223bc7321f7bfbcd75ddaa27660d1fad0767e5d54972c0963d6e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-b818b6c86762e15f": {
    "genre": "mot",
    "texte": "غَار",
@@ -2885,6 +4685,15 @@
    "graine": 1,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-b856117dddf13547": {
+   "genre": "phrase",
+   "texte": "الْبَابُ كَبِيرٌ.",
+   "fichier": "assets/audio/lecons/ar-b856117dddf13547.mp3",
+   "sha256": "5890b00c1dc7b14815a27c7c32173e5e4f656bd3564a25a04b711e3198283266",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-b8609a2eece08628": {
    "genre": "phrase",
@@ -2922,6 +4731,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-ba2fb40ecc3f9206": {
+   "genre": "mot",
+   "texte": "إِبْرَةٌ",
+   "fichier": "assets/audio/lecons/ar-ba2fb40ecc3f9206.mp3",
+   "sha256": "829aac0546f6cf3a9e936ceb8d9747b933738a98b1689d627aa1b96a9f7c48cf",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-ba418754028bff1b": {
    "genre": "syllabe",
    "texte": "لَ",
@@ -2940,6 +4758,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-ba5f8433686079e5": {
+   "genre": "phrase",
+   "texte": "أَيْنَ الْإِبْرَةُ؟",
+   "fichier": "assets/audio/lecons/ar-ba5f8433686079e5.mp3",
+   "sha256": "97dbc2b724a3c7efac463ce639e4d2fa72c2e6e4cd4be3fdfdf9870cf6e94f01",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-bad7097ac7486b28": {
    "genre": "phrase",
    "texte": "تِلْكَ قَرْيَةٌ.",
@@ -2957,6 +4784,24 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-bb75fc264cfa61ef": {
+   "genre": "phrase",
+   "texte": "فِي الْغُرْفَةِ كُرْسِيٌّ",
+   "fichier": "assets/audio/lecons/ar-bb75fc264cfa61ef.mp3",
+   "sha256": "49d5f25ed296278ddd19613ee621e983e0dd71f6923bee16a371544f5cf4e6d5",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-bc148e860d9d6dbb": {
+   "genre": "mot",
+   "texte": "لِـ",
+   "fichier": "assets/audio/lecons/ar-bc148e860d9d6dbb.mp3",
+   "sha256": "559176be26fd54cae4c5420b0f4fa5483cbd8d54b5db56d3642764daf2bfb64e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-bc16c69834491582": {
    "genre": "mot",
@@ -2981,6 +4826,69 @@
    "texte": "مُعَلِّمَةٌ",
    "fichier": "assets/audio/lecons/ar-bc9baac64300705c.mp3",
    "sha256": "a98fff29aaec07d54922d3c82835019202d6a413056e9608e172c30eaa1f5ae9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-bd52a7808627693b": {
+   "genre": "phrase",
+   "texte": "الدِّينَارُ مِنَ الذَّهَبِ.",
+   "fichier": "assets/audio/lecons/ar-bd52a7808627693b.mp3",
+   "sha256": "d53260bf4c02819fcc73a18b816f0b9b67609f23e9845fbf043123c5a77fe1f2",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-bd9687dcc76b318a": {
+   "genre": "phrase",
+   "texte": "أَيْنَ كِيسُ التَّاجِرِ؟",
+   "fichier": "assets/audio/lecons/ar-bd9687dcc76b318a.mp3",
+   "sha256": "4cc0a8c910e323d58e83f1aeee23a5fe3c8d828d927ce2a921b81b4582144da7",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-be2aeb277e7650f7": {
+   "genre": "phrase",
+   "texte": "مِنَ الْقَرْيَةِ",
+   "fichier": "assets/audio/lecons/ar-be2aeb277e7650f7.mp3",
+   "sha256": "33dac60cc459b2234c673dd4af191795f2b91a3a9ac16918ee190e436a21f1a9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-be67a1668658067e": {
+   "genre": "phrase",
+   "texte": "الدِّينَارُ لَيْسَ فِي الْكِيسِ.",
+   "fichier": "assets/audio/lecons/ar-be67a1668658067e.mp3",
+   "sha256": "564b6d51eddcb223755040a40e6f08afc5079632bb5040b41aedfe4fddc10681",
+   "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-be8ea0a1befcfa4e": {
+   "genre": "mot",
+   "texte": "مِيزَانٌ",
+   "fichier": "assets/audio/lecons/ar-be8ea0a1befcfa4e.mp3",
+   "sha256": "ff1d33620d4b32b80e0db31423e7701ef17ba7e141757bb6ef5fa49816800b87",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-bf2137b6691c3649": {
+   "genre": "phrase",
+   "texte": "أَيْنَ صَدِيقُكَ؟",
+   "fichier": "assets/audio/lecons/ar-bf2137b6691c3649.mp3",
+   "sha256": "d67bf89cd65f5dca1d609608faf3c09958c6f7b7f0af7253705134ad4aa4c23a",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-bf2b25f37566c734": {
+   "genre": "phrase",
+   "texte": "الزَّيْتُ فِي الْبَيْتِ.",
+   "fichier": "assets/audio/lecons/ar-bf2b25f37566c734.mp3",
+   "sha256": "84291a179eeceb61ebaa1b9c169bb3d0bddf9c96ddd386360f4e2c53966c09b7",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3021,6 +4929,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-c05c5964c513514f": {
+   "genre": "phrase",
+   "texte": "الْكُتُبُ جَدِيدَةٌ.",
+   "fichier": "assets/audio/lecons/ar-c05c5964c513514f.mp3",
+   "sha256": "b54747d713089bb2213d75b947d43caad31c0244b770c19ccd4b1c20c66b7c87",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-c09f1ab2e58ceeb8": {
    "genre": "syllabe",
    "texte": "لِ",
@@ -3048,6 +4965,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-c18550064efe5dff": {
+   "genre": "mot",
+   "texte": "نَجْمٌ",
+   "fichier": "assets/audio/lecons/ar-c18550064efe5dff.mp3",
+   "sha256": "1a83d24414101793bd538e348a7bf2e5115f60c5f7aaac802d5d4cd24cd8d6bb",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-c27ac07bb877a2d7": {
+   "genre": "phrase",
+   "texte": "الْكِيسُ خَفِيفٌ.",
+   "fichier": "assets/audio/lecons/ar-c27ac07bb877a2d7.mp3",
+   "sha256": "5e57ac77985c3ecfee111b2503a52ce58e8e7e1bb789a01ad23a8c536fbb966c",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-c2d641a278f18643": {
    "genre": "phrase",
    "texte": "هَٰذَا قَلَمٌ، وَهَٰذَا ثَوْبٌ.",
@@ -3066,11 +5001,56 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-c324887c5afe7503": {
+   "genre": "phrase",
+   "texte": "أَيْنَ الدِّينَارُ؟",
+   "fichier": "assets/audio/lecons/ar-c324887c5afe7503.mp3",
+   "sha256": "478a13b95a2e4ae4d32e9b3ddc324fb89159165c431853d9db50a1fea453be14",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-c377f3b22c0fb076": {
    "genre": "phrase",
    "texte": "تِلْكَ نَجْمٌ.",
    "fichier": "assets/audio/lecons/ar-c377f3b22c0fb076.mp3",
    "sha256": "ab6ffb59792e7c2a26629982674230e673db6211dfe5657a5d244414ad0753b0",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-c3a3c9fa3cfe3ddb": {
+   "genre": "mot",
+   "texte": "صُوفٌ",
+   "fichier": "assets/audio/lecons/ar-c3a3c9fa3cfe3ddb.mp3",
+   "sha256": "04b851f547177fe1f815b458075e63a989f29cc4fca9b9cf7df9770f4393dc48",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-c3c9771360e3fd16": {
+   "genre": "phrase",
+   "texte": "الْحَرِيرُ جَمِيلٌ.",
+   "fichier": "assets/audio/lecons/ar-c3c9771360e3fd16.mp3",
+   "sha256": "87eeaeb7548a0ed1bbbaaded70381f40e36ea766ce72ea7b8b83412d8f27c75e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-c429298aaba996bf": {
+   "genre": "phrase",
+   "texte": "وَاحِدٌ قَلَمٌ",
+   "fichier": "assets/audio/lecons/ar-c429298aaba996bf.mp3",
+   "sha256": "0d60a6d8f598684e838baba575dbd2208f039c0303ea9f176d7084e24a2a160e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-c45c4e42233c824a": {
+   "genre": "mot",
+   "texte": "عَشَرَةٌ",
+   "fichier": "assets/audio/lecons/ar-c45c4e42233c824a.mp3",
+   "sha256": "27eb73e863d9318829fcda5acdbff04c27b2ffe4232fca5c0b6e42d3aa005d3d",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3093,11 +5073,47 @@
    "a_ecouter": false,
    "genere_le": "2026-10-21"
   },
+  "ar-c542e8a77a7fdd23": {
+   "genre": "mot",
+   "texte": "لَيْسَ",
+   "fichier": "assets/audio/lecons/ar-c542e8a77a7fdd23.mp3",
+   "sha256": "1fbd29f24e14df9e4320c7c4fe005947345a2e5089520ed9efa4c2d39b156c0d",
+   "graine": 2,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-c582a232235b8338": {
    "genre": "phrase",
    "texte": "نَحْنُ هُنَا.",
    "fichier": "assets/audio/lecons/ar-c582a232235b8338.mp3",
    "sha256": "8f11a2688b122e47248a02419d05d00d4ca0c2d0e204ca49ee66361f3e72d966",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-c5d7b453625aaf1d": {
+   "genre": "mot",
+   "texte": "كِتَابَانِ",
+   "fichier": "assets/audio/lecons/ar-c5d7b453625aaf1d.mp3",
+   "sha256": "20e6fb46c6e3e0c3fa41989450f26843de89f9581021472a6fdfa71703dc0b34",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-c65c541e8b2f6f61": {
+   "genre": "mot",
+   "texte": "كُتُبٌ",
+   "fichier": "assets/audio/lecons/ar-c65c541e8b2f6f61.mp3",
+   "sha256": "6f031b19142305ca174dfec9b2807cc6c680d990ee098977f1fcb46ae028c1a2",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-c6c26f58e31a0337": {
+   "genre": "phrase",
+   "texte": "وَمَا هَٰذِهِ؟",
+   "fichier": "assets/audio/lecons/ar-c6c26f58e31a0337.mp3",
+   "sha256": "8ab9d81350286ee9ce39432f0317b6c98a4d1fb0c45ad88fb3f9b6924522250c",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3111,11 +5127,38 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-c74f41938216dcfa": {
+   "genre": "phrase",
+   "texte": "كِيسُ التَّاجِرِ",
+   "fichier": "assets/audio/lecons/ar-c74f41938216dcfa.mp3",
+   "sha256": "f210b6f7c898a77640fd0ed378640cbb53e1a20c052295beb4e3a13a0cf60fba",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-c74fc10652234f1c": {
    "genre": "phrase",
    "texte": "أَنْتِ مُسَافِرَةٌ.",
    "fichier": "assets/audio/lecons/ar-c74fc10652234f1c.mp3",
    "sha256": "a169847d370a259c68075a653994094fa8d98406a9c3c7560f37cc1386522839",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-c773a5c8831f579f": {
+   "genre": "phrase",
+   "texte": "الْوِسَادَتَانِ جَدِيدَتَانِ.",
+   "fichier": "assets/audio/lecons/ar-c773a5c8831f579f.mp3",
+   "sha256": "c2937dda6106b65f2a6a306a02ef8bce1bac7fa95a75810829cadf7184b810f2",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-c778403c468eb778": {
+   "genre": "phrase",
+   "texte": "إِبْرَتُهَا صَغِيرَةٌ.",
+   "fichier": "assets/audio/lecons/ar-c778403c468eb778.mp3",
+   "sha256": "59cf9aab1b903a3c1dc51aedb91b725c65ceee66f44e4a45d9bbb80084dccf28",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3147,6 +5190,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-c7b0650b86a715f0": {
+   "genre": "phrase",
+   "texte": "الزَّيْتُ عَلَى الْكُرْسِيِّ.",
+   "fichier": "assets/audio/lecons/ar-c7b0650b86a715f0.mp3",
+   "sha256": "4aa3703a9dadc6f805664c9ae9f6120c67003f7ce80e81cd5ce6400b5ef9cf18",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-c824e63ec72e10c6": {
    "genre": "phrase",
    "texte": "وَهَٰذَا جَمَلٌ.",
@@ -3156,11 +5208,29 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-c90c8c6d2d28ee31": {
+   "genre": "mot",
+   "texte": "يَدٌ",
+   "fichier": "assets/audio/lecons/ar-c90c8c6d2d28ee31.mp3",
+   "sha256": "61e477fecc0c54b9a1d9de541f22c9c3cf7bc87ab1029d16d0a19748ad9f7ea3",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-c9ea93f39921d09c": {
    "genre": "phrase",
    "texte": "وَأَيْنَ الْجَمَلُ؟",
    "fichier": "assets/audio/lecons/ar-c9ea93f39921d09c.mp3",
    "sha256": "9c4f5141d88b4b25f50d4243d8314788b5d2d380d7795180cc6d31d6bfb9c342",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-cce6e666556e906b": {
+   "genre": "phrase",
+   "texte": "هَلِ الدِّينَارُ ثَقِيلٌ؟",
+   "fichier": "assets/audio/lecons/ar-cce6e666556e906b.mp3",
+   "sha256": "cb18c5c60bc626327e9c749ced024c6ebe044eb91a37debb94b9204011efb239",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3193,6 +5263,24 @@
    "genere_le": "2026-10-23",
    "ecrit": "بَاتَ،"
   },
+  "ar-cfc68bdb53d873b5": {
+   "genre": "phrase",
+   "texte": "فِي الْغُرْفَةِ سَرِيرَانِ، وَعَلَى السَّرِيرَيْنِ وِسَادَتَانِ.",
+   "fichier": "assets/audio/lecons/ar-cfc68bdb53d873b5.mp3",
+   "sha256": "4c0912635725d8add08419c3ff06de5836bd53b532df747a3107178b2164f931",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-d00d00312e8db589": {
+   "genre": "mot",
+   "texte": "مَشْغُولٌ",
+   "fichier": "assets/audio/lecons/ar-d00d00312e8db589.mp3",
+   "sha256": "198811f9d1dd8445ca1d4a027c717ee4d85f516f9c202d82827eca195c0be840",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-d0351557a4b1f83c": {
    "genre": "phrase",
    "texte": "الْمَاءُ بَارِدٌ.",
@@ -3207,6 +5295,24 @@
    "texte": "هِيَ",
    "fichier": "assets/audio/lecons/ar-d0c9045c49d56ed9.mp3",
    "sha256": "dd01b92a02d56e1c0a09abdc45fa93571c83d2f85461113739a1c1e029105c33",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-d14a241154bd3fbd": {
+   "genre": "mot",
+   "texte": "لَيْسَتْ",
+   "fichier": "assets/audio/lecons/ar-d14a241154bd3fbd.mp3",
+   "sha256": "c02283f2ee4672eb0f8a76eb5a9ce5c255781e8a5e7e3a9572face651fa74471",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-d18227b5e377bc69": {
+   "genre": "phrase",
+   "texte": "عِنْدَ النَّسَّاجِ صُنْدُوقٌ كَبِيرٌ، وَفِيهِ صُوفٌ وَحَرِيرٌ.",
+   "fichier": "assets/audio/lecons/ar-d18227b5e377bc69.mp3",
+   "sha256": "1d267f5e6a5a8dc2b36f946ed8a1ed2b92ad5e808c26c9dfe977ce6998dacfef",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3247,6 +5353,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-d3a957f0b1c2ca87": {
+   "genre": "phrase",
+   "texte": "فِي السُّوقِ خَمْسَةُ تُجَّارٍ.",
+   "fichier": "assets/audio/lecons/ar-d3a957f0b1c2ca87.mp3",
+   "sha256": "f244bbf937340f2dbf3350df1d560f90bbef032a6080bfc6e4fdf3c7a8bd2282",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-d3a9c65187fc2c79": {
+   "genre": "phrase",
+   "texte": "الْكِلَابُ هُنَاكَ",
+   "fichier": "assets/audio/lecons/ar-d3a9c65187fc2c79.mp3",
+   "sha256": "d292a49f602ac77bc7d78400693453dab0e0873e571d4d48fe64573d17519dfd",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-d400601870c098dc": {
    "genre": "phrase",
    "texte": "أَنَا مُسَافِرٌ",
@@ -3283,11 +5407,29 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-d4b325b1bd518ff3": {
+   "genre": "mot",
+   "texte": "سِتَّةٌ",
+   "fichier": "assets/audio/lecons/ar-d4b325b1bd518ff3.mp3",
+   "sha256": "e110ee569b4b5d97b71944f5a7bfad60a6ce520d3bf5ebbe4e6f9619800e05bd",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-d4fc80a1a4e8703d": {
    "genre": "phrase",
    "texte": "وَذَٰلِكَ نَهْرٌ.",
    "fichier": "assets/audio/lecons/ar-d4fc80a1a4e8703d.mp3",
    "sha256": "f2881c749da42ad55ec7007f6e1ccd7b39ddb5749f74416d4dc17a4d130fd6fa",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-d50ae2bda55a8f7a": {
+   "genre": "phrase",
+   "texte": "الْخَبَّازُونَ وَالْخَيَّاطُونَ فِي بَيْتِ سَلْمَى.",
+   "fichier": "assets/audio/lecons/ar-d50ae2bda55a8f7a.mp3",
+   "sha256": "d2d4d93304a53c12c80eb9f7bb50ec2171a68257c78d8058f8eceabf46c9a374",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3301,11 +5443,65 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-d50eddb6075f3f6f": {
+   "genre": "mot",
+   "texte": "ثَلَاثَةٌ",
+   "fichier": "assets/audio/lecons/ar-d50eddb6075f3f6f.mp3",
+   "sha256": "48e8f9cdf46651de7b0a533a1345e940124bd526b115a928d4663e56879f06a1",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-d519b5b6e1f37938": {
+   "genre": "mot",
+   "texte": "خَيَّاطٌ",
+   "fichier": "assets/audio/lecons/ar-d519b5b6e1f37938.mp3",
+   "sha256": "fe85138f52507e23f082cf26229dfb93225a024f1d069e58dcd99c2a7397f0f7",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-d51fc1ade1ae3163": {
+   "genre": "phrase",
+   "texte": "الْحَدِيدُ كَثِيرٌ فِي الْقَرْيَةِ.",
+   "fichier": "assets/audio/lecons/ar-d51fc1ade1ae3163.mp3",
+   "sha256": "0af08fdec96baa2efa469639963d950e5049af357db64b04a81426158c910fde",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-d52d3f5b7518ed0e": {
    "genre": "phrase",
    "texte": "نَعَمْ، أَنَا تَاجِرٌ.",
    "fichier": "assets/audio/lecons/ar-d52d3f5b7518ed0e.mp3",
    "sha256": "a7d4f1870364186fefc41157340473483f1c1e2fea44148f9784a12f6c0c3607",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-d5513b9266060b4a": {
+   "genre": "phrase",
+   "texte": "هَٰذَا دِينَارٌ، وَالدِّينَارُ مِنَ الذَّهَبِ.",
+   "fichier": "assets/audio/lecons/ar-d5513b9266060b4a.mp3",
+   "sha256": "bfca3d758210669423730f0861dac558c0bc7c2a895543e2300e87738b650c70",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-d70bdb0299a10354": {
+   "genre": "mot",
+   "texte": "زَيْتٌ",
+   "fichier": "assets/audio/lecons/ar-d70bdb0299a10354.mp3",
+   "sha256": "6ececc2320f510abe55a30e3502b890841cf62d15bbb082c51893adaa54d2eb6",
+   "graine": 4,
+   "a_ecouter": true,
+   "genere_le": "2026-10-25"
+  },
+  "ar-d72ad3e49da04e8e": {
+   "genre": "phrase",
+   "texte": "الْمَطْبَخُ صَغِيرٌ.",
+   "fichier": "assets/audio/lecons/ar-d72ad3e49da04e8e.mp3",
+   "sha256": "ad3b6ae55af424d6511bb02b98a6c8b3fe1dd5e549d9e9fd1ea6744f18cacd15",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3318,6 +5514,33 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-d8aa7a6b85bf36c1": {
+   "genre": "mot",
+   "texte": "قَلِيلٌ",
+   "fichier": "assets/audio/lecons/ar-d8aa7a6b85bf36c1.mp3",
+   "sha256": "6344fb74d0160248e7f82041604d50b2ce74831d9f7aa9a52bc529064bf8e66a",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-d924c3f4e8d4b1b7": {
+   "genre": "phrase",
+   "texte": "الدِّينَارُ لَيْسَ فِي الْكِيسِ",
+   "fichier": "assets/audio/lecons/ar-d924c3f4e8d4b1b7.mp3",
+   "sha256": "564b6d51eddcb223755040a40e6f08afc5079632bb5040b41aedfe4fddc10681",
+   "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-da0c8bd262c6db63": {
+   "genre": "phrase",
+   "texte": "الْكِفَّةُ لَيْسَتْ ثَقِيلَةً",
+   "fichier": "assets/audio/lecons/ar-da0c8bd262c6db63.mp3",
+   "sha256": "f0c651918ceb8a56214fdb0b480c06122ebf0d71c0ef2ce59cf504546e269ee4",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-da4c0fdd227f3c49": {
    "genre": "phrase",
@@ -3337,6 +5560,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-daa405bdc53a427a": {
+   "genre": "phrase",
+   "texte": "وَأَيْنَ الزَّيْتُ؟",
+   "fichier": "assets/audio/lecons/ar-daa405bdc53a427a.mp3",
+   "sha256": "ec0f8c43a9f00c76be14305e96758e78af82e0ce68191fe621ef508fafc35f60",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-db29341c767e589c": {
    "genre": "lettre",
    "texte": "لَام",
@@ -3345,6 +5577,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-db364df5d500918e": {
+   "genre": "phrase",
+   "texte": "الْمِفْتَاحُ تَحْتَ الْكِيسِ.",
+   "fichier": "assets/audio/lecons/ar-db364df5d500918e.mp3",
+   "sha256": "b6ad41fb53b83b533f1ce8de553b319429adabc067ee311f3a8019a8aa3234ca",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-db7696accf250cbf": {
    "genre": "mot",
@@ -3400,11 +5641,38 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-dd79f1326a5e6889": {
+   "genre": "mot",
+   "texte": "سَلَّةٌ",
+   "fichier": "assets/audio/lecons/ar-dd79f1326a5e6889.mp3",
+   "sha256": "1fcf485c0b9921250c345d66a73b7c8078df26e2ecc131fd2ece9b9deee67768",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-dd9aea58e46f2c32": {
    "genre": "phrase",
    "texte": "ذَٰلِكَ جَبَلٌ",
    "fichier": "assets/audio/lecons/ar-dd9aea58e46f2c32.mp3",
    "sha256": "f3a030c0a2214df6526284e0f6726c057a841fb93d1624735e7f4b6f4278e9b9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-ddfcb6f9efc4700c": {
+   "genre": "phrase",
+   "texte": "الْإِبْرَةُ مَعَ صَدِيقِي.",
+   "fichier": "assets/audio/lecons/ar-ddfcb6f9efc4700c.mp3",
+   "sha256": "9634e8ef6a1d60e7b0673f9425e03b8ae50cdf9cb8f188e3118d5b199685d726",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-de673459a15ea595": {
+   "genre": "phrase",
+   "texte": "نَحْنُ فِي السُّوقِ.",
+   "fichier": "assets/audio/lecons/ar-de673459a15ea595.mp3",
+   "sha256": "5ca82e868eb6d61fcac76871237b3c2246f28c2de2aa62404a57d2f5fb1c8223",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3418,6 +5686,33 @@
    "a_ecouter": false,
    "genere_le": "2026-10-23"
   },
+  "ar-de96e1af2492763c": {
+   "genre": "phrase",
+   "texte": "هَٰذَا ثَوْبٌ مِنَ الصُّوفِ.",
+   "fichier": "assets/audio/lecons/ar-de96e1af2492763c.mp3",
+   "sha256": "3b50d1940961853bc12d422bb4fe44c57674638c35a65fa49848ca096ce0dc91",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-dec276682cf3c346": {
+   "genre": "mot",
+   "texte": "نَجَّارُونَ",
+   "fichier": "assets/audio/lecons/ar-dec276682cf3c346.mp3",
+   "sha256": "db269dbe52b34c56ecdaa7a732abd89b9b370b483ec7c68edb66edf11a117768",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-deddc04430d90455": {
+   "genre": "mot",
+   "texte": "نَجَّارٌ",
+   "fichier": "assets/audio/lecons/ar-deddc04430d90455.mp3",
+   "sha256": "b8d86bbae015a797566cd90ccb9382a5045cfe0330fcb62c5cc2c0d2675c90bb",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-dee003172e0527dd": {
    "genre": "mot",
    "texte": "يَوْم",
@@ -3426,6 +5721,24 @@
    "graine": 1,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-df70f4ea0a172c99": {
+   "genre": "mot",
+   "texte": "أَبْوَابٌ",
+   "fichier": "assets/audio/lecons/ar-df70f4ea0a172c99.mp3",
+   "sha256": "f6310816fdaaca8d3d06908a6af0e4d1b76e1f2a57913e343218cba8633d380f",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-dfc91a9db35063a4": {
+   "genre": "phrase",
+   "texte": "خَمْسَةُ تُجَّارٍ",
+   "fichier": "assets/audio/lecons/ar-dfc91a9db35063a4.mp3",
+   "sha256": "efcb5fba3833ef7e91cdb34cfab745f734d479549e6a1827c617d143d93e3168",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-e006f0b8074fa19c": {
    "genre": "syllabe",
@@ -3472,11 +5785,29 @@
    "a_ecouter": false,
    "genere_le": "2026-10-23"
   },
+  "ar-e27e64097747d6e3": {
+   "genre": "mot",
+   "texte": "خُيُوطٌ",
+   "fichier": "assets/audio/lecons/ar-e27e64097747d6e3.mp3",
+   "sha256": "fcf65f67e92b6f22e2251d9fae183c52e8b2b45f9019cd92d7e738c2c0d916d8",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-e29ff16ed9052b35": {
    "genre": "phrase",
    "texte": "هَٰذِهِ بِنْتٌ.",
    "fichier": "assets/audio/lecons/ar-e29ff16ed9052b35.mp3",
    "sha256": "2e4b86c5b097f1f420bb7b24feff00e50d73f1ef1a14a14a888f53551b491d8a",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-e2a54d44bce14940": {
+   "genre": "phrase",
+   "texte": "التَّاجِرُ مِنَ الْقَرْيَةِ، وَاللَّحْمُ فِي الْخَيْمَةِ.",
+   "fichier": "assets/audio/lecons/ar-e2a54d44bce14940.mp3",
+   "sha256": "ae5806c7698200220eea26762442a528eeef2e9cdd293263cd9901e058f273c8",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3489,6 +5820,24 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-e3d696c1d6c3422d": {
+   "genre": "mot",
+   "texte": "خَبَّازُونَ",
+   "fichier": "assets/audio/lecons/ar-e3d696c1d6c3422d.mp3",
+   "sha256": "4b045fda671f55f057fc16a8e3b1a9935193b7981003da3f75d3512ca15e1a5f",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-e428112a50c20504": {
+   "genre": "mot",
+   "texte": "عَلَيْهِ",
+   "fichier": "assets/audio/lecons/ar-e428112a50c20504.mp3",
+   "sha256": "14f96df294e01a20ef8c9ed9eb317a4de423bde5af49da7925e7a7ace12d85b9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-e455bbaee2efd503": {
    "genre": "syllabe",
@@ -3544,6 +5893,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-e5247e9bb2c90dd3": {
+   "genre": "mot",
+   "texte": "ضُيُوفٌ",
+   "fichier": "assets/audio/lecons/ar-e5247e9bb2c90dd3.mp3",
+   "sha256": "5c38f4a58972618ad81c937a657c08dbcc450a456eb092c90a0f089badbe4bf8",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-e52c19d3266e3afc": {
    "genre": "mot",
    "texte": "وَرَقَةٌ",
@@ -3553,6 +5911,33 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-e60646017291962b": {
+   "genre": "phrase",
+   "texte": "الْحَمِيرُ وَالْكِلَابُ هُنَاكَ.",
+   "fichier": "assets/audio/lecons/ar-e60646017291962b.mp3",
+   "sha256": "2ded4d3c4e154f16ad5466d1ff07335875598ba25824b183005427dc4f006a7d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-e60f632bd290e96d": {
+   "genre": "phrase",
+   "texte": "الْكِتَابُ عَلَى الْكُرْسِيِّ.",
+   "fichier": "assets/audio/lecons/ar-e60f632bd290e96d.mp3",
+   "sha256": "c1e77fc8fd5675d42356d24ba099e3c08c31303b9568dfc0882eff835a4b6e2d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-e6a76248140c947b": {
+   "genre": "phrase",
+   "texte": "ثَمَنُ الْقَمِيصِ دِرْهَمَانِ.",
+   "fichier": "assets/audio/lecons/ar-e6a76248140c947b.mp3",
+   "sha256": "38454f918b6d98388fd4210b75879247b0bf7ff477b6a5014fedf592fe07d817",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-e7757adcd3765b0f": {
    "genre": "syllabe",
    "texte": "خُ",
@@ -3561,6 +5946,24 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-e821465a6071b731": {
+   "genre": "mot",
+   "texte": "ضَيْفٌ",
+   "fichier": "assets/audio/lecons/ar-e821465a6071b731.mp3",
+   "sha256": "6354d1027489179813ab786ef93baacbb1781259f3108d83d725418f8ded35d0",
+   "graine": 3,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-e8272d5066ffff3f": {
+   "genre": "phrase",
+   "texte": "فِي الْغُرْفَةِ ثِيَابٌ جَدِيدَةٌ وَسُيُوفٌ قَدِيمَةٌ.",
+   "fichier": "assets/audio/lecons/ar-e8272d5066ffff3f.mp3",
+   "sha256": "3ebc046bf62445670c7e7ab6ff969cc03e991e835a106169757325fbce711bb0",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-e8992004d15daea7": {
    "genre": "syllabe",
@@ -3580,6 +5983,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-e91452dee44117ae": {
+   "genre": "mot",
+   "texte": "حَدِيدٌ",
+   "fichier": "assets/audio/lecons/ar-e91452dee44117ae.mp3",
+   "sha256": "990e57fe61e9a7e9a61179ea8aaeb4cc41857e2a2e458d9fad5eecd7e2a99041",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-ea9add06e6ceedd3": {
+   "genre": "phrase",
+   "texte": "مَا فِي الصُّنْدُوقِ؟",
+   "fichier": "assets/audio/lecons/ar-ea9add06e6ceedd3.mp3",
+   "sha256": "9b51461fb671403dcc1e98f2d9ccd13f768032a7a834e41f715a02193ba36dec",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-eac418a09e832519": {
    "genre": "syllabe",
    "texte": "نٌ",
@@ -3589,6 +6010,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-eae276ac3a3d0920": {
+   "genre": "phrase",
+   "texte": "وَأَيْنَ الْمِفْتَاحُ؟",
+   "fichier": "assets/audio/lecons/ar-eae276ac3a3d0920.mp3",
+   "sha256": "1c867a5c1c08d0dae47c5cea528871444c10db1e47b0969ae03c80b94ceaa3b8",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-eb54f4d963c9ea01": {
    "genre": "syllabe",
    "texte": "رَة",
@@ -3597,6 +6027,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-ebb0ac3ed8cbe637": {
+   "genre": "mot",
+   "texte": "ثَوْبُهَا",
+   "fichier": "assets/audio/lecons/ar-ebb0ac3ed8cbe637.mp3",
+   "sha256": "307be64f25e065cd27973b41ca86ff87d0055450df5d481483e12a4814eb3f90",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-ebb283f277b070f1": {
    "genre": "phrase",
@@ -3616,6 +6055,33 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-ecad8192d9925ffb": {
+   "genre": "phrase",
+   "texte": "هَلِ الصُّنْدُوقُ ثَقِيلٌ؟",
+   "fichier": "assets/audio/lecons/ar-ecad8192d9925ffb.mp3",
+   "sha256": "5e5b7ec98662f5f6f052ffe54f843ffb7c96f95e9a64d96da91f3389f5470b71",
+   "graine": 2,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-ecfbdbff3506beaa": {
+   "genre": "phrase",
+   "texte": "هَٰذَا قَمِيصٌ مِنَ الْحَرِيرِ.",
+   "fichier": "assets/audio/lecons/ar-ecfbdbff3506beaa.mp3",
+   "sha256": "b12dd84476515a6269defc71c5ec2a6725691fa318be950f4d69cca77d6090e9",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-ed030017a85c691c": {
+   "genre": "phrase",
+   "texte": "لَا، الدِّينَارُ لَيْسَ ثَقِيلًا.",
+   "fichier": "assets/audio/lecons/ar-ed030017a85c691c.mp3",
+   "sha256": "b7f60f180aee1b6ef2ee23614839e37fa2f1adbea411c556c256528125a7b2b6",
+   "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-ee4afc8b7d3e95cc": {
    "genre": "syllabe",
    "texte": "لُو",
@@ -3634,6 +6100,60 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-eea3ab0ad5e02fec": {
+   "genre": "phrase",
+   "texte": "الْمُعَلِّمَاتُ مَشْغُولَاتٌ.",
+   "fichier": "assets/audio/lecons/ar-eea3ab0ad5e02fec.mp3",
+   "sha256": "9584dfb1cc38a871b12eaccd482845c3aaa0da98afeed03b398f73ecfbd3bc1c",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-ef309e9ff78f9fd9": {
+   "genre": "mot",
+   "texte": "ثَوْبُهُ",
+   "fichier": "assets/audio/lecons/ar-ef309e9ff78f9fd9.mp3",
+   "sha256": "70f1fe4b26fd053e7267c0d48012469580b59697f86cc8ec6b0b25e5d023051d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f01b0fa612031178": {
+   "genre": "syllabe",
+   "texte": "لَهُ",
+   "fichier": "assets/audio/lecons/ar-f01b0fa612031178.mp3",
+   "sha256": "dd1c83ecc052d58aeca33f553166a8f3a7ae18e57927033640282b36eaeb3b0e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f05e1211036b26d8": {
+   "genre": "mot",
+   "texte": "صُنْدُوقٌ",
+   "fichier": "assets/audio/lecons/ar-f05e1211036b26d8.mp3",
+   "sha256": "5a81a5fc579394c8466ac81a881be7148e7ca08b2a05771cf985a7f55788359e",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f067a8202637586e": {
+   "genre": "mot",
+   "texte": "بَائِعٌ",
+   "fichier": "assets/audio/lecons/ar-f067a8202637586e.mp3",
+   "sha256": "151233038ce2f8b1956bd900f7770988ec2f8122617b2029d3fc206ee26e7825",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f103e0d5130961ab": {
+   "genre": "mot",
+   "texte": "سَقْفٌ",
+   "fichier": "assets/audio/lecons/ar-f103e0d5130961ab.mp3",
+   "sha256": "f600a69cc5ca138e00b43e357f8a2a99705bdd67e99ef7579c05663780a968cd",
+   "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-f106b520337d0965": {
    "genre": "syllabe",
    "texte": "سُ",
@@ -3648,6 +6168,24 @@
    "texte": "هُنَّ",
    "fichier": "assets/audio/lecons/ar-f18f335c6e038b62.mp3",
    "sha256": "c8cdf2f2e134fdfc6cd3ca5a46d561924353d09c19d70bf42e039fd81e2bdb99",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f1b576d3d4953247": {
+   "genre": "phrase",
+   "texte": "الْخُبْزُ فِي السَّلَّةِ.",
+   "fichier": "assets/audio/lecons/ar-f1b576d3d4953247.mp3",
+   "sha256": "4b6a42cf3701b0978a73694a522cc03c83f424699d235567c227db8169f3e8e6",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f1c16c45760c8d38": {
+   "genre": "phrase",
+   "texte": "مَا فِي الْغُرْفَةِ؟",
+   "fichier": "assets/audio/lecons/ar-f1c16c45760c8d38.mp3",
+   "sha256": "200442b565c964535626a5703beb8af35092f33c308077789931142465a13cc5",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3678,6 +6216,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-f280fff37581f827": {
+   "genre": "phrase",
+   "texte": "ثَوْبِي فِي الْخَيْمَةِ.",
+   "fichier": "assets/audio/lecons/ar-f280fff37581f827.mp3",
+   "sha256": "a9acfedf240627bb2fb165bc01bc99dbd1d0b09648244f8bc161ae1a76817b12",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
   },
   "ar-f31f08707fc8c148": {
    "genre": "syllabe",
@@ -3724,6 +6271,24 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-f436a5e092cfda45": {
+   "genre": "phrase",
+   "texte": "الضُّيُوفُ وَالْجِيرَانُ فِي بَيْتِ سَلْمَى.",
+   "fichier": "assets/audio/lecons/ar-f436a5e092cfda45.mp3",
+   "sha256": "68a9628ab328e6e108eb6d7fedfc804cca670ffe99fbc40f1435358b4c15d15d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f441258e52e2c6d5": {
+   "genre": "phrase",
+   "texte": "الضُّيُوفُ فِي الْبَيْتِ",
+   "fichier": "assets/audio/lecons/ar-f441258e52e2c6d5.mp3",
+   "sha256": "120fe245dc9070dd3aefa788215f7a951a5901fafddcca2482740536e9105d07",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-f498a7699f889ae6": {
    "genre": "mot",
    "texte": "طَعَامٌ",
@@ -3733,11 +6298,29 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-f50202e1a1d6b3dd": {
+   "genre": "mot",
+   "texte": "جِدَارٌ",
+   "fichier": "assets/audio/lecons/ar-f50202e1a1d6b3dd.mp3",
+   "sha256": "cb17b80206193bda35fc151f23715358a0ad011ce2f71923d4a5cc22977bab83",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-f502be6728e8f5ea": {
    "genre": "phrase",
    "texte": "وَتِلْكَ قَرْيَةٌ.",
    "fichier": "assets/audio/lecons/ar-f502be6728e8f5ea.mp3",
    "sha256": "8dec394eadae9250f62820f0baa6364d243b103dda2d44b290ecd7724fdb934d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f50806bea433be65": {
+   "genre": "phrase",
+   "texte": "الضُّيُوفُ فِي الْبَيْتِ.",
+   "fichier": "assets/audio/lecons/ar-f50806bea433be65.mp3",
+   "sha256": "120fe245dc9070dd3aefa788215f7a951a5901fafddcca2482740536e9105d07",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3760,11 +6343,56 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-f5cfe16ce1a8d455": {
+   "genre": "phrase",
+   "texte": "النَّسَّاجُ فِي السُّوقِ.",
+   "fichier": "assets/audio/lecons/ar-f5cfe16ce1a8d455.mp3",
+   "sha256": "19dbd395a722e6144a165b0ac55c1b55cb19c83f83f2e67d9b8e7f6a0dcc91fe",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f5ffe7dba7b64ee7": {
+   "genre": "phrase",
+   "texte": "لِي قَلَمٌ وَاحِدٌ.",
+   "fichier": "assets/audio/lecons/ar-f5ffe7dba7b64ee7.mp3",
+   "sha256": "80dbf37199c912a700547ed6e6beb0f6075744416106e3d09bdae51af558e66b",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f62ee800a0ad6096": {
+   "genre": "mot",
+   "texte": "كِفَّةٌ",
+   "fichier": "assets/audio/lecons/ar-f62ee800a0ad6096.mp3",
+   "sha256": "2b5bde9ab0d424e1a8f3b934ed1545ab51baf0f7376ccbd99f004f8bb789ba44",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-f66211ea2a3749a5": {
    "genre": "mot",
    "texte": "مَاءٌ",
    "fichier": "assets/audio/lecons/ar-f66211ea2a3749a5.mp3",
    "sha256": "10a526308916fdae8eefd20c1824fe3c7eac677ba39eedf40c5b88f8a983bc19",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f670d03ff5f1920f": {
+   "genre": "phrase",
+   "texte": "بَابُ الْبَيْتِ كَبِيرٌ.",
+   "fichier": "assets/audio/lecons/ar-f670d03ff5f1920f.mp3",
+   "sha256": "38cff52b4080bee7585d4a21d4f82505f4364045cb7f7d4955ba8bd841c49c0d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-f676bb6b7bffd306": {
+   "genre": "phrase",
+   "texte": "وَأَيْنَ الْحَدَّادُونَ؟",
+   "fichier": "assets/audio/lecons/ar-f676bb6b7bffd306.mp3",
+   "sha256": "8f1d5e4535fc49cd36f6a6f17df0a4e9a4e4b0aac7af54419433fd61caadcad3",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
@@ -3805,6 +6433,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
+  "ar-fa480f10a12eb210": {
+   "genre": "phrase",
+   "texte": "لِي ثَلَاثَةُ أَقْلَامٍ.",
+   "fichier": "assets/audio/lecons/ar-fa480f10a12eb210.mp3",
+   "sha256": "5cd5133a22e504056375b92e68718243cdc9edd49753a72433fb2b5afdd08d39",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-fa607be42511106e": {
    "genre": "mot",
    "texte": "كَبِيرٌ",
@@ -3829,6 +6466,15 @@
    "fichier": "assets/audio/lecons/ar-fabedbc54c60942d.mp3",
    "sha256": "e9662b6fb074188009c38d5874dd94306950544977994b8f11220afd8838e2e2",
    "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-fbc305216da9138b": {
+   "genre": "mot",
+   "texte": "اثْنَانِ",
+   "fichier": "assets/audio/lecons/ar-fbc305216da9138b.mp3",
+   "sha256": "fc4cd35408a833631ad0ff97b6a74227ab6b39f32d97c5a917b6d8a2678ec521",
+   "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
   },
@@ -3859,6 +6505,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-fcf7aba265053e09": {
+   "genre": "phrase",
+   "texte": "فِي الْغُرْفَةِ سَرِيرَانِ",
+   "fichier": "assets/audio/lecons/ar-fcf7aba265053e09.mp3",
+   "sha256": "a79874dee39317e4e1d741c0194bac68b6beea26e6ef5e0ebb3c5cb1ee179720",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-fd9537adfffb28f6": {
    "genre": "syllabe",
    "texte": "ذِ",
@@ -3868,11 +6523,47 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-fde40c6e2301217c": {
+   "genre": "mot",
+   "texte": "جِبَالٌ",
+   "fichier": "assets/audio/lecons/ar-fde40c6e2301217c.mp3",
+   "sha256": "8229dd22523967a891aea33d63de68e4353e29937c08ebd5c129c99889a52806",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-fe7f137464183a12": {
+   "genre": "phrase",
+   "texte": "الْكِتَابُ قَدِيمٌ.",
+   "fichier": "assets/audio/lecons/ar-fe7f137464183a12.mp3",
+   "sha256": "d6ee6f1f89a3093f9a231e716265c0351da41513f35def12e247c4c5ef40def0",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
   "ar-feb34b4526bc7039": {
    "genre": "phrase",
    "texte": "هَٰذَا خَيْمَةٌ.",
    "fichier": "assets/audio/lecons/ar-feb34b4526bc7039.mp3",
    "sha256": "180b3feeac4fb696cceed569190111f9390a1108efc01c8d7e7849193b7d1fb7",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-ff5a3e6ff32f923a": {
+   "genre": "phrase",
+   "texte": "وَالنُّجُومُ كَثِيرَةٌ.",
+   "fichier": "assets/audio/lecons/ar-ff5a3e6ff32f923a.mp3",
+   "sha256": "8571228355fcb1b1e8d7d6786c9e544aabd2429ea51a6a2cfc31094cab25ca96",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-25"
+  },
+  "ar-ffc948bdd0f3ee5d": {
+   "genre": "phrase",
+   "texte": "مِفْتَاحُ الْبَيْتِ صَغِيرٌ.",
+   "fichier": "assets/audio/lecons/ar-ffc948bdd0f3ee5d.mp3",
+   "sha256": "5671385a1f9bb816c4123a74255516a7025fb9954ddc4f830d2a79e292f3a71b",
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
