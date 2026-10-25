@@ -131,7 +131,7 @@
     {
       "type": "regle",
       "titre": "لَيْسَ",
-      "texte": "Pour nier une phrase nominale, on met لَيْسَ après le sujet, ou لَيْسَتْ si le sujet est féminin : الدِّينَارُ لَيْسَ فِي الْكِيسِ. On ne nie pas une phrase nominale avec لَا.",
+      "texte": "Pour nier une phrase nominale, on emploie لَيْسَ, ou لَيْسَتْ si le sujet est féminin. Dans cette leçon, le sujet vient d'abord : الدِّينَارُ لَيْسَ فِي الْكِيسِ.",
       "exemples": [
         "الدِّينَارُ لَيْسَ فِي الْكِيسِ.",
         "الْكِفَّةُ لَيْسَتْ هُنَا."
@@ -152,7 +152,7 @@
     {
       "type": "regle",
       "titre": "L'attribut en -a",
-      "texte": "Après لَيْسَ, l'attribut prend la fin -a de l'accusatif : الْبَيْتُ لَيْسَ كَبِيرًا. Le -an s'écrit avec un alif (كَبِيرًا), sauf après ة (ثَقِيلَةً).",
+      "texte": "Après لَيْسَ, l'attribut prend la fin -a de l'accusatif : الْبَيْتُ لَيْسَ كَبِيرًا. Le -an s'écrit avec un alif (كَبِيرًا), sauf quand le mot finit par ة (ثَقِيلَةً).",
       "exemples": [
         "الْبَيْتُ لَيْسَ كَبِيرًا.",
         "الْكِفَّةُ لَيْسَتْ ثَقِيلَةً."
@@ -269,7 +269,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris : « Le dinar n'est pas dans la bourse. »",
+          "consigne": "Écris, en commençant par le sujet : « Le dinar n'est pas dans la bourse. »",
           "tuiles": [
             "لَيْسَ",
             "الدِّينَارُ",
@@ -283,7 +283,7 @@
             "فِي",
             "الْكِيسِ"
           ],
-          "explication": "Sujet, لَيْسَ, puis l'attribut."
+          "explication": "Sujet, لَيْسَ, puis l'attribut ; لَيْسَ الدِّينَارُ فِي الْكِيسِ se dit aussi."
         },
         {
           "type": "repeter",
@@ -316,11 +316,11 @@
         },
         {
           "type": "qcm",
-          "consigne": "Qu'y a-t-il dans le plateau ?",
+          "consigne": "Qu'y a-t-il sur le plateau ?",
           "choix": [
             "un seul dinar",
             "deux dirhams",
-            "de l'argent"
+            "un dirham"
           ],
           "reponse": 0,
           "explication": "فِي الْكِفَّةِ دِينَارٌ وَاحِدٌ."
@@ -373,7 +373,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris : « Le plateau n'est pas lourd. »",
+          "consigne": "Écris, en commençant par le sujet : « Le plateau n'est pas lourd. »",
           "tuiles": [
             "لَيْسَتْ",
             "الْكِفَّةُ",

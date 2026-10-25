@@ -1791,114 +1791,6 @@
    "theme": "nature"
   },
   {
-   "id": "laysa",
-   "ar": "لَيْسَ",
-   "translit": "laysa",
-   "fr": "ne pas être (nie une phrase nominale)",
-   "nature": "verbe",
-   "lecon": "fondations-20",
-   "source_sens": "rédigé par IA",
-   "lemme": "l~ayosa",
-   "fige": true,
-   "formes": [
-    "لَيْسَتْ"
-   ],
-   "remarque": "verbe figé : il nie une phrase nominale ; ni présent ni futur",
-   "exemple": {
-    "ar": "الدِّينَارُ لَيْسَ فِي الْكِيسِ.",
-    "fr": "Le dinar n'est pas dans la bourse."
-   }
-  },
-  {
-   "id": "sarraf",
-   "ar": "صَرَّافٌ",
-   "translit": "ṣarrāfun",
-   "fr": "changeur",
-   "nature": "nom",
-   "lecon": "fondations-20",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "صَرَّافُونَ",
-   "racine": "Srf",
-   "exemple": {
-    "ar": "الصَّرَّافُ لَيْسَ هُنَا.",
-    "fr": "Le changeur n'est pas ici."
-   },
-   "theme": "marché"
-  },
-  {
-   "id": "mizan",
-   "ar": "مِيزَانٌ",
-   "translit": "mīzānun",
-   "fr": "balance",
-   "nature": "nom",
-   "lecon": "fondations-20",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "مَوَازِينُ",
-   "lemme": "miyzaAn",
-   "exemple": {
-    "ar": "الْمِيزَانُ لَيْسَ قَدِيمًا.",
-    "fr": "La balance n'est pas vieille."
-   },
-   "theme": "marché"
-  },
-  {
-   "id": "kiffa",
-   "ar": "كِفَّةٌ",
-   "translit": "kiffatun",
-   "fr": "plateau (de balance)",
-   "nature": "nom",
-   "lecon": "fondations-20",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "pluriel": "كِفَفٌ",
-   "racine": "kff",
-   "exemple": {
-    "ar": "الْكِفَّةُ لَيْسَتْ ثَقِيلَةً.",
-    "fr": "Le plateau n'est pas lourd."
-   },
-   "theme": "marché"
-  },
-  {
-   "id": "thaqil",
-   "ar": "ثَقِيلٌ",
-   "translit": "ṯaqīlun",
-   "fr": "lourd",
-   "nature": "adjectif",
-   "lecon": "fondations-20",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "formes": [
-    "ثَقِيلَةٌ"
-   ],
-   "lemme": "vaqiyl",
-   "exemple": {
-    "ar": "الصُّنْدُوقُ ثَقِيلٌ.",
-    "fr": "Le coffre est lourd."
-   },
-   "theme": "qualités"
-  },
-  {
-   "id": "khafif",
-   "ar": "خَفِيفٌ",
-   "translit": "ḫafīfun",
-   "fr": "léger",
-   "nature": "adjectif",
-   "lecon": "fondations-20",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "formes": [
-    "خَفِيفَةٌ"
-   ],
-   "lemme": "xafiyf",
-   "exemple": {
-    "ar": "الْكِيسُ خَفِيفٌ.",
-    "fr": "La bourse est légère."
-   },
-   "theme": "qualités"
-  },
-  {
    "id": "wahid",
    "ar": "وَاحِدٌ",
    "translit": "wāḥidun",
@@ -2033,6 +1925,114 @@
     "fr": "Il y a dix bourses dans le coffre."
    },
    "theme": "nombres"
+  },
+  {
+   "id": "laysa",
+   "ar": "لَيْسَ",
+   "translit": "laysa",
+   "fr": "ne pas être (nie une phrase nominale)",
+   "nature": "verbe",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "lemme": "l~ayosa",
+   "fige": true,
+   "formes": [
+    "لَيْسَتْ"
+   ],
+   "remarque": "verbe figé : il nie une phrase nominale (au présent) ; il n'a pas de forme de présent ni de futur",
+   "exemple": {
+    "ar": "الدِّينَارُ لَيْسَ فِي الْكِيسِ.",
+    "fr": "Le dinar n'est pas dans la bourse."
+   }
+  },
+  {
+   "id": "sarraf",
+   "ar": "صَرَّافٌ",
+   "translit": "ṣarrāfun",
+   "fr": "changeur",
+   "nature": "nom",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "صَرَّافُونَ",
+   "racine": "Srf",
+   "exemple": {
+    "ar": "الصَّرَّافُ لَيْسَ هُنَا.",
+    "fr": "Le changeur n'est pas ici."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "mizan",
+   "ar": "مِيزَانٌ",
+   "translit": "mīzānun",
+   "fr": "balance",
+   "nature": "nom",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَوَازِينُ",
+   "lemme": "miyzaAn",
+   "exemple": {
+    "ar": "الْمِيزَانُ لَيْسَ قَدِيمًا.",
+    "fr": "La balance n'est pas vieille."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "kiffa",
+   "ar": "كِفَّةٌ",
+   "translit": "kiffatun",
+   "fr": "plateau (de balance)",
+   "nature": "nom",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "كِفَفٌ",
+   "racine": "kff",
+   "exemple": {
+    "ar": "الْكِفَّةُ لَيْسَتْ ثَقِيلَةً.",
+    "fr": "Le plateau n'est pas lourd."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "thaqil",
+   "ar": "ثَقِيلٌ",
+   "translit": "ṯaqīlun",
+   "fr": "lourd",
+   "nature": "adjectif",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "ثَقِيلَةٌ"
+   ],
+   "lemme": "vaqiyl",
+   "exemple": {
+    "ar": "الصُّنْدُوقُ ثَقِيلٌ.",
+    "fr": "Le coffre est lourd."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "khafif",
+   "ar": "خَفِيفٌ",
+   "translit": "ḫafīfun",
+   "fr": "léger",
+   "nature": "adjectif",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "خَفِيفَةٌ"
+   ],
+   "lemme": "xafiyf",
+   "exemple": {
+    "ar": "الْكِيسُ خَفِيفٌ.",
+    "fr": "La bourse est légère."
+   },
+   "theme": "qualités"
   }
  ]
 }

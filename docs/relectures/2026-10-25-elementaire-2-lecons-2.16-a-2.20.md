@@ -8,6 +8,7 @@ Agent : relecteur-arabe, 25/10/2026. Une relecture par leçon.
 | 2.17 Les pluriels réguliers | Bloqué (1 Bloquant, 1 Important) |
 | 2.18 Les pluriels internes | À corriger (1 Important) |
 | 2.19 Compter jusqu'à dix | À corriger (2 Importants) |
+| 2.20 « Il n'est pas… » | À corriger (3 Importants) |
 
 ## Point bloquant (corrigé)
 
@@ -20,6 +21,9 @@ Agent : relecteur-arabe, 25/10/2026. Une relecture par leçon.
 3. **2.18, affichage** : la flèche → entre deux mots arabes risquait de s'afficher à l'envers (pluriel → singulier). Elle est remplacée par « كِتَابٌ, pluriel كُتُبٌ » et par des phrases.
 4. **2.19, lemmes** : أَرْبَعَةٌ, سَبْعَةٌ et تِسْعَةٌ étaient reliés aux lemmes sans ة (أَرْبَع، سَبْع، تِسْع), qui sont d'autres lemmes du Corpus. Ils sont reliés à `>arobaEap`, `saboEap` et `tisoEap` (vérifiés par requête dans la base).
 5. **2.19, règle** : « avec un nom masculin » pouvait tromper après 2.18 (الْكُتُبُ s'accorde au féminin). La règle dit maintenant « si le **singulier** est masculin (كِتَابٌ) ».
+6. **2.20, ordonner** : « لَيْسَ الدِّينَارُ فِي الْكِيسِ », correct en classique, aurait été compté faux. Les consignes disent « en commençant par le sujet », et l'explication rappelle que l'autre ordre se dit aussi.
+7. **2.20, règle** : « on met لَيْسَ après le sujet » présentait un choix pédagogique comme une règle. Nouveau texte : « Dans cette leçon, le sujet vient d'abord ».
+8. **2.20, lecture** : le distracteur « de l'argent » pouvait vouloir dire « de la monnaie » (deux réponses justes). Il devient « un dirham ».
 
 ## Points mineurs (corrigés)
 
@@ -39,6 +43,11 @@ Agent : relecteur-arabe, 25/10/2026. Une relecture par leçon.
 - **2.19**
   - Exemple de اثْنَانِ : « Il y a **bien** deux lits ».
   - Doute (le nombre peut suivre le nom comme épithète) levé par prudence : les distracteurs « تُجَّارٌ خَمْسَةٌ »… sont remplacés par des formes au mauvais cas (« خَمْسَةُ تُجَّارٌ »).
+- **2.20**
+  - « sur le plateau » ; remarque de لَيْسَ : « il nie une phrase nominale (au présent) ; il n'a pas de forme de présent ni de futur » ; « sauf quand le mot finit par ة ».
+  - Doute : « On ne nie pas une phrase nominale avec لَا » était trop général (لَا de négation absolue). La phrase est retirée.
+
+Note : la base de contenu actuelle ne contient aucun texte du Coran (tables : racines, lemmes et fréquences seulement). Les lignes vues par le relecteur venaient d'une ancienne compilation locale dans `build/`, qui n'est pas suivie par git.
 
 ## Doutes soumis au conseiller
 
