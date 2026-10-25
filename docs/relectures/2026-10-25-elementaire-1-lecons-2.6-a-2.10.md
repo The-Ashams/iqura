@@ -49,3 +49,12 @@ Aucun point bloquant.
 ## Doutes soumis au conseiller
 
 Voir `decisions-elementaire-1.md`, deuxième série.
+
+## Deuxième passage (25/10/2026) : verdict « Validé avec doutes »
+
+- Bloquants : aucun. Importants : aucun.
+- Mineurs, corrigés :
+  - 2.9 : les groupes nom + adjectif des choix (الْمَاءُ الْبَارِدُ, الْخَيْمَةُ الْجَدِيدَةُ, خَيْمَةٌ جَدِيدَةٌ) n'ont plus de point final, comme en 2.6 ;
+  - fiche de طَرِيقٌ : la remarque devient « parfois féminin en arabe classique » (la fiche dit déjà « nom masculin »).
+- Doute : طَرِيقٌ garde deux modèles d'accord au masculin hors exercices (lecture de 2.9, exemple de la fiche de طَوِيلٌ). Tranché par le conseiller (décision n° 11, `decisions-elementaire-1.md`, troisième série) : remplacé par نَهْرٌ.
+- Toutes les corrections du premier passage et les décisions n° 4, 5, 6, 8, 9, 10 du conseiller ont été vérifiées comme faites et justes.

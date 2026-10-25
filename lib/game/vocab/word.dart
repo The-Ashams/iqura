@@ -55,8 +55,8 @@ class Word {
   final String? exampleFrench;
   final String? theme;
 
-  /// Précision sur le genre ou l'usage (ex. « masculin (parfois féminin en
-  /// arabe classique) »).
+  /// Précision sur le genre ou l'usage (ex. « parfois féminin en
+  /// arabe classique »).
   final String? remark;
   final String lessonId;
   final int lessonStage;

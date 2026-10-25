@@ -285,7 +285,7 @@
         "النَّارُ كَبِيرَةٌ وَحَارَّةٌ.",
         "الْمَاءُ بَارِدٌ.",
         "هَٰذَا ثَوْبٌ جَدِيدٌ، وَذَٰلِكَ ثَوْبٌ قَدِيمٌ.",
-        "الطَّرِيقُ الطَّوِيلُ هُنَاكَ."
+        "النَّهْرُ الطَّوِيلُ هُنَاكَ."
       ],
       "questions": [
         {
@@ -301,14 +301,14 @@
         },
         {
           "type": "qcm",
-          "consigne": "Où est le long chemin ?",
+          "consigne": "Où est le long fleuve ?",
           "choix": [
             "là-bas",
             "ici",
             "près du feu"
           ],
           "reponse": 0,
-          "explication": "الطَّرِيقُ الطَّوِيلُ هُنَاكَ : le long chemin est là-bas."
+          "explication": "النَّهْرُ الطَّوِيلُ هُنَاكَ : le long fleuve est là-bas."
         }
       ]
     },
@@ -365,7 +365,7 @@
           "choix_ar": [
             "الْمَاءُ بَارِدٌ.",
             "الْمَاءُ بَارِدَةٌ.",
-            "الْمَاءُ الْبَارِدُ."
+            "الْمَاءُ الْبَارِدُ"
           ],
           "reponse": 0,
           "explication": "الْمَاءُ بَارِدٌ : une phrase, avec l'attribut au masculin."
@@ -486,8 +486,8 @@
           "consigne": "Comment dit-on « la tente est neuve » ?",
           "choix_ar": [
             "الْخَيْمَةُ جَدِيدَةٌ.",
-            "الْخَيْمَةُ الْجَدِيدَةُ.",
-            "خَيْمَةٌ جَدِيدَةٌ."
+            "الْخَيْمَةُ الْجَدِيدَةُ",
+            "خَيْمَةٌ جَدِيدَةٌ"
           ],
           "reponse": 0,
           "explication": "Une phrase : nom défini, attribut indéfini."

@@ -617,7 +617,7 @@
    "lecon": "fondations-03",
    "source_sens": "rédigé par IA",
    "genre": "m",
-   "remarque": "masculin (parfois féminin en arabe classique)",
+   "remarque": "parfois féminin en arabe classique",
    "pluriel": "طُرُقٌ",
    "lemme": "Tariyq",
    "exemple": {
@@ -871,8 +871,8 @@
    ],
    "lemme": "Tawiyl",
    "exemple": {
-    "ar": "الطَّرِيقُ طَوِيلٌ.",
-    "fr": "Le chemin est long."
+    "ar": "النَّهْرُ طَوِيلٌ.",
+    "fr": "Le fleuve est long."
    }
   },
   {
