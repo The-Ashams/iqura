@@ -37,6 +37,9 @@ void main() {
       'الشَّمْسُ': 'al-šamsu',
       'الْقَمَرُ': 'al-qamaru',
       'صَبَاحُ الْخَيْرِ': 'ṣabāḥu l-ḫayri',
+      // alif de liaison d'un nom : « i » en début, muet après une voyelle
+      'اسْمٌ': 'ismun',
+      'هُوَ اسْمٌ': 'huwa smun',
     };
     cases.forEach((ar, expected) {
       test('$ar → $expected', () => expect(s(ar), expected));

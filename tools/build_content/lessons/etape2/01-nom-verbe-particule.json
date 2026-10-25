@@ -44,26 +44,26 @@
         {
           "type": "lire",
           "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
-          "ar": "الشَّمْس",
+          "ar": "الشَّمْسُ",
           "choix_audio": [
-            "الشَّمْس",
-            "الْقَمَر",
-            "النُّور"
+            "الشَّمْسُ",
+            "الْقَمَرُ",
+            "النُّورُ"
           ],
           "reponse": 0,
-          "explication": "الشَّمْس se dit « aš-šams », le soleil (leçon 13)."
+          "explication": "الشَّمْسُ se dit « aš-šamsu », le soleil (leçon 13)."
         },
         {
           "type": "sens",
           "consigne": "Que veut dire ce mot ?",
-          "ar": "قَلْب",
+          "ar": "قَلْبٌ",
           "choix": [
-            "cœur",
-            "chien",
-            "lune"
+            "un cœur",
+            "un chien",
+            "une lune"
           ],
           "reponse": 0,
-          "explication": "قَلْب veut dire « cœur » (leçon 7)."
+          "explication": "قَلْبٌ veut dire « un cœur » (leçon 7)."
         }
       ]
     },
@@ -104,7 +104,8 @@
         "rajul",
         "jamal",
         "bayt",
-        "ma"
+        "ma",
+        "wa"
       ],
       "question": {
         "type": "sens",
@@ -166,7 +167,7 @@
     {
       "type": "regle",
       "titre": "La particule",
-      "texte": "Une particule ne porte ni tanwīn ni article. Elle relie les mots : فِي « dans », مِنْ « de », إِلَى « vers ».",
+      "texte": "Une particule ne porte ni tanwīn ni article. Les particules فِي « dans », مِنْ « de, depuis », إِلَى « vers » relient les mots.",
       "exemples": [
         "فِي",
         "مِنْ",
@@ -525,34 +526,34 @@
         {
           "type": "sens",
           "consigne": "Que veut dire ce mot ?",
-          "ar": "الْقَمَر",
+          "ar": "الْقَمَرُ",
           "choix": [
             "la lune",
             "le soleil",
             "la lumière"
           ],
           "reponse": 0,
-          "explication": "الْقَمَر veut dire « la lune ».",
+          "explication": "الْقَمَرُ veut dire « la lune ».",
           "revision": true
         },
         {
           "type": "sens",
           "consigne": "Que veut dire ce mot ?",
-          "ar": "شَجَرَة",
+          "ar": "شَجَرَةٌ",
           "choix": [
             "un arbre",
             "une feuille",
             "une ville"
           ],
           "reponse": 0,
-          "explication": "شَجَرَة veut dire « un arbre ».",
+          "explication": "شَجَرَةٌ veut dire « un arbre ».",
           "revision": true
         }
       ]
     },
     {
       "type": "fin",
-      "acquis": "Tu reconnais un nom (tanwīn, الْ), un verbe au passé et une particule, et tu lis « هَٰذَا … » : « ceci est… ».",
+      "acquis": "Tu reconnais un nom (tanwīn, الْ), un verbe au passé et une particule. هَٰذَا est un nom, même sans tanwīn : هَٰذَا جَمَلٌ « ceci est un chameau ».",
       "suite": "Bāsim t'attend au campement pour parler des filles et des garçons de la caravane."
     }
   ]

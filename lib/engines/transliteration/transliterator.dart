@@ -180,6 +180,10 @@ class Transliterator {
           // alif du tanwīn : non noté
         } else if (c == _alif && i == 0 && hasVowel) {
           // alif initial portant une voyelle : hamza non notée en début
+        } else if (c == _alif && i == 0 && !afterVowel) {
+          // Alif de liaison d'un nom (اسْمٌ) : « i » en début de lecture,
+          // muet après une voyelle (décision du conseiller, 25/10/2026).
+          b.write('i');
         }
       } else if (c == _alifMadda) {
         b.write(isFirst ? 'ā' : 'ʾā');

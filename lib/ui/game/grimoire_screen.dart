@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/providers.dart';
 import '../../game/world.dart';
 import '../widgets/arabic_text.dart';
+import 'dictionary_screen.dart';
 import 'pixel.dart';
 import 'report_error.dart';
 
@@ -12,8 +13,7 @@ class GrimoireScreen extends ConsumerWidget {
   const GrimoireScreen({super.key});
 
   static const String laterNotice =
-      'Dictionnaire personnel, mots, règles et indicateurs : avec les '
-      "révisions, à l'étape 6 du jalon J1a.";
+      'Indicateurs, racines et règles : aux prochains niveaux.';
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -40,6 +40,20 @@ class GrimoireScreen extends ConsumerWidget {
                       style: TextStyle(color: GameColors.muted, fontSize: 14),
                     ),
                   ],
+                ),
+              ),
+              const SizedBox(height: 12),
+              PixelWindow(
+                padding: const EdgeInsets.all(8),
+                child: PixelCommand(
+                  label: 'Dictionnaire',
+                  detail: 'Chercher un mot en arabe, en français ou par racine',
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute<void>(
+                      builder: (_) => const DictionaryScreen(),
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(height: 12),

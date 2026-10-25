@@ -45,7 +45,7 @@ Une leçon reste un mini-donjon de 10 à 15 minutes. Le joueur agit environ deux
 | 1. Entrée | Le maître dans son lieu ; l'objectif en une phrase | Écoute et entre |
 | 2. Échauffement | 3 ou 4 questions sur les leçons précédentes | Répond |
 | 3. Dialogue (découverte par l'exemple) | 2 à 4 répliques en arabe vocalisé, avec leur son ; traduction en français si on la demande | Écoute, lit, puis répond à « qu'as-tu compris ? » |
-| 4. Les mots | 4 à 8 nouveaux mots : arabe, sens, son, racine surlignée et famille, genre et pluriel (noms), passé et inaccompli (verbes) | Écoute, puis une question tout de suite |
+| 4. Les mots | 5 à 11 nouveaux mots (petits mots compris) : arabe, sens, son, racine surlignée et famille, genre et pluriel (noms), passé et inaccompli (verbes) | Écoute, puis une question tout de suite |
 | 5. La règle | Règle courte donnée par le maître, avec des exemples | Une question tout de suite |
 | 6. Salle d'entraînement | Sens du mot (arabe → français), sens inverse (français → arabe), compléter ou accorder, ordonner une phrase, écouter, répéter à voix haute | Répond ; une erreur revient plus tard |
 | 7. Salle de lecture | Un court texte gradué (3 à 6 phrases, au moins 95 % de mots déjà connus) ; on touche un mot pour voir son sens | Lit, répond à des questions de compréhension |

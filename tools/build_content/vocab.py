@@ -49,14 +49,15 @@ def key(token: str) -> str:
     return quran_guard.skeleton(PUNCT.sub("", token)).replace("ٱ", "ا")
 
 
-def candidates(token: str) -> list[str]:
+def candidates(token: str, known_prefixes: set[str] | None = None) -> list[str]:
     """Formes de base possibles d'un mot d'une phrase : le mot lui-même, sans
-    l'article, sans un préfixe d'une lettre (et sans l'article qui suit)."""
+    l'article, sans un préfixe d'une lettre (et sans l'article qui suit).
+    Avec `known_prefixes`, seuls les préfixes déjà enseignés sont retirés."""
     k = key(token)
     out = [k]
     if k.startswith("ال") and len(k) > 3:
         out.append(k[2:])
-    if k[:1] in PREFIXES and len(k) > 2:
+    if k[:1] in PREFIXES and len(k) > 2 and (known_prefixes is None or k[:1] in known_prefixes):
         rest = k[1:]
         out.append(rest)
         if rest.startswith("ال") and len(rest) > 3:
@@ -82,7 +83,8 @@ def tokens(text: str) -> list[str]:
 
 def unknown(text: str, known: set[str]) -> list[str]:
     """Mots de `text` qui ne se ramènent à aucune forme connue."""
-    return [t for t in tokens(text) if not any(c in known for c in candidates(t))]
+    prefixes = {p for p in PREFIXES if p in known}
+    return [t for t in tokens(text) if not any(c in known for c in candidates(t, prefixes))]
 
 
 def validate(words: list[dict], con: sqlite3.Connection, lesson_ids: set[str],

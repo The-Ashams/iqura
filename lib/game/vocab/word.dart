@@ -66,9 +66,11 @@ class Word {
     'adjectif' => 'adjectif',
     'verbe' => 'verbe',
     'particule' => 'particule',
-    'pronom' => 'pronom',
-    'demonstratif' => 'démonstratif',
-    'interrogatif' => 'mot interrogatif',
+    // Pronoms, démonstratifs, interrogatifs : des noms en grammaire arabe
+    // (décision du conseiller, 25/10/2026).
+    'pronom' => 'nom (pronom)',
+    'demonstratif' => 'nom (démonstratif)',
+    'interrogatif' => 'nom (interrogatif)',
     'adverbe' => 'adverbe',
     _ => nature,
   };
@@ -117,3 +119,44 @@ List<String> sentenceTokens(String text) =>
     text.replaceAll(_punct, ' ').split(RegExp(r'\s+')).where((t) {
       return t.isNotEmpty && arabicKey(t).isNotEmpty;
     }).toList();
+
+const _accents = {
+  'à': 'a', 'â': 'a', 'ä': 'a', 'é': 'e', 'è': 'e', 'ê': 'e', 'ë': 'e', //
+  'î': 'i', 'ï': 'i', 'ô': 'o', 'ö': 'o', 'ù': 'u', 'û': 'u', 'ü': 'u', //
+  'ç': 'c', 'œ': 'oe',
+};
+
+String _plain(String s) =>
+    s.toLowerCase().split('').map((c) => _accents[c] ?? c).join();
+
+final _arabicLetter = RegExp('[ء-يٱ]');
+
+/// Recherche dans le dictionnaire (avenant n° 2) : en arabe avec ou sans
+/// voyelles (le mot, sans article ni préfixe, ou le début du mot), par
+/// racine (trois lettres), ou en français (sans tenir compte des accents).
+/// Les mots dont la forme correspond exactement viennent d'abord.
+List<Word> searchWords(List<Word> words, String query) {
+  final q = query.trim();
+  if (q.isEmpty) return const [];
+  if (_arabicLetter.hasMatch(q)) {
+    final cands = keyCandidates(q);
+    final bare = arabicKey(q).replaceAll(' ', '');
+    final exact = <Word>[];
+    final other = <Word>[];
+    for (final w in words) {
+      if (w.keys.any(cands.contains)) {
+        exact.add(w);
+      } else if (w.rootLetters != null && arabicKey(w.rootLetters!) == bare) {
+        other.add(w);
+      } else if (bare.length >= 2 && w.keys.any((k) => k.startsWith(bare))) {
+        other.add(w);
+      }
+    }
+    return [...exact, ...other];
+  }
+  final p = _plain(q);
+  return [
+    for (final w in words)
+      if (_plain(w.french).contains(p)) w,
+  ];
+}

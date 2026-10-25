@@ -19,6 +19,7 @@ import '../../../game/world_providers.dart';
 import '../../widgets/arabic_text.dart';
 import '../grimoire_screen.dart';
 import '../pixel.dart';
+import '../dictionary_screen.dart';
 import '../report_error.dart';
 import '../sprites.dart';
 import 'boss_view.dart';
@@ -124,6 +125,17 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         ),
         backgroundColor: GameColors.night,
         foregroundColor: GameColors.text,
+        actions: [
+          // Dictionnaire accessible pendant la leçon (avenant n° 2).
+          IconButton(
+            tooltip: 'Dictionnaire',
+            icon: const Icon(Icons.menu_book_outlined),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute<void>(builder: (_) => const DictionaryScreen()),
+            ),
+          ),
+        ],
       ),
       body: SafeArea(
         child: GameBody(
