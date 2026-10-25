@@ -70,6 +70,23 @@ class QuranGuardTest(unittest.TestCase):
                           quran_guard.PAIR)
 
 
+class VocabTest(unittest.TestCase):
+    def test_endings_are_removed_only_once_taught(self):
+        known = {vocab.key("ثَوْبٌ"), vocab.key("إِبْرَةٌ"), vocab.key("فِي"),
+                 vocab.key("سَلَّةٌ"), vocab.key("خَبَّازٌ"), vocab.key("كَبِيرٌ"),
+                 vocab.key("مُعَلِّمٌ")}
+        cases = {
+            "ثَوْبِي": "pronoms", "إِبْرَتُهَا": "pronoms", "فِيهِ": "pronoms",
+            "السَّلَّتَيْنِ": "duel", "الْخَبَّازُونَ": "pluriel",
+            "مُعَلِّمَاتٌ": "pluriel", "كَبِيرًا": "accusatif",
+        }
+        for word, group in cases.items():
+            self.assertEqual(vocab.unknown(word, known), [word], word)
+            self.assertEqual(vocab.unknown(word, known, {group}), [], word)
+        # Une terminaison ne s'enlève pas d'un mot trop court.
+        self.assertEqual(vocab.unknown("هِيَ", {vocab.key("هـ")}, {"pronoms"}), ["هِيَ"])
+
+
 class SourcesTest(unittest.TestCase):
     def test_all_sources_match_their_fingerprint(self):
         sources.verify_all()

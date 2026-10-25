@@ -51,10 +51,40 @@ def key(token: str) -> str:
     return quran_guard.skeleton(PUNCT.sub("", token)).replace("ٱ", "ا")
 
 
-def candidates(token: str, known_prefixes: set[str] | None = None) -> list[str]:
+# Terminaisons collées au nom (région 2), par groupe, sous forme de squelette
+# (ة s'écrit ه dans le squelette) : un groupe n'est retiré qu'à partir de la
+# leçon qui l'enseigne (champ « terminaisons » de la leçon).
+ENDINGS = {
+    "pronoms": ("هما", "كما", "ها", "نا", "كم", "كن", "هم", "هن", "ي", "ك", "ه"),  # 2.14, 2.15
+    "duel": ("ان", "ين"),  # 2.16
+    "pluriel": ("ون", "ين", "ات"),  # 2.17
+    "accusatif": ("ا",),  # alif du tanwīn -an (2.20)
+}
+
+
+def _without_endings(base: str, groups) -> list[str]:
+    out = []
+    for g in groups:
+        for s in ENDINGS[g]:
+            rest = base[: -len(s)]
+            # Une seule lettre ne reste que pour لِـ, بِـ, كَـ… (لِي، لَهُ).
+            if not base.endswith(s) or (len(rest) < 2 and rest not in PREFIXES):
+                continue
+            out.append(rest)
+            if rest.endswith("ت"):  # ة devient ت devant une terminaison
+                out.append(rest[:-1] + "ه")
+            if s == "ات":  # pluriel féminin : ة remplacé par -āt
+                out.append(rest + "ه")
+    return out
+
+
+def candidates(token: str, known_prefixes: set[str] | None = None,
+               endings: set[str] | None = None) -> list[str]:
     """Formes de base possibles d'un mot d'une phrase : le mot lui-même, sans
-    l'article, sans un préfixe d'une lettre (et sans l'article qui suit).
-    Avec `known_prefixes`, seuls les préfixes déjà enseignés sont retirés."""
+    l'article, sans un préfixe d'une lettre (et sans l'article qui suit),
+    sans une terminaison (pronom collé, duel, pluriel, alif du tanwīn).
+    Avec `known_prefixes` et `endings`, seuls les préfixes et les groupes de
+    terminaisons déjà enseignés sont retirés ; sans eux, tous le sont."""
     k = key(token)
     out = [k]
     if k.startswith("ال") and len(k) > 3:
@@ -66,6 +96,9 @@ def candidates(token: str, known_prefixes: set[str] | None = None) -> list[str]:
             out.append(rest[2:])
         if k.startswith("لل") and len(k) > 3:  # li- + al-
             out.append(k[2:])
+    groups = ENDINGS.keys() if endings is None else [g for g in ENDINGS if g in endings]
+    for base in list(out):
+        out.extend(c for c in _without_endings(base, groups) if c not in out)
     return out
 
 
@@ -83,10 +116,12 @@ def tokens(text: str) -> list[str]:
     return [t for t in PUNCT.sub(" ", text).split() if quran_guard.words_of(t)]
 
 
-def unknown(text: str, known: set[str]) -> list[str]:
-    """Mots de `text` qui ne se ramènent à aucune forme connue."""
+def unknown(text: str, known: set[str], endings: set[str] = frozenset()) -> list[str]:
+    """Mots de `text` qui ne se ramènent à aucune forme connue (`endings` :
+    groupes de terminaisons déjà enseignés)."""
     prefixes = {p for p in PREFIXES if p in known}
-    return [t for t in tokens(text) if not any(c in known for c in candidates(t, prefixes))]
+    return [t for t in tokens(text)
+            if not any(c in known for c in candidates(t, prefixes, endings))]
 
 
 def validate(words: list[dict], con: sqlite3.Connection, lesson_ids: set[str],

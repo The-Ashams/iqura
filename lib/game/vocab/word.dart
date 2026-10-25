@@ -104,9 +104,18 @@ String arabicKey(String token) {
   return bare.split('').map((c) => _unify[c] ?? c).join();
 }
 
+/// Terminaisons collées au nom, en squelette (même table que
+/// `vocab.ENDINGS`) : pronoms, duel, pluriel, alif du tanwīn -an.
+const _endings = [
+  ['هما', 'كما', 'ها', 'نا', 'كم', 'كن', 'هم', 'هن', 'ي', 'ك', 'ه'],
+  ['ان', 'ين'],
+  ['ون', 'ين', 'ات'],
+  ['ا'],
+];
+
 /// Formes de base possibles d'un mot d'une phrase (même définition que
-/// `vocab.candidates`) : le mot, sans l'article, sans un préfixe d'une
-/// lettre.
+/// `vocab.candidates`, toutes terminaisons comprises) : le mot, sans
+/// l'article, sans un préfixe d'une lettre, sans une terminaison.
 List<String> keyCandidates(String token) {
   final k = arabicKey(token);
   final out = [k];
@@ -116,6 +125,23 @@ List<String> keyCandidates(String token) {
     out.add(rest);
     if (rest.startsWith('ال') && rest.length > 3) out.add(rest.substring(2));
     if (k.startsWith('لل') && k.length > 3) out.add(k.substring(2));
+  }
+  void add(String c) {
+    if (!out.contains(c)) out.add(c);
+  }
+
+  for (final base in List.of(out)) {
+    for (final group in _endings) {
+      for (final s in group) {
+        if (!base.endsWith(s)) continue;
+        final rest = base.substring(0, base.length - s.length);
+        // Une seule lettre ne reste que pour لِـ, بِـ, كَـ… (لِي، لَهُ).
+        if (rest.length < 2 && !_prefixes.contains(rest)) continue;
+        add(rest);
+        if (rest.endsWith('ت')) add('${rest.substring(0, rest.length - 1)}ه');
+        if (s == 'ات') add('$restه');
+      }
+    }
   }
   return out;
 }

@@ -22,6 +22,18 @@ void main() {
     expect(db.wordForToken('؟')?.id, isNull);
   });
 
+  test('terminaisons : pronom collé, duel, pluriel, alif du tanwīn', () {
+    expect(keyCandidates('إِبْرَتُهَا'), contains(arabicKey('إِبْرَةٌ')));
+    expect(keyCandidates('ثَوْبِي'), contains(arabicKey('ثَوْبٌ')));
+    expect(keyCandidates('فِيهِ'), contains(arabicKey('فِي')));
+    expect(keyCandidates('السَّلَّتَيْنِ'), contains(arabicKey('سَلَّةٌ')));
+    expect(keyCandidates('مُعَلِّمَاتٌ'), contains(arabicKey('مُعَلِّمَةٌ')));
+    expect(keyCandidates('كَبِيرًا'), contains(arabicKey('كَبِيرٌ')));
+    expect(db.wordForToken('خَيْمَتُنَا')?.id, 'khayma');
+    // هِيَ n'est pas « ه + ي ».
+    expect(keyCandidates('هِيَ'), isNot(contains('ه')));
+  });
+
   test('dictionnaire : arabe avec ou sans voyelles, français, racine', () {
     final words = db.words();
     expect(searchWords(words, 'جمل').first.id, 'jamal');

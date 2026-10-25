@@ -283,14 +283,40 @@ class GradedText extends ConsumerWidget {
                         for (final t in s.split(' '))
                           InkWell(
                             onTap: () {
-                              final w = db.wordForToken(t);
-                              if (w == null) return;
+                              final found = db.wordsForToken(t);
+                              if (found.isEmpty) return;
                               showModalBottomSheet<void>(
                                 context: context,
                                 backgroundColor: GameColors.night,
-                                builder: (_) => Padding(
+                                isScrollControlled: found.length > 1,
+                                builder: (_) => SingleChildScrollView(
                                   padding: const EdgeInsets.all(12),
-                                  child: WordCard(word: w, compact: true),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.stretch,
+                                    children: [
+                                      if (found.length > 1)
+                                        Text(
+                                          'Plusieurs mots s\'écrivent ainsi : '
+                                          'regarde les voyelles.',
+                                          style: TextStyle(
+                                            color: GameColors.muted,
+                                            fontSize: 14,
+                                          ),
+                                        ),
+                                      for (final w in found)
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                            bottom: 8,
+                                          ),
+                                          child: WordCard(
+                                            word: w,
+                                            compact: true,
+                                          ),
+                                        ),
+                                    ],
+                                  ),
                                 ),
                               );
                             },

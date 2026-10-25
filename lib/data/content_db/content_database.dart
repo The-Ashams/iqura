@@ -367,16 +367,25 @@ class ContentDatabase {
     return null;
   }
 
-  /// Fiche du mot touché dans une phrase (article et préfixes d'une lettre
-  /// retirés), s'il est au vocabulaire.
+  /// Fiche du mot touché dans une phrase (article, préfixes d'une lettre et
+  /// terminaisons retirés), s'il est au vocabulaire.
   Word? wordForToken(String token) {
+    final found = wordsForToken(token);
+    return found.isEmpty ? null : found.first;
+  }
+
+  /// Toutes les fiches possibles du mot touché : la forme exacte d'abord,
+  /// puis les autres lectures (ذَهَبٌ « or » et ذَهَبَ « il est allé » ont
+  /// le même squelette : les deux sont montrés).
+  List<Word> wordsForToken(String token) {
     final all = words();
+    final out = <Word>[];
     for (final k in keyCandidates(token)) {
       for (final w in all) {
-        if (w.keys.contains(k)) return w;
+        if (w.keys.contains(k) && !out.contains(w)) out.add(w);
       }
     }
-    return null;
+    return out;
   }
 
   /// Fiche d'une lettre.

@@ -37,9 +37,11 @@ MIN_PRODUCTION = 0.40
 
 
 def validate(lesson: dict, *, check_ar, known_keys: set[str], lesson_words: list[dict],
-             letter_cards: dict, places: set[str], characters: set[str]) -> None:
+             letter_cards: dict, places: set[str], characters: set[str],
+             known_endings: set[str] = frozenset()) -> None:
     """`known_keys` : formes de base des mots connus, leçon courante comprise ;
-    `lesson_words` : mots introduits par la leçon."""
+    `lesson_words` : mots introduits par la leçon ; `known_endings` : groupes
+    de terminaisons enseignés (`vocab.ENDINGS`), leçon courante comprise."""
     where = lesson["_file"]
     for key in ("lieu", "maitre", "ecrans"):
         if key not in lesson:
@@ -55,7 +57,7 @@ def validate(lesson: dict, *, check_ar, known_keys: set[str], lesson_words: list
             return
         check_ar(text)
         if all_known:
-            missing = [t for t in vocab.unknown(text, known_keys) if t not in apercu]
+            missing = [t for t in vocab.unknown(text, known_keys, known_endings) if t not in apercu]
             if missing:
                 raise LessonError(f"{here} : mot(s) inconnu(s) à ce stade : {' '.join(missing)}")
 
@@ -136,7 +138,7 @@ def validate(lesson: dict, *, check_ar, known_keys: set[str], lesson_words: list
             for p in phrases:
                 ar(p, here, all_known=False)
                 words += len(vocab.tokens(p))
-                unknown += len(vocab.unknown(p, known_keys))
+                unknown += len(vocab.unknown(p, known_keys, known_endings))
             if words == 0 or (words - unknown) / words < MIN_KNOWN:
                 raise LessonError(
                     f"{here} : {words - unknown} mots connus sur {words} (95 % au moins)")

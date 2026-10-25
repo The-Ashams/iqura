@@ -141,6 +141,7 @@ def validate(data: LessonData) -> None:
     known_letters: set[str] = set()
     known_signs: set[str] = set()
     known_keys: set[str] = set()
+    known_endings: set[str] = set()
     for stage, lessons in sorted(by_stage.items()):
         known_readings: set[str] = set()
         for lesson in lessons:
@@ -153,6 +154,10 @@ def validate(data: LessonData) -> None:
                 for w in lesson_words:
                     known_keys |= vocab.word_keys(w)
                 known_keys |= {vocab.key(f) for f in lesson.get("apercu", [])}
+                for g in lesson.get("terminaisons", []):
+                    if g not in vocab.ENDINGS:
+                        raise LessonError(f"{where} : terminaison inconnue {g}")
+                    known_endings.add(g)
 
                 def check_ar(text: str, _l=lesson) -> None:
                     for ch in text:
@@ -165,7 +170,8 @@ def validate(data: LessonData) -> None:
                     fondations.validate(
                         lesson, check_ar=check_ar, known_keys=known_keys,
                         lesson_words=lesson_words, letter_cards=letter_cards,
-                        places=places, characters=characters)
+                        places=places, characters=characters,
+                        known_endings=known_endings)
                 except mini_donjon.LessonError as e:
                     raise LessonError(str(e)) from None
                 continue
