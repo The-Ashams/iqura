@@ -26,7 +26,9 @@ import quran_guard
 VOCAB_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vocab", "mots.json")
 
 NATURES = {"nom", "adjectif", "verbe", "particule", "pronom", "demonstratif",
-           "interrogatif", "adverbe"}
+           "demonstratif_lieu", "interrogatif", "adverbe"}
+# Mots pleins (pour l'avertissement sur les paires coraniques).
+FULL_NATURES = {"nom", "adjectif", "verbe"}
 GENRES = {"m", "f"}
 # Préfixes d'une lettre collés au mot (et, alors, avec/par, pour, comme).
 PREFIXES = ("و", "ف", "ب", "ل", "ك")
@@ -150,7 +152,8 @@ def write(con: sqlite3.Connection, words: list[dict], lesson_order: dict[str, tu
         example_fr TEXT,
         theme TEXT,
         meaning_source TEXT NOT NULL,
-        keys_json TEXT NOT NULL
+        keys_json TEXT NOT NULL,
+        remark TEXT
     ) STRICT""")
     con.execute("CREATE INDEX word_lemma ON word(lemma_id)")
     rows = []
@@ -165,6 +168,29 @@ def write(con: sqlite3.Connection, words: list[dict], lesson_order: dict[str, tu
             w.get("pluriel"), w.get("passe"), w.get("inaccompli"), w.get("lemme"), root,
             w["lecon"], stage, ordinal, ex.get("ar"), ex.get("fr"), w.get("theme"),
             w["source_sens"], json.dumps(sorted(word_keys(w)), ensure_ascii=False),
+            w.get("remarque"),
         ))
-    con.executemany(f"INSERT INTO word VALUES ({','.join('?' * 19)})", rows)
+    con.executemany(f"INSERT INTO word VALUES ({','.join('?' * 20)})", rows)
     return len(rows)
+
+
+def quran_pair_warnings(texts: dict[str, str], words: list[dict],
+                        pairs: set[tuple[str, ...]]) -> list[str]:
+    """Paires de deux mots pleins (noms, adjectifs, verbes du vocabulaire)
+    qui se suivent dans le Coran (décision du conseiller, 25/10/2026) :
+    signalées à la construction, sans bloquer. Le blocage reste à 3 mots."""
+    full = set()
+    for w in words:
+        if w["nature"] in FULL_NATURES:
+            full |= word_keys(w)
+    out = []
+    for where, text in texts.items():
+        ws = quran_guard.words_of(text)
+        toks = tokens(text)
+        if len(ws) != len(toks):
+            continue
+        for i in range(len(ws) - 1):
+            if (ws[i], ws[i + 1]) in pairs and all(
+                    any(c in full for c in candidates(t)) for t in toks[i:i + 2]):
+                out.append(f"{where} : « {toks[i]} {toks[i + 1]} » se suit dans le Coran")
+    return out

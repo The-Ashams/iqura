@@ -27,6 +27,7 @@ class Word {
     this.exampleArabic,
     this.exampleFrench,
     this.theme,
+    this.remark,
   });
 
   final String id;
@@ -53,6 +54,10 @@ class Word {
   final String? exampleArabic;
   final String? exampleFrench;
   final String? theme;
+
+  /// Précision sur le genre ou l'usage (ex. « masculin (parfois féminin en
+  /// arabe classique) »).
+  final String? remark;
   final String lessonId;
   final int lessonStage;
   final int lessonOrdinal;
@@ -70,6 +75,7 @@ class Word {
     // (décision du conseiller, 25/10/2026).
     'pronom' => 'nom (pronom)',
     'demonstratif' => 'nom (démonstratif)',
+    'demonstratif_lieu' => 'nom (démonstratif de lieu)',
     'interrogatif' => 'nom (interrogatif)',
     'adverbe' => 'adverbe',
     _ => nature,

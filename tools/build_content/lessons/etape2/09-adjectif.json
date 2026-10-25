@@ -357,10 +357,10 @@
         },
         {
           "type": "repondre",
-          "consigne": "Rāšid parle du feu, puis il te demande comment est l'eau. Que réponds-tu ?",
+          "consigne": "Rāšid dit que le feu est chaud. Dis-lui que l'eau est froide.",
           "replique": {
             "qui": "rashid_oasis",
-            "ar": "النَّارُ حَارَّةٌ، وَالْمَاءُ؟"
+            "ar": "النَّارُ حَارَّةٌ."
           },
           "choix_ar": [
             "الْمَاءُ بَارِدٌ.",

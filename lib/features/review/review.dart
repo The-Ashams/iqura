@@ -318,3 +318,25 @@ class DueCountNotifier extends Notifier<int> {
 
   void refresh() => state = ref.read(reviewRepositoryProvider).due().length;
 }
+
+/// Indicateur de l'avenant n° 1 (cahier §5.11) : part des occurrences du
+/// Quranic Arabic Corpus dont le lemme est au moins « reconnu » (carte
+/// « sens » du mot). Une familiarité avec le vocabulaire, jamais une
+/// compréhension du Coran ; aucun texte n'est affiché.
+double quranVocabularyShare({
+  required Iterable<ReviewCard> cards,
+  required Map<String, ({String? lemma, int? occurrences})> words,
+  required int total,
+}) {
+  if (total == 0) return 0;
+  final lemmas = <String, int>{};
+  for (final c in cards) {
+    if (c.kind != CardKind.sens) continue;
+    if (c.bestLevel.index < MasteryLevel.reconnu.index) continue;
+    final w = words[c.target];
+    if (w?.lemma != null && w?.occurrences != null) {
+      lemmas[w!.lemma!] = w.occurrences!;
+    }
+  }
+  return lemmas.values.fold(0, (a, b) => a + b) / total;
+}

@@ -136,6 +136,7 @@ class WordCard extends ConsumerWidget {
                   children: [
                     Text(w.french, style: const TextStyle(fontSize: 20)),
                     Text('${w.natureLabel} · ${w.translit}', style: muted),
+                    if (w.remark != null) Text(w.remark!, style: muted),
                   ],
                 ),
               ),

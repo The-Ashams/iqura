@@ -39,3 +39,11 @@ Décisions prises par Claude Code seul, comme le demandent les avenants. Elles s
 
 - Deux mots du Coran l'un après l'autre restent permis, car ce sont souvent des tournures ordinaires de la langue.
 - Cette vérification est confiée aussi à l'agent relecteur (point A1 de sa liste de contrôle).
+
+## 5. Paires de mots qui se suivent dans le Coran (avis du conseiller) — 25/10/2026
+
+**Décision** : la construction **avertit** (sans bloquer) quand deux mots pleins du vocabulaire (noms, adjectifs, verbes) se suivent dans le Coran sous la même forme. Chaque cas est remplacé, ou soumis au conseiller. Les paires qui contiennent un petit mot outil (هَلْ, هَٰذَا, pronoms…) restent permises. Le blocage automatique reste à 3 mots.
+
+## 6. Région 2 construite sur une proposition non encore validée — 25/10/2026
+
+Le cahier (§6.1 et §8.2) demande à l'utilisateur de valider les noms des lieux et des personnages de la région 2, et le détail des écrans d'une leçon. L'utilisateur a demandé de ne pas l'attendre. Élémentaire 1 est donc construit sur `docs/PROPOSITION_REGION_2.md`. Tout est en fichiers de données : un nom ou l'ordre des écrans peut changer sans rien refaire.

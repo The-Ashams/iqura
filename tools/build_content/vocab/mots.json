@@ -213,88 +213,6 @@
    "theme": "nature"
   },
   {
-   "id": "nahnu",
-   "ar": "نَحْنُ",
-   "translit": "naḥnu",
-   "fr": "nous",
-   "nature": "pronom",
-   "lecon": "fondations-08",
-   "source_sens": "rédigé par IA"
-  },
-  {
-   "id": "antum",
-   "ar": "أَنْتُمْ",
-   "translit": "antum",
-   "fr": "vous (des hommes, ou un groupe mixte)",
-   "nature": "pronom",
-   "lecon": "fondations-08",
-   "source_sens": "rédigé par IA"
-  },
-  {
-   "id": "antunna",
-   "ar": "أَنْتُنَّ",
-   "translit": "antunna",
-   "fr": "vous (des femmes)",
-   "nature": "pronom",
-   "lecon": "fondations-08",
-   "source_sens": "rédigé par IA"
-  },
-  {
-   "id": "hum",
-   "ar": "هُمْ",
-   "translit": "hum",
-   "fr": "ils, eux",
-   "nature": "pronom",
-   "lecon": "fondations-08",
-   "source_sens": "rédigé par IA"
-  },
-  {
-   "id": "hunna",
-   "ar": "هُنَّ",
-   "translit": "hunna",
-   "fr": "elles",
-   "nature": "pronom",
-   "lecon": "fondations-08",
-   "source_sens": "rédigé par IA"
-  },
-  {
-   "id": "antuma",
-   "ar": "أَنْتُمَا",
-   "translit": "antumā",
-   "fr": "vous deux",
-   "nature": "pronom",
-   "lecon": "fondations-08",
-   "source_sens": "rédigé par IA"
-  },
-  {
-   "id": "huma",
-   "ar": "هُمَا",
-   "translit": "humā",
-   "fr": "eux deux, elles deux",
-   "nature": "pronom",
-   "lecon": "fondations-08",
-   "source_sens": "rédigé par IA"
-  },
-  {
-   "id": "huna",
-   "ar": "هُنَا",
-   "translit": "hunā",
-   "fr": "ici",
-   "nature": "demonstratif",
-   "lecon": "fondations-08",
-   "source_sens": "rédigé par IA",
-   "lemme": "hunaA"
-  },
-  {
-   "id": "hunaka",
-   "ar": "هُنَاكَ",
-   "translit": "hunāka",
-   "fr": "là-bas",
-   "nature": "demonstratif",
-   "lecon": "fondations-08",
-   "source_sens": "rédigé par IA"
-  },
-  {
    "id": "ana",
    "ar": "أَنَا",
    "translit": "anā",
@@ -390,102 +308,6 @@
    "genre": "m",
    "pluriel": "أَسْمَاءٌ",
    "lemme": "{som"
-  },
-  {
-   "id": "jadid",
-   "ar": "جَدِيدٌ",
-   "translit": "ǧadīdun",
-   "fr": "nouveau, neuf",
-   "nature": "adjectif",
-   "lecon": "fondations-09",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "formes": [
-    "جَدِيدَةٌ"
-   ],
-   "lemme": "jadiyd",
-   "exemple": {
-    "ar": "هَٰذَا ثَوْبٌ جَدِيدٌ.",
-    "fr": "Ceci est un vêtement neuf."
-   }
-  },
-  {
-   "id": "qadim",
-   "ar": "قَدِيمٌ",
-   "translit": "qadīmun",
-   "fr": "ancien, vieux (chose)",
-   "nature": "adjectif",
-   "lecon": "fondations-09",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "formes": [
-    "قَدِيمَةٌ"
-   ],
-   "lemme": "qadiym"
-  },
-  {
-   "id": "tawil",
-   "ar": "طَوِيلٌ",
-   "translit": "ṭawīlun",
-   "fr": "long ; grand de taille",
-   "nature": "adjectif",
-   "lecon": "fondations-09",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "formes": [
-    "طَوِيلَةٌ"
-   ],
-   "lemme": "Tawiyl",
-   "exemple": {
-    "ar": "الطَّرِيقُ طَوِيلٌ.",
-    "fr": "Le chemin est long."
-   }
-  },
-  {
-   "id": "qasir",
-   "ar": "قَصِيرٌ",
-   "translit": "qaṣīrun",
-   "fr": "court ; petit de taille",
-   "nature": "adjectif",
-   "lecon": "fondations-09",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "formes": [
-    "قَصِيرَةٌ"
-   ],
-   "racine": "qSr"
-  },
-  {
-   "id": "harr",
-   "ar": "حَارٌّ",
-   "translit": "ḥārrun",
-   "fr": "chaud",
-   "nature": "adjectif",
-   "lecon": "fondations-09",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "formes": [
-    "حَارَّةٌ"
-   ],
-   "racine": "Hrr"
-  },
-  {
-   "id": "barid",
-   "ar": "بَارِدٌ",
-   "translit": "bāridun",
-   "fr": "froid, frais",
-   "nature": "adjectif",
-   "lecon": "fondations-09",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "formes": [
-    "بَارِدَةٌ"
-   ],
-   "lemme": "baArid",
-   "exemple": {
-    "ar": "الْمَاءُ بَارِدٌ.",
-    "fr": "L'eau est froide."
-   }
   },
   {
    "id": "hal",
@@ -679,75 +501,6 @@
    "theme": "famille"
   },
   {
-   "id": "taam",
-   "ar": "طَعَامٌ",
-   "translit": "ṭaʿāmun",
-   "fr": "nourriture, repas",
-   "nature": "nom",
-   "lecon": "fondations-03",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "أَطْعِمَةٌ",
-   "lemme": "TaEaAm",
-   "exemple": {
-    "ar": "هَٰذَا طَعَامٌ.",
-    "fr": "Ceci est de la nourriture."
-   },
-   "theme": "maison"
-  },
-  {
-   "id": "tariq",
-   "ar": "طَرِيقٌ",
-   "translit": "ṭarīqun",
-   "fr": "chemin, route",
-   "nature": "nom",
-   "lecon": "fondations-03",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "طُرُقٌ",
-   "lemme": "Tariyq",
-   "exemple": {
-    "ar": "هَٰذَا طَرِيقٌ.",
-    "fr": "Ceci est un chemin."
-   },
-   "theme": "voyage"
-  },
-  {
-   "id": "nakhla",
-   "ar": "نَخْلَةٌ",
-   "translit": "naḫlatun",
-   "fr": "palmier (dattier)",
-   "nature": "nom",
-   "lecon": "fondations-03",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "lemme": "n~axolap",
-   "theme": "nature"
-  },
-  {
-   "id": "tamr",
-   "ar": "تَمْرٌ",
-   "translit": "tamrun",
-   "fr": "dattes (nom collectif)",
-   "nature": "nom",
-   "lecon": "fondations-03",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "theme": "maison"
-  },
-  {
-   "id": "laban",
-   "ar": "لَبَنٌ",
-   "translit": "labanun",
-   "fr": "lait",
-   "nature": "nom",
-   "lecon": "fondations-03",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "l~aban",
-   "theme": "maison"
-  },
-  {
    "id": "hadha",
    "ar": "هَٰذَا",
    "translit": "hāḏā",
@@ -839,6 +592,76 @@
    "theme": "maison"
   },
   {
+   "id": "taam",
+   "ar": "طَعَامٌ",
+   "translit": "ṭaʿāmun",
+   "fr": "nourriture, repas",
+   "nature": "nom",
+   "lecon": "fondations-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَطْعِمَةٌ",
+   "lemme": "TaEaAm",
+   "exemple": {
+    "ar": "هَٰذَا طَعَامٌ.",
+    "fr": "Ceci est de la nourriture."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "tariq",
+   "ar": "طَرِيقٌ",
+   "translit": "ṭarīqun",
+   "fr": "chemin, route",
+   "nature": "nom",
+   "lecon": "fondations-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "remarque": "masculin (parfois féminin en arabe classique)",
+   "pluriel": "طُرُقٌ",
+   "lemme": "Tariyq",
+   "exemple": {
+    "ar": "هَٰذَا طَرِيقٌ.",
+    "fr": "Ceci est un chemin."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "nakhla",
+   "ar": "نَخْلَةٌ",
+   "translit": "naḫlatun",
+   "fr": "palmier (dattier)",
+   "nature": "nom",
+   "lecon": "fondations-03",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "n~axolap",
+   "theme": "nature"
+  },
+  {
+   "id": "tamr",
+   "ar": "تَمْرٌ",
+   "translit": "tamrun",
+   "fr": "dattes (nom collectif)",
+   "nature": "nom",
+   "lecon": "fondations-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "theme": "maison"
+  },
+  {
+   "id": "laban",
+   "ar": "لَبَنٌ",
+   "translit": "labanun",
+   "fr": "lait",
+   "nature": "nom",
+   "lecon": "fondations-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "l~aban",
+   "theme": "maison"
+  },
+  {
    "id": "kabir",
    "ar": "كَبِيرٌ",
    "translit": "kabīrun",
@@ -918,6 +741,184 @@
    "exemple": {
     "ar": "الْجَبَلُ بَعِيدٌ.",
     "fr": "La montagne est loin."
+   }
+  },
+  {
+   "id": "nahnu",
+   "ar": "نَحْنُ",
+   "translit": "naḥnu",
+   "fr": "nous",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "antum",
+   "ar": "أَنْتُمْ",
+   "translit": "antum",
+   "fr": "vous (des hommes, ou un groupe mixte)",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "antunna",
+   "ar": "أَنْتُنَّ",
+   "translit": "antunna",
+   "fr": "vous (des femmes)",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "hum",
+   "ar": "هُمْ",
+   "translit": "hum",
+   "fr": "ils, eux",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "hunna",
+   "ar": "هُنَّ",
+   "translit": "hunna",
+   "fr": "elles",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "antuma",
+   "ar": "أَنْتُمَا",
+   "translit": "antumā",
+   "fr": "vous deux",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "huma",
+   "ar": "هُمَا",
+   "translit": "humā",
+   "fr": "eux deux, elles deux",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "huna",
+   "ar": "هُنَا",
+   "translit": "hunā",
+   "fr": "ici",
+   "nature": "demonstratif_lieu",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA",
+   "lemme": "hunaA"
+  },
+  {
+   "id": "hunaka",
+   "ar": "هُنَاكَ",
+   "translit": "hunāka",
+   "fr": "là-bas",
+   "nature": "demonstratif_lieu",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "jadid",
+   "ar": "جَدِيدٌ",
+   "translit": "ǧadīdun",
+   "fr": "nouveau, neuf",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "جَدِيدَةٌ"
+   ],
+   "lemme": "jadiyd",
+   "exemple": {
+    "ar": "هَٰذَا ثَوْبٌ جَدِيدٌ.",
+    "fr": "Ceci est un vêtement neuf."
+   }
+  },
+  {
+   "id": "qadim",
+   "ar": "قَدِيمٌ",
+   "translit": "qadīmun",
+   "fr": "ancien, vieux (chose)",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "قَدِيمَةٌ"
+   ],
+   "lemme": "qadiym"
+  },
+  {
+   "id": "tawil",
+   "ar": "طَوِيلٌ",
+   "translit": "ṭawīlun",
+   "fr": "long ; grand de taille",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "طَوِيلَةٌ"
+   ],
+   "lemme": "Tawiyl",
+   "exemple": {
+    "ar": "الطَّرِيقُ طَوِيلٌ.",
+    "fr": "Le chemin est long."
+   }
+  },
+  {
+   "id": "qasir",
+   "ar": "قَصِيرٌ",
+   "translit": "qaṣīrun",
+   "fr": "court ; petit de taille",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "قَصِيرَةٌ"
+   ],
+   "racine": "qSr"
+  },
+  {
+   "id": "harr",
+   "ar": "حَارٌّ",
+   "translit": "ḥārrun",
+   "fr": "chaud",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "حَارَّةٌ"
+   ],
+   "racine": "Hrr"
+  },
+  {
+   "id": "barid",
+   "ar": "بَارِدٌ",
+   "translit": "bāridun",
+   "fr": "froid, frais",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "بَارِدَةٌ"
+   ],
+   "lemme": "baArid",
+   "exemple": {
+    "ar": "الْمَاءُ بَارِدٌ.",
+    "fr": "L'eau est froide."
    }
   }
  ]

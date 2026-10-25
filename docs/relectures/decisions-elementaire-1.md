@@ -34,3 +34,31 @@ Agent : conseiller-arabe, 25/10/2026. Confiance haute, sauf mention contraire.
 - **Mots absents du Corpus** (تَمْرٌ, تَاجِرٌ, مُسَافِرٌ…) : on n'affirme pas qu'ils sont dans le Coran.
   - Si leur racine existe dans le Corpus, elle est montrée.
   - Si elle est absente (ت م ر), rien n'est montré. Décision appliquée : la racine n'est pas affichée.
+
+## Deuxième série : doutes des relectures, 25/10/2026
+
+Agent : conseiller-arabe.
+
+1. **« هَلْ هَٰذَا بَيْتٌ؟ »** est gardée : هَلْ et هَٰذَا sont deux mots outils très courants. On n'écrira jamais هَلْ هَٰذَا suivi de إِلَّا.
+2. **Formes fausses** : il en reste deux en 2.3 seulement. Elles sont expliquées, jamais lues à voix haute, absentes du mini-boss et de l'Expédition.
+3. **هَٰذِهِ نَاقَةٌ** est retirée. Les paires de deux mots pleins qui se suivent dans le Coran sous la même forme sont signalées à la construction (sans la bloquer), puis remplacées ou soumises au conseiller.
+4. **طَرِيقٌ** : sa fiche dit « masculin (parfois féminin en arabe classique) ». Le mot n'entre dans aucun exercice d'accord.
+5. **Libellés des fiches** : « nom (pronom) », « nom (démonstratif) », « nom (démonstratif de lieu) » pour هُنَا et هُنَاكَ, « nom (interrogatif) ». هَلْ, نَعَمْ, لَا, وَ restent des particules.
+6. **Le joueur est interpellé au masculin**, avec un rappel de la forme d'une voyageuse (أَنَا مُسَافِرَةٌ).
+7. **هُنَاكَ** reste tel quel, sans lien au Corpus. هُنَالِكَ aura sa fiche plus tard.
+8. **2.6** : « Au présent, l'arabe n'emploie pas de verbe « être » : on met côte à côte le nom défini et l'attribut indéfini. »
+9. **2.9** : la réplique elliptique « وَالْمَاءُ؟ » est remplacée par une phrase (« النَّارُ حَارَّةٌ. »). Le joueur répond que l'eau est froide.
+10. **؟** n'est pas une tuile. Il s'affiche après la phrase reconstituée.
+
+## Liste de fin de niveau (Élémentaire 1, 10 points au plus)
+
+1. Les noms s'écrivent avec leur fin (رَجُلٌ, « raǧulun ») ; le pluriel et le présent sont montrés en aperçu.
+2. Les phrases sont entièrement vocalisées. Pas de préposition dans une phrase avant 2.11, pas de verbe dans une phrase avant 2.21.
+3. Mots retouchés : « nuages » remplacé par « fleuve » ; « ici / là-bas » appris en 2.8 ; وَ « et » appris dès 2.1 ; « puits » appris en 2.2 parmi les féminins sans ة.
+4. Pas de verset, et aucune paire de mots pleins qui se suit dans le Coran : « Ceci est une chamelle » est retiré. « هَلْ هَٰذَا بَيْتٌ؟ » est gardée.
+5. Deux formes volontairement fausses restent en 2.3, toujours expliquées et jamais lues à voix haute.
+6. « Chemin » est masculin, parfois féminin en classique : il est retiré des exercices d'accord.
+7. Pronoms, démonstratifs et mots de question sont rangés parmi les noms.
+8. Le jeu s'adresse au joueur au masculin et rappelle la forme d'une voyageuse.
+9. Les mots absents du Corpus montrent seulement leur racine, sans fréquence (ex. تَاجِرٌ). تَمْرٌ n'a pas de racine dans le Corpus.
+10. Les mirages de la Confusion sont les adversaires ; aucun mot n'est écrit sur eux.

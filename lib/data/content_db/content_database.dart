@@ -344,6 +344,7 @@ class ContentDatabase {
         exampleArabic: r['example_ar'] as String?,
         exampleFrench: r['example_fr'] as String?,
         theme: r['theme'] as String?,
+        remark: r['remark'] as String?,
         lessonId: r['lesson_id'] as String,
         lessonStage: r['lesson_stage'] as int,
         lessonOrdinal: r['lesson_ordinal'] as int,
@@ -351,6 +352,12 @@ class ContentDatabase {
         keys: (jsonDecode(r['keys_json'] as String) as List).cast<String>(),
       ),
   ];
+
+  /// Nombre total d'occurrences lemmatisées du Quranic Arabic Corpus (base de
+  /// l'indicateur « X % des mots du Coran », sans aucun texte).
+  int lemmaOccurrencesTotal() =>
+      _db.select('SELECT SUM(occurrence_count) AS n FROM lemma').first['n']
+          as int;
 
   /// Fiche d'un mot par son identifiant.
   Word? word(String id) {

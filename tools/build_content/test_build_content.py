@@ -16,6 +16,7 @@ import lessons  # noqa: E402
 import qac  # noqa: E402
 import sources  # noqa: E402
 import quran_guard  # noqa: E402
+import vocab  # noqa: E402
 import world  # noqa: E402
 
 
@@ -51,6 +52,14 @@ class QuranGuardTest(unittest.TestCase):
         quran_guard.check({"x": "ا ج ب"}, grams)
         with self.assertRaises(quran_guard.QuranGuardError):
             quran_guard.check({"x": "دَ اَ بِ جُ"}, grams)
+
+    def test_pairs_of_full_words_are_reported(self):
+        words = [{"ar": "نَاقَةٌ", "nature": "nom"}, {"ar": "هَٰذِهِ", "nature": "demonstratif"},
+                 {"ar": "جَمِيلَةٌ", "nature": "adjectif"}]
+        pairs = {("ناقه", "جميله"), ("هذه", "ناقه")}
+        w = vocab.quran_pair_warnings({"x": "النَّاقَةُ نَاقَةٌ جَمِيلَةٌ.", "y": "هَٰذِهِ نَاقَةٌ."}, words, pairs)
+        self.assertEqual(len(w), 1)
+        self.assertIn("x", w[0])
 
     def test_inscriptions_are_checked_on_two_words(self):
         # « لَهُۥ بِهِۦ » se suit dans le Coran (relecture du 24/10/2026).

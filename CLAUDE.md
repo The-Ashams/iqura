@@ -70,7 +70,7 @@ On ne teste plus leçon par leçon, mais **niveau par niveau** (14 niveaux ; « 
 3. Pendant que l'utilisateur teste un niveau, commencer le suivant ; intégrer ses retours dès qu'ils arrivent.
 4. La progression de l'utilisateur est conservée d'une version à l'autre (migrations de la base utilisateur, identifiants de leçons stables, APK signé avec la même clé).
 
-**Niveaux en cours : Débutant 1 à 3 (toute la région 1 : leçons 0 à 14 et examen), construits et mis à jour pour l'avenant n° 1 ; Débutant 1 testé une première fois, Débutant 2 et 3 en attente du test de l'utilisateur** (détail : `docs/ETAT_DU_PROJET.md` §1 quater à §1 sexies). Niveau suivant : Élémentaire 1 (leçons 2.1 à 2.10).
+**Niveaux en cours : Débutant 1 à 3 (toute la région 1 : leçons 0 à 14 et examen), construits et mis à jour pour l'avenant n° 1 ; Débutant 1 testé une première fois, Débutant 2 et 3 en attente du test de l'utilisateur** (détail : `docs/ETAT_DU_PROJET.md` §1 quater à §1 sexies). Élémentaire 1 (leçons 2.1 à 2.10, région 2) construit le 25/10/2026, sur une proposition de région 2 à valider (`docs/PROPOSITION_REGION_2.md`). Niveau suivant : Élémentaire 2 (leçons 2.11 à 2.20).
 
 ## Commandes
 

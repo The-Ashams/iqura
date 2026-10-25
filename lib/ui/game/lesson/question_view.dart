@@ -533,7 +533,10 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
             : 'Le mot était :',
       ),
       ArabicText(
-        q.solution.join(q.kind == QuestionKind.ordonner ? ' ' : ''),
+        q.kind == QuestionKind.ordonner
+            // Une question s'écrit avec ؟, qui n'est pas une tuile.
+            ? q.solution.join(' ') + (q.prompt.contains('?') ? '؟' : '')
+            : q.solution.join(),
         baseSize: 40,
         style: const TextStyle(color: PanelColors.ink),
       ),

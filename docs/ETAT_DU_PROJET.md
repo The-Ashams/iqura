@@ -110,6 +110,20 @@ Gardé : la police Amiri Quran (mots isolés de la leçon 14), le Quranic Arabic
 
 Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la région 1 (7 % au lieu d'environ 20 %) reste tel quel, puisque le niveau Débutant 1 est validé ; ce point sera signalé dans le bilan de fin de niveau.
 
+## 1 septies. Niveau Élémentaire 1 (leçons 2.1 à 2.10, région 2, 25/10/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Proposition (à valider par l'utilisateur) | `docs/PROPOSITION_REGION_2.md` : « L'Oasis des Fondations », 12 lieux, Rāšid, Bāsim, Salmā, Samīr ; adversaire la Confusion (mirages) ; déroulement d'une leçon en 10 écrans (dialogue, les mots, Atelier des phrases…) |
+| Leçons | 2.1 nom/verbe/particule, 2.2 masculin/féminin, 2.3 défini/indéfini (Campement) ; 2.4 هَٰذَا/هَٰذِهِ, 2.5 ذَٰلِكَ/تِلْكَ (Tente de Rāšid) ; 2.6 phrase nominale, 2.7 je/tu/il/elle, 2.8 nous/vous/ils, duel, ici/là-bas (Puits aux palmiers) ; 2.9 adjectif, 2.10 questions (Feu de la veillée) |
+| Vocabulaire | 72 fiches (`tools/build_content/vocab/mots.json`, table `word`) : sens, nature, genre, pluriel et présent en aperçu, racine et fréquence du Quranic Arabic Corpus quand le mot y est (sinon racine seule, ou rien), exemple construit, source « rédigé par IA » |
+| Contrôles automatiques (format 3, `fondations.py`) | Mots connus seulement (95 % au moins dans les textes à lire), préfixe collé seulement s'il est enseigné, part de production ≥ 40 % (avenant n° 2), chaque mot présenté, aucune suite de 3 mots du Coran, avertissement sur les paires de mots pleins |
+| Jeu | Écrans dialogue (traduction à la demande), les mots (fiche complète), texte gradué (mot touché → fiche), Atelier des phrases (ordonner, traduire, compléter, répondre) ; cartes « sens » puis « produire » (connaissance active) ; région 2 ouverte par l'examen de la région 1, choix de la région sur la carte ; mirages en combat |
+| Dictionnaire intégré | Grimoire et pendant une leçon : arabe avec ou sans voyelles, français, racine ; « déjà appris » ; ajout aux révisions |
+| Indicateur | Grimoire : « Les mots que tu connais représentent X % des mots du Coran » (fréquences du Corpus, mots au moins « reconnus ») |
+| Relectures | `docs/relectures/2026-10-25-elementaire-1-lecons-2.1-a-2.5.md`, `…-2.6-a-2.10.md` ; décisions du conseiller : `decisions-elementaire-1.md` (deux séries, liste de fin de niveau) |
+| Audio | Environ 230 sons de synthèse en cours de génération (mots, phrases des dialogues et des textes) |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -164,7 +178,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 5. Débutant 1 construit (§1 quater), testé une première fois par l'utilisateur le 24/10/2026 ; retours intégrés (§1 quater), nouvelle version à publier.
 6. Débutant 2 et Débutant 3 construits le 24/10/2026 (§1 quinquies), à la demande de l'utilisateur, avant son nouveau test : sons générés (204), à faire écouter, puis une version à publier.
 7. Fait (24/10/2026) : avenants n° 1 et n° 2 appliqués (§1 sexies) ; salles de lecture relues par l'agent relecteur : verdict « Validé avec doutes » au 2e passage, 5 doutes tranchés par le conseiller (`docs/relectures/2026-10-24-salles-de-lecture.md`, `decisions-debutant-3.md`).
-8. Ensuite : région 2 (Élémentaire 1, leçons 2.1 à 2.10), avec les premiers ajouts de l'avenant n° 2 (vocabulaire par thèmes, fiche de mot, Atelier des phrases, dictionnaire).
+8. Élémentaire 1 construit le 25/10/2026 (§1 septies) : sons, test, puis une version à publier.
+9. Ensuite : Élémentaire 2 (leçons 2.11 à 2.20, chapitre B « Le marché »).
 
 ## 5. Problèmes connus
 

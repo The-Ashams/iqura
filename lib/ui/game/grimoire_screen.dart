@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/providers.dart';
+import '../../features/review/review.dart';
 import '../../game/world.dart';
 import '../widgets/arabic_text.dart';
 import 'dictionary_screen.dart';
@@ -42,6 +43,8 @@ class GrimoireScreen extends ConsumerWidget {
                   ],
                 ),
               ),
+              const SizedBox(height: 12),
+              const _QuranShare(),
               const SizedBox(height: 12),
               PixelWindow(
                 padding: const EdgeInsets.all(8),
@@ -217,6 +220,45 @@ class LetterSheet extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// « Les mots que tu connais représentent X % des mots du Coran » (avenant
+/// n° 1) : calculé à partir des seules fréquences du Corpus.
+class _QuranShare extends ConsumerWidget {
+  const _QuranShare();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    ref.watch(dueCountProvider);
+    final db = ref.watch(contentDatabaseProvider);
+    final share = quranVocabularyShare(
+      cards: ref.watch(reviewRepositoryProvider).all(),
+      words: {
+        for (final w in db.words())
+          w.id: (lemma: w.lemmaId, occurrences: w.occurrences),
+      },
+      total: db.lemmaOccurrencesTotal(),
+    );
+    final pct = (share * 100).toStringAsFixed(share < 0.1 ? 1 : 0);
+    return PixelWindow(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Les mots que tu connais représentent $pct % des mots du Coran.',
+            style: const TextStyle(fontSize: 16),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            'Familiarité avec le vocabulaire (mots au moins « reconnus »), '
+            'calculée à partir des fréquences du Quranic Arabic Corpus ; ce '
+            'n\'est pas une compréhension du Coran.',
+            style: TextStyle(color: GameColors.muted, fontSize: 13),
+          ),
+        ],
       ),
     );
   }
