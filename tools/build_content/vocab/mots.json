@@ -922,6 +922,369 @@
    }
   },
   {
+   "id": "yad",
+   "ar": "يَدٌ",
+   "translit": "yadun",
+   "fr": "main",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "أَيْدٍ",
+   "lemme": "yad",
+   "exemple": {
+    "ar": "الْيَدُ صَغِيرَةٌ.",
+    "fr": "La main est petite."
+   },
+   "theme": "corps"
+  },
+  {
+   "id": "saqf",
+   "ar": "سَقْفٌ",
+   "translit": "saqfun",
+   "fr": "plafond, toit",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُقُفٌ",
+   "lemme": "saqof",
+   "exemple": {
+    "ar": "السَّقْفُ جَدِيدٌ.",
+    "fr": "Le toit est neuf."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "sarir",
+   "ar": "سَرِيرٌ",
+   "translit": "sarīrun",
+   "fr": "lit",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "srr",
+   "exemple": {
+    "ar": "فِي الْغُرْفَةِ سَرِيرَانِ.",
+    "fr": "Il y a deux lits dans la chambre."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "jidar",
+   "ar": "جِدَارٌ",
+   "translit": "ǧidārun",
+   "fr": "mur",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "جُدُرٌ",
+   "lemme": "jidaAr",
+   "exemple": {
+    "ar": "الْجِدَارُ قَدِيمٌ.",
+    "fr": "Le mur est ancien."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "wisada",
+   "ar": "وِسَادَةٌ",
+   "translit": "wisādatun",
+   "fr": "coussin",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "وَسَائِدُ",
+   "exemple": {
+    "ar": "الْوِسَادَتَانِ جَدِيدَتَانِ.",
+    "fr": "Les deux coussins sont neufs."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "matbakh",
+   "ar": "مَطْبَخٌ",
+   "translit": "maṭbaḫun",
+   "fr": "cuisine (la pièce)",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَطَابِخُ",
+   "exemple": {
+    "ar": "الْمَطْبَخُ صَغِيرٌ.",
+    "fr": "La cuisine est petite."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "khabbaz",
+   "ar": "خَبَّازٌ",
+   "translit": "ḫabbāzun",
+   "fr": "boulanger",
+   "nature": "nom",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "خَبَّازُونَ",
+   "formes": [
+    "خَبَّازَةٌ"
+   ],
+   "racine": "xbz",
+   "exemple": {
+    "ar": "الْخَبَّازُونَ فِي السُّوقِ.",
+    "fr": "Les boulangers sont au marché."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "khayyat",
+   "ar": "خَيَّاطٌ",
+   "translit": "ḫayyāṭun",
+   "fr": "tailleur",
+   "nature": "nom",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "خَيَّاطُونَ",
+   "formes": [
+    "خَيَّاطَةٌ"
+   ],
+   "racine": "xyT",
+   "exemple": {
+    "ar": "التَّاجِرُ مَعَ الْخَيَّاطِينَ.",
+    "fr": "Le marchand est avec les tailleurs."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "haddad",
+   "ar": "حَدَّادٌ",
+   "translit": "ḥaddādun",
+   "fr": "forgeron",
+   "nature": "nom",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "حَدَّادُونَ",
+   "racine": "Hdd",
+   "exemple": {
+    "ar": "الْحَدَّادُونَ مَشْغُولُونَ.",
+    "fr": "Les forgerons sont occupés."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "najjar",
+   "ar": "نَجَّارٌ",
+   "translit": "naǧǧārun",
+   "fr": "menuisier",
+   "nature": "nom",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "نَجَّارُونَ",
+   "exemple": {
+    "ar": "هُمْ نَجَّارُونَ.",
+    "fr": "Ce sont des menuisiers."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "farih",
+   "ar": "فَرِحٌ",
+   "translit": "fariḥun",
+   "fr": "joyeux",
+   "nature": "adjectif",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "فَرِحَةٌ",
+    "فَرِحُونَ",
+    "فَرِحَاتٌ"
+   ],
+   "lemme": "fariH",
+   "exemple": {
+    "ar": "الْبَنَاتُ فَرِحَاتٌ.",
+    "fr": "Les filles sont joyeuses."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "mashghul",
+   "ar": "مَشْغُولٌ",
+   "translit": "mašġūlun",
+   "fr": "occupé",
+   "nature": "adjectif",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "مَشْغُولَةٌ",
+    "مَشْغُولُونَ",
+    "مَشْغُولَاتٌ"
+   ],
+   "racine": "$gl",
+   "exemple": {
+    "ar": "الْمُعَلِّمَاتُ مَشْغُولَاتٌ.",
+    "fr": "Les enseignantes sont occupées."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "haula",
+   "ar": "هَٰؤُلَاءِ",
+   "translit": "hāʾulāʾi",
+   "fr": "ceux-ci, celles-ci (personnes)",
+   "nature": "demonstratif",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "هَٰؤُلَاءِ خَبَّازُونَ.",
+    "fr": "Ce sont des boulangers."
+   }
+  },
+  {
+   "id": "wahid",
+   "ar": "وَاحِدٌ",
+   "translit": "wāḥidun",
+   "fr": "un",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "wa`Hid",
+   "formes": [
+    "وَاحِدَةٌ"
+   ],
+   "exemple": {
+    "ar": "لِي قَلَمٌ وَاحِدٌ.",
+    "fr": "J'ai un seul calame."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "ithnan",
+   "ar": "اثْنَانِ",
+   "translit": "iṯnāni",
+   "fr": "deux",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "{vonayon",
+   "formes": [
+    "اثْنَتَانِ"
+   ],
+   "exemple": {
+    "ar": "فِي الْغُرْفَةِ سَرِيرَانِ اثْنَانِ.",
+    "fr": "Il y a bien deux lits dans la chambre."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "thalatha",
+   "ar": "ثَلَاثَةٌ",
+   "translit": "ṯalāṯatun",
+   "fr": "trois",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "vala`vap",
+   "exemple": {
+    "ar": "لِي ثَلَاثَةُ أَقْلَامٍ.",
+    "fr": "J'ai trois calames."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "arbaa",
+   "ar": "أَرْبَعَةٌ",
+   "translit": "arbaʿatun",
+   "fr": "quatre",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": ">arobaEap",
+   "theme": "nombres"
+  },
+  {
+   "id": "khamsa",
+   "ar": "خَمْسَةٌ",
+   "translit": "ḫamsatun",
+   "fr": "cinq",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "xamosap",
+   "exemple": {
+    "ar": "فِي السُّوقِ خَمْسَةُ تُجَّارٍ.",
+    "fr": "Il y a cinq marchands au marché."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "sitta",
+   "ar": "سِتَّةٌ",
+   "translit": "sittatun",
+   "fr": "six",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "sit~ap",
+   "theme": "nombres"
+  },
+  {
+   "id": "saba",
+   "ar": "سَبْعَةٌ",
+   "translit": "sabʿatun",
+   "fr": "sept",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "saboEap",
+   "theme": "nombres"
+  },
+  {
+   "id": "thamaniya",
+   "ar": "ثَمَانِيَةٌ",
+   "translit": "ṯamāniyatun",
+   "fr": "huit",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "vama`niyap",
+   "theme": "nombres"
+  },
+  {
+   "id": "tisa",
+   "ar": "تِسْعَةٌ",
+   "translit": "tisʿatun",
+   "fr": "neuf",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "tisoEap",
+   "theme": "nombres"
+  },
+  {
+   "id": "ashara",
+   "ar": "عَشَرَةٌ",
+   "translit": "ʿašaratun",
+   "fr": "dix",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "Ea$arap",
+   "exemple": {
+    "ar": "فِي الصُّنْدُوقِ عَشَرَةُ أَكْيَاسٍ.",
+    "fr": "Il y a dix bourses dans le coffre."
+   },
+   "theme": "nombres"
+  },
+  {
    "id": "thaman",
    "ar": "ثَمَنٌ",
    "translit": "ṯamanun",
@@ -1155,138 +1518,6 @@
    "theme": "maison"
   },
   {
-   "id": "ala",
-   "ar": "عَلَى",
-   "translit": "ʿalā",
-   "fr": "sur",
-   "nature": "particule",
-   "lecon": "fondations-11",
-   "source_sens": "rédigé par IA",
-   "lemme": "EalaY`",
-   "exemple": {
-    "ar": "الْكِتَابُ عَلَى الْكُرْسِيِّ.",
-    "fr": "Le livre est sur la chaise."
-   }
-  },
-  {
-   "id": "suq",
-   "ar": "سُوقٌ",
-   "translit": "sūqun",
-   "fr": "marché",
-   "nature": "nom",
-   "lecon": "fondations-11",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "pluriel": "أَسْوَاقٌ",
-   "racine": "swq",
-   "remarque": "parfois masculin en arabe classique",
-   "exemple": {
-    "ar": "التَّاجِرُ فِي السُّوقِ.",
-    "fr": "Le marchand est au marché."
-   },
-   "theme": "marché"
-  },
-  {
-   "id": "bab",
-   "ar": "بَابٌ",
-   "translit": "bābun",
-   "fr": "porte",
-   "nature": "nom",
-   "lecon": "fondations-11",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "أَبْوَابٌ",
-   "lemme": "baAb",
-   "exemple": {
-    "ar": "الْبَابُ كَبِيرٌ.",
-    "fr": "La porte est grande."
-   },
-   "theme": "maison"
-  },
-  {
-   "id": "kitab",
-   "ar": "كِتَابٌ",
-   "translit": "kitābun",
-   "fr": "livre ; écrit",
-   "nature": "nom",
-   "lecon": "fondations-11",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "كُتُبٌ",
-   "lemme": "kita`b",
-   "exemple": {
-    "ar": "الْكِتَابُ قَدِيمٌ.",
-    "fr": "Le livre est ancien."
-   },
-   "theme": "savoir"
-  },
-  {
-   "id": "khubz",
-   "ar": "خُبْزٌ",
-   "translit": "ḫubzun",
-   "fr": "pain",
-   "nature": "nom",
-   "lecon": "fondations-11",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "xuboz",
-   "exemple": {
-    "ar": "الْخُبْزُ فِي السَّلَّةِ.",
-    "fr": "Le pain est dans le panier."
-   },
-   "theme": "nourriture"
-  },
-  {
-   "id": "zayt",
-   "ar": "زَيْتٌ",
-   "translit": "zaytun",
-   "fr": "huile",
-   "nature": "nom",
-   "lecon": "fondations-11",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "zayot",
-   "exemple": {
-    "ar": "الزَّيْتُ فِي الْبَيْتِ.",
-    "fr": "L'huile est dans la maison."
-   },
-   "theme": "nourriture"
-  },
-  {
-   "id": "lahm",
-   "ar": "لَحْمٌ",
-   "translit": "laḥmun",
-   "fr": "viande",
-   "nature": "nom",
-   "lecon": "fondations-11",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "لُحُومٌ",
-   "lemme": "laHom",
-   "exemple": {
-    "ar": "اللَّحْمُ فِي الْخَيْمَةِ.",
-    "fr": "La viande est dans la tente."
-   },
-   "theme": "nourriture"
-  },
-  {
-   "id": "salla",
-   "ar": "سَلَّةٌ",
-   "translit": "sallatun",
-   "fr": "panier",
-   "nature": "nom",
-   "lecon": "fondations-11",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "pluriel": "سِلَالٌ",
-   "racine": "sll",
-   "exemple": {
-    "ar": "السَّلَّةُ صَغِيرَةٌ.",
-    "fr": "Le panier est petit."
-   },
-   "theme": "maison"
-  },
-  {
    "id": "nassaj",
    "ar": "نَسَّاجٌ",
    "translit": "nassāǧun",
@@ -1456,238 +1687,12 @@
    "genre": "f",
    "pluriel": "قِطَعٌ",
    "racine": "qTE",
+   "remarque": "قِطْعَةُ حَرِيرٍ : « un morceau de soie », le second nom peut être indéfini",
    "exemple": {
     "ar": "فِي الصُّنْدُوقِ قِطْعَةُ حَرِيرٍ.",
     "fr": "Dans le coffre, il y a un morceau de soie."
    },
    "theme": "marché"
-  },
-  {
-   "id": "yad",
-   "ar": "يَدٌ",
-   "translit": "yadun",
-   "fr": "main",
-   "nature": "nom",
-   "lecon": "fondations-16",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "pluriel": "أَيْدٍ",
-   "lemme": "yad",
-   "exemple": {
-    "ar": "الْيَدُ صَغِيرَةٌ.",
-    "fr": "La main est petite."
-   },
-   "theme": "corps"
-  },
-  {
-   "id": "saqf",
-   "ar": "سَقْفٌ",
-   "translit": "saqfun",
-   "fr": "plafond, toit",
-   "nature": "nom",
-   "lecon": "fondations-16",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "سُقُفٌ",
-   "lemme": "saqof",
-   "exemple": {
-    "ar": "السَّقْفُ جَدِيدٌ.",
-    "fr": "Le toit est neuf."
-   },
-   "theme": "maison"
-  },
-  {
-   "id": "sarir",
-   "ar": "سَرِيرٌ",
-   "translit": "sarīrun",
-   "fr": "lit",
-   "nature": "nom",
-   "lecon": "fondations-16",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "srr",
-   "exemple": {
-    "ar": "فِي الْغُرْفَةِ سَرِيرَانِ.",
-    "fr": "Il y a deux lits dans la chambre."
-   },
-   "theme": "maison"
-  },
-  {
-   "id": "jidar",
-   "ar": "جِدَارٌ",
-   "translit": "ǧidārun",
-   "fr": "mur",
-   "nature": "nom",
-   "lecon": "fondations-16",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "جُدُرٌ",
-   "lemme": "jidaAr",
-   "exemple": {
-    "ar": "الْجِدَارُ قَدِيمٌ.",
-    "fr": "Le mur est ancien."
-   },
-   "theme": "maison"
-  },
-  {
-   "id": "wisada",
-   "ar": "وِسَادَةٌ",
-   "translit": "wisādatun",
-   "fr": "coussin",
-   "nature": "nom",
-   "lecon": "fondations-16",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "pluriel": "وَسَائِدُ",
-   "exemple": {
-    "ar": "الْوِسَادَتَانِ جَدِيدَتَانِ.",
-    "fr": "Les deux coussins sont neufs."
-   },
-   "theme": "maison"
-  },
-  {
-   "id": "matbakh",
-   "ar": "مَطْبَخٌ",
-   "translit": "maṭbaḫun",
-   "fr": "cuisine (la pièce)",
-   "nature": "nom",
-   "lecon": "fondations-16",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "مَطَابِخُ",
-   "exemple": {
-    "ar": "الْمَطْبَخُ صَغِيرٌ.",
-    "fr": "La cuisine est petite."
-   },
-   "theme": "maison"
-  },
-  {
-   "id": "khabbaz",
-   "ar": "خَبَّازٌ",
-   "translit": "ḫabbāzun",
-   "fr": "boulanger",
-   "nature": "nom",
-   "lecon": "fondations-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "خَبَّازُونَ",
-   "formes": [
-    "خَبَّازَةٌ"
-   ],
-   "racine": "xbz",
-   "exemple": {
-    "ar": "الْخَبَّازُونَ فِي السُّوقِ.",
-    "fr": "Les boulangers sont au marché."
-   },
-   "theme": "travail"
-  },
-  {
-   "id": "khayyat",
-   "ar": "خَيَّاطٌ",
-   "translit": "ḫayyāṭun",
-   "fr": "tailleur",
-   "nature": "nom",
-   "lecon": "fondations-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "خَيَّاطُونَ",
-   "formes": [
-    "خَيَّاطَةٌ"
-   ],
-   "racine": "xyT",
-   "exemple": {
-    "ar": "التَّاجِرُ مَعَ الْخَيَّاطِينَ.",
-    "fr": "Le marchand est avec les tailleurs."
-   },
-   "theme": "travail"
-  },
-  {
-   "id": "haddad",
-   "ar": "حَدَّادٌ",
-   "translit": "ḥaddādun",
-   "fr": "forgeron",
-   "nature": "nom",
-   "lecon": "fondations-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "حَدَّادُونَ",
-   "racine": "Hdd",
-   "exemple": {
-    "ar": "الْحَدَّادُونَ مَشْغُولُونَ.",
-    "fr": "Les forgerons sont occupés."
-   },
-   "theme": "travail"
-  },
-  {
-   "id": "najjar",
-   "ar": "نَجَّارٌ",
-   "translit": "naǧǧārun",
-   "fr": "menuisier",
-   "nature": "nom",
-   "lecon": "fondations-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "pluriel": "نَجَّارُونَ",
-   "exemple": {
-    "ar": "هُمْ نَجَّارُونَ.",
-    "fr": "Ce sont des menuisiers."
-   },
-   "theme": "travail"
-  },
-  {
-   "id": "farih",
-   "ar": "فَرِحٌ",
-   "translit": "fariḥun",
-   "fr": "joyeux",
-   "nature": "adjectif",
-   "lecon": "fondations-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "formes": [
-    "فَرِحَةٌ",
-    "فَرِحُونَ",
-    "فَرِحَاتٌ"
-   ],
-   "lemme": "fariH",
-   "exemple": {
-    "ar": "الْبَنَاتُ فَرِحَاتٌ.",
-    "fr": "Les filles sont joyeuses."
-   },
-   "theme": "personnes"
-  },
-  {
-   "id": "mashghul",
-   "ar": "مَشْغُولٌ",
-   "translit": "mašġūlun",
-   "fr": "occupé",
-   "nature": "adjectif",
-   "lecon": "fondations-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "formes": [
-    "مَشْغُولَةٌ",
-    "مَشْغُولُونَ",
-    "مَشْغُولَاتٌ"
-   ],
-   "racine": "$gl",
-   "exemple": {
-    "ar": "الْمُعَلِّمَاتُ مَشْغُولَاتٌ.",
-    "fr": "Les enseignantes sont occupées."
-   },
-   "theme": "personnes"
-  },
-  {
-   "id": "haula",
-   "ar": "هَٰؤُلَاءِ",
-   "translit": "hāʾulāʾi",
-   "fr": "ceux-ci, celles-ci (personnes)",
-   "nature": "demonstratif",
-   "lecon": "fondations-17",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "هَٰؤُلَاءِ خَبَّازُونَ.",
-    "fr": "Ce sont des boulangers."
-   }
   },
   {
    "id": "dayf",
@@ -1789,142 +1794,6 @@
     "fr": "Les étoiles sont nombreuses."
    },
    "theme": "nature"
-  },
-  {
-   "id": "wahid",
-   "ar": "وَاحِدٌ",
-   "translit": "wāḥidun",
-   "fr": "un",
-   "nature": "nombre",
-   "lecon": "fondations-19",
-   "source_sens": "rédigé par IA",
-   "lemme": "wa`Hid",
-   "formes": [
-    "وَاحِدَةٌ"
-   ],
-   "exemple": {
-    "ar": "لِي قَلَمٌ وَاحِدٌ.",
-    "fr": "J'ai un seul calame."
-   },
-   "theme": "nombres"
-  },
-  {
-   "id": "ithnan",
-   "ar": "اثْنَانِ",
-   "translit": "iṯnāni",
-   "fr": "deux",
-   "nature": "nombre",
-   "lecon": "fondations-19",
-   "source_sens": "rédigé par IA",
-   "lemme": "{vonayon",
-   "formes": [
-    "اثْنَتَانِ"
-   ],
-   "exemple": {
-    "ar": "فِي الْغُرْفَةِ سَرِيرَانِ اثْنَانِ.",
-    "fr": "Il y a bien deux lits dans la chambre."
-   },
-   "theme": "nombres"
-  },
-  {
-   "id": "thalatha",
-   "ar": "ثَلَاثَةٌ",
-   "translit": "ṯalāṯatun",
-   "fr": "trois",
-   "nature": "nombre",
-   "lecon": "fondations-19",
-   "source_sens": "rédigé par IA",
-   "lemme": "vala`vap",
-   "exemple": {
-    "ar": "لِي ثَلَاثَةُ أَقْلَامٍ.",
-    "fr": "J'ai trois calames."
-   },
-   "theme": "nombres"
-  },
-  {
-   "id": "arbaa",
-   "ar": "أَرْبَعَةٌ",
-   "translit": "arbaʿatun",
-   "fr": "quatre",
-   "nature": "nombre",
-   "lecon": "fondations-19",
-   "source_sens": "rédigé par IA",
-   "lemme": ">arobaEap",
-   "theme": "nombres"
-  },
-  {
-   "id": "khamsa",
-   "ar": "خَمْسَةٌ",
-   "translit": "ḫamsatun",
-   "fr": "cinq",
-   "nature": "nombre",
-   "lecon": "fondations-19",
-   "source_sens": "rédigé par IA",
-   "lemme": "xamosap",
-   "exemple": {
-    "ar": "فِي السُّوقِ خَمْسَةُ تُجَّارٍ.",
-    "fr": "Il y a cinq marchands au marché."
-   },
-   "theme": "nombres"
-  },
-  {
-   "id": "sitta",
-   "ar": "سِتَّةٌ",
-   "translit": "sittatun",
-   "fr": "six",
-   "nature": "nombre",
-   "lecon": "fondations-19",
-   "source_sens": "rédigé par IA",
-   "lemme": "sit~ap",
-   "theme": "nombres"
-  },
-  {
-   "id": "saba",
-   "ar": "سَبْعَةٌ",
-   "translit": "sabʿatun",
-   "fr": "sept",
-   "nature": "nombre",
-   "lecon": "fondations-19",
-   "source_sens": "rédigé par IA",
-   "lemme": "saboEap",
-   "theme": "nombres"
-  },
-  {
-   "id": "thamaniya",
-   "ar": "ثَمَانِيَةٌ",
-   "translit": "ṯamāniyatun",
-   "fr": "huit",
-   "nature": "nombre",
-   "lecon": "fondations-19",
-   "source_sens": "rédigé par IA",
-   "lemme": "vama`niyap",
-   "theme": "nombres"
-  },
-  {
-   "id": "tisa",
-   "ar": "تِسْعَةٌ",
-   "translit": "tisʿatun",
-   "fr": "neuf",
-   "nature": "nombre",
-   "lecon": "fondations-19",
-   "source_sens": "rédigé par IA",
-   "lemme": "tisoEap",
-   "theme": "nombres"
-  },
-  {
-   "id": "ashara",
-   "ar": "عَشَرَةٌ",
-   "translit": "ʿašaratun",
-   "fr": "dix",
-   "nature": "nombre",
-   "lecon": "fondations-19",
-   "source_sens": "rédigé par IA",
-   "lemme": "Ea$arap",
-   "exemple": {
-    "ar": "فِي الصُّنْدُوقِ عَشَرَةُ أَكْيَاسٍ.",
-    "fr": "Il y a dix bourses dans le coffre."
-   },
-   "theme": "nombres"
   },
   {
    "id": "laysa",
@@ -2033,6 +1902,138 @@
     "fr": "La bourse est légère."
    },
    "theme": "qualités"
+  },
+  {
+   "id": "ala",
+   "ar": "عَلَى",
+   "translit": "ʿalā",
+   "fr": "sur",
+   "nature": "particule",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "lemme": "EalaY`",
+   "exemple": {
+    "ar": "الْكِتَابُ عَلَى الْكُرْسِيِّ.",
+    "fr": "Le livre est sur la chaise."
+   }
+  },
+  {
+   "id": "suq",
+   "ar": "سُوقٌ",
+   "translit": "sūqun",
+   "fr": "marché",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "أَسْوَاقٌ",
+   "racine": "swq",
+   "remarque": "parfois masculin en arabe classique",
+   "exemple": {
+    "ar": "التَّاجِرُ فِي السُّوقِ.",
+    "fr": "Le marchand est au marché."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "bab",
+   "ar": "بَابٌ",
+   "translit": "bābun",
+   "fr": "porte",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَبْوَابٌ",
+   "lemme": "baAb",
+   "exemple": {
+    "ar": "الْبَابُ كَبِيرٌ.",
+    "fr": "La porte est grande."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "kitab",
+   "ar": "كِتَابٌ",
+   "translit": "kitābun",
+   "fr": "livre ; écrit",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "كُتُبٌ",
+   "lemme": "kita`b",
+   "exemple": {
+    "ar": "الْكِتَابُ قَدِيمٌ.",
+    "fr": "Le livre est ancien."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "khubz",
+   "ar": "خُبْزٌ",
+   "translit": "ḫubzun",
+   "fr": "pain",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "xuboz",
+   "exemple": {
+    "ar": "الْخُبْزُ فِي السَّلَّةِ.",
+    "fr": "Le pain est dans le panier."
+   },
+   "theme": "nourriture"
+  },
+  {
+   "id": "zayt",
+   "ar": "زَيْتٌ",
+   "translit": "zaytun",
+   "fr": "huile",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "zayot",
+   "exemple": {
+    "ar": "الزَّيْتُ فِي الْبَيْتِ.",
+    "fr": "L'huile est dans la maison."
+   },
+   "theme": "nourriture"
+  },
+  {
+   "id": "lahm",
+   "ar": "لَحْمٌ",
+   "translit": "laḥmun",
+   "fr": "viande",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "لُحُومٌ",
+   "lemme": "laHom",
+   "exemple": {
+    "ar": "اللَّحْمُ فِي الْخَيْمَةِ.",
+    "fr": "La viande est dans la tente."
+   },
+   "theme": "nourriture"
+  },
+  {
+   "id": "salla",
+   "ar": "سَلَّةٌ",
+   "translit": "sallatun",
+   "fr": "panier",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "سِلَالٌ",
+   "racine": "sll",
+   "exemple": {
+    "ar": "السَّلَّةُ صَغِيرَةٌ.",
+    "fr": "Le panier est petit."
+   },
+   "theme": "maison"
   }
  ]
 }

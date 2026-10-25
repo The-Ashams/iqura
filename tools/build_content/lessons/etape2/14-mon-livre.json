@@ -110,7 +110,7 @@
           "en fer"
         ],
         "reponse": 0,
-        "explication": "ثَوْبِي مِنَ الصُّوفِ : en laine."
+        "explication": "وَهُوَ مِنَ الصُّوفِ : en laine."
       }
     },
     {
@@ -258,11 +258,11 @@
         },
         {
           "type": "qcm",
-          "consigne": "Pourquoi ne dit-on pas « الثَّوْبِي » ?",
+          "consigne": "Avec un pronom collé (ثَوْبِي), le nom garde-t-il l'article ?",
           "choix": [
-            "avec un pronom collé, le nom perd l'article",
-            "ثَوْبٌ est féminin",
-            "l'article vient à la fin"
+            "non, il le perd",
+            "oui, toujours",
+            "seulement au féminin"
           ],
           "reponse": 0,
           "explication": "Le pronom collé rend le nom défini : pas d'article."
@@ -303,7 +303,7 @@
     {
       "type": "lecture",
       "titre": "Dans l'échoppe",
-      "texte": "Le tisserand montre son travail ; il parle à Bāsim et à Salmā. Lis ; touche un mot pour voir son sens.",
+      "texte": "Le tisserand montre son travail à Bāsim, et lui parle de Salmā. Lis ; touche un mot pour voir son sens.",
       "phrases": [
         "النَّسَّاجُ فِي السُّوقِ، وَصُوفُهُ كَثِيرٌ.",
         "هَٰذَا قَمِيصٌ مِنَ الْحَرِيرِ.",

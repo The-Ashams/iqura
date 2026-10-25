@@ -314,3 +314,24 @@ Plan du marché prêt : 68 mots nouveaux (5 à 10 par leçon), des phrases sans 
 4. **Écoute** : on n'oppose jamais -un et -in sur un mot isolé. L'exercice de 2.12 porte sur فِضَّةٌ / حَدِيدٌ / ذَهَبٌ.
 5. **فَوْقَ** = « au-dessus de » seulement. Remarque sur la fiche : « عَلَى : posé sur ; فَوْقَ : plus haut que ».
 6. **صُنْدُوقٌ** est gardé avec une ḍamma, sans variante affichée.
+
+## Doutes des relectures de 2.14 à 2.20 (25/10/2026)
+
+7. **2.14** : la question de sens sur ثَوْبُهُمْ, posée après que le sens est donné, relève de la reconnaissance (compatible avec la décision n° 5). Aucune de ces formes n'entre dans un exercice à compléter, à ordonner ou à traduire avant d'être enseignée.
+8. **2.16** : la chute du ن du duel dans une iḍāfa n'est pas montrée ; elle sera enseignée avec celle du pluriel en -ūna, quand l'iḍāfa sera reprise.
+9. **2.18** : distracteur ذَٰلِكَ confirmé (هَٰؤُلَاءِ se rencontre pour des choses en classique) ; traduction « Voici des voisins, et voici des invités. »
+10. **2.19** : un nombre peut suivre le nom comme épithète (كُتُبٌ ثَلَاثَةٌ) ; les distracteurs sont au mauvais cas ou au singulier, faux sans discussion.
+11. **2.20** : la phrase « On ne nie pas une phrase nominale avec لَا » reste retirée ; explication ajoutée : « Ici, لَا seul voudrait dire « non » ».
+
+## Liste de fin de niveau (Élémentaire 2, 10 points au plus)
+
+1. Après فِي، عَلَى، مِنْ, le nom finit par « i » ; مِنْ devient مِنَ devant « al- » ; إِلَى seulement dans « إِلَى أَيْنَ؟ — إِلَى السُّوقِ. », en attendant les verbes.
+2. Les trois cas sont nommés en 2.12 ; la fin en « a » reste dans un tableau jusqu'à لَيْسَ ; les mots sans « n » final (دَرَاهِمُ) ne viennent jamais après une préposition dans ce niveau.
+3. Jamais d'adjectif collé derrière « la porte de la maison » ni derrière « mon/ton… » ; seulement « … est grand ».
+4. On s'exerce avec « mon, ton, son, notre » ; « votre, leur » et les formes pour deux sont montrés pour être reconnus ; « père » et « frère » ne prennent pas encore ces terminaisons.
+5. Le « n » du duel qui tombe (« les deux portes de la maison ») n'est pas encore montré.
+6. Les personnes s'accordent au pluriel ; les choses et les animaux au féminin singulier (« les livres sont neufs » : الْكُتُبُ جَدِيدَةٌ).
+7. Compter jusqu'à 10 avec une règle simplifiée (noms masculins) ; le féminin est seulement montré ; l'argent se compte jusqu'à 2.
+8. لَيْسَ est présenté comme « un verbe un peu spécial » ; dans la leçon le sujet vient d'abord, l'autre ordre est signalé comme juste.
+9. La fréquence dans le Coran n'est affichée que si le mot du Corpus a le même sens ; sinon, racine seule. « Fenêtre », « miel » et « sel » sont écartés pour l'instant ; « marché » n'entre dans aucun exercice d'accord.
+10. Plusieurs phrases trop proches de versets ont été remplacées (« ceci est un livre neuf », « ceci est de l'eau », « et ils sont joyeux ») ; le contrôle automatique repère maintenant aussi les paires pronom + mot.

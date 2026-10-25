@@ -50,3 +50,10 @@ Aucun point bloquant.
 ## Doutes soumis au conseiller
 
 Tranchés par le conseiller : `decisions-elementaire-2.md`, « Doutes des relectures de 2.11 à 2.13 » (6 décisions, appliquées).
+
+## Deuxième passage (25/10/2026) : verdict « À corriger » (2 Importants, corrigés)
+
+1. **2.13, lecture** : « Où est la clé du coffre ? » avait encore deux réponses (le coffre est sous la chaise). Le distracteur devient « au-dessus du coffre ».
+2. **2.14, lecture** : la consigne disait que le tisserand parlait à Salmā, ce qui aurait demandé إِبْرَتُكِ. Elle devient « Le tisserand montre son travail à Bāsim, et lui parle de Salmā ».
+
+Mineurs corrigés : renvoi « leçon 12 de la région 1 » (2.11) ; « Il est sujet : nominatif » (2.12) ; explication du dialogue de 2.14 ; « C'est moi qui ai le fil » et lecture de 2.15 (« Bāsim raconte », وَعِنْدَهُ قِطْعَةُ صُوفٍ) ; remarque sur قِطْعَةُ حَرِيرٍ (second nom indéfini). Doute faible levé par prudence : les formes fausses الثَّوْبِي et فِيهُ ne sont plus affichées (questions reformulées, distracteurs justes d'une autre personne).

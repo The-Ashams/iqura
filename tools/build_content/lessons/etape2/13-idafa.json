@@ -329,7 +329,7 @@
           "consigne": "Où est la clé du coffre ?",
           "choix": [
             "dans la bourse",
-            "sous la chaise",
+            "au-dessus du coffre",
             "chez le vendeur"
           ],
           "reponse": 0,

@@ -52,3 +52,9 @@ Note : la base de contenu actuelle ne contient aucun texte du Coran (tables : ra
 ## Doutes soumis au conseiller
 
 - 2.16 : faut-il montrer en aperçu la chute du ن du duel dans une iḍāfa, avec un exemple sans يد ? En attendant : non montré.
+
+## Deuxième passage (25/10/2026) : verdict « Validé avec doutes »
+
+- Bloquants et importants : aucun. Toutes les corrections du premier passage vérifiées.
+- Mineur corrigé : traduction de 2.18, « Voici des voisins, et voici des invités. » (décision n° 9 du conseiller).
+- Doute : l'exemple de la fiche « eau » (« الْمَاءُ فِي الْبَيْتِ. ») emploie la fin en -i avant la leçon 2.11 ; gardé, car فِي et بَيْت sont connus depuis la région 1 et l'exemple d'une fiche n'est pas un exercice.
