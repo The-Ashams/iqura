@@ -88,8 +88,8 @@
         },
         {
           "qui": "samir_oasis",
-          "ar": "احْمِلِ السَّلَّةَ إِلَى الْخَيْمَةِ، ثُمَّ ازْرَعْ نَخْلَةً فِي الْحَدِيقَةِ.",
-          "fr": "Porte le panier jusqu'à la tente, puis plante un palmier dans le jardin."
+          "ar": "احْمِلِ السَّلَّةَ إِلَى الْخَيْمَةِ، ثُمَّ ازْرَعْ أَزْهَارًا فِي الْحَدِيقَةِ.",
+          "fr": "Porte le panier jusqu'à la tente, puis plante des fleurs dans le jardin."
         },
         {
           "qui": "basim",
@@ -101,12 +101,12 @@
         "type": "qcm",
         "consigne": "Que doit planter Bāsim ?",
         "choix": [
+          "des fleurs",
           "un palmier",
-          "une fleur",
-          "des graines"
+          "des fruits"
         ],
         "reponse": 0,
-        "explication": "ازْرَعْ نَخْلَةً : un palmier."
+        "explication": "ازْرَعْ أَزْهَارًا : des fleurs."
       }
     },
     {
@@ -203,7 +203,7 @@
         "اكْتُبَا",
         "اكْتُبْنَ",
         "ثُمَّ ازْرَعْ",
-        "يَا بَاسِمُ، اجْلِسْ"
+        "ثُمَّ اجْلِسْ"
       ],
       "question": {
         "type": "qcm",
@@ -225,12 +225,12 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "زَرَعَ",
           "choix": [
-            "il a semé, il a planté",
+            "il a semé, il a planté (des graines, des fleurs)",
             "il a porté",
             "il a écouté"
           ],
           "reponse": 0,
-          "explication": "زَرَعَ veut dire « il a semé, il a planté »."
+          "explication": "زَرَعَ veut dire « il a semé, il a planté (des graines, des fleurs) »."
         },
         {
           "type": "sens",
@@ -268,8 +268,8 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Bāsim, plante un arbre ! »",
-          "ar": "يَا بَاسِمُ، … شَجَرَةً.",
+          "consigne": "Complète : « Bāsim, plante des fleurs ! »",
+          "ar": "يَا بَاسِمُ، … أَزْهَارًا.",
           "choix_ar": [
             "ازْرَعْ",
             "زَرَعَ",
@@ -344,6 +344,7 @@
       "phrases": [
         "قَالَ سَمِيرٌ: « يَا بَاسِمُ، احْمِلِ السَّلَّةَ. »",
         "« وَأَنْتِ يَا سَلْمَى، ازْرَعِي زَهْرَةً فِي الْحَدِيقَةِ. »",
+        "« وَأَنْتَ يَا رَاشِدُ، اكْتُبِ الرِّسَالَةَ. »",
         "« ثُمَّ اجْلِسُوا هُنَا. »",
         "جَلَسُوا، وَسَمِعُوا قِصَّةً جَمِيلَةً."
       ],
@@ -400,7 +401,7 @@
           "choix_ar": [
             "اكْتُبِي الرِّسَالَةَ.",
             "اكْتُبِ الرِّسَالَةَ.",
-            "تَكْتُبِينَ الرِّسَالَةَ."
+            "اكْتُبُوا الرِّسَالَةَ."
           ],
           "reponse": 0,
           "explication": "À une femme : اكْتُبِي."
@@ -418,8 +419,8 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Plantez des arbres ! » (à plusieurs)",
-          "ar": "… أَشْجَارًا.",
+          "consigne": "Complète : « Plantez des fleurs ! » (à plusieurs)",
+          "ar": "… أَزْهَارًا.",
           "choix_ar": [
             "ازْرَعُوا",
             "ازْرَعْ",

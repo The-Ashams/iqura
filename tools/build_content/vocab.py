@@ -166,6 +166,17 @@ def word_keys(word: dict) -> set[str]:
     return keys
 
 
+def known_keys(word: dict) -> set[str]:
+    """Clés servant au contrôle des mots connus. Un verbe figé (« fige » :
+    لَيْسَ, قَالَ) n'est jamais conjugué par découpage : ses formes ne sont
+    reconnues que telles quelles (préfixe « = »), pour qu'une forme fausse
+    comme قَالْتُ ne passe pas (décision du conseiller, 26/10/2026)."""
+    keys = word_keys(word)
+    if word.get("nature") == "verbe" and word.get("fige"):
+        return {"=" + k for k in keys}
+    return keys
+
+
 def tokens(text: str) -> list[str]:
     return [t for t in PUNCT.sub(" ", text).split() if quran_guard.words_of(t)]
 
@@ -174,8 +185,10 @@ def unknown(text: str, known: set[str], endings: set[str] = frozenset()) -> list
     """Mots de `text` qui ne se ramènent à aucune forme connue (`endings` :
     groupes de terminaisons déjà enseignés)."""
     prefixes = {p for p in PREFIXES if p in known}
+    nouns = {g for g in endings if g in ENDINGS}
     return [t for t in tokens(text)
-            if not any(c in known for c in candidates(t, prefixes, endings))]
+            if not any(c in known for c in candidates(t, prefixes, endings))
+            and not any("=" + c in known for c in candidates(t, prefixes, nouns))]
 
 
 def validate(words: list[dict], con: sqlite3.Connection, lesson_ids: set[str],

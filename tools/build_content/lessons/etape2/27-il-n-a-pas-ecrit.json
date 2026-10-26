@@ -222,7 +222,7 @@
             "خَرَجَ"
           ],
           "reponse": 0,
-          "explication": "Passé nié : مَا + passé."
+          "explication": "Pour dire simplement « il n'est pas sorti », on met مَا devant le passé : مَا خَرَجَ."
         },
         {
           "type": "traduire",
@@ -387,8 +387,8 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Je n'ai pas écrit la lettre. »",
-          "ar": "لَمْ … الرِّسَالَةَ.",
+          "consigne": "Complète : « Je n'ai pas écrit de lettre. »",
+          "ar": "لَمْ … رِسَالَةً.",
           "choix_ar": [
             "أَكْتُبْ",
             "كَتَبْتُ",
@@ -487,7 +487,7 @@
           "type": "qcm",
           "consigne": "Après لَمْ, l'inaccompli…",
           "choix": [
-            "prend un sukūn, et le sens est passé",
+            "en général, prend un sukūn, et le sens est passé",
             "garde -u, et le sens est futur",
             "devient un passé"
           ],

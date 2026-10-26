@@ -2691,11 +2691,11 @@
    "id": "ma_nafi",
    "ar": "مَا",
    "translit": "mā",
-   "fr": "ne… pas (devant un passé)",
+   "fr": "ne… pas (ici : devant un passé)",
    "nature": "particule",
    "lecon": "fondations-27",
    "source_sens": "rédigé par IA",
-   "remarque": "s'écrit comme مَا « quoi ? » : le ؟ fait la différence",
+   "remarque": "s'écrit comme مَا « quoi ? » : le ؟ fait la différence ; nie aussi le présent en arabe classique (vu plus tard)",
    "exemple": {
     "ar": "مَا فَهِمْتُ السُّؤَالَ.",
     "fr": "Je n'ai pas compris la question."
@@ -2710,7 +2710,7 @@
    "lecon": "fondations-27",
    "source_sens": "rédigé par IA",
    "lemme": "laA",
-   "remarque": "s'écrit comme لَا « non »",
+   "remarque": "s'écrit comme لَا « non ». Selon le contexte, لَا يَرْجِعُ peut aussi vouloir dire « il ne reviendra pas » ; on ne met jamais سَـ après لَا",
    "exemple": {
     "ar": "لَا أَعْرِفُ الْجَوَابَ.",
     "fr": "Je ne connais pas la réponse."
@@ -2887,7 +2887,8 @@
     "قَالَتْ"
    ],
    "lemme": "qaAla",
-   "remarque": "employé ici seulement sous la forme قَالَ / قَالَتْ, suivi du nom de celui qui parle ; le reste de ce verbe viendra plus tard",
+   "fige": true,
+   "remarque": "employé ici seulement sous la forme قَالَ / قَالَتْ, suivi du nom de celui qui parle ; les autres formes de ce verbe changent de voyelle au milieu : elles viendront en région 3",
    "exemple": {
     "ar": "قَالَتْ سَلْمَى: « الْحَدِيقَةُ جَمِيلَةٌ. »",
     "fr": "Salmā a dit : « Le jardin est beau. »"
@@ -2927,16 +2928,17 @@
    "id": "zaraa",
    "ar": "زَرَعَ",
    "translit": "zaraʿa",
-   "fr": "il a semé, il a planté",
+   "fr": "il a semé, il a planté (des graines, des fleurs)",
    "nature": "verbe",
    "lecon": "fondations-29",
    "source_sens": "rédigé par IA",
    "passe": "زَرَعَ",
    "inaccompli": "يَزْرَعُ",
    "lemme": "tazoraEu",
+   "remarque": "se dit surtout des graines et des plantes ; pour un arbre, l'arabe classique emploie d'habitude un autre verbe",
    "exemple": {
-    "ar": "زَرَعَ رَاشِدٌ نَخْلَةً.",
-    "fr": "Rāšid a planté un palmier."
+    "ar": "زَرَعَتْ سَلْمَى زَهْرَةً فِي الْحَدِيقَةِ.",
+    "fr": "Salmā a planté une fleur dans le jardin."
    },
    "theme": "nature"
   },

@@ -25,6 +25,7 @@ import sqlite3
 import unicodedata
 from dataclasses import dataclass
 
+import exams as exams_mod
 import fondations
 import mini_donjon
 import vocab
@@ -75,6 +76,7 @@ class LessonData:
     letters: dict
     lessons: list[dict]
     words: list[dict] | None = None
+    exams: list[dict] | None = None
 
 
 def load(base: str = LESSONS_DIR) -> LessonData:
@@ -86,7 +88,7 @@ def load(base: str = LESSONS_DIR) -> LessonData:
             lesson = json.load(f)
         lesson["_file"] = os.path.relpath(path, base)
         lessons.append(lesson)
-    return LessonData(letters, lessons, vocab.load())
+    return LessonData(letters, lessons, vocab.load(), exams_mod.load())
 
 
 def validate(data: LessonData) -> None:
@@ -152,7 +154,7 @@ def validate(data: LessonData) -> None:
             if lesson["format"] == 3:
                 lesson_words = [w for w in words if w["lecon"] == lesson["id"]]
                 for w in lesson_words:
-                    known_keys |= vocab.word_keys(w)
+                    known_keys |= vocab.known_keys(w)
                 known_keys |= {vocab.key(f) for f in lesson.get("apercu", [])}
                 for g in lesson.get("terminaisons", []):
                     if g not in vocab.ENDINGS and g not in vocab.VERB_GROUPS:
@@ -270,6 +272,8 @@ def audio_clips(data: LessonData) -> dict[str, tuple[str, str]]:
                 letters = sum(1 for ch in t if "\u0621" <= ch <= "\u064A")
                 kind = "syllabe" if letters <= 2 else "mot"
             add(kind, t)
+    for kind, t in exams_mod.audio_texts(data.exams or []):
+        add(kind, t)
     return clips
 
 

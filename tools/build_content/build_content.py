@@ -16,6 +16,7 @@ Usage : python3 tools/build_content/build_content.py [--out CHEMIN]
 from __future__ import annotations
 
 import argparse
+import glob
 import hashlib
 import json
 import os
@@ -29,13 +30,14 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import buckwalter  # noqa: E402
 import lessons  # noqa: E402
 import qac  # noqa: E402
+import exams  # noqa: E402
 import quran_guard  # noqa: E402
 import vocab  # noqa: E402
 import sources  # noqa: E402
 import world  # noqa: E402
 
 # Version du schéma de la base de contenu (lue par l'application).
-CONTENT_SCHEMA_VERSION = 9
+CONTENT_SCHEMA_VERSION = 10
 # Version des données ; à augmenter à chaque changement de contenu.
 CONTENT_VERSION = "0.9.0-fondations"
 
@@ -268,15 +270,25 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
     world_data = data.get("world") or world.load()
     world.validate(world_data, con)
     world_counts = world.write(con, world_data)
+    # Examens de fin de région (à partir de la région 2).
+    exam_data = lesson_data.exams or []
+    art = {os.path.splitext(os.path.basename(f))[0]
+           for f in glob.glob(os.path.join(lessons.REPO_ROOT, "tools", "build_art", "art", "*.json"))}
+    exams.validate(exam_data, lesson_data.lessons, words,
+                   {p["id"] for r in world_data for p in r["lieux"]},
+                   {c["id"] for r in world_data for c in r["personnages"]}, art)
+    world_counts["region_exams"] = exams.write(con, exam_data)
     # Avenant n° 1 : aucune suite de mots du Coran dans le contenu.
     quran_guard.check(
-        {**lessons.arabic_texts(lesson_data), **world.arabic_texts(world_data)},
+        {**lessons.arabic_texts(lesson_data), **world.arabic_texts(world_data),
+         **exams.arabic_texts(exam_data)},
         data["quran_ngrams"],
     )
     quran_guard.check(lessons.inscriptions(lesson_data), data["quran_pairs"], quran_guard.PAIR)
     for warning in vocab.quran_pair_warnings(
             {k: v for k, v in lessons.arabic_texts(lesson_data).items()
-             if k.startswith("etape2") or k.startswith("vocab")},
+             if k.startswith("etape2") or k.startswith("vocab")}
+            | exams.arabic_texts(exam_data),
             lesson_data.words or [], data["quran_pairs"]):
         print(f"[build_content] AVERTISSEMENT : {warning}", file=sys.stderr)
     item_data = data.get("items") or world.load_items()
@@ -351,7 +363,7 @@ def main() -> int:
         build(args.out)
     except (BuildError, sources.SourceError, qac.QacError, quran_guard.QuranGuardError,
             vocab.VocabError,
-            lessons.LessonError, world.WorldError) as e:
+            lessons.LessonError, world.WorldError, exams.ExamError) as e:
         print(f"[build_content] ÉCHEC : {e}", file=sys.stderr)
         return 1
     return 0

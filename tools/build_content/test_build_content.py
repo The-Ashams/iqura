@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_content  # noqa: E402
 import buckwalter  # noqa: E402
 import copy  # noqa: E402
+import exams  # noqa: E402
 import lessons  # noqa: E402
 import qac  # noqa: E402
 import sources  # noqa: E402
@@ -96,8 +97,50 @@ class VocabTest(unittest.TestCase):
             self.assertEqual(vocab.unknown(word, verb), [word], word)
             self.assertEqual(vocab.unknown(word, verb, {group}), [], word)
         self.assertEqual(vocab.unknown("كَتَبَهُ", verb, {"passe", "pronoms"}), [])
+        # Verbe figé (قَالَ) : seules ses formes écrites sont connues.
+        qala = vocab.known_keys({"ar": "قَالَ", "nature": "verbe", "fige": True,
+                                 "passe": "قَالَ", "inaccompli": "يَقُولُ", "formes": ["قَالَتْ"]})
+        groups = set(vocab.VERB_GROUPS) | {"pronoms", "accusatif"}
+        self.assertEqual(vocab.unknown("قَالَ قَالَتْ", qala, groups), [])
+        # (قَالْتُ a le même squelette que قَالَتْ : le contrôle ne voit pas les voyelles.)
+        for wrong in ("قَالُوا", "سَيَقُولُ", "تَقُولِينَ"):
+            self.assertEqual(vocab.unknown(wrong, qala, groups), [wrong], wrong)
         # Une terminaison ne s'enlève pas d'un mot trop court.
         self.assertEqual(vocab.unknown("هِيَ", {vocab.key("هـ")}, {"pronoms"}), ["هِيَ"])
+
+
+class ExamTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.data = lessons.load()
+        regions = world.load()
+        cls.places = {p["id"] for r in regions for p in r["lieux"]}
+        cls.chars = {c["id"] for r in regions for c in r["personnages"]}
+
+    def check(self, exam):
+        exams.validate([exam], self.data.lessons, self.data.words, self.places,
+                       self.chars, {"grand_mirage"})
+
+    def test_region2_exam_is_valid(self):
+        (exam,) = self.data.exams
+        self.check(exam)
+        texts = exams.audio_texts([exam])
+        self.assertIn(("phrase", exam["lecture"]["phrases"][0]), texts)
+
+    def test_unknown_word_short_story_and_bad_answer_are_refused(self):
+        base = self.data.exams[0]
+        exam = copy.deepcopy(base)
+        exam["lecture"]["phrases"][0] += " سَيَّارَةٌ"
+        with self.assertRaisesRegex(exams.ExamError, "mots inconnus"):
+            self.check(exam)
+        exam = copy.deepcopy(base)
+        exam["lecture"]["phrases"] = exam["lecture"]["phrases"][:5]
+        with self.assertRaisesRegex(exams.ExamError, "récit de"):
+            self.check(exam)
+        exam = copy.deepcopy(base)
+        exam["ecoute"]["questions"][-1]["reponse"] = 1
+        with self.assertRaisesRegex(exams.ExamError, "phrase entendue"):
+            self.check(exam)
 
 
 class SourcesTest(unittest.TestCase):

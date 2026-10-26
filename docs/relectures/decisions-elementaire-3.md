@@ -359,3 +359,128 @@ Le chapitre du verbe est prêt : environ 63 mots nouveaux (5 à 8 par leçon), u
 9. À l'écoute, on ne fait jamais deviner une seule voyelle finale (كَتَبْتُ / كَتَبْتَ).
 10. Des verbes et des mots trop liés aux versets ont été écartés (« savoir », « descendre », « regarder », « tablette », « poète ») ; plusieurs tournures sont signalées pour ne jamais être écrites.
 
+
+---
+
+## Décisions (26/10/2026) — doutes du relecteur, niveau Élémentaire 3 (2.21 à 2.30 et examen de la région 2)
+
+Stade : région 2, leçons 2.21 à 2.30 ; acquis : la région 1, les leçons 2.1 à 2.20, puis le chapitre du verbe (passé, inaccompli, pronoms compléments, مَا / لَا / لَمْ, futur, impératif, relatifs).
+Sources lues : `docs/relectures/decisions-elementaire-3.md`, les deux relectures du 26/10, `vocab/mots.json`, les leçons 24, 26, 27, 29 et 30, et le cahier (§5.4 bis et examens, l. 428-433, §16 l. 812).
+Ces décisions ne contredisent rien au §16. Le point 10 touche à la notation de l'examen, qui relève du jeu : il faut le faire confirmer par l'utilisateur.
+
+---
+
+## 1. زَرَعَ avec un arbre (2.29, et une révision en 2.30) → **remplacer**
+Question : faut-il garder « planter un arbre / un palmier » avec زَرَعَ ?
+
+**Décision**
+- On garde le mot زَرَعَ, mais **plus jamais avec شَجَرَة, أَشْجَار ou نَخْلَة**. Son complément devient زَهْرَةً ou أَزْهَارًا : la fiche زَهْرَةٌ (pluriel أَزْهَارٌ) existe déjà, et 2.29 a déjà « ازْرَعِي زَهْرَةً ».
+- Le mot بَذْرٌ n'existe pas dans `mots.json`. On ne l'ajoute pas.
+- Remplacements exacts :
+  - **Fiche `zaraa`, sens** : « il a semé, il a planté (des graines, des fleurs) ».
+  - **Fiche `zaraa`, nouvelle `remarque`** : « se dit surtout des graines et des plantes ; pour un arbre, l'arabe classique emploie d'habitude un autre verbe ».
+  - **Fiche `zaraa`, exemple** : زَرَعَتْ سَلْمَى زَهْرَةً فِي الْحَدِيقَةِ. « Salmā a planté une fleur dans le jardin. »
+  - **29, dialogue (l. 91)** :
+    - arabe : احْمِلِ السَّلَّةَ إِلَى الْخَيْمَةِ، ثُمَّ ازْرَعْ أَزْهَارًا فِي الْحَدِيقَةِ.
+    - français : « Porte le panier jusqu'à la tente, puis plante des fleurs dans le jardin. »
+  - **29, la question qui suit (l. 102-109)** :
+    - choix : « des fleurs » / « un palmier » / « des fruits » ;
+    - explication : « ازْرَعْ أَزْهَارًا : des fleurs. »
+  - **29, l. 271** :
+    - consigne : « Complète : « Bāsim, plante des fleurs ! » » ;
+    - phrase : يَا بَاسِمُ، … أَزْهَارًا.
+  - **29, l. 421** :
+    - consigne : « Complète : « Plantez des fleurs ! » (à plusieurs) » ;
+    - phrase : … أَزْهَارًا.
+  - **29, l. 539** : « C'était ازْرَعْ « plante ! » » ne change pas.
+  - **29, l. 233 et ses choix** : « il a semé, il a planté ».
+  - **30, l. 494-501** :
+    - consigne : « Comment dit-on « plante des fleurs ! » ? » ;
+    - choix : ازْرَعْ أَزْهَارًا / زَرَعَ أَزْهَارًا / يَزْرَعُ أَزْهَارًا ;
+    - explication à l'avenant.
+  - Ailleurs : tout autre « زَرَعَ + arbre » est traité de la même façon.
+
+**Pourquoi** : dans les dictionnaires classiques, زَرَعَ veut dire semer des graines et cultiver des plantes. Pour un arbre, l'usage classique ordinaire est un autre verbe (غَرَسَ). Ce verbe n'est ni enseigné ni vérifié dans le dépôt, d'où une remarque sans le nommer. أَزْهَارًا est un pluriel brisé : il peut servir de complément, ce qui respecte l'interdit des pluriels en -āt.
+
+**Confiance** : haute pour « زَرَعَ + arbre » à éviter ; moyenne pour زَرَعَ + زَهْرَة (usage courant, admis, moins idiomatique que « semer des graines »).
+
+## 2. يَقُولُ sur la fiche قَالَ (2.28) → **garder, en le protégeant**
+**Décision**
+- On garde يَقُولُ sur la fiche : c'est exact, et le cahier demande le passé et l'inaccompli sur chaque fiche.
+- La `remarque` devient : « employé ici seulement sous la forme قَالَ / قَالَتْ, suivi du nom de celui qui parle ; les autres formes de ce verbe changent de voyelle au milieu : elles viendront en région 3 ».
+- قَالَ ne doit jamais être conjugué automatiquement. Pour le contrôle des mots connus, seules قَالَ et قَالَتْ sont acceptées (à la façon de `fige`). Le générateur produirait des formes fausses, du type قَالْتُ au lieu de قُلْتُ ou اقْوُلْ.
+
+**Confiance** : haute.
+
+## 3. تَدْرُسُونَ employé seul (2.26) → **garder**
+**Décision**
+- Le mot seul est acceptable : un verbe conjugué isolé n'est pas un extrait.
+- Il reste interdit après كُنْتُمْ, بِمَا et **فِيهِ**. J'ajoute فِيهِ à la liste ⚠ : une tournure coranique connue est « فِيهِ تَدْرُسُونَ ».
+- Ne jamais l'employer dans une phrase avec كِتَاب.
+- Aujourd'hui, les deux emplois (l. 367 et 438) sont des choix isolés : conformes.
+
+**Confiance** : haute pour la langue. Les paires sont citées de mémoire ; le garde-fou de construction fait foi.
+
+## 4. أَوْرَاقٌ, pluriel de وَرَقَةٌ (2.26) → **garder**
+**Pourquoi** : en classique, أَوْرَاقٌ est d'abord le pluriel du collectif وَرَقٌ, et وَرَقَاتٌ celui de وَرَقَةٌ. Mais أَوْرَاقٌ est la forme la plus employée pour « des feuilles ». Aucune note n'est nécessaire pour un débutant.
+
+**Confiance** : moyenne-haute.
+
+## 5. لَا et le futur (fiche `la_nafi`) → **ajouter une ligne, sans l'exercer**
+**Décision** : la `remarque` de `la_nafi` devient : « s'écrit comme لَا « non ». Selon le contexte, لَا يَرْجِعُ peut aussi vouloir dire « il ne reviendra pas » ; on ne met jamais سَـ après لَا. »
+- Aucun exercice sur ce point.
+- لَنْ reste hors du niveau.
+
+**Confiance** : haute (en classique, لَا devant l'inaccompli nie le présent ou le futur).
+
+## 6. Distracteur « لَا خَرَجَ » (2.27, l. 221) → **garder, en adoucissant l'explication**
+**Décision**
+- On garde le distracteur.
+- L'explication devient : « Pour dire simplement « il n'est pas sorti », on met مَا devant le passé : مَا خَرَجَ. »
+- Ne jamais écrire que لَا devant un passé est une faute. Cette construction existe en classique, avec d'autres emplois (un souhait, ou لَا répété). Elle ne traduit simplement pas « il n'est pas sorti ».
+- La même formulation vaut pour 2.29 si un distracteur semblable y figure.
+
+**Confiance** : haute.
+
+## 7. « هَٰذِهِ قِصَّةُ الْقَافِلَةِ الَّتِي بَلَغَتِ الْمَدِينَةَ » (2.30) → **garder**
+**Pourquoi** : la phrase est grammaticale. Le relatif se rattache d'ordinaire au nom le plus proche, et le sens écarte « l'histoire qui a atteint la ville ». La question et sa réponse (« d'une caravane qui a atteint la ville ») sont donc sans ambiguïté réelle.
+
+**Confiance** : haute.
+
+## 8. Tableau des pronoms compléments sur عَرَفَ (2.24, l. 184-204) → **correct, garder**
+**Pourquoi** : les formes عَرَفَكِ, عَرَفَنَا, عَرَفَكُمْ, عَرَفَهُمْ, عَرَفَهُنَّ, عَرَفَكُمَا, عَرَفَهُمَا et كَتَبُوهُ (chute de l'alif) sont toutes justes, avec le bon sens. Le choix de عَرَفَ évite « il t'a écrite ».
+
+**Confiance** : haute.
+
+## 9. Autres doutes des relectures
+- **2.27, لَيْسَ retiré comme distracteur devant un inaccompli** : décision confirmée. لَيْسَ + inaccompli existe en classique ; le proposer comme réponse fausse aurait été inexact. Confiance haute.
+- **2.25, ordre « verbe, sujet, complément » imposé dans la consigne** : confirmé. La consigne doit toujours préciser l'ordre attendu, puisque d'autres ordres sont justes. Confiance haute.
+- Aucun autre doute ouvert dans les deux fichiers.
+
+## 10. Réponses libres de l'examen de la région 2 → **d'accord sur le plan pédagogique**
+**Décision**
+- Les deux réponses libres (répliques 4 et 5) s'affichent avec une ou deux réponses modèles.
+- Le contrôle hors ligne de ce qui est vérifiable (mots connus, personne du verbe, ordre des mots) reste affiché, comme simple indication et jamais comme une note.
+- L'apprenant s'auto-évalue, comme pour l'oral de la région 1.
+- La réussite repose sur la lecture (80 %), l'écoute (80 %) et les trois répliques reconstituées (ordonner).
+- Le cahier exige une partie « production » à chaque examen : les répliques reconstituées la remplissent. La partie libre doit rester obligatoire à faire, même si elle ne compte pas.
+
+**Pourquoi** : c'est conforme au §5.4 bis (« correction hors ligne de ce qui est vérifiable avec un modèle de réponse ») et au précédent de la prononciation, auto-évaluée. Une note automatique donnée à une réponse libre serait trompeuse (règle d'honnêteté).
+
+**Confiance** : haute pour la pédagogie. Les seuils et le fait que la partie libre compte ou non relèvent du jeu : **à confirmer par l'utilisateur** (le plan disait déjà que la notation lui revient).
+
+---
+
+## Résumé pour l'utilisateur (lignes pour la liste de fin de niveau)
+- « Planter » (زَرَعَ) s'emploie avec des fleurs et des graines, plus avec des arbres : en arabe classique, on dit autrement pour un arbre.
+- « Il a dit » garde sur sa fiche sa forme « il dit » (يَقُولُ), mais seules « il a dit / elle a dit » sont exercées.
+- لَا devant un verbe au présent peut aussi annoncer un futur (« il ne reviendra pas ») : une ligne sur la fiche, sans exercice.
+- À l'examen, les réponses libres sont comparées à une réponse modèle et auto-évaluées. Seules la lecture, l'écoute et les phrases à remettre en ordre comptent pour réussir (à confirmer par toi).
+- Les autres doutes sont tous gardés tels quels : formes justes, distracteurs et explication adoucis.
+
+Fichiers concernés :
+- /home/user/iqura/tools/build_content/vocab/mots.json (fiches `zaraa`, `qala`, `la_nafi`)
+- /home/user/iqura/tools/build_content/lessons/etape2/29-ecris.json
+- /home/user/iqura/tools/build_content/lessons/etape2/30-celui-qui.json
+- /home/user/iqura/tools/build_content/lessons/etape2/27-il-n-a-pas-ecrit.json
+- Décisions à enregistrer dans /home/user/iqura/docs/relectures/decisions-elementaire-3.md

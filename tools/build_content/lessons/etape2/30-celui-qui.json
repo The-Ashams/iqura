@@ -127,7 +127,7 @@
     {
       "type": "regle",
       "titre": "الَّذِي، الَّتِي، الَّذِينَ",
-      "texte": "Après un nom défini, الَّذِي (masculin), الَّتِي (féminin, ou choses au pluriel) et الَّذِينَ (personnes au pluriel) relient une phrase qui commence par un verbe : الشَّيْخُ الَّذِي جَلَسَ هُنَاكَ.",
+      "texte": "Après un nom défini, الَّذِي (masculin), الَّتِي (féminin, ou choses au pluriel) et الَّذِينَ (personnes au pluriel) relient une phrase ; ici, elle commence par un verbe : الشَّيْخُ الَّذِي جَلَسَ هُنَاكَ.",
       "exemples": [
         "الشَّيْخُ الَّذِي جَلَسَ هُنَاكَ",
         "الْبِنْتُ الَّتِي كَتَبَتِ الرِّسَالَةَ",
@@ -149,7 +149,7 @@
     {
       "type": "regle",
       "titre": "Le pronom de rappel",
-      "texte": "Nom complément du verbe relié : un pronom le reprend, en général : الْقَلَمُ الَّذِي تَرَكْتُهُ « le calame que j'ai laissé ». Après un nom indéfini, pas de relatif : رَجُلٌ جَلَسَ « un homme qui s'est assis ».",
+      "texte": "Nom complément du verbe : un pronom le reprend en général : الْقَلَمُ الَّذِي تَرَكْتُهُ « le calame que j'ai laissé ». Après un nom indéfini, pas de relatif : رَجُلٌ جَلَسَ « un homme qui s'est assis ».",
       "exemples": [
         "الْقَلَمُ الَّذِي تَرَكْتُهُ",
         "الرِّسَالَةُ الَّتِي كَتَبْتُهَا"
@@ -299,7 +299,7 @@
       "questions": [
         {
           "type": "qcm",
-          "consigne": "Qui s'est assis avec le vieil homme ?",
+          "consigne": "Qui s'est assis aussi au jardin ?",
           "choix": [
             "les marchands revenus du marché",
             "les étudiants",
@@ -491,14 +491,14 @@
         },
         {
           "type": "traduire",
-          "consigne": "Comment dit-on « plante un arbre ! » ?",
+          "consigne": "Comment dit-on « plante des fleurs ! » ?",
           "choix_ar": [
-            "ازْرَعْ شَجَرَةً",
-            "زَرَعَ شَجَرَةً",
-            "يَزْرَعُ شَجَرَةً"
+            "ازْرَعْ أَزْهَارًا",
+            "زَرَعَ أَزْهَارًا",
+            "يَزْرَعُ أَزْهَارًا"
           ],
           "reponse": 0,
-          "explication": "« plante un arbre ! » se dit ازْرَعْ شَجَرَةً.",
+          "explication": "« plante des fleurs ! » se dit ازْرَعْ أَزْهَارًا.",
           "revision": true
         },
         {

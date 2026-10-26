@@ -134,7 +134,7 @@
     {
       "type": "regle",
       "titre": "Au pluriel",
-      "texte": "Au pluriel : نَكْتُبُ (nous), تَكْتُبُونَ (vous), يَكْتُبُونَ (ils). Si le sujet vient avant le verbe, le verbe s'accorde en tout : الطُّلَّابُ يَدْرُسُونَ.",
+      "texte": "Au pluriel : نَكْتُبُ (nous), تَكْتُبُونَ (vous), يَكْتُبُونَ (ils). Si le sujet (des personnes) vient avant le verbe, le verbe s'accorde en tout : الطُّلَّابُ يَدْرُسُونَ.",
       "exemples": [
         "نَكْتُبُ",
         "تَكْتُبُونَ",
@@ -347,7 +347,7 @@
         },
         {
           "type": "repondre",
-          "consigne": "Samīr te demande ce que font les tailleurs. Ils fabriquent des chemises.",
+          "consigne": "Samīr te demande ce que font les tailleurs. Ils fabriquent les chemises.",
           "replique": {
             "qui": "samir_oasis",
             "ar": "مَا يَصْنَعُ الْخَيَّاطُونَ؟"
@@ -479,12 +479,12 @@
           "type": "qcm",
           "consigne": "La fin -ūna de « يَكْتُبُونَ »…",
           "choix": [
-            "marque « ils »",
+            "marque le pluriel (ils, vous)",
             "marque le duel",
             "veut dire « nous »"
           ],
           "reponse": 0,
-          "explication": "-ūna : « ils » ; le duel est -āni."
+          "explication": "-ūna : pluriel (يَـ : ils, تَـ : vous) ; le duel est -āni."
         },
         {
           "type": "ecouter",
