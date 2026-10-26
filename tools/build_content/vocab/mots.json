@@ -2034,6 +2034,440 @@
     "fr": "Dans le coffre, il y a un morceau de soie."
    },
    "theme": "marché"
+  },
+  {
+   "id": "kataba",
+   "ar": "كَتَبَ",
+   "translit": "kataba",
+   "fr": "il a écrit",
+   "nature": "verbe",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "passe": "كَتَبَ",
+   "inaccompli": "يَكْتُبُ",
+   "lemme": "kataba",
+   "exemple": {
+    "ar": "كَتَبَ سَمِيرٌ فِي الْغُرْفَةِ.",
+    "fr": "Samīr a écrit dans la chambre."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "jalasa",
+   "ar": "جَلَسَ",
+   "translit": "ǧalasa",
+   "fr": "il s'est assis",
+   "nature": "verbe",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "passe": "جَلَسَ",
+   "inaccompli": "يَجْلِسُ",
+   "racine": "jls",
+   "exemple": {
+    "ar": "جَلَسَتْ سَلْمَى فِي الْغُرْفَةِ.",
+    "fr": "Salmā s'est assise dans la chambre."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "rajaa",
+   "ar": "رَجَعَ",
+   "translit": "raǧaʿa",
+   "fr": "il est revenu, il est rentré",
+   "nature": "verbe",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "passe": "رَجَعَ",
+   "inaccompli": "يَرْجِعُ",
+   "lemme": "rajaEa",
+   "exemple": {
+    "ar": "رَجَعَ بَاسِمٌ مِنَ السُّوقِ.",
+    "fr": "Bāsim est revenu du marché."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "qafila",
+   "ar": "قَافِلَةٌ",
+   "translit": "qāfilatun",
+   "fr": "caravane",
+   "nature": "nom",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "قَوَافِلُ",
+   "racine": "qfl",
+   "remarque": "même racine que أَقْفَالٌ « cadenas » : la racine ne donne pas le sens",
+   "exemple": {
+    "ar": "الْقَافِلَةُ هُنَاكَ.",
+    "fr": "La caravane est là-bas."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "sabah",
+   "ar": "صَبَاحٌ",
+   "translit": "ṣabāḥun",
+   "fr": "matin",
+   "nature": "nom",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "SabaAH",
+   "exemple": {
+    "ar": "خَرَجَ رَاشِدٌ فِي الصَّبَاحِ.",
+    "fr": "Rāšid est sorti le matin."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "masa",
+   "ar": "مَسَاءٌ",
+   "translit": "masāʾun",
+   "fr": "soir",
+   "nature": "nom",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "msw",
+   "exemple": {
+    "ar": "رَجَعَ بَاسِمٌ فِي الْمَسَاءِ.",
+    "fr": "Bāsim est rentré le soir."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "ams",
+   "ar": "أَمْسِ",
+   "translit": "amsi",
+   "fr": "hier",
+   "nature": "adverbe",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "lemme": ">amos",
+   "remarque": "sa fin en i ne change pas",
+   "exemple": {
+    "ar": "رَجَعَ رَاشِدٌ أَمْسِ.",
+    "fr": "Rāšid est revenu hier."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "thumma",
+   "ar": "ثُمَّ",
+   "translit": "ṯumma",
+   "fr": "puis, ensuite",
+   "nature": "particule",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "lemme": "vum~",
+   "exemple": {
+    "ar": "رَجَعَ بَاسِمٌ، ثُمَّ جَلَسَ.",
+    "fr": "Bāsim est rentré, puis il s'est assis."
+   }
+  },
+  {
+   "id": "shariba",
+   "ar": "شَرِبَ",
+   "translit": "šariba",
+   "fr": "il a bu",
+   "nature": "verbe",
+   "lecon": "fondations-22",
+   "source_sens": "rédigé par IA",
+   "passe": "شَرِبَ",
+   "inaccompli": "يَشْرَبُ",
+   "lemme": "$ariba",
+   "remarque": "i au milieu à toutes les personnes du passé",
+   "exemple": {
+    "ar": "شَرِبْنَا مِنَ الْبِئْرِ.",
+    "fr": "Nous avons bu au puits."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "fariha",
+   "ar": "فَرِحَ",
+   "translit": "fariḥa",
+   "fr": "il s'est réjoui",
+   "nature": "verbe",
+   "lecon": "fondations-22",
+   "source_sens": "rédigé par IA",
+   "passe": "فَرِحَ",
+   "inaccompli": "يَفْرَحُ",
+   "lemme": "fariHa",
+   "remarque": "même famille que فَرِحٌ « joyeux »",
+   "exemple": {
+    "ar": "فَرِحَتْ سَلْمَى.",
+    "fr": "Salmā s'est réjouie."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "laiba",
+   "ar": "لَعِبَ",
+   "translit": "laʿiba",
+   "fr": "il a joué",
+   "nature": "verbe",
+   "lecon": "fondations-22",
+   "source_sens": "rédigé par IA",
+   "passe": "لَعِبَ",
+   "inaccompli": "يَلْعَبُ",
+   "lemme": "yaloEabo",
+   "exemple": {
+    "ar": "لَعِبْتُ مَعَ بَاسِمٍ.",
+    "fr": "J'ai joué avec Bāsim."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "alyawm",
+   "ar": "الْيَوْمَ",
+   "translit": "al-yawma",
+   "fr": "aujourd'hui",
+   "nature": "adverbe",
+   "lecon": "fondations-22",
+   "source_sens": "rédigé par IA",
+   "remarque": "« le jour » à l'accusatif ; sa fin ne change pas",
+   "exemple": {
+    "ar": "رَجَعْتُ الْيَوْمَ.",
+    "fr": "Je suis revenu aujourd'hui."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "aydan",
+   "ar": "أَيْضًا",
+   "translit": "ayḍan",
+   "fr": "aussi",
+   "nature": "adverbe",
+   "lecon": "fondations-22",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "وَأَنَا أَيْضًا.",
+    "fr": "Et moi aussi."
+   },
+   "theme": "liens"
+  },
+  {
+   "id": "fataha",
+   "ar": "فَتَحَ",
+   "translit": "fataḥa",
+   "fr": "il a ouvert",
+   "nature": "verbe",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "passe": "فَتَحَ",
+   "inaccompli": "يَفْتَحُ",
+   "lemme": "fataHa",
+   "exemple": {
+    "ar": "فَتَحَ الْحَارِسُ الْبَابَ.",
+    "fr": "Le gardien a ouvert la porte."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "hamala",
+   "ar": "حَمَلَ",
+   "translit": "ḥamala",
+   "fr": "il a porté",
+   "nature": "verbe",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "passe": "حَمَلَ",
+   "inaccompli": "يَحْمِلُ",
+   "lemme": "Hamala",
+   "exemple": {
+    "ar": "حَمَلَ بَاسِمٌ السَّلَّةَ.",
+    "fr": "Bāsim a porté le panier."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "rakiba",
+   "ar": "رَكِبَ",
+   "translit": "rakiba",
+   "fr": "il est monté (sur une monture)",
+   "nature": "verbe",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "passe": "رَكِبَ",
+   "inaccompli": "يَرْكَبُ",
+   "lemme": "rakiba",
+   "remarque": "le complément suit sans préposition : رَكِبَ الْجَمَلَ",
+   "exemple": {
+    "ar": "رَكِبَ التُّجَّارُ الْجِمَالَ.",
+    "fr": "Les marchands sont montés sur les chameaux."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "balagha",
+   "ar": "بَلَغَ",
+   "translit": "balaġa",
+   "fr": "il a atteint, il est arrivé à",
+   "nature": "verbe",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "passe": "بَلَغَ",
+   "inaccompli": "يَبْلُغُ",
+   "lemme": "balaga",
+   "exemple": {
+    "ar": "بَلَغَتِ الْقَافِلَةُ الْمَدِينَةَ.",
+    "fr": "La caravane a atteint la ville."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "himl",
+   "ar": "حِمْلٌ",
+   "translit": "ḥimlun",
+   "fr": "charge, fardeau",
+   "nature": "nom",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَحْمَالٌ",
+   "lemme": "Himol",
+   "exemple": {
+    "ar": "الْحِمْلُ ثَقِيلٌ.",
+    "fr": "La charge est lourde."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "haris",
+   "ar": "حَارِسٌ",
+   "translit": "ḥārisun",
+   "fr": "gardien",
+   "nature": "nom",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "حُرَّاسٌ",
+   "racine": "Hrs",
+   "exemple": {
+    "ar": "الْحَارِسُ عِنْدَ الْبَابِ.",
+    "fr": "Le gardien est à la porte."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "katib",
+   "ar": "كَاتِبٌ",
+   "translit": "kātibun",
+   "fr": "scribe, celui qui écrit",
+   "nature": "nom",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "كُتَّابٌ",
+   "lemme": "kaAtib",
+   "exemple": {
+    "ar": "سَمِيرٌ كَاتِبٌ.",
+    "fr": "Samīr est scribe."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "taraka",
+   "ar": "تَرَكَ",
+   "translit": "taraka",
+   "fr": "il a laissé",
+   "nature": "verbe",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "passe": "تَرَكَ",
+   "inaccompli": "يَتْرُكُ",
+   "lemme": "taraka",
+   "exemple": {
+    "ar": "تَرَكَ سَمِيرٌ الْقَلَمَ عَلَى الْكُرْسِيِّ.",
+    "fr": "Samīr a laissé le calame sur la chaise."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "talaba",
+   "ar": "طَلَبَ",
+   "translit": "ṭalaba",
+   "fr": "il a cherché, il a demandé",
+   "nature": "verbe",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "passe": "طَلَبَ",
+   "inaccompli": "يَطْلُبُ",
+   "lemme": "yaTolubu",
+   "exemple": {
+    "ar": "طَلَبْتُ الْمِفْتَاحَ فِي الْغُرْفَةِ.",
+    "fr": "J'ai cherché la clé dans la chambre."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "jamaa",
+   "ar": "جَمَعَ",
+   "translit": "ǧamaʿa",
+   "fr": "il a rassemblé",
+   "nature": "verbe",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "passe": "جَمَعَ",
+   "inaccompli": "يَجْمَعُ",
+   "lemme": "jamaEa",
+   "exemple": {
+    "ar": "جَمَعَ بَاسِمٌ الْأَحْمَالَ.",
+    "fr": "Bāsim a rassemblé les charges."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "arafa",
+   "ar": "عَرَفَ",
+   "translit": "ʿarafa",
+   "fr": "il a connu, il a reconnu",
+   "nature": "verbe",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "passe": "عَرَفَ",
+   "inaccompli": "يَعْرِفُ",
+   "lemme": "Earafa",
+   "exemple": {
+    "ar": "عَرَفَنِي الْحَارِسُ.",
+    "fr": "Le gardien m'a reconnu."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "risala",
+   "ar": "رِسَالَةٌ",
+   "translit": "risālatun",
+   "fr": "lettre (que l'on envoie)",
+   "nature": "nom",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "رَسَائِلُ",
+   "racine": "rsl",
+   "exemple": {
+    "ar": "كَتَبَ سَمِيرٌ الرِّسَالَةَ.",
+    "fr": "Samīr a écrit la lettre."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "makan",
+   "ar": "مَكَانٌ",
+   "translit": "makānun",
+   "fr": "endroit, place",
+   "nature": "nom",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "m~akaAn",
+   "exemple": {
+    "ar": "الْمَكَانُ جَمِيلٌ.",
+    "fr": "L'endroit est beau."
+   },
+   "theme": "lieux"
   }
  ]
 }

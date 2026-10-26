@@ -80,6 +80,7 @@ class Word {
     // تَحْتَ، فَوْقَ، مَعَ، عِنْدَ (décision n° 3, Élémentaire 2).
     'nom_lieu' => 'nom de lieu, employé comme une préposition',
     'nombre' => 'nom (nombre)',
+    'relatif' => 'nom (relatif)',
     'adverbe' => 'adverbe',
     _ => nature,
   };
@@ -181,6 +182,10 @@ List<String> _verbStems(String k) {
   for (final s in _pastSuffixes) {
     if (k.endsWith(s) && k.length - s.length >= 2) {
       add(k.substring(0, k.length - s.length));
+      // سَكَنَّا : le ن du verbe et celui de la terminaison.
+      if ('نت'.contains(s[0])) {
+        add('${k.substring(0, k.length - s.length)}${s[0]}');
+      }
     }
   }
   present(k);

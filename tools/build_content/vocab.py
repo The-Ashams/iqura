@@ -26,12 +26,12 @@ import quran_guard
 VOCAB_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vocab", "mots.json")
 
 NATURES = {"nom", "adjectif", "verbe", "particule", "pronom", "demonstratif",
-           "demonstratif_lieu", "interrogatif", "adverbe", "nom_lieu", "nombre"}
+           "demonstratif_lieu", "interrogatif", "adverbe", "nom_lieu", "nombre", "relatif"}
 # Mots pleins (pour l'avertissement sur les paires coraniques).
 FULL_NATURES = {"nom", "adjectif", "verbe", "nombre"}
 # Pronoms et démonstratifs : une paire « pronom + mot plein » qui se suit
 # dans le Coran est signalée aussi (relecture du 25/10/2026 : وَهُمْ فَرِحُونَ).
-PAIRED_NATURES = {"pronom", "demonstratif"}
+PAIRED_NATURES = {"pronom", "demonstratif", "relatif"}
 GENRES = {"m", "f"}
 # Préfixes d'une lettre collés au mot (et, alors, avec/par, pour, comme).
 PREFIXES = ("و", "ف", "ب", "ل", "ك")
@@ -95,6 +95,8 @@ def _verb_stems(k: str, groups) -> list[str]:
         for s in VERB_PAST_SUFFIXES:
             if k.endswith(s) and len(k) - len(s) >= 2:
                 add(k[: -len(s)])
+                if s[0] in "نت":  # سَكَنَّا : le ن du verbe et celui de la terminaison
+                    add(k[: -len(s)] + s[0])
     if "inaccompli" in groups:
         present(k)
     if "futur" in groups and k.startswith("س") and len(k) > 4:

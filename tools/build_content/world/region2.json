@@ -18,7 +18,7 @@
     {"id": "echoppe", "numero": 6, "nom": "L'Échoppe du tisserand", "position": [130, 34], "lecons": [14, 15], "scene": "scene_echoppe", "sol": 80, "tranche_j1a": true, "liens": ["souk", "maison_salma"], "description": "Chez le tisserand, entre fils, laine et soie, on apprend à dire « mon », « ton », « son »."},
     {"id": "maison_salma", "numero": 7, "nom": "La Maison de Salmā", "position": [146, 22], "lecons": [16, 17, 18], "scene": "scene_maison_salma", "sol": 80, "tranche_j1a": true, "liens": ["echoppe", "balance"], "description": "Chez Salmā, on compte les lits et les coussins, et l'on parle de deux choses ou de plusieurs."},
     {"id": "balance", "numero": 8, "nom": "La Balance du changeur", "position": [140, 54], "lecons": [19, 20], "scene": "scene_balance", "sol": 82, "tranche_j1a": true, "liens": ["maison_salma", "caravanserail_oasis"], "description": "Chez le changeur, on pèse l'or et l'argent : on compte, et on apprend à dire « il n'est pas »."},
-    {"id": "caravanserail_oasis", "numero": 9, "nom": "Le Caravansérail de l'oasis", "position": [100, 70], "lecons": [], "scene": null, "tranche_j1a": false, "liens": ["balance", "salle_scribes"], "description": "Chapitre C, niveaux suivants."},
+    {"id": "caravanserail_oasis", "numero": 9, "nom": "Le Caravansérail de l'oasis", "position": [100, 70], "lecons": [21, 22, 23, 24], "scene": "scene_caravanserail_oasis", "sol": 84, "tranche_j1a": true, "liens": ["balance", "salle_scribes"], "description": "Au caravansérail, Samīr le scribe note ce que font les voyageurs : on y apprend le verbe."},
     {"id": "salle_scribes", "numero": 10, "nom": "La Salle des scribes", "position": [70, 74], "lecons": [], "scene": null, "tranche_j1a": false, "liens": ["caravanserail_oasis", "jardin_conteur"], "description": "Chapitre C, niveaux suivants."},
     {"id": "jardin_conteur", "numero": 11, "nom": "Le Jardin du conteur", "position": [40, 72], "lecons": [], "scene": null, "tranche_j1a": false, "liens": ["salle_scribes"], "description": "Chapitre C, niveaux suivants."},
     {"id": "sables", "numero": 12, "nom": "Les Sables du mirage", "position": [134, 72], "lecons": [], "scene": "scene_mirage", "sol": 80, "tranche_j1a": true, "liens": ["veillee"], "description": "Dans la chaleur, les mirages de la Confusion mélangent ce qui se ressemble. Révisions quotidiennes."}
@@ -26,6 +26,7 @@
   "personnages": [
     {"id": "rashid_oasis", "nom": "Rāšid", "nom_ar": "رَاشِد", "role": "Le caravanier", "sprite": "rashid", "lieux": ["campement", "tente", "palmiers", "veillee"]},
     {"id": "basim", "nom": "Bāsim", "nom_ar": "بَاسِم", "role": "Le jeune chamelier", "sprite": "basim", "lieux": ["campement", "palmiers", "veillee"]},
-    {"id": "salma", "nom": "Salmā", "nom_ar": "سَلْمَى", "role": "La marchande du souk", "sprite": "salma", "lieux": ["souk", "echoppe", "maison_salma", "balance"]}
+    {"id": "salma", "nom": "Salmā", "nom_ar": "سَلْمَى", "role": "La marchande du souk", "sprite": "salma", "lieux": ["souk", "echoppe", "maison_salma", "balance"]},
+    {"id": "samir_oasis", "nom": "Samīr", "nom_ar": "سَمِير", "role": "Le scribe", "sprite": "samir", "lieux": ["caravanserail_oasis", "salle_scribes", "jardin_conteur"]}
   ]
 }

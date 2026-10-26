@@ -1,0 +1,578 @@
+{
+  "id": "fondations-22",
+  "etape": 2,
+  "ordre": 22,
+  "format": 3,
+  "titre": "J'ai écrit, nous avons écrit",
+  "objectif": "Conjuguer un verbe au passé à toutes les personnes.",
+  "statut": "ia_non_verifie",
+  "lieu": "caravanserail_oasis",
+  "maitre": "samir_oasis",
+  "prerequis": [
+    "fondations-21"
+  ],
+  "apercu": [
+    "كَتَبْتُنَّ",
+    "كَتَبْنَ",
+    "كَتَبْتُمَا",
+    "كَتَبَا",
+    "كَتَبَتَا",
+    "لَسْتُ",
+    "لَسْتَ",
+    "لَسْتِ",
+    "لَسْنَا"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "texte": "Raconte-moi ta journée, voyageur ! Qu'as-tu fait ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "texte": "Pour dire « je », « tu », « nous » au passé, on colle une terminaison au verbe."
+        }
+      ],
+      "objectif": "Dire « j'ai fait », « nous avons fait »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَجَعَتْ",
+          "choix": [
+            "elle est revenue",
+            "il est revenu",
+            "il s'est assis"
+          ],
+          "reponse": 0,
+          "explication": "تْ pour « elle » (leçon 2.21)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Rāšid est sorti le matin. »",
+          "ar": "خَرَجَ رَاشِدٌ فِي …",
+          "choix_ar": [
+            "الصَّبَاحِ",
+            "الْمَسَاءِ",
+            "السُّوقِ"
+          ],
+          "reponse": 0,
+          "explication": "« le matin » : فِي الصَّبَاحِ (leçon 2.21)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous » ?",
+          "choix_ar": [
+            "نَحْنُ",
+            "هُمْ",
+            "أَنْتُمْ"
+          ],
+          "reponse": 0,
+          "explication": "« nous » se dit نَحْنُ (leçon 2.8)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "ar": "هَلْ رَجَعْتَ مِنَ السُّوقِ؟",
+          "fr": "Es-tu revenu du marché ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "نَعَمْ، رَجَعْتُ الْيَوْمَ.",
+          "fr": "Oui, je suis revenu aujourd'hui."
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "وَأَيْنَ جَلَسْتُمْ؟",
+          "fr": "Et où vous êtes-vous assis ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "جَلَسْنَا فِي الْخَيْمَةِ، وَشَرِبْنَا مِنَ الْبِئْرِ.",
+          "fr": "Nous nous sommes assis dans la tente et nous avons bu au puits."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où ont-ils bu ?",
+        "choix": [
+          "au puits",
+          "au marché",
+          "dans la chambre"
+        ],
+        "reponse": 0,
+        "explication": "شَرِبْنَا مِنَ الْبِئْرِ : au puits."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "shariba",
+        "fariha",
+        "laiba",
+        "alyawm",
+        "aydan"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "شَرِبَ",
+        "choix": [
+          "il a bu",
+          "il a joué",
+          "il s'est réjoui"
+        ],
+        "reponse": 0,
+        "explication": "شَرِبَ veut dire « il a bu »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Qui agit ?",
+      "texte": "Une terminaison collée au verbe dit qui agit : كَتَبْتُ (je), كَتَبْتَ (tu, homme), كَتَبْتِ (tu, femme), كَتَبْنَا (nous), كَتَبْتُمْ (vous), كَتَبُوا (ils). Le pronom n'est pas nécessaire : أَنَا كَتَبْتُ insiste.",
+      "exemples": [
+        "كَتَبْتُ",
+        "كَتَبْتَ",
+        "كَتَبْتِ",
+        "كَتَبَ",
+        "كَتَبَتْ",
+        "كَتَبْنَا",
+        "كَتَبْتُمْ",
+        "كَتَبُوا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « رَجَعْنَا » ?",
+        "choix": [
+          "nous sommes revenus",
+          "ils sont revenus",
+          "je suis revenu"
+        ],
+        "reponse": 0,
+        "explication": "-nā : « nous »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "À reconnaître",
+      "texte": "Il existe aussi كَتَبْنَ (elles), كَتَبْتُنَّ (vous, femmes), كَتَبَا (eux deux), كَتَبَتَا (elles deux), كَتَبْتُمَا (vous deux). Dans كَتَبُوا, l'alif final s'écrit mais ne se prononce pas.",
+      "exemples": [
+        "كَتَبْنَ",
+        "كَتَبْتُنَّ",
+        "كَتَبَا",
+        "كَتَبَتَا",
+        "كَتَبْتُمَا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "« كَتَبْنَ » et « كَتَبْنَا » : lequel veut dire « nous avons écrit » ?",
+        "choix": [
+          "كَتَبْنَا",
+          "كَتَبْنَ",
+          "les deux"
+        ],
+        "reponse": 0,
+        "explication": "كَتَبْنَا : nous ; كَتَبْنَ : elles."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "لَيْسَ change aussi",
+      "texte": "لَيْسَ se conjugue comme un passé : لَسْتُ (je ne suis pas), لَسْتَ (tu n'es pas, homme), لَسْتِ (tu n'es pas, femme), لَسْنَا (nous ne sommes pas). Retiens-les pour les reconnaître.",
+      "exemples": [
+        "لَسْتُ",
+        "لَسْتَ",
+        "لَسْتِ",
+        "لَسْنَا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « لَسْنَا » ?",
+        "choix": [
+          "nous ne sommes pas",
+          "je ne suis pas",
+          "il n'est pas"
+        ],
+        "reponse": 0,
+        "explication": "-nā : « nous »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَعِبَ",
+          "choix": [
+            "il a joué",
+            "il a bu",
+            "il s'est assis"
+          ],
+          "reponse": 0,
+          "explication": "لَعِبَ veut dire « il a joué »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَيْضًا",
+          "choix": [
+            "aussi",
+            "aujourd'hui",
+            "puis"
+          ],
+          "reponse": 0,
+          "explication": "أَيْضًا veut dire « aussi »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai bu » ?",
+          "choix_ar": [
+            "شَرِبْتُ",
+            "شَرِبَ",
+            "شَرِبْنَا"
+          ],
+          "reponse": 0,
+          "explication": "« j'ai bu » se dit شَرِبْتُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils sont sortis » ?",
+          "choix_ar": [
+            "خَرَجُوا",
+            "خَرَجْنَا",
+            "خَرَجَتْ"
+          ],
+          "reponse": 0,
+          "explication": "« ils sont sortis » se dit خَرَجُوا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nous sommes entrés dans la tente. »",
+          "ar": "… فِي الْخَيْمَةِ.",
+          "choix_ar": [
+            "دَخَلْنَا",
+            "دَخَلُوا",
+            "دَخَلْتُ"
+          ],
+          "reponse": 0,
+          "explication": "« nous » : -nā."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Es-tu revenue du marché ? » (à une femme)",
+          "ar": "هَلْ … مِنَ السُّوقِ؟",
+          "choix_ar": [
+            "رَجَعْتِ",
+            "رَجَعَ",
+            "رَجَعُوا"
+          ],
+          "reponse": 0,
+          "explication": "« tu », à une femme : -ti."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « جَلَسْتُمْ », qui s'est assis ?",
+          "choix": [
+            "vous",
+            "nous",
+            "ils"
+          ],
+          "reponse": 0,
+          "explication": "-tum : « vous »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "شَرِبْنَا",
+          "choix_ar": [
+            "شَرِبْنَا",
+            "خَرَجْنَا",
+            "لَعِبْنَا"
+          ],
+          "reponse": 0,
+          "explication": "C'était شَرِبْنَا « nous avons bu »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris, en commençant par le verbe : « Je suis revenu aujourd'hui. »",
+          "tuiles": [
+            "الْيَوْمَ",
+            "رَجَعْتُ",
+            "رَجَعُوا"
+          ],
+          "solution": [
+            "رَجَعْتُ",
+            "الْيَوْمَ"
+          ],
+          "explication": "رَجَعْتُ الْيَوْمَ."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "جَلَسْنَا فِي الْخَيْمَةِ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le registre de Samīr",
+      "texte": "Bāsim raconte sa journée à Samīr. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "خَرَجْتُ مِنَ الْخَيْمَةِ فِي الصَّبَاحِ.",
+        "ذَهَبْنَا إِلَى السُّوقِ، وَلَعِبْتُ مَعَ صَدِيقِي.",
+        "شَرِبْنَا مِنَ الْبِئْرِ، وَفَرِحْنَا.",
+        "رَجَعْنَا فِي الْمَسَاءِ، وَرَجَعَ رَاشِدٌ أَيْضًا."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Avec qui Bāsim a-t-il joué ?",
+          "choix": [
+            "avec son ami",
+            "avec Salmā",
+            "avec Rāšid"
+          ],
+          "reponse": 0,
+          "explication": "لَعِبْتُ مَعَ صَدِيقِي : avec mon ami."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand sont-ils rentrés ?",
+          "choix": [
+            "le soir",
+            "le matin",
+            "hier"
+          ],
+          "reponse": 0,
+          "explication": "رَجَعْنَا فِي الْمَسَاءِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Samīr te demande si tu as bu. Tu as bu au puits.",
+          "replique": {
+            "qui": "samir_oasis",
+            "ar": "هَلْ شَرِبْتَ؟"
+          },
+          "choix_ar": [
+            "نَعَمْ، شَرِبْتُ مِنَ الْبِئْرِ.",
+            "نَعَمْ، شَرِبَ مِنَ الْبِئْرِ.",
+            "نَعَمْ، شَرِبْتَ مِنَ الْبِئْرِ."
+          ],
+          "reponse": 0,
+          "explication": "Pour parler de toi : شَرِبْتُ."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Salmā te dit qu'elle s'est réjouie. Toi aussi.",
+          "replique": {
+            "qui": "salma",
+            "ar": "فَرِحْتُ الْيَوْمَ."
+          },
+          "choix_ar": [
+            "وَأَنَا أَيْضًا فَرِحْتُ.",
+            "وَأَنَا أَيْضًا فَرِحَتْ.",
+            "وَأَنْتِ أَيْضًا فَرِحْتُ."
+          ],
+          "reponse": 0,
+          "explication": "« moi aussi » : وَأَنَا أَيْضًا, puis فَرِحْتُ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris, en commençant par le verbe : « Nous sommes sortis le matin. »",
+          "tuiles": [
+            "الصَّبَاحِ",
+            "خَرَجْنَا",
+            "فِي",
+            "خَرَجُوا"
+          ],
+          "solution": [
+            "خَرَجْنَا",
+            "فِي",
+            "الصَّبَاحِ"
+          ],
+          "explication": "خَرَجْنَا فِي الصَّبَاحِ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils ont joué » ?",
+          "choix_ar": [
+            "لَعِبُوا",
+            "لَعِبْنَا",
+            "لَعِبَتْ"
+          ],
+          "reponse": 0,
+          "explication": "« ils ont joué » se dit لَعِبُوا."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَرِحَ",
+          "choix": [
+            "il s'est réjoui",
+            "il a joué",
+            "il a bu"
+          ],
+          "reponse": 0,
+          "explication": "فَرِحَ veut dire « il s'est réjoui »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الْيَوْمَ",
+          "choix": [
+            "aujourd'hui",
+            "hier",
+            "le soir"
+          ],
+          "reponse": 0,
+          "explication": "الْيَوْمَ veut dire « aujourd'hui »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَجَعْتُ",
+          "choix": [
+            "je suis revenu",
+            "il est revenu",
+            "nous sommes revenus"
+          ],
+          "reponse": 0,
+          "explication": "رَجَعْتُ veut dire « je suis revenu »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous avons écrit » ?",
+          "choix_ar": [
+            "كَتَبْنَا",
+            "كَتَبُوا",
+            "كَتَبْتُ"
+          ],
+          "reponse": 0,
+          "explication": "« nous avons écrit » se dit كَتَبْنَا."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « vous êtes sortis » ?",
+          "choix_ar": [
+            "خَرَجْتُمْ",
+            "خَرَجْنَا",
+            "خَرَجُوا"
+          ],
+          "reponse": 0,
+          "explication": "« vous êtes sortis » se dit خَرَجْتُمْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ils sont rentrés le soir. »",
+          "ar": "… فِي الْمَسَاءِ.",
+          "choix_ar": [
+            "رَجَعُوا",
+            "رَجَعْنَا",
+            "رَجَعْتُمْ"
+          ],
+          "reponse": 0,
+          "explication": "« ils » : -ū, avec un alif écrit."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « As-tu joué ? » (à un homme)",
+          "ar": "هَلْ …؟",
+          "choix_ar": [
+            "لَعِبْتَ",
+            "لَعِبْتِ",
+            "لَعِبُوا"
+          ],
+          "reponse": 0,
+          "explication": "« tu », à un homme : -ta."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « كَتَبُوا », l'alif final…",
+          "choix": [
+            "s'écrit mais ne se prononce pas",
+            "se prononce « a »",
+            "veut dire « deux »"
+          ],
+          "reponse": 0,
+          "explication": "L'alif de كَتَبُوا ne se prononce pas."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "لَعِبُوا",
+          "choix_ar": [
+            "لَعِبُوا",
+            "لَعِبْنَا",
+            "شَرِبُوا"
+          ],
+          "reponse": 0,
+          "explication": "C'était لَعِبُوا « ils ont joué »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَافِلَةٌ",
+          "choix": [
+            "caravane",
+            "tente",
+            "porte"
+          ],
+          "reponse": 0,
+          "explication": "قَافِلَةٌ veut dire « caravane ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « elle s'est assise » ?",
+          "choix_ar": [
+            "جَلَسَتْ",
+            "جَلَسَ",
+            "جَلَسُوا"
+          ],
+          "reponse": 0,
+          "explication": "« elle s'est assise » se dit جَلَسَتْ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثُمَّ",
+          "choix": [
+            "puis, ensuite",
+            "aussi",
+            "hier"
+          ],
+          "reponse": 0,
+          "explication": "ثُمَّ veut dire « puis, ensuite ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu conjugues au passé : كَتَبْتُ، كَتَبْتَ، كَتَبْتِ، كَتَبَ، كَتَبَتْ، كَتَبْنَا، كَتَبْتُمْ، كَتَبُوا.",
+      "suite": "Prochaine leçon : la phrase verbale, qui fait quoi."
+    }
+  ]
+}
