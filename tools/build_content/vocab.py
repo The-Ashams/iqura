@@ -65,6 +65,50 @@ ENDINGS = {
 }
 
 
+# Verbes réguliers (région 2, chapitre C) : formes conjuguées ramenées au
+# passé ou à l'inaccompli de la 3e personne du masculin singulier, qui sont
+# sur la fiche du verbe. Un groupe n'est reconnu qu'à partir de la leçon qui
+# l'enseigne (champ « terminaisons »).
+VERB_PAST_SUFFIXES = ("تما", "تم", "تن", "نا", "وا", "ت", "ا", "ن")
+VERB_PRESENT_PREFIXES = ("ي", "ت", "ا", "ن")
+VERB_PRESENT_SUFFIXES = ("ون", "ين", "ان", "وا", "ن", "ي", "ا")
+VERB_GROUPS = ("passe", "inaccompli", "imperatif", "futur")
+
+
+def _verb_stems(k: str, groups) -> list[str]:
+    out = []
+
+    def add(c: str) -> None:
+        if len(c) >= 2 and c not in out:
+            out.append(c)
+
+    def present(form: str) -> None:
+        # forme d'inaccompli : préfixe de personne, terminaison éventuelle
+        if form[:1] in VERB_PRESENT_PREFIXES and len(form) > 3:
+            stem = form[1:]
+            add("ي" + stem)
+            for s in VERB_PRESENT_SUFFIXES:
+                if stem.endswith(s) and len(stem) - len(s) >= 2:
+                    add("ي" + stem[: -len(s)])
+
+    if "passe" in groups:
+        for s in VERB_PAST_SUFFIXES:
+            if k.endswith(s) and len(k) - len(s) >= 2:
+                add(k[: -len(s)])
+    if "inaccompli" in groups:
+        present(k)
+    if "futur" in groups and k.startswith("س") and len(k) > 4:
+        add(k[1:])
+        present(k[1:])
+    if "imperatif" in groups and k.startswith("ا") and len(k) > 3:
+        stem = k[1:]
+        add("ي" + stem)
+        for s in ("ي", "وا", "ا", "ن"):
+            if stem.endswith(s) and len(stem) - len(s) >= 2:
+                add("ي" + stem[: -len(s)])
+    return out
+
+
 def _without_endings(base: str, groups) -> list[str]:
     out = []
     for g in groups:
@@ -102,6 +146,11 @@ def candidates(token: str, known_prefixes: set[str] | None = None,
     groups = ENDINGS.keys() if endings is None else [g for g in ENDINGS if g in endings]
     for base in list(out):
         out.extend(c for c in _without_endings(base, groups) if c not in out)
+    verbs = VERB_GROUPS if endings is None else [g for g in VERB_GROUPS if g in endings]
+    if verbs:
+        # Avec un pronom complément collé (كَتَبَهُ), on retire d'abord le pronom.
+        for base in list(out):
+            out.extend(c for c in _verb_stems(base, verbs) if c not in out)
     return out
 
 

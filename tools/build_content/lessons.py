@@ -155,7 +155,7 @@ def validate(data: LessonData) -> None:
                     known_keys |= vocab.word_keys(w)
                 known_keys |= {vocab.key(f) for f in lesson.get("apercu", [])}
                 for g in lesson.get("terminaisons", []):
-                    if g not in vocab.ENDINGS:
+                    if g not in vocab.ENDINGS and g not in vocab.VERB_GROUPS:
                         raise LessonError(f"{where} : terminaison inconnue {g}")
                     known_endings.add(g)
 

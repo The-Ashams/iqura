@@ -146,6 +146,57 @@ List<String> keyCandidates(String token) {
       }
     }
   }
+  // Verbes réguliers (même définition que `vocab._verb_stems`) : formes
+  // conjuguées ramenées au passé ou à l'inaccompli de la fiche.
+  for (final base in List.of(out)) {
+    for (final c in _verbStems(base)) {
+      add(c);
+    }
+  }
+  return out;
+}
+
+const _pastSuffixes = ['تما', 'تم', 'تن', 'نا', 'وا', 'ت', 'ا', 'ن'];
+const _presentPrefixes = ['ي', 'ت', 'ا', 'ن'];
+const _presentSuffixes = ['ون', 'ين', 'ان', 'وا', 'ن', 'ي', 'ا'];
+
+List<String> _verbStems(String k) {
+  final out = <String>[];
+  void add(String c) {
+    if (c.length >= 2 && !out.contains(c)) out.add(c);
+  }
+
+  void present(String form) {
+    if (form.length > 3 && _presentPrefixes.contains(form[0])) {
+      final stem = form.substring(1);
+      add('ي$stem');
+      for (final s in _presentSuffixes) {
+        if (stem.endsWith(s) && stem.length - s.length >= 2) {
+          add('ي${stem.substring(0, stem.length - s.length)}');
+        }
+      }
+    }
+  }
+
+  for (final s in _pastSuffixes) {
+    if (k.endsWith(s) && k.length - s.length >= 2) {
+      add(k.substring(0, k.length - s.length));
+    }
+  }
+  present(k);
+  if (k.startsWith('س') && k.length > 4) {
+    add(k.substring(1));
+    present(k.substring(1));
+  }
+  if (k.startsWith('ا') && k.length > 3) {
+    final stem = k.substring(1);
+    add('ي$stem');
+    for (final s in ['ي', 'وا', 'ا', 'ن']) {
+      if (stem.endsWith(s) && stem.length - s.length >= 2) {
+        add('ي${stem.substring(0, stem.length - s.length)}');
+      }
+    }
+  }
   return out;
 }
 

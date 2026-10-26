@@ -30,6 +30,10 @@ void main() {
     expect(keyCandidates('مُعَلِّمَاتٌ'), contains(arabicKey('مُعَلِّمَةٌ')));
     expect(keyCandidates('كَبِيرًا'), contains(arabicKey('كَبِيرٌ')));
     expect(db.wordForToken('خَيْمَتُنَا')?.id, 'khayma');
+    // Verbes réguliers.
+    expect(db.wordForToken('ذَهَبْتُ')?.id, 'dhahaba');
+    expect(db.wordForToken('تَخْرُجُونَ')?.id, 'kharaja');
+    expect(db.wordForToken('سَيَدْخُلُ')?.id, 'dakhala');
     // هِيَ n'est pas « ه + ي ».
     expect(keyCandidates('هِيَ'), isNot(contains('ه')));
   });

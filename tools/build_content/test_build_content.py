@@ -88,6 +88,14 @@ class VocabTest(unittest.TestCase):
         for word, group in cases.items():
             self.assertEqual(vocab.unknown(word, known), [word], word)
             self.assertEqual(vocab.unknown(word, known, {group}), [], word)
+        # Verbes réguliers : formes ramenées au passé ou à l'inaccompli de la fiche.
+        verb = vocab.word_keys({"ar": "كَتَبَ", "passe": "كَتَبَ", "inaccompli": "يَكْتُبُ"})
+        verbs = {"كَتَبْتُ": "passe", "كَتَبُوا": "passe", "تَكْتُبِينَ": "inaccompli",
+                 "أَكْتُبُ": "inaccompli", "سَيَكْتُبُ": "futur", "اكْتُبُوا": "imperatif"}
+        for word, group in verbs.items():
+            self.assertEqual(vocab.unknown(word, verb), [word], word)
+            self.assertEqual(vocab.unknown(word, verb, {group}), [], word)
+        self.assertEqual(vocab.unknown("كَتَبَهُ", verb, {"passe", "pronoms"}), [])
         # Une terminaison ne s'enlève pas d'un mot trop court.
         self.assertEqual(vocab.unknown("هِيَ", {vocab.key("هـ")}, {"pronoms"}), ["هِيَ"])
 
