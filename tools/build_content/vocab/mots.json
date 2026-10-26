@@ -2780,6 +2780,292 @@
     "fr": "La réponse est courte."
    },
    "theme": "savoir"
+  },
+  {
+   "id": "sa",
+   "ar": "سَـ",
+   "translit": "sa-",
+   "fr": "(futur, collé à l'inaccompli)",
+   "nature": "particule",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "سَيَرْجِعُ رَاشِدٌ غَدًا.",
+    "fr": "Rāšid reviendra demain."
+   }
+  },
+  {
+   "id": "sawfa",
+   "ar": "سَوْفَ",
+   "translit": "sawfa",
+   "fr": "(futur, devant l'inaccompli)",
+   "nature": "particule",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "سَوْفَ نَسْمَعُ قِصَّةً جَدِيدَةً.",
+    "fr": "Nous écouterons une nouvelle histoire."
+   }
+  },
+  {
+   "id": "ghadan",
+   "ar": "غَدًا",
+   "translit": "ġadan",
+   "fr": "demain",
+   "nature": "adverbe",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "lemme": "gad",
+   "exemple": {
+    "ar": "سَأَكْتُبُ الرِّسَالَةَ غَدًا.",
+    "fr": "J'écrirai la lettre demain."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "samia",
+   "ar": "سَمِعَ",
+   "translit": "samiʿa",
+   "fr": "il a entendu, il a écouté",
+   "nature": "verbe",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "passe": "سَمِعَ",
+   "inaccompli": "يَسْمَعُ",
+   "lemme": "samiEa",
+   "exemple": {
+    "ar": "سَمِعْتُ قِصَّةً جَمِيلَةً.",
+    "fr": "J'ai entendu une belle histoire."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "qissa",
+   "ar": "قِصَّةٌ",
+   "translit": "qiṣṣatun",
+   "fr": "histoire, récit",
+   "nature": "nom",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "قِصَصٌ",
+   "racine": "qSS",
+   "exemple": {
+    "ar": "الْقِصَّةُ طَوِيلَةٌ.",
+    "fr": "L'histoire est longue."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "hadiqa",
+   "ar": "حَدِيقَةٌ",
+   "translit": "ḥadīqatun",
+   "fr": "jardin",
+   "nature": "nom",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "حَدَائِقُ",
+   "racine": "Hdq",
+   "exemple": {
+    "ar": "الْحَدِيقَةُ جَمِيلَةٌ.",
+    "fr": "Le jardin est beau."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "qala",
+   "ar": "قَالَ",
+   "translit": "qāla",
+   "fr": "il a dit",
+   "nature": "verbe",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "passe": "قَالَ",
+   "inaccompli": "يَقُولُ",
+   "formes": [
+    "قَالَتْ"
+   ],
+   "lemme": "qaAla",
+   "remarque": "employé ici seulement sous la forme قَالَ / قَالَتْ, suivi du nom de celui qui parle ; le reste de ce verbe viendra plus tard",
+   "exemple": {
+    "ar": "قَالَتْ سَلْمَى: « الْحَدِيقَةُ جَمِيلَةٌ. »",
+    "fr": "Salmā a dit : « Le jardin est beau. »"
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "ya",
+   "ar": "يَا",
+   "translit": "yā",
+   "fr": "ô (pour appeler quelqu'un)",
+   "nature": "particule",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "remarque": "après يَا, un nom propre perd son tanwīn : يَا بَاسِمُ",
+   "exemple": {
+    "ar": "يَا بَاسِمُ، اجْلِسْ هُنَا.",
+    "fr": "Bāsim, assieds-toi ici."
+   }
+  },
+  {
+   "id": "alan",
+   "ar": "الْآنَ",
+   "translit": "al-āna",
+   "fr": "maintenant",
+   "nature": "adverbe",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "remarque": "sa fin ne change pas",
+   "exemple": {
+    "ar": "اكْتُبِ الرِّسَالَةَ الْآنَ.",
+    "fr": "Écris la lettre maintenant."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "zaraa",
+   "ar": "زَرَعَ",
+   "translit": "zaraʿa",
+   "fr": "il a semé, il a planté",
+   "nature": "verbe",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "passe": "زَرَعَ",
+   "inaccompli": "يَزْرَعُ",
+   "lemme": "tazoraEu",
+   "exemple": {
+    "ar": "زَرَعَ رَاشِدٌ نَخْلَةً.",
+    "fr": "Rāšid a planté un palmier."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "shajara",
+   "ar": "شَجَرَةٌ",
+   "translit": "šaǧaratun",
+   "fr": "arbre",
+   "nature": "nom",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "أَشْجَارٌ",
+   "lemme": "$ajarap",
+   "exemple": {
+    "ar": "الشَّجَرَةُ كَبِيرَةٌ.",
+    "fr": "L'arbre est grand."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "thamara",
+   "ar": "ثَمَرَةٌ",
+   "translit": "ṯamaratun",
+   "fr": "fruit",
+   "nature": "nom",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "ثَمَرَاتٌ",
+   "lemme": "vamarap",
+   "exemple": {
+    "ar": "الثَّمَرَةُ صَغِيرَةٌ.",
+    "fr": "Le fruit est petit."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "zahra",
+   "ar": "زَهْرَةٌ",
+   "translit": "zahratun",
+   "fr": "fleur",
+   "nature": "nom",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "أَزْهَارٌ",
+   "racine": "zhr",
+   "exemple": {
+    "ar": "الزَّهْرَةُ جَمِيلَةٌ.",
+    "fr": "La fleur est belle."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "alladhi",
+   "ar": "الَّذِي",
+   "translit": "allaḏī",
+   "fr": "qui, que (masculin)",
+   "nature": "relatif",
+   "lecon": "fondations-30",
+   "source_sens": "rédigé par IA",
+   "lemme": "{l~a*iY",
+   "exemple": {
+    "ar": "الْقَلَمُ الَّذِي تَرَكْتُهُ جَدِيدٌ.",
+    "fr": "Le calame que j'ai laissé est neuf."
+   }
+  },
+  {
+   "id": "allati",
+   "ar": "الَّتِي",
+   "translit": "allatī",
+   "fr": "qui, que (féminin ; choses au pluriel)",
+   "nature": "relatif",
+   "lecon": "fondations-30",
+   "source_sens": "rédigé par IA",
+   "lemme": "{l~a*iY",
+   "exemple": {
+    "ar": "الْبِنْتُ الَّتِي جَلَسَتْ هُنَا صَغِيرَةٌ.",
+    "fr": "La fille qui s'est assise ici est petite."
+   }
+  },
+  {
+   "id": "alladhina",
+   "ar": "الَّذِينَ",
+   "translit": "allaḏīna",
+   "fr": "qui (personnes au pluriel)",
+   "nature": "relatif",
+   "lecon": "fondations-30",
+   "source_sens": "rédigé par IA",
+   "lemme": "{l~a*iY",
+   "exemple": {
+    "ar": "أَيْنَ التُّجَّارُ الَّذِينَ رَجَعُوا؟",
+    "fr": "Où sont les marchands qui sont revenus ?"
+   }
+  },
+  {
+   "id": "shaykh",
+   "ar": "شَيْخٌ",
+   "translit": "šayḫun",
+   "fr": "vieil homme",
+   "nature": "nom",
+   "lecon": "fondations-30",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "شُيُوخٌ",
+   "lemme": "$ayox",
+   "exemple": {
+    "ar": "الشَّيْخُ فِي الْحَدِيقَةِ.",
+    "fr": "Le vieil homme est dans le jardin."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "sawt",
+   "ar": "صَوْتٌ",
+   "translit": "ṣawtun",
+   "fr": "voix, son",
+   "nature": "nom",
+   "lecon": "fondations-30",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَصْوَاتٌ",
+   "lemme": "Sawot",
+   "exemple": {
+    "ar": "الصَّوْتُ جَمِيلٌ.",
+    "fr": "La voix est belle."
+   },
+   "theme": "nature"
   }
  ]
 }

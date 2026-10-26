@@ -1,0 +1,538 @@
+{
+  "id": "fondations-30",
+  "etape": 2,
+  "ordre": 30,
+  "format": 3,
+  "titre": "Celui qui…",
+  "objectif": "Relier deux phrases avec الَّذِي، الَّتِي، الَّذِينَ.",
+  "statut": "ia_non_verifie",
+  "lieu": "jardin_conteur",
+  "maitre": "samir_oasis",
+  "prerequis": [
+    "fondations-29"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "texte": "Ce soir, un vieil homme raconte une histoire au jardin. Tous écoutent sa voix."
+        },
+        {
+          "qui": "samir_oasis",
+          "texte": "Pour dire « le marchand qui est revenu », « la lettre que j'ai écrite », l'arabe relie deux phrases."
+        }
+      ],
+      "objectif": "Dire « le … qui », « la … que »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « écris ! (à un homme) » ?",
+          "choix_ar": [
+            "اكْتُبْ",
+            "يَكْتُبُ",
+            "كَتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "Impératif (leçon 2.29)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il reviendra demain. »",
+          "ar": "… غَدًا.",
+          "choix_ar": [
+            "سَيَرْجِعُ",
+            "رَجَعَ",
+            "لَمْ يَرْجِعْ"
+          ],
+          "reponse": 0,
+          "explication": "Futur : سَـ + inaccompli (leçon 2.28)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَرَفَنِي",
+          "choix": [
+            "il m'a reconnu",
+            "je l'ai reconnu",
+            "il l'a reconnu"
+          ],
+          "reponse": 0,
+          "explication": "ـنِي : « me » (leçon 2.24)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "أَيْنَ التُّجَّارُ الَّذِينَ رَجَعُوا مِنَ السُّوقِ؟",
+          "fr": "Où sont les marchands qui sont revenus du marché ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "هُمْ فِي الْحَدِيقَةِ.",
+          "fr": "Ils sont dans le jardin."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَالرِّسَالَةُ الَّتِي كَتَبْتُهَا؟",
+          "fr": "Et la lettre que j'ai écrite ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "تَرَكْتُهَا عَلَى الْكُرْسِيِّ.",
+          "fr": "Je l'ai laissée sur la chaise."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où sont les marchands ?",
+        "choix": [
+          "dans le jardin",
+          "au marché",
+          "dans la tente"
+        ],
+        "reponse": 0,
+        "explication": "هُمْ فِي الْحَدِيقَةِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "alladhi",
+        "allati",
+        "alladhina",
+        "shaykh",
+        "sawt"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "الَّذِينَ",
+        "choix": [
+          "qui (personnes au pluriel)",
+          "qui (féminin)",
+          "qui ?"
+        ],
+        "reponse": 0,
+        "explication": "الَّذِينَ veut dire « qui (personnes au pluriel) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "الَّذِي، الَّتِي، الَّذِينَ",
+      "texte": "Après un nom défini, الَّذِي (masculin), الَّتِي (féminin, ou choses au pluriel) et الَّذِينَ (personnes au pluriel) relient une phrase qui commence par un verbe : الشَّيْخُ الَّذِي جَلَسَ هُنَاكَ.",
+      "exemples": [
+        "الشَّيْخُ الَّذِي جَلَسَ هُنَاكَ",
+        "الْبِنْتُ الَّتِي كَتَبَتِ الرِّسَالَةَ",
+        "التُّجَّارُ الَّذِينَ رَجَعُوا"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « la fille qui s'est assise ».",
+        "ar": "الْبِنْتُ … جَلَسَتْ",
+        "choix_ar": [
+          "الَّتِي",
+          "الَّذِي",
+          "الَّذِينَ"
+        ],
+        "reponse": 0,
+        "explication": "Nom féminin : الَّتِي."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le pronom de rappel",
+      "texte": "Nom complément du verbe relié : un pronom le reprend, en général : الْقَلَمُ الَّذِي تَرَكْتُهُ « le calame que j'ai laissé ». Après un nom indéfini, pas de relatif : رَجُلٌ جَلَسَ « un homme qui s'est assis ».",
+      "exemples": [
+        "الْقَلَمُ الَّذِي تَرَكْتُهُ",
+        "الرِّسَالَةُ الَّتِي كَتَبْتُهَا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans « الرِّسَالَةُ الَّتِي كَتَبْتُهَا », que reprend ـهَا ?",
+        "choix": [
+          "la lettre",
+          "moi",
+          "Salmā"
+        ],
+        "reponse": 0,
+        "explication": "ـهَا reprend الرِّسَالَةُ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَيْخٌ",
+          "choix": [
+            "vieil homme",
+            "gardien",
+            "étudiant"
+          ],
+          "reponse": 0,
+          "explication": "شَيْخٌ veut dire « vieil homme »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَوْتٌ",
+          "choix": [
+            "voix, son",
+            "histoire",
+            "parole"
+          ],
+          "reponse": 0,
+          "explication": "صَوْتٌ veut dire « voix, son »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « les marchands qui sont revenus » ?",
+          "choix_ar": [
+            "التُّجَّارُ الَّذِينَ رَجَعُوا",
+            "التُّجَّارُ الَّذِي رَجَعَ",
+            "التُّجَّارُ الَّذِينَ رَجَعَ"
+          ],
+          "reponse": 0,
+          "explication": "Personnes au pluriel : الَّذِينَ, et le verbe s'accorde : رَجَعُوا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « le vieil homme qui s'est assis ».",
+          "ar": "الشَّيْخُ … جَلَسَ",
+          "choix_ar": [
+            "الَّذِي",
+            "الَّتِي",
+            "الَّذِينَ"
+          ],
+          "reponse": 0,
+          "explication": "Nom masculin singulier : الَّذِي."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « la lettre que j'ai écrite ».",
+          "ar": "الرِّسَالَةُ الَّتِي …",
+          "choix_ar": [
+            "كَتَبْتُهَا",
+            "كَتَبْتُهُ",
+            "كَتَبَهُ"
+          ],
+          "reponse": 0,
+          "explication": "Le pronom ـهَا reprend la lettre."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « les livres que j'ai laissés ».",
+          "ar": "الْكُتُبُ … تَرَكْتُهَا",
+          "choix_ar": [
+            "الَّتِي",
+            "الَّذِينَ",
+            "الَّذِي"
+          ],
+          "reponse": 0,
+          "explication": "Choses au pluriel : الَّتِي, et le pronom ـهَا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Peut-on dire « رَجُلٌ الَّذِي جَلَسَ » ?",
+          "choix": [
+            "non, le relatif suit un nom défini",
+            "oui",
+            "seulement au féminin"
+          ],
+          "reponse": 0,
+          "explication": "Après un nom indéfini, pas de الَّذِي : on dit رَجُلٌ جَلَسَ."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "الَّذِينَ",
+          "choix_ar": [
+            "الَّذِينَ",
+            "الَّذِي",
+            "الَّتِي"
+          ],
+          "reponse": 0,
+          "explication": "C'était الَّذِينَ, pour des personnes au pluriel."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « le calame que j'ai laissé ».",
+          "tuiles": [
+            "تَرَكْتُهُ",
+            "الْقَلَمُ",
+            "الَّذِي",
+            "الَّتِي"
+          ],
+          "solution": [
+            "الْقَلَمُ",
+            "الَّذِي",
+            "تَرَكْتُهُ"
+          ],
+          "explication": "Nom défini, الَّذِي, puis la phrase avec le pronom de rappel."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "الْقَلَمُ الَّذِي تَرَكْتُهُ جَدِيدٌ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La voix du conteur",
+      "texte": "Le soir, au jardin, le vieil homme commence son histoire. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "جَلَسَ الشَّيْخُ فِي الْحَدِيقَةِ، وَجَلَسَ التُّجَّارُ الَّذِينَ رَجَعُوا مِنَ السُّوقِ.",
+        "سَمِعْنَا صَوْتَ الشَّيْخِ، وَالصَّوْتُ جَمِيلٌ.",
+        "قَالَ الشَّيْخُ: « هَٰذِهِ قِصَّةُ الْقَافِلَةِ الَّتِي بَلَغَتِ الْمَدِينَةَ. »",
+        "وَفَرِحَ بَاسِمٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui s'est assis avec le vieil homme ?",
+          "choix": [
+            "les marchands revenus du marché",
+            "les étudiants",
+            "les gardiens"
+          ],
+          "reponse": 0,
+          "explication": "التُّجَّارُ الَّذِينَ رَجَعُوا مِنَ السُّوقِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "De quoi parle l'histoire ?",
+          "choix": [
+            "d'une caravane qui a atteint la ville",
+            "d'un jardin",
+            "d'une lettre"
+          ],
+          "reponse": 0,
+          "explication": "قِصَّةُ الْقَافِلَةِ الَّتِي بَلَغَتِ الْمَدِينَةَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te demande si tu as un calame neuf : oui, celui que tu as laissé sur la chaise.",
+          "replique": {
+            "qui": "basim",
+            "ar": "هَلْ عِنْدَكَ قَلَمٌ جَدِيدٌ؟"
+          },
+          "choix_ar": [
+            "نَعَمْ، الْقَلَمُ الَّذِي تَرَكْتُهُ عَلَى الْكُرْسِيِّ جَدِيدٌ.",
+            "نَعَمْ، الْقَلَمُ الَّتِي تَرَكْتُهُ عَلَى الْكُرْسِيِّ جَدِيدٌ.",
+            "نَعَمْ، قَلَمٌ الَّذِي تَرَكْتُهُ عَلَى الْكُرْسِيِّ جَدِيدٌ."
+          ],
+          "reponse": 0,
+          "explication": "Nom défini masculin : الَّذِي, et le pronom ـهُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la fille qui a écrit la lettre » ?",
+          "choix_ar": [
+            "الْبِنْتُ الَّتِي كَتَبَتِ الرِّسَالَةَ",
+            "الْبِنْتُ الَّذِي كَتَبَ الرِّسَالَةَ",
+            "بِنْتٌ الَّتِي كَتَبَتِ الرِّسَالَةَ"
+          ],
+          "reponse": 0,
+          "explication": "« la fille qui a écrit la lettre » se dit الْبِنْتُ الَّتِي كَتَبَتِ الرِّسَالَةَ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « les marchands qui sont revenus ».",
+          "tuiles": [
+            "رَجَعُوا",
+            "التُّجَّارُ",
+            "الَّذِينَ",
+            "الَّذِي"
+          ],
+          "solution": [
+            "التُّجَّارُ",
+            "الَّذِينَ",
+            "رَجَعُوا"
+          ],
+          "explication": "Personnes au pluriel : الَّذِينَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « la caravane qui a atteint la ville ».",
+          "ar": "الْقَافِلَةُ … بَلَغَتِ الْمَدِينَةَ",
+          "choix_ar": [
+            "الَّتِي",
+            "الَّذِي",
+            "الَّذِينَ"
+          ],
+          "reponse": 0,
+          "explication": "Nom féminin : الَّتِي."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الَّذِي",
+          "choix": [
+            "qui, que (masculin)",
+            "qui ? (question)",
+            "celui-ci"
+          ],
+          "reponse": 0,
+          "explication": "الَّذِي veut dire « qui, que (masculin) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الَّتِي",
+          "choix": [
+            "qui, que (féminin ; choses au pluriel)",
+            "qui (personnes au pluriel)",
+            "celle-ci"
+          ],
+          "reponse": 0,
+          "explication": "الَّتِي veut dire « qui, que (féminin ; choses au pluriel) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَوْتٌ",
+          "choix": [
+            "voix, son",
+            "parole",
+            "histoire"
+          ],
+          "reponse": 0,
+          "explication": "صَوْتٌ veut dire « voix, son »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le vieil homme » ?",
+          "choix_ar": [
+            "الشَّيْخُ",
+            "الطَّالِبُ",
+            "الْحَارِسُ"
+          ],
+          "reponse": 0,
+          "explication": "« le vieil homme » se dit الشَّيْخُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le calame que j'ai laissé » ?",
+          "choix_ar": [
+            "الْقَلَمُ الَّذِي تَرَكْتُهُ",
+            "الْقَلَمُ الَّذِي تَرَكْتُهَا",
+            "الْقَلَمُ الَّتِي تَرَكْتُهُ"
+          ],
+          "reponse": 0,
+          "explication": "« le calame que j'ai laissé » se dit الْقَلَمُ الَّذِي تَرَكْتُهُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « les étudiants qui ont compris ».",
+          "ar": "الطُّلَّابُ … فَهِمُوا",
+          "choix_ar": [
+            "الَّذِينَ",
+            "الَّذِي",
+            "الَّتِي"
+          ],
+          "reponse": 0,
+          "explication": "Personnes au pluriel : الَّذِينَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « la lettre qu'elle a écrite ».",
+          "ar": "الرِّسَالَةُ الَّتِي …",
+          "choix_ar": [
+            "كَتَبَتْهَا",
+            "كَتَبَتْهُ",
+            "كَتَبَهَا"
+          ],
+          "reponse": 0,
+          "explication": "كَتَبَتْ « elle a écrit », et ـهَا reprend la lettre."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans cette leçon, quand الَّذِي suit un nom, ce nom est…",
+          "choix": [
+            "défini",
+            "indéfini",
+            "toujours féminin"
+          ],
+          "reponse": 0,
+          "explication": "Ici, toujours après un nom défini."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "الَّتِي",
+          "choix_ar": [
+            "الَّتِي",
+            "الَّذِي",
+            "الَّذِينَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était الَّتِي."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « plante un arbre ! » ?",
+          "choix_ar": [
+            "ازْرَعْ شَجَرَةً",
+            "زَرَعَ شَجَرَةً",
+            "يَزْرَعُ شَجَرَةً"
+          ],
+          "reponse": 0,
+          "explication": "« plante un arbre ! » se dit ازْرَعْ شَجَرَةً.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "غَدًا",
+          "choix": [
+            "demain",
+            "hier",
+            "maintenant"
+          ],
+          "reponse": 0,
+          "explication": "غَدًا veut dire « demain ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je ne sais pas. »",
+          "ar": "لَا …",
+          "choix_ar": [
+            "أَعْرِفُ",
+            "عَرَفْتُ",
+            "يَعْرِفُ"
+          ],
+          "reponse": 0,
+          "explication": "لَا + inaccompli.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu relies deux phrases : الشَّيْخُ الَّذِي جَلَسَ، الرِّسَالَةُ الَّتِي كَتَبْتُهَا، التُّجَّارُ الَّذِينَ رَجَعُوا. Le chapitre du verbe est terminé !",
+      "suite": "Il reste l'épreuve des Sables du mirage : le Grand Mirage t'attend."
+    }
+  ]
+}

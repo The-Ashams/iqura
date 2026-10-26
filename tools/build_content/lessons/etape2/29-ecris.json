@@ -1,0 +1,587 @@
+{
+  "id": "fondations-29",
+  "etape": 2,
+  "ordre": 29,
+  "format": 3,
+  "titre": "Écris !",
+  "objectif": "Donner un ordre simple : l'impératif.",
+  "statut": "ia_non_verifie",
+  "lieu": "jardin_conteur",
+  "maitre": "samir_oasis",
+  "prerequis": [
+    "fondations-28"
+  ],
+  "terminaisons": [
+    "imperatif"
+  ],
+  "apercu": [
+    "اكْتُبَا",
+    "اكْتُبْنَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "texte": "Au jardin, il y a du travail : planter, porter, arroser…"
+        },
+        {
+          "qui": "samir_oasis",
+          "texte": "Pour dire à quelqu'un « assieds-toi », « porte », « écris », on emploie l'impératif."
+        }
+      ],
+      "objectif": "Donner un ordre simple."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il écrira » ?",
+          "choix_ar": [
+            "سَيَكْتُبُ",
+            "يَكْتُبُ",
+            "كَتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "سَـ + inaccompli : futur (leçon 2.28)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'a pas compris. »",
+          "ar": "لَمْ …",
+          "choix_ar": [
+            "يَفْهَمْ",
+            "فَهِمَ",
+            "يَفْهَمُونَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : inaccompli avec sukūn (leçon 2.27)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَدِيقَةٌ",
+          "choix": [
+            "jardin",
+            "histoire",
+            "arbre"
+          ],
+          "reponse": 0,
+          "explication": "حَدِيقَةٌ veut dire « jardin » (leçon 2.28)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "ar": "يَا بَاسِمُ، اجْلِسْ هُنَا.",
+          "fr": "Bāsim, assieds-toi ici."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَالسَّلَّةُ؟",
+          "fr": "Et le panier ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "احْمِلِ السَّلَّةَ إِلَى الْخَيْمَةِ، ثُمَّ ازْرَعْ نَخْلَةً فِي الْحَدِيقَةِ.",
+          "fr": "Porte le panier jusqu'à la tente, puis plante un palmier dans le jardin."
+        },
+        {
+          "qui": "basim",
+          "ar": "الْآنَ؟",
+          "fr": "Maintenant ?"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que doit planter Bāsim ?",
+        "choix": [
+          "un palmier",
+          "une fleur",
+          "des graines"
+        ],
+        "reponse": 0,
+        "explication": "ازْرَعْ نَخْلَةً : un palmier."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ya",
+        "alan",
+        "zaraa"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "الْآنَ",
+        "choix": [
+          "maintenant",
+          "demain",
+          "aujourd'hui"
+        ],
+        "reponse": 0,
+        "explication": "الْآنَ veut dire « maintenant »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "shajara",
+        "thamara",
+        "zahra"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "زَهْرَةٌ",
+        "choix": [
+          "fleur",
+          "fruit",
+          "arbre"
+        ],
+        "reponse": 0,
+        "explication": "زَهْرَةٌ veut dire « fleur »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'impératif",
+      "texte": "Pour l'impératif, on enlève le préfixe de l'inaccompli et on met un sukūn. On ajoute un alif, lu u si la 2ᵉ lettre de la racine porte u (يَكْتُبُ → اكْتُبْ, uktub), sinon i (اجْلِسْ, iǧlis).",
+      "exemples": [
+        "يَكْتُبُ",
+        "اكْتُبْ",
+        "يَجْلِسُ",
+        "اجْلِسْ",
+        "يَشْرَبُ",
+        "اشْرَبْ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment dit-on « porte ! » (à un homme) ?",
+        "choix_ar": [
+          "احْمِلْ",
+          "يَحْمِلُ",
+          "حَمَلَ"
+        ],
+        "reponse": 0,
+        "explication": "يَحْمِلُ → احْمِلْ : préfixe enlevé, sukūn, alif au début."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "À une femme, à plusieurs",
+      "texte": "À une femme : اكْتُبِي ; à plusieurs : اكْتُبُوا. Devant l'article, le sukūn devient i : اكْتُبِ الرِّسَالَةَ.",
+      "exemples": [
+        "اكْتُبْ",
+        "اكْتُبِي",
+        "اكْتُبُوا",
+        "اكْتُبِ الرِّسَالَةَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "« اجْلِسِي » s'adresse à…",
+        "choix": [
+          "une femme",
+          "un homme",
+          "plusieurs personnes"
+        ],
+        "reponse": 0,
+        "explication": "-ī : à une femme."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "À reconnaître",
+      "texte": "Il existe aussi اكْتُبَا (à deux personnes) et اكْتُبْنَ (à plusieurs femmes). Après un mot, l'alif du début ne se prononce pas, comme celui de l'article : ثُمَّ ازْرَعْ (ṯumma zraʿ).",
+      "exemples": [
+        "اكْتُبَا",
+        "اكْتُبْنَ",
+        "ثُمَّ ازْرَعْ",
+        "يَا بَاسِمُ، اجْلِسْ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans « ثُمَّ اجْلِسْ », l'alif de اجْلِسْ…",
+        "choix": [
+          "ne se prononce pas",
+          "se prononce i",
+          "se prononce u"
+        ],
+        "reponse": 0,
+        "explication": "Après un mot, cet alif se tait : ṯumma ǧlis."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "زَرَعَ",
+          "choix": [
+            "il a semé, il a planté",
+            "il a porté",
+            "il a écouté"
+          ],
+          "reponse": 0,
+          "explication": "زَرَعَ veut dire « il a semé, il a planté »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَمَرَةٌ",
+          "choix": [
+            "fruit",
+            "fleur",
+            "panier"
+          ],
+          "reponse": 0,
+          "explication": "ثَمَرَةٌ veut dire « fruit »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « écris ! (à un homme) » ?",
+          "choix_ar": [
+            "اكْتُبْ",
+            "يَكْتُبُ",
+            "كَتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "يَكْتُبُ → اكْتُبْ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « assieds-toi ! (à une femme) » ?",
+          "choix_ar": [
+            "اجْلِسِي",
+            "اجْلِسْ",
+            "اجْلِسُوا"
+          ],
+          "reponse": 0,
+          "explication": "À une femme : -ī."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim, plante un arbre ! »",
+          "ar": "يَا بَاسِمُ، … شَجَرَةً.",
+          "choix_ar": [
+            "ازْرَعْ",
+            "زَرَعَ",
+            "يَزْرَعُ"
+          ],
+          "reponse": 0,
+          "explication": "Impératif : ازْرَعْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Écris la lettre maintenant ! »",
+          "ar": "… الرِّسَالَةَ الْآنَ.",
+          "choix_ar": [
+            "اكْتُبِ",
+            "اكْتُبْ",
+            "كَتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "Devant l'article, le sukūn devient i : اكْتُبِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi lit-on « uktub » mais « iǧlis » ?",
+          "choix": [
+            "la 2ᵉ lettre de la racine porte u dans يَكْتُبُ, i dans يَجْلِسُ",
+            "اكْتُبْ est féminin",
+            "c'est une exception"
+          ],
+          "reponse": 0,
+          "explication": "L'alif se lit u si la 2ᵉ lettre de la racine porte u."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "احْمِلْ",
+          "choix_ar": [
+            "احْمِلْ",
+            "اجْلِسْ",
+            "اكْتُبْ"
+          ],
+          "reponse": 0,
+          "explication": "C'était احْمِلْ « porte ! »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Bāsim, assieds-toi ici. »",
+          "tuiles": [
+            "هُنَا",
+            "يَا",
+            "اجْلِسْ",
+            "بَاسِمُ،"
+          ],
+          "solution": [
+            "يَا",
+            "بَاسِمُ،",
+            "اجْلِسْ",
+            "هُنَا"
+          ],
+          "explication": "يَا بَاسِمُ، اجْلِسْ هُنَا."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "اكْتُبِ الرِّسَالَةَ الْآنَ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Au jardin du conteur",
+      "texte": "Samīr donne le travail du soir. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "قَالَ سَمِيرٌ: « يَا بَاسِمُ، احْمِلِ السَّلَّةَ. »",
+        "« وَأَنْتِ يَا سَلْمَى، ازْرَعِي زَهْرَةً فِي الْحَدِيقَةِ. »",
+        "« ثُمَّ اجْلِسُوا هُنَا. »",
+        "جَلَسُوا، وَسَمِعُوا قِصَّةً جَمِيلَةً."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que doit faire Salmā ?",
+          "choix": [
+            "planter une fleur",
+            "porter le panier",
+            "écrire une lettre"
+          ],
+          "reponse": 0,
+          "explication": "ازْرَعِي زَهْرَةً : planter une fleur."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'ont-ils fait ensuite ?",
+          "choix": [
+            "ils ont écouté une histoire",
+            "ils sont sortis",
+            "ils ont mangé"
+          ],
+          "reponse": 0,
+          "explication": "جَلَسُوا، وَسَمِعُوا قِصَّةً."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te demande où s'asseoir : dis-lui de s'asseoir ici.",
+          "replique": {
+            "qui": "basim",
+            "ar": "أَيْنَ أَجْلِسُ؟"
+          },
+          "choix_ar": [
+            "اجْلِسْ هُنَا.",
+            "اجْلِسِي هُنَا.",
+            "جَلَسْتُ هُنَا."
+          ],
+          "reponse": 0,
+          "explication": "À un homme : اجْلِسْ."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Salmā te demande quoi faire : dis-lui d'écrire la lettre.",
+          "replique": {
+            "qui": "salma",
+            "ar": "وَأَنَا؟"
+          },
+          "choix_ar": [
+            "اكْتُبِي الرِّسَالَةَ.",
+            "اكْتُبِ الرِّسَالَةَ.",
+            "تَكْتُبِينَ الرِّسَالَةَ."
+          ],
+          "reponse": 0,
+          "explication": "À une femme : اكْتُبِي."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « porte le panier ! (à un homme) » ?",
+          "choix_ar": [
+            "احْمِلِ السَّلَّةَ.",
+            "حَمَلَ السَّلَّةَ.",
+            "يَحْمِلُ السَّلَّةَ."
+          ],
+          "reponse": 0,
+          "explication": "« porte le panier ! (à un homme) » se dit احْمِلِ السَّلَّةَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Plantez des arbres ! » (à plusieurs)",
+          "ar": "… أَشْجَارًا.",
+          "choix_ar": [
+            "ازْرَعُوا",
+            "ازْرَعْ",
+            "زَرَعُوا"
+          ],
+          "reponse": 0,
+          "explication": "À plusieurs : -ū."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَجَرَةٌ",
+          "choix": [
+            "arbre",
+            "fleur",
+            "fruit"
+          ],
+          "reponse": 0,
+          "explication": "شَجَرَةٌ veut dire « arbre »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "يَا",
+          "choix": [
+            "ô (pour appeler quelqu'un)",
+            "non",
+            "ici"
+          ],
+          "reponse": 0,
+          "explication": "يَا veut dire « ô (pour appeler quelqu'un) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اكْتُبْ",
+          "choix": [
+            "écris !",
+            "il écrit",
+            "il a écrit"
+          ],
+          "reponse": 0,
+          "explication": "اكْتُبْ veut dire « écris ! »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « maintenant » ?",
+          "choix_ar": [
+            "الْآنَ",
+            "غَدًا",
+            "أَمْسِ"
+          ],
+          "reponse": 0,
+          "explication": "« maintenant » se dit الْآنَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « assieds-toi ! (à un homme) » ?",
+          "choix_ar": [
+            "اجْلِسْ",
+            "اجْلِسِي",
+            "جَلَسَ"
+          ],
+          "reponse": 0,
+          "explication": "« assieds-toi ! (à un homme) » se dit اجْلِسْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Porte la charge ! »",
+          "ar": "… الْحِمْلَ.",
+          "choix_ar": [
+            "احْمِلِ",
+            "احْمِلْ",
+            "حَمَلَ"
+          ],
+          "reponse": 0,
+          "explication": "Devant l'article : احْمِلِ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « écrivez ! (à plusieurs) » ?",
+          "choix_ar": [
+            "اكْتُبُوا",
+            "اكْتُبْ",
+            "كَتَبُوا"
+          ],
+          "reponse": 0,
+          "explication": "À plusieurs : -ū."
+        },
+        {
+          "type": "qcm",
+          "consigne": "L'impératif se forme à partir…",
+          "choix": [
+            "de l'inaccompli",
+            "du passé",
+            "du nom"
+          ],
+          "reponse": 0,
+          "explication": "On enlève le préfixe de l'inaccompli."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "ازْرَعْ",
+          "choix_ar": [
+            "ازْرَعْ",
+            "اجْلِسْ",
+            "احْمِلْ"
+          ],
+          "reponse": 0,
+          "explication": "C'était ازْرَعْ « plante ! »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous reviendrons » ?",
+          "choix_ar": [
+            "سَنَرْجِعُ",
+            "رَجَعْنَا",
+            "نَرْجِعُ"
+          ],
+          "reponse": 0,
+          "explication": "« nous reviendrons » se dit سَنَرْجِعُ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قِصَّةٌ",
+          "choix": [
+            "histoire, récit",
+            "lettre",
+            "question"
+          ],
+          "reponse": 0,
+          "explication": "قِصَّةٌ veut dire « histoire, récit ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'est pas sorti. »",
+          "ar": "… خَرَجَ.",
+          "choix_ar": [
+            "مَا",
+            "لَا",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Devant un passé : مَا.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu donnes un ordre : اكْتُبْ، اجْلِسْ، احْمِلْ ; à une femme اكْتُبِي, à plusieurs اكْتُبُوا ; et tu appelles quelqu'un : يَا بَاسِمُ.",
+      "suite": "Dernière leçon : relier deux phrases avec الَّذِي, « celui qui »."
+    }
+  ]
+}
