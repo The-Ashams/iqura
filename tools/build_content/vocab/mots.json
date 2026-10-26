@@ -2468,6 +2468,318 @@
     "fr": "L'endroit est beau."
    },
    "theme": "lieux"
+  },
+  {
+   "id": "darasa",
+   "ar": "دَرَسَ",
+   "translit": "darasa",
+   "fr": "il a étudié",
+   "nature": "verbe",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "passe": "دَرَسَ",
+   "inaccompli": "يَدْرُسُ",
+   "lemme": "darasu",
+   "exemple": {
+    "ar": "يَدْرُسُ سَمِيرٌ فِي الْغُرْفَةِ.",
+    "fr": "Samīr étudie dans la chambre."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "hafiza",
+   "ar": "حَفِظَ",
+   "translit": "ḥafiẓa",
+   "fr": "il a gardé ; il a retenu par cœur",
+   "nature": "verbe",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "passe": "حَفِظَ",
+   "inaccompli": "يَحْفَظُ",
+   "lemme": "HafiZa",
+   "exemple": {
+    "ar": "أَحْفَظُ الدَّرْسَ فِي الْمَسَاءِ.",
+    "fr": "J'apprends la leçon par cœur le soir."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "sakana",
+   "ar": "سَكَنَ",
+   "translit": "sakana",
+   "fr": "il a habité",
+   "nature": "verbe",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "passe": "سَكَنَ",
+   "inaccompli": "يَسْكُنُ",
+   "lemme": "sakana",
+   "exemple": {
+    "ar": "يَسْكُنُ رَاشِدٌ فِي خَيْمَةٍ.",
+    "fr": "Rāšid habite dans une tente."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "harf",
+   "ar": "حَرْفٌ",
+   "translit": "ḥarfun",
+   "fr": "lettre (de l'alphabet)",
+   "nature": "nom",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "حُرُوفٌ",
+   "racine": "Hrf",
+   "exemple": {
+    "ar": "الْحَرْفُ صَغِيرٌ.",
+    "fr": "La lettre est petite."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "satr",
+   "ar": "سَطْرٌ",
+   "translit": "saṭrun",
+   "fr": "ligne (écrite)",
+   "nature": "nom",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُطُورٌ",
+   "racine": "sTr",
+   "exemple": {
+    "ar": "يَكْتُبُ سَمِيرٌ سَطْرًا طَوِيلًا.",
+    "fr": "Samīr écrit une longue ligne."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "midad",
+   "ar": "مِدَادٌ",
+   "translit": "midādun",
+   "fr": "encre",
+   "nature": "nom",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "midaAd",
+   "exemple": {
+    "ar": "الْمِدَادُ فِي الدَّوَاةِ.",
+    "fr": "L'encre est dans l'encrier."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "dawat",
+   "ar": "دَوَاةٌ",
+   "translit": "dawātun",
+   "fr": "encrier",
+   "nature": "nom",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "exemple": {
+    "ar": "الدَّوَاةُ عَلَى الْكُرْسِيِّ.",
+    "fr": "L'encrier est sur la chaise."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "sanaa",
+   "ar": "صَنَعَ",
+   "translit": "ṣanaʿa",
+   "fr": "il a fabriqué",
+   "nature": "verbe",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "passe": "صَنَعَ",
+   "inaccompli": "يَصْنَعُ",
+   "lemme": "SanaEu",
+   "exemple": {
+    "ar": "الْخَيَّاطُونَ يَصْنَعُونَ الْقُمْصَانَ.",
+    "fr": "Les tailleurs fabriquent les chemises."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "labisa",
+   "ar": "لَبِسَ",
+   "translit": "labisa",
+   "fr": "il a mis (un vêtement)",
+   "nature": "verbe",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "passe": "لَبِسَ",
+   "inaccompli": "يَلْبَسُ",
+   "racine": "lbs",
+   "exemple": {
+    "ar": "يَلْبَسُ بَاسِمٌ قَمِيصًا جَدِيدًا.",
+    "fr": "Bāsim met une chemise neuve."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "talib",
+   "ar": "طَالِبٌ",
+   "translit": "ṭālibun",
+   "fr": "étudiant",
+   "nature": "nom",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "طُلَّابٌ",
+   "racine": "Tlb",
+   "exemple": {
+    "ar": "الطُّلَّابُ يَدْرُسُونَ فِي الصَّبَاحِ.",
+    "fr": "Les étudiants étudient le matin."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "waraqa",
+   "ar": "وَرَقَةٌ",
+   "translit": "waraqatun",
+   "fr": "feuille",
+   "nature": "nom",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "أَوْرَاقٌ",
+   "lemme": "waraqap",
+   "exemple": {
+    "ar": "الْوَرَقَةُ عَلَى الْكُرْسِيِّ.",
+    "fr": "La feuille est sur la chaise."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "qirtas",
+   "ar": "قِرْطَاسٌ",
+   "translit": "qirṭāsun",
+   "fr": "feuille à écrire, papier",
+   "nature": "nom",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "قَرَاطِيسُ",
+   "lemme": "qiroTaAs",
+   "exemple": {
+    "ar": "نَكْتُبُ الدَّرْسَ عَلَى الْقِرْطَاسِ.",
+    "fr": "Nous écrivons la leçon sur la feuille."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "kalima",
+   "ar": "كَلِمَةٌ",
+   "translit": "kalimatun",
+   "fr": "mot ; parole",
+   "nature": "nom",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "كَلِمَاتٌ",
+   "lemme": "kalimap",
+   "exemple": {
+    "ar": "الْكَلِمَةُ قَصِيرَةٌ.",
+    "fr": "Le mot est court."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "ma_nafi",
+   "ar": "مَا",
+   "translit": "mā",
+   "fr": "ne… pas (devant un passé)",
+   "nature": "particule",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "remarque": "s'écrit comme مَا « quoi ? » : le ؟ fait la différence",
+   "exemple": {
+    "ar": "مَا فَهِمْتُ السُّؤَالَ.",
+    "fr": "Je n'ai pas compris la question."
+   }
+  },
+  {
+   "id": "la_nafi",
+   "ar": "لَا",
+   "translit": "lā",
+   "fr": "ne… pas (devant un inaccompli)",
+   "nature": "particule",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "lemme": "laA",
+   "remarque": "s'écrit comme لَا « non »",
+   "exemple": {
+    "ar": "لَا أَعْرِفُ الْجَوَابَ.",
+    "fr": "Je ne connais pas la réponse."
+   }
+  },
+  {
+   "id": "lam",
+   "ar": "لَمْ",
+   "translit": "lam",
+   "fr": "ne… pas (sens passé, devant l'inaccompli)",
+   "nature": "particule",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "lemme": "lam",
+   "exemple": {
+    "ar": "لَمْ يَرْجِعْ رَاشِدٌ مِنَ السُّوقِ.",
+    "fr": "Rāšid n'est pas revenu du marché."
+   }
+  },
+  {
+   "id": "fahima",
+   "ar": "فَهِمَ",
+   "translit": "fahima",
+   "fr": "il a compris",
+   "nature": "verbe",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "passe": "فَهِمَ",
+   "inaccompli": "يَفْهَمُ",
+   "racine": "fhm",
+   "exemple": {
+    "ar": "فَهِمَ بَاسِمٌ الدَّرْسَ.",
+    "fr": "Bāsim a compris la leçon."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "suaal",
+   "ar": "سُؤَالٌ",
+   "translit": "suʾālun",
+   "fr": "question",
+   "nature": "nom",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَسْئِلَةٌ",
+   "lemme": "su&aAl",
+   "exemple": {
+    "ar": "السُّؤَالُ طَوِيلٌ.",
+    "fr": "La question est longue."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "jawab",
+   "ar": "جَوَابٌ",
+   "translit": "ǧawābun",
+   "fr": "réponse",
+   "nature": "nom",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَجْوِبَةٌ",
+   "lemme": "jawaAb",
+   "exemple": {
+    "ar": "الْجَوَابُ قَصِيرٌ.",
+    "fr": "La réponse est courte."
+   },
+   "theme": "savoir"
   }
  ]
 }

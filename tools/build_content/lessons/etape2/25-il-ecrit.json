@@ -1,0 +1,562 @@
+{
+  "id": "fondations-25",
+  "etape": 2,
+  "ordre": 25,
+  "format": 3,
+  "titre": "Il écrit",
+  "objectif": "Comprendre un verbe à l'inaccompli (le présent), au singulier.",
+  "statut": "ia_non_verifie",
+  "lieu": "salle_scribes",
+  "maitre": "samir_oasis",
+  "prerequis": [
+    "fondations-24"
+  ],
+  "terminaisons": [
+    "inaccompli"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "texte": "Voici la salle des scribes. Ici, chacun écrit, étudie, apprend par cœur."
+        },
+        {
+          "qui": "samir_oasis",
+          "texte": "Pour dire ce qui se fait maintenant, l'arabe a une autre forme du verbe : l'inaccompli."
+        }
+      ],
+      "objectif": "Dire ce que quelqu'un fait maintenant."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il l'a laissé » ?",
+          "choix_ar": [
+            "تَرَكَهُ",
+            "تَرَكَهَا",
+            "تَرَكَنِي"
+          ],
+          "reponse": 0,
+          "explication": "-hu : « le » (leçon 2.24)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le gardien a ouvert la porte. »",
+          "ar": "فَتَحَ الْحَارِسُ …",
+          "choix_ar": [
+            "الْبَابَ",
+            "الْبَابُ",
+            "الْبَابِ"
+          ],
+          "reponse": 0,
+          "explication": "Complément : -a (leçon 2.23)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَتَبْنَا",
+          "choix": [
+            "nous avons écrit",
+            "ils ont écrit",
+            "j'ai écrit"
+          ],
+          "reponse": 0,
+          "explication": "-nā : « nous » (leçon 2.22)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَا تَكْتُبُ؟",
+          "fr": "Qu'écris-tu ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "أَكْتُبُ سَطْرًا طَوِيلًا.",
+          "fr": "J'écris une longue ligne."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَأَيْنَ تَسْكُنُ؟",
+          "fr": "Et où habites-tu ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "أَسْكُنُ فِي الْمَدِينَةِ.",
+          "fr": "J'habite en ville."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où habite Samīr ?",
+        "choix": [
+          "en ville",
+          "dans une tente",
+          "au caravansérail"
+        ],
+        "reponse": 0,
+        "explication": "أَسْكُنُ فِي الْمَدِينَةِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "darasa",
+        "hafiza",
+        "sakana"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "سَكَنَ",
+        "choix": [
+          "il a habité",
+          "il a étudié",
+          "il a retenu par cœur"
+        ],
+        "reponse": 0,
+        "explication": "سَكَنَ veut dire « il a habité »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "harf",
+        "satr",
+        "midad",
+        "dawat"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مِدَادٌ",
+        "choix": [
+          "encre",
+          "encrier",
+          "ligne"
+        ],
+        "reponse": 0,
+        "explication": "مِدَادٌ veut dire « encre »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'inaccompli",
+      "texte": "L'inaccompli dit ce qui se fait maintenant ou d'habitude ; un préfixe dit qui agit, et la fin est -u : أَكْتُبُ (je), تَكْتُبُ (tu, ou elle), يَكْتُبُ (il). À une femme : تَكْتُبِينَ (fin en -īna).",
+      "exemples": [
+        "أَكْتُبُ",
+        "تَكْتُبُ",
+        "تَكْتُبِينَ",
+        "يَكْتُبُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « أَسْكُنُ » ?",
+        "choix": [
+          "j'habite",
+          "il habite",
+          "tu habites"
+        ],
+        "reponse": 0,
+        "explication": "أَـ : « je »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La voyelle du milieu",
+      "texte": "La voyelle du milieu de l'inaccompli (u, i ou a) s'apprend avec chaque verbe : يَكْتُبُ, يَجْلِسُ, يَشْرَبُ. Elle est sur la fiche du verbe.",
+      "exemples": [
+        "يَكْتُبُ",
+        "يَجْلِسُ",
+        "يَشْرَبُ",
+        "يَحْفَظُ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Il boit au puits. »",
+        "ar": "… مِنَ الْبِئْرِ.",
+        "choix_ar": [
+          "يَشْرَبُ",
+          "شَرِبَ",
+          "أَشْرَبُ"
+        ],
+        "reponse": 0,
+        "explication": "« il », au présent : يَشْرَبُ, avec a au milieu."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَفِظَ",
+          "choix": [
+            "il a gardé ; il a retenu par cœur",
+            "il a habité",
+            "il a étudié"
+          ],
+          "reponse": 0,
+          "explication": "حَفِظَ veut dire « il a gardé ; il a retenu par cœur »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَطْرٌ",
+          "choix": [
+            "ligne (écrite)",
+            "lettre de l'alphabet",
+            "encre"
+          ],
+          "reponse": 0,
+          "explication": "سَطْرٌ veut dire « ligne (écrite) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'écris » ?",
+          "choix_ar": [
+            "أَكْتُبُ",
+            "يَكْتُبُ",
+            "كَتَبْتُ"
+          ],
+          "reponse": 0,
+          "explication": "أَـ : « je », au présent."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il étudie » ?",
+          "choix_ar": [
+            "يَدْرُسُ",
+            "دَرَسَ",
+            "أَدْرُسُ"
+          ],
+          "reponse": 0,
+          "explication": "يَـ : « il », au présent."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Habites-tu en ville ? » (à une femme)",
+          "ar": "هَلْ … فِي الْمَدِينَةِ؟",
+          "choix_ar": [
+            "تَسْكُنِينَ",
+            "تَسْكُنُ",
+            "يَسْكُنُ"
+          ],
+          "reponse": 0,
+          "explication": "À une femme : تَسْكُنِينَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Salmā écrit une lettre. »",
+          "ar": "… سَلْمَى رِسَالَةً.",
+          "choix_ar": [
+            "تَكْتُبُ",
+            "يَكْتُبُ",
+            "أَكْتُبُ"
+          ],
+          "reponse": 0,
+          "explication": "« elle » : تَـ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "« تَكْتُبُ » peut vouloir dire…",
+          "choix": [
+            "tu écris, ou elle écrit",
+            "j'écris",
+            "ils écrivent"
+          ],
+          "reponse": 0,
+          "explication": "تَكْتُبُ : « tu » (homme) ou « elle » ; le contexte tranche."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "يَحْفَظُ",
+          "choix_ar": [
+            "يَحْفَظُ",
+            "يَكْتُبُ",
+            "يَسْكُنُ"
+          ],
+          "reponse": 0,
+          "explication": "C'était يَحْفَظُ « il retient »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Samīr écrit une ligne. »",
+          "tuiles": [
+            "سَطْرًا",
+            "يَكْتُبُ",
+            "سَمِيرٌ",
+            "كَتَبَ"
+          ],
+          "solution": [
+            "يَكْتُبُ",
+            "سَمِيرٌ",
+            "سَطْرًا"
+          ],
+          "explication": "Verbe, sujet, complément (l'arabe permet aussi d'autres ordres)."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "أَكْتُبُ سَطْرًا طَوِيلًا."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Dans la salle des scribes",
+      "texte": "Samīr décrit sa salle. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "أَسْكُنُ فِي الْمَدِينَةِ، وَأَكْتُبُ فِي الْغُرْفَةِ.",
+        "الْمِدَادُ فِي الدَّوَاةِ، وَالدَّوَاةُ عَلَى الْكُرْسِيِّ.",
+        "يَكْتُبُ الْكَاتِبُ سَطْرًا طَوِيلًا.",
+        "وَأَنَا أَحْفَظُ الدَّرْسَ فِي الْمَسَاءِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où est l'encre ?",
+          "choix": [
+            "dans l'encrier",
+            "sur la chaise",
+            "dans le coffre"
+          ],
+          "reponse": 0,
+          "explication": "الْمِدَادُ فِي الدَّوَاةِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que fait Samīr le soir ?",
+          "choix": [
+            "il apprend la leçon par cœur",
+            "il écrit une lettre",
+            "il sort"
+          ],
+          "reponse": 0,
+          "explication": "أَحْفَظُ الدَّرْسَ فِي الْمَسَاءِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Samīr te demande où tu habites. Tu habites dans une tente.",
+          "replique": {
+            "qui": "samir_oasis",
+            "ar": "أَيْنَ تَسْكُنُ؟"
+          },
+          "choix_ar": [
+            "أَسْكُنُ فِي خَيْمَةٍ.",
+            "يَسْكُنُ فِي خَيْمَةٍ.",
+            "سَكَنْتُ خَيْمَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "« j'habite » : أَسْكُنُ."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te demande ce que tu écris. Tu écris une lettre.",
+          "replique": {
+            "qui": "basim",
+            "ar": "مَا تَكْتُبُ؟"
+          },
+          "choix_ar": [
+            "أَكْتُبُ رِسَالَةً.",
+            "تَكْتُبُ رِسَالَةً.",
+            "أَكْتُبُ رِسَالَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "أَكْتُبُ, et le complément en -an : رِسَالَةً."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « elle étudie » ?",
+          "choix_ar": [
+            "تَدْرُسُ",
+            "يَدْرُسُ",
+            "دَرَسَتْ"
+          ],
+          "reponse": 0,
+          "explication": "« elle étudie » se dit تَدْرُسُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'apprends la leçon par cœur. »",
+          "ar": "… الدَّرْسَ.",
+          "choix_ar": [
+            "أَحْفَظُ",
+            "يَحْفَظُ",
+            "حَفِظَ"
+          ],
+          "reponse": 0,
+          "explication": "« je », au présent : أَحْفَظُ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "دَرَسَ",
+          "choix": [
+            "il a étudié",
+            "il a habité",
+            "il a écrit"
+          ],
+          "reponse": 0,
+          "explication": "دَرَسَ veut dire « il a étudié »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَرْفٌ",
+          "choix": [
+            "lettre (de l'alphabet)",
+            "ligne",
+            "lettre (que l'on envoie)"
+          ],
+          "reponse": 0,
+          "explication": "حَرْفٌ veut dire « lettre (de l'alphabet) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "دَوَاةٌ",
+          "choix": [
+            "encrier",
+            "encre",
+            "calame"
+          ],
+          "reponse": 0,
+          "explication": "دَوَاةٌ veut dire « encrier »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il habite » ?",
+          "choix_ar": [
+            "يَسْكُنُ",
+            "سَكَنَ",
+            "أَسْكُنُ"
+          ],
+          "reponse": 0,
+          "explication": "« il habite » se dit يَسْكُنُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'apprends par cœur » ?",
+          "choix_ar": [
+            "أَحْفَظُ",
+            "يَحْفَظُ",
+            "حَفِظْتُ"
+          ],
+          "reponse": 0,
+          "explication": "« j'apprends par cœur » se dit أَحْفَظُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Écris-tu ? » (à une femme)",
+          "ar": "هَلْ …؟",
+          "choix_ar": [
+            "تَكْتُبِينَ",
+            "تَكْتُبُ",
+            "أَكْتُبُ"
+          ],
+          "reponse": 0,
+          "explication": "À une femme : -īna."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Samīr écrit une longue ligne. »",
+          "ar": "… سَمِيرٌ سَطْرًا طَوِيلًا.",
+          "choix_ar": [
+            "يَكْتُبُ",
+            "تَكْتُبُ",
+            "أَكْتُبُ"
+          ],
+          "reponse": 0,
+          "explication": "« il » : يَـ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "L'inaccompli dit…",
+          "choix": [
+            "ce qui se fait maintenant ou d'habitude",
+            "une action terminée",
+            "un ordre"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli : maintenant ou d'habitude."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "يَسْكُنُ",
+          "choix_ar": [
+            "يَسْكُنُ",
+            "يَدْرُسُ",
+            "يَحْفَظُ"
+          ],
+          "reponse": 0,
+          "explication": "C'était يَسْكُنُ « il habite »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il l'a écrite (la lettre). »",
+          "ar": "…",
+          "choix_ar": [
+            "كَتَبَهَا",
+            "كَتَبَهُ",
+            "كَتَبَنِي"
+          ],
+          "reponse": 0,
+          "explication": "-hā : « la ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَكِبَ",
+          "choix": [
+            "il est monté (sur une monture)",
+            "il a porté",
+            "il est sorti"
+          ],
+          "reponse": 0,
+          "explication": "رَكِبَ veut dire « il est monté (sur une monture) ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الْيَوْمَ",
+          "choix": [
+            "aujourd'hui",
+            "hier",
+            "le soir"
+          ],
+          "reponse": 0,
+          "explication": "الْيَوْمَ veut dire « aujourd'hui ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu comprends l'inaccompli au singulier : أَكْتُبُ، تَكْتُبُ، تَكْتُبِينَ، يَكْتُبُ.",
+      "suite": "Prochaine leçon : « nous écrivons, ils écrivent »."
+    }
+  ]
+}

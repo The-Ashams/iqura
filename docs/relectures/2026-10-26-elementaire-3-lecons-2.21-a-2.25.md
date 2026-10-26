@@ -8,6 +8,7 @@ Agent : relecteur-arabe, 26/10/2026. Une relecture par leçon.
 | 2.22 J'ai écrit, nous avons écrit | À corriger (1 Important) |
 | 2.23 La phrase verbale | À corriger (3 Importants) |
 | 2.24 Il l'a écrit | À corriger (3 Importants) |
+| 2.25 Il écrit | Validé avec doutes |
 
 Aucun point bloquant.
 
@@ -38,6 +39,10 @@ Aucun point bloquant.
   - Exercice ajouté sur كَتَبَتْ + suffixe : « كَتَبَتِ الْبِنْتُ الرِّسَالَةَ، ثُمَّ تَرَكَتْهَا ».
   - « Un pluriel de choses se reprend le plus souvent par ـهَا ».
   - Lemmes vérifiés par requête dans la base : `yaTolubu` (طلب, verbe I) et `m~akaAn` (كون) sont les seuls lemmes du Corpus pour ces mots.
+- **2.25**
+  - تَكْتُبُ n'apparaît plus deux fois dans les exemples ; « À une femme : تَكْتُبِينَ (fin en -īna) ».
+  - Doute levé dans le sens du relecteur : « Écris dans l'ordre verbe, sujet, complément » (يَكْتُبُ سَطْرًا سَمِيرٌ est aussi correct).
+  - Lemme `darasu` vérifié par requête : verbe de forme I, racine درس.
 
 ## Doutes
 

@@ -645,10 +645,11 @@
    "genre": "syllabe",
    "texte": "سُكَّ",
    "fichier": "assets/audio/lecons/ar-1910793c2ec49827.mp3",
-   "sha256": "8bfb18893152c237f9737bf8a76bd99bb31baf5a6c4165ed7cada57a5b374552",
-   "graine": 0,
+   "sha256": "fa184358cbe06f85ca67b6f35ddba3703607f392b29f39a3fd894a38f0e6b8c8",
+   "graine": 1,
    "a_ecouter": false,
-   "genere_le": "2026-10-24"
+   "genere_le": "2026-10-26",
+   "ecrit": "سُكْكَ"
   },
   "ar-1916ef1e7f9dc74f": {
    "genre": "mot",
@@ -1302,10 +1303,11 @@
    "genre": "mot",
    "texte": "ٱلْكِتَاب",
    "fichier": "assets/audio/lecons/ar-31d083807e9e70a0.mp3",
-   "sha256": "771ceed2d186adb0883db7a01344be3e9106c67d3739989249fdc6f43757ab86",
-   "graine": 0,
+   "sha256": "a9384dd7981059a6ef01933e54d93eaba7f6f302502cc53550f49c503495367e",
+   "graine": 1,
    "a_ecouter": false,
-   "genere_le": "2026-10-24"
+   "genere_le": "2026-10-26",
+   "ecrit": "الكتاب"
   },
   "ar-31fc2e8f811d7a2f": {
    "genre": "syllabe",
@@ -1627,10 +1629,11 @@
    "genre": "syllabe",
    "texte": "بًا",
    "fichier": "assets/audio/lecons/ar-4054d217883afa3c.mp3",
-   "sha256": "0a388982051b52d7f8c12cd52b9f6a59e22da1f84edd5c8a540483ed82767830",
+   "sha256": "13de9b9fb85d19e52736e3c1738063af155411acd8c0fd360385cdf6eb9f0ff0",
    "graine": 0,
    "a_ecouter": false,
-   "genere_le": "2026-10-24"
+   "genere_le": "2026-10-26",
+   "ecrit": "بَنْ"
   },
   "ar-4104505f55bf2dc5": {
    "genre": "mot",
@@ -1762,10 +1765,11 @@
    "genre": "syllabe",
    "texte": "تَى",
    "fichier": "assets/audio/lecons/ar-45c825312f66edfb.mp3",
-   "sha256": "789595a077d8471a827e56c5cb9e4acea4d0308c0d5ccc423d699cc2928de66a",
-   "graine": 0,
+   "sha256": "dd1d93caace84c81801656de497856c180334a30f1df93257ce4459fbb610a4b",
+   "graine": 1,
    "a_ecouter": false,
-   "genere_le": "2026-10-24"
+   "genere_le": "2026-10-26",
+   "ecrit": "تَا"
   },
   "ar-45d4256ab31eee4f": {
    "genre": "syllabe",
@@ -4906,10 +4910,11 @@
    "genre": "mot",
    "texte": "ذَٰلِكَ",
    "fichier": "assets/audio/lecons/ar-bfd1c1c2801ef25f.mp3",
-   "sha256": "ff8d71949a987d5e08911774ae97b4ebc4b6dfc2c09e3e74fc984e7c5f512023",
-   "graine": 0,
+   "sha256": "436d8428eb7bc07027a7b8459dd8ea12bd3ce82ea2806dc001faa5c801646051",
+   "graine": 1,
    "a_ecouter": false,
-   "genere_le": "2026-10-24"
+   "genere_le": "2026-10-26",
+   "ecrit": "ذَالِكَ"
   },
   "ar-bfdf511db6c83bee": {
    "genre": "phrase",

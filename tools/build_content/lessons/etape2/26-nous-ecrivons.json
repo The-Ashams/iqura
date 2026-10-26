@@ -1,0 +1,547 @@
+{
+  "id": "fondations-26",
+  "etape": 2,
+  "ordre": 26,
+  "format": 3,
+  "titre": "J'écris, nous écrivons",
+  "objectif": "Conjuguer un verbe à l'inaccompli à toutes les personnes.",
+  "statut": "ia_non_verifie",
+  "lieu": "salle_scribes",
+  "maitre": "samir_oasis",
+  "prerequis": [
+    "fondations-25"
+  ],
+  "apercu": [
+    "تَكْتُبْنَ",
+    "يَكْتُبْنَ",
+    "تَكْتُبَانِ",
+    "يَكْتُبَانِ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "texte": "Les étudiants arrivent dans la salle. Ils écrivent, ils étudient, ensemble."
+        },
+        {
+          "qui": "samir_oasis",
+          "texte": "Pour dire « nous », « vous », « ils » au présent, l'inaccompli change encore."
+        }
+      ],
+      "objectif": "Dire ce que nous faisons, ce qu'ils font."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'écris » ?",
+          "choix_ar": [
+            "أَكْتُبُ",
+            "يَكْتُبُ",
+            "كَتَبْتُ"
+          ],
+          "reponse": 0,
+          "explication": "أَـ : « je », au présent (leçon 2.25)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَطْرٌ",
+          "choix": [
+            "ligne (écrite)",
+            "encre",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "سَطْرٌ veut dire « ligne » (leçon 2.25)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Habites-tu en ville ? » (à une femme)",
+          "ar": "هَلْ … فِي الْمَدِينَةِ؟",
+          "choix_ar": [
+            "تَسْكُنِينَ",
+            "يَسْكُنُ",
+            "أَسْكُنُ"
+          ],
+          "reponse": 0,
+          "explication": "À une femme : -īna (leçon 2.25)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَا تَكْتُبُونَ؟",
+          "fr": "Qu'écrivez-vous ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "نَكْتُبُ الدَّرْسَ عَلَى الْقِرْطَاسِ.",
+          "fr": "Nous écrivons la leçon sur la feuille."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَالطُّلَّابُ؟",
+          "fr": "Et les étudiants ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "الطُّلَّابُ يَدْرُسُونَ فِي الصَّبَاحِ.",
+          "fr": "Les étudiants étudient le matin."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quand les étudiants étudient-ils ?",
+        "choix": [
+          "le matin",
+          "le soir",
+          "aujourd'hui"
+        ],
+        "reponse": 0,
+        "explication": "يَدْرُسُونَ فِي الصَّبَاحِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "sanaa",
+        "labisa",
+        "talib",
+        "waraqa",
+        "qirtas",
+        "kalima"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "طَالِبٌ",
+        "choix": [
+          "étudiant",
+          "scribe",
+          "gardien"
+        ],
+        "reponse": 0,
+        "explication": "طَالِبٌ veut dire « étudiant »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Au pluriel",
+      "texte": "Au pluriel : نَكْتُبُ (nous), تَكْتُبُونَ (vous), يَكْتُبُونَ (ils). Si le sujet vient avant le verbe, le verbe s'accorde en tout : الطُّلَّابُ يَدْرُسُونَ.",
+      "exemples": [
+        "نَكْتُبُ",
+        "تَكْتُبُونَ",
+        "يَكْتُبُونَ",
+        "الطُّلَّابُ يَدْرُسُونَ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « نَدْرُسُ » ?",
+        "choix": [
+          "nous étudions",
+          "vous étudiez",
+          "ils étudient"
+        ],
+        "reponse": 0,
+        "explication": "نَـ : « nous »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "À reconnaître",
+      "texte": "Il existe aussi تَكْتُبْنَ (vous, femmes), يَكْتُبْنَ (elles), تَكْتُبَانِ (vous deux ; elles deux), يَكْتُبَانِ (eux deux). Ne confonds pas -ūna (يَكْتُبُونَ, ils) et -āni du duel (يَكْتُبَانِ, eux deux).",
+      "exemples": [
+        "تَكْتُبْنَ",
+        "يَكْتُبْنَ",
+        "تَكْتُبَانِ",
+        "يَكْتُبَانِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "« يَكْتُبْنَ » veut dire…",
+        "choix": [
+          "elles écrivent",
+          "ils écrivent",
+          "nous écrivons"
+        ],
+        "reponse": 0,
+        "explication": "يَكْتُبْنَ finit par -na, sans -ū- : « elles »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَنَعَ",
+          "choix": [
+            "il a fabriqué",
+            "il a mis (un vêtement)",
+            "il a étudié"
+          ],
+          "reponse": 0,
+          "explication": "صَنَعَ veut dire « il a fabriqué »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَلِمَةٌ",
+          "choix": [
+            "mot ; parole",
+            "feuille",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "كَلِمَةٌ veut dire « mot ; parole »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous écrivons » ?",
+          "choix_ar": [
+            "نَكْتُبُ",
+            "يَكْتُبُونَ",
+            "كَتَبْنَا"
+          ],
+          "reponse": 0,
+          "explication": "نَـ : « nous », au présent."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils étudient » ?",
+          "choix_ar": [
+            "يَدْرُسُونَ",
+            "نَدْرُسُ",
+            "دَرَسُوا"
+          ],
+          "reponse": 0,
+          "explication": "يَـ … -ūna : « ils », au présent."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Fabriquez-vous l'encre ? »",
+          "ar": "هَلْ … الْمِدَادَ؟",
+          "choix_ar": [
+            "تَصْنَعُونَ",
+            "نَصْنَعُ",
+            "يَصْنَعُ"
+          ],
+          "reponse": 0,
+          "explication": "« vous » : تَـ … -ūna."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les étudiants écrivent. »",
+          "ar": "الطُّلَّابُ …",
+          "choix_ar": [
+            "يَكْتُبُونَ",
+            "يَكْتُبُ",
+            "تَكْتُبُ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet avant le verbe : accord complet."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « يَكْتُبُ الطُّلَّابُ », pourquoi le verbe est-il au singulier ?",
+          "choix": [
+            "il vient avant le sujet",
+            "الطُّلَّابُ est singulier",
+            "c'est une erreur"
+          ],
+          "reponse": 0,
+          "explication": "Verbe en tête : singulier (leçon 2.23)."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "يَصْنَعُونَ",
+          "choix_ar": [
+            "يَصْنَعُونَ",
+            "يَدْرُسُونَ",
+            "يَكْتُبُونَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était يَصْنَعُونَ « ils fabriquent »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris, en commençant par le verbe : « Nous écrivons la leçon. »",
+          "tuiles": [
+            "الدَّرْسَ",
+            "نَكْتُبُ",
+            "يَكْتُبُونَ"
+          ],
+          "solution": [
+            "نَكْتُبُ",
+            "الدَّرْسَ"
+          ],
+          "explication": "نَكْتُبُ الدَّرْسَ (l'arabe permet aussi d'autres ordres)."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "الطُّلَّابُ يَدْرُسُونَ فِي الصَّبَاحِ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le matin des étudiants",
+      "texte": "Samīr raconte une matinée dans la salle des scribes. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الصَّبَاحِ، يَدْخُلُ الطُّلَّابُ الْغُرْفَةَ.",
+        "يَكْتُبُونَ الدَّرْسَ عَلَى الْقِرْطَاسِ.",
+        "وَنَحْنُ نَصْنَعُ الْمِدَادَ.",
+        "وَفِي الْمَسَاءِ، يَخْرُجُ الطُّلَّابُ مِنَ الْغُرْفَةِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Sur quoi les étudiants écrivent-ils ?",
+          "choix": [
+            "sur la feuille",
+            "sur le mur",
+            "sur la porte"
+          ],
+          "reponse": 0,
+          "explication": "عَلَى الْقِرْطَاسِ : sur la feuille."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que fabriquent Samīr et ses compagnons ?",
+          "choix": [
+            "l'encre",
+            "des chemises",
+            "des feuilles"
+          ],
+          "reponse": 0,
+          "explication": "وَنَحْنُ نَصْنَعُ الْمِدَادَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim vous demande, à toi et à ton ami, ce que vous écrivez. Vous écrivez une lettre.",
+          "replique": {
+            "qui": "basim",
+            "ar": "مَا تَكْتُبُونَ؟"
+          },
+          "choix_ar": [
+            "نَكْتُبُ رِسَالَةً.",
+            "يَكْتُبُونَ رِسَالَةً.",
+            "تَكْتُبُونَ رِسَالَةً."
+          ],
+          "reponse": 0,
+          "explication": "« nous » : نَكْتُبُ."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Samīr te demande ce que font les tailleurs. Ils fabriquent des chemises.",
+          "replique": {
+            "qui": "samir_oasis",
+            "ar": "مَا يَصْنَعُ الْخَيَّاطُونَ؟"
+          },
+          "choix_ar": [
+            "الْخَيَّاطُونَ يَصْنَعُونَ الْقُمْصَانَ.",
+            "الْخَيَّاطُونَ يَصْنَعُ الْقُمْصَانَ.",
+            "الْخَيَّاطُونَ نَصْنَعُ الْقُمْصَانَ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet avant le verbe : accord complet, يَصْنَعُونَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « vous étudiez » ?",
+          "choix_ar": [
+            "تَدْرُسُونَ",
+            "نَدْرُسُ",
+            "يَدْرُسُونَ"
+          ],
+          "reponse": 0,
+          "explication": "« vous étudiez » se dit تَدْرُسُونَ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris, en commençant par le sujet : « Les étudiants écrivent le mot. »",
+          "tuiles": [
+            "الْكَلِمَةَ",
+            "يَكْتُبُونَ",
+            "الطُّلَّابُ",
+            "يَكْتُبُ"
+          ],
+          "solution": [
+            "الطُّلَّابُ",
+            "يَكْتُبُونَ",
+            "الْكَلِمَةَ"
+          ],
+          "explication": "Sujet d'abord : le verbe s'accorde en tout."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَبِسَ",
+          "choix": [
+            "il a mis (un vêtement)",
+            "il a fabriqué",
+            "il a habité"
+          ],
+          "reponse": 0,
+          "explication": "لَبِسَ veut dire « il a mis (un vêtement) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قِرْطَاسٌ",
+          "choix": [
+            "feuille à écrire, papier",
+            "encrier",
+            "livre"
+          ],
+          "reponse": 0,
+          "explication": "قِرْطَاسٌ veut dire « feuille à écrire, papier »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَرَقَةٌ",
+          "choix": [
+            "feuille",
+            "lettre",
+            "mot"
+          ],
+          "reponse": 0,
+          "explication": "وَرَقَةٌ veut dire « feuille »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous étudions » ?",
+          "choix_ar": [
+            "نَدْرُسُ",
+            "يَدْرُسُونَ",
+            "تَدْرُسُونَ"
+          ],
+          "reponse": 0,
+          "explication": "« nous étudions » se dit نَدْرُسُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils fabriquent » ?",
+          "choix_ar": [
+            "يَصْنَعُونَ",
+            "نَصْنَعُ",
+            "صَنَعُوا"
+          ],
+          "reponse": 0,
+          "explication": "« ils fabriquent » se dit يَصْنَعُونَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Écrivez-vous la leçon ? »",
+          "ar": "هَلْ … الدَّرْسَ؟",
+          "choix_ar": [
+            "تَكْتُبُونَ",
+            "نَكْتُبُ",
+            "يَكْتُبُونَ"
+          ],
+          "reponse": 0,
+          "explication": "« vous » : تَـ … -ūna."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les étudiants étudient. »",
+          "ar": "الطُّلَّابُ …",
+          "choix_ar": [
+            "يَدْرُسُونَ",
+            "يَدْرُسُ",
+            "نَدْرُسُ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet avant le verbe : accord complet."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La fin -ūna de « يَكْتُبُونَ »…",
+          "choix": [
+            "marque « ils »",
+            "marque le duel",
+            "veut dire « nous »"
+          ],
+          "reponse": 0,
+          "explication": "-ūna : « ils » ; le duel est -āni."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "نَلْبَسُ",
+          "choix_ar": [
+            "نَلْبَسُ",
+            "نَكْتُبُ",
+            "نَدْرُسُ"
+          ],
+          "reponse": 0,
+          "explication": "C'était نَلْبَسُ « nous mettons (un vêtement) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'habite » ?",
+          "choix_ar": [
+            "أَسْكُنُ",
+            "يَسْكُنُ",
+            "سَكَنْتُ"
+          ],
+          "reponse": 0,
+          "explication": "« j'habite » se dit أَسْكُنُ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "دَوَاةٌ",
+          "choix": [
+            "encrier",
+            "encre",
+            "ligne"
+          ],
+          "reponse": 0,
+          "explication": "دَوَاةٌ veut dire « encrier ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il l'a laissé (le calame). »",
+          "ar": "…",
+          "choix_ar": [
+            "تَرَكَهُ",
+            "تَرَكَهَا",
+            "تَرَكَنِي"
+          ],
+          "reponse": 0,
+          "explication": "-hu : « le ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu conjugues l'inaccompli : أَكْتُبُ، تَكْتُبُ، تَكْتُبِينَ، يَكْتُبُ، نَكْتُبُ، تَكْتُبُونَ، يَكْتُبُونَ.",
+      "suite": "Prochaine leçon : dire « ne… pas » avec un verbe."
+    }
+  ]
+}
