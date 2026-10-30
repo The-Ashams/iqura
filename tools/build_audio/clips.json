@@ -429,10 +429,10 @@
    "genre": "syllabe",
    "texte": "سَ",
    "fichier": "assets/audio/lecons/ar-0c204c583369036d.mp3",
-   "sha256": "cc299e42eeb6be74818db552678657e017652987a26afe71ed8110a9e0bf5012",
-   "graine": 0,
+   "sha256": "6f5b6d6d1b5deab3bded09af2bbff1474667c9dd790e7940aa7d678f4ed405a4",
+   "graine": 2,
    "a_ecouter": false,
-   "genere_le": "2026-10-24"
+   "genere_le": "2026-10-30"
   },
   "ar-0c5227fbf6863db6": {
    "genre": "phrase",
@@ -5684,10 +5684,11 @@
    "genre": "syllabe",
    "texte": "سُكَ",
    "fichier": "assets/audio/lecons/ar-93e2a86a67d096c8.mp3",
-   "sha256": "bf4fd81e35c9bfdeb25d3354ddcc22c7333565891c769e2b5bc34bb60a4a6c72",
+   "sha256": "830212f5e50bb73473ac7a52b34c1dd4b10cac66c03cfa7d50d9094c9bf376b4",
    "graine": 0,
    "a_ecouter": false,
-   "genere_le": "2026-10-24"
+   "genere_le": "2026-10-30",
+   "ecrit": "سُكَةْ"
   },
   "ar-93f5b549587b039e": {
    "genre": "phrase",
