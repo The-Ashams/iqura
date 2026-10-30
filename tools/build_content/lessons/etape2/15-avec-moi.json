@@ -1,0 +1,552 @@
+{
+  "id": "fondations-15",
+  "etape": 2,
+  "ordre": 15,
+  "format": 3,
+  "titre": "Avec moi, sur lui",
+  "objectif": "Coller les pronoms aux prépositions ; dire « j'ai » et « il y a ».",
+  "statut": "ia_non_verifie",
+  "lieu": "echoppe",
+  "maitre": "salma",
+  "prerequis": [
+    "fondations-14"
+  ],
+  "apercu": [
+    "فِيَّ",
+    "عَلَيَّ",
+    "مِنِّي",
+    "لِلتَّاجِرِ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "salma",
+          "texte": "Le tisserand cherche son aiguille et son fil. Bāsim, où sont-ils ?"
+        },
+        {
+          "qui": "salma",
+          "texte": "Apprends à dire « avec moi », « chez lui », « j'ai »."
+        }
+      ],
+      "objectif": "Dire « avec moi », « j'ai », « il y a »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « mon fil » ?",
+          "choix_ar": [
+            "خَيْطِي",
+            "خَيْطُكَ",
+            "خَيْطُهُ"
+          ],
+          "reponse": 0,
+          "explication": "-ī « mon » (leçon 2.14)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فِي",
+          "choix": [
+            "dans",
+            "sur",
+            "sous"
+          ],
+          "reponse": 0,
+          "explication": "فِي veut dire « dans » (leçon 2.1)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Son aiguille (à elle) est petite. »",
+          "ar": "… صَغِيرَةٌ.",
+          "choix_ar": [
+            "إِبْرَتُهَا",
+            "إِبْرَتُهُ",
+            "إِبْرَتِي"
+          ],
+          "reponse": 0,
+          "explication": "-hā « à elle » (leçon 2.14)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "salma",
+          "ar": "أَيْنَ الْإِبْرَةُ؟",
+          "fr": "Où est l'aiguille ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "الْإِبْرَةُ مَعَ صَدِيقِي.",
+          "fr": "L'aiguille est avec mon ami."
+        },
+        {
+          "qui": "salma",
+          "ar": "وَالْخَيْطُ؟",
+          "fr": "Et le fil ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "الْخَيْطُ عِنْدِي.",
+          "fr": "C'est moi qui ai le fil."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où est le fil ?",
+        "choix": [
+          "chez Bāsim",
+          "chez l'ami de Bāsim",
+          "dans le coffre"
+        ],
+        "reponse": 0,
+        "explication": "الْخَيْطُ عِنْدِي : c'est Bāsim qui a le fil."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "maa",
+        "inda",
+        "li",
+        "sadiq",
+        "qita"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مَعَ",
+        "choix": [
+          "avec",
+          "chez",
+          "sous"
+        ],
+        "reponse": 0,
+        "explication": "مَعَ veut dire « avec »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les pronoms après une préposition",
+      "texte": "Les pronoms se collent aussi aux prépositions : لِي، لَكَ، لَهُ، لَهَا (لِـ devient لَـ, sauf لِي) ; مَعِي ; مِنْهُ ; عَلَى et إِلَى deviennent عَلَيْـ et إِلَيْـ. Après i, ī ou ay, -hu devient -hi : فِيهِ، عَلَيْهِ.",
+      "exemples": [
+        "لِي",
+        "لَكَ",
+        "لَهُ",
+        "لَهَا",
+        "لَنَا",
+        "مَعِي",
+        "فِيهِ",
+        "عَلَيْهِ",
+        "مِنْهُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pourquoi dit-on فِيهِ, avec -hi ?",
+        "choix": [
+          "après ī, -hu devient -hi",
+          "فِي est féminin",
+          "-hi veut dire « à elle »"
+        ],
+        "reponse": 0,
+        "explication": "Après i, ī ou ay, -hu devient -hi."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "« J'ai » et « il y a »",
+      "texte": "لِي ou عِنْدِي suivi d'un nom indéfini veut dire « j'ai » : لِي قَمِيصٌ. Quand le sujet est indéfini, le lieu passe devant : فِي الْغُرْفَةِ كُرْسِيٌّ « il y a une chaise dans la chambre ».",
+      "exemples": [
+        "لِي قَمِيصٌ.",
+        "عِنْدِي إِبْرَةٌ.",
+        "فِي الْغُرْفَةِ كُرْسِيٌّ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « لَنَا خَيْمَةٌ » ?",
+        "choix": [
+          "Nous avons une tente.",
+          "Notre tente est là.",
+          "Pour la tente."
+        ],
+        "reponse": 0,
+        "explication": "لَنَا + nom indéfini : « nous avons »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عِنْدَ",
+          "choix": [
+            "chez, auprès de",
+            "avec",
+            "sous"
+          ],
+          "reponse": 0,
+          "explication": "عِنْدَ veut dire « chez, auprès de »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَدِيقٌ",
+          "choix": [
+            "ami",
+            "vendeur",
+            "voyageur"
+          ],
+          "reponse": 0,
+          "explication": "صَدِيقٌ veut dire « ami »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « avec moi » ?",
+          "choix_ar": [
+            "مَعِي",
+            "مَعَكَ",
+            "لِي"
+          ],
+          "reponse": 0,
+          "explication": "مَعَ + -ī : مَعِي."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai une aiguille » ?",
+          "choix_ar": [
+            "لِي إِبْرَةٌ.",
+            "إِبْرَتِي.",
+            "لَكَ إِبْرَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "لِي + nom indéfini : « j'ai »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le coffre est grand, et il y a de la laine dedans. »",
+          "ar": "الصُّنْدُوقُ كَبِيرٌ، وَ… صُوفٌ.",
+          "choix_ar": [
+            "فِيهِ",
+            "فِيهَا",
+            "فِيكِ"
+          ],
+          "reponse": 0,
+          "explication": "صُنْدُوقٌ est masculin : فِيهِ, avec -hi après ī."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a une lampe dans la tente. »",
+          "ar": "… سِرَاجٌ.",
+          "choix_ar": [
+            "فِي الْخَيْمَةِ",
+            "الْخَيْمَةُ",
+            "فِي الْخَيْمَةُ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet indéfini : le lieu passe devant."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire « لَهَا ثَوْبٌ جَمِيلٌ » ?",
+          "choix": [
+            "Elle a un beau vêtement.",
+            "Il a un beau vêtement.",
+            "J'ai un beau vêtement."
+          ],
+          "reponse": 0,
+          "explication": "لَهَا : « à elle », donc « elle a »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "قِطْعَةٌ",
+          "choix_ar": [
+            "قِطْعَةٌ",
+            "قَمِيصٌ",
+            "صَدِيقٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était قِطْعَةٌ « morceau »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « L'aiguille est dans sa bourse (à lui). »",
+          "tuiles": [
+            "كِيسِهِ",
+            "الْإِبْرَةُ",
+            "فِي",
+            "كِيسُهُ"
+          ],
+          "solution": [
+            "الْإِبْرَةُ",
+            "فِي",
+            "كِيسِهِ"
+          ],
+          "explication": "Après فِي, كِيسِ au génitif, puis -hi : كِيسِهِ."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "لِي قَمِيصٌ جَدِيدٌ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "L'aiguille retrouvée",
+      "texte": "Bāsim raconte. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "عِنْدَ النَّسَّاجِ صُنْدُوقٌ كَبِيرٌ، وَفِيهِ صُوفٌ وَحَرِيرٌ.",
+        "فِي الصُّنْدُوقِ قِطْعَةُ حَرِيرٍ.",
+        "صَدِيقِي مَعِي، وَعِنْدَهُ قِطْعَةُ صُوفٍ.",
+        "وَالْإِبْرَةُ فِي كِيسِهِ!"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'y a-t-il dans le coffre du tisserand ?",
+          "choix": [
+            "de la laine et de la soie",
+            "du pain et de l'huile",
+            "de l'or"
+          ],
+          "reponse": 0,
+          "explication": "وَفِيهِ صُوفٌ وَحَرِيرٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Où est l'aiguille ?",
+          "choix": [
+            "dans la bourse de l'ami",
+            "dans le coffre",
+            "chez Salmā"
+          ],
+          "reponse": 0,
+          "explication": "وَالْإِبْرَةُ فِي كِيسِهِ : dans la bourse de l'ami (صَدِيقِي)."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Salmā te demande où est ton ami. Il est avec toi.",
+          "replique": {
+            "qui": "salma",
+            "ar": "أَيْنَ صَدِيقُكَ؟"
+          },
+          "choix_ar": [
+            "صَدِيقِي مَعِي.",
+            "صَدِيقُكَ مَعِي.",
+            "صَدِيقِي مَعَكَ."
+          ],
+          "reponse": 0,
+          "explication": "صَدِيقِي « mon ami », مَعِي « avec moi »."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te demande si tu as une chemise. Tu en as une neuve.",
+          "replique": {
+            "qui": "basim",
+            "ar": "هَلْ لَكَ قَمِيصٌ؟"
+          },
+          "choix_ar": [
+            "نَعَمْ، لِي قَمِيصٌ جَدِيدٌ.",
+            "نَعَمْ، لَكَ قَمِيصٌ جَدِيدٌ.",
+            "نَعَمْ، قَمِيصٌ لَهُ."
+          ],
+          "reponse": 0,
+          "explication": "Pour toi : لِي « j'ai »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Il y a une chaise dans la chambre. »",
+          "tuiles": [
+            "كُرْسِيٌّ",
+            "فِي",
+            "الْغُرْفَةِ",
+            "الْكُرْسِيُّ"
+          ],
+          "solution": [
+            "فِي",
+            "الْغُرْفَةِ",
+            "كُرْسِيٌّ"
+          ],
+          "explication": "Sujet indéfini : le lieu d'abord."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le livre est chez le vendeur » ?",
+          "choix_ar": [
+            "الْكِتَابُ عِنْدَ الْبَائِعِ.",
+            "الْكِتَابُ مَعَ الْبَائِعُ.",
+            "عِنْدَ الْكِتَابِ الْبَائِعُ."
+          ],
+          "reponse": 0,
+          "explication": "« le livre est chez le vendeur » se dit الْكِتَابُ عِنْدَ الْبَائِعِ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَعَ",
+          "choix": [
+            "avec",
+            "chez",
+            "sur"
+          ],
+          "reponse": 0,
+          "explication": "مَعَ veut dire « avec »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قِطْعَةٌ",
+          "choix": [
+            "morceau, pièce",
+            "aiguille",
+            "ami"
+          ],
+          "reponse": 0,
+          "explication": "قِطْعَةٌ veut dire « morceau, pièce »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عِنْدَ",
+          "choix": [
+            "chez, auprès de",
+            "sous",
+            "vers"
+          ],
+          "reponse": 0,
+          "explication": "عِنْدَ veut dire « chez, auprès de »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « avec lui » ?",
+          "choix_ar": [
+            "مَعَهُ",
+            "مَعَهَا",
+            "مَعِي"
+          ],
+          "reponse": 0,
+          "explication": "« avec lui » se dit مَعَهُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous avons » ?",
+          "choix_ar": [
+            "لَنَا",
+            "لَكَ",
+            "لِي"
+          ],
+          "reponse": 0,
+          "explication": "لَنَا + nom indéfini : « nous avons »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai un ami. »",
+          "ar": "… صَدِيقٌ.",
+          "choix_ar": [
+            "لِي",
+            "لَهُ",
+            "مَعَ"
+          ],
+          "reponse": 0,
+          "explication": "لِي + nom indéfini : « j'ai »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a du pain dedans (dans le panier). »",
+          "ar": "السَّلَّةُ صَغِيرَةٌ، وَ… خُبْزٌ.",
+          "choix_ar": [
+            "فِيهَا",
+            "فِيهِ",
+            "فِيكَ"
+          ],
+          "reponse": 0,
+          "explication": "سَلَّةٌ est féminin : فِيهَا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après ī, le pronom -hu devient…",
+          "choix": [
+            "-hi",
+            "-hā",
+            "-ka"
+          ],
+          "reponse": 0,
+          "explication": "فِيهِ, عَلَيْهِ : -hi."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "صَدِيقٌ",
+          "choix_ar": [
+            "صَدِيقٌ",
+            "حَدِيدٌ",
+            "قَمِيصٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était صَدِيقٌ « ami »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « mon vêtement » ?",
+          "choix_ar": [
+            "ثَوْبِي",
+            "ثَوْبُكَ",
+            "ثَوْبُهُ"
+          ],
+          "reponse": 0,
+          "explication": "« mon vêtement » se dit ثَوْبِي.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَحْتَ",
+          "choix": [
+            "sous",
+            "au-dessus de",
+            "avec"
+          ],
+          "reponse": 0,
+          "explication": "تَحْتَ veut dire « sous ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خُبْزٌ",
+          "choix": [
+            "pain",
+            "viande",
+            "huile"
+          ],
+          "reponse": 0,
+          "explication": "خُبْزٌ veut dire « pain ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu dis « avec moi » (مَعِي), « chez lui » (عِنْدَهُ), « j'ai » (لِي) et « il y a » (فِي الْغُرْفَةِ كُرْسِيٌّ).",
+      "suite": "Prochaine étape : la maison de Salmā, pour parler de deux choses."
+    }
+  ]
+}

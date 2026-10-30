@@ -9,6 +9,7 @@ import '../../core/providers.dart';
 import '../../engines/sync/export_archive.dart';
 import '../../features/backup/backup_providers.dart';
 import '../../features/profile/profile.dart';
+import '../../features/progress/lesson_progress.dart';
 import '../../features/settings/settings.dart';
 import '../../features/transfer/transfer_service.dart';
 
@@ -28,6 +29,7 @@ String formatDateTime(DateTime t) {
 void reloadUserState(WidgetRef ref) {
   ref.invalidate(settingsProvider);
   ref.invalidate(profileProvider);
+  ref.invalidate(lessonProgressProvider);
 }
 
 Future<void> exportProgress(BuildContext context, WidgetRef ref) async {

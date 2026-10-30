@@ -108,6 +108,33 @@ class SettingsScreen extends ConsumerWidget {
             value: settings.animations,
             onChanged: notifier.setAnimations,
           ),
+          SwitchListTile(
+            title: const Text('Bruitages'),
+            subtitle: const Text(
+              'Sons du jeu (menus, réponses, combats). Les sons des leçons '
+              'restent disponibles.',
+            ),
+            value: settings.soundEffects,
+            onChanged: notifier.setSoundEffects,
+          ),
+          SwitchListTile(
+            title: const Text('Chronomètre des révisions'),
+            subtitle: const Text(
+              'Désactivé : toute réponse juste compte « bien », sans coup '
+              'critique.',
+            ),
+            value: settings.timer,
+            onChanged: notifier.setTimer,
+          ),
+          SwitchListTile(
+            title: const Text('Apprentissage seul'),
+            subtitle: const Text(
+              'Mêmes leçons, sans scènes d\'Histoire ni combats : carte en '
+              'liste, questions en séries. Réversible, progression commune.',
+            ),
+            value: settings.learningOnly,
+            onChanged: notifier.setLearningOnly,
+          ),
           ListTile(
             title: const Text('Taille du texte arabe'),
             subtitle: Column(
@@ -216,8 +243,7 @@ class _AboutTile extends ConsumerWidget {
           leading: const Icon(Icons.source_outlined),
           title: const Text('Sources des données'),
           subtitle: const Text(
-            'Tanzil (texte coranique, traduction), Quranic Arabic Corpus '
-            '(morphologie).',
+            'Quranic Arabic Corpus (racines, lemmes, fréquences).',
           ),
           trailing: const Icon(Icons.chevron_right),
           onTap: () => Navigator.push(

@@ -1,0 +1,590 @@
+{
+  "id": "fondations-24",
+  "etape": 2,
+  "ordre": 24,
+  "format": 3,
+  "titre": "Il l'a écrit",
+  "objectif": "Remplacer un complément par un pronom collé au verbe.",
+  "statut": "ia_non_verifie",
+  "lieu": "caravanserail_oasis",
+  "maitre": "samir_oasis",
+  "prerequis": [
+    "fondations-23"
+  ],
+  "apercu": [
+    "كَتَبُوهُ",
+    "عَرَفَكِ",
+    "عَرَفَنَا",
+    "عَرَفَكُمْ",
+    "عَرَفَهُمْ",
+    "عَرَفَهُنَّ",
+    "عَرَفَكُمَا",
+    "عَرَفَهُمَا"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "texte": "J'ai écrit une lettre pour un marchand… et je ne sais plus où je l'ai laissée !"
+        },
+        {
+          "qui": "samir_oasis",
+          "texte": "« Je l'ai laissée » : en arabe, « la » se colle au verbe. Aide-moi à la retrouver."
+        }
+      ],
+      "objectif": "Dire « il l'a écrit », « il m'a reconnu »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le gardien a ouvert la porte. »",
+          "ar": "فَتَحَ الْحَارِسُ …",
+          "choix_ar": [
+            "الْبَابَ",
+            "الْبَابُ",
+            "الْبَابِ"
+          ],
+          "reponse": 0,
+          "explication": "Complément : -a (leçon 2.23)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous sommes sortis » ?",
+          "choix_ar": [
+            "خَرَجْنَا",
+            "خَرَجُوا",
+            "خَرَجْتُ"
+          ],
+          "reponse": 0,
+          "explication": "-nā : « nous » (leçon 2.22)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كِيسُهُ",
+          "choix": [
+            "sa bourse (à lui)",
+            "sa bourse (à elle)",
+            "ma bourse"
+          ],
+          "reponse": 0,
+          "explication": "-hu : « à lui » (leçon 2.14)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "أَيْنَ الرِّسَالَةُ؟",
+          "fr": "Où est la lettre ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "كَتَبْتُهَا فِي الصَّبَاحِ، ثُمَّ تَرَكْتُهَا عَلَى الْكُرْسِيِّ.",
+          "fr": "Je l'ai écrite le matin, puis je l'ai laissée sur la chaise."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَالْمِفْتَاحُ؟",
+          "fr": "Et la clé ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "طَلَبْتُهُ فِي الْغُرْفَةِ.",
+          "fr": "Je l'ai cherchée dans la chambre."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où Samīr a-t-il laissé la lettre ?",
+        "choix": [
+          "sur la chaise",
+          "dans la chambre",
+          "dans le coffre"
+        ],
+        "reponse": 0,
+        "explication": "تَرَكْتُهَا عَلَى الْكُرْسِيِّ : sur la chaise."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "taraka",
+        "talaba",
+        "jamaa",
+        "arafa",
+        "risala",
+        "makan"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "رِسَالَةٌ",
+        "choix": [
+          "lettre (que l'on envoie)",
+          "livre",
+          "endroit"
+        ],
+        "reponse": 0,
+        "explication": "رِسَالَةٌ veut dire « lettre (que l'on envoie) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le pronom collé au verbe",
+      "texte": "Les pronoms du nom se collent aussi au verbe : كَتَبَهُ « il l'a écrit », كَتَبَهَا « il l'a écrite », عَرَفَكَ « il t'a reconnu ». Mais « me » se dit ـنِي : عَرَفَنِي.",
+      "exemples": [
+        "كَتَبَهُ",
+        "كَتَبَهَا",
+        "عَرَفَكَ",
+        "عَرَفَنِي",
+        "كَتَبْتُهُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « عَرَفَنِي » ?",
+        "choix": [
+          "il m'a reconnu",
+          "je l'ai reconnu",
+          "il l'a reconnu"
+        ],
+        "reponse": 0,
+        "explication": "-nī après un verbe : « me »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le bon pronom",
+      "texte": "Le pronom suit le genre du nom qu'il remplace : la lettre (رِسَالَةٌ, féminin) donne ـهَا, la clé (مِفْتَاحٌ, masculin) donne ـهُ. Un pluriel de choses se reprend le plus souvent par ـهَا.",
+      "exemples": [
+        "كَتَبْتُ الرِّسَالَةَ، ثُمَّ تَرَكْتُهَا.",
+        "طَلَبْتُ الْمِفْتَاحَ، ثُمَّ تَرَكْتُهُ."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Il a écrit la lettre, puis il l'a laissée. »",
+        "ar": "كَتَبَ الرِّسَالَةَ، ثُمَّ …",
+        "choix_ar": [
+          "تَرَكَهَا",
+          "تَرَكَهُ",
+          "تَرَكَنِي"
+        ],
+        "reponse": 0,
+        "explication": "رِسَالَةٌ est féminin : ـهَا."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "À reconnaître",
+      "texte": "Il existe aussi عَرَفَكِ (il t'a reconnue), عَرَفَنَا (nous), عَرَفَكُمْ (vous), عَرَفَهُمْ (eux), عَرَفَهُنَّ (elles), et pour deux عَرَفَكُمَا, عَرَفَهُمَا. Après كَتَبُوا, l'alif tombe : كَتَبُوهُ « ils l'ont écrit ».",
+      "exemples": [
+        "عَرَفَكِ",
+        "عَرَفَنَا",
+        "عَرَفَكُمْ",
+        "عَرَفَهُمْ",
+        "عَرَفَهُنَّ",
+        "كَتَبُوهُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « عَرَفَنَا » ?",
+        "choix": [
+          "il nous a reconnus",
+          "nous l'avons reconnu",
+          "il m'a reconnu"
+        ],
+        "reponse": 0,
+        "explication": "-nā collé au verbe : « nous » (complément)."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَلَبَ",
+          "choix": [
+            "il a cherché, il a demandé",
+            "il a laissé",
+            "il a reconnu"
+          ],
+          "reponse": 0,
+          "explication": "طَلَبَ veut dire « il a cherché, il a demandé »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَكَانٌ",
+          "choix": [
+            "endroit, place",
+            "lettre",
+            "charge"
+          ],
+          "reponse": 0,
+          "explication": "مَكَانٌ veut dire « endroit, place »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il l'a laissé » ?",
+          "choix_ar": [
+            "تَرَكَهُ",
+            "تَرَكَهَا",
+            "تَرَكَنِي"
+          ],
+          "reponse": 0,
+          "explication": "-hu pour un masculin."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le gardien m'a reconnu » ?",
+          "choix_ar": [
+            "عَرَفَنِي الْحَارِسُ.",
+            "عَرَفَهُ الْحَارِسُ.",
+            "عَرَفْتُ الْحَارِسَ."
+          ],
+          "reponse": 0,
+          "explication": "-nī : « me »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète, à propos de la clé : « je l'ai cherchée ».",
+          "ar": "أَيْنَ الْمِفْتَاحُ؟ …",
+          "choix_ar": [
+            "طَلَبْتُهُ",
+            "طَلَبْتُهَا",
+            "طَلَبَنِي"
+          ],
+          "reponse": 0,
+          "explication": "مِفْتَاحٌ est masculin : ـهُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a rassemblé les charges. »",
+          "ar": "جَمَعَ بَاسِمٌ …",
+          "choix_ar": [
+            "الْأَحْمَالَ",
+            "الْأَحْمَالُ",
+            "الْأَحْمَالِ"
+          ],
+          "reponse": 0,
+          "explication": "Complément : -a."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « كَتَبْتُهَا », qui a écrit, et quoi ?",
+          "choix": [
+            "moi, une chose féminine",
+            "elle, une chose masculine",
+            "lui, moi"
+          ],
+          "reponse": 0,
+          "explication": "-tu : « je » ; -hā : « la »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "عَرَفَ",
+          "choix_ar": [
+            "عَرَفَ",
+            "تَرَكَ",
+            "طَلَبَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était عَرَفَ « il a reconnu »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Samīr a écrit la lettre. »",
+          "tuiles": [
+            "الرِّسَالَةَ",
+            "كَتَبَ",
+            "سَمِيرٌ",
+            "الرِّسَالَةُ"
+          ],
+          "solution": [
+            "كَتَبَ",
+            "سَمِيرٌ",
+            "الرِّسَالَةَ"
+          ],
+          "explication": "Verbe, sujet, complément en -a."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "عَرَفَنِي الْحَارِسُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La fille a écrit la lettre, puis elle l'a laissée. »",
+          "ar": "كَتَبَتِ الْبِنْتُ الرِّسَالَةَ، ثُمَّ …",
+          "choix_ar": [
+            "تَرَكَتْهَا",
+            "تَرَكَهَا",
+            "تَرَكَتْهُ"
+          ],
+          "reponse": 0,
+          "explication": "« elle » : تَرَكَتْ ; « la » (la lettre) : ـهَا."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La lettre perdue",
+      "texte": "Samīr raconte comment il a retrouvé la lettre. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "كَتَبْتُ الرِّسَالَةَ فِي الصَّبَاحِ، ثُمَّ تَرَكْتُهَا.",
+        "طَلَبْتُهَا فِي الْغُرْفَةِ وَفِي الْخَيْمَةِ.",
+        "ثُمَّ دَخَلَ الْحَارِسُ، وَعَرَفَنِي.",
+        "وَجَمَعَ بَاسِمٌ الْأَحْمَالَ، وَعَرَفَ مَكَانَ الرِّسَالَةِ!"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où Samīr a-t-il cherché la lettre ?",
+          "choix": [
+            "dans la chambre et dans la tente",
+            "au marché",
+            "au puits"
+          ],
+          "reponse": 0,
+          "explication": "طَلَبْتُهَا فِي الْغُرْفَةِ وَفِي الْخَيْمَةِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qui a trouvé où était la lettre ?",
+          "choix": [
+            "Bāsim",
+            "le gardien",
+            "Salmā"
+          ],
+          "reponse": 0,
+          "explication": "وَعَرَفَ مَكَانَ الرِّسَالَةِ : Bāsim."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te demande où est le calame. Tu l'as laissé sur la chaise.",
+          "replique": {
+            "qui": "basim",
+            "ar": "أَيْنَ الْقَلَمُ؟"
+          },
+          "choix_ar": [
+            "تَرَكْتُهُ عَلَى الْكُرْسِيِّ.",
+            "تَرَكْتُهَا عَلَى الْكُرْسِيِّ.",
+            "تَرَكَنِي عَلَى الْكُرْسِيِّ."
+          ],
+          "reponse": 0,
+          "explication": "قَلَمٌ est masculin : ـهُ."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Samīr te demande si le gardien t'a reconnu. Oui.",
+          "replique": {
+            "qui": "samir_oasis",
+            "ar": "هَلْ عَرَفَكَ الْحَارِسُ؟"
+          },
+          "choix_ar": [
+            "نَعَمْ، عَرَفَنِي.",
+            "نَعَمْ، عَرَفَكَ.",
+            "نَعَمْ، عَرَفْتُهُ."
+          ],
+          "reponse": 0,
+          "explication": "« il m'a reconnu » : عَرَفَنِي."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris, en commençant par le verbe : « Je l'ai cherchée dans la chambre. »",
+          "tuiles": [
+            "الْغُرْفَةِ",
+            "طَلَبْتُهَا",
+            "فِي",
+            "طَلَبَهَا"
+          ],
+          "solution": [
+            "طَلَبْتُهَا",
+            "فِي",
+            "الْغُرْفَةِ"
+          ],
+          "explication": "طَلَبْتُهَا : « je » + « la »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il l'a écrite (la lettre) » ?",
+          "choix_ar": [
+            "كَتَبَهَا",
+            "كَتَبَهُ",
+            "كَتَبْتُهَا"
+          ],
+          "reponse": 0,
+          "explication": "« il l'a écrite (la lettre) » se dit كَتَبَهَا."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَرَكَ",
+          "choix": [
+            "il a laissé",
+            "il a cherché",
+            "il a porté"
+          ],
+          "reponse": 0,
+          "explication": "تَرَكَ veut dire « il a laissé »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَمَعَ",
+          "choix": [
+            "il a rassemblé",
+            "il a reconnu",
+            "il a ouvert"
+          ],
+          "reponse": 0,
+          "explication": "جَمَعَ veut dire « il a rassemblé »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَرَفَنِي",
+          "choix": [
+            "il m'a reconnu",
+            "il l'a reconnu",
+            "je l'ai reconnu"
+          ],
+          "reponse": 0,
+          "explication": "عَرَفَنِي veut dire « il m'a reconnu »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la lettre » ?",
+          "choix_ar": [
+            "الرِّسَالَةُ",
+            "الْقَلَمُ",
+            "الْمَكَانُ"
+          ],
+          "reponse": 0,
+          "explication": "« la lettre » se dit الرِّسَالَةُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je l'ai laissé » ?",
+          "choix_ar": [
+            "تَرَكْتُهُ",
+            "تَرَكَهُ",
+            "تَرَكْتُهَا"
+          ],
+          "reponse": 0,
+          "explication": "« je l'ai laissé » se dit تَرَكْتُهُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a cherché la clé, puis il l'a laissée. »",
+          "ar": "طَلَبَ الْمِفْتَاحَ، ثُمَّ …",
+          "choix_ar": [
+            "تَرَكَهُ",
+            "تَرَكَهَا",
+            "تَرَكَنِي"
+          ],
+          "reponse": 0,
+          "explication": "مِفْتَاحٌ est masculin : ـهُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le gardien m'a reconnu. »",
+          "ar": "… الْحَارِسُ.",
+          "choix_ar": [
+            "عَرَفَنِي",
+            "عَرَفَهُ",
+            "عَرَفْتُ"
+          ],
+          "reponse": 0,
+          "explication": "« me » : ـنِي."
+        },
+        {
+          "type": "qcm",
+          "consigne": "« Me » après un verbe se dit…",
+          "choix": [
+            "ـنِي",
+            "ـي",
+            "ـهُ"
+          ],
+          "reponse": 0,
+          "explication": "Après un verbe : ـنِي (عَرَفَنِي)."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "طَلَبَ",
+          "choix_ar": [
+            "طَلَبَ",
+            "تَرَكَ",
+            "جَمَعَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était طَلَبَ « il a cherché »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les marchands sont entrés. »",
+          "ar": "… التُّجَّارُ.",
+          "choix_ar": [
+            "دَخَلَ",
+            "دَخَلُوا",
+            "دَخَلْنَا"
+          ],
+          "reponse": 0,
+          "explication": "Verbe en tête : singulier.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَلَغَ",
+          "choix": [
+            "il a atteint",
+            "il a ouvert",
+            "il a porté"
+          ],
+          "reponse": 0,
+          "explication": "بَلَغَ veut dire « il a atteint ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الْيَوْمَ",
+          "choix": [
+            "aujourd'hui",
+            "hier",
+            "demain"
+          ],
+          "reponse": 0,
+          "explication": "الْيَوْمَ veut dire « aujourd'hui ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu colles un pronom au verbe : كَتَبَهُ، كَتَبَهَا، عَرَفَكَ, et « me » se dit ـنِي : عَرَفَنِي.",
+      "suite": "Prochaine étape : la salle des scribes, pour le verbe au présent."
+    }
+  ]
+}

@@ -130,6 +130,16 @@ class Transliterator {
     var i = 0;
     var skipNextShadda = false;
 
+    // Relatifs الَّذِي، الَّتِي، الَّذِينَ : un seul lām, qui porte la shadda
+    // et la voyelle. Ce n'est pas l'article : allaḏī, et non al-ḏī.
+    if (chars.length > 3 &&
+        (chars[0] == _alif || chars[0] == _alifWasla) &&
+        chars[1] == _lam &&
+        _isMark(chars[2]) &&
+        chars[2] != _sukun) {
+      if (!afterVowel) b.write('a');
+      i = 1;
+    } else
     // Article : ال / ٱل en début de mot.
     if (chars.length > 2 &&
         (chars[0] == _alif || chars[0] == _alifWasla) &&
@@ -180,6 +190,10 @@ class Transliterator {
           // alif du tanwīn : non noté
         } else if (c == _alif && i == 0 && hasVowel) {
           // alif initial portant une voyelle : hamza non notée en début
+        } else if (c == _alif && i == 0 && !afterVowel) {
+          // Alif de liaison d'un nom (اسْمٌ) : « i » en début de lecture,
+          // muet après une voyelle (décision du conseiller, 25/10/2026).
+          b.write('i');
         }
       } else if (c == _alifMadda) {
         b.write(isFirst ? 'ā' : 'ʾā');

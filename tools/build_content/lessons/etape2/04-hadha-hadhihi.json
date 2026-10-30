@@ -1,0 +1,540 @@
+{
+  "id": "fondations-04",
+  "etape": 2,
+  "ordre": 4,
+  "format": 3,
+  "titre": "Les objets de Rāšid",
+  "objectif": "Montrer un objet proche : هَٰذَا, هَٰذِهِ.",
+  "statut": "ia_non_verifie",
+  "lieu": "tente",
+  "maitre": "rashid_oasis",
+  "prerequis": [
+    "fondations-03"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rashid_oasis",
+          "texte": "Entre dans ma tente, voyageur. Je vais te montrer mes objets de voyage."
+        },
+        {
+          "qui": "rashid_oasis",
+          "texte": "Pour dire « ceci », l'arabe a deux mots au singulier : un pour le masculin, un pour le féminin."
+        }
+      ],
+      "objectif": "Dire « ceci est… » avec هَٰذَا et هَٰذِهِ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le lait » ?",
+          "choix_ar": [
+            "اللَّبَنُ",
+            "لَبَنٌ",
+            "الْمَاءُ"
+          ],
+          "reponse": 0,
+          "explication": "اللَّبَنُ : avec l'article, une seule ḍamma (leçon 2.3)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le genre du nom خَيْمَةٌ ?",
+          "choix": [
+            "masculin",
+            "féminin",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 1,
+          "explication": "خَيْمَةٌ finit par ة : féminin (leçon 2.2)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَرِيقٌ",
+          "choix": [
+            "un chemin",
+            "de la nourriture",
+            "un palmier"
+          ],
+          "reponse": 0,
+          "explication": "طَرِيقٌ veut dire « un chemin » (leçon 2.3)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "rashid_oasis",
+          "ar": "هَٰذَا قَلَمٌ.",
+          "fr": "Ceci est un calame."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَهَٰذِهِ؟",
+          "fr": "Et ceci ?"
+        },
+        {
+          "qui": "rashid_oasis",
+          "ar": "هَٰذِهِ غُرْفَةٌ.",
+          "fr": "Ceci est une chambre."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pourquoi Rāšid dit-il هَٰذِهِ devant غُرْفَةٌ ?",
+        "choix": [
+          "Parce que غُرْفَةٌ est féminin.",
+          "Parce que la chambre est loin.",
+          "Parce que غُرْفَةٌ est un verbe."
+        ],
+        "reponse": 0,
+        "explication": "غُرْفَةٌ finit par ة : il est féminin, on dit هَٰذِهِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "hadha",
+        "hadhihi",
+        "qalam",
+        "kursi",
+        "siraj",
+        "thawb",
+        "ghurfa"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "سِرَاجٌ",
+        "choix": [
+          "une lampe",
+          "un siège",
+          "un vêtement"
+        ],
+        "reponse": 0,
+        "explication": "سِرَاجٌ veut dire « une lampe »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Ceci : هَٰذَا, هَٰذِهِ",
+      "texte": "Pour montrer ce qui est proche, on dit هَٰذَا devant un nom masculin et هَٰذِهِ devant un nom féminin.",
+      "exemples": [
+        "هَٰذَا قَلَمٌ.",
+        "هَٰذِهِ غُرْفَةٌ."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète avec هَٰذَا ou هَٰذِهِ.",
+        "ar": "… خَيْمَةٌ.",
+        "choix_ar": [
+          "هَٰذَا",
+          "هَٰذِهِ",
+          "مِنْ"
+        ],
+        "reponse": 1,
+        "explication": "هَٰذِهِ خَيْمَةٌ. : nom féminin."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les féminins sans ة",
+      "texte": "Un nom féminin sans ة prend aussi هَٰذِهِ : هَٰذِهِ أُمٌّ, هَٰذِهِ نَارٌ.",
+      "exemples": [
+        "هَٰذِهِ أُمٌّ.",
+        "هَٰذِهِ نَارٌ."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète avec هَٰذَا ou هَٰذِهِ.",
+        "ar": "… بِنْتٌ.",
+        "choix_ar": [
+          "هَٰذَا",
+          "هَٰذِهِ",
+          "مِنْ"
+        ],
+        "reponse": 1,
+        "explication": "هَٰذِهِ بِنْتٌ. : nom féminin."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète avec هَٰذَا ou هَٰذِهِ.",
+          "ar": "… قَلَمٌ.",
+          "choix_ar": [
+            "هَٰذَا",
+            "هَٰذِهِ",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذَا قَلَمٌ. : nom masculin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète avec هَٰذَا ou هَٰذِهِ.",
+          "ar": "… بِئْرٌ.",
+          "choix_ar": [
+            "هَٰذَا",
+            "هَٰذِهِ",
+            "مِنْ"
+          ],
+          "reponse": 1,
+          "explication": "هَٰذِهِ بِئْرٌ. : nom féminin."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كُرْسِيٌّ",
+          "choix": [
+            "un siège",
+            "une lampe",
+            "un calame"
+          ],
+          "reponse": 0,
+          "explication": "كُرْسِيٌّ veut dire « un siège »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un vêtement » ?",
+          "choix_ar": [
+            "ثَوْبٌ",
+            "قَلَمٌ",
+            "سِرَاجٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un vêtement » se dit ثَوْبٌ."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "هَٰذِهِ",
+          "choix_ar": [
+            "هَٰذِهِ",
+            "هَٰذَا",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "C'était هَٰذِهِ « ceci » (féminin)."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Ceci est une chambre. »",
+          "tuiles": [
+            "غُرْفَةٌ",
+            "هَٰذِهِ",
+            "هَٰذَا"
+          ],
+          "solution": [
+            "هَٰذِهِ",
+            "غُرْفَةٌ"
+          ],
+          "explication": "هَٰذِهِ غُرْفَةٌ : غُرْفَةٌ est féminin."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle phrase est juste ?",
+          "choix_ar": [
+            "هَٰذِهِ بِنْتٌ.",
+            "هَٰذَا بِنْتٌ.",
+            "هَٰذِهِ وَلَدٌ."
+          ],
+          "reponse": 0,
+          "explication": "بِنْتٌ est féminin : هَٰذِهِ بِنْتٌ."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "هَٰذِهِ خَيْمَةٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une lampe » ?",
+          "choix_ar": [
+            "سِرَاجٌ",
+            "كُرْسِيٌّ",
+            "ثَوْبٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une lampe » se dit سِرَاجٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète avec هَٰذَا ou هَٰذِهِ.",
+          "ar": "… أُمٌّ.",
+          "choix_ar": [
+            "هَٰذَا",
+            "هَٰذِهِ",
+            "مِنْ"
+          ],
+          "reponse": 1,
+          "explication": "هَٰذِهِ أُمٌّ. : nom féminin."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Dans la tente de Rāšid",
+      "texte": "Bāsim montre la tente au voyageur. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "هَٰذِهِ غُرْفَةٌ.",
+        "هَٰذَا كُرْسِيٌّ، وَهَٰذَا سِرَاجٌ.",
+        "هَٰذَا قَلَمٌ، وَهَٰذَا ثَوْبٌ.",
+        "وَهَٰذِهِ نَارٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quel objet sert à écrire ?",
+          "choix": [
+            "un calame",
+            "une lampe",
+            "un siège"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذَا قَلَمٌ : un calame, pour écrire."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel objet sert à éclairer ?",
+          "choix_ar": [
+            "سِرَاجٌ",
+            "قَلَمٌ",
+            "ثَوْبٌ"
+          ],
+          "reponse": 0,
+          "explication": "سِرَاجٌ : une lampe."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Ceci est une lampe. »",
+          "tuiles": [
+            "سِرَاجٌ",
+            "هَٰذَا",
+            "هَٰذِهِ"
+          ],
+          "solution": [
+            "هَٰذَا",
+            "سِرَاجٌ"
+          ],
+          "explication": "هَٰذَا سِرَاجٌ : سِرَاجٌ est masculin."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Ceci est une tente. »",
+          "tuiles": [
+            "خَيْمَةٌ",
+            "هَٰذِهِ",
+            "هَٰذَا"
+          ],
+          "solution": [
+            "هَٰذِهِ",
+            "خَيْمَةٌ"
+          ],
+          "explication": "هَٰذِهِ خَيْمَةٌ : خَيْمَةٌ est féminin."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ceci (devant un nom féminin) » ?",
+          "choix_ar": [
+            "هَٰذِهِ",
+            "هَٰذَا",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "Devant un nom féminin, « ceci » se dit هَٰذِهِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ceci est un chameau, et ceci est une tente. »",
+          "ar": "… جَمَلٌ، وَهَٰذِهِ خَيْمَةٌ.",
+          "choix_ar": [
+            "هَٰذَا",
+            "هَٰذِهِ",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذَا جَمَلٌ : جَمَلٌ est masculin."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un siège » ?",
+          "choix_ar": [
+            "كُرْسِيٌّ",
+            "سِرَاجٌ",
+            "قَلَمٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un siège » se dit كُرْسِيٌّ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَلَمٌ",
+          "choix": [
+            "un calame",
+            "une lampe",
+            "un vêtement"
+          ],
+          "reponse": 0,
+          "explication": "قَلَمٌ veut dire « un calame »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَوْبٌ",
+          "choix": [
+            "un vêtement",
+            "un siège",
+            "une chambre"
+          ],
+          "reponse": 0,
+          "explication": "ثَوْبٌ veut dire « un vêtement »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "غُرْفَةٌ",
+          "choix": [
+            "une chambre",
+            "une tente",
+            "une lampe"
+          ],
+          "reponse": 0,
+          "explication": "غُرْفَةٌ veut dire « une chambre »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une lampe » ?",
+          "choix_ar": [
+            "سِرَاجٌ",
+            "قَلَمٌ",
+            "كُرْسِيٌّ"
+          ],
+          "reponse": 0,
+          "explication": "« une lampe » se dit سِرَاجٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète avec هَٰذَا ou هَٰذِهِ.",
+          "ar": "… غُرْفَةٌ.",
+          "choix_ar": [
+            "هَٰذَا",
+            "هَٰذِهِ",
+            "مِنْ"
+          ],
+          "reponse": 1,
+          "explication": "هَٰذِهِ غُرْفَةٌ. : nom féminin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète avec هَٰذَا ou هَٰذِهِ.",
+          "ar": "… كُرْسِيٌّ.",
+          "choix_ar": [
+            "هَٰذَا",
+            "هَٰذِهِ",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذَا كُرْسِيٌّ. : nom masculin."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle phrase est juste ?",
+          "choix_ar": [
+            "هَٰذَا ثَوْبٌ.",
+            "هَٰذِهِ ثَوْبٌ.",
+            "هَٰذَا غُرْفَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "ثَوْبٌ est masculin : هَٰذَا ثَوْبٌ."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "كُرْسِيٌّ",
+          "choix_ar": [
+            "كُرْسِيٌّ",
+            "قَلَمٌ",
+            "سِرَاجٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était كُرْسِيٌّ « un siège »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هَٰذِهِ",
+          "choix": [
+            "ceci (féminin)",
+            "ceci (masculin)",
+            "et"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذِهِ veut dire « ceci (féminin) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الطَّعَامُ",
+          "choix": [
+            "la nourriture",
+            "le chemin",
+            "le lait"
+          ],
+          "reponse": 0,
+          "explication": "الطَّعَامُ veut dire « la nourriture ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une chamelle » ?",
+          "choix_ar": [
+            "نَاقَةٌ",
+            "جَمَلٌ",
+            "خَيْمَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une chamelle » se dit نَاقَةٌ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَمْرٌ",
+          "choix": [
+            "des dattes",
+            "du lait",
+            "un palmier"
+          ],
+          "reponse": 0,
+          "explication": "تَمْرٌ veut dire « des dattes ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu montres ce qui est proche : هَٰذَا قَلَمٌ, هَٰذِهِ غُرْفَةٌ.",
+      "suite": "Demain, Rāšid te montre ce qui est loin, à l'entrée de la tente."
+    }
+  ]
+}

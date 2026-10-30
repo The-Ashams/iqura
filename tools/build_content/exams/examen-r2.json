@@ -1,0 +1,398 @@
+{
+  "id": "examen-r2",
+  "region": 2,
+  "lieu": "sables",
+  "titre": "Le Grand Mirage",
+  "statut": "ia_non_verifie",
+  "adversaire": "grand_mirage",
+  "intro": "Dans les Sables du mirage, le Grand Mirage brouille tout ce que tu as appris. Trois épreuves pour le dissiper : lire un récit, écouter, répondre.",
+  "lecture": {
+    "titre": "Le voyage de la caravane",
+    "seuil": 0.8,
+    "phrases": [
+      "خَرَجَتِ الْقَافِلَةُ مِنَ الْقَرْيَةِ فِي الصَّبَاحِ، وَبَلَغَتِ الْمَدِينَةَ فِي الْمَسَاءِ.",
+      "رَكِبَ التُّجَّارُ الْجِمَالَ، وَحَمَلَتِ الْجِمَالُ الْأَحْمَالَ.",
+      "الْأَحْمَالُ ثَقِيلَةٌ، وَالْيَوْمُ طَوِيلٌ، وَالْمَاءُ قَلِيلٌ.",
+      "قَالَ رَاشِدٌ: « سَنَشْرَبُ الْمَاءَ فِي الْمَدِينَةِ. »",
+      "فَتَحَ الْحَارِسُ الْبَابَ، وَعَرَفَ رَاشِدًا.",
+      "دَخَلَ الْمُسَافِرُونَ الدَّارَ، وَجَلَسُوا فِي غُرْفَةٍ كَبِيرَةٍ، وَشَرِبُوا الْمَاءَ وَاللَّبَنَ.",
+      "فِي الْغُرْفَةِ سَرِيرٌ قَدِيمٌ وَوِسَادَةٌ جَدِيدَةٌ.",
+      "قَالَ تَاجِرٌ: « يَا سَمِيرُ، أَنَا لَا أَكْتُبُ. اكْتُبِ الرِّسَالَةَ. »",
+      "كَتَبَ سَمِيرٌ الرِّسَالَةَ، وَفَرِحَ التَّاجِرُ.",
+      "الرِّسَالَةُ الَّتِي كَتَبَهَا سَمِيرٌ قَصِيرَةٌ وَجَمِيلَةٌ.",
+      "فِي الصَّبَاحِ، طَلَبَ بَاسِمٌ مِفْتَاحَ الصُّنْدُوقِ فِي السُّوقِ، وَلَمْ يَعْرِفْ مَكَانَهُ.",
+      "قَالَ بَاسِمٌ: « يَا سَلْمَى، أَيْنَ الْمِفْتَاحُ؟ »",
+      "قَالَتْ سَلْمَى: « الْمِفْتَاحُ تَحْتَ الْكِيسِ. »",
+      "فَرِحَ بَاسِمٌ، وَفَتَحَ الصُّنْدُوقَ. فِي الصُّنْدُوقِ صُوفٌ وَحَرِيرٌ.",
+      "وَفِي الْمَسَاءِ، جَلَسَ الْمُسَافِرُونَ فِي الْحَدِيقَةِ، وَسَمِعُوا قِصَّةَ الشَّيْخِ.",
+      "صَوْتُ الشَّيْخِ جَمِيلٌ، وَالْقِصَّةُ طَوِيلَةٌ.",
+      "قَالَ بَاسِمٌ: « لَمْ أَفْهَمِ الْقِصَّةَ. »",
+      "قَالَ الشَّيْخُ: « يَا بَاسِمُ، اجْلِسْ هُنَا. »",
+      "جَلَسَ بَاسِمٌ مَعَ الشَّيْخِ، وَسَمِعَ الْقِصَّةَ، وَفَهِمَهَا.",
+      "ثُمَّ قَالَ رَاشِدٌ: « سَنَخْرُجُ غَدًا إِلَى الْجَبَلِ. »",
+      "وَقَالَتْ سَلْمَى: « سَأَكْتُبُ قِصَّةَ الْقَافِلَةِ. »"
+    ],
+    "questions": [
+      {
+        "type": "qcm",
+        "consigne": "Quand la caravane arrive-t-elle en ville ?",
+        "choix": [
+          "le soir",
+          "le matin",
+          "hier",
+          "demain"
+        ],
+        "reponse": 0,
+        "explication": "بَلَغَتِ الْمَدِينَةَ فِي الْمَسَاءِ : le soir."
+      },
+      {
+        "type": "qcm",
+        "consigne": "En arrivant dans la demeure, où les voyageurs s'assoient-ils ?",
+        "choix": [
+          "dans une grande chambre",
+          "sur le chemin",
+          "au marché",
+          "dans une tente"
+        ],
+        "reponse": 0,
+        "explication": "جَلَسُوا فِي غُرْفَةٍ كَبِيرَةٍ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que boivent-ils dans la grande chambre ?",
+        "choix": [
+          "de l'eau et du lait",
+          "du jus",
+          "de l'huile",
+          "rien"
+        ],
+        "reponse": 0,
+        "explication": "شَرِبُوا الْمَاءَ وَاللَّبَنَ : de l'eau et du lait."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Pourquoi Samīr écrit-il la lettre ?",
+        "choix": [
+          "le marchand n'écrit pas",
+          "Samīr veut partir",
+          "la lettre est perdue",
+          "Salmā le lui demande"
+        ],
+        "reponse": 0,
+        "explication": "أَنَا لَا أَكْتُبُ : le marchand n'écrit pas."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Qui a ouvert la porte ?",
+        "choix": [
+          "le gardien",
+          "Rāšid",
+          "Samīr",
+          "le marchand"
+        ],
+        "reponse": 0,
+        "explication": "فَتَحَ الْحَارِسُ الْبَابَ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que cherche Bāsim ?",
+        "choix": [
+          "la clé du coffre",
+          "la lettre",
+          "le panier",
+          "le chameau"
+        ],
+        "reponse": 0,
+        "explication": "طَلَبَ بَاسِمٌ مِفْتَاحَ الصُّنْدُوقِ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Où est la clé ?",
+        "choix": [
+          "sous la bourse",
+          "dans le coffre",
+          "sur la chaise",
+          "dans le jardin"
+        ],
+        "reponse": 0,
+        "explication": "الْمِفْتَاحُ … تَحْتَ الْكِيسِ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que ressent Bāsim quand il trouve la clé ?",
+        "choix": [
+          "de la joie",
+          "de la peur",
+          "de la colère",
+          "de la fatigue"
+        ],
+        "reponse": 0,
+        "explication": "فَرِحَ بَاسِمٌ : il se réjouit."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que font les voyageurs le soir, au jardin ?",
+        "choix": [
+          "ils écoutent l'histoire du vieil homme",
+          "ils dorment",
+          "ils vont au marché",
+          "ils montent sur les chameaux"
+        ],
+        "reponse": 0,
+        "explication": "سَمِعُوا قِصَّةَ الشَّيْخِ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quand la caravane repartira-t-elle ?",
+        "choix": [
+          "demain",
+          "ce soir",
+          "hier",
+          "jamais"
+        ],
+        "reponse": 0,
+        "explication": "سَنَخْرُجُ غَدًا : demain."
+      }
+    ]
+  },
+  "ecoute": {
+    "seuil": 0.8,
+    "questions": [
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "رَجَعَ بَاسِمٌ مِنَ السُّوقِ.",
+        "choix": [
+          "Bāsim est revenu du marché.",
+          "Bāsim est allé au jardin.",
+          "Bāsim est entré dans la tente.",
+          "Bāsim a fermé le coffre."
+        ],
+        "reponse": 0,
+        "explication": "رَجَعَ بَاسِمٌ مِنَ السُّوقِ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "سَنَخْرُجُ غَدًا.",
+        "choix": [
+          "Nous sortirons demain.",
+          "Nous sommes sortis hier.",
+          "Nous ne sortons pas.",
+          "Sortez maintenant !"
+        ],
+        "reponse": 0,
+        "explication": "سَنَخْرُجُ غَدًا : futur."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "الْمِفْتَاحُ تَحْتَ الْكِيسِ.",
+        "choix": [
+          "La clé est sous la bourse.",
+          "La clé est dans le coffre.",
+          "La bourse est sur la chaise.",
+          "Le coffre est sous la clé."
+        ],
+        "reponse": 0,
+        "explication": "تَحْتَ الْكِيسِ : sous la bourse."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "لَا أَعْرِفُ الْجَوَابَ.",
+        "choix": [
+          "Je ne connais pas la réponse.",
+          "Je connais la réponse.",
+          "Je n'ai pas compris la question.",
+          "Écris la réponse !"
+        ],
+        "reponse": 0,
+        "explication": "لَا أَعْرِفُ : je ne sais pas."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "اكْتُبِ الرِّسَالَةَ الْآنَ.",
+        "choix": [
+          "Écris la lettre maintenant !",
+          "Il a écrit la lettre hier.",
+          "J'écrirai la lettre demain.",
+          "La lettre est longue."
+        ],
+        "reponse": 0,
+        "explication": "اكْتُبْ : impératif."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "الطُّلَّابُ يَدْرُسُونَ فِي الصَّبَاحِ.",
+        "choix": [
+          "Les étudiants étudient le matin.",
+          "Les étudiants sont sortis le soir.",
+          "Le scribe écrit le matin.",
+          "Les marchands étudient le soir."
+        ],
+        "reponse": 0,
+        "explication": "يَدْرُسُونَ فِي الصَّبَاحِ."
+      },
+      {
+        "type": "ecouter",
+        "consigne": "Quelle phrase entends-tu ?",
+        "audio": "فَتَحَ الْحَارِسُ الْبَابَ.",
+        "choix_ar": [
+          "فَتَحَ الْحَارِسُ الْبَابَ.",
+          "فَتَحَ الْحَارِسُ الصُّنْدُوقَ.",
+          "تَرَكَ الْحَارِسُ الْبَابَ.",
+          "فَتَحَ التَّاجِرُ الْبَابَ."
+        ],
+        "reponse": 0,
+        "explication": "C'était فَتَحَ الْحَارِسُ الْبَابَ."
+      },
+      {
+        "type": "ecouter",
+        "consigne": "Quelle phrase entends-tu ?",
+        "audio": "جَلَسَتْ سَلْمَى فِي الْحَدِيقَةِ.",
+        "choix_ar": [
+          "جَلَسَتْ سَلْمَى فِي الْحَدِيقَةِ.",
+          "جَلَسَتْ سَلْمَى فِي الْغُرْفَةِ.",
+          "رَجَعَتْ سَلْمَى فِي الْمَسَاءِ.",
+          "جَلَسَ رَاشِدٌ فِي الْحَدِيقَةِ."
+        ],
+        "reponse": 0,
+        "explication": "C'était جَلَسَتْ سَلْمَى فِي الْحَدِيقَةِ."
+      },
+      {
+        "type": "ecouter",
+        "consigne": "Quelle phrase entends-tu ?",
+        "audio": "سَمِعْنَا قِصَّةً جَمِيلَةً.",
+        "choix_ar": [
+          "سَمِعْنَا قِصَّةً جَمِيلَةً.",
+          "كَتَبْنَا قِصَّةً جَمِيلَةً.",
+          "سَمِعْنَا قِصَّةً طَوِيلَةً.",
+          "سَمِعْنَا صَوْتًا جَمِيلًا."
+        ],
+        "reponse": 0,
+        "explication": "C'était سَمِعْنَا قِصَّةً جَمِيلَةً."
+      },
+      {
+        "type": "ecouter",
+        "consigne": "Quelle phrase entends-tu ?",
+        "audio": "حَمَلَ بَاسِمٌ السَّلَّةَ.",
+        "choix_ar": [
+          "حَمَلَ بَاسِمٌ السَّلَّةَ.",
+          "حَمَلَ بَاسِمٌ الْكِيسَ.",
+          "تَرَكَ بَاسِمٌ السَّلَّةَ.",
+          "حَمَلَ رَاشِدٌ السَّلَّةَ."
+        ],
+        "reponse": 0,
+        "explication": "C'était حَمَلَ بَاسِمٌ السَّلَّةَ."
+      }
+    ]
+  },
+  "reponses": {
+    "questions": [
+      {
+        "type": "ordonner",
+        "consigne": "Rāšid te pose une question. Réponds oui, en commençant par نَعَمْ puis le verbe.",
+        "replique": {
+          "qui": "rashid_oasis",
+          "ar": "هَلْ رَكِبْتَ الْجَمَلَ؟"
+        },
+        "tuiles": [
+          "الْجَمَلَ",
+          "نَعَمْ،",
+          "رَكِبْتُ",
+          "رَكِبَ"
+        ],
+        "solution": [
+          "نَعَمْ،",
+          "رَكِبْتُ",
+          "الْجَمَلَ"
+        ],
+        "explication": "نَعَمْ، رَكِبْتُ الْجَمَلَ : « je », au passé : رَكِبْتُ."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Salmā te demande où tu as laissé la clé. Réponds en commençant par le verbe.",
+        "replique": {
+          "qui": "salma",
+          "ar": "أَيْنَ تَرَكْتَ الْمِفْتَاحَ؟"
+        },
+        "tuiles": [
+          "عَلَى",
+          "تَرَكْتُهُ",
+          "الْكُرْسِيِّ",
+          "تَرَكَهُ"
+        ],
+        "solution": [
+          "تَرَكْتُهُ",
+          "عَلَى",
+          "الْكُرْسِيِّ"
+        ],
+        "explication": "تَرَكْتُهُ عَلَى الْكُرْسِيِّ : « je l'ai laissée sur la chaise »."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Bāsim te demande qui a écrit la lettre. Réponds en commençant par le verbe : c'est Samīr.",
+        "replique": {
+          "qui": "basim",
+          "ar": "مَنْ كَتَبَ الرِّسَالَةَ؟"
+        },
+        "tuiles": [
+          "سَمِيرٌ",
+          "كَتَبَهَا",
+          "كَتَبَهُ"
+        ],
+        "solution": [
+          "كَتَبَهَا",
+          "سَمِيرٌ"
+        ],
+        "explication": "كَتَبَهَا سَمِيرٌ : ـهَا reprend la lettre."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Samīr te demande si tu reviendras demain. Réponds oui, dans l'ordre نَعَمْ, verbe, puis « demain ».",
+        "replique": {
+          "qui": "samir_oasis",
+          "ar": "هَلْ سَتَرْجِعُ غَدًا؟"
+        },
+        "tuiles": [
+          "غَدًا",
+          "سَأَرْجِعُ",
+          "نَعَمْ،",
+          "سَيَرْجِعُ"
+        ],
+        "solution": [
+          "نَعَمْ،",
+          "سَأَرْجِعُ",
+          "غَدًا"
+        ],
+        "explication": "نَعَمْ، سَأَرْجِعُ غَدًا : « oui, je reviendrai demain » (سَـ + أَرْجِعُ)."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Salmā te demande où habite Bāsim : au village. Réponds dans l'ordre verbe, sujet, puis le lieu.",
+        "replique": {
+          "qui": "salma",
+          "ar": "أَيْنَ يَسْكُنُ بَاسِمٌ؟"
+        },
+        "tuiles": [
+          "الْقَرْيَةِ",
+          "بَاسِمٌ",
+          "فِي",
+          "يَسْكُنُ",
+          "تَسْكُنُ"
+        ],
+        "solution": [
+          "يَسْكُنُ",
+          "بَاسِمٌ",
+          "فِي",
+          "الْقَرْيَةِ"
+        ],
+        "explication": "يَسْكُنُ بَاسِمٌ فِي الْقَرْيَةِ : « Bāsim habite au village » (يَسْكُنُ : il habite)."
+      }
+    ],
+    "seuil": 0.8
+  }
+}

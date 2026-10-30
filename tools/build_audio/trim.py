@@ -12,8 +12,12 @@ de parole :
 4. la fin de la première zone est prolongée tant que l'énergie reste au-dessus
    d'un seuil plus bas (`decay_threshold`) : la fin d'une voyelle longue
    s'éteint doucement et ne doit pas être coupée ;
-5. on garde cette zone, avec une petite marge avant et après, et un fondu de
-   fin pour éviter un clic.
+5. de même, le début est avancé tant que l'énergie reste au-dessus d'un
+   seuil très bas (`attack_threshold`) : une consonne soufflée au début
+   (ث, ف, س…) est faible et ne doit pas être coupée, sinon ثَا s'entend
+   « ta » ;
+6. on garde cette zone, avec une petite marge avant et après, et des fondus
+   pour éviter un clic.
 
 `expected_min_duration` permet de détecter un résultat tronqué : l'appelant
 régénère alors avec une autre graine.
@@ -81,7 +85,9 @@ def trim_first_utterance(x: np.ndarray, sr: int, *, rel_threshold: float = 0.05,
                          max_gap: float = 0.25, lead: float = 0.05,
                          tail: float = 0.12, fade: float = 0.03,
                          decay_threshold: float = 0.01,
-                         max_decay: float = 0.3) -> TrimResult:
+                         max_decay: float = 0.3,
+                         attack_threshold: float = 0.004,
+                         max_attack: float = 0.25) -> TrimResult:
     if x.ndim > 1:
         x = x.mean(axis=1)
     regions = voiced_regions(x, sr, rel_threshold, max_gap)
@@ -96,6 +102,13 @@ def trim_first_utterance(x: np.ndarray, sr: int, *, rel_threshold: float = 0.05,
     while j < len(energy) and (j + 1) * FRAME <= limit and energy[j] > floor:
         j += 1
     end = max(end, j * FRAME)
+    # Début : on remonte tant qu'un son faible précède la zone forte.
+    attack_floor = max(float(energy.max()) * attack_threshold, 1e-4)
+    k = int(round(start / FRAME)) - 1
+    first = max(0, int(round((start - max_attack) / FRAME)))
+    while k >= first and energy[k] > attack_floor:
+        k -= 1
+    start = min(start, (k + 1) * FRAME)
     dropped = sum(b - a for a, b in regions[1:])
     a = max(0, int((start - lead) * sr))
     b = min(len(x), int((end + tail) * sr))
@@ -103,7 +116,40 @@ def trim_first_utterance(x: np.ndarray, sr: int, *, rel_threshold: float = 0.05,
     nf = min(len(out), int(fade * sr))
     if nf > 0:
         out[-nf:] *= np.linspace(1.0, 0.0, nf, dtype=np.float32)
+    ni = min(len(out), int(0.005 * sr))
+    if ni > 0:
+        out[:ni] *= np.linspace(0.0, 1.0, ni, dtype=np.float32)
     return TrimResult(out, start, end, dropped)
+
+
+SHORT_VOWELS = "\u064e\u064f\u0650"  # fatḥa, ḍamma, kasra
+TANWIN = "\u064b\u064c\u064d"
+LONG_AFTER = {"\u064e": "\u0627", "\u0650": "\u064a", "\u064f": "\u0648"}
+
+
+def vowel_units(text: str) -> int:
+    """Durée vocalique attendue, en unités : 1 par voyelle brève ou tanwīn,
+    1 de plus quand la voyelle est allongée (fatḥa + ا, kasra + ي,
+    ḍamma + و)."""
+    units = 0
+    prev = None
+    for c in text:
+        if c in SHORT_VOWELS or c in TANWIN:
+            units += 1
+        elif prev is not None and LONG_AFTER.get(prev) == c:
+            units += 1
+        if c in SHORT_VOWELS:
+            prev = c
+        elif c not in "\u0651\u0652":  # shadda et sukūn ne coupent pas
+            prev = None
+    return units
+
+
+def expected_max_duration(text: str) -> float:
+    """Durée maximale plausible de la parole : 0,25 s + 0,15 s par unité
+    vocalique. Une syllabe à voyelle brève dépasse donc 0,40 s seulement si
+    le modèle l'a allongée (relevé à l'écoute par l'utilisateur sur تَ et يَ)."""
+    return 0.25 + 0.15 * max(1, vowel_units(text))
 
 
 def expected_min_duration(text: str) -> float:

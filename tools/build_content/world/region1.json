@@ -1,0 +1,33 @@
+{
+  "_comment": "Région 1 « Le Désert des Lettres » (cahier v3 §8.2, validée le 22/10/2026 ; détail : docs/HISTOIRE.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA.",
+  "statut": "ia",
+  "region": {
+    "id": "r1",
+    "numero": 1,
+    "nom": "Le Désert des Lettres",
+    "competence": "Déchiffrer",
+    "adversaire": "L'Oubli",
+    "carte": "scene_carte"
+  },
+  "lieux": [
+    {"id": "puits", "numero": 1, "nom": "Le Puits de l'arrivée", "position": [21, 64], "lecons": [0], "scene": "scene_puits", "sol": 74, "tranche_j1a": true, "liens": ["porte"], "description": "Une inscription est gravée sur le bord du vieux puits. Personne ne sait plus la lire."},
+    {"id": "porte", "numero": 2, "nom": "La Porte de la bibliothèque", "position": [80, 48], "lecons": [1], "scene": "scene_porte", "sol": 62, "tranche_j1a": true, "liens": ["marche", "faille"], "description": "La grande porte est fermée par quatorze sceaux. Une étiquette y est encore accrochée."},
+    {"id": "marche", "numero": 3, "nom": "Le Marché aux enseignes", "position": [65, 55], "lecons": [2, 3], "scene": "scene_marche", "sol": 74, "tranche_j1a": true, "liens": ["caravanserail"], "description": "Les marchands ont oublié comment se lisent leurs propres enseignes."},
+    {"id": "caravanserail", "numero": 4, "nom": "Le Caravansérail", "position": [34, 36], "lecons": [4], "scene": "scene_caravanserail", "sol": 86, "tranche_j1a": true, "liens": ["dunes"], "description": "Les caravanes y laissent leurs marques."},
+    {"id": "dunes", "numero": 5, "nom": "Les Dunes chantantes", "position": [146, 42], "lecons": [5, 6], "scene": "scene_dunes", "sol": 84, "tranche_j1a": true, "liens": ["atelier"], "description": "Le vent y porte des sons étranges."},
+    {"id": "atelier", "numero": 6, "nom": "L'Atelier des copistes", "position": [95, 55], "lecons": [7], "scene": "scene_atelier", "sol": 84, "tranche_j1a": true, "liens": ["observatoire"], "description": "Les copistes y recopiaient les livres de la bibliothèque."},
+    {"id": "observatoire", "numero": 7, "nom": "L'Observatoire", "position": [114, 32], "lecons": [8, 9], "scene": "scene_observatoire", "sol": 84, "tranche_j1a": true, "liens": ["archives"], "description": "On y nommait les étoiles."},
+    {"id": "archives", "numero": 8, "nom": "Les Archives ensablées", "position": [48, 80], "lecons": [10, 12], "scene": "scene_archives", "sol": 84, "tranche_j1a": true, "liens": ["fontaine"], "description": "Des registres à moitié recouverts de sable."},
+    {"id": "fontaine", "numero": 9, "nom": "La Fontaine aux échos", "position": [62, 32], "lecons": [11], "scene": "scene_fontaine", "sol": 84, "tranche_j1a": true, "liens": ["cadran"], "description": "Chaque son y revient deux fois."},
+    {"id": "cadran", "numero": 10, "nom": "La Cour du cadran solaire", "position": [98, 31], "lecons": [13], "scene": "scene_cadran", "sol": 84, "tranche_j1a": true, "liens": ["manuscrits"], "description": "Le soleil et la lune y marquent les heures."},
+    {"id": "manuscrits", "numero": 11, "nom": "La Salle des manuscrits", "position": [80, 29], "lecons": [14], "scene": "scene_manuscrits", "sol": 84, "tranche_j1a": true, "liens": [], "description": "Une salle calme où l'on étudie les manuscrits. Aucun combat."},
+    {"id": "faille", "numero": 12, "nom": "La Faille des Oubliés", "position": [129, 17], "lecons": [], "scene": "scene_faille", "sol": 62, "tranche_j1a": true, "liens": [], "description": "Sous la bibliothèque, les brumes d'oubli effacent les étiquettes des livres."}
+  ],
+  "personnages": [
+    {"id": "nura", "nom": "Nūra", "nom_ar": "نُورَة", "role": "L'archiviste", "sprite": "nura", "lieux": ["puits", "porte", "archives", "manuscrits"]},
+    {"id": "samir", "nom": "Samīr", "nom_ar": "سَمِير", "role": "L'apprenti copiste", "sprite": "samir", "lieux": ["marche", "atelier"]},
+    {"id": "layla", "nom": "Laylā", "nom_ar": "لَيْلَى", "role": "La marchande d'enseignes", "sprite": "layla", "lieux": ["marche", "fontaine"]},
+    {"id": "rashid", "nom": "Rāšid", "nom_ar": "رَاشِد", "role": "Le caravanier", "sprite": "rashid", "lieux": ["caravanserail", "dunes"]},
+    {"id": "suhayl", "nom": "Suhayl", "nom_ar": "سُهَيْل", "role": "L'astronome", "sprite": "suhayl", "lieux": ["observatoire", "cadran"]}
+  ]
+}

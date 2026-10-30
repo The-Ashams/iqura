@@ -1,0 +1,541 @@
+{
+  "id": "fondations-09",
+  "etape": 2,
+  "ordre": 9,
+  "format": 3,
+  "titre": "Autour du feu",
+  "objectif": "Décrire avec un adjectif : « un grand livre », « le grand livre ».",
+  "statut": "ia_non_verifie",
+  "lieu": "veillee",
+  "maitre": "rashid_oasis",
+  "prerequis": [
+    "fondations-08"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rashid_oasis",
+          "texte": "La nuit est tombée. Autour du feu, on raconte la journée."
+        },
+        {
+          "qui": "rashid_oasis",
+          "texte": "Pour bien raconter, il faut décrire : un vieux chemin, une eau froide, un habit neuf."
+        }
+      ],
+      "objectif": "Décrire avec un adjectif."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous » ?",
+          "choix_ar": [
+            "نَحْنُ",
+            "هُمْ",
+            "أَنْتُمْ"
+          ],
+          "reponse": 0,
+          "explication": "« nous » se dit نَحْنُ (leçon 2.8)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La maison est grande ».",
+          "ar": "الْبَيْتُ …",
+          "choix_ar": [
+            "كَبِيرٌ",
+            "كَبِيرَةٌ",
+            "الْكَبِيرُ"
+          ],
+          "reponse": 0,
+          "explication": "الْبَيْتُ كَبِيرٌ (leçon 2.6)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هُنَاكَ",
+          "choix": [
+            "là-bas",
+            "ici",
+            "eux deux"
+          ],
+          "reponse": 0,
+          "explication": "هُنَاكَ veut dire « là-bas » (leçon 2.8)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "rashid_oasis",
+          "ar": "هَٰذَا ثَوْبٌ جَدِيدٌ.",
+          "fr": "Ceci est un vêtement neuf."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَهَٰذَا سِرَاجٌ قَدِيمٌ.",
+          "fr": "Et ceci est une vieille lampe."
+        },
+        {
+          "qui": "rashid_oasis",
+          "ar": "وَالْمَاءُ بَارِدٌ.",
+          "fr": "Et l'eau est froide."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'est-ce qui est vieux ?",
+        "choix": [
+          "la lampe",
+          "le vêtement",
+          "l'eau"
+        ],
+        "reponse": 0,
+        "explication": "سِرَاجٌ قَدِيمٌ : « une vieille lampe »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "jadid",
+        "qadim",
+        "tawil",
+        "qasir",
+        "harr",
+        "barid"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "جَدِيدٌ",
+        "choix": [
+          "nouveau, neuf",
+          "ancien, vieux",
+          "long"
+        ],
+        "reponse": 0,
+        "explication": "جَدِيدٌ veut dire « nouveau, neuf »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'adjectif suit le nom",
+      "texte": "L'adjectif se place après le nom et s'accorde avec lui en genre : قَلَمٌ جَدِيدٌ, خَيْمَةٌ جَدِيدَةٌ. Le nombre a aussi ses règles : tu les verras avec le pluriel.",
+      "exemples": [
+        "قَلَمٌ جَدِيدٌ",
+        "خَيْمَةٌ جَدِيدَةٌ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « une grande tente ».",
+        "ar": "خَيْمَةٌ …",
+        "choix_ar": [
+          "كَبِيرَةٌ",
+          "كَبِيرٌ",
+          "الْكَبِيرَةُ"
+        ],
+        "reponse": 0,
+        "explication": "خَيْمَةٌ كَبِيرَةٌ : féminin et indéfini, comme le nom."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le défini appelle le défini",
+      "texte": "Si le nom porte الْ, l'adjectif le porte aussi : الْبَيْتُ الْكَبِيرُ « la grande maison ». Sans الْ à l'adjectif, c'est une phrase : الْبَيْتُ كَبِيرٌ « la maison est grande ».",
+      "exemples": [
+        "الْبَيْتُ الْكَبِيرُ",
+        "الْبَيْتُ كَبِيرٌ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire الثَّوْبُ الْجَدِيدُ ?",
+        "choix": [
+          "le vêtement neuf",
+          "le vêtement est neuf",
+          "un vêtement neuf"
+        ],
+        "reponse": 0,
+        "explication": "Nom et adjectif portent tous deux الْ : « le vêtement neuf »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَصِيرٌ",
+          "choix": [
+            "court",
+            "long",
+            "froid"
+          ],
+          "reponse": 0,
+          "explication": "قَصِيرٌ veut dire « court »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « froid » ?",
+          "choix_ar": [
+            "بَارِدٌ",
+            "حَارٌّ",
+            "جَدِيدٌ"
+          ],
+          "reponse": 0,
+          "explication": "« froid » se dit بَارِدٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « un long fleuve ».",
+          "ar": "نَهْرٌ …",
+          "choix_ar": [
+            "طَوِيلٌ",
+            "طَوِيلَةٌ",
+            "الطَّوِيلُ"
+          ],
+          "reponse": 0,
+          "explication": "نَهْرٌ طَوِيلٌ : masculin et indéfini."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « la tente neuve ».",
+          "ar": "الْخَيْمَةُ …",
+          "choix_ar": [
+            "الْجَدِيدَةُ",
+            "جَدِيدَةٌ",
+            "الْجَدِيدُ"
+          ],
+          "reponse": 0,
+          "explication": "الْخَيْمَةُ الْجَدِيدَةُ : féminin et défini, comme le nom. الْخَيْمَةُ جَدِيدَةٌ voudrait dire « la tente est neuve »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire بَيْتٌ قَدِيمٌ ?",
+          "choix": [
+            "une vieille maison",
+            "la vieille maison",
+            "la maison est vieille"
+          ],
+          "reponse": 0,
+          "explication": "Nom et adjectif indéfinis : « une vieille maison »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "حَارٌّ",
+          "choix_ar": [
+            "حَارٌّ",
+            "بَارِدٌ",
+            "جَدِيدٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était حَارٌّ « chaud »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « un calame neuf ».",
+          "tuiles": [
+            "جَدِيدٌ",
+            "قَلَمٌ",
+            "جَدِيدَةٌ"
+          ],
+          "solution": [
+            "قَلَمٌ",
+            "جَدِيدٌ"
+          ],
+          "explication": "قَلَمٌ جَدِيدٌ : le nom, puis l'adjectif accordé."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "الْمَاءُ بَارِدٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment dit-on « la grande montagne » ?",
+          "choix_ar": [
+            "الْجَبَلُ الْكَبِيرُ",
+            "الْجَبَلُ كَبِيرٌ",
+            "جَبَلٌ كَبِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "Nom et adjectif définis : الْجَبَلُ الْكَبِيرُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « court » ?",
+          "choix_ar": [
+            "قَصِيرٌ",
+            "طَوِيلٌ",
+            "صَغِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "« court » se dit قَصِيرٌ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Autour du feu",
+      "texte": "Bāsim note ce qu'il voit pendant la veillée. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "النَّارُ كَبِيرَةٌ وَحَارَّةٌ.",
+        "الْمَاءُ بَارِدٌ.",
+        "هَٰذَا ثَوْبٌ جَدِيدٌ، وَذَٰلِكَ ثَوْبٌ قَدِيمٌ.",
+        "النَّهْرُ الطَّوِيلُ هُنَاكَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Comment est l'eau ?",
+          "choix": [
+            "froide",
+            "chaude",
+            "neuve"
+          ],
+          "reponse": 0,
+          "explication": "الْمَاءُ بَارِدٌ : l'eau est froide."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Où est le long fleuve ?",
+          "choix": [
+            "là-bas",
+            "ici",
+            "près du feu"
+          ],
+          "reponse": 0,
+          "explication": "النَّهْرُ الطَّوِيلُ هُنَاكَ : le long fleuve est là-bas."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « une grande tente ».",
+          "tuiles": [
+            "كَبِيرَةٌ",
+            "خَيْمَةٌ",
+            "كَبِيرٌ"
+          ],
+          "solution": [
+            "خَيْمَةٌ",
+            "كَبِيرَةٌ"
+          ],
+          "explication": "خَيْمَةٌ كَبِيرَةٌ : l'adjectif prend ة."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « le vêtement neuf ».",
+          "tuiles": [
+            "الْجَدِيدُ",
+            "الثَّوْبُ",
+            "جَدِيدٌ"
+          ],
+          "solution": [
+            "الثَّوْبُ",
+            "الْجَدِيدُ"
+          ],
+          "explication": "الثَّوْبُ الْجَدِيدُ : les deux mots portent الْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « de l'eau froide ».",
+          "ar": "مَاءٌ …",
+          "choix_ar": [
+            "بَارِدٌ",
+            "بَارِدَةٌ",
+            "الْبَارِدُ"
+          ],
+          "reponse": 0,
+          "explication": "مَاءٌ بَارِدٌ : masculin et indéfini."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Rāšid dit que le feu est chaud. Dis-lui que l'eau est froide.",
+          "replique": {
+            "qui": "rashid_oasis",
+            "ar": "النَّارُ حَارَّةٌ."
+          },
+          "choix_ar": [
+            "الْمَاءُ بَارِدٌ.",
+            "الْمَاءُ بَارِدَةٌ.",
+            "الْمَاءُ الْبَارِدُ"
+          ],
+          "reponse": 0,
+          "explication": "الْمَاءُ بَارِدٌ : une phrase, avec l'attribut au masculin."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ancien, vieux » ?",
+          "choix_ar": [
+            "قَدِيمٌ",
+            "جَدِيدٌ",
+            "قَصِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "« ancien, vieux » se dit قَدِيمٌ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَوِيلٌ",
+          "choix": [
+            "long",
+            "court",
+            "lointain"
+          ],
+          "reponse": 0,
+          "explication": "طَوِيلٌ veut dire « long »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَارٌّ",
+          "choix": [
+            "chaud",
+            "froid",
+            "neuf"
+          ],
+          "reponse": 0,
+          "explication": "حَارٌّ veut dire « chaud »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَدِيمٌ",
+          "choix": [
+            "ancien, vieux",
+            "nouveau, neuf",
+            "court"
+          ],
+          "reponse": 0,
+          "explication": "قَدِيمٌ veut dire « ancien, vieux »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nouveau, neuf » ?",
+          "choix_ar": [
+            "جَدِيدٌ",
+            "قَدِيمٌ",
+            "بَعِيدٌ"
+          ],
+          "reponse": 0,
+          "explication": "« nouveau, neuf » se dit جَدِيدٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « un village ancien ».",
+          "ar": "قَرْيَةٌ …",
+          "choix_ar": [
+            "قَدِيمَةٌ",
+            "قَدِيمٌ",
+            "الْقَدِيمَةُ"
+          ],
+          "reponse": 0,
+          "explication": "قَرْيَةٌ قَدِيمَةٌ : féminin et indéfini."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « le long fleuve ».",
+          "ar": "النَّهْرُ …",
+          "choix_ar": [
+            "الطَّوِيلُ",
+            "طَوِيلٌ",
+            "الطَّوِيلَةُ"
+          ],
+          "reponse": 0,
+          "explication": "النَّهْرُ الطَّوِيلُ : masculin et défini."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire الْجَمَلُ الصَّغِيرُ ?",
+          "choix": [
+            "le petit chameau",
+            "le chameau est petit",
+            "un petit chameau"
+          ],
+          "reponse": 0,
+          "explication": "Les deux mots portent الْ : « le petit chameau »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "بَارِدٌ",
+          "choix_ar": [
+            "بَارِدٌ",
+            "حَارٌّ",
+            "بَعِيدٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était بَارِدٌ « froid »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment dit-on « la tente est neuve » ?",
+          "choix_ar": [
+            "الْخَيْمَةُ جَدِيدَةٌ.",
+            "الْخَيْمَةُ الْجَدِيدَةُ",
+            "خَيْمَةٌ جَدِيدَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Une phrase : nom défini, attribut indéfini."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هُنَاكَ",
+          "choix": [
+            "là-bas",
+            "ici",
+            "eux deux"
+          ],
+          "reponse": 0,
+          "explication": "هُنَاكَ veut dire « là-bas ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous » ?",
+          "choix_ar": [
+            "نَحْنُ",
+            "هُمْ",
+            "أَنَا"
+          ],
+          "reponse": 0,
+          "explication": "« nous » se dit نَحْنُ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَمِيلٌ",
+          "choix": [
+            "beau",
+            "grand",
+            "proche"
+          ],
+          "reponse": 0,
+          "explication": "جَمِيلٌ veut dire « beau ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu décris avec un adjectif accordé : قَلَمٌ جَدِيدٌ, الْخَيْمَةُ الْكَبِيرَةُ, et tu distingues « la maison est grande » de « la grande maison ».",
+      "suite": "Demain soir, autour du feu, on apprend à poser des questions."
+    }
+  ]
+}

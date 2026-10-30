@@ -1,0 +1,537 @@
+{
+  "id": "fondations-06",
+  "etape": 2,
+  "ordre": 6,
+  "format": 3,
+  "titre": "Au puits aux palmiers",
+  "objectif": "Dire « la maison est grande » : la phrase nominale.",
+  "statut": "ia_non_verifie",
+  "lieu": "palmiers",
+  "maitre": "basim",
+  "prerequis": [
+    "fondations-05"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "basim",
+          "texte": "Bienvenue au puits aux palmiers ! Ici, on se repose et on regarde autour de soi."
+        },
+        {
+          "qui": "basim",
+          "texte": "Aujourd'hui, tu vas dire comment sont les choses : grandes, petites, proches ou lointaines."
+        }
+      ],
+      "objectif": "Faire une phrase nominale : « la maison est grande »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Une montagne au loin : complète « Cela est une montagne ».",
+          "ar": "… جَبَلٌ.",
+          "choix_ar": [
+            "ذَٰلِكَ",
+            "تِلْكَ",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "ذَٰلِكَ جَبَلٌ : loin et masculin (leçon 2.5)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la tente » ?",
+          "choix_ar": [
+            "الْخَيْمَةُ",
+            "خَيْمَةٌ",
+            "الْقَرْيَةُ"
+          ],
+          "reponse": 0,
+          "explication": "الْخَيْمَةُ : l'article, une seule ḍamma (leçon 2.3)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَرْيَةٌ",
+          "choix": [
+            "un village",
+            "un fleuve",
+            "une montagne"
+          ],
+          "reponse": 0,
+          "explication": "قَرْيَةٌ veut dire « un village » (leçon 2.5)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "الْبِئْرُ قَرِيبَةٌ.",
+          "fr": "Le puits est proche."
+        },
+        {
+          "qui": "rashid_oasis",
+          "ar": "وَالْجَبَلُ بَعِيدٌ.",
+          "fr": "Et la montagne est loin."
+        },
+        {
+          "qui": "basim",
+          "ar": "النَّخْلَةُ جَمِيلَةٌ.",
+          "fr": "Le palmier est beau."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'est-ce qui est loin ?",
+        "choix": [
+          "la montagne",
+          "le puits",
+          "le palmier"
+        ],
+        "reponse": 0,
+        "explication": "وَالْجَبَلُ بَعِيدٌ : la montagne est loin."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "kabir",
+        "saghir",
+        "jamil",
+        "qarib",
+        "baid"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "كَبِيرٌ",
+        "choix": [
+          "grand",
+          "petit",
+          "proche"
+        ],
+        "reponse": 0,
+        "explication": "كَبِيرٌ veut dire « grand »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La phrase nominale",
+      "texte": "Au présent, l'arabe n'emploie pas de verbe « être » : on met côte à côte le nom défini et l'attribut indéfini, الْبَيْتُ كَبِيرٌ « la maison est grande ».",
+      "exemples": [
+        "الْبَيْتُ كَبِيرٌ.",
+        "الْجَبَلُ بَعِيدٌ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire الْبَيْتُ كَبِيرٌ ?",
+        "choix": [
+          "La maison est grande.",
+          "Une grande maison.",
+          "La grande maison."
+        ],
+        "reponse": 0,
+        "explication": "Nom défini puis attribut indéfini : c'est une phrase, « la maison est grande »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'attribut s'accorde",
+      "texte": "Si le nom est féminin, l'attribut prend ة, même si le nom n'a pas de ة : الْخَيْمَةُ كَبِيرَةٌ, الْبِئْرُ قَرِيبَةٌ.",
+      "exemples": [
+        "الْخَيْمَةُ كَبِيرَةٌ.",
+        "الْبِئْرُ قَرِيبَةٌ."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « La tente est petite ».",
+        "ar": "الْخَيْمَةُ …",
+        "choix_ar": [
+          "صَغِيرَةٌ",
+          "صَغِيرٌ",
+          "الصَّغِيرَةُ"
+        ],
+        "reponse": 0,
+        "explication": "الْخَيْمَةُ صَغِيرَةٌ : attribut en ة, avec tanwīn. Avec l'article, الصَّغِيرَةُ donnerait « la petite tente » : ce n'est pas une phrase."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَغِيرٌ",
+          "choix": [
+            "petit",
+            "grand",
+            "beau"
+          ],
+          "reponse": 0,
+          "explication": "صَغِيرٌ veut dire « petit »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le village est proche ».",
+          "ar": "الْقَرْيَةُ …",
+          "choix_ar": [
+            "قَرِيبَةٌ",
+            "قَرِيبٌ",
+            "الْقَرِيبَةُ"
+          ],
+          "reponse": 0,
+          "explication": "قَرْيَةٌ est féminin : الْقَرْيَةُ قَرِيبَةٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le fleuve est loin ».",
+          "ar": "النَّهْرُ …",
+          "choix_ar": [
+            "بَعِيدٌ",
+            "بَعِيدَةٌ",
+            "الْبَعِيدُ"
+          ],
+          "reponse": 0,
+          "explication": "نَهْرٌ est masculin : النَّهْرُ بَعِيدٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « beau » ?",
+          "choix_ar": [
+            "جَمِيلٌ",
+            "كَبِيرٌ",
+            "قَرِيبٌ"
+          ],
+          "reponse": 0,
+          "explication": "« beau » se dit جَمِيلٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire الْقَرْيَةُ بَعِيدَةٌ ?",
+          "choix": [
+            "Le village est loin.",
+            "Un village lointain.",
+            "Le village lointain."
+          ],
+          "reponse": 0,
+          "explication": "Nom défini puis attribut indéfini : une phrase."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "قَرِيبٌ",
+          "choix_ar": [
+            "قَرِيبٌ",
+            "كَبِيرٌ",
+            "بَعِيدٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était قَرِيبٌ « proche »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « La montagne est grande. »",
+          "tuiles": [
+            "كَبِيرٌ",
+            "الْجَبَلُ",
+            "كَبِيرَةٌ"
+          ],
+          "solution": [
+            "الْجَبَلُ",
+            "كَبِيرٌ"
+          ],
+          "explication": "الْجَبَلُ كَبِيرٌ : جَبَلٌ est masculin."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "النَّخْلَةُ جَمِيلَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle phrase veut dire « La fille est petite » ?",
+          "choix_ar": [
+            "الْبِنْتُ صَغِيرَةٌ.",
+            "الْبِنْتُ صَغِيرٌ.",
+            "بِنْتٌ صَغِيرَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "بِنْتٌ est féminin : الْبِنْتُ صَغِيرَةٌ. بِنْتٌ صَغِيرَةٌ, sans الْ, veut dire « une petite fille »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « lointain » ?",
+          "choix_ar": [
+            "بَعِيدٌ",
+            "قَرِيبٌ",
+            "جَمِيلٌ"
+          ],
+          "reponse": 0,
+          "explication": "« lointain » se dit بَعِيدٌ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Au puits aux palmiers",
+      "texte": "Bāsim décrit l'oasis au voyageur. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "الْبِئْرُ قَرِيبَةٌ.",
+        "النَّخْلَةُ كَبِيرَةٌ وَجَمِيلَةٌ.",
+        "الْقَرْيَةُ بَعِيدَةٌ.",
+        "وَالْجَمَلُ صَغِيرٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'est-ce qui est loin ?",
+          "choix": [
+            "le village",
+            "le puits",
+            "le palmier"
+          ],
+          "reponse": 0,
+          "explication": "الْقَرْيَةُ بَعِيدَةٌ : le village est loin."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment est le palmier ?",
+          "choix": [
+            "grand et beau",
+            "petit",
+            "lointain"
+          ],
+          "reponse": 0,
+          "explication": "النَّخْلَةُ كَبِيرَةٌ وَجَمِيلَةٌ : grand et beau."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « La tente est petite. »",
+          "tuiles": [
+            "صَغِيرَةٌ",
+            "الْخَيْمَةُ",
+            "صَغِيرٌ"
+          ],
+          "solution": [
+            "الْخَيْمَةُ",
+            "صَغِيرَةٌ"
+          ],
+          "explication": "الْخَيْمَةُ صَغِيرَةٌ : féminin, l'attribut prend ة."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « La maison est proche. »",
+          "tuiles": [
+            "قَرِيبٌ",
+            "الْبَيْتُ",
+            "قَرِيبَةٌ"
+          ],
+          "solution": [
+            "الْبَيْتُ",
+            "قَرِيبٌ"
+          ],
+          "explication": "الْبَيْتُ قَرِيبٌ : masculin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La chamelle est belle ».",
+          "ar": "النَّاقَةُ …",
+          "choix_ar": [
+            "جَمِيلَةٌ",
+            "جَمِيلٌ",
+            "الْجَمِيلَةُ"
+          ],
+          "reponse": 0,
+          "explication": "النَّاقَةُ جَمِيلَةٌ : féminin, avec tanwīn."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « grand » ?",
+          "choix_ar": [
+            "كَبِيرٌ",
+            "صَغِيرٌ",
+            "بَعِيدٌ"
+          ],
+          "reponse": 0,
+          "explication": "« grand » se dit كَبِيرٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chameau est petit ».",
+          "ar": "الْجَمَلُ …",
+          "choix_ar": [
+            "صَغِيرٌ",
+            "صَغِيرَةٌ",
+            "الصَّغِيرُ"
+          ],
+          "reponse": 0,
+          "explication": "الْجَمَلُ صَغِيرٌ : masculin, avec tanwīn."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَمِيلٌ",
+          "choix": [
+            "beau",
+            "grand",
+            "proche"
+          ],
+          "reponse": 0,
+          "explication": "جَمِيلٌ veut dire « beau »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَعِيدٌ",
+          "choix": [
+            "lointain",
+            "proche",
+            "petit"
+          ],
+          "reponse": 0,
+          "explication": "بَعِيدٌ veut dire « lointain »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَرِيبٌ",
+          "choix": [
+            "proche",
+            "lointain",
+            "beau"
+          ],
+          "reponse": 0,
+          "explication": "قَرِيبٌ veut dire « proche »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « petit » ?",
+          "choix_ar": [
+            "صَغِيرٌ",
+            "كَبِيرٌ",
+            "قَرِيبٌ"
+          ],
+          "reponse": 0,
+          "explication": "« petit » se dit صَغِيرٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La maison est grande ».",
+          "ar": "الْبَيْتُ …",
+          "choix_ar": [
+            "كَبِيرٌ",
+            "كَبِيرَةٌ",
+            "الْكَبِيرُ"
+          ],
+          "reponse": 0,
+          "explication": "الْبَيْتُ كَبِيرٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le village est proche ».",
+          "ar": "الْقَرْيَةُ …",
+          "choix_ar": [
+            "قَرِيبَةٌ",
+            "قَرِيبٌ",
+            "الْقَرِيبَةُ"
+          ],
+          "reponse": 0,
+          "explication": "الْقَرْيَةُ قَرِيبَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire النَّهْرُ بَعِيدٌ ?",
+          "choix": [
+            "Le fleuve est loin.",
+            "Un fleuve lointain.",
+            "Le fleuve lointain."
+          ],
+          "reponse": 0,
+          "explication": "Nom défini puis attribut indéfini : une phrase."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "جَمِيلٌ",
+          "choix_ar": [
+            "جَمِيلٌ",
+            "جَمَلٌ",
+            "قَرِيبٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était جَمِيلٌ « beau »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle phrase veut dire « la tente est grande » ?",
+          "choix_ar": [
+            "الْخَيْمَةُ كَبِيرَةٌ.",
+            "خَيْمَةٌ كَبِيرَةٌ",
+            "الْخَيْمَةُ الْكَبِيرَةُ"
+          ],
+          "reponse": 0,
+          "explication": "Une phrase : الْخَيْمَةُ كَبِيرَةٌ. Les deux autres veulent dire « une grande tente » et « la grande tente »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَبَلٌ",
+          "choix": [
+            "une montagne",
+            "un fleuve",
+            "un village"
+          ],
+          "reponse": 0,
+          "explication": "جَبَلٌ veut dire « une montagne ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un village » ?",
+          "choix_ar": [
+            "قَرْيَةٌ",
+            "نَهْرٌ",
+            "خَيْمَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un village » se dit قَرْيَةٌ.",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ceci est un calame ».",
+          "ar": "… قَلَمٌ.",
+          "choix_ar": [
+            "هَٰذَا",
+            "هَٰذِهِ",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذَا قَلَمٌ : nom masculin.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu fais une phrase nominale : الْبَيْتُ كَبِيرٌ, الْخَيْمَةُ صَغِيرَةٌ.",
+      "suite": "Au puits, Bāsim t'apprend à te présenter."
+    }
+  ]
+}

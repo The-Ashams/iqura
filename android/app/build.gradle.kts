@@ -1,7 +1,18 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+}
+
+// Clé de signature fixe (android/key.properties, écrit par la CI depuis les
+// secrets du dépôt) : chaque nouvel APK s'installe par-dessus le précédent
+// sans perdre la progression. Sans ce fichier (poste de développement), la
+// clé de débogage est utilisée.
+val keyProperties = Properties().apply {
+    val f = rootProject.file("key.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
 }
 
 android {
@@ -29,11 +40,21 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        if (keyProperties.containsKey("storeFile")) {
+            create("iqura") {
+                storeFile = rootProject.file(keyProperties.getProperty("storeFile"))
+                storePassword = keyProperties.getProperty("password")
+                keyAlias = keyProperties.getProperty("alias")
+                keyPassword = keyProperties.getProperty("password")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.findByName("iqura")
+                ?: signingConfigs.getByName("debug")
         }
     }
 }

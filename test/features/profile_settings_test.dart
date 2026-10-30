@@ -55,6 +55,15 @@ void main() {
     db.close();
   });
 
+  test('bruitages activés par défaut, désactivables', () {
+    final db = UserDatabase.open(null);
+    final repo = SettingsRepository(db);
+    expect(repo.load().soundEffects, isTrue);
+    repo.saveSoundEffects(false);
+    expect(repo.load().soundEffects, isFalse);
+    db.close();
+  });
+
   test('réglage invalide en base : valeur par défaut', () {
     final db = UserDatabase.open(null);
     final repo = SettingsRepository(db)..saveArabicFontScale(1.2);

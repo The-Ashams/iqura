@@ -1,0 +1,566 @@
+{
+  "id": "fondations-07",
+  "etape": 2,
+  "ordre": 7,
+  "format": 3,
+  "titre": "Se présenter au puits",
+  "objectif": "Se présenter et présenter quelqu'un : je, tu, il, elle.",
+  "statut": "ia_non_verifie",
+  "lieu": "palmiers",
+  "maitre": "basim",
+  "prerequis": [
+    "fondations-06"
+  ],
+  "apercu": [
+    "بَاسِمٌ",
+    "رَاشِدٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "basim",
+          "texte": "Au puits, on rencontre des voyageurs de partout. Ici, on se présente."
+        },
+        {
+          "qui": "basim",
+          "texte": "Apprends à dire « je », « tu », « il » et « elle » : ce sont les pronoms."
+        }
+      ],
+      "objectif": "Se présenter avec أَنَا, أَنْتَ, أَنْتِ, هُوَ, هِيَ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « La tente est petite ».",
+          "ar": "الْخَيْمَةُ …",
+          "choix_ar": [
+            "صَغِيرَةٌ",
+            "صَغِيرٌ",
+            "الصَّغِيرَةُ"
+          ],
+          "reponse": 0,
+          "explication": "الْخَيْمَةُ صَغِيرَةٌ : féminin (leçon 2.6)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَعِيدٌ",
+          "choix": [
+            "lointain",
+            "proche",
+            "beau"
+          ],
+          "reponse": 0,
+          "explication": "بَعِيدٌ veut dire « lointain » (leçon 2.6)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Un village au loin : complète « Cela est un village ».",
+          "ar": "… قَرْيَةٌ.",
+          "choix_ar": [
+            "تِلْكَ",
+            "ذَٰلِكَ",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "تِلْكَ قَرْيَةٌ : loin et féminin (leçon 2.5)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "أَنَا بَاسِمٌ.",
+          "fr": "Je suis Bāsim."
+        },
+        {
+          "qui": "rashid_oasis",
+          "ar": "وَأَنَا رَاشِدٌ، أَنَا تَاجِرٌ.",
+          "fr": "Et moi, je suis Rāšid ; je suis marchand."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَأَنْتَ مُسَافِرٌ.",
+          "fr": "Et toi, tu es un voyageur."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que dit Bāsim au voyageur ?",
+        "choix": [
+          "Tu es un voyageur.",
+          "Je suis un voyageur.",
+          "Il est un voyageur."
+        ],
+        "reponse": 0,
+        "explication": "وَأَنْتَ مُسَافِرٌ : « et toi, tu es un voyageur »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ana",
+        "anta",
+        "anti",
+        "huwa",
+        "hiya"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "هِيَ",
+        "choix": [
+          "elle",
+          "il",
+          "tu (à une femme)"
+        ],
+        "reponse": 0,
+        "explication": "هِيَ veut dire « elle »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "tajir",
+        "musafir",
+        "ism"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مُسَافِرٌ",
+        "choix": [
+          "un voyageur",
+          "un marchand",
+          "un nom"
+        ],
+        "reponse": 0,
+        "explication": "مُسَافِرٌ veut dire « un voyageur »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Je, tu, il, elle",
+      "texte": "أَنَا « je », أَنْتَ « tu » (à un homme), أَنْتِ « tu » (à une femme), هُوَ « il », هِيَ « elle ». Ici, ils commencent la phrase : أَنَا مُسَافِرٌ.",
+      "exemples": [
+        "أَنَا مُسَافِرٌ.",
+        "هُوَ تَاجِرٌ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment dit-on « tu » à une femme ?",
+        "choix_ar": [
+          "أَنْتِ",
+          "أَنْتَ",
+          "هِيَ"
+        ],
+        "reponse": 0,
+        "explication": "أَنْتِ, avec une kasra, se dit à une femme."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Elle et toi, au féminin",
+      "texte": "Avec هِيَ ou أَنْتِ, l'adjectif ou le nom de métier se met au féminin, en général avec ة : هِيَ تَاجِرَةٌ, أَنْتِ مُسَافِرَةٌ.",
+      "exemples": [
+        "هِيَ تَاجِرَةٌ.",
+        "أَنْتِ مُسَافِرَةٌ."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Elle est voyageuse ».",
+        "ar": "هِيَ …",
+        "choix_ar": [
+          "مُسَافِرَةٌ",
+          "مُسَافِرٌ",
+          "الْمُسَافِرَةُ"
+        ],
+        "reponse": 0,
+        "explication": "هِيَ مُسَافِرَةٌ : le nom de métier prend ة."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَنَا",
+          "choix": [
+            "je, moi",
+            "tu, toi",
+            "il, lui"
+          ],
+          "reponse": 0,
+          "explication": "أَنَا veut dire « je, moi »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il » ?",
+          "choix_ar": [
+            "هُوَ",
+            "هِيَ",
+            "أَنَا"
+          ],
+          "reponse": 0,
+          "explication": "« il » se dit هُوَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Elle est grande ».",
+          "ar": "هِيَ …",
+          "choix_ar": [
+            "كَبِيرَةٌ",
+            "كَبِيرٌ",
+            "الْكَبِيرَةُ"
+          ],
+          "reponse": 0,
+          "explication": "هِيَ كَبِيرَةٌ : féminin."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "أَنْتِ",
+          "choix_ar": [
+            "أَنْتِ",
+            "أَنْتَ",
+            "أَنَا"
+          ],
+          "reponse": 0,
+          "explication": "C'était أَنْتِ « tu » (à une femme)."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Je suis un voyageur. »",
+          "tuiles": [
+            "مُسَافِرٌ",
+            "أَنَا",
+            "هُوَ"
+          ],
+          "solution": [
+            "أَنَا",
+            "مُسَافِرٌ"
+          ],
+          "explication": "أَنَا مُسَافِرٌ : le pronom, puis l'attribut."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel pronom pour parler d'une femme (ni toi ni moi) ?",
+          "choix_ar": [
+            "هِيَ",
+            "أَنْتِ",
+            "هُوَ"
+          ],
+          "reponse": 0,
+          "explication": "هِيَ « elle » : une femme dont on parle."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "أَنَا مُسَافِرٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un marchand » ?",
+          "choix_ar": [
+            "تَاجِرٌ",
+            "مُسَافِرٌ",
+            "رَجُلٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un marchand » se dit تَاجِرٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Tu es marchand » (à un homme).",
+          "ar": "… تَاجِرٌ.",
+          "choix_ar": [
+            "أَنْتَ",
+            "أَنْتِ",
+            "هِيَ"
+          ],
+          "reponse": 0,
+          "explication": "À un homme : أَنْتَ تَاجِرٌ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْمٌ",
+          "choix": [
+            "un nom",
+            "un marchand",
+            "un voyageur"
+          ],
+          "reponse": 0,
+          "explication": "اسْمٌ veut dire « un nom »."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Qui est qui ?",
+      "texte": "Au puits, chacun se présente. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "أَنَا بَاسِمٌ، وَأَنَا صَغِيرٌ.",
+        "هُوَ رَاشِدٌ، وَهُوَ تَاجِرٌ.",
+        "هِيَ مُسَافِرَةٌ.",
+        "وَأَنْتَ مُسَافِرٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui est marchand ?",
+          "choix": [
+            "Rāšid",
+            "Bāsim",
+            "le voyageur"
+          ],
+          "reponse": 0,
+          "explication": "هُوَ رَاشِدٌ، وَهُوَ تَاجِرٌ : Rāšid est marchand."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans le texte, هِيَ parle…",
+          "choix": [
+            "d'une femme",
+            "d'un homme",
+            "de toi"
+          ],
+          "reponse": 0,
+          "explication": "هِيَ veut dire « elle »."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Il est marchand. »",
+          "tuiles": [
+            "تَاجِرٌ",
+            "هُوَ",
+            "هِيَ"
+          ],
+          "solution": [
+            "هُوَ",
+            "تَاجِرٌ"
+          ],
+          "explication": "هُوَ تَاجِرٌ : « il est marchand »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Elle est voyageuse. »",
+          "tuiles": [
+            "مُسَافِرَةٌ",
+            "هِيَ",
+            "مُسَافِرٌ"
+          ],
+          "solution": [
+            "هِيَ",
+            "مُسَافِرَةٌ"
+          ],
+          "explication": "هِيَ مُسَافِرَةٌ : le nom de métier prend ة."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Bāsim se présente et te demande qui tu es. Que réponds-tu ?",
+          "replique": {
+            "qui": "basim",
+            "ar": "أَنَا بَاسِمٌ، وَأَنْتَ؟"
+          },
+          "choix_ar": [
+            "أَنَا مُسَافِرٌ.",
+            "هُوَ مُسَافِرٌ.",
+            "هِيَ مُسَافِرَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "Pour parler de toi : أَنَا مُسَافِرٌ. Une voyageuse dirait أَنَا مُسَافِرَةٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je » ?",
+          "choix_ar": [
+            "أَنَا",
+            "أَنْتَ",
+            "هُوَ"
+          ],
+          "reponse": 0,
+          "explication": "« je » se dit أَنَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Tu es grande » (à une femme).",
+          "ar": "أَنْتِ …",
+          "choix_ar": [
+            "كَبِيرَةٌ",
+            "كَبِيرٌ",
+            "الْكَبِيرَةُ"
+          ],
+          "reponse": 0,
+          "explication": "أَنْتِ كَبِيرَةٌ : féminin."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هُوَ",
+          "choix": [
+            "il, lui",
+            "elle",
+            "je, moi"
+          ],
+          "reponse": 0,
+          "explication": "هُوَ veut dire « il, lui »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَنْتَ",
+          "choix": [
+            "tu (à un homme)",
+            "tu (à une femme)",
+            "je"
+          ],
+          "reponse": 0,
+          "explication": "أَنْتَ veut dire « tu (à un homme) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَاجِرٌ",
+          "choix": [
+            "un marchand",
+            "un voyageur",
+            "un homme"
+          ],
+          "reponse": 0,
+          "explication": "تَاجِرٌ veut dire « un marchand »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « elle » ?",
+          "choix_ar": [
+            "هِيَ",
+            "هُوَ",
+            "أَنْتِ"
+          ],
+          "reponse": 0,
+          "explication": "« elle » se dit هِيَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un voyageur » ?",
+          "choix_ar": [
+            "مُسَافِرٌ",
+            "تَاجِرٌ",
+            "رَجُلٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un voyageur » se dit مُسَافِرٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Elle est belle ».",
+          "ar": "هِيَ …",
+          "choix_ar": [
+            "جَمِيلَةٌ",
+            "جَمِيلٌ",
+            "الْجَمِيلَةُ"
+          ],
+          "reponse": 0,
+          "explication": "هِيَ جَمِيلَةٌ : féminin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je suis petit ».",
+          "ar": "… صَغِيرٌ.",
+          "choix_ar": [
+            "أَنَا",
+            "هِيَ",
+            "أَنْتِ"
+          ],
+          "reponse": 0,
+          "explication": "أَنَا صَغِيرٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment dit-on « tu » à un homme ?",
+          "choix_ar": [
+            "أَنْتَ",
+            "أَنْتِ",
+            "هُوَ"
+          ],
+          "reponse": 0,
+          "explication": "أَنْتَ, avec une fatḥa, se dit à un homme."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "هِيَ",
+          "choix_ar": [
+            "هِيَ",
+            "هُوَ",
+            "هَٰذِهِ"
+          ],
+          "reponse": 0,
+          "explication": "C'était هِيَ « elle »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَبِيرٌ",
+          "choix": [
+            "grand",
+            "petit",
+            "proche"
+          ],
+          "reponse": 0,
+          "explication": "كَبِيرٌ veut dire « grand ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une montagne » ?",
+          "choix_ar": [
+            "جَبَلٌ",
+            "نَهْرٌ",
+            "قَرْيَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une montagne » se dit جَبَلٌ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الْخَيْمَةُ",
+          "choix": [
+            "la tente",
+            "une tente",
+            "la chambre"
+          ],
+          "reponse": 0,
+          "explication": "الْخَيْمَةُ veut dire « la tente ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu te présentes et tu présentes quelqu'un : أَنَا مُسَافِرٌ, هُوَ تَاجِرٌ, هِيَ مُسَافِرَةٌ.",
+      "suite": "Demain, la caravane entière se présente : nous, vous, eux."
+    }
+  ]
+}

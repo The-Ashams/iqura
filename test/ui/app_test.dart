@@ -8,17 +8,26 @@ import 'package:iqura/core/app_paths.dart';
 import 'package:iqura/core/providers.dart';
 import 'package:iqura/data/content_db/content_database.dart';
 import 'package:iqura/data/user_db/user_database.dart';
+import 'package:iqura/engines/audio/audio_service.dart';
 import 'package:iqura/features/settings/settings.dart';
 
 late Directory tmp;
 late UserDatabase userDb;
 late ContentDatabase contentDb;
 
+class SilentSfx implements SfxPlayer {
+  @override
+  Future<void> play(Sfx sound) async {}
+  @override
+  Future<void> dispose() async {}
+}
+
 Widget app() => ProviderScope(
   overrides: [
     appPathsProvider.overrideWithValue(AppPaths(tmp.path)),
     userDatabaseProvider.overrideWithValue(userDb),
     contentDatabaseProvider.overrideWithValue(contentDb),
+    sfxPlayerProvider.overrideWithValue(SilentSfx()),
   ],
   child: const IquraApp(),
 );
@@ -59,8 +68,12 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Bienvenue, Amina'), findsOneWidget);
     expect(find.byType(NavigationBar), findsOneWidget);
-    expect(find.text('Pas encore disponible'), findsOneWidget);
-    for (final label in ['Carte', 'Cité', 'Grimoire', 'Sanctuaire']) {
+    // Carte de la région 1 : lieux de la tranche J1a ouverts, les autres
+    // indiqués « à venir ».
+    expect(find.text('Le Désert des Lettres'), findsOneWidget);
+    expect(find.text("1. Le Puits de l'arrivée"), findsOneWidget);
+    expect(find.text('Pas encore disponible'), findsNothing);
+    for (final label in ['Carte', 'Cité', 'Grimoire', 'Paramètres']) {
       expect(find.text(label), findsOneWidget);
     }
   });
@@ -85,7 +98,7 @@ void main() {
     await tester.tap(find.text('Paramètres'));
     await tester.pumpAndSettle();
     expect(find.text('Exporter ma progression'), findsOneWidget);
-    expect(find.text('Rédigé par IA — non vérifié'), findsOneWidget);
+    expect(find.text('Rédigé par IA'), findsOneWidget);
 
     await tester.tap(find.text('Sombre'));
     await tester.pumpAndSettle();
@@ -116,10 +129,7 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('Sources des données'));
     await tester.pumpAndSettle();
-    expect(
-      find.text('Tanzil Quran Text (Uthmani, Version 1.1)'),
-      findsOneWidget,
-    );
+    expect(find.textContaining('Tanzil'), findsNothing);
     expect(
       find.textContaining('Quranic Arabic Corpus, données'),
       findsOneWidget,

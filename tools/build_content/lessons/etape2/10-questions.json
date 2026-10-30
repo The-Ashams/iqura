@@ -1,0 +1,571 @@
+{
+  "id": "fondations-10",
+  "etape": 2,
+  "ordre": 10,
+  "format": 3,
+  "titre": "Questions autour du feu",
+  "objectif": "Poser une question : est-ce que, quoi, qui, où ; répondre oui ou non.",
+  "statut": "ia_non_verifie",
+  "lieu": "veillee",
+  "maitre": "basim",
+  "prerequis": [
+    "fondations-09"
+  ],
+  "apercu": [
+    "بَاسِمٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "basim",
+          "texte": "Autour du feu, tout le monde pose des questions au voyageur !"
+        },
+        {
+          "qui": "basim",
+          "texte": "Apprends à demander quoi, qui et où, et à répondre oui ou non."
+        }
+      ],
+      "objectif": "Poser une question et y répondre."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « une grande tente ».",
+          "ar": "خَيْمَةٌ …",
+          "choix_ar": [
+            "كَبِيرَةٌ",
+            "كَبِيرٌ",
+            "الْكَبِيرَةُ"
+          ],
+          "reponse": 0,
+          "explication": "خَيْمَةٌ كَبِيرَةٌ (leçon 2.9)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَارِدٌ",
+          "choix": [
+            "froid, frais",
+            "chaud",
+            "neuf"
+          ],
+          "reponse": 0,
+          "explication": "بَارِدٌ veut dire « froid » (leçon 2.9)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ici » ?",
+          "choix_ar": [
+            "هُنَا",
+            "هُنَاكَ",
+            "هُمَا"
+          ],
+          "reponse": 0,
+          "explication": "« ici » se dit هُنَا (leçon 2.8)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَا هَٰذَا؟",
+          "fr": "Qu'est-ce que c'est ?"
+        },
+        {
+          "qui": "rashid_oasis",
+          "ar": "هَٰذَا سِرَاجٌ.",
+          "fr": "C'est une lampe."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَأَيْنَ الْجَمَلُ؟",
+          "fr": "Et où est le chameau ?"
+        },
+        {
+          "qui": "rashid_oasis",
+          "ar": "الْجَمَلُ هُنَاكَ.",
+          "fr": "Le chameau est là-bas."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que demande Bāsim en premier ?",
+        "choix": [
+          "Qu'est-ce que c'est ?",
+          "Qui est-ce ?",
+          "Où est-ce ?"
+        ],
+        "reponse": 0,
+        "explication": "مَا هَٰذَا؟ : « qu'est-ce que c'est ? »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "hal",
+        "ma_q",
+        "man_q",
+        "ayna",
+        "naam",
+        "la"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "أَيْنَ",
+        "choix": [
+          "où ?",
+          "qui ?",
+          "quoi ?"
+        ],
+        "reponse": 0,
+        "explication": "أَيْنَ veut dire « où ? »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Oui ou non : هَلْ",
+      "texte": "هَلْ en tête de phrase pose une question : on y répond نَعَمْ « oui » ou لَا « non ». هَلْ أَنْتَ مُسَافِرٌ؟ نَعَمْ.",
+      "exemples": [
+        "هَلْ أَنْتَ مُسَافِرٌ؟",
+        "نَعَمْ.",
+        "لَا."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire هَلْ هَٰذَا بَيْتٌ؟ ?",
+        "choix": [
+          "Est-ce une maison ?",
+          "Où est la maison ?",
+          "Qu'est-ce que c'est ?"
+        ],
+        "reponse": 0,
+        "explication": "هَلْ demande oui ou non : « est-ce une maison ? »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Quoi, qui, où",
+      "texte": "مَا demande une chose, مَنْ une personne, أَيْنَ un lieu : مَا هَٰذَا؟ مَنْ هُوَ؟ أَيْنَ الْجَمَلُ؟",
+      "exemples": [
+        "مَا هَٰذَا؟",
+        "مَنْ هُوَ؟",
+        "أَيْنَ الْجَمَلُ؟"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Qui est-elle ? »",
+        "ar": "… هِيَ؟",
+        "choix_ar": [
+          "مَنْ",
+          "مَا",
+          "أَيْنَ"
+        ],
+        "reponse": 0,
+        "explication": "مَنْ demande une personne : مَنْ هِيَ؟"
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَنْ",
+          "choix": [
+            "qui ?",
+            "quoi ?",
+            "où ?"
+          ],
+          "reponse": 0,
+          "explication": "مَنْ « qui ? » ; ne le confonds pas avec مِنْ « de »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « où ? » ?",
+          "choix_ar": [
+            "أَيْنَ",
+            "مَنْ",
+            "مَا"
+          ],
+          "reponse": 0,
+          "explication": "« où ? » se dit أَيْنَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Qu'est-ce que c'est ? »",
+          "ar": "… هَٰذَا؟",
+          "choix_ar": [
+            "مَا",
+            "مَنْ",
+            "أَيْنَ"
+          ],
+          "reponse": 0,
+          "explication": "مَا demande une chose : مَا هَٰذَا؟"
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "نَعَمْ",
+          "choix_ar": [
+            "نَعَمْ",
+            "لَا",
+            "هَلْ"
+          ],
+          "reponse": 0,
+          "explication": "C'était نَعَمْ « oui »."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te pose une question. Que réponds-tu ?",
+          "replique": {
+            "qui": "basim",
+            "ar": "هَلْ أَنْتَ مُسَافِرٌ؟"
+          },
+          "choix_ar": [
+            "نَعَمْ، أَنَا مُسَافِرٌ.",
+            "نَعَمْ، هُوَ مُسَافِرٌ.",
+            "لَا، أَنْتَ مُسَافِرٌ."
+          ],
+          "reponse": 0,
+          "explication": "Pour parler de toi : نَعَمْ، أَنَا مُسَافِرٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Où est le chameau ? »",
+          "tuiles": [
+            "الْجَمَلُ",
+            "أَيْنَ",
+            "مَنْ"
+          ],
+          "solution": [
+            "أَيْنَ",
+            "الْجَمَلُ"
+          ],
+          "explication": "أَيْنَ الْجَمَلُ؟ : le mot interrogatif d'abord."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire مَنْ ?",
+          "choix": [
+            "qui ?",
+            "de",
+            "dans"
+          ],
+          "reponse": 0,
+          "explication": "مَنْ (fatḥa) « qui ? » ; مِنْ (kasra) « de »."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "مَا هَٰذَا؟"
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Est-ce une tente ? »",
+          "ar": "… هَٰذِهِ خَيْمَةٌ؟",
+          "choix_ar": [
+            "هَلْ",
+            "مَا",
+            "أَيْنَ"
+          ],
+          "reponse": 0,
+          "explication": "هَلْ demande oui ou non."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « non » ?",
+          "choix_ar": [
+            "لَا",
+            "نَعَمْ",
+            "مَا"
+          ],
+          "reponse": 0,
+          "explication": "« non » se dit لَا."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Questions autour du feu",
+      "texte": "Les gens de la caravane interrogent le voyageur. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "مَا هَٰذَا؟ هَٰذَا سِرَاجٌ قَدِيمٌ.",
+        "مَنْ هُوَ؟ هُوَ تَاجِرٌ.",
+        "هَلْ أَنْتِ مُسَافِرَةٌ؟ نَعَمْ.",
+        "أَيْنَ الْبِئْرُ؟ الْبِئْرُ هُنَاكَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui est l'homme dont on parle ?",
+          "choix": [
+            "un marchand",
+            "un voyageur",
+            "un enseignant"
+          ],
+          "reponse": 0,
+          "explication": "مَنْ هُوَ؟ هُوَ تَاجِرٌ : c'est un marchand."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Où est le puits ?",
+          "choix": [
+            "là-bas",
+            "ici",
+            "près du feu"
+          ],
+          "reponse": 0,
+          "explication": "الْبِئْرُ هُنَاكَ : là-bas."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment est la lampe ?",
+          "choix": [
+            "vieille",
+            "neuve",
+            "grande"
+          ],
+          "reponse": 0,
+          "explication": "سِرَاجٌ قَدِيمٌ : une vieille lampe."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Rāšid te montre un calame. Que réponds-tu ?",
+          "replique": {
+            "qui": "rashid_oasis",
+            "ar": "مَا هَٰذَا؟"
+          },
+          "choix_ar": [
+            "هَٰذَا قَلَمٌ.",
+            "هَٰذِهِ قَلَمٌ.",
+            "أَيْنَ الْقَلَمُ؟"
+          ],
+          "reponse": 0,
+          "explication": "قَلَمٌ est masculin : هَٰذَا قَلَمٌ."
+        },
+        {
+          "type": "repondre",
+          "consigne": "La chamelle est là-bas. Que réponds-tu à Bāsim ?",
+          "replique": {
+            "qui": "basim",
+            "ar": "أَيْنَ النَّاقَةُ؟"
+          },
+          "choix_ar": [
+            "النَّاقَةُ هُنَاكَ.",
+            "النَّاقَةُ هُنَا.",
+            "مَا النَّاقَةُ؟"
+          ],
+          "reponse": 0,
+          "explication": "النَّاقَةُ هُنَاكَ : « la chamelle est là-bas »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Qui es-tu ? » (à un homme)",
+          "tuiles": [
+            "أَنْتَ",
+            "مَنْ",
+            "مَا"
+          ],
+          "solution": [
+            "مَنْ",
+            "أَنْتَ"
+          ],
+          "explication": "مَنْ أَنْتَ؟ : « qui es-tu ? »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Est-ce une maison ? »",
+          "tuiles": [
+            "هَٰذَا",
+            "هَلْ",
+            "بَيْتٌ",
+            "أَيْنَ"
+          ],
+          "solution": [
+            "هَلْ",
+            "هَٰذَا",
+            "بَيْتٌ"
+          ],
+          "explication": "هَلْ هَٰذَا بَيْتٌ؟ : هَلْ en tête."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « oui » ?",
+          "choix_ar": [
+            "نَعَمْ",
+            "لَا",
+            "هَلْ"
+          ],
+          "reponse": 0,
+          "explication": "« oui » se dit نَعَمْ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هَلْ",
+          "choix": [
+            "est-ce que… ?",
+            "qui ?",
+            "où ?"
+          ],
+          "reponse": 0,
+          "explication": "هَلْ veut dire « est-ce que… ? »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَا",
+          "choix": [
+            "quoi ? qu'est-ce que… ?",
+            "qui ?",
+            "où ?"
+          ],
+          "reponse": 0,
+          "explication": "مَا demande une chose : « qu'est-ce que c'est »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَا",
+          "choix": [
+            "non",
+            "oui",
+            "où ?"
+          ],
+          "reponse": 0,
+          "explication": "لَا veut dire « non »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « qui ? » ?",
+          "choix_ar": [
+            "مَنْ",
+            "مِنْ",
+            "مَا"
+          ],
+          "reponse": 0,
+          "explication": "« qui ? » se dit مَنْ, avec une fatḥa ; مِنْ veut dire « de »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Où est la tente ? »",
+          "ar": "… الْخَيْمَةُ؟",
+          "choix_ar": [
+            "أَيْنَ",
+            "مَنْ",
+            "نَعَمْ"
+          ],
+          "reponse": 0,
+          "explication": "أَيْنَ demande un lieu."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Qui est-il ? »",
+          "ar": "… هُوَ؟",
+          "choix_ar": [
+            "مَنْ",
+            "أَيْنَ",
+            "هَلْ"
+          ],
+          "reponse": 0,
+          "explication": "مَنْ demande une personne."
+        },
+        {
+          "type": "qcm",
+          "consigne": "À هَلْ أَنْتَ تَاجِرٌ؟ on peut répondre…",
+          "choix_ar": [
+            "نَعَمْ، أَنَا تَاجِرٌ.",
+            "هُوَ هُنَاكَ.",
+            "هَٰذَا قَلَمٌ."
+          ],
+          "reponse": 0,
+          "explication": "هَلْ appelle oui ou non : نَعَمْ، أَنَا تَاجِرٌ."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "أَيْنَ",
+          "choix_ar": [
+            "أَيْنَ",
+            "مَنْ",
+            "لَا"
+          ],
+          "reponse": 0,
+          "explication": "C'était أَيْنَ « où ? »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "مَنْ sert à demander…",
+          "choix": [
+            "une personne",
+            "une chose",
+            "un lieu"
+          ],
+          "reponse": 0,
+          "explication": "مَنْ « qui ? » : une personne."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَارِدٌ",
+          "choix": [
+            "froid, frais",
+            "chaud",
+            "court"
+          ],
+          "reponse": 0,
+          "explication": "بَارِدٌ veut dire « froid, frais ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « elles » ?",
+          "choix_ar": [
+            "هُنَّ",
+            "هُمْ",
+            "هِيَ"
+          ],
+          "reponse": 0,
+          "explication": "« elles » se dit هُنَّ.",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « un long fleuve ».",
+          "ar": "نَهْرٌ …",
+          "choix_ar": [
+            "طَوِيلٌ",
+            "طَوِيلَةٌ",
+            "الطَّوِيلُ"
+          ],
+          "reponse": 0,
+          "explication": "نَهْرٌ طَوِيلٌ.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu poses une question avec هَلْ, مَا, مَنْ, أَيْنَ, et tu réponds نَعَمْ ou لَا. Le chapitre de la caravane est terminé !",
+      "suite": "Bientôt, le marché de l'oasis : Salmā t'apprendra à situer les choses."
+    }
+  ]
+}

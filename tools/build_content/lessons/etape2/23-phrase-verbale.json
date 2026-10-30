@@ -1,0 +1,556 @@
+{
+  "id": "fondations-23",
+  "etape": 2,
+  "ordre": 23,
+  "format": 3,
+  "titre": "La phrase verbale",
+  "objectif": "Comprendre qui fait quoi : verbe, sujet, complément ; accord du verbe.",
+  "statut": "ia_non_verifie",
+  "lieu": "caravanserail_oasis",
+  "maitre": "samir_oasis",
+  "prerequis": [
+    "fondations-22"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "texte": "Une caravane arrive ! Le gardien ouvre la porte, les marchands arrivent sur leurs chameaux."
+        },
+        {
+          "qui": "samir_oasis",
+          "texte": "Pour dire qui fait quoi, l'arabe range les mots : le verbe, celui qui agit, puis ce qui subit l'action."
+        }
+      ],
+      "objectif": "Dire qui fait quoi."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous avons bu » ?",
+          "choix_ar": [
+            "شَرِبْنَا",
+            "شَرِبُوا",
+            "شَرِبْتُ"
+          ],
+          "reponse": 0,
+          "explication": "-nā : « nous » (leçon 2.22)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ils sont revenus hier. »",
+          "ar": "… أَمْسِ.",
+          "choix_ar": [
+            "رَجَعُوا",
+            "رَجَعْنَا",
+            "رَجَعَ"
+          ],
+          "reponse": 0,
+          "explication": "« ils » : -ū (leçon 2.22)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الْيَوْمَ",
+          "choix": [
+            "aujourd'hui",
+            "hier",
+            "demain"
+          ],
+          "reponse": 0,
+          "explication": "الْيَوْمَ veut dire « aujourd'hui » (leçon 2.22)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَنْ فَتَحَ الْبَابَ؟",
+          "fr": "Qui a ouvert la porte ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "فَتَحَ الْحَارِسُ الْبَابَ.",
+          "fr": "Le gardien a ouvert la porte."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَالتُّجَّارُ؟",
+          "fr": "Et les marchands ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "رَكِبَ التُّجَّارُ الْجِمَالَ، وَبَلَغَتِ الْقَافِلَةُ الْمَدِينَةَ.",
+          "fr": "Les marchands sont montés sur les chameaux, et la caravane a atteint la ville."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qui a ouvert la porte ?",
+        "choix": [
+          "le gardien",
+          "les marchands",
+          "Samīr"
+        ],
+        "reponse": 0,
+        "explication": "فَتَحَ الْحَارِسُ الْبَابَ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "fataha",
+        "hamala",
+        "rakiba",
+        "balagha"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "فَتَحَ",
+        "choix": [
+          "il a ouvert",
+          "il a porté",
+          "il a atteint"
+        ],
+        "reponse": 0,
+        "explication": "فَتَحَ veut dire « il a ouvert »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "himl",
+        "haris",
+        "katib"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "حَارِسٌ",
+        "choix": [
+          "gardien",
+          "scribe",
+          "marchand"
+        ],
+        "reponse": 0,
+        "explication": "حَارِسٌ veut dire « gardien »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Verbe, sujet, complément",
+      "texte": "Le verbe vient d'abord, puis le sujet, qui finit par u, puis le complément, qui finit par a : فَتَحَ الْحَارِسُ الْبَابَ.",
+      "exemples": [
+        "فَتَحَ الْحَارِسُ الْبَابَ.",
+        "حَمَلَ بَاسِمٌ السَّلَّةَ.",
+        "بَلَغَتِ الْقَافِلَةُ الْمَدِينَةَ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans « فَتَحَ الْحَارِسُ الْبَابَ », qui a ouvert ?",
+        "choix": [
+          "le gardien (-u)",
+          "la porte (-a)",
+          "on ne sait pas"
+        ],
+        "reponse": 0,
+        "explication": "Le sujet finit par u : الْحَارِسُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'accord du verbe en tête",
+      "texte": "Le verbe en tête reste au singulier : رَكِبَ التُّجَّارُ. Il est féminin si le sujet est féminin, et le plus souvent avec un pluriel de choses ou d'animaux ; تْ devient alors تِ devant l'article : خَرَجَتِ الْجِمَالُ.",
+      "exemples": [
+        "رَكِبَ التُّجَّارُ.",
+        "خَرَجَتِ الْبَنَاتُ.",
+        "خَرَجَتِ الْجِمَالُ."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Les marchands sont sortis. »",
+        "ar": "… التُّجَّارُ.",
+        "choix_ar": [
+          "خَرَجَ",
+          "خَرَجُوا",
+          "خَرَجْنَا"
+        ],
+        "reponse": 0,
+        "explication": "Verbe en tête : singulier ; on met d'habitude le masculin pour des hommes."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَلَغَ",
+          "choix": [
+            "il a atteint",
+            "il a ouvert",
+            "il a porté"
+          ],
+          "reponse": 0,
+          "explication": "بَلَغَ veut dire « il a atteint »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حِمْلٌ",
+          "choix": [
+            "charge, fardeau",
+            "gardien",
+            "porte"
+          ],
+          "reponse": 0,
+          "explication": "حِمْلٌ veut dire « charge, fardeau »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le gardien a ouvert la porte » ?",
+          "choix_ar": [
+            "فَتَحَ الْحَارِسُ الْبَابَ.",
+            "فَتَحَ الْحَارِسَ الْبَابُ.",
+            "فَتَحَتِ الْحَارِسُ الْبَابَ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet en -u, complément en -a, verbe au masculin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a porté le panier. »",
+          "ar": "حَمَلَ بَاسِمٌ …",
+          "choix_ar": [
+            "السَّلَّةَ",
+            "السَّلَّةُ",
+            "السَّلَّةِ"
+          ],
+          "reponse": 0,
+          "explication": "Le complément finit par a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane a atteint la ville. »",
+          "ar": "… الْقَافِلَةُ الْمَدِينَةَ.",
+          "choix_ar": [
+            "بَلَغَتِ",
+            "بَلَغْنَا",
+            "بَلَغُوا"
+          ],
+          "reponse": 0,
+          "explication": "Sujet féminin : d'habitude بَلَغَتْ, et تْ devant l'article devient تِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les chameaux sont sortis. »",
+          "ar": "… الْجِمَالُ.",
+          "choix_ar": [
+            "خَرَجَتِ",
+            "خَرَجْنَا",
+            "خَرَجُوا"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel d'animaux : on met d'habitude le féminin."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « رَكِبَ التُّجَّارُ الْجِمَالَ », pourquoi رَكِبَ est-il au singulier ?",
+          "choix": [
+            "le verbe en tête reste au singulier",
+            "التُّجَّارُ est singulier",
+            "c'est une erreur"
+          ],
+          "reponse": 0,
+          "explication": "Verbe en tête : toujours au singulier."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "حَمَلَ",
+          "choix_ar": [
+            "حَمَلَ",
+            "فَتَحَ",
+            "رَكِبَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était حَمَلَ « il a porté »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Le scribe a écrit un nom. »",
+          "tuiles": [
+            "اسْمًا",
+            "كَتَبَ",
+            "الْكَاتِبُ",
+            "الْكَاتِبَ"
+          ],
+          "solution": [
+            "كَتَبَ",
+            "الْكَاتِبُ",
+            "اسْمًا"
+          ],
+          "explication": "Verbe, sujet en -u, complément en -a."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "فَتَحَ الْحَارِسُ الْبَابَ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "L'arrivée de la caravane",
+      "texte": "Samīr regarde la caravane arriver au caravansérail. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "بَلَغَتِ الْقَافِلَةُ الْمَدِينَةَ فِي الْمَسَاءِ.",
+        "فَتَحَ الْحَارِسُ الْبَابَ.",
+        "دَخَلَ التُّجَّارُ الْغُرْفَةَ، وَحَمَلَ بَاسِمٌ الْحِمْلَ.",
+        "الْحِمْلُ ثَقِيلٌ، وَالْكَاتِبُ هُنَاكَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quand la caravane a-t-elle atteint la ville ?",
+          "choix": [
+            "le soir",
+            "le matin",
+            "hier"
+          ],
+          "reponse": 0,
+          "explication": "فِي الْمَسَاءِ : le soir."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a porté Bāsim ?",
+          "choix": [
+            "la charge",
+            "le panier",
+            "la porte"
+          ],
+          "reponse": 0,
+          "explication": "حَمَلَ بَاسِمٌ الْحِمْلَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te demande qui a ouvert la porte. C'est le gardien.",
+          "replique": {
+            "qui": "basim",
+            "ar": "مَنْ فَتَحَ الْبَابَ؟"
+          },
+          "choix_ar": [
+            "فَتَحَ الْحَارِسُ الْبَابَ.",
+            "فَتَحَ الْحَارِسَ الْبَابُ.",
+            "فَتَحَتِ الْحَارِسُ الْبَابَ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet en -u, complément en -a."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « les marchands sont entrés dans la chambre » ?",
+          "choix_ar": [
+            "دَخَلَ التُّجَّارُ الْغُرْفَةَ.",
+            "دَخَلُوا التُّجَّارُ الْغُرْفَةَ.",
+            "دَخَلَ التُّجَّارَ الْغُرْفَةُ."
+          ],
+          "reponse": 0,
+          "explication": "Verbe en tête au singulier ; دَخَلَ prend son lieu sans préposition."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris, en commençant par le verbe : « Les filles sont sorties. »",
+          "tuiles": [
+            "الْبَنَاتُ",
+            "خَرَجَتِ",
+            "خَرَجُوا"
+          ],
+          "solution": [
+            "خَرَجَتِ",
+            "الْبَنَاتُ"
+          ],
+          "explication": "Sujet féminin : خَرَجَتِ, avec تِ devant l'article."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Rāšid est monté sur le chameau. »",
+          "ar": "رَكِبَ رَاشِدٌ …",
+          "choix_ar": [
+            "الْجَمَلَ",
+            "الْجَمَلُ",
+            "الْجَمَلِ"
+          ],
+          "reponse": 0,
+          "explication": "رَكِبَ prend son complément sans préposition, en -a."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَكِبَ",
+          "choix": [
+            "il est monté (sur une monture)",
+            "il est sorti",
+            "il a porté"
+          ],
+          "reponse": 0,
+          "explication": "رَكِبَ veut dire « il est monté (sur une monture) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَاتِبٌ",
+          "choix": [
+            "scribe",
+            "gardien",
+            "livre"
+          ],
+          "reponse": 0,
+          "explication": "كَاتِبٌ veut dire « scribe »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَمَلَ",
+          "choix": [
+            "il a porté",
+            "il a ouvert",
+            "il a atteint"
+          ],
+          "reponse": 0,
+          "explication": "حَمَلَ veut dire « il a porté »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le gardien » ?",
+          "choix_ar": [
+            "الْحَارِسُ",
+            "الْكَاتِبُ",
+            "الْحِمْلُ"
+          ],
+          "reponse": 0,
+          "explication": "« le gardien » se dit الْحَارِسُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la caravane a atteint la ville » ?",
+          "choix_ar": [
+            "بَلَغَتِ الْقَافِلَةُ الْمَدِينَةَ.",
+            "بَلَغَتِ الْقَافِلَةُ الْمَدِينَةِ.",
+            "بَلَغَتِ الْقَافِلَةَ الْمَدِينَةُ."
+          ],
+          "reponse": 0,
+          "explication": "« la caravane a atteint la ville » se dit بَلَغَتِ الْقَافِلَةُ الْمَدِينَةَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le gardien a ouvert la porte. »",
+          "ar": "فَتَحَ الْحَارِسُ …",
+          "choix_ar": [
+            "الْبَابَ",
+            "الْبَابُ",
+            "الْبَابِ"
+          ],
+          "reponse": 0,
+          "explication": "Complément : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les marchands sont montés sur les chameaux. »",
+          "ar": "… التُّجَّارُ الْجِمَالَ.",
+          "choix_ar": [
+            "رَكِبَ",
+            "رَكِبُوا",
+            "رَكِبْنَا"
+          ],
+          "reponse": 0,
+          "explication": "Verbe en tête : singulier."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le sujet d'une phrase verbale finit par…",
+          "choix": [
+            "u",
+            "a",
+            "i"
+          ],
+          "reponse": 0,
+          "explication": "Sujet : nominatif, -u."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "بَلَغَ",
+          "choix_ar": [
+            "بَلَغَ",
+            "فَتَحَ",
+            "رَكِبَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était بَلَغَ « il a atteint »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous sommes revenus » ?",
+          "choix_ar": [
+            "رَجَعْنَا",
+            "رَجَعُوا",
+            "رَجَعْتُ"
+          ],
+          "reponse": 0,
+          "explication": "« nous sommes revenus » se dit رَجَعْنَا.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَيْضًا",
+          "choix": [
+            "aussi",
+            "puis",
+            "hier"
+          ],
+          "reponse": 0,
+          "explication": "أَيْضًا veut dire « aussi ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَقِيلٌ",
+          "choix": [
+            "lourd",
+            "léger",
+            "grand"
+          ],
+          "reponse": 0,
+          "explication": "ثَقِيلٌ veut dire « lourd ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu comprends qui fait quoi : verbe, sujet en -u, complément en -a (فَتَحَ الْحَارِسُ الْبَابَ) ; le verbe en tête reste au singulier.",
+      "suite": "Prochaine leçon : « il l'a écrit », les pronoms collés au verbe."
+    }
+  ]
+}

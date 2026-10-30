@@ -1,65 +1,216 @@
 # État du projet IQURA
 
-Mis à jour le 21 octobre 2026, en fin de session. **À lire en début de session, à tenir à jour en fin de session.**
-Référence : `docs/CAHIER_DES_CHARGES.md` (décisions : §12 et §13). Règles : `CLAUDE.md`.
+Mis à jour le 30 octobre 2026. **À lire en début de session, à mettre à jour à chaque étape importante et avant la fin d'une session.**
+Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026, avenants n° 1 et n° 2 du 24/10/2026 intégrés**, référence unique). Décisions prises seul, à revoir : `docs/DECISIONS_A_REVOIR.md`. Règles : `CLAUDE.md`. Anciennes versions : `docs/archive/`.
 
-Branche de travail : `claude/laughing-ramanujan-axcixk`. Pull request ouverte : [The-Ashams/iqura#2](https://github.com/The-Ashams/iqura/pull/2).
+Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` après la fusion de la pull request n° 3).
 
-## 1. Terminé et testé
+**Organisation par niveaux depuis le 23/10/2026** (cahier §13.0) : on construit un niveau entier, on le fait relire, on le teste, puis on publie une version. **Niveaux construits : Débutant 1 à 3 (région 1 entière), mis à jour pour l'avenant n° 1 (§1 sexies) ; Débutant 1 testé une première fois, Débutant 2 et 3 en attente du test de l'utilisateur.** Niveau suivant : Élémentaire 1 (leçons 2.1 à 2.10), qui reçoit les premiers ajouts de l'avenant n° 2. Étapes 1 à 3 du jalon J1a faites (cahier v3 appliqué, région 1 validée, coquille du jeu).
+
+## 1. Ce qui existe déjà (gardé, cahier §0.1 point 4)
 
 | Élément | Preuve |
 | --- | --- |
-| **J0 — Socle** : app Windows et Android, profil, base utilisateur, sauvegardes, export, import, fusion | Pull request n° 1 fusionnée. Transfert PC → Android validé par l'utilisateur. |
-| **Pipeline coranique** : Tanzil Uthmani 1.1 (SHA-256 `351c2dcb…e189e` vérifié par les tests et à chaque démarrage), Quranic Arabic Corpus 0.4 aligné sur 100 % des 6 236 versets, traduction Hamidullah via Tanzil | Tests Python (`tools/build_content`) et Dart (`test/data`). |
-| **Polices** Amiri et Amiri Quran (OFL), couverture des 69 caractères du texte Tanzil | Contrôlée par test. |
-| **Translittération** Arabica et simplifiée, masquable | Tests du moteur ; les translittérations des leçons sont comparées au moteur. |
-| **Adaptation au cahier v2** : navigation (Carte du monde, Cité, Grimoire, Sanctuaire, Paramètres), étape « Déchiffrer », animations désactivables | Tests d'interface. |
-| **Leçons 0 à 3** de l'étape 1, sous forme de données contrôlées par le pipeline | Tests Python. **Contenu non validé par l'utilisateur** (voir §3). |
-| **Décision n° 1 (audio)** : Chatterbox Multilingual ; outil `tools/build_audio/` (génération, coupure des sons parasites, livraison MP3) | Coupure validée à l'écoute par l'utilisateur sur 17 échantillons. Tests de la coupure. |
-| **Audio des leçons 0 à 3** : 44 enregistrements (9 noms de lettres, 21 syllabes, 14 mots), MP3 mono 64 kbit/s, 308 Ko, tous obtenus au premier essai ; table `audio_clip` remplie (fichier, origine, synthèse = 1) | Le pipeline vérifie l'empreinte SHA-256 de chaque fichier et refuse un texte différent ou un enregistrement orphelin (tests). |
+| **Socle J0** : app Windows et Android, profil, base utilisateur, sauvegardes, export, import, fusion, CI | Pull request n° 1 fusionnée ; transfert PC → Android validé par l'utilisateur |
+| **Pipeline coranique** : Tanzil Uthmani 1.1 vérifié par SHA-256 (tests et démarrage), Quranic Arabic Corpus 0.4 aligné sur 100 % des 6 236 versets, traduction Hamidullah via Tanzil, notice du Corpus affichée dans l'application | Tests Python et Dart |
+| **Polices** Amiri et Amiri Quran (OFL) | Couverture du texte Tanzil contrôlée par test |
+| **Translittération** Arabica et simplifiée, masquable | Tests du moteur |
+| **Outil audio** Chatterbox avec coupure automatique et contrôle de durée selon la longueur des voyelles | Coupure validée à l'écoute ; 8 tests |
+| **Audio des leçons 0 à 3** : 44 MP3, dont تَ, يَ et نَابَ corrigés et validés à l'écoute le 22/10/2026 | Empreintes SHA-256 vérifiées par le pipeline |
+| **Leçons 0 à 3** (ancien format, fiches de cours) | Tests Python ; à refaire au format mini-donjon (voir §2) |
+| **Maquettes** « Histoire — La porte de la bibliothèque » et « Expédition — Combat contre l'Oubli » | Base de référence du style (cahier §8.1) ; [page des maquettes](https://claude.ai/artifact/9CuoZib7eH4rfxH7eBNLFd), hors dépôt |
 
-Tests locaux à la fin de la session (21/10/2026) :
-- `python3 -m unittest discover -s tools/build_content` : 27 tests OK ;
-- `python -m unittest discover -s tools/build_audio` : 6 tests OK ;
-- `dart format lib test` : aucun changement ; `flutter analyze` : aucun problème ;
-- `flutter test` : 83 tests OK.
+Derniers résultats : tests locaux du 22/10/2026 (Python : contenu et audio OK ; Flutter : 83 tests OK ; `flutter analyze` sans remarque) ; compilations GitHub Actions réussies (tests, APK, Windows) sur `80f8d48`, dernier commit de la pull request n° 3.
 
-Compilations GitHub Actions (tests, APK Android, exécutable Windows) : entièrement réussies sur `39871ea` (audio des leçons), [run 39672913852](https://github.com/The-Ashams/iqura/actions/runs/39672913852) et [run 39672903212](https://github.com/The-Ashams/iqura/actions/runs/39672903212). Un échec antérieur de l'APK sur `b75856a` venait d'un refus passager de Maven Central (erreur 429), pas du code ; les compilations suivantes sont passées.
+## 1 bis. Coquille du jeu (étape 3, 23/10/2026)
 
-## 2. En cours, et où je me suis arrêté
+| Élément | Détail |
+| --- | --- |
+| Graphismes | Pixel art créé pour le projet : `tools/build_art/` (rectangles JSON → PNG, bibliothèque standard), 13 images dans `assets/art/` (7 scènes, 6 personnages). Vérifiées par tests et en CI |
+| Police | DotGothic16 (OFL) pour les textes du jeu, choisie par l'utilisateur le 23/10/2026 (chiffres plus lisibles que Pixelify Sans) ; Amiri en secours pour la translittération |
+| Monde | `tools/build_content/world/region1.json` → tables `region`, `place`, `character` (schéma de contenu 6, contenu 0.5.0-j1a) |
+| Carte | Désert des Lettres : 12 lieux reliés ; les 4 lieux de la tranche (Puits, Porte, Marché, Faille) s'ouvrent, les 8 autres sont indiqués « À venir (jalon J1b) » |
+| Lieux | Scène, personnages, fenêtre de dialogue (« Rédigé par IA ») ; leçons de l'étape avec leur état (nouvelle, en cours, terminée, fermée, ou « Jouable à l'étape 5 » pour les leçons 2 et 3) |
+| Combat | Faille des Oubliés : scène Flame (brume animée), panneau de question neutre (syllabes et mots construits des leçons 0 à 3, jamais de verset), 3 ou 4 choix, critique si réponse en moins de 3 s, explication après une erreur. Entraînement : rien n'est enregistré avant l'étape 6. Seule l'Attaque est active ; les autres commandes sont grisées avec leur raison |
+| Grimoire | Alphabet (9 lettres) et fiches (formes, nom avec audio « synthèse », articulation « Rédigé par IA », « Signaler une erreur ») |
+| Signalements | Gardés sur l'appareil (`signalements.jsonl`), envoi par mail prérempli à contact@edelwa.com |
+| Sanctuaire | Al-Fātiḥa : texte Tanzil vérifié et traduction Hamidullah ; récitation et part des mots reconnus indiquées « pas encore disponibles » |
+| Cité | Vue de la cité, 5 bâtiments « À reconstruire » ; boutique, équipement, enchantement à l'étape 6 |
+| Paquets ajoutés | flame 1.38.2 (MIT), audioplayers 6.8.1 (MIT), url_launcher 6.3.3 (BSD) : audités, `THIRD_PARTY_LICENSES.md` |
 
-- **Audio dans l'application** : les fichiers MP3 sont livrés (`assets/audio/lecons/`) et référencés par la table `audio_clip` de la base de contenu, avec leur origine et l'indication « synthèse ». **Aucun lecteur audio n'est encore intégré à l'application**, et aucun bouton « écouter » n'existe. Prochaine action : choisir et auditer un paquet Flutter de lecture audio (Android et Windows, hors ligne), puis l'écran de leçon.
-- **Enregistrements des leçons non écoutés** : l'utilisateur a validé la coupure sur 17 textes de test, pas encore les 44 enregistrements des leçons. Aucun n'est marqué `"a_ecouter": true` dans `tools/build_audio/clips.json` (ce marqueur signale un enregistrement sans durée plausible après 5 essais).
-- **Leçons 4 à 14 et boss de l'étape 1** : non commencées ; elles attendent la validation des leçons 0 à 3.
+## 1 ter. Lecteur de leçons (étape 4, 23/10/2026)
 
-Pour régénérer l'audio : voir `CLAUDE.md`, section « Commandes ». L'environnement Python de synthèse n'est pas dans le dépôt (le conteneur de session est éphémère) : il faut le réinstaller, et le modèle (plusieurs Go) se retélécharge depuis `huggingface.co` et `us.aws.cdn.hf.co`.
+| Élément | Détail |
+| --- | --- |
+| Code | `lib/game/lesson/lesson.dart` (modèle du format 2), `lib/ui/game/lesson/` (écran de leçon, questions, mini-boss), `lib/features/progress/lesson_progress.dart` |
+| Écrans | Entrée (scène du lieu, répliques du maître, objectif) ; découverte, élément, règle (explication puis sa question) ; salle d'entraînement (une erreur revient en fin de salle) ; salle d'étude (verset Tanzil mot à mot, mots cités surlignés, traduction créditée ; « toucher le mot », « compter la lettre » calculé sur le texte Tanzil) ; mini-boss ; fin |
+| Questions | qcm, points, formes, reconnaître, écouter, paires, écouter la lettre (nom joué), lire (choix de sons), reconstruire (tuiles), tracer, répéter ; choix puis « Valider » ; son joué à l'affichage, mention « synthèse » ; « exemple construit » sous les mots hors Coran ; aucune translittération dans les questions |
+| Mini-boss | Scène Flame contre l'Oubli ; PV réglés sur le seuil : la difficulté tombe à 80 % de bonnes réponses, le voyageur se replie à la première erreur de trop ; « rapide ! » sous 3 s sans effet sur le score ; pas d'explication pendant le combat, revue des erreurs expliquées à la fin ; retenter (mêmes questions, autre ordre) ou revoir la salle d'entraînement, conseillée après deux échecs |
+| Progression | Table `lesson_progress` (schéma utilisateur 2) : écran sauvegardé à chaque changement et repris, réussite du mini-boss, meilleur score, échecs ; leçon suivante ouverte après la réussite. Exportée et fusionnée ; une sauvegarde du schéma 1 reste importable |
+| Fiche « élément » | Nom de la lettre joué automatiquement ; nom arabe écrit masqué (hamza pas encore enseignée, relecture du 23/10) |
+| Simplifications provisoires, à valider | Tracer : tracé libre au doigt sur la lettre, sans points numérotés ni vérification (cahier §6.4). Répéter : écouter puis « Je l'ai répété », sans enregistrement de la voix (paquet `record` à auditer). Mini-boss : pas d'autres questions en réserve pour un nouvel essai. Salle d'étude : pas de récitation d'al-Ḥuṣarī. Récompenses et cartes : étape 6 |
 
-## 3. Décisions en attente de l'utilisateur
+Tests locaux du 23/10/2026 : Flutter 99 tests OK, `flutter analyze` sans remarque ; Python : contenu (31) et graphismes (5) OK.
 
-1. **Validation des leçons 0 à 3** (aperçu : `python3 tools/build_content/preview_lessons.py SORTIE.html --etape 1 --jusqua 3`). Questions posées et sans réponse :
-   - le tableau de translittération Arabica ;
-   - le style simplifié ;
-   - la place de ā / ī dans les leçons.
-2. **Écoute des 44 enregistrements des leçons** (page d'écoute à produire en début de session suivante si l'utilisateur le souhaite).
-3. **Décisions ouvertes du cahier §12**, à poser une à la fois, avec une recommandation :
-   - n° 6 : conversation avec une IA, **reportée à J4** par l'utilisateur ;
-   - n° 7 : licence du Quranic Arabic Corpus, doute levé par la notice du fichier (voir cahier §13) ; reste à savoir si l'utilisateur veut quand même écrire aux auteurs.
-4. Pull request n° 2 fusionnée dans `main` le 21/10/2026.
+## 1 quater. Niveau Débutant 1 (leçons 0 à 4, 23/10/2026)
 
-## 4. Prochaine étape prévue
+| Élément | Détail |
+| --- | --- |
+| Leçons | 0 Puits, 1 Porte, 2 et 3 Marché (Laylā, Samīr), 4 Caravansérail (Rāšid, scène et personnage créés) ; échauffement exigé dès la leçon 2 ; 55 enregistrements |
+| Relectures | `docs/relectures/2026-10-23-*.md` : leçons 0-1 validé avec doutes ; 2 validé avec doutes ; 3, 4 validé ; tracés validé. Décisions du conseiller : `docs/relectures/decisions-debutant-1.md` |
+| Révisions | FSRS-6 (paquet `fsrs`) ; cartes créées à la première réussite d'une leçon (reconnaître, écouter, signe, lire) ; note par justesse et temps (§6.3) ; états reconnu (stabilité ≥ 7 j) et maîtrisé (≥ 21 j) |
+| Expédition | Faille des Oubliés : vagues de brumes puis un gardien, nourris par les révisions dues (20 au plus) ; entraînement libre sans enregistrement quand rien n'est dû |
+| Économie | XP et niveau, dinars, pierres de savoir (à « reconnu » 1, « maîtrisé » 3), encre ; séries (un jour de repos permis) ; boutique (8 objets, `world/objets.json`), équipement, ensemble à 3 pièces, enchantement +1 à +15 (taux, +5 points par échec, pity) |
+| Parole, écriture | Répéter : s'enregistrer, réécouter (paquet `record`), sur l'appareil seulement ; tracé guidé par points numérotés (`lessons/traces.json`) |
+| Modes et réglages | Apprentissage seul (liste de leçons, sans scènes ni combats) ; chronomètre ; bruitages |
+| Technique | Schéma utilisateur 3 (cartes, ressources, inventaire, jours d'activité) ; schéma de contenu 7 (objets, tracés) ; version de contenu avec empreinte ; APK signé avec une clé fixe (secrets `IQURA_KEYSTORE_B64`, `IQURA_KEYSTORE_PASSWORD`) |
+| Retours du 1er test (24/10) | Police de translittération corrigée (copie « DotGothic16 IQURA » sans accents séparés : ḥ, ḫ, ǧ lisibles) ; thème clair appliqué aux écrans du jeu ; réponses déplacées quand une question revient ; interface agrandie sur grand écran ; ordre « بَ : بَاب » corrigé dans les phrases françaises ; sons refaits et choisis à l'écoute par l'utilisateur : ثَا (version D, souffle de ث gardé par la coupure corrigée) et تَاج (version B, ج final voisé) |
+| Tests | 132 tests Flutter (dont les 5 leçons jouées de bout en bout, l'Expédition, l'économie, l'enchantement sur 20 000 tirages), tests Python du contenu |
 
-1. Décisions n° 2 (pixel art libre) et n° 3 (*La Bibliothèque oubliée*, synopsis dans `docs/HISTOIRE.md`) tranchées, ainsi que n° 4 (seuil de 80 %) et n° 5 (al-Ḥuṣarī murattal ; horodatages QUL à vérifier). Décision n° 6 reportée à J4. Décision n° 7 : doute levé par la notice du fichier. Ensuite, chercher et auditer des packs pixel art libres cohérents avec l'univers.
-2. Obtenir la validation des leçons 0 à 3, puis rédiger les leçons 4 à 14 et le boss.
-3. Intégrer la lecture audio dans l'application (paquet audité), avec la mention « synthèse ».
-4. Suite de l'ordre de travail J1 (`CLAUDE.md`) : coquille du jeu, chapitre 1, Expédition, Sanctuaire (Al-Fātiḥa).
+## 1 quinquies. Niveaux Débutant 2 et 3 (leçons 5 à 14 et examen de la région 1, 24/10/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Leçons | 5 (س ش ص ض) et 6 (ط ظ ع غ) aux Dunes avec Rāšid ; 7 (ف ق ك ل, لا, famille ك ت ب) à l'Atelier avec Samīr ; 8 (م ه و, voyelles longues) et 9 (hamza, supports, madda) à l'Observatoire avec Suhayl ; 10 (ة ى) et 12 (tanwīn, forme complète de بَابٌ) aux Archives avec Nūra ; 11 (shadda) à la Fontaine avec Laylā ; 13 (article) au Cadran avec Suhayl ; 14 (signes du Mushaf, sans combat) aux Manuscrits avec Nūra |
+| Examen de la région 1 | Le Gardien de l'Oubli, à la porte de la bibliothèque, ouvert quand les 15 leçons sont réussies : lecture de 20 mots (90 %), écoute de 10 mots (80 %, seuil à valider), prononciation de 5 mots auto-évaluée, temps de lecture affiché sans compter |
+| Relectures | `docs/relectures/2026-10-24-*.md` : leçons 5-6 et fiches « Validé avec doutes » (2e passage), 7-8-9 « Validé avec doutes » (2e passage), 10-11-12 corrigées après le 2e passage, 13-14 « Validé avec doutes » (2e passage). Décisions du conseiller : `decisions-debutant-2.md`, `decisions-debutant-3.md` |
+| Fiches et tracés | 16 lettres (س à ء), 5 zones d'articulation ; « formes » sans fiche (أ إ ؤ ئ آ, ة ى, ٱ) ; signes du Mushaf (alif suscrit, vague ٓ, petits wāw et yāʾ, petit zéro ۟) reconnus sans carte de révision |
+| Graphismes | Scènes des 7 nouveaux lieux, Suhayl, le Gardien de l'Oubli ; les 12 lieux de la région 1 sont ouverts |
+| Jeu | Leçon sans combat (série finale calme) ; questions à choix dans la salle d'étude ; signes isolés affichés sur un trait ; cartes de révision pour la shadda et le tanwīn |
+| Audio | Génération Chatterbox en cours (environ 150 sons) ; formes fragiles (ة, tanwīn seuls, article solaire, doublement, hamza, ظَبْي) à confirmer à l'écoute par l'utilisateur, sinon lecture seule (décisions D2-9, D3-10) |
+| Tests | 15 leçons jouées de bout en bout, examen complet, logique de l'examen |
+
+## 1 sexies. Avenants n° 1 « La langue sans les versets » et n° 2 « Vers l'autonomie » (24/10/2026)
+
+### Retraits faits pour l'avenant n° 1 (décidés par l'avenant, sans accord à demander)
+
+| Retiré | Où | Remplacé par |
+| --- | --- | --- |
+| Texte coranique Tanzil (Uthmani, sans voyelles), métadonnées, traduction Hamidullah | `tools/build_content/sources/tanzil/`, `tanzil.py`, `align.py`, `fetch_sources.py` ; tables `surah`, `verse`, `translation`, `verse_translation`, `token`, `segment`, `token_segment`, `lesson_quran_ref` | Rien : la base ne contient plus le texte du Coran (0,8 Mo) ; seul le Quranic Arabic Corpus reste (racines, lemmes, fréquences) |
+| Vérification SHA-256 du texte coranique (tests et démarrage) | `lib/data/content_db/quran_integrity.dart`, tests Python et Dart | Contrôle du schéma, des tables et de l'intégrité SQLite au démarrage ; garde-fou `quran_guard.py` : la construction échoue si une suite de 3 mots du Coran apparaît dans le contenu |
+| Sanctuaire (Al-Fātiḥa, traduction, « récitation pas encore disponible ») | `lib/ui/game/sanctuary_screen.dart`, onglet du menu, test | Bâtiment « La Grande Salle de lecture » dans la Cité (à reconstruire) ; image renommée `scene_grande_salle` |
+| Salle d'étude « Dans le Coran » des 15 leçons (versets 1:1, 78:7, 95:2… ; compter et repérer dans un verset) | écrans `coran` des leçons, `_QuranView`, `QuranStep` | **Salle de lecture** (écran `lecture`) : inscription d'un lieu du jeu faite de mots déjà lus, questions compter, repérer, QCM ; mention « exemple construit · rédigé par IA » |
+| Extraits coraniques des leçons 0 et 1 (Al-Fātiḥa, 78:7, 86:3) | leçons 0 et 1 | Signes de la margelle (بَ بِ بُ), étiquette de la porte (بَاب ثَبَتَ تَابَ) |
+| Mentions « dans le Coran » des textes des leçons, « près du Sanctuaire » (leçon 14, Salle des manuscrits) | leçons, `world/region1.json` | Leçon 14 « Préparer la lecture de l'écriture coranique » sur mots isolés (لَهُۥ, بِهِۦ, جَآءَ, قَالُوا۟ en aperçu) |
+| Récitations EveryAyah / al-Ḥuṣarī (jamais intégrées) | cahier, `CLAUDE.md` | Aucune récitation |
+| Mentions Tanzil et Hamidullah | Paramètres, Sources des données, `THIRD_PARTY_LICENSES.md`, `README.md`, `preview_lessons.py` | Quranic Arabic Corpus seul |
+
+Gardé : la police Amiri Quran (mots isolés de la leçon 14), le Quranic Arabic Corpus, tout le reste des leçons, du jeu et des réglages. Cahier, `CLAUDE.md`, `docs/HISTOIRE.md` et les agents `relecteur-arabe` et `conseiller-arabe` sont mis à jour. Schéma de contenu 8, contenu 0.8.0-sans-versets.
+
+### Bilan d'écart de l'avenant n° 2 (§A)
+
+| Point | Existe déjà (gardé) | Existe en partie (à compléter) | Manque (prévu) |
+| --- | --- | --- | --- |
+| A.1 Vocabulaire riche | 4 832 lemmes et 1 642 racines du Corpus avec fréquences dans la base ; ≈ 60 mots de la région 1 avec sens ; cartes FSRS « reconnaître, écouter, lire » | Connaissance passive seulement (pas de carte « du français vers l'arabe ») ; aucune fiche de mot dans le Grimoire | Liste d'≈ 3 500 mots par fréquence et par thèmes ; fiche complète (sens, racine et famille, pluriel, passé et inaccompli, exemples, contraires) ; cartes actives : à partir d'Élémentaire 1 |
+| A.2 Atelier des phrases | — | Bâtiment « L'Atelier des phrases » listé dans la Cité (à reconstruire) | Le lieu et ses 5 exercices (construire, transformer, compléter, corriger, traduire) : Élémentaire 1, dès que la phrase nominale est enseignée |
+| A.3 S'exprimer | Répéter à voix haute avec enregistrement, reconstruire un mot entendu, tracer (région 1) | Les personnages parlent, mais le joueur ne leur répond pas encore | Réponses aux personnages (choix, puis reconstitution, puis libre) ; décrire ; carnet du voyageur ; reformuler ; correction hors ligne ; correction IA en ligne en option (désactivée par défaut, jalon J4) |
+| A.4 Dictionnaire intégré | Structure du Corpus (lemmes, racines, catégories, formes verbales) dans la base | — | Écran accessible partout, hors ligne ; recherche en arabe (avec ou sans voyelles), en français et par racine ; « déjà appris / pas encore » ; ajout aux révisions. Source décidée : Corpus + définitions « rédigé par IA » (`docs/DECISIONS_A_REVOIR.md` n° 1). Élémentaire 1 |
+| A.5 Comprendre / produire | Région 1 : repère « environ 80 / 20 » | Mesuré sur les questions des 15 leçons : 7 % de production (36 sur 495 : répéter, reconstruire, tracer) ; à cela s'ajoutent la prononciation de l'examen et les tracés libres. Les leçons validées ne sont pas refaites (avenant n° 2, instruction 1) | Révisions de production dans l'Expédition (reconstruire, répéter) ; 50 / 50 dès la région 2 |
+| A.6 Mesurer l'autonomie | Grimoire : lettres et états des cartes ; examen de la région 1 avec une épreuve de parole (5 mots, auto-évaluée) | L'épreuve de production de la région 1 est orale seulement | Indicateurs du Grimoire (mots connus activement, phrases construites, entrées du carnet) ; épreuves « construire, transformer, écrire, répondre » aux examens des régions 2 à 5 |
+
+Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la région 1 (7 % au lieu d'environ 20 %) reste tel quel, puisque le niveau Débutant 1 est validé ; ce point sera signalé dans le bilan de fin de niveau.
+
+## 1 septies. Niveau Élémentaire 1 (leçons 2.1 à 2.10, région 2, 25/10/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Proposition (à valider par l'utilisateur) | `docs/PROPOSITION_REGION_2.md` : « L'Oasis des Fondations », 12 lieux, Rāšid, Bāsim, Salmā, Samīr ; adversaire la Confusion (mirages) ; déroulement d'une leçon en 10 écrans (dialogue, les mots, Atelier des phrases…) |
+| Leçons | 2.1 nom/verbe/particule, 2.2 masculin/féminin, 2.3 défini/indéfini (Campement) ; 2.4 هَٰذَا/هَٰذِهِ, 2.5 ذَٰلِكَ/تِلْكَ (Tente de Rāšid) ; 2.6 phrase nominale, 2.7 je/tu/il/elle, 2.8 nous/vous/ils, duel, ici/là-bas (Puits aux palmiers) ; 2.9 adjectif, 2.10 questions (Feu de la veillée) |
+| Vocabulaire | 72 fiches (`tools/build_content/vocab/mots.json`, table `word`) : sens, nature, genre, pluriel et présent en aperçu, racine et fréquence du Quranic Arabic Corpus quand le mot y est (sinon racine seule, ou rien), exemple construit, source « rédigé par IA » |
+| Contrôles automatiques (format 3, `fondations.py`) | Mots connus seulement (95 % au moins dans les textes à lire), préfixe collé seulement s'il est enseigné, part de production ≥ 40 % (avenant n° 2), chaque mot présenté, aucune suite de 3 mots du Coran, avertissement sur les paires de mots pleins |
+| Jeu | Écrans dialogue (traduction à la demande), les mots (fiche complète), texte gradué (mot touché → fiche), Atelier des phrases (ordonner, traduire, compléter, répondre) ; cartes « sens » puis « produire » (connaissance active) ; région 2 ouverte par l'examen de la région 1, choix de la région sur la carte ; mirages en combat |
+| Dictionnaire intégré | Grimoire et pendant une leçon : arabe avec ou sans voyelles, français, racine ; « déjà appris » ; ajout aux révisions |
+| Indicateur | Grimoire : « Les mots que tu connais représentent X % des mots du Coran » (fréquences du Corpus, mots au moins « reconnus ») |
+| Relectures | `docs/relectures/2026-10-25-elementaire-1-lecons-2.1-a-2.5.md`, `…-2.6-a-2.10.md` ; deux passages chacune, verdict « Validé avec doutes » ; décisions du conseiller : `decisions-elementaire-1.md` (trois séries, 11 doutes tranchés, liste de fin de niveau) |
+| Audio | 226 sons de synthèse (mots, phrases des dialogues et des textes) ; 1 son signalé « à écouter » par la coupure automatique : التَّمْرُ |
+
+## 1 octies. Niveau Élémentaire 2 (leçons 2.11 à 2.20, région 2, 25/10/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Leçons | Chapitre B « Le marché », maîtresse Salmā : 2.11 où est-il ? (prépositions), 2.12 les fins de mots (trois cas), 2.13 « la porte de la maison » (iḍāfa, تَحْتَ / فَوْقَ) au Souk ; 2.14 mon, ton, son (pronoms collés), 2.15 avec moi, sur lui (« j'ai », « il y a ») à l'Échoppe du tisserand ; 2.16 le duel, 2.17 pluriels réguliers, 2.18 pluriels internes à la Maison de Salmā ; 2.19 compter jusqu'à 10, 2.20 لَيْسَ à la Balance du changeur |
+| Vocabulaire | 62 nouvelles fiches (134 en tout), avec des thèmes (marché, nourriture, maison, travail, nombres…) ; natures « nom de lieu, employé comme une préposition » (تَحْتَ، فَوْقَ، مَعَ، عِنْدَ) et « nom (nombre) » ; لَيْسَ verbe figé |
+| Contrôles automatiques | Terminaisons reconnues à partir de la leçon qui les enseigne (pronoms collés 2.14, duel 2.16, pluriel 2.17, alif du tanwīn -an 2.20) ; paires coraniques signalées aussi pour pronom ou démonstratif + mot plein |
+| Jeu | Quatre nouveaux décors (souk, échoppe, maison de Salmā, balance du changeur) et Salmā ; un mot touché qui a plusieurs lectures (ذَهَبٌ « or » / ذَهَبَ « il est allé ») montre toutes ses fiches |
+| Relectures | `docs/relectures/2026-10-25-elementaire-2-lecons-2.11-a-2.15.md` (3 passages, verdict « Validé ») et `…-2.16-a-2.20.md` (2 passages, verdict « Validé avec doutes ») ; plan et décisions du conseiller : `decisions-elementaire-2.md` (17 décisions, liste de fin de niveau) |
+| Audio | 299 sons de synthèse ; 2 signalés « à écouter » par la coupure automatique : سَيْفٌ, زَيْتٌ |
+
+## 1 nonies. Niveau Élémentaire 3 (leçons 2.21 à 2.30 et examen de la région 2, 26 au 30/10/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Leçons | Chapitre C « Le caravansérail », maître Samīr : 2.21 il a écrit, 2.22 j'ai écrit (passé, 8 personnes), 2.23 la phrase verbale, 2.24 il l'a écrit (pronoms compléments) au Caravansérail de l'oasis ; 2.25 il écrit, 2.26 nous écrivons (inaccompli), 2.27 il n'a pas écrit (مَا, لَا, لَمْ) à la Salle des scribes ; 2.28 il écrira (سَـ, سَوْفَ), 2.29 écris ! (impératif), 2.30 celui qui… (relatifs) au Jardin du conteur |
+| Vocabulaire | 69 nouvelles fiches (203 en tout) ; natures « relatif » ; verbes figés (لَيْسَ, قَالَ) jamais conjugués par le contrôle |
+| Examen de la région 2 | Le Grand Mirage, aux Sables du mirage : récit de 144 mots (10 questions, 80 %), écoute de 10 phrases (80 %), répondre à des personnages (5 phrases à remettre en ordre, découpées mot par mot, 4 justes nécessaires ; décision de l'utilisateur du 30/10/2026) ; fichier `tools/build_content/exams/examen-r2.json`, contrôlé par `exams.py` (mots tous connus, aucun verset, sons) ; écran `lib/ui/game/exam/data_exam_screen.dart` |
+| Contrôles automatiques | Formes verbales ramenées à la fiche (passé, inaccompli, futur, impératif) à partir de la leçon qui les enseigne ; translittération des relatifs (allaḏī) corrigée dans le moteur |
+| Jeu | Trois décors (caravansérail de l'oasis, salle des scribes, jardin du conteur), Samīr, le Grand Mirage |
+| Relectures | `docs/relectures/2026-10-26-elementaire-3-lecons-2.21-a-2.25.md`, `…-2.26-a-2.30.md` (1er passage) et `2026-10-27-elementaire-3-passages-suivants.md` : 3 passages, verdicts « Validé » ou « Validé avec doutes » pour les 10 leçons, « Validé avec doutes » pour l'examen ; doutes tranchés par le conseiller (`decisions-elementaire-3.md`) |
+| Audio | Sons de synthèse des leçons 2.21 à 2.30 et de l'examen (353) |
+
+## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
+
+### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
+
+| N° | Existant | Changement prévu | Raison (cahier) |
+| --- | --- | --- | --- |
+| A1 | Leçons 0 à 3 : fiches de cours (sections de texte, puis exercices) | Réécriture complète au format mini-donjon : écrans d'entrée, échauffement, découverte, éléments, règle, entraînement, salle d'étude, mini-boss, fin. Nouveau format de données, nouveaux contrôles du pipeline, nouveaux tests. Les textes utiles sont repris. | §6, §5.5 point 9 |
+| A2 | Leçon 0 : texte suivi de questions à **2 choix**, contrôle final à **75 %** | Énigme de déchiffrage ; questions à 3 ou 4 choix ; 80 % | §5.5 points 5, 6, 8 |
+| A3 | Contenu des leçons 0 à 3 | Corrections : alif (retirer « ou à une voyelle »), نَجَا (« il s'est sauvé, il a échappé »), ح (le « ahh » soufflé), décomposition de la leçon 0 de droite à gauche, nouveaux mots بَاب, بَنَات, نَبَات, ثَابِت, تَاج, جَنَاح, حَبِيب | §5.5 points 1 à 4 et 7 |
+| A4 | 44 enregistrements audio | Ceux des éléments retirés sont supprimés ; ceux des nouveaux mots sont générés puis soumis à l'écoute | Conséquence de A1 à A3 |
+| A5 | Coquille actuelle : 5 espaces « Pas encore disponible » (Carte, Cité, Grimoire, Sanctuaire, Paramètres) | Remplacée par la coquille du jeu en pixel art (carte à étapes, dialogue, combat, Cité, Grimoire, Sanctuaire). Profil, Paramètres, sauvegarde, export et import sont gardés. | §8, §13.1 point 3 |
+| A6 | Page d'aperçu des leçons (`preview_lessons.py`) | Adaptée au nouveau format, ou remplacée par le jeu lui-même | Conséquence de A1 |
+| A7 | `docs/HISTOIRE.md` : *La Bibliothèque oubliée*, Madīnat al-Ḥikma, l'archiviste, l'apprenti copiste | Gardé comme proposition ; noms définitifs et lieux de la région 1 (« Le Désert des Lettres ») à revalider à l'étape 2 | §8.2, §13.1 point 2 |
+
+### B. Ajouts (rien n'est supprimé)
+
+| N° | Ajout | Cahier |
+| --- | --- | --- |
+| B1 | Base utilisateur, nouvelle version avec migration : cartes et états FSRS (passif et actif séparés), progression par écran, ressources, équipement, enchantement, séries, enregistrements (sur l'appareil, exclus de l'export par défaut) ; export, import et fusion étendus | §4, §6.3, §8.6, §10 |
+| B2 | Base de contenu : fréquences des lemmes (calculées à partir du Corpus), lieux, dialogues, monstres, objets ; liste d'environ 100 mots de la région 1 (choisis par script, soumise à l'utilisateur) | §5.5, §12 |
+| B3 | Paquets Flutter, chacun audité avant ajout : Flame, FSRS, lecture audio, enregistrement micro | §3.3, §12 |
+| B4 | Réglages : vitesse audio, nouveaux mots par jour (5 à 30, 15 par défaut), chronomètre, mode « apprentissage seul » | §4, §6.2, §8.3 |
+| B5 | Bouton « Signaler une erreur » sur chaque fiche | §3.2 |
+| B6 | Graphismes pixel art : packs libres audités ou créations | §8.1 |
+
+## 3. Points ambigus ou contradictoires (à poser un par un, cahier §0.2)
+
+1. **Mention des contenus IA** : le v3 écrit « rédigé par IA — non vérifié » (§3.2, §10, §11, §14, §15), alors que l'utilisateur a demandé « rédigé par IA » le 21/10/2026. **Tranché le 22/10/2026 : « rédigé par IA »** ; cahier corrigé.
+2. **Licence du Quranic Arabic Corpus** : le v3 indique « licence GNU, non commercial » et un mail à envoyer ; la notice du fichier (relevée par l'utilisateur le 21/10/2026) dit GNU GPL et autorise l'usage « dans tout site web ou application », sans mention « non commercial ». **Tranché le 22/10/2026 : cahier corrigé d'après la notice, mail facultatif.**
+3. **Schèmes** : le v3 les attribue au Corpus (« via QUL si besoin ») ; la version 0.4 n'en contient pas. QUL est à examiner (contenu et licence) avant de s'y fier. **Tranché le 22/10/2026 : QUL sera examiné avant la région 3 ; rien n'est inventé d'ici là.**
+4. **Traduction** : « révision du Complexe Roi Fahd (2000) » n'est pas confirmée par Tanzil. **Tranché le 22/10/2026 : « édition non précisée » ; cahier corrigé.**
+5. **Police du Mushaf** : le v3 cite KFGQPC Hafs ; IQURA utilise Amiri Quran ; la licence de KFGQPC est à auditer avant tout changement. **Tranché le 22/10/2026 : Amiri Quran pour J1a ; audit de KFGQPC avant la leçon 14.**
+6. **« Signaler une erreur »** dans une application hors ligne : par quel moyen (fichier exporté, mail préparé, autre) ? **Tranché le 22/10/2026 : mail prérempli envoyé par le joueur depuis sa messagerie ; adresse : contact@edelwa.com.**
+7. **Sort de racine** : « débloqué en région 3 ; familles simples avant » (§8.5) : la commande existe-t-elle dès la région 1 sous une forme simple ? **Tranché le 22/10/2026 : forme simple dès la leçon 7, forme complète en région 3.**
+
+Changements du v3 notés sans question, car le v3 fait foi : option IA décidée « à partir de J4, désactivée par défaut » (l'utilisateur avait dit « décider à J4 » le 21/10) ; noms de l'Histoire à revalider en J1a.
+
+## 4. Prochaine étape
+
+1. Fait : accord sur la liste du §2 et réponses aux points du §3.
+2. Fait : noms des lieux et personnages de la région 1 et découpage en 12 lieux, validés.
+3. Fait (23/10/2026) : coquille du jeu en pixel art (voir §1 bis) ; retours de l'utilisateur attendus.
+4. En cours, cahier §13.1 point 4 :
+   - fait : leçons 0 (« L'énigme du puits ») et 1 (« L'étiquette de la porte ») réécrites au format mini-donjon (format 2), contrôlées par `tools/build_content/mini_donjon.py` (ordre des écrans, 40 mots et 2 phrases au plus, 3 ou 4 choix, mini-boss de 10 à 12 questions à 80 % avec 20 à 30 % de révision, aucun texte coranique recopié, lettres déjà enseignées seulement) ; aperçu : `preview_lessons.py` ;
+   - fait : voyelle finale avalée par la synthèse (« baḥaṯ » au lieu de « baḥaṯa ») mesurée automatiquement (régularité du son sur les 70 dernières millisecondes) ; aucune astuce d'écriture ne la corrige à coup sûr, on génère donc plusieurs tirages et on garde les meilleurs ;
+   - fait : relecture par l'agent relecteur-arabe, verdict « Validé avec doutes », 4 doutes transmis à l'utilisateur (`docs/relectures/2026-10-23-lecons-0-1.md`) ; 2e passage sur la leçon 1 après les décisions de l'utilisateur : « Validé avec doutes » (`docs/relectures/2026-10-23-lecon-1-passage-2.md`) ; mineurs simples corrigés ; à faire avec le lecteur de leçons : nom arabe des lettres (hamza non enseignée) et mention « exemple construit » ;
+   - fait : sons choisis (بَاب B ; تَابَ, ثَبَتَ inchangés ; ثَ, بَا, تَا, بَاتَ nouvelles versions) ; leçons 0 et 1 validées par l'utilisateur le 23/10/2026 ; réponses aux 4 doutes de la relecture appliquées (cahier §16) ;
+   - à ne pas oublier : expliquer la forme complète بَابٌ aux leçons 4 (sukūn) et 12 (tanwīn) ;
+   - fait : lecteur de leçons dans l'application (§1 ter), leçons 0 et 1 jouées de bout en bout par les tests ;
+   - retours du 1er test de l'APK (23/10) : son de ثَبَتَ refait (version B, virgule finale), « margelle » remplacé, affichage PC centré et scène limitée en hauteur ; bruitages rétro créés (`tools/build_sfx/`), validés à l'écoute et branchés (menus, choix, juste/faux, coups, victoire, repli, sceau), désactivables dans les réglages ;
+   - remplacé le 23/10/2026 par l'organisation par niveaux : voir §1 quater.
+5. Débutant 1 construit (§1 quater), testé une première fois par l'utilisateur le 24/10/2026 ; retours intégrés (§1 quater), nouvelle version à publier.
+6. Débutant 2 et Débutant 3 construits le 24/10/2026 (§1 quinquies), à la demande de l'utilisateur, avant son nouveau test : sons générés (204), à faire écouter, puis une version à publier.
+7. Fait (24/10/2026) : avenants n° 1 et n° 2 appliqués (§1 sexies) ; salles de lecture relues par l'agent relecteur : verdict « Validé avec doutes » au 2e passage, 5 doutes tranchés par le conseiller (`docs/relectures/2026-10-24-salles-de-lecture.md`, `decisions-debutant-3.md`).
+8. Élémentaire 1 (§1 septies) et Élémentaire 2 (§1 octies) construits le 25/10/2026, relus, sons générés : à tester par l'utilisateur.
+9. Élémentaire 3 (§1 nonies) construit et relu : toute la région 2 est prête à tester.
+10. Ensuite : région 3 (Intermédiaire 1, leçons 3.1 à 3.10), après les retours de l'utilisateur sur la région 2.
 
 ## 5. Problèmes connus
 
-- **Schèmes** : absents du Quranic Arabic Corpus 0.4 ; aucune source ouverte fiable trouvée ; rien n'est inventé.
-- **Traduction Hamidullah** : édition exacte non indiquée par Tanzil ; usage non commercial uniquement.
-- **Quranic Arabic Corpus** : licence vérifiée dans la notice du fichier ; conditions respectées (source, lien, notice reproduite dans l'écran des sources).
-- **Police du Mushaf** : le cahier cite KFGQPC Hafs ; IQURA utilise Amiri Quran (licence KFGQPC à auditer avant tout changement).
-- **Chatterbox** : données d'entraînement et origine de la voix par défaut non publiées. Le modèle prononce parfois mal une voyelle longue isolée (بَا aussi court que بَ) : à juger à l'écoute.
-- **Synthèse non reproductible en CI** : le modèle est trop lourd ; les MP3 sont donc versionnés, et la CI vérifie seulement leur empreinte.
-- **Réseau de la session cloud** : `download-r2.pytorch.org` bloqué (PyTorch installé depuis PyPI) ; `github.com` et quelques sites de référence (Mendeley, Inalco, Brill) bloqués.
-- **Compilation Windows** : uniquement via GitHub Actions (pas de Windows dans la session).
+- **Chatterbox** : données d'entraînement et origine de la voix par défaut non publiées ; une voyelle brève isolée peut être allongée, la voyelle brève finale d'un mot est souvent avalée (on génère plusieurs tirages et on garde le meilleur ; خَابَ et حُجِبَ de la leçon 3 sont à écouter en priorité), et un mot tronqué n'est pas détecté automatiquement : l'écoute de l'utilisateur reste nécessaire.
+- **Synthèse non reproductible en CI** (modèle trop lourd) : les MP3 sont versionnés et la CI vérifie leur empreinte.
+- **Réseau de la session cloud** : `download-r2.pytorch.org`, `github.com` et quelques sites de référence bloqués.
+- **Compilation Windows** : uniquement via GitHub Actions.
+- **Maven Central** refuse parfois les téléchargements (erreur 429) pendant la compilation de l'APK ; une nouvelle compilation passe.
+
+- **Simplifications restantes (Débutant 1)** : objets non dessinés sur le personnage ; enregistrements de la voix jamais exportés (pas encore d'option pour les inclure).

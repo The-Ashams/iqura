@@ -1,0 +1,556 @@
+{
+  "id": "fondations-02",
+  "etape": 2,
+  "ordre": 2,
+  "format": 3,
+  "titre": "Garçons et filles de la caravane",
+  "objectif": "Dire si un nom est masculin ou féminin.",
+  "statut": "ia_non_verifie",
+  "lieu": "campement",
+  "maitre": "basim",
+  "prerequis": [
+    "fondations-01"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "basim",
+          "texte": "Dans la caravane, il y a des chameaux et des chamelles, des garçons et des filles."
+        },
+        {
+          "qui": "basim",
+          "texte": "En arabe aussi, chaque nom est masculin ou féminin. Apprenons à le reconnaître."
+        }
+      ],
+      "objectif": "Dire si un nom est masculin ou féminin."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَمَلٌ",
+          "choix": [
+            "un chameau",
+            "un homme",
+            "de l'eau"
+          ],
+          "reponse": 0,
+          "explication": "جَمَلٌ veut dire « un chameau » (leçon 2.1)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il est entré » ?",
+          "choix_ar": [
+            "دَخَلَ",
+            "خَرَجَ",
+            "ذَهَبَ"
+          ],
+          "reponse": 0,
+          "explication": "« il est entré » se dit دَخَلَ (leçon 2.1)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la nature du mot فِي ?",
+          "choix": [
+            "une particule",
+            "un nom",
+            "un verbe"
+          ],
+          "reponse": 0,
+          "explication": "فِي « dans » est une particule (leçon 2.1)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "وَلَدٌ وَبِنْتٌ.",
+          "fr": "Un garçon et une fille."
+        },
+        {
+          "qui": "rashid_oasis",
+          "ar": "جَمَلٌ وَنَاقَةٌ.",
+          "fr": "Un chameau et une chamelle."
+        },
+        {
+          "qui": "basim",
+          "ar": "مُعَلِّمٌ وَمُعَلِّمَةٌ.",
+          "fr": "Un enseignant et une enseignante."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel mot désigne la femelle du chameau ?",
+        "choix_ar": [
+          "نَاقَةٌ",
+          "جَمَلٌ",
+          "بِنْتٌ"
+        ],
+        "reponse": 0,
+        "explication": "نَاقَةٌ : « une chamelle »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "walad",
+        "bint",
+        "naqa",
+        "khayma",
+        "muallim"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "خَيْمَةٌ",
+        "choix": [
+          "une tente",
+          "une maison",
+          "une chamelle"
+        ],
+        "reponse": 0,
+        "explication": "خَيْمَةٌ veut dire « une tente »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "shams",
+        "ard",
+        "nar",
+        "bir",
+        "umm"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le genre du nom شَمْسٌ ?",
+        "choix": [
+          "masculin",
+          "féminin",
+          "ni l'un ni l'autre"
+        ],
+        "reponse": 1,
+        "explication": "شَمْسٌ « soleil » est féminin, sans ة."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le féminin en ة",
+      "texte": "Un nom qui finit par ة est presque toujours féminin : نَاقَةٌ, خَيْمَةٌ. On forme souvent le féminin en ajoutant ة : مُعَلِّمٌ, مُعَلِّمَةٌ.",
+      "exemples": [
+        "نَاقَةٌ",
+        "خَيْمَةٌ",
+        "مُعَلِّمَةٌ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Quel est le féminin de مُعَلِّمٌ ? Complète.",
+        "ar": "مُعَلِّمٌ، …",
+        "choix_ar": [
+          "مُعَلِّمَةٌ",
+          "مُعَلِّمٌ",
+          "نَاقَةٌ"
+        ],
+        "reponse": 0,
+        "explication": "On ajoute ة : مُعَلِّمَةٌ « une enseignante »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Des féminins sans marque",
+      "texte": "Certains noms sont féminins sans ة : شَمْسٌ, أَرْضٌ, نَارٌ, بِئْرٌ, أُمٌّ. بِنْتٌ finit par un ت ordinaire, mais ce nom est féminin lui aussi.",
+      "exemples": [
+        "شَمْسٌ",
+        "أَرْضٌ",
+        "بِنْتٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le genre du nom أَرْضٌ ?",
+        "choix": [
+          "masculin",
+          "féminin",
+          "ni l'un ni l'autre"
+        ],
+        "reponse": 1,
+        "explication": "أَرْضٌ « terre » est féminin, sans ة."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Quel est le genre du nom وَلَدٌ ?",
+          "choix": [
+            "masculin",
+            "féminin",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 0,
+          "explication": "وَلَدٌ « garçon » est masculin."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une fille » ?",
+          "choix_ar": [
+            "بِنْتٌ",
+            "وَلَدٌ",
+            "نَاقَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une fille » se dit بِنْتٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le genre du nom خَيْمَةٌ ?",
+          "choix": [
+            "masculin",
+            "féminin",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 1,
+          "explication": "خَيْمَةٌ finit par ة : il est féminin."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "نَاقَةٌ",
+          "choix_ar": [
+            "نَاقَةٌ",
+            "نَارٌ",
+            "خَيْمَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était نَاقَةٌ « une chamelle »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète par le féminin : « un enseignant et une enseignante ».",
+          "ar": "مُعَلِّمٌ وَ…",
+          "choix_ar": [
+            "مُعَلِّمَةٌ",
+            "مُعَلِّمٌ",
+            "وَلَدٌ"
+          ],
+          "reponse": 0,
+          "explication": "مُعَلِّمٌ وَمُعَلِّمَةٌ : le féminin prend ة."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un feu » ?",
+          "choix_ar": [
+            "نَارٌ",
+            "أَرْضٌ",
+            "شَمْسٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un feu » se dit نَارٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le genre du nom شَمْسٌ ?",
+          "choix": [
+            "masculin",
+            "féminin",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 1,
+          "explication": "شَمْسٌ est féminin, sans ة."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Un chameau et une chamelle. »",
+          "tuiles": [
+            "نَاقَةٌ",
+            "جَمَلٌ",
+            "وَبِنْتٌ",
+            "وَنَاقَةٌ"
+          ],
+          "solution": [
+            "جَمَلٌ",
+            "وَنَاقَةٌ"
+          ],
+          "explication": "جَمَلٌ وَنَاقَةٌ : وَ « et » se colle au mot qui suit."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "وَلَدٌ وَبِنْتٌ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أُمٌّ",
+          "choix": [
+            "une mère",
+            "une fille",
+            "une tente"
+          ],
+          "reponse": 0,
+          "explication": "أُمٌّ veut dire « une mère »."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Ce que voit Bāsim",
+      "texte": "Bāsim compte ce qu'il voit au campement. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "وَلَدٌ وَبِنْتٌ وَأُمٌّ.",
+        "جَمَلٌ وَنَاقَةٌ.",
+        "خَيْمَةٌ وَنَارٌ وَمَاءٌ.",
+        "هَٰذَا رَجُلٌ، وَهَٰذَا مُعَلِّمٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Combien d'animaux Bāsim voit-il ?",
+          "choix": [
+            "deux",
+            "un",
+            "trois"
+          ],
+          "reponse": 0,
+          "explication": "جَمَلٌ وَنَاقَةٌ : un chameau et une chamelle."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خَيْمَةٌ",
+          "choix": [
+            "une tente",
+            "un feu",
+            "une maison"
+          ],
+          "reponse": 0,
+          "explication": "خَيْمَةٌ veut dire « une tente »."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Un garçon et une fille. »",
+          "tuiles": [
+            "وَلَدٌ",
+            "وَبِنْتٌ",
+            "وَنَارٌ"
+          ],
+          "solution": [
+            "وَلَدٌ",
+            "وَبِنْتٌ"
+          ],
+          "explication": "وَلَدٌ وَبِنْتٌ : « un garçon et une fille »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Écris le féminin de مُعَلِّمٌ.",
+          "ar": "مُعَلِّمٌ، …",
+          "choix_ar": [
+            "مُعَلِّمَةٌ",
+            "مُعَلِّمٌ",
+            "بِنْتٌ"
+          ],
+          "reponse": 0,
+          "explication": "مُعَلِّمَةٌ : le féminin prend ة."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une tente » ?",
+          "choix_ar": [
+            "خَيْمَةٌ",
+            "بَيْتٌ",
+            "نَاقَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une tente » se dit خَيْمَةٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Ceci est un garçon. »",
+          "tuiles": [
+            "وَلَدٌ",
+            "هَٰذَا",
+            "بِنْتٌ"
+          ],
+          "solution": [
+            "هَٰذَا",
+            "وَلَدٌ"
+          ],
+          "explication": "هَٰذَا وَلَدٌ : هَٰذَا, puis le nom."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une mère » ?",
+          "choix_ar": [
+            "أُمٌّ",
+            "بِنْتٌ",
+            "أَرْضٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une mère » se dit أُمٌّ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بِنْتٌ",
+          "choix": [
+            "une fille",
+            "une mère",
+            "un garçon"
+          ],
+          "reponse": 0,
+          "explication": "بِنْتٌ veut dire « une fille »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَارٌ",
+          "choix": [
+            "un feu",
+            "une terre",
+            "un soleil"
+          ],
+          "reponse": 0,
+          "explication": "نَارٌ veut dire « un feu »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une chamelle » ?",
+          "choix_ar": [
+            "نَاقَةٌ",
+            "جَمَلٌ",
+            "خَيْمَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une chamelle » se dit نَاقَةٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une terre » ?",
+          "choix_ar": [
+            "أَرْضٌ",
+            "نَارٌ",
+            "شَمْسٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une terre » se dit أَرْضٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le genre du nom نَاقَةٌ ?",
+          "choix": [
+            "masculin",
+            "féminin",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 1,
+          "explication": "نَاقَةٌ finit par ة : féminin."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le genre du nom وَلَدٌ ?",
+          "choix": [
+            "masculin",
+            "féminin",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 0,
+          "explication": "وَلَدٌ est masculin."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le genre du nom أُمٌّ ?",
+          "choix": [
+            "masculin",
+            "féminin",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 1,
+          "explication": "أُمٌّ « mère » est féminin, sans ة."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel nom est féminin ?",
+          "choix_ar": [
+            "خَيْمَةٌ",
+            "جَمَلٌ",
+            "رَجُلٌ"
+          ],
+          "reponse": 0,
+          "explication": "خَيْمَةٌ finit par ة."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "أَرْضٌ",
+          "choix_ar": [
+            "أَرْضٌ",
+            "نَارٌ",
+            "أُمٌّ"
+          ],
+          "reponse": 0,
+          "explication": "C'était أَرْضٌ « une terre »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَيْتٌ",
+          "choix": [
+            "une maison",
+            "une tente",
+            "de l'eau"
+          ],
+          "reponse": 0,
+          "explication": "بَيْتٌ veut dire « une maison ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il est sorti » ?",
+          "choix_ar": [
+            "خَرَجَ",
+            "دَخَلَ",
+            "ذَهَبَ"
+          ],
+          "reponse": 0,
+          "explication": "« il est sorti » se dit خَرَجَ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَاءٌ",
+          "choix": [
+            "de l'eau",
+            "un feu",
+            "une terre"
+          ],
+          "reponse": 0,
+          "explication": "مَاءٌ veut dire « de l'eau ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais qu'un nom en ة est presque toujours féminin, et tu connais des féminins sans marque : شَمْسٌ, أَرْضٌ, نَارٌ, بِئْرٌ, أُمٌّ.",
+      "suite": "Demain, Rāšid t'apprend à dire « un » et « le »."
+    }
+  ]
+}

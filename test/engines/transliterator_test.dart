@@ -36,7 +36,14 @@ void main() {
       // article : al- sans assimilation, voyelle élidée après voyelle
       'الشَّمْسُ': 'al-šamsu',
       'الْقَمَرُ': 'al-qamaru',
+      // Relatifs : un seul lām avec shadda, ce n'est pas l'article.
+      'الَّذِي': 'allaḏī',
+      'الَّتِي': 'allatī',
+      'الَّذِينَ': 'allaḏīna',
       'صَبَاحُ الْخَيْرِ': 'ṣabāḥu l-ḫayri',
+      // alif de liaison d'un nom : « i » en début, muet après une voyelle
+      'اسْمٌ': 'ismun',
+      'هُوَ اسْمٌ': 'huwa smun',
     };
     cases.forEach((ar, expected) {
       test('$ar → $expected', () => expect(s(ar), expected));

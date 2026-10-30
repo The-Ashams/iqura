@@ -2,13 +2,13 @@
 
 Contrôles :
 - identifiants uniques, ordre continu, prérequis existants et antérieurs ;
-- un exemple ou une syllabe n'utilise que des lettres et des signes déjà
+- leçons au format mini-donjon (format 2), contrôlées par `mini_donjon.py` :
+  un exemple ou une syllabe n'utilise que des lettres et des signes déjà
   introduits (leçon courante comprise) ;
-- chaque référence coranique existe, et chaque lettre à repérer figure dans
-  au moins un des mots cités ;
 - les fiches citées existent ;
-- aucun texte coranique n'est recopié dans une leçon (seulement des
-  références) : vérifié en refusant tout champ `ar` dans une section `coran`.
+- aucun texte coranique : plus aucune référence ni salle d'étude coranique
+  (avenant n° 1, 24/10/2026) ; le garde-fou `quran_guard.py` vérifie en plus
+  qu'aucun texte ne reprend une suite de mots du Coran.
 
 La cohérence des translittérations avec le moteur de l'application est
 vérifiée par les tests Dart (test/data/lessons_test.dart).
@@ -25,6 +25,12 @@ import sqlite3
 import unicodedata
 from dataclasses import dataclass
 
+import exams as exams_mod
+import fondations
+import mini_donjon
+import vocab
+import world
+
 LESSONS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lessons")
 REPO_ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 AUDIO_MANIFEST = os.path.join(REPO_ROOT, "tools", "build_audio", "clips.json")
@@ -38,18 +44,27 @@ SIGNS = {
     "fathatan": "ً",
     "kasratan": "ٍ",
     "dammatan": "ٌ",
+    # Signes de l'écriture du Mushaf (leçon 14, reconnaissance seulement).
+    "alif_suscrit": "\u0670",
+    "madda": "\u0653",
+    "petit_waw": "\u06e5",
+    "petit_ya": "\u06e6",
+    "rond_muet": "\u06df",
 }
 
-SECTION_TYPES = {
-    "texte", "regle", "encadre", "lettres", "syllabes", "exemples",
-    "decomposition", "coran",
+# Formes d'écriture enseignées par une règle, sans fiche de lettre : supports
+# de la hamza, madda, fins de mots (cahier v3 §5.1, leçons 9 et 10).
+FORMS = {
+    "أ": "hamza sur alif",
+    "إ": "hamza sous alif",
+    "ؤ": "hamza sur wāw",
+    "ئ": "hamza sur yāʾ sans points",
+    "آ": "alif madda",
+    "ة": "tāʾ marbūṭa",
+    "ى": "alif maqṣūra",
+    "ٱ": "alif waṣla (écriture du Mushaf)",
 }
-EXERCISE_TYPES = {
-    "qcm", "reconnaitre_lettre", "formes", "points", "lire", "reconstruire",
-    "reperer", "controle_final",
-}
-VERSE_REF = re.compile(r"^(\d+):(\d+)$")
-TOKEN_REF = re.compile(r"^(\d+):(\d+):(\d+)$")
+
 
 
 class LessonError(Exception):
@@ -60,6 +75,8 @@ class LessonError(Exception):
 class LessonData:
     letters: dict
     lessons: list[dict]
+    words: list[dict] | None = None
+    exams: list[dict] | None = None
 
 
 def load(base: str = LESSONS_DIR) -> LessonData:
@@ -71,12 +88,11 @@ def load(base: str = LESSONS_DIR) -> LessonData:
             lesson = json.load(f)
         lesson["_file"] = os.path.relpath(path, base)
         lessons.append(lesson)
-    return LessonData(letters, lessons)
+    return LessonData(letters, lessons, vocab.load(), exams_mod.load())
 
 
-def validate(data: LessonData, con: sqlite3.Connection) -> None:
-    """Lève LessonError à la première incohérence. `con` : base de contenu
-    déjà remplie (versets et mots)."""
+def validate(data: LessonData) -> None:
+    """Lève LessonError à la première incohérence."""
     zones = data.letters["zones"]
     letter_cards = {}
     for card in data.letters["lettres"]:
@@ -90,8 +106,13 @@ def validate(data: LessonData, con: sqlite3.Connection) -> None:
     by_stage: dict[int, list[dict]] = {}
     for lesson in data.lessons:
         where = lesson["_file"]
-        for key in ("id", "etape", "ordre", "titre", "objectif", "statut",
-                    "prerequis", "introduit", "sections", "exercices"):
+        fmt = 2 if lesson.get("etape") == 1 else 3
+        if lesson.get("format") != fmt:
+            raise LessonError(f"{where} : format {fmt} attendu à l'étape {lesson.get('etape')}")
+        required = ["id", "etape", "ordre", "titre", "objectif", "statut", "prerequis", "ecrans"]
+        if fmt == 2:
+            required.append("introduit")
+        for key in required:
             if key not in lesson:
                 raise LessonError(f"{where} : champ « {key} » absent")
         if lesson["id"] in ids:
@@ -104,19 +125,58 @@ def validate(data: LessonData, con: sqlite3.Connection) -> None:
     order_of = {}
     for stage, lessons in by_stage.items():
         lessons.sort(key=lambda l: l["ordre"])
-        if [l["ordre"] for l in lessons] != list(range(len(lessons))):
+        # Région 1 : leçons 0 à 14 ; ensuite, leçons 2.1, 2.2… (ordre 1, 2…).
+        first = 0 if stage == 1 else 1
+        if [l["ordre"] for l in lessons] != list(range(first, first + len(lessons))):
             raise LessonError(f"étape {stage} : ordre des leçons non continu")
         for l in lessons:
             order_of[l["id"]] = (stage, l["ordre"])
 
+    regions = world.load()
+    places = {p["id"] for r in regions for p in r["lieux"]}
+    characters = {c["id"] for r in regions for c in r["personnages"]}
+
+    words = data.words or []
+    for w in words:
+        if w["lecon"] not in order_of:
+            raise LessonError(f"vocab · {w['id']} : leçon inconnue {w['lecon']}")
+    known_letters: set[str] = set()
+    known_signs: set[str] = set()
+    known_keys: set[str] = set()
+    known_endings: set[str] = set()
     for stage, lessons in sorted(by_stage.items()):
-        known_letters: set[str] = set()
-        known_signs: set[str] = set()
+        known_readings: set[str] = set()
         for lesson in lessons:
             where = lesson["_file"]
             for pre in lesson["prerequis"]:
                 if pre not in order_of or order_of[pre] >= order_of[lesson["id"]]:
                     raise LessonError(f"{where} : prérequis invalide {pre}")
+            if lesson["format"] == 3:
+                lesson_words = [w for w in words if w["lecon"] == lesson["id"]]
+                for w in lesson_words:
+                    known_keys |= vocab.known_keys(w)
+                known_keys |= {vocab.key(f) for f in lesson.get("apercu", [])}
+                for g in lesson.get("terminaisons", []):
+                    if g not in vocab.ENDINGS and g not in vocab.VERB_GROUPS:
+                        raise LessonError(f"{where} : terminaison inconnue {g}")
+                    known_endings.add(g)
+
+                def check_ar(text: str, _l=lesson) -> None:
+                    for ch in text:
+                        if ch in known_letters or ch in known_signs or ch in (" ", "ـ") \
+                                or vocab.PUNCT.match(ch):
+                            continue
+                        name = unicodedata.name(ch, hex(ord(ch)))
+                        raise LessonError(f"{_l['_file']} : « {text} » utilise {ch} ({name}), pas encore enseigné")
+                try:
+                    fondations.validate(
+                        lesson, check_ar=check_ar, known_keys=known_keys,
+                        lesson_words=lesson_words, letter_cards=letter_cards,
+                        places=places, characters=characters,
+                        known_endings=known_endings)
+                except mini_donjon.LessonError as e:
+                    raise LessonError(str(e)) from None
+                continue
             intro = lesson["introduit"]
             for c in intro["lettres"]:
                 if c not in letter_cards:
@@ -124,78 +184,50 @@ def validate(data: LessonData, con: sqlite3.Connection) -> None:
             for sign in intro["signes"]:
                 if sign not in SIGNS:
                     raise LessonError(f"{where} : signe inconnu {sign}")
-            known_letters |= set(intro["lettres"])
+            for form in intro.get("formes", []):
+                if form not in FORMS:
+                    raise LessonError(f"{where} : forme inconnue {form}")
+            known_letters |= set(intro["lettres"]) | set(intro.get("formes", []))
             known_signs |= {SIGNS[s] for s in intro["signes"]}
-
-            def check_text(text: str, what: str) -> None:
-                for ch in text:
-                    if ch in known_letters or ch in known_signs:
-                        continue
-                    name = unicodedata.name(ch, hex(ord(ch)))
-                    raise LessonError(
-                        f"{where} : {what} « {text} » utilise {ch} ({name}), "
-                        "pas encore enseigné"
-                    )
-
-            for section in lesson["sections"]:
-                kind = section.get("type")
-                if kind not in SECTION_TYPES:
-                    raise LessonError(f"{where} : section inconnue {kind}")
-                if kind == "lettres":
-                    for c in section["lettres"]:
-                        if c not in intro["lettres"]:
-                            raise LessonError(f"{where} : fiche {c} hors leçon")
-                if kind in ("syllabes", "exemples"):
-                    for item in section["items"]:
-                        if not item.get("translit"):
-                            raise LessonError(f"{where} : translittération absente")
-                        check_text(item["ar"], "l'exemple")
-                if kind == "coran":
-                    _check_quran_section(section, con, where)
-
-            finals = [ex for ex in lesson["exercices"] if ex.get("type") == "controle_final"]
-            if len(finals) != 1 or lesson["exercices"][-1] is not finals[0]:
-                raise LessonError(f"{where} : un contrôle final, en dernier, est obligatoire")
-            for ex in lesson["exercices"]:
-                if ex.get("type") not in EXERCISE_TYPES:
-                    raise LessonError(f"{where} : exercice inconnu {ex.get('type')}")
-                for c in ex.get("lettres", []):
-                    if c not in known_letters:
-                        raise LessonError(f"{where} : exercice sur {c}, non enseignée")
+            for kind in ("syllabes", "mots"):
+                known_readings |= {i["ar"] for i in lesson.get("elements", {}).get(kind, [])}
+            known_keys |= {vocab.key(i["ar"]) for i in lesson.get("elements", {}).get("mots", [])}
+            try:
+                mini_donjon.validate(
+                    lesson, known_letters=known_letters, known_signs=known_signs,
+                    known_readings=known_readings, letter_cards=letter_cards,
+                    places=places, characters=characters)
+            except mini_donjon.LessonError as e:
+                raise LessonError(str(e)) from None
 
 
-def _check_quran_section(section: dict, con: sqlite3.Connection, where: str) -> None:
-    for extract in section["extraits"]:
-        if set(extract) - {"verset", "mots", "lettres"}:
-            raise LessonError(
-                f"{where} : champ interdit dans un extrait coranique "
-                f"{sorted(set(extract) - {'verset', 'mots', 'lettres'})} "
-                "(le texte n'est jamais recopié, seulement référencé)"
-            )
-        m = VERSE_REF.match(extract["verset"])
-        if not m:
-            raise LessonError(f"{where} : référence de verset invalide {extract['verset']}")
-        row = con.execute(
-            "SELECT id FROM verse WHERE surah_id = ? AND ayah = ?",
-            (int(m[1]), int(m[2])),
-        ).fetchone()
-        if row is None:
-            raise LessonError(f"{where} : verset inexistant {extract['verset']}")
-        texts = []
-        for tok in extract.get("mots", []):
-            tm = TOKEN_REF.match(tok)
-            if not tm or f"{tm[1]}:{tm[2]}" != extract["verset"]:
-                raise LessonError(f"{where} : mot {tok} hors du verset {extract['verset']}")
-            r = con.execute("SELECT text FROM token WHERE id = ?", (tok,)).fetchone()
-            if r is None:
-                raise LessonError(f"{where} : mot inexistant {tok}")
-            texts.append(r[0])
-        for letter in extract.get("lettres", []):
-            if not any(letter in t for t in texts):
-                raise LessonError(
-                    f"{where} : la lettre {letter} n'est dans aucun mot cité de "
-                    f"{extract['verset']}"
-                )
+def inscriptions(data: LessonData) -> dict[str, str]:
+    """Inscriptions des salles de lecture (mots isolés), contrôlées sur
+    2 mots voisins par le garde-fou coranique."""
+    out: dict[str, str] = {}
+    for lesson in data.lessons:
+        for i, s in enumerate(x for x in lesson["ecrans"] if x.get("inscription")):
+            out[f"{lesson['_file']} · salle de lecture {i + 1}"] = " ".join(s["inscription"])
+    return out
+
+
+def arabic_texts(data: LessonData) -> dict[str, str]:
+    """Tous les textes arabes des leçons et des fiches (garde-fou coranique),
+    inscriptions des salles de lecture comprises."""
+    out: dict[str, str] = {}
+    for card in data.letters["lettres"]:
+        out[f"fiche {card['lettre']}"] = card["nom_ar"]
+    for lesson in data.lessons:
+        for i, t in enumerate(mini_donjon.arabic_strings(lesson, silent=True)):
+            out[f"{lesson['_file']} · texte {i + 1}"] = t
+        for i, s in enumerate(lesson["ecrans"]):
+            if s.get("inscription"):
+                out[f"{lesson['_file']} · salle de lecture {i + 1}"] = " ".join(s["inscription"])
+    for w in data.words or []:
+        out[f"vocab · {w['id']}"] = w["ar"]
+        if w.get("exemple"):
+            out[f"vocab · {w['id']} · exemple"] = w["exemple"]["ar"]
+    return out
 
 
 def audio_key(text: str) -> str:
@@ -208,8 +240,8 @@ def audio_key(text: str) -> str:
 def audio_clips(data: LessonData) -> dict[str, tuple[str, str]]:
     """Enregistrements nécessaires aux leçons : clé → (genre, texte arabe).
 
-    Lettres (le nom de la lettre), syllabes, mots et décompositions. Les
-    extraits coraniques n'en font pas partie : ils viendront des récitations.
+    Lettres (le nom de la lettre), syllabes, mots et phrases des écrans. Les
+    inscriptions des salles de lecture se lisent sans son.
     """
     clips: dict[str, tuple[str, str]] = {}
 
@@ -218,16 +250,30 @@ def audio_clips(data: LessonData) -> dict[str, tuple[str, str]]:
 
     for card in data.letters["lettres"]:
         add("lettre", card["nom_ar"])
+    for w in data.words or []:
+        add("mot", w["ar"])
+        if w.get("exemple"):
+            add("phrase", w["exemple"]["ar"])
     for lesson in data.lessons:
-        for section in lesson["sections"]:
-            if section["type"] == "syllabes":
-                for item in section["items"]:
-                    add("syllabe", item["ar"])
-            elif section["type"] == "exemples":
-                for item in section["items"]:
-                    add("mot" if " " not in item["ar"] else "phrase", item["ar"])
-            elif section["type"] == "decomposition":
-                add("mot", section["ar"])
+        syll = {i["ar"] for i in lesson.get("elements", {}).get("syllabes", [])}
+        words = {i["ar"] for i in lesson.get("elements", {}).get("mots", [])}
+        for t in mini_donjon.arabic_strings(lesson):
+            # Seuls les textes vocalisés se lisent à voix haute ; une
+            # lettre seule ou une forme isolée n'a pas d'enregistrement.
+            if not any(ch in SIGNS.values() for ch in t):
+                continue
+            if t in syll:
+                kind = "syllabe"
+            elif t in words:
+                kind = "mot"
+            elif " " in t:
+                kind = "phrase"
+            else:
+                letters = sum(1 for ch in t if "\u0621" <= ch <= "\u064A")
+                kind = "syllabe" if letters <= 2 else "mot"
+            add(kind, t)
+    for kind, t in exams_mod.audio_texts(data.exams or []):
+        add(kind, t)
     return clips
 
 
@@ -283,7 +329,6 @@ def write(con: sqlite3.Connection, data: LessonData) -> dict[str, int]:
             for c in data.letters["lettres"]
         ],
     )
-    refs = []
     for lesson in data.lessons:
         content = {k: v for k, v in lesson.items() if not k.startswith("_")}
         con.execute(
@@ -292,18 +337,6 @@ def write(con: sqlite3.Connection, data: LessonData) -> dict[str, int]:
              lesson["objectif"], lesson["statut"],
              json.dumps(content, ensure_ascii=False, sort_keys=True)),
         )
-        for section in lesson["sections"]:
-            if section["type"] != "coran":
-                continue
-            for extract in section["extraits"]:
-                s, a = (int(x) for x in extract["verset"].split(":"))
-                vid = con.execute(
-                    "SELECT id FROM verse WHERE surah_id = ? AND ayah = ?", (s, a)
-                ).fetchone()[0]
-                refs.append((lesson["id"], vid, None))
-                for tok in extract.get("mots", []):
-                    refs.append((lesson["id"], vid, tok))
-    con.executemany("INSERT INTO lesson_quran_ref VALUES (?,?,?)", refs)
     clips = audio_clips(data)
     # Fichier relatif à assets/, origine, synthèse (1) : NULL = pas d'audio.
     rows = audio_rows(clips, load_audio_manifest())
@@ -311,3 +344,42 @@ def write(con: sqlite3.Connection, data: LessonData) -> dict[str, int]:
     return {"lessons": len(data.lessons), "letters": len(data.letters["lettres"]),
             "audio_clips": len(clips),
             "audio_files": sum(1 for r in rows if r[3] is not None)}
+
+
+# ---------------------------------------------------------------------------
+# Tracé guidé
+
+TRACES_FILE = os.path.join(LESSONS_DIR, "traces.json")
+
+
+def load_traces(path: str = TRACES_FILE) -> dict:
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def validate_traces(traces: dict, data: LessonData) -> None:
+    letters = {c["lettre"] for c in data.letters["lettres"]}
+    if traces.get("statut") != "ia_non_verifie":
+        raise LessonError("traces.json : statut « ia_non_verifie » attendu")
+    for letter, strokes in traces["traces"].items():
+        if letter not in letters:
+            raise LessonError(f"tracé de {letter} : lettre sans fiche")
+        if not strokes or not strokes[0] or len(strokes[0]) < 2:
+            raise LessonError(f"tracé de {letter} : le premier trait doit avoir 2 points au moins")
+        for stroke in strokes:
+            for pt in stroke:
+                if len(pt) != 2 or not all(0 <= v <= 100 for v in pt):
+                    raise LessonError(f"tracé de {letter} : point hors du carré {pt}")
+    for lesson in data.lessons:
+        for screen in lesson.get("ecrans", []):
+            for q in screen.get("exercices", []) + [screen.get("question") or {}]:
+                if q.get("type") == "tracer" and q["lettre"] not in traces["traces"]:
+                    raise LessonError(f"{lesson['_file']} : pas de tracé guidé pour {q['lettre']}")
+
+
+def write_traces(con: sqlite3.Connection, traces: dict) -> int:
+    con.executemany(
+        "INSERT INTO letter_trace VALUES (?, ?)",
+        [(k, json.dumps(v)) for k, v in sorted(traces["traces"].items())],
+    )
+    return len(traces["traces"])

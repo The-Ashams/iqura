@@ -244,9 +244,15 @@ ExportData decodeExportArchive(
   if (present.length != listed.length || !present.containsAll(listed.keys)) {
     fail("Les fichiers de l'archive ne correspondent pas à son en-tête.");
   }
-  // Format 1 : toutes les tables exportées doivent être présentes, sinon une
-  // restauration complète viderait silencieusement celles qui manquent.
-  if (listed.length != allowed.length - 1) {
+  // Format 1 : toutes les tables exportées par le schéma de l'archive
+  // doivent être présentes, sinon une restauration complète viderait
+  // silencieusement celles qui manquent. Les tables créées par un schéma plus
+  // récent que l'archive peuvent manquer (elles restent vides).
+  final required = {
+    for (final d in defs.values)
+      if (d.sinceSchema <= schemaVersion) _tablePath(d.name),
+  };
+  if (!listed.keys.toSet().containsAll(required)) {
     fail("L'archive est incomplète : il manque des tables.");
   }
 
