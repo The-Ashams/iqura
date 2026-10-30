@@ -13,4 +13,5 @@ const Map<String, (int, int)> spriteSizes = {
   'basim': (12, 24),
   'salma': (13, 24),
   'mirage': (43, 46),
+  'grand_mirage': (64, 66),
 };

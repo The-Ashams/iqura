@@ -292,7 +292,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris, en commençant par le verbe : « Rāšid est revenu hier. »",
+          "consigne": "Écris dans l'ordre verbe, sujet, puis « hier » : « Rāšid est revenu hier. »",
           "tuiles": [
             "أَمْسِ",
             "رَجَعَ",
@@ -378,7 +378,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris, en commençant par le verbe : « Samīr est entré, puis il a écrit. »",
+          "consigne": "Écris dans l'ordre verbe, sujet, ثُمَّ, verbe : « Samīr est entré, puis il a écrit. »",
           "tuiles": [
             "ثُمَّ",
             "دَخَلَ",

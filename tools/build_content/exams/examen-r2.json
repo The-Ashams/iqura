@@ -12,12 +12,12 @@
     "phrases": [
       "خَرَجَتِ الْقَافِلَةُ مِنَ الْقَرْيَةِ فِي الصَّبَاحِ، وَبَلَغَتِ الْمَدِينَةَ فِي الْمَسَاءِ.",
       "رَكِبَ التُّجَّارُ الْجِمَالَ، وَحَمَلَتِ الْجِمَالُ الْأَحْمَالَ.",
-      "الْأَحْمَالُ ثَقِيلَةٌ، وَالطَّرِيقُ طَوِيلٌ، وَالْمَاءُ قَلِيلٌ.",
+      "الْأَحْمَالُ ثَقِيلَةٌ، وَالْيَوْمُ طَوِيلٌ، وَالْمَاءُ قَلِيلٌ.",
       "قَالَ رَاشِدٌ: « سَنَشْرَبُ الْمَاءَ فِي الْمَدِينَةِ. »",
       "فَتَحَ الْحَارِسُ الْبَابَ، وَعَرَفَ رَاشِدًا.",
-      "دَخَلَ الْمُسَافِرُونَ الدَّارَ، وَجَلَسُوا فِي غُرْفَةٍ كَبِيرَةٍ، وَشَرِبُوا اللَّبَنَ.",
+      "دَخَلَ الْمُسَافِرُونَ الدَّارَ، وَجَلَسُوا فِي غُرْفَةٍ كَبِيرَةٍ، وَشَرِبُوا الْمَاءَ وَاللَّبَنَ.",
       "فِي الْغُرْفَةِ سَرِيرٌ قَدِيمٌ وَوِسَادَةٌ جَدِيدَةٌ.",
-      "قَالَ تَاجِرٌ: « يَا سَمِيرُ، أَنَا لَا أَكْتُبُ. اكْتُبْ لِي رِسَالَةً. »",
+      "قَالَ تَاجِرٌ: « يَا سَمِيرُ، أَنَا لَا أَكْتُبُ. اكْتُبِ الرِّسَالَةَ. »",
       "كَتَبَ سَمِيرٌ الرِّسَالَةَ، وَفَرِحَ التَّاجِرُ.",
       "الرِّسَالَةُ الَّتِي كَتَبَهَا سَمِيرٌ قَصِيرَةٌ وَجَمِيلَةٌ.",
       "فِي الصَّبَاحِ، طَلَبَ بَاسِمٌ مِفْتَاحَ الصُّنْدُوقِ فِي السُّوقِ، وَلَمْ يَعْرِفْ مَكَانَهُ.",
@@ -28,7 +28,7 @@
       "صَوْتُ الشَّيْخِ جَمِيلٌ، وَالْقِصَّةُ طَوِيلَةٌ.",
       "قَالَ بَاسِمٌ: « لَمْ أَفْهَمِ الْقِصَّةَ. »",
       "قَالَ الشَّيْخُ: « يَا بَاسِمُ، اجْلِسْ هُنَا. »",
-      "جَلَسَ بَاسِمٌ قَرِيبًا مِنَ الشَّيْخِ، وَسَمِعَ الْقِصَّةَ، وَفَهِمَهَا.",
+      "جَلَسَ بَاسِمٌ مَعَ الشَّيْخِ، وَسَمِعَ الْقِصَّةَ، وَفَهِمَهَا.",
       "ثُمَّ قَالَ رَاشِدٌ: « سَنَخْرُجُ غَدًا إِلَى الْجَبَلِ. »",
       "وَقَالَتْ سَلْمَى: « سَأَكْتُبُ قِصَّةَ الْقَافِلَةِ. »"
     ],
@@ -47,10 +47,10 @@
       },
       {
         "type": "qcm",
-        "consigne": "Où les voyageurs s'assoient-ils ?",
+        "consigne": "En arrivant dans la demeure, où les voyageurs s'assoient-ils ?",
         "choix": [
           "dans une grande chambre",
-          "dans le jardin",
+          "sur le chemin",
           "au marché",
           "dans une tente"
         ],
@@ -61,19 +61,19 @@
         "type": "qcm",
         "consigne": "Que boivent-ils dans la grande chambre ?",
         "choix": [
-          "du lait",
+          "de l'eau et du lait",
           "du jus",
           "de l'huile",
           "rien"
         ],
         "reponse": 0,
-        "explication": "شَرِبُوا اللَّبَنَ : du lait."
+        "explication": "شَرِبُوا الْمَاءَ وَاللَّبَنَ : de l'eau et du lait."
       },
       {
         "type": "qcm",
         "consigne": "Pourquoi Samīr écrit-il la lettre ?",
         "choix": [
-          "le marchand ne sait pas écrire",
+          "le marchand n'écrit pas",
           "Samīr veut partir",
           "la lettre est perdue",
           "Salmā le lui demande"
@@ -83,7 +83,7 @@
       },
       {
         "type": "qcm",
-        "consigne": "Qui a ouvert la porte de la ville ?",
+        "consigne": "Qui a ouvert la porte ?",
         "choix": [
           "le gardien",
           "Rāšid",
@@ -131,10 +131,10 @@
       },
       {
         "type": "qcm",
-        "consigne": "Que font les voyageurs le soir ?",
+        "consigne": "Que font les voyageurs le soir, au jardin ?",
         "choix": [
           "ils écoutent l'histoire du vieil homme",
-          "ils écrivent des lettres",
+          "ils dorment",
           "ils vont au marché",
           "ils montent sur les chameaux"
         ],
@@ -361,7 +361,7 @@
           "نَعَمْ، سَأَرْجِعُ غَدًا.",
           "لَا، لَا أَرْجِعُ غَدًا."
         ],
-        "explication": "Au futur : سَأَرْجِعُ ; au présent nié : لَا أَرْجِعُ."
+        "explication": "Au futur : سَأَرْجِعُ ; nié : لَا أَرْجِعُ غَدًا « je ne reviens pas demain » (لَا devant l'inaccompli, jamais avec سَـ)."
       },
       {
         "type": "libre",
@@ -375,6 +375,7 @@
         ],
         "explication": "اسْمِي « mon nom », puis أَسْكُنُ فِي… « j'habite à… ». Remplace par ton nom et ton lieu."
       }
-    ]
+    ],
+    "seuil": 0.6
   }
 }

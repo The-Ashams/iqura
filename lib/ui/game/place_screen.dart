@@ -8,6 +8,7 @@ import '../../game/world.dart';
 import '../../game/world_providers.dart';
 import '../../features/review/review.dart';
 import 'expedition_screen.dart';
+import 'exam/data_exam_screen.dart';
 import 'exam/region_exam_screen.dart';
 import 'lesson/lesson_screen.dart';
 import 'pixel.dart';
@@ -54,7 +55,9 @@ class PlaceScreen extends ConsumerWidget {
     final ground = (place.groundY ?? 62).toDouble();
     // Leçons de l'étape de la région en cours.
     final region = ref.watch(currentRegionProvider);
-    final stage = ref.watch(contentDatabaseProvider).lessons(region.number);
+    final db = ref.watch(contentDatabaseProvider);
+    final stage = db.lessons(region.number);
+    final dataExam = region.number >= 2 ? db.regionExam(region.number) : null;
     final progress = ref.watch(lessonProgressProvider);
     final due = ref.watch(dueCountProvider);
     final parts = <ScenePart>[
@@ -131,6 +134,15 @@ class PlaceScreen extends ConsumerWidget {
                       ),
                     if (place.id == regionExamPlace && region.number == 1)
                       examCommand(context, stage, progress),
+                    if (dataExam != null && dataExam.place == place.id)
+                      dataExamCommand(
+                        context,
+                        dataExam.id,
+                        dataExam.title,
+                        region.number,
+                        stage,
+                        progress,
+                      ),
                     if (place.lessons.isEmpty)
                       PixelCommand(
                         label: region.number == 1
@@ -169,6 +181,36 @@ class PlaceScreen extends ConsumerWidget {
       width: w.toDouble(),
       height: h.toDouble(),
       child: PixelImage(name, fit: BoxFit.fill),
+    );
+  }
+
+  /// Le boss d'une région écrit en données (région 2 et suivantes) : ouvert
+  /// quand toutes les leçons de la région sont terminées.
+  static Widget dataExamCommand(
+    BuildContext context,
+    String examId,
+    String title,
+    int region,
+    List<LessonSummary> stage,
+    Map<String, LessonProgress> progress,
+  ) {
+    final open = stage.every((l) => progress[l.id]?.completed ?? false);
+    final done = progress[examId]?.completed ?? false;
+    return PixelCommand(
+      label: '$title · examen de la région',
+      detail: !open
+          ? 'Termine d\'abord les ${stage.length} leçons de la région'
+          : done
+          ? 'Réussi · le rejouer'
+          : 'Trois épreuves : un récit, l\'écoute, répondre',
+      onPressed: open
+          ? () => Navigator.push(
+              context,
+              MaterialPageRoute<void>(
+                builder: (_) => DataExamScreen(region: region),
+              ),
+            )
+          : null,
     );
   }
 

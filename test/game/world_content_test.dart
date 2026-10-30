@@ -38,26 +38,32 @@ void main() {
     expect(nura.places, contains('puits'));
   });
 
-  test('région 2 : chapitres A et B (lieux 1 à 8) et les Sables du mirage', () {
-    final region = db.regions()[1];
-    expect(region.name, 'L\'Oasis des Fondations');
-    expect(region.adversary, 'La Confusion');
-    final open = [
-      for (final p in db.places(region.id))
-        if (p.inVerticalSlice) p.id,
-    ];
-    expect(open, [
-      'campement',
-      'tente',
-      'palmiers',
-      'veillee',
-      'souk',
-      'echoppe',
-      'maison_salma',
-      'balance',
-      'sables',
-    ]);
-  });
+  test(
+    'région 2 : chapitres A, B et C (lieux 1 à 11) et les Sables du mirage',
+    () {
+      final region = db.regions()[1];
+      expect(region.name, 'L\'Oasis des Fondations');
+      expect(region.adversary, 'La Confusion');
+      final open = [
+        for (final p in db.places(region.id))
+          if (p.inVerticalSlice) p.id,
+      ];
+      expect(open, [
+        'campement',
+        'tente',
+        'palmiers',
+        'veillee',
+        'souk',
+        'echoppe',
+        'maison_salma',
+        'balance',
+        'caravanserail_oasis',
+        'salle_scribes',
+        'jardin_conteur',
+        'sables',
+      ]);
+    },
+  );
 
   test('audio des leçons : chaque syllabe et mot a son fichier', () {
     for (final i in db.readingItems(stage: 1, upTo: 3)) {

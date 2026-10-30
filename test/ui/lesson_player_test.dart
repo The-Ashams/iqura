@@ -16,7 +16,9 @@ import 'package:iqura/features/review/review.dart';
 import 'package:iqura/features/settings/settings.dart';
 import 'package:iqura/game/lesson/lesson.dart';
 import 'package:iqura/game/exam/region_exam.dart';
+import 'package:iqura/ui/game/exam/data_exam_screen.dart';
 import 'package:iqura/ui/game/exam/region_exam_screen.dart';
+import 'package:iqura/ui/game/lesson/fondations_views.dart' show GradedText;
 import 'package:iqura/ui/game/expedition_screen.dart';
 import 'package:iqura/ui/game/lesson/boss_view.dart';
 import 'package:iqura/ui/game/lesson/lesson_screen.dart';
@@ -251,7 +253,7 @@ void main() {
   // région 2 déjà écrites (Élémentaire 1).
   for (final id in [
     for (var i = 0; i <= 14; i++) 'dechiffrer-${i.toString().padLeft(2, '0')}',
-    for (var i = 1; i <= 20; i++) 'fondations-${i.toString().padLeft(2, '0')}',
+    for (var i = 1; i <= 30; i++) 'fondations-${i.toString().padLeft(2, '0')}',
   ]) {
     testWidgets('$id : jouée de bout en bout, la leçon suivante s’ouvre', (
       tester,
@@ -656,5 +658,48 @@ void main() {
       Rewards.regionExamXp,
     );
     expect(sfx.played, contains(Sfx.victoire));
+  });
+
+  testWidgets('examen de la région 2 : récit, écoute, répondre ; réponses '
+      'libres auto-évaluées, la réussite est enregistrée', (tester) async {
+    tester.view.physicalSize = const Size(800, 6000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final exam = contentDb.regionExam(2)!;
+    expect(exam.id, 'examen-r2');
+    expect(exam.place, 'sables');
+    expect(exam.gradedReplies, greaterThan(0));
+    await tester.pumpWidget(
+      appWith(DataExamScreen(region: 2, random: Random(4))),
+    );
+    await settle(tester);
+    await tapOn(tester, find.text('Commencer'));
+    expect(find.byType(GradedText), findsOneWidget);
+    var graded = 0;
+    var free = 0;
+    for (var guard = 0; guard < 40; guard++) {
+      if (find.byType(QuestionView).evaluate().isNotEmpty) {
+        await answer(tester);
+        graded++;
+      } else if (find.text('Voir le modèle').evaluate().isNotEmpty) {
+        await tapOn(tester, find.text('Voir le modèle'));
+        expect(find.textContaining('ne note pas ta réponse'), findsOneWidget);
+        await tapOn(tester, find.text('Ma réponse convient'));
+        free++;
+      } else {
+        break;
+      }
+    }
+    expect(
+      graded,
+      exam.reading.length + exam.listening.length + exam.gradedReplies,
+    );
+    expect(free, exam.replies.length - exam.gradedReplies);
+    expect(find.textContaining('se dissipe'), findsOneWidget);
+    expect(LessonProgressRepository(userDb).get('examen-r2').completed, isTrue);
+    expect(
+      ResourceRepository(userDb).wallet()[Currency.xp],
+      Rewards.regionExamXp,
+    );
   });
 }

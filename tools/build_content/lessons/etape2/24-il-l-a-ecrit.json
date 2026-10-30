@@ -301,7 +301,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris, en commençant par le verbe : « Samīr a écrit la lettre. »",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Samīr a écrit la lettre. »",
           "tuiles": [
             "الرِّسَالَةَ",
             "كَتَبَ",

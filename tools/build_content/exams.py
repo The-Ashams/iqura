@@ -145,6 +145,7 @@ def validate(exams: list[dict], lessons: list[dict], words: list[dict],
             else:
                 raise ExamError(f"{w} : type inconnu {q.get('type')}")
 
+        _seuil(exam["reponses"], f"{where} · réponses")
         graded = 0
         for i, q in enumerate(exam["reponses"]["questions"]):
             w = f"{where} · réponse {i + 1}"

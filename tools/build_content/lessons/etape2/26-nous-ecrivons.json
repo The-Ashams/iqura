@@ -332,7 +332,7 @@
       "exercices": [
         {
           "type": "repondre",
-          "consigne": "Bāsim vous demande, à toi et à ton ami, ce que vous écrivez. Vous écrivez une lettre.",
+          "consigne": "Bāsim vous demande, à toi et à tes amis, ce que vous écrivez. Vous écrivez une lettre.",
           "replique": {
             "qui": "basim",
             "ar": "مَا تَكْتُبُونَ؟"

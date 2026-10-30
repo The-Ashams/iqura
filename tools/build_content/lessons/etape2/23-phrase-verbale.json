@@ -242,11 +242,11 @@
           "ar": "… الْقَافِلَةُ الْمَدِينَةَ.",
           "choix_ar": [
             "بَلَغَتِ",
-            "بَلَغَ",
+            "بَلَغْنَا",
             "بَلَغُوا"
           ],
           "reponse": 0,
-          "explication": "Sujet féminin, et تْ devant l'article devient تِ."
+          "explication": "Sujet féminin : d'habitude بَلَغَتْ, et تْ devant l'article devient تِ."
         },
         {
           "type": "completer",
@@ -285,7 +285,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris, en commençant par le verbe : « Le scribe a écrit un nom. »",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Le scribe a écrit un nom. »",
           "tuiles": [
             "اسْمًا",
             "كَتَبَ",
@@ -376,7 +376,7 @@
           "tuiles": [
             "الْبَنَاتُ",
             "خَرَجَتِ",
-            "خَرَجَ"
+            "خَرَجُوا"
           ],
           "solution": [
             "خَرَجَتِ",
@@ -454,7 +454,7 @@
           "consigne": "Comment dit-on « la caravane a atteint la ville » ?",
           "choix_ar": [
             "بَلَغَتِ الْقَافِلَةُ الْمَدِينَةَ.",
-            "بَلَغَ الْقَافِلَةُ الْمَدِينَةَ.",
+            "بَلَغَتِ الْقَافِلَةُ الْمَدِينَةِ.",
             "بَلَغَتِ الْقَافِلَةَ الْمَدِينَةُ."
           ],
           "reponse": 0,

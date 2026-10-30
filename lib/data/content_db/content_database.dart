@@ -14,6 +14,7 @@ import 'package:path/path.dart' as p;
 import 'package:sqlite3/sqlite3.dart';
 
 import '../../game/equipment/equipment.dart';
+import '../../game/exam/data_exam.dart';
 import '../../game/lesson/lesson.dart';
 import '../../game/vocab/word.dart';
 import '../../game/world.dart';
@@ -54,7 +55,7 @@ class ContentDatabase {
   static const versionAssetPath = 'assets/content/iqura_content.db.version';
 
   /// Version du schéma de la base de contenu gérée par cette application.
-  static const int schemaVersion = 9;
+  static const int schemaVersion = 10;
 
   /// Tables indispensables au jeu.
   static const requiredTables = [
@@ -70,6 +71,7 @@ class ContentDatabase {
     'place',
     'character',
     'item',
+    'region_exam',
   ];
 
   /// Copie (si besoin) puis ouvre la base dans [directory], et la vérifie
@@ -315,6 +317,19 @@ class ContentDatabase {
     if (rows.isEmpty) return null;
     return Lesson.fromJson(
       jsonDecode(rows.first['content'] as String) as Map<String, dynamic>,
+    );
+  }
+
+  /// Examen de fin de région écrit en données (région 2 et suivantes), ou
+  /// null (région 1 : examen construit à partir des leçons).
+  DataExam? regionExam(int region) {
+    final rows = _db.select(
+      'SELECT content_json FROM region_exam WHERE region = ?',
+      [region],
+    );
+    if (rows.isEmpty) return null;
+    return DataExam.fromJson(
+      jsonDecode(rows.first['content_json'] as String) as Map<String, dynamic>,
     );
   }
 

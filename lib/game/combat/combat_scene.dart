@@ -20,7 +20,8 @@ class CombatScene extends FlameGame {
   /// Animations désactivées dans les réglages : aucun effet.
   final bool animations;
 
-  /// Boss de région : le Gardien de l'Oubli au lieu d'une brume.
+  /// Boss de région : le Gardien de l'Oubli (région 1) ou le Grand Mirage
+  /// (région 2) au lieu d'une brume ou d'un mirage.
   final bool boss;
 
   /// Région : 1, brumes d'oubli dans la Faille ; 2, mirages de la
@@ -55,13 +56,17 @@ class CombatScene extends FlameGame {
     final foe = SpriteComponent(
       sprite: await loadSprite(
         boss
-            ? 'gardien.png'
+            ? (region == 2 ? 'grand_mirage.png' : 'gardien.png')
             : region == 2
             ? 'mirage.png'
             : 'brume.png',
       ),
-      position: boss ? Vector2(96, 8) : Vector2(98, 14),
-      size: boss ? Vector2(48, 56) : Vector2(43, 46),
+      position: boss
+          ? (region == 2 ? Vector2(88, 4) : Vector2(96, 8))
+          : Vector2(98, 14),
+      size: boss
+          ? (region == 2 ? Vector2(64, 66) : Vector2(48, 56))
+          : Vector2(43, 46),
       paint: _pixelPaint(),
     );
     world
