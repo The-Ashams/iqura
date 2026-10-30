@@ -2671,15 +2671,6 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
-  "ar-4740882a2336a1f3": {
-   "genre": "phrase",
-   "texte": "مَا اسْمُكَ؟ وَأَيْنَ تَسْكُنُ؟",
-   "fichier": "assets/audio/lecons/ar-4740882a2336a1f3.mp3",
-   "sha256": "64abaf3f37cf1e1f642e56b020840c0c9b7d9caee463afacd1ecf78125b5595d",
-   "graine": 1,
-   "a_ecouter": false,
-   "genere_le": "2026-10-30"
-  },
   "ar-477ca4a3947f77c8": {
    "genre": "phrase",
    "texte": "نَحْنُ هُنَا",
@@ -8877,6 +8868,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-24"
+  },
+  "ar-e81dac2c01c6feaf": {
+   "genre": "phrase",
+   "texte": "أَيْنَ يَسْكُنُ بَاسِمٌ؟",
+   "fichier": "assets/audio/lecons/ar-e81dac2c01c6feaf.mp3",
+   "sha256": "179f7b0b6ac20fd8f2d4eb24197d02648e943409c073fd87faa864c992605744",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-30"
   },
   "ar-e821465a6071b731": {
    "genre": "mot",

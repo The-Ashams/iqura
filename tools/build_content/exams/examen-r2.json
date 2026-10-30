@@ -351,31 +351,48 @@
         "explication": "كَتَبَهَا سَمِيرٌ : ـهَا reprend la lettre."
       },
       {
-        "type": "libre",
-        "consigne": "Samīr te pose une question. Réponds à voix haute ou par écrit, puis compare avec le modèle.",
+        "type": "ordonner",
+        "consigne": "Samīr te demande si tu reviendras demain. Réponds oui, dans l'ordre نَعَمْ, verbe, puis « demain ».",
         "replique": {
           "qui": "samir_oasis",
           "ar": "هَلْ سَتَرْجِعُ غَدًا؟"
         },
-        "modeles": [
-          "نَعَمْ، سَأَرْجِعُ غَدًا.",
-          "لَا، لَا أَرْجِعُ غَدًا."
+        "tuiles": [
+          "غَدًا",
+          "سَأَرْجِعُ",
+          "نَعَمْ،",
+          "سَيَرْجِعُ"
         ],
-        "explication": "Au futur : سَأَرْجِعُ ; nié : لَا أَرْجِعُ غَدًا « je ne reviens pas demain » (لَا devant l'inaccompli, jamais avec سَـ)."
+        "solution": [
+          "نَعَمْ،",
+          "سَأَرْجِعُ",
+          "غَدًا"
+        ],
+        "explication": "نَعَمْ، سَأَرْجِعُ غَدًا : « oui, je reviendrai demain » (سَـ + أَرْجِعُ)."
       },
       {
-        "type": "libre",
-        "consigne": "Salmā veut te connaître. Réponds à voix haute ou par écrit, puis compare avec le modèle.",
+        "type": "ordonner",
+        "consigne": "Salmā te demande où habite Bāsim : au village. Réponds dans l'ordre verbe, sujet, puis le lieu.",
         "replique": {
           "qui": "salma",
-          "ar": "مَا اسْمُكَ؟ وَأَيْنَ تَسْكُنُ؟"
+          "ar": "أَيْنَ يَسْكُنُ بَاسِمٌ؟"
         },
-        "modeles": [
-          "اسْمِي بَاسِمٌ، وَأَسْكُنُ فِي الْقَرْيَةِ."
+        "tuiles": [
+          "الْقَرْيَةِ",
+          "بَاسِمٌ",
+          "فِي",
+          "يَسْكُنُ",
+          "تَسْكُنُ"
         ],
-        "explication": "اسْمِي « mon nom », puis أَسْكُنُ فِي… « j'habite à… ». Remplace par ton nom et ton lieu."
+        "solution": [
+          "يَسْكُنُ",
+          "بَاسِمٌ",
+          "فِي",
+          "الْقَرْيَةِ"
+        ],
+        "explication": "يَسْكُنُ بَاسِمٌ فِي الْقَرْيَةِ : « Bāsim habite au village » (يَسْكُنُ : il habite)."
       }
     ],
-    "seuil": 0.6
+    "seuil": 0.8
   }
 }

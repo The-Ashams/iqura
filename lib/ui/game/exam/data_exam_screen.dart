@@ -244,9 +244,10 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
             'réponses nécessaires) ; écouter ${_exam.listening.length} '
             'phrases (${_exam.listeningMark} nécessaires) ; répondre à des '
             'personnages : ${_exam.gradedReplies} phrases à remettre en ordre '
-            '(${_exam.repliesMark} nécessaires) et des réponses libres, que tu '
-            'compares toi-même à un modèle (elles ne comptent pas pour la '
-            'réussite).',
+            '(${_exam.repliesMark} nécessaires)'
+            '${_exam.replies.length > _exam.gradedReplies ? ' et des réponses '
+                      'libres, que tu compares toi-même à un modèle (elles ne '
+                      'comptent pas pour la réussite)' : ''}.',
           ),
           const SizedBox(height: 10),
           PixelCommand(
@@ -431,10 +432,11 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
               'Phrases remises en ordre : $_replies / ${_exam.gradedReplies} '
               '(${_exam.repliesMark} nécessaires).',
             ),
-            Text(
-              'Réponses libres : tu as jugé $_freeOk réponse(s) sur $free '
-              'conforme(s) au modèle (auto-évaluation, non notée).',
-            ),
+            if (free > 0)
+              Text(
+                'Réponses libres : tu as jugé $_freeOk réponse(s) sur $free '
+                'conforme(s) au modèle (auto-évaluation, non notée).',
+              ),
             if (passed) ...[
               const SizedBox(height: 6),
               Text(

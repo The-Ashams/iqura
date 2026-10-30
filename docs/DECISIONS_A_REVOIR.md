@@ -12,6 +12,8 @@ Décisions prises par Claude Code seul, comme le demandent les avenants. Elles s
 - **Accès** : depuis la session de travail, les copies complètes du Wiktionnaire (dumps.wikimedia.org, kaikki.org) ne sont pas joignables. Les extraits de kaikki.org viennent d'ailleurs surtout du Wiktionary anglais.
 - **Qualité** : les entrées arabes sont inégales (vocalisation partielle, conventions variables). Les vérifier une par une coûterait plus que de rédiger des définitions courtes, relues et sourcées.
 
+**Demande de l'utilisateur (30/10/2026)** : trouver une source dont la traduction française existe déjà. Piste proposée : coran-seul.com (dictionnaire de racines). Pas encore vérifiée : le site n'est pas joignable depuis la session (réglages réseau). À vérifier : licence ou autorisation de reprise, absence de texte coranique dans ce qu'on reprendrait (avenant n° 1).
+
 **À revoir si** : une source arabe-français libre, sous CC BY-SA 4.0 ou sous une licence compatible GPL, entièrement vocalisée, devient accessible. Ses définitions remplaceraient alors celles « rédigé par IA », avec leur source.
 
 ## 2. Enregistrements humains des 28 lettres (avenant n° 1, §C.9) — 24/10/2026
