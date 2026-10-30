@@ -1,6 +1,6 @@
 # État du projet IQURA
 
-Mis à jour le 24 octobre 2026. **À lire en début de session, à mettre à jour à chaque étape importante et avant la fin d'une session.**
+Mis à jour le 30 octobre 2026. **À lire en début de session, à mettre à jour à chaque étape importante et avant la fin d'une session.**
 Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026, avenants n° 1 et n° 2 du 24/10/2026 intégrés**, référence unique). Décisions prises seul, à revoir : `docs/DECISIONS_A_REVOIR.md`. Règles : `CLAUDE.md`. Anciennes versions : `docs/archive/`.
 
 Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` après la fusion de la pull request n° 3).
@@ -135,6 +135,18 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Relectures | `docs/relectures/2026-10-25-elementaire-2-lecons-2.11-a-2.15.md` (3 passages, verdict « Validé ») et `…-2.16-a-2.20.md` (2 passages, verdict « Validé avec doutes ») ; plan et décisions du conseiller : `decisions-elementaire-2.md` (17 décisions, liste de fin de niveau) |
 | Audio | 299 sons de synthèse ; 2 signalés « à écouter » par la coupure automatique : سَيْفٌ, زَيْتٌ |
 
+## 1 nonies. Niveau Élémentaire 3 (leçons 2.21 à 2.30 et examen de la région 2, 26 au 30/10/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Leçons | Chapitre C « Le caravansérail », maître Samīr : 2.21 il a écrit, 2.22 j'ai écrit (passé, 8 personnes), 2.23 la phrase verbale, 2.24 il l'a écrit (pronoms compléments) au Caravansérail de l'oasis ; 2.25 il écrit, 2.26 nous écrivons (inaccompli), 2.27 il n'a pas écrit (مَا, لَا, لَمْ) à la Salle des scribes ; 2.28 il écrira (سَـ, سَوْفَ), 2.29 écris ! (impératif), 2.30 celui qui… (relatifs) au Jardin du conteur |
+| Vocabulaire | 69 nouvelles fiches (203 en tout) ; natures « relatif » ; verbes figés (لَيْسَ, قَالَ) jamais conjugués par le contrôle |
+| Examen de la région 2 | Le Grand Mirage, aux Sables du mirage : récit de 144 mots (10 questions, 80 %), écoute de 10 phrases (80 %), répondre à des personnages (3 phrases à remettre en ordre, 2 sur 3 ; 2 réponses libres auto-évaluées, non notées) ; fichier `tools/build_content/exams/examen-r2.json`, contrôlé par `exams.py` (mots tous connus, aucun verset, sons) ; écran `lib/ui/game/exam/data_exam_screen.dart` |
+| Contrôles automatiques | Formes verbales ramenées à la fiche (passé, inaccompli, futur, impératif) à partir de la leçon qui les enseigne ; translittération des relatifs (allaḏī) corrigée dans le moteur |
+| Jeu | Trois décors (caravansérail de l'oasis, salle des scribes, jardin du conteur), Samīr, le Grand Mirage |
+| Relectures | `docs/relectures/2026-10-26-elementaire-3-lecons-2.21-a-2.25.md`, `…-2.26-a-2.30.md` (1er passage) et `2026-10-27-elementaire-3-passages-suivants.md` : 3 passages, verdicts « Validé » ou « Validé avec doutes » pour les 10 leçons, « Validé avec doutes » pour l'examen ; doutes tranchés par le conseiller (`decisions-elementaire-3.md`) |
+| Audio | Sons de synthèse des leçons 2.21 à 2.30 et de l'examen (353) |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -190,7 +202,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 6. Débutant 2 et Débutant 3 construits le 24/10/2026 (§1 quinquies), à la demande de l'utilisateur, avant son nouveau test : sons générés (204), à faire écouter, puis une version à publier.
 7. Fait (24/10/2026) : avenants n° 1 et n° 2 appliqués (§1 sexies) ; salles de lecture relues par l'agent relecteur : verdict « Validé avec doutes » au 2e passage, 5 doutes tranchés par le conseiller (`docs/relectures/2026-10-24-salles-de-lecture.md`, `decisions-debutant-3.md`).
 8. Élémentaire 1 (§1 septies) et Élémentaire 2 (§1 octies) construits le 25/10/2026, relus, sons générés : à tester par l'utilisateur.
-9. Ensuite : Élémentaire 3 (leçons 2.21 à 2.30, chapitre C « Le caravansérail », les verbes, et boss de la région 2).
+9. Élémentaire 3 (§1 nonies) construit et relu : toute la région 2 est prête à tester.
+10. Ensuite : région 3 (Intermédiaire 1, leçons 3.1 à 3.10), après les retours de l'utilisateur sur la région 2.
 
 ## 5. Problèmes connus
 
