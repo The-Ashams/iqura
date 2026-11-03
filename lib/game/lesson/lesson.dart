@@ -3,6 +3,8 @@
 /// `tools/build_content/lessons/` et contrôlé par `mini_donjon.py`.
 library;
 
+import '../../core/audio_policy.dart';
+
 /// Marque « gauche à droite » (U+200E), invisible.
 const String _lrm = '\u200E';
 
@@ -190,6 +192,15 @@ class LessonQuestion {
   final bool revision;
 }
 
+/// Son coupé (jalon J6) : « répéter à voix haute » est masqué, faute de
+/// voix de référence. Les questions d'écoute restent : elles se lisent.
+List<LessonQuestion> _audible(List<LessonQuestion> qs) => AudioPolicy.enabled
+    ? qs
+    : [
+        for (final q in qs)
+          if (q.kind != QuestionKind.repeter) q,
+      ];
+
 /// Un écran de la leçon.
 sealed class LessonStep {
   const LessonStep();
@@ -241,10 +252,10 @@ sealed class LessonStep {
       'echauffement' || 'entrainement' || 'atelier' => PracticeStep(
         warmUp: type == 'echauffement',
         atelier: type == 'atelier',
-        exercises: [
+        exercises: _audible([
           for (final e in ((j['exercices'] ?? j['questions']) as List))
             LessonQuestion.fromJson(e as Map<String, dynamic>),
-        ],
+        ]),
       ),
       'lecture' => ReadingStep(
         title: _fr(j['titre']),
@@ -259,10 +270,10 @@ sealed class LessonStep {
       ),
       'mini_boss' => BossStep(
         threshold: (j['seuil'] as num).toDouble(),
-        questions: [
+        questions: _audible([
           for (final e in j['questions'] as List)
             LessonQuestion.fromJson(e as Map<String, dynamic>),
-        ],
+        ]),
       ),
       'fin' => EndStep(
         learned: frenchWithArabic(j['acquis'] as String),

@@ -5,10 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:iqura/core/app_paths.dart';
+import 'package:iqura/core/audio_policy.dart';
 import 'package:iqura/core/providers.dart';
 import 'package:iqura/data/content_db/content_database.dart';
 import 'package:iqura/data/user_db/user_database.dart';
 import 'package:iqura/engines/audio/audio_service.dart';
+import 'package:iqura/engines/transliteration/transliterator.dart';
 import 'package:iqura/engines/voice/voice_recorder.dart';
 import 'package:iqura/features/progress/lesson_progress.dart';
 import 'package:iqura/features/resources/resources.dart';
@@ -153,9 +155,11 @@ Future<void> answer(WidgetTester tester, {bool right = true}) async {
       }
     default:
       final i = right ? q.answer! : (q.answer! + 1) % q.choices.length;
-      final label = q.choiceKind == ChoiceKind.audio
+      final label = q.choiceKind != ChoiceKind.audio
+          ? q.choices[i]
+          : AudioPolicy.enabled
           ? 'Son ${i + 1}'
-          : q.choices[i];
+          : const Transliterator().transliterate(q.choices[i]);
       await tapOn(tester, answerButton(tester, label));
   }
   await tapOn(tester, find.text('Valider'));
@@ -293,10 +297,16 @@ void main() {
         find.textContaining('nouvelles cartes'),
         cards.isEmpty ? findsNothing : findsOneWidget,
       );
-      // Répéter à voix haute : la voix enregistrée est réécoutée.
-      if (lesson.ordinal > 0) {
-        expect(recorder.saved, isNotEmpty);
-        expect(audio.played.any((p) => p.endsWith('.m4a')), isTrue);
+      if (AudioPolicy.enabled) {
+        // Répéter à voix haute : la voix enregistrée est réécoutée.
+        if (lesson.ordinal > 0) {
+          expect(recorder.saved, isNotEmpty);
+          expect(audio.played.any((p) => p.endsWith('.m4a')), isTrue);
+        }
+      } else {
+        // Son coupé (jalon J6) : aucun son de leçon, aucun bouton d'écoute.
+        expect(audio.played, isEmpty);
+        expect(find.byIcon(Icons.volume_up), findsNothing);
       }
       // Bruitages : réponses, combat, sceau de fin.
       expect(
@@ -351,21 +361,24 @@ void main() {
     expect(currentStep(tester), 1);
   });
 
-  testWidgets('écran « élément » : le nom de la lettre est joué', (
-    tester,
-  ) async {
-    const id = 'dechiffrer-01';
-    final lesson = contentDb.lesson(id)!;
-    final element = lesson.steps.indexWhere(
-      (s) => s is ExplainStep && s.kind == ExplainKind.element,
-    );
-    LessonProgressRepository(userDb).saveStep(id, element);
-    await open(tester, id);
-    final letter = (lesson.steps[element] as ExplainStep).letter!;
-    final name = contentDb.letter(letter)!.nameAr;
-    expect(audio.played, contains(contentDb.audioFile(name)));
-    expect(find.text('synthèse'), findsWidgets);
-  });
+  testWidgets(
+    'écran « élément » : le nom de la lettre est joué (phase audio)',
+    (tester) async {
+      AudioPolicy.enabled = true;
+      addTearDown(() => AudioPolicy.enabled = false);
+      const id = 'dechiffrer-01';
+      final lesson = contentDb.lesson(id)!;
+      final element = lesson.steps.indexWhere(
+        (s) => s is ExplainStep && s.kind == ExplainKind.element,
+      );
+      LessonProgressRepository(userDb).saveStep(id, element);
+      await open(tester, id);
+      final letter = (lesson.steps[element] as ExplainStep).letter!;
+      final name = contentDb.letter(letter)!.nameAr;
+      expect(audio.played, contains(contentDb.audioFile(name)));
+      expect(find.text('synthèse'), findsWidgets);
+    },
+  );
 
   testWidgets('PC (2000 × 1125) : au mini-boss, la question est visible sans '
       'défiler', (tester) async {
@@ -627,79 +640,97 @@ void main() {
     expect(moved.indexOf('ت'), isNot(2));
   });
 
-  testWidgets('examen de la région 1 : trois épreuves, le Gardien se '
-      'dissipe, la réussite est enregistrée', (tester) async {
-    tester.view.physicalSize = const Size(800, 4000);
-    tester.view.devicePixelRatio = 1;
-    addTearDown(tester.view.reset);
-    await tester.pumpWidget(appWith(RegionExamScreen(random: Random(4))));
-    await settle(tester);
-    await tapOn(tester, find.text('Commencer'));
-    var guard = 0;
-    while (find.byType(QuestionView).evaluate().isNotEmpty && guard++ < 40) {
-      await answer(tester);
-    }
-    expect(
-      guard,
-      RegionExamRules.readingCount + RegionExamRules.listeningCount,
-    );
-    for (var i = 0; i < RegionExamRules.speakingCount; i++) {
-      expect(find.byType(RepeatAloud), findsOneWidget);
-      await tapOn(tester, find.text('Je le dis bien'));
-    }
-    expect(find.textContaining('se dissipe'), findsOneWidget);
-    expect(find.textContaining('Temps de lecture'), findsOneWidget);
-    expect(
-      LessonProgressRepository(userDb).get(RegionExamScreen.examId).completed,
-      isTrue,
-    );
-    expect(
-      ResourceRepository(userDb).wallet()[Currency.xp],
-      Rewards.regionExamXp,
-    );
-    expect(sfx.played, contains(Sfx.victoire));
-  });
-
-  testWidgets('examen de la région 2 : récit, écoute, répondre ; réponses '
-      'libres auto-évaluées, la réussite est enregistrée', (tester) async {
-    tester.view.physicalSize = const Size(800, 6000);
-    tester.view.devicePixelRatio = 1;
-    addTearDown(tester.view.reset);
-    final exam = contentDb.regionExam(2)!;
-    expect(exam.id, 'examen-r2');
-    expect(exam.place, 'sables');
-    expect(exam.gradedReplies, greaterThan(0));
-    await tester.pumpWidget(
-      appWith(DataExamScreen(region: 2, random: Random(4))),
-    );
-    await settle(tester);
-    await tapOn(tester, find.text('Commencer'));
-    expect(find.byType(GradedText), findsOneWidget);
-    var graded = 0;
-    var free = 0;
-    for (var guard = 0; guard < 40; guard++) {
-      if (find.byType(QuestionView).evaluate().isNotEmpty) {
+  for (final sound in [false, true]) {
+    testWidgets('examen de la région 1 (son ${sound ? 'actif' : 'coupé'}) : '
+        'le Gardien se dissipe, la réussite est enregistrée', (tester) async {
+      AudioPolicy.enabled = sound;
+      addTearDown(() => AudioPolicy.enabled = false);
+      tester.view.physicalSize = const Size(800, 4000);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      await tester.pumpWidget(appWith(RegionExamScreen(random: Random(4))));
+      await settle(tester);
+      await tapOn(tester, find.text('Commencer'));
+      var guard = 0;
+      while (find.byType(QuestionView).evaluate().isNotEmpty && guard++ < 40) {
         await answer(tester);
-        graded++;
-      } else if (find.text('Voir le modèle').evaluate().isNotEmpty) {
-        await tapOn(tester, find.text('Voir le modèle'));
-        expect(find.textContaining('ne note pas ta réponse'), findsOneWidget);
-        await tapOn(tester, find.text('Ma réponse convient'));
-        free++;
-      } else {
-        break;
       }
-    }
-    expect(
-      graded,
-      exam.reading.length + exam.listening.length + exam.gradedReplies,
-    );
-    expect(free, exam.replies.length - exam.gradedReplies);
-    expect(find.textContaining('se dissipe'), findsOneWidget);
-    expect(LessonProgressRepository(userDb).get('examen-r2').completed, isTrue);
-    expect(
-      ResourceRepository(userDb).wallet()[Currency.xp],
-      Rewards.regionExamXp,
-    );
-  });
+      expect(
+        guard,
+        RegionExamRules.readingCount +
+            (sound ? RegionExamRules.listeningCount : 0),
+      );
+      if (sound) {
+        for (var i = 0; i < RegionExamRules.speakingCount; i++) {
+          expect(find.byType(RepeatAloud), findsOneWidget);
+          await tapOn(tester, find.text('Je le dis bien'));
+        }
+      } else {
+        expect(find.byType(RepeatAloud), findsNothing);
+        expect(audio.played, isEmpty);
+      }
+      expect(find.textContaining('se dissipe'), findsOneWidget);
+      expect(find.textContaining('Temps de lecture'), findsOneWidget);
+      expect(
+        LessonProgressRepository(userDb).get(RegionExamScreen.examId).completed,
+        isTrue,
+      );
+      expect(
+        ResourceRepository(userDb).wallet()[Currency.xp],
+        Rewards.regionExamXp,
+      );
+      expect(sfx.played, contains(Sfx.victoire));
+    });
+
+    testWidgets('examen de la région 2 (son ${sound ? 'actif' : 'coupé'}) : '
+        'récit, répondre, la réussite est enregistrée', (tester) async {
+      AudioPolicy.enabled = sound;
+      addTearDown(() => AudioPolicy.enabled = false);
+      tester.view.physicalSize = const Size(800, 6000);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final exam = contentDb.regionExam(2)!;
+      expect(exam.id, 'examen-r2');
+      expect(exam.place, 'sables');
+      expect(exam.gradedReplies, greaterThan(0));
+      await tester.pumpWidget(
+        appWith(DataExamScreen(region: 2, random: Random(4))),
+      );
+      await settle(tester);
+      await tapOn(tester, find.text('Commencer'));
+      expect(find.byType(GradedText), findsOneWidget);
+      var graded = 0;
+      var free = 0;
+      for (var guard = 0; guard < 40; guard++) {
+        if (find.byType(QuestionView).evaluate().isNotEmpty) {
+          await answer(tester);
+          graded++;
+        } else if (find.text('Voir le modèle').evaluate().isNotEmpty) {
+          await tapOn(tester, find.text('Voir le modèle'));
+          expect(find.textContaining('ne note pas ta réponse'), findsOneWidget);
+          await tapOn(tester, find.text('Ma réponse convient'));
+          free++;
+        } else {
+          break;
+        }
+      }
+      expect(
+        graded,
+        exam.reading.length +
+            (sound ? exam.listening.length : 0) +
+            exam.gradedReplies,
+      );
+      if (!sound) expect(audio.played, isEmpty);
+      expect(free, exam.replies.length - exam.gradedReplies);
+      expect(find.textContaining('se dissipe'), findsOneWidget);
+      expect(
+        LessonProgressRepository(userDb).get('examen-r2').completed,
+        isTrue,
+      );
+      expect(
+        ResourceRepository(userDb).wallet()[Currency.xp],
+        Rewards.regionExamXp,
+      );
+    });
+  }
 }

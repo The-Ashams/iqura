@@ -65,11 +65,12 @@ void main() {
     },
   );
 
-  test('audio des leçons : chaque syllabe et mot a son fichier', () {
-    for (final i in db.readingItems(stage: 1, upTo: 3)) {
+  test('audio des leçons : chaque syllabe et mot a son emplacement, et un '
+      'son livré existe', () {
+    for (final i in db.readingItems(stage: 1, upTo: 14)) {
+      expect(db.hasAudioSlot(i.arabic), isTrue, reason: i.arabic);
       final f = db.audioFile(i.arabic);
-      expect(f, isNotNull, reason: i.arabic);
-      expect(File('assets/$f').existsSync(), isTrue);
+      if (f != null) expect(File('assets/$f').existsSync(), isTrue);
     }
   });
 

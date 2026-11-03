@@ -165,13 +165,16 @@ void main() {
             expect(latin.hasMatch(ch), isFalse, reason: '${c.id} $ch');
           }
           expect(latin.hasMatch(q.arabic ?? ''), isFalse);
-          // Tout ce qui se joue a un enregistrement.
+          // Tout ce qui se joue a son emplacement audio (le son vient à la
+          // phase audio, jalon J6).
           if (q.choiceKind == ChoiceKind.audio) {
             for (final ch in q.choices) {
-              expect(content.audioFile(ch), isNotNull, reason: ch);
+              expect(content.hasAudioSlot(ch), isTrue, reason: ch);
             }
           }
-          if (q.audio != null) expect(content.audioFile(q.audio!), isNotNull);
+          if (q.audio != null) {
+            expect(content.hasAudioSlot(q.audio!), isTrue, reason: q.audio);
+          }
         }
       }
     });

@@ -8,9 +8,12 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/audio_policy.dart';
 import '../../../core/providers.dart';
 import '../../../engines/audio/audio_service.dart';
+import '../../../engines/transliteration/transliterator.dart';
 import '../../../engines/voice/voice_recorder.dart';
+import '../../../features/settings/settings.dart';
 import '../../../game/lesson/lesson.dart';
 import '../../../game/lesson/trace.dart';
 import '../../widgets/arabic_text.dart';
@@ -40,8 +43,56 @@ class ConstructedExampleTag extends StatelessWidget {
 
 /// Joue un texte arabe des leçons (voix de synthèse), s'il est enregistré.
 void playLessonAudio(WidgetRef ref, String text) {
+  if (!AudioPolicy.enabled) return;
   final file = ref.read(contentDatabaseProvider).audioFile(text);
   if (file != null) ref.read(audioServiceProvider).playAsset(file);
+}
+
+/// Lecture écrite d'un texte arabe, dans le style choisi dans les réglages
+/// (toujours affichée : c'est le contenu de la question quand le son est
+/// coupé).
+String readingOf(WidgetRef ref, String arabic) =>
+    const Transliterator().transliterate(
+      arabic,
+      style: ref.watch(settingsProvider).transliteration.engineStyle,
+    );
+
+/// Consigne d'une question d'écoute devenue question de lecture (son coupé,
+/// jalon J6) ; null si la consigne d'origine convient.
+String? silentPrompt(LessonQuestion q) {
+  if (AudioPolicy.enabled) return null;
+  return switch (q.kind) {
+    QuestionKind.ecouterLettre => 'Quelle lettre porte ce nom ?',
+    QuestionKind.reconstruire => 'Assemble le mot qui se lit ainsi.',
+    QuestionKind.ecouter || QuestionKind.paires =>
+      q.choiceKind == ChoiceKind.arabic
+          ? 'Lis cette lecture écrite et choisis l\'écriture arabe.'
+          : 'Que veut dire ce qui se lit ainsi ?',
+    _ when q.choiceKind == ChoiceKind.audio =>
+      'Comment se lit ce mot ? Choisis sa lecture.',
+    _ => null,
+  };
+}
+
+/// Lecture écrite affichée à la place d'un son (son coupé, jalon J6).
+class ReadingHint extends ConsumerWidget {
+  const ReadingHint(this.arabic, {super.key});
+
+  final String arabic;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) => Container(
+    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+    decoration: BoxDecoration(
+      border: Border.all(color: PanelColors.ink, width: 2),
+      color: Colors.white,
+    ),
+    child: Text(
+      '« ${readingOf(ref, arabic)} »',
+      textAlign: TextAlign.center,
+      style: const TextStyle(fontSize: 26, color: PanelColors.ink),
+    ),
+  );
 }
 
 /// Bouton « Écouter » avec la mention « synthèse ».
@@ -53,6 +104,7 @@ class ListenButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    if (!AudioPolicy.enabled) return const SizedBox.shrink();
     final available =
         ref.watch(contentDatabaseProvider).audioFile(text) != null;
     return Column(
@@ -280,7 +332,7 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
     );
     // Le son de la question est joué dès qu'elle s'affiche (§6.2).
     final spoken = _spoken;
-    if (spoken != null) {
+    if (spoken != null && AudioPolicy.enabled) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted) playLessonAudio(ref, spoken);
       });
@@ -325,7 +377,7 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
       child: Column(
         children: [
           Text(
-            q.prompt,
+            silentPrompt(q) ?? q.prompt,
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 20),
           ),
@@ -344,7 +396,11 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
             if (q.kind == QuestionKind.lire) const ConstructedExampleTag(),
             const SizedBox(height: 8),
           ],
-          if (spoken != null) ...[
+          if (spoken != null && !AudioPolicy.enabled) ...[
+            // Son coupé : la lecture écrite remplace le son (§13, J6).
+            ReadingHint(spoken),
+            const SizedBox(height: 12),
+          ] else if (spoken != null) ...[
             if (q.kind == QuestionKind.repeter) ...[
               ArabicText(
                 q.arabic!,
@@ -386,7 +442,8 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
                   ? 150
                   : 120,
               state: _stateOf(i),
-              semanticLabel: q.choiceKind == ChoiceKind.audio
+              semanticLabel:
+                  q.choiceKind == ChoiceKind.audio && AudioPolicy.enabled
                   ? 'Son ${pos + 1}'
                   : null,
               onPressed: () {
@@ -397,6 +454,11 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
               },
               child: switch (q.choiceKind) {
                 ChoiceKind.arabic => ArabicText(q.choices[i], baseSize: 30),
+                ChoiceKind.audio when !AudioPolicy.enabled => Text(
+                  readingOf(ref, q.choices[i]),
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 20),
+                ),
                 ChoiceKind.audio => Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -417,7 +479,7 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
             ),
         ],
       ),
-      if (q.choiceKind == ChoiceKind.audio)
+      if (q.choiceKind == ChoiceKind.audio && AudioPolicy.enabled)
         const Padding(
           padding: EdgeInsets.only(top: 4),
           child: Text(

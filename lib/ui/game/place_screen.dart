@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/audio_policy.dart';
 import '../../core/providers.dart';
 import '../../features/progress/lesson_progress.dart';
 import '../../game/lesson/lesson.dart';
@@ -202,7 +203,9 @@ class PlaceScreen extends ConsumerWidget {
           ? 'Termine d\'abord les ${stage.length} leçons de la région'
           : done
           ? 'Réussi · le rejouer'
-          : 'Trois épreuves : un récit, l\'écoute, répondre',
+          : AudioPolicy.enabled
+          ? 'Trois épreuves : un récit, l\'écoute, répondre'
+          : 'Deux épreuves : un récit, répondre',
       onPressed: open
           ? () => Navigator.push(
               context,
@@ -229,7 +232,9 @@ class PlaceScreen extends ConsumerWidget {
           ? 'Brise d\'abord les 14 sceaux (leçons 0 à 14)'
           : done
           ? 'Réussi · le rejouer'
-          : 'Trois épreuves : lecture, écoute, prononciation',
+          : AudioPolicy.enabled
+          ? 'Trois épreuves : lecture, écoute, prononciation'
+          : 'Lire 20 mots',
       onPressed: open
           ? () => Navigator.push(
               context,

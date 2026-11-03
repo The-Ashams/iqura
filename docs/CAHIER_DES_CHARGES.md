@@ -679,6 +679,7 @@ On avance **région par région**, chaque région complète et jouable. Le MVP e
 | J3 — Région 3 | 32 leçons, 80 récits, arbre des racines complet, tous les exercices de racines, Sort de racine | Décodage des familles de mots |
 | J4 — Région 4 | 28 leçons, 100 récits et dialogues, écriture, option IA | Lecture courante |
 | J5 — Région 5 | 20 leçons de langue coranique avancée, sans verset (§5.9) | Lecture de textes classiques avancés |
+| **J6 — Phase audio** (décision du 03/11/2026) | Après la fin des cours (J5) : voix de toutes les lettres, syllabes, mots et phrases (synthèse ou enregistrements humains), vérification à l'écoute, retour des boutons d'écoute, des exercices d'écoute et de l'épreuve de prononciation des examens | Chaque emplacement audio rempli et écouté ; l'utilisateur valide les voix |
 
 ### 13.0 Niveaux de test (décision du 23/10/2026)
 
@@ -731,7 +732,7 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 - [ ] Aucun mot sur un monstre ; aucun nom divin, nom de prophète ou formule sacrée en combat.
 - [ ] Chaque texte à lire respecte la règle des 95 % au moment où il est proposé.
 - [ ] Chaque fiche affiche sa source ou « rédigé par IA ».
-- [ ] Chaque mot, lettre et phrase des leçons du jalon a son audio, signalé « synthèse ».
+- [ ] Chaque mot, lettre et phrase des leçons du jalon a son emplacement audio (le son lui-même vient à la phase audio J6, décision du 03/11/2026).
 - [ ] Révisions planifiées par FSRS ; jamais « maîtrisé » après une seule réussite ; vocabulaire adaptatif fonctionnel.
 - [ ] Jamais deux réponses justes par erreur (test des distracteurs).
 - [ ] Pierres de savoir uniquement via un changement d'état réel.
@@ -822,3 +823,4 @@ Démontrés sur Windows et Android, compilations et tests réellement exécutés
 | 2026-10-26 | Examen de la région 2 (le Grand Mirage, Sables du mirage), écrit en données (`tools/build_content/exams/`, contrôlé par le pipeline, schéma de la base 10) : récit de 144 mots connus et 10 questions (80 %), écoute de 10 phrases (80 %), 3 phrases à remettre en ordre en réponse à un personnage (2 sur 3) et 2 réponses libres comparées à un modèle et auto-évaluées (remplacées le 30/10/2026 par des phrases à remettre en ordre, décision de l'utilisateur) ; ouvert quand les 30 leçons de la région sont réussies |
 | 2026-10-30 | Sons refaits de la région 1, choisis à l'écoute par l'utilisateur : سَ (version 1K) et سُكَ « suka » (version 29K, écrit سُكَةْ pour la synthèse) |
 | 2026-10-30 | Décisions de l'utilisateur : pas de réglage « voyageur / voyageuse » (le genre du joueur est abandonné) ; à l'examen, plus de réponses libres : seulement des phrases à remettre en ordre, découpées mot par mot, l'ordre attendu donné dans la consigne (région 2 : 5 phrases, 4 justes nécessaires) ; seuil d'écoute des examens à 8 sur 10 validé ; dictionnaire : chercher une source déjà traduite en français (piste de l'utilisateur : coran-seul.com, à vérifier : licence, absence de versets) |
+| 2026-11-03 | **Audio suspendu jusqu'à la fin des cours** (décision de l'utilisateur) : plus aucune voix générée ni vérifiée, aucune question sur l'audio ; dans l'application, boutons d'écoute, exercices d'écoute et épreuve de prononciation des examens masqués, les leçons fonctionnent entièrement sans son ; chaque lettre, syllabe, mot et phrase garde son emplacement audio dans les données ; chaque son difficile garde une description écrite précise et son schéma d'articulation ; nouveau jalon J6 « phase audio » après la fin des cours (§13) |

@@ -3,6 +3,8 @@
 /// scènes en grille de 160 × 90.
 library;
 
+import '../../core/audio_policy.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -299,7 +301,7 @@ class SpokenArabic extends ConsumerWidget {
       mushaf: mushaf,
       style: TextStyle(color: color ?? GameColors.text),
     );
-    if (file == null) return word;
+    if (file == null || !AudioPolicy.enabled) return word;
     return Semantics(
       button: true,
       label: 'Écouter (voix de synthèse)',

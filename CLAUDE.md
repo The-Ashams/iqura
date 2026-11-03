@@ -45,7 +45,7 @@ RPG d'aventure narrative en pixel art qui enseigne l'arabe littéraire classique
 | Contenu | Leçons, dialogues, récits, quêtes, monstres, objets, régions, lieux : fichiers JSON, pas de code |
 | Données linguistiques | Quranic Arabic Corpus seulement (racines, lemmes, fréquences) ; Tanzil, Hamidullah et EveryAyah retirés (avenant n° 1) ; dictionnaire intégré : source notée dans `docs/DECISIONS_A_REVOIR.md` (avenant n° 2) |
 | Révision | FSRS (notes : cahier §6.3) |
-| Audio | Leçons, dialogues, récits : Chatterbox Multilingual, généré une fois (`tools/build_audio/`), coupure automatique, « synthèse » ; enregistrements humains sous licence libre pour les 28 lettres si une source fiable est trouvée ; aucune récitation |
+| Audio | **Suspendu jusqu'à la fin des cours (décision du 03/11/2026)** : ne plus générer ni vérifier de voix, ne plus poser de question sur l'audio ; boutons d'écoute, exercices d'écoute et prononciation des examens masqués (les leçons fonctionnent sans son) ; chaque lettre, syllabe, mot et phrase garde son emplacement audio ; chaque son difficile garde une description écrite et son schéma d'articulation. Phase audio (jalon J6) après la fin des cours : Chatterbox Multilingual (`tools/build_audio/`) ou enregistrements humains libres ; aucune récitation |
 | Graphismes | Pixel art type RPG japonais classique (§8.1), packs libres audités ou créations ; référence : les deux maquettes du 22/10/2026 |
 | Affichage | Arabe RTL, polices Amiri / Amiri Quran (OFL ; Amiri Quran pour les mots isolés en écriture du Mushaf) ; translittération Arabica par défaut, simplifiée au choix (règles d'affichage : §6.2) ; clair/sombre ; animations désactivables |
 | Sauvegarde | ZIP versionnée et vérifiée, restauration ou fusion (en place) |
@@ -84,7 +84,7 @@ On ne teste plus leçon par leçon, mais **niveau par niveau** (14 niveaux ; « 
 - Bruitages : sources `tools/build_sfx/sons.json` ; `python3 tools/build_sfx/build_sfx.py` (écrit `assets/sfx/*.wav`), `--verifier` en CI ; tests : `python3 -m unittest discover -s tools/build_sfx`.
 - Monde du jeu : `tools/build_content/world/region*.json` (lieux, personnages), contrôlé par le pipeline de contenu.
 - Leçons : données dans `tools/build_content/lessons/` ; aperçu : `python3 tools/build_content/preview_lessons.py SORTIE.html --etape 1 --jusqua N`.
-- Audio (hors CI, modèle de plusieurs Go) : environnement Python à part (`torch` depuis PyPI, `chatterbox-tts` 0.1.7 en `--no-deps` et ses dépendances, `setuptools<81`, `soundfile`, `ffmpeg`).
+- Audio (**suspendu jusqu'à la phase audio J6** ; hors CI, modèle de plusieurs Go) : environnement Python à part (`torch` depuis PyPI, `chatterbox-tts` 0.1.7 en `--no-deps` et ses dépendances, `setuptools<81`, `soundfile`, `ffmpeg`).
   - `python tools/build_audio/generate.py --lecons DOSSIER [--seulement TEXTE…] [--premiere-graine N] [--brut]` ;
   - `python tools/build_audio/package.py DOSSIER` (MP3 dans `assets/audio/lecons/`, manifeste `tools/build_audio/clips.json`) ;
   - tests : `python -m unittest discover -s tools/build_audio`.

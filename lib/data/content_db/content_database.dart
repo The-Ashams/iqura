@@ -448,5 +448,12 @@ class ContentDatabase {
     return rows.isEmpty ? null : rows.first['file'] as String;
   }
 
+  /// Vrai si [arabic] a son emplacement audio, même sans son pour l'instant
+  /// (audio suspendu jusqu'à la phase audio, jalon J6).
+  bool hasAudioSlot(String arabic) => _db.select(
+    'SELECT 1 FROM audio_clip WHERE text = ?',
+    [arabic],
+  ).isNotEmpty;
+
   void close() => _db.close();
 }

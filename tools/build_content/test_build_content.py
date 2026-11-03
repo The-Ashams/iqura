@@ -243,11 +243,16 @@ class BuildTest(unittest.TestCase):
             for items in groups:
                 for item in items:
                     self.assertIn(lessons.audio_key(item["ar"]), keys, item["ar"])
-        # Chaque enregistrement est livré, signalé comme synthèse et sourcé.
+        # Chaque lettre, syllabe, mot et phrase des leçons, des fiches et des
+        # examens a son emplacement audio. Le son lui-même peut manquer :
+        # l'audio est suspendu jusqu'à la phase audio (jalon J6, 03/11/2026).
+        expected = set(lessons.audio_clips(lessons.load()))
+        self.assertEqual(expected - keys, set())
+        # Un enregistrement livré est signalé comme synthèse et sourcé.
         self.assertEqual(self.q(
-            "SELECT COUNT(*) FROM audio_clip WHERE file IS NULL OR synthetic IS NOT 1 "
-            "OR origin IS NULL"), [(0,)])
-        for (f,) in self.q("SELECT file FROM audio_clip"):
+            "SELECT COUNT(*) FROM audio_clip WHERE file IS NOT NULL AND "
+            "(synthetic IS NOT 1 OR origin IS NULL)"), [(0,)])
+        for (f,) in self.q("SELECT file FROM audio_clip WHERE file IS NOT NULL"):
             self.assertTrue(os.path.exists(os.path.join(lessons.REPO_ROOT, "assets", f)), f)
 
     def test_audio_manifest_is_checked(self):

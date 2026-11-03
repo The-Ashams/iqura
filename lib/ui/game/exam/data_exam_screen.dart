@@ -11,6 +11,7 @@ import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/audio_policy.dart';
 import '../../../core/providers.dart';
 import '../../../engines/audio/audio_service.dart';
 import '../../../features/progress/lesson_progress.dart';
@@ -72,9 +73,11 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
 
   bool get _calm => ref.read(settingsProvider).learningOnly;
 
+  // Son coupé (jalon J6) : pas d'épreuve d'écoute.
+  int get _listeningCount => AudioPolicy.enabled ? _exam.listening.length : 0;
+
   int get _foeMax =>
-      (_exam.reading.length + _exam.listening.length + _exam.gradedReplies) *
-      10;
+      (_exam.reading.length + _listeningCount + _exam.gradedReplies) * 10;
   int get _foeHp => _foeMax - (_reading + _listening + _replies) * 10;
 
   void _restart() {
@@ -138,7 +141,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
       _index = 0;
       switch (_stage) {
         case _Stage.reading:
-          _stage = _Stage.listening;
+          _stage = AudioPolicy.enabled ? _Stage.listening : _Stage.replies;
         case _Stage.listening:
           _stage = _Stage.replies;
         case _Stage.replies:
@@ -150,8 +153,11 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
     });
   }
 
-  bool get _passed =>
-      _exam.passed(reading: _reading, listening: _listening, replies: _replies);
+  bool get _passed => _exam.passed(
+    reading: _reading,
+    listening: AudioPolicy.enabled ? _listening : _exam.listeningMark,
+    replies: _replies,
+  );
 
   void _report() {
     if (_reported) return;
@@ -239,10 +245,11 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
           ),
           const SizedBox(height: 8),
           Text(
-            'Trois épreuves : lire un récit et répondre à '
-            '${_exam.reading.length} questions (${_exam.readingMark} bonnes '
-            'réponses nécessaires) ; écouter ${_exam.listening.length} '
-            'phrases (${_exam.listeningMark} nécessaires) ; répondre à des '
+            '${AudioPolicy.enabled ? 'Trois' : 'Deux'} épreuves : lire un '
+            'récit et répondre à ${_exam.reading.length} questions '
+            '(${_exam.readingMark} bonnes réponses nécessaires) ; '
+            '${AudioPolicy.enabled ? 'écouter ${_exam.listening.length} phrases (${_exam.listeningMark} nécessaires) ; ' : ''}'
+            'répondre à des '
             'personnages : ${_exam.gradedReplies} phrases à remettre en ordre '
             '(${_exam.repliesMark} nécessaires)'
             '${_exam.replies.length > _exam.gradedReplies ? ' et des réponses '
@@ -424,10 +431,11 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
               'Lecture : $_reading / ${_exam.reading.length} '
               '(${_exam.readingMark} nécessaires).',
             ),
-            Text(
-              'Écoute : $_listening / ${_exam.listening.length} '
-              '(${_exam.listeningMark} nécessaires).',
-            ),
+            if (AudioPolicy.enabled)
+              Text(
+                'Écoute : $_listening / ${_exam.listening.length} '
+                '(${_exam.listeningMark} nécessaires).',
+              ),
             Text(
               'Phrases remises en ordre : $_replies / ${_exam.gradedReplies} '
               '(${_exam.repliesMark} nécessaires).',

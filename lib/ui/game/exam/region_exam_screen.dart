@@ -8,6 +8,7 @@ import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/audio_policy.dart';
 import '../../../core/providers.dart';
 import '../../../engines/audio/audio_service.dart';
 import '../../../features/progress/lesson_progress.dart';
@@ -85,8 +86,11 @@ class _RegionExamScreenState extends ConsumerState<RegionExamScreen> {
 
   bool get _calm => ref.read(settingsProvider).learningOnly;
 
+  // Son coupé (jalon J6) : seule la lecture compte.
   int get _foeMax =>
-      (RegionExamRules.readingCount + RegionExamRules.listeningCount) * 10;
+      (RegionExamRules.readingCount +
+          (AudioPolicy.enabled ? RegionExamRules.listeningCount : 0)) *
+      10;
   int get _foeHp => _foeMax - (_reading + _listening) * 10;
 
   void _start() {
@@ -131,7 +135,9 @@ class _RegionExamScreenState extends ConsumerState<RegionExamScreen> {
       switch (_stage) {
         case _Stage.reading:
           _readingClock.stop();
-          _stage = _Stage.listening;
+          // Son coupé (jalon J6) : ni écoute ni prononciation.
+          _stage = AudioPolicy.enabled ? _Stage.listening : _Stage.result;
+          if (!AudioPolicy.enabled) _report();
         case _Stage.listening:
           _stage = _Stage.speaking;
         case _Stage.speaking:
@@ -151,10 +157,9 @@ class _RegionExamScreenState extends ConsumerState<RegionExamScreen> {
   void _report() {
     if (_reported) return;
     _reported = true;
-    final passed = RegionExamRules.passed(
-      reading: _reading,
-      listening: _listening,
-    );
+    final passed = AudioPolicy.enabled
+        ? RegionExamRules.passed(reading: _reading, listening: _listening)
+        : _reading >= RegionExamRules.readingMark;
     ref
         .read(lessonProgressProvider.notifier)
         .recordBoss(
@@ -232,15 +237,23 @@ class _RegionExamScreenState extends ConsumerState<RegionExamScreen> {
             style: TextStyle(fontSize: 20, color: GameColors.accent),
           ),
           const SizedBox(height: 8),
-          Text(
-            'Trois épreuves : lire ${RegionExamRules.readingCount} mots '
-            '(${RegionExamRules.readingMark} bonnes réponses nécessaires), '
-            'reconnaître ${RegionExamRules.listeningCount} mots entendus '
-            '(${RegionExamRules.listeningMark} nécessaires), puis lire '
-            '${RegionExamRules.speakingCount} mots à voix haute et '
-            't\'évaluer toi-même. Le temps de lecture est affiché, sans '
-            'compter pour la réussite.',
-          ),
+          if (!AudioPolicy.enabled)
+            Text(
+              'Lis ${RegionExamRules.readingCount} mots et choisis leur '
+              'lecture (${RegionExamRules.readingMark} bonnes réponses '
+              'nécessaires). Le temps de lecture est affiché, sans compter '
+              'pour la réussite.',
+            )
+          else
+            Text(
+              'Trois épreuves : lire ${RegionExamRules.readingCount} mots '
+              '(${RegionExamRules.readingMark} bonnes réponses nécessaires), '
+              'reconnaître ${RegionExamRules.listeningCount} mots entendus '
+              '(${RegionExamRules.listeningMark} nécessaires), puis lire '
+              '${RegionExamRules.speakingCount} mots à voix haute et '
+              't\'évaluer toi-même. Le temps de lecture est affiché, sans '
+              'compter pour la réussite.',
+            ),
           const SizedBox(height: 10),
           PixelCommand(label: 'Commencer', onPressed: _start),
         ],
@@ -344,10 +357,9 @@ class _RegionExamScreenState extends ConsumerState<RegionExamScreen> {
   }
 
   List<Widget> _result() {
-    final passed = RegionExamRules.passed(
-      reading: _reading,
-      listening: _listening,
-    );
+    final passed = AudioPolicy.enabled
+        ? RegionExamRules.passed(reading: _reading, listening: _listening)
+        : _reading >= RegionExamRules.readingMark;
     return [
       PixelWindow(
         child: Column(
@@ -372,15 +384,17 @@ class _RegionExamScreenState extends ConsumerState<RegionExamScreen> {
               'Temps de lecture : ${_time(_readingClock.elapsed)} (repère : '
               'environ 1 minute ; il ne compte pas pour la réussite).',
             ),
-            Text(
-              'Écoute : $_listening / ${RegionExamRules.listeningCount} '
-              '(${RegionExamRules.listeningMark} nécessaires).',
-            ),
-            Text(
-              'Prononciation : tu t\'es jugé à l\'aise sur $_speakingOk mot(s) '
-              'sur ${RegionExamRules.speakingCount} (auto-évaluation, non '
-              'notée).',
-            ),
+            if (AudioPolicy.enabled) ...[
+              Text(
+                'Écoute : $_listening / ${RegionExamRules.listeningCount} '
+                '(${RegionExamRules.listeningMark} nécessaires).',
+              ),
+              Text(
+                'Prononciation : tu t\'es jugé à l\'aise sur $_speakingOk '
+                'mot(s) sur ${RegionExamRules.speakingCount} '
+                '(auto-évaluation, non notée).',
+              ),
+            ],
             if (passed) ...[
               const SizedBox(height: 6),
               Text(

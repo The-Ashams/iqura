@@ -3,6 +3,8 @@
 /// dictionnaire.
 library;
 
+import '../../../core/audio_policy.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -266,14 +268,15 @@ class GradedText extends ConsumerWidget {
                 textDirection: TextDirection.rtl,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  IconButton(
-                    tooltip: 'Écouter la phrase (synthèse)',
-                    icon: const Icon(Icons.volume_up, size: 20),
-                    color: const Color(0xFF4A3F33),
-                    onPressed: db.audioFile(s) == null
-                        ? null
-                        : () => playLessonAudio(ref, s),
-                  ),
+                  if (AudioPolicy.enabled)
+                    IconButton(
+                      tooltip: 'Écouter la phrase (synthèse)',
+                      icon: const Icon(Icons.volume_up, size: 20),
+                      color: const Color(0xFF4A3F33),
+                      onPressed: db.audioFile(s) == null
+                          ? null
+                          : () => playLessonAudio(ref, s),
+                    ),
                   Expanded(
                     child: Wrap(
                       textDirection: TextDirection.rtl,
