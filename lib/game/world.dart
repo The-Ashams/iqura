@@ -87,6 +87,7 @@ class LetterCard {
     required this.joinsLeft,
     required this.zone,
     required this.pronunciation,
+    this.zoneId = '',
   });
 
   final String letter;
@@ -95,6 +96,9 @@ class LetterCard {
   final bool joinsLeft;
   final String zone;
   final String pronunciation;
+
+  /// Identifiant de la zone d'articulation (schéma d'articulation).
+  final String zoneId;
 }
 
 /// Syllabe ou mot vocalisé d'une leçon, avec sa translittération.

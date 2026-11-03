@@ -3,6 +3,8 @@
 /// chaque écran, et la leçon suivante s'ouvre quand le mini-boss est réussi.
 library;
 
+import '../articulation_diagram.dart';
+
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -452,6 +454,11 @@ class _LetterCardView extends ConsumerWidget {
           ),
           const SizedBox(height: 4),
           Text(card.pronunciation, style: const TextStyle(height: 1.4)),
+          const SizedBox(height: 10),
+          ArticulationDiagram(
+            zoneId: card.zoneId,
+            emphatic: emphaticLetters.contains(card.letter),
+          ),
         ],
       ),
     );

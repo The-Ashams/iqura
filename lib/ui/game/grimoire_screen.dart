@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+
+import 'articulation_diagram.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/providers.dart';
@@ -205,6 +208,11 @@ class LetterSheet extends StatelessWidget {
                     Text(
                       letter.pronunciation,
                       style: const TextStyle(height: 1.4),
+                    ),
+                    const SizedBox(height: 10),
+                    ArticulationDiagram(
+                      zoneId: letter.zoneId,
+                      emphatic: emphaticLetters.contains(letter.letter),
                     ),
                   ],
                 ),

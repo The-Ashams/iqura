@@ -262,6 +262,7 @@ class ContentDatabase {
         joinsLeft: r['joins_left'] == 1,
         zone: r['zone'] as String,
         pronunciation: r['pronunciation'] as String,
+        zoneId: r['zone_id'] as String,
       ),
   ];
 

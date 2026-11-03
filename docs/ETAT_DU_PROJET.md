@@ -1,6 +1,6 @@
 # État du projet IQURA
 
-Mis à jour le 30 octobre 2026. **À lire en début de session, à mettre à jour à chaque étape importante et avant la fin d'une session.**
+Mis à jour le 3 novembre 2026. **À lire en début de session, à mettre à jour à chaque étape importante et avant la fin d'une session.**
 Référence : `docs/CAHIER_DES_CHARGES.md` (**v3 du 22 octobre 2026, avenants n° 1 et n° 2 du 24/10/2026 intégrés**, référence unique). Décisions prises seul, à revoir : `docs/DECISIONS_A_REVOIR.md`. Règles : `CLAUDE.md`. Anciennes versions : `docs/archive/`.
 
 Branche de travail : `claude/laughing-ramanujan-axcixk` (repartie de `main` après la fusion de la pull request n° 3).
@@ -147,6 +147,16 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Relectures | `docs/relectures/2026-10-26-elementaire-3-lecons-2.21-a-2.25.md`, `…-2.26-a-2.30.md` (1er passage) et `2026-10-27-elementaire-3-passages-suivants.md` : 3 passages, verdicts « Validé » ou « Validé avec doutes » pour les 10 leçons, « Validé avec doutes » pour l'examen ; doutes tranchés par le conseiller (`decisions-elementaire-3.md`) |
 | Audio | Sons de synthèse des leçons 2.21 à 2.30 et de l'examen (353) |
 
+## 1 decies. Audio suspendu jusqu'à la fin des cours (décision de l'utilisateur, 03/11/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Règle | Plus aucune voix générée ni vérifiée, aucune question sur l'audio ; jalon J6 « phase audio » après la fin des cours (cahier §13) |
+| Application | Interrupteur `lib/core/audio_policy.dart` (`AudioPolicy.enabled = false`) : aucun bouton d'écoute ni son de leçon ; une question d'écoute devient une question de lecture (lecture écrite → écriture arabe) ; « lire » propose des lectures écrites au lieu de sons ; « reconstruire » montre la lecture écrite du mot ; « répéter à voix haute » masqué ; examens sans écoute ni prononciation (région 1 : 20 mots à lire, 18 justes ; région 2 : récit et 5 phrases à remettre en ordre) |
+| Données | Chaque lettre, syllabe, mot et phrase garde son emplacement audio (`audio_clip`, fichier facultatif) ; les 1 082 sons déjà faits restent dans le dépôt pour la phase audio ; tests : emplacement exigé, plus le fichier |
+| Sons difficiles | Description écrite sur chaque fiche de lettre (ع reformulée sans renvoi à l'écoute) et schéma d'articulation (coupe de profil, point d'articulation, flèche pour les emphatiques) : `lib/ui/game/articulation_diagram.dart`, sur la fiche du Grimoire et l'écran « lettre » des leçons |
+| Tests | Lecteur de leçons et examens testés son coupé ; les tests du son (phase audio) gardés, avec le son rallumé |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -203,7 +213,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 7. Fait (24/10/2026) : avenants n° 1 et n° 2 appliqués (§1 sexies) ; salles de lecture relues par l'agent relecteur : verdict « Validé avec doutes » au 2e passage, 5 doutes tranchés par le conseiller (`docs/relectures/2026-10-24-salles-de-lecture.md`, `decisions-debutant-3.md`).
 8. Élémentaire 1 (§1 septies) et Élémentaire 2 (§1 octies) construits le 25/10/2026, relus, sons générés : à tester par l'utilisateur.
 9. Élémentaire 3 (§1 nonies) construit et relu : toute la région 2 est prête à tester.
-10. Ensuite : région 3 (Intermédiaire 1, leçons 3.1 à 3.10), après les retours de l'utilisateur sur la région 2.
+10. Audio suspendu (§1 decies, 03/11/2026).
+11. En cours : région 3, Intermédiaire 1 (leçons 3.1 à 3.10), sans audio.
 
 ## 5. Problèmes connus
 
