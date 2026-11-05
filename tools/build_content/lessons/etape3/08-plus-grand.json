@@ -13,7 +13,7 @@
   ],
   "apercu": [
     "هِلَالٌ",
-    "الْخَيْلِ"
+    "الْكُبْرَى"
   ],
   "schemes": [
     "أَفْعَل",
@@ -99,11 +99,11 @@
       ],
       "question": {
         "type": "qcm",
-        "consigne": "Qui est plus rapide que le chameau ?",
+        "consigne": "D'après Bāsim, qui est plus rapide que le chameau ?",
         "choix": [
           "le guépard",
           "l'âne",
-          "le faucon"
+          "Salmā"
         ],
         "reponse": 0,
         "explication": "الْفَهْدُ أَسْرَعُ مِنَ الْجَمَلِ."
@@ -137,7 +137,7 @@
     {
       "type": "regle",
       "titre": "Plus… que",
-      "texte": "Pour comparer, on dit أَفْعَلُ مِنْ, « plus que » : الْجَمَلُ أَكْبَرُ مِنَ الْحِمَارِ. أَفْعَلُ ne change ni de genre ni de nombre : الْبِنْتُ أَصْغَرُ مِنَ الْوَلَدِ.",
+      "texte": "Pour comparer, on dit أَفْعَلُ مِنْ, « plus que » : الْجَمَلُ أَكْبَرُ مِنَ الْحِمَارِ. Avec مِنْ, أَفْعَلُ ne change ni de genre ni de nombre : الْبِنْتُ أَصْغَرُ مِنَ الْوَلَدِ.",
       "exemples": [
         "أَكْبَرُ",
         "أَصْغَرُ",
@@ -153,13 +153,13 @@
           "أَصْغَرَ"
         ],
         "reponse": 0,
-        "explication": "أَفْعَلُ ne prend pas de ة : أَصْغَرُ."
+        "explication": "أَفْعَلُ ne prend pas de ة ; attribut au nominatif, en -u : أَصْغَرُ."
       }
     },
     {
       "type": "regle",
       "titre": "Le plus…",
-      "texte": "Pour dire « le plus », on met أَفْعَلُ devant un nom indéfini en -i : أَكْبَرُ بَيْتٍ « la plus grande maison ». أَفْعَلُ ne prend jamais de tanwīn.",
+      "texte": "Pour dire « le plus », on met أَفْعَلُ devant un nom indéfini en -i : أَكْبَرُ بَيْتٍ « la plus grande maison ». أَفْعَلُ ne prend jamais de tanwīn ; avec l'article, il peut changer (الْكُبْرَى, plus tard).",
       "exemples": [
         "أَكْبَرُ بَيْتٍ",
         "أَسْرَعُ جَمَلٍ"
@@ -168,7 +168,7 @@
         "type": "qcm",
         "consigne": "Que veut dire « أَطْوَلُ جِسْرٍ » ?",
         "choix": [
-          "le plus long pont",
+          "le pont le plus long",
           "un pont plus long",
           "le pont est long"
         ],
@@ -271,7 +271,7 @@
             "طَوِيلٌ"
           ],
           "reponse": 0,
-          "explication": "أَفْعَلُ ne change pas au féminin : أَطْوَلُ."
+          "explication": "Avec مِنْ, أَفْعَلُ ne change pas au féminin : أَطْوَلُ."
         },
         {
           "type": "qcm",
@@ -290,7 +290,7 @@
           "choix": [
             "le contexte donne le sens",
             "أَفْتَحُ est un comparatif",
-            "أَكْبَرُ est un verbe"
+            "أَكْبَرُ est toujours un verbe"
           ],
           "reponse": 0,
           "explication": "Même moule, sens différents : c'est la phrase qui tranche."
@@ -321,11 +321,11 @@
         },
         {
           "type": "qcm",
-          "consigne": "Qui est le plus jeune ?",
+          "consigne": "Qui est plus jeune : Salmā ou Bāsim ?",
           "choix": [
             "Salmā",
             "Bāsim",
-            "Hilāl"
+            "on ne sait pas"
           ],
           "reponse": 0,
           "explication": "سَلْمَى أَصْغَرُ مِنْ بَاسِمٍ."
@@ -374,7 +374,7 @@
             "أَبْعَدَ"
           ],
           "reponse": 0,
-          "explication": "Comparatif : أَبْعَدُ مِنْ…"
+          "explication": "Comparatif : أَبْعَدُ مِنْ… (بَعِيدٌ مِنَ النَّهْرِ voudrait dire « loin de la rivière »)."
         }
       ]
     },
@@ -431,7 +431,7 @@
         },
         {
           "type": "qcm",
-          "consigne": "أَفْعَلُ au féminin…",
+          "consigne": "Dans « الْبِنْتُ أَصْغَرُ مِنَ الْوَلَدِ », أَفْعَلُ au féminin…",
           "choix": [
             "ne change pas",
             "prend ة",
@@ -473,7 +473,7 @@
             "سَهْلًا"
           ],
           "reponse": 0,
-          "explication": "Attribut en -un : سَهْلٌ."
+          "explication": "Attribut en -un : سَهْلٌ (ici, الْيَوْمِ est le nom « le jour », en iḍāfa)."
         },
         {
           "type": "completer",

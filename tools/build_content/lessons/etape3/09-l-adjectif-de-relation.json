@@ -13,7 +13,8 @@
   ],
   "apercu": [
     "هِلَالٌ",
-    "مِصْرُ"
+    "مِصْرُ",
+    "الْهِنْدُ"
   ],
   "schemes": [
     "أَفْعَل",
@@ -30,7 +31,7 @@
         },
         {
           "qui": "hilal",
-          "texte": "Une petite fin, ـِيٌّ, transforme un nom de lieu en adjectif : la nisba."
+          "texte": "Une petite fin, ـِيٌّ, transforme un nom (de lieu, de peuple…) en adjectif : la nisba."
         }
       ],
       "objectif": "Former un adjectif de relation."
@@ -134,7 +135,7 @@
     {
       "type": "regle",
       "titre": "La nisba",
-      "texte": "Pour dire d'où vient une personne ou une chose, on ajoute ـِيٌّ, au féminin ـِيَّةٌ, après avoir enlevé l'article et ة : جَبَلٌ → جَبَلِيٌّ, مِصْرُ → مِصْرِيٌّ. L'adjectif suit le nom et s'accorde avec lui.",
+      "texte": "Pour dire d'où vient une personne ou une chose, on ajoute ـِيٌّ, au féminin ـِيَّةٌ, après avoir enlevé l'article, ة et la fin : جَبَلٌ → جَبَلِيٌّ, الْهِنْدُ → هِنْدِيٌّ. L'adjectif s'accorde, épithète ou attribut : سَلْمَى دِمَشْقِيَّةٌ.",
       "exemples": [
         "جَبَلِيٌّ",
         "مِصْرِيٌّ",
@@ -150,7 +151,7 @@
           "دِمَشْقِيَّةً"
         ],
         "reponse": 0,
-        "explication": "Au féminin : ـِيَّةٌ."
+        "explication": "Au féminin et au nominatif : ـِيَّةٌ."
       }
     },
     {
@@ -233,7 +234,7 @@
             "بَغْدَادِيًّا"
           ],
           "reponse": 0,
-          "explication": "Masculin : ـِيٌّ."
+          "explication": "Masculin, au nominatif : ـِيٌّ."
         },
         {
           "type": "completer",
@@ -288,7 +289,7 @@
       "titre": "Le relais",
       "texte": "Le soir, au relais, les voyageurs se présentent. Lis ; touche un mot pour voir son sens.",
       "phrases": [
-        "فِي الْمَجْلِسِ تُجَّارٌ كَثِيرُونَ.",
+        "فِي الْمَجْلِسِ تُجَّارٌ مِنَ الْمَدِينَةِ.",
         "هَٰذَا تَاجِرٌ دِمَشْقِيٌّ، وَهَٰذَا تَاجِرٌ فَارِسِيٌّ.",
         "قَالَ الرَّحَّالُ: « اللُّغَةُ الْعَرَبِيَّةُ جَمِيلَةٌ. »",
         "وَعَلَى الْجِدَارِ سَيْفٌ هِنْدِيٌّ قَدِيمٌ."
@@ -327,7 +328,7 @@
           "choix_ar": [
             "هُوَ تَاجِرٌ مِصْرِيٌّ.",
             "هُوَ تَاجِرٌ مِصْرِيَّةٌ.",
-            "هُوَ مِصْرِيٌّ تَاجِرٌ."
+            "هُوَ تَاجِرٌ الْمِصْرِيُّ."
           ],
           "reponse": 0,
           "explication": "« C'est un marchand égyptien. » se dit هُوَ تَاجِرٌ مِصْرِيٌّ."
@@ -469,7 +470,7 @@
             "دِمَشْقِيًّا"
           ],
           "reponse": 0,
-          "explication": "Féminin : ـِيَّةٌ."
+          "explication": "Féminin, au nominatif : ـِيَّةٌ."
         },
         {
           "type": "completer",

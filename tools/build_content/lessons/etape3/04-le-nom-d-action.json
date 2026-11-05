@@ -16,8 +16,7 @@
     "ذَهَابٌ",
     "شُرْبٌ",
     "طَلَبٌ",
-    "مَعْرِفَةٌ",
-    "قَبْلَ"
+    "مَعْرِفَةٌ"
   ],
   "schemes": [
     "فِعَالَة",
@@ -93,7 +92,7 @@
         {
           "qui": "hilal",
           "ar": "خُرُوجُ الْقَافِلَةِ فِي الصَّبَاحِ.",
-          "fr": "Le départ de la caravane est le matin."
+          "fr": "Le départ de la caravane a lieu le matin."
         },
         {
           "qui": "basim",
@@ -146,7 +145,7 @@
     {
       "type": "regle",
       "titre": "Le nom d'action",
-      "texte": "Le nom d'action nomme l'action elle-même : الْكِتَابَةُ « l'écriture, le fait d'écrire ». Pour les verbes simples, aucune règle ne permet de le prévoir : on l'apprend avec le verbe.",
+      "texte": "Le nom d'action nomme l'action elle-même : الْكِتَابَةُ « l'écriture, le fait d'écrire ». Pour les verbes que tu connais, aucune règle ne permet de le prévoir : on l'apprend avec le verbe.",
       "exemples": [
         "كِتَابَةٌ",
         "خُرُوجٌ",
@@ -283,7 +282,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Le départ de la caravane est le matin. »",
+          "consigne": "Complète : « Le départ de la caravane a lieu le matin. »",
           "ar": "… الْقَافِلَةِ فِي الصَّبَاحِ.",
           "choix_ar": [
             "خُرُوجُ",
@@ -357,7 +356,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris : « Le départ de la caravane est le matin. »",
+          "consigne": "Écris : « Le départ de la caravane a lieu le matin. »",
           "tuiles": [
             "الصَّبَاحِ",
             "خُرُوجُ",
@@ -486,7 +485,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « On mémorise les mots le soir. »",
+          "consigne": "Complète : « La mémorisation des mots, c'est le soir. »",
           "ar": "… الْكَلِمَاتِ فِي الْمَسَاءِ.",
           "choix_ar": [
             "حِفْظُ",

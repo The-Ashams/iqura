@@ -136,7 +136,7 @@
     {
       "type": "regle",
       "titre": "Le moule",
-      "texte": "Le moule garde les voyelles et les lettres ajoutées ; on remplace les trois lettres de la racine par ف, ع, ل : كَتَبَ → فَعَلَ, كِتَابٌ → فِعَال. Des mots de racines différentes peuvent avoir le même moule.",
+      "texte": "Le moule garde les voyelles et les lettres ajoutées ; on remplace les trois lettres de la racine par ف, ع, ل : كَتَبَ → فَعَلَ, كِتَاب → فِعَال. Des mots de racines différentes peuvent avoir le même moule.",
       "exemples": [
         "كَتَبَ",
         "فَتَحَ",
@@ -173,6 +173,27 @@
         ],
         "reponse": 0,
         "explication": "جَ بَ لٌ : deux fatḥa, puis la fin -un, qui ne compte pas : فَعَل."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "D'autres moules",
+      "texte": "Il existe bien d'autres moules : فَعِلَ, avec i, pour شَرِبَ ou سَمِعَ. Pour une racine de quatre lettres, on ajoute un second ل : دِرْهَم → فِعْلَل.",
+      "exemples": [
+        "شَرِبَ",
+        "سَمِعَ",
+        "دِرْهَمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le moule de شَرِبَ ?",
+        "choix_ar": [
+          "فَعِلَ",
+          "فَعَلَ",
+          "فِعَال"
+        ],
+        "reponse": 0,
+        "explication": "شَ رِ بَ : un i au milieu, فَعِلَ."
       }
     },
     {
@@ -368,7 +389,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Hilāl a frappé la porte. »",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Hilāl a frappé à la porte. »",
           "tuiles": [
             "الْبَابَ",
             "طَرَقَ",

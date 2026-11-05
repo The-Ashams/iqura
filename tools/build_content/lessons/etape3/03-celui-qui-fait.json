@@ -159,7 +159,7 @@
     {
       "type": "regle",
       "titre": "Féminin, et verbes sans complément",
-      "texte": "Au féminin, on ajoute ة : مَكْتُوبَةٌ, حَامِلَةٌ. Un verbe sans complément, comme جَلَسَ ou خَرَجَ, n'a que فَاعِل : جَالِسٌ, خَارِجٌ.",
+      "texte": "Au féminin, on ajoute ة : مَكْتُوبَةٌ, حَامِلَةٌ. Un verbe sans complément, comme جَلَسَ ou خَرَجَ, n'a pas de مَفْعُول employé seul : جَالِسٌ, خَارِجٌ.",
       "exemples": [
         "مَكْتُوبَةٌ",
         "جَالِسٌ",
@@ -284,18 +284,18 @@
             "رَكِبَ الْجَمَلَ"
           ],
           "reponse": 0,
-          "explication": "Après un participe, on emploie l'iḍāfa : رَاكِبُ الْجَمَلِ."
+          "explication": "Ici, on emploie l'iḍāfa : رَاكِبُ الْجَمَلِ (l'autre construction viendra plus tard)."
         },
         {
           "type": "qcm",
           "consigne": "Le verbe جَلَسَ a-t-il un مَفْعُول ?",
           "choix": [
-            "non : il n'a pas de complément",
+            "non, pas employé seul : il n'a pas de complément",
             "oui, au masculin",
             "oui, au féminin"
           ],
           "reponse": 0,
-          "explication": "Un verbe sans complément n'a que فَاعِل : جَالِسٌ."
+          "explication": "Un verbe sans complément n'a pas de مَفْعُول employé seul ; on dit جَالِسٌ."
         }
       ]
     },
@@ -343,7 +343,7 @@
           "choix_ar": [
             "الشَّيْخُ جَالِسٌ فِي الْخَيْمَةِ.",
             "الشَّيْخُ جَلَسَ فِي الْخَيْمَةِ جَالِسٌ.",
-            "جَالِسٌ الشَّيْخُ فِي خَيْمَةٍ."
+            "الشَّيْخُ جَالِسَةٌ فِي الْخَيْمَةِ."
           ],
           "reponse": 0,
           "explication": "« Le vieil homme est assis dans la tente. » se dit الشَّيْخُ جَالِسٌ فِي الْخَيْمَةِ."
@@ -526,7 +526,7 @@
     },
     {
       "type": "fin",
-      "acquis": "Tu reconnais فَاعِل (كَاتِبٌ, celui qui écrit) et مَفْعُول (مَكْتُوبٌ, ce qui est écrit).",
+      "acquis": "Tu reconnais فَاعِل (كَاتِبٌ, celui qui écrit) et مَفْعُول (مَكْتُوبٌ, ce qui est écrit). Attention : مُسَافِرٌ et مُعَلِّمٌ ont un autre moule, vu plus tard.",
       "suite": "Prochaine leçon : le nom de l'action elle-même."
     }
   ]

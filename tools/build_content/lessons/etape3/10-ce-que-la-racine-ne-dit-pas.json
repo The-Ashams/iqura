@@ -107,7 +107,7 @@
       ],
       "question": {
         "type": "qcm",
-        "consigne": "Que montrent ces phrases de Hilāl ?",
+        "consigne": "Que montrent ces phrases ?",
         "choix": [
           "des mots de même racine aux sens éloignés",
           "des pluriels",
@@ -143,7 +143,7 @@
     {
       "type": "regle",
       "titre": "Les relations de sens",
-      "texte": "Une même racine donne des mots proches (كَتَبَ → كَاتِبٌ), spécialisés (طَالِبٌ « étudiant », de « chercher ») ou éloignés (جَمَلٌ « chameau », جَمِيلٌ « beau »). Vérifie toujours le sens dans le dictionnaire.",
+      "texte": "Une même racine donne des mots proches (كَتَبَ → كَاتِبٌ), intensifs (حَامِلٌ → حَمَّالٌ), spécialisés (طَالِبٌ, de « chercher »), figurés (طَرِيقٌ → طَرِيقَةٌ) ou éloignés (جَمَلٌ / جَمِيلٌ). Vérifie toujours le sens dans le dictionnaire.",
       "exemples": [
         "كَاتِبٌ",
         "طَالِبٌ",
@@ -203,7 +203,7 @@
           "ar": "طَرِيقَةٌ",
           "choix": [
             "manière, méthode",
-            "chemin",
+            "histoire",
             "marteau"
           ],
           "reponse": 0,
@@ -226,7 +226,7 @@
           "choix_ar": [
             "الْفَتْحَةُ",
             "الْمِفْتَاحُ",
-            "الْفَتْحُ"
+            "الْمَفْتُوحُ"
           ],
           "reponse": 0,
           "explication": "« la fatḥa » se dit الْفَتْحَةُ."
@@ -251,7 +251,7 @@
             "تَمْرَةٌ"
           ],
           "reponse": 0,
-          "explication": "تَمْرٌ et تَمْرَةٌ : ت م ر ; ثَمَرَةٌ : ث م ر. Les lettres ت et ث sont différentes."
+          "explication": "تَمْرٌ et تَمْرَةٌ (une datte) : ت م ر ; ثَمَرَةٌ : ث م ر. Les lettres ت et ث sont différentes."
         },
         {
           "type": "qcm",
@@ -280,7 +280,7 @@
           "consigne": "Comment dit-on « la méthode » ?",
           "choix_ar": [
             "الطَّرِيقَةُ",
-            "الطَّرِيقُ",
+            "الْقِصَّةُ",
             "الْمِطْرَقَةُ"
           ],
           "reponse": 0,
@@ -333,7 +333,7 @@
           "consigne": "Où est le couteau ?",
           "choix": [
             "dans la cuisine",
-            "dans le palais",
+            "dans la rivière",
             "sur le mur"
           ],
           "reponse": 0,
@@ -386,7 +386,7 @@
           "ar": "هَٰذِهِ … هِلَالٍ.",
           "choix_ar": [
             "طَرِيقَةُ",
-            "طَرِيقُ",
+            "مِطْرَقَةُ",
             "طَرِيقَةٌ"
           ],
           "reponse": 0,
@@ -429,7 +429,7 @@
           "choix": [
             "fatḥa (voyelle a)",
             "clé",
-            "ouverture du marché"
+            "porte"
           ],
           "reponse": 0,
           "explication": "فَتْحَةٌ veut dire « fatḥa (voyelle a) »."
@@ -440,7 +440,7 @@
           "choix_ar": [
             "النَّهَارُ",
             "النَّهْرُ",
-            "الْيَوْمَ"
+            "الصَّيْفُ"
           ],
           "reponse": 0,
           "explication": "« le jour (la clarté) » se dit النَّهَارُ."

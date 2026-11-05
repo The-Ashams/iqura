@@ -250,6 +250,7 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
 
     lesson_data = data.get("lessons") or lessons.load()
     lessons.validate(lesson_data)
+    lessons.validate_forges(lesson_data)
     lesson_counts = lessons.write(con, lesson_data)
     # Vocabulaire (avenant n° 2) : fiches de mots, liées au Corpus.
     words = lesson_data.words or []

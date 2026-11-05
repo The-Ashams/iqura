@@ -201,6 +201,42 @@ def validate(data: LessonData) -> None:
                 raise LessonError(str(e)) from None
 
 
+FORGE = re.compile(r"Forge : racine (.+?) dans le moule (\S+?)\.")
+
+
+def validate_forges(data: LessonData) -> None:
+    """La Forge ne crée jamais un mot (plan d'Intermédiaire 1, B4) : la bonne
+    réponse est une fiche dont le schème (ou celui du pluriel) est vérifié et
+    égal au moule demandé, et dont la racine est celle de la consigne."""
+    import sqlite3  # noqa: F401  (racines lues dans les fiches)
+    by_form: dict[str, list[tuple[dict, str]]] = {}
+    for w in data.words or []:
+        if w.get("scheme"):
+            by_form.setdefault(vocab.strip_case_ending(w["ar"]), []).append((w, w["scheme"]))
+        if w.get("scheme_pluriel") and w.get("pluriel"):
+            by_form.setdefault(vocab.strip_case_ending(w["pluriel"]), []).append(
+                (w, w["scheme_pluriel"]))
+
+    def walk(o, where):
+        if isinstance(o, dict):
+            m = FORGE.match(o.get("consigne", "")) if o.get("type") == "completer" else None
+            if m:
+                answer = vocab.strip_case_ending(o["choix_ar"][o["reponse"]])
+                scheme = m.group(2)
+                if not any(sc == scheme for _, sc in by_form.get(answer, [])):
+                    raise LessonError(
+                        f"{where} : forge {m.group(1)} + {scheme} → {answer} : "
+                        "aucune fiche n'a ce mot avec ce schème vérifié")
+            for v in o.values():
+                walk(v, where)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v, where)
+
+    for lesson in data.lessons:
+        walk(lesson, lesson["_file"])
+
+
 def inscriptions(data: LessonData) -> dict[str, str]:
     """Inscriptions des salles de lecture (mots isolés), contrôlées sur
     2 mots voisins par le garde-fou coranique."""

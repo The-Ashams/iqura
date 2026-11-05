@@ -3,7 +3,7 @@
   "etape": 3,
   "ordre": 7,
   "format": 3,
-  "titre": "Les pluriels internes",
+  "titre": "Du pluriel au singulier",
   "objectif": "Retrouver le singulier d'un pluriel interne.",
   "statut": "ia_non_verifie",
   "lieu": "pont",
@@ -12,9 +12,7 @@
     "moteur-06"
   ],
   "apercu": [
-    "هِلَالٌ",
-    "الْمَائِدَةِ",
-    "مَدَارِسُ"
+    "هِلَالٌ"
   ],
   "schemes": [
     "فَعَّال",
@@ -172,7 +170,7 @@
     {
       "type": "regle",
       "titre": "Les moules fréquents",
-      "texte": "Moules fréquents : أَفْعَال (أَقْلَامٌ), فِعَال (جِبَالٌ), فُعُول (نُجُومٌ), فُعُل (كُتُبٌ), فُعَّال (تُجَّارٌ). Le pluriel ne se prévoit pas : il s'apprend avec le mot.",
+      "texte": "Moules fréquents : أَفْعَال (أَقْلَامٌ), فِعَال (جِبَالٌ), فُعُول (نُجُومٌ), فُعُل (كُتُبٌ), فُعَّال (تُجَّارٌ). Le pluriel ne se prévoit pas à coup sûr : il s'apprend avec le mot.",
       "exemples": [
         "أَوْلَادٌ",
         "رِجَالٌ",
@@ -224,7 +222,7 @@
           "consigne": "Comment dit-on « les enfants » ?",
           "choix_ar": [
             "الْأَطْفَالُ",
-            "الْأَوْلَادُ",
+            "الرِّجَالُ",
             "الطُّلَّابُ"
           ],
           "reponse": 0,
@@ -372,7 +370,7 @@
           "consigne": "Comment dit-on « Les enfants sont dans le jardin. » ?",
           "choix_ar": [
             "الْأَطْفَالُ فِي الْحَدِيقَةِ.",
-            "الطِّفْلُ فِي الْحَدِيقَةِ.",
+            "الصُّقُورُ فِي الْحَدِيقَةِ.",
             "أَطْفَالٌ الْحَدِيقَةُ."
           ],
           "reponse": 0,
@@ -396,15 +394,15 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Les plats sont sur la table. »",
-          "ar": "… عَلَى الْمَائِدَةِ.",
+          "consigne": "Complète : « Les plats sont dans les paniers. »",
+          "ar": "… فِي السِّلَالِ.",
           "choix_ar": [
             "الصُّحُونُ",
             "الصَّحْنُ",
             "صُحُونًا"
           ],
           "reponse": 0,
-          "explication": "Pluriel de صَحْنٌ : صُحُونٌ, moule فُعُول."
+          "explication": "Pluriel de صَحْنٌ : صُحُونٌ."
         }
       ]
     },
@@ -418,7 +416,7 @@
           "ar": "طِفْلٌ",
           "choix": [
             "petit enfant",
-            "garçon",
+            "vieil homme",
             "étudiant"
           ],
           "reponse": 0,
@@ -484,24 +482,24 @@
           "type": "qcm",
           "consigne": "Le pluriel interne…",
           "choix": [
-            "s'apprend avec le mot",
+            "ne se prévoit pas à coup sûr",
             "se prévoit toujours",
             "finit toujours par -ūna"
           ],
           "reponse": 0,
-          "explication": "Aucune règle ne permet de le prévoir : on l'apprend avec le mot."
+          "explication": "On ne peut pas le prévoir à coup sûr : on l'apprend avec le mot."
         },
         {
           "type": "completer",
-          "consigne": "Forge : racine ص ق ر dans le moule فُعُول. Quel mot obtiens-tu ?",
+          "consigne": "Forge : racine ن ج م dans le moule فُعُول. Quel mot obtiens-tu ?",
           "ar": "…",
           "choix_ar": [
-            "صُقُورٌ",
-            "صَقْرٌ",
+            "نُجُومٌ",
+            "نَجْمٌ",
             "صُخُورٌ"
           ],
           "reponse": 0,
-          "explication": "ص ق ر dans فُعُول : صُقُورٌ."
+          "explication": "ن ج م dans فُعُول : نُجُومٌ, pluriel de نَجْمٌ."
         },
         {
           "type": "completer",
@@ -538,7 +536,7 @@
             "حِمْلٌ"
           ],
           "reponse": 0,
-          "explication": "فَعَّال : le porteur de métier (leçon 3.6).",
+          "explication": "فَعَّال : celui qui exerce un métier (leçon 3.6).",
           "revision": true
         },
         {
@@ -557,7 +555,7 @@
     },
     {
       "type": "fin",
-      "acquis": "Tu retrouves le singulier d'un pluriel interne par sa racine : أَقْلَامٌ → قَلَمٌ, جِبَالٌ → جَبَلٌ, صُقُورٌ → صَقْرٌ.",
+      "acquis": "Tu retrouves le singulier d'un pluriel interne par sa racine : أَقْلَامٌ → قَلَمٌ, جِبَالٌ → جَبَلٌ, نُجُومٌ → نَجْمٌ.",
       "suite": "Prochaine leçon : comparer, « plus grand », « le plus grand »."
     }
   ]

@@ -16,7 +16,9 @@
     "ar": "هَٰذَا رَجُلٌ.",
     "fr": "Ceci est un homme."
    },
-   "theme": "personnes"
+   "theme": "personnes",
+   "scheme": "فَعُل",
+   "scheme_pluriel": "فِعَال"
   },
   {
    "id": "jamal",
@@ -180,7 +182,9 @@
     "ar": "ذَٰلِكَ جَبَلٌ.",
     "fr": "Cela est une montagne."
    },
-   "theme": "nature"
+   "theme": "nature",
+   "scheme": "فَعَل",
+   "scheme_pluriel": "فِعَال"
   },
   {
    "id": "qarya",
@@ -275,7 +279,9 @@
     "ar": "هُوَ تَاجِرٌ.",
     "fr": "Il est marchand."
    },
-   "theme": "travail"
+   "theme": "travail",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال"
   },
   {
    "id": "musafir",
@@ -447,7 +453,8 @@
    "source_sens": "rédigé par IA",
    "genre": "f",
    "lemme": "$amos",
-   "theme": "nature"
+   "theme": "nature",
+   "scheme": "فَعْل"
   },
   {
    "id": "ard",
@@ -533,7 +540,9 @@
     "ar": "هَٰذَا قَلَمٌ.",
     "fr": "Ceci est un calame."
    },
-   "theme": "savoir"
+   "theme": "savoir",
+   "scheme": "فَعَل",
+   "scheme_pluriel": "أَفْعَال"
   },
   {
    "id": "kursi",
@@ -677,7 +686,8 @@
    "exemple": {
     "ar": "الْبَيْتُ كَبِيرٌ.",
     "fr": "La maison est grande."
-   }
+   },
+   "scheme": "فَعِيل"
   },
   {
    "id": "saghir",
@@ -887,7 +897,8 @@
    "formes": [
     "قَصِيرَةٌ"
    ],
-   "racine": "qSr"
+   "racine": "qSr",
+   "scheme": "فَعِيل"
   },
   {
    "id": "harr",
@@ -986,7 +997,9 @@
     "ar": "الْجِدَارُ قَدِيمٌ.",
     "fr": "Le mur est ancien."
    },
-   "theme": "maison"
+   "theme": "maison",
+   "scheme": "فِعَال",
+   "scheme_pluriel": "فُعُل"
   },
   {
    "id": "wisada",
@@ -1038,7 +1051,8 @@
     "ar": "الْخَبَّازُونَ فِي السُّوقِ.",
     "fr": "Les boulangers sont au marché."
    },
-   "theme": "travail"
+   "theme": "travail",
+   "scheme": "فَعَّال"
   },
   {
    "id": "khayyat",
@@ -1075,7 +1089,8 @@
     "ar": "الْحَدَّادُونَ مَشْغُولُونَ.",
     "fr": "Les forgerons sont occupés."
    },
-   "theme": "travail"
+   "theme": "travail",
+   "scheme": "فَعَّال"
   },
   {
    "id": "najjar",
@@ -1499,7 +1514,9 @@
     "ar": "مِفْتَاحُ الْبَيْتِ صَغِيرٌ.",
     "fr": "La clé de la maison est petite."
    },
-   "theme": "maison"
+   "theme": "maison",
+   "scheme": "مِفْعَال",
+   "scheme_pluriel": "مَفَاعِيل"
   },
   {
    "id": "sunduq",
@@ -1700,7 +1717,9 @@
     "ar": "الْكِلَابُ هُنَاكَ.",
     "fr": "Les chiens sont là-bas."
    },
-   "theme": "animaux"
+   "theme": "animaux",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فِعَال"
   },
   {
    "id": "najm",
@@ -1717,7 +1736,9 @@
     "ar": "النُّجُومُ كَثِيرَةٌ.",
     "fr": "Les étoiles sont nombreuses."
    },
-   "theme": "nature"
+   "theme": "nature",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فُعُول"
   },
   {
    "id": "laysa",
@@ -1891,7 +1912,9 @@
     "ar": "الْكِتَابُ قَدِيمٌ.",
     "fr": "Le livre est ancien."
    },
-   "theme": "savoir"
+   "theme": "savoir",
+   "scheme": "فِعَال",
+   "scheme_pluriel": "فُعُل"
   },
   {
    "id": "khubz",
@@ -1940,7 +1963,9 @@
     "ar": "اللَّحْمُ فِي الْخَيْمَةِ.",
     "fr": "La viande est dans la tente."
    },
-   "theme": "nourriture"
+   "theme": "nourriture",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فُعُول"
   },
   {
    "id": "salla",
@@ -2050,7 +2075,8 @@
     "ar": "كَتَبَ سَمِيرٌ فِي الْغُرْفَةِ.",
     "fr": "Samīr a écrit dans la chambre."
    },
-   "theme": "savoir"
+   "theme": "savoir",
+   "scheme": "فَعَلَ"
   },
   {
    "id": "jalasa",
@@ -2067,7 +2093,8 @@
     "ar": "جَلَسَتْ سَلْمَى فِي الْغُرْفَةِ.",
     "fr": "Salmā s'est assise dans la chambre."
    },
-   "theme": "actions"
+   "theme": "actions",
+   "scheme": "فَعَلَ"
   },
   {
    "id": "rajaa",
@@ -2263,7 +2290,8 @@
     "ar": "فَتَحَ الْحَارِسُ الْبَابَ.",
     "fr": "Le gardien a ouvert la porte."
    },
-   "theme": "actions"
+   "theme": "actions",
+   "scheme": "فَعَلَ"
   },
   {
    "id": "hamala",
@@ -2332,7 +2360,9 @@
     "ar": "الْحِمْلُ ثَقِيلٌ.",
     "fr": "La charge est lourde."
    },
-   "theme": "voyage"
+   "theme": "voyage",
+   "scheme": "فِعْل",
+   "scheme_pluriel": "أَفْعَال"
   },
   {
    "id": "haris",
@@ -2349,7 +2379,9 @@
     "ar": "الْحَارِسُ عِنْدَ الْبَابِ.",
     "fr": "Le gardien est à la porte."
    },
-   "theme": "personnes"
+   "theme": "personnes",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال"
   },
   {
    "id": "katib",
@@ -2366,7 +2398,9 @@
     "ar": "سَمِيرٌ كَاتِبٌ.",
     "fr": "Samīr est scribe."
    },
-   "theme": "savoir"
+   "theme": "savoir",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال"
   },
   {
    "id": "taraka",
@@ -2634,7 +2668,9 @@
     "ar": "الطُّلَّابُ يَدْرُسُونَ فِي الصَّبَاحِ.",
     "fr": "Les étudiants étudient le matin."
    },
-   "theme": "personnes"
+   "theme": "personnes",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال"
   },
   {
    "id": "waraqa",
@@ -2957,7 +2993,9 @@
     "ar": "الشَّجَرَةُ كَبِيرَةٌ.",
     "fr": "L'arbre est grand."
    },
-   "theme": "nature"
+   "theme": "nature",
+   "scheme": "فَعَلَة",
+   "scheme_pluriel": "أَفْعَال"
   },
   {
    "id": "thamara",
@@ -3324,8 +3362,8 @@
    "lemme": "xaArij",
    "scheme": "فَاعِل",
    "exemple": {
-    "ar": "الْحَارِسُ خَارِجَ الْبَيْتِ.",
-    "fr": "Le gardien est dehors, hors de la maison."
+    "ar": "الْحَارِسُ خَارِجٌ.",
+    "fr": "Le gardien est dehors."
    },
    "theme": "lieux"
   },
@@ -3465,7 +3503,7 @@
    "scheme": "فُعُول",
    "exemple": {
     "ar": "خُرُوجُ الْقَافِلَةِ فِي الصَّبَاحِ.",
-    "fr": "Le départ de la caravane est le matin."
+    "fr": "Le départ de la caravane a lieu le matin."
    },
    "theme": "actions"
   },
@@ -3482,7 +3520,7 @@
    "scheme": "فُعُول",
    "exemple": {
     "ar": "دُخُولُ السُّوقِ فِي الصَّبَاحِ.",
-    "fr": "On entre au marché le matin."
+    "fr": "L'entrée au marché, c'est le matin."
    },
    "theme": "actions"
   },
@@ -3499,7 +3537,7 @@
    "scheme": "فُعُول",
    "exemple": {
     "ar": "الْجُلُوسُ فِي الْحَدِيقَةِ جَمِيلٌ.",
-    "fr": "S'asseoir dans le jardin est agréable."
+    "fr": "S'asseoir dans le jardin est une belle chose."
    },
    "theme": "actions"
   },
@@ -3515,8 +3553,8 @@
    "lemme": "jamoE",
    "scheme": "فَعْل",
    "exemple": {
-    "ar": "هَٰذَا جَمْعُ كِتَابٍ.",
-    "fr": "Ceci est le pluriel de « livre »."
+    "ar": "كُتُبٌ جَمْعُ كِتَابٍ.",
+    "fr": "كُتُبٌ est le pluriel de كِتَابٌ."
    },
    "theme": "savoir"
   },
@@ -3532,8 +3570,8 @@
    "racine": "fhm",
    "scheme": "فَعْل",
    "exemple": {
-    "ar": "الْفَهْمُ قَبْلَ الْحِفْظِ.",
-    "fr": "Comprendre vient avant mémoriser."
+    "ar": "فَهْمُ الدَّرْسِ جَمِيلٌ.",
+    "fr": "Comprendre la leçon est une belle chose."
    },
    "theme": "savoir"
   },
@@ -3911,15 +3949,15 @@
    "id": "sahn",
    "ar": "صَحْنٌ",
    "translit": "ṣaḥnun",
-   "fr": "plat, assiette",
+   "fr": "plat, écuelle",
    "nature": "nom",
    "lecon": "moteur-07",
    "source_sens": "rédigé par IA",
    "genre": "m",
    "pluriel": "صُحُونٌ",
    "exemple": {
-    "ar": "الصَّحْنُ عَلَى الْمَائِدَةِ.",
-    "fr": "Le plat est sur la table."
+    "ar": "الصَّحْنُ فِي السَّلَّةِ.",
+    "fr": "Le plat est dans le panier."
    },
    "theme": "maison"
   },
@@ -3966,7 +4004,7 @@
    "genre": "m",
    "lemme": ">akobar",
    "scheme": "أَفْعَل",
-   "remarque": "ne change ni de genre ni de nombre ; jamais de tanwīn",
+   "remarque": "avec مِنْ, ne change ni de genre ni de nombre ; jamais de tanwīn",
    "exemple": {
     "ar": "الْجَمَلُ أَكْبَرُ مِنَ الْحِمَارِ.",
     "fr": "Le chameau est plus grand que l'âne."
@@ -4002,8 +4040,8 @@
    "lemme": ">akovar",
    "scheme": "أَفْعَل",
    "exemple": {
-    "ar": "الْجِمَالُ فِي السُّوقِ أَكْثَرُ مِنَ الْخَيْلِ.",
-    "fr": "Au marché, les chameaux sont plus nombreux que les chevaux."
+    "ar": "الْجِمَالُ فِي السُّوقِ أَكْثَرُ مِنَ الْحَمِيرِ.",
+    "fr": "Au marché, les chameaux sont plus nombreux que les ânes."
    },
    "theme": "nombres"
   },
@@ -4091,8 +4129,8 @@
     "صَعْبَةٌ"
    ],
    "exemple": {
-    "ar": "الطَّرِيقُ إِلَى الْجَبَلِ صَعْبٌ.",
-    "fr": "Le chemin vers la montagne est difficile."
+    "ar": "دَرْسُ أَمْسِ صَعْبٌ.",
+    "fr": "La leçon d'hier était difficile."
    },
    "theme": "qualités"
   },
@@ -4331,7 +4369,7 @@
    "id": "sukun",
    "ar": "سُكُونٌ",
    "translit": "sukūnun",
-   "fr": "sukūn (le signe de l'absence de voyelle)",
+   "fr": "sukūn (le signe de l'absence de voyelle) ; calme, immobilité (sens général)",
    "nature": "nom",
    "lecon": "moteur-10",
    "source_sens": "rédigé par IA",

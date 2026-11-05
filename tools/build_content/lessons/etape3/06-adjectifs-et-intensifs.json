@@ -311,12 +311,12 @@
         "الشَّيْخُ مَرِيضٌ الْيَوْمَ، وَهُوَ فِي الْبَيْتِ.",
         "الطَّبَّاخُ فِي الْمَطْبَخِ، وَالْخُبْزُ جَدِيدٌ.",
         "التَّاجِرُ لَيْسَ فَقِيرًا.",
-        "رَحَّالٌ مِنَ الْمَدِينَةِ جَالِسٌ فِي الْمَجْلِسِ."
+        "فِي الْمَجْلِسِ رَحَّالٌ مِنَ الْمَدِينَةِ."
       ],
       "questions": [
         {
           "type": "qcm",
-          "consigne": "Pourquoi le vieil homme est-il à la maison ?",
+          "consigne": "Comment va le vieil homme aujourd'hui ?",
           "choix": [
             "il est malade",
             "il est pauvre",
@@ -327,14 +327,14 @@
         },
         {
           "type": "qcm",
-          "consigne": "Qui est assis dans la salle de réunion ?",
+          "consigne": "Qui est dans la salle de réunion ?",
           "choix": [
             "un grand voyageur de la ville",
             "le cuisinier",
             "le marchand"
           ],
           "reponse": 0,
-          "explication": "رَحَّالٌ مِنَ الْمَدِينَةِ جَالِسٌ فِي الْمَجْلِسِ."
+          "explication": "فِي الْمَجْلِسِ رَحَّالٌ مِنَ الْمَدِينَةِ."
         }
       ]
     },
@@ -354,7 +354,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Le porteur a porté les charges. »",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Le porteur (de métier) a porté les charges. »",
           "tuiles": [
             "الْأَحْمَالَ",
             "حَمَلَ",

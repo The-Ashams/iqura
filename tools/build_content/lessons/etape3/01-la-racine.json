@@ -127,7 +127,7 @@
     {
       "type": "regle",
       "titre": "La racine",
-      "texte": "La plupart des mots arabes ont trois lettres solides, toujours dans le même ordre : leur racine. كَتَبَ, كَاتِبٌ et كِتَابٌ ont la racine ك ت ب.",
+      "texte": "La plupart des mots arabes ont trois lettres solides, toujours dans le même ordre (parfois quatre : دِرْهَمٌ → د ر ه م) : leur racine. كَتَبَ, كَاتِبٌ et كِتَابٌ ont la racine ك ت ب.",
       "exemples": [
         "كَتَبَ",
         "كَاتِبٌ",
@@ -148,7 +148,7 @@
     {
       "type": "regle",
       "titre": "Trouver la racine",
-      "texte": "Enlève l'article, la fin du mot et les voyelles longues ا, و, ي ; parfois aussi un م ou un أ ajouté au début. Il reste la racine : الْمِفْتَاحُ → ف ت ح.",
+      "texte": "Enlève l'article, la fin, les préfixes du verbe (يَـ, تَـ, نَـ, سَـ) et les voyelles longues ا, و, ي ; s'il reste plus de trois lettres, enlève un م ou un أ du début : الْمِفْتَاحُ → ف ت ح.",
       "exemples": [
         "الْمِفْتَاحُ",
         "الْأَحْمَالُ",
@@ -175,7 +175,7 @@
     {
       "type": "regle",
       "titre": "Attention",
-      "texte": "La racine aide à repérer et à retenir les mots d'une famille ; elle ne permet pas de deviner le sens exact de chaque mot. Avec و, ي, ء ou une lettre doublée, la racine se cache parfois (plus tard).",
+      "texte": "La racine aide à repérer et à retenir les mots d'une famille ; elle ne permet pas de deviner le sens exact de chaque mot. Avec و, ي, ء ou une lettre doublée, elle se cache parfois (chapitre C).",
       "exemples": [
         "ذَهَبَ",
         "ذَهَبٌ"
@@ -244,7 +244,7 @@
             "ل",
             "ب"
           ],
-          "explication": "On enlève الـ, le ا long et la fin : ط ل ب, comme طَلَبَ.",
+          "explication": "On enlève الـ, le ا long et la fin ; la shadda double ل, qu'on ne garde qu'une fois : ط ل ب.",
           "ar": "الطُّلَّابُ"
         },
         {
@@ -385,7 +385,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Le froid est grand. »",
+          "consigne": "Complète : « Il fait très froid. »",
           "ar": "… كَثِيرٌ.",
           "choix_ar": [
             "الْبَرْدُ",
@@ -450,14 +450,14 @@
         },
         {
           "type": "qcm",
-          "consigne": "Quelle est la racine de مَكْتُوبٌ ?",
+          "consigne": "Quelle est la racine de الْكُتَّابُ ?",
           "choix_ar": [
             "ك ت ب",
-            "م ك ت",
-            "ت ب و"
+            "ل ك ت",
+            "ت ب ك"
           ],
           "reponse": 0,
-          "explication": "On enlève le م ajouté et le و long : ك ت ب."
+          "explication": "On enlève الـ, le ا long et la fin ; la shadda double ت, qu'on ne garde qu'une fois : ك ت ب."
         },
         {
           "type": "qcm",
@@ -472,14 +472,14 @@
         },
         {
           "type": "qcm",
-          "consigne": "Quelle est la racine de حَامِلٌ ?",
+          "consigne": "Quelle est la racine de يَحْمِلُونَ ?",
           "choix_ar": [
             "ح م ل",
-            "ح ا م",
-            "م ل ح"
+            "ي ح م",
+            "م ل ن"
           ],
           "reponse": 0,
-          "explication": "On enlève le ا long : ح م ل."
+          "explication": "On enlève يَـ … ـُونَ : ح م ل."
         },
         {
           "type": "qcm",
@@ -501,7 +501,7 @@
             "sont toujours au début du mot"
           ],
           "reponse": 0,
-          "explication": "ك ت ب reste ك ت ب dans كِتَابٌ, كَاتِبٌ, مَكْتُوبٌ."
+          "explication": "ك ت ب reste ك ت ب dans كِتَابٌ, كَاتِبٌ, يَكْتُبُونَ."
         },
         {
           "type": "sens",

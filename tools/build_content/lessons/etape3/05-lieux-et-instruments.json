@@ -142,7 +142,7 @@
     {
       "type": "regle",
       "titre": "Le lieu",
-      "texte": "Les moules مَفْعَل, ou مَفْعِل quand l'inaccompli a i, désignent souvent le lieu de l'action : يَجْلِسُ → مَجْلِسٌ, يَدْخُلُ → مَدْخَلٌ. C'est une tendance, pas une règle sûre.",
+      "texte": "Les moules مَفْعَل, ou مَفْعِل quand l'inaccompli a i, désignent souvent le lieu de l'action (يَجْلِسُ → مَجْلِسٌ), parfois avec ة (مَدْرَسَةٌ). C'est une tendance, pas une règle sûre.",
       "exemples": [
         "مَجْلِسٌ",
         "مَدْخَلٌ",
@@ -164,7 +164,7 @@
     {
       "type": "regle",
       "titre": "L'outil",
-      "texte": "Les moules مِفْعَال et مِفْعَلَة désignent souvent l'outil : فَتَحَ → مِفْتَاحٌ, طَرَقَ → مِطْرَقَةٌ. مِيزَانٌ a le même moule, mais sa racine contient و : tu verras plus tard pourquoi elle se cache.",
+      "texte": "Les moules مِفْعَال et مِفْعَلَة désignent souvent l'outil : فَتَحَ → مِفْتَاحٌ, طَرَقَ → مِطْرَقَةٌ. مِيزَانٌ a le même moule, mais sa racine est و ز ن : le و s'est changé en ي ; tu verras pourquoi plus tard.",
       "exemples": [
         "مِفْتَاحٌ",
         "مِطْرَقَةٌ",
@@ -204,7 +204,7 @@
           "ar": "مَزْرَعَةٌ",
           "choix": [
             "ferme, champ",
-            "jardin",
+            "marché",
             "école"
           ],
           "reponse": 0,
@@ -223,14 +223,14 @@
         },
         {
           "type": "traduire",
-          "consigne": "Comment dit-on « la sortie » ?",
+          "consigne": "Comment dit-on « la sortie (le lieu par où l'on sort) » ?",
           "choix_ar": [
             "الْمَخْرَجُ",
             "الْخُرُوجُ",
             "الْمَدْخَلُ"
           ],
           "reponse": 0,
-          "explication": "« la sortie » se dit الْمَخْرَجُ."
+          "explication": "« la sortie (le lieu par où l'on sort) » se dit الْمَخْرَجُ."
         },
         {
           "type": "qcm",
@@ -376,7 +376,7 @@
             "الْجِدَارِ",
             "الْمِصْبَاحُ",
             "عَلَى",
-            "فِي"
+            "تَحْتَ"
           ],
           "solution": [
             "الْمِصْبَاحُ",
