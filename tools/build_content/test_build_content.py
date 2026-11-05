@@ -293,7 +293,8 @@ class BuildTest(unittest.TestCase):
     def test_region_1_places_and_characters(self):
         self.assertEqual(self.q("SELECT name, adversary FROM region ORDER BY number"),
                          [("Le Désert des Lettres", "L'Oubli"),
-                          ("L'Oasis des Fondations", "La Confusion")])
+                          ("L'Oasis des Fondations", "La Confusion"),
+                          ("Les Montagnes du Moteur", "La Précipitation")])
         self.assertEqual(self.q("SELECT COUNT(*) FROM place WHERE region_id = 'r1'"), [(12,)])
         j1a = {r[0] for r in self.q("SELECT id FROM place WHERE in_j1a = 1 AND region_id = 'r1'")}
         self.assertEqual(len(j1a), 12)
