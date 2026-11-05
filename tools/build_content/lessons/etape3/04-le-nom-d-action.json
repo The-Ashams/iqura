@@ -1,0 +1,545 @@
+{
+  "id": "moteur-04",
+  "etape": 3,
+  "ordre": 4,
+  "format": 3,
+  "titre": "Le nom d'action",
+  "objectif": "Reconnaître le nom d'une action (maṣdar).",
+  "statut": "ia_non_verifie",
+  "lieu": "forge",
+  "maitre": "hilal",
+  "prerequis": [
+    "moteur-03"
+  ],
+  "apercu": [
+    "هِلَالٌ",
+    "ذَهَابٌ",
+    "شُرْبٌ",
+    "طَلَبٌ",
+    "مَعْرِفَةٌ",
+    "قَبْلَ"
+  ],
+  "schemes": [
+    "فِعَالَة",
+    "فَاعِلَة",
+    "مَفْعُولَة",
+    "فُعُول",
+    "فَعْل",
+    "فِعْل",
+    "فَاعِل",
+    "مَفْعُول",
+    "فِعَال",
+    "فَعَل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "texte": "Je frappe le fer : c'est une action. Mais comment nommer l'action elle-même, « le fait de frapper » ?"
+        },
+        {
+          "qui": "hilal",
+          "texte": "L'arabe a pour cela le nom d'action : le maṣdar."
+        }
+      ],
+      "objectif": "Dire « l'écriture », « la sortie », « l'étude »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ت ب dans le moule فَاعِل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "كَاتِبٌ",
+            "مَكْتُوبٌ",
+            "كِتَابٌ"
+          ],
+          "reponse": 0,
+          "explication": "فَاعِل : celui qui fait, كَاتِبٌ (leçon 3.3)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La porte est ouverte. »",
+          "ar": "الْبَابُ …",
+          "choix_ar": [
+            "مَفْتُوحٌ",
+            "فَتَحَ",
+            "مِفْتَاحٌ"
+          ],
+          "reponse": 0,
+          "explication": "مَفْعُول : مَفْتُوحٌ (leçon 3.3)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَاكِنٌ",
+          "choix": [
+            "habitant",
+            "assis",
+            "artisan"
+          ],
+          "reponse": 0,
+          "explication": "سَاكِنٌ : « habitant » (leçon 3.3)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "ar": "خُرُوجُ الْقَافِلَةِ فِي الصَّبَاحِ.",
+          "fr": "Le départ de la caravane est le matin."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَالدِّرَاسَةُ؟",
+          "fr": "Et l'étude ?"
+        },
+        {
+          "qui": "hilal",
+          "ar": "الدِّرَاسَةُ فِي الْمَسَاءِ، فِي الْبَيْتِ.",
+          "fr": "L'étude a lieu le soir, à la maison."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quand a lieu l'étude ?",
+        "choix": [
+          "le soir, à la maison",
+          "le matin, au marché",
+          "demain"
+        ],
+        "reponse": 0,
+        "explication": "الدِّرَاسَةُ فِي الْمَسَاءِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "kitaba",
+        "dirasa",
+        "khuruj",
+        "dukhul",
+        "julus",
+        "jam",
+        "fahm",
+        "hifz"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "خُرُوجٌ",
+        "choix": [
+          "sortie, départ",
+          "entrée",
+          "étude"
+        ],
+        "reponse": 0,
+        "explication": "خُرُوجٌ veut dire « sortie, départ »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le nom d'action",
+      "texte": "Le nom d'action nomme l'action elle-même : الْكِتَابَةُ « l'écriture, le fait d'écrire ». Pour les verbes simples, aucune règle ne permet de le prévoir : on l'apprend avec le verbe.",
+      "exemples": [
+        "كِتَابَةٌ",
+        "خُرُوجٌ",
+        "فَهْمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire دُخُولٌ, de دَخَلَ « entrer » ?",
+        "choix": [
+          "le fait d'entrer",
+          "celui qui entre",
+          "la porte"
+        ],
+        "reponse": 0,
+        "explication": "Nom d'action : « l'entrée, le fait d'entrer »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "À reconnaître",
+      "texte": "Les noms d'action ont plusieurs moules : ذَهَابٌ (aller), شُرْبٌ (boire), طَلَبٌ (chercher), مَعْرِفَةٌ (connaître). Attention : دَرْسٌ « leçon » et دِرَاسَةٌ « étude » viennent tous deux de دَرَسَ.",
+      "exemples": [
+        "ذَهَابٌ",
+        "شُرْبٌ",
+        "طَلَبٌ",
+        "مَعْرِفَةٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel mot nomme l'action de « boire » ?",
+        "choix_ar": [
+          "شُرْبٌ",
+          "شَرِبَ",
+          "يَشْرَبُ"
+        ],
+        "reponse": 0,
+        "explication": "شُرْبٌ : « le fait de boire »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "دِرَاسَةٌ",
+          "choix": [
+            "étude",
+            "école",
+            "leçon"
+          ],
+          "reponse": 0,
+          "explication": "دِرَاسَةٌ veut dire « étude »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حِفْظٌ",
+          "choix": [
+            "mémorisation, garde",
+            "compréhension",
+            "écriture"
+          ],
+          "reponse": 0,
+          "explication": "حِفْظٌ veut dire « mémorisation, garde »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « l'écriture » ?",
+          "choix_ar": [
+            "الْكِتَابَةُ",
+            "الْكَاتِبُ",
+            "الْمَكْتُوبُ"
+          ],
+          "reponse": 0,
+          "explication": "« l'écriture » se dit الْكِتَابَةُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la compréhension » ?",
+          "choix_ar": [
+            "الْفَهْمُ",
+            "الْحِفْظُ",
+            "الْجَمْعُ"
+          ],
+          "reponse": 0,
+          "explication": "« la compréhension » se dit الْفَهْمُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de خُرُوجٌ ?",
+          "choix_ar": [
+            "فُعُول",
+            "فَاعِل",
+            "فِعَال"
+          ],
+          "reponse": 0,
+          "explication": "خُ رُو جٌ : فُعُول."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de كِتَابَةٌ ?",
+          "choix_ar": [
+            "فِعَالَة",
+            "فَاعِلَة",
+            "مَفْعُولَة"
+          ],
+          "reponse": 0,
+          "explication": "كِ تَا بَ ةٌ : فِعَالَة."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine د خ ل dans le moule فُعُول. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "دُخُولٌ",
+            "دَخَلَ",
+            "يَدْخُلُ"
+          ],
+          "reponse": 0,
+          "explication": "د خ ل dans فُعُول : دُخُولٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج ل س dans le moule فُعُول. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "جُلُوسٌ",
+            "جَالِسٌ",
+            "جَلَسَ"
+          ],
+          "reponse": 0,
+          "explication": "ج ل س dans فُعُول : جُلُوسٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le départ de la caravane est le matin. »",
+          "ar": "… الْقَافِلَةِ فِي الصَّبَاحِ.",
+          "choix_ar": [
+            "خُرُوجُ",
+            "خَارِجُ",
+            "خَرَجَ"
+          ],
+          "reponse": 0,
+          "explication": "Nom d'action en iḍāfa : خُرُوجُ الْقَافِلَةِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "كَاتِبٌ, مَكْتُوبٌ ou كِتَابَةٌ : lequel nomme l'action ?",
+          "choix_ar": [
+            "كِتَابَةٌ",
+            "كَاتِبٌ",
+            "مَكْتُوبٌ"
+          ],
+          "reponse": 0,
+          "explication": "كَاتِبٌ fait, مَكْتُوبٌ subit, كِتَابَةٌ est l'action."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "L'emploi du temps",
+      "texte": "Hilāl explique la journée des apprentis. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "خُرُوجُ الْقَافِلَةِ فِي الصَّبَاحِ.",
+        "دُخُولُ السُّوقِ فِي الصَّبَاحِ، وَالْخُرُوجُ فِي الْمَسَاءِ.",
+        "فِي الْمَسَاءِ، جَلَسَ الطُّلَّابُ لِلدِّرَاسَةِ.",
+        "قَالَ سَمِيرٌ: « الْكِتَابَةُ جَمِيلَةٌ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quand les étudiants se sont-ils assis pour étudier ?",
+          "choix": [
+            "le soir",
+            "le matin",
+            "à midi"
+          ],
+          "reponse": 0,
+          "explication": "فِي الْمَسَاءِ، جَلَسَ الطُّلَّابُ لِلدِّرَاسَةِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand sort-on du marché ?",
+          "choix": [
+            "le soir",
+            "le matin",
+            "demain"
+          ],
+          "reponse": 0,
+          "explication": "وَالْخُرُوجُ فِي الْمَسَاءِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « L'étude a lieu le soir. » ?",
+          "choix_ar": [
+            "الدِّرَاسَةُ فِي الْمَسَاءِ.",
+            "الدَّرْسُ فِي الصَّبَاحِ.",
+            "دَرَسَ فِي الْمَسَاءِ الدِّرَاسَةُ."
+          ],
+          "reponse": 0,
+          "explication": "« L'étude a lieu le soir. » se dit الدِّرَاسَةُ فِي الْمَسَاءِ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Le départ de la caravane est le matin. »",
+          "tuiles": [
+            "الصَّبَاحِ",
+            "خُرُوجُ",
+            "فِي",
+            "الْقَافِلَةِ",
+            "خَرَجَ"
+          ],
+          "solution": [
+            "خُرُوجُ",
+            "الْقَافِلَةِ",
+            "فِي",
+            "الصَّبَاحِ"
+          ],
+          "explication": "Le nom d'action, la caravane (iḍāfa), puis « le matin »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'écriture est belle. »",
+          "ar": "الْكِتَابَةُ …",
+          "choix_ar": [
+            "جَمِيلَةٌ",
+            "جَمِيلٌ",
+            "جَمِيلَةً"
+          ],
+          "reponse": 0,
+          "explication": "كِتَابَةٌ est féminin : جَمِيلَةٌ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كِتَابَةٌ",
+          "choix": [
+            "écriture",
+            "scribe",
+            "livre"
+          ],
+          "reponse": 0,
+          "explication": "كِتَابَةٌ veut dire « écriture »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جُلُوسٌ",
+          "choix": [
+            "le fait de s'asseoir",
+            "assis",
+            "chaise"
+          ],
+          "reponse": 0,
+          "explication": "جُلُوسٌ veut dire « le fait de s'asseoir »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَهْمٌ",
+          "choix": [
+            "compréhension",
+            "mémorisation",
+            "rassemblement"
+          ],
+          "reponse": 0,
+          "explication": "فَهْمٌ veut dire « compréhension »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « l'entrée (le fait d'entrer) » ?",
+          "choix_ar": [
+            "الدُّخُولُ",
+            "الْخُرُوجُ",
+            "الْبَابُ"
+          ],
+          "reponse": 0,
+          "explication": "« l'entrée (le fait d'entrer) » se dit الدُّخُولُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le nom d'action nomme…",
+          "choix": [
+            "l'action elle-même",
+            "celui qui fait l'action",
+            "le lieu de l'action"
+          ],
+          "reponse": 0,
+          "explication": "الْكِتَابَةُ : le fait d'écrire."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de فَهْمٌ ?",
+          "choix_ar": [
+            "فَعْل",
+            "فُعُول",
+            "فِعَال"
+          ],
+          "reponse": 0,
+          "explication": "فَ هْ مٌ : فَعْل."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine خ ر ج dans le moule فُعُول. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "خُرُوجٌ",
+            "خَارِجٌ",
+            "خَرَجَ"
+          ],
+          "reponse": 0,
+          "explication": "خ ر ج dans فُعُول : خُرُوجٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ت ب dans le moule فِعَالَة. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "كِتَابَةٌ",
+            "كِتَابٌ",
+            "كَاتِبٌ"
+          ],
+          "reponse": 0,
+          "explication": "ك ت ب dans فِعَالَة : كِتَابَةٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « On mémorise les mots le soir. »",
+          "ar": "… الْكَلِمَاتِ فِي الْمَسَاءِ.",
+          "choix_ar": [
+            "حِفْظُ",
+            "حِفْظٌ",
+            "حَفِظَ"
+          ],
+          "reponse": 0,
+          "explication": "Nom d'action en iḍāfa : حِفْظُ الْكَلِمَاتِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ح م ل dans le moule فَاعِل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "حَامِلٌ",
+            "حِمْلٌ",
+            "حَمَلَ"
+          ],
+          "reponse": 0,
+          "explication": "فَاعِل : حَامِلٌ (leçon 3.3).",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de جَبَلٌ ?",
+          "choix_ar": [
+            "فَعَل",
+            "فَعْل",
+            "فِعَال"
+          ],
+          "reponse": 0,
+          "explication": "فَعَل (leçon 3.2).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَفْتُوحٌ",
+          "choix": [
+            "ouvert",
+            "clé",
+            "il a ouvert"
+          ],
+          "reponse": 0,
+          "explication": "مَفْتُوحٌ veut dire « ouvert ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais le nom d'action : كِتَابَةٌ (écrire), خُرُوجٌ (sortir), فَهْمٌ (comprendre). Il s'apprend avec le verbe.",
+      "suite": "À l'Atelier des outils : les moules des lieux et des instruments."
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "id": "moteur-02",
+  "etape": 3,
+  "ordre": 2,
+  "format": 3,
+  "titre": "Le schème",
+  "objectif": "Reconnaître le moule d'un mot.",
+  "statut": "ia_non_verifie",
+  "lieu": "col",
+  "maitre": "hilal",
+  "prerequis": [
+    "moteur-01"
+  ],
+  "apercu": [
+    "هِلَالٌ"
+  ],
+  "schemes": [
+    "فَعَلَ",
+    "فَعِلَ",
+    "فَعَال",
+    "فَاعِل",
+    "فَعْل",
+    "فَعَل",
+    "فِعَال",
+    "فُعْل",
+    "فُعُول",
+    "فِعْلَل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "texte": "À la forge, on verse le métal dans des moules. Les mots aussi ont des moules : on les appelle des schèmes."
+        },
+        {
+          "qui": "hilal",
+          "texte": "Pour écrire un moule, on remplace les trois lettres de la racine par ف, ع et ل."
+        }
+      ],
+      "objectif": "Lire un schème : فَعَلَ, فِعَال…"
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de الْكُتُبُ ?",
+          "choix_ar": [
+            "ك ت ب",
+            "ل ك ت",
+            "ت ب ك"
+          ],
+          "reponse": 0,
+          "explication": "On enlève الـ et la fin : ك ت ب (leçon 3.1)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَخْرَةٌ",
+          "choix": [
+            "rocher",
+            "neige",
+            "cuivre"
+          ],
+          "reponse": 0,
+          "explication": "صَخْرَةٌ : « rocher » (leçon 3.1)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le froid » ?",
+          "choix_ar": [
+            "الْبَرْدُ",
+            "الثَّلْجُ",
+            "الْفَحْمُ"
+          ],
+          "reponse": 0,
+          "explication": "الْبَرْدُ : « le froid » (leçon 3.1)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "ar": "طَرَقَ الْحَدَّادُ الْحَدِيدَ فِي الصَّبَاحِ.",
+          "fr": "Le forgeron a frappé le fer le matin."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَهَٰذَا حَبْلٌ طَوِيلٌ.",
+          "fr": "Et voici une longue corde."
+        },
+        {
+          "qui": "hilal",
+          "ar": "الْحَبْلُ لِلسَّفَرِ.",
+          "fr": "La corde est pour le voyage."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'a fait le forgeron le matin ?",
+        "choix": [
+          "il a frappé le fer",
+          "il a acheté une corde",
+          "il est parti en voyage"
+        ],
+        "reponse": 0,
+        "explication": "طَرَقَ الْحَدَّادُ الْحَدِيدَ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "safar",
+        "habl",
+        "kanz",
+        "bisat",
+        "taraqa"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "كَنْزٌ",
+        "choix": [
+          "trésor",
+          "tapis",
+          "corde"
+        ],
+        "reponse": 0,
+        "explication": "كَنْزٌ veut dire « trésor »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le moule",
+      "texte": "Le moule garde les voyelles et les lettres ajoutées ; on remplace les trois lettres de la racine par ف, ع, ل : كَتَبَ → فَعَلَ, كِتَابٌ → فِعَال. Des mots de racines différentes peuvent avoir le même moule.",
+      "exemples": [
+        "كَتَبَ",
+        "فَتَحَ",
+        "جَلَسَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le moule de فَتَحَ ?",
+        "choix_ar": [
+          "فَعَلَ",
+          "فِعَال",
+          "فَعْل"
+        ],
+        "reponse": 0,
+        "explication": "ف ت ح → ف ع ل, avec les mêmes voyelles : فَعَلَ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La fin du mot",
+      "texte": "La fin du mot (-un, -u, -i, -a) ne fait pas partie du moule : elle change avec le rôle du mot. كَلْبٌ, الْكَلْبُ et كَلْبًا ont tous le moule فَعْل.",
+      "exemples": [
+        "كَلْبٌ",
+        "شَمْسٌ",
+        "حَبْلٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le moule de جَبَلٌ ?",
+        "choix_ar": [
+          "فَعَل",
+          "فَعْل",
+          "فِعَال"
+        ],
+        "reponse": 0,
+        "explication": "جَ بَ لٌ : deux fatḥa, puis la fin -un, qui ne compte pas : فَعَل."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَفَرٌ",
+          "choix": [
+            "voyage",
+            "trésor",
+            "corde"
+          ],
+          "reponse": 0,
+          "explication": "سَفَرٌ veut dire « voyage »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بِسَاطٌ",
+          "choix": [
+            "tapis",
+            "coffre",
+            "chaise"
+          ],
+          "reponse": 0,
+          "explication": "بِسَاطٌ veut dire « tapis »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il a frappé » ?",
+          "choix_ar": [
+            "طَرَقَ",
+            "فَتَحَ",
+            "تَرَكَ"
+          ],
+          "reponse": 0,
+          "explication": "« il a frappé » se dit طَرَقَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de كِتَابٌ ?",
+          "choix_ar": [
+            "فِعَال",
+            "فَعَال",
+            "فَاعِل"
+          ],
+          "reponse": 0,
+          "explication": "كِ تَا بٌ : kasra, puis ā long : فِعَال."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel mot a le moule فِعَال ?",
+          "choix_ar": [
+            "جِدَارٌ",
+            "جَبَلٌ",
+            "كَلْبٌ"
+          ],
+          "reponse": 0,
+          "explication": "جِدَارٌ : جِ دَا رٌ, comme كِتَابٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel mot a le moule فَعْل ?",
+          "choix_ar": [
+            "لَحْمٌ",
+            "قَلَمٌ",
+            "مِدَادٌ"
+          ],
+          "reponse": 0,
+          "explication": "لَحْمٌ : une fatḥa, puis un sukūn."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق ل م dans le moule فَعَل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "قَلَمٌ",
+            "أَقْلَامٌ",
+            "قَلِيلٌ"
+          ],
+          "reponse": 0,
+          "explication": "ق ل م dans فَعَل : قَلَمٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le voyage est long » ?",
+          "choix_ar": [
+            "السَّفَرُ طَوِيلٌ",
+            "السَّفَرُ طَوِيلًا",
+            "سَفَرٌ الطَّوِيلُ"
+          ],
+          "reponse": 0,
+          "explication": "« le voyage est long » se dit السَّفَرُ طَوِيلٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le tapis est beau » ?",
+          "choix_ar": [
+            "الْبِسَاطُ جَمِيلٌ",
+            "الْبِسَاطَ جَمِيلٌ",
+            "بِسَاطٌ الْجَمِيلُ"
+          ],
+          "reponse": 0,
+          "explication": "« le tapis est beau » se dit الْبِسَاطُ جَمِيلٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les trésors sont nombreux. »",
+          "ar": "… كَثِيرَةٌ.",
+          "choix_ar": [
+            "الْكُنُوزُ",
+            "الْكَنْزُ",
+            "الْكُنُوزَ"
+          ],
+          "reponse": 0,
+          "explication": "كَنْزٌ fait au pluriel كُنُوزٌ (moule فُعُول) ; sujet en -u."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le forgeron a frappé le fer. »",
+          "ar": "… الْحَدَّادُ الْحَدِيدَ.",
+          "choix_ar": [
+            "طَرَقَ",
+            "طَرَقُوا",
+            "يَطْرُقُونَ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet singulier : طَرَقَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "جِبَالٌ « montagnes » a aussi le moule فِعَال. Qu'en conclure ?",
+          "choix": [
+            "le moule seul ne dit pas si c'est un singulier ou un pluriel",
+            "جِبَالٌ est un singulier",
+            "كِتَابٌ est un pluriel"
+          ],
+          "reponse": 0,
+          "explication": "فِعَال sert pour des singuliers (كِتَابٌ) et des pluriels (جِبَالٌ)."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le coffre du col",
+      "texte": "Au col, une vieille maison de pierre. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "طَرَقَ هِلَالٌ الْبَابَ، وَدَخَلَ بَاسِمٌ.",
+        "فِي الْغُرْفَةِ بِسَاطٌ جَمِيلٌ وَصُنْدُوقٌ قَدِيمٌ.",
+        "قَالَ هِلَالٌ: « فِي الصُّنْدُوقِ كَنْزٌ. »",
+        "فَتَحَ بَاسِمٌ الصُّنْدُوقَ، وَفِيهِ حَبْلٌ وَقَلَمٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui a frappé à la porte ?",
+          "choix": [
+            "Hilāl",
+            "Bāsim",
+            "Salmā"
+          ],
+          "reponse": 0,
+          "explication": "طَرَقَ هِلَالٌ الْبَابَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'y avait-il dans le coffre ?",
+          "choix": [
+            "une corde et un calame",
+            "de l'or",
+            "un tapis"
+          ],
+          "reponse": 0,
+          "explication": "فِيهِ حَبْلٌ وَقَلَمٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « La corde est longue. » ?",
+          "choix_ar": [
+            "الْحَبْلُ طَوِيلٌ.",
+            "الْحَبْلُ طَوِيلًا.",
+            "حَبْلٌ الطَّوِيلُ."
+          ],
+          "reponse": 0,
+          "explication": "« La corde est longue. » se dit الْحَبْلُ طَوِيلٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Hilāl a frappé la porte. »",
+          "tuiles": [
+            "الْبَابَ",
+            "طَرَقَ",
+            "هِلَالٌ",
+            "طَرَقُوا"
+          ],
+          "solution": [
+            "طَرَقَ",
+            "هِلَالٌ",
+            "الْبَابَ"
+          ],
+          "explication": "Verbe, sujet en -u, complément en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le trésor est dans le coffre. »",
+          "ar": "… فِي الصُّنْدُوقِ.",
+          "choix_ar": [
+            "الْكَنْزُ",
+            "كَنْزًا",
+            "الْكَنْزَ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet défini en -u : الْكَنْزُ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَبْلٌ",
+          "choix": [
+            "corde",
+            "tapis",
+            "voyage"
+          ],
+          "reponse": 0,
+          "explication": "حَبْلٌ veut dire « corde »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَرَقَ",
+          "choix": [
+            "il a frappé",
+            "il a ouvert",
+            "il a porté"
+          ],
+          "reponse": 0,
+          "explication": "طَرَقَ veut dire « il a frappé »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le trésor » ?",
+          "choix_ar": [
+            "الْكَنْزُ",
+            "الْبِسَاطُ",
+            "الصُّنْدُوقُ"
+          ],
+          "reponse": 0,
+          "explication": "« le trésor » se dit الْكَنْزُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de كَتَبَ ?",
+          "choix_ar": [
+            "فَعَلَ",
+            "فَاعِل",
+            "فِعَال"
+          ],
+          "reponse": 0,
+          "explication": "كَتَبَ → فَعَلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de بِسَاطٌ ?",
+          "choix_ar": [
+            "فِعَال",
+            "فَعْل",
+            "فَعَل"
+          ],
+          "reponse": 0,
+          "explication": "بِ سَا طٌ : فِعَال."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de سَفَرٌ ?",
+          "choix_ar": [
+            "فَعَل",
+            "فَعْل",
+            "فِعَال"
+          ],
+          "reponse": 0,
+          "explication": "سَ فَ رٌ : deux fatḥa : فَعَل."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel mot a le moule فَعْل ?",
+          "choix_ar": [
+            "كَنْزٌ",
+            "سَفَرٌ",
+            "حِبَالٌ"
+          ],
+          "reponse": 0,
+          "explication": "كَنْزٌ : كَ نْ زٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج ب ل dans le moule فِعَال. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "جِبَالٌ",
+            "جَبَلٌ",
+            "جَمَلٌ"
+          ],
+          "reponse": 0,
+          "explication": "ج ب ل dans فِعَال : جِبَالٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans un moule, ف ع ل remplacent…",
+          "choix": [
+            "les lettres de la racine",
+            "les voyelles",
+            "la fin du mot"
+          ],
+          "reponse": 0,
+          "explication": "ف, ع, ل prennent la place des trois lettres de la racine."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de الصُّخُورُ ?",
+          "choix_ar": [
+            "ص خ ر",
+            "ص خ و",
+            "ل ص خ"
+          ],
+          "reponse": 0,
+          "explication": "On enlève الـ, le و long et la fin : ص خ ر.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَلْجٌ",
+          "choix": [
+            "neige",
+            "froid",
+            "pierre"
+          ],
+          "reponse": 0,
+          "explication": "ثَلْجٌ veut dire « neige ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « les marchands qui sont revenus ».",
+          "ar": "التُّجَّارُ … رَجَعُوا",
+          "choix_ar": [
+            "الَّذِينَ",
+            "الَّتِي",
+            "الَّذِي"
+          ],
+          "reponse": 0,
+          "explication": "Personnes au pluriel : الَّذِينَ.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais lire un moule : كَتَبَ → فَعَلَ, كِتَابٌ → فِعَال, كَلْبٌ → فَعْل.",
+      "suite": "À la forge, Hilāl te montrera « celui qui fait » et « ce qui est fait »."
+    }
+  ]
+}

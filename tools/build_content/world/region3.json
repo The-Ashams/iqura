@@ -1,0 +1,144 @@
+{
+  "_comment": "Région 3 « Les Montagnes du Moteur » (cahier §5.7, §8.2 ; proposition du 05/11/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_3.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Chapitre A ouvert (niveau Intermédiaire 1).",
+  "statut": "ia",
+  "region": {
+    "id": "r3",
+    "numero": 3,
+    "nom": "Les Montagnes du Moteur",
+    "competence": "Comprendre comment les mots se fabriquent",
+    "adversaire": "La Précipitation",
+    "carte": "scene_carte_r3"
+  },
+  "lieux": [
+    {
+      "id": "col",
+      "numero": 1,
+      "nom": "Le Col des forgerons",
+      "position": [
+        30,
+        58
+      ],
+      "lecons": [
+        1,
+        2
+      ],
+      "scene": "scene_col",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "forge"
+      ],
+      "description": "À l'entrée des montagnes, Hilāl le forgeron montre que chaque mot cache trois lettres solides : sa racine."
+    },
+    {
+      "id": "forge",
+      "numero": 2,
+      "nom": "La Forge de Hilāl",
+      "position": [
+        70,
+        58
+      ],
+      "lecons": [
+        3,
+        4
+      ],
+      "scene": "scene_forge",
+      "sol": 80,
+      "tranche_j1a": true,
+      "liens": [
+        "col",
+        "atelier_outils"
+      ],
+      "description": "Devant le foyer, on coule la racine dans des moules : celui qui fait, ce qui est fait, l'action elle-même."
+    },
+    {
+      "id": "atelier_outils",
+      "numero": 3,
+      "nom": "L'Atelier des outils",
+      "position": [
+        100,
+        58
+      ],
+      "lecons": [
+        5
+      ],
+      "scene": "scene_atelier_outils",
+      "sol": 80,
+      "tranche_j1a": true,
+      "liens": [
+        "forge",
+        "pont"
+      ],
+      "description": "Sur les étagères, chaque outil et chaque lieu a son moule ; on y apprend aussi les qualités et les métiers."
+    },
+    {
+      "id": "pont",
+      "numero": 4,
+      "nom": "Le Pont des caravanes",
+      "position": [
+        129,
+        46
+      ],
+      "lecons": [],
+      "scene": "scene_pont",
+      "sol": 80,
+      "tranche_j1a": true,
+      "liens": [
+        "atelier_outils",
+        "relais"
+      ],
+      "description": "Au-dessus de la gorge, on compte les pluriels qui changent de forme et l'on compare : plus grand, le plus grand."
+    },
+    {
+      "id": "relais",
+      "numero": 5,
+      "nom": "Le Relais des voyageurs",
+      "position": [
+        71,
+        75
+      ],
+      "lecons": [],
+      "scene": "scene_relais",
+      "sol": 82,
+      "tranche_j1a": true,
+      "liens": [
+        "pont",
+        "eboulis"
+      ],
+      "description": "Au relais, des voyageurs de tous pays : on dit d'où l'on vient, et l'on apprend ce que la racine ne dit pas."
+    },
+    {
+      "id": "eboulis",
+      "numero": 12,
+      "nom": "Les Éboulis de la Précipitation",
+      "position": [
+        145,
+        74
+      ],
+      "lecons": [],
+      "scene": "scene_eboulis",
+      "sol": 80,
+      "tranche_j1a": true,
+      "liens": [
+        "relais"
+      ],
+      "description": "Sur les pentes, la Précipitation pousse à répondre trop vite. Révisions quotidiennes."
+    }
+  ],
+  "personnages": [
+    {
+      "id": "hilal",
+      "nom": "Hilāl",
+      "nom_ar": "هِلَال",
+      "role": "Le forgeron",
+      "sprite": "hilal",
+      "lieux": [
+        "col",
+        "forge",
+        "atelier_outils",
+        "pont",
+        "relais"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "id": "moteur-05",
+  "etape": 3,
+  "ordre": 5,
+  "format": 3,
+  "titre": "Lieux et instruments",
+  "objectif": "Reconnaître les moules du lieu et de l'outil.",
+  "statut": "ia_non_verifie",
+  "lieu": "atelier_outils",
+  "maitre": "hilal",
+  "prerequis": [
+    "moteur-04"
+  ],
+  "apercu": [
+    "هِلَالٌ",
+    "مِيزَانٌ"
+  ],
+  "schemes": [
+    "مَفْعَل",
+    "مَفْعِل",
+    "مَفْعَلَة",
+    "مِفْعَال",
+    "مِفْعَلَة",
+    "مَفَاعِل",
+    "مَفَاعِيل",
+    "فَاعِل",
+    "مَفْعُول",
+    "فُعُول",
+    "فَعْل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "texte": "Voici l'Atelier des outils. Chaque outil a son moule, et chaque lieu aussi."
+        },
+        {
+          "qui": "hilal",
+          "texte": "Regarde bien : le م ajouté au début est souvent le signe d'un lieu ou d'un outil."
+        }
+      ],
+      "objectif": "Reconnaître un nom de lieu ou d'outil."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de خُرُوجٌ ?",
+          "choix_ar": [
+            "فُعُول",
+            "فَاعِل",
+            "مَفْعُول"
+          ],
+          "reponse": 0,
+          "explication": "فُعُول (leçon 3.4)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "دِرَاسَةٌ",
+          "choix": [
+            "étude",
+            "école",
+            "leçon"
+          ],
+          "reponse": 0,
+          "explication": "دِرَاسَةٌ : « étude » (leçon 3.4)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج ل س dans le moule فَاعِل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "جَالِسٌ",
+            "جُلُوسٌ",
+            "جَلَسَ"
+          ],
+          "reponse": 0,
+          "explication": "فَاعِل : جَالِسٌ (leçon 3.3)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "ar": "هَٰذِهِ مِطْرَقَةُ الْحَدَّادِ، وَهِيَ ثَقِيلَةٌ.",
+          "fr": "Voici le marteau du forgeron, il est lourd."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَأَيْنَ الْمِصْبَاحُ؟",
+          "fr": "Et où est la lampe ?"
+        },
+        {
+          "qui": "hilal",
+          "ar": "الْمِصْبَاحُ عَلَى الْجِدَارِ.",
+          "fr": "La lampe est sur le mur."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où est la lampe ?",
+        "choix": [
+          "sur le mur",
+          "sur la chaise",
+          "dans le coffre"
+        ],
+        "reponse": 0,
+        "explication": "الْمِصْبَاحُ عَلَى الْجِدَارِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "majlis",
+        "maskan",
+        "madkhal",
+        "makhraj",
+        "madrasa",
+        "mazraa",
+        "misbah",
+        "mitraqa"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مِطْرَقَةٌ",
+        "choix": [
+          "marteau",
+          "lampe",
+          "clé"
+        ],
+        "reponse": 0,
+        "explication": "مِطْرَقَةٌ veut dire « marteau »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le lieu",
+      "texte": "Les moules مَفْعَل, ou مَفْعِل quand l'inaccompli a i, désignent souvent le lieu de l'action : يَجْلِسُ → مَجْلِسٌ, يَدْخُلُ → مَدْخَلٌ. C'est une tendance, pas une règle sûre.",
+      "exemples": [
+        "مَجْلِسٌ",
+        "مَدْخَلٌ",
+        "مَسْكَنٌ",
+        "مَطْبَخٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire مَدْرَسَةٌ, de دَرَسَ « étudier » ?",
+        "choix": [
+          "école (lieu où l'on étudie)",
+          "étudiant",
+          "étude"
+        ],
+        "reponse": 0,
+        "explication": "Moule مَفْعَلَة : un lieu, l'école."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'outil",
+      "texte": "Les moules مِفْعَال et مِفْعَلَة désignent souvent l'outil : فَتَحَ → مِفْتَاحٌ, طَرَقَ → مِطْرَقَةٌ. مِيزَانٌ a le même moule, mais sa racine contient و : tu verras plus tard pourquoi elle se cache.",
+      "exemples": [
+        "مِفْتَاحٌ",
+        "مِطْرَقَةٌ",
+        "مِصْبَاحٌ",
+        "مِيزَانٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "مَطْبَخٌ ou مِفْتَاحٌ : lequel est un outil ?",
+        "choix": [
+          "مِفْتَاحٌ",
+          "مَطْبَخٌ",
+          "les deux"
+        ],
+        "reponse": 0,
+        "explication": "مِفْعَال : l'outil, مِفْتَاحٌ ; مَفْعَل : le lieu, مَطْبَخٌ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَسْكَنٌ",
+          "choix": [
+            "habitation",
+            "assemblée",
+            "sortie"
+          ],
+          "reponse": 0,
+          "explication": "مَسْكَنٌ veut dire « habitation »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَزْرَعَةٌ",
+          "choix": [
+            "ferme, champ",
+            "jardin",
+            "école"
+          ],
+          "reponse": 0,
+          "explication": "مَزْرَعَةٌ veut dire « ferme, champ »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la lampe » ?",
+          "choix_ar": [
+            "الْمِصْبَاحُ",
+            "الصَّبَاحُ",
+            "الْمِفْتَاحُ"
+          ],
+          "reponse": 0,
+          "explication": "« la lampe » se dit الْمِصْبَاحُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la sortie » ?",
+          "choix_ar": [
+            "الْمَخْرَجُ",
+            "الْخُرُوجُ",
+            "الْمَدْخَلُ"
+          ],
+          "reponse": 0,
+          "explication": "« la sortie » se dit الْمَخْرَجُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de مَدْخَلٌ ?",
+          "choix_ar": [
+            "مَفْعَل",
+            "مِفْعَال",
+            "مَفْعُول"
+          ],
+          "reponse": 0,
+          "explication": "مَ دْ خَ لٌ : مَفْعَل."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de مِصْبَاحٌ ?",
+          "choix_ar": [
+            "مِفْعَال",
+            "مَفْعَل",
+            "مَفْعُول"
+          ],
+          "reponse": 0,
+          "explication": "مِ صْ بَا حٌ : مِفْعَال."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine س ك ن dans le moule مَفْعَل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَسْكَنٌ",
+            "سَاكِنٌ",
+            "سَكَنَ"
+          ],
+          "reponse": 0,
+          "explication": "س ك ن dans مَفْعَل : مَسْكَنٌ, le lieu où l'on habite."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ط ر ق dans le moule مِفْعَلَة. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مِطْرَقَةٌ",
+            "طَرَقَ",
+            "طَرِيقٌ"
+          ],
+          "reponse": 0,
+          "explication": "ط ر ق dans مِفْعَلَة : مِطْرَقَةٌ, l'outil pour frapper."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les étudiants étudient à l'école. »",
+          "ar": "يَدْرُسُ الطُّلَّابُ فِي …",
+          "choix_ar": [
+            "الْمَدْرَسَةِ",
+            "الدِّرَاسَةِ",
+            "الدَّرْسِ"
+          ],
+          "reponse": 0,
+          "explication": "Le lieu : الْمَدْرَسَةِ, en -i après فِي."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Trouve la racine de ce mot.",
+          "tuiles": [
+            "س",
+            "م",
+            "ج",
+            "ل"
+          ],
+          "solution": [
+            "ج",
+            "ل",
+            "س"
+          ],
+          "explication": "On enlève le م ajouté et la fin : ج ل س.",
+          "ar": "مَجْلِسٌ"
+        },
+        {
+          "type": "qcm",
+          "consigne": "مَفْعَل désigne toujours un lieu ?",
+          "choix": [
+            "non, c'est une tendance",
+            "oui, toujours",
+            "seulement au féminin"
+          ],
+          "reponse": 0,
+          "explication": "C'est souvent un lieu, pas toujours : vérifie dans le dictionnaire."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le village au pied des montagnes",
+      "texte": "Hilāl montre le village à Bāsim. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "يَدْرُسُ الطُّلَّابُ فِي الْمَدْرَسَةِ.",
+        "جَلَسَ الضُّيُوفُ فِي الْمَجْلِسِ.",
+        "مَدْخَلُ الْمَزْرَعَةِ قَرِيبٌ مِنَ النَّهْرِ.",
+        "الْمِصْبَاحُ عَلَى الْجِدَارِ، وَالْمِطْرَقَةُ عَلَى الْكُرْسِيِّ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où se sont assis les invités ?",
+          "choix": [
+            "dans la salle de réunion",
+            "à l'école",
+            "à la ferme"
+          ],
+          "reponse": 0,
+          "explication": "جَلَسَ الضُّيُوفُ فِي الْمَجْلِسِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Où est l'entrée de la ferme ?",
+          "choix": [
+            "près de la rivière",
+            "près de l'école",
+            "sur la montagne"
+          ],
+          "reponse": 0,
+          "explication": "مَدْخَلُ الْمَزْرَعَةِ قَرِيبٌ مِنَ النَّهْرِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le marteau du forgeron est lourd. » ?",
+          "choix_ar": [
+            "مِطْرَقَةُ الْحَدَّادِ ثَقِيلَةٌ.",
+            "الْمِطْرَقَةُ الْحَدَّادُ ثَقِيلٌ.",
+            "مِطْرَقَةٌ الْحَدَّادِ ثَقِيلَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "« Le marteau du forgeron est lourd. » se dit مِطْرَقَةُ الْحَدَّادِ ثَقِيلَةٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « La lampe est sur le mur. »",
+          "tuiles": [
+            "الْجِدَارِ",
+            "الْمِصْبَاحُ",
+            "عَلَى",
+            "فِي"
+          ],
+          "solution": [
+            "الْمِصْبَاحُ",
+            "عَلَى",
+            "الْجِدَارِ"
+          ],
+          "explication": "Sujet, puis عَلَى et le nom en -i."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'entrée de la maison est petite. »",
+          "ar": "… الْبَيْتِ صَغِيرٌ.",
+          "choix_ar": [
+            "مَدْخَلُ",
+            "دُخُولُ",
+            "مَدْخَلٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le lieu par où l'on entre, en iḍāfa : مَدْخَلُ الْبَيْتِ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَجْلِسٌ",
+          "choix": [
+            "salle de réunion, assemblée",
+            "chaise",
+            "assis"
+          ],
+          "reponse": 0,
+          "explication": "مَجْلِسٌ veut dire « salle de réunion, assemblée »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مِصْبَاحٌ",
+          "choix": [
+            "lampe",
+            "matin",
+            "clé"
+          ],
+          "reponse": 0,
+          "explication": "مِصْبَاحٌ veut dire « lampe »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَدْرَسَةٌ",
+          "choix": [
+            "école",
+            "étude",
+            "étudiant"
+          ],
+          "reponse": 0,
+          "explication": "مَدْرَسَةٌ veut dire « école »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le marteau » ?",
+          "choix_ar": [
+            "الْمِطْرَقَةُ",
+            "الْمِفْتَاحُ",
+            "الطَّرِيقُ"
+          ],
+          "reponse": 0,
+          "explication": "« le marteau » se dit الْمِطْرَقَةُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le moule مِفْعَال désigne souvent…",
+          "choix": [
+            "un outil",
+            "un lieu",
+            "celui qui fait"
+          ],
+          "reponse": 0,
+          "explication": "مِفْتَاحٌ, مِصْبَاحٌ : des outils."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de مَسْكَنٌ ?",
+          "choix_ar": [
+            "مَفْعَل",
+            "مِفْعَال",
+            "فَاعِل"
+          ],
+          "reponse": 0,
+          "explication": "مَ سْ كَ نٌ : مَفْعَل."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ت ح dans le moule مِفْعَال. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مِفْتَاحٌ",
+            "مَفْتُوحٌ",
+            "فَتَحَ"
+          ],
+          "reponse": 0,
+          "explication": "ف ت ح dans مِفْعَال : مِفْتَاحٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine خ ر ج dans le moule مَفْعَل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَخْرَجٌ",
+            "خُرُوجٌ",
+            "خَارِجٌ"
+          ],
+          "reponse": 0,
+          "explication": "خ ر ج dans مَفْعَل : مَخْرَجٌ, le lieu de sortie."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La ferme est près de la rivière. »",
+          "ar": "… قَرِيبَةٌ مِنَ النَّهْرِ.",
+          "choix_ar": [
+            "الْمَزْرَعَةُ",
+            "الْمَزْرَعَةَ",
+            "مَزْرَعَةٍ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet en -u : الْمَزْرَعَةُ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خُرُوجٌ",
+          "choix": [
+            "sortie, départ",
+            "sortie (lieu)",
+            "il est sorti"
+          ],
+          "reponse": 0,
+          "explication": "خُرُوجٌ veut dire « sortie, départ ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ت ب dans le moule مَفْعُول. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَكْتُوبٌ",
+            "كَاتِبٌ",
+            "كِتَابَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "مَفْعُول : مَكْتُوبٌ (leçon 3.3).",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de صَعِدْنَا ?",
+          "choix_ar": [
+            "ص ع د",
+            "ص ع ن",
+            "ع د ن"
+          ],
+          "reponse": 0,
+          "explication": "On enlève ـنَا : ص ع د (leçon 3.1).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais les lieux (مَجْلِسٌ, مَدْرَسَةٌ) et les outils (مِفْتَاحٌ, مِطْرَقَةٌ) à leur moule.",
+      "suite": "Prochaine leçon : les qualités et les métiers."
+    }
+  ]
+}

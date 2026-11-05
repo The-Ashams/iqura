@@ -3068,6 +3068,633 @@
     "fr": "La voix est belle."
    },
    "theme": "nature"
+  },
+  {
+   "id": "dars",
+   "ar": "دَرْسٌ",
+   "translit": "darsun",
+   "fr": "leçon",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "دُرُوسٌ",
+   "racine": "drs",
+   "scheme": "فَعْل",
+   "exemple": {
+    "ar": "الدَّرْسُ طَوِيلٌ.",
+    "fr": "La leçon est longue."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "bard",
+   "ar": "بَرْدٌ",
+   "translit": "bardun",
+   "fr": "le froid",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "barod",
+   "scheme": "فَعْل",
+   "exemple": {
+    "ar": "الْبَرْدُ كَثِيرٌ فِي الْجِبَالِ.",
+    "fr": "Il fait très froid dans les montagnes."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "thalj",
+   "ar": "ثَلْجٌ",
+   "translit": "ṯalǧun",
+   "fr": "neige",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "فِي الْجَبَلِ ثَلْجٌ كَثِيرٌ.",
+    "fr": "Il y a beaucoup de neige sur la montagne."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "sakhra",
+   "ar": "صَخْرَةٌ",
+   "translit": "ṣaḫratun",
+   "fr": "rocher",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "صُخُورٌ",
+   "lemme": "Saxorap",
+   "scheme": "فَعْلَة",
+   "exemple": {
+    "ar": "الصَّخْرَةُ كَبِيرَةٌ.",
+    "fr": "Le rocher est grand."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "fahm_charbon",
+   "ar": "فَحْمٌ",
+   "translit": "faḥmun",
+   "fr": "charbon",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "remarque": "nom collectif",
+   "exemple": {
+    "ar": "الْفَحْمُ عِنْدَ الْحَدَّادِ.",
+    "fr": "Le charbon est chez le forgeron."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "nuhas",
+   "ar": "نُحَاسٌ",
+   "translit": "nuḥāsun",
+   "fr": "cuivre",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "nuHaAs",
+   "scheme": "فُعَال",
+   "exemple": {
+    "ar": "النُّحَاسُ ثَقِيلٌ.",
+    "fr": "Le cuivre est lourd."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "saida",
+   "ar": "صَعِدَ",
+   "translit": "ṣaʿida",
+   "fr": "il est monté, il a gravi",
+   "nature": "verbe",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "passe": "صَعِدَ",
+   "inaccompli": "يَصْعَدُ",
+   "lemme": "yaSoEadu",
+   "scheme": "فَعِلَ",
+   "exemple": {
+    "ar": "صَعِدَ الْمُسَافِرُونَ الْجَبَلَ.",
+    "fr": "Les voyageurs ont gravi la montagne."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "safar",
+   "ar": "سَفَرٌ",
+   "translit": "safarun",
+   "fr": "voyage",
+   "nature": "nom",
+   "lecon": "moteur-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "safar",
+   "scheme": "فَعَل",
+   "exemple": {
+    "ar": "السَّفَرُ طَوِيلٌ.",
+    "fr": "Le voyage est long."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "habl",
+   "ar": "حَبْلٌ",
+   "translit": "ḥablun",
+   "fr": "corde",
+   "nature": "nom",
+   "lecon": "moteur-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "حِبَالٌ",
+   "lemme": "Habol",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فِعَال",
+   "exemple": {
+    "ar": "الْحَبْلُ طَوِيلٌ.",
+    "fr": "La corde est longue."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "kanz",
+   "ar": "كَنْزٌ",
+   "translit": "kanzun",
+   "fr": "trésor",
+   "nature": "nom",
+   "lecon": "moteur-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "كُنُوزٌ",
+   "lemme": "kanz",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فُعُول",
+   "exemple": {
+    "ar": "الْكَنْزُ فِي الصُّنْدُوقِ.",
+    "fr": "Le trésor est dans le coffre."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "bisat",
+   "ar": "بِسَاطٌ",
+   "translit": "bisāṭun",
+   "fr": "tapis",
+   "nature": "nom",
+   "lecon": "moteur-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "bisaAT",
+   "scheme": "فِعَال",
+   "exemple": {
+    "ar": "الْبِسَاطُ جَمِيلٌ.",
+    "fr": "Le tapis est beau."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "taraqa",
+   "ar": "طَرَقَ",
+   "translit": "ṭaraqa",
+   "fr": "il a frappé (une porte, un métal)",
+   "nature": "verbe",
+   "lecon": "moteur-02",
+   "source_sens": "rédigé par IA",
+   "passe": "طَرَقَ",
+   "inaccompli": "يَطْرُقُ",
+   "racine": "Trq",
+   "scheme": "فَعَلَ",
+   "exemple": {
+    "ar": "طَرَقَ الْحَدَّادُ الْحَدِيدَ.",
+    "fr": "Le forgeron a frappé le fer."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "maktub",
+   "ar": "مَكْتُوبٌ",
+   "translit": "maktūbun",
+   "fr": "écrit (ce qui est écrit)",
+   "nature": "adjectif",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "makotuwb",
+   "scheme": "مَفْعُول",
+   "exemple": {
+    "ar": "الرِّسَالَةُ مَكْتُوبَةٌ.",
+    "fr": "La lettre est écrite."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "hamil",
+   "ar": "حَامِلٌ",
+   "translit": "ḥāmilun",
+   "fr": "qui porte, porteur",
+   "nature": "nom",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hml",
+   "scheme": "فَاعِل",
+   "exemple": {
+    "ar": "حَامِلُ السَّلَّةِ صَدِيقِي.",
+    "fr": "Celui qui porte le panier est mon ami."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "kharij",
+   "ar": "خَارِجٌ",
+   "translit": "ḫāriǧun",
+   "fr": "qui sort ; dehors",
+   "nature": "nom",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "xaArij",
+   "scheme": "فَاعِل",
+   "exemple": {
+    "ar": "الْحَارِسُ خَارِجَ الْبَيْتِ.",
+    "fr": "Le gardien est dehors, hors de la maison."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "jalis",
+   "ar": "جَالِسٌ",
+   "translit": "ǧālisun",
+   "fr": "assis",
+   "nature": "adjectif",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jls",
+   "scheme": "فَاعِل",
+   "exemple": {
+    "ar": "الشَّيْخُ جَالِسٌ فِي الْخَيْمَةِ.",
+    "fr": "Le vieil homme est assis dans la tente."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "rakib",
+   "ar": "رَاكِبٌ",
+   "translit": "rākibun",
+   "fr": "monté (sur une monture), cavalier",
+   "nature": "nom",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "rkb",
+   "scheme": "فَاعِل",
+   "exemple": {
+    "ar": "رَاكِبُ الْجَمَلِ تَاجِرٌ.",
+    "fr": "Celui qui est monté sur le chameau est un marchand."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "maftuh",
+   "ar": "مَفْتُوحٌ",
+   "translit": "maftūḥun",
+   "fr": "ouvert",
+   "nature": "adjectif",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "ftH",
+   "scheme": "مَفْعُول",
+   "exemple": {
+    "ar": "الْبَابُ مَفْتُوحٌ.",
+    "fr": "La porte est ouverte."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "sani",
+   "ar": "صَانِعٌ",
+   "translit": "ṣāniʿun",
+   "fr": "artisan, celui qui fabrique",
+   "nature": "nom",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "صُنَّاعٌ",
+   "racine": "SnE",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال",
+   "exemple": {
+    "ar": "الصَّانِعُ فِي الْبَيْتِ.",
+    "fr": "L'artisan est dans la maison."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "sakin",
+   "ar": "سَاكِنٌ",
+   "translit": "sākinun",
+   "fr": "habitant",
+   "nature": "nom",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُكَّانٌ",
+   "racine": "skn",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال",
+   "exemple": {
+    "ar": "سُكَّانُ الْقَرْيَةِ فِي السُّوقِ.",
+    "fr": "Les habitants du village sont au marché."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "kitaba",
+   "ar": "كِتَابَةٌ",
+   "translit": "kitābatun",
+   "fr": "écriture, le fait d'écrire",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "ktb",
+   "scheme": "فِعَالَة",
+   "exemple": {
+    "ar": "الْكِتَابَةُ جَمِيلَةٌ.",
+    "fr": "L'écriture est belle."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "dirasa",
+   "ar": "دِرَاسَةٌ",
+   "translit": "dirāsatun",
+   "fr": "étude",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "diraAsat",
+   "scheme": "فِعَالَة",
+   "exemple": {
+    "ar": "الدِّرَاسَةُ فِي الْمَسَاءِ.",
+    "fr": "L'étude a lieu le soir."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "khuruj",
+   "ar": "خُرُوجٌ",
+   "translit": "ḫurūǧun",
+   "fr": "sortie, départ (le fait de sortir)",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "xuruwj",
+   "scheme": "فُعُول",
+   "exemple": {
+    "ar": "خُرُوجُ الْقَافِلَةِ فِي الصَّبَاحِ.",
+    "fr": "Le départ de la caravane est le matin."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "dukhul",
+   "ar": "دُخُولٌ",
+   "translit": "duḫūlun",
+   "fr": "entrée (le fait d'entrer)",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "dxl",
+   "scheme": "فُعُول",
+   "exemple": {
+    "ar": "دُخُولُ السُّوقِ فِي الصَّبَاحِ.",
+    "fr": "On entre au marché le matin."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "julus",
+   "ar": "جُلُوسٌ",
+   "translit": "ǧulūsun",
+   "fr": "le fait de s'asseoir",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jls",
+   "scheme": "فُعُول",
+   "exemple": {
+    "ar": "الْجُلُوسُ فِي الْحَدِيقَةِ جَمِيلٌ.",
+    "fr": "S'asseoir dans le jardin est agréable."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "jam",
+   "ar": "جَمْعٌ",
+   "translit": "ǧamʿun",
+   "fr": "rassemblement ; (en grammaire) pluriel",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "jamoE",
+   "scheme": "فَعْل",
+   "exemple": {
+    "ar": "هَٰذَا جَمْعُ كِتَابٍ.",
+    "fr": "Ceci est le pluriel de « livre »."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "fahm",
+   "ar": "فَهْمٌ",
+   "translit": "fahmun",
+   "fr": "compréhension",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "fhm",
+   "scheme": "فَعْل",
+   "exemple": {
+    "ar": "الْفَهْمُ قَبْلَ الْحِفْظِ.",
+    "fr": "Comprendre vient avant mémoriser."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "hifz",
+   "ar": "حِفْظٌ",
+   "translit": "ḥifẓun",
+   "fr": "garde ; mémorisation",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "HifoZ",
+   "scheme": "فِعْل",
+   "exemple": {
+    "ar": "حِفْظُ الْكَلِمَاتِ فِي الْمَسَاءِ.",
+    "fr": "On mémorise les mots le soir."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "majlis",
+   "ar": "مَجْلِسٌ",
+   "translit": "maǧlisun",
+   "fr": "lieu où l'on s'assoit, assemblée",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَجَالِسُ",
+   "racine": "jls",
+   "scheme": "مَفْعِل",
+   "scheme_pluriel": "مَفَاعِل",
+   "exemple": {
+    "ar": "جَلَسَ الضُّيُوفُ فِي الْمَجْلِسِ.",
+    "fr": "Les invités se sont assis dans la salle de réunion."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "maskan",
+   "ar": "مَسْكَنٌ",
+   "translit": "maskanun",
+   "fr": "habitation, logement",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَسَاكِنُ",
+   "lemme": "masokan",
+   "scheme": "مَفْعَل",
+   "scheme_pluriel": "مَفَاعِل",
+   "exemple": {
+    "ar": "الْمَسْكَنُ قَرِيبٌ مِنَ السُّوقِ.",
+    "fr": "Le logement est près du marché."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "madkhal",
+   "ar": "مَدْخَلٌ",
+   "translit": "madḫalun",
+   "fr": "entrée (lieu par où l'on entre)",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "dxl",
+   "scheme": "مَفْعَل",
+   "exemple": {
+    "ar": "مَدْخَلُ الْبَيْتِ صَغِيرٌ.",
+    "fr": "L'entrée de la maison est petite."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "makhraj",
+   "ar": "مَخْرَجٌ",
+   "translit": "maḫraǧun",
+   "fr": "sortie, issue (lieu par où l'on sort)",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "maxoraj",
+   "scheme": "مَفْعَل",
+   "exemple": {
+    "ar": "الْمَخْرَجُ هُنَاكَ.",
+    "fr": "La sortie est là-bas."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "madrasa",
+   "ar": "مَدْرَسَةٌ",
+   "translit": "madrasatun",
+   "fr": "école",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "drs",
+   "scheme": "مَفْعَلَة",
+   "exemple": {
+    "ar": "يَدْرُسُ الطُّلَّابُ فِي الْمَدْرَسَةِ.",
+    "fr": "Les étudiants étudient à l'école."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "mazraa",
+   "ar": "مَزْرَعَةٌ",
+   "translit": "mazraʿatun",
+   "fr": "champ cultivé, ferme",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "zrE",
+   "scheme": "مَفْعَلَة",
+   "exemple": {
+    "ar": "الْمَزْرَعَةُ قَرِيبَةٌ مِنَ النَّهْرِ.",
+    "fr": "La ferme est près de la rivière."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "misbah",
+   "ar": "مِصْبَاحٌ",
+   "translit": "miṣbāḥun",
+   "fr": "lampe",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَصَابِيحُ",
+   "lemme": "miSobaAH",
+   "scheme": "مِفْعَال",
+   "scheme_pluriel": "مَفَاعِيل",
+   "exemple": {
+    "ar": "الْمِصْبَاحُ عَلَى الْجِدَارِ.",
+    "fr": "La lampe est sur le mur."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "mitraqa",
+   "ar": "مِطْرَقَةٌ",
+   "translit": "miṭraqatun",
+   "fr": "marteau",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "Trq",
+   "scheme": "مِفْعَلَة",
+   "exemple": {
+    "ar": "مِطْرَقَةُ الْحَدَّادِ ثَقِيلَةٌ.",
+    "fr": "Le marteau du forgeron est lourd."
+   },
+   "theme": "travail"
   }
  ]
 }

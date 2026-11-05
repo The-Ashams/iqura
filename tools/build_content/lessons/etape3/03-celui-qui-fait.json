@@ -1,0 +1,533 @@
+{
+  "id": "moteur-03",
+  "etape": 3,
+  "ordre": 3,
+  "format": 3,
+  "titre": "Celui qui fait, ce qui est fait",
+  "objectif": "Comprendre les moules فَاعِل et مَفْعُول.",
+  "statut": "ia_non_verifie",
+  "lieu": "forge",
+  "maitre": "hilal",
+  "prerequis": [
+    "moteur-02"
+  ],
+  "apercu": [
+    "هِلَالٌ"
+  ],
+  "schemes": [
+    "فَعَل",
+    "فَاعِل",
+    "مَفْعُول",
+    "فَاعِلَة",
+    "مَفْعُولَة",
+    "فَعَلَ",
+    "فُعَّال",
+    "فِعَال",
+    "فَعْل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "texte": "Voici ma forge. Avec une même racine, je fabrique celui qui fait l'action et ce qui la subit."
+        },
+        {
+          "qui": "hilal",
+          "texte": "Deux moules très utiles : فَاعِل et مَفْعُول."
+        }
+      ],
+      "objectif": "Dire « celui qui écrit », « ce qui est écrit »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de جَبَلٌ ?",
+          "choix_ar": [
+            "فَعَل",
+            "فَعْل",
+            "فِعَال"
+          ],
+          "reponse": 0,
+          "explication": "جَ بَ لٌ : فَعَل (leçon 3.2)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de الْمِفْتَاحُ ?",
+          "choix_ar": [
+            "ف ت ح",
+            "م ف ت",
+            "ت ح ا"
+          ],
+          "reponse": 0,
+          "explication": "ف ت ح (leçon 3.1)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَبْلٌ",
+          "choix": [
+            "corde",
+            "tapis",
+            "trésor"
+          ],
+          "reponse": 0,
+          "explication": "حَبْلٌ : « corde » (leçon 3.2)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "الْبَابُ مَفْتُوحٌ.",
+          "fr": "La porte est ouverte."
+        },
+        {
+          "qui": "basim",
+          "ar": "مَنِ الْجَالِسُ عِنْدَ النَّارِ؟",
+          "fr": "Qui est celui qui est assis près du feu ?"
+        },
+        {
+          "qui": "hilal",
+          "ar": "هُوَ صَانِعٌ مِنَ الْقَرْيَةِ.",
+          "fr": "C'est un artisan du village."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qui est assis près du feu ?",
+        "choix": [
+          "un artisan du village",
+          "un marchand de la ville",
+          "le gardien"
+        ],
+        "reponse": 0,
+        "explication": "هُوَ صَانِعٌ مِنَ الْقَرْيَةِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "maktub",
+        "hamil",
+        "kharij",
+        "jalis",
+        "rakib",
+        "maftuh",
+        "sani",
+        "sakin"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مَفْتُوحٌ",
+        "choix": [
+          "ouvert",
+          "écrit",
+          "assis"
+        ],
+        "reponse": 0,
+        "explication": "مَفْتُوحٌ veut dire « ouvert »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "فَاعِل et مَفْعُول",
+      "texte": "فَاعِل désigne celui qui fait l'action : كَتَبَ → كَاتِبٌ « celui qui écrit ». مَفْعُول désigne ce qui la subit : مَكْتُوبٌ « ce qui est écrit ».",
+      "exemples": [
+        "كَاتِبٌ",
+        "مَكْتُوبٌ",
+        "حَامِلٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire مَفْتُوحٌ, de فَتَحَ « ouvrir » ?",
+        "choix": [
+          "ouvert",
+          "celui qui ouvre",
+          "la clé"
+        ],
+        "reponse": 0,
+        "explication": "مَفْعُول : ce qui subit l'action, « ouvert »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Féminin, et verbes sans complément",
+      "texte": "Au féminin, on ajoute ة : مَكْتُوبَةٌ, حَامِلَةٌ. Un verbe sans complément, comme جَلَسَ ou خَرَجَ, n'a que فَاعِل : جَالِسٌ, خَارِجٌ.",
+      "exemples": [
+        "مَكْتُوبَةٌ",
+        "جَالِسٌ",
+        "خَارِجٌ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « La lettre est écrite. »",
+        "ar": "الرِّسَالَةُ …",
+        "choix_ar": [
+          "مَكْتُوبَةٌ",
+          "مَكْتُوبٌ",
+          "كَاتِبَةٌ"
+        ],
+        "reponse": 0,
+        "explication": "Nom féminin : مَكْتُوبَةٌ, avec ة."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَاكِبٌ",
+          "choix": [
+            "monté, cavalier",
+            "porteur",
+            "habitant"
+          ],
+          "reponse": 0,
+          "explication": "رَاكِبٌ veut dire « monté, cavalier »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَاكِنٌ",
+          "choix": [
+            "habitant",
+            "assis",
+            "artisan"
+          ],
+          "reponse": 0,
+          "explication": "سَاكِنٌ veut dire « habitant »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « assis » ?",
+          "choix_ar": [
+            "جَالِسٌ",
+            "جَلَسَ",
+            "يَجْلِسُ"
+          ],
+          "reponse": 0,
+          "explication": "جَالِسٌ : moule فَاعِل, « assis »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ح م ل dans le moule فَاعِل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "حَامِلٌ",
+            "حِمْلٌ",
+            "حَمَلَ"
+          ],
+          "reponse": 0,
+          "explication": "ح م ل dans فَاعِل : حَامِلٌ, « celui qui porte »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ت ب dans le moule مَفْعُول. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَكْتُوبٌ",
+            "كَاتِبٌ",
+            "كِتَابٌ"
+          ],
+          "reponse": 0,
+          "explication": "ك ت ب dans مَفْعُول : مَكْتُوبٌ, « ce qui est écrit »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ص ن ع dans le moule فَاعِل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "صَانِعٌ",
+            "صَنَعَ",
+            "يَصْنَعُ"
+          ],
+          "reponse": 0,
+          "explication": "ص ن ع dans فَاعِل : صَانِعٌ, « celui qui fabrique »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de حَارِسٌ ?",
+          "choix_ar": [
+            "فَاعِل",
+            "مَفْعُول",
+            "فِعَال"
+          ],
+          "reponse": 0,
+          "explication": "حَ ا رِ سٌ : فَاعِل, « celui qui garde »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La porte est ouverte. »",
+          "ar": "الْبَابُ …",
+          "choix_ar": [
+            "مَفْتُوحٌ",
+            "فَتَحَ",
+            "مَفْتُوحَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Ce qui subit l'action, au masculin : مَفْتُوحٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « celui qui est monté sur le chameau » ?",
+          "choix_ar": [
+            "رَاكِبُ الْجَمَلِ",
+            "الْجَمَلُ رَاكِبٌ",
+            "رَكِبَ الْجَمَلَ"
+          ],
+          "reponse": 0,
+          "explication": "Après un participe, on emploie l'iḍāfa : رَاكِبُ الْجَمَلِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le verbe جَلَسَ a-t-il un مَفْعُول ?",
+          "choix": [
+            "non : il n'a pas de complément",
+            "oui, au masculin",
+            "oui, au féminin"
+          ],
+          "reponse": 0,
+          "explication": "Un verbe sans complément n'a que فَاعِل : جَالِسٌ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "À la forge",
+      "texte": "Des voyageurs arrivent à la forge de Hilāl. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "الْبَابُ مَفْتُوحٌ، وَالْحَدَّادُ جَالِسٌ فِي الْبَيْتِ.",
+        "دَخَلَ رَاكِبُ الْجَمَلِ، وَهُوَ تَاجِرٌ مِنَ الْمَدِينَةِ.",
+        "حَامِلُ السَّلَّةِ صَدِيقُهُ.",
+        "قَالَ التَّاجِرُ: « الرِّسَالَةُ مَكْتُوبَةٌ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui est entré ?",
+          "choix": [
+            "un marchand monté sur un chameau",
+            "un habitant du village",
+            "le gardien"
+          ],
+          "reponse": 0,
+          "explication": "رَاكِبُ الْجَمَلِ… تَاجِرٌ مِنَ الْمَدِينَةِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que dit le marchand ?",
+          "choix": [
+            "la lettre est écrite",
+            "la porte est ouverte",
+            "le panier est lourd"
+          ],
+          "reponse": 0,
+          "explication": "الرِّسَالَةُ مَكْتُوبَةٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le vieil homme est assis dans la tente. » ?",
+          "choix_ar": [
+            "الشَّيْخُ جَالِسٌ فِي الْخَيْمَةِ.",
+            "الشَّيْخُ جَلَسَ فِي الْخَيْمَةِ جَالِسٌ.",
+            "جَالِسٌ الشَّيْخُ فِي خَيْمَةٍ."
+          ],
+          "reponse": 0,
+          "explication": "« Le vieil homme est assis dans la tente. » se dit الشَّيْخُ جَالِسٌ فِي الْخَيْمَةِ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre sujet, puis attribut : « La porte est ouverte. »",
+          "tuiles": [
+            "مَفْتُوحٌ",
+            "الْبَابُ",
+            "مَفْتُوحَةٌ"
+          ],
+          "solution": [
+            "الْبَابُ",
+            "مَفْتُوحٌ"
+          ],
+          "explication": "Sujet défini, puis attribut au masculin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Celui qui porte le panier est mon ami. »",
+          "ar": "… السَّلَّةِ صَدِيقِي.",
+          "choix_ar": [
+            "حَامِلُ",
+            "حَامِلٌ",
+            "حَمَلَ"
+          ],
+          "reponse": 0,
+          "explication": "حَامِلُ السَّلَّةِ : iḍāfa, sans tanwīn."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَكْتُوبٌ",
+          "choix": [
+            "écrit",
+            "scribe",
+            "livre"
+          ],
+          "reponse": 0,
+          "explication": "مَكْتُوبٌ veut dire « écrit »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خَارِجٌ",
+          "choix": [
+            "qui sort, dehors",
+            "qui entre",
+            "assis"
+          ],
+          "reponse": 0,
+          "explication": "خَارِجٌ veut dire « qui sort, dehors »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَانِعٌ",
+          "choix": [
+            "artisan",
+            "habitant",
+            "cavalier"
+          ],
+          "reponse": 0,
+          "explication": "صَانِعٌ veut dire « artisan »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ouvert » ?",
+          "choix_ar": [
+            "مَفْتُوحٌ",
+            "فَتَحَ",
+            "مِفْتَاحٌ"
+          ],
+          "reponse": 0,
+          "explication": "« ouvert » se dit مَفْتُوحٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "فَاعِل désigne…",
+          "choix": [
+            "celui qui fait l'action",
+            "ce qui subit l'action",
+            "le lieu de l'action"
+          ],
+          "reponse": 0,
+          "explication": "كَاتِبٌ : celui qui écrit."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de مَكْتُوبٌ ?",
+          "choix_ar": [
+            "مَفْعُول",
+            "فَاعِل",
+            "فَعْل"
+          ],
+          "reponse": 0,
+          "explication": "م + ك ت ب + و long : مَفْعُول."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ت ح dans le moule مَفْعُول. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَفْتُوحٌ",
+            "فَتَحَ",
+            "مِفْتَاحٌ"
+          ],
+          "reponse": 0,
+          "explication": "ف ت ح dans مَفْعُول : مَفْتُوحٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج ل س dans le moule فَاعِل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "جَالِسٌ",
+            "جَلَسَ",
+            "يَجْلِسُ"
+          ],
+          "reponse": 0,
+          "explication": "ج ل س dans فَاعِل : جَالِسٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La lettre est écrite. »",
+          "ar": "الرِّسَالَةُ …",
+          "choix_ar": [
+            "مَكْتُوبَةٌ",
+            "مَكْتُوبٌ",
+            "كَاتِبَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Féminin : مَكْتُوبَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de كِتَابٌ ?",
+          "choix_ar": [
+            "فِعَال",
+            "فَاعِل",
+            "فَعْل"
+          ],
+          "reponse": 0,
+          "explication": "كِتَابٌ : فِعَال (leçon 3.2).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بِسَاطٌ",
+          "choix": [
+            "tapis",
+            "trésor",
+            "voyage"
+          ],
+          "reponse": 0,
+          "explication": "بِسَاطٌ veut dire « tapis ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de الطُّلَّابُ ?",
+          "choix_ar": [
+            "ط ل ب",
+            "ط ل ا",
+            "ل ط ب"
+          ],
+          "reponse": 0,
+          "explication": "ط ل ب (leçon 3.1).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais فَاعِل (كَاتِبٌ, celui qui écrit) et مَفْعُول (مَكْتُوبٌ, ce qui est écrit).",
+      "suite": "Prochaine leçon : le nom de l'action elle-même."
+    }
+  ]
+}

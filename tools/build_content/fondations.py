@@ -51,13 +51,24 @@ def validate(lesson: dict, *, check_ar, known_keys: set[str], lesson_words: list
     if lesson["maitre"] not in characters:
         raise LessonError(f"{where} : personnage inconnu {lesson['maitre']}")
     apercu = set(lesson.get("apercu", []))
+    # Région 3 : schèmes écrits avec ف ع ل (notation, pas des mots), déclarés
+    # par la leçon ; une lettre seule (lettres d'une racine) est toujours lue.
+    schemes = set(lesson.get("schemes", []))
+    for sc in schemes:
+        slots = "".join(c for c in sc if c in vocab.SCHEME_RADICALS)
+        if slots not in ("فعل", "فعلل"):
+            raise LessonError(f"{where} : schème mal formé {sc}")
+
+    def notation(t: str) -> bool:
+        return t in apercu or t in schemes or len(vocab.key(t)) == 1
 
     def ar(text: str, here: str, all_known: bool = True) -> None:
         if text in apercu:
             return
         check_ar(text)
         if all_known:
-            missing = [t for t in vocab.unknown(text, known_keys, known_endings) if t not in apercu]
+            missing = [t for t in vocab.unknown(text, known_keys, known_endings)
+                       if not notation(t)]
             if missing:
                 raise LessonError(f"{here} : mot(s) inconnu(s) à ce stade : {' '.join(missing)}")
 

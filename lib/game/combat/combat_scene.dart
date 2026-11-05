@@ -25,7 +25,8 @@ class CombatScene extends FlameGame {
   final bool boss;
 
   /// Région : 1, brumes d'oubli dans la Faille ; 2, mirages de la
-  /// Confusion dans les Sables du mirage.
+  /// Confusion dans les Sables du mirage ; 3, la Précipitation dans les
+  /// Éboulis.
   final int region;
 
   // Nuls tant que la scène charge : un coup reçu avant ne fait rien.
@@ -41,7 +42,11 @@ class CombatScene extends FlameGame {
     world.add(
       SpriteComponent(
         sprite: await loadSprite(
-          region == 2 ? 'scene_mirage.png' : 'scene_faille.png',
+          switch (region) {
+            2 => 'scene_mirage.png',
+            3 => 'scene_eboulis.png',
+            _ => 'scene_faille.png',
+          },
         ),
         size: Vector2(160, 90),
         paint: _pixelPaint(),
@@ -57,6 +62,8 @@ class CombatScene extends FlameGame {
       sprite: await loadSprite(
         boss
             ? (region == 2 ? 'grand_mirage.png' : 'gardien.png')
+            : region == 3
+            ? 'precipitation.png'
             : region == 2
             ? 'mirage.png'
             : 'brume.png',
