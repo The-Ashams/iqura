@@ -363,6 +363,7 @@ class ContentDatabase {
         remark: r['remark'] as String?,
         scheme: r['scheme'] as String?,
         pluralScheme: r['plural_scheme'] as String?,
+        actionNoun: r['action_noun'] as String?,
         lessonId: r['lesson_id'] as String,
         lessonStage: r['lesson_stage'] as int,
         lessonOrdinal: r['lesson_ordinal'] as int,

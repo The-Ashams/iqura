@@ -264,9 +264,11 @@ def validate(words: list[dict], con: sqlite3.Connection, lesson_ids: set[str],
         if w["nature"] == "verbe" and not w.get("fige") \
                 and not (w.get("passe") and w.get("inaccompli")):
             raise VocabError(f"{where} : passé et inaccompli attendus")
-        for k in ("ar", "pluriel", "passe", "inaccompli"):
+        for k in ("ar", "pluriel", "passe", "inaccompli", "nom_action"):
             if w.get(k):
                 check_ar(w[k], where)
+        if w.get("nom_action") and w["nature"] != "verbe":
+            raise VocabError(f"{where} : nom d'action réservé aux verbes")
         for f in w.get("formes", []):
             check_ar(f, where)
         ex = w.get("exemple")
@@ -326,7 +328,8 @@ def write(con: sqlite3.Connection, words: list[dict], lesson_order: dict[str, tu
         keys_json TEXT NOT NULL,
         remark TEXT,
         scheme TEXT,
-        plural_scheme TEXT
+        plural_scheme TEXT,
+        action_noun TEXT
     ) STRICT""")
     con.execute("CREATE INDEX word_lemma ON word(lemma_id)")
     rows = []
@@ -341,9 +344,9 @@ def write(con: sqlite3.Connection, words: list[dict], lesson_order: dict[str, tu
             w.get("pluriel"), w.get("passe"), w.get("inaccompli"), w.get("lemme"), root,
             w["lecon"], stage, ordinal, ex.get("ar"), ex.get("fr"), w.get("theme"),
             w["source_sens"], json.dumps(sorted(word_keys(w)), ensure_ascii=False),
-            w.get("remarque"), w.get("scheme"), w.get("scheme_pluriel"),
+            w.get("remarque"), w.get("scheme"), w.get("scheme_pluriel"), w.get("nom_action"),
         ))
-    con.executemany(f"INSERT INTO word VALUES ({','.join('?' * 22)})", rows)
+    con.executemany(f"INSERT INTO word VALUES ({','.join('?' * 23)})", rows)
     return len(rows)
 
 

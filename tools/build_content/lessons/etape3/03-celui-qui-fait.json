@@ -158,8 +158,8 @@
     },
     {
       "type": "regle",
-      "titre": "Féminin, et verbes sans complément",
-      "texte": "Au féminin, on ajoute ة : مَكْتُوبَةٌ, حَامِلَةٌ. Un verbe sans complément, comme جَلَسَ ou خَرَجَ, n'a pas de مَفْعُول employé seul : جَالِسٌ, خَارِجٌ.",
+      "titre": "Féminin, et verbes sans complément direct",
+      "texte": "Au féminin, on ajoute ة : مَكْتُوبَةٌ, حَامِلَةٌ. Un verbe sans complément direct, comme جَلَسَ ou خَرَجَ, n'a pas de مَفْعُول employé seul : on dit جَالِسٌ, خَارِجٌ.",
       "exemples": [
         "مَكْتُوبَةٌ",
         "جَالِسٌ",
@@ -290,12 +290,12 @@
           "type": "qcm",
           "consigne": "Le verbe جَلَسَ a-t-il un مَفْعُول ?",
           "choix": [
-            "non, pas employé seul : il n'a pas de complément",
+            "non : pas de مَفْعُول employé seul",
             "oui, au masculin",
             "oui, au féminin"
           ],
           "reponse": 0,
-          "explication": "Un verbe sans complément n'a pas de مَفْعُول employé seul ; on dit جَالِسٌ."
+          "explication": "Un verbe sans complément direct n'a pas de مَفْعُول employé seul ; on dit جَالِسٌ."
         }
       ]
     },

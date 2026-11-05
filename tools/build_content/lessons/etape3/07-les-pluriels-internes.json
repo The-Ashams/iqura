@@ -370,11 +370,11 @@
           "consigne": "Comment dit-on « Les enfants sont dans le jardin. » ?",
           "choix_ar": [
             "الْأَطْفَالُ فِي الْحَدِيقَةِ.",
-            "الصُّقُورُ فِي الْحَدِيقَةِ.",
+            "الطِّفْلَانِ فِي الْحَدِيقَةِ.",
             "أَطْفَالٌ الْحَدِيقَةُ."
           ],
           "reponse": 0,
-          "explication": "« Les enfants sont dans le jardin. » se dit الْأَطْفَالُ فِي الْحَدِيقَةِ."
+          "explication": "الطِّفْلَانِ, c'est deux enfants (duel) ; les enfants : الْأَطْفَالُ."
         },
         {
           "type": "ordonner",

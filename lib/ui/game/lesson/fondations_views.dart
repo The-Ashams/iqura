@@ -155,6 +155,8 @@ class WordCard extends ConsumerWidget {
             _Line(label: 'Schème du pluriel', arabic: w.pluralScheme!),
           if (w.past != null) _Line(label: 'Passé', arabic: w.past!),
           if (w.present != null) _Line(label: 'Inaccompli', arabic: w.present!),
+          if (w.actionNoun != null)
+            _Line(label: "Nom d'action", arabic: w.actionNoun!),
           if (w.rootLetters != null) ...[
             const SizedBox(height: 6),
             Row(

@@ -30,6 +30,7 @@ class Word {
     this.remark,
     this.scheme,
     this.pluralScheme,
+    this.actionNoun,
   });
 
   final String id;
@@ -65,6 +66,9 @@ class Word {
   /// Corpus et vérifiés à la construction (décision du 05/11/2026).
   final String? scheme;
   final String? pluralScheme;
+
+  /// Nom d'action (maṣdar) d'un verbe (leçon 3.4).
+  final String? actionNoun;
   final String lessonId;
   final int lessonStage;
   final int lessonOrdinal;

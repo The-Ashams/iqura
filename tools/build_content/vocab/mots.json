@@ -82,7 +82,8 @@
    "lemme": "*ahaba",
    "lecon": "fondations-01",
    "source_sens": "rédigé par IA",
-   "theme": "voyage"
+   "theme": "voyage",
+   "nom_action": "ذَهَابٌ"
   },
   {
    "id": "kharaja",
@@ -95,7 +96,8 @@
    "lemme": "xaraja",
    "lecon": "fondations-01",
    "source_sens": "rédigé par IA",
-   "theme": "voyage"
+   "theme": "voyage",
+   "nom_action": "خُرُوجٌ"
   },
   {
    "id": "dakhala",
@@ -108,7 +110,8 @@
    "lemme": "daxala",
    "lecon": "fondations-01",
    "source_sens": "rédigé par IA",
-   "theme": "voyage"
+   "theme": "voyage",
+   "nom_action": "دُخُولٌ"
   },
   {
    "id": "fi",
@@ -2076,7 +2079,8 @@
     "fr": "Samīr a écrit dans la chambre."
    },
    "theme": "savoir",
-   "scheme": "فَعَلَ"
+   "scheme": "فَعَلَ",
+   "nom_action": "كِتَابَةٌ"
   },
   {
    "id": "jalasa",
@@ -2094,7 +2098,8 @@
     "fr": "Salmā s'est assise dans la chambre."
    },
    "theme": "actions",
-   "scheme": "فَعَلَ"
+   "scheme": "فَعَلَ",
+   "nom_action": "جُلُوسٌ"
   },
   {
    "id": "rajaa",
@@ -2111,7 +2116,8 @@
     "ar": "رَجَعَ بَاسِمٌ مِنَ السُّوقِ.",
     "fr": "Bāsim est revenu du marché."
    },
-   "theme": "voyage"
+   "theme": "voyage",
+   "nom_action": "رُجُوعٌ"
   },
   {
    "id": "qafila",
@@ -2209,7 +2215,8 @@
     "ar": "شَرِبْنَا مِنَ الْبِئْرِ.",
     "fr": "Nous avons bu au puits."
    },
-   "theme": "actions"
+   "theme": "actions",
+   "nom_action": "شُرْبٌ"
   },
   {
    "id": "fariha",
@@ -2227,7 +2234,8 @@
     "ar": "فَرِحَتْ سَلْمَى.",
     "fr": "Salmā s'est réjouie."
    },
-   "theme": "personnes"
+   "theme": "personnes",
+   "nom_action": "فَرَحٌ"
   },
   {
    "id": "laiba",
@@ -2244,7 +2252,8 @@
     "ar": "لَعِبْتُ مَعَ بَاسِمٍ.",
     "fr": "J'ai joué avec Bāsim."
    },
-   "theme": "actions"
+   "theme": "actions",
+   "nom_action": "لَعِبٌ"
   },
   {
    "id": "alyawm",
@@ -2291,7 +2300,8 @@
     "fr": "Le gardien a ouvert la porte."
    },
    "theme": "actions",
-   "scheme": "فَعَلَ"
+   "scheme": "فَعَلَ",
+   "nom_action": "فَتْحٌ"
   },
   {
    "id": "hamala",
@@ -2308,7 +2318,8 @@
     "ar": "حَمَلَ بَاسِمٌ السَّلَّةَ.",
     "fr": "Bāsim a porté le panier."
    },
-   "theme": "actions"
+   "theme": "actions",
+   "nom_action": "حَمْلٌ"
   },
   {
    "id": "rakiba",
@@ -2326,7 +2337,8 @@
     "ar": "رَكِبَ التُّجَّارُ الْجِمَالَ.",
     "fr": "Les marchands sont montés sur les chameaux."
    },
-   "theme": "voyage"
+   "theme": "voyage",
+   "nom_action": "رُكُوبٌ"
   },
   {
    "id": "balagha",
@@ -2343,7 +2355,8 @@
     "ar": "بَلَغَتِ الْقَافِلَةُ الْمَدِينَةَ.",
     "fr": "La caravane a atteint la ville."
    },
-   "theme": "voyage"
+   "theme": "voyage",
+   "nom_action": "بُلُوغٌ"
   },
   {
    "id": "himl",
@@ -2417,7 +2430,8 @@
     "ar": "تَرَكَ سَمِيرٌ الْقَلَمَ عَلَى الْكُرْسِيِّ.",
     "fr": "Samīr a laissé le calame sur la chaise."
    },
-   "theme": "actions"
+   "theme": "actions",
+   "nom_action": "تَرْكٌ"
   },
   {
    "id": "talaba",
@@ -2434,7 +2448,8 @@
     "ar": "طَلَبْتُ الْمِفْتَاحَ فِي الْغُرْفَةِ.",
     "fr": "J'ai cherché la clé dans la chambre."
    },
-   "theme": "actions"
+   "theme": "actions",
+   "nom_action": "طَلَبٌ"
   },
   {
    "id": "jamaa",
@@ -2451,7 +2466,8 @@
     "ar": "جَمَعَ بَاسِمٌ الْأَحْمَالَ.",
     "fr": "Bāsim a rassemblé les charges."
    },
-   "theme": "actions"
+   "theme": "actions",
+   "nom_action": "جَمْعٌ"
   },
   {
    "id": "arafa",
@@ -2468,7 +2484,8 @@
     "ar": "عَرَفَنِي الْحَارِسُ.",
     "fr": "Le gardien m'a reconnu."
    },
-   "theme": "savoir"
+   "theme": "savoir",
+   "nom_action": "مَعْرِفَةٌ"
   },
   {
    "id": "risala",
@@ -2518,7 +2535,8 @@
     "ar": "يَدْرُسُ سَمِيرٌ فِي الْغُرْفَةِ.",
     "fr": "Samīr étudie dans la chambre."
    },
-   "theme": "savoir"
+   "theme": "savoir",
+   "nom_action": "دِرَاسَةٌ"
   },
   {
    "id": "hafiza",
@@ -2535,7 +2553,8 @@
     "ar": "أَحْفَظُ الدَّرْسَ فِي الْمَسَاءِ.",
     "fr": "J'apprends la leçon par cœur le soir."
    },
-   "theme": "savoir"
+   "theme": "savoir",
+   "nom_action": "حِفْظٌ"
   },
   {
    "id": "sakana",
@@ -2634,7 +2653,8 @@
     "ar": "الْخَيَّاطُونَ يَصْنَعُونَ الْقُمْصَانَ.",
     "fr": "Les tailleurs fabriquent les chemises."
    },
-   "theme": "travail"
+   "theme": "travail",
+   "nom_action": "صُنْعٌ"
   },
   {
    "id": "labisa",
@@ -2651,7 +2671,8 @@
     "ar": "يَلْبَسُ بَاسِمٌ قَمِيصًا جَدِيدًا.",
     "fr": "Bāsim met une chemise neuve."
    },
-   "theme": "actions"
+   "theme": "actions",
+   "nom_action": "لُبْسٌ"
   },
   {
    "id": "talib",
@@ -2781,7 +2802,8 @@
     "ar": "فَهِمَ بَاسِمٌ الدَّرْسَ.",
     "fr": "Bāsim a compris la leçon."
    },
-   "theme": "savoir"
+   "theme": "savoir",
+   "nom_action": "فَهْمٌ"
   },
   {
    "id": "suaal",
@@ -2976,7 +2998,8 @@
     "ar": "زَرَعَتْ سَلْمَى زَهْرَةً فِي الْحَدِيقَةِ.",
     "fr": "Salmā a planté une fleur dans le jardin."
    },
-   "theme": "nature"
+   "theme": "nature",
+   "nom_action": "زَرْعٌ"
   },
   {
    "id": "shajara",
@@ -3218,6 +3241,7 @@
    "source_sens": "rédigé par IA",
    "passe": "صَعِدَ",
    "inaccompli": "يَصْعَدُ",
+   "nom_action": "صُعُودٌ",
    "lemme": "yaSoEadu",
    "scheme": "فَعِلَ",
    "exemple": {
@@ -3308,6 +3332,7 @@
    "source_sens": "rédigé par IA",
    "passe": "طَرَقَ",
    "inaccompli": "يَطْرُقُ",
+   "nom_action": "طَرْقٌ",
    "racine": "Trq",
    "scheme": "فَعَلَ",
    "exemple": {
@@ -3903,7 +3928,6 @@
    "lemme": "Tifol",
    "scheme": "فِعْل",
    "scheme_pluriel": "أَفْعَال",
-   "remarque": "sert aussi au féminin et au pluriel en arabe classique",
    "exemple": {
     "ar": "الْأَطْفَالُ فِي الْحَدِيقَةِ.",
     "fr": "Les enfants sont dans le jardin."
