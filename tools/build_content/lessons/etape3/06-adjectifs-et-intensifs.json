@@ -1,0 +1,540 @@
+{
+  "id": "moteur-06",
+  "etape": 3,
+  "ordre": 6,
+  "format": 3,
+  "titre": "Adjectifs et intensifs",
+  "objectif": "Comprendre les moules فَعِيل et فَعَّال.",
+  "statut": "ia_non_verifie",
+  "lieu": "atelier_outils",
+  "maitre": "hilal",
+  "prerequis": [
+    "moteur-05"
+  ],
+  "apercu": [
+    "هِلَالٌ",
+    "حَبِيبٌ"
+  ],
+  "schemes": [
+    "فَعِيل",
+    "فَعَّال",
+    "مَفْعُول",
+    "فُعُول",
+    "مَفْعَلَة",
+    "فَاعِل",
+    "فُعَلَاء",
+    "مَفْعَل",
+    "مِفْعَال",
+    "فَعْل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "texte": "Certains moules disent une qualité, d'autres un métier. Le boulanger, le tailleur, le forgeron : tu les connais déjà."
+        },
+        {
+          "qui": "hilal",
+          "texte": "Regarde la lettre du milieu doublée : خَبَّازٌ, حَدَّادٌ."
+        }
+      ],
+      "objectif": "Reconnaître une qualité (فَعِيل) et un métier (فَعَّال)."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de مِفْتَاحٌ ?",
+          "choix_ar": [
+            "مِفْعَال",
+            "مَفْعَل",
+            "فَاعِل"
+          ],
+          "reponse": 0,
+          "explication": "مِفْعَال : l'outil (leçon 3.5)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَجْلِسٌ",
+          "choix": [
+            "salle de réunion",
+            "chaise",
+            "assis"
+          ],
+          "reponse": 0,
+          "explication": "مَجْلِسٌ : lieu où l'on s'assoit (leçon 3.5)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine د ر س dans le moule مَفْعَلَة. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَدْرَسَةٌ",
+            "دِرَاسَةٌ",
+            "دَرْسٌ"
+          ],
+          "reponse": 0,
+          "explication": "مَفْعَلَة : le lieu, l'école (leçon 3.5)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "ar": "حَمَلَ الْحَمَّالُ الْأَحْمَالَ إِلَى السُّوقِ.",
+          "fr": "Le porteur a porté les charges au marché."
+        },
+        {
+          "qui": "basim",
+          "ar": "هُوَ سَرِيعٌ!",
+          "fr": "Il est rapide !"
+        },
+        {
+          "qui": "hilal",
+          "ar": "نَعَمْ، وَالْحَمَّالُ سَعِيدٌ الْيَوْمَ.",
+          "fr": "Oui, et le porteur est heureux aujourd'hui."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où le porteur a-t-il porté les charges ?",
+        "choix": [
+          "au marché",
+          "à la forge",
+          "à l'école"
+        ],
+        "reponse": 0,
+        "explication": "إِلَى السُّوقِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "marid",
+        "faqir",
+        "daif",
+        "sari",
+        "said",
+        "tabbakh",
+        "hammal",
+        "rahhal"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "سَرِيعٌ",
+        "choix": [
+          "rapide",
+          "heureux",
+          "faible"
+        ],
+        "reponse": 0,
+        "explication": "سَرِيعٌ veut dire « rapide »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La qualité : فَعِيل",
+      "texte": "فَعِيل dit souvent une qualité qui dure : قَصِيرٌ, مَرِيضٌ, سَعِيدٌ. فَاعِل dit plutôt un état du moment : جَالِسٌ « assis (maintenant) ».",
+      "exemples": [
+        "قَصِيرٌ",
+        "مَرِيضٌ",
+        "سَعِيدٌ",
+        "جَدِيدٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le moule de كَبِيرٌ ?",
+        "choix_ar": [
+          "فَعِيل",
+          "فَاعِل",
+          "فَعَّال"
+        ],
+        "reponse": 0,
+        "explication": "كَ بِي رٌ : فَعِيل."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le métier : فَعَّال",
+      "texte": "فَعَّال, avec la lettre du milieu doublée, dit souvent un métier (خَبَّازٌ) ou quelqu'un qui fait beaucoup une action (رَحَّالٌ). Ce sont des tendances : حَدِيدٌ « fer » est un nom en فَعِيل, حَبِيبٌ veut dire « aimé ».",
+      "exemples": [
+        "خَبَّازٌ",
+        "حَدَّادٌ",
+        "حَمَّالٌ",
+        "رَحَّالٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "حَامِلٌ ou حَمَّالٌ : lequel est un porteur de métier ?",
+        "choix": [
+          "حَمَّالٌ",
+          "حَامِلٌ",
+          "les deux"
+        ],
+        "reponse": 0,
+        "explication": "حَامِلٌ porte maintenant ; حَمَّالٌ, avec la shadda, porte par métier."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَقِيرٌ",
+          "choix": [
+            "pauvre",
+            "malade",
+            "petit"
+          ],
+          "reponse": 0,
+          "explication": "فَقِيرٌ veut dire « pauvre »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَحَّالٌ",
+          "choix": [
+            "grand voyageur",
+            "voyage",
+            "cavalier"
+          ],
+          "reponse": 0,
+          "explication": "رَحَّالٌ veut dire « grand voyageur »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « heureux » ?",
+          "choix_ar": [
+            "سَعِيدٌ",
+            "سَرِيعٌ",
+            "صَعِدَ"
+          ],
+          "reponse": 0,
+          "explication": "« heureux » se dit سَعِيدٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la corde est faible » ?",
+          "choix_ar": [
+            "الْحَبْلُ ضَعِيفٌ",
+            "الْحَبْلُ ضَعِيفَةٌ",
+            "حَبْلٌ الضَّعِيفُ"
+          ],
+          "reponse": 0,
+          "explication": "« la corde est faible » se dit الْحَبْلُ ضَعِيفٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de حَمَّالٌ ?",
+          "choix_ar": [
+            "فَعَّال",
+            "فَاعِل",
+            "فَعِيل"
+          ],
+          "reponse": 0,
+          "explication": "حَ مَّا لٌ : la lettre du milieu doublée, فَعَّال."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de ضَعِيفٌ ?",
+          "choix_ar": [
+            "فَعِيل",
+            "فَعَّال",
+            "مَفْعُول"
+          ],
+          "reponse": 0,
+          "explication": "ضَ عِي فٌ : فَعِيل."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ح م ل dans le moule فَعَّال. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "حَمَّالٌ",
+            "حَامِلٌ",
+            "حِمْلٌ"
+          ],
+          "reponse": 0,
+          "explication": "ح م ل dans فَعَّال : حَمَّالٌ, le porteur de métier."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق ص ر dans le moule فَعِيل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "قَصِيرٌ",
+            "قَصِيرَةٌ",
+            "طَوِيلٌ"
+          ],
+          "reponse": 0,
+          "explication": "ق ص ر dans فَعِيل : قَصِيرٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La fille est heureuse. »",
+          "ar": "الْبِنْتُ …",
+          "choix_ar": [
+            "سَعِيدَةٌ",
+            "سَعِيدٌ",
+            "سَعِيدَةً"
+          ],
+          "reponse": 0,
+          "explication": "Au féminin, on ajoute ة : سَعِيدَةٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le cuisinier est dans la cuisine. »",
+          "ar": "… فِي الْمَطْبَخِ.",
+          "choix_ar": [
+            "الطَّبَّاخُ",
+            "الطَّبَّاخَ",
+            "طَبَّاخًا"
+          ],
+          "reponse": 0,
+          "explication": "Sujet défini en -u : الطَّبَّاخُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Les gens du village",
+      "texte": "Hilāl présente les habitants du village. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "الشَّيْخُ مَرِيضٌ الْيَوْمَ، وَهُوَ فِي الْبَيْتِ.",
+        "الطَّبَّاخُ فِي الْمَطْبَخِ، وَالْخُبْزُ جَدِيدٌ.",
+        "التَّاجِرُ لَيْسَ فَقِيرًا.",
+        "رَحَّالٌ مِنَ الْمَدِينَةِ جَالِسٌ فِي الْمَجْلِسِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi le vieil homme est-il à la maison ?",
+          "choix": [
+            "il est malade",
+            "il est pauvre",
+            "il est heureux"
+          ],
+          "reponse": 0,
+          "explication": "الشَّيْخُ مَرِيضٌ الْيَوْمَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qui est assis dans la salle de réunion ?",
+          "choix": [
+            "un grand voyageur de la ville",
+            "le cuisinier",
+            "le marchand"
+          ],
+          "reponse": 0,
+          "explication": "رَحَّالٌ مِنَ الْمَدِينَةِ جَالِسٌ فِي الْمَجْلِسِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le chameau est rapide. » ?",
+          "choix_ar": [
+            "الْجَمَلُ سَرِيعٌ.",
+            "الْجَمَلُ سَرِيعَةٌ.",
+            "جَمَلٌ السَّرِيعُ."
+          ],
+          "reponse": 0,
+          "explication": "« Le chameau est rapide. » se dit الْجَمَلُ سَرِيعٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Le porteur a porté les charges. »",
+          "tuiles": [
+            "الْأَحْمَالَ",
+            "حَمَلَ",
+            "الْحَمَّالُ",
+            "الْحَامِلُ"
+          ],
+          "solution": [
+            "حَمَلَ",
+            "الْحَمَّالُ",
+            "الْأَحْمَالَ"
+          ],
+          "explication": "Le porteur de métier : الْحَمَّالُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand n'est pas pauvre. »",
+          "ar": "التَّاجِرُ لَيْسَ …",
+          "choix_ar": [
+            "فَقِيرًا",
+            "فَقِيرٌ",
+            "فَقِيرَةً"
+          ],
+          "reponse": 0,
+          "explication": "Après لَيْسَ, l'attribut prend -an : فَقِيرًا (leçon 2.20)."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَرِيضٌ",
+          "choix": [
+            "malade",
+            "pauvre",
+            "faible"
+          ],
+          "reponse": 0,
+          "explication": "مَرِيضٌ veut dire « malade »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَمَّالٌ",
+          "choix": [
+            "porteur (de métier)",
+            "qui porte maintenant",
+            "charge"
+          ],
+          "reponse": 0,
+          "explication": "حَمَّالٌ veut dire « porteur (de métier) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَعِيدٌ",
+          "choix": [
+            "heureux",
+            "rapide",
+            "il est monté"
+          ],
+          "reponse": 0,
+          "explication": "سَعِيدٌ veut dire « heureux »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le cuisinier » ?",
+          "choix_ar": [
+            "الطَّبَّاخُ",
+            "الْخَبَّازُ",
+            "الْمَطْبَخُ"
+          ],
+          "reponse": 0,
+          "explication": "« le cuisinier » se dit الطَّبَّاخُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "فَعَّال dit souvent…",
+          "choix": [
+            "un métier",
+            "un lieu",
+            "un outil"
+          ],
+          "reponse": 0,
+          "explication": "خَبَّازٌ, حَدَّادٌ : des métiers."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de سَرِيعٌ ?",
+          "choix_ar": [
+            "فَعِيل",
+            "فَعَّال",
+            "فَاعِل"
+          ],
+          "reponse": 0,
+          "explication": "سَ رِي عٌ : فَعِيل."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ر ح ل dans le moule فَعَّال. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "رَحَّالٌ",
+            "سَفَرٌ",
+            "رَاكِبٌ"
+          ],
+          "reponse": 0,
+          "explication": "ر ح ل dans فَعَّال : رَحَّالٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ق ر dans le moule فَعِيل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "فَقِيرٌ",
+            "فُقَرَاءُ",
+            "قَصِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "ف ق ر dans فَعِيل : فَقِيرٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La lettre est longue. »",
+          "ar": "الرِّسَالَةُ …",
+          "choix_ar": [
+            "طَوِيلَةٌ",
+            "طَوِيلٌ",
+            "طَوِيلَةً"
+          ],
+          "reponse": 0,
+          "explication": "Nom féminin : طَوِيلَةٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ط ر ق dans le moule مِفْعَلَة. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مِطْرَقَةٌ",
+            "طَرِيقٌ",
+            "طَرَقَ"
+          ],
+          "reponse": 0,
+          "explication": "مِفْعَلَة : l'outil (leçon 3.5).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَكْتُوبٌ",
+          "choix": [
+            "écrit",
+            "écriture",
+            "scribe"
+          ],
+          "reponse": 0,
+          "explication": "مَكْتُوبٌ veut dire « écrit ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de خُرُوجٌ ?",
+          "choix_ar": [
+            "فُعُول",
+            "فَاعِل",
+            "مَفْعَل"
+          ],
+          "reponse": 0,
+          "explication": "فُعُول (leçon 3.4).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais فَعِيل, une qualité (مَرِيضٌ, سَعِيدٌ), et فَعَّال, un métier ou une action répétée (حَمَّالٌ, رَحَّالٌ).",
+      "suite": "Au Pont des caravanes : les pluriels qui changent de forme."
+    }
+  ]
+}

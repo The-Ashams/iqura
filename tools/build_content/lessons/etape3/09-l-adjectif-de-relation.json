@@ -1,0 +1,521 @@
+{
+  "id": "moteur-09",
+  "etape": 3,
+  "ordre": 9,
+  "format": 3,
+  "titre": "L'adjectif de relation",
+  "objectif": "Dire « arabe », « égyptien », « de montagne ».",
+  "statut": "ia_non_verifie",
+  "lieu": "relais",
+  "maitre": "hilal",
+  "prerequis": [
+    "moteur-08"
+  ],
+  "apercu": [
+    "هِلَالٌ",
+    "مِصْرُ"
+  ],
+  "schemes": [
+    "أَفْعَل",
+    "فَعِيل",
+    "فَعْل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "texte": "Au relais, des voyageurs de tous pays. Chacun dit d'où il vient."
+        },
+        {
+          "qui": "hilal",
+          "texte": "Une petite fin, ـِيٌّ, transforme un nom de lieu en adjectif : la nisba."
+        }
+      ],
+      "objectif": "Former un adjectif de relation."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chameau est plus grand que l'âne. »",
+          "ar": "الْجَمَلُ … مِنَ الْحِمَارِ.",
+          "choix_ar": [
+            "أَكْبَرُ",
+            "كَبِيرٌ",
+            "أَكْثَرُ"
+          ],
+          "reponse": 0,
+          "explication": "Comparatif : أَكْبَرُ (leçon 3.8)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَهْلٌ",
+          "choix": [
+            "facile",
+            "difficile",
+            "rapide"
+          ],
+          "reponse": 0,
+          "explication": "سَهْلٌ : « facile » (leçon 3.8)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le singulier de صُخُورٌ ?",
+          "choix_ar": [
+            "صَخْرَةٌ",
+            "صَقْرٌ",
+            "صَحْنٌ"
+          ],
+          "reponse": 0,
+          "explication": "ص خ ر : صَخْرَةٌ (leçon 3.7)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَنْ هَٰذَا التَّاجِرُ؟",
+          "fr": "Qui est ce marchand ?"
+        },
+        {
+          "qui": "hilal",
+          "ar": "هُوَ تَاجِرٌ مِصْرِيٌّ، وَصَدِيقُهُ بَغْدَادِيٌّ.",
+          "fr": "C'est un marchand égyptien, et son ami est de Bagdad."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَهَٰذَا سَيْفٌ هِنْدِيٌّ قَدِيمٌ!",
+          "fr": "Et voici une vieille épée indienne !"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "D'où vient le marchand ?",
+        "choix": [
+          "d'Égypte",
+          "de Bagdad",
+          "de Damas"
+        ],
+        "reponse": 0,
+        "explication": "تَاجِرٌ مِصْرِيٌّ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "arabi",
+        "lugha",
+        "misri",
+        "baghdadi",
+        "dimashqi",
+        "farisi",
+        "hindi",
+        "jabali"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "فَارِسِيٌّ",
+        "choix": [
+          "persan",
+          "indien",
+          "égyptien"
+        ],
+        "reponse": 0,
+        "explication": "فَارِسِيٌّ veut dire « persan »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La nisba",
+      "texte": "Pour dire d'où vient une personne ou une chose, on ajoute ـِيٌّ, au féminin ـِيَّةٌ, après avoir enlevé l'article et ة : جَبَلٌ → جَبَلِيٌّ, مِصْرُ → مِصْرِيٌّ. L'adjectif suit le nom et s'accorde avec lui.",
+      "exemples": [
+        "جَبَلِيٌّ",
+        "مِصْرِيٌّ",
+        "عَرَبِيَّةٌ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Salmā est de Damas. »",
+        "ar": "سَلْمَى …",
+        "choix_ar": [
+          "دِمَشْقِيَّةٌ",
+          "دِمَشْقِيٌّ",
+          "دِمَشْقِيَّةً"
+        ],
+        "reponse": 0,
+        "explication": "Au féminin : ـِيَّةٌ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Attention",
+      "texte": "بَيْتِي « ma maison » finit par -ī, mais n'est pas une nisba en -iyy. كُرْسِيٌّ « chaise » ressemble à une nisba sans en être une.",
+      "exemples": [
+        "بَيْتِي",
+        "كُرْسِيٌّ",
+        "جَبَلِيٌّ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Lequel est une nisba ?",
+        "choix_ar": [
+          "جَبَلِيٌّ",
+          "بَيْتِي",
+          "كُرْسِيٌّ"
+        ],
+        "reponse": 0,
+        "explication": "جَبَلِيٌّ : « de montagne », de جَبَلٌ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هِنْدِيٌّ",
+          "choix": [
+            "indien",
+            "persan",
+            "arabe"
+          ],
+          "reponse": 0,
+          "explication": "هِنْدِيٌّ veut dire « indien »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لُغَةٌ",
+          "choix": [
+            "langue",
+            "lettre",
+            "mot"
+          ],
+          "reponse": 0,
+          "explication": "لُغَةٌ veut dire « langue »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « arabe (masculin) » ?",
+          "choix_ar": [
+            "عَرَبِيٌّ",
+            "عَرَبِيَّةٌ",
+            "مِصْرِيٌّ"
+          ],
+          "reponse": 0,
+          "explication": "« arabe (masculin) » se dit عَرَبِيٌّ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la langue arabe » ?",
+          "choix_ar": [
+            "اللُّغَةُ الْعَرَبِيَّةُ",
+            "اللُّغَةُ الْعَرَبِيُّ",
+            "لُغَةٌ الْعَرَبِيَّةُ"
+          ],
+          "reponse": 0,
+          "explication": "« la langue arabe » se dit اللُّغَةُ الْعَرَبِيَّةُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Samīr est de Bagdad. »",
+          "ar": "سَمِيرٌ …",
+          "choix_ar": [
+            "بَغْدَادِيٌّ",
+            "بَغْدَادِيَّةٌ",
+            "بَغْدَادِيًّا"
+          ],
+          "reponse": 0,
+          "explication": "Masculin : ـِيٌّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « un tapis persan »",
+          "ar": "بِسَاطٌ …",
+          "choix_ar": [
+            "فَارِسِيٌّ",
+            "فَارِسِيَّةٌ",
+            "الْفَارِسِيُّ"
+          ],
+          "reponse": 0,
+          "explication": "L'adjectif s'accorde : masculin, indéfini."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « une fille égyptienne »",
+          "ar": "بِنْتٌ …",
+          "choix_ar": [
+            "مِصْرِيَّةٌ",
+            "مِصْرِيٌّ",
+            "الْمِصْرِيَّةُ"
+          ],
+          "reponse": 0,
+          "explication": "Féminin, indéfini : مِصْرِيَّةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment forme-t-on la nisba de جَبَلٌ ?",
+          "choix_ar": [
+            "جَبَلِيٌّ",
+            "جِبَالٌ",
+            "جَبَلِي"
+          ],
+          "reponse": 0,
+          "explication": "On ajoute ـِيٌّ, avec la shadda."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle fin marque une nisba ?",
+          "choix": [
+            "ـِيٌّ, avec une shadda",
+            "ـِي sans shadda",
+            "ـُونَ"
+          ],
+          "reponse": 0,
+          "explication": "La nisba est en -iyy : ـِيٌّ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le relais",
+      "texte": "Le soir, au relais, les voyageurs se présentent. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الْمَجْلِسِ تُجَّارٌ كَثِيرُونَ.",
+        "هَٰذَا تَاجِرٌ دِمَشْقِيٌّ، وَهَٰذَا تَاجِرٌ فَارِسِيٌّ.",
+        "قَالَ الرَّحَّالُ: « اللُّغَةُ الْعَرَبِيَّةُ جَمِيلَةٌ. »",
+        "وَعَلَى الْجِدَارِ سَيْفٌ هِنْدِيٌّ قَدِيمٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que dit le grand voyageur ?",
+          "choix": [
+            "la langue arabe est belle",
+            "le marchand est persan",
+            "l'épée est vieille"
+          ],
+          "reponse": 0,
+          "explication": "اللُّغَةُ الْعَرَبِيَّةُ جَمِيلَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'y a-t-il sur le mur ?",
+          "choix": [
+            "une vieille épée indienne",
+            "un tapis persan",
+            "une lampe"
+          ],
+          "reponse": 0,
+          "explication": "سَيْفٌ هِنْدِيٌّ قَدِيمٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « C'est un marchand égyptien. » ?",
+          "choix_ar": [
+            "هُوَ تَاجِرٌ مِصْرِيٌّ.",
+            "هُوَ تَاجِرٌ مِصْرِيَّةٌ.",
+            "هُوَ مِصْرِيٌّ تَاجِرٌ."
+          ],
+          "reponse": 0,
+          "explication": "« C'est un marchand égyptien. » se dit هُوَ تَاجِرٌ مِصْرِيٌّ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « La langue arabe est belle. »",
+          "tuiles": [
+            "جَمِيلَةٌ",
+            "اللُّغَةُ",
+            "الْعَرَبِيَّةُ",
+            "جَمِيلٌ"
+          ],
+          "solution": [
+            "اللُّغَةُ",
+            "الْعَرَبِيَّةُ",
+            "جَمِيلَةٌ"
+          ],
+          "explication": "Le nom, son adjectif accordé, puis l'attribut au féminin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Hilāl est un montagnard. »",
+          "ar": "هِلَالٌ …",
+          "choix_ar": [
+            "جَبَلِيٌّ",
+            "جَبَلٌ",
+            "جِبَالٌ"
+          ],
+          "reponse": 0,
+          "explication": "Nisba de جَبَلٌ : جَبَلِيٌّ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَرَبِيٌّ",
+          "choix": [
+            "arabe",
+            "persan",
+            "de montagne"
+          ],
+          "reponse": 0,
+          "explication": "عَرَبِيٌّ veut dire « arabe »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مِصْرِيٌّ",
+          "choix": [
+            "égyptien",
+            "indien",
+            "de Damas"
+          ],
+          "reponse": 0,
+          "explication": "مِصْرِيٌّ veut dire « égyptien »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَبَلِيٌّ",
+          "choix": [
+            "de montagne",
+            "montagnes",
+            "pont"
+          ],
+          "reponse": 0,
+          "explication": "جَبَلِيٌّ veut dire « de montagne »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « persan » ?",
+          "choix_ar": [
+            "فَارِسِيٌّ",
+            "هِنْدِيٌّ",
+            "عَرَبِيٌّ"
+          ],
+          "reponse": 0,
+          "explication": "« persan » se dit فَارِسِيٌّ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La nisba au féminin finit par…",
+          "choix": [
+            "ـِيَّةٌ",
+            "ـِيٌّ",
+            "ـَةٌ seulement"
+          ],
+          "reponse": 0,
+          "explication": "مِصْرِيَّةٌ, عَرَبِيَّةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "بَيْتِي est-il une nisba ?",
+          "choix": [
+            "non : « ma maison »",
+            "oui : « domestique »",
+            "oui, au féminin"
+          ],
+          "reponse": 0,
+          "explication": "-ī de بَيْتِي est le pronom « mon »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La langue arabe est belle. »",
+          "ar": "اللُّغَةُ … جَمِيلَةٌ.",
+          "choix_ar": [
+            "الْعَرَبِيَّةُ",
+            "الْعَرَبِيُّ",
+            "عَرَبِيَّةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Adjectif accordé : féminin, défini."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « une vieille épée indienne »",
+          "ar": "سَيْفٌ … قَدِيمٌ",
+          "choix_ar": [
+            "هِنْدِيٌّ",
+            "هِنْدِيَّةٌ",
+            "الْهِنْدِيُّ"
+          ],
+          "reponse": 0,
+          "explication": "سَيْفٌ est masculin, indéfini."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Salmā est de Damas. »",
+          "ar": "سَلْمَى …",
+          "choix_ar": [
+            "دِمَشْقِيَّةٌ",
+            "دِمَشْقِيٌّ",
+            "دِمَشْقِيًّا"
+          ],
+          "reponse": 0,
+          "explication": "Féminin : ـِيَّةٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ب ر dans le moule أَفْعَل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "أَكْبَرُ",
+            "كَبِيرٌ",
+            "أَكْثَرُ"
+          ],
+          "reponse": 0,
+          "explication": "أَفْعَلُ : « plus grand » (leçon 3.8).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جُسُورٌ",
+          "choix": [
+            "ponts",
+            "selles",
+            "faucons"
+          ],
+          "reponse": 0,
+          "explication": "جُسُورٌ veut dire « ponts ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَعْبٌ",
+          "choix": [
+            "difficile",
+            "facile",
+            "rocher"
+          ],
+          "reponse": 0,
+          "explication": "صَعْبٌ veut dire « difficile ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu formes la nisba : جَبَلٌ → جَبَلِيٌّ, مِصْرُ → مِصْرِيٌّ, au féminin ـِيَّةٌ (اللُّغَةُ الْعَرَبِيَّةُ).",
+      "suite": "Dernière leçon du chapitre : ce que la racine ne dit pas."
+    }
+  ]
+}

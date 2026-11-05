@@ -41,13 +41,11 @@ class CombatScene extends FlameGame {
     camera.viewfinder.anchor = Anchor.topLeft;
     world.add(
       SpriteComponent(
-        sprite: await loadSprite(
-          switch (region) {
-            2 => 'scene_mirage.png',
-            3 => 'scene_eboulis.png',
-            _ => 'scene_faille.png',
-          },
-        ),
+        sprite: await loadSprite(switch (region) {
+          2 => 'scene_mirage.png',
+          3 => 'scene_eboulis.png',
+          _ => 'scene_faille.png',
+        }),
         size: Vector2(160, 90),
         paint: _pixelPaint(),
       ),

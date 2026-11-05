@@ -1,0 +1,564 @@
+{
+  "id": "moteur-07",
+  "etape": 3,
+  "ordre": 7,
+  "format": 3,
+  "titre": "Les pluriels internes",
+  "objectif": "Retrouver le singulier d'un pluriel interne.",
+  "statut": "ia_non_verifie",
+  "lieu": "pont",
+  "maitre": "hilal",
+  "prerequis": [
+    "moteur-06"
+  ],
+  "apercu": [
+    "هِلَالٌ",
+    "الْمَائِدَةِ",
+    "مَدَارِسُ"
+  ],
+  "schemes": [
+    "فَعَّال",
+    "مَفْعِل",
+    "مِفْعَال",
+    "مَفْعَل",
+    "أَفْعَال",
+    "فِعَال",
+    "فُعُول",
+    "فُعُل",
+    "فُعَّال",
+    "فَعْل",
+    "فِعْل",
+    "فَعَل",
+    "فَاعِل",
+    "فَعِيل",
+    "فُعَلَاء",
+    "مَفَاعِل",
+    "مَفَاعِيل",
+    "أَفْعَل",
+    "فِعَالَة"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "texte": "Voici le Pont des caravanes. Des marchands, des chameaux, des selles : que de pluriels !"
+        },
+        {
+          "qui": "hilal",
+          "texte": "Beaucoup de pluriels arabes changent la forme du mot à l'intérieur. Apprends à retrouver le singulier."
+        }
+      ],
+      "objectif": "Passer d'un pluriel interne à son singulier."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de حَمَّالٌ ?",
+          "choix_ar": [
+            "فَعَّال",
+            "فَعِيل",
+            "فَاعِل"
+          ],
+          "reponse": 0,
+          "explication": "فَعَّال : un métier (leçon 3.6)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ضَعِيفٌ",
+          "choix": [
+            "faible",
+            "pauvre",
+            "rapide"
+          ],
+          "reponse": 0,
+          "explication": "ضَعِيفٌ : « faible » (leçon 3.6)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج ل س dans le moule مَفْعِل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَجْلِسٌ",
+            "جَالِسٌ",
+            "جُلُوسٌ"
+          ],
+          "reponse": 0,
+          "explication": "مَفْعِل : le lieu (leçon 3.5)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "ar": "الْجُسُورُ هُنَا طَوِيلَةٌ.",
+          "fr": "Ici, les ponts sont longs."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَالصُّقُورُ فَوْقَ الْجَبَلِ!",
+          "fr": "Et les faucons sont au-dessus de la montagne !"
+        },
+        {
+          "qui": "hilal",
+          "ar": "نَعَمْ، وَالْأَطْفَالُ فِي الْقَرْيَةِ.",
+          "fr": "Oui, et les enfants sont au village."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où sont les faucons ?",
+        "choix": [
+          "au-dessus de la montagne",
+          "sur le pont",
+          "au village"
+        ],
+        "reponse": 0,
+        "explication": "الصُّقُورُ فَوْقَ الْجَبَلِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "tifl",
+        "sarj",
+        "jisr",
+        "sahn",
+        "saqr",
+        "fahd"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "جِسْرٌ",
+        "choix": [
+          "pont",
+          "selle",
+          "plat"
+        ],
+        "reponse": 0,
+        "explication": "جِسْرٌ veut dire « pont »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le pluriel interne",
+      "texte": "Un pluriel interne change la forme du mot à l'intérieur : قَلَمٌ → أَقْلَامٌ. Pour retrouver le singulier, cherche la racine, puis essaie les moules de singulier que tu connais.",
+      "exemples": [
+        "أَقْلَامٌ",
+        "جِبَالٌ",
+        "نُجُومٌ",
+        "كُتُبٌ",
+        "تُجَّارٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le singulier de جِبَالٌ ?",
+        "choix_ar": [
+          "جَبَلٌ",
+          "جَمَلٌ",
+          "جِدَارٌ"
+        ],
+        "reponse": 0,
+        "explication": "Racine ج ب ل : جَبَلٌ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les moules fréquents",
+      "texte": "Moules fréquents : أَفْعَال (أَقْلَامٌ), فِعَال (جِبَالٌ), فُعُول (نُجُومٌ), فُعُل (كُتُبٌ), فُعَّال (تُجَّارٌ). Le pluriel ne se prévoit pas : il s'apprend avec le mot.",
+      "exemples": [
+        "أَوْلَادٌ",
+        "رِجَالٌ",
+        "دُرُوسٌ",
+        "سُقُفٌ",
+        "طُلَّابٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le moule de أَحْمَالٌ ?",
+        "choix_ar": [
+          "أَفْعَال",
+          "فُعُول",
+          "فِعَال"
+        ],
+        "reponse": 0,
+        "explication": "أَ حْ مَا لٌ : أَفْعَال."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَقْرٌ",
+          "choix": [
+            "faucon",
+            "guépard",
+            "chameau"
+          ],
+          "reponse": 0,
+          "explication": "صَقْرٌ veut dire « faucon »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَرْجٌ",
+          "choix": [
+            "selle",
+            "pont",
+            "corde"
+          ],
+          "reponse": 0,
+          "explication": "سَرْجٌ veut dire « selle »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « les enfants » ?",
+          "choix_ar": [
+            "الْأَطْفَالُ",
+            "الْأَوْلَادُ",
+            "الطُّلَّابُ"
+          ],
+          "reponse": 0,
+          "explication": "« les enfants » se dit الْأَطْفَالُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le singulier de أَشْجَارٌ ?",
+          "choix_ar": [
+            "شَجَرَةٌ",
+            "شَرِبَ",
+            "شَمْسٌ"
+          ],
+          "reponse": 0,
+          "explication": "Racine ش ج ر : شَجَرَةٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Trouve la racine de ce pluriel.",
+          "tuiles": [
+            "ز",
+            "ك",
+            "و",
+            "ن"
+          ],
+          "solution": [
+            "ك",
+            "ن",
+            "ز"
+          ],
+          "explication": "On enlève le و long et la fin : ك ن ز, comme كَنْزٌ.",
+          "ar": "كُنُوزٌ"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le singulier de سُكَّانٌ ?",
+          "choix_ar": [
+            "سَاكِنٌ",
+            "سَكَنَ",
+            "مَسْكَنٌ"
+          ],
+          "reponse": 0,
+          "explication": "Moule فُعَّال, pluriel de فَاعِل : سَاكِنٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de صُخُورٌ ?",
+          "choix_ar": [
+            "فُعُول",
+            "فِعَال",
+            "أَفْعَال"
+          ],
+          "reponse": 0,
+          "explication": "صُ خُو رٌ : فُعُول."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق ل م dans le moule أَفْعَال. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "أَقْلَامٌ",
+            "قَلَمٌ",
+            "قَلِيلٌ"
+          ],
+          "reponse": 0,
+          "explication": "ق ل م dans أَفْعَال : أَقْلَامٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج ب ل dans le moule فِعَال. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "جِبَالٌ",
+            "جَبَلٌ",
+            "جِدَارٌ"
+          ],
+          "reponse": 0,
+          "explication": "ج ب ل dans فِعَال : جِبَالٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les ponts sont longs. »",
+          "ar": "الْجُسُورُ …",
+          "choix_ar": [
+            "طَوِيلَةٌ",
+            "طَوِيلٌ",
+            "طَوِيلَةً"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de choses : accord au féminin singulier, طَوِيلَةٌ (leçon 2.18)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « les selles » ?",
+          "choix_ar": [
+            "السُّرُوجُ",
+            "السَّرْجُ",
+            "السِّرَاجُ"
+          ],
+          "reponse": 0,
+          "explication": "« les selles » se dit السُّرُوجُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Sur le pont",
+      "texte": "Une caravane traverse le pont. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "عَلَى الْجِسْرِ تُجَّارٌ وَجِمَالٌ.",
+        "عَلَى الْجِمَالِ سُرُوجٌ جَدِيدَةٌ.",
+        "فِي السِّلَالِ صُحُونٌ وَأَقْلَامٌ.",
+        "الْأَطْفَالُ فِي الْقَرْيَةِ، وَالصُّقُورُ فَوْقَ الْجَبَلِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'y a-t-il sur les chameaux ?",
+          "choix": [
+            "des selles neuves",
+            "des plats",
+            "des enfants"
+          ],
+          "reponse": 0,
+          "explication": "عَلَى الْجِمَالِ سُرُوجٌ جَدِيدَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que contiennent les paniers ?",
+          "choix": [
+            "des plats et des calames",
+            "des selles",
+            "du pain"
+          ],
+          "reponse": 0,
+          "explication": "فِي السِّلَالِ صُحُونٌ وَأَقْلَامٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Les enfants sont dans le jardin. » ?",
+          "choix_ar": [
+            "الْأَطْفَالُ فِي الْحَدِيقَةِ.",
+            "الطِّفْلُ فِي الْحَدِيقَةِ.",
+            "أَطْفَالٌ الْحَدِيقَةُ."
+          ],
+          "reponse": 0,
+          "explication": "« Les enfants sont dans le jardin. » se dit الْأَطْفَالُ فِي الْحَدِيقَةِ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Les faucons sont au-dessus de la montagne. »",
+          "tuiles": [
+            "الْجَبَلِ",
+            "الصُّقُورُ",
+            "فَوْقَ",
+            "الصَّقْرَ"
+          ],
+          "solution": [
+            "الصُّقُورُ",
+            "فَوْقَ",
+            "الْجَبَلِ"
+          ],
+          "explication": "Sujet au pluriel, puis فَوْقَ et le nom en -i."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les plats sont sur la table. »",
+          "ar": "… عَلَى الْمَائِدَةِ.",
+          "choix_ar": [
+            "الصُّحُونُ",
+            "الصَّحْنُ",
+            "صُحُونًا"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de صَحْنٌ : صُحُونٌ, moule فُعُول."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طِفْلٌ",
+          "choix": [
+            "petit enfant",
+            "garçon",
+            "étudiant"
+          ],
+          "reponse": 0,
+          "explication": "طِفْلٌ veut dire « petit enfant »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَهْدٌ",
+          "choix": [
+            "guépard",
+            "faucon",
+            "chien"
+          ],
+          "reponse": 0,
+          "explication": "فَهْدٌ veut dire « guépard »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le pont » ?",
+          "choix_ar": [
+            "الْجِسْرُ",
+            "الْجِدَارُ",
+            "الْجَبَلُ"
+          ],
+          "reponse": 0,
+          "explication": "« le pont » se dit الْجِسْرُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le singulier de أَطْفَالٌ ?",
+          "choix_ar": [
+            "طِفْلٌ",
+            "طَالِبٌ",
+            "طَرِيقٌ"
+          ],
+          "reponse": 0,
+          "explication": "Racine ط ف ل : طِفْلٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le singulier de رِجَالٌ ?",
+          "choix_ar": [
+            "رَجُلٌ",
+            "رَاكِبٌ",
+            "رِسَالَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Racine ر ج ل : رَجُلٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de كُتُبٌ ?",
+          "choix_ar": [
+            "فُعُل",
+            "فُعُول",
+            "فِعَال"
+          ],
+          "reponse": 0,
+          "explication": "كُ تُ بٌ : فُعُل."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le pluriel interne…",
+          "choix": [
+            "s'apprend avec le mot",
+            "se prévoit toujours",
+            "finit toujours par -ūna"
+          ],
+          "reponse": 0,
+          "explication": "Aucune règle ne permet de le prévoir : on l'apprend avec le mot."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ص ق ر dans le moule فُعُول. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "صُقُورٌ",
+            "صَقْرٌ",
+            "صُخُورٌ"
+          ],
+          "reponse": 0,
+          "explication": "ص ق ر dans فُعُول : صُقُورٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les selles sont neuves. »",
+          "ar": "السُّرُوجُ …",
+          "choix_ar": [
+            "جَدِيدَةٌ",
+            "جَدِيدٌ",
+            "جَدِيدَةً"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de choses : accord au féminin singulier."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَعِيدٌ",
+          "choix": [
+            "heureux",
+            "rapide",
+            "faible"
+          ],
+          "reponse": 0,
+          "explication": "سَعِيدٌ veut dire « heureux ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ح م ل dans le moule فَعَّال. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "حَمَّالٌ",
+            "حَامِلٌ",
+            "حِمْلٌ"
+          ],
+          "reponse": 0,
+          "explication": "فَعَّال : le porteur de métier (leçon 3.6).",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de مِصْبَاحٌ ?",
+          "choix_ar": [
+            "مِفْعَال",
+            "مَفْعَل",
+            "فِعَال"
+          ],
+          "reponse": 0,
+          "explication": "مِفْعَال (leçon 3.5).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu retrouves le singulier d'un pluriel interne par sa racine : أَقْلَامٌ → قَلَمٌ, جِبَالٌ → جَبَلٌ, صُقُورٌ → صَقْرٌ.",
+      "suite": "Prochaine leçon : comparer, « plus grand », « le plus grand »."
+    }
+  ]
+}

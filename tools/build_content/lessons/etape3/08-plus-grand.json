@@ -1,0 +1,536 @@
+{
+  "id": "moteur-08",
+  "etape": 3,
+  "ordre": 8,
+  "format": 3,
+  "titre": "Plus grand, le plus grand",
+  "objectif": "Comparer avec le moule أَفْعَلُ.",
+  "statut": "ia_non_verifie",
+  "lieu": "pont",
+  "maitre": "hilal",
+  "prerequis": [
+    "moteur-07"
+  ],
+  "apercu": [
+    "هِلَالٌ",
+    "الْخَيْلِ"
+  ],
+  "schemes": [
+    "أَفْعَل",
+    "أَفْعَلُ",
+    "فَعِيل",
+    "أَفْعَال",
+    "فَعْل",
+    "فُعُول",
+    "فَعَّال"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "texte": "Sur le pont, chacun compare : quel chameau est le plus grand, quel chemin le plus court ?"
+        },
+        {
+          "qui": "hilal",
+          "texte": "Pour comparer, l'arabe a un moule : أَفْعَلُ."
+        }
+      ],
+      "objectif": "Dire « plus grand que » et « le plus grand »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Quel est le singulier de جِبَالٌ ?",
+          "choix_ar": [
+            "جَبَلٌ",
+            "جَمَلٌ",
+            "جِدَارٌ"
+          ],
+          "reponse": 0,
+          "explication": "ج ب ل : جَبَلٌ (leçon 3.7)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صُقُورٌ",
+          "choix": [
+            "faucons",
+            "rochers",
+            "selles"
+          ],
+          "reponse": 0,
+          "explication": "صُقُورٌ : pluriel de صَقْرٌ (leçon 3.7)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de كَبِيرٌ ?",
+          "choix_ar": [
+            "فَعِيل",
+            "فَعَّال",
+            "أَفْعَال"
+          ],
+          "reponse": 0,
+          "explication": "فَعِيل : une qualité (leçon 3.6)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "ar": "الْجَمَلُ أَطْوَلُ مِنَ الْحِمَارِ.",
+          "fr": "Le chameau est plus grand que l'âne."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَالْفَهْدُ أَسْرَعُ مِنَ الْجَمَلِ!",
+          "fr": "Et le guépard est plus rapide que le chameau !"
+        },
+        {
+          "qui": "hilal",
+          "ar": "نَعَمْ، وَبَيْتُ سَلْمَى أَكْبَرُ بَيْتٍ فِي الْقَرْيَةِ.",
+          "fr": "Oui, et la maison de Salmā est la plus grande du village."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qui est plus rapide que le chameau ?",
+        "choix": [
+          "le guépard",
+          "l'âne",
+          "le faucon"
+        ],
+        "reponse": 0,
+        "explication": "الْفَهْدُ أَسْرَعُ مِنَ الْجَمَلِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "akbar",
+        "asghar",
+        "akthar",
+        "asra",
+        "abad",
+        "atwal",
+        "sahl",
+        "sab"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "أَصْغَرُ",
+        "choix": [
+          "plus petit",
+          "plus grand",
+          "petit"
+        ],
+        "reponse": 0,
+        "explication": "أَصْغَرُ veut dire « plus petit »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Plus… que",
+      "texte": "Pour comparer, on dit أَفْعَلُ مِنْ, « plus que » : الْجَمَلُ أَكْبَرُ مِنَ الْحِمَارِ. أَفْعَلُ ne change ni de genre ni de nombre : الْبِنْتُ أَصْغَرُ مِنَ الْوَلَدِ.",
+      "exemples": [
+        "أَكْبَرُ",
+        "أَصْغَرُ",
+        "أَسْرَعُ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « La fille est plus petite que le garçon. »",
+        "ar": "الْبِنْتُ … مِنَ الْوَلَدِ.",
+        "choix_ar": [
+          "أَصْغَرُ",
+          "صَغِيرَةٌ",
+          "أَصْغَرَ"
+        ],
+        "reponse": 0,
+        "explication": "أَفْعَلُ ne prend pas de ة : أَصْغَرُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le plus…",
+      "texte": "Pour dire « le plus », on met أَفْعَلُ devant un nom indéfini en -i : أَكْبَرُ بَيْتٍ « la plus grande maison ». أَفْعَلُ ne prend jamais de tanwīn.",
+      "exemples": [
+        "أَكْبَرُ بَيْتٍ",
+        "أَسْرَعُ جَمَلٍ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « أَطْوَلُ جِسْرٍ » ?",
+        "choix": [
+          "le plus long pont",
+          "un pont plus long",
+          "le pont est long"
+        ],
+        "reponse": 0,
+        "explication": "أَفْعَلُ + nom indéfini en -i : le superlatif."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَهْلٌ",
+          "choix": [
+            "facile",
+            "difficile",
+            "rapide"
+          ],
+          "reponse": 0,
+          "explication": "سَهْلٌ veut dire « facile »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَبْعَدُ",
+          "choix": [
+            "plus éloigné",
+            "loin",
+            "plus long"
+          ],
+          "reponse": 0,
+          "explication": "أَبْعَدُ veut dire « plus éloigné »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « difficile » ?",
+          "choix_ar": [
+            "صَعْبٌ",
+            "سَهْلٌ",
+            "صَعِدَ"
+          ],
+          "reponse": 0,
+          "explication": "« difficile » se dit صَعْبٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le chemin est facile » ?",
+          "choix_ar": [
+            "الطَّرِيقُ سَهْلٌ",
+            "الطَّرِيقُ صَعْبٌ",
+            "طَرِيقٌ السَّهْلُ"
+          ],
+          "reponse": 0,
+          "explication": "« le chemin est facile » se dit الطَّرِيقُ سَهْلٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ب ر dans le moule أَفْعَل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "أَكْبَرُ",
+            "كَبِيرٌ",
+            "أَكْثَرُ"
+          ],
+          "reponse": 0,
+          "explication": "ك ب ر dans أَفْعَلُ : أَكْبَرُ, « plus grand »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ص غ ر dans le moule أَفْعَل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "أَصْغَرُ",
+            "صَغِيرٌ",
+            "أَسْرَعُ"
+          ],
+          "reponse": 0,
+          "explication": "ص غ ر dans أَفْعَلُ : أَصْغَرُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le guépard est plus rapide que le chameau. »",
+          "ar": "الْفَهْدُ … مِنَ الْجَمَلِ.",
+          "choix_ar": [
+            "أَسْرَعُ",
+            "سَرِيعٌ",
+            "سَرِيعَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Comparatif sans tanwīn : أَسْرَعُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La lettre est plus longue que le livre. »",
+          "ar": "الرِّسَالَةُ … مِنَ الْكِتَابِ.",
+          "choix_ar": [
+            "أَطْوَلُ",
+            "طَوِيلَةٌ",
+            "طَوِيلٌ"
+          ],
+          "reponse": 0,
+          "explication": "أَفْعَلُ ne change pas au féminin : أَطْوَلُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "أَقْلَامٌ et أَكْبَرُ commencent tous deux par أ. Lequel est un comparatif ?",
+          "choix": [
+            "أَكْبَرُ",
+            "أَقْلَامٌ",
+            "les deux"
+          ],
+          "reponse": 0,
+          "explication": "أَقْلَامٌ est un pluriel (أَفْعَال) ; أَكْبَرُ est un comparatif (أَفْعَلُ)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "أَفْتَحُ « j'ouvre » a la même forme que أَكْبَرُ. Qu'en conclure ?",
+          "choix": [
+            "le contexte donne le sens",
+            "أَفْتَحُ est un comparatif",
+            "أَكْبَرُ est un verbe"
+          ],
+          "reponse": 0,
+          "explication": "Même moule, sens différents : c'est la phrase qui tranche."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le pont et la montagne",
+      "texte": "Bāsim compare tout ce qu'il voit. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "دَرْسُ الْيَوْمِ سَهْلٌ، وَدَرْسُ أَمْسِ صَعْبٌ.",
+        "الْجَبَلُ أَبْعَدُ مِنَ النَّهْرِ.",
+        "سَلْمَى أَصْغَرُ مِنْ بَاسِمٍ.",
+        "بَيْتُ سَلْمَى أَكْبَرُ بَيْتٍ فِي الْقَرْيَةِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quelle leçon était difficile ?",
+          "choix": [
+            "celle d'hier",
+            "celle d'aujourd'hui",
+            "aucune"
+          ],
+          "reponse": 0,
+          "explication": "دَرْسُ أَمْسِ صَعْبٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qui est le plus jeune ?",
+          "choix": [
+            "Salmā",
+            "Bāsim",
+            "Hilāl"
+          ],
+          "reponse": 0,
+          "explication": "سَلْمَى أَصْغَرُ مِنْ بَاسِمٍ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le chameau est plus grand que l'âne. » ?",
+          "choix_ar": [
+            "الْجَمَلُ أَكْبَرُ مِنَ الْحِمَارِ.",
+            "الْجَمَلُ كَبِيرٌ مِنَ الْحِمَارِ.",
+            "الْجَمَلُ أَكْبَرُ الْحِمَارِ."
+          ],
+          "reponse": 0,
+          "explication": "« Le chameau est plus grand que l'âne. » se dit الْجَمَلُ أَكْبَرُ مِنَ الْحِمَارِ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « la plus grande maison du village ».",
+          "tuiles": [
+            "الْقَرْيَةِ",
+            "أَكْبَرُ",
+            "فِي",
+            "بَيْتٍ",
+            "كَبِيرٌ"
+          ],
+          "solution": [
+            "أَكْبَرُ",
+            "بَيْتٍ",
+            "فِي",
+            "الْقَرْيَةِ"
+          ],
+          "explication": "أَفْعَلُ + nom indéfini en -i, puis le lieu."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La montagne est plus loin que la rivière. »",
+          "ar": "الْجَبَلُ … مِنَ النَّهْرِ.",
+          "choix_ar": [
+            "أَبْعَدُ",
+            "بَعِيدٌ",
+            "أَبْعَدَ"
+          ],
+          "reponse": 0,
+          "explication": "Comparatif : أَبْعَدُ مِنْ…"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَكْبَرُ",
+          "choix": [
+            "plus grand",
+            "grand",
+            "le grand"
+          ],
+          "reponse": 0,
+          "explication": "أَكْبَرُ veut dire « plus grand »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَعْبٌ",
+          "choix": [
+            "difficile",
+            "facile",
+            "rocher"
+          ],
+          "reponse": 0,
+          "explication": "صَعْبٌ veut dire « difficile »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَكْثَرُ",
+          "choix": [
+            "plus nombreux",
+            "beaucoup",
+            "plus grand"
+          ],
+          "reponse": 0,
+          "explication": "أَكْثَرُ veut dire « plus nombreux »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « plus rapide » ?",
+          "choix_ar": [
+            "أَسْرَعُ",
+            "سَرِيعٌ",
+            "سَرِيعَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« plus rapide » se dit أَسْرَعُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "أَفْعَلُ au féminin…",
+          "choix": [
+            "ne change pas",
+            "prend ة",
+            "prend -ūna"
+          ],
+          "reponse": 0,
+          "explication": "الْبِنْتُ أَصْغَرُ : pas de ة."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire « أَسْرَعُ جَمَلٍ » ?",
+          "choix": [
+            "le chameau le plus rapide",
+            "un chameau plus rapide",
+            "le chameau est rapide"
+          ],
+          "reponse": 0,
+          "explication": "أَفْعَلُ + nom indéfini en -i : superlatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ب ع د dans le moule أَفْعَل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "أَبْعَدُ",
+            "بَعِيدٌ",
+            "أَكْبَرُ"
+          ],
+          "reponse": 0,
+          "explication": "ب ع د dans أَفْعَلُ : أَبْعَدُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La leçon d'aujourd'hui est facile. »",
+          "ar": "دَرْسُ الْيَوْمِ …",
+          "choix_ar": [
+            "سَهْلٌ",
+            "صَعْبٌ",
+            "سَهْلًا"
+          ],
+          "reponse": 0,
+          "explication": "Attribut en -un : سَهْلٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Salmā est plus petite que Bāsim. »",
+          "ar": "سَلْمَى … مِنْ بَاسِمٍ.",
+          "choix_ar": [
+            "أَصْغَرُ",
+            "صَغِيرَةٌ",
+            "صَغِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "Comparatif invariable : أَصْغَرُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le singulier de أَطْفَالٌ ?",
+          "choix_ar": [
+            "طِفْلٌ",
+            "طَالِبٌ",
+            "طَرِيقٌ"
+          ],
+          "reponse": 0,
+          "explication": "ط ف ل (leçon 3.7).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَحَّالٌ",
+          "choix": [
+            "grand voyageur",
+            "voyage",
+            "porteur"
+          ],
+          "reponse": 0,
+          "explication": "رَحَّالٌ veut dire « grand voyageur ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine س ك ن dans le moule مَفْعَل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَسْكَنٌ",
+            "سَاكِنٌ",
+            "سَكَنَ"
+          ],
+          "reponse": 0,
+          "explication": "مَفْعَل : le lieu (leçon 3.5).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu compares : الْجَمَلُ أَكْبَرُ مِنَ الْحِمَارِ (plus grand que), أَكْبَرُ بَيْتٍ (la plus grande maison).",
+      "suite": "Au Relais des voyageurs : dire d'où l'on vient."
+    }
+  ]
+}

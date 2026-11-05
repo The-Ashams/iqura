@@ -146,10 +146,13 @@ class PlaceScreen extends ConsumerWidget {
                       ),
                     if (place.lessons.isEmpty)
                       PixelCommand(
-                        label: region.number == 1
-                            ? "L'Expédition : affronter les brumes d'oubli"
-                            : "L'Expédition : affronter les mirages de la "
-                                  'Confusion',
+                        label: switch (region.number) {
+                          1 => "L'Expédition : affronter les brumes d'oubli",
+                          2 =>
+                            "L'Expédition : affronter les mirages de la "
+                                'Confusion',
+                          _ => "L'Expédition : résister à la Précipitation",
+                        },
                         detail: due == 0
                             ? 'Aucune révision due pour l\'instant'
                             : '$due révision${due > 1 ? 's' : ''} à faire',

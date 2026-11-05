@@ -60,7 +60,8 @@
         58
       ],
       "lecons": [
-        5
+        5,
+        6
       ],
       "scene": "scene_atelier_outils",
       "sol": 80,
@@ -79,7 +80,10 @@
         129,
         46
       ],
-      "lecons": [],
+      "lecons": [
+        7,
+        8
+      ],
       "scene": "scene_pont",
       "sol": 80,
       "tranche_j1a": true,
@@ -97,7 +101,10 @@
         71,
         75
       ],
-      "lecons": [],
+      "lecons": [
+        9,
+        10
+      ],
       "scene": "scene_relais",
       "sol": 82,
       "tranche_j1a": true,

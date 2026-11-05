@@ -3695,6 +3695,654 @@
     "fr": "Le marteau du forgeron est lourd."
    },
    "theme": "travail"
+  },
+  {
+   "id": "marid",
+   "ar": "مَرِيضٌ",
+   "translit": "marīḍun",
+   "fr": "malade",
+   "nature": "adjectif",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَرْضَى",
+   "lemme": "m~ariyD",
+   "scheme": "فَعِيل",
+   "formes": [
+    "مَرِيضَةٌ"
+   ],
+   "exemple": {
+    "ar": "الشَّيْخُ مَرِيضٌ الْيَوْمَ.",
+    "fr": "Le vieil homme est malade aujourd'hui."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "faqir",
+   "ar": "فَقِيرٌ",
+   "translit": "faqīrun",
+   "fr": "pauvre",
+   "nature": "adjectif",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "فُقَرَاءُ",
+   "lemme": "faqiyr",
+   "scheme": "فَعِيل",
+   "scheme_pluriel": "فُعَلَاء",
+   "formes": [
+    "فَقِيرَةٌ"
+   ],
+   "exemple": {
+    "ar": "التَّاجِرُ لَيْسَ فَقِيرًا.",
+    "fr": "Le marchand n'est pas pauvre."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "daif",
+   "ar": "ضَعِيفٌ",
+   "translit": "ḍaʿīfun",
+   "fr": "faible",
+   "nature": "adjectif",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "ضُعَفَاءُ",
+   "lemme": "DaEiyf",
+   "scheme": "فَعِيل",
+   "scheme_pluriel": "فُعَلَاء",
+   "formes": [
+    "ضَعِيفَةٌ"
+   ],
+   "exemple": {
+    "ar": "الْحَبْلُ ضَعِيفٌ.",
+    "fr": "La corde est faible."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "sari",
+   "ar": "سَرِيعٌ",
+   "translit": "sarīʿun",
+   "fr": "rapide",
+   "nature": "adjectif",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "sariyE",
+   "scheme": "فَعِيل",
+   "formes": [
+    "سَرِيعَةٌ"
+   ],
+   "exemple": {
+    "ar": "الْجَمَلُ سَرِيعٌ.",
+    "fr": "Le chameau est rapide."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "said",
+   "ar": "سَعِيدٌ",
+   "translit": "saʿīdun",
+   "fr": "heureux",
+   "nature": "adjectif",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُعَدَاءُ",
+   "lemme": "saEiyd",
+   "scheme": "فَعِيل",
+   "scheme_pluriel": "فُعَلَاء",
+   "formes": [
+    "سَعِيدَةٌ"
+   ],
+   "exemple": {
+    "ar": "بَاسِمٌ سَعِيدٌ الْيَوْمَ.",
+    "fr": "Bāsim est heureux aujourd'hui."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "tabbakh",
+   "ar": "طَبَّاخٌ",
+   "translit": "ṭabbāḫun",
+   "fr": "cuisinier",
+   "nature": "nom",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "الطَّبَّاخُ فِي الْمَطْبَخِ.",
+    "fr": "Le cuisinier est dans la cuisine."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "hammal",
+   "ar": "حَمَّالٌ",
+   "translit": "ḥammālun",
+   "fr": "porteur (de métier)",
+   "nature": "nom",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hml",
+   "scheme": "فَعَّال",
+   "exemple": {
+    "ar": "حَمَلَ الْحَمَّالُ الْأَحْمَالَ إِلَى السُّوقِ.",
+    "fr": "Le porteur a porté les charges au marché."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "rahhal",
+   "ar": "رَحَّالٌ",
+   "translit": "raḥḥālun",
+   "fr": "grand voyageur",
+   "nature": "nom",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "rHl",
+   "scheme": "فَعَّال",
+   "exemple": {
+    "ar": "الرَّحَّالُ فِي الْمَجْلِسِ.",
+    "fr": "Le grand voyageur est dans la salle de réunion."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "tifl",
+   "ar": "طِفْلٌ",
+   "translit": "ṭiflun",
+   "fr": "petit enfant",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَطْفَالٌ",
+   "lemme": "Tifol",
+   "scheme": "فِعْل",
+   "scheme_pluriel": "أَفْعَال",
+   "remarque": "sert aussi au féminin et au pluriel en arabe classique",
+   "exemple": {
+    "ar": "الْأَطْفَالُ فِي الْحَدِيقَةِ.",
+    "fr": "Les enfants sont dans le jardin."
+   },
+   "theme": "famille"
+  },
+  {
+   "id": "sarj",
+   "ar": "سَرْجٌ",
+   "translit": "sarǧun",
+   "fr": "selle",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُرُوجٌ",
+   "racine": "srj",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فُعُول",
+   "exemple": {
+    "ar": "السَّرْجُ عَلَى الْجَمَلِ.",
+    "fr": "La selle est sur le chameau."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "jisr",
+   "ar": "جِسْرٌ",
+   "translit": "ǧisrun",
+   "fr": "pont",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "جُسُورٌ",
+   "exemple": {
+    "ar": "الْجِسْرُ طَوِيلٌ.",
+    "fr": "Le pont est long."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "sahn",
+   "ar": "صَحْنٌ",
+   "translit": "ṣaḥnun",
+   "fr": "plat, assiette",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "صُحُونٌ",
+   "exemple": {
+    "ar": "الصَّحْنُ عَلَى الْمَائِدَةِ.",
+    "fr": "Le plat est sur la table."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "saqr",
+   "ar": "صَقْرٌ",
+   "translit": "ṣaqrun",
+   "fr": "faucon",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "صُقُورٌ",
+   "exemple": {
+    "ar": "الصُّقُورُ فَوْقَ الْجَبَلِ.",
+    "fr": "Les faucons sont au-dessus de la montagne."
+   },
+   "theme": "animaux"
+  },
+  {
+   "id": "fahd",
+   "ar": "فَهْدٌ",
+   "translit": "fahdun",
+   "fr": "guépard",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "فُهُودٌ",
+   "exemple": {
+    "ar": "الْفَهْدُ سَرِيعٌ.",
+    "fr": "Le guépard est rapide."
+   },
+   "theme": "animaux"
+  },
+  {
+   "id": "akbar",
+   "ar": "أَكْبَرُ",
+   "translit": "akbaru",
+   "fr": "plus grand",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">akobar",
+   "scheme": "أَفْعَل",
+   "remarque": "ne change ni de genre ni de nombre ; jamais de tanwīn",
+   "exemple": {
+    "ar": "الْجَمَلُ أَكْبَرُ مِنَ الْحِمَارِ.",
+    "fr": "Le chameau est plus grand que l'âne."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "asghar",
+   "ar": "أَصْغَرُ",
+   "translit": "aṣġaru",
+   "fr": "plus petit",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">aSogar",
+   "scheme": "أَفْعَل",
+   "exemple": {
+    "ar": "الْبِنْتُ أَصْغَرُ مِنَ الْوَلَدِ.",
+    "fr": "La fille est plus petite que le garçon."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "akthar",
+   "ar": "أَكْثَرُ",
+   "translit": "akṯaru",
+   "fr": "plus nombreux, davantage",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">akovar",
+   "scheme": "أَفْعَل",
+   "exemple": {
+    "ar": "الْجِمَالُ فِي السُّوقِ أَكْثَرُ مِنَ الْخَيْلِ.",
+    "fr": "Au marché, les chameaux sont plus nombreux que les chevaux."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "asra",
+   "ar": "أَسْرَعُ",
+   "translit": "asraʿu",
+   "fr": "plus rapide",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">asoraE",
+   "scheme": "أَفْعَل",
+   "exemple": {
+    "ar": "الْفَهْدُ أَسْرَعُ مِنَ الْجَمَلِ.",
+    "fr": "Le guépard est plus rapide que le chameau."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "abad",
+   "ar": "أَبْعَدُ",
+   "translit": "abʿadu",
+   "fr": "plus éloigné",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "bEd",
+   "scheme": "أَفْعَل",
+   "exemple": {
+    "ar": "الْجَبَلُ أَبْعَدُ مِنَ النَّهْرِ.",
+    "fr": "La montagne est plus loin que la rivière."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "atwal",
+   "ar": "أَطْوَلُ",
+   "translit": "aṭwalu",
+   "fr": "plus long, plus grand (de taille)",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Twl",
+   "exemple": {
+    "ar": "الْجَمَلُ أَطْوَلُ مِنَ الْحِمَارِ.",
+    "fr": "Le chameau est plus grand que l'âne."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "sahl",
+   "ar": "سَهْلٌ",
+   "translit": "sahlun",
+   "fr": "facile",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "shl",
+   "scheme": "فَعْل",
+   "remarque": "dans le Corpus, cette racine désigne aussi la plaine",
+   "formes": [
+    "سَهْلَةٌ"
+   ],
+   "exemple": {
+    "ar": "دَرْسُ الْيَوْمِ سَهْلٌ.",
+    "fr": "La leçon d'aujourd'hui est facile."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "sab",
+   "ar": "صَعْبٌ",
+   "translit": "ṣaʿbun",
+   "fr": "difficile",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "صَعْبَةٌ"
+   ],
+   "exemple": {
+    "ar": "الطَّرِيقُ إِلَى الْجَبَلِ صَعْبٌ.",
+    "fr": "Le chemin vers la montagne est difficile."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "arabi",
+   "ar": "عَرَبِيٌّ",
+   "translit": "ʿarabiyyun",
+   "fr": "arabe",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "Earabiy~",
+   "formes": [
+    "عَرَبِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "اللُّغَةُ الْعَرَبِيَّةُ جَمِيلَةٌ.",
+    "fr": "La langue arabe est belle."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "lugha",
+   "ar": "لُغَةٌ",
+   "translit": "luġatun",
+   "fr": "langue (que l'on parle)",
+   "nature": "nom",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "lgw",
+   "exemple": {
+    "ar": "اللُّغَةُ الْعَرَبِيَّةُ جَمِيلَةٌ.",
+    "fr": "La langue arabe est belle."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "misri",
+   "ar": "مِصْرِيٌّ",
+   "translit": "miṣriyyun",
+   "fr": "égyptien",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "مِصْرِيَّةٌ"
+   ],
+   "remarque": "de مِصْرُ « l'Égypte »",
+   "exemple": {
+    "ar": "هُوَ تَاجِرٌ مِصْرِيٌّ.",
+    "fr": "C'est un marchand égyptien."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "baghdadi",
+   "ar": "بَغْدَادِيٌّ",
+   "translit": "baġdādiyyun",
+   "fr": "de Bagdad",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "بَغْدَادِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "سَمِيرٌ بَغْدَادِيٌّ.",
+    "fr": "Samīr est de Bagdad."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "dimashqi",
+   "ar": "دِمَشْقِيٌّ",
+   "translit": "dimašqiyyun",
+   "fr": "de Damas",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "دِمَشْقِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "سَلْمَى دِمَشْقِيَّةٌ.",
+    "fr": "Salmā est de Damas."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "farisi",
+   "ar": "فَارِسِيٌّ",
+   "translit": "fārisiyyun",
+   "fr": "persan",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "فَارِسِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "هَٰذَا بِسَاطٌ فَارِسِيٌّ.",
+    "fr": "Ceci est un tapis persan."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "hindi",
+   "ar": "هِنْدِيٌّ",
+   "translit": "hindiyyun",
+   "fr": "indien",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "هِنْدِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "هَٰذَا سَيْفٌ هِنْدِيٌّ قَدِيمٌ.",
+    "fr": "Ceci est une vieille épée indienne."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "jabali",
+   "ar": "جَبَلِيٌّ",
+   "translit": "ǧabaliyyun",
+   "fr": "de montagne, montagnard",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jbl",
+   "formes": [
+    "جَبَلِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "هِلَالٌ جَبَلِيٌّ.",
+    "fr": "Hilāl est un montagnard."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "nahar",
+   "ar": "نَهَارٌ",
+   "translit": "nahārun",
+   "fr": "jour (le temps de la clarté)",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "nahaAr",
+   "scheme": "فَعَال",
+   "exemple": {
+    "ar": "النَّهَارُ طَوِيلٌ فِي الصَّيْفِ.",
+    "fr": "Le jour est long en été."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "qasr",
+   "ar": "قَصْرٌ",
+   "translit": "qaṣrun",
+   "fr": "palais",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "qaSor",
+   "scheme": "فَعْل",
+   "exemple": {
+    "ar": "الْقَصْرُ لَيْسَ قَصِيرًا.",
+    "fr": "Le palais n'est pas court."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "sikkin",
+   "ar": "سِكِّينٌ",
+   "translit": "sikkīnun",
+   "fr": "couteau",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "sik~iyn",
+   "scheme": "فِعِّيل",
+   "remarque": "masculin ou féminin en arabe classique",
+   "exemple": {
+    "ar": "السِّكِّينُ فِي الْمَطْبَخِ.",
+    "fr": "Le couteau est dans la cuisine."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "tariqa",
+   "ar": "طَرِيقَةٌ",
+   "translit": "ṭarīqatun",
+   "fr": "manière, méthode",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "Tariyqap",
+   "scheme": "فَعِيلَة",
+   "exemple": {
+    "ar": "هَٰذِهِ طَرِيقَةُ هِلَالٍ.",
+    "fr": "Voici la méthode de Hilāl."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "fatha",
+   "ar": "فَتْحَةٌ",
+   "translit": "fatḥatun",
+   "fr": "fatḥa (le signe de la voyelle a)",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "ftH",
+   "scheme": "فَعْلَة",
+   "exemple": {
+    "ar": "عَلَى الْبَاءِ فَتْحَةٌ.",
+    "fr": "Il y a une fatḥa sur le bāʾ."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "sukun",
+   "ar": "سُكُونٌ",
+   "translit": "sukūnun",
+   "fr": "sukūn (le signe de l'absence de voyelle)",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "skn",
+   "scheme": "فُعُول",
+   "exemple": {
+    "ar": "عَلَى الْمِيمِ سُكُونٌ.",
+    "fr": "Il y a un sukūn sur le mīm."
+   },
+   "theme": "savoir"
   }
  ]
 }
