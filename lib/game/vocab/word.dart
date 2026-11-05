@@ -28,6 +28,8 @@ class Word {
     this.exampleFrench,
     this.theme,
     this.remark,
+    this.scheme,
+    this.pluralScheme,
   });
 
   final String id;
@@ -58,6 +60,11 @@ class Word {
   /// Précision sur le genre ou l'usage (ex. « parfois féminin en
   /// arabe classique »).
   final String? remark;
+
+  /// Schème du mot et de son pluriel (région 3), calculés à partir du
+  /// Corpus et vérifiés à la construction (décision du 05/11/2026).
+  final String? scheme;
+  final String? pluralScheme;
   final String lessonId;
   final int lessonStage;
   final int lessonOrdinal;

@@ -37,7 +37,7 @@ import sources  # noqa: E402
 import world  # noqa: E402
 
 # Version du schéma de la base de contenu (lue par l'application).
-CONTENT_SCHEMA_VERSION = 10
+CONTENT_SCHEMA_VERSION = 11
 # Version des données ; à augmenter à chaque changement de contenu.
 CONTENT_VERSION = "0.9.0-fondations"
 
@@ -291,6 +291,16 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
             | exams.arabic_texts(exam_data),
             lesson_data.words or [], data["quran_pairs"]):
         print(f"[build_content] AVERTISSEMENT : {warning}", file=sys.stderr)
+    # Noms divins (plan d'Intermédiaire 1, B5) : jamais dans les leçons et
+    # examens des régions 3 et suivantes.
+    for where, text in {**lessons.arabic_texts(lesson_data),
+                        **exams.arabic_texts(exam_data)}.items():
+        if where.startswith(("etape1", "etape2", "vocab", "fiche", "exams/examen-r2")):
+            continue
+        for t in vocab.tokens(text):
+            if vocab.strip_case_ending(vocab.key(t)) in vocab.DIVINE_NAMES or \
+                    any(c in vocab.DIVINE_NAMES for c in vocab.candidates(t)):
+                raise BuildError(f"{where} : « {t} » est un nom divin (exclu)")
     item_data = data.get("items") or world.load_items()
     world.validate_items(item_data, {d["region"]["id"] for d in world_data})
     world_counts["items"] = world.write_items(con, item_data)

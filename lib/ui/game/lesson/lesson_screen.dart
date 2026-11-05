@@ -448,9 +448,16 @@ class _LetterCardView extends ConsumerWidget {
               child: Text('Ne se lie pas à la lettre suivante.'),
             ),
           const SizedBox(height: 10),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Text(card.zone, style: TextStyle(color: GameColors.accent)),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  card.zone,
+                  style: TextStyle(color: GameColors.accent),
+                ),
+              ),
+              const AiTag(),
+            ],
           ),
           const SizedBox(height: 4),
           Text(card.pronunciation, style: const TextStyle(height: 1.4)),

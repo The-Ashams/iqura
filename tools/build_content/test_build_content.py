@@ -143,6 +143,22 @@ class ExamTest(unittest.TestCase):
             self.check(exam)
 
 
+class SchemeTest(unittest.TestCase):
+    def test_scheme_is_checked_against_the_root(self):
+        ok = [("كَاتِبٌ", "فَاعِل", "كتب"), ("مَكْتُوبَةٌ", "مَفْعُولَة", "كتب"),
+              ("كَتَبَ", "فَعَلَ", "كتب"), ("حَدَّادٌ", "فَعَّال", "حدد"),
+              ("دِرْهَمٌ", "فِعْلَل", "درهم"), ("أَكْبَرُ", "أَفْعَل", "كبر")]
+        for word, scheme, root in ok:
+            self.assertIsNone(vocab.check_scheme(word, scheme, root), word)
+        self.assertIn("donne", vocab.check_scheme("كَاتِبٌ", "مَفْعُول", "كتب"))
+        self.assertIn("racine faible", vocab.check_scheme("قَالَ", "فَعَلَ", "قول"))
+        self.assertIn("incompatible", vocab.check_scheme("كَتَبَ", "فَعَلَ", "كت"))
+
+    def test_divine_names_list(self):
+        self.assertIn("رحيم", vocab.DIVINE_NAMES)
+        self.assertNotIn("كبير", vocab.DIVINE_NAMES)
+
+
 class SourcesTest(unittest.TestCase):
     def test_all_sources_match_their_fingerprint(self):
         sources.verify_all()

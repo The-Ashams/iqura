@@ -81,7 +81,7 @@
       "nom_ar": "حَاء",
       "liaison_gauche": true,
       "zone": "gorge_milieu",
-      "prononciation": "Un « ahh » soufflé et serré, venu du milieu de la gorge, comme après avoir bu quelque chose de très chaud. Sans point. Le français n'a pas ce son."
+      "prononciation": "Un « ahh » soufflé et serré, venu du milieu de la gorge, comme après avoir bu quelque chose de très chaud. On ne racle pas, contrairement à خ. Sans point. Le français n'a pas ce son."
     },
     {
       "lettre": "خ",
@@ -89,7 +89,7 @@
       "nom_ar": "خَاء",
       "liaison_gauche": true,
       "zone": "gorge_haut",
-      "prononciation": "Un son raclé en haut de la gorge, comme la « jota » espagnole ou le « ch » allemand de « Bach ». Un point au-dessus."
+      "prononciation": "Un son raclé en haut de la gorge, comme la « jota » espagnole ou le « ch » allemand de « Bach ». L'arrière de la langue est relevé : le « a » qui suit est plus grave, plus sombre. Un point au-dessus."
     },
     {
       "lettre": "د",
@@ -153,7 +153,7 @@
       "nom_ar": "ضَاد",
       "liaison_gauche": true,
       "zone": "langue_cotes",
-      "prononciation": "Un « d » épais : un côté de la langue s'appuie contre les molaires supérieures, et l'arrière de la langue se relève : c'est une lettre « emphatique ». Le son devient plus sombre : le « a » qui suit devient plus grave, sans aller jusqu'au « o ». La forme de ص, avec un point au-dessus."
+      "prononciation": "Un « d » épais : le bout de la langue touche la racine des incisives supérieures comme pour د, les côtés de la langue s'appuient contre les molaires supérieures, et l'arrière de la langue se relève : c'est une lettre « emphatique ». Le son devient plus sombre : le « a » qui suit devient plus grave, sans aller jusqu'au « o ». La forme de ص, avec un point au-dessus."
     },
     {
       "lettre": "ط",
@@ -177,7 +177,7 @@
       "nom_ar": "عَيْن",
       "liaison_gauche": true,
       "zone": "gorge_milieu",
-      "prononciation": "Un son serré au milieu de la gorge : la gorge se resserre comme pour ح, mais la voix vibre. Pour le trouver, dis un « a » tenu en serrant le milieu de la gorge, comme au moment d'avaler. Le français n'a pas ce son. Sans point."
+      "prononciation": "Un son serré au milieu de la gorge : la gorge se resserre comme pour ح, mais la voix vibre. Pour le trouver, dis un « a » long et, sans t'arrêter, resserre le milieu de la gorge : le « a » devient pressé, étranglé, mais il continue de sonner. Ce n'est ni un arrêt de la voix ni un raclement. Le français n'a pas ce son. Sans point."
     },
     {
       "lettre": "غ",
@@ -185,7 +185,7 @@
       "nom_ar": "غَيْن",
       "liaison_gauche": true,
       "zone": "gorge_haut",
-      "prononciation": "Comme le « r » de la gorge du français de « Paris », raclé en haut de la gorge : c'est le pendant sonore de خ. La forme de ع, avec un point au-dessus."
+      "prononciation": "Comme le « r » de la gorge du français de « Paris », raclé en haut de la gorge : c'est le pendant sonore de خ. L'arrière de la langue est relevé : le « a » qui suit est plus grave, comme après ص. La forme de ع, avec un point au-dessus."
     },
     {
       "lettre": "ف",
@@ -201,7 +201,7 @@
       "nom_ar": "قَاف",
       "liaison_gauche": true,
       "zone": "langue_fond",
-      "prononciation": "Un « k » très profond : le fond de la langue touche le voile du palais, tout au fond de la bouche. Ce n'est pas le « k » de ك. Deux points au-dessus."
+      "prononciation": "Un « k » très profond : le fond de la langue touche le voile du palais, tout au fond de la bouche, près de la luette. L'arrière de la langue est relevé : le « a » qui suit est plus grave, comme après ص. Ce n'est pas le « k » de ك. Deux points au-dessus."
     },
     {
       "lettre": "ك",
@@ -233,7 +233,7 @@
       "nom_ar": "هَاء",
       "liaison_gauche": true,
       "zone": "gorge_fond",
-      "prononciation": "Un « h » soufflé et léger, venu du fond de la gorge, comme dans l'anglais « house ». Ce n'est pas ح, qui est serré. Sans point."
+      "prononciation": "Un « h » soufflé et léger, venu du fond de la gorge, comme dans l'anglais « house ». Il se prononce toujours, même en fin de mot. Ce n'est pas ح, qui est serré. Sans point."
     },
     {
       "lettre": "و",

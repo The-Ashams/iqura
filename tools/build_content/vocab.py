@@ -20,6 +20,7 @@ import json
 import os
 import re
 import sqlite3
+import unicodedata
 
 import quran_guard
 
@@ -166,6 +167,56 @@ def word_keys(word: dict) -> set[str]:
     return keys
 
 
+# Schèmes (décision de l'utilisateur, 05/11/2026) : calculés à partir du
+# Corpus et vérifiés. En remplaçant ف ع ل (et un second ل pour une racine de
+# quatre lettres) par les lettres de la racine, on doit retrouver le mot,
+# sans sa fin de cas. Racines faibles, à hamza : pas de schème (leçons 3.22
+# à 3.26).
+SCHEME_RADICALS = "فعل"
+FINAL_MARKS = "\u064b\u064c\u064d\u064e\u064f\u0650"
+WEAK_ROOT_LETTERS = set("ويءأإؤئآا")
+
+
+def strip_case_ending(text: str) -> str:
+    """Le mot sans sa fin de cas (tanwīn ou voyelle brève finale)."""
+    s = unicodedata.normalize("NFC", text.strip())
+    while s and s[-1] in FINAL_MARKS:
+        s = s[:-1]
+    return s
+
+
+def apply_scheme(scheme: str, root: str) -> str | None:
+    """Le mot obtenu en plaçant les lettres de [root] dans [scheme] ; None si
+    le nombre de lettres ne correspond pas."""
+    slots = [c for c in scheme if c in SCHEME_RADICALS]
+    expected = {3: "فعل", 4: "فعلل"}.get(len(root))
+    if expected is None or "".join(slots) != expected:
+        return None
+    letters = iter(root)
+    return "".join(next(letters) if c in SCHEME_RADICALS else c for c in scheme)
+
+
+def check_scheme(word_ar: str, scheme: str, root: str) -> str | None:
+    """Message d'erreur, ou None si le schème est vérifié."""
+    if WEAK_ROOT_LETTERS & set(root):
+        return f"pas de schème pour une racine faible ou à hamza ({root})"
+    built = apply_scheme(strip_case_ending(scheme), root)
+    if built is None:
+        return f"schème {scheme} incompatible avec la racine {root}"
+    if unicodedata.normalize("NFC", built) != strip_case_ending(word_ar):
+        return f"schème {scheme} + racine {root} donne {built}, pas {word_ar}"
+    return None
+
+
+# Noms divins et formes réservées (plan du conseiller, Intermédiaire 1, B5) :
+# aucun exercice ni texte des régions 3 et suivantes ne les emploie.
+DIVINE_NAMES = {
+    "عليم", "حكيم", "رحيم", "سميع", "بصير", "عزيز", "كريم", "عظيم", "قدير",
+    "خبير", "لطيف", "حليم", "حميد", "مجيد", "رقيب", "شهيد", "وكيل", "حفيظ",
+    "غفار", "وهاب", "رزاق", "فتاح", "تواب", "قهار", "جبار", "خلاق", "طارق",
+}
+
+
 def known_keys(word: dict) -> set[str]:
     """Clés servant au contrôle des mots connus. Un verbe figé (« fige » :
     لَيْسَ, قَالَ) n'est jamais conjugué par découpage : ses formes ne sont
@@ -234,6 +285,22 @@ def validate(words: list[dict], con: sqlite3.Connection, lesson_ids: set[str],
             # conseiller, 25/10/2026) : la racine est montrée, sans fréquence.
             if con.execute("SELECT 1 FROM root WHERE id = ?", (w["racine"],)).fetchone() is None:
                 raise VocabError(f"{where} : racine {w['racine']} absente du Corpus")
+        if w.get("scheme") or w.get("scheme_pluriel"):
+            root_id = w.get("racine")
+            if w.get("lemme"):
+                root_id = con.execute("SELECT root_id FROM lemma WHERE id = ?",
+                                      (w["lemme"],)).fetchone()[0]
+            row = con.execute("SELECT letters FROM root WHERE id = ?", (root_id,)).fetchone() \
+                if root_id else None
+            if row is None:
+                raise VocabError(f"{where} : schème sans racine du Corpus")
+            for form, key in ((w["ar"], "scheme"), (w.get("pluriel"), "scheme_pluriel")):
+                if w.get(key):
+                    if not form:
+                        raise VocabError(f"{where} : {key} sans forme")
+                    error = check_scheme(form, w[key], row[0])
+                    if error:
+                        raise VocabError(f"{where} : {error}")
 
 
 def write(con: sqlite3.Connection, words: list[dict], lesson_order: dict[str, tuple]) -> int:
@@ -257,7 +324,9 @@ def write(con: sqlite3.Connection, words: list[dict], lesson_order: dict[str, tu
         theme TEXT,
         meaning_source TEXT NOT NULL,
         keys_json TEXT NOT NULL,
-        remark TEXT
+        remark TEXT,
+        scheme TEXT,
+        plural_scheme TEXT
     ) STRICT""")
     con.execute("CREATE INDEX word_lemma ON word(lemma_id)")
     rows = []
@@ -272,9 +341,9 @@ def write(con: sqlite3.Connection, words: list[dict], lesson_order: dict[str, tu
             w.get("pluriel"), w.get("passe"), w.get("inaccompli"), w.get("lemme"), root,
             w["lecon"], stage, ordinal, ex.get("ar"), ex.get("fr"), w.get("theme"),
             w["source_sens"], json.dumps(sorted(word_keys(w)), ensure_ascii=False),
-            w.get("remarque"),
+            w.get("remarque"), w.get("scheme"), w.get("scheme_pluriel"),
         ))
-    con.executemany(f"INSERT INTO word VALUES ({','.join('?' * 20)})", rows)
+    con.executemany(f"INSERT INTO word VALUES ({','.join('?' * 22)})", rows)
     return len(rows)
 
 

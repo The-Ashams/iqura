@@ -55,7 +55,7 @@ class ContentDatabase {
   static const versionAssetPath = 'assets/content/iqura_content.db.version';
 
   /// Version du schéma de la base de contenu gérée par cette application.
-  static const int schemaVersion = 10;
+  static const int schemaVersion = 11;
 
   /// Tables indispensables au jeu.
   static const requiredTables = [
@@ -361,6 +361,8 @@ class ContentDatabase {
         exampleFrench: r['example_fr'] as String?,
         theme: r['theme'] as String?,
         remark: r['remark'] as String?,
+        scheme: r['scheme'] as String?,
+        pluralScheme: r['plural_scheme'] as String?,
         lessonId: r['lesson_id'] as String,
         lessonStage: r['lesson_stage'] as int,
         lessonOrdinal: r['lesson_ordinal'] as int,

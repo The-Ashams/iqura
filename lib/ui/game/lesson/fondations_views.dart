@@ -145,8 +145,15 @@ class WordCard extends ConsumerWidget {
               SpokenArabic(w.arabic, size: 40),
             ],
           ),
+          if (w.scheme != null)
+            _Line(
+              label: 'Schème (calculé à partir du Corpus)',
+              arabic: w.scheme!,
+            ),
           if (w.plural != null)
             _Line(label: 'Pluriel (appris plus tard)', arabic: w.plural!),
+          if (w.pluralScheme != null)
+            _Line(label: 'Schème du pluriel', arabic: w.pluralScheme!),
           if (w.past != null) _Line(label: 'Passé', arabic: w.past!),
           if (w.present != null)
             _Line(label: 'Présent (appris plus tard)', arabic: w.present!),
