@@ -159,7 +159,8 @@ def candidates(token: str, known_prefixes: set[str] | None = None,
 
 def word_keys(word: dict) -> set[str]:
     keys = {key(word["ar"])}
-    for k in ("pluriel", "passe", "inaccompli"):
+    # Le nom d'action est sur la fiche du verbe (à partir de la leçon 3.4).
+    for k in ("pluriel", "passe", "inaccompli", "nom_action"):
         if word.get(k):
             keys.add(key(word[k]))
     for f in word.get("formes", []):

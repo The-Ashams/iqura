@@ -122,7 +122,12 @@
         40,
         30
       ],
-      "lecons": [],
+      "lecons": [
+        11,
+        12,
+        13,
+        14
+      ],
       "scene": "scene_moulin",
       "sol": 80,
       "tranche_j1a": true,
@@ -140,7 +145,12 @@
         84,
         24
       ],
-      "lecons": [],
+      "lecons": [
+        15,
+        16,
+        17,
+        18
+      ],
       "scene": "scene_copistes",
       "sol": 82,
       "tranche_j1a": true,
@@ -158,7 +168,11 @@
         120,
         26
       ],
-      "lecons": [],
+      "lecons": [
+        19,
+        20,
+        21
+      ],
       "scene": "scene_tour",
       "sol": 80,
       "tranche_j1a": true,

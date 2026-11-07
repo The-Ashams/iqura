@@ -1,0 +1,573 @@
+{
+  "id": "moteur-18",
+  "etape": 3,
+  "ordre": 18,
+  "format": 3,
+  "titre": "La forme VIII",
+  "objectif": "Comprendre la forme VIII افْتَعَلَ et le ت qui change.",
+  "statut": "ia_non_verifie",
+  "lieu": "copistes",
+  "maitre": "rabab",
+  "prerequis": [
+    "moteur-17"
+  ],
+  "apercu": [
+    "رَبَابُ",
+    "اصْطَبَرَ"
+  ],
+  "schemes": [
+    "افْتَعَلَ",
+    "يَفْتَعِلُ",
+    "افْتِعَال",
+    "انْفَعَلَ",
+    "يَنْفَعِلُ",
+    "اسْتَفْعَلَ",
+    "فَعَلَ",
+    "تَفَاعَلَ",
+    "تَفَعَّلَ",
+    "فَاعَلَ",
+    "أَفْعَلَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "texte": "Dernière forme de la Salle des copistes : un ت se glisse après la 1re lettre de la racine."
+        },
+        {
+          "qui": "rabab",
+          "texte": "جَمَعَ, c'est « rassembler » ; اجْتَمَعَ, c'est « se réunir ». Et parfois, ce ت change de lettre !"
+        }
+      ],
+      "objectif": "Reconnaître la forme VIII, même quand son ت change."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ت ح dans le moule انْفَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "انْفَتَحَ",
+            "فَتَحَ",
+            "مَفْتُوحٌ"
+          ],
+          "reponse": 0,
+          "explication": "ف ت ح dans انْفَعَلَ : انْفَتَحَ (leçon 3.17)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de انْطَلَقَ ?",
+          "choix_ar": [
+            "ط ل ق",
+            "ن ط ل",
+            "ن ط ق"
+          ],
+          "reponse": 0,
+          "explication": "انْـ est la forme (leçon 3.17)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَكَاتَبَ",
+          "choix": [
+            "ils se sont écrit",
+            "ils se sont serré la main",
+            "ils se sont disputés"
+          ],
+          "reponse": 0,
+          "explication": "Forme VI, action réciproque (leçon 3.16)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "اجْتَمَعَ الطُّلَّابُ فِي الْمَجْلِسِ.",
+          "fr": "Les étudiants se sont réunis dans l'assemblée."
+        },
+        {
+          "qui": "rabab",
+          "ar": "وَانْتَظَرُوا الشَّيْخَ، ثُمَّ اسْتَمَعُوا إِلَى الْقِصَّةِ.",
+          "fr": "Et ils ont attendu le vieil homme, puis ils ont écouté l'histoire."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'ont fait les étudiants après avoir attendu ?",
+        "choix": [
+          "ils ont écouté l'histoire",
+          "ils se sont dispersés",
+          "ils ont écrit"
+        ],
+        "reponse": 0,
+        "explication": "ثُمَّ اسْتَمَعُوا إِلَى الْقِصَّةِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ijtamaa",
+        "istamaa",
+        "intazara",
+        "iqtaraba",
+        "ikhtalafa",
+        "idtaraba",
+        "iddakhara"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "انْتَظَرَ",
+        "choix": [
+          "il a attendu",
+          "il a regardé",
+          "il est parti"
+        ],
+        "reponse": 0,
+        "explication": "انْتَظَرَ veut dire « il a attendu »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Un ت glissé",
+      "texte": "Forme VIII, moule افْتَعَلَ : un ت se glisse après la 1re lettre de la racine. جَمَعَ « rassembler » → اجْتَمَعَ « se réunir » ; inaccompli يَفْتَعِلُ, nom d'action افْتِعَال.",
+      "exemples": [
+        "اجْتَمَعَ",
+        "يَجْتَمِعُ",
+        "اجْتِمَاعٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de اقْتَرَبَ ?",
+        "choix_ar": [
+          "ق ر ب",
+          "ق ت ر",
+          "ت ر ب"
+        ],
+        "reponse": 0,
+        "explication": "Le ت est glissé par la forme : ق ر ب."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Une tendance",
+      "texte": "La forme VIII dit souvent que l'action revient sur le sujet : اجْتَمَعَ « se réunir ». Simple tendance : انْتَظَرَ « attendre » a la racine de نَظَرَ « regarder », mais son sens ne se devine pas.",
+      "exemples": [
+        "اجْتَمَعَ",
+        "انْتَظَرَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Le sens d'une forme…",
+        "choix": [
+          "est une tendance, à vérifier",
+          "se déduit toujours",
+          "ne change jamais"
+        ],
+        "reponse": 0,
+        "explication": "Une tendance : on vérifie dans le dictionnaire."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le ت qui change",
+      "texte": "Après ص ض ط ظ, ce ت devient ط : اضْطَرَبَ, اصْطَبَرَ « s'armer de patience ». Après د ذ ز, il devient د ; avec ذ, les deux se fondent en دّ : ذ خ ر → ادَّخَرَ.",
+      "exemples": [
+        "اضْطَرَبَ",
+        "اصْطَبَرَ",
+        "ادَّخَرَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de اضْطَرَبَ ?",
+        "choix_ar": [
+          "ض ر ب",
+          "ض ط ر",
+          "ط ر ب"
+        ],
+        "reponse": 0,
+        "explication": "Le ط remplace le ت de la forme : ض ر ب."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Compter les lettres",
+      "texte": "اسْتَمَعَ est une forme VIII, pas une forme X : le س est de la racine, et après اسْتَـ il ne resterait que م ع. Dans انْتَظَرَ, le ن est de la racine (ن ظ ر).",
+      "exemples": [
+        "اسْتَمَعَ",
+        "انْتَظَرَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de انْتَظَرَ ?",
+        "choix_ar": [
+          "ن ظ ر",
+          "ت ظ ر",
+          "ن ت ظ"
+        ],
+        "reponse": 0,
+        "explication": "Le ن est de la racine ; le ت vient de la forme VIII."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اجْتَمَعَ",
+          "choix": [
+            "il s'est réuni",
+            "il a rassemblé",
+            "rassemblement"
+          ],
+          "reponse": 0,
+          "explication": "اجْتَمَعَ veut dire « il s'est réuni »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اخْتَلَفَ",
+          "choix": [
+            "il a été différent, en désaccord",
+            "il s'est approché",
+            "il a quitté"
+          ],
+          "reponse": 0,
+          "explication": "اخْتَلَفَ veut dire « il a été différent, en désaccord »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il attend » ?",
+          "choix_ar": [
+            "يَنْتَظِرُ",
+            "يَنْظُرُ",
+            "انْتَظَرَ"
+          ],
+          "reponse": 0,
+          "explication": "« il attend » se dit يَنْتَظِرُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il écoute attentivement » ?",
+          "choix_ar": [
+            "يَسْتَمِعُ",
+            "يَسْمَعُ",
+            "اسْتَمَعَ"
+          ],
+          "reponse": 0,
+          "explication": "« il écoute attentivement » se dit يَسْتَمِعُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de اقْتَرَبَ ?",
+          "choix_ar": [
+            "افْتَعَلَ",
+            "انْفَعَلَ",
+            "تَفَاعَلَ"
+          ],
+          "reponse": 0,
+          "explication": "Un ت après la 1re lettre : افْتَعَلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de ادَّخَرَ ?",
+          "choix_ar": [
+            "ذ خ ر",
+            "د خ ر",
+            "د خ ل"
+          ],
+          "reponse": 0,
+          "explication": "ذ et ت se sont fondus en دّ : ذ خ ر."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج م ع dans le moule افْتَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اجْتَمَعَ",
+            "جَمَعَ",
+            "جَمْعٌ"
+          ],
+          "reponse": 0,
+          "explication": "ج م ع dans افْتَعَلَ : اجْتَمَعَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق ر ب dans le moule افْتَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اقْتَرَبَ",
+            "قَرِيبٌ",
+            "يَقْتَرِبُ"
+          ],
+          "reponse": 0,
+          "explication": "ق ر ب dans افْتَعَلَ : اقْتَرَبَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a attendu son ami à la porte. »",
+          "ar": "… بَاسِمٌ صَدِيقَهُ عِنْدَ الْبَابِ.",
+          "choix_ar": [
+            "انْتَظَرَ",
+            "اقْتَرَبَ",
+            "يَنْتَظِرُ"
+          ],
+          "reponse": 0,
+          "explication": "Passé de la forme VIII : انْتَظَرَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les étudiants se réunissent à l'école. »",
+          "ar": "… الطُّلَّابُ فِي الْمَدْرَسَةِ.",
+          "choix_ar": [
+            "يَجْتَمِعُ",
+            "اجْتَمَعَ",
+            "يَجْمَعُ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli, verbe en tête au singulier : يَجْتَمِعُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le soir à la salle",
+      "texte": "Rabāb raconte une soirée. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الْمَسَاءِ، اجْتَمَعَ الطُّلَّابُ فِي الْمَجْلِسِ.",
+        "انْتَظَرَ الطُّلَّابُ الشَّيْخَ، ثُمَّ اسْتَمَعُوا إِلَى قِصَّةٍ.",
+        "فِي الْقِصَّةِ، اقْتَرَبَتْ قَافِلَةٌ مِنَ الْمَدِينَةِ، وَاضْطَرَبَ جَمَلٌ.",
+        "اخْتَلَفَ الطُّلَّابُ: « هَلِ الْقِصَّةُ قَدِيمَةٌ؟ هَلْ هِيَ جَدِيدَةٌ؟ »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui les étudiants ont-ils attendu ?",
+          "choix": [
+            "le vieil homme",
+            "Bāsim",
+            "le marchand"
+          ],
+          "reponse": 0,
+          "explication": "انْتَظَرَ الطُّلَّابُ الشَّيْخَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Sur quoi les étudiants ont-ils été en désaccord ?",
+          "choix": [
+            "l'histoire est-elle ancienne ou nouvelle",
+            "le prix",
+            "le chemin"
+          ],
+          "reponse": 0,
+          "explication": "اخْتَلَفَ الطُّلَّابُ: « هَلِ الْقِصَّةُ قَدِيمَةٌ؟ هَلْ هِيَ جَدِيدَةٌ؟ »"
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « La caravane s'est approchée de la ville. » ?",
+          "choix_ar": [
+            "اقْتَرَبَتِ الْقَافِلَةُ مِنَ الْمَدِينَةِ.",
+            "قَرِيبَةٌ الْقَافِلَةُ مِنَ الْمَدِينَةِ.",
+            "اقْتَرَبَتِ الْمَدِينَةُ مِنَ الْقَافِلَةِ."
+          ],
+          "reponse": 0,
+          "explication": "« La caravane s'est approchée de la ville. » se dit اقْتَرَبَتِ الْقَافِلَةُ مِنَ الْمَدِينَةِ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Le pauvre a mis un dirham de côté. »",
+          "tuiles": [
+            "دِرْهَمًا",
+            "الْفَقِيرُ",
+            "ادَّخَرَ",
+            "دِرْهَمٌ"
+          ],
+          "solution": [
+            "ادَّخَرَ",
+            "الْفَقِيرُ",
+            "دِرْهَمًا"
+          ],
+          "explication": "Verbe, sujet, complément à l'accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les étudiants ont écouté l'histoire. »",
+          "ar": "… الطُّلَّابُ إِلَى الْقِصَّةِ.",
+          "choix_ar": [
+            "اسْتَمَعَ",
+            "انْتَظَرَ",
+            "يَسْتَمِعُ"
+          ],
+          "reponse": 0,
+          "explication": "Forme VIII au passé, avec إِلَى : اسْتَمَعَ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَمَعَ",
+          "choix": [
+            "il a écouté attentivement",
+            "il a entendu",
+            "il a demandé"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَمَعَ veut dire « il a écouté attentivement »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اقْتَرَبَ",
+          "choix": [
+            "il s'est approché",
+            "proche",
+            "il est parti"
+          ],
+          "reponse": 0,
+          "explication": "اقْتَرَبَ veut dire « il s'est approché »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ادَّخَرَ",
+          "choix": [
+            "il a mis en réserve",
+            "il est entré",
+            "il a fait entrer"
+          ],
+          "reponse": 0,
+          "explication": "ادَّخَرَ veut dire « il a mis en réserve »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils se réunissent » ?",
+          "choix_ar": [
+            "يَجْتَمِعُونَ",
+            "يَجْمَعُونَ",
+            "اجْتِمَاعٌ"
+          ],
+          "reponse": 0,
+          "explication": "« ils se réunissent » se dit يَجْتَمِعُونَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans la forme VIII, le ت se place…",
+          "choix": [
+            "après la 1re lettre de la racine",
+            "devant la racine",
+            "à la fin"
+          ],
+          "reponse": 0,
+          "explication": "افْتَعَلَ : اجْتَمَعَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après ض, le ت de la forme VIII devient…",
+          "choix_ar": [
+            "ط",
+            "د",
+            "ث"
+          ],
+          "reponse": 0,
+          "explication": "اضْطَرَبَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine خ ل ف dans le moule افْتَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اخْتَلَفَ",
+            "يَخْتَلِفُ",
+            "اخْتِلَافٌ"
+          ],
+          "reponse": 0,
+          "explication": "خ ل ف dans افْتَعَلَ : اخْتَلَفَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine س م ع dans le moule افْتَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اسْتَمَعَ",
+            "سَمِعَ",
+            "يَسْمَعُ"
+          ],
+          "reponse": 0,
+          "explication": "س م ع dans افْتَعَلَ : اسْتَمَعَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chameau s'agite. »",
+          "ar": "… الْجَمَلُ.",
+          "choix_ar": [
+            "يَضْطَرِبُ",
+            "اضْطَرَبَ",
+            "اضْطِرَابٌ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli de la forme VIII : يَضْطَرِبُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ط ل ق dans le moule انْفَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "انْطَلَقَ",
+            "يَنْطَلِقُ",
+            "انْطِلَاقٌ"
+          ],
+          "reponse": 0,
+          "explication": "انْفَعَلَ : انْطَلَقَ (leçon 3.17).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَقَاسَمَ",
+          "choix": [
+            "ils se sont partagé",
+            "il s'est divisé",
+            "il a séparé"
+          ],
+          "reponse": 0,
+          "explication": "تَقَاسَمَ veut dire « ils se sont partagé ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de انْصَرَفَ ?",
+          "choix_ar": [
+            "انْفَعَلَ",
+            "افْتَعَلَ",
+            "تَفَعَّلَ"
+          ],
+          "reponse": 0,
+          "explication": "انْفَعَلَ (leçon 3.17).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais la forme VIII افْتَعَلَ / يَفْتَعِلُ : اجْتَمَعَ, انْتَظَرَ, اقْتَرَبَ, et son ت qui devient ط ou د.",
+      "suite": "À la Tour du guet : la forme X, pour demander ou juger."
+    }
+  ]
+}
