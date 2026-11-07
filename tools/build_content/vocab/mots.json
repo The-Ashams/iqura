@@ -2359,6 +2359,25 @@
    "nom_action": "بُلُوغٌ"
   },
   {
+   "id": "madina",
+   "ar": "مَدِينَةٌ",
+   "translit": "madīnatun",
+   "fr": "ville",
+   "nature": "nom",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "مُدُنٌ",
+   "lemme": "madiynap",
+   "exemple": {
+    "ar": "هَٰذِهِ مَدِينَةٌ.",
+    "fr": "Ceci est une ville."
+   },
+   "theme": "voyage",
+   "scheme": "فَعِيلَة",
+   "scheme_pluriel": "فُعُل"
+  },
+  {
    "id": "himl",
    "ar": "حِمْلٌ",
    "translit": "ḥimlun",

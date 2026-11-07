@@ -157,6 +157,18 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Sons difficiles | Description écrite sur chaque fiche de lettre (ع reformulée sans renvoi à l'écoute) et schéma d'articulation (coupe de profil, point d'articulation, flèche pour les emphatiques) : `lib/ui/game/articulation_diagram.dart`, sur la fiche du Grimoire et l'écran « lettre » des leçons |
 | Tests | Lecteur de leçons et examens testés son coupé ; les tests du son (phase audio) gardés, avec le son rallumé |
 
+## 1 undecies. Niveau Intermédiaire 1 (leçons 3.1 à 3.10, région 3, 05 au 07/11/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Région 3 | « Les Montagnes du Moteur » (proposition à valider : `docs/PROPOSITION_REGION_3.md`), adversaire la Précipitation ; lieux col, forge, atelier des outils, pont, relais, éboulis ; maître Hilāl ; scènes et sprites en pixel art |
+| Leçons | `tools/build_content/lessons/etape3/` (moteur-01 à moteur-10) : racine, schème (calculé à partir du Corpus), nom d'agent, nom d'action, lieux et instruments, adjectifs et intensifs, pluriels internes, élatif, nisba, ce que la racine ne dit pas ; exercices « forge » et « racine » contrôlés par le pipeline |
+| Données | Champs `scheme`, `scheme_pluriel`, `nom_action` sur les fiches (schéma de la base 11) ; noms divins exclus des exercices (`vocab.DIVINE_NAMES`) ; fiche مَدِينَةٌ ajoutée |
+| Fiche de mot | Schème visible à partir de la leçon 3.2, nom d'action à partir de la 3.4 (décision du conseiller) |
+| Relecture | 1er passage : `docs/relectures/2026-11-05-intermediaire-1-passage-1.md` ; 2e passage : `docs/relectures/2026-11-07-intermediaire-1-passage-2.md` (6 « Validé », 4 « Validé avec doutes ») ; décisions : `docs/relectures/decisions-intermediaire-1.md` |
+| Tests | Les 10 leçons jouées de bout en bout son coupé (`test/ui/lesson_player_test.dart`) |
+| À faire | Test de l'utilisateur ; ensuite Intermédiaire 2 (leçons 3.11 à 3.21) |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -214,7 +226,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 8. Élémentaire 1 (§1 septies) et Élémentaire 2 (§1 octies) construits le 25/10/2026, relus, sons générés : à tester par l'utilisateur.
 9. Élémentaire 3 (§1 nonies) construit et relu : toute la région 2 est prête à tester.
 10. Audio suspendu (§1 decies, 03/11/2026).
-11. En cours : région 3, Intermédiaire 1 (leçons 3.1 à 3.10), sans audio.
+11. Intermédiaire 1 construit et relu (§1 undecies) : à tester par l'utilisateur.
+12. Suivant : Intermédiaire 2 (leçons 3.11 à 3.21).
 
 ## 5. Problèmes connus
 

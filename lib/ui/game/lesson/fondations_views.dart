@@ -3,12 +3,12 @@
 /// dictionnaire.
 library;
 
-import '../../../core/audio_policy.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/audio_policy.dart';
 import '../../../core/providers.dart';
+import '../../../features/progress/lesson_progress.dart';
 import '../../../game/lesson/lesson.dart';
 import '../../../game/vocab/word.dart';
 import '../../widgets/arabic_text.dart';
@@ -116,9 +116,18 @@ class WordCard extends ConsumerWidget {
   /// Sans famille ni exemple (aperçu au toucher d'un mot).
   final bool compact;
 
+  /// Leçon qui enseigne le schème (3.2) et le nom d'action (3.4) : ces
+  /// lignes restent masquées tant que la leçon n'est pas commencée
+  /// (décision du conseiller, 07/11/2026).
+  static const schemeLesson = 'moteur-02';
+  static const actionNounLesson = 'moteur-04';
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final w = word;
+    final progress = ref.watch(lessonProgressProvider);
+    final showScheme = progress.containsKey(schemeLesson);
+    final showActionNoun = progress.containsKey(actionNounLesson);
     final family = w.rootId == null || compact
         ? const <Word>[]
         : [
@@ -145,17 +154,17 @@ class WordCard extends ConsumerWidget {
               SpokenArabic(w.arabic, size: 40),
             ],
           ),
-          if (w.scheme != null)
+          if (showScheme && w.scheme != null)
             _Line(
               label: 'Schème (calculé à partir du Corpus)',
               arabic: w.scheme!,
             ),
           if (w.plural != null) _Line(label: 'Pluriel', arabic: w.plural!),
-          if (w.pluralScheme != null)
+          if (showScheme && w.pluralScheme != null)
             _Line(label: 'Schème du pluriel', arabic: w.pluralScheme!),
           if (w.past != null) _Line(label: 'Passé', arabic: w.past!),
           if (w.present != null) _Line(label: 'Inaccompli', arabic: w.present!),
-          if (w.actionNoun != null)
+          if (showActionNoun && w.actionNoun != null)
             _Line(label: "Nom d'action", arabic: w.actionNoun!),
           if (w.rootLetters != null) ...[
             const SizedBox(height: 6),

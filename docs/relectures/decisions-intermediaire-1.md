@@ -551,7 +551,16 @@ Les « moules » ajoutés aux mots déjà connus sont justes.
 
 ---
 
-## Liste de fin de niveau (proposition, 9 points)
+## Décisions du conseiller sur le 2e passage (07/11/2026)
+
+Rapport du relecteur : `2026-11-07-intermediaire-1-passage-2.md`.
+
+1. **Schème et nom d'action sur la fiche avant 3.2 / 3.4** : masqués tant que la leçon 3.2 (schème, schème du pluriel) ou 3.4 (nom d'action) n'est pas commencée, partout où la fiche s'affiche, dictionnaire compris ; les données restent dans la base. Raison : la notation فعل est illisible avant 3.2 (cahier §5 : mini-forges « sans théorie des schèmes » en région 2 ; même logique que le sort de racine, §16 du 22/10/2026). Confiance : haute. Fait : `WordCard` (`fondations_views.dart`), test « fiche de mot ».
+2. **Une seule forme de nom d'action par verbe** : gardée, sans mention « la plus courante » (aucune donnée ne l'établit) ; la leçon 3.4 dit maintenant « Un verbe peut en avoir plusieurs, la fiche en donne un ». Confiance : haute.
+3. **Fiche مَدِينَةٌ « ville »** (ajoutée pour la salle de lecture de 3.9 ; lemme `madiynap`, racine م د ن ; pluriel مُدُنٌ ; schèmes فَعِيلَة / فُعُل ; leçon 2.23) : validée telle quelle. Confiance : haute.
+4. **3.7** : le seul doute était le garde-fou anti-versets non lancé par le relecteur ; il passe à la construction.
+
+## Liste de fin de niveau (10 points)
 1. « Il fait très froid » reste écrit avec كَثِيرٌ ; la tournure avec شَدِيدٌ viendra plus tard.
 2. Leçon 3.3 : on précise « complément direct ».
 3. Leçon 3.4 : chaque verbe connu affiche son nom d'action (25 verbes, formes données plus haut).
@@ -561,3 +570,4 @@ Les « moules » ajoutés aux mots déjà connus sont justes.
 7. « أَكْبَرُ est toujours un verbe » reste une mauvaise réponse, sans changement.
 8. « Chaise » ressemble à une nisba sans en être une, sans changement.
 9. « Méthode », sens figuré de « chemin » : explication simplifiée et distracteurs ambigus retirés. Les moules ajoutés aux mots de la région 2 sont justes.
+10. Sur les fiches de mots, le « moule » n'apparaît qu'à partir de la leçon 3.2 et le nom d'action qu'à partir de la 3.4 ; chaque verbe garde un seul nom d'action, la leçon 3.4 précise qu'il peut y en avoir plusieurs. Fiche « ville » ajoutée.

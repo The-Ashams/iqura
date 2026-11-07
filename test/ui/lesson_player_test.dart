@@ -20,7 +20,8 @@ import 'package:iqura/game/lesson/lesson.dart';
 import 'package:iqura/game/exam/region_exam.dart';
 import 'package:iqura/ui/game/exam/data_exam_screen.dart';
 import 'package:iqura/ui/game/exam/region_exam_screen.dart';
-import 'package:iqura/ui/game/lesson/fondations_views.dart' show GradedText;
+import 'package:iqura/ui/game/lesson/fondations_views.dart'
+    show GradedText, WordCard;
 import 'package:iqura/ui/game/expedition_screen.dart';
 import 'package:iqura/ui/game/lesson/boss_view.dart';
 import 'package:iqura/ui/game/lesson/lesson_screen.dart';
@@ -734,4 +735,31 @@ void main() {
       );
     });
   }
+
+  testWidgets(
+    'fiche de mot : schème après le début de 3.2, nom d\'action après 3.4',
+    (tester) async {
+      Widget card() => appWith(
+        Scaffold(
+          body: SingleChildScrollView(
+            child: WordCard(word: contentDb.word('fataha')!),
+          ),
+        ),
+      );
+      await tester.pumpWidget(card());
+      expect(find.textContaining('Schème'), findsNothing);
+      expect(find.textContaining("Nom d'action"), findsNothing);
+
+      LessonProgressRepository(userDb).saveStep(WordCard.schemeLesson, 1);
+      await tester.pumpWidget(const SizedBox());
+      await tester.pumpWidget(card());
+      expect(find.textContaining('Schème'), findsOneWidget);
+      expect(find.textContaining("Nom d'action"), findsNothing);
+
+      LessonProgressRepository(userDb).saveStep(WordCard.actionNounLesson, 1);
+      await tester.pumpWidget(const SizedBox());
+      await tester.pumpWidget(card());
+      expect(find.textContaining("Nom d'action"), findsOneWidget);
+    },
+  );
 }
