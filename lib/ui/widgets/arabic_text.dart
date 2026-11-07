@@ -8,25 +8,25 @@ abstract final class ArabicFonts {
   /// Texte arabe courant (leçons, exemples construits, interface).
   static const String text = 'Amiri';
 
-  /// Texte coranique (Tanzil Uthmani) : gère tous les signes du Mushaf.
-  static const String quran = 'AmiriQuran';
+  /// Écriture du Mushaf (mots isolés de la leçon 14) : gère tous ses signes.
+  static const String mushaf = 'AmiriQuran';
 }
 
 /// Texte arabe, écrit de droite à gauche, à la taille choisie dans les
-/// réglages. [quran] à vrai pour le texte coranique, lu dans la base vérifiée.
+/// réglages. [mushaf] à vrai pour un mot écrit avec les signes du Mushaf.
 class ArabicText extends ConsumerWidget {
   const ArabicText(
     this.text, {
     super.key,
     this.baseSize = 28,
     this.style,
-    this.quran = false,
+    this.mushaf = false,
   });
 
   final String text;
   final double baseSize;
   final TextStyle? style;
-  final bool quran;
+  final bool mushaf;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -35,9 +35,9 @@ class ArabicText extends ConsumerWidget {
       text,
       textDirection: TextDirection.rtl,
       style: (style ?? const TextStyle()).copyWith(
-        fontFamily: quran ? ArabicFonts.quran : ArabicFonts.text,
+        fontFamily: mushaf ? ArabicFonts.mushaf : ArabicFonts.text,
         fontSize: baseSize * scale,
-        height: quran ? 2.0 : 1.8,
+        height: mushaf ? 2.0 : 1.8,
       ),
     );
   }

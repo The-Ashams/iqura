@@ -1,0 +1,558 @@
+{
+  "id": "moteur-17",
+  "etape": 3,
+  "ordre": 17,
+  "format": 3,
+  "titre": "La forme VII",
+  "objectif": "Comprendre la forme VII انْفَعَلَ : ce qui arrive à une chose, sans dire qui agit.",
+  "statut": "ia_non_verifie",
+  "lieu": "copistes",
+  "maitre": "rabab",
+  "prerequis": [
+    "moteur-16"
+  ],
+  "apercu": [
+    "رَبَابُ"
+  ],
+  "schemes": [
+    "انْفَعَلَ",
+    "يَنْفَعِلُ",
+    "انْفِعَال",
+    "فَاعَلَ",
+    "تَفَعُّل",
+    "فَعَلَ",
+    "تَفَاعَلَ",
+    "يَتَفَاعَلُ",
+    "تَفَعَّلَ",
+    "فَعَّلَ",
+    "أَفْعَلَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "texte": "Un coup de vent dans la salle : la porte s'ouvre. Personne ne l'a ouverte !"
+        },
+        {
+          "qui": "rabab",
+          "texte": "Pour dire ce qui arrive à une chose, sans dire qui agit, l'arabe a la forme VII : انْفَتَحَ الْبَابُ."
+        }
+      ],
+      "objectif": "Reconnaître la forme VII et dire ce qui arrive à une chose."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ت ب dans le moule تَفَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَكَاتَبَ",
+            "كَاتَبَ",
+            "كَتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "ك ت ب dans تَفَاعَلَ : تَكَاتَبَ (leçon 3.16)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de تَكَلَّمَ ?",
+          "choix_ar": [
+            "يَتَكَلَّمُ",
+            "يُكَلِّمُ",
+            "كَلَّمَ"
+          ],
+          "reponse": 0,
+          "explication": "Forme V : يَتَكَلَّمُ (leçon 3.15)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَتَحَ",
+          "choix": [
+            "il a ouvert",
+            "ouvert",
+            "clé"
+          ],
+          "reponse": 0,
+          "explication": "فَتَحَ : « ouvrir » (région 2)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَنْ فَتَحَ الْبَابَ؟",
+          "fr": "Qui a ouvert la porte ?"
+        },
+        {
+          "qui": "rabab",
+          "ar": "انْفَتَحَ الْبَابُ.",
+          "fr": "La porte s'est ouverte."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَانْقَلَبَ الصَّحْنُ أَيْضًا!",
+          "fr": "Et le plat s'est renversé aussi !"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qui a ouvert la porte ?",
+        "choix": [
+          "on ne le dit pas : elle s'est ouverte",
+          "Rabāb",
+          "Bāsim"
+        ],
+        "reponse": 0,
+        "explication": "انْفَتَحَ الْبَابُ : on ne dit pas qui agit."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "infataha",
+        "inqataa",
+        "inqasama",
+        "intalaqa",
+        "insarafa",
+        "inqalaba"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "انْقَطَعَ",
+        "choix": [
+          "il s'est rompu",
+          "il a coupé",
+          "un morceau"
+        ],
+        "reponse": 0,
+        "explication": "انْقَطَعَ veut dire « il s'est rompu »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "انْـ devant la racine",
+      "texte": "Forme VII, moule انْفَعَلَ : souvent ce qui arrive au complément du verbe I, sans dire qui agit. فَتَحَ الْحَارِسُ الْبَابَ → انْفَتَحَ الْبَابُ « la porte s'est ouverte ».",
+      "exemples": [
+        "انْفَتَحَ",
+        "انْقَطَعَ",
+        "انْقَلَبَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire انْقَطَعَ الْحَبْلُ ?",
+        "choix": [
+          "La corde s'est rompue.",
+          "Il a coupé la corde.",
+          "La corde est longue."
+        ],
+        "reponse": 0,
+        "explication": "Forme VII : ce qui arrive à la corde."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Sans complément direct",
+      "texte": "La forme VII n'a jamais de complément direct ; inaccompli يَنْفَعِلُ, nom d'action انْفِعَال. Son alif se lit i en début de phrase ; après un mot lu sans pause, il disparaît : وَانْطَلَقَ (wa-nṭalaqa).",
+      "exemples": [
+        "يَنْفَتِحُ",
+        "انْطِلَاقٌ",
+        "وَانْطَلَقَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est l'inaccompli de انْقَسَمَ ?",
+        "choix_ar": [
+          "يَنْقَسِمُ",
+          "تَقَاسَمَ",
+          "انْقِسَامٌ"
+        ],
+        "reponse": 0,
+        "explication": "Forme VII : يَنْفَعِلُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le ن n'est pas dans la racine",
+      "texte": "Dans انْطَلَقَ, le ن vient de la forme : la racine est ط ل ق. Et la forme VII n'existe pas pour tous les verbes : انْطَلَقَ « partir » ne correspond à aucun verbe I que tu connais.",
+      "exemples": [
+        "انْطَلَقَ",
+        "انْصَرَفَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de انْصَرَفَ ?",
+        "choix_ar": [
+          "ص ر ف",
+          "ن ص ر",
+          "ن ص ف"
+        ],
+        "reponse": 0,
+        "explication": "انْـ est la forme : ص ر ف."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "انْطَلَقَ",
+          "choix": [
+            "il est parti",
+            "il s'est ouvert",
+            "il s'est rompu"
+          ],
+          "reponse": 0,
+          "explication": "انْطَلَقَ veut dire « il est parti »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "انْصَرَفَ",
+          "choix": [
+            "il s'en est allé",
+            "il s'est renversé",
+            "il s'est divisé"
+          ],
+          "reponse": 0,
+          "explication": "انْصَرَفَ veut dire « il s'en est allé »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « elle s'ouvre » ?",
+          "choix_ar": [
+            "تَنْفَتِحُ",
+            "تَفْتَحُ",
+            "انْفَتَحَتْ"
+          ],
+          "reponse": 0,
+          "explication": "« elle s'ouvre » se dit تَنْفَتِحُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il part » ?",
+          "choix_ar": [
+            "يَنْطَلِقُ",
+            "انْطَلَقَ",
+            "انْطِلَاقٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il part » se dit يَنْطَلِقُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de انْقَلَبَ ?",
+          "choix_ar": [
+            "انْفَعَلَ",
+            "تَفَاعَلَ",
+            "أَفْعَلَ"
+          ],
+          "reponse": 0,
+          "explication": "انْـ + racine : انْفَعَلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de انْطَلَقَ ?",
+          "choix_ar": [
+            "ط ل ق",
+            "ن ط ل",
+            "ن ط ق"
+          ],
+          "reponse": 0,
+          "explication": "انْـ est la forme : ط ل ق."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ت ح dans le moule انْفَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "انْفَتَحَ",
+            "فَتَحَ",
+            "مَفْتُوحٌ"
+          ],
+          "reponse": 0,
+          "explication": "ف ت ح dans انْفَعَلَ : انْفَتَحَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق ط ع dans le moule انْفَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "انْقَطَعَ",
+            "قَطَّعَ",
+            "قِطْعَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "ق ط ع dans انْفَعَلَ : انْقَطَعَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane est partie le matin. »",
+          "ar": "… الْقَافِلَةُ فِي الصَّبَاحِ.",
+          "choix_ar": [
+            "انْطَلَقَتِ",
+            "انْطِلَاقٌ",
+            "تَنْطَلِقُ"
+          ],
+          "reponse": 0,
+          "explication": "Passé ; avec un sujet féminin, on met d'habitude تْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La porte s'est ouverte. »",
+          "ar": "… الْبَابُ.",
+          "choix_ar": [
+            "انْفَتَحَ",
+            "فَتَحَ",
+            "مِفْتَاحُ"
+          ],
+          "reponse": 0,
+          "explication": "Forme VII : ce qui arrive à la porte."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le départ du matin",
+      "texte": "Rabāb raconte un matin agité. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الصَّبَاحِ، انْفَتَحَ بَابُ الْبَيْتِ.",
+        "انْقَطَعَ حَبْلٌ، وَانْقَلَبَ صُنْدُوقٌ.",
+        "ثُمَّ انْطَلَقَتِ الْقَافِلَةُ إِلَى الْمَدِينَةِ.",
+        "وَانْصَرَفَ الْحَارِسُ إِلَى الْبَيْتِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'est-ce qui s'est renversé ?",
+          "choix": [
+            "un coffre",
+            "un plat",
+            "une porte"
+          ],
+          "reponse": 0,
+          "explication": "انْقَلَبَ صُنْدُوقٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Où la caravane est-elle partie ?",
+          "choix": [
+            "vers la ville",
+            "vers le village",
+            "vers le marché"
+          ],
+          "reponse": 0,
+          "explication": "انْطَلَقَتِ الْقَافِلَةُ إِلَى الْمَدِينَةِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « La corde s'est rompue. » ?",
+          "choix_ar": [
+            "انْقَطَعَ الْحَبْلُ.",
+            "قَطَّعَ الْحَبْلَ.",
+            "الْحَبْلُ قِطْعَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "« La corde s'est rompue. » se dit انْقَطَعَ الْحَبْلُ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Les invités s'en sont allés le soir. »",
+          "tuiles": [
+            "الْمَسَاءِ",
+            "الضُّيُوفُ",
+            "انْصَرَفَ",
+            "فِي",
+            "انْصَرَفُوا"
+          ],
+          "solution": [
+            "انْصَرَفَ",
+            "الضُّيُوفُ",
+            "فِي",
+            "الْمَسَاءِ"
+          ],
+          "explication": "Verbe en tête au singulier, sujet, puis « le soir »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le plat s'est renversé. »",
+          "ar": "… الصَّحْنُ.",
+          "choix_ar": [
+            "انْقَلَبَ",
+            "قَلَبَ",
+            "انْقَلَبَتِ"
+          ],
+          "reponse": 0,
+          "explication": "Forme VII, sujet masculin : انْقَلَبَ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "انْفَتَحَ",
+          "choix": [
+            "il s'est ouvert",
+            "il a ouvert",
+            "ouvert"
+          ],
+          "reponse": 0,
+          "explication": "انْفَتَحَ veut dire « il s'est ouvert »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "انْقَسَمَ",
+          "choix": [
+            "il s'est divisé",
+            "il a partagé",
+            "il s'est rompu"
+          ],
+          "reponse": 0,
+          "explication": "انْقَسَمَ veut dire « il s'est divisé »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "انْقَلَبَ",
+          "choix": [
+            "il s'est renversé",
+            "il est parti",
+            "il s'en est allé"
+          ],
+          "reponse": 0,
+          "explication": "انْقَلَبَ veut dire « il s'est renversé »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il s'en va » ?",
+          "choix_ar": [
+            "يَنْصَرِفُ",
+            "انْصَرَفَ",
+            "انْصِرَافٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il s'en va » se dit يَنْصَرِفُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La forme VII a-t-elle un complément direct ?",
+          "choix": [
+            "non, jamais",
+            "oui, toujours",
+            "seulement au passé"
+          ],
+          "reponse": 0,
+          "explication": "انْفَتَحَ الْبَابُ : la porte est sujet."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le nom d'action de انْطَلَقَ ?",
+          "choix_ar": [
+            "انْطِلَاقٌ",
+            "يَنْطَلِقُ",
+            "انْطَلَقَتْ"
+          ],
+          "reponse": 0,
+          "explication": "Forme VII : انْفِعَال."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق ل ب dans le moule انْفَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "انْقَلَبَ",
+            "يَنْقَلِبُ",
+            "انْقِلَابٌ"
+          ],
+          "reponse": 0,
+          "explication": "ق ل ب dans انْفَعَلَ : انْقَلَبَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق س م dans le moule انْفَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "انْقَسَمَ",
+            "تَقَاسَمَ",
+            "يَنْقَسِمُ"
+          ],
+          "reponse": 0,
+          "explication": "ق س م dans انْفَعَلَ : انْقَسَمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La corde se rompt. »",
+          "ar": "… الْحَبْلُ.",
+          "choix_ar": [
+            "يَنْقَطِعُ",
+            "انْقَطَعَ",
+            "يُقَطِّعُ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli de la forme VII : يَنْقَطِعُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق س م dans le moule تَفَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَقَاسَمَ",
+            "يَتَقَاسَمُ",
+            "تَقَاسُمٌ"
+          ],
+          "reponse": 0,
+          "explication": "تَفَاعَلَ : تَقَاسَمَ (leçon 3.16).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَذَكَّرَ",
+          "choix": [
+            "il s'est souvenu",
+            "il a parlé",
+            "il a appris"
+          ],
+          "reponse": 0,
+          "explication": "تَذَكَّرَ veut dire « il s'est souvenu ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de تَعَارَفَ ?",
+          "choix_ar": [
+            "تَفَاعَلَ",
+            "تَفَعَّلَ",
+            "فَاعَلَ"
+          ],
+          "reponse": 0,
+          "explication": "تَفَاعَلَ (leçon 3.16).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais la forme VII انْفَعَلَ / يَنْفَعِلُ : انْفَتَحَ « s'ouvrir », انْقَطَعَ « se rompre », انْطَلَقَ « partir ».",
+      "suite": "Chez les copistes : la forme VIII, avec un ت glissé après la 1re lettre de la racine."
+    }
+  ]
+}

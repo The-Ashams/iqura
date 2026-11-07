@@ -1,0 +1,206 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../features/profile/profile.dart';
+import '../../features/settings/settings.dart';
+import '../../game/lesson/lesson.dart';
+import '../../game/world.dart';
+import '../../game/world_providers.dart';
+import 'pixel.dart';
+import 'learning_list_screen.dart';
+import 'place_screen.dart';
+import 'status_bar.dart';
+
+/// Carte à étapes de la région en cours (cahier v3 §8.3) : lieux reliés par
+/// des chemins ; on touche un lieu pour s'y rendre.
+class WorldMapScreen extends ConsumerWidget {
+  const WorldMapScreen({super.key});
+
+  static const String lockedDetail = 'À venir (prochains niveaux)';
+
+  void _open(BuildContext context, Place place) => Navigator.push(
+    context,
+    MaterialPageRoute<void>(builder: (_) => PlaceScreen(place: place)),
+  );
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    if (ref.watch(settingsProvider.select((s) => s.learningOnly))) {
+      return const LearningListView();
+    }
+    final region = ref.watch(currentRegionProvider);
+    final places = ref.watch(regionPlacesProvider);
+    final pseudo = ref.watch(profileProvider)?.pseudo ?? '';
+    final byId = {for (final p in places) p.id: p};
+    return Scaffold(
+      backgroundColor: GameColors.night,
+      body: SafeArea(
+        child: GameBody(
+          child: ListView(
+            padding: const EdgeInsets.all(12),
+            children: [
+              PixelWindow(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Bienvenue, $pseudo',
+                      style: const TextStyle(fontSize: 16),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      'RÉGION ${region.number} · ${region.skill.toUpperCase()}',
+                      style: TextStyle(
+                        color: GameColors.accent,
+                        fontSize: 14,
+                        letterSpacing: 1,
+                      ),
+                    ),
+                    Text(region.name, style: const TextStyle(fontSize: 24)),
+                    Text(
+                      'Adversaire : ${region.adversary}',
+                      style: TextStyle(color: GameColors.muted),
+                    ),
+                  ],
+                ),
+              ),
+              if (ref.watch(unlockedRegionsProvider) case final open
+                  when open.length > 1) ...[
+                const SizedBox(height: 8),
+                Wrap(
+                  spacing: 8,
+                  children: [
+                    for (final r in open)
+                      ChoiceChip(
+                        label: Text('Région ${r.number}'),
+                        selected: r.number == region.number,
+                        onSelected: (_) => ref
+                            .read(selectedRegionProvider.notifier)
+                            .select(r.number),
+                      ),
+                  ],
+                ),
+              ],
+              const SizedBox(height: 12),
+              const HeroStatusBar(),
+              const SizedBox(height: 12),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(6),
+                child: SceneView(
+                  background: region.mapImage,
+                  parts: [
+                    ScenePart(
+                      x: 0,
+                      y: 0,
+                      width: sceneWidth,
+                      height: sceneHeight,
+                      child: CustomPaint(painter: _PathsPainter(places, byId)),
+                    ),
+                    for (final p in places)
+                      ScenePart(
+                        x: p.mapX - 4,
+                        y: p.mapY - 4,
+                        width: 8,
+                        height: 8,
+                        child: _PlaceMarker(
+                          place: p,
+                          onTap: p.inVerticalSlice
+                              ? () => _open(context, p)
+                              : null,
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 12),
+              PixelWindow(
+                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                child: Column(
+                  children: [
+                    for (final p in places)
+                      PixelCommand(
+                        label: '${p.number}. ${p.name}',
+                        detail: p.inVerticalSlice
+                            ? _lessonsLabel(p, region.number)
+                            : lockedDetail,
+                        onPressed: p.inVerticalSlice
+                            ? () => _open(context, p)
+                            : null,
+                      ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  static String? _lessonsLabel(Place p, int region) {
+    final n = [for (final o in p.lessons) lessonNumber(region, o)];
+    return switch (n.length) {
+      0 => 'Expédition quotidienne',
+      1 => 'Leçon ${n.first}',
+      _ => 'Leçons ${n.join(' et ')}',
+    };
+  }
+}
+
+class _PlaceMarker extends StatelessWidget {
+  const _PlaceMarker({required this.place, required this.onTap});
+
+  final Place place;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final open = onTap != null;
+    return Semantics(
+      button: open,
+      label: open
+          ? place.name
+          : '${place.name}. ${WorldMapScreen.lockedDetail}',
+      excludeSemantics: true,
+      child: GestureDetector(
+        onTap: onTap,
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            color: open ? GameColors.accent : const Color(0xFF8A8577),
+            border: Border.all(color: const Color(0xFF3A2A20), width: 2),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Chemins pointillés entre lieux reliés, en pixels de la carte.
+class _PathsPainter extends CustomPainter {
+  _PathsPainter(this.places, this.byId);
+
+  final List<Place> places;
+  final Map<String, Place> byId;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final k = size.width / sceneWidth;
+    final paint = Paint()..color = const Color(0xFF8A6A3C);
+    for (final a in places) {
+      for (final id in a.links) {
+        final b = byId[id]!;
+        final dx = (b.mapX - a.mapX).toDouble();
+        final dy = (b.mapY - a.mapY).toDouble();
+        final steps = (dx.abs() > dy.abs() ? dx.abs() : dy.abs()).round();
+        for (var i = 0; i <= steps; i += 3) {
+          final x = (a.mapX + dx * i / steps).roundToDouble();
+          final y = (a.mapY + dy * i / steps).roundToDouble();
+          canvas.drawRect(Rect.fromLTWH(x * k, y * k, k, k), paint);
+        }
+      }
+    }
+  }
+
+  @override
+  bool shouldRepaint(_PathsPainter old) => old.places != places;
+}

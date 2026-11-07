@@ -1,0 +1,5943 @@
+{
+ "_comment": "Vocabulaire de la région 2 (avenant n° 2). Sens, pluriels, conjugaisons et exemples rédigés par IA, relus (agent relecteur) ; conventions : docs/relectures/decisions-elementaire-1.md. Lemme et racine : Quranic Arabic Corpus, vérifiés à la construction.",
+ "mots": [
+  {
+   "id": "rajul",
+   "ar": "رَجُلٌ",
+   "translit": "raǧulun",
+   "fr": "homme",
+   "nature": "nom",
+   "genre": "m",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "pluriel": "رِجَالٌ",
+   "lemme": "rajul",
+   "exemple": {
+    "ar": "هَٰذَا رَجُلٌ.",
+    "fr": "Ceci est un homme."
+   },
+   "theme": "personnes",
+   "scheme": "فَعُل",
+   "scheme_pluriel": "فِعَال"
+  },
+  {
+   "id": "jamal",
+   "ar": "جَمَلٌ",
+   "translit": "ǧamalun",
+   "fr": "chameau",
+   "nature": "nom",
+   "genre": "m",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "pluriel": "جِمَالٌ",
+   "lemme": "jamal",
+   "exemple": {
+    "ar": "هَٰذَا جَمَلٌ.",
+    "fr": "Ceci est un chameau."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "bayt",
+   "ar": "بَيْتٌ",
+   "translit": "baytun",
+   "fr": "maison",
+   "nature": "nom",
+   "genre": "m",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "pluriel": "بُيُوتٌ",
+   "lemme": "bayot",
+   "exemple": {
+    "ar": "هَٰذَا بَيْتٌ.",
+    "fr": "Ceci est une maison."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "ma",
+   "ar": "مَاءٌ",
+   "translit": "māʾun",
+   "fr": "eau",
+   "nature": "nom",
+   "genre": "m",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "pluriel": "مِيَاهٌ",
+   "lemme": "maA^'",
+   "exemple": {
+    "ar": "الْمَاءُ فِي الْبَيْتِ.",
+    "fr": "L'eau est dans la maison."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "dhahaba",
+   "ar": "ذَهَبَ",
+   "translit": "ḏahaba",
+   "fr": "il est allé, il est parti",
+   "nature": "verbe",
+   "passe": "ذَهَبَ",
+   "inaccompli": "يَذْهَبُ",
+   "lemme": "*ahaba",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "theme": "voyage",
+   "nom_action": "ذَهَابٌ"
+  },
+  {
+   "id": "kharaja",
+   "ar": "خَرَجَ",
+   "translit": "ḫaraǧa",
+   "fr": "il est sorti",
+   "nature": "verbe",
+   "passe": "خَرَجَ",
+   "inaccompli": "يَخْرُجُ",
+   "lemme": "xaraja",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "theme": "voyage",
+   "nom_action": "خُرُوجٌ"
+  },
+  {
+   "id": "dakhala",
+   "ar": "دَخَلَ",
+   "translit": "daḫala",
+   "fr": "il est entré",
+   "nature": "verbe",
+   "passe": "دَخَلَ",
+   "inaccompli": "يَدْخُلُ",
+   "lemme": "daxala",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA",
+   "theme": "voyage",
+   "nom_action": "دُخُولٌ"
+  },
+  {
+   "id": "fi",
+   "ar": "فِي",
+   "translit": "fī",
+   "fr": "dans",
+   "nature": "particule",
+   "lemme": "fiY",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "min",
+   "ar": "مِنْ",
+   "translit": "min",
+   "fr": "de, depuis (point de départ)",
+   "nature": "particule",
+   "lemme": "min",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "ila",
+   "ar": "إِلَى",
+   "translit": "ilā",
+   "fr": "vers, jusqu'à",
+   "nature": "particule",
+   "lemme": "<ilaY`",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "wa",
+   "ar": "وَ",
+   "translit": "wa",
+   "fr": "et",
+   "nature": "particule",
+   "lecon": "fondations-01",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "dhalika",
+   "ar": "ذَٰلِكَ",
+   "translit": "ḏālika",
+   "fr": "cela, celui-là (lointain, masculin)",
+   "nature": "demonstratif",
+   "lecon": "fondations-05",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "tilka",
+   "ar": "تِلْكَ",
+   "translit": "tilka",
+   "fr": "cela, celle-là (lointain, féminin)",
+   "nature": "demonstratif",
+   "lecon": "fondations-05",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "jabal",
+   "ar": "جَبَلٌ",
+   "translit": "ǧabalun",
+   "fr": "montagne",
+   "nature": "nom",
+   "lecon": "fondations-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "جِبَالٌ",
+   "lemme": "jabal",
+   "exemple": {
+    "ar": "ذَٰلِكَ جَبَلٌ.",
+    "fr": "Cela est une montagne."
+   },
+   "theme": "nature",
+   "scheme": "فَعَل",
+   "scheme_pluriel": "فِعَال"
+  },
+  {
+   "id": "qarya",
+   "ar": "قَرْيَةٌ",
+   "translit": "qaryatun",
+   "fr": "village, bourg",
+   "nature": "nom",
+   "lecon": "fondations-05",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "قُرًى",
+   "lemme": "qaroyap",
+   "exemple": {
+    "ar": "تِلْكَ قَرْيَةٌ.",
+    "fr": "Cela est un village."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "nahr",
+   "ar": "نَهْرٌ",
+   "translit": "nahrun",
+   "fr": "fleuve, rivière",
+   "nature": "nom",
+   "lecon": "fondations-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَنْهَارٌ",
+   "lemme": "nahar",
+   "theme": "nature"
+  },
+  {
+   "id": "ana",
+   "ar": "أَنَا",
+   "translit": "anā",
+   "fr": "je, moi",
+   "nature": "pronom",
+   "lecon": "fondations-07",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "anta",
+   "ar": "أَنْتَ",
+   "translit": "anta",
+   "fr": "tu, toi (à un homme)",
+   "nature": "pronom",
+   "lecon": "fondations-07",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "anti",
+   "ar": "أَنْتِ",
+   "translit": "anti",
+   "fr": "tu, toi (à une femme)",
+   "nature": "pronom",
+   "lecon": "fondations-07",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "huwa",
+   "ar": "هُوَ",
+   "translit": "huwa",
+   "fr": "il, lui",
+   "nature": "pronom",
+   "lecon": "fondations-07",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "hiya",
+   "ar": "هِيَ",
+   "translit": "hiya",
+   "fr": "elle",
+   "nature": "pronom",
+   "lecon": "fondations-07",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "tajir",
+   "ar": "تَاجِرٌ",
+   "translit": "tāǧirun",
+   "fr": "marchand, commerçant",
+   "nature": "nom",
+   "lecon": "fondations-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "تُجَّارٌ",
+   "racine": "tjr",
+   "formes": [
+    "تَاجِرَةٌ"
+   ],
+   "exemple": {
+    "ar": "هُوَ تَاجِرٌ.",
+    "fr": "Il est marchand."
+   },
+   "theme": "travail",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال"
+  },
+  {
+   "id": "musafir",
+   "ar": "مُسَافِرٌ",
+   "translit": "musāfirun",
+   "fr": "voyageur",
+   "nature": "nom",
+   "lecon": "fondations-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مُسَافِرُونَ",
+   "racine": "sfr",
+   "formes": [
+    "مُسَافِرَةٌ"
+   ],
+   "exemple": {
+    "ar": "أَنَا مُسَافِرٌ.",
+    "fr": "Je suis un voyageur."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "ism",
+   "ar": "اسْمٌ",
+   "translit": "ismun",
+   "fr": "nom (d'une personne, d'une chose)",
+   "nature": "nom",
+   "lecon": "fondations-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَسْمَاءٌ",
+   "lemme": "{som"
+  },
+  {
+   "id": "hal",
+   "ar": "هَلْ",
+   "translit": "hal",
+   "fr": "est-ce que… ? (question fermée)",
+   "nature": "particule",
+   "lecon": "fondations-10",
+   "source_sens": "rédigé par IA",
+   "lemme": "hal"
+  },
+  {
+   "id": "ma_q",
+   "ar": "مَا",
+   "translit": "mā",
+   "fr": "quoi ? qu'est-ce que… ? (choses)",
+   "nature": "interrogatif",
+   "lecon": "fondations-10",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "man_q",
+   "ar": "مَنْ",
+   "translit": "man",
+   "fr": "qui ? (personnes)",
+   "nature": "interrogatif",
+   "lecon": "fondations-10",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "ayna",
+   "ar": "أَيْنَ",
+   "translit": "ayna",
+   "fr": "où ?",
+   "nature": "interrogatif",
+   "lecon": "fondations-10",
+   "source_sens": "rédigé par IA",
+   "lemme": ">ayon"
+  },
+  {
+   "id": "naam",
+   "ar": "نَعَمْ",
+   "translit": "naʿam",
+   "fr": "oui",
+   "nature": "particule",
+   "lecon": "fondations-10",
+   "source_sens": "rédigé par IA",
+   "lemme": "naEam"
+  },
+  {
+   "id": "la",
+   "ar": "لَا",
+   "translit": "lā",
+   "fr": "non",
+   "nature": "particule",
+   "lecon": "fondations-10",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "walad",
+   "ar": "وَلَدٌ",
+   "translit": "waladun",
+   "fr": "enfant ; garçon",
+   "nature": "nom",
+   "lecon": "fondations-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَوْلَادٌ",
+   "lemme": "walad",
+   "exemple": {
+    "ar": "هَٰذَا وَلَدٌ.",
+    "fr": "Ceci est un garçon."
+   },
+   "theme": "famille"
+  },
+  {
+   "id": "bint",
+   "ar": "بِنْتٌ",
+   "translit": "bintun",
+   "fr": "fille",
+   "nature": "nom",
+   "lecon": "fondations-02",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "بَنَاتٌ",
+   "racine": "bny",
+   "theme": "famille"
+  },
+  {
+   "id": "naqa",
+   "ar": "نَاقَةٌ",
+   "translit": "nāqatun",
+   "fr": "chamelle",
+   "nature": "nom",
+   "lecon": "fondations-02",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "نُوقٌ",
+   "lemme": "naAqap",
+   "theme": "voyage"
+  },
+  {
+   "id": "khayma",
+   "ar": "خَيْمَةٌ",
+   "translit": "ḫaymatun",
+   "fr": "tente",
+   "nature": "nom",
+   "lecon": "fondations-02",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "خِيَامٌ",
+   "racine": "xym",
+   "theme": "maison"
+  },
+  {
+   "id": "muallim",
+   "ar": "مُعَلِّمٌ",
+   "translit": "muʿallimun",
+   "fr": "enseignant, maître",
+   "nature": "nom",
+   "lecon": "fondations-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Elm",
+   "formes": [
+    "مُعَلِّمَةٌ"
+   ],
+   "theme": "savoir"
+  },
+  {
+   "id": "shams",
+   "ar": "شَمْسٌ",
+   "translit": "šamsun",
+   "fr": "soleil",
+   "nature": "nom",
+   "lecon": "fondations-02",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "$amos",
+   "theme": "nature",
+   "scheme": "فَعْل"
+  },
+  {
+   "id": "ard",
+   "ar": "أَرْضٌ",
+   "translit": "arḍun",
+   "fr": "terre, sol",
+   "nature": "nom",
+   "lecon": "fondations-02",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": ">aroD",
+   "theme": "nature"
+  },
+  {
+   "id": "nar",
+   "ar": "نَارٌ",
+   "translit": "nārun",
+   "fr": "feu",
+   "nature": "nom",
+   "lecon": "fondations-02",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "نِيرَانٌ",
+   "lemme": "naAr",
+   "theme": "nature"
+  },
+  {
+   "id": "bir",
+   "ar": "بِئْرٌ",
+   "translit": "biʾrun",
+   "fr": "puits",
+   "nature": "nom",
+   "lecon": "fondations-02",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "آبَارٌ",
+   "lemme": "bi}or",
+   "theme": "nature"
+  },
+  {
+   "id": "umm",
+   "ar": "أُمٌّ",
+   "translit": "ummun",
+   "fr": "mère",
+   "nature": "nom",
+   "lecon": "fondations-02",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "أُمَّهَاتٌ",
+   "lemme": ">um~",
+   "theme": "famille"
+  },
+  {
+   "id": "hadha",
+   "ar": "هَٰذَا",
+   "translit": "hāḏā",
+   "fr": "ceci, celui-ci (proche, masculin)",
+   "nature": "demonstratif",
+   "lecon": "fondations-04",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "hadhihi",
+   "ar": "هَٰذِهِ",
+   "translit": "hāḏihi",
+   "fr": "ceci, celle-ci (proche, féminin)",
+   "nature": "demonstratif",
+   "lecon": "fondations-04",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "qalam",
+   "ar": "قَلَمٌ",
+   "translit": "qalamun",
+   "fr": "calame, plume pour écrire",
+   "nature": "nom",
+   "lecon": "fondations-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَقْلَامٌ",
+   "lemme": "qalam",
+   "exemple": {
+    "ar": "هَٰذَا قَلَمٌ.",
+    "fr": "Ceci est un calame."
+   },
+   "theme": "savoir",
+   "scheme": "فَعَل",
+   "scheme_pluriel": "أَفْعَال"
+  },
+  {
+   "id": "kursi",
+   "ar": "كُرْسِيٌّ",
+   "translit": "kursiyyun",
+   "fr": "siège, chaise",
+   "nature": "nom",
+   "lecon": "fondations-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "كَرَاسِيُّ",
+   "lemme": "kurosiy~",
+   "theme": "maison"
+  },
+  {
+   "id": "siraj",
+   "ar": "سِرَاجٌ",
+   "translit": "sirāǧun",
+   "fr": "lampe (à huile)",
+   "nature": "nom",
+   "lecon": "fondations-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُرُجٌ",
+   "lemme": "siraAj",
+   "theme": "maison"
+  },
+  {
+   "id": "thawb",
+   "ar": "ثَوْبٌ",
+   "translit": "ṯawbun",
+   "fr": "vêtement, habit",
+   "nature": "nom",
+   "lecon": "fondations-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "ثِيَابٌ",
+   "racine": "vwb",
+   "theme": "maison"
+  },
+  {
+   "id": "ghurfa",
+   "ar": "غُرْفَةٌ",
+   "translit": "ġurfatun",
+   "fr": "pièce, chambre",
+   "nature": "nom",
+   "lecon": "fondations-04",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "غُرَفٌ",
+   "lemme": "gurofap",
+   "exemple": {
+    "ar": "هَٰذِهِ غُرْفَةٌ.",
+    "fr": "Ceci est une chambre."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "taam",
+   "ar": "طَعَامٌ",
+   "translit": "ṭaʿāmun",
+   "fr": "nourriture, repas",
+   "nature": "nom",
+   "lecon": "fondations-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَطْعِمَةٌ",
+   "lemme": "TaEaAm",
+   "exemple": {
+    "ar": "هَٰذَا طَعَامٌ.",
+    "fr": "Ceci est de la nourriture."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "tariq",
+   "ar": "طَرِيقٌ",
+   "translit": "ṭarīqun",
+   "fr": "chemin, route",
+   "nature": "nom",
+   "lecon": "fondations-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "remarque": "parfois féminin en arabe classique",
+   "pluriel": "طُرُقٌ",
+   "lemme": "Tariyq",
+   "exemple": {
+    "ar": "هَٰذَا طَرِيقٌ.",
+    "fr": "Ceci est un chemin."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "nakhla",
+   "ar": "نَخْلَةٌ",
+   "translit": "naḫlatun",
+   "fr": "palmier (dattier)",
+   "nature": "nom",
+   "lecon": "fondations-03",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "n~axolap",
+   "theme": "nature"
+  },
+  {
+   "id": "tamr",
+   "ar": "تَمْرٌ",
+   "translit": "tamrun",
+   "fr": "dattes (nom collectif)",
+   "nature": "nom",
+   "lecon": "fondations-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "theme": "maison"
+  },
+  {
+   "id": "laban",
+   "ar": "لَبَنٌ",
+   "translit": "labanun",
+   "fr": "lait",
+   "nature": "nom",
+   "lecon": "fondations-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "l~aban",
+   "theme": "maison"
+  },
+  {
+   "id": "kabir",
+   "ar": "كَبِيرٌ",
+   "translit": "kabīrun",
+   "fr": "grand ; âgé (personne)",
+   "nature": "adjectif",
+   "lecon": "fondations-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "كَبِيرَةٌ"
+   ],
+   "lemme": "kabiyr",
+   "exemple": {
+    "ar": "الْبَيْتُ كَبِيرٌ.",
+    "fr": "La maison est grande."
+   },
+   "scheme": "فَعِيل"
+  },
+  {
+   "id": "saghir",
+   "ar": "صَغِيرٌ",
+   "translit": "ṣaġīrun",
+   "fr": "petit ; jeune",
+   "nature": "adjectif",
+   "lecon": "fondations-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "صَغِيرَةٌ"
+   ],
+   "lemme": "Sagiyr",
+   "exemple": {
+    "ar": "الْجَمَلُ صَغِيرٌ.",
+    "fr": "Le chameau est petit."
+   }
+  },
+  {
+   "id": "jamil",
+   "ar": "جَمِيلٌ",
+   "translit": "ǧamīlun",
+   "fr": "beau",
+   "nature": "adjectif",
+   "lecon": "fondations-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "جَمِيلَةٌ"
+   ],
+   "lemme": "jamiyl"
+  },
+  {
+   "id": "qarib",
+   "ar": "قَرِيبٌ",
+   "translit": "qarībun",
+   "fr": "proche",
+   "nature": "adjectif",
+   "lecon": "fondations-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "قَرِيبَةٌ"
+   ],
+   "lemme": "qariyb"
+  },
+  {
+   "id": "baid",
+   "ar": "بَعِيدٌ",
+   "translit": "baʿīdun",
+   "fr": "lointain, éloigné",
+   "nature": "adjectif",
+   "lecon": "fondations-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "بَعِيدَةٌ"
+   ],
+   "lemme": "baEiyd",
+   "exemple": {
+    "ar": "الْجَبَلُ بَعِيدٌ.",
+    "fr": "La montagne est loin."
+   }
+  },
+  {
+   "id": "nahnu",
+   "ar": "نَحْنُ",
+   "translit": "naḥnu",
+   "fr": "nous",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "antum",
+   "ar": "أَنْتُمْ",
+   "translit": "antum",
+   "fr": "vous (des hommes, ou un groupe mixte)",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "antunna",
+   "ar": "أَنْتُنَّ",
+   "translit": "antunna",
+   "fr": "vous (des femmes)",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "hum",
+   "ar": "هُمْ",
+   "translit": "hum",
+   "fr": "ils, eux",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "hunna",
+   "ar": "هُنَّ",
+   "translit": "hunna",
+   "fr": "elles",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "antuma",
+   "ar": "أَنْتُمَا",
+   "translit": "antumā",
+   "fr": "vous deux",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "huma",
+   "ar": "هُمَا",
+   "translit": "humā",
+   "fr": "eux deux, elles deux",
+   "nature": "pronom",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "huna",
+   "ar": "هُنَا",
+   "translit": "hunā",
+   "fr": "ici",
+   "nature": "demonstratif_lieu",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA",
+   "lemme": "hunaA"
+  },
+  {
+   "id": "hunaka",
+   "ar": "هُنَاكَ",
+   "translit": "hunāka",
+   "fr": "là-bas",
+   "nature": "demonstratif_lieu",
+   "lecon": "fondations-08",
+   "source_sens": "rédigé par IA"
+  },
+  {
+   "id": "jadid",
+   "ar": "جَدِيدٌ",
+   "translit": "ǧadīdun",
+   "fr": "nouveau, neuf",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "جَدِيدَةٌ"
+   ],
+   "lemme": "jadiyd",
+   "exemple": {
+    "ar": "هَٰذَا ثَوْبٌ جَدِيدٌ.",
+    "fr": "Ceci est un vêtement neuf."
+   }
+  },
+  {
+   "id": "qadim",
+   "ar": "قَدِيمٌ",
+   "translit": "qadīmun",
+   "fr": "ancien, vieux (chose)",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "قَدِيمَةٌ"
+   ],
+   "lemme": "qadiym"
+  },
+  {
+   "id": "tawil",
+   "ar": "طَوِيلٌ",
+   "translit": "ṭawīlun",
+   "fr": "long ; grand de taille",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "طَوِيلَةٌ"
+   ],
+   "lemme": "Tawiyl",
+   "exemple": {
+    "ar": "النَّهْرُ طَوِيلٌ.",
+    "fr": "Le fleuve est long."
+   }
+  },
+  {
+   "id": "qasir",
+   "ar": "قَصِيرٌ",
+   "translit": "qaṣīrun",
+   "fr": "court ; petit de taille",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "قَصِيرَةٌ"
+   ],
+   "racine": "qSr",
+   "scheme": "فَعِيل"
+  },
+  {
+   "id": "harr",
+   "ar": "حَارٌّ",
+   "translit": "ḥārrun",
+   "fr": "chaud",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "حَارَّةٌ"
+   ],
+   "racine": "Hrr"
+  },
+  {
+   "id": "barid",
+   "ar": "بَارِدٌ",
+   "translit": "bāridun",
+   "fr": "froid, frais",
+   "nature": "adjectif",
+   "lecon": "fondations-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "بَارِدَةٌ"
+   ],
+   "lemme": "baArid",
+   "exemple": {
+    "ar": "الْمَاءُ بَارِدٌ.",
+    "fr": "L'eau est froide."
+   }
+  },
+  {
+   "id": "yad",
+   "ar": "يَدٌ",
+   "translit": "yadun",
+   "fr": "main",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "أَيْدٍ",
+   "lemme": "yad",
+   "exemple": {
+    "ar": "الْيَدُ صَغِيرَةٌ.",
+    "fr": "La main est petite."
+   },
+   "theme": "corps"
+  },
+  {
+   "id": "saqf",
+   "ar": "سَقْفٌ",
+   "translit": "saqfun",
+   "fr": "plafond, toit",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُقُفٌ",
+   "lemme": "saqof",
+   "exemple": {
+    "ar": "السَّقْفُ جَدِيدٌ.",
+    "fr": "Le toit est neuf."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "sarir",
+   "ar": "سَرِيرٌ",
+   "translit": "sarīrun",
+   "fr": "lit",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "srr",
+   "exemple": {
+    "ar": "فِي الْغُرْفَةِ سَرِيرَانِ.",
+    "fr": "Il y a deux lits dans la chambre."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "jidar",
+   "ar": "جِدَارٌ",
+   "translit": "ǧidārun",
+   "fr": "mur",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "جُدُرٌ",
+   "lemme": "jidaAr",
+   "exemple": {
+    "ar": "الْجِدَارُ قَدِيمٌ.",
+    "fr": "Le mur est ancien."
+   },
+   "theme": "maison",
+   "scheme": "فِعَال",
+   "scheme_pluriel": "فُعُل"
+  },
+  {
+   "id": "wisada",
+   "ar": "وِسَادَةٌ",
+   "translit": "wisādatun",
+   "fr": "coussin",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "وَسَائِدُ",
+   "exemple": {
+    "ar": "الْوِسَادَتَانِ جَدِيدَتَانِ.",
+    "fr": "Les deux coussins sont neufs."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "matbakh",
+   "ar": "مَطْبَخٌ",
+   "translit": "maṭbaḫun",
+   "fr": "cuisine (la pièce)",
+   "nature": "nom",
+   "lecon": "fondations-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَطَابِخُ",
+   "exemple": {
+    "ar": "الْمَطْبَخُ صَغِيرٌ.",
+    "fr": "La cuisine est petite."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "khabbaz",
+   "ar": "خَبَّازٌ",
+   "translit": "ḫabbāzun",
+   "fr": "boulanger",
+   "nature": "nom",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "خَبَّازُونَ",
+   "formes": [
+    "خَبَّازَةٌ"
+   ],
+   "racine": "xbz",
+   "exemple": {
+    "ar": "الْخَبَّازُونَ فِي السُّوقِ.",
+    "fr": "Les boulangers sont au marché."
+   },
+   "theme": "travail",
+   "scheme": "فَعَّال"
+  },
+  {
+   "id": "khayyat",
+   "ar": "خَيَّاطٌ",
+   "translit": "ḫayyāṭun",
+   "fr": "tailleur",
+   "nature": "nom",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "خَيَّاطُونَ",
+   "formes": [
+    "خَيَّاطَةٌ"
+   ],
+   "racine": "xyT",
+   "exemple": {
+    "ar": "التَّاجِرُ مَعَ الْخَيَّاطِينَ.",
+    "fr": "Le marchand est avec les tailleurs."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "haddad",
+   "ar": "حَدَّادٌ",
+   "translit": "ḥaddādun",
+   "fr": "forgeron",
+   "nature": "nom",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "حَدَّادُونَ",
+   "racine": "Hdd",
+   "exemple": {
+    "ar": "الْحَدَّادُونَ مَشْغُولُونَ.",
+    "fr": "Les forgerons sont occupés."
+   },
+   "theme": "travail",
+   "scheme": "فَعَّال"
+  },
+  {
+   "id": "najjar",
+   "ar": "نَجَّارٌ",
+   "translit": "naǧǧārun",
+   "fr": "menuisier",
+   "nature": "nom",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "نَجَّارُونَ",
+   "exemple": {
+    "ar": "هُمْ نَجَّارُونَ.",
+    "fr": "Ce sont des menuisiers."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "farih",
+   "ar": "فَرِحٌ",
+   "translit": "fariḥun",
+   "fr": "joyeux",
+   "nature": "adjectif",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "فَرِحَةٌ",
+    "فَرِحُونَ",
+    "فَرِحَاتٌ"
+   ],
+   "lemme": "fariH",
+   "exemple": {
+    "ar": "الْبَنَاتُ فَرِحَاتٌ.",
+    "fr": "Les filles sont joyeuses."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "mashghul",
+   "ar": "مَشْغُولٌ",
+   "translit": "mašġūlun",
+   "fr": "occupé",
+   "nature": "adjectif",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "مَشْغُولَةٌ",
+    "مَشْغُولُونَ",
+    "مَشْغُولَاتٌ"
+   ],
+   "racine": "$gl",
+   "exemple": {
+    "ar": "الْمُعَلِّمَاتُ مَشْغُولَاتٌ.",
+    "fr": "Les enseignantes sont occupées."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "haula",
+   "ar": "هَٰؤُلَاءِ",
+   "translit": "hāʾulāʾi",
+   "fr": "ceux-ci, celles-ci (personnes)",
+   "nature": "demonstratif",
+   "lecon": "fondations-17",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "هَٰؤُلَاءِ خَبَّازُونَ.",
+    "fr": "Ce sont des boulangers."
+   }
+  },
+  {
+   "id": "wahid",
+   "ar": "وَاحِدٌ",
+   "translit": "wāḥidun",
+   "fr": "un",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "wa`Hid",
+   "formes": [
+    "وَاحِدَةٌ"
+   ],
+   "exemple": {
+    "ar": "لِي قَلَمٌ وَاحِدٌ.",
+    "fr": "J'ai un seul calame."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "ithnan",
+   "ar": "اثْنَانِ",
+   "translit": "iṯnāni",
+   "fr": "deux",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "{vonayon",
+   "formes": [
+    "اثْنَتَانِ"
+   ],
+   "exemple": {
+    "ar": "فِي الْغُرْفَةِ سَرِيرَانِ اثْنَانِ.",
+    "fr": "Il y a bien deux lits dans la chambre."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "thalatha",
+   "ar": "ثَلَاثَةٌ",
+   "translit": "ṯalāṯatun",
+   "fr": "trois",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "vala`vap",
+   "exemple": {
+    "ar": "لِي ثَلَاثَةُ أَقْلَامٍ.",
+    "fr": "J'ai trois calames."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "arbaa",
+   "ar": "أَرْبَعَةٌ",
+   "translit": "arbaʿatun",
+   "fr": "quatre",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": ">arobaEap",
+   "theme": "nombres"
+  },
+  {
+   "id": "khamsa",
+   "ar": "خَمْسَةٌ",
+   "translit": "ḫamsatun",
+   "fr": "cinq",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "xamosap",
+   "exemple": {
+    "ar": "فِي السُّوقِ خَمْسَةُ تُجَّارٍ.",
+    "fr": "Il y a cinq marchands au marché."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "sitta",
+   "ar": "سِتَّةٌ",
+   "translit": "sittatun",
+   "fr": "six",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "sit~ap",
+   "theme": "nombres"
+  },
+  {
+   "id": "saba",
+   "ar": "سَبْعَةٌ",
+   "translit": "sabʿatun",
+   "fr": "sept",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "saboEap",
+   "theme": "nombres"
+  },
+  {
+   "id": "thamaniya",
+   "ar": "ثَمَانِيَةٌ",
+   "translit": "ṯamāniyatun",
+   "fr": "huit",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "vama`niyap",
+   "theme": "nombres"
+  },
+  {
+   "id": "tisa",
+   "ar": "تِسْعَةٌ",
+   "translit": "tisʿatun",
+   "fr": "neuf",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "tisoEap",
+   "theme": "nombres"
+  },
+  {
+   "id": "ashara",
+   "ar": "عَشَرَةٌ",
+   "translit": "ʿašaratun",
+   "fr": "dix",
+   "nature": "nombre",
+   "lecon": "fondations-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "Ea$arap",
+   "exemple": {
+    "ar": "فِي الصُّنْدُوقِ عَشَرَةُ أَكْيَاسٍ.",
+    "fr": "Il y a dix bourses dans le coffre."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "thaman",
+   "ar": "ثَمَنٌ",
+   "translit": "ṯamanun",
+   "fr": "prix",
+   "nature": "nom",
+   "lecon": "fondations-12",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَثْمَانٌ",
+   "lemme": "vaman",
+   "exemple": {
+    "ar": "مَا الثَّمَنُ؟",
+    "fr": "Quel est le prix ?"
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "dhahab",
+   "ar": "ذَهَبٌ",
+   "translit": "ḏahabun",
+   "fr": "or (le métal)",
+   "nature": "nom",
+   "lecon": "fondations-12",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "*ahab",
+   "remarque": "s'écrit comme ذَهَبَ « il est allé » : seules les voyelles les distinguent",
+   "exemple": {
+    "ar": "الدِّينَارُ مِنَ الذَّهَبِ.",
+    "fr": "Le dinar est en or."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "fidda",
+   "ar": "فِضَّةٌ",
+   "translit": "fiḍḍatun",
+   "fr": "argent (le métal)",
+   "nature": "nom",
+   "lecon": "fondations-12",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "fiD~ap",
+   "exemple": {
+    "ar": "الدِّرْهَمُ مِنَ الْفِضَّةِ.",
+    "fr": "Le dirham est en argent."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "hadid",
+   "ar": "حَدِيدٌ",
+   "translit": "ḥadīdun",
+   "fr": "fer",
+   "nature": "nom",
+   "lecon": "fondations-12",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "Hadiyd",
+   "exemple": {
+    "ar": "الْحَدِيدُ كَثِيرٌ فِي الْقَرْيَةِ.",
+    "fr": "Le fer abonde au village."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "dinar",
+   "ar": "دِينَارٌ",
+   "translit": "dīnārun",
+   "fr": "dinar (pièce d'or)",
+   "nature": "nom",
+   "lecon": "fondations-12",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "دَنَانِيرُ",
+   "lemme": "diynaAr",
+   "exemple": {
+    "ar": "الدِّينَارُ مِنَ الذَّهَبِ.",
+    "fr": "Le dinar est en or."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "dirham",
+   "ar": "دِرْهَمٌ",
+   "translit": "dirhamun",
+   "fr": "dirham (pièce d'argent)",
+   "nature": "nom",
+   "lecon": "fondations-12",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "دَرَاهِمُ",
+   "racine": "drhm",
+   "exemple": {
+    "ar": "الدِّرْهَمُ فِي السَّلَّةِ.",
+    "fr": "Le dirham est dans le panier."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "kathir",
+   "ar": "كَثِيرٌ",
+   "translit": "kaṯīrun",
+   "fr": "nombreux, abondant",
+   "nature": "adjectif",
+   "lecon": "fondations-12",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "كَثِيرَةٌ"
+   ],
+   "lemme": "kaviyr",
+   "exemple": {
+    "ar": "الْخُبْزُ كَثِيرٌ.",
+    "fr": "Le pain est abondant."
+   }
+  },
+  {
+   "id": "qalil",
+   "ar": "قَلِيلٌ",
+   "translit": "qalīlun",
+   "fr": "peu nombreux, rare",
+   "nature": "adjectif",
+   "lecon": "fondations-12",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "قَلِيلَةٌ"
+   ],
+   "lemme": "qaliyl",
+   "exemple": {
+    "ar": "الذَّهَبُ قَلِيلٌ.",
+    "fr": "L'or est rare."
+   }
+  },
+  {
+   "id": "taht",
+   "ar": "تَحْتَ",
+   "translit": "taḥta",
+   "fr": "sous",
+   "nature": "nom_lieu",
+   "lecon": "fondations-13",
+   "source_sens": "rédigé par IA",
+   "lemme": "taHot",
+   "exemple": {
+    "ar": "الْمِفْتَاحُ تَحْتَ الْكِيسِ.",
+    "fr": "La clé est sous la bourse."
+   }
+  },
+  {
+   "id": "fawq",
+   "ar": "فَوْقَ",
+   "translit": "fawqa",
+   "fr": "au-dessus de",
+   "nature": "nom_lieu",
+   "lecon": "fondations-13",
+   "source_sens": "rédigé par IA",
+   "lemme": "fawoq",
+   "remarque": "عَلَى : posé sur ; فَوْقَ : plus haut que",
+   "exemple": {
+    "ar": "السِّرَاجُ فَوْقَ الصُّنْدُوقِ.",
+    "fr": "La lampe est au-dessus du coffre."
+   }
+  },
+  {
+   "id": "bai",
+   "ar": "بَائِعٌ",
+   "translit": "bāʾiʿun",
+   "fr": "vendeur",
+   "nature": "nom",
+   "lecon": "fondations-13",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "بَائِعَةٌ"
+   ],
+   "racine": "byE",
+   "exemple": {
+    "ar": "الْبَائِعُ فِي السُّوقِ.",
+    "fr": "Le vendeur est au marché."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "kis",
+   "ar": "كِيسٌ",
+   "translit": "kīsun",
+   "fr": "sac, bourse",
+   "nature": "nom",
+   "lecon": "fondations-13",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَكْيَاسٌ",
+   "exemple": {
+    "ar": "كِيسُ التَّاجِرِ فِي الصُّنْدُوقِ.",
+    "fr": "La bourse du marchand est dans le coffre."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "miftah",
+   "ar": "مِفْتَاحٌ",
+   "translit": "miftāḥun",
+   "fr": "clé",
+   "nature": "nom",
+   "lecon": "fondations-13",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَفَاتِيحُ",
+   "racine": "ftH",
+   "exemple": {
+    "ar": "مِفْتَاحُ الْبَيْتِ صَغِيرٌ.",
+    "fr": "La clé de la maison est petite."
+   },
+   "theme": "maison",
+   "scheme": "مِفْعَال",
+   "scheme_pluriel": "مَفَاعِيل"
+  },
+  {
+   "id": "sunduq",
+   "ar": "صُنْدُوقٌ",
+   "translit": "ṣundūqun",
+   "fr": "coffre",
+   "nature": "nom",
+   "lecon": "fondations-13",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "صَنَادِيقُ",
+   "exemple": {
+    "ar": "الصُّنْدُوقُ كَبِيرٌ.",
+    "fr": "Le coffre est grand."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "nassaj",
+   "ar": "نَسَّاجٌ",
+   "translit": "nassāǧun",
+   "fr": "tisserand",
+   "nature": "nom",
+   "lecon": "fondations-14",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "نَسَّاجُونَ",
+   "formes": [
+    "نَسَّاجَةٌ"
+   ],
+   "exemple": {
+    "ar": "النَّسَّاجُ فِي السُّوقِ.",
+    "fr": "Le tisserand est au marché."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "khayt",
+   "ar": "خَيْطٌ",
+   "translit": "ḫayṭun",
+   "fr": "fil",
+   "nature": "nom",
+   "lecon": "fondations-14",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "خُيُوطٌ",
+   "lemme": "xayoT",
+   "exemple": {
+    "ar": "خَيْطُكَ طَوِيلٌ.",
+    "fr": "Ton fil est long."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "suf",
+   "ar": "صُوفٌ",
+   "translit": "ṣūfun",
+   "fr": "laine",
+   "nature": "nom",
+   "lecon": "fondations-14",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Swf",
+   "exemple": {
+    "ar": "هَٰذَا ثَوْبٌ مِنَ الصُّوفِ.",
+    "fr": "C'est un vêtement de laine."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "harir",
+   "ar": "حَرِيرٌ",
+   "translit": "ḥarīrun",
+   "fr": "soie",
+   "nature": "nom",
+   "lecon": "fondations-14",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "Hariyr",
+   "exemple": {
+    "ar": "الْحَرِيرُ جَمِيلٌ.",
+    "fr": "La soie est belle."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "qamis",
+   "ar": "قَمِيصٌ",
+   "translit": "qamīṣun",
+   "fr": "chemise, tunique",
+   "nature": "nom",
+   "lecon": "fondations-14",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "قُمْصَانٌ",
+   "lemme": "qamiyS",
+   "exemple": {
+    "ar": "هَٰذَا قَمِيصٌ جَدِيدٌ.",
+    "fr": "C'est une chemise neuve."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "ibra",
+   "ar": "إِبْرَةٌ",
+   "translit": "ibratun",
+   "fr": "aiguille",
+   "nature": "nom",
+   "lecon": "fondations-14",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "إِبَرٌ",
+   "exemple": {
+    "ar": "إِبْرَتُهَا صَغِيرَةٌ.",
+    "fr": "Son aiguille (à elle) est petite."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "dayf",
+   "ar": "ضَيْفٌ",
+   "translit": "ḍayfun",
+   "fr": "invité",
+   "nature": "nom",
+   "lecon": "fondations-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "ضُيُوفٌ",
+   "lemme": "Dayof",
+   "exemple": {
+    "ar": "الضُّيُوفُ فِي الْبَيْتِ.",
+    "fr": "Les invités sont dans la maison."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "jar",
+   "ar": "جَارٌ",
+   "translit": "ǧārun",
+   "fr": "voisin",
+   "nature": "nom",
+   "lecon": "fondations-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "جِيرَانٌ",
+   "lemme": "jaAr",
+   "exemple": {
+    "ar": "الْجِيرَانُ فَرِحُونَ.",
+    "fr": "Les voisins sont joyeux."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "sayf",
+   "ar": "سَيْفٌ",
+   "translit": "sayfun",
+   "fr": "épée",
+   "nature": "nom",
+   "lecon": "fondations-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُيُوفٌ",
+   "exemple": {
+    "ar": "السُّيُوفُ قَدِيمَةٌ.",
+    "fr": "Les épées sont anciennes."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "himar",
+   "ar": "حِمَارٌ",
+   "translit": "ḥimārun",
+   "fr": "âne",
+   "nature": "nom",
+   "lecon": "fondations-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "حَمِيرٌ",
+   "lemme": "HimaAr",
+   "exemple": {
+    "ar": "الْحِمَارُ صَغِيرٌ.",
+    "fr": "L'âne est petit."
+   },
+   "theme": "animaux"
+  },
+  {
+   "id": "kalb",
+   "ar": "كَلْبٌ",
+   "translit": "kalbun",
+   "fr": "chien",
+   "nature": "nom",
+   "lecon": "fondations-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "كِلَابٌ",
+   "lemme": "kalob",
+   "exemple": {
+    "ar": "الْكِلَابُ هُنَاكَ.",
+    "fr": "Les chiens sont là-bas."
+   },
+   "theme": "animaux",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فِعَال"
+  },
+  {
+   "id": "najm",
+   "ar": "نَجْمٌ",
+   "translit": "naǧmun",
+   "fr": "étoile",
+   "nature": "nom",
+   "lecon": "fondations-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "نُجُومٌ",
+   "lemme": "n~ajom",
+   "exemple": {
+    "ar": "النُّجُومُ كَثِيرَةٌ.",
+    "fr": "Les étoiles sont nombreuses."
+   },
+   "theme": "nature",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فُعُول"
+  },
+  {
+   "id": "laysa",
+   "ar": "لَيْسَ",
+   "translit": "laysa",
+   "fr": "ne pas être (nie une phrase nominale)",
+   "nature": "verbe",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "lemme": "l~ayosa",
+   "fige": true,
+   "formes": [
+    "لَيْسَتْ"
+   ],
+   "remarque": "verbe figé : il nie une phrase nominale (au présent) ; il n'a pas de forme de présent ni de futur",
+   "exemple": {
+    "ar": "الدِّينَارُ لَيْسَ فِي الْكِيسِ.",
+    "fr": "Le dinar n'est pas dans la bourse."
+   }
+  },
+  {
+   "id": "sarraf",
+   "ar": "صَرَّافٌ",
+   "translit": "ṣarrāfun",
+   "fr": "changeur",
+   "nature": "nom",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "صَرَّافُونَ",
+   "racine": "Srf",
+   "exemple": {
+    "ar": "الصَّرَّافُ لَيْسَ هُنَا.",
+    "fr": "Le changeur n'est pas ici."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "mizan",
+   "ar": "مِيزَانٌ",
+   "translit": "mīzānun",
+   "fr": "balance",
+   "nature": "nom",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَوَازِينُ",
+   "lemme": "miyzaAn",
+   "exemple": {
+    "ar": "الْمِيزَانُ لَيْسَ قَدِيمًا.",
+    "fr": "La balance n'est pas vieille."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "kiffa",
+   "ar": "كِفَّةٌ",
+   "translit": "kiffatun",
+   "fr": "plateau (de balance)",
+   "nature": "nom",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "كِفَفٌ",
+   "racine": "kff",
+   "exemple": {
+    "ar": "الْكِفَّةُ لَيْسَتْ ثَقِيلَةً.",
+    "fr": "Le plateau n'est pas lourd."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "thaqil",
+   "ar": "ثَقِيلٌ",
+   "translit": "ṯaqīlun",
+   "fr": "lourd",
+   "nature": "adjectif",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "ثَقِيلَةٌ"
+   ],
+   "lemme": "vaqiyl",
+   "exemple": {
+    "ar": "الصُّنْدُوقُ ثَقِيلٌ.",
+    "fr": "Le coffre est lourd."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "khafif",
+   "ar": "خَفِيفٌ",
+   "translit": "ḫafīfun",
+   "fr": "léger",
+   "nature": "adjectif",
+   "lecon": "fondations-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "خَفِيفَةٌ"
+   ],
+   "lemme": "xafiyf",
+   "exemple": {
+    "ar": "الْكِيسُ خَفِيفٌ.",
+    "fr": "La bourse est légère."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "ala",
+   "ar": "عَلَى",
+   "translit": "ʿalā",
+   "fr": "sur",
+   "nature": "particule",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "lemme": "EalaY`",
+   "exemple": {
+    "ar": "الْكِتَابُ عَلَى الْكُرْسِيِّ.",
+    "fr": "Le livre est sur la chaise."
+   }
+  },
+  {
+   "id": "suq",
+   "ar": "سُوقٌ",
+   "translit": "sūqun",
+   "fr": "marché",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "أَسْوَاقٌ",
+   "racine": "swq",
+   "remarque": "parfois masculin en arabe classique",
+   "exemple": {
+    "ar": "التَّاجِرُ فِي السُّوقِ.",
+    "fr": "Le marchand est au marché."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "bab",
+   "ar": "بَابٌ",
+   "translit": "bābun",
+   "fr": "porte",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَبْوَابٌ",
+   "lemme": "baAb",
+   "exemple": {
+    "ar": "الْبَابُ كَبِيرٌ.",
+    "fr": "La porte est grande."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "kitab",
+   "ar": "كِتَابٌ",
+   "translit": "kitābun",
+   "fr": "livre ; écrit",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "كُتُبٌ",
+   "lemme": "kita`b",
+   "exemple": {
+    "ar": "الْكِتَابُ قَدِيمٌ.",
+    "fr": "Le livre est ancien."
+   },
+   "theme": "savoir",
+   "scheme": "فِعَال",
+   "scheme_pluriel": "فُعُل"
+  },
+  {
+   "id": "khubz",
+   "ar": "خُبْزٌ",
+   "translit": "ḫubzun",
+   "fr": "pain",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "xuboz",
+   "exemple": {
+    "ar": "الْخُبْزُ فِي السَّلَّةِ.",
+    "fr": "Le pain est dans le panier."
+   },
+   "theme": "nourriture"
+  },
+  {
+   "id": "zayt",
+   "ar": "زَيْتٌ",
+   "translit": "zaytun",
+   "fr": "huile",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "zayot",
+   "exemple": {
+    "ar": "الزَّيْتُ فِي الْبَيْتِ.",
+    "fr": "L'huile est dans la maison."
+   },
+   "theme": "nourriture"
+  },
+  {
+   "id": "lahm",
+   "ar": "لَحْمٌ",
+   "translit": "laḥmun",
+   "fr": "viande",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "لُحُومٌ",
+   "lemme": "laHom",
+   "exemple": {
+    "ar": "اللَّحْمُ فِي الْخَيْمَةِ.",
+    "fr": "La viande est dans la tente."
+   },
+   "theme": "nourriture",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فُعُول"
+  },
+  {
+   "id": "salla",
+   "ar": "سَلَّةٌ",
+   "translit": "sallatun",
+   "fr": "panier",
+   "nature": "nom",
+   "lecon": "fondations-11",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "سِلَالٌ",
+   "racine": "sll",
+   "exemple": {
+    "ar": "السَّلَّةُ صَغِيرَةٌ.",
+    "fr": "Le panier est petit."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "li",
+   "ar": "لِـ",
+   "translit": "li",
+   "fr": "à, pour (collé au mot)",
+   "nature": "particule",
+   "lecon": "fondations-15",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "لِي قَمِيصٌ جَدِيدٌ.",
+    "fr": "J'ai une chemise neuve."
+   }
+  },
+  {
+   "id": "maa",
+   "ar": "مَعَ",
+   "translit": "maʿa",
+   "fr": "avec",
+   "nature": "nom_lieu",
+   "lecon": "fondations-15",
+   "source_sens": "rédigé par IA",
+   "lemme": "maE",
+   "exemple": {
+    "ar": "الصَّدِيقُ مَعِي.",
+    "fr": "L'ami est avec moi."
+   }
+  },
+  {
+   "id": "inda",
+   "ar": "عِنْدَ",
+   "translit": "ʿinda",
+   "fr": "chez, auprès de",
+   "nature": "nom_lieu",
+   "lecon": "fondations-15",
+   "source_sens": "rédigé par IA",
+   "lemme": "Eind",
+   "exemple": {
+    "ar": "الْكِتَابُ عِنْدَ الْبَائِعِ.",
+    "fr": "Le livre est chez le vendeur."
+   }
+  },
+  {
+   "id": "sadiq",
+   "ar": "صَدِيقٌ",
+   "translit": "ṣadīqun",
+   "fr": "ami",
+   "nature": "nom",
+   "lecon": "fondations-15",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَصْدِقَاءُ",
+   "lemme": "Sadiyq",
+   "exemple": {
+    "ar": "صَدِيقِي فِي السُّوقِ.",
+    "fr": "Mon ami est au marché."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "qita",
+   "ar": "قِطْعَةٌ",
+   "translit": "qiṭʿatun",
+   "fr": "morceau, pièce",
+   "nature": "nom",
+   "lecon": "fondations-15",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "قِطَعٌ",
+   "racine": "qTE",
+   "remarque": "قِطْعَةُ حَرِيرٍ : « un morceau de soie », le second nom peut être indéfini",
+   "exemple": {
+    "ar": "فِي الصُّنْدُوقِ قِطْعَةُ حَرِيرٍ.",
+    "fr": "Dans le coffre, il y a un morceau de soie."
+   },
+   "theme": "marché"
+  },
+  {
+   "id": "kataba",
+   "ar": "كَتَبَ",
+   "translit": "kataba",
+   "fr": "il a écrit",
+   "nature": "verbe",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "passe": "كَتَبَ",
+   "inaccompli": "يَكْتُبُ",
+   "lemme": "kataba",
+   "exemple": {
+    "ar": "كَتَبَ سَمِيرٌ فِي الْغُرْفَةِ.",
+    "fr": "Samīr a écrit dans la chambre."
+   },
+   "theme": "savoir",
+   "scheme": "فَعَلَ",
+   "nom_action": "كِتَابَةٌ"
+  },
+  {
+   "id": "jalasa",
+   "ar": "جَلَسَ",
+   "translit": "ǧalasa",
+   "fr": "il s'est assis",
+   "nature": "verbe",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "passe": "جَلَسَ",
+   "inaccompli": "يَجْلِسُ",
+   "racine": "jls",
+   "exemple": {
+    "ar": "جَلَسَتْ سَلْمَى فِي الْغُرْفَةِ.",
+    "fr": "Salmā s'est assise dans la chambre."
+   },
+   "theme": "actions",
+   "scheme": "فَعَلَ",
+   "nom_action": "جُلُوسٌ"
+  },
+  {
+   "id": "rajaa",
+   "ar": "رَجَعَ",
+   "translit": "raǧaʿa",
+   "fr": "il est revenu, il est rentré",
+   "nature": "verbe",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "passe": "رَجَعَ",
+   "inaccompli": "يَرْجِعُ",
+   "lemme": "rajaEa",
+   "exemple": {
+    "ar": "رَجَعَ بَاسِمٌ مِنَ السُّوقِ.",
+    "fr": "Bāsim est revenu du marché."
+   },
+   "theme": "voyage",
+   "nom_action": "رُجُوعٌ"
+  },
+  {
+   "id": "qafila",
+   "ar": "قَافِلَةٌ",
+   "translit": "qāfilatun",
+   "fr": "caravane",
+   "nature": "nom",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "قَوَافِلُ",
+   "racine": "qfl",
+   "remarque": "même racine que أَقْفَالٌ « cadenas » : la racine ne donne pas le sens",
+   "exemple": {
+    "ar": "الْقَافِلَةُ هُنَاكَ.",
+    "fr": "La caravane est là-bas."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "sabah",
+   "ar": "صَبَاحٌ",
+   "translit": "ṣabāḥun",
+   "fr": "matin",
+   "nature": "nom",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "SabaAH",
+   "exemple": {
+    "ar": "خَرَجَ رَاشِدٌ فِي الصَّبَاحِ.",
+    "fr": "Rāšid est sorti le matin."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "masa",
+   "ar": "مَسَاءٌ",
+   "translit": "masāʾun",
+   "fr": "soir",
+   "nature": "nom",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "msw",
+   "exemple": {
+    "ar": "رَجَعَ بَاسِمٌ فِي الْمَسَاءِ.",
+    "fr": "Bāsim est rentré le soir."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "ams",
+   "ar": "أَمْسِ",
+   "translit": "amsi",
+   "fr": "hier",
+   "nature": "adverbe",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "lemme": ">amos",
+   "remarque": "sa fin en i ne change pas",
+   "exemple": {
+    "ar": "رَجَعَ رَاشِدٌ أَمْسِ.",
+    "fr": "Rāšid est revenu hier."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "thumma",
+   "ar": "ثُمَّ",
+   "translit": "ṯumma",
+   "fr": "puis, ensuite",
+   "nature": "particule",
+   "lecon": "fondations-21",
+   "source_sens": "rédigé par IA",
+   "lemme": "vum~",
+   "exemple": {
+    "ar": "رَجَعَ بَاسِمٌ، ثُمَّ جَلَسَ.",
+    "fr": "Bāsim est rentré, puis il s'est assis."
+   }
+  },
+  {
+   "id": "shariba",
+   "ar": "شَرِبَ",
+   "translit": "šariba",
+   "fr": "il a bu",
+   "nature": "verbe",
+   "lecon": "fondations-22",
+   "source_sens": "rédigé par IA",
+   "passe": "شَرِبَ",
+   "inaccompli": "يَشْرَبُ",
+   "lemme": "$ariba",
+   "remarque": "i au milieu à toutes les personnes du passé",
+   "exemple": {
+    "ar": "شَرِبْنَا مِنَ الْبِئْرِ.",
+    "fr": "Nous avons bu au puits."
+   },
+   "theme": "actions",
+   "nom_action": "شُرْبٌ"
+  },
+  {
+   "id": "fariha",
+   "ar": "فَرِحَ",
+   "translit": "fariḥa",
+   "fr": "il s'est réjoui",
+   "nature": "verbe",
+   "lecon": "fondations-22",
+   "source_sens": "rédigé par IA",
+   "passe": "فَرِحَ",
+   "inaccompli": "يَفْرَحُ",
+   "lemme": "fariHa",
+   "remarque": "même famille que فَرِحٌ « joyeux »",
+   "exemple": {
+    "ar": "فَرِحَتْ سَلْمَى.",
+    "fr": "Salmā s'est réjouie."
+   },
+   "theme": "personnes",
+   "nom_action": "فَرَحٌ"
+  },
+  {
+   "id": "laiba",
+   "ar": "لَعِبَ",
+   "translit": "laʿiba",
+   "fr": "il a joué",
+   "nature": "verbe",
+   "lecon": "fondations-22",
+   "source_sens": "rédigé par IA",
+   "passe": "لَعِبَ",
+   "inaccompli": "يَلْعَبُ",
+   "lemme": "yaloEabo",
+   "exemple": {
+    "ar": "لَعِبْتُ مَعَ بَاسِمٍ.",
+    "fr": "J'ai joué avec Bāsim."
+   },
+   "theme": "actions",
+   "nom_action": "لَعِبٌ"
+  },
+  {
+   "id": "alyawm",
+   "ar": "الْيَوْمَ",
+   "translit": "al-yawma",
+   "fr": "aujourd'hui",
+   "nature": "adverbe",
+   "lecon": "fondations-22",
+   "source_sens": "rédigé par IA",
+   "remarque": "« le jour » à l'accusatif ; sa fin ne change pas",
+   "exemple": {
+    "ar": "رَجَعْتُ الْيَوْمَ.",
+    "fr": "Je suis revenu aujourd'hui."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "aydan",
+   "ar": "أَيْضًا",
+   "translit": "ayḍan",
+   "fr": "aussi",
+   "nature": "adverbe",
+   "lecon": "fondations-22",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "وَأَنَا أَيْضًا.",
+    "fr": "Et moi aussi."
+   },
+   "theme": "liens"
+  },
+  {
+   "id": "fataha",
+   "ar": "فَتَحَ",
+   "translit": "fataḥa",
+   "fr": "il a ouvert",
+   "nature": "verbe",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "passe": "فَتَحَ",
+   "inaccompli": "يَفْتَحُ",
+   "lemme": "fataHa",
+   "exemple": {
+    "ar": "فَتَحَ الْحَارِسُ الْبَابَ.",
+    "fr": "Le gardien a ouvert la porte."
+   },
+   "theme": "actions",
+   "scheme": "فَعَلَ",
+   "nom_action": "فَتْحٌ"
+  },
+  {
+   "id": "hamala",
+   "ar": "حَمَلَ",
+   "translit": "ḥamala",
+   "fr": "il a porté",
+   "nature": "verbe",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "passe": "حَمَلَ",
+   "inaccompli": "يَحْمِلُ",
+   "lemme": "Hamala",
+   "exemple": {
+    "ar": "حَمَلَ بَاسِمٌ السَّلَّةَ.",
+    "fr": "Bāsim a porté le panier."
+   },
+   "theme": "actions",
+   "nom_action": "حَمْلٌ"
+  },
+  {
+   "id": "rakiba",
+   "ar": "رَكِبَ",
+   "translit": "rakiba",
+   "fr": "il est monté (sur une monture)",
+   "nature": "verbe",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "passe": "رَكِبَ",
+   "inaccompli": "يَرْكَبُ",
+   "lemme": "rakiba",
+   "remarque": "le complément suit sans préposition : رَكِبَ الْجَمَلَ",
+   "exemple": {
+    "ar": "رَكِبَ التُّجَّارُ الْجِمَالَ.",
+    "fr": "Les marchands sont montés sur les chameaux."
+   },
+   "theme": "voyage",
+   "nom_action": "رُكُوبٌ"
+  },
+  {
+   "id": "balagha",
+   "ar": "بَلَغَ",
+   "translit": "balaġa",
+   "fr": "il a atteint, il est arrivé à",
+   "nature": "verbe",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "passe": "بَلَغَ",
+   "inaccompli": "يَبْلُغُ",
+   "lemme": "balaga",
+   "exemple": {
+    "ar": "بَلَغَتِ الْقَافِلَةُ الْمَدِينَةَ.",
+    "fr": "La caravane a atteint la ville."
+   },
+   "theme": "voyage",
+   "nom_action": "بُلُوغٌ"
+  },
+  {
+   "id": "madina",
+   "ar": "مَدِينَةٌ",
+   "translit": "madīnatun",
+   "fr": "ville",
+   "nature": "nom",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "مُدُنٌ",
+   "lemme": "madiynap",
+   "exemple": {
+    "ar": "هَٰذِهِ مَدِينَةٌ.",
+    "fr": "Ceci est une ville."
+   },
+   "theme": "voyage",
+   "scheme": "فَعِيلَة",
+   "scheme_pluriel": "فُعُل"
+  },
+  {
+   "id": "himl",
+   "ar": "حِمْلٌ",
+   "translit": "ḥimlun",
+   "fr": "charge, fardeau",
+   "nature": "nom",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَحْمَالٌ",
+   "lemme": "Himol",
+   "exemple": {
+    "ar": "الْحِمْلُ ثَقِيلٌ.",
+    "fr": "La charge est lourde."
+   },
+   "theme": "voyage",
+   "scheme": "فِعْل",
+   "scheme_pluriel": "أَفْعَال"
+  },
+  {
+   "id": "haris",
+   "ar": "حَارِسٌ",
+   "translit": "ḥārisun",
+   "fr": "gardien",
+   "nature": "nom",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "حُرَّاسٌ",
+   "racine": "Hrs",
+   "exemple": {
+    "ar": "الْحَارِسُ عِنْدَ الْبَابِ.",
+    "fr": "Le gardien est à la porte."
+   },
+   "theme": "personnes",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال"
+  },
+  {
+   "id": "katib",
+   "ar": "كَاتِبٌ",
+   "translit": "kātibun",
+   "fr": "scribe, celui qui écrit",
+   "nature": "nom",
+   "lecon": "fondations-23",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "كُتَّابٌ",
+   "lemme": "kaAtib",
+   "exemple": {
+    "ar": "سَمِيرٌ كَاتِبٌ.",
+    "fr": "Samīr est scribe."
+   },
+   "theme": "savoir",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال"
+  },
+  {
+   "id": "taraka",
+   "ar": "تَرَكَ",
+   "translit": "taraka",
+   "fr": "il a laissé",
+   "nature": "verbe",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "passe": "تَرَكَ",
+   "inaccompli": "يَتْرُكُ",
+   "lemme": "taraka",
+   "exemple": {
+    "ar": "تَرَكَ سَمِيرٌ الْقَلَمَ عَلَى الْكُرْسِيِّ.",
+    "fr": "Samīr a laissé le calame sur la chaise."
+   },
+   "theme": "actions",
+   "nom_action": "تَرْكٌ"
+  },
+  {
+   "id": "talaba",
+   "ar": "طَلَبَ",
+   "translit": "ṭalaba",
+   "fr": "il a cherché, il a demandé",
+   "nature": "verbe",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "passe": "طَلَبَ",
+   "inaccompli": "يَطْلُبُ",
+   "lemme": "yaTolubu",
+   "exemple": {
+    "ar": "طَلَبْتُ الْمِفْتَاحَ فِي الْغُرْفَةِ.",
+    "fr": "J'ai cherché la clé dans la chambre."
+   },
+   "theme": "actions",
+   "nom_action": "طَلَبٌ"
+  },
+  {
+   "id": "jamaa",
+   "ar": "جَمَعَ",
+   "translit": "ǧamaʿa",
+   "fr": "il a rassemblé",
+   "nature": "verbe",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "passe": "جَمَعَ",
+   "inaccompli": "يَجْمَعُ",
+   "lemme": "jamaEa",
+   "exemple": {
+    "ar": "جَمَعَ بَاسِمٌ الْأَحْمَالَ.",
+    "fr": "Bāsim a rassemblé les charges."
+   },
+   "theme": "actions",
+   "nom_action": "جَمْعٌ"
+  },
+  {
+   "id": "arafa",
+   "ar": "عَرَفَ",
+   "translit": "ʿarafa",
+   "fr": "il a connu, il a reconnu",
+   "nature": "verbe",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "passe": "عَرَفَ",
+   "inaccompli": "يَعْرِفُ",
+   "lemme": "Earafa",
+   "exemple": {
+    "ar": "عَرَفَنِي الْحَارِسُ.",
+    "fr": "Le gardien m'a reconnu."
+   },
+   "theme": "savoir",
+   "nom_action": "مَعْرِفَةٌ"
+  },
+  {
+   "id": "risala",
+   "ar": "رِسَالَةٌ",
+   "translit": "risālatun",
+   "fr": "lettre (que l'on envoie)",
+   "nature": "nom",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "رَسَائِلُ",
+   "racine": "rsl",
+   "exemple": {
+    "ar": "كَتَبَ سَمِيرٌ الرِّسَالَةَ.",
+    "fr": "Samīr a écrit la lettre."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "makan",
+   "ar": "مَكَانٌ",
+   "translit": "makānun",
+   "fr": "endroit, place",
+   "nature": "nom",
+   "lecon": "fondations-24",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "m~akaAn",
+   "exemple": {
+    "ar": "الْمَكَانُ جَمِيلٌ.",
+    "fr": "L'endroit est beau."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "darasa",
+   "ar": "دَرَسَ",
+   "translit": "darasa",
+   "fr": "il a étudié",
+   "nature": "verbe",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "passe": "دَرَسَ",
+   "inaccompli": "يَدْرُسُ",
+   "lemme": "darasu",
+   "exemple": {
+    "ar": "يَدْرُسُ سَمِيرٌ فِي الْغُرْفَةِ.",
+    "fr": "Samīr étudie dans la chambre."
+   },
+   "theme": "savoir",
+   "nom_action": "دِرَاسَةٌ"
+  },
+  {
+   "id": "hafiza",
+   "ar": "حَفِظَ",
+   "translit": "ḥafiẓa",
+   "fr": "il a gardé ; il a retenu par cœur",
+   "nature": "verbe",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "passe": "حَفِظَ",
+   "inaccompli": "يَحْفَظُ",
+   "lemme": "HafiZa",
+   "exemple": {
+    "ar": "أَحْفَظُ الدَّرْسَ فِي الْمَسَاءِ.",
+    "fr": "J'apprends la leçon par cœur le soir."
+   },
+   "theme": "savoir",
+   "nom_action": "حِفْظٌ"
+  },
+  {
+   "id": "sakana",
+   "ar": "سَكَنَ",
+   "translit": "sakana",
+   "fr": "il a habité",
+   "nature": "verbe",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "passe": "سَكَنَ",
+   "inaccompli": "يَسْكُنُ",
+   "lemme": "sakana",
+   "exemple": {
+    "ar": "يَسْكُنُ رَاشِدٌ فِي خَيْمَةٍ.",
+    "fr": "Rāšid habite dans une tente."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "harf",
+   "ar": "حَرْفٌ",
+   "translit": "ḥarfun",
+   "fr": "lettre (de l'alphabet)",
+   "nature": "nom",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "حُرُوفٌ",
+   "racine": "Hrf",
+   "exemple": {
+    "ar": "الْحَرْفُ صَغِيرٌ.",
+    "fr": "La lettre est petite."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "satr",
+   "ar": "سَطْرٌ",
+   "translit": "saṭrun",
+   "fr": "ligne (écrite)",
+   "nature": "nom",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُطُورٌ",
+   "racine": "sTr",
+   "exemple": {
+    "ar": "يَكْتُبُ سَمِيرٌ سَطْرًا طَوِيلًا.",
+    "fr": "Samīr écrit une longue ligne."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "midad",
+   "ar": "مِدَادٌ",
+   "translit": "midādun",
+   "fr": "encre",
+   "nature": "nom",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "midaAd",
+   "exemple": {
+    "ar": "الْمِدَادُ فِي الدَّوَاةِ.",
+    "fr": "L'encre est dans l'encrier."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "dawat",
+   "ar": "دَوَاةٌ",
+   "translit": "dawātun",
+   "fr": "encrier",
+   "nature": "nom",
+   "lecon": "fondations-25",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "exemple": {
+    "ar": "الدَّوَاةُ عَلَى الْكُرْسِيِّ.",
+    "fr": "L'encrier est sur la chaise."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "sanaa",
+   "ar": "صَنَعَ",
+   "translit": "ṣanaʿa",
+   "fr": "il a fabriqué",
+   "nature": "verbe",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "passe": "صَنَعَ",
+   "inaccompli": "يَصْنَعُ",
+   "lemme": "SanaEu",
+   "exemple": {
+    "ar": "الْخَيَّاطُونَ يَصْنَعُونَ الْقُمْصَانَ.",
+    "fr": "Les tailleurs fabriquent les chemises."
+   },
+   "theme": "travail",
+   "nom_action": "صُنْعٌ"
+  },
+  {
+   "id": "labisa",
+   "ar": "لَبِسَ",
+   "translit": "labisa",
+   "fr": "il a mis (un vêtement)",
+   "nature": "verbe",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "passe": "لَبِسَ",
+   "inaccompli": "يَلْبَسُ",
+   "racine": "lbs",
+   "exemple": {
+    "ar": "يَلْبَسُ بَاسِمٌ قَمِيصًا جَدِيدًا.",
+    "fr": "Bāsim met une chemise neuve."
+   },
+   "theme": "actions",
+   "nom_action": "لُبْسٌ"
+  },
+  {
+   "id": "talib",
+   "ar": "طَالِبٌ",
+   "translit": "ṭālibun",
+   "fr": "étudiant",
+   "nature": "nom",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "طُلَّابٌ",
+   "racine": "Tlb",
+   "exemple": {
+    "ar": "الطُّلَّابُ يَدْرُسُونَ فِي الصَّبَاحِ.",
+    "fr": "Les étudiants étudient le matin."
+   },
+   "theme": "personnes",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال"
+  },
+  {
+   "id": "waraqa",
+   "ar": "وَرَقَةٌ",
+   "translit": "waraqatun",
+   "fr": "feuille",
+   "nature": "nom",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "أَوْرَاقٌ",
+   "lemme": "waraqap",
+   "exemple": {
+    "ar": "الْوَرَقَةُ عَلَى الْكُرْسِيِّ.",
+    "fr": "La feuille est sur la chaise."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "qirtas",
+   "ar": "قِرْطَاسٌ",
+   "translit": "qirṭāsun",
+   "fr": "feuille à écrire, papier",
+   "nature": "nom",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "قَرَاطِيسُ",
+   "lemme": "qiroTaAs",
+   "exemple": {
+    "ar": "نَكْتُبُ الدَّرْسَ عَلَى الْقِرْطَاسِ.",
+    "fr": "Nous écrivons la leçon sur la feuille."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "kalima",
+   "ar": "كَلِمَةٌ",
+   "translit": "kalimatun",
+   "fr": "mot ; parole",
+   "nature": "nom",
+   "lecon": "fondations-26",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "كَلِمَاتٌ",
+   "lemme": "kalimap",
+   "exemple": {
+    "ar": "الْكَلِمَةُ قَصِيرَةٌ.",
+    "fr": "Le mot est court."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "ma_nafi",
+   "ar": "مَا",
+   "translit": "mā",
+   "fr": "ne… pas (ici : devant un passé)",
+   "nature": "particule",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "remarque": "s'écrit comme مَا « quoi ? » : le ؟ fait la différence ; nie aussi le présent en arabe classique (vu plus tard)",
+   "exemple": {
+    "ar": "مَا فَهِمْتُ السُّؤَالَ.",
+    "fr": "Je n'ai pas compris la question."
+   }
+  },
+  {
+   "id": "la_nafi",
+   "ar": "لَا",
+   "translit": "lā",
+   "fr": "ne… pas (devant un inaccompli)",
+   "nature": "particule",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "lemme": "laA",
+   "remarque": "s'écrit comme لَا « non ». Selon le contexte, لَا يَرْجِعُ peut aussi vouloir dire « il ne reviendra pas » ; on ne met jamais سَـ après لَا",
+   "exemple": {
+    "ar": "لَا أَعْرِفُ الْجَوَابَ.",
+    "fr": "Je ne connais pas la réponse."
+   }
+  },
+  {
+   "id": "lam",
+   "ar": "لَمْ",
+   "translit": "lam",
+   "fr": "ne… pas (sens passé, devant l'inaccompli)",
+   "nature": "particule",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "lemme": "lam",
+   "exemple": {
+    "ar": "لَمْ يَرْجِعْ رَاشِدٌ مِنَ السُّوقِ.",
+    "fr": "Rāšid n'est pas revenu du marché."
+   }
+  },
+  {
+   "id": "fahima",
+   "ar": "فَهِمَ",
+   "translit": "fahima",
+   "fr": "il a compris",
+   "nature": "verbe",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "passe": "فَهِمَ",
+   "inaccompli": "يَفْهَمُ",
+   "racine": "fhm",
+   "exemple": {
+    "ar": "فَهِمَ بَاسِمٌ الدَّرْسَ.",
+    "fr": "Bāsim a compris la leçon."
+   },
+   "theme": "savoir",
+   "nom_action": "فَهْمٌ"
+  },
+  {
+   "id": "suaal",
+   "ar": "سُؤَالٌ",
+   "translit": "suʾālun",
+   "fr": "question",
+   "nature": "nom",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَسْئِلَةٌ",
+   "lemme": "su&aAl",
+   "exemple": {
+    "ar": "السُّؤَالُ طَوِيلٌ.",
+    "fr": "La question est longue."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "jawab",
+   "ar": "جَوَابٌ",
+   "translit": "ǧawābun",
+   "fr": "réponse",
+   "nature": "nom",
+   "lecon": "fondations-27",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَجْوِبَةٌ",
+   "lemme": "jawaAb",
+   "exemple": {
+    "ar": "الْجَوَابُ قَصِيرٌ.",
+    "fr": "La réponse est courte."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "sa",
+   "ar": "سَـ",
+   "translit": "sa",
+   "fr": "(futur, collé à l'inaccompli)",
+   "nature": "particule",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "سَيَرْجِعُ رَاشِدٌ غَدًا.",
+    "fr": "Rāšid reviendra demain."
+   }
+  },
+  {
+   "id": "sawfa",
+   "ar": "سَوْفَ",
+   "translit": "sawfa",
+   "fr": "(futur, devant l'inaccompli)",
+   "nature": "particule",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "سَوْفَ نَسْمَعُ قِصَّةً جَدِيدَةً.",
+    "fr": "Nous écouterons une nouvelle histoire."
+   }
+  },
+  {
+   "id": "ghadan",
+   "ar": "غَدًا",
+   "translit": "ġadan",
+   "fr": "demain",
+   "nature": "adverbe",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "lemme": "gad",
+   "exemple": {
+    "ar": "سَأَكْتُبُ الرِّسَالَةَ غَدًا.",
+    "fr": "J'écrirai la lettre demain."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "samia",
+   "ar": "سَمِعَ",
+   "translit": "samiʿa",
+   "fr": "il a entendu, il a écouté",
+   "nature": "verbe",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "passe": "سَمِعَ",
+   "inaccompli": "يَسْمَعُ",
+   "lemme": "samiEa",
+   "exemple": {
+    "ar": "سَمِعْتُ قِصَّةً جَمِيلَةً.",
+    "fr": "J'ai entendu une belle histoire."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "qissa",
+   "ar": "قِصَّةٌ",
+   "translit": "qiṣṣatun",
+   "fr": "histoire, récit",
+   "nature": "nom",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "قِصَصٌ",
+   "racine": "qSS",
+   "exemple": {
+    "ar": "الْقِصَّةُ طَوِيلَةٌ.",
+    "fr": "L'histoire est longue."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "hadiqa",
+   "ar": "حَدِيقَةٌ",
+   "translit": "ḥadīqatun",
+   "fr": "jardin",
+   "nature": "nom",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "حَدَائِقُ",
+   "racine": "Hdq",
+   "exemple": {
+    "ar": "الْحَدِيقَةُ جَمِيلَةٌ.",
+    "fr": "Le jardin est beau."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "qala",
+   "ar": "قَالَ",
+   "translit": "qāla",
+   "fr": "il a dit",
+   "nature": "verbe",
+   "lecon": "fondations-28",
+   "source_sens": "rédigé par IA",
+   "passe": "قَالَ",
+   "inaccompli": "يَقُولُ",
+   "formes": [
+    "قَالَتْ"
+   ],
+   "lemme": "qaAla",
+   "fige": true,
+   "remarque": "employé ici seulement sous la forme قَالَ / قَالَتْ, suivi du nom de celui qui parle ; les autres formes de ce verbe changent de voyelle au milieu : elles viendront en région 3",
+   "exemple": {
+    "ar": "قَالَتْ سَلْمَى: « الْحَدِيقَةُ جَمِيلَةٌ. »",
+    "fr": "Salmā a dit : « Le jardin est beau. »"
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "ya",
+   "ar": "يَا",
+   "translit": "yā",
+   "fr": "ô (pour appeler quelqu'un)",
+   "nature": "particule",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "remarque": "après يَا, un nom propre perd son tanwīn : يَا بَاسِمُ",
+   "exemple": {
+    "ar": "يَا بَاسِمُ، اجْلِسْ هُنَا.",
+    "fr": "Bāsim, assieds-toi ici."
+   }
+  },
+  {
+   "id": "alan",
+   "ar": "الْآنَ",
+   "translit": "al-āna",
+   "fr": "maintenant",
+   "nature": "adverbe",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "remarque": "sa fin ne change pas",
+   "exemple": {
+    "ar": "اكْتُبِ الرِّسَالَةَ الْآنَ.",
+    "fr": "Écris la lettre maintenant."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "zaraa",
+   "ar": "زَرَعَ",
+   "translit": "zaraʿa",
+   "fr": "il a semé, il a planté (des graines, des fleurs)",
+   "nature": "verbe",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "passe": "زَرَعَ",
+   "inaccompli": "يَزْرَعُ",
+   "lemme": "tazoraEu",
+   "remarque": "se dit surtout des graines et des plantes ; pour un arbre, l'arabe classique emploie d'habitude un autre verbe",
+   "exemple": {
+    "ar": "زَرَعَتْ سَلْمَى زَهْرَةً فِي الْحَدِيقَةِ.",
+    "fr": "Salmā a planté une fleur dans le jardin."
+   },
+   "theme": "nature",
+   "nom_action": "زَرْعٌ"
+  },
+  {
+   "id": "shajara",
+   "ar": "شَجَرَةٌ",
+   "translit": "šaǧaratun",
+   "fr": "arbre",
+   "nature": "nom",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "أَشْجَارٌ",
+   "lemme": "$ajarap",
+   "exemple": {
+    "ar": "الشَّجَرَةُ كَبِيرَةٌ.",
+    "fr": "L'arbre est grand."
+   },
+   "theme": "nature",
+   "scheme": "فَعَلَة",
+   "scheme_pluriel": "أَفْعَال"
+  },
+  {
+   "id": "thamara",
+   "ar": "ثَمَرَةٌ",
+   "translit": "ṯamaratun",
+   "fr": "fruit",
+   "nature": "nom",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "ثَمَرَاتٌ",
+   "lemme": "vamarap",
+   "exemple": {
+    "ar": "الثَّمَرَةُ صَغِيرَةٌ.",
+    "fr": "Le fruit est petit."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "zahra",
+   "ar": "زَهْرَةٌ",
+   "translit": "zahratun",
+   "fr": "fleur",
+   "nature": "nom",
+   "lecon": "fondations-29",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "أَزْهَارٌ",
+   "racine": "zhr",
+   "exemple": {
+    "ar": "الزَّهْرَةُ جَمِيلَةٌ.",
+    "fr": "La fleur est belle."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "alladhi",
+   "ar": "الَّذِي",
+   "translit": "allaḏī",
+   "fr": "qui, que (masculin)",
+   "nature": "relatif",
+   "lecon": "fondations-30",
+   "source_sens": "rédigé par IA",
+   "lemme": "{l~a*iY",
+   "exemple": {
+    "ar": "الْقَلَمُ الَّذِي تَرَكْتُهُ جَدِيدٌ.",
+    "fr": "Le calame que j'ai laissé est neuf."
+   }
+  },
+  {
+   "id": "allati",
+   "ar": "الَّتِي",
+   "translit": "allatī",
+   "fr": "qui, que (féminin ; choses au pluriel)",
+   "nature": "relatif",
+   "lecon": "fondations-30",
+   "source_sens": "rédigé par IA",
+   "lemme": "{l~a*iY",
+   "exemple": {
+    "ar": "الْبِنْتُ الَّتِي جَلَسَتْ هُنَا صَغِيرَةٌ.",
+    "fr": "La fille qui s'est assise ici est petite."
+   }
+  },
+  {
+   "id": "alladhina",
+   "ar": "الَّذِينَ",
+   "translit": "allaḏīna",
+   "fr": "qui (personnes au pluriel)",
+   "nature": "relatif",
+   "lecon": "fondations-30",
+   "source_sens": "rédigé par IA",
+   "lemme": "{l~a*iY",
+   "exemple": {
+    "ar": "أَيْنَ التُّجَّارُ الَّذِينَ رَجَعُوا؟",
+    "fr": "Où sont les marchands qui sont revenus ?"
+   }
+  },
+  {
+   "id": "shaykh",
+   "ar": "شَيْخٌ",
+   "translit": "šayḫun",
+   "fr": "vieil homme",
+   "nature": "nom",
+   "lecon": "fondations-30",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "شُيُوخٌ",
+   "lemme": "$ayox",
+   "exemple": {
+    "ar": "الشَّيْخُ فِي الْحَدِيقَةِ.",
+    "fr": "Le vieil homme est dans le jardin."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "sawt",
+   "ar": "صَوْتٌ",
+   "translit": "ṣawtun",
+   "fr": "voix, son",
+   "nature": "nom",
+   "lecon": "fondations-30",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَصْوَاتٌ",
+   "lemme": "Sawot",
+   "exemple": {
+    "ar": "الصَّوْتُ جَمِيلٌ.",
+    "fr": "La voix est belle."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "dars",
+   "ar": "دَرْسٌ",
+   "translit": "darsun",
+   "fr": "leçon",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "دُرُوسٌ",
+   "racine": "drs",
+   "scheme": "فَعْل",
+   "exemple": {
+    "ar": "الدَّرْسُ طَوِيلٌ.",
+    "fr": "La leçon est longue."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "bard",
+   "ar": "بَرْدٌ",
+   "translit": "bardun",
+   "fr": "le froid",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "barod",
+   "scheme": "فَعْل",
+   "exemple": {
+    "ar": "الْبَرْدُ كَثِيرٌ فِي الْجِبَالِ.",
+    "fr": "Il fait très froid dans les montagnes."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "thalj",
+   "ar": "ثَلْجٌ",
+   "translit": "ṯalǧun",
+   "fr": "neige",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "فِي الْجَبَلِ ثَلْجٌ كَثِيرٌ.",
+    "fr": "Il y a beaucoup de neige sur la montagne."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "sakhra",
+   "ar": "صَخْرَةٌ",
+   "translit": "ṣaḫratun",
+   "fr": "rocher",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "pluriel": "صُخُورٌ",
+   "lemme": "Saxorap",
+   "scheme": "فَعْلَة",
+   "exemple": {
+    "ar": "الصَّخْرَةُ كَبِيرَةٌ.",
+    "fr": "Le rocher est grand."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "fahm_charbon",
+   "ar": "فَحْمٌ",
+   "translit": "faḥmun",
+   "fr": "charbon",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "remarque": "nom collectif",
+   "exemple": {
+    "ar": "الْفَحْمُ عِنْدَ الْحَدَّادِ.",
+    "fr": "Le charbon est chez le forgeron."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "nuhas",
+   "ar": "نُحَاسٌ",
+   "translit": "nuḥāsun",
+   "fr": "cuivre",
+   "nature": "nom",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "nuHaAs",
+   "scheme": "فُعَال",
+   "exemple": {
+    "ar": "النُّحَاسُ ثَقِيلٌ.",
+    "fr": "Le cuivre est lourd."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "saida",
+   "ar": "صَعِدَ",
+   "translit": "ṣaʿida",
+   "fr": "il est monté, il a gravi",
+   "nature": "verbe",
+   "lecon": "moteur-01",
+   "source_sens": "rédigé par IA",
+   "passe": "صَعِدَ",
+   "inaccompli": "يَصْعَدُ",
+   "nom_action": "صُعُودٌ",
+   "lemme": "yaSoEadu",
+   "scheme": "فَعِلَ",
+   "exemple": {
+    "ar": "صَعِدَ الْمُسَافِرُونَ الْجَبَلَ.",
+    "fr": "Les voyageurs ont gravi la montagne."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "safar",
+   "ar": "سَفَرٌ",
+   "translit": "safarun",
+   "fr": "voyage",
+   "nature": "nom",
+   "lecon": "moteur-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "safar",
+   "scheme": "فَعَل",
+   "exemple": {
+    "ar": "السَّفَرُ طَوِيلٌ.",
+    "fr": "Le voyage est long."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "habl",
+   "ar": "حَبْلٌ",
+   "translit": "ḥablun",
+   "fr": "corde",
+   "nature": "nom",
+   "lecon": "moteur-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "حِبَالٌ",
+   "lemme": "Habol",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فِعَال",
+   "exemple": {
+    "ar": "الْحَبْلُ طَوِيلٌ.",
+    "fr": "La corde est longue."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "kanz",
+   "ar": "كَنْزٌ",
+   "translit": "kanzun",
+   "fr": "trésor",
+   "nature": "nom",
+   "lecon": "moteur-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "كُنُوزٌ",
+   "lemme": "kanz",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فُعُول",
+   "exemple": {
+    "ar": "الْكَنْزُ فِي الصُّنْدُوقِ.",
+    "fr": "Le trésor est dans le coffre."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "bisat",
+   "ar": "بِسَاطٌ",
+   "translit": "bisāṭun",
+   "fr": "tapis",
+   "nature": "nom",
+   "lecon": "moteur-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "bisaAT",
+   "scheme": "فِعَال",
+   "exemple": {
+    "ar": "الْبِسَاطُ جَمِيلٌ.",
+    "fr": "Le tapis est beau."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "taraqa",
+   "ar": "طَرَقَ",
+   "translit": "ṭaraqa",
+   "fr": "il a frappé (une porte, un métal)",
+   "nature": "verbe",
+   "lecon": "moteur-02",
+   "source_sens": "rédigé par IA",
+   "passe": "طَرَقَ",
+   "inaccompli": "يَطْرُقُ",
+   "nom_action": "طَرْقٌ",
+   "racine": "Trq",
+   "scheme": "فَعَلَ",
+   "exemple": {
+    "ar": "طَرَقَ الْحَدَّادُ الْحَدِيدَ.",
+    "fr": "Le forgeron a frappé le fer."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "maktub",
+   "ar": "مَكْتُوبٌ",
+   "translit": "maktūbun",
+   "fr": "écrit (ce qui est écrit)",
+   "nature": "adjectif",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "makotuwb",
+   "scheme": "مَفْعُول",
+   "exemple": {
+    "ar": "الرِّسَالَةُ مَكْتُوبَةٌ.",
+    "fr": "La lettre est écrite."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "hamil",
+   "ar": "حَامِلٌ",
+   "translit": "ḥāmilun",
+   "fr": "qui porte, porteur",
+   "nature": "nom",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hml",
+   "scheme": "فَاعِل",
+   "exemple": {
+    "ar": "حَامِلُ السَّلَّةِ صَدِيقِي.",
+    "fr": "Celui qui porte le panier est mon ami."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "kharij",
+   "ar": "خَارِجٌ",
+   "translit": "ḫāriǧun",
+   "fr": "qui sort ; dehors",
+   "nature": "nom",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "xaArij",
+   "scheme": "فَاعِل",
+   "exemple": {
+    "ar": "الْحَارِسُ خَارِجٌ.",
+    "fr": "Le gardien est dehors."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "jalis",
+   "ar": "جَالِسٌ",
+   "translit": "ǧālisun",
+   "fr": "assis",
+   "nature": "adjectif",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jls",
+   "scheme": "فَاعِل",
+   "exemple": {
+    "ar": "الشَّيْخُ جَالِسٌ فِي الْخَيْمَةِ.",
+    "fr": "Le vieil homme est assis dans la tente."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "rakib",
+   "ar": "رَاكِبٌ",
+   "translit": "rākibun",
+   "fr": "monté (sur une monture), cavalier",
+   "nature": "nom",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "rkb",
+   "scheme": "فَاعِل",
+   "exemple": {
+    "ar": "رَاكِبُ الْجَمَلِ تَاجِرٌ.",
+    "fr": "Celui qui est monté sur le chameau est un marchand."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "maftuh",
+   "ar": "مَفْتُوحٌ",
+   "translit": "maftūḥun",
+   "fr": "ouvert",
+   "nature": "adjectif",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "ftH",
+   "scheme": "مَفْعُول",
+   "exemple": {
+    "ar": "الْبَابُ مَفْتُوحٌ.",
+    "fr": "La porte est ouverte."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "sani",
+   "ar": "صَانِعٌ",
+   "translit": "ṣāniʿun",
+   "fr": "artisan, celui qui fabrique",
+   "nature": "nom",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "صُنَّاعٌ",
+   "racine": "SnE",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال",
+   "exemple": {
+    "ar": "الصَّانِعُ فِي الْبَيْتِ.",
+    "fr": "L'artisan est dans la maison."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "sakin",
+   "ar": "سَاكِنٌ",
+   "translit": "sākinun",
+   "fr": "habitant",
+   "nature": "nom",
+   "lecon": "moteur-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُكَّانٌ",
+   "racine": "skn",
+   "scheme": "فَاعِل",
+   "scheme_pluriel": "فُعَّال",
+   "exemple": {
+    "ar": "سُكَّانُ الْقَرْيَةِ فِي السُّوقِ.",
+    "fr": "Les habitants du village sont au marché."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "kitaba",
+   "ar": "كِتَابَةٌ",
+   "translit": "kitābatun",
+   "fr": "écriture, le fait d'écrire",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "ktb",
+   "scheme": "فِعَالَة",
+   "exemple": {
+    "ar": "الْكِتَابَةُ جَمِيلَةٌ.",
+    "fr": "L'écriture est belle."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "dirasa",
+   "ar": "دِرَاسَةٌ",
+   "translit": "dirāsatun",
+   "fr": "étude",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "diraAsat",
+   "scheme": "فِعَالَة",
+   "exemple": {
+    "ar": "الدِّرَاسَةُ فِي الْمَسَاءِ.",
+    "fr": "L'étude a lieu le soir."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "khuruj",
+   "ar": "خُرُوجٌ",
+   "translit": "ḫurūǧun",
+   "fr": "sortie, départ (le fait de sortir)",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "xuruwj",
+   "scheme": "فُعُول",
+   "exemple": {
+    "ar": "خُرُوجُ الْقَافِلَةِ فِي الصَّبَاحِ.",
+    "fr": "Le départ de la caravane a lieu le matin."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "dukhul",
+   "ar": "دُخُولٌ",
+   "translit": "duḫūlun",
+   "fr": "entrée (le fait d'entrer)",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "dxl",
+   "scheme": "فُعُول",
+   "exemple": {
+    "ar": "دُخُولُ السُّوقِ فِي الصَّبَاحِ.",
+    "fr": "L'entrée au marché, c'est le matin."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "julus",
+   "ar": "جُلُوسٌ",
+   "translit": "ǧulūsun",
+   "fr": "le fait de s'asseoir",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jls",
+   "scheme": "فُعُول",
+   "exemple": {
+    "ar": "الْجُلُوسُ فِي الْحَدِيقَةِ جَمِيلٌ.",
+    "fr": "S'asseoir dans le jardin est une belle chose."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "jam",
+   "ar": "جَمْعٌ",
+   "translit": "ǧamʿun",
+   "fr": "rassemblement ; (en grammaire) pluriel",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "jamoE",
+   "scheme": "فَعْل",
+   "exemple": {
+    "ar": "كُتُبٌ جَمْعُ كِتَابٍ.",
+    "fr": "كُتُبٌ est le pluriel de كِتَابٌ."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "fahm",
+   "ar": "فَهْمٌ",
+   "translit": "fahmun",
+   "fr": "compréhension",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "fhm",
+   "scheme": "فَعْل",
+   "exemple": {
+    "ar": "فَهْمُ الدَّرْسِ جَمِيلٌ.",
+    "fr": "Comprendre la leçon est une belle chose."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "hifz",
+   "ar": "حِفْظٌ",
+   "translit": "ḥifẓun",
+   "fr": "garde ; mémorisation",
+   "nature": "nom",
+   "lecon": "moteur-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "HifoZ",
+   "scheme": "فِعْل",
+   "exemple": {
+    "ar": "حِفْظُ الْكَلِمَاتِ فِي الْمَسَاءِ.",
+    "fr": "On mémorise les mots le soir."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "majlis",
+   "ar": "مَجْلِسٌ",
+   "translit": "maǧlisun",
+   "fr": "lieu où l'on s'assoit, assemblée",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَجَالِسُ",
+   "racine": "jls",
+   "scheme": "مَفْعِل",
+   "scheme_pluriel": "مَفَاعِل",
+   "exemple": {
+    "ar": "جَلَسَ الضُّيُوفُ فِي الْمَجْلِسِ.",
+    "fr": "Les invités se sont assis dans la salle de réunion."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "maskan",
+   "ar": "مَسْكَنٌ",
+   "translit": "maskanun",
+   "fr": "habitation, logement",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَسَاكِنُ",
+   "lemme": "masokan",
+   "scheme": "مَفْعَل",
+   "scheme_pluriel": "مَفَاعِل",
+   "exemple": {
+    "ar": "الْمَسْكَنُ قَرِيبٌ مِنَ السُّوقِ.",
+    "fr": "Le logement est près du marché."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "madkhal",
+   "ar": "مَدْخَلٌ",
+   "translit": "madḫalun",
+   "fr": "entrée (lieu par où l'on entre)",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "dxl",
+   "scheme": "مَفْعَل",
+   "exemple": {
+    "ar": "مَدْخَلُ الْبَيْتِ صَغِيرٌ.",
+    "fr": "L'entrée de la maison est petite."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "makhraj",
+   "ar": "مَخْرَجٌ",
+   "translit": "maḫraǧun",
+   "fr": "sortie, issue (lieu par où l'on sort)",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "maxoraj",
+   "scheme": "مَفْعَل",
+   "exemple": {
+    "ar": "الْمَخْرَجُ هُنَاكَ.",
+    "fr": "La sortie est là-bas."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "madrasa",
+   "ar": "مَدْرَسَةٌ",
+   "translit": "madrasatun",
+   "fr": "école",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "drs",
+   "scheme": "مَفْعَلَة",
+   "exemple": {
+    "ar": "يَدْرُسُ الطُّلَّابُ فِي الْمَدْرَسَةِ.",
+    "fr": "Les étudiants étudient à l'école."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "mazraa",
+   "ar": "مَزْرَعَةٌ",
+   "translit": "mazraʿatun",
+   "fr": "champ cultivé, ferme",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "zrE",
+   "scheme": "مَفْعَلَة",
+   "exemple": {
+    "ar": "الْمَزْرَعَةُ قَرِيبَةٌ مِنَ النَّهْرِ.",
+    "fr": "La ferme est près de la rivière."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "misbah",
+   "ar": "مِصْبَاحٌ",
+   "translit": "miṣbāḥun",
+   "fr": "lampe",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَصَابِيحُ",
+   "lemme": "miSobaAH",
+   "scheme": "مِفْعَال",
+   "scheme_pluriel": "مَفَاعِيل",
+   "exemple": {
+    "ar": "الْمِصْبَاحُ عَلَى الْجِدَارِ.",
+    "fr": "La lampe est sur le mur."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "mitraqa",
+   "ar": "مِطْرَقَةٌ",
+   "translit": "miṭraqatun",
+   "fr": "marteau",
+   "nature": "nom",
+   "lecon": "moteur-05",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "Trq",
+   "scheme": "مِفْعَلَة",
+   "exemple": {
+    "ar": "مِطْرَقَةُ الْحَدَّادِ ثَقِيلَةٌ.",
+    "fr": "Le marteau du forgeron est lourd."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "marid",
+   "ar": "مَرِيضٌ",
+   "translit": "marīḍun",
+   "fr": "malade",
+   "nature": "adjectif",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "مَرْضَى",
+   "lemme": "m~ariyD",
+   "scheme": "فَعِيل",
+   "formes": [
+    "مَرِيضَةٌ"
+   ],
+   "exemple": {
+    "ar": "الشَّيْخُ مَرِيضٌ الْيَوْمَ.",
+    "fr": "Le vieil homme est malade aujourd'hui."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "faqir",
+   "ar": "فَقِيرٌ",
+   "translit": "faqīrun",
+   "fr": "pauvre",
+   "nature": "adjectif",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "فُقَرَاءُ",
+   "lemme": "faqiyr",
+   "scheme": "فَعِيل",
+   "scheme_pluriel": "فُعَلَاء",
+   "formes": [
+    "فَقِيرَةٌ"
+   ],
+   "exemple": {
+    "ar": "التَّاجِرُ لَيْسَ فَقِيرًا.",
+    "fr": "Le marchand n'est pas pauvre."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "daif",
+   "ar": "ضَعِيفٌ",
+   "translit": "ḍaʿīfun",
+   "fr": "faible",
+   "nature": "adjectif",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "ضُعَفَاءُ",
+   "lemme": "DaEiyf",
+   "scheme": "فَعِيل",
+   "scheme_pluriel": "فُعَلَاء",
+   "formes": [
+    "ضَعِيفَةٌ"
+   ],
+   "exemple": {
+    "ar": "الْحَبْلُ ضَعِيفٌ.",
+    "fr": "La corde est faible."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "sari",
+   "ar": "سَرِيعٌ",
+   "translit": "sarīʿun",
+   "fr": "rapide",
+   "nature": "adjectif",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "sariyE",
+   "scheme": "فَعِيل",
+   "formes": [
+    "سَرِيعَةٌ"
+   ],
+   "exemple": {
+    "ar": "الْجَمَلُ سَرِيعٌ.",
+    "fr": "Le chameau est rapide."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "said",
+   "ar": "سَعِيدٌ",
+   "translit": "saʿīdun",
+   "fr": "heureux",
+   "nature": "adjectif",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُعَدَاءُ",
+   "lemme": "saEiyd",
+   "scheme": "فَعِيل",
+   "scheme_pluriel": "فُعَلَاء",
+   "formes": [
+    "سَعِيدَةٌ"
+   ],
+   "exemple": {
+    "ar": "بَاسِمٌ سَعِيدٌ الْيَوْمَ.",
+    "fr": "Bāsim est heureux aujourd'hui."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "tabbakh",
+   "ar": "طَبَّاخٌ",
+   "translit": "ṭabbāḫun",
+   "fr": "cuisinier",
+   "nature": "nom",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "الطَّبَّاخُ فِي الْمَطْبَخِ.",
+    "fr": "Le cuisinier est dans la cuisine."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "hammal",
+   "ar": "حَمَّالٌ",
+   "translit": "ḥammālun",
+   "fr": "porteur (de métier)",
+   "nature": "nom",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hml",
+   "scheme": "فَعَّال",
+   "exemple": {
+    "ar": "حَمَلَ الْحَمَّالُ الْأَحْمَالَ إِلَى السُّوقِ.",
+    "fr": "Le porteur a porté les charges au marché."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "rahhal",
+   "ar": "رَحَّالٌ",
+   "translit": "raḥḥālun",
+   "fr": "grand voyageur",
+   "nature": "nom",
+   "lecon": "moteur-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "rHl",
+   "scheme": "فَعَّال",
+   "exemple": {
+    "ar": "الرَّحَّالُ فِي الْمَجْلِسِ.",
+    "fr": "Le grand voyageur est dans la salle de réunion."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "tifl",
+   "ar": "طِفْلٌ",
+   "translit": "ṭiflun",
+   "fr": "petit enfant",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "أَطْفَالٌ",
+   "lemme": "Tifol",
+   "scheme": "فِعْل",
+   "scheme_pluriel": "أَفْعَال",
+   "exemple": {
+    "ar": "الْأَطْفَالُ فِي الْحَدِيقَةِ.",
+    "fr": "Les enfants sont dans le jardin."
+   },
+   "theme": "famille"
+  },
+  {
+   "id": "sarj",
+   "ar": "سَرْجٌ",
+   "translit": "sarǧun",
+   "fr": "selle",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "سُرُوجٌ",
+   "racine": "srj",
+   "scheme": "فَعْل",
+   "scheme_pluriel": "فُعُول",
+   "exemple": {
+    "ar": "السَّرْجُ عَلَى الْجَمَلِ.",
+    "fr": "La selle est sur le chameau."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "jisr",
+   "ar": "جِسْرٌ",
+   "translit": "ǧisrun",
+   "fr": "pont",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "جُسُورٌ",
+   "exemple": {
+    "ar": "الْجِسْرُ طَوِيلٌ.",
+    "fr": "Le pont est long."
+   },
+   "theme": "voyage"
+  },
+  {
+   "id": "sahn",
+   "ar": "صَحْنٌ",
+   "translit": "ṣaḥnun",
+   "fr": "plat, écuelle",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "صُحُونٌ",
+   "exemple": {
+    "ar": "الصَّحْنُ فِي السَّلَّةِ.",
+    "fr": "Le plat est dans le panier."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "saqr",
+   "ar": "صَقْرٌ",
+   "translit": "ṣaqrun",
+   "fr": "faucon",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "صُقُورٌ",
+   "exemple": {
+    "ar": "الصُّقُورُ فَوْقَ الْجَبَلِ.",
+    "fr": "Les faucons sont au-dessus de la montagne."
+   },
+   "theme": "animaux"
+  },
+  {
+   "id": "fahd",
+   "ar": "فَهْدٌ",
+   "translit": "fahdun",
+   "fr": "guépard",
+   "nature": "nom",
+   "lecon": "moteur-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "pluriel": "فُهُودٌ",
+   "exemple": {
+    "ar": "الْفَهْدُ سَرِيعٌ.",
+    "fr": "Le guépard est rapide."
+   },
+   "theme": "animaux"
+  },
+  {
+   "id": "akbar",
+   "ar": "أَكْبَرُ",
+   "translit": "akbaru",
+   "fr": "plus grand",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">akobar",
+   "scheme": "أَفْعَل",
+   "remarque": "avec مِنْ, ne change ni de genre ni de nombre ; jamais de tanwīn",
+   "exemple": {
+    "ar": "الْجَمَلُ أَكْبَرُ مِنَ الْحِمَارِ.",
+    "fr": "Le chameau est plus grand que l'âne."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "asghar",
+   "ar": "أَصْغَرُ",
+   "translit": "aṣġaru",
+   "fr": "plus petit",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">aSogar",
+   "scheme": "أَفْعَل",
+   "exemple": {
+    "ar": "الْبِنْتُ أَصْغَرُ مِنَ الْوَلَدِ.",
+    "fr": "La fille est plus petite que le garçon."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "akthar",
+   "ar": "أَكْثَرُ",
+   "translit": "akṯaru",
+   "fr": "plus nombreux, davantage",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">akovar",
+   "scheme": "أَفْعَل",
+   "exemple": {
+    "ar": "الْجِمَالُ فِي السُّوقِ أَكْثَرُ مِنَ الْحَمِيرِ.",
+    "fr": "Au marché, les chameaux sont plus nombreux que les ânes."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "asra",
+   "ar": "أَسْرَعُ",
+   "translit": "asraʿu",
+   "fr": "plus rapide",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">asoraE",
+   "scheme": "أَفْعَل",
+   "exemple": {
+    "ar": "الْفَهْدُ أَسْرَعُ مِنَ الْجَمَلِ.",
+    "fr": "Le guépard est plus rapide que le chameau."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "abad",
+   "ar": "أَبْعَدُ",
+   "translit": "abʿadu",
+   "fr": "plus éloigné",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "bEd",
+   "scheme": "أَفْعَل",
+   "exemple": {
+    "ar": "الْجَبَلُ أَبْعَدُ مِنَ النَّهْرِ.",
+    "fr": "La montagne est plus loin que la rivière."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "atwal",
+   "ar": "أَطْوَلُ",
+   "translit": "aṭwalu",
+   "fr": "plus long, plus grand (de taille)",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Twl",
+   "exemple": {
+    "ar": "الْجَمَلُ أَطْوَلُ مِنَ الْحِمَارِ.",
+    "fr": "Le chameau est plus grand que l'âne."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "sahl",
+   "ar": "سَهْلٌ",
+   "translit": "sahlun",
+   "fr": "facile",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "shl",
+   "scheme": "فَعْل",
+   "remarque": "dans le Corpus, cette racine désigne aussi la plaine",
+   "formes": [
+    "سَهْلَةٌ"
+   ],
+   "exemple": {
+    "ar": "دَرْسُ الْيَوْمِ سَهْلٌ.",
+    "fr": "La leçon d'aujourd'hui est facile."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "sab",
+   "ar": "صَعْبٌ",
+   "translit": "ṣaʿbun",
+   "fr": "difficile",
+   "nature": "adjectif",
+   "lecon": "moteur-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "صَعْبَةٌ"
+   ],
+   "exemple": {
+    "ar": "دَرْسُ أَمْسِ صَعْبٌ.",
+    "fr": "La leçon d'hier était difficile."
+   },
+   "theme": "qualités"
+  },
+  {
+   "id": "arabi",
+   "ar": "عَرَبِيٌّ",
+   "translit": "ʿarabiyyun",
+   "fr": "arabe",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "Earabiy~",
+   "formes": [
+    "عَرَبِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "اللُّغَةُ الْعَرَبِيَّةُ جَمِيلَةٌ.",
+    "fr": "La langue arabe est belle."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "lugha",
+   "ar": "لُغَةٌ",
+   "translit": "luġatun",
+   "fr": "langue (que l'on parle)",
+   "nature": "nom",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "lgw",
+   "exemple": {
+    "ar": "اللُّغَةُ الْعَرَبِيَّةُ جَمِيلَةٌ.",
+    "fr": "La langue arabe est belle."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "misri",
+   "ar": "مِصْرِيٌّ",
+   "translit": "miṣriyyun",
+   "fr": "égyptien",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "مِصْرِيَّةٌ"
+   ],
+   "remarque": "de مِصْرُ « l'Égypte »",
+   "exemple": {
+    "ar": "هُوَ تَاجِرٌ مِصْرِيٌّ.",
+    "fr": "C'est un marchand égyptien."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "baghdadi",
+   "ar": "بَغْدَادِيٌّ",
+   "translit": "baġdādiyyun",
+   "fr": "de Bagdad",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "بَغْدَادِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "سَمِيرٌ بَغْدَادِيٌّ.",
+    "fr": "Samīr est de Bagdad."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "dimashqi",
+   "ar": "دِمَشْقِيٌّ",
+   "translit": "dimašqiyyun",
+   "fr": "de Damas",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "دِمَشْقِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "سَلْمَى دِمَشْقِيَّةٌ.",
+    "fr": "Salmā est de Damas."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "farisi",
+   "ar": "فَارِسِيٌّ",
+   "translit": "fārisiyyun",
+   "fr": "persan",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "فَارِسِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "هَٰذَا بِسَاطٌ فَارِسِيٌّ.",
+    "fr": "Ceci est un tapis persan."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "hindi",
+   "ar": "هِنْدِيٌّ",
+   "translit": "hindiyyun",
+   "fr": "indien",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "هِنْدِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "هَٰذَا سَيْفٌ هِنْدِيٌّ قَدِيمٌ.",
+    "fr": "Ceci est une vieille épée indienne."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "jabali",
+   "ar": "جَبَلِيٌّ",
+   "translit": "ǧabaliyyun",
+   "fr": "de montagne, montagnard",
+   "nature": "adjectif",
+   "lecon": "moteur-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jbl",
+   "formes": [
+    "جَبَلِيَّةٌ"
+   ],
+   "exemple": {
+    "ar": "هِلَالٌ جَبَلِيٌّ.",
+    "fr": "Hilāl est un montagnard."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "nahar",
+   "ar": "نَهَارٌ",
+   "translit": "nahārun",
+   "fr": "jour (le temps de la clarté)",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "nahaAr",
+   "scheme": "فَعَال",
+   "exemple": {
+    "ar": "النَّهَارُ طَوِيلٌ فِي الصَّيْفِ.",
+    "fr": "Le jour est long en été."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "qasr",
+   "ar": "قَصْرٌ",
+   "translit": "qaṣrun",
+   "fr": "palais",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "qaSor",
+   "scheme": "فَعْل",
+   "exemple": {
+    "ar": "الْقَصْرُ لَيْسَ قَصِيرًا.",
+    "fr": "Le palais n'est pas court."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "sikkin",
+   "ar": "سِكِّينٌ",
+   "translit": "sikkīnun",
+   "fr": "couteau",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "sik~iyn",
+   "scheme": "فِعِّيل",
+   "remarque": "masculin ou féminin en arabe classique",
+   "exemple": {
+    "ar": "السِّكِّينُ فِي الْمَطْبَخِ.",
+    "fr": "Le couteau est dans la cuisine."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "tariqa",
+   "ar": "طَرِيقَةٌ",
+   "translit": "ṭarīqatun",
+   "fr": "manière, méthode",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "Tariyqap",
+   "scheme": "فَعِيلَة",
+   "exemple": {
+    "ar": "هَٰذِهِ طَرِيقَةُ هِلَالٍ.",
+    "fr": "Voici la méthode de Hilāl."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "fatha",
+   "ar": "فَتْحَةٌ",
+   "translit": "fatḥatun",
+   "fr": "fatḥa (le signe de la voyelle a)",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "ftH",
+   "scheme": "فَعْلَة",
+   "exemple": {
+    "ar": "عَلَى الْبَاءِ فَتْحَةٌ.",
+    "fr": "Il y a une fatḥa sur le bāʾ."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "sukun",
+   "ar": "سُكُونٌ",
+   "translit": "sukūnun",
+   "fr": "sukūn (le signe de l'absence de voyelle) ; calme, immobilité (sens général)",
+   "nature": "nom",
+   "lecon": "moteur-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "skn",
+   "scheme": "فُعُول",
+   "exemple": {
+    "ar": "عَلَى الْمِيمِ سُكُونٌ.",
+    "fr": "Il y a un sukūn sur le mīm."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "alima",
+   "ar": "عَلِمَ",
+   "translit": "ʿalima",
+   "fr": "savoir, connaître (une chose)",
+   "nature": "verbe",
+   "lecon": "moteur-11",
+   "source_sens": "rédigé par IA",
+   "passe": "عَلِمَ",
+   "inaccompli": "يَعْلَمُ",
+   "nom_action": "عِلْمٌ",
+   "scheme": "فَعِلَ",
+   "exemple": {
+    "ar": "عَلِمَ الطَّالِبُ الْجَوَابَ.",
+    "fr": "L'étudiant a su la réponse."
+   },
+   "lemme": "Ealima",
+   "theme": "savoir"
+  },
+  {
+   "id": "amila",
+   "ar": "عَمِلَ",
+   "translit": "ʿamila",
+   "fr": "faire, travailler",
+   "nature": "verbe",
+   "lecon": "moteur-11",
+   "source_sens": "rédigé par IA",
+   "passe": "عَمِلَ",
+   "inaccompli": "يَعْمَلُ",
+   "nom_action": "عَمَلٌ",
+   "scheme": "فَعِلَ",
+   "exemple": {
+    "ar": "يَعْمَلُ النَّجَّارُ فِي الصَّبَاحِ.",
+    "fr": "Le menuisier travaille le matin."
+   },
+   "lemme": "Eamila",
+   "theme": "actions"
+  },
+  {
+   "id": "nazara",
+   "ar": "نَظَرَ",
+   "translit": "naẓara",
+   "fr": "regarder",
+   "nature": "verbe",
+   "lecon": "moteur-11",
+   "source_sens": "rédigé par IA",
+   "passe": "نَظَرَ",
+   "inaccompli": "يَنْظُرُ",
+   "nom_action": "نَظَرٌ",
+   "scheme": "فَعَلَ",
+   "exemple": {
+    "ar": "نَظَرَ الطِّفْلُ إِلَى الصَّقْرِ.",
+    "fr": "L'enfant a regardé le faucon."
+   },
+   "lemme": "n~aZara",
+   "theme": "actions"
+  },
+  {
+   "id": "kabura",
+   "ar": "كَبُرَ",
+   "translit": "kabura",
+   "fr": "devenir grand, grandir (en taille)",
+   "nature": "verbe",
+   "lecon": "moteur-11",
+   "source_sens": "rédigé par IA",
+   "passe": "كَبُرَ",
+   "inaccompli": "يَكْبُرُ",
+   "scheme": "فَعُلَ",
+   "exemple": {
+    "ar": "كَبُرَتِ الْمَدِينَةُ.",
+    "fr": "La ville s'est agrandie."
+   },
+   "lemme": "kabura",
+   "remarque": "pour une personne qui vieillit, on dit كَبِرَ يَكْبَرُ",
+   "theme": "qualites"
+  },
+  {
+   "id": "kathura",
+   "ar": "كَثُرَ",
+   "translit": "kaṯura",
+   "fr": "être ou devenir nombreux, abonder",
+   "nature": "verbe",
+   "lecon": "moteur-11",
+   "source_sens": "rédigé par IA",
+   "passe": "كَثُرَ",
+   "inaccompli": "يَكْثُرُ",
+   "nom_action": "كَثْرَةٌ",
+   "scheme": "فَعُلَ",
+   "exemple": {
+    "ar": "كَثُرَ التُّجَّارُ فِي السُّوقِ.",
+    "fr": "Les marchands sont devenus nombreux au marché."
+   },
+   "lemme": "kavura",
+   "theme": "qualites"
+  },
+  {
+   "id": "thaqula",
+   "ar": "ثَقُلَ",
+   "translit": "ṯaqula",
+   "fr": "être ou devenir lourd",
+   "nature": "verbe",
+   "lecon": "moteur-11",
+   "source_sens": "rédigé par IA",
+   "passe": "ثَقُلَ",
+   "inaccompli": "يَثْقُلُ",
+   "nom_action": "ثِقَلٌ",
+   "scheme": "فَعُلَ",
+   "exemple": {
+    "ar": "ثَقُلَ الصُّنْدُوقُ.",
+    "fr": "Le coffre est devenu lourd."
+   },
+   "lemme": "vaqulato",
+   "theme": "qualites"
+  },
+  {
+   "id": "buda",
+   "ar": "بَعُدَ",
+   "translit": "baʿuda",
+   "fr": "être loin",
+   "nature": "verbe",
+   "lecon": "moteur-11",
+   "source_sens": "rédigé par IA",
+   "passe": "بَعُدَ",
+   "inaccompli": "يَبْعُدُ",
+   "nom_action": "بُعْدٌ",
+   "scheme": "فَعُلَ",
+   "exemple": {
+    "ar": "بَعُدَتِ الْقَرْيَةُ.",
+    "fr": "Le village était loin."
+   },
+   "lemme": "baEudato",
+   "theme": "qualites"
+  },
+  {
+   "id": "hasuna",
+   "ar": "حَسُنَ",
+   "translit": "ḥasuna",
+   "fr": "être beau, être bon",
+   "nature": "verbe",
+   "lecon": "moteur-11",
+   "source_sens": "rédigé par IA",
+   "passe": "حَسُنَ",
+   "inaccompli": "يَحْسُنُ",
+   "nom_action": "حُسْنٌ",
+   "scheme": "فَعُلَ",
+   "exemple": {
+    "ar": "حَسُنَ الْقَمِيصُ.",
+    "fr": "La tunique est belle."
+   },
+   "lemme": "Hasuna",
+   "theme": "qualites"
+  },
+  {
+   "id": "safara",
+   "ar": "سَافَرَ",
+   "translit": "sāfara",
+   "fr": "voyager",
+   "nature": "verbe",
+   "lecon": "moteur-13",
+   "source_sens": "rédigé par IA",
+   "passe": "سَافَرَ",
+   "inaccompli": "يُسَافِرُ",
+   "nom_action": "مُسَافَرَةٌ",
+   "scheme": "فَاعَلَ",
+   "exemple": {
+    "ar": "سَافَرَتِ الْقَافِلَةُ فِي الصَّبَاحِ.",
+    "fr": "La caravane a voyagé le matin."
+   },
+   "racine": "sfr",
+   "theme": "voyage"
+  },
+  {
+   "id": "jaalasa",
+   "ar": "جَالَسَ",
+   "translit": "ǧālasa",
+   "fr": "tenir compagnie à, s'asseoir avec",
+   "nature": "verbe",
+   "lecon": "moteur-13",
+   "source_sens": "rédigé par IA",
+   "passe": "جَالَسَ",
+   "inaccompli": "يُجَالِسُ",
+   "nom_action": "مُجَالَسَةٌ",
+   "scheme": "فَاعَلَ",
+   "exemple": {
+    "ar": "جَالَسَ بَاسِمٌ الشَّيْخَ فِي الْمَجْلِسِ.",
+    "fr": "Bāsim a tenu compagnie au vieil homme dans l'assemblée."
+   },
+   "racine": "jls",
+   "theme": "personnes"
+  },
+  {
+   "id": "kaataba",
+   "ar": "كَاتَبَ",
+   "translit": "kātaba",
+   "fr": "correspondre avec, écrire à",
+   "nature": "verbe",
+   "lecon": "moteur-13",
+   "source_sens": "rédigé par IA",
+   "passe": "كَاتَبَ",
+   "inaccompli": "يُكَاتِبُ",
+   "nom_action": "مُكَاتَبَةٌ",
+   "scheme": "فَاعَلَ",
+   "exemple": {
+    "ar": "كَاتَبَ الْكَاتِبُ صَدِيقَهُ.",
+    "fr": "Le scribe a correspondu avec son ami."
+   },
+   "racine": "ktb",
+   "theme": "savoir"
+  },
+  {
+   "id": "saaada",
+   "ar": "سَاعَدَ",
+   "translit": "sāʿada",
+   "fr": "aider",
+   "nature": "verbe",
+   "lecon": "moteur-13",
+   "source_sens": "rédigé par IA",
+   "passe": "سَاعَدَ",
+   "inaccompli": "يُسَاعِدُ",
+   "nom_action": "مُسَاعَدَةٌ",
+   "scheme": "فَاعَلَ",
+   "exemple": {
+    "ar": "سَاعَدَ الْحَمَّالُ التَّاجِرَ.",
+    "fr": "Le porteur a aidé le marchand."
+   },
+   "racine": "sEd",
+   "theme": "actions"
+  },
+  {
+   "id": "faaraqa",
+   "ar": "فَارَقَ",
+   "translit": "fāraqa",
+   "fr": "quitter, se séparer de",
+   "nature": "verbe",
+   "lecon": "moteur-13",
+   "source_sens": "rédigé par IA",
+   "passe": "فَارَقَ",
+   "inaccompli": "يُفَارِقُ",
+   "nom_action": "فِرَاقٌ",
+   "scheme": "فَاعَلَ",
+   "exemple": {
+    "ar": "فَارَقَ الْمُسَافِرُ الْقَرْيَةَ.",
+    "fr": "Le voyageur a quitté le village."
+   },
+   "lemme": "faAriqu",
+   "theme": "voyage"
+  },
+  {
+   "id": "saabaqa",
+   "ar": "سَابَقَ",
+   "translit": "sābaqa",
+   "fr": "faire la course avec",
+   "nature": "verbe",
+   "lecon": "moteur-13",
+   "source_sens": "rédigé par IA",
+   "passe": "سَابَقَ",
+   "inaccompli": "يُسَابِقُ",
+   "nom_action": "مُسَابَقَةٌ",
+   "scheme": "فَاعَلَ",
+   "exemple": {
+    "ar": "سَابَقَ الطِّفْلُ صَدِيقَهُ.",
+    "fr": "L'enfant a fait la course avec son ami."
+   },
+   "lemme": "saAbiqu",
+   "theme": "actions"
+  },
+  {
+   "id": "saahaba",
+   "ar": "صَاحَبَ",
+   "translit": "ṣāḥaba",
+   "fr": "accompagner",
+   "nature": "verbe",
+   "lecon": "moteur-13",
+   "source_sens": "rédigé par IA",
+   "passe": "صَاحَبَ",
+   "inaccompli": "يُصَاحِبُ",
+   "nom_action": "مُصَاحَبَةٌ",
+   "scheme": "فَاعَلَ",
+   "exemple": {
+    "ar": "صَاحَبَ بَاسِمٌ الْقَافِلَةَ.",
+    "fr": "Bāsim a accompagné la caravane."
+   },
+   "racine": "SHb",
+   "theme": "voyage"
+  },
+  {
+   "id": "qaabala",
+   "ar": "قَابَلَ",
+   "translit": "qābala",
+   "fr": "rencontrer, faire face à",
+   "nature": "verbe",
+   "lecon": "moteur-13",
+   "source_sens": "rédigé par IA",
+   "passe": "قَابَلَ",
+   "inaccompli": "يُقَابِلُ",
+   "nom_action": "مُقَابَلَةٌ",
+   "scheme": "فَاعَلَ",
+   "exemple": {
+    "ar": "قَابَلَ التَّاجِرُ الصَّرَّافَ فِي السُّوقِ.",
+    "fr": "Le marchand a rencontré le changeur au marché."
+   },
+   "racine": "qbl",
+   "theme": "personnes"
+  },
+  {
+   "id": "akhraja",
+   "ar": "أَخْرَجَ",
+   "translit": "aḫraǧa",
+   "fr": "faire sortir, sortir (quelque chose)",
+   "nature": "verbe",
+   "lecon": "moteur-14",
+   "source_sens": "rédigé par IA",
+   "passe": "أَخْرَجَ",
+   "inaccompli": "يُخْرِجُ",
+   "nom_action": "إِخْرَاجٌ",
+   "scheme": "أَفْعَلَ",
+   "exemple": {
+    "ar": "أَخْرَجَ بَاسِمٌ الْجَمَلَ.",
+    "fr": "Bāsim a fait sortir le chameau."
+   },
+   "lemme": ">axoraja",
+   "theme": "actions"
+  },
+  {
+   "id": "adkhala",
+   "ar": "أَدْخَلَ",
+   "translit": "adḫala",
+   "fr": "faire entrer",
+   "nature": "verbe",
+   "lecon": "moteur-14",
+   "source_sens": "rédigé par IA",
+   "passe": "أَدْخَلَ",
+   "inaccompli": "يُدْخِلُ",
+   "nom_action": "إِدْخَالٌ",
+   "scheme": "أَفْعَلَ",
+   "exemple": {
+    "ar": "أَدْخَلَ الْحَارِسُ التُّجَّارَ.",
+    "fr": "Le gardien a fait entrer les marchands."
+   },
+   "lemme": ">udoxila",
+   "theme": "actions"
+  },
+  {
+   "id": "ajlasa",
+   "ar": "أَجْلَسَ",
+   "translit": "aǧlasa",
+   "fr": "faire asseoir",
+   "nature": "verbe",
+   "lecon": "moteur-14",
+   "source_sens": "rédigé par IA",
+   "passe": "أَجْلَسَ",
+   "inaccompli": "يُجْلِسُ",
+   "nom_action": "إِجْلَاسٌ",
+   "scheme": "أَفْعَلَ",
+   "exemple": {
+    "ar": "أَجْلَسَ الشَّيْخُ الضَّيْفَ فِي الْمَجْلِسِ.",
+    "fr": "Le vieil homme a fait asseoir l'invité dans l'assemblée."
+   },
+   "racine": "jls",
+   "theme": "personnes"
+  },
+  {
+   "id": "atama",
+   "ar": "أَطْعَمَ",
+   "translit": "aṭʿama",
+   "fr": "nourrir, donner à manger",
+   "nature": "verbe",
+   "lecon": "moteur-14",
+   "source_sens": "rédigé par IA",
+   "passe": "أَطْعَمَ",
+   "inaccompli": "يُطْعِمُ",
+   "nom_action": "إِطْعَامٌ",
+   "scheme": "أَفْعَلَ",
+   "exemple": {
+    "ar": "أَطْعَمَ الطَّبَّاخُ الضُّيُوفَ.",
+    "fr": "Le cuisinier a donné à manger aux invités."
+   },
+   "lemme": ">aToEama",
+   "theme": "maison"
+  },
+  {
+   "id": "arsala",
+   "ar": "أَرْسَلَ",
+   "translit": "arsala",
+   "fr": "envoyer",
+   "nature": "verbe",
+   "lecon": "moteur-14",
+   "source_sens": "rédigé par IA",
+   "passe": "أَرْسَلَ",
+   "inaccompli": "يُرْسِلُ",
+   "nom_action": "إِرْسَالٌ",
+   "scheme": "أَفْعَلَ",
+   "exemple": {
+    "ar": "أَرْسَلَ التَّاجِرُ رِسَالَةً.",
+    "fr": "Le marchand a envoyé une lettre."
+   },
+   "lemme": ">arosala",
+   "theme": "savoir"
+  },
+  {
+   "id": "akrama",
+   "ar": "أَكْرَمَ",
+   "translit": "akrama",
+   "fr": "traiter avec honneur (un hôte)",
+   "nature": "verbe",
+   "lecon": "moteur-14",
+   "source_sens": "rédigé par IA",
+   "passe": "أَكْرَمَ",
+   "inaccompli": "يُكْرِمُ",
+   "nom_action": "إِكْرَامٌ",
+   "scheme": "أَفْعَلَ",
+   "exemple": {
+    "ar": "أَكْرَمَ الشَّيْخُ الضَّيْفَ.",
+    "fr": "Le vieil homme a reçu l'invité avec honneur."
+   },
+   "lemme": ">akorama",
+   "theme": "personnes"
+  },
+  {
+   "id": "aslaha",
+   "ar": "أَصْلَحَ",
+   "translit": "aṣlaḥa",
+   "fr": "réparer, remettre en état",
+   "nature": "verbe",
+   "lecon": "moteur-14",
+   "source_sens": "rédigé par IA",
+   "passe": "أَصْلَحَ",
+   "inaccompli": "يُصْلِحُ",
+   "nom_action": "إِصْلَاحٌ",
+   "scheme": "أَفْعَلَ",
+   "exemple": {
+    "ar": "أَصْلَحَ الْحَدَّادُ الْمِفْتَاحَ.",
+    "fr": "Le forgeron a réparé la clé."
+   },
+   "lemme": ">aSolaHa",
+   "theme": "travail"
+  },
+  {
+   "id": "ajaba",
+   "ar": "أَعْجَبَ",
+   "translit": "aʿǧaba",
+   "fr": "plaire à",
+   "nature": "verbe",
+   "lecon": "moteur-14",
+   "source_sens": "rédigé par IA",
+   "passe": "أَعْجَبَ",
+   "inaccompli": "يُعْجِبُ",
+   "nom_action": "إِعْجَابٌ",
+   "scheme": "أَفْعَلَ",
+   "exemple": {
+    "ar": "أَعْجَبَ الْقَصْرُ الْمُسَافِرِينَ.",
+    "fr": "Le palais a plu aux voyageurs."
+   },
+   "lemme": ">aEojaba",
+   "remarque": "la chose qui plaît est le sujet, la personne le complément",
+   "theme": "qualites"
+  },
+  {
+   "id": "allama",
+   "ar": "عَلَّمَ",
+   "translit": "ʿallama",
+   "fr": "enseigner",
+   "nature": "verbe",
+   "lecon": "moteur-12",
+   "source_sens": "rédigé par IA",
+   "passe": "عَلَّمَ",
+   "inaccompli": "يُعَلِّمُ",
+   "nom_action": "تَعْلِيمٌ",
+   "scheme": "فَعَّلَ",
+   "exemple": {
+    "ar": "عَلَّمَتْ رَبَابُ الطُّلَّابَ الْكِتَابَةَ.",
+    "fr": "Rabāb a enseigné l'écriture aux étudiants."
+   },
+   "lemme": "Eal~ama",
+   "theme": "savoir"
+  },
+  {
+   "id": "fahhama",
+   "ar": "فَهَّمَ",
+   "translit": "fahhama",
+   "fr": "faire comprendre, expliquer",
+   "nature": "verbe",
+   "lecon": "moteur-12",
+   "source_sens": "rédigé par IA",
+   "passe": "فَهَّمَ",
+   "inaccompli": "يُفَهِّمُ",
+   "nom_action": "تَفْهِيمٌ",
+   "scheme": "فَعَّلَ",
+   "exemple": {
+    "ar": "فَهَّمَ الْمُعَلِّمُ الطُّلَّابَ الدَّرْسَ.",
+    "fr": "Le maître a fait comprendre la leçon aux étudiants."
+   },
+   "lemme": "fah~amo",
+   "theme": "savoir"
+  },
+  {
+   "id": "qattaa",
+   "ar": "قَطَّعَ",
+   "translit": "qaṭṭaʿa",
+   "fr": "couper en morceaux",
+   "nature": "verbe",
+   "lecon": "moteur-12",
+   "source_sens": "rédigé par IA",
+   "passe": "قَطَّعَ",
+   "inaccompli": "يُقَطِّعُ",
+   "nom_action": "تَقْطِيعٌ",
+   "scheme": "فَعَّلَ",
+   "exemple": {
+    "ar": "قَطَّعَ الطَّبَّاخُ اللَّحْمَ.",
+    "fr": "Le cuisinier a coupé la viande en morceaux."
+   },
+   "lemme": "qaT~aEa",
+   "theme": "actions"
+  },
+  {
+   "id": "farraqa",
+   "ar": "فَرَّقَ",
+   "translit": "farraqa",
+   "fr": "séparer, disperser",
+   "nature": "verbe",
+   "lecon": "moteur-12",
+   "source_sens": "rédigé par IA",
+   "passe": "فَرَّقَ",
+   "inaccompli": "يُفَرِّقُ",
+   "nom_action": "تَفْرِيقٌ",
+   "scheme": "فَعَّلَ",
+   "exemple": {
+    "ar": "فَرَّقَ الْحَمَّالُ الْأَحْمَالَ.",
+    "fr": "Le porteur a séparé les charges."
+   },
+   "lemme": "far~aqu",
+   "theme": "actions"
+  },
+  {
+   "id": "qaddama",
+   "ar": "قَدَّمَ",
+   "translit": "qaddama",
+   "fr": "présenter, offrir ; mettre devant",
+   "nature": "verbe",
+   "lecon": "moteur-12",
+   "source_sens": "rédigé par IA",
+   "passe": "قَدَّمَ",
+   "inaccompli": "يُقَدِّمُ",
+   "nom_action": "تَقْدِيمٌ",
+   "scheme": "فَعَّلَ",
+   "exemple": {
+    "ar": "قَدَّمَ الْخَبَّازُ الْخُبْزَ لِلضُّيُوفِ.",
+    "fr": "Le boulanger a offert le pain aux invités."
+   },
+   "lemme": "qad~ama",
+   "theme": "actions"
+  },
+  {
+   "id": "haddatha",
+   "ar": "حَدَّثَ",
+   "translit": "ḥaddaṯa",
+   "fr": "raconter à, parler à (quelqu'un)",
+   "nature": "verbe",
+   "lecon": "moteur-12",
+   "source_sens": "rédigé par IA",
+   "passe": "حَدَّثَ",
+   "inaccompli": "يُحَدِّثُ",
+   "nom_action": "تَحْدِيثٌ",
+   "scheme": "فَعَّلَ",
+   "exemple": {
+    "ar": "حَدَّثَ الشَّيْخُ الضُّيُوفَ.",
+    "fr": "Le vieil homme a parlé aux invités."
+   },
+   "lemme": "tuHad~ivu",
+   "theme": "savoir"
+  },
+  {
+   "id": "kallama",
+   "ar": "كَلَّمَ",
+   "translit": "kallama",
+   "fr": "adresser la parole à",
+   "nature": "verbe",
+   "lecon": "moteur-12",
+   "source_sens": "rédigé par IA",
+   "passe": "كَلَّمَ",
+   "inaccompli": "يُكَلِّمُ",
+   "nom_action": "تَكْلِيمٌ",
+   "scheme": "فَعَّلَ",
+   "exemple": {
+    "ar": "يُكَلِّمُ الشَّيْخُ الْمُسَافِرِينَ.",
+    "fr": "Le vieil homme parle aux voyageurs."
+   },
+   "lemme": "kal~ama",
+   "theme": "savoir"
+  },
+  {
+   "id": "taallama",
+   "ar": "تَعَلَّمَ",
+   "translit": "taʿallama",
+   "fr": "apprendre",
+   "nature": "verbe",
+   "lecon": "moteur-15",
+   "source_sens": "rédigé par IA",
+   "passe": "تَعَلَّمَ",
+   "inaccompli": "يَتَعَلَّمُ",
+   "nom_action": "تَعَلُّمٌ",
+   "scheme": "تَفَعَّلَ",
+   "exemple": {
+    "ar": "تَعَلَّمَ الطُّلَّابُ الْكِتَابَةَ.",
+    "fr": "Les étudiants ont appris l'écriture."
+   },
+   "lemme": "yataEal~amu",
+   "theme": "savoir"
+  },
+  {
+   "id": "takallama",
+   "ar": "تَكَلَّمَ",
+   "translit": "takallama",
+   "fr": "parler",
+   "nature": "verbe",
+   "lecon": "moteur-15",
+   "source_sens": "rédigé par IA",
+   "passe": "تَكَلَّمَ",
+   "inaccompli": "يَتَكَلَّمُ",
+   "nom_action": "تَكَلُّمٌ",
+   "scheme": "تَفَعَّلَ",
+   "exemple": {
+    "ar": "تَكَلَّمَ الشَّيْخُ فِي الْمَجْلِسِ.",
+    "fr": "Le vieil homme a parlé dans l'assemblée."
+   },
+   "lemme": "yatakal~amu",
+   "theme": "savoir"
+  },
+  {
+   "id": "taqaddama",
+   "ar": "تَقَدَّمَ",
+   "translit": "taqaddama",
+   "fr": "s'avancer",
+   "nature": "verbe",
+   "lecon": "moteur-15",
+   "source_sens": "rédigé par IA",
+   "passe": "تَقَدَّمَ",
+   "inaccompli": "يَتَقَدَّمُ",
+   "nom_action": "تَقَدُّمٌ",
+   "scheme": "تَفَعَّلَ",
+   "exemple": {
+    "ar": "تَقَدَّمَتِ الْقَافِلَةُ.",
+    "fr": "La caravane s'est avancée."
+   },
+   "lemme": "taqad~ama",
+   "theme": "actions"
+  },
+  {
+   "id": "tafarraqa",
+   "ar": "تَفَرَّقَ",
+   "translit": "tafarraqa",
+   "fr": "se disperser",
+   "nature": "verbe",
+   "lecon": "moteur-15",
+   "source_sens": "rédigé par IA",
+   "passe": "تَفَرَّقَ",
+   "inaccompli": "يَتَفَرَّقُ",
+   "nom_action": "تَفَرُّقٌ",
+   "scheme": "تَفَعَّلَ",
+   "exemple": {
+    "ar": "تَفَرَّقَ الضُّيُوفُ فِي الْمَسَاءِ.",
+    "fr": "Les invités se sont dispersés le soir."
+   },
+   "lemme": "tafar~aqa",
+   "theme": "actions"
+  },
+  {
+   "id": "tahaddatha",
+   "ar": "تَحَدَّثَ",
+   "translit": "taḥaddaṯa",
+   "fr": "parler, converser",
+   "nature": "verbe",
+   "lecon": "moteur-15",
+   "source_sens": "rédigé par IA",
+   "passe": "تَحَدَّثَ",
+   "inaccompli": "يَتَحَدَّثُ",
+   "nom_action": "تَحَدُّثٌ",
+   "scheme": "تَفَعَّلَ",
+   "exemple": {
+    "ar": "تَحَدَّثَ التُّجَّارُ فِي السُّوقِ.",
+    "fr": "Les marchands ont conversé au marché."
+   },
+   "racine": "Hdv",
+   "theme": "savoir"
+  },
+  {
+   "id": "tadhakkara",
+   "ar": "تَذَكَّرَ",
+   "translit": "taḏakkara",
+   "fr": "se souvenir de",
+   "nature": "verbe",
+   "lecon": "moteur-15",
+   "source_sens": "rédigé par IA",
+   "passe": "تَذَكَّرَ",
+   "inaccompli": "يَتَذَكَّرُ",
+   "nom_action": "تَذَكُّرٌ",
+   "scheme": "تَفَعَّلَ",
+   "exemple": {
+    "ar": "تَذَكَّرَ بَاسِمٌ الْقِصَّةَ.",
+    "fr": "Bāsim s'est souvenu de l'histoire."
+   },
+   "lemme": "ta*ak~ara",
+   "theme": "savoir"
+  },
+  {
+   "id": "taajjaba",
+   "ar": "تَعَجَّبَ",
+   "translit": "taʿaǧǧaba",
+   "fr": "s'étonner",
+   "nature": "verbe",
+   "lecon": "moteur-15",
+   "source_sens": "rédigé par IA",
+   "passe": "تَعَجَّبَ",
+   "inaccompli": "يَتَعَجَّبُ",
+   "nom_action": "تَعَجُّبٌ",
+   "scheme": "تَفَعَّلَ",
+   "exemple": {
+    "ar": "تَعَجَّبَ الطِّفْلُ مِنَ الصَّقْرِ.",
+    "fr": "L'enfant s'est étonné du faucon."
+   },
+   "racine": "Ejb",
+   "theme": "qualites"
+  },
+  {
+   "id": "takaataba",
+   "ar": "تَكَاتَبَ",
+   "translit": "takātaba",
+   "fr": "s'écrire l'un à l'autre",
+   "nature": "verbe",
+   "lecon": "moteur-16",
+   "source_sens": "rédigé par IA",
+   "passe": "تَكَاتَبَ",
+   "inaccompli": "يَتَكَاتَبُ",
+   "nom_action": "تَكَاتُبٌ",
+   "scheme": "تَفَاعَلَ",
+   "exemple": {
+    "ar": "تَكَاتَبَ الصَّدِيقَانِ.",
+    "fr": "Les deux amis se sont écrit."
+   },
+   "racine": "ktb",
+   "theme": "savoir"
+  },
+  {
+   "id": "taaarafa",
+   "ar": "تَعَارَفَ",
+   "translit": "taʿārafa",
+   "fr": "faire connaissance (mutuellement)",
+   "nature": "verbe",
+   "lecon": "moteur-16",
+   "source_sens": "rédigé par IA",
+   "passe": "تَعَارَفَ",
+   "inaccompli": "يَتَعَارَفُ",
+   "nom_action": "تَعَارُفٌ",
+   "scheme": "تَفَاعَلَ",
+   "exemple": {
+    "ar": "تَعَارَفَ الْمُسَافِرُونَ فِي الْقَافِلَةِ.",
+    "fr": "Les voyageurs ont fait connaissance dans la caravane."
+   },
+   "racine": "Erf",
+   "theme": "personnes"
+  },
+  {
+   "id": "taqaasama",
+   "ar": "تَقَاسَمَ",
+   "translit": "taqāsama",
+   "fr": "se partager",
+   "nature": "verbe",
+   "lecon": "moteur-16",
+   "source_sens": "rédigé par IA",
+   "passe": "تَقَاسَمَ",
+   "inaccompli": "يَتَقَاسَمُ",
+   "nom_action": "تَقَاسُمٌ",
+   "scheme": "تَفَاعَلَ",
+   "exemple": {
+    "ar": "تَقَاسَمَ الْأَطْفَالُ التَّمْرَ.",
+    "fr": "Les enfants se sont partagé les dattes."
+   },
+   "racine": "qsm",
+   "theme": "actions"
+  },
+  {
+   "id": "tasaabaqa",
+   "ar": "تَسَابَقَ",
+   "translit": "tasābaqa",
+   "fr": "faire la course ensemble",
+   "nature": "verbe",
+   "lecon": "moteur-16",
+   "source_sens": "rédigé par IA",
+   "passe": "تَسَابَقَ",
+   "inaccompli": "يَتَسَابَقُ",
+   "nom_action": "تَسَابُقٌ",
+   "scheme": "تَفَاعَلَ",
+   "exemple": {
+    "ar": "تَسَابَقَ الْأَطْفَالُ إِلَى الْجِسْرِ.",
+    "fr": "Les enfants ont fait la course jusqu'au pont."
+   },
+   "racine": "sbq",
+   "theme": "actions"
+  },
+  {
+   "id": "tanaazaa",
+   "ar": "تَنَازَعَ",
+   "translit": "tanāzaʿa",
+   "fr": "se disputer",
+   "nature": "verbe",
+   "lecon": "moteur-16",
+   "source_sens": "rédigé par IA",
+   "passe": "تَنَازَعَ",
+   "inaccompli": "يَتَنَازَعُ",
+   "nom_action": "تَنَازُعٌ",
+   "scheme": "تَفَاعَلَ",
+   "exemple": {
+    "ar": "تَنَازَعَ التَّاجِرَانِ فِي السُّوقِ.",
+    "fr": "Les deux marchands se sont disputés au marché."
+   },
+   "racine": "nzE",
+   "theme": "personnes"
+  },
+  {
+   "id": "tashaabaha",
+   "ar": "تَشَابَهَ",
+   "translit": "tašābaha",
+   "fr": "se ressembler",
+   "nature": "verbe",
+   "lecon": "moteur-16",
+   "source_sens": "rédigé par IA",
+   "passe": "تَشَابَهَ",
+   "inaccompli": "يَتَشَابَهُ",
+   "nom_action": "تَشَابُهٌ",
+   "scheme": "تَفَاعَلَ",
+   "exemple": {
+    "ar": "تَشَابَهَتِ الْكَلِمَتَانِ.",
+    "fr": "Les deux mots se ressemblent."
+   },
+   "racine": "$bh",
+   "theme": "qualites"
+  },
+  {
+   "id": "tasaafaha",
+   "ar": "تَصَافَحَ",
+   "translit": "taṣāfaḥa",
+   "fr": "se serrer la main",
+   "nature": "verbe",
+   "lecon": "moteur-16",
+   "source_sens": "rédigé par IA",
+   "passe": "تَصَافَحَ",
+   "inaccompli": "يَتَصَافَحُ",
+   "nom_action": "تَصَافُحٌ",
+   "scheme": "تَفَاعَلَ",
+   "exemple": {
+    "ar": "تَصَافَحَ الرَّجُلَانِ.",
+    "fr": "Les deux hommes se sont serré la main."
+   },
+   "racine": "SfH",
+   "theme": "personnes"
+  },
+  {
+   "id": "tamaarada",
+   "ar": "تَمَارَضَ",
+   "translit": "tamāraḍa",
+   "fr": "faire semblant d'être malade",
+   "nature": "verbe",
+   "lecon": "moteur-16",
+   "source_sens": "rédigé par IA",
+   "passe": "تَمَارَضَ",
+   "inaccompli": "يَتَمَارَضُ",
+   "nom_action": "تَمَارُضٌ",
+   "scheme": "تَفَاعَلَ",
+   "exemple": {
+    "ar": "تَمَارَضَ الطِّفْلُ.",
+    "fr": "L'enfant a fait semblant d'être malade."
+   },
+   "racine": "mrD",
+   "theme": "qualites"
+  },
+  {
+   "id": "infataha",
+   "ar": "انْفَتَحَ",
+   "translit": "infataḥa",
+   "fr": "s'ouvrir",
+   "nature": "verbe",
+   "lecon": "moteur-17",
+   "source_sens": "rédigé par IA",
+   "passe": "انْفَتَحَ",
+   "inaccompli": "يَنْفَتِحُ",
+   "nom_action": "انْفِتَاحٌ",
+   "scheme": "انْفَعَلَ",
+   "exemple": {
+    "ar": "انْفَتَحَ الْبَابُ.",
+    "fr": "La porte s'est ouverte."
+   },
+   "racine": "ftH",
+   "theme": "actions"
+  },
+  {
+   "id": "inqataa",
+   "ar": "انْقَطَعَ",
+   "translit": "inqaṭaʿa",
+   "fr": "se rompre, s'interrompre",
+   "nature": "verbe",
+   "lecon": "moteur-17",
+   "source_sens": "rédigé par IA",
+   "passe": "انْقَطَعَ",
+   "inaccompli": "يَنْقَطِعُ",
+   "nom_action": "انْقِطَاعٌ",
+   "scheme": "انْفَعَلَ",
+   "exemple": {
+    "ar": "انْقَطَعَ الْحَبْلُ.",
+    "fr": "La corde s'est rompue."
+   },
+   "racine": "qTE",
+   "theme": "actions"
+  },
+  {
+   "id": "inqasama",
+   "ar": "انْقَسَمَ",
+   "translit": "inqasama",
+   "fr": "se diviser",
+   "nature": "verbe",
+   "lecon": "moteur-17",
+   "source_sens": "rédigé par IA",
+   "passe": "انْقَسَمَ",
+   "inaccompli": "يَنْقَسِمُ",
+   "nom_action": "انْقِسَامٌ",
+   "scheme": "انْفَعَلَ",
+   "exemple": {
+    "ar": "انْقَسَمَتِ الْقَافِلَةُ.",
+    "fr": "La caravane s'est divisée."
+   },
+   "racine": "qsm",
+   "theme": "actions"
+  },
+  {
+   "id": "intalaqa",
+   "ar": "انْطَلَقَ",
+   "translit": "inṭalaqa",
+   "fr": "partir, se mettre en route",
+   "nature": "verbe",
+   "lecon": "moteur-17",
+   "source_sens": "rédigé par IA",
+   "passe": "انْطَلَقَ",
+   "inaccompli": "يَنْطَلِقُ",
+   "nom_action": "انْطِلَاقٌ",
+   "scheme": "انْفَعَلَ",
+   "exemple": {
+    "ar": "انْطَلَقَتِ الْقَافِلَةُ فِي الصَّبَاحِ.",
+    "fr": "La caravane est partie le matin."
+   },
+   "lemme": "{nTalaqa",
+   "theme": "voyage"
+  },
+  {
+   "id": "insarafa",
+   "ar": "انْصَرَفَ",
+   "translit": "inṣarafa",
+   "fr": "s'en aller, se retirer",
+   "nature": "verbe",
+   "lecon": "moteur-17",
+   "source_sens": "rédigé par IA",
+   "passe": "انْصَرَفَ",
+   "inaccompli": "يَنْصَرِفُ",
+   "nom_action": "انْصِرَافٌ",
+   "scheme": "انْفَعَلَ",
+   "exemple": {
+    "ar": "انْصَرَفَ الضُّيُوفُ فِي الْمَسَاءِ.",
+    "fr": "Les invités s'en sont allés le soir."
+   },
+   "lemme": "{nSarafu",
+   "theme": "actions"
+  },
+  {
+   "id": "inqalaba",
+   "ar": "انْقَلَبَ",
+   "translit": "inqalaba",
+   "fr": "se retourner, se renverser",
+   "nature": "verbe",
+   "lecon": "moteur-17",
+   "source_sens": "rédigé par IA",
+   "passe": "انْقَلَبَ",
+   "inaccompli": "يَنْقَلِبُ",
+   "nom_action": "انْقِلَابٌ",
+   "scheme": "انْفَعَلَ",
+   "exemple": {
+    "ar": "انْقَلَبَ الصَّحْنُ.",
+    "fr": "Le plat s'est renversé."
+   },
+   "lemme": "{nqalaba",
+   "theme": "actions"
+  },
+  {
+   "id": "ijtamaa",
+   "ar": "اجْتَمَعَ",
+   "translit": "iǧtamaʿa",
+   "fr": "se réunir",
+   "nature": "verbe",
+   "lecon": "moteur-18",
+   "source_sens": "rédigé par IA",
+   "passe": "اجْتَمَعَ",
+   "inaccompli": "يَجْتَمِعُ",
+   "nom_action": "اجْتِمَاعٌ",
+   "scheme": "افْتَعَلَ",
+   "exemple": {
+    "ar": "اجْتَمَعَ الطُّلَّابُ فِي الْمَدْرَسَةِ.",
+    "fr": "Les étudiants se sont réunis à l'école."
+   },
+   "lemme": "{jotamaEu",
+   "theme": "personnes"
+  },
+  {
+   "id": "istamaa",
+   "ar": "اسْتَمَعَ",
+   "translit": "istamaʿa",
+   "fr": "écouter attentivement",
+   "nature": "verbe",
+   "lecon": "moteur-18",
+   "source_sens": "rédigé par IA",
+   "passe": "اسْتَمَعَ",
+   "inaccompli": "يَسْتَمِعُ",
+   "nom_action": "اسْتِمَاعٌ",
+   "scheme": "افْتَعَلَ",
+   "exemple": {
+    "ar": "اسْتَمَعَ الطُّلَّابُ إِلَى الْقِصَّةِ.",
+    "fr": "Les étudiants ont écouté l'histoire."
+   },
+   "lemme": "{sotamaEa",
+   "remarque": "forme VIII de س م ع, et non forme X",
+   "theme": "savoir"
+  },
+  {
+   "id": "intazara",
+   "ar": "انْتَظَرَ",
+   "translit": "intaẓara",
+   "fr": "attendre",
+   "nature": "verbe",
+   "lecon": "moteur-18",
+   "source_sens": "rédigé par IA",
+   "passe": "انْتَظَرَ",
+   "inaccompli": "يَنْتَظِرُ",
+   "nom_action": "انْتِظَارٌ",
+   "scheme": "افْتَعَلَ",
+   "exemple": {
+    "ar": "انْتَظَرَ بَاسِمٌ صَدِيقَهُ عِنْدَ الْبَابِ.",
+    "fr": "Bāsim a attendu son ami à la porte."
+   },
+   "lemme": "yantaZiru",
+   "remarque": "le ن est de la racine (ن ظ ر)",
+   "theme": "actions"
+  },
+  {
+   "id": "iqtaraba",
+   "ar": "اقْتَرَبَ",
+   "translit": "iqtaraba",
+   "fr": "s'approcher",
+   "nature": "verbe",
+   "lecon": "moteur-18",
+   "source_sens": "rédigé par IA",
+   "passe": "اقْتَرَبَ",
+   "inaccompli": "يَقْتَرِبُ",
+   "nom_action": "اقْتِرَابٌ",
+   "scheme": "افْتَعَلَ",
+   "exemple": {
+    "ar": "اقْتَرَبَتِ الْقَافِلَةُ مِنَ الْمَدِينَةِ.",
+    "fr": "La caravane s'est approchée de la ville."
+   },
+   "lemme": "{qotaraba",
+   "theme": "voyage"
+  },
+  {
+   "id": "ikhtalafa",
+   "ar": "اخْتَلَفَ",
+   "translit": "iḫtalafa",
+   "fr": "être différent ; être en désaccord",
+   "nature": "verbe",
+   "lecon": "moteur-18",
+   "source_sens": "rédigé par IA",
+   "passe": "اخْتَلَفَ",
+   "inaccompli": "يَخْتَلِفُ",
+   "nom_action": "اخْتِلَافٌ",
+   "scheme": "افْتَعَلَ",
+   "exemple": {
+    "ar": "اخْتَلَفَ التَّاجِرَانِ فِي الثَّمَنِ.",
+    "fr": "Les deux marchands ont été en désaccord sur le prix."
+   },
+   "lemme": "{xotalafa",
+   "theme": "qualites"
+  },
+  {
+   "id": "idtaraba",
+   "ar": "اضْطَرَبَ",
+   "translit": "iḍṭaraba",
+   "fr": "s'agiter, trembler",
+   "nature": "verbe",
+   "lecon": "moteur-18",
+   "source_sens": "rédigé par IA",
+   "passe": "اضْطَرَبَ",
+   "inaccompli": "يَضْطَرِبُ",
+   "nom_action": "اضْطِرَابٌ",
+   "exemple": {
+    "ar": "اضْطَرَبَ الْجَمَلُ.",
+    "fr": "Le chameau s'est agité."
+   },
+   "racine": "Drb",
+   "remarque": "forme VIII de ض ر ب : le ت devient ط",
+   "theme": "actions"
+  },
+  {
+   "id": "iddakhara",
+   "ar": "ادَّخَرَ",
+   "translit": "iddaḫara",
+   "fr": "mettre en réserve",
+   "nature": "verbe",
+   "lecon": "moteur-18",
+   "source_sens": "rédigé par IA",
+   "passe": "ادَّخَرَ",
+   "inaccompli": "يَدَّخِرُ",
+   "nom_action": "ادِّخَارٌ",
+   "exemple": {
+    "ar": "ادَّخَرَ الْفَقِيرُ دِرْهَمًا.",
+    "fr": "Le pauvre a mis un dirham de côté."
+   },
+   "lemme": "tad~axiru",
+   "remarque": "forme VIII de ذ خ ر : ذ et ت deviennent دّ",
+   "theme": "argent"
+  },
+  {
+   "id": "istakhraja",
+   "ar": "اسْتَخْرَجَ",
+   "translit": "istaḫraǧa",
+   "fr": "extraire, tirer (de)",
+   "nature": "verbe",
+   "lecon": "moteur-19",
+   "source_sens": "rédigé par IA",
+   "passe": "اسْتَخْرَجَ",
+   "inaccompli": "يَسْتَخْرِجُ",
+   "nom_action": "اسْتِخْرَاجٌ",
+   "scheme": "اسْتَفْعَلَ",
+   "exemple": {
+    "ar": "اسْتَخْرَجَ الرِّجَالُ الْمَاءَ مِنَ الْبِئْرِ.",
+    "fr": "Les hommes ont tiré l'eau du puits."
+   },
+   "lemme": "{sotaxoraja",
+   "theme": "actions"
+  },
+  {
+   "id": "istatama",
+   "ar": "اسْتَطْعَمَ",
+   "translit": "istaṭʿama",
+   "fr": "demander à manger (à quelqu'un)",
+   "nature": "verbe",
+   "lecon": "moteur-19",
+   "source_sens": "rédigé par IA",
+   "passe": "اسْتَطْعَمَ",
+   "inaccompli": "يَسْتَطْعِمُ",
+   "nom_action": "اسْتِطْعَامٌ",
+   "scheme": "اسْتَفْعَلَ",
+   "exemple": {
+    "ar": "اسْتَطْعَمَ الْفَقِيرُ الْخَبَّازَ.",
+    "fr": "Le pauvre a demandé à manger au boulanger."
+   },
+   "lemme": "{sotaToEama",
+   "theme": "maison"
+  },
+  {
+   "id": "istafhama",
+   "ar": "اسْتَفْهَمَ",
+   "translit": "istafhama",
+   "fr": "demander une explication",
+   "nature": "verbe",
+   "lecon": "moteur-19",
+   "source_sens": "rédigé par IA",
+   "passe": "اسْتَفْهَمَ",
+   "inaccompli": "يَسْتَفْهِمُ",
+   "nom_action": "اسْتِفْهَامٌ",
+   "scheme": "اسْتَفْعَلَ",
+   "exemple": {
+    "ar": "اسْتَفْهَمَ الطَّالِبُ الْمُعَلِّمَ.",
+    "fr": "L'étudiant a demandé une explication au maître."
+   },
+   "racine": "fhm",
+   "theme": "savoir"
+  },
+  {
+   "id": "istansakha",
+   "ar": "اسْتَنْسَخَ",
+   "translit": "istansaḫa",
+   "fr": "faire copier",
+   "nature": "verbe",
+   "lecon": "moteur-19",
+   "source_sens": "rédigé par IA",
+   "passe": "اسْتَنْسَخَ",
+   "inaccompli": "يَسْتَنْسِخُ",
+   "nom_action": "اسْتِنْسَاخٌ",
+   "scheme": "اسْتَفْعَلَ",
+   "exemple": {
+    "ar": "اسْتَنْسَخَ التَّاجِرُ الْكِتَابَ.",
+    "fr": "Le marchand a fait copier le livre."
+   },
+   "lemme": "nasotansixu",
+   "theme": "savoir"
+  },
+  {
+   "id": "istakthara",
+   "ar": "اسْتَكْثَرَ",
+   "translit": "istakṯara",
+   "fr": "trouver que c'est beaucoup, trouver trop",
+   "nature": "verbe",
+   "lecon": "moteur-19",
+   "source_sens": "rédigé par IA",
+   "passe": "اسْتَكْثَرَ",
+   "inaccompli": "يَسْتَكْثِرُ",
+   "nom_action": "اسْتِكْثَارٌ",
+   "scheme": "اسْتَفْعَلَ",
+   "exemple": {
+    "ar": "اسْتَكْثَرَ الْمُسَافِرُ الثَّمَنَ.",
+    "fr": "Le voyageur a trouvé le prix trop élevé."
+   },
+   "lemme": "{sotakovaro",
+   "theme": "argent"
+  },
+  {
+   "id": "istasghara",
+   "ar": "اسْتَصْغَرَ",
+   "translit": "istaṣġara",
+   "fr": "trouver petit",
+   "nature": "verbe",
+   "lecon": "moteur-19",
+   "source_sens": "rédigé par IA",
+   "passe": "اسْتَصْغَرَ",
+   "inaccompli": "يَسْتَصْغِرُ",
+   "nom_action": "اسْتِصْغَارٌ",
+   "scheme": "اسْتَفْعَلَ",
+   "exemple": {
+    "ar": "اسْتَصْغَرَ التَّاجِرُ الْكِيسَ.",
+    "fr": "Le marchand a trouvé le sac petit."
+   },
+   "racine": "Sgr",
+   "theme": "qualites"
+  },
+  {
+   "id": "istahsana",
+   "ar": "اسْتَحْسَنَ",
+   "translit": "istaḥsana",
+   "fr": "trouver beau, approuver",
+   "nature": "verbe",
+   "lecon": "moteur-19",
+   "source_sens": "rédigé par IA",
+   "passe": "اسْتَحْسَنَ",
+   "inaccompli": "يَسْتَحْسِنُ",
+   "nom_action": "اسْتِحْسَانٌ",
+   "scheme": "اسْتَفْعَلَ",
+   "exemple": {
+    "ar": "اسْتَحْسَنَتْ سَلْمَى الْقَمِيصَ.",
+    "fr": "Salmā a trouvé la tunique belle."
+   },
+   "racine": "Hsn",
+   "theme": "qualites"
+  },
+  {
+   "id": "istaqbala",
+   "ar": "اسْتَقْبَلَ",
+   "translit": "istaqbala",
+   "fr": "aller au-devant de, accueillir",
+   "nature": "verbe",
+   "lecon": "moteur-19",
+   "source_sens": "rédigé par IA",
+   "passe": "اسْتَقْبَلَ",
+   "inaccompli": "يَسْتَقْبِلُ",
+   "nom_action": "اسْتِقْبَالٌ",
+   "scheme": "اسْتَفْعَلَ",
+   "exemple": {
+    "ar": "اسْتَقْبَلَ الشَّيْخُ الضُّيُوفَ.",
+    "fr": "Le vieil homme a accueilli les invités."
+   },
+   "racine": "qbl",
+   "theme": "personnes"
+  },
+  {
+   "id": "majhul",
+   "ar": "مَجْهُولٌ",
+   "translit": "maǧhūlun",
+   "fr": "inconnu",
+   "nature": "adjectif",
+   "lecon": "moteur-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jhl",
+   "scheme": "مَفْعُول",
+   "exemple": {
+    "ar": "الطَّرِيقُ مَجْهُولٌ.",
+    "fr": "Le chemin est inconnu."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "malum",
+   "ar": "مَعْلُومٌ",
+   "translit": "maʿlūmun",
+   "fr": "connu, su",
+   "nature": "adjectif",
+   "lecon": "moteur-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "m~aEoluwm",
+   "scheme": "مَفْعُول",
+   "exemple": {
+    "ar": "الْجَوَابُ مَعْلُومٌ.",
+    "fr": "La réponse est connue."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "masnu",
+   "ar": "مَصْنُوعٌ",
+   "translit": "maṣnūʿun",
+   "fr": "fabriqué, fait",
+   "nature": "adjectif",
+   "lecon": "moteur-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "SnE",
+   "scheme": "مَفْعُول",
+   "exemple": {
+    "ar": "الصُّنْدُوقُ مَصْنُوعٌ مِنَ الْحَدِيدِ.",
+    "fr": "Le coffre est fait de fer."
+   },
+   "theme": "travail"
+  },
+  {
+   "id": "mazru",
+   "ar": "مَزْرُوعٌ",
+   "translit": "mazrūʿun",
+   "fr": "semé, cultivé",
+   "nature": "adjectif",
+   "lecon": "moteur-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "zrE",
+   "scheme": "مَفْعُول",
+   "exemple": {
+    "ar": "النَّخْلُ مَزْرُوعٌ فِي الْحَدِيقَةِ.",
+    "fr": "Les palmiers sont plantés dans le jardin."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "mafhum",
+   "ar": "مَفْهُومٌ",
+   "translit": "mafhūmun",
+   "fr": "compris",
+   "nature": "adjectif",
+   "lecon": "moteur-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "fhm",
+   "scheme": "مَفْعُول",
+   "exemple": {
+    "ar": "الدَّرْسُ مَفْهُومٌ.",
+    "fr": "La leçon est comprise."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "matlub",
+   "ar": "مَطْلُوبٌ",
+   "translit": "maṭlūbun",
+   "fr": "demandé, recherché",
+   "nature": "adjectif",
+   "lecon": "moteur-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "maToluwb",
+   "scheme": "مَفْعُول",
+   "exemple": {
+    "ar": "الْخُبْزُ مَطْلُوبٌ فِي السُّوقِ.",
+    "fr": "Le pain est demandé au marché."
+   },
+   "theme": "actions"
+  },
+  {
+   "id": "mutaallim",
+   "ar": "مُتَعَلِّمٌ",
+   "translit": "mutaʿallimun",
+   "fr": "apprenant, qui apprend",
+   "nature": "nom",
+   "lecon": "moteur-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Elm",
+   "scheme": "مُتَفَعِّل",
+   "exemple": {
+    "ar": "الْمُتَعَلِّمُ فِي الْمَجْلِسِ.",
+    "fr": "L'apprenant est dans l'assemblée."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "musaid",
+   "ar": "مُسَاعِدٌ",
+   "translit": "musāʿidun",
+   "fr": "qui aide ; aide, assistant",
+   "nature": "nom",
+   "lecon": "moteur-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "sEd",
+   "scheme": "مُفَاعِل",
+   "exemple": {
+    "ar": "الْحَمَّالُ مُسَاعِدُ التَّاجِرِ.",
+    "fr": "Le porteur est l'aide du marchand."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "mursil",
+   "ar": "مُرْسِلٌ",
+   "translit": "mursilun",
+   "fr": "expéditeur",
+   "nature": "nom",
+   "lecon": "moteur-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "murosil",
+   "scheme": "مُفْعِل",
+   "exemple": {
+    "ar": "مُرْسِلُ الرِّسَالَةِ تَاجِرٌ.",
+    "fr": "L'expéditeur de la lettre est un marchand."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "mutafarriq",
+   "ar": "مُتَفَرِّقٌ",
+   "translit": "mutafarriqun",
+   "fr": "dispersé, épars",
+   "nature": "adjectif",
+   "lecon": "moteur-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "frq",
+   "scheme": "مُتَفَعِّل",
+   "exemple": {
+    "ar": "الْبُيُوتُ مُتَفَرِّقَةٌ فِي الْجَبَلِ.",
+    "fr": "Les maisons sont éparses dans la montagne."
+   },
+   "theme": "qualites"
+  },
+  {
+   "id": "mustami",
+   "ar": "مُسْتَمِعٌ",
+   "translit": "mustamiʿun",
+   "fr": "auditeur, qui écoute",
+   "nature": "nom",
+   "lecon": "moteur-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "musotamiE",
+   "scheme": "مُفْتَعِل",
+   "exemple": {
+    "ar": "الْمُسْتَمِعُ فِي الْمَجْلِسِ.",
+    "fr": "L'auditeur est dans l'assemblée."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "mukhtalif",
+   "ar": "مُخْتَلِفٌ",
+   "translit": "muḫtalifun",
+   "fr": "différent",
+   "nature": "adjectif",
+   "lecon": "moteur-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "m~uxotalif",
+   "scheme": "مُفْتَعِل",
+   "exemple": {
+    "ar": "الطَّرِيقَانِ مُخْتَلِفَانِ.",
+    "fr": "Les deux chemins sont différents."
+   },
+   "theme": "qualites"
+  },
+  {
+   "id": "muqatta",
+   "ar": "مُقَطَّعٌ",
+   "translit": "muqaṭṭaʿun",
+   "fr": "coupé en morceaux",
+   "nature": "adjectif",
+   "lecon": "moteur-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "qTE",
+   "scheme": "مُفَعَّل",
+   "exemple": {
+    "ar": "اللَّحْمُ مُقَطَّعٌ.",
+    "fr": "La viande est coupée en morceaux."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "istifham",
+   "ar": "اسْتِفْهَامٌ",
+   "translit": "istifhāmun",
+   "fr": "interrogation, question",
+   "nature": "nom",
+   "lecon": "moteur-20",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "fhm",
+   "scheme": "اسْتِفْعَال",
+   "exemple": {
+    "ar": "« هَلْ » كَلِمَةُ اسْتِفْهَامٍ.",
+    "fr": "هَلْ est un mot d'interrogation."
+   },
+   "theme": "savoir"
+  }
+ ]
+}

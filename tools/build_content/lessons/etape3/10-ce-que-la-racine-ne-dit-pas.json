@@ -1,0 +1,551 @@
+{
+  "id": "moteur-10",
+  "etape": 3,
+  "ordre": 10,
+  "format": 3,
+  "titre": "Ce que la racine ne dit pas",
+  "objectif": "Savoir quand la racine trompe, et vérifier dans le dictionnaire.",
+  "statut": "ia_non_verifie",
+  "lieu": "relais",
+  "maitre": "hilal",
+  "prerequis": [
+    "moteur-09"
+  ],
+  "apercu": [
+    "هِلَالٌ",
+    "الصَّيْفِ",
+    "الْبَاءِ",
+    "الْمِيمِ"
+  ],
+  "schemes": [
+    "فَعَال",
+    "فَعْل",
+    "فِعِّيل",
+    "فَعِيلَة",
+    "فَعْلَة",
+    "فُعُول",
+    "فِعَال",
+    "أَفْعَل",
+    "فَعِيل",
+    "فَاعِل",
+    "مِفْعَلَة"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "texte": "Tu sais trouver la racine et le moule d'un mot. C'est une grande force."
+        },
+        {
+          "qui": "hilal",
+          "texte": "Mais attention : la racine ne dit pas tout. Aujourd'hui, je te montre ses pièges."
+        }
+      ],
+      "objectif": "Reconnaître quand la racine trompe."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « La langue arabe est belle. »",
+          "ar": "اللُّغَةُ … جَمِيلَةٌ.",
+          "choix_ar": [
+            "الْعَرَبِيَّةُ",
+            "الْعَرَبِيُّ",
+            "عَرَبِيَّةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Nisba accordée (leçon 3.9)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَبْعَدُ",
+          "choix": [
+            "plus éloigné",
+            "loin",
+            "plus long"
+          ],
+          "reponse": 0,
+          "explication": "أَبْعَدُ : comparatif (leçon 3.8)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ح م ل dans le moule فَعَّال. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "حَمَّالٌ",
+            "حَامِلٌ",
+            "حِمْلٌ"
+          ],
+          "reponse": 0,
+          "explication": "فَعَّال : le métier (leçon 3.6)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "الْقَصْرُ لَيْسَ قَصِيرًا!",
+          "fr": "Le palais n'est pas court !"
+        },
+        {
+          "qui": "hilal",
+          "ar": "نَعَمْ، وَالْجَمَلُ جَمِيلٌ.",
+          "fr": "Oui, et le chameau est beau."
+        },
+        {
+          "qui": "hilal",
+          "ar": "وَالسِّكِّينُ فِي الْمَطْبَخِ، وَالسَّاكِنُ فِي الْبَيْتِ.",
+          "fr": "Et le couteau est dans la cuisine, et l'habitant dans la maison."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que montrent ces phrases ?",
+        "choix": [
+          "des mots de même racine aux sens éloignés",
+          "des pluriels",
+          "des comparatifs"
+        ],
+        "reponse": 0,
+        "explication": "قَصْرٌ / قَصِيرٌ, جَمَلٌ / جَمِيلٌ, سِكِّينٌ / سَاكِنٌ : même racine, sens éloignés."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "nahar",
+        "qasr",
+        "sikkin",
+        "tariqa",
+        "fatha",
+        "sukun"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "سِكِّينٌ",
+        "choix": [
+          "couteau",
+          "habitant",
+          "maison"
+        ],
+        "reponse": 0,
+        "explication": "سِكِّينٌ veut dire « couteau »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les relations de sens",
+      "texte": "Une même racine donne des mots proches (كَتَبَ → كَاتِبٌ), intensifs (حَامِلٌ → حَمَّالٌ), spécialisés (طَالِبٌ, de « chercher »), figurés (طَرِيقٌ → طَرِيقَةٌ) ou éloignés (جَمَلٌ / جَمِيلٌ). Vérifie toujours le sens dans le dictionnaire.",
+      "exemples": [
+        "كَاتِبٌ",
+        "طَالِبٌ",
+        "جَمِيلٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle relation entre نَهْرٌ « rivière » et نَهَارٌ « jour » ?",
+        "choix": [
+          "éloignée : le lien n'est pas évident",
+          "proche",
+          "intensive"
+        ],
+        "reponse": 0,
+        "explication": "Même racine ن ه ر, mais le lien de sens n'est pas évident."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le moule aussi peut tromper",
+      "texte": "كِتَابٌ (singulier) et جِبَالٌ (pluriel) ont le même moule فِعَال ; أَفْتَحُ « j'ouvre » ressemble à أَكْبَرُ « plus grand ». Le moule aide, mais c'est la phrase et le dictionnaire qui tranchent.",
+      "exemples": [
+        "كِتَابٌ",
+        "جِبَالٌ",
+        "أَكْبَرُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "حَدِيدٌ « fer » a le moule فَعِيل. Est-ce une qualité ?",
+        "choix": [
+          "non, c'est un nom",
+          "oui, toujours",
+          "c'est un pluriel"
+        ],
+        "reponse": 0,
+        "explication": "فَعِيل dit souvent une qualité, pas toujours : حَدِيدٌ est un nom."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَهَارٌ",
+          "choix": [
+            "jour (clarté)",
+            "rivière",
+            "nuit"
+          ],
+          "reponse": 0,
+          "explication": "نَهَارٌ veut dire « jour (clarté) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَرِيقَةٌ",
+          "choix": [
+            "manière, méthode",
+            "histoire",
+            "marteau"
+          ],
+          "reponse": 0,
+          "explication": "طَرِيقَةٌ veut dire « manière, méthode »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le palais » ?",
+          "choix_ar": [
+            "الْقَصْرُ",
+            "الْقَصِيرُ",
+            "الْقِصَّةُ"
+          ],
+          "reponse": 0,
+          "explication": "« le palais » se dit الْقَصْرُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la fatḥa » ?",
+          "choix_ar": [
+            "الْفَتْحَةُ",
+            "الْمِفْتَاحُ",
+            "الْمَفْتُوحُ"
+          ],
+          "reponse": 0,
+          "explication": "« la fatḥa » se dit الْفَتْحَةُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Lequel n'a pas la même racine que les autres ?",
+          "choix_ar": [
+            "قَلِيلٌ",
+            "قَلَمٌ",
+            "أَقْلَامٌ"
+          ],
+          "reponse": 0,
+          "explication": "قَلَمٌ et أَقْلَامٌ : ق ل م ; قَلِيلٌ : ق ل ل. Un faux ami !"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Lequel n'a pas la même racine que les autres ?",
+          "choix_ar": [
+            "ثَمَرَةٌ",
+            "تَمْرٌ",
+            "تَمْرَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "تَمْرٌ et تَمْرَةٌ (une datte) : ت م ر ; ثَمَرَةٌ : ث م ر. Les lettres ت et ث sont différentes."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Racine س ك ن « habiter ». Devine, puis vérifie : que veut dire سِكِّينٌ ?",
+          "choix": [
+            "couteau",
+            "habitant",
+            "habitation"
+          ],
+          "reponse": 0,
+          "explication": "On pourrait deviner « habitant »… mais سِكِّينٌ veut dire « couteau » : vérifie toujours."
+        },
+        {
+          "type": "qcm",
+          "consigne": "طَرِيقٌ « chemin » → طَرِيقَةٌ « méthode » : quelle relation ?",
+          "choix": [
+            "figurée",
+            "éloignée",
+            "intensive"
+          ],
+          "reponse": 0,
+          "explication": "De « chemin » à « manière de faire » : sens figuré."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la méthode » ?",
+          "choix_ar": [
+            "الطَّرِيقَةُ",
+            "الْقِصَّةُ",
+            "الْمِطْرَقَةُ"
+          ],
+          "reponse": 0,
+          "explication": "« la méthode » se dit الطَّرِيقَةُ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Trouve la racine de ce mot.",
+          "tuiles": [
+            "ن",
+            "س",
+            "ك",
+            "ي"
+          ],
+          "solution": [
+            "س",
+            "ك",
+            "ن"
+          ],
+          "explication": "On enlève le ي long ; la shadda double le ك : س ك ن, comme سَكَنَ « habiter » — mais le sens est « couteau » !",
+          "ar": "سِكِّينٌ"
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le couteau est dans la cuisine. »",
+          "ar": "… فِي الْمَطْبَخِ.",
+          "choix_ar": [
+            "السِّكِّينُ",
+            "السَّاكِنُ",
+            "الْمَسْكَنُ"
+          ],
+          "reponse": 0,
+          "explication": "Le couteau : السِّكِّينُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le palais et le couteau",
+      "texte": "Un grand voyageur raconte sa journée. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي النَّهَارِ، دَخَلَ الرَّحَّالُ الْقَصْرَ.",
+        "الْقَصْرُ كَبِيرٌ، وَلَيْسَ قَصِيرًا.",
+        "قَالَ الطَّبَّاخُ: « السِّكِّينُ فِي الْمَطْبَخِ. »",
+        "كَتَبَ الرَّحَّالُ الْفَتْحَةَ وَالسُّكُونَ عَلَى الْحُرُوفِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où est le couteau ?",
+          "choix": [
+            "dans la cuisine",
+            "dans la rivière",
+            "sur le mur"
+          ],
+          "reponse": 0,
+          "explication": "السِّكِّينُ فِي الْمَطْبَخِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a écrit le grand voyageur sur les lettres ?",
+          "choix": [
+            "la fatḥa et le sukūn",
+            "une lettre",
+            "son nom"
+          ],
+          "reponse": 0,
+          "explication": "كَتَبَ الْفَتْحَةَ وَالسُّكُونَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le palais n'est pas court. » ?",
+          "choix_ar": [
+            "الْقَصْرُ لَيْسَ قَصِيرًا.",
+            "الْقَصْرُ لَيْسَ قَصِيرٌ.",
+            "الْقَصِيرُ لَيْسَ قَصْرًا."
+          ],
+          "reponse": 0,
+          "explication": "« Le palais n'est pas court. » se dit الْقَصْرُ لَيْسَ قَصِيرًا."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Le chameau est beau. »",
+          "tuiles": [
+            "جَمِيلٌ",
+            "الْجَمَلُ",
+            "جَمَلٌ"
+          ],
+          "solution": [
+            "الْجَمَلُ",
+            "جَمِيلٌ"
+          ],
+          "explication": "Sujet défini, puis attribut indéfini."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Voici la méthode de Hilāl. »",
+          "ar": "هَٰذِهِ … هِلَالٍ.",
+          "choix_ar": [
+            "طَرِيقَةُ",
+            "مِطْرَقَةُ",
+            "طَرِيقَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Avant un complément (iḍāfa), le mot perd son tanwīn : طَرِيقَةُ هِلَالٍ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَصْرٌ",
+          "choix": [
+            "palais",
+            "court",
+            "histoire"
+          ],
+          "reponse": 0,
+          "explication": "قَصْرٌ veut dire « palais »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سُكُونٌ",
+          "choix": [
+            "sukūn (absence de voyelle)",
+            "habitant",
+            "couteau"
+          ],
+          "reponse": 0,
+          "explication": "سُكُونٌ veut dire « sukūn (absence de voyelle) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَتْحَةٌ",
+          "choix": [
+            "fatḥa (voyelle a)",
+            "clé",
+            "porte"
+          ],
+          "reponse": 0,
+          "explication": "فَتْحَةٌ veut dire « fatḥa (voyelle a) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le jour (la clarté) » ?",
+          "choix_ar": [
+            "النَّهَارُ",
+            "النَّهْرُ",
+            "الصَّيْفُ"
+          ],
+          "reponse": 0,
+          "explication": "« le jour (la clarté) » se dit النَّهَارُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La racine permet-elle de deviner le sens exact d'un mot ?",
+          "choix": [
+            "non : elle aide, puis on vérifie",
+            "oui, toujours",
+            "oui, pour les noms"
+          ],
+          "reponse": 0,
+          "explication": "La racine aide à repérer la famille ; le sens se vérifie dans le dictionnaire."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Lequel est un faux ami de قَلَمٌ ?",
+          "choix_ar": [
+            "قَلِيلٌ",
+            "أَقْلَامٌ",
+            "الْقَلَمُ"
+          ],
+          "reponse": 0,
+          "explication": "قَلِيلٌ : ق ل ل, une autre racine."
+        },
+        {
+          "type": "qcm",
+          "consigne": "جَمَلٌ et جَمِيلٌ : quelle relation ?",
+          "choix": [
+            "éloignée",
+            "proche",
+            "intensive"
+          ],
+          "reponse": 0,
+          "explication": "Même racine, lien de sens non évident."
+        },
+        {
+          "type": "qcm",
+          "consigne": "كِتَابٌ et جِبَالٌ ont le même moule. Que dit ce moule ?",
+          "choix": [
+            "rien sur singulier ou pluriel",
+            "que ce sont des pluriels",
+            "que ce sont des singuliers"
+          ],
+          "reponse": 0,
+          "explication": "فِعَال sert aux deux."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le palais n'est pas court. »",
+          "ar": "الْقَصْرُ لَيْسَ …",
+          "choix_ar": [
+            "قَصِيرًا",
+            "قَصِيرٌ",
+            "قَصْرًا"
+          ],
+          "reponse": 0,
+          "explication": "Après لَيْسَ : -an, قَصِيرًا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Samīr est de Bagdad. »",
+          "ar": "سَمِيرٌ …",
+          "choix_ar": [
+            "بَغْدَادِيٌّ",
+            "بَغْدَادِيَّةٌ",
+            "بَغْدَادِيًّا"
+          ],
+          "reponse": 0,
+          "explication": "Nisba (leçon 3.9).",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ت ح dans le moule مِفْعَال. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مِفْتَاحٌ",
+            "مَفْتُوحٌ",
+            "فَتْحَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "مِفْعَال : l'outil (leçon 3.5).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَصْغَرُ",
+          "choix": [
+            "plus petit",
+            "petit",
+            "plus grand"
+          ],
+          "reponse": 0,
+          "explication": "أَصْغَرُ veut dire « plus petit ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais que la racine aide sans tout dire : sens proches, spécialisés, figurés ou éloignés (جَمَلٌ / جَمِيلٌ). Tu vérifies dans le dictionnaire.",
+      "suite": "Le chapitre de la forge est terminé. Prochain chapitre : les ateliers des formes verbales."
+    }
+  ]
+}

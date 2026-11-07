@@ -1,0 +1,573 @@
+{
+  "id": "dechiffrer-06",
+  "etape": 1,
+  "ordre": 6,
+  "format": 2,
+  "titre": "La source cachée",
+  "objectif": "Reconnaître ط ظ ع غ, distinguer t et ṭ, prononcer ʿayn et ġayn ; lire طَيْر, عِنَب, عَيْن, غَار, ظَبْي.",
+  "statut": "ia_non_verifie",
+  "lieu": "dunes",
+  "maitre": "rashid",
+  "prerequis": [
+    "dechiffrer-05"
+  ],
+  "introduit": {
+    "lettres": [
+      "ط",
+      "ظ",
+      "ع",
+      "غ"
+    ],
+    "signes": []
+  },
+  "apercu": [
+    "عـ",
+    "ـعـ",
+    "غـ",
+    "ـطـ"
+  ],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "طَ",
+        "translit": "ṭa"
+      },
+      {
+        "ar": "عَ",
+        "translit": "ʿa"
+      },
+      {
+        "ar": "غَ",
+        "translit": "ġa"
+      },
+      {
+        "ar": "عِ",
+        "translit": "ʿi"
+      },
+      {
+        "ar": "غُ",
+        "translit": "ġu"
+      },
+      {
+        "ar": "طَا",
+        "translit": "ṭā"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "طَيْر",
+        "translit": "ṭayr",
+        "fr": "oiseaux"
+      },
+      {
+        "ar": "عِنَب",
+        "translit": "ʿinab",
+        "fr": "raisin"
+      },
+      {
+        "ar": "عَيْن",
+        "translit": "ʿayn",
+        "fr": "œil ; source"
+      },
+      {
+        "ar": "غَار",
+        "translit": "ġār",
+        "fr": "grotte"
+      },
+      {
+        "ar": "ظَبْي",
+        "translit": "ẓaby",
+        "fr": "gazelle"
+      }
+    ]
+  },
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rashid",
+          "texte": "Les chameaux ont soif. Quelque part dans ces dunes, une source se cache près d'une grotte."
+        },
+        {
+          "qui": "rashid",
+          "texte": "Le vent y souffle des sons venus du fond de la gorge. Écoute-les et lis les marques des rochers."
+        }
+      ],
+      "objectif": "Trouver la source cachée."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "صَ",
+          "choix_ar": [
+            "سَ",
+            "صَ",
+            "شِ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ṣa », le « s » épais (leçon 5)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "شَجَر",
+          "choix_audio": [
+            "دَرْس",
+            "شَجَر",
+            "بَيْض"
+          ],
+          "reponse": 1,
+          "explication": "شَجَر se lit « šaǧar » (leçon 5)."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "ضُ",
+          "choix_ar": [
+            "دُ",
+            "زُ",
+            "ضُ"
+          ],
+          "reponse": 2,
+          "explication": "C'était « ḍu », le « d » épais (leçon 5)."
+        }
+      ]
+    },
+    {
+      "type": "decouverte",
+      "support": [
+        "تَ",
+        "طَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Tu connais تَ ; voici طَ, une lettre sœur. D'après ce que les dunes t'ont appris, comment sonne-t-elle ?",
+        "choix": [
+          "Comme un « t » épais, plus sombre",
+          "Comme un « d »",
+          "Exactement comme تَ"
+        ],
+        "reponse": 0,
+        "explication": "طَ est le « t » épais : la langue est placée comme pour ت, et l'arrière de la langue se relève."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ط",
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "طَ",
+        "choix_ar": [
+          "تَ",
+          "طَ",
+          "دَ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « ṭa », le « t » épais."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ظ",
+      "question": {
+        "type": "points",
+        "consigne": "Laquelle est ظ ?",
+        "choix_ar": [
+          "ط",
+          "ظ",
+          "ض"
+        ],
+        "reponse": 1,
+        "explication": "ظ, c'est la forme de ط avec un point au-dessus."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ع",
+      "question": {
+        "type": "ecouter",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "عَ",
+        "choix_ar": [
+          "حَ",
+          "عَ",
+          "غَ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « ʿa » : un son serré au milieu de la gorge, avec la voix."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "غ",
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "غَ",
+        "choix_ar": [
+          "خَ",
+          "غَ",
+          "عَ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « ġa », raclé en haut de la gorge, avec la voix."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les lettres emphatiques",
+      "texte": "ص, ض, ط et ظ sont les quatre lettres emphatiques ; chacune a une sœur claire : س, د, ت et ذ. D'autres lettres, comme خ et غ, sont aussi un peu épaisses : tu le verras plus tard.",
+      "exemples": [
+        "تَ",
+        "طَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la sœur claire de ظ ?",
+        "choix": [
+          "ذ",
+          "ز",
+          "ط"
+        ],
+        "reponse": 0,
+        "explication": "ظ est le « th » de « this » épais ; sa sœur claire est ذ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Deux sons de la gorge",
+      "texte": "ع se dit au milieu de la gorge, comme ح mais avec la voix. غ se dit en haut de la gorge, comme خ mais avec la voix.",
+      "exemples": [
+        "عِ",
+        "غُ"
+      ],
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "عِ",
+        "choix_ar": [
+          "عِ",
+          "غِ",
+          "حِ"
+        ],
+        "reponse": 0,
+        "explication": "C'était « ʿi » : ع et la kasra."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "reconnaitre",
+          "consigne": "Comment s'appelle cette lettre ?",
+          "ar": "غ",
+          "choix": [
+            "ʿayn",
+            "ġayn",
+            "ḫāʾ"
+          ],
+          "reponse": 1,
+          "explication": "La forme de ع avec un point au-dessus : ġayn."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "طَا",
+          "choix_ar": [
+            "تَا",
+            "طَا",
+            "ثَا"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ṭā » : un « t » épais et un « a » long."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "ظَ",
+          "choix_ar": [
+            "ذَ",
+            "ظَ",
+            "زَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ẓa », le « th » de « this » épais."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "غُ",
+          "choix_ar": [
+            "عُ",
+            "غُ",
+            "خُ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ġu » : غ et la ḍamma."
+        },
+        {
+          "type": "formes",
+          "consigne": "De quelle lettre est cette forme ?",
+          "ar": "عـ",
+          "choix_ar": [
+            "ع",
+            "غ",
+            "ح"
+          ],
+          "reponse": 0,
+          "explication": "Un petit crochet ouvert, sans point : ع, au début d'un mot ; ح a une autre forme."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "عَيْن",
+          "choix_audio": [
+            "عِنَب",
+            "عَيْن",
+            "غَار"
+          ],
+          "reponse": 1,
+          "explication": "عَيْن se lit « ʿayn » : ʿa, puis ي et ن sans voyelle."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "ظَبْي",
+          "choix_audio": [
+            "طَيْر",
+            "ظَبْي",
+            "صَبْر"
+          ],
+          "reponse": 1,
+          "explication": "ظَبْي se lit « ẓaby » : ẓa, puis ب et ي sans voyelle."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "عِنَب",
+          "tuiles": [
+            "عِ",
+            "نَ",
+            "ب",
+            "غِ"
+          ],
+          "solution": [
+            "عِ",
+            "نَ",
+            "ب"
+          ],
+          "explication": "عِنَب : عِ, نَ, puis ب sans voyelle."
+        },
+        {
+          "type": "tracer",
+          "consigne": "Trace la lettre ع en suivant les points.",
+          "lettre": "ع"
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "عَيْن"
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La pierre de la source",
+      "texte": "Près de la source cachée, une pierre porte des mots. Compte les nouvelles lettres.",
+      "inscription": [
+        "طَيْر",
+        "عِنَب",
+        "عَيْن",
+        "غَار",
+        "ظَبْي"
+      ],
+      "questions": [
+        {
+          "type": "compter",
+          "consigne": "Combien de ط vois-tu dans ce mot ?",
+          "mot": 0,
+          "lettre": "ط"
+        },
+        {
+          "type": "compter",
+          "consigne": "Combien de ظ vois-tu dans ce mot ?",
+          "mot": 4,
+          "lettre": "ظ"
+        },
+        {
+          "type": "compter",
+          "consigne": "Combien de ع vois-tu dans ce mot ?",
+          "mot": 1,
+          "lettre": "ع"
+        },
+        {
+          "type": "compter",
+          "consigne": "Combien de غ vois-tu dans ce mot ?",
+          "mot": 3,
+          "lettre": "غ"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "طَ",
+          "choix_ar": [
+            "تَ",
+            "طَ",
+            "ظَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ṭa », le « t » épais."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "عَ",
+          "choix_ar": [
+            "عَ",
+            "غَ",
+            "حَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ʿa », serré, avec la voix."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "غَ",
+          "choix_ar": [
+            "خَ",
+            "عَ",
+            "غَ"
+          ],
+          "reponse": 2,
+          "explication": "C'était « ġa », raclé, avec la voix."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "ظَ",
+          "choix_ar": [
+            "ظَ",
+            "ذَ",
+            "طَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ẓa »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "طَيْر",
+          "choix_audio": [
+            "طَيْر",
+            "ظَبْي",
+            "غَار"
+          ],
+          "reponse": 0,
+          "explication": "طَيْر se lit « ṭayr »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "غَار",
+          "choix_audio": [
+            "عَيْن",
+            "دَار",
+            "غَار"
+          ],
+          "reponse": 2,
+          "explication": "غَار se lit « ġār »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "عِنَب",
+          "choix_audio": [
+            "عَيْن",
+            "عِنَب",
+            "طَيْر"
+          ],
+          "reponse": 1,
+          "explication": "عِنَب se lit « ʿinab »."
+        },
+        {
+          "type": "ecouter_lettre",
+          "consigne": "Écoute et choisis la lettre.",
+          "choix_ar": [
+            "ط",
+            "ظ",
+            "ع"
+          ],
+          "reponse": 2,
+          "explication": "C'était ع (ʿayn)."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle a une boucle, une barre et un point ?",
+          "choix_ar": [
+            "ط",
+            "ظ",
+            "ض"
+          ],
+          "reponse": 1,
+          "explication": "ظ : la forme de ط, avec un point."
+        },
+        {
+          "type": "paires",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "صَا",
+          "choix_ar": [
+            "سَا",
+            "صَا",
+            "طَا"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ṣā » (leçon 5)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "صَبْر",
+          "choix_audio": [
+            "صَبْر",
+            "بَيْض",
+            "دَرْس"
+          ],
+          "reponse": 0,
+          "explication": "صَبْر se lit « ṣabr » (leçon 5)."
+        },
+        {
+          "type": "ecouter",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "رِ",
+          "choix_ar": [
+            "زِ",
+            "رِ",
+            "دِ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ri » (leçon 4)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais lire ط ظ ع غ, le « t » épais et les deux sons de la gorge : طَيْر, عِنَب, عَيْن, غَار, ظَبْي.",
+      "suite": "Rāšid trouve la source près de la grotte, et le sixième sceau de la porte se brise."
+    }
+  ]
+}

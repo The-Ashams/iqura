@@ -1,0 +1,32 @@
+{
+  "_comment": "Région 2 « L'Oasis des Fondations » (cahier §5.6, §8.2 ; proposition du 25/10/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_2.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Seuls les lieux du chapitre A sont ouverts (niveau Élémentaire 1).",
+  "statut": "ia",
+  "region": {
+    "id": "r2",
+    "numero": 2,
+    "nom": "L'Oasis des Fondations",
+    "competence": "Comprendre une phrase",
+    "adversaire": "La Confusion",
+    "carte": "scene_carte_r2"
+  },
+  "lieux": [
+    {"id": "campement", "numero": 1, "nom": "Le Campement de la caravane", "position": [40, 46], "lecons": [1, 2, 3], "scene": "scene_campement", "sol": 82, "tranche_j1a": true, "liens": ["tente", "palmiers"], "description": "Les tentes de la caravane, à l'entrée de l'oasis. Rāšid et Bāsim y accueillent le voyageur."},
+    {"id": "tente", "numero": 2, "nom": "La Tente de Rāšid", "position": [52, 24], "lecons": [4, 5], "scene": "scene_tente", "sol": 80, "tranche_j1a": true, "liens": ["campement", "palmiers"], "description": "Sous la grande tente, Rāšid montre les objets du voyage, proches et lointains."},
+    {"id": "palmiers", "numero": 3, "nom": "Le Puits aux palmiers", "position": [80, 46], "lecons": [6, 7, 8], "scene": "scene_palmiers", "sol": 84, "tranche_j1a": true, "liens": ["campement", "tente", "veillee", "souk"], "description": "Au cœur de l'oasis, on se présente et on décrit ce qu'on voit, près de l'eau."},
+    {"id": "veillee", "numero": 4, "nom": "Le Feu de la veillée", "position": [100, 26], "lecons": [9, 10], "scene": "scene_veillee", "sol": 82, "tranche_j1a": true, "liens": ["palmiers", "sables"], "description": "Le soir, autour du feu, la caravane décrit le jour passé et se pose des questions."},
+    {"id": "souk", "numero": 5, "nom": "Le Souk de l'oasis", "position": [112, 46], "lecons": [11, 12, 13], "scene": "scene_souk", "sol": 82, "tranche_j1a": true, "liens": ["palmiers", "echoppe"], "description": "Le marché de l'oasis : Salmā y vend pain, huile et viande ; on y apprend à situer les choses."},
+    {"id": "echoppe", "numero": 6, "nom": "L'Échoppe du tisserand", "position": [130, 34], "lecons": [14, 15], "scene": "scene_echoppe", "sol": 80, "tranche_j1a": true, "liens": ["souk", "maison_salma"], "description": "Chez le tisserand, entre fils, laine et soie, on apprend à dire « mon », « ton », « son »."},
+    {"id": "maison_salma", "numero": 7, "nom": "La Maison de Salmā", "position": [146, 22], "lecons": [16, 17, 18], "scene": "scene_maison_salma", "sol": 80, "tranche_j1a": true, "liens": ["echoppe", "balance"], "description": "Chez Salmā, on compte les lits et les coussins, et l'on parle de deux choses ou de plusieurs."},
+    {"id": "balance", "numero": 8, "nom": "La Balance du changeur", "position": [140, 54], "lecons": [19, 20], "scene": "scene_balance", "sol": 82, "tranche_j1a": true, "liens": ["maison_salma", "caravanserail_oasis"], "description": "Chez le changeur, on pèse l'or et l'argent : on compte, et on apprend à dire « il n'est pas »."},
+    {"id": "caravanserail_oasis", "numero": 9, "nom": "Le Caravansérail de l'oasis", "position": [100, 70], "lecons": [21, 22, 23, 24], "scene": "scene_caravanserail_oasis", "sol": 84, "tranche_j1a": true, "liens": ["balance", "salle_scribes"], "description": "Au caravansérail, Samīr le scribe note ce que font les voyageurs : on y apprend le verbe."},
+    {"id": "salle_scribes", "numero": 10, "nom": "La Salle des scribes", "position": [70, 74], "lecons": [25, 26, 27], "scene": "scene_salle_scribes", "sol": 80, "tranche_j1a": true, "liens": ["caravanserail_oasis", "jardin_conteur"], "description": "Dans la salle des scribes, on écrit, on étudie, on apprend par cœur : le verbe au présent."},
+    {"id": "jardin_conteur", "numero": 11, "nom": "Le Jardin du conteur", "position": [40, 72], "lecons": [28, 29, 30], "scene": "scene_jardin_conteur", "sol": 84, "tranche_j1a": true, "liens": ["salle_scribes"], "description": "Au jardin du conteur, le soir, on écoute des histoires, on parle de demain et l'on donne des ordres."},
+    {"id": "sables", "numero": 12, "nom": "Les Sables du mirage", "position": [134, 72], "lecons": [], "scene": "scene_mirage", "sol": 80, "tranche_j1a": true, "liens": ["veillee"], "description": "Dans la chaleur, les mirages de la Confusion mélangent ce qui se ressemble. Révisions quotidiennes."}
+  ],
+  "personnages": [
+    {"id": "rashid_oasis", "nom": "Rāšid", "nom_ar": "رَاشِد", "role": "Le caravanier", "sprite": "rashid", "lieux": ["campement", "tente", "palmiers", "veillee"]},
+    {"id": "basim", "nom": "Bāsim", "nom_ar": "بَاسِم", "role": "Le jeune chamelier", "sprite": "basim", "lieux": ["campement", "palmiers", "veillee"]},
+    {"id": "salma", "nom": "Salmā", "nom_ar": "سَلْمَى", "role": "La marchande du souk", "sprite": "salma", "lieux": ["souk", "echoppe", "maison_salma", "balance"]},
+    {"id": "samir_oasis", "nom": "Samīr", "nom_ar": "سَمِير", "role": "Le scribe", "sprite": "samir", "lieux": ["caravanserail_oasis", "salle_scribes", "jardin_conteur"]}
+  ]
+}

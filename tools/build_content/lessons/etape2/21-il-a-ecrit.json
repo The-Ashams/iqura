@@ -1,0 +1,565 @@
+{
+  "id": "fondations-21",
+  "etape": 2,
+  "ordre": 21,
+  "format": 3,
+  "titre": "Il a écrit",
+  "objectif": "Comprendre un verbe au passé : il, elle.",
+  "statut": "ia_non_verifie",
+  "lieu": "caravanserail_oasis",
+  "maitre": "samir_oasis",
+  "prerequis": [
+    "fondations-20"
+  ],
+  "terminaisons": [
+    "passe"
+  ],
+  "apercu": [
+    "سَلْمَى",
+    "سَمِيرٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "texte": "Te voilà, voyageur ! Je suis Samīr, devenu scribe au caravansérail."
+        },
+        {
+          "qui": "samir_oasis",
+          "texte": "Ici, on raconte ce qui s'est passé : apprends le verbe au passé."
+        }
+      ],
+      "objectif": "Dire ce que quelqu'un a fait."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « La maison n'est pas grande. »",
+          "ar": "الْبَيْتُ لَيْسَ …",
+          "choix_ar": [
+            "كَبِيرًا",
+            "كَبِيرٌ",
+            "كَبِيرٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَيْسَ, l'attribut est à l'accusatif (leçon 2.20)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خَرَجَ",
+          "choix": [
+            "il est sorti",
+            "il est entré",
+            "il est allé"
+          ],
+          "reponse": 0,
+          "explication": "خَرَجَ veut dire « il est sorti » (leçon 2.1)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « trois livres » ?",
+          "choix_ar": [
+            "ثَلَاثَةُ كُتُبٍ",
+            "ثَلَاثَةُ كِتَابٍ",
+            "ثَلَاثَةُ كُتُبٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le nombre, puis le pluriel au génitif (leçon 2.19)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "ar": "أَيْنَ رَاشِدٌ؟",
+          "fr": "Où est Rāšid ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "خَرَجَ رَاشِدٌ مِنَ الْخَيْمَةِ فِي الصَّبَاحِ.",
+          "fr": "Rāšid est sorti de la tente le matin."
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "وَسَلْمَى؟",
+          "fr": "Et Salmā ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "رَجَعَتْ سَلْمَى مِنَ السُّوقِ، ثُمَّ جَلَسَتْ.",
+          "fr": "Salmā est revenue du marché, puis elle s'est assise."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quand Rāšid est-il sorti ?",
+        "choix": [
+          "le matin",
+          "le soir",
+          "hier"
+        ],
+        "reponse": 0,
+        "explication": "فِي الصَّبَاحِ : le matin."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "kataba",
+        "jalasa",
+        "rajaa"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "جَلَسَ",
+        "choix": [
+          "il s'est assis",
+          "il est revenu",
+          "il a écrit"
+        ],
+        "reponse": 0,
+        "explication": "جَلَسَ veut dire « il s'est assis »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "qafila",
+        "sabah",
+        "masa",
+        "ams",
+        "thumma"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مَسَاءٌ",
+        "choix": [
+          "soir",
+          "matin",
+          "hier"
+        ],
+        "reponse": 0,
+        "explication": "مَسَاءٌ veut dire « soir »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le passé",
+      "texte": "Le passé dit une action terminée ; pour « il », le verbe a le plus souvent trois consonnes avec a-a-a : كَتَبَ. Pour « elle », on ajoute تْ : كَتَبَتْ.",
+      "exemples": [
+        "كَتَبَ",
+        "كَتَبَتْ",
+        "رَجَعَ رَاشِدٌ.",
+        "جَلَسَتْ سَلْمَى."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « رَجَعَتْ » ?",
+        "choix": [
+          "elle est revenue",
+          "il est revenu",
+          "il est sorti"
+        ],
+        "reponse": 0,
+        "explication": "تْ à la fin : « elle »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le verbe d'abord",
+      "texte": "Souvent, la phrase commence par le verbe, puis vient celui qui agit : خَرَجَ رَاشِدٌ « Rāšid est sorti ». Si on sait déjà qui agit, le verbe suffit : جَلَسَ « il s'est assis ».",
+      "exemples": [
+        "خَرَجَ رَاشِدٌ.",
+        "جَلَسَ."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Bāsim est rentré du marché. »",
+        "ar": "… بَاسِمٌ مِنَ السُّوقِ.",
+        "choix_ar": [
+          "رَجَعَ",
+          "رَجَعَتْ",
+          "جَلَسَ"
+        ],
+        "reponse": 0,
+        "explication": "Bāsim est un homme : رَجَعَ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَتَبَ",
+          "choix": [
+            "il a écrit",
+            "il a lu",
+            "il est entré"
+          ],
+          "reponse": 0,
+          "explication": "كَتَبَ veut dire « il a écrit »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثُمَّ",
+          "choix": [
+            "puis, ensuite",
+            "hier",
+            "où ?"
+          ],
+          "reponse": 0,
+          "explication": "ثُمَّ veut dire « puis, ensuite »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « elle s'est assise » ?",
+          "choix_ar": [
+            "جَلَسَتْ",
+            "جَلَسَ",
+            "رَجَعَتْ"
+          ],
+          "reponse": 0,
+          "explication": "تْ pour « elle » : جَلَسَتْ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le matin » ?",
+          "choix_ar": [
+            "فِي الصَّبَاحِ",
+            "فِي الْمَسَاءِ",
+            "أَمْسِ"
+          ],
+          "reponse": 0,
+          "explication": "« le matin » se dit فِي الصَّبَاحِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Salmā est sortie de la maison. »",
+          "ar": "… سَلْمَى مِنَ الْبَيْتِ.",
+          "choix_ar": [
+            "خَرَجَتْ",
+            "خَرَجَ",
+            "دَخَلَتْ"
+          ],
+          "reponse": 0,
+          "explication": "Salmā est une femme : خَرَجَتْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Rāšid est entré, puis il s'est assis. »",
+          "ar": "دَخَلَ رَاشِدٌ، … جَلَسَ.",
+          "choix_ar": [
+            "ثُمَّ",
+            "أَمْسِ",
+            "هَلْ"
+          ],
+          "reponse": 0,
+          "explication": "ثُمَّ « puis »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « كَتَبَتْ », qui a écrit ?",
+          "choix": [
+            "elle",
+            "il",
+            "je"
+          ],
+          "reponse": 0,
+          "explication": "تْ à la fin : « elle »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "رَجَعَ",
+          "choix_ar": [
+            "رَجَعَ",
+            "خَرَجَ",
+            "جَلَسَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était رَجَعَ « il est revenu »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, puis « hier » : « Rāšid est revenu hier. »",
+          "tuiles": [
+            "أَمْسِ",
+            "رَجَعَ",
+            "رَاشِدٌ"
+          ],
+          "solution": [
+            "رَجَعَ",
+            "رَاشِدٌ",
+            "أَمْسِ"
+          ],
+          "explication": "Le verbe, puis celui qui agit, puis « hier » (l'arabe permet aussi d'autres ordres)."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "خَرَجَ رَاشِدٌ مِنَ الْخَيْمَةِ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le registre de Samīr",
+      "texte": "Samīr note dans son registre ce qui s'est passé. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "خَرَجَ رَاشِدٌ مِنَ الْخَيْمَةِ فِي الصَّبَاحِ.",
+        "رَجَعَ بَاسِمٌ مِنَ السُّوقِ أَمْسِ، ثُمَّ جَلَسَ.",
+        "جَلَسَتْ سَلْمَى فِي الْغُرْفَةِ.",
+        "وَفِي الْمَسَاءِ كَتَبَ سَمِيرٌ فِي الْغُرْفَةِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quand Bāsim est-il revenu du marché ?",
+          "choix": [
+            "hier",
+            "le matin",
+            "ce soir"
+          ],
+          "reponse": 0,
+          "explication": "رَجَعَ بَاسِمٌ مِنَ السُّوقِ أَمْسِ : hier."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a fait Samīr le soir ?",
+          "choix": [
+            "il a écrit",
+            "il est sorti",
+            "il est revenu"
+          ],
+          "reponse": 0,
+          "explication": "وَفِي الْمَسَاءِ كَتَبَ سَمِيرٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Samīr te demande où est Bāsim. Il est sorti.",
+          "replique": {
+            "qui": "samir_oasis",
+            "ar": "أَيْنَ بَاسِمٌ؟"
+          },
+          "choix_ar": [
+            "خَرَجَ بَاسِمٌ.",
+            "خَرَجَتْ بَاسِمٌ.",
+            "دَخَلَ بَاسِمٌ."
+          ],
+          "reponse": 0,
+          "explication": "Bāsim est un homme, et il est sorti : خَرَجَ بَاسِمٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Salmā est revenue le soir » ?",
+          "choix_ar": [
+            "رَجَعَتْ سَلْمَى فِي الْمَسَاءِ.",
+            "رَجَعَ سَلْمَى فِي الْمَسَاءِ.",
+            "رَجَعَتْ سَلْمَى فِي الصَّبَاحِ."
+          ],
+          "reponse": 0,
+          "explication": "Salmā est une femme : رَجَعَتْ ; « le soir » : فِي الْمَسَاءِ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, ثُمَّ, verbe : « Samīr est entré, puis il a écrit. »",
+          "tuiles": [
+            "ثُمَّ",
+            "دَخَلَ",
+            "كَتَبَ",
+            "سَمِيرٌ"
+          ],
+          "solution": [
+            "دَخَلَ",
+            "سَمِيرٌ",
+            "ثُمَّ",
+            "كَتَبَ"
+          ],
+          "explication": "Le verbe, puis celui qui agit ; ثُمَّ, puis le second verbe (l'arabe permet aussi d'autres ordres)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane est là-bas. »",
+          "ar": "… هُنَاكَ.",
+          "choix_ar": [
+            "الْقَافِلَةُ",
+            "الْقَافِلَةِ",
+            "قَافِلَةٍ"
+          ],
+          "reponse": 0,
+          "explication": "Le sujet est au nominatif."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَجَعَ",
+          "choix": [
+            "il est revenu",
+            "il s'est assis",
+            "il a écrit"
+          ],
+          "reponse": 0,
+          "explication": "رَجَعَ veut dire « il est revenu »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَافِلَةٌ",
+          "choix": [
+            "caravane",
+            "tente",
+            "marché"
+          ],
+          "reponse": 0,
+          "explication": "قَافِلَةٌ veut dire « caravane »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَمْسِ",
+          "choix": [
+            "hier",
+            "demain",
+            "matin"
+          ],
+          "reponse": 0,
+          "explication": "أَمْسِ veut dire « hier »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il a écrit » ?",
+          "choix_ar": [
+            "كَتَبَ",
+            "كَتَبَتْ",
+            "كِتَابٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il a écrit » se dit كَتَبَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le soir » ?",
+          "choix_ar": [
+            "فِي الْمَسَاءِ",
+            "فِي الصَّبَاحِ",
+            "ثُمَّ"
+          ],
+          "reponse": 0,
+          "explication": "« le soir » se dit فِي الْمَسَاءِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Salmā s'est assise. »",
+          "ar": "… سَلْمَى.",
+          "choix_ar": [
+            "جَلَسَتْ",
+            "جَلَسَ",
+            "رَجَعَ"
+          ],
+          "reponse": 0,
+          "explication": "Pour une femme : جَلَسَتْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Rāšid est sorti. »",
+          "ar": "… رَاشِدٌ.",
+          "choix_ar": [
+            "خَرَجَ",
+            "خَرَجَتْ",
+            "دَخَلَتْ"
+          ],
+          "reponse": 0,
+          "explication": "Pour un homme : خَرَجَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le تْ à la fin de « جَلَسَتْ » veut dire…",
+          "choix": [
+            "elle",
+            "il",
+            "nous"
+          ],
+          "reponse": 0,
+          "explication": "تْ : « elle »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "جَلَسَ",
+          "choix_ar": [
+            "جَلَسَ",
+            "رَجَعَ",
+            "كَتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était جَلَسَ « il s'est assis »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La balance n'est pas vieille. »",
+          "ar": "الْمِيزَانُ لَيْسَ …",
+          "choix_ar": [
+            "قَدِيمًا",
+            "قَدِيمٌ",
+            "قَدِيمٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَيْسَ : accusatif.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خَمْسَةٌ",
+          "choix": [
+            "cinq",
+            "six",
+            "trois"
+          ],
+          "reponse": 0,
+          "explication": "خَمْسَةٌ veut dire « cinq ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des voisins » ?",
+          "choix_ar": [
+            "جِيرَانٌ",
+            "جَارَانِ",
+            "جَارٌ"
+          ],
+          "reponse": 0,
+          "explication": "« des voisins » se dit جِيرَانٌ.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu comprends un verbe au passé : كَتَبَ « il a écrit », كَتَبَتْ « elle a écrit », souvent placé avant celui qui agit.",
+      "suite": "Prochaine leçon : « j'ai écrit, nous avons écrit »."
+    }
+  ]
+}

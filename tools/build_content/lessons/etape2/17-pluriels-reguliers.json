@@ -1,0 +1,561 @@
+{
+  "id": "fondations-17",
+  "etape": 2,
+  "ordre": 17,
+  "format": 3,
+  "titre": "Les pluriels réguliers",
+  "objectif": "Former le pluriel des personnes : -ūna / -īna, et -āt au féminin.",
+  "statut": "ia_non_verifie",
+  "lieu": "maison_salma",
+  "maitre": "salma",
+  "prerequis": [
+    "fondations-16"
+  ],
+  "terminaisons": [
+    "pluriel"
+  ],
+  "apercu": [
+    "سَلْمَى"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "salma",
+          "texte": "Demain, c'est jour de fête : boulangers, tailleurs et forgerons viennent chez moi."
+        },
+        {
+          "qui": "salma",
+          "texte": "Pour parler de tous ces gens, il te faut le pluriel."
+        }
+      ],
+      "objectif": "Parler de plusieurs personnes."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « deux lits » ?",
+          "choix_ar": [
+            "سَرِيرَانِ",
+            "سَرِيرٌ",
+            "سَرِيرِي"
+          ],
+          "reponse": 0,
+          "explication": "-āni : deux (leçon 2.16)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَحْنُ",
+          "choix": [
+            "nous",
+            "vous",
+            "eux"
+          ],
+          "reponse": 0,
+          "explication": "نَحْنُ veut dire « nous » (leçon 2.8)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « dans les deux paniers ».",
+          "ar": "فِي …",
+          "choix_ar": [
+            "السَّلَّتَيْنِ",
+            "السَّلَّتَانِ",
+            "السَّلَّةُ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : -ayni (leçon 2.16)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَنْ هَٰؤُلَاءِ؟",
+          "fr": "Qui sont ces gens ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "هَٰؤُلَاءِ خَبَّازُونَ مِنَ الْقَرْيَةِ.",
+          "fr": "Ce sont des boulangers du village."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَأَيْنَ الْحَدَّادُونَ؟",
+          "fr": "Et où sont les forgerons ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "الْحَدَّادُونَ فِي السُّوقِ، وَهُمْ مَشْغُولُونَ.",
+          "fr": "Les forgerons sont au marché, ils sont occupés."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment sont les forgerons ?",
+        "choix": [
+          "occupés",
+          "joyeux",
+          "petits"
+        ],
+        "reponse": 0,
+        "explication": "وَهُمْ مَشْغُولُونَ : ils sont occupés."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "khabbaz",
+        "khayyat",
+        "haddad",
+        "najjar"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "خَيَّاطٌ",
+        "choix": [
+          "tailleur",
+          "boulanger",
+          "forgeron"
+        ],
+        "reponse": 0,
+        "explication": "خَيَّاطٌ veut dire « tailleur »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "farih",
+        "mashghul",
+        "haula"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مَشْغُولٌ",
+        "choix": [
+          "occupé",
+          "joyeux",
+          "lourd"
+        ],
+        "reponse": 0,
+        "explication": "مَشْغُولٌ veut dire « occupé »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "-ūna, -īna",
+      "texte": "Le pluriel masculin de beaucoup de noms de personnes se fait avec -ūna (sujet, attribut) et -īna après une préposition : خَبَّازُونَ، مَعَ الْخَبَّازِينَ. Attention : le duel dit -āni, le pluriel -ūna.",
+      "exemples": [
+        "خَبَّازُونَ",
+        "مَعَ الْخَبَّازِينَ",
+        "مُسَافِرُونَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « حَدَّادُونَ » ?",
+        "choix": [
+          "des forgerons",
+          "deux forgerons",
+          "le forgeron"
+        ],
+        "reponse": 0,
+        "explication": "-ūna : plusieurs."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "-āt et l'accord",
+      "texte": "Au féminin, ة devient -āt (-ātun, et -ātin après une préposition) : مُعَلِّمَاتٌ. Pour des personnes, l'adjectif s'accorde au pluriel : الْبَنَاتُ فَرِحَاتٌ، الْخَيَّاطُونَ مَشْغُولُونَ.",
+      "exemples": [
+        "مُعَلِّمَاتٌ",
+        "الْبَنَاتُ فَرِحَاتٌ.",
+        "الْخَيَّاطُونَ مَشْغُولُونَ."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Les enseignantes sont occupées. »",
+        "ar": "الْمُعَلِّمَاتُ …",
+        "choix_ar": [
+          "مَشْغُولَاتٌ",
+          "مَشْغُولَةٌ",
+          "مَشْغُولُونَ"
+        ],
+        "reponse": 0,
+        "explication": "Féminin pluriel : -āt."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَجَّارٌ",
+          "choix": [
+            "menuisier",
+            "tailleur",
+            "vendeur"
+          ],
+          "reponse": 0,
+          "explication": "نَجَّارٌ veut dire « menuisier »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَرِحٌ",
+          "choix": [
+            "joyeux",
+            "occupé",
+            "lourd"
+          ],
+          "reponse": 0,
+          "explication": "فَرِحٌ veut dire « joyeux »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des tailleurs » ?",
+          "choix_ar": [
+            "خَيَّاطُونَ",
+            "خَيَّاطَانِ",
+            "خَيَّاطٌ"
+          ],
+          "reponse": 0,
+          "explication": "-ūna : plusieurs."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « avec les boulangers » ?",
+          "choix_ar": [
+            "مَعَ الْخَبَّازِينَ",
+            "مَعَ الْخَبَّازُونَ",
+            "مَعَ الْخَبَّازِ"
+          ],
+          "reponse": 0,
+          "explication": "Après مَعَ : -īna."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nous sommes des voyageurs. »",
+          "ar": "نَحْنُ …",
+          "choix_ar": [
+            "مُسَافِرُونَ",
+            "مُسَافِرٌ",
+            "مُسَافِرَانِ"
+          ],
+          "reponse": 0,
+          "explication": "نَحْنُ : pluriel, مُسَافِرُونَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les filles sont joyeuses. »",
+          "ar": "الْبَنَاتُ …",
+          "choix_ar": [
+            "فَرِحَاتٌ",
+            "فَرِحَةٌ",
+            "فَرِحُونَ"
+          ],
+          "reponse": 0,
+          "explication": "Filles : féminin pluriel, -āt."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le marchand (تَاجِرٌ) a pour pluriel…",
+          "choix": [
+            "تُجَّارٌ",
+            "تَاجِرُونَ",
+            "تَاجِرَاتٌ"
+          ],
+          "reponse": 0,
+          "explication": "En arabe classique, تَاجِرٌ fait تُجَّارٌ (sur sa fiche) : tout nom de personne ne prend pas -ūna."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "نَجَّارُونَ",
+          "choix_ar": [
+            "نَجَّارُونَ",
+            "نَجَّارٌ",
+            "خَبَّازُونَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était نَجَّارُونَ « des menuisiers »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Ceux-ci sont des forgerons. »",
+          "tuiles": [
+            "حَدَّادُونَ",
+            "هَٰؤُلَاءِ",
+            "هَٰذَا"
+          ],
+          "solution": [
+            "هَٰؤُلَاءِ",
+            "حَدَّادُونَ"
+          ],
+          "explication": "هَٰؤُلَاءِ pour des personnes au pluriel."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "الْخَبَّازُونَ فِي السُّوقِ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Jour de fête",
+      "texte": "Les invités arrivent chez Salmā. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "الْخَبَّازُونَ وَالْخَيَّاطُونَ فِي بَيْتِ سَلْمَى.",
+        "الْبَنَاتُ فَرِحَاتٌ.",
+        "وَالْمُعَلِّمَاتُ مَعَ الْبَنَاتِ فِي الْغُرْفَةِ.",
+        "الْحَدَّادُونَ فِي السُّوقِ، وَهُمْ مَشْغُولُونَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Avec qui sont les enseignantes ?",
+          "choix": [
+            "avec les filles",
+            "avec les forgerons",
+            "avec les tailleurs"
+          ],
+          "reponse": 0,
+          "explication": "الْمُعَلِّمَاتُ مَعَ الْبَنَاتِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi les forgerons ne sont-ils pas là ?",
+          "choix": [
+            "ils sont occupés au marché",
+            "ils sont joyeux",
+            "ils sont dans la chambre"
+          ],
+          "reponse": 0,
+          "explication": "الْحَدَّادُونَ فِي السُّوقِ، وَهُمْ مَشْغُولُونَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim demande qui sont ces gens. Ce sont des tailleurs.",
+          "replique": {
+            "qui": "basim",
+            "ar": "مَنْ هَٰؤُلَاءِ؟"
+          },
+          "choix_ar": [
+            "هَٰؤُلَاءِ خَيَّاطُونَ.",
+            "هَٰؤُلَاءِ خَيَّاطِينَ.",
+            "هَٰذَا خَيَّاطٌ."
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif : -ūna."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « les menuisiers sont occupés » ?",
+          "choix_ar": [
+            "النَّجَّارُونَ مَشْغُولُونَ.",
+            "النَّجَّارُونَ مَشْغُولٌ.",
+            "النَّجَّارِينَ مَشْغُولُونَ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet en -ūna, adjectif accordé au pluriel."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Le marchand est avec les forgerons. »",
+          "tuiles": [
+            "مَعَ",
+            "التَّاجِرُ",
+            "الْحَدَّادِينَ",
+            "الْحَدَّادُونَ"
+          ],
+          "solution": [
+            "التَّاجِرُ",
+            "مَعَ",
+            "الْحَدَّادِينَ"
+          ],
+          "explication": "Après مَعَ : -īna."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nous sommes joyeux. »",
+          "ar": "نَحْنُ …",
+          "choix_ar": [
+            "فَرِحُونَ",
+            "فَرِحٌ",
+            "فَرِحِينَ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif pluriel : فَرِحُونَ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خَبَّازٌ",
+          "choix": [
+            "boulanger",
+            "forgeron",
+            "tailleur"
+          ],
+          "reponse": 0,
+          "explication": "خَبَّازٌ veut dire « boulanger »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَدَّادٌ",
+          "choix": [
+            "forgeron",
+            "menuisier",
+            "vendeur"
+          ],
+          "reponse": 0,
+          "explication": "حَدَّادٌ veut dire « forgeron »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هَٰؤُلَاءِ",
+          "choix": [
+            "ceux-ci (personnes)",
+            "ceci",
+            "cela"
+          ],
+          "reponse": 0,
+          "explication": "هَٰؤُلَاءِ veut dire « ceux-ci (personnes) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des menuisiers » ?",
+          "choix_ar": [
+            "نَجَّارُونَ",
+            "نَجَّارَانِ",
+            "نَجَّارٌ"
+          ],
+          "reponse": 0,
+          "explication": "« des menuisiers » se dit نَجَّارُونَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des enseignantes » ?",
+          "choix_ar": [
+            "مُعَلِّمَاتٌ",
+            "مُعَلِّمَةٌ",
+            "مُعَلِّمُونَ"
+          ],
+          "reponse": 0,
+          "explication": "« des enseignantes » se dit مُعَلِّمَاتٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « avec les tailleurs ».",
+          "ar": "مَعَ …",
+          "choix_ar": [
+            "الْخَيَّاطِينَ",
+            "الْخَيَّاطُونَ",
+            "الْخَيَّاطِ"
+          ],
+          "reponse": 0,
+          "explication": "Après une préposition : -īna."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les boulangers sont occupés. »",
+          "ar": "الْخَبَّازُونَ …",
+          "choix_ar": [
+            "مَشْغُولُونَ",
+            "مَشْغُولٌ",
+            "مَشْغُولَاتٌ"
+          ],
+          "reponse": 0,
+          "explication": "Adjectif au masculin pluriel."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le pluriel régulier d'un sujet masculin se termine par…",
+          "choix": [
+            "-ūna",
+            "-āni",
+            "-īna"
+          ],
+          "reponse": 0,
+          "explication": "Sujet : -ūna ; après une préposition : -īna."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "فَرِحُونَ",
+          "choix_ar": [
+            "فَرِحُونَ",
+            "فَرِحٌ",
+            "مَشْغُولُونَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était فَرِحُونَ « joyeux » (pluriel)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « deux coussins » ?",
+          "choix_ar": [
+            "وِسَادَتَانِ",
+            "وِسَادَةٌ",
+            "وَسَائِدُ"
+          ],
+          "reponse": 0,
+          "explication": "« deux coussins » se dit وِسَادَتَانِ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَقْفٌ",
+          "choix": [
+            "plafond, toit",
+            "mur",
+            "lit"
+          ],
+          "reponse": 0,
+          "explication": "سَقْفٌ veut dire « plafond, toit ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عِنْدَ",
+          "choix": [
+            "chez, auprès de",
+            "avec",
+            "sous"
+          ],
+          "reponse": 0,
+          "explication": "عِنْدَ veut dire « chez, auprès de ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu formes le pluriel des personnes : -ūna / -īna (خَبَّازُونَ), -āt (مُعَلِّمَاتٌ), et l'adjectif suit.",
+      "suite": "Prochaine leçon : les pluriels qui changent la forme du mot."
+    }
+  ]
+}

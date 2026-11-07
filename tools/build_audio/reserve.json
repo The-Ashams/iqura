@@ -1,0 +1,122 @@
+{
+ "_comment": "Enregistrements validés mais plus utilisés par une leçon : gardés hors de l'application (dossier tools/build_audio/reserve/) pour être réutilisés.",
+ "clips": {
+  "ar-00ad57f4c686c0ec": {
+   "genre": "syllabe",
+   "texte": "تِي",
+   "fichier": "tools/build_audio/reserve/ar-00ad57f4c686c0ec.mp3",
+   "sha256": "a7ca13b142ef7ac5fa6f97645369f4384b91680df84d9e2e351e48472798d8b6",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  },
+  "ar-150434feb214c3e2": {
+   "genre": "syllabe",
+   "texte": "حَا",
+   "fichier": "tools/build_audio/reserve/ar-150434feb214c3e2.mp3",
+   "sha256": "fbe2e5bcc3261cfa541f17fbdc5761b73f3ed18603c88d551386eb75c6ff515d",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  },
+  "ar-5a6fe995a2b0e89d": {
+   "genre": "mot",
+   "texte": "بِنَا",
+   "fichier": "tools/build_audio/reserve/ar-5a6fe995a2b0e89d.mp3",
+   "sha256": "cf0e98efa2a7036b9fb111be41716374ea679cf6d624fe2c4d2e3058b4b453c2",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  },
+  "ar-794864096e4fe0e2": {
+   "genre": "syllabe",
+   "texte": "جَا",
+   "fichier": "tools/build_audio/reserve/ar-794864096e4fe0e2.mp3",
+   "sha256": "f4b066fdbdc373c6824399f40f713b87c9f1963718b09cefd2d554c15fbe50bd",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  },
+  "ar-9165baec42cbe85a": {
+   "genre": "syllabe",
+   "texte": "نَا",
+   "fichier": "tools/build_audio/reserve/ar-9165baec42cbe85a.mp3",
+   "sha256": "6c33585cad1f42e0f05b5d2c71ac65053f26fc5407ffc7dbe9f0989353bc61af",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  },
+  "ar-9cbb7b7c35b04d98": {
+   "genre": "mot",
+   "texte": "حَجَبَ",
+   "fichier": "tools/build_audio/reserve/ar-9cbb7b7c35b04d98.mp3",
+   "sha256": "f10d5c3c1833dbb5ea68ad2ecba729fa911d1121cd0732dd90e69c64b098e367",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  },
+  "ar-c0b615b07003987c": {
+   "genre": "mot",
+   "texte": "بَحَثَ",
+   "fichier": "tools/build_audio/reserve/ar-c0b615b07003987c.mp3",
+   "sha256": "26062d1a09910345aed4f9fc352acd0f688bda2c1608010dde02b25a0ddc9fbe",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  },
+  "ar-c781688bdfdc94d0": {
+   "genre": "syllabe",
+   "texte": "حِ",
+   "fichier": "tools/build_audio/reserve/ar-c781688bdfdc94d0.mp3",
+   "sha256": "4d48e696bec8c766cb3f7b373c47a240b0118853a836562193bafecbc9812eb4",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  },
+  "ar-e75adb2bca05d9a9": {
+   "genre": "mot",
+   "texte": "نَابَ",
+   "fichier": "tools/build_audio/reserve/ar-e75adb2bca05d9a9.mp3",
+   "sha256": "9f1bda03647cba96ccce7af1b4dd116b936475d39102e40a3d3e899af12263d3",
+   "graine": 1,
+   "a_ecouter": false,
+   "genere_le": "2026-10-22"
+  },
+  "ar-e7757adcd3765b0f": {
+   "genre": "syllabe",
+   "texte": "خُ",
+   "fichier": "tools/build_audio/reserve/ar-e7757adcd3765b0f.mp3",
+   "sha256": "c6fd17e7fe61ec58a6096dfb12304e0c1c71f96a175c7cd91f92fceb11b67165",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  },
+  "ar-eb6021524d273436": {
+   "genre": "mot",
+   "texte": "نَجَا",
+   "fichier": "tools/build_audio/reserve/ar-eb6021524d273436.mp3",
+   "sha256": "d18b102a779cb8d0fd88f167ccdffb19e0ccffb40b75f84780f20421b25f7b94",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  },
+  "ar-ef1650b95b705972": {
+   "genre": "mot",
+   "texte": "نَجَحَ",
+   "fichier": "tools/build_audio/reserve/ar-ef1650b95b705972.mp3",
+   "sha256": "bb6710fceb44d19e40f3b79c7554e3f6ecf4f6e5d370a2974a3e88ee95791b41",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  },
+  "ar-f0ade15fef377c47": {
+   "genre": "mot",
+   "texte": "بُنِيَ",
+   "fichier": "tools/build_audio/reserve/ar-f0ade15fef377c47.mp3",
+   "sha256": "3ade17b4218c67db6337f441bddb45de8e9e96b68d2e33aebd0e3000eb4782c1",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-10-21"
+  }
+ }
+}

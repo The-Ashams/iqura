@@ -1,0 +1,561 @@
+{
+  "id": "fondations-12",
+  "etape": 2,
+  "ordre": 12,
+  "format": 3,
+  "titre": "Les fins de mots",
+  "objectif": "Comprendre pourquoi la dernière voyelle d'un nom change : les trois cas.",
+  "statut": "ia_non_verifie",
+  "lieu": "souk",
+  "maitre": "salma",
+  "prerequis": [
+    "fondations-11"
+  ],
+  "apercu": [
+    "بَابًا",
+    "فِضَّةً"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "salma",
+          "texte": "Regarde ces pièces : un dinar d'or, un dirham d'argent."
+        },
+        {
+          "qui": "salma",
+          "texte": "Un même mot change de fin selon sa place. Écoute bien la dernière voyelle !"
+        }
+      ],
+      "objectif": "Reconnaître les trois fins d'un nom."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le pain est dans le panier. »",
+          "ar": "الْخُبْزُ فِي …",
+          "choix_ar": [
+            "السَّلَّةِ",
+            "السَّلَّةُ",
+            "سَلَّةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي, le nom finit par i (leçon 2.11)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَلَى",
+          "choix": [
+            "sur",
+            "dans",
+            "de"
+          ],
+          "reponse": 0,
+          "explication": "عَلَى veut dire « sur » (leçon 2.11)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « du village » ?",
+          "choix_ar": [
+            "مِنَ الْقَرْيَةِ",
+            "فِي الْقَرْيَةِ",
+            "عَلَى الْقَرْيَةِ"
+          ],
+          "reponse": 0,
+          "explication": "مِنْ devient مِنَ devant l'article (leçon 2.11)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَا هَٰذَا؟",
+          "fr": "Qu'est-ce que c'est ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "هَٰذَا دِينَارٌ، وَالدِّينَارُ مِنَ الذَّهَبِ.",
+          "fr": "C'est un dinar, et le dinar est en or."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَالدِّرْهَمُ؟",
+          "fr": "Et le dirham ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "الدِّرْهَمُ مِنَ الْفِضَّةِ.",
+          "fr": "Le dirham est en argent."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "En quoi est le dinar ?",
+        "choix": [
+          "en or",
+          "en argent",
+          "en fer"
+        ],
+        "reponse": 0,
+        "explication": "الدِّينَارُ مِنَ الذَّهَبِ : en or."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "thaman",
+        "dinar",
+        "dirham",
+        "dhahab",
+        "fidda"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "فِضَّةٌ",
+        "choix": [
+          "argent (le métal)",
+          "or",
+          "fer"
+        ],
+        "reponse": 0,
+        "explication": "فِضَّةٌ veut dire « argent (le métal) »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "hadid",
+        "kathir",
+        "qalil"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "قَلِيلٌ",
+        "choix": [
+          "peu nombreux, rare",
+          "nombreux, abondant",
+          "prix"
+        ],
+        "reponse": 0,
+        "explication": "قَلِيلٌ veut dire « peu nombreux, rare »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Trois fins, trois rôles",
+      "texte": "Un nom finit par -u s'il est sujet ou attribut (nominatif), par -i après une préposition (génitif), par -a dans d'autres rôles vus avec les verbes (accusatif). Ce sont les cas (مَرْفُوعٌ، مَجْرُورٌ، مَنْصُوبٌ).",
+      "exemples": [
+        "الدِّينَارُ مِنَ الذَّهَبِ.",
+        "بَابٌ",
+        "بَابٍ",
+        "بَابًا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans « الدِّينَارُ مِنَ الذَّهَبِ », pourquoi الذَّهَبِ finit-il par i ?",
+        "choix": [
+          "il vient après une préposition",
+          "il est sujet",
+          "il est masculin"
+        ],
+        "reponse": 0,
+        "explication": "مِنْ est une préposition : le nom qui suit est au génitif, en i."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Avec le tanwīn",
+      "texte": "Sans article, la plupart des noms ont un signe doublé, qui ajoute un n : -un, -in, -an. Le -an s'écrit avec un alif (بَابًا), sauf après ة (فِضَّةً) ; quelques noms, comme le pluriel دَرَاهِمُ, n'en prennent jamais.",
+      "exemples": [
+        "دِرْهَمٌ",
+        "فِي بَيْتٍ",
+        "بَابًا",
+        "فِضَّةً"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle fin entends-tu dans فِي بَيْتٍ ?",
+        "choix": [
+          "-in",
+          "-un",
+          "-an"
+        ],
+        "reponse": 0,
+        "explication": "Après فِي et sans article : بَيْتٍ, -in."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ذَهَبٌ",
+          "choix": [
+            "or (le métal)",
+            "il est allé",
+            "argent"
+          ],
+          "reponse": 0,
+          "explication": "ذَهَبٌ, avec le tanwīn, est un nom : « or ». ذَهَبَ, avec une fatḥa finale, veut dire « il est allé »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَثِيرٌ",
+          "choix": [
+            "nombreux, abondant",
+            "rare",
+            "lourd"
+          ],
+          "reponse": 0,
+          "explication": "كَثِيرٌ veut dire « nombreux, abondant »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le fer » ?",
+          "choix_ar": [
+            "الْحَدِيدُ",
+            "الذَّهَبُ",
+            "الْفِضَّةُ"
+          ],
+          "reponse": 0,
+          "explication": "« le fer » se dit الْحَدِيدُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « الذَّهَبُ قَلِيلٌ », le mot الذَّهَبُ est…",
+          "choix": [
+            "au nominatif (-u)",
+            "au génitif (-i)",
+            "à l'accusatif (-a)"
+          ],
+          "reponse": 0,
+          "explication": "Il est sujet : nominatif, -u."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « الدِّرْهَمُ مِنَ الْفِضَّةِ », le mot الْفِضَّةِ est…",
+          "choix": [
+            "au génitif (-i)",
+            "au nominatif (-u)",
+            "à l'accusatif (-a)"
+          ],
+          "reponse": 0,
+          "explication": "Après مِنْ : génitif, -i."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le fer est abondant. »",
+          "ar": "… كَثِيرٌ.",
+          "choix_ar": [
+            "الْحَدِيدُ",
+            "الْحَدِيدِ",
+            "حَدِيدٍ"
+          ],
+          "reponse": 0,
+          "explication": "Il est sujet : nominatif, الْحَدِيدُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le dinar est en or. »",
+          "ar": "الدِّينَارُ مِنَ …",
+          "choix_ar": [
+            "الذَّهَبِ",
+            "الذَّهَبُ",
+            "ذَهَبٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après مِنْ : génitif, الذَّهَبِ."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "فِضَّةٌ",
+          "choix_ar": [
+            "فِضَّةٌ",
+            "حَدِيدٌ",
+            "ذَهَبٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était فِضَّةٌ « argent »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « L'or est rare. »",
+          "tuiles": [
+            "قَلِيلٌ",
+            "الذَّهَبُ",
+            "الذَّهَبِ"
+          ],
+          "solution": [
+            "الذَّهَبُ",
+            "قَلِيلٌ"
+          ],
+          "explication": "Le sujet au nominatif, puis l'attribut : الذَّهَبُ قَلِيلٌ."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "الدِّرْهَمُ مِنَ الْفِضَّةِ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "L'étal des pièces",
+      "texte": "Salmā montre ses pièces au voyageur. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "هَٰذَا دِينَارٌ، وَهَٰذَا دِرْهَمٌ.",
+        "الدِّينَارُ مِنَ الذَّهَبِ، وَالدِّرْهَمُ مِنَ الْفِضَّةِ.",
+        "الذَّهَبُ فِي السُّوقِ قَلِيلٌ.",
+        "الْخُبْزُ كَثِيرٌ، وَاللَّحْمُ قَلِيلٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Le dirham est en…",
+          "choix": [
+            "argent",
+            "or",
+            "fer"
+          ],
+          "reponse": 0,
+          "explication": "الدِّرْهَمُ مِنَ الْفِضَّةِ : en argent."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Au souk, l'or est…",
+          "choix": [
+            "rare",
+            "abondant",
+            "neuf"
+          ],
+          "reponse": 0,
+          "explication": "الذَّهَبُ فِي السُّوقِ قَلِيلٌ : rare."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim montre une pièce d'or. Que dis-tu ?",
+          "replique": {
+            "qui": "basim",
+            "ar": "مَا هَٰذَا؟"
+          },
+          "choix_ar": [
+            "هَٰذَا دِينَارٌ.",
+            "هَٰذَا دِينَارٍ.",
+            "هَٰذِهِ دِينَارٌ."
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif, et دِينَارٌ est masculin : هَٰذَا دِينَارٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le dirham est en argent » ?",
+          "choix_ar": [
+            "الدِّرْهَمُ مِنَ الْفِضَّةِ.",
+            "الدِّرْهَمُ مِنَ الْفِضَّةُ.",
+            "الدِّرْهَمِ مِنَ الْفِضَّةِ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet en -u, nom après مِنْ en -i."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le pain est abondant. »",
+          "ar": "الْخُبْزُ …",
+          "choix_ar": [
+            "كَثِيرٌ",
+            "كَثِيرٍ",
+            "قَلِيلٌ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif : كَثِيرٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Le fer est dans la tente. »",
+          "tuiles": [
+            "فِي",
+            "الْحَدِيدُ",
+            "الْخَيْمَةِ",
+            "الْخَيْمَةُ"
+          ],
+          "solution": [
+            "الْحَدِيدُ",
+            "فِي",
+            "الْخَيْمَةِ"
+          ],
+          "explication": "الْحَدِيدُ فِي الْخَيْمَةِ : -u pour le sujet, -i après فِي."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ذَهَبٌ",
+          "choix": [
+            "or (le métal)",
+            "argent",
+            "fer"
+          ],
+          "reponse": 0,
+          "explication": "ذَهَبٌ veut dire « or (le métal) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَلِيلٌ",
+          "choix": [
+            "peu nombreux, rare",
+            "abondant",
+            "grand"
+          ],
+          "reponse": 0,
+          "explication": "قَلِيلٌ veut dire « peu nombreux, rare »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « l'argent (le métal) » ?",
+          "choix_ar": [
+            "الْفِضَّةُ",
+            "الذَّهَبُ",
+            "الْحَدِيدُ"
+          ],
+          "reponse": 0,
+          "explication": "« l'argent (le métal) » se dit الْفِضَّةُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « abondant » ?",
+          "choix_ar": [
+            "كَثِيرٌ",
+            "قَلِيلٌ",
+            "كَبِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "« abondant » se dit كَثِيرٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le dirham est en argent. »",
+          "ar": "الدِّرْهَمُ مِنَ …",
+          "choix_ar": [
+            "الْفِضَّةِ",
+            "الْفِضَّةُ",
+            "فِضَّةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après مِنْ : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le fer est rare. »",
+          "ar": "… قَلِيلٌ.",
+          "choix_ar": [
+            "الْحَدِيدُ",
+            "الْحَدِيدِ",
+            "حَدِيدٍ"
+          ],
+          "reponse": 0,
+          "explication": "Le sujet est au nominatif."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَمَنٌ",
+          "choix": [
+            "prix",
+            "pièce",
+            "panier"
+          ],
+          "reponse": 0,
+          "explication": "ثَمَنٌ veut dire « prix »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après une préposition, le nom est…",
+          "choix": [
+            "au génitif (-i)",
+            "au nominatif (-u)",
+            "à l'accusatif (-a)"
+          ],
+          "reponse": 0,
+          "explication": "Préposition → génitif."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "دِينَارٌ",
+          "choix_ar": [
+            "دِينَارٌ",
+            "دِرْهَمٌ",
+            "حَدِيدٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était دِينَارٌ « dinar »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَلَّةٌ",
+          "choix": [
+            "panier",
+            "porte",
+            "livre"
+          ],
+          "reponse": 0,
+          "explication": "سَلَّةٌ veut dire « panier ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « sur » ?",
+          "choix_ar": [
+            "عَلَى",
+            "فِي",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "« sur » se dit عَلَى.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَنْ",
+          "choix": [
+            "qui ?",
+            "où ?",
+            "quoi ?"
+          ],
+          "reponse": 0,
+          "explication": "مَنْ veut dire « qui ? ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais les trois cas : -u (nominatif), -i (génitif, après une préposition), -a (accusatif, pour plus tard).",
+      "suite": "Prochaine leçon : « la porte de la maison », deux noms qui se suivent."
+    }
+  ]
+}

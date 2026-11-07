@@ -103,8 +103,18 @@ class UserDatabase {
   }
 
   /// Exécute [action] dans une transaction.
+  /// Une transaction ouverte dans une autre fait partie de la première.
   T transaction<T>(T Function() action) {
+    if (_depth > 0) {
+      _depth++;
+      try {
+        return action();
+      } finally {
+        _depth--;
+      }
+    }
     _db.execute('BEGIN IMMEDIATE');
+    _depth = 1;
     try {
       final result = action();
       _db.execute('COMMIT');
@@ -112,8 +122,12 @@ class UserDatabase {
     } catch (_) {
       _db.execute('ROLLBACK');
       rethrow;
+    } finally {
+      _depth = 0;
     }
   }
+
+  int _depth = 0;
 
   void _persistClock() => _writeMeta(_db, _hlcKey, _clock.last.toString());
 

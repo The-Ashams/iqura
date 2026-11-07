@@ -40,6 +40,9 @@ class AppSettings {
     this.arabicFontScale = 1.0,
     this.showTransliteration = true,
     this.animations = true,
+    this.soundEffects = true,
+    this.timer = true,
+    this.learningOnly = false,
   });
 
   final ThemeMode themeMode;
@@ -54,6 +57,17 @@ class AppSettings {
   /// Animations et transitions (désactivables pour le confort).
   final bool animations;
 
+  /// Bruitages du jeu (les sons des leçons restent toujours disponibles).
+  final bool soundEffects;
+
+  /// Chronomètre des révisions : sans lui, toute réponse juste vaut « bien »
+  /// (cahier §6.3) et il n'y a pas de coup critique.
+  final bool timer;
+
+  /// Mode « apprentissage seul » (cahier §8.3) : mêmes leçons sans scènes
+  /// d'Histoire, carte en liste, combats en séries de questions simples.
+  final bool learningOnly;
+
   static const double minArabicScale = 0.8;
   static const double maxArabicScale = 2.0;
 
@@ -63,12 +77,18 @@ class AppSettings {
     double? arabicFontScale,
     bool? showTransliteration,
     bool? animations,
+    bool? soundEffects,
+    bool? timer,
+    bool? learningOnly,
   }) => AppSettings(
     themeMode: themeMode ?? this.themeMode,
     transliteration: transliteration ?? this.transliteration,
     arabicFontScale: arabicFontScale ?? this.arabicFontScale,
     showTransliteration: showTransliteration ?? this.showTransliteration,
     animations: animations ?? this.animations,
+    soundEffects: soundEffects ?? this.soundEffects,
+    timer: timer ?? this.timer,
+    learningOnly: learningOnly ?? this.learningOnly,
   );
 }
 
@@ -81,6 +101,9 @@ class SettingsRepository {
   static const _arabicScale = 'arabic_font_scale';
   static const _showTranslit = 'show_transliteration';
   static const _animations = 'animations';
+  static const _soundEffects = 'sound_effects';
+  static const _timer = 'timer';
+  static const _learningOnly = 'learning_only';
 
   AppSettings load() {
     final rows = _db.select(
@@ -108,6 +131,13 @@ class SettingsRepository {
       animations: values[_animations] is bool
           ? values[_animations]! as bool
           : true,
+      soundEffects: values[_soundEffects] is bool
+          ? values[_soundEffects]! as bool
+          : true,
+      timer: values[_timer] is bool ? values[_timer]! as bool : true,
+      learningOnly: values[_learningOnly] is bool
+          ? values[_learningOnly]! as bool
+          : false,
     );
   }
 
@@ -128,6 +158,9 @@ class SettingsRepository {
   void saveArabicFontScale(double v) => _put(_arabicScale, v);
   void saveShowTransliteration(bool v) => _put(_showTranslit, v);
   void saveAnimations(bool v) => _put(_animations, v);
+  void saveSoundEffects(bool v) => _put(_soundEffects, v);
+  void saveTimer(bool v) => _put(_timer, v);
+  void saveLearningOnly(bool v) => _put(_learningOnly, v);
 }
 
 final settingsRepositoryProvider = Provider<SettingsRepository>(
@@ -173,6 +206,21 @@ class SettingsNotifier extends Notifier<AppSettings> {
   void setAnimations(bool v) {
     _repo.saveAnimations(v);
     state = state.copyWith(animations: v);
+  }
+
+  void setSoundEffects(bool v) {
+    _repo.saveSoundEffects(v);
+    state = state.copyWith(soundEffects: v);
+  }
+
+  void setTimer(bool v) {
+    _repo.saveTimer(v);
+    state = state.copyWith(timer: v);
+  }
+
+  void setLearningOnly(bool v) {
+    _repo.saveLearningOnly(v);
+    state = state.copyWith(learningOnly: v);
   }
 
   /// Relit la base (après un import ou une restauration).

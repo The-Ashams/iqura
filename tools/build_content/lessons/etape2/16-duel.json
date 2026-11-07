@@ -1,0 +1,546 @@
+{
+  "id": "fondations-16",
+  "etape": 2,
+  "ordre": 16,
+  "format": 3,
+  "titre": "Le duel",
+  "objectif": "Parler de deux choses : -āni, et -ayni après une préposition.",
+  "statut": "ia_non_verifie",
+  "lieu": "maison_salma",
+  "maitre": "salma",
+  "prerequis": [
+    "fondations-15"
+  ],
+  "terminaisons": [
+    "duel"
+  ],
+  "apercu": [
+    "سَلْمَى",
+    "هَٰذَانِ",
+    "هَاتَانِ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "salma",
+          "texte": "Bienvenue chez moi ! Ce soir, deux voyageurs dorment ici."
+        },
+        {
+          "qui": "salma",
+          "texte": "Deux lits, deux coussins… En arabe, « deux » a sa propre forme : le duel."
+        }
+      ],
+      "objectif": "Parler de deux choses."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai une chemise » ?",
+          "choix_ar": [
+            "لِي قَمِيصٌ.",
+            "قَمِيصِي.",
+            "لَهُ قَمِيصٌ."
+          ],
+          "reponse": 0,
+          "explication": "لِي + nom indéfini : « j'ai » (leçon 2.15)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هُمَا",
+          "choix": [
+            "eux deux, elles deux",
+            "eux",
+            "nous"
+          ],
+          "reponse": 0,
+          "explication": "هُمَا : pour deux personnes (leçon 2.8)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a une chaise dans la chambre. »",
+          "ar": "فِي الْغُرْفَةِ …",
+          "choix_ar": [
+            "كُرْسِيٌّ",
+            "الْكُرْسِيُّ",
+            "كُرْسِيٍّ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet indéfini, le lieu devant (leçon 2.15)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَا فِي الْغُرْفَةِ؟",
+          "fr": "Qu'y a-t-il dans la chambre ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "فِي الْغُرْفَةِ سَرِيرَانِ.",
+          "fr": "Il y a deux lits dans la chambre."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَالْوِسَادَتَانِ؟",
+          "fr": "Et les deux coussins ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "الْوِسَادَتَانِ جَدِيدَتَانِ.",
+          "fr": "Les deux coussins sont neufs."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Combien de lits y a-t-il dans la chambre ?",
+        "choix": [
+          "deux",
+          "un",
+          "trois"
+        ],
+        "reponse": 0,
+        "explication": "سَرِيرَانِ : deux lits."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "sarir",
+        "wisada",
+        "jidar",
+        "saqf",
+        "matbakh",
+        "yad"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "وِسَادَةٌ",
+        "choix": [
+          "coussin",
+          "lit",
+          "mur"
+        ],
+        "reponse": 0,
+        "explication": "وِسَادَةٌ veut dire « coussin »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Pour deux : -āni / -ayni",
+      "texte": "Pour deux, on ajoute -āni (sujet, attribut) ou -ayni (après une préposition), et ة devient ت : سَرِيرَانِ، فِي السَّلَّتَيْنِ، وِسَادَتَانِ. L'adjectif suit au duel : جَدِيدَتَانِ.",
+      "exemples": [
+        "سَرِيرَانِ",
+        "وِسَادَتَانِ",
+        "فِي السَّلَّتَيْنِ",
+        "الْوِسَادَتَانِ جَدِيدَتَانِ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « سَرِيرَانِ » ?",
+        "choix": [
+          "deux lits",
+          "des lits",
+          "le lit"
+        ],
+        "reponse": 0,
+        "explication": "-āni : deux."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "À reconnaître",
+      "texte": "Tu verras aussi « ces deux » : هَٰذَانِ (masculin), هَاتَانِ (féminin). -ayni sert aussi à l'accusatif, que tu verras avec les verbes.",
+      "exemples": [
+        "هَٰذَانِ",
+        "هَاتَانِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "هَاتَانِ s'emploie pour deux…",
+        "choix": [
+          "choses ou personnes féminines",
+          "choses ou personnes masculines",
+          "plus de deux personnes"
+        ],
+        "reponse": 0,
+        "explication": "هَاتَانِ : féminin ; هَٰذَانِ : masculin."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جِدَارٌ",
+          "choix": [
+            "mur",
+            "toit",
+            "porte"
+          ],
+          "reponse": 0,
+          "explication": "جِدَارٌ veut dire « mur »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَطْبَخٌ",
+          "choix": [
+            "cuisine (la pièce)",
+            "chambre",
+            "marché"
+          ],
+          "reponse": 0,
+          "explication": "مَطْبَخٌ veut dire « cuisine (la pièce) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « deux murs » ?",
+          "choix_ar": [
+            "جِدَارَانِ",
+            "جِدَارٌ",
+            "جُدُرٌ"
+          ],
+          "reponse": 0,
+          "explication": "-āni : deux."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « deux coussins » ?",
+          "choix_ar": [
+            "وِسَادَتَانِ",
+            "وِسَادَةٌ",
+            "وَسَائِدُ"
+          ],
+          "reponse": 0,
+          "explication": "ة devient ت avant -āni : وِسَادَتَانِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le pain est dans les deux paniers. »",
+          "ar": "الْخُبْزُ فِي …",
+          "choix_ar": [
+            "السَّلَّتَيْنِ",
+            "السَّلَّتَانِ",
+            "السَّلَّةِ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : -ayni."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les deux lits sont neufs. »",
+          "ar": "السَّرِيرَانِ …",
+          "choix_ar": [
+            "جَدِيدَانِ",
+            "جَدِيدٌ",
+            "جَدِيدَتَانِ"
+          ],
+          "reponse": 0,
+          "explication": "L'adjectif suit au duel, au masculin : جَدِيدَانِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi dit-on فِي السَّلَّتَيْنِ et non « فِي السَّلَّتَانِ » ?",
+          "choix": [
+            "après une préposition, le duel prend -ayni",
+            "سَلَّةٌ est féminin",
+            "il y a l'article"
+          ],
+          "reponse": 0,
+          "explication": "Préposition → -ayni."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "سَرِيرَانِ",
+          "choix_ar": [
+            "سَرِيرَانِ",
+            "سَرِيرٌ",
+            "جِدَارَانِ"
+          ],
+          "reponse": 0,
+          "explication": "C'était سَرِيرَانِ « deux lits »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Il y a deux lits dans la chambre. »",
+          "tuiles": [
+            "سَرِيرَانِ",
+            "فِي",
+            "الْغُرْفَةِ",
+            "سَرِيرٌ"
+          ],
+          "solution": [
+            "فِي",
+            "الْغُرْفَةِ",
+            "سَرِيرَانِ"
+          ],
+          "explication": "Sujet indéfini : le lieu d'abord."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "الْوِسَادَتَانِ جَدِيدَتَانِ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La maison de Salmā",
+      "texte": "Salmā fait visiter sa maison. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "بَيْتُ سَلْمَى قَرِيبٌ مِنَ السُّوقِ.",
+        "فِي الْبَيْتِ غُرْفَةٌ كَبِيرَةٌ وَمَطْبَخٌ صَغِيرٌ.",
+        "فِي الْغُرْفَةِ سَرِيرَانِ، وَعَلَى السَّرِيرَيْنِ وِسَادَتَانِ.",
+        "الْبَابَانِ قَدِيمَانِ، وَالسَّقْفُ جَدِيدٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Combien de lits y a-t-il dans la chambre ?",
+          "choix": [
+            "deux",
+            "un",
+            "trois"
+          ],
+          "reponse": 0,
+          "explication": "سَرِيرَانِ : deux lits."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment est le toit ?",
+          "choix": [
+            "neuf",
+            "ancien",
+            "petit"
+          ],
+          "reponse": 0,
+          "explication": "السَّقْفُ جَدِيدٌ : neuf."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim demande ce qu'il y a dans la cuisine. Il y a deux paniers.",
+          "replique": {
+            "qui": "basim",
+            "ar": "مَا فِي الْمَطْبَخِ؟"
+          },
+          "choix_ar": [
+            "فِي الْمَطْبَخِ سَلَّتَانِ.",
+            "فِي الْمَطْبَخِ سَلَّتَيْنِ.",
+            "فِي الْمَطْبَخِ سَلَّةٌ."
+          ],
+          "reponse": 0,
+          "explication": "Le sujet est au nominatif : سَلَّتَانِ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « les deux murs sont anciens » ?",
+          "choix_ar": [
+            "الْجِدَارَانِ قَدِيمَانِ.",
+            "الْجِدَارَانِ قَدِيمٌ.",
+            "الْجِدَارَيْنِ قَدِيمَانِ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet en -āni, adjectif au duel."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Les deux coussins sont sur le lit. »",
+          "tuiles": [
+            "عَلَى",
+            "الْوِسَادَتَانِ",
+            "السَّرِيرِ",
+            "الْوِسَادَتَيْنِ"
+          ],
+          "solution": [
+            "الْوِسَادَتَانِ",
+            "عَلَى",
+            "السَّرِيرِ"
+          ],
+          "explication": "Sujet en -āni, puis le lieu."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a deux tentes ici. »",
+          "ar": "هُنَا …",
+          "choix_ar": [
+            "خَيْمَتَانِ",
+            "خَيْمَتَيْنِ",
+            "خَيْمَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet au nominatif : خَيْمَتَانِ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَرِيرٌ",
+          "choix": [
+            "lit",
+            "coussin",
+            "mur"
+          ],
+          "reponse": 0,
+          "explication": "سَرِيرٌ veut dire « lit »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَقْفٌ",
+          "choix": [
+            "plafond, toit",
+            "mur",
+            "cuisine"
+          ],
+          "reponse": 0,
+          "explication": "سَقْفٌ veut dire « plafond, toit »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "يَدٌ",
+          "choix": [
+            "main",
+            "porte",
+            "mur"
+          ],
+          "reponse": 0,
+          "explication": "يَدٌ veut dire « main »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « deux maisons » ?",
+          "choix_ar": [
+            "بَيْتَانِ",
+            "بَيْتٌ",
+            "بُيُوتٌ"
+          ],
+          "reponse": 0,
+          "explication": "« deux maisons » se dit بَيْتَانِ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « deux chambres » ?",
+          "choix_ar": [
+            "غُرْفَتَانِ",
+            "غُرْفَتِي",
+            "غُرْفَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "ة devient ت : غُرْفَتَانِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le livre est dans les deux coffres. »",
+          "ar": "الْكِتَابُ فِي …",
+          "choix_ar": [
+            "الصُّنْدُوقَيْنِ",
+            "الصُّنْدُوقَانِ",
+            "الصُّنْدُوقِ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : -ayni."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les deux tentes sont grandes. »",
+          "ar": "الْخَيْمَتَانِ …",
+          "choix_ar": [
+            "كَبِيرَتَانِ",
+            "كَبِيرَانِ",
+            "كَبِيرَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Adjectif au duel féminin."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le duel d'un sujet se termine par…",
+          "choix": [
+            "-āni",
+            "-ayni",
+            "-ūna"
+          ],
+          "reponse": 0,
+          "explication": "Sujet ou attribut : -āni."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "وِسَادَتَانِ",
+          "choix_ar": [
+            "وِسَادَتَانِ",
+            "وِسَادَةٌ",
+            "سَرِيرَانِ"
+          ],
+          "reponse": 0,
+          "explication": "C'était وِسَادَتَانِ « deux coussins »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « avec moi » ?",
+          "choix_ar": [
+            "مَعِي",
+            "لِي",
+            "عِنْدَهُ"
+          ],
+          "reponse": 0,
+          "explication": "« avec moi » se dit مَعِي.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَمِيصٌ",
+          "choix": [
+            "chemise, tunique",
+            "laine",
+            "fil"
+          ],
+          "reponse": 0,
+          "explication": "قَمِيصٌ veut dire « chemise, tunique ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « la clé de la maison ».",
+          "ar": "مِفْتَاحُ …",
+          "choix_ar": [
+            "الْبَيْتِ",
+            "الْبَيْتُ",
+            "بَيْتٌ"
+          ],
+          "reponse": 0,
+          "explication": "Second nom au génitif.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu parles de deux choses : سَرِيرَانِ, et après une préposition فِي السَّلَّتَيْنِ. L'adjectif suit au duel.",
+      "suite": "Prochaine leçon : le pluriel des personnes, avec -ūna et -āt."
+    }
+  ]
+}
