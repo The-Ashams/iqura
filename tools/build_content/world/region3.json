@@ -1,5 +1,5 @@
 {
-  "_comment": "Région 3 « Les Montagnes du Moteur » (cahier §5.7, §8.2 ; proposition du 05/11/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_3.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Chapitre A ouvert (niveau Intermédiaire 1).",
+  "_comment": "Région 3 « Les Montagnes du Moteur » (cahier §5.7, §8.2 ; proposition du 05/11/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_3.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Chapitres A (Intermédiaire 1) et B (Intermédiaire 2) ouverts.",
   "statut": "ia",
   "region": {
     "id": "r3",
@@ -110,9 +110,63 @@
       "tranche_j1a": true,
       "liens": [
         "pont",
-        "eboulis"
+        "moulin"
       ],
       "description": "Au relais, des voyageurs de tous pays : on dit d'où l'on vient, et l'on apprend ce que la racine ne dit pas."
+    },
+    {
+      "id": "moulin",
+      "numero": 6,
+      "nom": "Le Moulin des formes",
+      "position": [
+        40,
+        30
+      ],
+      "lecons": [],
+      "scene": "scene_moulin",
+      "sol": 80,
+      "tranche_j1a": true,
+      "liens": [
+        "relais",
+        "copistes"
+      ],
+      "description": "La roue tourne et le verbe change de forme : on y découvre la forme simple, puis les formes II, III et IV."
+    },
+    {
+      "id": "copistes",
+      "numero": 7,
+      "nom": "La Salle des copistes",
+      "position": [
+        84,
+        24
+      ],
+      "lecons": [],
+      "scene": "scene_copistes",
+      "sol": 82,
+      "tranche_j1a": true,
+      "liens": [
+        "moulin",
+        "tour"
+      ],
+      "description": "Rabāb et ses copistes recopient les verbes de forme en forme : réfléchi, réciproque, formes VII et VIII."
+    },
+    {
+      "id": "tour",
+      "numero": 8,
+      "nom": "La Tour du guet",
+      "position": [
+        120,
+        26
+      ],
+      "lecons": [],
+      "scene": "scene_tour",
+      "sol": 80,
+      "tranche_j1a": true,
+      "liens": [
+        "copistes",
+        "eboulis"
+      ],
+      "description": "Du haut de la tour, on demande, on observe ce qui est fait : forme X, participes et voix passive."
     },
     {
       "id": "eboulis",
@@ -127,7 +181,8 @@
       "sol": 80,
       "tranche_j1a": true,
       "liens": [
-        "relais"
+        "relais",
+        "tour"
       ],
       "description": "Sur les pentes, la Précipitation pousse à répondre trop vite. Révisions quotidiennes."
     }
@@ -145,6 +200,18 @@
         "atelier_outils",
         "pont",
         "relais"
+      ]
+    },
+    {
+      "id": "rabab",
+      "nom": "Rabāb",
+      "nom_ar": "رَبَاب",
+      "role": "La copiste",
+      "sprite": "rabab",
+      "lieux": [
+        "moulin",
+        "copistes",
+        "tour"
       ]
     }
   ]

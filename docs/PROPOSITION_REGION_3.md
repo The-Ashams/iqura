@@ -17,13 +17,22 @@ Le voyageur quitte l'oasis pour les montagnes, chez les forgerons et les copiste
 | 5 | Le Relais des voyageurs | 3.9 L'adjectif de relation, 3.10 Ce que la racine ne dit pas |
 | 12 | Les Éboulis de la Précipitation | Expédition (révisions) ; boss de la région à la fin du niveau Intermédiaire 3 |
 
-Les lieux 6 à 11 (chapitres B à D : formes verbales, verbes faibles, cas et modes) seront proposés avec les niveaux Intermédiaire 2 et 3.
+## Chapitre B — Les formes verbales (leçons 3.11 à 3.21, ajouté le 07/11/2026)
+
+| N° | Lieu | Leçons |
+| --- | --- | --- |
+| 6 | Le Moulin des formes | 3.11 La forme I, 3.12 Forme II, 3.13 Forme III, 3.14 Forme IV |
+| 7 | La Salle des copistes | 3.15 Forme V, 3.16 Forme VI, 3.17 Forme VII, 3.18 Forme VIII |
+| 8 | La Tour du guet | 3.19 Forme X, 3.20 Participes et noms d'action des formes II à X, 3.21 La voix passive |
+
+Les lieux 9 à 11 (chapitres C et D : verbes faibles, cas et modes) seront proposés avec le niveau Intermédiaire 3.
 
 ## Personnages
 
 | Personnage | Rôle |
 | --- | --- |
 | Hilāl (هِلَال, « croissant de lune ») | Le forgeron, maître du chapitre A ; nouveau |
+| Rabāb (رَبَاب, « nuage blanc ») | La copiste, maîtresse du chapitre B ; nouvelle |
 | Bāsim | Le jeune chamelier de la région 2, qui accompagne le voyageur |
 
 Aucun nom de prophète ni de figure religieuse. Sens des noms : rédigé par IA.
