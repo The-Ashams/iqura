@@ -6902,6 +6902,133 @@
     "يَبْكِ"
    ],
    "theme": "qualites"
+  },
+  {
+   "id": "bi",
+   "ar": "بِـ",
+   "translit": "bi",
+   "fr": "avec (au moyen de), à, par (collé au mot)",
+   "nature": "particule",
+   "lecon": "moteur-27",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "كَتَبَ سَمِيرٌ الرِّسَالَةَ بِالْقَلَمِ.",
+    "fr": "Samīr a écrit la lettre avec le calame."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "an",
+   "ar": "عَنْ",
+   "translit": "ʿan",
+   "fr": "de (en s'éloignant), au sujet de",
+   "nature": "particule",
+   "lecon": "moteur-27",
+   "source_sens": "rédigé par IA",
+   "lemme": "Ean",
+   "exemple": {
+    "ar": "الْقَرْيَةُ بَعِيدَةٌ عَنِ النَّهْرِ.",
+    "fr": "Le village est loin du fleuve."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "khabar",
+   "ar": "خَبَرٌ",
+   "translit": "ḫabarun",
+   "fr": "nouvelle ; (en grammaire) attribut",
+   "nature": "nom",
+   "lecon": "moteur-27",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "xabar",
+   "exemple": {
+    "ar": "هَٰذَا خَبَرٌ جَدِيدٌ.",
+    "fr": "C'est une nouvelle récente."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "jumla",
+   "ar": "جُمْلَةٌ",
+   "translit": "ǧumlatun",
+   "fr": "phrase",
+   "nature": "nom",
+   "lecon": "moteur-27",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "jml",
+   "exemple": {
+    "ar": "هَٰذِهِ جُمْلَةٌ قَصِيرَةٌ.",
+    "fr": "C'est une phrase courte."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "fail",
+   "ar": "فَاعِلٌ",
+   "translit": "fāʿilun",
+   "fr": "(en grammaire) sujet du verbe",
+   "nature": "nom",
+   "lecon": "moteur-27",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "fEl",
+   "exemple": {
+    "ar": "الْحَارِسُ فَاعِلٌ.",
+    "fr": "الْحَارِسُ est le sujet du verbe."
+   },
+   "remarque": "le même mot sert de nom au moule فَاعِل (leçon 3.3)",
+   "theme": "savoir"
+  },
+  {
+   "id": "maful",
+   "ar": "مَفْعُولٌ",
+   "translit": "mafʿūlun",
+   "fr": "(en grammaire) complément ; مَفْعُولٌ بِهِ : complément direct",
+   "nature": "nom",
+   "lecon": "moteur-27",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "fEl",
+   "exemple": {
+    "ar": "الْبَابَ مَفْعُولٌ بِهِ.",
+    "fr": "الْبَابَ est le complément direct."
+   },
+   "remarque": "le même mot sert de nom au moule مَفْعُول (leçon 3.3)",
+   "theme": "savoir"
+  },
+  {
+   "id": "mubtada",
+   "ar": "مُبْتَدَأٌ",
+   "translit": "mubtadaʾun",
+   "fr": "(en grammaire) sujet de la phrase nominale",
+   "nature": "nom",
+   "lecon": "moteur-27",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "bdA",
+   "exemple": {
+    "ar": "الطَّرِيقُ مُبْتَدَأٌ.",
+    "fr": "الطَّرِيقُ est le sujet de la phrase nominale."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "irab",
+   "ar": "إِعْرَابٌ",
+   "translit": "iʿrābun",
+   "fr": "analyse des fins de mots (iʿrāb)",
+   "nature": "nom",
+   "lecon": "moteur-27",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Erb",
+   "exemple": {
+    "ar": "الْإِعْرَابُ سَهْلٌ.",
+    "fr": "L'iʿrāb est facile."
+   },
+   "theme": "savoir"
   }
  ]
 }
