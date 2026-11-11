@@ -505,3 +505,11 @@ Stade : région 3, leçon 3.32 (Intermédiaire 3, Widād, Bibliothèque du col).
 ## Ce que je n'ai pas pu vérifier
 - Je n'ai pas pu lire les nombres d'occurrences ni les racines dans la base SQLite (fichier binaire, pas d'accès en ligne de commande). Je me fie au contrôle de construction des lemmes et au plan du conseiller.
 - Je n'ai pas vérifié moi-même que tous les mots de la lecture sont connus. Je m'appuie sur le contrôle automatique, déclaré passé.
+
+---
+
+# Examen de la région 3 (relecteur-arabe, 11 et 12/11/2026)
+
+- 1er passage : « À corriger » (6 Importants : مَعْنَى non enseigné, أَكَلَ avec شَرِبَ, sens de مَنْظَرٌ ambigu, « lettre cachée » de دَعَوْتُ, « sens vérifié », récit trop court) ; tout corrigé.
+- 2e passage : « À corriger » (حَسَنٌ non enseigné) ; corrigé.
+- 3e passage : **« Validé avec doutes »** ; le doute (distracteur « boisson » défendable pour مَشْرَبٌ) est levé en remplaçant ce distracteur par « qui donne à boire ».

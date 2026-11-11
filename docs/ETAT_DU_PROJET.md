@@ -190,7 +190,7 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Examen | `tools/build_content/exams/examen-r3.json` : trois épreuves (format choisi par l'utilisateur) : récit de 311 mots (10 sur 12), « décoder » 20 mots inconnus et 4 formes de verbes faibles (40 sur 50 : racine, moule, sens probable), 5 phrases à remettre en ordre (4 sur 5) ; écoute masquée |
 | Pipeline | Épreuve « décoder » contrôlée (mot inconnu, racine du Corpus, moule vérifié) ; signe écrit deux fois refusé (أََ, دْْ) ; moules ف ع ل acceptés comme notation dans l'examen |
 | Plan et décisions | `docs/relectures/decisions-intermediaire-3.md` (plan du conseiller, doutes tranchés, liste de fin de niveau) |
-| Relecture | `docs/relectures/2026-11-11-intermediaire-3.md` |
+| Relecture | `docs/relectures/2026-11-11-intermediaire-3.md` : leçons, 2 « Validé » et 9 « Validé avec doutes » ; examen « Validé avec doutes » au 3e passage ; doutes tranchés par le conseiller |
 | Tests | Les 32 leçons de la région 3 jouées de bout en bout ; examen de la région 3 joué, son coupé et son actif (`test/ui/lesson_player_test.dart`) ; contrôles de l'épreuve « décoder » (`tools/build_content/test_build_content.py`) |
 | À faire | Test de l'utilisateur quand il le souhaite ; ensuite Avancé 1 (leçons 4.1 à 4.14, région 4) |
 
