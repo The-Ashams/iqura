@@ -7029,6 +7029,138 @@
     "fr": "L'iʿrāb est facile."
    },
    "theme": "savoir"
+  },
+  {
+   "id": "ab",
+   "ar": "أَبٌ",
+   "translit": "abun",
+   "fr": "père",
+   "nature": "nom",
+   "lecon": "moteur-28",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">abN",
+   "formes": [
+    "أَبُو",
+    "أَبَا",
+    "أَبِي"
+   ],
+   "exemple": {
+    "ar": "أَبُو بَاسِمٍ تَاجِرٌ.",
+    "fr": "Le père de Bāsim est marchand."
+   },
+   "remarque": "devant un nom : أَبُو, أَبَا, أَبِي selon le cas",
+   "theme": "personnes"
+  },
+  {
+   "id": "akh",
+   "ar": "أَخٌ",
+   "translit": "aḫun",
+   "fr": "frère",
+   "nature": "nom",
+   "lecon": "moteur-28",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">ax",
+   "formes": [
+    "أَخُو",
+    "أَخَا",
+    "أَخِي"
+   ],
+   "exemple": {
+    "ar": "أَخُو سَلْمَى فِي السُّوقِ.",
+    "fr": "Le frère de Salmā est au marché."
+   },
+   "remarque": "devant un nom : أَخُو, أَخَا, أَخِي selon le cas",
+   "theme": "personnes"
+  },
+  {
+   "id": "dhu",
+   "ar": "ذُو",
+   "translit": "ḏū",
+   "fr": "qui a, doté de",
+   "nature": "particule",
+   "lecon": "moteur-28",
+   "source_sens": "rédigé par IA",
+   "lemme": "*uw",
+   "remarque": "vu en aperçu ; il change aussi selon le cas : ذُو, ذَا, ذِي",
+   "theme": "particules"
+  },
+  {
+   "id": "ukht",
+   "ar": "أُخْتٌ",
+   "translit": "uḫtun",
+   "fr": "sœur",
+   "nature": "nom",
+   "lecon": "moteur-28",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": ">uxot",
+   "exemple": {
+    "ar": "أُخْتُ سَمِيرٍ فِي الْمَدْرَسَةِ.",
+    "fr": "La sœur de Samīr est à l'école."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "abyad",
+   "ar": "أَبْيَضُ",
+   "translit": "abyaḍu",
+   "fr": "blanc",
+   "nature": "adjectif",
+   "lecon": "moteur-28",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">aboyaD",
+   "formes": [
+    "بَيْضَاءُ"
+   ],
+   "exemple": {
+    "ar": "الثَّلْجُ أَبْيَضُ.",
+    "fr": "La neige est blanche."
+   },
+   "remarque": "féminin : بَيْضَاءُ ; jamais de tanwīn",
+   "theme": "qualites"
+  },
+  {
+   "id": "aswad",
+   "ar": "أَسْوَدُ",
+   "translit": "aswadu",
+   "fr": "noir",
+   "nature": "adjectif",
+   "lecon": "moteur-28",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">asowad",
+   "formes": [
+    "سَوْدَاءُ"
+   ],
+   "exemple": {
+    "ar": "هَٰذِهِ خَيْمَةٌ سَوْدَاءُ.",
+    "fr": "C'est une tente noire."
+   },
+   "remarque": "féminin : سَوْدَاءُ ; jamais de tanwīn",
+   "theme": "qualites"
+  },
+  {
+   "id": "ahmar",
+   "ar": "أَحْمَرُ",
+   "translit": "aḥmaru",
+   "fr": "rouge",
+   "nature": "adjectif",
+   "lecon": "moteur-28",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hmr",
+   "formes": [
+    "حَمْرَاءُ"
+   ],
+   "exemple": {
+    "ar": "الصُّنْدُوقُ أَحْمَرُ.",
+    "fr": "Le coffre est rouge."
+   },
+   "remarque": "féminin : حَمْرَاءُ ; jamais de tanwīn",
+   "theme": "qualites"
   }
  ]
 }
