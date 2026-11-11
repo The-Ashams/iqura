@@ -236,7 +236,9 @@
         90,
         46
       ],
-      "lecons": [],
+      "lecons": [
+        30
+      ],
       "scene": "scene_bibliotheque_col",
       "sol": 82,
       "tranche_j1a": true,

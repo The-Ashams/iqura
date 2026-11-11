@@ -7080,12 +7080,13 @@
    "ar": "ذُو",
    "translit": "ḏū",
    "fr": "qui a, doté de",
-   "nature": "particule",
+   "nature": "nom",
    "lecon": "moteur-28",
    "source_sens": "rédigé par IA",
+   "genre": "m",
    "lemme": "*uw",
-   "remarque": "vu en aperçu ; il change aussi selon le cas : ذُو, ذَا, ذِي",
-   "theme": "particules"
+   "remarque": "il change selon le cas, comme أَبُو : ذُو, ذَا, ذِي",
+   "theme": "personnes"
   },
   {
    "id": "ukht",
@@ -7264,6 +7265,106 @@
     "fr": "Les étudiants se sont assis pour écouter l'histoire."
    },
    "theme": "particules"
+  },
+  {
+   "id": "la_nahy",
+   "ar": "لَا",
+   "translit": "lā",
+   "fr": "ne… pas ! (défense, devant un jussif)",
+   "nature": "particule",
+   "lecon": "moteur-30",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "لَا تَكْتُبْ عَلَى الْجِدَارِ.",
+    "fr": "N'écris pas sur le mur."
+   },
+   "remarque": "à ne pas confondre avec لَا « ne… pas » devant un inaccompli en -u",
+   "theme": "particules"
+  },
+  {
+   "id": "taajjala",
+   "ar": "تَعَجَّلَ",
+   "translit": "taʿaǧǧala",
+   "fr": "se hâter, se précipiter",
+   "nature": "verbe",
+   "lecon": "moteur-30",
+   "source_sens": "rédigé par IA",
+   "passe": "تَعَجَّلَ",
+   "inaccompli": "يَتَعَجَّلُ",
+   "nom_action": "تَعَجُّلٌ",
+   "scheme": "تَفَعَّلَ",
+   "exemple": {
+    "ar": "لَا تَتَعَجَّلْ، الطَّرِيقُ طَوِيلٌ.",
+    "fr": "Ne te hâte pas, le chemin est long."
+   },
+   "lemme": "taEaj~ala",
+   "theme": "actions"
+  },
+  {
+   "id": "taakhkhara",
+   "ar": "تَأَخَّرَ",
+   "translit": "taʾaḫḫara",
+   "fr": "être en retard, tarder",
+   "nature": "verbe",
+   "lecon": "moteur-30",
+   "source_sens": "rédigé par IA",
+   "passe": "تَأَخَّرَ",
+   "inaccompli": "يَتَأَخَّرُ",
+   "nom_action": "تَأَخُّرٌ",
+   "exemple": {
+    "ar": "تَأَخَّرَ الطَّالِبُ عَنِ الدَّرْسِ.",
+    "fr": "L'étudiant est arrivé en retard à la leçon."
+   },
+   "lemme": "ta>ax~ara",
+   "theme": "temps"
+  },
+  {
+   "id": "waqt",
+   "ar": "وَقْتٌ",
+   "translit": "waqtun",
+   "fr": "temps, moment",
+   "nature": "nom",
+   "lecon": "moteur-30",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "waqot",
+   "exemple": {
+    "ar": "هَٰذَا وَقْتُ الدَّرْسِ.",
+    "fr": "C'est l'heure de la leçon."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "khata",
+   "ar": "خَطَأٌ",
+   "translit": "ḫaṭaʾun",
+   "fr": "erreur",
+   "nature": "nom",
+   "lecon": "moteur-30",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "xTA",
+   "exemple": {
+    "ar": "هَٰذَا خَطَأٌ.",
+    "fr": "C'est une erreur."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "sawab",
+   "ar": "صَوَابٌ",
+   "translit": "ṣawābun",
+   "fr": "ce qui est juste",
+   "nature": "nom",
+   "lecon": "moteur-30",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "SawaAb",
+   "exemple": {
+    "ar": "هَٰذَا الْجَوَابُ صَوَابٌ.",
+    "fr": "Cette réponse est juste."
+   },
+   "theme": "savoir"
   }
  ]
 }

@@ -13,6 +13,8 @@
   ],
   "apercu": [
     "وِدَادُ",
+    "ذَا",
+    "ذِي",
     "بَغْدَادَ",
     "بَغْدَادُ",
     "دِمَشْقَ",
@@ -88,12 +90,12 @@
         {
           "qui": "widad",
           "ar": "أَيْنَ أَبُو بَاسِمٍ؟",
-          "fr": "Où est le père de Bāsim ?"
+          "fr": "Où est le père de Bāsim (Abū Bāsim) ?"
         },
         {
           "qui": "basim",
-          "ar": "سَافَرَ إِلَى بَغْدَادَ، وَفِي الْكِيسِ ثَلَاثَةُ دَرَاهِمَ.",
-          "fr": "Il est parti en voyage pour Bagdad, et il y a trois dirhams dans la bourse."
+          "ar": "سَافَرَ أَبِي إِلَى بَغْدَادَ.",
+          "fr": "Mon père est parti en voyage pour Bagdad."
         }
       ],
       "question": {
@@ -173,13 +175,13 @@
           "كِتَابٌ"
         ],
         "reponse": 0,
-        "explication": "Pluriel du moule مَفَاعِلُ : sans tanwīn."
+        "explication": "Pluriel de la forme مَفَاعِلُ (comme مَدَارِسُ) : sans tanwīn."
       }
     },
     {
       "type": "regle",
       "titre": "أَبُو, أَخُو",
-      "texte": "أَبٌ « père » et أَخٌ « frère » allongent leur voyelle devant un nom : أَبُو بَاسِمٍ (-u), أَبَا بَاسِمٍ (-a), أَبِي بَاسِمٍ (-i).",
+      "texte": "أَبٌ « père », أَخٌ « frère » (et ذُو « qui a ») allongent leur voyelle devant un nom : أَبُو بَاسِمٍ (-u), أَبَا بَاسِمٍ (-a), أَبِي بَاسِمٍ (-i).",
       "exemples": [
         "أَبُو بَاسِمٍ",
         "أَخَا سَلْمَى",
@@ -201,7 +203,7 @@
     {
       "type": "regle",
       "titre": "Les couleurs",
-      "texte": "Les couleurs suivent le moule أَفْعَلُ, et au féminin فَعْلَاءُ : أَبْيَضُ / بَيْضَاءُ, أَسْوَدُ / سَوْدَاءُ. Ce ne sont pas des comparatifs, et elles n'ont jamais de tanwīn.",
+      "texte": "Les couleurs suivent le moule أَفْعَلُ, et au féminin فَعْلَاءُ : أَبْيَضُ / بَيْضَاءُ, أَسْوَدُ / سَوْدَاءُ. Ce ne sont pas des comparatifs, et au singulier elles n'ont jamais de tanwīn.",
       "exemples": [
         "أَبْيَضُ",
         "بَيْضَاءُ",
@@ -254,10 +256,10 @@
           "choix_ar": [
             "أَبُو سَمِيرٍ",
             "أَبٌ سَمِيرٌ",
-            "أَبِي سَمِيرٌ"
+            "أَبُو سَمِيرٌ"
           ],
           "reponse": 0,
-          "explication": "« le père de Samīr » se dit أَبُو سَمِيرٍ."
+          "explication": "أَبُو سَمِيرٍ : أَبُو devant le nom, et le nom qui suit au cas -i."
         },
         {
           "type": "traduire",
@@ -279,7 +281,7 @@
             "faute d'écriture"
           ],
           "reponse": 0,
-          "explication": "Les prénoms féminins n'ont pas de tanwīn."
+          "explication": "Les prénoms féminins, en général, n'ont pas de tanwīn."
         },
         {
           "type": "qcm",
@@ -344,7 +346,7 @@
     },
     {
       "type": "lecture",
-      "titre": "La famille de Samīr",
+      "titre": "Des voyageurs au tribunal",
       "texte": "Widād raconte l'arrivée d'une famille. Lis ; touche un mot pour voir son sens.",
       "phrases": [
         "جَاءَ أَبُو سَمِيرٍ مِنْ دِمَشْقَ.",
@@ -386,10 +388,10 @@
           "choix_ar": [
             "أَبُو بَاسِمٍ تَاجِرٌ.",
             "أَبَا بَاسِمٍ تَاجِرٌ.",
-            "أَبِي بَاسِمٌ تَاجِرٌ."
+            "أَبُو بَاسِمٌ تَاجِرٌ."
           ],
           "reponse": 0,
-          "explication": "« Le père de Bāsim est marchand. » se dit أَبُو بَاسِمٍ تَاجِرٌ."
+          "explication": "Sujet : -u, أَبُو ; le nom qui suit est au cas -i, بَاسِمٍ."
         },
         {
           "type": "ordonner",
@@ -476,7 +478,7 @@
         },
         {
           "type": "qcm",
-          "consigne": "Un nom sans tanwīn, après une préposition, finit par…",
+          "consigne": "Un nom sans tanwīn et sans الْ, après une préposition, finit par…",
           "choix": [
             "-a",
             "-i",
