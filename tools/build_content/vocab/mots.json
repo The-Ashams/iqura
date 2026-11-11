@@ -7269,6 +7269,7 @@
   {
    "id": "la_nahy",
    "ar": "لَا",
+   "lemme": "laA",
    "translit": "lā",
    "fr": "ne… pas ! (défense, devant un jussif)",
    "nature": "particule",

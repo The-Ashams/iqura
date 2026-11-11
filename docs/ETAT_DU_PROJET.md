@@ -181,6 +181,19 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Tests | Les 21 leçons de la région 3 jouées de bout en bout son coupé (`test/ui/lesson_player_test.dart`) |
 | À faire | Test de l'utilisateur quand il le souhaite ; ensuite Intermédiaire 3 (leçons 3.22 à 3.32 et boss de la région 3) |
 
+## 1 terdecies. Niveau Intermédiaire 3 (leçons 3.22 à 3.32 et examen de la région 3, chapitres C et D, 11 et 12/11/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Monde | Lieux 9 à 11 de la région 3 : les Ruines (3.22 à 3.26), le Tribunal (3.27 à 3.29), la Bibliothèque du col (3.30 à 3.32) ; maîtres Ziyād et Widād ; scènes et sprites en pixel art ; boss « la Grande Précipitation » aux Éboulis |
+| Leçons | `tools/build_content/lessons/etape3/22` à `32` (moteur-22 à moteur-32) : verbes à hamza, doublés, assimilés, concaves, défectueux ; les trois cas ; noms particuliers (diptotes, cinq noms, duel et pluriel sain) ; subjonctif, jussif ; إِنَّ et ses sœurs ; كَانَ et ses sœurs |
+| Examen | `tools/build_content/exams/examen-r3.json` : trois épreuves (format choisi par l'utilisateur) : récit de 266 mots (10 sur 12), « décoder » 16 mots inconnus et 4 formes de verbes faibles (40 sur 50 : racine, moule, sens probable, lettre cachée), 5 phrases à remettre en ordre (4 sur 5) ; écoute masquée |
+| Pipeline | Épreuve « décoder » contrôlée (mot inconnu, racine du Corpus, moule vérifié) ; signe écrit deux fois refusé (أََ, دْْ) ; moules ف ع ل acceptés comme notation dans l'examen |
+| Plan et décisions | `docs/relectures/decisions-intermediaire-3.md` (plan du conseiller, doutes tranchés, liste de fin de niveau) |
+| Relecture | `docs/relectures/2026-11-11-intermediaire-3.md` |
+| Tests | Les 32 leçons de la région 3 jouées de bout en bout ; examen de la région 3 joué, son coupé et son actif (`test/ui/lesson_player_test.dart`) ; contrôles de l'épreuve « décoder » (`tools/build_content/test_build_content.py`) |
+| À faire | Test de l'utilisateur quand il le souhaite ; ensuite Avancé 1 (leçons 4.1 à 4.14, région 4) |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -240,7 +253,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 10. Audio suspendu (§1 decies, 03/11/2026).
 11. Intermédiaire 1 construit et relu (§1 undecies) : à tester par l'utilisateur.
 12. Intermédiaire 2 construit et relu (§1 duodecies).
-13. Suivant : Intermédiaire 3 (leçons 3.22 à 3.32 et boss de la région 3).
+13. Intermédiaire 3 construit et relu (§1 terdecies) : toute la région 3 est prête à tester.
+14. Suivant : Avancé 1 (leçons 4.1 à 4.14, région 4), sur une proposition de région 4 à écrire.
 
 ## 5. Problèmes connus
 
