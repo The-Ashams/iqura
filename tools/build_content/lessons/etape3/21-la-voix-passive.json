@@ -193,7 +193,7 @@
     },
     {
       "type": "regle",
-      "titre": "Seulement avec un complément",
+      "titre": "Un verbe avec complément direct",
       "texte": "Ici, on met au passif un verbe qui a un complément direct : ce complément devient le sujet. جَلَسَ ou ذَهَبَ, sans complément direct, ne peuvent pas avoir ainsi un sujet au passif.",
       "exemples": [
         "فُتِحَ الْبَابُ",
@@ -214,7 +214,7 @@
     {
       "type": "regle",
       "titre": "Aperçu : les autres formes",
-      "texte": "Les formes dérivées ont aussi un passif : au passé, il commence par u (قُدِّمَ, أُدْخِلَ, اسْتُخْرِجَ) ; à l'inaccompli, il met a avant la dernière lettre (يُقَدَّمُ, يُدْخَلُ, يُسْتَخْرَجُ).",
+      "texte": "Les formes dérivées ont aussi un passif : au passé, il commence par u (قُدِّمَ, أُدْخِلَ, اسْتُخْرِجَ) ; à l'inaccompli, il a u au début et a avant la dernière lettre (يُقَدَّمُ, يُدْخَلُ, يُسْتَخْرَجُ).",
       "exemples": [
         "قُدِّمَ",
         "أُدْخِلَ",
