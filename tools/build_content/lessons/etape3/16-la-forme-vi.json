@@ -130,12 +130,12 @@
         "consigne": "Que veut dire ce mot ?",
         "ar": "تَقَاسَمَ",
         "choix": [
-          "ils se sont partagé",
-          "ils se sont divisés",
-          "ils se sont séparés"
+          "se partager",
+          "se diviser",
+          "se séparer"
         ],
         "reponse": 0,
-        "explication": "تَقَاسَمَ veut dire « ils se sont partagé »."
+        "explication": "تَقَاسَمَ veut dire « se partager »."
       }
     },
     {
@@ -208,24 +208,24 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "تَعَارَفَ",
           "choix": [
-            "ils ont fait connaissance",
-            "ils ont su",
-            "ils se sont écrit"
+            "faire connaissance",
+            "savoir",
+            "s'écrire"
           ],
           "reponse": 0,
-          "explication": "تَعَارَفَ veut dire « ils ont fait connaissance »."
+          "explication": "تَعَارَفَ veut dire « faire connaissance »."
         },
         {
           "type": "sens",
           "consigne": "Que veut dire ce mot ?",
           "ar": "تَنَازَعَ",
           "choix": [
-            "ils se sont disputés",
-            "ils se sont partagé",
-            "ils ont fait la course"
+            "se disputer",
+            "se partager",
+            "faire la course ensemble"
           ],
           "reponse": 0,
-          "explication": "تَنَازَعَ veut dire « ils se sont disputés »."
+          "explication": "تَنَازَعَ veut dire « se disputer »."
         },
         {
           "type": "traduire",
@@ -309,7 +309,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Les deux mots se ressemblent. »",
+          "consigne": "Complète : « Les deux mots se ressemblaient. »",
           "ar": "… الْكَلِمَتَانِ.",
           "choix_ar": [
             "تَشَابَهَتِ",
@@ -409,36 +409,36 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "تَكَاتَبَ",
           "choix": [
-            "ils se sont écrit",
-            "ils se sont serré la main",
-            "ils se sont disputés"
+            "s'écrire (l'un à l'autre)",
+            "se serrer la main",
+            "se disputer"
           ],
           "reponse": 0,
-          "explication": "تَكَاتَبَ veut dire « ils se sont écrit »."
+          "explication": "تَكَاتَبَ veut dire « s'écrire l'un à l'autre »."
         },
         {
           "type": "sens",
           "consigne": "Que veut dire ce mot ?",
           "ar": "تَشَابَهَ",
           "choix": [
-            "ils se sont ressemblé",
-            "ils se sont disputés",
-            "ils se sont partagé"
+            "se ressembler",
+            "se disputer",
+            "se partager"
           ],
           "reponse": 0,
-          "explication": "تَشَابَهَ veut dire « ils se sont ressemblé »."
+          "explication": "تَشَابَهَ veut dire « se ressembler »."
         },
         {
           "type": "sens",
           "consigne": "Que veut dire ce mot ?",
           "ar": "تَصَافَحَ",
           "choix": [
-            "ils se sont serré la main",
-            "ils ont fait connaissance",
-            "ils ont fait la course"
+            "se serrer la main",
+            "faire connaissance",
+            "faire la course ensemble"
           ],
           "reponse": 0,
-          "explication": "تَصَافَحَ veut dire « ils se sont serré la main »."
+          "explication": "تَصَافَحَ veut dire « se serrer la main »."
         },
         {
           "type": "traduire",

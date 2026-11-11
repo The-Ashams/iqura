@@ -4714,7 +4714,7 @@
    "id": "qaabala",
    "ar": "قَابَلَ",
    "translit": "qābala",
-   "fr": "rencontrer, faire face à",
+   "fr": "faire face à, rencontrer",
    "nature": "verbe",
    "lecon": "moteur-13",
    "source_sens": "rédigé par IA",
@@ -4943,7 +4943,7 @@
    "id": "farraqa",
    "ar": "فَرَّقَ",
    "translit": "farraqa",
-   "fr": "séparer, disperser",
+   "fr": "séparer, disperser, répartir",
    "nature": "verbe",
    "lecon": "moteur-12",
    "source_sens": "rédigé par IA",
@@ -4953,7 +4953,7 @@
    "scheme": "فَعَّلَ",
    "exemple": {
     "ar": "فَرَّقَ الْحَمَّالُ الْأَحْمَالَ.",
-    "fr": "Le porteur a séparé les charges."
+    "fr": "Le porteur a réparti les charges."
    },
    "lemme": "far~aqu",
    "theme": "actions"
@@ -5257,7 +5257,7 @@
    "scheme": "تَفَاعَلَ",
    "exemple": {
     "ar": "تَشَابَهَتِ الْكَلِمَتَانِ.",
-    "fr": "Les deux mots se ressemblent."
+    "fr": "Les deux mots se ressemblaient."
    },
    "racine": "$bh",
    "theme": "qualites"
@@ -5610,7 +5610,7 @@
    "id": "istansakha",
    "ar": "اسْتَنْسَخَ",
    "translit": "istansaḫa",
-   "fr": "faire copier",
+   "fr": "faire copier, copier (un écrit)",
    "nature": "verbe",
    "lecon": "moteur-19",
    "source_sens": "rédigé par IA",

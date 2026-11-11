@@ -147,6 +147,26 @@
     },
     {
       "type": "regle",
+      "titre": "Le sens d'un verbe",
+      "texte": "Un verbe arabe se cite au passé, à la forme « il » : كَتَبَ « il a écrit ». Dans tes fiches, son sens est maintenant donné à l'infinitif : « écrire ».",
+      "exemples": [
+        "كَتَبَ",
+        "عَلِمَ"
+      ],
+      "question": {
+        "type": "traduire",
+        "consigne": "Comment dit-on « savoir (cité à la forme « il ») » ?",
+        "choix_ar": [
+          "عَلِمَ",
+          "يَعْلَمُ",
+          "عِلْمٌ"
+        ],
+        "reponse": 0,
+        "explication": "On cite le verbe au passé, forme « il » : عَلِمَ « savoir »."
+      }
+    },
+    {
+      "type": "regle",
       "titre": "Trois voyelles au passé",
       "texte": "La forme I a trois moules : فَعَلَ (نَظَرَ), فَعِلَ (عَلِمَ) et فَعُلَ (ثَقُلَ). فَعُلَ dit une qualité ou un état, comme l'adjectif de même racine : ثَقُلَ, comme ثَقِيلٌ.",
       "exemples": [
