@@ -206,6 +206,10 @@ class PlaceScreen extends ConsumerWidget {
           ? 'Termine d\'abord les ${stage.length} leçons de la région'
           : done
           ? 'Réussi · le rejouer'
+          : region >= 3
+          ? (AudioPolicy.enabled
+                ? 'Quatre épreuves : un récit, décoder, l\'écoute, répondre'
+                : 'Trois épreuves : un récit, décoder, répondre')
           : AudioPolicy.enabled
           ? 'Trois épreuves : un récit, l\'écoute, répondre'
           : 'Deux épreuves : un récit, répondre',

@@ -1,6 +1,7 @@
 /// Examen de fin de région écrit en données (à partir de la région 2, cahier
 /// v3 §5.11) : un récit à comprendre, une épreuve d'écoute, des réponses à
-/// un personnage. Le contenu vient de `tools/build_content/exams/`.
+/// un personnage, et à partir de la région 3 des mots inconnus à décoder
+/// (racine, moule, sens). Le contenu vient de `tools/build_content/exams/`.
 library;
 
 import '../lesson/lesson.dart';
@@ -48,6 +49,8 @@ class DataExam {
     required this.listeningPass,
     required this.replies,
     required this.repliesPass,
+    this.decoding = const [],
+    this.decodingPass = 1,
   });
 
   factory DataExam.fromJson(Map<String, dynamic> j) {
@@ -58,6 +61,7 @@ class DataExam {
     final lecture = j['lecture'] as Map<String, dynamic>;
     final ecoute = j['ecoute'] as Map<String, dynamic>;
     final reponses = j['reponses'] as Map<String, dynamic>;
+    final decodage = j['decodage'] as Map<String, dynamic>?;
     return DataExam(
       id: j['id'] as String,
       region: j['region'] as int,
@@ -88,6 +92,10 @@ class DataExam {
               : ExamReply.graded(LessonQuestion.fromJson(q)),
       ],
       repliesPass: (reponses['seuil'] as num).toDouble(),
+      decoding: decodage == null ? const [] : questions(decodage),
+      decodingPass: decodage == null
+          ? 1
+          : (decodage['seuil'] as num).toDouble(),
     );
   }
 
@@ -105,6 +113,10 @@ class DataExam {
   final List<ExamReply> replies;
   final double repliesPass;
 
+  /// Mots inconnus à décoder (racine, moule, sens) ; vide avant la région 3.
+  final List<LessonQuestion> decoding;
+  final double decodingPass;
+
   /// Phrases à remettre en ordre : la seule partie notée de « répondre ».
   int get gradedReplies => replies.where((r) => r.question != null).length;
 
@@ -112,13 +124,16 @@ class DataExam {
   int get readingMark => mark(reading.length, readingPass);
   int get listeningMark => mark(listening.length, listeningPass);
   int get repliesMark => mark(gradedReplies, repliesPass);
+  int get decodingMark => mark(decoding.length, decodingPass);
 
   bool passed({
     required int reading,
     required int listening,
     required int replies,
+    int decoding = 0,
   }) =>
       reading >= readingMark &&
       listening >= listeningMark &&
-      replies >= repliesMark;
+      replies >= repliesMark &&
+      decoding >= decodingMark;
 }

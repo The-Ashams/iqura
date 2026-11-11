@@ -1,0 +1,1157 @@
+{
+  "id": "examen-r3",
+  "region": 3,
+  "lieu": "eboulis",
+  "titre": "La Grande Précipitation",
+  "statut": "ia_non_verifie",
+  "adversaire": "grande_precipitation",
+  "intro": "Dans les Éboulis, la Grande Précipitation te pousse à répondre trop vite. Trois épreuves pour la calmer : lire un récit, décoder des mots inconnus, répondre.",
+  "lecture": {
+    "titre": "L'inscription du col",
+    "seuil": 0.83,
+    "phrases": [
+      "كَانَ الْبَرْدُ كَثِيرًا فِي الْجِبَالِ، وَكَانَ الطَّرِيقُ طَوِيلًا.",
+      "مَشَى زِيَادٌ وَبَاسِمٌ وَتَاجِرَانِ مِنَ الْجَبَلِ إِلَى الْقَرْيَةِ.",
+      "كَانَ التَّاجِرَانِ يَحْمِلَانِ أَكْيَاسًا ثَقِيلَةً.",
+      "قَالَ بَاسِمٌ: « أُرِيدُ أَنْ أَصِلَ إِلَى الْقَرْيَةِ قَبْلَ الْمَسَاءِ. »",
+      "قَالَ زِيَادٌ: « لَا تَتَعَجَّلْ. الطَّرِيقُ صَعْبٌ، وَالْجِسْرُ بَعِيدٌ. »",
+      "عِنْدَ الْجِسْرِ، رَأَى زِيَادٌ بَابًا قَدِيمًا، وَعَلَى الْبَابِ كَلِمَاتٌ.",
+      "قَرَأَ زِيَادٌ الْكَلِمَاتِ: « لَا تَتَعَجَّلْ، وَلَا تُسَافِرْ فِي الْمَسَاءِ. »",
+      "لَمْ يَفْهَمْ بَاسِمٌ كَلِمَةَ « تَتَعَجَّلْ »، وَسَأَلَ زِيَادًا عَنْهَا.",
+      "عَرَفَ زِيَادٌ الْحُرُوفَ: ع ج ل، وَقَالَ: « التَّعَجُّلُ خَطَأٌ. »",
+      "قَالَ زِيَادٌ: « الْحُرُوفُ تُسَاعِدُنَا، لَٰكِنَّ الْمَعْنَى فِي الْكِتَابِ. »",
+      "فَرِحَ بَاسِمٌ، وَقَالَ: « أُرِيدُ أَنْ أَتَعَلَّمَ الْحُرُوفَ. »",
+      "بَاتَ الْمُسَافِرُونَ فِي خَيْمَةٍ عِنْدَ الْجِسْرِ.",
+      "فِي الْخَيْمَةِ، تَكَلَّمَ الْمُسَافِرُونَ، وَتَذَكَّرَ زِيَادٌ قِصَصًا قَدِيمَةً.",
+      "اسْتَمَعَ بَاسِمٌ إِلَى الْقِصَصِ، ثُمَّ نَامَ.",
+      "فِي الْمَسَاءِ، وَقَعَ الثَّلْجُ عَلَى الْجَبَلِ.",
+      "قَالَ بَاسِمٌ: « لَيْتَ الطَّرِيقَ قَصِيرٌ! »",
+      "قَالَ تَاجِرٌ: « لَعَلَّ الْقَرْيَةَ قَرِيبَةٌ. »",
+      "فِي الصَّبَاحِ، صَارَ الطَّرِيقُ أَبْيَضَ، وَكَانَ الْمَاءُ بَارِدًا.",
+      "لَمْ يَنَمْ بَاسِمٌ كَثِيرًا، لَٰكِنَّ بَاسِمًا كَانَ سَعِيدًا.",
+      "شَرِبَ الْمُسَافِرُونَ الْمَاءَ، وَأَكَلُوا الْخُبْزَ، وَحَمَلُوا الْأَكْيَاسَ.",
+      "قَالَ زِيَادٌ: « يَا بَاسِمُ، لَا تَتَعَجَّلْ. الطَّرِيقُ أَبْيَضُ. »",
+      "ثُمَّ مَشَى الْمُسَافِرُونَ إِلَى الْقَرْيَةِ، وَوَصَلُوا قَبْلَ الْمَسَاءِ.",
+      "فِي السُّوقِ، لَقِيَ الْمُسَافِرُونَ أَبَا سَمِيرٍ، تَاجِرًا مِنْ بَغْدَادَ.",
+      "دَعَا الْمُسَافِرِينَ أَبُو سَمِيرٍ إِلَى بَيْتِهِ.",
+      "فِي بَيْتِ أَبِي سَمِيرٍ، جَلَسَ الضُّيُوفُ فِي الْمَجْلِسِ، وَتَعَارَفُوا.",
+      "أَكْرَمَ أَبُو سَمِيرٍ الضُّيُوفَ، وَقَدَّمَ لَهُمُ الْخُبْزَ وَالتَّمْرَ.",
+      "وَعَدَ أَبُو سَمِيرٍ بَاسِمًا أَنْ يَكْتُبَ لَهُ رِسَالَةً.",
+      "سَأَلَ أَبُو سَمِيرٍ بَاسِمًا: « مَا تَعَلَّمْتَ فِي الطَّرِيقِ؟ »",
+      "قَالَ بَاسِمٌ: « تَعَلَّمْتُ أَنْ أَقِفَ، وَأَنْ أَقْرَأَ، وَأَنْ أَسْأَلَ. »",
+      "قَالَ بَاسِمٌ: « لَنْ أَنْسَى هَٰذِهِ الْقِصَّةَ. »",
+      "وَفِي الْمَسَاءِ، كَتَبَتْ وِدَادُ فِي كِتَابِهَا: « التَّعَجُّلُ خَطَأٌ، وَالصَّوَابُ أَنْ نَقِفَ وَنَقْرَأَ. »"
+    ],
+    "questions": [
+      {
+        "type": "qcm",
+        "consigne": "Que veut Bāsim au début du récit ?",
+        "choix": [
+          "arriver au village avant le soir",
+          "rester dans la montagne",
+          "voyager le soir",
+          "vendre ses bourses"
+        ],
+        "reponse": 0,
+        "explication": "أُرِيدُ أَنْ أَصِلَ إِلَى الْقَرْيَةِ قَبْلَ الْمَسَاءِ : أَنْ + -a (subjonctif)."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que disait l'inscription sur la vieille porte ?",
+        "choix": [
+          "ne te hâte pas, ne voyage pas le soir",
+          "voyage vite, avant le soir",
+          "le pont est proche",
+          "la porte est fermée"
+        ],
+        "reponse": 0,
+        "explication": "لَا تَتَعَجَّلْ، وَلَا تُسَافِرْ : deux défenses (لَا + jussif)."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Qu'est-ce que Bāsim n'a pas compris ?",
+        "choix": [
+          "le mot « تَتَعَجَّلْ »",
+          "le récit de Ziyād",
+          "le nom du village",
+          "la lettre de Widād"
+        ],
+        "reponse": 0,
+        "explication": "لَمْ يَفْهَمْ : لَمْ + jussif, passé nié."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Comment Ziyād a-t-il compris le mot ?",
+        "choix": [
+          "il a reconnu ses lettres : ع ج ل",
+          "il a demandé à un marchand",
+          "il a regardé le dictionnaire",
+          "il ne l'a pas compris"
+        ],
+        "reponse": 0,
+        "explication": "عَرَفَ زِيَادٌ الْحُرُوفَ: ع ج ل : la racine."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Où les voyageurs ont-ils passé la nuit ?",
+        "choix": [
+          "dans une tente près du pont",
+          "au village",
+          "chez Abū Samīr",
+          "sur la montagne"
+        ],
+        "reponse": 0,
+        "explication": "بَاتَ الْمُسَافِرُونَ فِي خَيْمَةٍ عِنْدَ الْجِسْرِ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que veut dire « لَيْتَ الطَّرِيقَ قَصِيرٌ » ?",
+        "choix": [
+          "Si seulement le chemin était court !",
+          "Le chemin est peut-être court.",
+          "Le chemin était court.",
+          "Le chemin est vraiment court."
+        ],
+        "reponse": 0,
+        "explication": "لَيْتَ : « si seulement »."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que pense le marchand du village ?",
+        "choix": [
+          "il est peut-être proche",
+          "il est loin",
+          "il est grand",
+          "il est blanc"
+        ],
+        "reponse": 0,
+        "explication": "لَعَلَّ الْقَرْيَةَ قَرِيبَةٌ : لَعَلَّ, « peut-être que »."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Comment était le chemin au matin ?",
+        "choix": [
+          "devenu blanc",
+          "devenu court",
+          "toujours noir",
+          "ouvert"
+        ],
+        "reponse": 0,
+        "explication": "صَارَ الطَّرِيقُ أَبْيَضَ : صَارَ + attribut en -a (أَبْيَضَ, sans tanwīn)."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Bāsim a-t-il beaucoup dormi ?",
+        "choix": [
+          "non",
+          "oui",
+          "on ne le sait pas",
+          "il n'a pas dormi du tout et il était triste"
+        ],
+        "reponse": 0,
+        "explication": "لَمْ يَنَمْ بَاسِمٌ كَثِيرًا : il n'a pas beaucoup dormi."
+      },
+      {
+        "type": "qcm",
+        "consigne": "D'où vient Abū Samīr ?",
+        "choix": [
+          "de Bagdad",
+          "de Damas",
+          "du village",
+          "de la montagne"
+        ],
+        "reponse": 0,
+        "explication": "تَاجِرًا مِنْ بَغْدَادَ : بَغْدَادَ sans tanwīn, -a après مِنْ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Dans « دَعَا الْمُسَافِرِينَ أَبُو سَمِيرٍ », qui a invité qui ?",
+        "choix": [
+          "Abū Samīr a invité les voyageurs",
+          "les voyageurs ont invité Abū Samīr",
+          "Samīr a invité son père",
+          "on ne peut pas le savoir"
+        ],
+        "reponse": 0,
+        "explication": "أَبُو سَمِيرٍ (-u) est le sujet, الْمُسَافِرِينَ (-īna) le complément : c'est la fin des mots qui le montre."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Qu'a dit Bāsim à la fin ?",
+        "choix": [
+          "« Je n'oublierai pas cette histoire. »",
+          "« J'ai oublié cette histoire. »",
+          "« N'oublie pas cette histoire ! »",
+          "« Je veux oublier cette histoire. »"
+        ],
+        "reponse": 0,
+        "explication": "لَنْ أَنْسَى : لَنْ + futur nié."
+      }
+    ]
+  },
+  "decodage": {
+    "seuil": 0.8,
+    "mots": [
+      {
+        "mot": "مَلْعَبٌ",
+        "racine": "lEb",
+        "racine_ar": "ل ع ب",
+        "schema": "مَفْعَل",
+        "sens": "lieu où l'on joue"
+      },
+      {
+        "mot": "مَكْتَبٌ",
+        "racine": "ktb",
+        "racine_ar": "ك ت ب",
+        "schema": "مَفْعَل",
+        "sens": "lieu où l'on écrit, bureau"
+      },
+      {
+        "mot": "مَشْرَبٌ",
+        "racine": "$rb",
+        "racine_ar": "ش ر ب",
+        "schema": "مَفْعَل",
+        "sens": "lieu où l'on boit"
+      },
+      {
+        "mot": "مَنْظَرٌ",
+        "racine": "nZr",
+        "racine_ar": "ن ظ ر",
+        "schema": "مَفْعَل",
+        "sens": "vue, ce que l'on regarde"
+      },
+      {
+        "mot": "مَرْكَبٌ",
+        "racine": "rkb",
+        "racine_ar": "ر ك ب",
+        "schema": "مَفْعَل",
+        "sens": "monture, ce que l'on monte"
+      },
+      {
+        "mot": "مَحْمُولٌ",
+        "racine": "Hml",
+        "racine_ar": "ح م ل",
+        "schema": "مَفْعُول",
+        "sens": "porté"
+      },
+      {
+        "mot": "مَسْمُوعٌ",
+        "racine": "smE",
+        "racine_ar": "س م ع",
+        "schema": "مَفْعُول",
+        "sens": "entendu"
+      },
+      {
+        "mot": "مَحْفُوظٌ",
+        "racine": "HfZ",
+        "racine_ar": "ح ف ظ",
+        "schema": "مَفْعُول",
+        "sens": "gardé, appris par cœur"
+      },
+      {
+        "mot": "لَاعِبٌ",
+        "racine": "lEb",
+        "racine_ar": "ل ع ب",
+        "schema": "فَاعِل",
+        "sens": "joueur, qui joue"
+      },
+      {
+        "mot": "زَارِعٌ",
+        "racine": "zrE",
+        "racine_ar": "ز ر ع",
+        "schema": "فَاعِل",
+        "sens": "cultivateur, qui sème"
+      },
+      {
+        "mot": "سَامِعٌ",
+        "racine": "smE",
+        "racine_ar": "س م ع",
+        "schema": "فَاعِل",
+        "sens": "qui entend"
+      },
+      {
+        "mot": "جَلِيسٌ",
+        "racine": "jls",
+        "racine_ar": "ج ل س",
+        "schema": "فَعِيل",
+        "sens": "compagnon d'assemblée"
+      },
+      {
+        "mot": "مُدَرِّسٌ",
+        "racine": "drs",
+        "racine_ar": "د ر س",
+        "schema": "مُفَعِّل",
+        "sens": "enseignant"
+      },
+      {
+        "mot": "تَدْرِيسٌ",
+        "racine": "drs",
+        "racine_ar": "د ر س",
+        "schema": "تَفْعِيل",
+        "sens": "enseignement"
+      },
+      {
+        "mot": "تَعْرِيفٌ",
+        "racine": "Erf",
+        "racine_ar": "ع ر ف",
+        "schema": "تَفْعِيل",
+        "sens": "fait de faire connaître"
+      },
+      {
+        "mot": "مُتَكَلِّمٌ",
+        "racine": "klm",
+        "racine_ar": "ك ل م",
+        "schema": "مُتَفَعِّل",
+        "sens": "qui parle"
+      }
+    ],
+    "questions": [
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "مَلْعَبٌ",
+        "choix_ar": [
+          "ل ع ب",
+          "م ل ع",
+          "ع ب ل"
+        ],
+        "reponse": 0,
+        "explication": "مَلْعَبٌ : racine ل ع ب."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "مَلْعَبٌ",
+        "choix_ar": [
+          "مَفْعَل",
+          "مِفْعَال",
+          "مَفْعُول"
+        ],
+        "reponse": 0,
+        "explication": "مَلْعَبٌ : moule مَفْعَل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son sens probable ?",
+        "ar": "مَلْعَبٌ",
+        "choix": [
+          "lieu où l'on joue",
+          "joueur, qui joue",
+          "jeu"
+        ],
+        "reponse": 0,
+        "explication": "Sens vérifié : lieu où l'on joue. La racine et le moule donnent une piste, pas une certitude."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "مَكْتَبٌ",
+        "choix_ar": [
+          "ك ت ب",
+          "م ك ت",
+          "ت ب ك"
+        ],
+        "reponse": 0,
+        "explication": "مَكْتَبٌ : racine ك ت ب."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "مَكْتَبٌ",
+        "choix_ar": [
+          "مَفْعَل",
+          "مِفْعَال",
+          "مَفْعُول"
+        ],
+        "reponse": 0,
+        "explication": "مَكْتَبٌ : moule مَفْعَل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son sens probable ?",
+        "ar": "مَكْتَبٌ",
+        "choix": [
+          "lieu où l'on écrit, bureau",
+          "écrit",
+          "écrivain"
+        ],
+        "reponse": 0,
+        "explication": "Sens vérifié : lieu où l'on écrit, bureau. La racine et le moule donnent une piste, pas une certitude."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "مَشْرَبٌ",
+        "choix_ar": [
+          "ش ر ب",
+          "م ش ر",
+          "ر ب ش"
+        ],
+        "reponse": 0,
+        "explication": "مَشْرَبٌ : racine ش ر ب."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "مَشْرَبٌ",
+        "choix_ar": [
+          "مَفْعَل",
+          "مِفْعَال",
+          "مَفْعُول"
+        ],
+        "reponse": 0,
+        "explication": "مَشْرَبٌ : moule مَفْعَل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "مَنْظَرٌ",
+        "choix_ar": [
+          "ن ظ ر",
+          "م ن ظ",
+          "ظ ر ن"
+        ],
+        "reponse": 0,
+        "explication": "مَنْظَرٌ : racine ن ظ ر."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "مَنْظَرٌ",
+        "choix_ar": [
+          "مَفْعَل",
+          "مِفْعَال",
+          "مَفْعُول"
+        ],
+        "reponse": 0,
+        "explication": "مَنْظَرٌ : moule مَفْعَل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son sens probable ?",
+        "ar": "مَنْظَرٌ",
+        "choix": [
+          "vue, ce que l'on regarde",
+          "qui regarde",
+          "regard"
+        ],
+        "reponse": 0,
+        "explication": "Sens vérifié : vue, ce que l'on regarde. La racine et le moule donnent une piste, pas une certitude."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "مَرْكَبٌ",
+        "choix_ar": [
+          "ر ك ب",
+          "م ر ك",
+          "ك ب ر"
+        ],
+        "reponse": 0,
+        "explication": "مَرْكَبٌ : racine ر ك ب."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "مَرْكَبٌ",
+        "choix_ar": [
+          "مَفْعَل",
+          "مِفْعَال",
+          "مَفْعُول"
+        ],
+        "reponse": 0,
+        "explication": "مَرْكَبٌ : moule مَفْعَل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "مَحْمُولٌ",
+        "choix_ar": [
+          "ح م ل",
+          "م ح م",
+          "ح م و"
+        ],
+        "reponse": 0,
+        "explication": "مَحْمُولٌ : racine ح م ل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "مَحْمُولٌ",
+        "choix_ar": [
+          "مَفْعُول",
+          "مَفْعَل",
+          "فَاعِل"
+        ],
+        "reponse": 0,
+        "explication": "مَحْمُولٌ : moule مَفْعُول."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son sens probable ?",
+        "ar": "مَحْمُولٌ",
+        "choix": [
+          "porté",
+          "porteur",
+          "charge"
+        ],
+        "reponse": 0,
+        "explication": "Sens vérifié : porté. La racine et le moule donnent une piste, pas une certitude."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "مَسْمُوعٌ",
+        "choix_ar": [
+          "س م ع",
+          "م س م",
+          "س ع م"
+        ],
+        "reponse": 0,
+        "explication": "مَسْمُوعٌ : racine س م ع."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "مَسْمُوعٌ",
+        "choix_ar": [
+          "مَفْعُول",
+          "مَفْعَل",
+          "فَاعِل"
+        ],
+        "reponse": 0,
+        "explication": "مَسْمُوعٌ : moule مَفْعُول."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son sens probable ?",
+        "ar": "مَسْمُوعٌ",
+        "choix": [
+          "entendu",
+          "qui entend",
+          "écoute attentive"
+        ],
+        "reponse": 0,
+        "explication": "Sens vérifié : entendu. La racine et le moule donnent une piste, pas une certitude."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "مَحْفُوظٌ",
+        "choix_ar": [
+          "ح ف ظ",
+          "م ح ف",
+          "ف ظ ح"
+        ],
+        "reponse": 0,
+        "explication": "مَحْفُوظٌ : racine ح ف ظ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "مَحْفُوظٌ",
+        "choix_ar": [
+          "مَفْعُول",
+          "مَفْعَل",
+          "فَاعِل"
+        ],
+        "reponse": 0,
+        "explication": "مَحْفُوظٌ : moule مَفْعُول."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "لَاعِبٌ",
+        "choix_ar": [
+          "ل ع ب",
+          "م ل ع",
+          "ع ب ل"
+        ],
+        "reponse": 0,
+        "explication": "لَاعِبٌ : racine ل ع ب."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "لَاعِبٌ",
+        "choix_ar": [
+          "فَاعِل",
+          "فَعِيل",
+          "مَفْعُول"
+        ],
+        "reponse": 0,
+        "explication": "لَاعِبٌ : moule فَاعِل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son sens probable ?",
+        "ar": "لَاعِبٌ",
+        "choix": [
+          "joueur, qui joue",
+          "lieu où l'on joue",
+          "jeu"
+        ],
+        "reponse": 0,
+        "explication": "Sens vérifié : joueur, qui joue. La racine et le moule donnent une piste, pas une certitude."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "زَارِعٌ",
+        "choix_ar": [
+          "ز ر ع",
+          "ز ا ر",
+          "ر ع ز"
+        ],
+        "reponse": 0,
+        "explication": "زَارِعٌ : racine ز ر ع."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "زَارِعٌ",
+        "choix_ar": [
+          "فَاعِل",
+          "فَعِيل",
+          "مَفْعُول"
+        ],
+        "reponse": 0,
+        "explication": "زَارِعٌ : moule فَاعِل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son sens probable ?",
+        "ar": "زَارِعٌ",
+        "choix": [
+          "cultivateur, qui sème",
+          "semé, cultivé",
+          "ferme"
+        ],
+        "reponse": 0,
+        "explication": "Sens vérifié : cultivateur, qui sème. La racine et le moule donnent une piste, pas une certitude."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "سَامِعٌ",
+        "choix_ar": [
+          "س م ع",
+          "م س م",
+          "س ع م"
+        ],
+        "reponse": 0,
+        "explication": "سَامِعٌ : racine س م ع."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "سَامِعٌ",
+        "choix_ar": [
+          "فَاعِل",
+          "فَعِيل",
+          "مَفْعُول"
+        ],
+        "reponse": 0,
+        "explication": "سَامِعٌ : moule فَاعِل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "جَلِيسٌ",
+        "choix_ar": [
+          "ج ل س",
+          "ج ل ي",
+          "ل س ج"
+        ],
+        "reponse": 0,
+        "explication": "جَلِيسٌ : racine ج ل س."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "جَلِيسٌ",
+        "choix_ar": [
+          "فَعِيل",
+          "فَاعِل",
+          "فَعَّال"
+        ],
+        "reponse": 0,
+        "explication": "جَلِيسٌ : moule فَعِيل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "مُدَرِّسٌ",
+        "choix_ar": [
+          "د ر س",
+          "م د ر",
+          "ت د ر"
+        ],
+        "reponse": 0,
+        "explication": "مُدَرِّسٌ : racine د ر س."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "مُدَرِّسٌ",
+        "choix_ar": [
+          "مُفَعِّل",
+          "مُفْعِل",
+          "مُتَفَعِّل"
+        ],
+        "reponse": 0,
+        "explication": "مُدَرِّسٌ : moule مُفَعِّل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son sens probable ?",
+        "ar": "مُدَرِّسٌ",
+        "choix": [
+          "enseignant",
+          "apprenant",
+          "enseignement"
+        ],
+        "reponse": 0,
+        "explication": "Sens vérifié : enseignant. La racine et le moule donnent une piste, pas une certitude."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "تَدْرِيسٌ",
+        "choix_ar": [
+          "د ر س",
+          "م د ر",
+          "ت د ر"
+        ],
+        "reponse": 0,
+        "explication": "تَدْرِيسٌ : racine د ر س."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "تَدْرِيسٌ",
+        "choix_ar": [
+          "تَفْعِيل",
+          "تَفَعُّل",
+          "اسْتِفْعَال"
+        ],
+        "reponse": 0,
+        "explication": "تَدْرِيسٌ : moule تَفْعِيل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son sens probable ?",
+        "ar": "تَدْرِيسٌ",
+        "choix": [
+          "enseignement",
+          "enseignant",
+          "étude"
+        ],
+        "reponse": 0,
+        "explication": "Sens vérifié : enseignement. La racine et le moule donnent une piste, pas une certitude."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "تَعْرِيفٌ",
+        "choix_ar": [
+          "ع ر ف",
+          "ت ع ر",
+          "ر ف ع"
+        ],
+        "reponse": 0,
+        "explication": "تَعْرِيفٌ : racine ع ر ف."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "تَعْرِيفٌ",
+        "choix_ar": [
+          "تَفْعِيل",
+          "تَفَعُّل",
+          "اسْتِفْعَال"
+        ],
+        "reponse": 0,
+        "explication": "تَعْرِيفٌ : moule تَفْعِيل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "مُتَكَلِّمٌ",
+        "choix_ar": [
+          "ك ل م",
+          "ت ك ل",
+          "م ك ل"
+        ],
+        "reponse": 0,
+        "explication": "مُتَكَلِّمٌ : racine ك ل م."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "مُتَكَلِّمٌ",
+        "choix_ar": [
+          "مُتَفَعِّل",
+          "مُفَعِّل",
+          "مُتَفَاعِل"
+        ],
+        "reponse": 0,
+        "explication": "مُتَكَلِّمٌ : moule مُتَفَعِّل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son sens probable ?",
+        "ar": "مُتَكَلِّمٌ",
+        "choix": [
+          "qui parle",
+          "parole",
+          "à qui l'on parle"
+        ],
+        "reponse": 0,
+        "explication": "Sens vérifié : qui parle. La racine et le moule donnent une piste, pas une certitude."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de cette forme ?",
+        "ar": "قُلْتُ",
+        "choix_ar": [
+          "ق و ل",
+          "ق ل ت",
+          "ق ا ل"
+        ],
+        "reponse": 0,
+        "explication": "ق و ل : le ā du milieu cache un و ; la syllabe se ferme, il reste u."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quelle lettre de la racine est cachée ou transformée ?",
+        "ar": "قُلْتُ",
+        "choix": [
+          "le و du milieu",
+          "le و du début",
+          "une lettre doublée (د)"
+        ],
+        "reponse": 0,
+        "explication": "ق و ل : le ā du milieu cache un و ; la syllabe se ferme, il reste u."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de cette forme ?",
+        "ar": "يَجِدُ",
+        "choix_ar": [
+          "و ج د",
+          "ي ج د",
+          "ج د"
+        ],
+        "reponse": 0,
+        "explication": "و ج د : le و du début tombe à l'inaccompli."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quelle lettre de la racine est cachée ou transformée ?",
+        "ar": "يَجِدُ",
+        "choix": [
+          "le و du début",
+          "le و du milieu",
+          "une lettre doublée (د)"
+        ],
+        "reponse": 0,
+        "explication": "و ج د : le و du début tombe à l'inaccompli."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de cette forme ?",
+        "ar": "مَدَدْتُ",
+        "choix_ar": [
+          "م د د",
+          "م د ت",
+          "د د ت"
+        ],
+        "reponse": 0,
+        "explication": "م د د : les deux د se séparent devant تُ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quelle lettre de la racine est cachée ou transformée ?",
+        "ar": "مَدَدْتُ",
+        "choix": [
+          "une lettre doublée (د)",
+          "le و du milieu",
+          "le و du début"
+        ],
+        "reponse": 0,
+        "explication": "م د د : les deux د se séparent devant تُ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de cette forme ?",
+        "ar": "دَعَوْتُ",
+        "choix_ar": [
+          "د ع و",
+          "د ع ت",
+          "د ع ي"
+        ],
+        "reponse": 0,
+        "explication": "د ع و : le و final revient devant تُ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quelle lettre de la racine est cachée ou transformée ?",
+        "ar": "دَعَوْتُ",
+        "choix": [
+          "le و de la fin",
+          "le و du milieu",
+          "le و du début"
+        ],
+        "reponse": 0,
+        "explication": "د ع و : le و final revient devant تُ."
+      }
+    ]
+  },
+  "ecoute": {
+    "seuil": 0.8,
+    "questions": [
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "لَا تَتَعَجَّلْ.",
+        "choix": [
+          "Ne te hâte pas.",
+          "Tu ne te hâtes pas.",
+          "Il s'est hâté.",
+          "Ne sois pas en retard."
+        ],
+        "reponse": 0,
+        "explication": "لَا تَتَعَجَّلْ : défense."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "كُنْتُ فِي السُّوقِ.",
+        "choix": [
+          "J'étais au marché.",
+          "Il était au marché.",
+          "Je suis allé au marché.",
+          "Nous étions au marché."
+        ],
+        "reponse": 0,
+        "explication": "كُنْتُ : « j'étais »."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "لَنْ أَنْسَى الْقِصَّةَ.",
+        "choix": [
+          "Je n'oublierai pas l'histoire.",
+          "J'ai oublié l'histoire.",
+          "Je n'ai pas oublié l'histoire.",
+          "N'oublie pas l'histoire."
+        ],
+        "reponse": 0,
+        "explication": "لَنْ : futur nié."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "وَجَدْتُ الْمِفْتَاحَ.",
+        "choix": [
+          "J'ai trouvé la clé.",
+          "Je trouve la clé.",
+          "Il a trouvé la clé.",
+          "J'ai posé la clé."
+        ],
+        "reponse": 0,
+        "explication": "وَجَدْتُ : « j'ai trouvé »."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "إِنَّ الطَّرِيقَ طَوِيلٌ.",
+        "choix": [
+          "Le chemin est vraiment long.",
+          "Le chemin était long.",
+          "Si seulement le chemin était court.",
+          "Le chemin est peut-être long."
+        ],
+        "reponse": 0,
+        "explication": "إِنَّ : insistance."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "صَارَ الْمَاءُ بَارِدًا.",
+        "choix": [
+          "L'eau est devenue froide.",
+          "L'eau était chaude.",
+          "L'eau est restée froide.",
+          "L'eau est froide."
+        ],
+        "reponse": 0,
+        "explication": "صَارَ : « devenir »."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "قُمْتُ فِي الصَّبَاحِ.",
+        "choix": [
+          "Je me suis levé le matin.",
+          "Il s'est levé le matin.",
+          "Je me lève le matin.",
+          "Lève-toi le matin."
+        ],
+        "reponse": 0,
+        "explication": "قُمْتُ : « je me suis levé »."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "مَدَدْنَا الْحَبْلَ.",
+        "choix": [
+          "Nous avons tendu la corde.",
+          "Il nous a tendus.",
+          "Nous tendons la corde.",
+          "Tendez la corde."
+        ],
+        "reponse": 0,
+        "explication": "مَدَدْنَا : « nous avons tendu »."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "دَعَوْتُ صَدِيقِي.",
+        "choix": [
+          "J'ai appelé mon ami.",
+          "Mon ami m'a appelé.",
+          "J'appelle mon ami.",
+          "Appelle ton ami."
+        ],
+        "reponse": 0,
+        "explication": "دَعَوْتُ : « j'ai appelé »."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "أُرِيدُ أَنْ أَكْتُبَ.",
+        "choix": [
+          "Je veux écrire.",
+          "Je n'écrirai pas.",
+          "J'ai écrit.",
+          "Écris !"
+        ],
+        "reponse": 0,
+        "explication": "أَنْ + -a : subjonctif."
+      }
+    ]
+  },
+  "reponses": {
+    "seuil": 0.8,
+    "questions": [
+      {
+        "type": "ordonner",
+        "consigne": "Widād te demande où tu étais hier. Réponds dans l'ordre verbe, puis le lieu.",
+        "replique": {
+          "qui": "widad",
+          "ar": "أَيْنَ كُنْتَ أَمْسِ؟"
+        },
+        "tuiles": [
+          "فِي",
+          "كُنْتُ",
+          "السُّوقِ",
+          "كَانَ"
+        ],
+        "solution": [
+          "كُنْتُ",
+          "فِي",
+          "السُّوقِ"
+        ],
+        "explication": "كُنْتُ فِي السُّوقِ : « j'étais » se dit كُنْتُ, comme قُلْتُ ; كَانَ serait « il était »."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Ziyād te demande si tu as trouvé la clé. Réponds oui, en commençant par نَعَمْ puis le verbe.",
+        "replique": {
+          "qui": "ziyad",
+          "ar": "هَلْ وَجَدْتَ الْمِفْتَاحَ؟"
+        },
+        "tuiles": [
+          "تَحْتَ",
+          "نَعَمْ،",
+          "الْكِيسِ",
+          "وَجَدْتُهُ",
+          "أَجِدُهُ"
+        ],
+        "solution": [
+          "نَعَمْ،",
+          "وَجَدْتُهُ",
+          "تَحْتَ",
+          "الْكِيسِ"
+        ],
+        "explication": "نَعَمْ، وَجَدْتُهُ تَحْتَ الْكِيسِ : au passé, « je l'ai trouvée » ; أَجِدُهُ serait au présent."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Widād te demande ce que tu veux. Réponds dans l'ordre أُرِيدُ, أَنْ, verbe, complément.",
+        "replique": {
+          "qui": "widad",
+          "ar": "مَا تُرِيدُ؟"
+        },
+        "tuiles": [
+          "الرِّسَالَةَ",
+          "أَنْ",
+          "أُرِيدُ",
+          "أَقْرَأَ",
+          "أَقْرَأُ"
+        ],
+        "solution": [
+          "أُرِيدُ",
+          "أَنْ",
+          "أَقْرَأَ",
+          "الرِّسَالَةَ"
+        ],
+        "explication": "Après أَنْ, le verbe finit par -a : أَقْرَأَ ; أَقْرَأُ ne convient pas."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Ziyād veut laisser la porte ouverte. Réponds par une défense : لَا, le verbe, le complément, puis l'état.",
+        "replique": {
+          "qui": "ziyad",
+          "ar": "هَلْ أَتْرُكُ الْبَابَ مَفْتُوحًا؟"
+        },
+        "tuiles": [
+          "الْبَابَ",
+          "لَا",
+          "مَفْتُوحًا",
+          "تَتْرُكِ",
+          "تَتْرُكُ"
+        ],
+        "solution": [
+          "لَا",
+          "تَتْرُكِ",
+          "الْبَابَ",
+          "مَفْتُوحًا"
+        ],
+        "explication": "Défense : لَا + jussif, تَتْرُكْ (تَتْرُكِ devant l'article) ; تَتْرُكُ dirait « tu ne laisses pas »."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Widād te demande si le chemin est long. Insiste : إِنَّ, sujet, attribut.",
+        "replique": {
+          "qui": "widad",
+          "ar": "هَلِ الطَّرِيقُ طَوِيلٌ؟"
+        },
+        "tuiles": [
+          "طَوِيلٌ",
+          "إِنَّ",
+          "الطَّرِيقَ",
+          "الطَّرِيقُ"
+        ],
+        "solution": [
+          "إِنَّ",
+          "الطَّرِيقَ",
+          "طَوِيلٌ"
+        ],
+        "explication": "Après إِنَّ, le sujet passe en -a : الطَّرِيقَ ; l'attribut reste en -u."
+      }
+    ]
+  }
+}

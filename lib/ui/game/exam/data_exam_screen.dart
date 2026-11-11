@@ -26,7 +26,7 @@ import '../lesson/fondations_views.dart' show GradedText;
 import '../lesson/question_view.dart';
 import '../pixel.dart';
 
-enum _Stage { intro, reading, listening, replies, result }
+enum _Stage { intro, reading, decoding, listening, replies, result }
 
 class DataExamScreen extends ConsumerStatefulWidget {
   const DataExamScreen({super.key, required this.region, this.random});
@@ -49,6 +49,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
   int _reading = 0;
   int _listening = 0;
   int _replies = 0;
+  int _decoding = 0;
   int _freeOk = 0;
   bool _showModels = false;
   bool _reported = false;
@@ -73,12 +74,24 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
 
   bool get _calm => ref.read(settingsProvider).learningOnly;
 
+  static const _trialsWord = ['', 'Une', 'Deux', 'Trois', 'Quatre'];
+
+  /// Nombre d'épreuves : lecture, décodage (région 3 et plus), écoute (si
+  /// le son est actif), réponses.
+  int get _trialCount =>
+      2 + (_exam.decoding.isNotEmpty ? 1 : 0) + (AudioPolicy.enabled ? 1 : 0);
+
   // Son coupé (jalon J6) : pas d'épreuve d'écoute.
   int get _listeningCount => AudioPolicy.enabled ? _exam.listening.length : 0;
 
   int get _foeMax =>
-      (_exam.reading.length + _listeningCount + _exam.gradedReplies) * 10;
-  int get _foeHp => _foeMax - (_reading + _listening + _replies) * 10;
+      (_exam.reading.length +
+          _exam.decoding.length +
+          _listeningCount +
+          _exam.gradedReplies) *
+      10;
+  int get _foeHp =>
+      _foeMax - (_reading + _decoding + _listening + _replies) * 10;
 
   void _restart() {
     _stage = _Stage.intro;
@@ -88,6 +101,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
     _reading = 0;
     _listening = 0;
     _replies = 0;
+    _decoding = 0;
     _freeOk = 0;
     _showModels = false;
     _reported = false;
@@ -99,6 +113,8 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
       switch (_stage) {
         case _Stage.reading:
           _reading++;
+        case _Stage.decoding:
+          _decoding++;
         case _Stage.listening:
           _listening++;
         case _Stage.replies:
@@ -116,13 +132,18 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
       _flash = _calm
           ? null
           : right
-          ? 'Le mirage se trouble !'
-          : 'Le mirage brouille la vue.';
+          ? (widget.region == 2
+                ? 'Le mirage se trouble !'
+                : 'L\'adversaire recule !')
+          : (widget.region == 2
+                ? 'Le mirage brouille la vue.'
+                : 'L\'adversaire te presse.');
     });
   }
 
   int get _count => switch (_stage) {
     _Stage.reading => _exam.reading.length,
+    _Stage.decoding => _exam.decoding.length,
     _Stage.listening => _exam.listening.length,
     _Stage.replies => _exam.replies.length,
     _ => 0,
@@ -141,6 +162,12 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
       _index = 0;
       switch (_stage) {
         case _Stage.reading:
+          _stage = _exam.decoding.isNotEmpty
+              ? _Stage.decoding
+              : AudioPolicy.enabled
+              ? _Stage.listening
+              : _Stage.replies;
+        case _Stage.decoding:
           _stage = AudioPolicy.enabled ? _Stage.listening : _Stage.replies;
         case _Stage.listening:
           _stage = _Stage.replies;
@@ -157,6 +184,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
     reading: _reading,
     listening: AudioPolicy.enabled ? _listening : _exam.listeningMark,
     replies: _replies,
+    decoding: _decoding,
   );
 
   void _report() {
@@ -167,7 +195,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
         .read(lessonProgressProvider.notifier)
         .recordBoss(
           _exam.id,
-          score: _reading + _listening + _replies,
+          score: _reading + _decoding + _listening + _replies,
           passed: passed,
         );
     playSfx(ref, passed ? Sfx.victoire : Sfx.repli);
@@ -219,8 +247,13 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
               ...switch (_stage) {
                 _Stage.intro => _intro(),
                 _Stage.reading => _readingStage(),
+                _Stage.decoding => _question(
+                  'Épreuve 2 · Décoder',
+                  _exam.decoding[_index],
+                  _exam.decoding.length,
+                ),
                 _Stage.listening => _question(
-                  'Épreuve 2 · Écoute',
+                  'Épreuve ${_exam.decoding.isNotEmpty ? 3 : 2} · Écoute',
                   _exam.listening[_index],
                   _exam.listening.length,
                 ),
@@ -245,9 +278,10 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
           ),
           const SizedBox(height: 8),
           Text(
-            '${AudioPolicy.enabled ? 'Trois' : 'Deux'} épreuves : lire un '
+            '${_trialsWord[_trialCount]} épreuves : lire un '
             'récit et répondre à ${_exam.reading.length} questions '
             '(${_exam.readingMark} bonnes réponses nécessaires) ; '
+            '${_exam.decoding.isNotEmpty ? 'décoder des mots inconnus : ${_exam.decoding.length} questions (${_exam.decodingMark} nécessaires) ; ' : ''}'
             '${AudioPolicy.enabled ? 'écouter ${_exam.listening.length} phrases (${_exam.listeningMark} nécessaires) ; ' : ''}'
             'répondre à des '
             'personnages : ${_exam.gradedReplies} phrases à remettre en ordre '
@@ -320,7 +354,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
 
   List<Widget> _replyStage() {
     final reply = _exam.replies[_index];
-    const label = 'Épreuve 3 · Répondre';
+    final label = 'Épreuve $_trialCount · Répondre';
     if (reply.question != null) {
       return _question(label, reply.question!, _exam.replies.length);
     }
@@ -408,6 +442,11 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
     ];
   }
 
+  bool get _hasNextRegion => ref
+      .read(contentDatabaseProvider)
+      .regions()
+      .any((r) => r.number == widget.region + 1);
+
   List<Widget> _result() {
     final passed = _passed;
     final free = _exam.replies.length - _exam.gradedReplies;
@@ -420,8 +459,8 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
               passed
                   ? (_calm
                         ? 'Examen réussi !'
-                        : 'Le ${_exam.title} se dissipe : la région suivante '
-                              's\'ouvre.')
+                        : '${_exam.title} se dissipe.${_hasNextRegion ? ' La '
+                                    'région suivante s\'ouvre.' : ''}')
                   : 'Pas encore… Rien n\'est perdu : tu peux recommencer '
                         'quand tu veux.',
               style: TextStyle(fontSize: 20, color: GameColors.accent),
@@ -431,6 +470,11 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
               'Lecture : $_reading / ${_exam.reading.length} '
               '(${_exam.readingMark} nécessaires).',
             ),
+            if (_exam.decoding.isNotEmpty)
+              Text(
+                'Décoder : $_decoding / ${_exam.decoding.length} '
+                '(${_exam.decodingMark} nécessaires).',
+              ),
             if (AudioPolicy.enabled)
               Text(
                 'Écoute : $_listening / ${_exam.listening.length} '

@@ -12,8 +12,7 @@
     "moteur-31"
   ],
   "apercu": [
-    "وِدَادُ",
-    "أَمْسَى"
+    "وِدَادُ"
   ],
   "schemes": [
     "أَفْعَلَ"
@@ -31,7 +30,7 @@
           "texte": "كَانَ « il était » fait de même : كَانَ الطَّرِيقُ طَوِيلًا."
         }
       ],
-      "objectif": "Employer كَانَ, صَارَ, أَصْبَحَ, ظَلَّ, مَا زَالَ."
+      "objectif": "Employer كَانَ, صَارَ, أَصْبَحَ, ظَلَّ, مَا زَالَ, بَاتَ."
     },
     {
       "type": "echauffement",
@@ -151,11 +150,11 @@
     {
       "type": "regle",
       "titre": "كَانَ et le temps",
-      "texte": "كَانَ met la phrase au passé, سَيَكُونُ au futur. Suivi d'un inaccompli, il dit une habitude ou une durée : كَانَ بَاسِمٌ يَلْعَبُ « Bāsim jouait ».",
+      "texte": "كَانَ met la phrase au passé, سَيَكُونُ au futur. Il se conjugue comme قَالَ : كُنْتُ comme قُلْتُ.",
       "exemples": [
         "كَانَ",
         "سَيَكُونُ",
-        "كَانَ يَلْعَبُ"
+        "كُنْتُ"
       ],
       "question": {
         "type": "qcm",
@@ -171,8 +170,27 @@
     },
     {
       "type": "regle",
+      "titre": "كَانَ + inaccompli",
+      "texte": "Suivi d'un inaccompli, كَانَ dit une habitude ou une durée : كَانَ بَاسِمٌ يَلْعَبُ « Bāsim jouait ».",
+      "exemples": [
+        "كَانَ يَلْعَبُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire كَانَ بَاسِمٌ يَلْعَبُ ?",
+        "choix": [
+          "Bāsim jouait.",
+          "Bāsim jouera.",
+          "Bāsim a joué une fois."
+        ],
+        "reponse": 0,
+        "explication": "كَانَ + inaccompli : habitude ou durée."
+      }
+    },
+    {
+      "type": "regle",
       "titre": "Ne pas confondre",
-      "texte": "Avec إِنَّ, c'est le sujet qui passe en -a (إِنَّ الطَّرِيقَ طَوِيلٌ) ; avec كَانَ, c'est l'attribut (كَانَ الطَّرِيقُ طَوِيلًا). Et كُنْتُ se conjugue comme قُلْتُ.",
+      "texte": "Avec إِنَّ, c'est le sujet qui passe en -a (إِنَّ الطَّرِيقَ طَوِيلٌ) ; avec كَانَ, c'est l'attribut (كَانَ الطَّرِيقُ طَوِيلًا).",
       "exemples": [
         "إِنَّ الطَّرِيقَ طَوِيلٌ",
         "كَانَ الطَّرِيقُ طَوِيلًا"
@@ -198,7 +216,7 @@
           "ar": "ظَلَّ",
           "choix": [
             "rester (tout le jour)",
-            "devenir",
+            "passer la nuit",
             "être"
           ],
           "reponse": 0,
@@ -236,7 +254,7 @@
             "زَالَ بَاسِمٌ فِي السُّوقِ"
           ],
           "reponse": 0,
-          "explication": "مَا زَالَ : « être toujours » ; le sujet reste en -u."
+          "explication": "مَا زَالَ : « être toujours » ; sans مَا, ce n'est plus ce sens. Le sujet reste en -u : بَاسِمٌ."
         },
         {
           "type": "qcm",
@@ -247,18 +265,7 @@
             "passe en -i"
           ],
           "reponse": 0,
-          "explication": "كَانَ الطَّرِيقُ…"
-        },
-        {
-          "type": "qcm",
-          "consigne": "Que veut dire كَانَ بَاسِمٌ يَلْعَبُ ?",
-          "choix": [
-            "Bāsim jouait.",
-            "Bāsim jouera.",
-            "Bāsim a joué une fois."
-          ],
-          "reponse": 0,
-          "explication": "كَانَ + inaccompli : habitude ou durée."
+          "explication": "كَانَ الطَّرِيقُ طَوِيلًا : الطَّرِيقُ reste en -u."
         },
         {
           "type": "completer",
@@ -312,7 +319,7 @@
     },
     {
       "type": "lecture",
-      "titre": "La nuit au relais",
+      "titre": "La nuit sous la tente",
       "texte": "Widād raconte une nuit d'hiver. Lis ; touche un mot pour voir son sens.",
       "phrases": [
         "كَانَ الطَّرِيقُ طَوِيلًا، وَكَانَ الْبَرْدُ كَثِيرًا.",
@@ -385,7 +392,7 @@
             "يَلْعَبَ"
           ],
           "reponse": 0,
-          "explication": "كَانَ + inaccompli : يَلْعَبُ."
+          "explication": "كَانَ + inaccompli : يَلْعَبُ. يَلْعَبَ (-a) ne va qu'après أَنْ, لَنْ, كَيْ ; لَعِبَ dirait « il joua »."
         }
       ]
     },

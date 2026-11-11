@@ -277,7 +277,7 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
            for f in glob.glob(os.path.join(lessons.REPO_ROOT, "tools", "build_art", "art", "*.json"))}
     exams.validate(exam_data, lesson_data.lessons, words,
                    {p["id"] for r in world_data for p in r["lieux"]},
-                   {c["id"] for r in world_data for c in r["personnages"]}, art)
+                   {c["id"] for r in world_data for c in r["personnages"]}, art, con)
     world_counts["region_exams"] = exams.write(con, exam_data)
     # Avenant n° 1 : aucune suite de mots du Coran dans le contenu.
     quran_guard.check(

@@ -734,6 +734,54 @@ void main() {
         Rewards.regionExamXp,
       );
     });
+
+    testWidgets('examen de la région 3 (son ${sound ? 'actif' : 'coupé'}) : '
+        'récit, décoder, remettre en ordre', (tester) async {
+      AudioPolicy.enabled = sound;
+      addTearDown(() => AudioPolicy.enabled = false);
+      tester.view.physicalSize = const Size(800, 6000);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final exam = contentDb.regionExam(3)!;
+      expect(exam.id, 'examen-r3');
+      expect(exam.place, 'eboulis');
+      expect(exam.decoding, hasLength(50));
+      expect(exam.decodingMark, 40);
+      await tester.pumpWidget(
+        appWith(DataExamScreen(region: 3, random: Random(5))),
+      );
+      await settle(tester);
+      expect(find.textContaining('décoder'), findsWidgets);
+      await tapOn(tester, find.text('Commencer'));
+      var graded = 0;
+      var sawDecoding = false;
+      for (var guard = 0; guard < 120; guard++) {
+        if (find.textContaining('Épreuve 2 · Décoder').evaluate().isNotEmpty) {
+          sawDecoding = true;
+        }
+        if (find.byType(QuestionView).evaluate().isNotEmpty) {
+          await answer(tester);
+          graded++;
+        } else {
+          break;
+        }
+      }
+      expect(sawDecoding, isTrue);
+      expect(
+        graded,
+        exam.reading.length +
+            exam.decoding.length +
+            (sound ? exam.listening.length : 0) +
+            exam.gradedReplies,
+      );
+      if (!sound) expect(audio.played, isEmpty);
+      expect(find.textContaining('se dissipe'), findsOneWidget);
+      expect(find.textContaining('Décoder : 50 / 50'), findsOneWidget);
+      expect(
+        LessonProgressRepository(userDb).get('examen-r3').completed,
+        isTrue,
+      );
+    });
   }
 
   testWidgets(

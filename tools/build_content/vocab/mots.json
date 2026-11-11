@@ -7343,7 +7343,7 @@
    "lecon": "moteur-30",
    "source_sens": "rédigé par IA",
    "genre": "m",
-   "racine": "xTA",
+   "lemme": "xaTa_#",
    "exemple": {
     "ar": "هَٰذَا خَطَأٌ.",
     "fr": "C'est une erreur."
@@ -7507,7 +7507,7 @@
    "scheme": "أَفْعَلَ",
    "exemple": {
     "ar": "أَصْبَحَ الطَّرِيقُ أَبْيَضَ.",
-    "fr": "Au matin, le chemin était devenu blanc."
+    "fr": "Au matin, le chemin est devenu blanc."
    },
    "lemme": ">aSobaHa",
    "theme": "temps"

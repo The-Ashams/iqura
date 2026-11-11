@@ -119,16 +119,20 @@ class ExamTest(unittest.TestCase):
 
     def check(self, exam):
         exams.validate([exam], self.data.lessons, self.data.words, self.places,
-                       self.chars, {"grand_mirage"})
+                       self.chars, {"grand_mirage", "grande_precipitation"})
+
+    def exam(self, region):
+        (exam,) = [e for e in self.data.exams if e["region"] == region]
+        return exam
 
     def test_region2_exam_is_valid(self):
-        (exam,) = self.data.exams
+        exam = self.exam(2)
         self.check(exam)
         texts = exams.audio_texts([exam])
         self.assertIn(("phrase", exam["lecture"]["phrases"][0]), texts)
 
     def test_unknown_word_short_story_and_bad_answer_are_refused(self):
-        base = self.data.exams[0]
+        base = self.exam(2)
         exam = copy.deepcopy(base)
         exam["lecture"]["phrases"][0] += " سَيَّارَةٌ"
         with self.assertRaisesRegex(exams.ExamError, "mots inconnus"):
@@ -140,6 +144,29 @@ class ExamTest(unittest.TestCase):
         exam = copy.deepcopy(base)
         exam["ecoute"]["questions"][-1]["reponse"] = 1
         with self.assertRaisesRegex(exams.ExamError, "phrase entendue"):
+            self.check(exam)
+
+
+    def test_region3_decoding(self):
+        base = self.exam(3)
+        self.check(base)
+        self.assertEqual(len(base["decodage"]["questions"]), 50)
+        # Un mot déjà connu ne peut pas servir à décoder.
+        exam = copy.deepcopy(base)
+        exam["decodage"]["mots"][0]["mot"] = "كِتَابٌ"
+        exam["decodage"]["mots"][0]["schema"] = "فِعَال"
+        with self.assertRaisesRegex(exams.ExamError, "déjà connu"):
+            self.check(exam)
+        # Le moule annoncé doit correspondre au mot.
+        exam = copy.deepcopy(base)
+        exam["decodage"]["mots"][0]["schema"] = "فَاعِل"
+        with self.assertRaises(exams.ExamError):
+            self.check(exam)
+        # Le mot décodé n'est connu que dans l'examen qui le décode.
+        exam = copy.deepcopy(base)
+        del exam["decodage"]
+        exam["lecture"]["phrases"][0] += " مَلْعَبٌ"
+        with self.assertRaisesRegex(exams.ExamError, "mots inconnus"):
             self.check(exam)
 
 

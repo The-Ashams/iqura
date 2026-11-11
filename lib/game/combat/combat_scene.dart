@@ -59,7 +59,11 @@ class CombatScene extends FlameGame {
     final foe = SpriteComponent(
       sprite: await loadSprite(
         boss
-            ? (region == 2 ? 'grand_mirage.png' : 'gardien.png')
+            ? (switch (region) {
+                2 => 'grand_mirage.png',
+                3 => 'grande_precipitation.png',
+                _ => 'gardien.png',
+              })
             : region == 3
             ? 'precipitation.png'
             : region == 2
@@ -67,10 +71,10 @@ class CombatScene extends FlameGame {
             : 'brume.png',
       ),
       position: boss
-          ? (region == 2 ? Vector2(88, 4) : Vector2(96, 8))
+          ? (region >= 2 ? Vector2(88, 4) : Vector2(96, 8))
           : Vector2(98, 14),
       size: boss
-          ? (region == 2 ? Vector2(64, 66) : Vector2(48, 56))
+          ? (region >= 2 ? Vector2(64, 66) : Vector2(48, 56))
           : Vector2(43, 46),
       paint: _pixelPaint(),
     );

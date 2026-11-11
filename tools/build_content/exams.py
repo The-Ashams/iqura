@@ -9,7 +9,10 @@ Contrôles :
 - tous les mots arabes sont connus à la fin de la région (fiches, aperçus,
   terminaisons enseignées) ;
 - textes rendus au garde-fou coranique et au contrôle des paires ;
-- enregistrements : phrases du récit, phrases écoutées, répliques.
+- enregistrements : phrases du récit, phrases écoutées, répliques ;
+- épreuve « décoder » (région 3, facultative) : des mots que l'apprenant ne
+  connaît pas, dont la racine existe dans le Corpus et dont le schème est
+  vérifié (vocab.check_scheme) ; ils ne doivent pas être déjà connus.
 """
 
 from __future__ import annotations
@@ -91,11 +94,50 @@ def arabic_parts(exam: dict) -> list[tuple[str, str, str]]:
             out.append((f"{f} · réponse {i + 1} · solution", None, " ".join(q["solution"])))
         for j, m in enumerate(q.get("modeles", [])):
             out.append((f"{f} · réponse {i + 1} · modèle {j + 1}", None, m))
+    for i, q in enumerate((exam.get("decodage") or {}).get("questions", [])):
+        if q.get("ar"):
+            out.append((f"{f} · décoder {i + 1}", None, q["ar"]))
+        for j, c in enumerate(q.get("choix_ar", [])):
+            out.append((f"{f} · décoder {i + 1} · choix {j + 1}", None, c))
     return out
 
 
+def _decoding(exam: dict, known: set[str], con: sqlite3.Connection | None) -> set[str]:
+    """Contrôle l'épreuve « décoder » ; renvoie les clés de ses mots inconnus."""
+    part = exam.get("decodage")
+    if not part:
+        return set()
+    where = f"{exam['_file']} · décoder"
+    _seuil(part, where)
+    keys = set()
+    for m in part.get("mots", []):
+        w = f"{where} · {m.get('mot')}"
+        for k in ("mot", "racine", "sens"):
+            if not m.get(k):
+                raise ExamError(f"{w} : champ « {k} » absent")
+        k = vocab.key(m["mot"])
+        if k in known:
+            raise ExamError(f"{w} : mot déjà connu, il ne peut pas servir à décoder")
+        if con is not None and not con.execute(
+                "SELECT 1 FROM root WHERE id = ?", (m["racine"],)).fetchone():
+            raise ExamError(f"{w} : racine {m['racine']} absente du Corpus")
+        if m.get("schema"):
+            err = vocab.check_scheme(m["mot"], m["schema"], m["racine_ar"].replace(" ", ""))
+            if err:
+                raise ExamError(f"{w} : {err}")
+        keys.add(k)
+    if not part.get("questions"):
+        raise ExamError(f"{where} : questions absentes")
+    for i, q in enumerate(part["questions"]):
+        if q.get("type") != "qcm":
+            raise ExamError(f"{where} {i + 1} : type qcm attendu")
+        _choices(q, "choix_ar" if "choix_ar" in q else "choix", f"{where} {i + 1}")
+    return keys
+
+
 def validate(exams: list[dict], lessons: list[dict], words: list[dict],
-             places: set[str], characters: set[str], monsters: set[str]) -> None:
+             places: set[str], characters: set[str], monsters: set[str],
+             con: sqlite3.Connection | None = None) -> None:
     ids = set()
     regions = {l["etape"] for l in lessons}
     for exam in exams:
@@ -169,8 +211,14 @@ def validate(exams: list[dict], lessons: list[dict], words: list[dict],
             raise ExamError(f"{where} : au moins une réponse notée (ordonner)")
 
         known, endings = known_at_end_of_region(lessons, words, exam["region"])
+        known = known | _decoding(exam, known, con)
+        # Schèmes écrits avec ف ع ل, déclarés par les leçons de la région :
+        # notation, pas des mots ; une lettre seule (lettres d'une racine) aussi.
+        schemes = {s for l in lessons if l["etape"] <= exam["region"]
+                   for s in l.get("schemes", [])}
         for w, _, text in arabic_parts(exam):
-            missing = vocab.unknown(text, known, endings)
+            missing = [t for t in vocab.unknown(text, known, endings)
+                       if t not in schemes and len(vocab.key(t)) != 1]
             if missing:
                 raise ExamError(f"{w} : mots inconnus {missing}")
 
