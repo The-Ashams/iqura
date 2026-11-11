@@ -7365,6 +7365,105 @@
     "fr": "Cette réponse est juste."
    },
    "theme": "savoir"
+  },
+  {
+   "id": "inna",
+   "ar": "إِنَّ",
+   "translit": "inna",
+   "fr": "certes (insiste ; souvent non traduit)",
+   "nature": "particule",
+   "lecon": "moteur-31",
+   "source_sens": "rédigé par IA",
+   "lemme": "<in~",
+   "formes": [
+    "إِنَّهُ",
+    "إِنَّهَا"
+   ],
+   "exemple": {
+    "ar": "إِنَّ الطَّرِيقَ طَوِيلٌ.",
+    "fr": "Le chemin est vraiment long."
+   },
+   "remarque": "le sujet qui suit passe en -a",
+   "theme": "particules"
+  },
+  {
+   "id": "anna",
+   "ar": "أَنَّ",
+   "translit": "anna",
+   "fr": "que (suivi d'un nom)",
+   "nature": "particule",
+   "lecon": "moteur-31",
+   "source_sens": "rédigé par IA",
+   "lemme": ">an~",
+   "formes": [
+    "أَنَّهُ",
+    "أَنَّهَا"
+   ],
+   "exemple": {
+    "ar": "عَرَفْتُ أَنَّ الْحَارِسَ عِنْدَ الْبَابِ.",
+    "fr": "J'ai su que le gardien était à la porte."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "lakinna",
+   "ar": "لَٰكِنَّ",
+   "translit": "lākinna",
+   "fr": "mais",
+   "nature": "particule",
+   "lecon": "moteur-31",
+   "source_sens": "rédigé par IA",
+   "lemme": "la`kin~",
+   "exemple": {
+    "ar": "الْبَيْتُ صَغِيرٌ، لَٰكِنَّ الْحَدِيقَةَ كَبِيرَةٌ.",
+    "fr": "La maison est petite, mais le jardin est grand."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "laalla",
+   "ar": "لَعَلَّ",
+   "translit": "laʿalla",
+   "fr": "peut-être que",
+   "nature": "particule",
+   "lecon": "moteur-31",
+   "source_sens": "rédigé par IA",
+   "lemme": "laEal~",
+   "exemple": {
+    "ar": "لَعَلَّ سَمِيرًا فِي الْمَدْرَسَةِ.",
+    "fr": "Samīr est peut-être à l'école."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "kaanna",
+   "ar": "كَأَنَّ",
+   "translit": "kaʾanna",
+   "fr": "on dirait que",
+   "nature": "particule",
+   "lecon": "moteur-31",
+   "source_sens": "rédigé par IA",
+   "lemme": "ka>an~",
+   "exemple": {
+    "ar": "كَأَنَّ السُّوقَ مَدِينَةٌ.",
+    "fr": "On dirait que le marché est une ville."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "layta",
+   "ar": "لَيْتَ",
+   "translit": "layta",
+   "fr": "si seulement",
+   "nature": "particule",
+   "lecon": "moteur-31",
+   "source_sens": "rédigé par IA",
+   "lemme": "layot",
+   "exemple": {
+    "ar": "لَيْتَ الطَّرِيقَ قَصِيرٌ.",
+    "fr": "Si seulement le chemin était court !"
+   },
+   "theme": "particules"
   }
  ]
 }

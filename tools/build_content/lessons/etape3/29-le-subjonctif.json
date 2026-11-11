@@ -23,7 +23,7 @@
       "repliques": [
         {
           "qui": "widad",
-          "texte": "Au tribunal, même les verbes se justifient. Écoute : أُرِيدُ أَنْ أَكْتُبَ."
+          "texte": "Au tribunal, même les verbes se justifient. Regarde : أُرِيدُ أَنْ أَكْتُبَ."
         },
         {
           "qui": "widad",
@@ -49,7 +49,7 @@
         },
         {
           "type": "qcm",
-          "consigne": "Après une préposition, un nom sans tanwīn finit par…",
+          "consigne": "Après une préposition, un nom qui n'a jamais de tanwīn (sans الْ) finit par…",
           "choix": [
             "-a",
             "-i",
@@ -132,7 +132,7 @@
       "texte": "Après أَنْ, لَنْ et كَيْ, l'inaccompli finit par -a : أُرِيدُ أَنْ أَكْتُبَ, لَنْ أَنْسَى, كَيْ يَسْمَعَ. لَنْ nie le futur : لَنْ أَكْتُبَ « je n'écrirai pas ».",
       "exemples": [
         "أَنْ أَكْتُبَ",
-        "لَنْ يَخْرُجَ",
+        "لَنْ يَجْلِسَ",
         "كَيْ يَسْمَعَ"
       ],
       "question": {
@@ -151,11 +151,10 @@
     {
       "type": "regle",
       "titre": "Le ن qui tombe",
-      "texte": "Les formes en ـُونَ et ـِينَ perdent leur ن : أَنْ يَكْتُبُوا (avec un alif muet), أَنْ تَكْتُبِي. Pour les verbes faibles : أَنْ يَدْعُوَ, أَنْ يَمْشِيَ, mais أَنْ يَنْسَى ne change pas.",
+      "texte": "Après أَنْ, لَنْ et كَيْ, les formes en ـُونَ et ـِينَ perdent leur ن : أَنْ يَكْتُبُوا (avec un alif muet), أَنْ تَكْتُبِي.",
       "exemples": [
         "أَنْ يَكْتُبُوا",
-        "أَنْ يَمْشِيَ",
-        "أَنْ يَنْسَى"
+        "أَنْ تَكْتُبِي"
       ],
       "question": {
         "type": "completer",
@@ -168,6 +167,28 @@
         ],
         "reponse": 0,
         "explication": "Après كَيْ, ـُونَ perd son ن : يَسْمَعُوا."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les verbes faibles",
+      "texte": "Le -a se voit après و ou ي final : أَنْ يَدْعُوَ, أَنْ يَمْشِيَ. Après ā, il ne se voit pas : أَنْ يَنْسَى, لَنْ أَنْسَى.",
+      "exemples": [
+        "أَنْ يَدْعُوَ",
+        "أَنْ يَمْشِيَ",
+        "أَنْ يَنْسَى"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Bāsim veut marcher jusqu'au pont. »",
+        "ar": "يُرِيدُ بَاسِمٌ أَنْ … إِلَى الْجِسْرِ.",
+        "choix_ar": [
+          "يَمْشِيَ",
+          "يَمْشِي",
+          "يَمْشِ"
+        ],
+        "reponse": 0,
+        "explication": "Après أَنْ, le ī final reçoit -a : يَمْشِيَ ; يَمْشِ est la forme après لَمْ."
       }
     },
     {
@@ -226,7 +247,7 @@
             "أَرَدْتُ قَرَأْتُ"
           ],
           "reponse": 0,
-          "explication": "« je veux lire » se dit أُرِيدُ أَنْ أَقْرَأَ."
+          "explication": "Après أَنْ : -a, أَقْرَأَ ; أَقْرَأُ (-u) est fautif."
         },
         {
           "type": "traduire",
@@ -237,15 +258,15 @@
             "لَا نَسِيتُ"
           ],
           "reponse": 0,
-          "explication": "« je n'oublierai pas » se dit لَنْ أَنْسَى."
+          "explication": "لَنْ nie le futur ; لَمْ أَنْسَ veut dire « je n'ai pas oublié »."
         },
         {
           "type": "qcm",
-          "consigne": "Que veut dire لَنْ يَخْرُجَ ?",
+          "consigne": "Que veut dire لَنْ يَجْلِسَ ?",
           "choix": [
-            "il ne sortira pas",
-            "il n'est pas sorti",
-            "il veut sortir"
+            "il ne s'assiéra pas",
+            "il ne s'est pas assis",
+            "il veut s'asseoir"
           ],
           "reponse": 0,
           "explication": "لَنْ + -a : futur nié."
@@ -284,18 +305,6 @@
           ],
           "reponse": 0,
           "explication": "Après لَنْ : -a, آكُلَ."
-        },
-        {
-          "type": "completer",
-          "consigne": "Complète : « Il veut marcher jusqu'au pont. »",
-          "ar": "يُرِيدُ أَنْ … إِلَى الْجِسْرِ.",
-          "choix_ar": [
-            "يَمْشِيَ",
-            "يَمْشِي",
-            "يَمْشِ"
-          ],
-          "reponse": 0,
-          "explication": "Après أَنْ, le ī final reçoit -a : يَمْشِيَ."
         },
         {
           "type": "completer",
@@ -357,11 +366,11 @@
             "أَرَدْتُ كَتَبْتُ رِسَالَةً."
           ],
           "reponse": 0,
-          "explication": "« Je veux écrire une lettre. » se dit أُرِيدُ أَنْ أَكْتُبَ رِسَالَةً."
+          "explication": "Après أَنْ : -a, أَكْتُبَ."
         },
         {
           "type": "ordonner",
-          "consigne": "Écris dans l'ordre : « Je n'oublierai pas l'histoire. »",
+          "consigne": "Écris dans l'ordre لَنْ, verbe, complément : « Je n'oublierai pas l'histoire. »",
           "tuiles": [
             "الْقِصَّةَ",
             "أَنْسَى",
@@ -373,7 +382,7 @@
             "أَنْسَى",
             "الْقِصَّةَ"
           ],
-          "explication": "لَنْ, le verbe, puis le complément."
+          "explication": "لَنْ, le verbe, puis le complément. لَمْ ne va pas : لَمْ أَنْسَ voudrait dire « je n'ai pas oublié »."
         },
         {
           "type": "completer",
@@ -435,10 +444,10 @@
           "choix_ar": [
             "كَيْ يَسْمَعَ",
             "كَيْ يَسْمَعُ",
-            "لَنْ يَسْمَعَ"
+            "أَنْ سَمِعَ"
           ],
           "reponse": 0,
-          "explication": "« pour qu'il écoute » se dit كَيْ يَسْمَعَ."
+          "explication": "كَيْ + -a : كَيْ يَسْمَعَ ; -u est fautif après كَيْ."
         },
         {
           "type": "qcm",
@@ -475,12 +484,12 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Il ne sortira pas. »",
+          "consigne": "Complète : « Il ne jouera pas. »",
           "ar": "لَنْ …",
           "choix_ar": [
-            "يَخْرُجَ",
-            "يَخْرُجْ",
-            "يَخْرُجُ"
+            "يَلْعَبَ",
+            "يَلْعَبْ",
+            "يَلْعَبُ"
           ],
           "reponse": 0,
           "explication": "Après لَنْ : -a."

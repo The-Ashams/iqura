@@ -13,8 +13,6 @@
   ],
   "apercu": [
     "وِدَادُ",
-    "ذَا",
-    "ذِي",
     "بَغْدَادَ",
     "بَغْدَادُ",
     "دِمَشْقَ",
@@ -94,8 +92,8 @@
         },
         {
           "qui": "basim",
-          "ar": "سَافَرَ أَبِي إِلَى بَغْدَادَ.",
-          "fr": "Mon père est parti en voyage pour Bagdad."
+          "ar": "سَافَرَ إِلَى بَغْدَادَ.",
+          "fr": "Il est parti en voyage pour Bagdad."
         }
       ],
       "question": {
