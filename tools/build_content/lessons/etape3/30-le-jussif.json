@@ -51,11 +51,11 @@
         },
         {
           "type": "qcm",
-          "consigne": "Que veut dire لَنْ يَخْرُجَ ?",
+          "consigne": "Que veut dire لَنْ يَجْلِسَ ?",
           "choix": [
-            "il ne sortira pas",
-            "il n'est pas sorti",
-            "il veut sortir"
+            "il ne s'assiéra pas",
+            "il ne s'est pas assis",
+            "il veut s'asseoir"
           ],
           "reponse": 0,
           "explication": "لَنْ : futur nié (leçon 3.29)."
@@ -89,8 +89,8 @@
         },
         {
           "qui": "basim",
-          "ar": "نَعَمْ، لَنْ أَتَأَخَّرَ.",
-          "fr": "D'accord, je ne serai pas en retard."
+          "ar": "نَعَمْ، لَنْ أَتَعَجَّلَ.",
+          "fr": "D'accord, je ne me hâterai pas."
         }
       ],
       "question": {
@@ -131,7 +131,7 @@
     {
       "type": "regle",
       "titre": "La défense : لَا + jussif",
-      "texte": "Pour interdire, on met لَا devant la forme de « tu » au jussif : لَا تَكْتُبْ « n'écris pas ». Attention : لَا تَكْتُبُ, avec -u, veut dire « tu n'écris pas ».",
+      "texte": "La forme qui suit لَمْ (لَمْ يَكْتُبْ, avec sukūn) s'appelle le jussif. Pour interdire, on met لَا devant le jussif de « tu » ou de « vous » : لَا تَكْتُبْ « n'écris pas ».",
       "exemples": [
         "لَا تَكْتُبْ",
         "لَا تَجْلِسْ",
@@ -186,7 +186,7 @@
         "ar": "يَا سَلْمَى، … الرِّسَالَةَ.",
         "choix_ar": [
           "اكْتُبِي",
-          "اكْتُبْ",
+          "اكْتُبِ",
           "اكْتُبُوا"
         ],
         "reponse": 0,
@@ -259,10 +259,10 @@
           "choix_ar": [
             "يَكْتُبُوا",
             "يَكْتُبُونَ",
-            "يَكْتُبُونَا"
+            "يَكْتُبْ"
           ],
           "reponse": 0,
-          "explication": "Le ن tombe : لَمْ يَكْتُبُوا."
+          "explication": "Pour « ils », ـُونَ perd son ن : لَمْ يَكْتُبُوا ; يَكْتُبْ est la forme de « il »."
         },
         {
           "type": "completer",
@@ -283,10 +283,10 @@
           "choix_ar": [
             "تَتَعَجَّلْ",
             "تَتَعَجَّلُ",
-            "تَعَجَّلَ"
+            "تَتَعَجَّلَ"
           ],
           "reponse": 0,
-          "explication": "Défense : jussif, تَتَعَجَّلْ."
+          "explication": "Défense : jussif, تَتَعَجَّلْ ; -u et -a sont d'autres modes."
         },
         {
           "type": "completer",
@@ -319,7 +319,7 @@
       "titre": "Les règles de la bibliothèque",
       "texte": "Widād a écrit les règles de la bibliothèque. Lis ; touche un mot pour voir son sens.",
       "phrases": [
-        "لَا تَتَعَجَّلْ فِي الْقِرَاءَةِ.",
+        "لَا تَتَعَجَّلْ فِي الْكِتَابَةِ.",
         "لَا تَكْتُبْ عَلَى الْكُتُبِ، وَلَا تَتْرُكِ الْبَابَ مَفْتُوحًا.",
         "لَا تَلْعَبُوا هُنَا، وَلَا تَتَأَخَّرُوا عَنِ الدَّرْسِ.",
         "الْخَطَأُ سَهْلٌ، وَالصَّوَابُ صَعْبٌ."
@@ -424,16 +424,15 @@
           "explication": "وَقْتٌ veut dire « temps, moment »."
         },
         {
-          "type": "sens",
-          "consigne": "Que veut dire ce mot ?",
-          "ar": "لَا تَتْرُكْ",
+          "type": "qcm",
+          "consigne": "Que veut dire cette expression : لَا تَتْرُكْ ?",
           "choix": [
             "ne laisse pas !",
             "tu ne laisses pas",
             "tu n'as pas laissé"
           ],
           "reponse": 0,
-          "explication": "لَا تَتْرُكْ veut dire « ne laisse pas ! »."
+          "explication": "Défense : لَا + jussif."
         },
         {
           "type": "traduire",
@@ -486,10 +485,10 @@
           "choix_ar": [
             "يَكْتُبُوا",
             "يَكْتُبُونَ",
-            "يَكْتُبْ"
+            "يَكْتُبِ"
           ],
           "reponse": 0,
-          "explication": "Après لَمْ : ـُونَ perd son ن."
+          "explication": "Après لَمْ : ـُونَ perd son ن ; يَكْتُبِ est la forme de « il »."
         },
         {
           "type": "completer",

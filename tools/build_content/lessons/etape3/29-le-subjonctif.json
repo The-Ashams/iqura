@@ -129,7 +129,7 @@
     {
       "type": "regle",
       "titre": "-a après أَنْ, لَنْ, كَيْ",
-      "texte": "Après أَنْ, لَنْ et كَيْ, l'inaccompli finit par -a : أُرِيدُ أَنْ أَكْتُبَ, لَنْ أَنْسَى, كَيْ يَسْمَعَ. لَنْ nie le futur : لَنْ أَكْتُبَ « je n'écrirai pas ».",
+      "texte": "Après أَنْ, لَنْ et كَيْ, l'inaccompli finit par -a : أُرِيدُ أَنْ أَكْتُبَ, لَنْ يَجْلِسَ, كَيْ يَسْمَعَ. لَنْ nie le futur : لَنْ أَكْتُبَ « je n'écrirai pas ».",
       "exemples": [
         "أَنْ أَكْتُبَ",
         "لَنْ يَجْلِسَ",
@@ -188,7 +188,7 @@
           "يَمْشِ"
         ],
         "reponse": 0,
-        "explication": "Après أَنْ, le ī final reçoit -a : يَمْشِيَ ; يَمْشِ est la forme après لَمْ."
+        "explication": "Après أَنْ, le ī final reçoit -a : يَمْشِيَ ; يَمْشِ est la forme après لَمْ, et يَمْشِي la forme habituelle, sans أَنْ."
       }
     },
     {
@@ -258,7 +258,7 @@
             "لَا نَسِيتُ"
           ],
           "reponse": 0,
-          "explication": "لَنْ nie le futur ; لَمْ أَنْسَ veut dire « je n'ai pas oublié »."
+          "explication": "لَنْ nie le futur ; لَمْ أَنْسَ veut dire « je n'ai pas oublié », et لَا ne s'emploie pas ainsi devant le passé."
         },
         {
           "type": "qcm",
@@ -444,10 +444,10 @@
           "choix_ar": [
             "كَيْ يَسْمَعَ",
             "كَيْ يَسْمَعُ",
-            "أَنْ سَمِعَ"
+            "كَيْ سَمِعَ"
           ],
           "reponse": 0,
-          "explication": "كَيْ + -a : كَيْ يَسْمَعَ ; -u est fautif après كَيْ."
+          "explication": "كَيْ + inaccompli en -a : كَيْ يَسْمَعَ ; -u est fautif, et كَيْ ne se met pas devant le passé."
         },
         {
           "type": "qcm",

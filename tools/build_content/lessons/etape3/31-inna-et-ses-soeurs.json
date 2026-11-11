@@ -12,8 +12,7 @@
     "moteur-30"
   ],
   "apercu": [
-    "وِدَادُ",
-    "لَٰكِنْ"
+    "وِدَادُ"
   ],
   "schemes": [],
   "ecrans": [
@@ -149,7 +148,7 @@
     {
       "type": "regle",
       "titre": "إِنَّ ou أَنَّ",
-      "texte": "Après قَالَ, on écrit إِنَّ ; après les autres verbes, أَنَّ « que » : عَرَفْتُ أَنَّ الْحَارِسَ عِنْدَ الْبَابِ. Ne confonds pas أَنَّ (+ nom) et أَنْ (+ verbe).",
+      "texte": "En début de phrase et après قَالَ, on écrit إِنَّ ; après les autres verbes, أَنَّ « que » : عَرَفْتُ أَنَّ الْحَارِسَ عِنْدَ الْبَابِ. Ne confonds pas أَنَّ (+ nom) et أَنْ (+ verbe).",
       "exemples": [
         "عَرَفْتُ أَنَّ",
         "أُرِيدُ أَنْ"
@@ -170,7 +169,7 @@
     {
       "type": "regle",
       "titre": "Les sœurs",
-      "texte": "Les sœurs de إِنَّ font la même chose : لَٰكِنَّ « mais », لَعَلَّ « peut-être que », كَأَنَّ « on dirait que », لَيْتَ « si seulement » ; avec un pronom collé : إِنَّهُ, أَنَّهَا.",
+      "texte": "Les sœurs de إِنَّ font la même chose : لَٰكِنَّ « mais », لَعَلَّ « peut-être que », كَأَنَّ « on dirait que », لَيْتَ « si seulement ».",
       "exemples": [
         "لَٰكِنَّ",
         "لَعَلَّ",
@@ -187,6 +186,26 @@
         ],
         "reponse": 0,
         "explication": "كَأَنَّ : « on dirait que »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Avec un pronom collé",
+      "texte": "إِنَّ et أَنَّ peuvent prendre un pronom collé : إِنَّهُ « certes il », أَنَّهَا « qu'elle ».",
+      "exemples": [
+        "إِنَّهُ",
+        "أَنَّهَا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire عَرَفْتُ أَنَّهُ فِي السُّوقِ ?",
+        "choix": [
+          "J'ai su qu'il était au marché.",
+          "J'ai su qu'elle était au marché.",
+          "Il est vraiment au marché."
+        ],
+        "reponse": 0,
+        "explication": "أَنَّهُ : « qu'il »."
       }
     },
     {
@@ -294,7 +313,7 @@
             "إِنَّهَا"
           ],
           "reponse": 0,
-          "explication": "أَنَّ + ـهَا « elle »."
+          "explication": "Après عَرَفْتُ, on écrit أَنَّ (pas إِنَّ) ; ـهَا = « elle » (ـهُ = « il »)."
         },
         {
           "type": "completer",
@@ -315,7 +334,7 @@
       "titre": "Une lettre à la bibliothèque",
       "texte": "Widād lit une lettre arrivée à la bibliothèque. Lis ; touche un mot pour voir son sens.",
       "phrases": [
-        "إِنَّ الْبَرْدَ كَثِيرٌ فِي الْجِبَالِ.",
+        "إِنَّ الثَّلْجَ كَثِيرٌ فِي الْجِبَالِ.",
         "عَرَفْنَا أَنَّ الْقَافِلَةَ قَرِيبَةٌ، لَٰكِنَّ الطَّرِيقَ صَعْبٌ.",
         "كَأَنَّ الثَّلْجَ بِسَاطٌ أَبْيَضُ.",
         "لَعَلَّ الْقَافِلَةَ فِي الْمَدِينَةِ غَدًا."
@@ -361,7 +380,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris dans l'ordre : « Le chemin est vraiment long. »",
+          "consigne": "Écris dans l'ordre إِنَّ, sujet, attribut : « Le chemin est vraiment long. »",
           "tuiles": [
             "طَوِيلٌ",
             "الطَّرِيقَ",

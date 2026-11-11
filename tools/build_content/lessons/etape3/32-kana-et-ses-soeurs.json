@@ -1,0 +1,546 @@
+{
+  "id": "moteur-32",
+  "etape": 3,
+  "ordre": 32,
+  "format": 3,
+  "titre": "« Il était… » : كَانَ et ses sœurs",
+  "objectif": "Comprendre كَانَ et ses sœurs, qui mettent l'attribut en -a.",
+  "statut": "ia_non_verifie",
+  "lieu": "bibliotheque_col",
+  "maitre": "widad",
+  "prerequis": [
+    "moteur-31"
+  ],
+  "apercu": [
+    "وِدَادُ",
+    "أَمْسَى"
+  ],
+  "schemes": [
+    "أَفْعَلَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "widad",
+          "texte": "Dernière leçon de la région. Tu connais لَيْسَ, qui met l'attribut en -a : لَيْسَ الْبَيْتُ كَبِيرًا."
+        },
+        {
+          "qui": "widad",
+          "texte": "كَانَ « il était » fait de même : كَانَ الطَّرِيقُ طَوِيلًا."
+        }
+      ],
+      "objectif": "Employer كَانَ, صَارَ, أَصْبَحَ, ظَلَّ, مَا زَالَ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chemin est vraiment long. »",
+          "ar": "إِنَّ … طَوِيلٌ.",
+          "choix_ar": [
+            "الطَّرِيقَ",
+            "الطَّرِيقُ",
+            "الطَّرِيقِ"
+          ],
+          "reponse": 0,
+          "explication": "Après إِنَّ, le sujet passe en -a (leçon 3.31)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après إِنَّ, l'attribut…",
+          "choix": [
+            "reste en -u",
+            "passe en -a",
+            "passe en -i"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّ الطَّرِيقَ طَوِيلٌ (leçon 3.31)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَعَلَّ",
+          "choix": [
+            "peut-être que",
+            "si seulement",
+            "mais"
+          ],
+          "reponse": 0,
+          "explication": "لَعَلَّ (leçon 3.31)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "كُنْتُ مَرِيضًا أَمْسِ.",
+          "fr": "J'étais malade hier."
+        },
+        {
+          "qui": "widad",
+          "ar": "وَالْيَوْمَ؟",
+          "fr": "Et aujourd'hui ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "صِرْتُ سَعِيدًا، لَٰكِنَّ الْبَرْدَ كَثِيرٌ.",
+          "fr": "Je suis devenu heureux, mais il fait très froid."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment était Bāsim hier ?",
+        "choix": [
+          "malade",
+          "heureux",
+          "fatigué"
+        ],
+        "reponse": 0,
+        "explication": "كُنْتُ مَرِيضًا أَمْسِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "kana",
+        "asbaha",
+        "zalla",
+        "sara",
+        "zala",
+        "bata"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "صَارَ",
+        "choix": [
+          "devenir",
+          "rester",
+          "passer la nuit"
+        ],
+        "reponse": 0,
+        "explication": "صَارَ veut dire « devenir »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'attribut passe en -a",
+      "texte": "كَانَ et ses sœurs se placent devant une phrase nominale : le sujet reste en -u, l'attribut passe en -a. الطَّرِيقُ طَوِيلٌ → كَانَ الطَّرِيقُ طَوِيلًا.",
+      "exemples": [
+        "كَانَ الطَّرِيقُ طَوِيلًا",
+        "صَارَ الْمَاءُ بَارِدًا"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « L'eau est devenue froide. »",
+        "ar": "صَارَ الْمَاءُ …",
+        "choix_ar": [
+          "بَارِدًا",
+          "بَارِدٌ",
+          "بَارِدٍ"
+        ],
+        "reponse": 0,
+        "explication": "Après صَارَ, l'attribut passe en -a."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "كَانَ et le temps",
+      "texte": "كَانَ met la phrase au passé, سَيَكُونُ au futur. Suivi d'un inaccompli, il dit une habitude ou une durée : كَانَ بَاسِمٌ يَلْعَبُ « Bāsim jouait ».",
+      "exemples": [
+        "كَانَ",
+        "سَيَكُونُ",
+        "كَانَ يَلْعَبُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire سَيَكُونُ الدَّرْسُ سَهْلًا ?",
+        "choix": [
+          "La leçon sera facile.",
+          "La leçon était facile.",
+          "La leçon est devenue facile."
+        ],
+        "reponse": 0,
+        "explication": "سَيَكُونُ : futur."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Ne pas confondre",
+      "texte": "Avec إِنَّ, c'est le sujet qui passe en -a (إِنَّ الطَّرِيقَ طَوِيلٌ) ; avec كَانَ, c'est l'attribut (كَانَ الطَّرِيقُ طَوِيلًا). Et كُنْتُ se conjugue comme قُلْتُ.",
+      "exemples": [
+        "إِنَّ الطَّرِيقَ طَوِيلٌ",
+        "كَانَ الطَّرِيقُ طَوِيلًا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans كَانَ الْبَابُ مَفْتُوحًا, quel mot est en -a ?",
+        "choix": [
+          "l'attribut مَفْتُوحًا",
+          "le sujet الْبَابُ",
+          "aucun"
+        ],
+        "reponse": 0,
+        "explication": "Avec كَانَ, l'attribut passe en -a."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ظَلَّ",
+          "choix": [
+            "rester (tout le jour)",
+            "devenir",
+            "être"
+          ],
+          "reponse": 0,
+          "explication": "ظَلَّ veut dire « rester (tout le jour) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَصْبَحَ",
+          "choix": [
+            "devenir ; être au matin",
+            "passer la nuit",
+            "rester"
+          ],
+          "reponse": 0,
+          "explication": "أَصْبَحَ veut dire « devenir ; être au matin »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'étais malade hier » ?",
+          "choix_ar": [
+            "كُنْتُ مَرِيضًا أَمْسِ",
+            "كُنْتُ مَرِيضٌ أَمْسِ",
+            "كَانَ مَرِيضًا أَمْسِ"
+          ],
+          "reponse": 0,
+          "explication": "« j'étais » : كُنْتُ, attribut en -a ; كَانَ serait « il était »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim est toujours au marché » ?",
+          "choix_ar": [
+            "مَا زَالَ بَاسِمٌ فِي السُّوقِ",
+            "مَا زَالَ بَاسِمًا فِي السُّوقِ",
+            "زَالَ بَاسِمٌ فِي السُّوقِ"
+          ],
+          "reponse": 0,
+          "explication": "مَا زَالَ : « être toujours » ; le sujet reste en -u."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après كَانَ, le sujet…",
+          "choix": [
+            "reste en -u",
+            "passe en -a",
+            "passe en -i"
+          ],
+          "reponse": 0,
+          "explication": "كَانَ الطَّرِيقُ…"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire كَانَ بَاسِمٌ يَلْعَبُ ?",
+          "choix": [
+            "Bāsim jouait.",
+            "Bāsim jouera.",
+            "Bāsim a joué une fois."
+          ],
+          "reponse": 0,
+          "explication": "كَانَ + inaccompli : habitude ou durée."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La porte est restée ouverte. »",
+          "ar": "ظَلَّ الْبَابُ …",
+          "choix_ar": [
+            "مَفْتُوحًا",
+            "مَفْتُوحٌ",
+            "مَفْتُوحٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après ظَلَّ, l'attribut passe en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La porte n'était pas ouverte. »",
+          "ar": "لَمْ … الْبَابُ مَفْتُوحًا.",
+          "choix_ar": [
+            "يَكُنِ",
+            "يَكُونُ",
+            "كَانَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : يَكُنْ, et devant l'article يَكُنِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La leçon sera facile. »",
+          "ar": "… الدَّرْسُ سَهْلًا.",
+          "choix_ar": [
+            "سَيَكُونُ",
+            "كَانَ",
+            "يَكُنْ"
+          ],
+          "reponse": 0,
+          "explication": "Futur : سَيَكُونُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nous étions au marché. »",
+          "ar": "… فِي السُّوقِ.",
+          "choix_ar": [
+            "كُنَّا",
+            "كَانُوا",
+            "كُنْتُ"
+          ],
+          "reponse": 0,
+          "explication": "« nous » au passé : كُنَّا."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La nuit au relais",
+      "texte": "Widād raconte une nuit d'hiver. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "كَانَ الطَّرِيقُ طَوِيلًا، وَكَانَ الْبَرْدُ كَثِيرًا.",
+        "بَاتَ الْمُسَافِرُونَ فِي الْخَيْمَةِ.",
+        "فِي الصَّبَاحِ، أَصْبَحَ الطَّرِيقُ أَبْيَضَ.",
+        "مَا زَالَ الثَّلْجُ عَلَى الْجَبَلِ، وَظَلَّ الْمُسَافِرُونَ فِي الْخَيْمَةِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où les voyageurs ont-ils passé la nuit ?",
+          "choix": [
+            "dans la tente",
+            "au marché",
+            "dans la ville"
+          ],
+          "reponse": 0,
+          "explication": "بَاتَ الْمُسَافِرُونَ فِي الْخَيْمَةِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment était le chemin au matin ?",
+          "choix": [
+            "blanc",
+            "court",
+            "ouvert"
+          ],
+          "reponse": 0,
+          "explication": "أَصْبَحَ الطَّرِيقُ أَبْيَضَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le chemin était long. » ?",
+          "choix_ar": [
+            "كَانَ الطَّرِيقُ طَوِيلًا.",
+            "كَانَ الطَّرِيقَ طَوِيلٌ.",
+            "إِنَّ الطَّرِيقُ طَوِيلًا."
+          ],
+          "reponse": 0,
+          "explication": "Avec كَانَ : sujet en -u, attribut en -a."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre كَانَ, sujet, attribut : « Le chemin était long. »",
+          "tuiles": [
+            "طَوِيلًا",
+            "الطَّرِيقُ",
+            "كَانَ",
+            "طَوِيلٌ"
+          ],
+          "solution": [
+            "كَانَ",
+            "الطَّرِيقُ",
+            "طَوِيلًا"
+          ],
+          "explication": "Avec كَانَ, l'attribut passe en -a : طَوِيلٌ ne convient pas."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim jouait dans le jardin. »",
+          "ar": "كَانَ بَاسِمٌ … فِي الْحَدِيقَةِ.",
+          "choix_ar": [
+            "يَلْعَبُ",
+            "لَعِبَ",
+            "يَلْعَبَ"
+          ],
+          "reponse": 0,
+          "explication": "كَانَ + inaccompli : يَلْعَبُ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَانَ",
+          "choix": [
+            "être (au passé)",
+            "devenir",
+            "rester"
+          ],
+          "reponse": 0,
+          "explication": "كَانَ veut dire « être (au passé) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَاتَ",
+          "choix": [
+            "passer la nuit",
+            "dormir",
+            "rester"
+          ],
+          "reponse": 0,
+          "explication": "بَاتَ veut dire « passer la nuit »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَا زَالَ",
+          "choix": [
+            "être toujours",
+            "ne plus être",
+            "devenir"
+          ],
+          "reponse": 0,
+          "explication": "مَا زَالَ veut dire « être toujours »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « l'eau est devenue froide » ?",
+          "choix_ar": [
+            "صَارَ الْمَاءُ بَارِدًا",
+            "صَارَ الْمَاءَ بَارِدٌ",
+            "صَارَ الْمَاءُ بَارِدٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après صَارَ : sujet en -u, attribut en -a."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après كَانَ, l'attribut…",
+          "choix": [
+            "passe en -a",
+            "reste en -u",
+            "passe en -i"
+          ],
+          "reponse": 0,
+          "explication": "كَانَ الطَّرِيقُ طَوِيلًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Avec إِنَّ, quel mot passe en -a ?",
+          "choix": [
+            "le sujet",
+            "l'attribut",
+            "aucun"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّ الطَّرِيقَ طَوِيلٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment dit-on « j'étais » ?",
+          "choix_ar": [
+            "كُنْتُ",
+            "كَانْتُ",
+            "كَانَ"
+          ],
+          "reponse": 0,
+          "explication": "Comme قُلْتُ : كُنْتُ ; كَانْتُ est fautif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'étais malade hier. »",
+          "ar": "كُنْتُ … أَمْسِ.",
+          "choix_ar": [
+            "مَرِيضًا",
+            "مَرِيضٌ",
+            "مَرِيضٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut de كَانَ : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La porte n'était pas ouverte. »",
+          "ar": "لَمْ يَكُنِ الْبَابُ …",
+          "choix_ar": [
+            "مَفْتُوحًا",
+            "مَفْتُوحٌ",
+            "مَفْتُوحٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut de كَانَ : -a."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَيْتَ",
+          "choix": [
+            "si seulement",
+            "peut-être que",
+            "mais"
+          ],
+          "reponse": 0,
+          "explication": "لَيْتَ veut dire « si seulement ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَقْتٌ",
+          "choix": [
+            "temps, moment",
+            "erreur",
+            "jour"
+          ],
+          "reponse": 0,
+          "explication": "وَقْتٌ veut dire « temps, moment ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire لَا تَكْتُبْ ?",
+          "choix": [
+            "n'écris pas !",
+            "tu n'écris pas",
+            "tu n'as pas écrit"
+          ],
+          "reponse": 0,
+          "explication": "Défense (leçon 3.30).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu emploies كَانَ et ses sœurs (صَارَ, أَصْبَحَ, ظَلَّ, مَا زَالَ, بَاتَ) : le sujet reste en -u, l'attribut passe en -a. Les Montagnes du Moteur n'ont plus de secret pour toi !",
+      "suite": "Aux Éboulis, la Précipitation t'attend : l'examen de la région."
+    }
+  ]
+}

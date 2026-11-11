@@ -7464,6 +7464,140 @@
     "fr": "Si seulement le chemin était court !"
    },
    "theme": "particules"
+  },
+  {
+   "id": "kana",
+   "ar": "كَانَ",
+   "translit": "kāna",
+   "fr": "être (au passé)",
+   "nature": "verbe",
+   "lecon": "moteur-32",
+   "source_sens": "rédigé par IA",
+   "passe": "كَانَ",
+   "inaccompli": "يَكُونُ",
+   "exemple": {
+    "ar": "كَانَ الطَّرِيقُ طَوِيلًا.",
+    "fr": "Le chemin était long."
+   },
+   "lemme": "kaAna",
+   "fige": true,
+   "formes": [
+    "كَانَتْ",
+    "كَانُوا",
+    "كُنْتُ",
+    "كُنْتَ",
+    "كُنَّا",
+    "سَيَكُونُ",
+    "يَكُنْ",
+    "يَكُنِ"
+   ],
+   "remarque": "se conjugue comme قَالَ : كُنْتُ comme قُلْتُ",
+   "theme": "actions"
+  },
+  {
+   "id": "asbaha",
+   "ar": "أَصْبَحَ",
+   "translit": "aṣbaḥa",
+   "fr": "devenir ; être au matin",
+   "nature": "verbe",
+   "lecon": "moteur-32",
+   "source_sens": "rédigé par IA",
+   "passe": "أَصْبَحَ",
+   "inaccompli": "يُصْبِحُ",
+   "scheme": "أَفْعَلَ",
+   "exemple": {
+    "ar": "أَصْبَحَ الطَّرِيقُ أَبْيَضَ.",
+    "fr": "Au matin, le chemin était devenu blanc."
+   },
+   "lemme": ">aSobaHa",
+   "theme": "temps"
+  },
+  {
+   "id": "zalla",
+   "ar": "ظَلَّ",
+   "translit": "ẓalla",
+   "fr": "rester (tout le jour)",
+   "nature": "verbe",
+   "lecon": "moteur-32",
+   "source_sens": "rédigé par IA",
+   "passe": "ظَلَّ",
+   "inaccompli": "يَظَلُّ",
+   "exemple": {
+    "ar": "ظَلَّ الْبَابُ مَفْتُوحًا.",
+    "fr": "La porte est restée ouverte."
+   },
+   "lemme": "Zal~a",
+   "fige": true,
+   "formes": [
+    "ظَلَّتْ"
+   ],
+   "theme": "temps"
+  },
+  {
+   "id": "sara",
+   "ar": "صَارَ",
+   "translit": "ṣāra",
+   "fr": "devenir",
+   "nature": "verbe",
+   "lecon": "moteur-32",
+   "source_sens": "rédigé par IA",
+   "passe": "صَارَ",
+   "inaccompli": "يَصِيرُ",
+   "exemple": {
+    "ar": "صَارَ الْمَاءُ بَارِدًا.",
+    "fr": "L'eau est devenue froide."
+   },
+   "lemme": "taSiyru",
+   "fige": true,
+   "formes": [
+    "صَارَتْ",
+    "صِرْتُ",
+    "تَصِيرُ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "zala",
+   "ar": "زَالَ",
+   "translit": "zāla",
+   "fr": "(avec مَا) être toujours, ne pas cesser de",
+   "nature": "verbe",
+   "lecon": "moteur-32",
+   "source_sens": "rédigé par IA",
+   "passe": "زَالَ",
+   "inaccompli": "يَزَالُ",
+   "exemple": {
+    "ar": "مَا زَالَ بَاسِمٌ فِي السُّوقِ.",
+    "fr": "Bāsim est toujours au marché."
+   },
+   "lemme": "zaAlat",
+   "fige": true,
+   "formes": [
+    "زَالَتْ"
+   ],
+   "remarque": "employé ici avec مَا : مَا زَالَ",
+   "theme": "temps"
+  },
+  {
+   "id": "bata",
+   "ar": "بَاتَ",
+   "translit": "bāta",
+   "fr": "passer la nuit",
+   "nature": "verbe",
+   "lecon": "moteur-32",
+   "source_sens": "rédigé par IA",
+   "passe": "بَاتَ",
+   "inaccompli": "يَبِيتُ",
+   "exemple": {
+    "ar": "بَاتَ الْمُسَافِرُونَ فِي الْخَيْمَةِ.",
+    "fr": "Les voyageurs ont passé la nuit dans la tente."
+   },
+   "lemme": "yabiytu",
+   "fige": true,
+   "formes": [
+    "بَاتَتْ"
+   ],
+   "theme": "temps"
   }
  ]
 }
