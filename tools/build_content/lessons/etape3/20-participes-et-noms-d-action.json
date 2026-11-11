@@ -211,7 +211,7 @@
     {
       "type": "regle",
       "titre": "Moules voisins",
-      "texte": "Ne confonds pas مُفْعِل (مُرْسِلٌ, forme IV) et مُفَعِّل (مُعَلِّمٌ, forme II) : regarde le sukūn ou la shadda sur la 2e lettre de la racine.",
+      "texte": "Ne confonds pas مُفْعِل (مُرْسِلٌ, forme IV : sukūn sur la 1re lettre de la racine) et مُفَعِّل (مُعَلِّمٌ, forme II : shadda sur la 2e).",
       "exemples": [
         "مُرْسِلٌ",
         "مُعَلِّمٌ"
@@ -532,7 +532,7 @@
           "choix_ar": [
             "الْمُتَعَلِّمُ",
             "تَعَلَّمَ",
-            "التَّعَلُّمُ"
+            "الْمُعَلِّمُ"
           ],
           "reponse": 0,
           "explication": "Sujet de la phrase nominale : الْمُتَعَلِّمُ."

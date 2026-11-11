@@ -110,8 +110,8 @@
         },
         {
           "qui": "rabab",
-          "ar": "لَا أَعْرِفُ. وَكُتِبَتْ رِسَالَةٌ عَلَى الصُّنْدُوقِ.",
-          "fr": "Je ne sais pas. Et une lettre a été écrite sur le coffre."
+          "ar": "لَا أَعْرِفُ. وَفِي الصُّنْدُوقِ رِسَالَةٌ.",
+          "fr": "Je ne sais pas. Et il y a une lettre dans le coffre."
         }
       ],
       "question": {
@@ -194,27 +194,27 @@
     {
       "type": "regle",
       "titre": "Seulement avec un complément",
-      "texte": "Le passif ne se fait qu'avec un verbe qui a un complément direct : pas de passif pour جَلَسَ ou ذَهَبَ. Et l'on n'ajoute pas qui agit.",
+      "texte": "Ici, on met au passif un verbe qui a un complément direct : ce complément devient le sujet. جَلَسَ ou ذَهَبَ, sans complément direct, ne peuvent pas avoir ainsi un sujet au passif.",
       "exemples": [
         "فُتِحَ الْبَابُ",
         "كُتِبَ الدَّرْسُ"
       ],
       "question": {
         "type": "qcm",
-        "consigne": "Peut-on mettre جَلَسَ au passif ?",
+        "consigne": "Peut-on dire جُلِسَ الرَّجُلُ ?",
         "choix": [
-          "non : il n'a pas de complément direct",
-          "oui",
-          "seulement au pluriel"
+          "non : جَلَسَ n'a pas de complément direct qui devienne sujet",
+          "oui, au passif",
+          "oui, au pluriel"
         ],
         "reponse": 0,
-        "explication": "Pas de complément direct, pas de passif."
+        "explication": "Le sujet du passif est l'ancien complément direct."
       }
     },
     {
       "type": "regle",
       "titre": "Aperçu : les autres formes",
-      "texte": "Les formes dérivées ont aussi un passif, qu'on reconnaît à son u : قُدِّمَ / يُقَدَّمُ (II), أُدْخِلَ / يُدْخَلُ (IV), اسْتُخْرِجَ / يُسْتَخْرَجُ (X).",
+      "texte": "Les formes dérivées ont aussi un passif : au passé, il commence par u (قُدِّمَ, أُدْخِلَ, اسْتُخْرِجَ) ; à l'inaccompli, il met a avant la dernière lettre (يُقَدَّمُ, يُدْخَلُ, يُسْتَخْرَجُ).",
       "exemples": [
         "قُدِّمَ",
         "أُدْخِلَ",
@@ -341,7 +341,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Les fleurs sont semées dans le jardin. »",
+          "consigne": "Complète : « Les fleurs sont plantées dans le jardin. »",
           "ar": "… الْأَزْهَارُ فِي الْحَدِيقَةِ.",
           "choix_ar": [
             "تُزْرَعُ",
@@ -575,7 +575,7 @@
             "إِفْعَال"
           ],
           "reponse": 0,
-          "explication": "اسْتِفْهَامٌ (leçon 3.20).",
+          "explication": "Forme X : اسْتِفْعَال, comme اسْتِفْهَامٌ (leçon 3.20).",
           "revision": true
         }
       ]
