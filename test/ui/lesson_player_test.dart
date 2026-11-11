@@ -259,7 +259,7 @@ void main() {
   for (final id in [
     for (var i = 0; i <= 14; i++) 'dechiffrer-${i.toString().padLeft(2, '0')}',
     for (var i = 1; i <= 30; i++) 'fondations-${i.toString().padLeft(2, '0')}',
-    for (var i = 1; i <= 28; i++) 'moteur-${i.toString().padLeft(2, '0')}',
+    for (var i = 1; i <= 29; i++) 'moteur-${i.toString().padLeft(2, '0')}',
   ]) {
     testWidgets('$id : jouée de bout en bout, la leçon suivante s’ouvre', (
       tester,

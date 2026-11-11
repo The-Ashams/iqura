@@ -1,0 +1,546 @@
+{
+  "id": "moteur-29",
+  "etape": 3,
+  "ordre": 29,
+  "format": 3,
+  "titre": "Le subjonctif",
+  "objectif": "Comprendre « pour qu'il écrive » : أَنْ, لَنْ, كَيْ + -a.",
+  "statut": "ia_non_verifie",
+  "lieu": "tribunal",
+  "maitre": "widad",
+  "prerequis": [
+    "moteur-28"
+  ],
+  "apercu": [
+    "وِدَادُ"
+  ],
+  "schemes": [
+    "يَفْعَلَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "widad",
+          "texte": "Au tribunal, même les verbes se justifient. Écoute : أُرِيدُ أَنْ أَكْتُبَ."
+        },
+        {
+          "qui": "widad",
+          "texte": "Après أَنْ, le verbe ne finit plus par -u mais par -a. C'est le subjonctif."
+        }
+      ],
+      "objectif": "Employer أَنْ, لَنْ et كَيْ avec le verbe en -a."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il est venu de Damas. »",
+          "ar": "جَاءَ مِنْ …",
+          "choix_ar": [
+            "دِمَشْقَ",
+            "دِمَشْقٍ",
+            "دِمَشْقِ"
+          ],
+          "reponse": 0,
+          "explication": "Ville sans tanwīn : -a (leçon 3.28)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après une préposition, un nom sans tanwīn finit par…",
+          "choix": [
+            "-a",
+            "-i",
+            "-un"
+          ],
+          "reponse": 0,
+          "explication": "مِنْ بَغْدَادَ (leçon 3.28)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَبْيَضُ",
+          "choix": [
+            "blanc",
+            "noir",
+            "rouge"
+          ],
+          "reponse": 0,
+          "explication": "أَبْيَضُ (leçon 3.28)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "أُرِيدُ أَنْ أَكْتُبَ رِسَالَةً قَبْلَ الْمَسَاءِ.",
+          "fr": "Je veux écrire une lettre avant le soir."
+        },
+        {
+          "qui": "widad",
+          "ar": "اكْتُبِ الرِّسَالَةَ قَبْلَ أَنْ تَخْرُجَ.",
+          "fr": "Écris la lettre avant de sortir."
+        },
+        {
+          "qui": "basim",
+          "ar": "نَعَمْ، لَنْ أَنْسَى.",
+          "fr": "Oui, je n'oublierai pas."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut faire Bāsim avant le soir ?",
+        "choix": [
+          "écrire une lettre",
+          "sortir",
+          "lire une histoire"
+        ],
+        "reponse": 0,
+        "explication": "أُرِيدُ أَنْ أَكْتُبَ رِسَالَةً قَبْلَ الْمَسَاءِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "an_sub",
+        "arada",
+        "qabla",
+        "bada_t",
+        "lan",
+        "kay"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "لَنْ",
+        "choix": [
+          "ne… pas (au futur)",
+          "ne… pas (au passé)",
+          "pour que"
+        ],
+        "reponse": 0,
+        "explication": "لَنْ veut dire « ne… pas (au futur) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "-a après أَنْ, لَنْ, كَيْ",
+      "texte": "Après أَنْ, لَنْ et كَيْ, l'inaccompli finit par -a : أُرِيدُ أَنْ أَكْتُبَ, لَنْ أَنْسَى, كَيْ يَسْمَعَ. لَنْ nie le futur : لَنْ أَكْتُبَ « je n'écrirai pas ».",
+      "exemples": [
+        "أَنْ أَكْتُبَ",
+        "لَنْ يَخْرُجَ",
+        "كَيْ يَسْمَعَ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Je veux écrire. »",
+        "ar": "أُرِيدُ أَنْ …",
+        "choix_ar": [
+          "أَكْتُبَ",
+          "أَكْتُبُ",
+          "كَتَبْتُ"
+        ],
+        "reponse": 0,
+        "explication": "Après أَنْ : -a, أَكْتُبَ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le ن qui tombe",
+      "texte": "Les formes en ـُونَ et ـِينَ perdent leur ن : أَنْ يَكْتُبُوا (avec un alif muet), أَنْ تَكْتُبِي. Pour les verbes faibles : أَنْ يَدْعُوَ, أَنْ يَمْشِيَ, mais أَنْ يَنْسَى ne change pas.",
+      "exemples": [
+        "أَنْ يَكْتُبُوا",
+        "أَنْ يَمْشِيَ",
+        "أَنْ يَنْسَى"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Les étudiants se sont assis pour écouter l'histoire. »",
+        "ar": "جَلَسَ الطُّلَّابُ كَيْ … الْقِصَّةَ.",
+        "choix_ar": [
+          "يَسْمَعُوا",
+          "يَسْمَعُونَ",
+          "سَمِعُوا"
+        ],
+        "reponse": 0,
+        "explication": "Après كَيْ, ـُونَ perd son ن : يَسْمَعُوا."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "أَنْ, أَنَا, لَنْ, لَمْ",
+      "texte": "Ne confonds pas أَنْ « que » et أَنَا « je ». Et لَنْ + -a nie le futur (لَنْ يَكْتُبَ), alors que لَمْ + sukūn nie le passé (لَمْ يَكْتُبْ).",
+      "exemples": [
+        "لَنْ يَكْتُبَ",
+        "لَمْ يَكْتُبْ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire لَمْ يَكْتُبْ ?",
+        "choix": [
+          "il n'a pas écrit",
+          "il n'écrira pas",
+          "pour qu'il écrive"
+        ],
+        "reponse": 0,
+        "explication": "لَمْ + sukūn : passé nié."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَبْلَ",
+          "choix": [
+            "avant",
+            "après",
+            "pendant"
+          ],
+          "reponse": 0,
+          "explication": "قَبْلَ veut dire « avant »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَيْ",
+          "choix": [
+            "pour que",
+            "avant",
+            "ne… pas"
+          ],
+          "reponse": 0,
+          "explication": "كَيْ veut dire « pour que »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je veux lire » ?",
+          "choix_ar": [
+            "أُرِيدُ أَنْ أَقْرَأَ",
+            "أُرِيدُ أَنْ أَقْرَأُ",
+            "أَرَدْتُ قَرَأْتُ"
+          ],
+          "reponse": 0,
+          "explication": "« je veux lire » se dit أُرِيدُ أَنْ أَقْرَأَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je n'oublierai pas » ?",
+          "choix_ar": [
+            "لَنْ أَنْسَى",
+            "لَمْ أَنْسَ",
+            "لَا نَسِيتُ"
+          ],
+          "reponse": 0,
+          "explication": "« je n'oublierai pas » se dit لَنْ أَنْسَى."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire لَنْ يَخْرُجَ ?",
+          "choix": [
+            "il ne sortira pas",
+            "il n'est pas sorti",
+            "il veut sortir"
+          ],
+          "reponse": 0,
+          "explication": "لَنْ + -a : futur nié."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après أَنْ, l'inaccompli finit par…",
+          "choix": [
+            "-a",
+            "-u",
+            "un sukūn"
+          ],
+          "reponse": 0,
+          "explication": "أَنْ أَكْتُبَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand a demandé à Samīr d'écrire la lettre. »",
+          "ar": "طَلَبَ التَّاجِرُ مِنْ سَمِيرٍ أَنْ … الرِّسَالَةَ.",
+          "choix_ar": [
+            "يَكْتُبَ",
+            "يَكْتُبُ",
+            "كَتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je ne mangerai pas maintenant. »",
+          "ar": "لَنْ … الْآنَ.",
+          "choix_ar": [
+            "آكُلَ",
+            "آكُلْ",
+            "آكُلُ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَنْ : -a, آكُلَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il veut marcher jusqu'au pont. »",
+          "ar": "يُرِيدُ أَنْ … إِلَى الْجِسْرِ.",
+          "choix_ar": [
+            "يَمْشِيَ",
+            "يَمْشِي",
+            "يَمْشِ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ, le ī final reçoit -a : يَمْشِيَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les enfants ont joué après la leçon. »",
+          "ar": "لَعِبَ الْأَطْفَالُ … الدَّرْسِ.",
+          "choix_ar": [
+            "بَعْدَ",
+            "قَبْلَ",
+            "كَيْ"
+          ],
+          "reponse": 0,
+          "explication": "« après » : بَعْدَ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Les projets de Bāsim",
+      "texte": "Widād raconte une journée de Bāsim. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "أَرَادَ بَاسِمٌ أَنْ يَكْتُبَ رِسَالَةً إِلَى صَدِيقِهِ.",
+        "جَلَسَ فِي الْمَجْلِسِ كَيْ يَكْتُبَ الرِّسَالَةَ قَبْلَ الْمَسَاءِ.",
+        "بَعْدَ الْكِتَابَةِ، قَالَ بَاسِمٌ: « لَنْ أَنْسَى صَدِيقِي. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi Bāsim s'est-il assis dans l'assemblée ?",
+          "choix": [
+            "pour écrire la lettre",
+            "pour écouter une histoire",
+            "pour manger"
+          ],
+          "reponse": 0,
+          "explication": "جَلَسَ فِي الْمَجْلِسِ كَيْ يَكْتُبَ الرِّسَالَةَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a dit Bāsim après avoir écrit ?",
+          "choix": [
+            "« Je n'oublierai pas mon ami. »",
+            "« J'ai oublié mon ami. »",
+            "« Je veux sortir. »"
+          ],
+          "reponse": 0,
+          "explication": "لَنْ أَنْسَى صَدِيقِي."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Je veux écrire une lettre. » ?",
+          "choix_ar": [
+            "أُرِيدُ أَنْ أَكْتُبَ رِسَالَةً.",
+            "أُرِيدُ أَنْ أَكْتُبُ رِسَالَةً.",
+            "أَرَدْتُ كَتَبْتُ رِسَالَةً."
+          ],
+          "reponse": 0,
+          "explication": "« Je veux écrire une lettre. » se dit أُرِيدُ أَنْ أَكْتُبَ رِسَالَةً."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre : « Je n'oublierai pas l'histoire. »",
+          "tuiles": [
+            "الْقِصَّةَ",
+            "أَنْسَى",
+            "لَنْ",
+            "لَمْ"
+          ],
+          "solution": [
+            "لَنْ",
+            "أَنْسَى",
+            "الْقِصَّةَ"
+          ],
+          "explication": "لَنْ, le verbe, puis le complément."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Écris la lettre avant de sortir. »",
+          "ar": "اكْتُبِ الرِّسَالَةَ قَبْلَ أَنْ …",
+          "choix_ar": [
+            "تَخْرُجَ",
+            "تَخْرُجُ",
+            "خَرَجْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : -a, تَخْرُجَ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَرَادَ",
+          "choix": [
+            "vouloir",
+            "revenir",
+            "augmenter"
+          ],
+          "reponse": 0,
+          "explication": "أَرَادَ veut dire « vouloir »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَعْدَ",
+          "choix": [
+            "après",
+            "avant",
+            "loin"
+          ],
+          "reponse": 0,
+          "explication": "بَعْدَ veut dire « après »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَنْ",
+          "choix": [
+            "que (+ verbe)",
+            "je",
+            "ne… pas"
+          ],
+          "reponse": 0,
+          "explication": "أَنْ veut dire « que (+ verbe) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « pour qu'il écoute » ?",
+          "choix_ar": [
+            "كَيْ يَسْمَعَ",
+            "كَيْ يَسْمَعُ",
+            "لَنْ يَسْمَعَ"
+          ],
+          "reponse": 0,
+          "explication": "« pour qu'il écoute » se dit كَيْ يَسْمَعَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "لَنْ sert à nier…",
+          "choix": [
+            "le futur",
+            "le passé",
+            "un ordre"
+          ],
+          "reponse": 0,
+          "explication": "لَنْ أَكْتُبَ : je n'écrirai pas."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après أَنْ, que devient يَكْتُبُونَ ?",
+          "choix_ar": [
+            "يَكْتُبُوا",
+            "يَكْتُبُونَ",
+            "يَكْتُبْنَ"
+          ],
+          "reponse": 0,
+          "explication": "Le ن tombe, avec un alif muet."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire أَنْ يَمْشِيَ ?",
+          "choix": [
+            "qu'il marche",
+            "il a marché",
+            "il ne marchera pas"
+          ],
+          "reponse": 0,
+          "explication": "أَنْ + -a : subjonctif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il ne sortira pas. »",
+          "ar": "لَنْ …",
+          "choix_ar": [
+            "يَخْرُجَ",
+            "يَخْرُجْ",
+            "يَخْرُجُ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَنْ : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je veux dormir. »",
+          "ar": "أُرِيدُ أَنْ …",
+          "choix_ar": [
+            "أَنَامَ",
+            "أَنَامُ",
+            "نِمْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : -a, أَنَامَ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَبٌ",
+          "choix": [
+            "père",
+            "frère",
+            "sœur"
+          ],
+          "reponse": 0,
+          "explication": "أَبٌ veut dire « père ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِعْرَابٌ",
+          "choix": [
+            "analyse des fins de mots",
+            "phrase",
+            "nouvelle"
+          ],
+          "reponse": 0,
+          "explication": "إِعْرَابٌ veut dire « analyse des fins de mots ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Lequel de ces mots n'a jamais de tanwīn ?",
+          "choix_ar": [
+            "دَرَاهِمُ",
+            "دِرْهَمٌ",
+            "كِيسٌ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel sans tanwīn (leçon 3.28).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu emploies le subjonctif : أَنْ, لَنْ, كَيْ + -a (أُرِيدُ أَنْ أَكْتُبَ, لَنْ أَنْسَى), et le ن qui tombe (أَنْ يَكْتُبُوا).",
+      "suite": "À la Bibliothèque du col : « ne… pas ! », la défense, et le jussif complet."
+    }
+  ]
+}

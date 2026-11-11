@@ -131,7 +131,7 @@
     {
       "type": "regle",
       "titre": "La fin qui s'allonge",
-      "texte": "La dernière lettre و ou ي devient une voyelle longue : دَعَا يَدْعُو, مَشَى يَمْشِي, نَسِيَ يَنْسَى. Racine en و : le ā s'écrit ا (دَعَا) ; racine en ي : il s'écrit ى (مَشَى).",
+      "texte": "La dernière lettre و ou ي devient souvent une voyelle longue : دَعَا يَدْعُو, مَشَى يَمْشِي, نَسِيَ يَنْسَى. Racine en و : le ā s'écrit ا (دَعَا) ; racine en ي : il s'écrit ى (مَشَى).",
       "exemples": [
         "دَعَا",
         "يَدْعُو",
@@ -170,6 +170,48 @@
         ],
         "reponse": 0,
         "explication": "« je » au passé : le ي revient, مَشَيْتُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "« Elle » au passé",
+      "texte": "Avec ـَتْ (« elle »), la voyelle longue finale tombe : دَعَتْ, مَشَتْ, بَنَتْ. Mais نَسِيَ et بَقِيَ gardent leur ي : نَسِيَتْ, بَقِيَتْ.",
+      "exemples": [
+        "دَعَتْ",
+        "مَشَتْ",
+        "نَسِيَتْ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Elle a marché jusqu'au pont. »",
+        "ar": "… إِلَى الْجِسْرِ.",
+        "choix_ar": [
+          "مَشَتْ",
+          "مَشَيْتُ",
+          "تَمْشِي"
+        ],
+        "reponse": 0,
+        "explication": "« elle » au passé : la voyelle longue tombe, مَشَتْ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "« Ils », à reconnaître",
+      "texte": "À reconnaître seulement : دَعَوْا « ils ont appelé », مَشَوْا « ils ont marché ». Le و de la racine se cache devant la terminaison.",
+      "exemples": [
+        "دَعَوْا",
+        "مَشَوْا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire مَشَوْا ?",
+        "choix": [
+          "ils ont marché",
+          "il a marché",
+          "elle a marché"
+        ],
+        "reponse": 0,
+        "explication": "مَشَوْا : « ils ont marché »."
       }
     },
     {
@@ -242,6 +284,18 @@
           ],
           "reponse": 0,
           "explication": "« j'ai construit » se dit بَنَيْتُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Tu as oublié la clé ? »",
+          "ar": "هَلْ … الْمِفْتَاحَ؟",
+          "choix_ar": [
+            "نَسِيتَ",
+            "نَسِيتُ",
+            "تَنْسَى"
+          ],
+          "reponse": 0,
+          "explication": "« tu » au passé : نَسِيتَ."
         },
         {
           "type": "ordonner",
@@ -328,7 +382,7 @@
     },
     {
       "type": "lecture",
-      "titre": "Le soir au relais",
+      "titre": "Le soir près du pont",
       "texte": "Ziyād raconte une soirée. Lis ; touche un mot pour voir son sens.",
       "phrases": [
         "فِي الْمَسَاءِ، مَشَى بَاسِمٌ إِلَى الْجِسْرِ.",
@@ -373,7 +427,7 @@
             "يَبْنِي بَيْتٌ صَغِيرٌ النَّجَّارَ."
           ],
           "reponse": 0,
-          "explication": "« Le menuisier a construit une petite maison. » se dit بَنَى النَّجَّارُ بَيْتًا صَغِيرًا."
+          "explication": "بَنَى النَّجَّارُ بَيْتًا صَغِيرًا. بَنَيْتُ est la forme de « je », impossible avec النَّجَّارُ pour sujet ; dans la 3e phrase, sujet et complément sont inversés."
         },
         {
           "type": "ordonner",
@@ -389,7 +443,7 @@
             "سَمِيرٌ",
             "صَدِيقَهُ"
           ],
-          "explication": "Verbe, sujet, complément."
+          "explication": "Verbe, sujet, complément. لَقِيتُ veut dire « j'ai rencontré » : avec سَمِيرٌ pour sujet, il faut لَقِيَ."
         },
         {
           "type": "completer",
@@ -460,7 +514,7 @@
           "type": "qcm",
           "consigne": "Dans un verbe défectueux, la dernière lettre و ou ي…",
           "choix": [
-            "devient une voyelle longue",
+            "devient souvent une voyelle longue",
             "tombe toujours",
             "devient une hamza"
           ],

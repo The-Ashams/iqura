@@ -157,10 +157,31 @@
     {
       "type": "regle",
       "titre": "L'adjectif suit son nom",
-      "texte": "L'adjectif prend le cas de son nom : رَأَيْتُ بَيْتًا كَبِيرًا. Le pluriel en -āt fait -i au cas direct : حَفِظَ الطُّلَّابُ الْكَلِمَاتِ.",
+      "texte": "L'adjectif prend le cas de son nom : رَأَيْتُ بَيْتًا كَبِيرًا, فِي بَيْتٍ كَبِيرٍ.",
       "exemples": [
         "بَيْتًا كَبِيرًا",
-        "الْكَلِمَاتِ"
+        "بَيْتٍ كَبِيرٍ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « J'ai vu une grande maison. »",
+        "ar": "رَأَيْتُ بَيْتًا …",
+        "choix_ar": [
+          "كَبِيرًا",
+          "كَبِيرٌ",
+          "كَبِيرٍ"
+        ],
+        "reponse": 0,
+        "explication": "L'adjectif suit le cas de son nom : -an."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le pluriel féminin en -āt",
+      "texte": "Le pluriel féminin en -āt (كَلِمَةٌ → كَلِمَاتٌ) fait -i au cas direct : حَفِظَ الطُّلَّابُ الْكَلِمَاتِ. Un pluriel interne comme أَصْوَاتٌ garde -a : سَمِعْتُ الْأَصْوَاتَ.",
+      "exemples": [
+        "الْكَلِمَاتِ",
+        "الْأَصْوَاتَ"
       ],
       "question": {
         "type": "completer",
@@ -172,7 +193,7 @@
           "الْكَلِمَاتُ"
         ],
         "reponse": 0,
-        "explication": "Pluriel en -āt, complément direct : -i, الْكَلِمَاتِ."
+        "explication": "Pluriel féminin en -āt, complément direct : -i, الْكَلِمَاتِ."
       }
     },
     {
@@ -199,7 +220,7 @@
     {
       "type": "regle",
       "titre": "Les mots qui ne changent pas",
-      "texte": "Certains mots ont toujours la même fin, quelle que soit leur fonction : هَٰذَا, الَّذِي, أَمْسِ, هُنَا. On dit qu'ils sont مَبْنِيٌّ.",
+      "texte": "Certains mots ont toujours la même fin, quelle que soit leur fonction : هَٰذَا, الَّذِي, هُنَا, et أَمْسِ employé seul. On dit qu'ils sont مَبْنِيٌّ.",
       "exemples": [
         "هَٰذَا",
         "الَّذِي",
@@ -246,14 +267,14 @@
         },
         {
           "type": "traduire",
-          "consigne": "Comment dit-on « avec la clé » ?",
+          "consigne": "Comment dit-on « au moyen de la clé » ?",
           "choix_ar": [
             "بِالْمِفْتَاحِ",
             "بِالْمِفْتَاحُ",
             "مَعَ الْمِفْتَاحَ"
           ],
           "reponse": 0,
-          "explication": "« avec la clé » se dit بِالْمِفْتَاحِ."
+          "explication": "Après بِـ : -i. مَعَ est suivi lui aussi de -i, jamais de -a."
         },
         {
           "type": "traduire",
@@ -264,7 +285,7 @@
             "عَنْ ثَمَنٌ"
           ],
           "reponse": 0,
-          "explication": "« au sujet du prix » se dit عَنِ الثَّمَنِ."
+          "explication": "Après عَنْ : -i, عَنِ الثَّمَنِ ; -u est impossible après une préposition."
         },
         {
           "type": "qcm",
@@ -299,18 +320,6 @@
           ],
           "reponse": 0,
           "explication": "Après عَنْ : -i."
-        },
-        {
-          "type": "completer",
-          "consigne": "Complète : « J'ai vu une grande maison. »",
-          "ar": "رَأَيْتُ بَيْتًا …",
-          "choix_ar": [
-            "كَبِيرًا",
-            "كَبِيرٌ",
-            "كَبِيرٍ"
-          ],
-          "reponse": 0,
-          "explication": "L'adjectif suit le cas de son nom : -an."
         },
         {
           "type": "completer",
@@ -389,7 +398,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Samīr a écrit la lettre avec le calame. »",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément direct, puis بِالْقَلَمِ : « Samīr a écrit la lettre avec le calame. »",
           "tuiles": [
             "بِالْقَلَمِ",
             "سَمِيرٌ",
@@ -403,7 +412,7 @@
             "الرِّسَالَةَ",
             "بِالْقَلَمِ"
           ],
-          "explication": "Verbe, sujet (-u), complément (-a), puis بِـ (-i)."
+          "explication": "Verbe, sujet (-u), complément direct (-a), puis بِـ (-i). الرِّسَالَةُ (-u) ne convient pas : le complément direct prend -a."
         },
         {
           "type": "completer",
@@ -461,18 +470,18 @@
         },
         {
           "type": "traduire",
-          "consigne": "Comment dit-on « avec le marteau » ?",
+          "consigne": "Comment dit-on « au moyen du marteau » ?",
           "choix_ar": [
             "بِالْمِطْرَقَةِ",
             "بِالْمِطْرَقَةُ",
             "الْمِطْرَقَةَ"
           ],
           "reponse": 0,
-          "explication": "« avec le marteau » se dit بِالْمِطْرَقَةِ."
+          "explication": "Après بِـ : -i ; sans بِـ, الْمِطْرَقَةَ ne dit plus « au moyen de »."
         },
         {
           "type": "qcm",
-          "consigne": "Le complément direct finit par…",
+          "consigne": "Un complément direct comme الْبَابَ finit par…",
           "choix": [
             "-a",
             "-u",
@@ -525,7 +534,7 @@
             "الْكَلِمَاتُ"
           ],
           "reponse": 0,
-          "explication": "Pluriel en -āt, complément direct : -i."
+          "explication": "Pluriel féminin en -āt, complément direct : -i."
         },
         {
           "type": "sens",
@@ -569,7 +578,7 @@
     },
     {
       "type": "fin",
-      "acquis": "Tu expliques la fin d'un mot par sa fonction : -u (sujet, attribut), -a (complément direct), -i (après préposition, iḍāfa). Tu connais بِـ et عَنْ.",
+      "acquis": "Tu expliques la fin d'un mot par sa fonction : -u (sujet, attribut), -a (complément direct), -i (après préposition, iḍāfa). Tu connais بِـ et عَنْ. Le pluriel féminin en -āt fait -i au cas direct.",
       "suite": "Au Tribunal : les noms qui n'acceptent pas le tanwīn, et أَبُو, أَخُو."
     }
   ]

@@ -6864,6 +6864,7 @@
    "lemme": "m~a$a",
    "fige": true,
    "formes": [
+    "مَشَوْا",
     "مَشَتْ",
     "مَشَيْتُ",
     "مَشَيْنَا",
@@ -6901,7 +6902,7 @@
     "أَبْكِي",
     "يَبْكِ"
    ],
-   "theme": "qualites"
+   "theme": "actions"
   },
   {
    "id": "bi",
@@ -7009,8 +7010,8 @@
    "genre": "m",
    "racine": "bdA",
    "exemple": {
-    "ar": "الطَّرِيقُ مُبْتَدَأٌ.",
-    "fr": "الطَّرِيقُ est le sujet de la phrase nominale."
+    "ar": "الْقَرْيَةُ مُبْتَدَأٌ.",
+    "fr": "Dans الْقَرْيَةُ بَعِيدَةٌ, الْقَرْيَةُ est le sujet de la phrase nominale."
    },
    "theme": "savoir"
   },
@@ -7161,6 +7162,108 @@
    },
    "remarque": "féminin : حَمْرَاءُ ; jamais de tanwīn",
    "theme": "qualites"
+  },
+  {
+   "id": "an_sub",
+   "ar": "أَنْ",
+   "translit": "an",
+   "fr": "que (suivi d'un verbe)",
+   "nature": "particule",
+   "lecon": "moteur-29",
+   "source_sens": "rédigé par IA",
+   "lemme": ">an",
+   "exemple": {
+    "ar": "أُرِيدُ أَنْ أَكْتُبَ رِسَالَةً.",
+    "fr": "Je veux écrire une lettre."
+   },
+   "remarque": "le verbe qui suit finit par -a",
+   "theme": "particules"
+  },
+  {
+   "id": "arada",
+   "ar": "أَرَادَ",
+   "translit": "arāda",
+   "fr": "vouloir",
+   "nature": "verbe",
+   "lecon": "moteur-29",
+   "source_sens": "rédigé par IA",
+   "passe": "أَرَادَ",
+   "inaccompli": "يُرِيدُ",
+   "exemple": {
+    "ar": "أُرِيدُ أَنْ أَكْتُبَ رِسَالَةً.",
+    "fr": "Je veux écrire une lettre."
+   },
+   "lemme": ">araAda",
+   "fige": true,
+   "formes": [
+    "أُرِيدُ",
+    "يُرِيدُ",
+    "أَرَدْتُ",
+    "تُرِيدُ"
+   ],
+   "remarque": "forme IV d'un verbe concave (ر و د)",
+   "theme": "actions"
+  },
+  {
+   "id": "qabla",
+   "ar": "قَبْلَ",
+   "translit": "qabla",
+   "fr": "avant",
+   "nature": "adverbe",
+   "lecon": "moteur-29",
+   "source_sens": "rédigé par IA",
+   "lemme": "qabol",
+   "exemple": {
+    "ar": "اكْتُبِ الرِّسَالَةَ قَبْلَ أَنْ تَخْرُجَ.",
+    "fr": "Écris la lettre avant de sortir."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "bada_t",
+   "ar": "بَعْدَ",
+   "translit": "baʿda",
+   "fr": "après",
+   "nature": "adverbe",
+   "lecon": "moteur-29",
+   "source_sens": "rédigé par IA",
+   "lemme": "baEod",
+   "exemple": {
+    "ar": "لَعِبَ الْأَطْفَالُ بَعْدَ الدَّرْسِ.",
+    "fr": "Les enfants ont joué après la leçon."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "lan",
+   "ar": "لَنْ",
+   "translit": "lan",
+   "fr": "ne… pas (au futur)",
+   "nature": "particule",
+   "lecon": "moteur-29",
+   "source_sens": "rédigé par IA",
+   "lemme": "lan",
+   "exemple": {
+    "ar": "لَنْ أَنْسَى الْقِصَّةَ.",
+    "fr": "Je n'oublierai pas l'histoire."
+   },
+   "remarque": "le verbe qui suit finit par -a",
+   "theme": "particules"
+  },
+  {
+   "id": "kay",
+   "ar": "كَيْ",
+   "translit": "kay",
+   "fr": "pour que, afin de",
+   "nature": "particule",
+   "lecon": "moteur-29",
+   "source_sens": "rédigé par IA",
+   "lemme": "kaY",
+   "exemple": {
+    "ar": "جَلَسَ الطُّلَّابُ كَيْ يَسْمَعُوا الْقِصَّةَ.",
+    "fr": "Les étudiants se sont assis pour écouter l'histoire."
+   },
+   "theme": "particules"
   }
  ]
 }
