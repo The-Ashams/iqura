@@ -37,7 +37,7 @@ Stade : région 3, leçons 3.11 à 3.21 (Moulin des formes, Salle des copistes, 
      | X | اسْتَفْعَلَ / يَسْتَفْعِلُ | اسْتِفْعَال | مُسْتَفْعِل / مُسْتَفْعَل |
 
    - Les numéros sont une convention occidentale. En aperçu : الْمُجَرَّدُ, الْمَزِيدُ, « عَلَى وَزْنِ فَعَّلَ ». La forme IX est seulement mentionnée (« rare, non étudiée »).
-2. **Alif de liaison (VII, VIII, X et leurs noms d'action)** : écrit sans voyelle partout dans le jeu (انْطَلَقَ, اسْتَخْرَجَ, schème انْفَعَلَ). C'est la convention d'Élémentaire 3 (اسْمٌ, اكْتُبْ). La translittération donne la lecture (« inṭalaqa »). Règle : « Cet alif se lit i en début de phrase et disparaît après وَ : وَانْطَلَقَ (wa-nṭalaqa). » Le hamza de la forme IV (أَ) se prononce toujours. La graphie اِنْفَعَلَ du tableau du cahier n'est qu'une graphie de document, pas une décision du §16.
+2. **Alif de liaison (VII, VIII, X et leurs noms d'action)** : écrit sans voyelle partout dans le jeu (انْطَلَقَ, اسْتَخْرَجَ, schème انْفَعَلَ). C'est la convention d'Élémentaire 3 (اسْمٌ, اكْتُبْ). La translittération donne la lecture (« inṭalaqa »). Règle : « Cet alif se lit i en début de phrase ou après une pause, et disparaît après un mot lu sans pause (comme وَ) : وَانْطَلَقَ (wa-nṭalaqa). » Le hamza de la forme IV (أَ) se prononce toujours. La graphie اِنْفَعَلَ du tableau du cahier n'est qu'une graphie de document, pas une décision du §16.
 3. **Règle clé, répétée de 3.12 à 3.20** : « Préfixe en u pour II, III, IV (يُعَلِّمُ) ; en a pour I et V à X. Le participe actif remplace le préfixe par مُ et met i avant la dernière lettre (مُعَلِّم) ; le passif met a (مُعَلَّم). » Les deux formes de 3.3 (مُسَافِرٌ, مُعَلِّمٌ) sont enfin expliquées.
 4. **Forge des formes.**
    - Racine du Corpus à 3 lettres, sans و, ي ni ء, **non doublée**, chaque lettre visible.
@@ -385,3 +385,240 @@ Format des mots : forme | sens | L/R | inaccompli | nom d'action | schème.
 Le plan des leçons 3.11 à 3.21 est prêt : environ 80 mots nouveaux, les formes verbales I à X sur des racines déjà connues, leurs participes et noms d'action, et le passif. Les mots liés au sacré sont exclus, et les formes difficiles sont seulement lues, jamais fabriquées. Aucune question ne t'attend.
 
 À enregistrer dans `/home/user/iqura/docs/relectures/decisions-intermediaire-2.md`. Références : `/home/user/iqura/docs/CAHIER_DES_CHARGES.md` (§5 l. 296-310, §16 du 05/11/2026), `/home/user/iqura/docs/relectures/decisions-intermediaire-1.md`, `/home/user/iqura/docs/relectures/decisions-elementaire-3.md`, `/home/user/iqura/assets/content/iqura_content.db`.
+
+---
+
+## Note de mise en œuvre (07 au 11/11/2026)
+
+Identifiants de lemmes réellement présents dans la base (le plan en citait certains qui n'existent pas) : `{jotamaEu` (اجْتَمَعَ), `yantaZiru` (انْتَظَرَ), `tad~axiru` (ادَّخَرَ), `{nSarafu` (انْصَرَفَ), `nasotansixu` (اسْتَنْسَخَ), `{sotakovaro` (اسْتَكْثَرَ), `fah~amo`, `far~aqu`, `tuHad~ivu`, `faAriqu`, `saAbiqu`, `yataEal~amu`, `yatakal~amu`, `vaqulato`, `baEudato`. Les autres mots sans lemme sont reliés à leur seule racine (R). اعْتَرَفَ a été retiré de 3.18 (il demande بِـ, pas encore enseigné). L'identifiant et la forme arabe du lemme ne sont jamais affichés (vérifié dans `fondations_views.dart`).
+
+# Décisions — Doutes du relecteur, Intermédiaire 2 (3.11 à 3.21)
+
+Stade : région 3, leçons 3.11 à 3.21. Acquis : régions 1 et 2, leçons 3.1 à 3.10, verbes de forme I, conjugaison de هُوَ, هِيَ, هُمْ et أَنَا. Pas encore enseignés : بِـ, فَـ, عَنْ.
+Lu avant de trancher : le plan `/home/user/iqura/docs/relectures/decisions-intermediaire-2.md`, `decisions-intermediaire-1.md` (décision 4), les leçons 3.8, 3.14, 3.16, 3.17 et 3.18, `mots.json` et la base (table `lemma`, par recherche de texte). Aucune décision de l'utilisateur inscrite au §16 n'est touchée.
+
+---
+
+## 1. Sens des verbes : infinitif ou « il a… » ; تَقَاسَمَ « ils se sont partagé »
+
+**Décision**
+- **Fiches.** On garde les deux styles :
+  - les anciennes fiches (« il est entré », « il a écrit », طَرَقَ « il a frappé ») sont validées, on ne les refait pas ;
+  - à partir de 3.11, l'infinitif devient la règle, comme dans un dictionnaire français-arabe.
+- **Ajout dans `/home/user/iqura/tools/build_content/lessons/etape3/11-*.json`**, sur un écran de règle déjà présent (une seule phrase) : « Un verbe arabe se cite au passé, à la forme « il » : كَتَبَ « il a écrit ». Dans tes fiches, son sens est maintenant donné à l'infinitif : « écrire ». »
+- **Harmoniser les anciennes fiches** : seulement plus tard, et avec l'accord de l'utilisateur. À noter dans `docs/DECISIONS_A_REVOIR.md`.
+- **« ils se sont partagé » pour تَقَاسَمَ seul : non.** تَقَاسَمَ seul est la forme de « il » ; « ils » se dit تَقَاسَمُوا.
+- **À corriger dans `/home/user/iqura/tools/build_content/lessons/etape3/16-la-forme-vi.json`**, dans toutes les questions « sens » posées sur un verbe seul : choix, réponse et explication passent à l'infinitif de la fiche.
+  - تَقَاسَمَ « se partager » ; تَنَازَعَ « se disputer » ; تَعَارَفَ « faire connaissance » ;
+  - تَكَاتَبَ « s'écrire » ; تَشَابَهَ « se ressembler » ; تَصَافَحَ « se serrer la main » ;
+  - les mauvais choix aussi : « se diviser », « se séparer », « savoir », « faire la course »…
+  - Exemple d'explication : « تَقَاسَمَ veut dire « se partager ». »
+- **À garder tel quel** :
+  - les questions « Comment dit-on « ils se ressemblent » ? » → يَتَشَابَهُونَ (c'est bien « ils ») ;
+  - les questions de compréhension d'un récit (« Que font Bāsim et Samīr ? »).
+- **À vérifier aussi** dans les leçons 3.11 à 3.21 : aucune question « sens » sur un verbe seul ne doit donner une traduction avec « ils ».
+
+**Pourquoi.** Dire que تَقَاسَمَ veut dire « ils se sont partagé » apprendrait une erreur de conjugaison, à l'endroit même où l'on exerce la forme de هُمْ. L'infinitif est le sens de dictionnaire que demande le §3, règle 1. Les fiches validées ne sont pas refaites (avenant n° 2).
+
+**Confiance** : haute.
+
+**Pour l'utilisateur** : les verbes sont désormais traduits à l'infinitif (« écrire »), une phrase de la leçon 3.11 l'explique, et une erreur (« ils » au lieu de « il ») est corrigée dans les questions de la leçon 3.16.
+
+---
+
+## 2. 3.16 : تَشَابَهَتِ الْكَلِمَتَانِ traduit « Les deux mots se ressemblent »
+
+**Décision**
+- **On garde la phrase arabe** et on corrige la traduction : « Les deux mots se ressemblaient. »
+- **À modifier** :
+  - `/home/user/iqura/tools/build_content/vocab/mots.json`, vers la ligne 5259 (l'exemple de la fiche) ;
+  - `16-la-forme-vi.json`, vers la ligne 312 : consigne « Complète : « Les deux mots se ressemblaient. » » ;
+  - la phrase modèle de 3.16, si elle porte cette traduction.
+- Les choix et l'explication de l'exercice ne changent pas.
+
+**Pourquoi.** تَشَابَهَتْ est un passé ; le traduire au présent brouille la distinction passé / inaccompli, qui vient d'être exercée. Pour un état passé, l'imparfait est la traduction française naturelle. C'est la correction la plus petite : un seul mot français, aucun exercice arabe à refaire.
+
+**Confiance** : haute.
+
+**Pour l'utilisateur** : la traduction de la phrase « Les deux mots se ressemblent » passe au passé, comme le verbe arabe.
+
+---
+
+## 3. 3.12 : فَرَّقَ الْحَمَّالُ الْأَحْمَالَ « a séparé les charges »
+
+**Décision**
+- **Ajouter « répartir »** au sens de la fiche : fr « séparer, disperser, répartir ».
+- **Traduire l'exemple** : « Le porteur a réparti les charges. »
+- **À modifier** : `mots.json` (fiche `farraqa`, vers la ligne 4946, champ `fr` et `exemple.fr`), et la même traduction partout où cette phrase revient dans `12-la-forme-ii.json`.
+- On ajoute **aucun complément avec بَيْنَ ou عَلَى** : ce sont des suites ⚠ du plan, et بِـ/عَنْ restent absents.
+
+**Pourquoi.** « Répartir, distribuer » est un sens classique courant de فَرَّقَ (« diviser en parts »). C'est aussi la lecture naturelle de la phrase ; « séparer des charges » sonne mal en français. Les questions qui demandent « séparer » restent justes.
+
+**Confiance** : moyenne-haute.
+
+**Pour l'utilisateur** : le mot « séparer » (فَرَّقَ) reçoit aussi le sens « répartir », plus naturel dans la phrase d'exemple.
+
+---
+
+## 4. 3.13 : قَابَلَ « rencontrer, faire face à »
+
+**Décision**
+- **Mettre le sens classique d'abord** : fr « faire face à, rencontrer ».
+- **À modifier** : `mots.json`, fiche `qaabala`, vers la ligne 4717 (ordre des sens seulement).
+- **On garde** les exercices sur « rencontrer » et l'exemple قَابَلَ التَّاجِرُ الصَّرَّافَ فِي السُّوقِ.
+- **On ne donne jamais à مُقَابَلَةٌ le sens « entretien » ou « interview »** : c'est un sens moderne.
+
+**Pourquoi.** Le sens premier de قَابَلَ en arabe classique est « se tenir en face de, faire face à ». « Rencontrer face à face » en découle et suffit à l'apprenant. Le sens « avoir un entretien » est moderne.
+
+**Confiance** : moyenne. L'ordre des sens est prudent ; il n'invente rien.
+
+**Pour l'utilisateur** : pour قَابَلَ, le sens ancien « faire face à » passe en premier ; « rencontrer » reste.
+
+---
+
+## 5. 3.14 : أَكْبَرُ peut aussi vouloir dire « je vieillis »
+
+**Décision**
+- **On n'ajoute pas « je vieillis »** : كَبِرَ n'est qu'un aperçu de 3.11, et l'ajouter embrouillerait.
+- **On lève l'ambiguïté du QCM** en donnant la phrase connue de 3.8.
+- **À modifier dans `/home/user/iqura/tools/build_content/lessons/etape3/14-la-forme-iv.json`, vers la ligne 201** :
+  - consigne : « Dans الْجَمَلُ أَكْبَرُ مِنَ الْحِمَارِ, أَكْبَرُ c'est… » ;
+  - choix et explication inchangés.
+- Le texte de la règle (ligne 193) reste tel quel : il donne déjà « plus grand ».
+
+**Pourquoi.** Seul, أَكْبَرُ est vraiment ambigu : élatif, ou « je » de كَبِرَ يَكْبَرُ. Une question qui affirme « c'est un élatif » sans contexte serait donc trop absolue. La phrase vient de la leçon 3.8, avec des mots déjà connus.
+
+**Confiance** : haute.
+
+**Pour l'utilisateur** : une question de la leçon 3.14 reçoit une petite phrase, pour qu'il n'y ait qu'une seule bonne réponse.
+
+---
+
+## 6. 3.17 / 3.19 : alif de liaison après une virgule
+
+**Décision**
+- **Oui, on le précise.**
+- **À modifier dans `/home/user/iqura/tools/build_content/lessons/etape3/17-la-forme-vii.json`, ligne 163**, remplacer :
+  - « Son alif se lit i en début de phrase ; »
+  - par « Son alif se lit i en début de phrase ou après une pause (une virgule où l'on s'arrête) ; ».
+- **Dans le plan**, compléter B2 de la même façon.
+- La translittération de فِي الصَّبَاحِ، انْفَتَحَ (en « infataḥa ») reste juste.
+
+**Pourquoi.** Règle classique : après un arrêt, on reprend avec une voyelle d'appui (i pour ces formes). Si l'on enchaîne sans s'arrêter, l'alif disparaît, comme pour وَ. Avec ces quelques mots, la règle couvre les phrases de 3.17 et 3.19 sans nouvel écran.
+
+**Confiance** : haute.
+
+**Pour l'utilisateur** : la leçon 3.17 précise qu'après une virgule où l'on s'arrête, on lit le premier son « i ».
+
+---
+
+## 7. 3.18 : écran « Une tendance »
+
+**Décision**
+- **La valeur est bonne** : اجْتَمَعَ « se réunir » (l'action revient sur le sujet).
+- **Le contre-exemple est à reformuler.**
+- **À modifier dans `/home/user/iqura/tools/build_content/lessons/etape3/18-la-forme-viii.json`, ligne 160**, remplacer :
+  - « Simple tendance : انْتَظَرَ « attendre » a la racine de نَظَرَ « regarder », mais son sens ne se devine pas. »
+  - par « Simple tendance : انْتَظَرَ « attendre » a la racine de نَظَرَ « regarder », mais l'action ne revient pas sur le sujet : il a un complément, انْتَظَرَ صَدِيقَهُ. »
+- La question et l'explication restent les mêmes.
+
+**Pourquoi.** En arabe classique, نَظَرَ peut lui-même vouloir dire « attendre ». Dire que le sens de انْتَظَرَ « ne se devine pas » est donc discutable. Le vrai contre-exemple est grammatical : انْتَظَرَ prend un complément direct, sans retour sur le sujet. La phrase ajoutée reprend le modèle du plan (« Bāsim a attendu son ami »).
+
+**Confiance** : haute.
+
+**Pour l'utilisateur** : l'exemple qui montre que le sens d'une forme n'est qu'une tendance est remplacé par une explication plus juste.
+
+---
+
+## 8. 3.19 : اسْتَفْهَمَ الطَّالِبُ الْمُعَلِّمَ ; اسْتَنْسَخَ « faire copier »
+
+**Décision**
+- **اسْتَفْهَمَ + personne en complément direct : classique, on garde.**
+- **اسْتَنْسَخَ** :
+  - fr de la fiche : « faire copier, copier (un écrit) » ;
+  - à modifier : `mots.json`, fiche `istansakha`, vers la ligne 5613 ;
+  - l'exemple « Le marchand a fait copier le livre » ne change pas ;
+  - le ⚠ « نَسْتَنْسِخُ مَا » reste valable (jamais le « nous », jamais suivi de مَا).
+
+**Pourquoi.**
+- اسْتَفْهَمَهُ (« lui demander de faire comprendre ») est attesté dans les dictionnaires classiques, sans عَنْ, qui n'est d'ailleurs pas encore enseigné.
+- Pour اسْتَنْسَخَ, les dictionnaires classiques donnent aussi le sens simple « copier, transcrire ». « Faire copier » n'en est qu'une lecture.
+- Donner les deux sens est plus honnête, et rien ne change dans les exercices.
+
+**Confiance** : moyenne-haute.
+
+**Pour l'utilisateur** : le mot اسْتَنْسَخَ reçoit aussi le sens simple « copier ».
+
+---
+
+## 9. 3.21 : aperçu des passifs dérivés en texte, sans tableau
+
+**Décision**
+- **Acceptable**, à trois conditions :
+  - les formes sont données seules (قُدِّمَ / يُقَدَّمُ, أُدْخِلَ / يُدْخَلُ, اسْتُخْرِجَ / يُسْتَخْرَجُ), présentées comme un aperçu ;
+  - aucun exercice ne les demande ;
+  - aucune phrase de récit ou de combat ne les emploie, sauf le modèle قُدِّمَ الطَّعَامُ لِلضُّيُوفِ, déjà prévu au plan.
+- **Aucun fichier à modifier**, si ces conditions sont remplies.
+
+**Pourquoi.** « Dans un tableau seulement » voulait dire « vu, jamais exercé ». Le texte remplit ce but et garde un écran pour une idée.
+
+**Confiance** : haute.
+
+**Pour l'utilisateur** : le passif des formes II, IV et X est montré en aperçu, sans exercice.
+
+---
+
+## 10. Lemmes du Corpus dont l'identifiant n'est pas au passé
+
+**Décision**
+- **Conforme à ma décision 4 d'Intermédiaire 1** : l'identifiant et la forme arabe du lemme du Corpus ne s'affichent jamais ; seul le champ `ar` est montré.
+- **Vérifié dans `/home/user/iqura/assets/content/iqura_content.db`** : chaque lemme cité est bien un verbe, avec la bonne racine et la bonne forme. Le tableau donne le mot de la fiche, puis le lemme du Corpus et sa racine.
+
+| Forme | Mot de la fiche | Lemme du Corpus (racine) |
+| --- | --- | --- |
+| I | بَعُدَ | baEudato (bEd) |
+| I | ثَقُلَ | vaqulato (vql) |
+| II | فَهَّمَ | fah~amo (fhm) |
+| II | فَرَّقَ | far~aqu (frq) |
+| II | حَدَّثَ | tuHad~ivu (Hdv) |
+| III | فَارَقَ | faAriqu (frq) |
+| III | سَابَقَ | saAbiqu (sbq) |
+| V | تَعَلَّمَ | yataEal~amu (Elm) |
+| V | تَكَلَّمَ | yatakal~amu (klm) |
+| VII | انْصَرَفَ | {nSarafu (Srf) |
+| VIII | اجْتَمَعَ | {jotamaEu (jmE) |
+| VIII | انْتَظَرَ | yantaZiru (nZr) |
+| VIII | ادَّخَرَ | tad~axiru (*xr) |
+| X | اسْتَكْثَرَ | {sotakovaro (kvr) |
+| X | اسْتَنْسَخَ | nasotansixu (nsx) |
+
+- **À vérifier par Claude Code** (test ou SQL), parce que plusieurs de ces formes arabes de lemme viennent directement d'un mot du Coran conjugué (par exemple نَسْتَنسِخُ) :
+  - aucun écran, ni la fiche, ni le dictionnaire, ni la recherche, n'affiche la forme arabe du lemme ;
+  - aucun écran n'affiche non plus son identifiant.
+- **Dans le plan** : corriger les identifiants qui n'existent pas dans la base. C'est une correction de forme, sans changement de décision.
+
+**Pourquoi.** Le Corpus range certains verbes sous une forme conjuguée. C'est une particularité de la source, pas une erreur, tant que rien n'est affiché. Racine et forme concordent pour tous les lemmes cités.
+
+**Confiance** : haute.
+
+**Pour l'utilisateur** : les mots sont bien reliés à la source ; le code interne de la source n'est jamais montré.
+
+---
+
+**Fichiers à modifier en tout** : `/home/user/iqura/tools/build_content/vocab/mots.json` (fiches farraqa, qaabala, istansakha, et l'exemple de tashaabaha) ; dans `/home/user/iqura/tools/build_content/lessons/etape3/`, les fichiers `11-*.json`, `12-la-forme-ii.json`, `14-la-forme-iv.json`, `16-la-forme-vi.json`, `17-la-forme-vii.json` et `18-la-forme-viii.json` ; le plan `/home/user/iqura/docs/relectures/decisions-intermediaire-2.md` (B2 et les identifiants) ; `docs/DECISIONS_A_REVOIR.md` (harmoniser plus tard les anciennes fiches). Après les corrections, il faut relancer le relecteur sur les fichiers modifiés, puis le garde-fou coranique pendant la construction de la base.
+
+---
+
+## Liste de fin de niveau (10 points)
+
+1. Les verbes sont maintenant traduits à l'infinitif sur les fiches (« écrire ») ; la leçon 3.11 l'explique. Les anciennes fiches (« il a écrit ») restent ; les harmoniser plus tard, avec votre accord (`DECISIONS_A_REVOIR.md`).
+2. Leçon 3.16 : les questions de sens sur un verbe seul sont à l'infinitif (« se partager »), et « Les deux mots se ressemblaient » est au passé.
+3. فَرَّقَ reçoit aussi le sens « répartir » ; اسْتَنْسَخَ « faire copier, copier » ; قَابَلَ « faire face à, rencontrer ».
+4. Leçon 3.14 : la question sur أَكْبَرُ est posée dans une phrase, pour éviter le sens « je vieillis ».
+5. L'alif de liaison (انْـ, افْتَـ, اسْتَـ) se lit i en début de phrase ou après une pause, et disparaît après un mot lu sans pause.
+6. Leçon 3.18 : la forme VIII dit souvent que l'action revient sur le sujet ; contre-exemple : انْتَظَرَ, qui prend un complément.
+7. اسْتَفْهَمَ الطَّالِبُ الْمُعَلِّمَ (personne en complément direct) est classique.
+8. Leçon 3.21 : le passif des formes II, IV et X n'est qu'un aperçu en texte, sans exercice ; le passif « impersonnel » des verbes sans complément n'est pas encore abordé.
+9. Les formes VIII où le ت change (اضْطَرَبَ, ادَّخَرَ) n'ont pas de schème sur leur fiche ; elles sont lues, jamais forgées.
+10. Les noms d'action affichés sur la fiche d'un verbe comptent comme mots connus dans les textes.
+

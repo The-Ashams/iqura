@@ -74,9 +74,9 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "تَكَاتَبَ",
           "choix": [
-            "ils se sont écrit",
-            "ils se sont serré la main",
-            "ils se sont disputés"
+            "s'écrire (l'un à l'autre)",
+            "se serrer la main",
+            "se disputer"
           ],
           "reponse": 0,
           "explication": "Forme VI, action réciproque (leçon 3.16)."
@@ -157,7 +157,7 @@
     {
       "type": "regle",
       "titre": "Une tendance",
-      "texte": "La forme VIII dit souvent que l'action revient sur le sujet : اجْتَمَعَ « se réunir ». Simple tendance : انْتَظَرَ « attendre » prend un complément (انْتَظَرَ صَدِيقَهُ) : l'action ne revient pas sur le sujet.",
+      "texte": "La forme VIII dit souvent que l'action revient sur le sujet : اجْتَمَعَ « se réunir ». Simple tendance : انْتَظَرَ « attendre » (racine de نَظَرَ) a un complément, انْتَظَرَ صَدِيقَهُ : rien ne revient sur le sujet.",
       "exemples": [
         "اجْتَمَعَ",
         "انْتَظَرَ"
@@ -542,12 +542,12 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "تَقَاسَمَ",
           "choix": [
-            "ils se sont partagé",
-            "il s'est divisé",
-            "il a séparé"
+            "se partager",
+            "se diviser",
+            "séparer"
           ],
           "reponse": 0,
-          "explication": "تَقَاسَمَ veut dire « ils se sont partagé ».",
+          "explication": "تَقَاسَمَ veut dire « se partager ».",
           "revision": true
         },
         {

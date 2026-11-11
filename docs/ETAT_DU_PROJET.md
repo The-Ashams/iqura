@@ -169,6 +169,18 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Tests | Les 10 leçons jouées de bout en bout son coupé (`test/ui/lesson_player_test.dart`) |
 | À faire | Test de l'utilisateur ; ensuite Intermédiaire 2 (leçons 3.11 à 3.21) |
 
+## 1 duodecies. Niveau Intermédiaire 2 (leçons 3.11 à 3.21, région 3, chapitre B, 07 au 11/11/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Monde | Lieux 6 à 8 de la région 3 : le Moulin des formes (3.11 à 3.14), la Salle des copistes (3.15 à 3.18), la Tour du guet (3.19 à 3.21) ; maîtresse Rabāb, la copiste ; scènes et sprite en pixel art ; ciel des scènes de la région 3 réparé (plus de trous) |
+| Leçons | `tools/build_content/lessons/etape3/11` à `21` (moteur-11 à moteur-21) : forme I (فَعَلَ, فَعِلَ, فَعُلَ), formes II à VIII et X, participes et noms d'action des formes II à X, voix passive ; 81 mots nouveaux, reliés au Corpus (lemme ou racine) |
+| Pipeline | Les noms d'action de la fiche d'un verbe comptent comme mots connus |
+| Plan et décisions | `docs/relectures/decisions-intermediaire-2.md` (plan du conseiller, mise en œuvre, 10 doutes tranchés, liste de fin de niveau) |
+| Relecture | `docs/relectures/2026-11-11-intermediaire-2.md` : 2 « Validé », 9 « Validé avec doutes » ; doutes tranchés par le conseiller |
+| Tests | Les 21 leçons de la région 3 jouées de bout en bout son coupé (`test/ui/lesson_player_test.dart`) |
+| À faire | Test de l'utilisateur quand il le souhaite ; ensuite Intermédiaire 3 (leçons 3.22 à 3.32 et boss de la région 3) |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -227,7 +239,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 9. Élémentaire 3 (§1 nonies) construit et relu : toute la région 2 est prête à tester.
 10. Audio suspendu (§1 decies, 03/11/2026).
 11. Intermédiaire 1 construit et relu (§1 undecies) : à tester par l'utilisateur.
-12. Suivant : Intermédiaire 2 (leçons 3.11 à 3.21).
+12. Intermédiaire 2 construit et relu (§1 duodecies).
+13. Suivant : Intermédiaire 3 (leçons 3.22 à 3.32 et boss de la région 3).
 
 ## 5. Problèmes connus
 

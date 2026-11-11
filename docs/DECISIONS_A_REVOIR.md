@@ -49,3 +49,10 @@ Décisions prises par Claude Code seul, comme le demandent les avenants. Elles s
 ## 6. Région 2 construite sur une proposition non encore validée — 25/10/2026
 
 Le cahier (§6.1 et §8.2) demande à l'utilisateur de valider les noms des lieux et des personnages de la région 2, et le détail des écrans d'une leçon. L'utilisateur a demandé de ne pas l'attendre. Élémentaire 1 est donc construit sur `docs/PROPOSITION_REGION_2.md`. Tout est en fichiers de données : un nom ou l'ordre des écrans peut changer sans rien refaire.
+
+## 7. Sens des verbes : « il a écrit » ou « écrire » — 11/11/2026
+
+Les fiches de verbes des régions 1 et 2 donnent le passé (« il est entré », « il a écrit ») ; à partir de la leçon 3.11, le sens est donné à l'infinitif (« savoir », « regarder »), sur décision du conseiller (`docs/relectures/decisions-intermediaire-2.md`). Les deux styles coexistent dans le dictionnaire.
+
+**Décision** : garder les anciennes fiches telles quelles (validées) ; les harmoniser à l'infinitif plus tard, **seulement avec l'accord de l'utilisateur**.
+
