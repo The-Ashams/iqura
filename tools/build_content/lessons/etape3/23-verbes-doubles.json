@@ -156,7 +156,7 @@
     {
       "type": "regle",
       "titre": "Des mots que tu connais",
-      "texte": "Tu connais déjà des mots de racine doublée : أُمٌّ, حَارٌّ, سَلَّةٌ, قِصَّةٌ (ق ص ص). Et أَقَلُّ, أَخَفُّ viennent de قَلِيلٌ, خَفِيفٌ (ق ل ل, خ ف ف).",
+      "texte": "Tu connais déjà des mots de racine doublée : أُمٌّ, حَارٌّ, سَلَّةٌ, قِصَّةٌ (ق ص ص). Et أَقَلُّ « moins nombreux », أَخَفُّ « plus léger » ont la racine de قَلِيلٌ, خَفِيفٌ.",
       "exemples": [
         "أُمٌّ",
         "سَلَّةٌ",
@@ -179,7 +179,7 @@
     {
       "type": "regle",
       "titre": "أَحَبَّ, une forme IV",
-      "texte": "أَحَبَّ « aimer » est une forme IV de ح ب ب : son inaccompli a u, يُحِبُّ, comme يُخْرِجُ. Ne le confonds pas avec يَمُدُّ, qui a a.",
+      "texte": "أَحَبَّ « aimer » est une forme IV de ح ب ب : son inaccompli a u, يُحِبُّ, comme يُخْرِجُ. Ne le confonds pas avec يَمُدُّ, dont le préfixe a a (يَـ).",
       "exemples": [
         "أَحَبَّ",
         "يُحِبُّ",
@@ -244,7 +244,7 @@
             "نَمُدُّ"
           ],
           "reponse": 0,
-          "explication": "Sukūn sur la dernière lettre : مَدَدْنَا. مَدَّنَا veut dire « il nous a tendu » : نَا y est complément."
+          "explication": "Sukūn sur la dernière lettre : مَدَدْنَا. Dans مَدَّنَا, نَا est complément et non sujet : « il nous a étendus »."
         },
         {
           "type": "ordonner",
@@ -325,7 +325,7 @@
             "أَحَبَّ"
           ],
           "reponse": 0,
-          "explication": "Forme IV, inaccompli en u : يُحِبُّ ; يَحُبُّ est fautif."
+          "explication": "Forme IV, inaccompli en u : يُحِبُّ ; يَحُبُّ est absent de notre dictionnaire."
         }
       ]
     },

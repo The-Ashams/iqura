@@ -6678,6 +6678,230 @@
     "fr": "C'est une question difficile."
    },
    "theme": "savoir"
+  },
+  {
+   "id": "raa",
+   "ar": "رَأَى",
+   "translit": "raʾā",
+   "fr": "voir",
+   "nature": "verbe",
+   "lecon": "moteur-26",
+   "source_sens": "rédigé par IA",
+   "passe": "رَأَى",
+   "inaccompli": "يَرَى",
+   "exemple": {
+    "ar": "رَأَى بَاسِمٌ الْقَافِلَةَ.",
+    "fr": "Bāsim a vu la caravane."
+   },
+   "lemme": "ra'aA",
+   "fige": true,
+   "formes": [
+    "رَأَتْ",
+    "رَأَيْتُ",
+    "أَرَى"
+   ],
+   "remarque": "verbe à reconnaître : sa racine a aussi un hamza (ر ء ي)",
+   "theme": "actions"
+  },
+  {
+   "id": "daa",
+   "ar": "دَعَا",
+   "translit": "daʿā",
+   "fr": "appeler, inviter (quelqu'un)",
+   "nature": "verbe",
+   "lecon": "moteur-26",
+   "source_sens": "rédigé par IA",
+   "passe": "دَعَا",
+   "inaccompli": "يَدْعُو",
+   "exemple": {
+    "ar": "دَعَا التَّاجِرُ بَاسِمًا.",
+    "fr": "Le marchand a appelé Bāsim."
+   },
+   "lemme": "daEaA",
+   "fige": true,
+   "formes": [
+    "دَعَتْ",
+    "دَعَوْتُ",
+    "دَعَوْنَا",
+    "دَعَوْتَ",
+    "تَدْعُو",
+    "أَدْعُو",
+    "نَدْعُو",
+    "يَدْعُ",
+    "أَدْعُ",
+    "دَعَوْا"
+   ],
+   "theme": "personnes"
+  },
+  {
+   "id": "laqiya",
+   "ar": "لَقِيَ",
+   "translit": "laqiya",
+   "fr": "rencontrer",
+   "nature": "verbe",
+   "lecon": "moteur-26",
+   "source_sens": "rédigé par IA",
+   "passe": "لَقِيَ",
+   "inaccompli": "يَلْقَى",
+   "nom_action": "لِقَاءٌ",
+   "exemple": {
+    "ar": "لَقِيَ سَمِيرٌ صَدِيقَهُ فِي السُّوقِ.",
+    "fr": "Samīr a rencontré son ami au marché."
+   },
+   "lemme": "laqu",
+   "fige": true,
+   "formes": [
+    "لَقِيَتْ",
+    "لَقِيتُ",
+    "لَقِيتَ",
+    "تَلْقَى",
+    "نَلْقَى",
+    "يَلْقَ"
+   ],
+   "theme": "personnes"
+  },
+  {
+   "id": "nasiya",
+   "ar": "نَسِيَ",
+   "translit": "nasiya",
+   "fr": "oublier",
+   "nature": "verbe",
+   "lecon": "moteur-26",
+   "source_sens": "rédigé par IA",
+   "passe": "نَسِيَ",
+   "inaccompli": "يَنْسَى",
+   "nom_action": "نِسْيَانٌ",
+   "exemple": {
+    "ar": "نَسِيتُ الْمِفْتَاحَ فِي الْبَيْتِ.",
+    "fr": "J'ai oublié la clé à la maison."
+   },
+   "lemme": "nasiYa",
+   "fige": true,
+   "formes": [
+    "نَسِيَتْ",
+    "نَسِيتُ",
+    "نَسِيتَ",
+    "تَنْسَى",
+    "أَنْسَى",
+    "نَنْسَى",
+    "يَنْسَ",
+    "أَنْسَ"
+   ],
+   "theme": "savoir"
+  },
+  {
+   "id": "baqiya",
+   "ar": "بَقِيَ",
+   "translit": "baqiya",
+   "fr": "rester",
+   "nature": "verbe",
+   "lecon": "moteur-26",
+   "source_sens": "rédigé par IA",
+   "passe": "بَقِيَ",
+   "inaccompli": "يَبْقَى",
+   "nom_action": "بَقَاءٌ",
+   "exemple": {
+    "ar": "بَقِيَ الطِّفْلُ فِي الْخَيْمَةِ.",
+    "fr": "L'enfant est resté dans la tente."
+   },
+   "lemme": "baqiYa",
+   "fige": true,
+   "formes": [
+    "بَقِيَتْ",
+    "بَقِيتُ",
+    "بَقِينَا",
+    "بَقِيتَ",
+    "تَبْقَى",
+    "أَبْقَى",
+    "نَبْقَى",
+    "يَبْقَ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "banaa",
+   "ar": "بَنَى",
+   "translit": "banā",
+   "fr": "construire",
+   "nature": "verbe",
+   "lecon": "moteur-26",
+   "source_sens": "rédigé par IA",
+   "passe": "بَنَى",
+   "inaccompli": "يَبْنِي",
+   "nom_action": "بِنَاءٌ",
+   "exemple": {
+    "ar": "بَنَى النَّجَّارُ بَيْتًا صَغِيرًا.",
+    "fr": "Le menuisier a construit une petite maison."
+   },
+   "lemme": "banaY`",
+   "fige": true,
+   "formes": [
+    "بَنَتْ",
+    "بَنَيْتُ",
+    "بَنَيْتَ",
+    "تَبْنِي",
+    "أَبْنِي",
+    "نَبْنِي",
+    "يَبْنِ"
+   ],
+   "theme": "travail"
+  },
+  {
+   "id": "masha",
+   "ar": "مَشَى",
+   "translit": "mašā",
+   "fr": "marcher",
+   "nature": "verbe",
+   "lecon": "moteur-26",
+   "source_sens": "rédigé par IA",
+   "passe": "مَشَى",
+   "inaccompli": "يَمْشِي",
+   "nom_action": "مَشْيٌ",
+   "exemple": {
+    "ar": "مَشَى بَاسِمٌ إِلَى الْجِسْرِ.",
+    "fr": "Bāsim a marché jusqu'au pont."
+   },
+   "lemme": "m~a$a",
+   "fige": true,
+   "formes": [
+    "مَشَتْ",
+    "مَشَيْتُ",
+    "مَشَيْنَا",
+    "مَشَيْتَ",
+    "تَمْشِي",
+    "أَمْشِي",
+    "نَمْشِي",
+    "يَمْشِ",
+    "أَمْشِ"
+   ],
+   "theme": "voyage"
+  },
+  {
+   "id": "baka",
+   "ar": "بَكَى",
+   "translit": "bakā",
+   "fr": "pleurer",
+   "nature": "verbe",
+   "lecon": "moteur-26",
+   "source_sens": "rédigé par IA",
+   "passe": "بَكَى",
+   "inaccompli": "يَبْكِي",
+   "nom_action": "بُكَاءٌ",
+   "exemple": {
+    "ar": "بَكَى الطِّفْلُ فِي الْمَسَاءِ.",
+    "fr": "L'enfant a pleuré le soir."
+   },
+   "lemme": "bakato",
+   "fige": true,
+   "formes": [
+    "بَكَتْ",
+    "بَكَيْتُ",
+    "بَكَيْتَ",
+    "تَبْكِي",
+    "أَبْكِي",
+    "يَبْكِ"
+   ],
+   "theme": "qualites"
   }
  ]
 }

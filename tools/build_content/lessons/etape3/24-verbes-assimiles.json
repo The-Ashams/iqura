@@ -135,7 +135,7 @@
     {
       "type": "regle",
       "titre": "Le و qui tombe",
-      "texte": "Quand l'inaccompli a i (et parfois a), le و du début tombe : وَجَدَ → يَجِدُ, وَضَعَ → يَضَعُ. Au passé, rien ne change ; et وَجِلَ, يَوْجَلُ garde son و.",
+      "texte": "Quand l'inaccompli a i (et parfois a), le و du début tombe : وَجَدَ → يَجِدُ, وَضَعَ → يَضَعُ. Au passé, rien ne change ; attention, وَجِلَ « avoir peur » garde son و : يَوْجَلُ.",
       "exemples": [
         "يَجِدُ",
         "يَضَعُ",
@@ -177,7 +177,7 @@
     {
       "type": "regle",
       "titre": "L'impératif",
-      "texte": "L'impératif part de l'inaccompli sans son préfixe : يَقِفُ → قِفْ, يَضَعُ → ضَعْ. Il commence par une voyelle : pas d'alif de liaison, contrairement à اكْتُبْ.",
+      "texte": "L'impératif part de l'inaccompli sans son préfixe : يَقِفُ → قِفْ, يَضَعُ → ضَعْ. Sa première lettre porte une voyelle : pas besoin d'alif de liaison, contrairement à اكْتُبْ.",
       "exemples": [
         "قِفْ",
         "ضَعْ",
