@@ -12,13 +12,9 @@
     "moteur-24"
   ],
   "apercu": [
-    "زِيَادٌ",
-    "كَانَ",
-    "قِيلَ"
+    "زِيَادٌ"
   ],
   "schemes": [
-    "فَاعِل",
-    "مَفْعَل",
     "فَعَلَ"
   ],
   "ecrans": [
@@ -91,7 +87,7 @@
         },
         {
           "qui": "basim",
-          "ar": "قَالَتْ: « نَامَ الطِّفْلُ، وَلَمْ يَقُمْ. »",
+          "ar": "قَالَتْ سَلْمَى: « نَامَ الطِّفْلُ، وَلَمْ يَقُمْ. »",
           "fr": "Elle a dit : « L'enfant a dormi, et il ne s'est pas levé. »"
         }
       ],
@@ -156,7 +152,7 @@
     {
       "type": "regle",
       "titre": "Quand la syllabe se ferme",
-      "texte": "Quand la syllabe se ferme, la voyelle devient brève : u si l'inaccompli a ū (قُلْتُ, لَمْ يَقُلْ), i sinon (بِعْتُ, نِمْتُ). Jamais « قَالْتُ ».",
+      "texte": "Au passé, quand la syllabe se ferme, la voyelle devient brève : u si l'inaccompli a ū (قُلْتُ), i sinon (بِعْتُ, نِمْتُ). Jamais « قَالْتُ ».",
       "exemples": [
         "قُلْتُ",
         "بِعْتُ",
@@ -172,6 +168,29 @@
         ],
         "reponse": 0,
         "explication": "Syllabe fermée et inaccompli en ī : بِعْتُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Après لَمْ et à l'impératif",
+      "texte": "Après لَمْ et à l'impératif, la voyelle longue de l'inaccompli devient brève : يَقُولُ → لَمْ يَقُلْ, قُمْ ; يَنَامُ → لَمْ يَنَمْ, نَمْ ; يَبِيعُ → بِعْ.",
+      "exemples": [
+        "لَمْ يَقُلْ",
+        "لَمْ يَنَمْ",
+        "قُمْ",
+        "بِعْ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Il n'a pas dormi. »",
+        "ar": "لَمْ …",
+        "choix_ar": [
+          "يَنَمْ",
+          "يَنِمْ",
+          "يَنَامُ"
+        ],
+        "reponse": 0,
+        "explication": "يَنَامُ a ā : après لَمْ, il devient a bref, يَنَمْ ; يَنِمْ est fautif."
       }
     },
     {
@@ -355,7 +374,7 @@
           "choix": [
             "il est revenu au village et a dormi",
             "il a vendu une tunique",
-            "il a rendu visite à son ami"
+            "il a eu peur du chien"
           ],
           "reponse": 0,
           "explication": "عَادَ سَمِيرٌ إِلَى الْقَرْيَةِ، وَنَامَ."
@@ -481,7 +500,7 @@
         },
         {
           "type": "qcm",
-          "consigne": "Quelle est la racine de زِدْتُ ?",
+          "consigne": "Quelle est la racine de زِدْتُ (inaccompli يَزِيدُ) ?",
           "choix_ar": [
             "ز ي د",
             "ز و د",

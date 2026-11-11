@@ -178,6 +178,15 @@ FINAL_MARKS = "\u064b\u064c\u064d\u064e\u064f\u0650"
 WEAK_ROOT_LETTERS = set("ويءأإؤئآا")
 
 
+DOUBLED_MARK = re.compile("([\u064b-\u0652\u0670])\\1")
+
+
+def doubled_mark(text: str) -> str | None:
+    """Le signe écrit deux fois de suite (أََ, دْْ), ou None."""
+    m = DOUBLED_MARK.search(text or "")
+    return m.group(0) if m else None
+
+
 def strip_case_ending(text: str) -> str:
     """Le mot sans sa fin de cas (tanwīn ou voyelle brève finale)."""
     s = unicodedata.normalize("NFC", text.strip())
@@ -259,6 +268,11 @@ def validate(words: list[dict], con: sqlite3.Connection, lesson_ids: set[str],
             raise VocabError(f"{where} : nature inconnue {w['nature']}")
         if w["lecon"] not in lesson_ids:
             raise VocabError(f"{where} : leçon inconnue {w['lecon']}")
+        texts = [w.get(k) for k in ("ar", "pluriel", "passe", "inaccompli", "nom_action")]
+        texts += list(w.get("formes", [])) + [(w.get("exemple") or {}).get("ar")]
+        for t in texts:
+            if t and doubled_mark(t):
+                raise VocabError(f"{where} : signe écrit deux fois dans « {t} »")
         if w["nature"] in ("nom", "adjectif") and w.get("genre") not in GENRES:
             raise VocabError(f"{where} : genre attendu (m ou f)")
         # Verbe figé (لَيْسَ) : pas d'inaccompli, signalé par « fige ».

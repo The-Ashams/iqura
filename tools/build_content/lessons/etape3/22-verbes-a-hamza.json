@@ -137,7 +137,7 @@
     {
       "type": "regle",
       "titre": "Une lettre qui change de support",
-      "texte": "ء est une vraie lettre de la racine : seul son support (أ, ؤ, ئ) change selon les voyelles voisines. سَأَلَ, يَسْأَلُ, سُؤَالٌ, comme أَرْضٌ ou بِئْرٌ : la racine garde ء.",
+      "texte": "ء est une vraie lettre de la racine : seul son support (أ, ؤ, ئ, ou ء seule) change selon les voyelles voisines. سَأَلَ, يَسْأَلُ, سُؤَالٌ, comme أَرْضٌ ou بِئْرٌ : la racine garde ء.",
       "exemples": [
         "سَأَلَ",
         "يَسْأَلُ",
@@ -179,7 +179,7 @@
     {
       "type": "regle",
       "titre": "Les personnes",
-      "texte": "Au passé, la hamza reste à sa place : أَخَذْتُ, أَخَذْنَا, أَخَذْتَ. À l'inaccompli aussi : تَأْخُذُ, نَأْخُذُ ; seul « je » s'écrit آ : آخُذُ, لَمْ آكُلْ.",
+      "texte": "Au passé, la hamza reste à sa place : أَخَذْتُ, أَخَذْنَا, أَخَذْتَ. À l'inaccompli aussi : تَأْخُذُ, نَأْخُذُ  ; pour أَخَذَ et أَكَلَ (ء en 1re lettre), seul « je » s'écrit آ : آخُذُ.",
       "exemples": [
         "أَخَذْتُ",
         "أَخَذْنَا",
@@ -341,7 +341,7 @@
             "أَكَلْتُ"
           ],
           "reponse": 0,
-          "explication": "Après لَمْ : jussif, آكُلْ."
+          "explication": "Après لَمْ, le -u final devient sukūn : لَمْ آكُلْ."
         },
         {
           "type": "completer",
@@ -538,11 +538,11 @@
           "ar": "… الْكِيسَ.",
           "choix_ar": [
             "سَآخُذُ",
-            "آخُذُ",
+            "سَأَخَذَ",
             "أَخَذْتُ"
           ],
           "reponse": 0,
-          "explication": "« je » au futur : سَآخُذُ."
+          "explication": "Futur : سَآخُذُ. سَأَخَذَ est fautif : سَـ ne se met jamais devant le passé."
         },
         {
           "type": "sens",
@@ -586,7 +586,7 @@
     },
     {
       "type": "fin",
-      "acquis": "Tu lis et conjugues les verbes à hamza : أَخَذَ, سَأَلَ, أَكَلَ, قَرَأَ, بَدَأَ. Deux hamzas au début s'écrivent آ.",
+      "acquis": "Tu lis et conjugues les verbes à hamza : أَخَذَ, سَأَلَ, أَكَلَ, قَرَأَ, بَدَأَ. Une hamza avec a suivie d'une hamza sans voyelle s'écrit آ : آكُلُ, سَآخُذُ.",
       "suite": "Aux Ruines : les verbes dont deux lettres sont semblables, comme مَدَّ."
     }
   ]

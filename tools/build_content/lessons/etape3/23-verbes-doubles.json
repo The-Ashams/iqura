@@ -46,8 +46,8 @@
           "ar": "… الْآنَ.",
           "choix_ar": [
             "آكُلُ",
-            "أَكَلَ",
-            "يَأْكُلُ"
+            "أَكَلْتُ",
+            "سَآكُلُ"
           ],
           "reponse": 0,
           "explication": "« je » : آكُلُ (leçon 3.22)."
@@ -156,11 +156,13 @@
     {
       "type": "regle",
       "titre": "Des mots que tu connais",
-      "texte": "Tu connais déjà des mots de racine doublée : أُمٌّ (أ م م), حَارٌّ (ح ر ر), قِصَّةٌ (ق ص ص). Et أَحَبَّ « aimer » est une forme IV : يُحِبُّ, avec u.",
+      "texte": "Tu connais déjà des mots de racine doublée : أُمٌّ, حَارٌّ, سَلَّةٌ, قِصَّةٌ (ق ص ص). Et أَقَلُّ, أَخَفُّ viennent de قَلِيلٌ, خَفِيفٌ (ق ل ل, خ ف ف).",
       "exemples": [
         "أُمٌّ",
+        "سَلَّةٌ",
         "قِصَّةٌ",
-        "يُحِبُّ"
+        "أَقَلُّ",
+        "أَخَفُّ"
       ],
       "question": {
         "type": "qcm",
@@ -172,6 +174,27 @@
         ],
         "reponse": 0,
         "explication": "La shadda cache deux ص."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "أَحَبَّ, une forme IV",
+      "texte": "أَحَبَّ « aimer » est une forme IV de ح ب ب : son inaccompli a u, يُحِبُّ, comme يُخْرِجُ. Ne le confonds pas avec يَمُدُّ, qui a a.",
+      "exemples": [
+        "أَحَبَّ",
+        "يُحِبُّ",
+        "يَمُدُّ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de يُحِبُّ ?",
+        "choix_ar": [
+          "ح ب ب",
+          "ي ح ب",
+          "ح ب"
+        ],
+        "reponse": 0,
+        "explication": "La shadda cache deux ب : ح ب ب."
       }
     },
     {
@@ -206,7 +229,7 @@
           "consigne": "Comment dit-on « il compte » ?",
           "choix_ar": [
             "يَعُدُّ",
-            "عَدَدٌ",
+            "أَعُدُّ",
             "عَدَّ"
           ],
           "reponse": 0,
@@ -221,7 +244,7 @@
             "نَمُدُّ"
           ],
           "reponse": 0,
-          "explication": "« nous avons tendu » se dit مَدَدْنَا."
+          "explication": "Sukūn sur la dernière lettre : مَدَدْنَا. مَدَّنَا veut dire « il nous a tendu » : نَا y est complément."
         },
         {
           "type": "ordonner",
@@ -275,10 +298,10 @@
           "choix_ar": [
             "رَدَدْتُ",
             "رَدَّتُ",
-            "رَدَّ"
+            "أَرُدُّ"
           ],
           "reponse": 0,
-          "explication": "Sukūn : les deux د se séparent, رَدَدْتُ."
+          "explication": "رَدَّتُ est fautif : devant تُ, la dernière د porte un sukūn et les deux د se séparent, رَدَدْتُ."
         },
         {
           "type": "completer",
@@ -286,11 +309,11 @@
           "ar": "… بَاسِمٌ الْحِمْلَ.",
           "choix_ar": [
             "يَشُدُّ",
-            "شَدَدْتُ",
+            "تَشُدُّ",
             "شَدَّ"
           ],
           "reponse": 0,
-          "explication": "Inaccompli : يَشُدُّ."
+          "explication": "Inaccompli, « il » : يَشُدُّ."
         },
         {
           "type": "completer",
@@ -299,10 +322,10 @@
           "choix_ar": [
             "يُحِبُّ",
             "يَحُبُّ",
-            "أَحَبَّتْ"
+            "أَحَبَّ"
           ],
           "reponse": 0,
-          "explication": "Forme IV, inaccompli en u : يُحِبُّ."
+          "explication": "Forme IV, inaccompli en u : يُحِبُّ ; يَحُبُّ est fautif."
         }
       ]
     },
@@ -373,15 +396,15 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Nous avons attaché la charge. »",
-          "ar": "… الْحِمْلَ.",
+          "consigne": "Complète : « Nous avons compté les bourses. »",
+          "ar": "… الْأَكْيَاسَ.",
           "choix_ar": [
-            "شَدَدْنَا",
-            "شَدَّنَا",
-            "نَشُدُّ"
+            "عَدَدْنَا",
+            "عَدَّنَا",
+            "نَعُدُّ"
           ],
           "reponse": 0,
-          "explication": "Sukūn : شَدَدْنَا."
+          "explication": "Sukūn : عَدَدْنَا. عَدَّنَا voudrait dire « il nous a comptés »."
         }
       ]
     },
@@ -434,7 +457,7 @@
             "أَعُدُّ"
           ],
           "reponse": 0,
-          "explication": "« j'ai compté » se dit عَدَدْتُ."
+          "explication": "عَدَّتُ est fautif : devant تُ, les deux د se séparent, عَدَدْتُ."
         },
         {
           "type": "qcm",
@@ -475,11 +498,11 @@
           "ar": "الشَّيْخُ … الْمُسَافِرِينَ عَلَى الطَّرِيقِ.",
           "choix_ar": [
             "يَدُلُّ",
-            "دَلَلْتُ",
-            "دَلَّتْ"
+            "دَلَّ",
+            "تَدُلُّ"
           ],
           "reponse": 0,
-          "explication": "Inaccompli : يَدُلُّ."
+          "explication": "Inaccompli, « il » : يَدُلُّ."
         },
         {
           "type": "completer",
@@ -488,10 +511,10 @@
           "choix_ar": [
             "مَدَدْتُ",
             "مَدَّتُ",
-            "مَدَّ"
+            "أَمُدُّ"
           ],
           "reponse": 0,
-          "explication": "Sukūn : مَدَدْتُ."
+          "explication": "مَدَّتُ est fautif (à ne pas confondre avec مَدَّتْ « elle a tendu ») : devant تُ, les deux د se séparent, مَدَدْتُ."
         },
         {
           "type": "sens",

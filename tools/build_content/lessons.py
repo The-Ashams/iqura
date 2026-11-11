@@ -162,6 +162,8 @@ def validate(data: LessonData) -> None:
                     known_endings.add(g)
 
                 def check_ar(text: str, _l=lesson) -> None:
+                    if vocab.doubled_mark(text):
+                        raise LessonError(f"{_l['_file']} : « {text} » : signe écrit deux fois")
                     for ch in text:
                         if ch in known_letters or ch in known_signs or ch in (" ", "ـ") \
                                 or vocab.PUNCT.match(ch):

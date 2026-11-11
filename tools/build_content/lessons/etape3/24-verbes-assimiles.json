@@ -12,14 +12,14 @@
     "moteur-23"
   ],
   "apercu": [
-    "زِيَادٌ"
+    "زِيَادٌ",
+    "وَجِلَ",
+    "يَوْجَلُ"
   ],
   "schemes": [
     "فَعَلَ",
     "يَفْعِلُ",
-    "يَفْعَلُ",
-    "مِفْعَال",
-    "مَفْعِل"
+    "يَفْعَلُ"
   ],
   "ecrans": [
     {
@@ -46,10 +46,10 @@
           "choix_ar": [
             "مَدَدْتُ",
             "مَدَّتُ",
-            "مَدَّ"
+            "أَمُدُّ"
           ],
           "reponse": 0,
-          "explication": "Sukūn : les deux د se séparent (leçon 3.23)."
+          "explication": "مَدَّتُ est fautif : devant تُ, les deux د se séparent (leçon 3.23)."
         },
         {
           "type": "qcm",
@@ -135,7 +135,7 @@
     {
       "type": "regle",
       "titre": "Le و qui tombe",
-      "texte": "Quand l'inaccompli a i (et parfois a), le و du début tombe : وَجَدَ → يَجِدُ, وَضَعَ → يَضَعُ. Au passé, rien ne change : وَجَدْتُ.",
+      "texte": "Quand l'inaccompli a i (et parfois a), le و du début tombe : وَجَدَ → يَجِدُ, وَضَعَ → يَضَعُ. Au passé, rien ne change ; et وَجِلَ, يَوْجَلُ garde son و.",
       "exemples": [
         "يَجِدُ",
         "يَضَعُ",
@@ -156,7 +156,7 @@
     {
       "type": "regle",
       "titre": "Le و dans les mots connus",
-      "texte": "Tu connais déjà des mots de racine en و : وَلَدٌ, وَرَقَةٌ, وَاحِدٌ. Dans مِيزَانٌ (و ز ن), le و devient ي après le i : c'est l'instrument pour peser.",
+      "texte": "Tu connais déjà des mots de racine en و : وَلَدٌ, وَرَقَةٌ, وِسَادَةٌ, وَاحِدٌ. Dans مِيزَانٌ (و ز ن), le و devient ي après le i : c'est l'instrument pour peser.",
       "exemples": [
         "مِيزَانٌ",
         "وَلَدٌ",
@@ -172,6 +172,28 @@
         ],
         "reponse": 0,
         "explication": "و devient ي après i : و ز ن."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'impératif",
+      "texte": "L'impératif part de l'inaccompli sans son préfixe : يَقِفُ → قِفْ, يَضَعُ → ضَعْ. Il commence par une voyelle : pas d'alif de liaison, contrairement à اكْتُبْ.",
+      "exemples": [
+        "قِفْ",
+        "ضَعْ",
+        "اكْتُبْ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Pose le panier ici ! »",
+        "ar": "… السَّلَّةَ هُنَا!",
+        "choix_ar": [
+          "ضَعِ",
+          "وَضَعَ",
+          "اضَعْ"
+        ],
+        "reponse": 0,
+        "explication": "Impératif ضَعْ ; devant l'article, ضَعِ. اضَعْ est fautif : pas d'alif."
       }
     },
     {
@@ -422,7 +444,7 @@
           "choix": [
             "endroit",
             "balance",
-            "il a posé"
+            "poser"
           ],
           "reponse": 0,
           "explication": "مَوْضِعٌ veut dire « endroit »."

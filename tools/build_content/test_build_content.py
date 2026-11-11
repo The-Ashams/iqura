@@ -143,6 +143,14 @@ class ExamTest(unittest.TestCase):
             self.check(exam)
 
 
+class DoubledMarkTest(unittest.TestCase):
+    def test_signe_double_refuse(self):
+        self.assertEqual(vocab.doubled_mark("أََجِدُ"), "\u064e\u064e")
+        self.assertEqual(vocab.doubled_mark("مَدَدْْتُ"), "\u0652\u0652")
+        self.assertIsNone(vocab.doubled_mark("مَدَدْتُ"))
+        self.assertIsNone(vocab.doubled_mark("مَدَّ"))
+
+
 class SchemeTest(unittest.TestCase):
     def test_scheme_is_checked_against_the_root(self):
         ok = [("كَاتِبٌ", "فَاعِل", "كتب"), ("مَكْتُوبَةٌ", "مَفْعُولَة", "كتب"),
