@@ -25,7 +25,14 @@ Le voyageur quitte l'oasis pour les montagnes, chez les forgerons et les copiste
 | 7 | La Salle des copistes | 3.15 Forme V, 3.16 Forme VI, 3.17 Forme VII, 3.18 Forme VIII |
 | 8 | La Tour du guet | 3.19 Forme X, 3.20 Participes et noms d'action des formes II à X, 3.21 La voix passive |
 
-Les lieux 9 à 11 (chapitres C et D : verbes faibles, cas et modes) seront proposés avec le niveau Intermédiaire 3.
+## Chapitres C et D — Verbes faibles, cas et modes (leçons 3.22 à 3.32, ajouté le 11/11/2026)
+
+| N° | Lieu | Leçons |
+| --- | --- | --- |
+| 9 | Les Ruines aux inscriptions | 3.22 à 3.26 (verbes à hamza, doublés, assimilés, concaves, défectueux) |
+| 10 | Le Tribunal des scribes | 3.27 à 3.29 (les trois cas, noms particuliers, subjonctif) |
+| 11 | La Bibliothèque du col | 3.30 à 3.32 (jussif, إِنَّ et ses sœurs, كَانَ et ses sœurs) |
+| 12 | Les Éboulis de la Précipitation | Examen de la région 3 |
 
 ## Personnages
 
@@ -33,6 +40,8 @@ Les lieux 9 à 11 (chapitres C et D : verbes faibles, cas et modes) seront propo
 | --- | --- |
 | Hilāl (هِلَال, « croissant de lune ») | Le forgeron, maître du chapitre A ; nouveau |
 | Rabāb (رَبَاب, « nuage blanc ») | La copiste, maîtresse du chapitre B ; nouvelle |
+| Ziyād (زِيَاد, « surcroît ») | Le déchiffreur d'inscriptions, maître du chapitre C ; nouveau |
+| Widād (وِدَاد, « affection ») | La juge des scribes, maîtresse du chapitre D ; nouvelle |
 | Bāsim | Le jeune chamelier de la région 2, qui accompagne le voyageur |
 
 Aucun nom de prophète ni de figure religieuse. Sens des noms : rédigé par IA.

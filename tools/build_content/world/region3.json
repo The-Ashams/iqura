@@ -1,5 +1,5 @@
 {
-  "_comment": "Région 3 « Les Montagnes du Moteur » (cahier §5.7, §8.2 ; proposition du 05/11/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_3.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Chapitres A (Intermédiaire 1) et B (Intermédiaire 2) ouverts.",
+  "_comment": "Région 3 « Les Montagnes du Moteur » (cahier §5.7, §8.2 ; proposition du 05/11/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_3.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Chapitres A à D ouverts (Intermédiaire 1 à 3).",
   "statut": "ia",
   "region": {
     "id": "r3",
@@ -178,9 +178,63 @@
       "tranche_j1a": true,
       "liens": [
         "copistes",
-        "eboulis"
+        "ruines"
       ],
       "description": "Du haut de la tour, on demande, on observe ce qui est fait : forme X, participes et voix passive."
+    },
+    {
+      "id": "ruines",
+      "numero": 9,
+      "nom": "Les Ruines aux inscriptions",
+      "position": [
+        140,
+        36
+      ],
+      "lecons": [],
+      "scene": "scene_ruines",
+      "sol": 80,
+      "tranche_j1a": true,
+      "liens": [
+        "tour",
+        "tribunal"
+      ],
+      "description": "Sur les colonnes, des lettres se sont effacées : Ziyād apprend à lire les verbes dont une lettre faiblit ou disparaît."
+    },
+    {
+      "id": "tribunal",
+      "numero": 10,
+      "nom": "Le Tribunal des scribes",
+      "position": [
+        112,
+        62
+      ],
+      "lecons": [],
+      "scene": "scene_tribunal",
+      "sol": 82,
+      "tranche_j1a": true,
+      "liens": [
+        "ruines",
+        "bibliotheque_col"
+      ],
+      "description": "Widād juge chaque fin de mot : on y explique les cas par la fonction, et les modes du verbe."
+    },
+    {
+      "id": "bibliotheque_col",
+      "numero": 11,
+      "nom": "La Bibliothèque du col",
+      "position": [
+        90,
+        46
+      ],
+      "lecons": [],
+      "scene": "scene_bibliotheque_col",
+      "sol": 82,
+      "tranche_j1a": true,
+      "liens": [
+        "tribunal",
+        "eboulis"
+      ],
+      "description": "Entre les rayonnages, les petits mots qui gouvernent la phrase : « certes », « il était »… Au-delà, les Éboulis."
     },
     {
       "id": "eboulis",
@@ -196,7 +250,7 @@
       "tranche_j1a": true,
       "liens": [
         "relais",
-        "tour"
+        "bibliotheque_col"
       ],
       "description": "Sur les pentes, la Précipitation pousse à répondre trop vite. Révisions quotidiennes."
     }
@@ -226,6 +280,27 @@
         "moulin",
         "copistes",
         "tour"
+      ]
+    },
+    {
+      "id": "ziyad",
+      "nom": "Ziyād",
+      "nom_ar": "زِيَاد",
+      "role": "Le déchiffreur d'inscriptions",
+      "sprite": "ziyad",
+      "lieux": [
+        "ruines"
+      ]
+    },
+    {
+      "id": "widad",
+      "nom": "Widād",
+      "nom_ar": "وِدَاد",
+      "role": "La juge des scribes",
+      "sprite": "widad",
+      "lieux": [
+        "tribunal",
+        "bibliotheque_col"
       ]
     }
   ]
