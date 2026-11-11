@@ -519,3 +519,42 @@ Références :
 - `/home/user/iqura/tools/build_content/exams/examen-r2.json`
 - `/home/user/iqura/tools/build_content/lessons/etape3/19-la-forme-x.json` (l. 99 : لَكِنَّ → لَٰكِنَّ)
 - `/home/user/iqura/assets/content/iqura_content.db`
+
+---
+
+# Doutes du relecteur tranchés par le conseiller (11 et 12/11/2026)
+
+## Leçons 3.22 à 3.32 (11 doutes)
+
+1. Champ « formes » des verbes faibles : liste blanche relue, pas forcément complète ; on n'ajoute une forme que si un contenu en a besoin, jamais une forme ⚠.
+2. Tableau de 13 formes des doublés : sur مَدَّ seulement (jamais أَحَبَّ, رَدَّ, شَدَّ) ; à reconnaître. **Reporté** (pas encore d'écran en 3.23).
+3. شَدَدْنَا retiré : confirmé (ni شَدَدْنَا ni اشْدُدْ, nulle part).
+4. أَحَبَّ : formes admises أَحَبَّ, يُحِبُّ, أُحِبُّ, تُحِبُّ, نُحِبُّ ; jamais لَا devant une forme de أَحَبَّ (vérifié par recherche).
+5. 3.24, bourse sous une chaise : gardée (jamais dans un bagage, personne n'est accusé).
+6. Fiche قَالَ « il a dit » : gardée ; harmonisation à l'infinitif seulement avec l'accord de l'utilisateur (`docs/DECISIONS_A_REVOIR.md`).
+7. 3.27 الْكُتَّابُ « les scribes » : gardé.
+8. تُرِيدُ admis dans les formes de أَرَادَ (pas تُرِيدُونَ ni أَرَدْنَا).
+9. 3.29 mini-boss : distracteur كَيْ سَمِعَ validé ; explication complétée (كَيْ jamais devant le passé).
+10. خَطَأٌ relié au lemme `xaTa_#` ; le لَا de défense **sans lemme** : sa fiche afficherait sinon le nombre de tous les لا du Corpus.
+11. 3.32 : réplique remplacée par « لَسْتُ مَرِيضًا الْيَوْمَ، لَٰكِنَّ الْبَرْدَ كَثِيرٌ. ».
+
+## Examen de la région 3
+
+1. Trame gardée (maître et élève pressé, récit profane) ; le repas servi par l'hôte est retiré par prudence : « أَكْرَمَ أَبُو سَمِيرٍ الضُّيُوفَ، وَتَكَلَّمَ مَعَهُمْ عَنْ بَغْدَادَ. ».
+2. Décodage : 20 vrais mots inconnus (ajout de زَارِعٌ, مَشْرُوبٌ, دَارِسٌ), plus 4 formes de verbes faibles (question « racine »). Pour garder le format choisi par l'utilisateur (40 sur 50) : 40 questions racine et moule, 6 questions de sens, 4 questions sur les formes faibles ; les questions « lettre cachée » sont retirées de l'examen (elles restent dans les leçons).
+3. Sens courts des mots à décoder : acceptés, rédigés par IA et présentés comme « probables » ; jamais « bureau » pour مَكْتَبٌ.
+
+Limite connue du contrôle automatique : un mot non enseigné qui s'écrit sans voyelles comme un mot connu passe le contrôle (مَعْنَى lu « مَعَ + نِي », حَسَنٌ lu comme حَسُنَ). Le relecteur les a repérés ; c'est noté dans `docs/ETAT_DU_PROJET.md` §5.
+
+# Décisions de fin de niveau (Intermédiaire 3, 10 points)
+
+1. Verbes « irréguliers » (3.22 à 3.26) : une liste fermée de formes par verbe, relue ; rien n'est fabriqué automatiquement. Le tableau complet de مَدَّ est reporté.
+2. بِـ (« avec ») et عَنْ (« de, au sujet de ») arrivent en 3.27.
+3. Tournures écartées par prudence (trop proches de tournures du Coran) : لَا أُحِبُّ, شَدَدْنَا, قُلْ, كُنْ, etc. ; vérifié dans tous les fichiers.
+4. Pas d'exercice de « moule » sur les verbes irréguliers : à la place, « Réparer l'inscription » (racine, lettre cachée, bonne forme).
+5. Récits sans ressemblance avec ceux du Coran : bourse sous une chaise gardée en 3.24 ; dans l'examen, repas de l'hôte retiré.
+6. La fiche قَالَ garde « il a dit » ; passage à l'infinitif seulement avec ton accord.
+7. Retouches de naturel : dialogue de 3.32, explication de كَيْ en 3.29.
+8. خَطَأٌ relié au Corpus ; le لَا de défense non relié (pour ne pas afficher un nombre faux).
+9. Reports : إِنِّي (« certes je »), لِـ de commande, jussif des verbes doublés, impératifs اكْتُبَا et اكْتُبْنَ.
+10. Examen de la région 3 (format choisi par toi) : récit de 311 mots (10/12), décodage de 20 mots inconnus et 4 formes de verbes (40/50), 5 phrases à remettre en ordre (4/5), écoute masquée ; sens « probables » rédigés par IA.

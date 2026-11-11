@@ -56,3 +56,5 @@ Les fiches de verbes des régions 1 et 2 donnent le passé (« il est entré »,
 
 **Décision** : garder les anciennes fiches telles quelles (validées) ; les harmoniser à l'infinitif plus tard, **seulement avec l'accord de l'utilisateur**.
 
+
+Ajout du 12/11/2026 : la fiche قَالَ (région 2) fait partie des fiches à harmoniser ce jour-là ; d'ici là elle garde « il a dit » (décision du conseiller, `docs/relectures/decisions-intermediaire-3.md`).

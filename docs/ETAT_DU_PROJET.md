@@ -187,7 +187,7 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | --- | --- |
 | Monde | Lieux 9 à 11 de la région 3 : les Ruines (3.22 à 3.26), le Tribunal (3.27 à 3.29), la Bibliothèque du col (3.30 à 3.32) ; maîtres Ziyād et Widād ; scènes et sprites en pixel art ; boss « la Grande Précipitation » aux Éboulis |
 | Leçons | `tools/build_content/lessons/etape3/22` à `32` (moteur-22 à moteur-32) : verbes à hamza, doublés, assimilés, concaves, défectueux ; les trois cas ; noms particuliers (diptotes, cinq noms, duel et pluriel sain) ; subjonctif, jussif ; إِنَّ et ses sœurs ; كَانَ et ses sœurs |
-| Examen | `tools/build_content/exams/examen-r3.json` : trois épreuves (format choisi par l'utilisateur) : récit de 266 mots (10 sur 12), « décoder » 16 mots inconnus et 4 formes de verbes faibles (40 sur 50 : racine, moule, sens probable, lettre cachée), 5 phrases à remettre en ordre (4 sur 5) ; écoute masquée |
+| Examen | `tools/build_content/exams/examen-r3.json` : trois épreuves (format choisi par l'utilisateur) : récit de 311 mots (10 sur 12), « décoder » 20 mots inconnus et 4 formes de verbes faibles (40 sur 50 : racine, moule, sens probable), 5 phrases à remettre en ordre (4 sur 5) ; écoute masquée |
 | Pipeline | Épreuve « décoder » contrôlée (mot inconnu, racine du Corpus, moule vérifié) ; signe écrit deux fois refusé (أََ, دْْ) ; moules ف ع ل acceptés comme notation dans l'examen |
 | Plan et décisions | `docs/relectures/decisions-intermediaire-3.md` (plan du conseiller, doutes tranchés, liste de fin de niveau) |
 | Relecture | `docs/relectures/2026-11-11-intermediaire-3.md` |
@@ -257,6 +257,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 14. Suivant : Avancé 1 (leçons 4.1 à 4.14, région 4), sur une proposition de région 4 à écrire.
 
 ## 5. Problèmes connus
+
+- Contrôle des mots connus : un mot non enseigné qui s'écrit sans voyelles comme un mot connu passe le contrôle (ex. مَعْنَى lu « مَعَ + نِي », حَسَنٌ lu comme le verbe حَسُنَ) ; la relecture reste nécessaire (12/11/2026).
 
 - **Chatterbox** : données d'entraînement et origine de la voix par défaut non publiées ; une voyelle brève isolée peut être allongée, la voyelle brève finale d'un mot est souvent avalée (on génère plusieurs tirages et on garde le meilleur ; خَابَ et حُجِبَ de la leçon 3 sont à écouter en priorité), et un mot tronqué n'est pas détecté automatiquement : l'écoute de l'utilisateur reste nécessaire.
 - **Synthèse non reproductible en CI** (modèle trop lourd) : les MP3 sont versionnés et la CI vérifie leur empreinte.

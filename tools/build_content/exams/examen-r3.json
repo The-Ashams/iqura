@@ -35,7 +35,7 @@
       "فِي السُّوقِ، لَقِيَ الْمُسَافِرُونَ أَبَا سَمِيرٍ، تَاجِرًا مِنْ بَغْدَادَ.",
       "دَعَا الْمُسَافِرِينَ أَبُو سَمِيرٍ إِلَى بَيْتِهِ.",
       "فِي بَيْتِ أَبِي سَمِيرٍ، جَلَسَ الضُّيُوفُ فِي الْمَجْلِسِ، وَتَعَارَفُوا.",
-      "أَكْرَمَ أَبُو سَمِيرٍ الضُّيُوفَ، وَقَدَّمَ لَهُمُ الْخُبْزَ وَالتَّمْرَ.",
+      "أَكْرَمَ أَبُو سَمِيرٍ الضُّيُوفَ، وَتَكَلَّمَ مَعَهُمْ عَنْ بَغْدَادَ.",
       "وَعَدَ أَبُو سَمِيرٍ بَاسِمًا أَنْ يَكْتُبَ لَهُ رِسَالَةً.",
       "فِي الصَّبَاحِ، ذَهَبَ بَاسِمٌ مَعَ أَبِي سَمِيرٍ إِلَى السُّوقِ.",
       "رَأَى بَاسِمٌ فِي السُّوقِ تُجَّارًا كَثِيرِينَ، وَسَمِعَ كَلِمَاتٍ جَدِيدَةً.",
@@ -217,7 +217,7 @@
         "racine": "$rb",
         "racine_ar": "ش ر ب",
         "schema": "مَفْعَل",
-        "sens": "lieu où l'on boit"
+        "sens": "lieu où l'on boit, point d'eau"
       },
       {
         "mot": "مَنْظَرٌ",
@@ -316,6 +316,27 @@
         "racine_ar": "ن ظ ر",
         "schema": "مُفْتَعِل",
         "sens": "qui attend"
+      },
+      {
+        "mot": "زَارِعٌ",
+        "racine": "zrE",
+        "racine_ar": "ز ر ع",
+        "schema": "فَاعِل",
+        "sens": "qui cultive, cultivateur"
+      },
+      {
+        "mot": "مَشْرُوبٌ",
+        "racine": "$rb",
+        "racine_ar": "ش ر ب",
+        "schema": "مَفْعُول",
+        "sens": "ce que l'on boit, boisson"
+      },
+      {
+        "mot": "دَارِسٌ",
+        "racine": "drs",
+        "racine_ar": "د ر س",
+        "schema": "فَاعِل",
+        "sens": "qui étudie"
       }
     ],
     "questions": [
@@ -408,12 +429,12 @@
         "consigne": "Quel est son sens probable ?",
         "ar": "مَشْرَبٌ",
         "choix": [
-          "lieu où l'on boit",
+          "lieu où l'on boit, point d'eau",
           "buveur",
           "boisson"
         ],
         "reponse": 0,
-        "explication": "Sens : lieu où l'on boit (rédigé par IA). La racine et le moule donnent une piste, pas une certitude."
+        "explication": "Sens : lieu où l'on boit, point d'eau (rédigé par IA). La racine et le moule donnent une piste, pas une certitude."
       },
       {
         "type": "qcm",
@@ -573,18 +594,6 @@
       },
       {
         "type": "qcm",
-        "consigne": "Quel est son sens probable ?",
-        "ar": "لَاعِبٌ",
-        "choix": [
-          "joueur, qui joue",
-          "lieu où l'on joue",
-          "jeu"
-        ],
-        "reponse": 0,
-        "explication": "Sens : joueur, qui joue (rédigé par IA). La racine et le moule donnent une piste, pas une certitude."
-      },
-      {
-        "type": "qcm",
         "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
         "ar": "نَاظِرٌ",
         "choix_ar": [
@@ -717,18 +726,6 @@
       },
       {
         "type": "qcm",
-        "consigne": "Quel est son sens probable ?",
-        "ar": "تَدْرِيسٌ",
-        "choix": [
-          "enseignement",
-          "enseignant",
-          "étude"
-        ],
-        "reponse": 0,
-        "explication": "Sens : enseignement (rédigé par IA). La racine et le moule donnent une piste, pas une certitude."
-      },
-      {
-        "type": "qcm",
         "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
         "ar": "تَعْرِيفٌ",
         "choix_ar": [
@@ -825,24 +822,84 @@
       },
       {
         "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "زَارِعٌ",
+        "choix_ar": [
+          "ز ر ع",
+          "ز ا ر",
+          "ر ع ز"
+        ],
+        "reponse": 0,
+        "explication": "زَارِعٌ : racine ز ر ع."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "زَارِعٌ",
+        "choix_ar": [
+          "فَاعِل",
+          "فَعِيل",
+          "مَفْعُول"
+        ],
+        "reponse": 0,
+        "explication": "زَارِعٌ : moule فَاعِل."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "مَشْرُوبٌ",
+        "choix_ar": [
+          "ش ر ب",
+          "م ش ر",
+          "ش ر و"
+        ],
+        "reponse": 0,
+        "explication": "مَشْرُوبٌ : racine ش ر ب."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "مَشْرُوبٌ",
+        "choix_ar": [
+          "مَفْعُول",
+          "مَفْعَل",
+          "فَاعِل"
+        ],
+        "reponse": 0,
+        "explication": "مَشْرُوبٌ : moule مَفْعُول."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Décode ce mot inconnu : quelle est sa racine ?",
+        "ar": "دَارِسٌ",
+        "choix_ar": [
+          "د ر س",
+          "د ا ر",
+          "ر س د"
+        ],
+        "reponse": 0,
+        "explication": "دَارِسٌ : racine د ر س."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quel est son moule ?",
+        "ar": "دَارِسٌ",
+        "choix_ar": [
+          "فَاعِل",
+          "فَعِيل",
+          "مَفْعُول"
+        ],
+        "reponse": 0,
+        "explication": "دَارِسٌ : moule فَاعِل."
+      },
+      {
+        "type": "qcm",
         "consigne": "Quelle est la racine de cette forme ?",
         "ar": "قُلْتُ",
         "choix_ar": [
           "ق و ل",
           "ق ل ت",
           "ق ا ل"
-        ],
-        "reponse": 0,
-        "explication": "ق و ل : le ā du milieu cache un و ; la syllabe se ferme, il reste u."
-      },
-      {
-        "type": "qcm",
-        "consigne": "Quelle lettre de la racine est cachée ou transformée ?",
-        "ar": "قُلْتُ",
-        "choix": [
-          "le و du milieu",
-          "le و du début",
-          "une lettre doublée"
         ],
         "reponse": 0,
         "explication": "ق و ل : le ā du milieu cache un و ; la syllabe se ferme, il reste u."
@@ -861,18 +918,6 @@
       },
       {
         "type": "qcm",
-        "consigne": "Quelle lettre de la racine est cachée ou transformée ?",
-        "ar": "يَجِدُ",
-        "choix": [
-          "le و du début",
-          "le و du milieu",
-          "une lettre doublée"
-        ],
-        "reponse": 0,
-        "explication": "و ج د : le و du début tombe à l'inaccompli."
-      },
-      {
-        "type": "qcm",
         "consigne": "Quelle est la racine de cette forme ?",
         "ar": "مَدَدْتُ",
         "choix_ar": [
@@ -885,36 +930,12 @@
       },
       {
         "type": "qcm",
-        "consigne": "Quelle lettre de la racine est cachée ou transformée ?",
-        "ar": "مَدَدْتُ",
-        "choix": [
-          "une lettre doublée",
-          "le و du milieu",
-          "le و du début"
-        ],
-        "reponse": 0,
-        "explication": "م د د : les deux د se séparent devant تُ."
-      },
-      {
-        "type": "qcm",
         "consigne": "Quelle est la racine de cette forme ?",
         "ar": "دَعَا",
         "choix_ar": [
           "د ع و",
           "د ع ا",
           "د ع ي"
-        ],
-        "reponse": 0,
-        "explication": "د ع و : le ā final cache le و de la racine (on écrit ا)."
-      },
-      {
-        "type": "qcm",
-        "consigne": "Quelle lettre de la racine est cachée ou transformée ?",
-        "ar": "دَعَا",
-        "choix": [
-          "le و de la fin",
-          "le و du milieu",
-          "le و du début"
         ],
         "reponse": 0,
         "explication": "د ع و : le ā final cache le و de la racine (on écrit ا)."
