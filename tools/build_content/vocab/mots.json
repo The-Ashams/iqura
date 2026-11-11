@@ -2961,16 +2961,29 @@
    "passe": "قَالَ",
    "inaccompli": "يَقُولُ",
    "formes": [
-    "قَالَتْ"
+    "قَالَتْ",
+    "قَالُوا",
+    "قُلْتُ",
+    "قُلْتَ",
+    "قُلْنَا",
+    "يَقُولُ",
+    "تَقُولُ",
+    "أَقُولُ",
+    "نَقُولُ",
+    "يَقُولُونَ",
+    "يَقُلْ",
+    "أَقُلْ",
+    "يَقُولَ"
    ],
    "lemme": "qaAla",
    "fige": true,
-   "remarque": "employé ici seulement sous la forme قَالَ / قَالَتْ, suivi du nom de celui qui parle ; les autres formes de ce verbe changent de voyelle au milieu : elles viendront en région 3",
+   "remarque": "suivi du nom de celui qui parle ; les formes de ce verbe changent de voyelle au milieu (leçon 3.25)",
    "exemple": {
     "ar": "قَالَتْ سَلْمَى: « الْحَدِيقَةُ جَمِيلَةٌ. »",
     "fr": "Salmā a dit : « Le jardin est beau. »"
    },
-   "theme": "actions"
+   "theme": "actions",
+   "nom_action": "قَوْلٌ"
   },
   {
    "id": "ya",
@@ -5936,6 +5949,732 @@
    "exemple": {
     "ar": "« هَلْ » كَلِمَةُ اسْتِفْهَامٍ.",
     "fr": "هَلْ est un mot d'interrogation."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "ahabba",
+   "ar": "أَحَبَّ",
+   "translit": "aḥabba",
+   "fr": "aimer",
+   "nature": "verbe",
+   "lecon": "moteur-23",
+   "source_sens": "rédigé par IA",
+   "passe": "أَحَبَّ",
+   "inaccompli": "يُحِبُّ",
+   "exemple": {
+    "ar": "يُحِبُّ الطِّفْلُ التَّمْرَ.",
+    "fr": "L'enfant aime les dattes."
+   },
+   "lemme": ">aHobabo",
+   "remarque": "forme IV : inaccompli en u, comme يُخْرِجُ",
+   "theme": "qualites"
+  },
+  {
+   "id": "radda",
+   "ar": "رَدَّ",
+   "translit": "radda",
+   "fr": "rendre, renvoyer",
+   "nature": "verbe",
+   "lecon": "moteur-23",
+   "source_sens": "rédigé par IA",
+   "passe": "رَدَّ",
+   "inaccompli": "يَرُدُّ",
+   "nom_action": "رَدٌّ",
+   "exemple": {
+    "ar": "رَدَّ بَاسِمٌ الْمِفْتَاحَ إِلَى سَلْمَى.",
+    "fr": "Bāsim a rendu la clé à Salmā."
+   },
+   "lemme": "rad~a",
+   "formes": [
+    "رَدَدْْتُ",
+    "رَدَدْْنَا",
+    "رَدَدْْتَ",
+    "أَرُدُّ",
+    "نَرُدُّ",
+    "تَرُدُّ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "adad",
+   "ar": "عَدَدٌ",
+   "translit": "ʿadadun",
+   "fr": "nombre",
+   "nature": "nom",
+   "lecon": "moteur-23",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "Eadad",
+   "exemple": {
+    "ar": "عَدَدُ الطُّلَّابِ كَبِيرٌ.",
+    "fr": "Le nombre des étudiants est grand."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "madda",
+   "ar": "مَدَّ",
+   "translit": "madda",
+   "fr": "tendre, étendre",
+   "nature": "verbe",
+   "lecon": "moteur-23",
+   "source_sens": "rédigé par IA",
+   "passe": "مَدَّ",
+   "inaccompli": "يَمُدُّ",
+   "nom_action": "مَدٌّ",
+   "exemple": {
+    "ar": "مَدَّ الْحَمَّالُ الْحَبْلَ.",
+    "fr": "Le porteur a tendu la corde."
+   },
+   "lemme": "mad~a",
+   "formes": [
+    "مَدَدْْتُ",
+    "مَدَدْْنَا",
+    "مَدَدْْتَ",
+    "أَمُدُّ",
+    "نَمُدُّ",
+    "تَمُدُّ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "adda",
+   "ar": "عَدَّ",
+   "translit": "ʿadda",
+   "fr": "compter",
+   "nature": "verbe",
+   "lecon": "moteur-23",
+   "source_sens": "rédigé par IA",
+   "passe": "عَدَّ",
+   "inaccompli": "يَعُدُّ",
+   "nom_action": "عَدٌّ",
+   "exemple": {
+    "ar": "عَدَّ التَّاجِرُ الْأَكْيَاسَ.",
+    "fr": "Le marchand a compté les bourses."
+   },
+   "lemme": "Ead~a",
+   "formes": [
+    "عَدَدْْتُ",
+    "عَدَدْْنَا",
+    "عَدَدْْتَ",
+    "أَعُدُّ",
+    "نَعُدُّ",
+    "تَعُدُّ"
+   ],
+   "theme": "argent"
+  },
+  {
+   "id": "dalla",
+   "ar": "دَلَّ",
+   "translit": "dalla",
+   "fr": "indiquer, montrer (le chemin)",
+   "nature": "verbe",
+   "lecon": "moteur-23",
+   "source_sens": "rédigé par IA",
+   "passe": "دَلَّ",
+   "inaccompli": "يَدُلُّ",
+   "exemple": {
+    "ar": "دَلَّ الشَّيْخُ الْمُسَافِرِينَ عَلَى الطَّرِيقِ.",
+    "fr": "Le vieil homme a indiqué le chemin aux voyageurs."
+   },
+   "lemme": "dal~a",
+   "formes": [
+    "دَلَلْْتُ",
+    "دَلَلْْنَا",
+    "دَلَلْْتَ",
+    "أَدُلُّ",
+    "نَدُلُّ",
+    "تَدُلُّ"
+   ],
+   "remarque": "se construit avec عَلَى : دَلَّهُ عَلَى الطَّرِيقِ",
+   "theme": "voyage"
+  },
+  {
+   "id": "shadda_v",
+   "ar": "شَدَّ",
+   "translit": "šadda",
+   "fr": "serrer, attacher",
+   "nature": "verbe",
+   "lecon": "moteur-23",
+   "source_sens": "rédigé par IA",
+   "passe": "شَدَّ",
+   "inaccompli": "يَشُدُّ",
+   "nom_action": "شَدٌّ",
+   "exemple": {
+    "ar": "يَشُدُّ بَاسِمٌ الْحِمْلَ عَلَى الْجَمَلِ.",
+    "fr": "Bāsim attache la charge sur le chameau."
+   },
+   "lemme": "$adado",
+   "formes": [
+    "شَدَدْْتُ",
+    "شَدَدْْنَا",
+    "شَدَدْْتَ",
+    "أَشُدُّ",
+    "نَشُدُّ",
+    "تَشُدُّ"
+   ],
+   "theme": "travail"
+  },
+  {
+   "id": "wajada",
+   "ar": "وَجَدَ",
+   "translit": "waǧada",
+   "fr": "trouver",
+   "nature": "verbe",
+   "lecon": "moteur-24",
+   "source_sens": "rédigé par IA",
+   "passe": "وَجَدَ",
+   "inaccompli": "يَجِدُ",
+   "exemple": {
+    "ar": "وَجَدَ بَاسِمٌ الْمِفْتَاحَ تَحْتَ الْكِيسِ.",
+    "fr": "Bāsim a trouvé la clé sous la bourse."
+   },
+   "lemme": "wajada",
+   "formes": [
+    "أَجِدُ",
+    "نَجِدُ",
+    "تَجِدُ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "waada",
+   "ar": "وَعَدَ",
+   "translit": "waʿada",
+   "fr": "promettre (à quelqu'un)",
+   "nature": "verbe",
+   "lecon": "moteur-24",
+   "source_sens": "rédigé par IA",
+   "passe": "وَعَدَ",
+   "inaccompli": "يَعِدُ",
+   "nom_action": "وَعْدٌ",
+   "exemple": {
+    "ar": "وَعَدَ الْمُعَلِّمُ الطُّلَّابَ قِصَّةً.",
+    "fr": "Le maître a promis une histoire aux étudiants."
+   },
+   "lemme": "waEada",
+   "formes": [
+    "أَعِدُ",
+    "نَعِدُ",
+    "تَعِدُ"
+   ],
+   "theme": "personnes"
+  },
+  {
+   "id": "wadaa",
+   "ar": "وَضَعَ",
+   "translit": "waḍaʿa",
+   "fr": "poser, mettre",
+   "nature": "verbe",
+   "lecon": "moteur-24",
+   "source_sens": "rédigé par IA",
+   "passe": "وَضَعَ",
+   "inaccompli": "يَضَعُ",
+   "nom_action": "وَضْعٌ",
+   "exemple": {
+    "ar": "وَضَعَتْ سَلْمَى السَّلَّةَ عَلَى الْكُرْسِيِّ.",
+    "fr": "Salmā a posé le panier sur la chaise."
+   },
+   "lemme": "waDaEa",
+   "formes": [
+    "أَضَعُ",
+    "نَضَعُ",
+    "تَضَعُ",
+    "ضَعْ",
+    "ضَعِ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "waqaa",
+   "ar": "وَقَعَ",
+   "translit": "waqaʿa",
+   "fr": "tomber",
+   "nature": "verbe",
+   "lecon": "moteur-24",
+   "source_sens": "rédigé par IA",
+   "passe": "وَقَعَ",
+   "inaccompli": "يَقَعُ",
+   "nom_action": "وُقُوعٌ",
+   "exemple": {
+    "ar": "وَقَعَ الْقَلَمُ تَحْتَ الْكُرْسِيِّ.",
+    "fr": "Le calame est tombé sous la chaise."
+   },
+   "lemme": "waqaEa",
+   "formes": [
+    "أَقَعُ",
+    "نَقَعُ",
+    "تَقَعُ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "wazana",
+   "ar": "وَزَنَ",
+   "translit": "wazana",
+   "fr": "peser",
+   "nature": "verbe",
+   "lecon": "moteur-24",
+   "source_sens": "rédigé par IA",
+   "passe": "وَزَنَ",
+   "inaccompli": "يَزِنُ",
+   "nom_action": "وَزْنٌ",
+   "exemple": {
+    "ar": "يَزِنُ الصَّرَّافُ الذَّهَبَ.",
+    "fr": "Le changeur pèse l'or."
+   },
+   "lemme": "w~azanu",
+   "formes": [
+    "أَزِنُ",
+    "نَزِنُ",
+    "تَزِنُ"
+   ],
+   "remarque": "son nom d'action وَزْنٌ veut aussi dire « schème » (leçon 3.2)",
+   "theme": "argent"
+  },
+  {
+   "id": "wasala",
+   "ar": "وَصَلَ",
+   "translit": "waṣala",
+   "fr": "arriver (à)",
+   "nature": "verbe",
+   "lecon": "moteur-24",
+   "source_sens": "rédigé par IA",
+   "passe": "وَصَلَ",
+   "inaccompli": "يَصِلُ",
+   "nom_action": "وُصُولٌ",
+   "exemple": {
+    "ar": "يَصِلُ الْمُسَافِرُونَ إِلَى الْمَدِينَةِ فِي الْمَسَاءِ.",
+    "fr": "Les voyageurs arrivent à la ville le soir."
+   },
+   "lemme": "yaSilu",
+   "formes": [
+    "أَصِلُ",
+    "نَصِلُ",
+    "تَصِلُ"
+   ],
+   "remarque": "se construit avec إِلَى",
+   "theme": "voyage"
+  },
+  {
+   "id": "waqafa",
+   "ar": "وَقَفَ",
+   "translit": "waqafa",
+   "fr": "s'arrêter, se tenir debout",
+   "nature": "verbe",
+   "lecon": "moteur-24",
+   "source_sens": "rédigé par IA",
+   "passe": "وَقَفَ",
+   "inaccompli": "يَقِفُ",
+   "nom_action": "وُقُوفٌ",
+   "exemple": {
+    "ar": "وَقَفَ الْحَارِسُ عِنْدَ الْبَابِ.",
+    "fr": "Le gardien s'est tenu à la porte."
+   },
+   "racine": "wqf",
+   "formes": [
+    "أَقِفُ",
+    "نَقِفُ",
+    "تَقِفُ",
+    "قِفْ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "mawdi",
+   "ar": "مَوْضِعٌ",
+   "translit": "mawḍiʿun",
+   "fr": "endroit",
+   "nature": "nom",
+   "lecon": "moteur-24",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "wDE",
+   "exemple": {
+    "ar": "هَٰذَا مَوْضِعٌ جَمِيلٌ.",
+    "fr": "C'est un bel endroit."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "jaa",
+   "ar": "جَاءَ",
+   "translit": "ǧāʾa",
+   "fr": "venir",
+   "nature": "verbe",
+   "lecon": "moteur-25",
+   "source_sens": "rédigé par IA",
+   "passe": "جَاءَ",
+   "inaccompli": "يَجِيءُ",
+   "nom_action": "مَجِيءٌ",
+   "exemple": {
+    "ar": "جَاءَ سَمِيرٌ مِنَ الْقَرْيَةِ.",
+    "fr": "Samīr est venu du village."
+   },
+   "lemme": "jaA^'a",
+   "fige": true,
+   "formes": [
+    "جَاءَتْ",
+    "تَجِيءُ",
+    "أَجِيءُ",
+    "نَجِيءُ",
+    "جِئْتُ"
+   ],
+   "remarque": "la forme « ils » s'écrit de plusieurs façons ; elle n'est pas étudiée ici",
+   "theme": "voyage"
+  },
+  {
+   "id": "khafa",
+   "ar": "خَافَ",
+   "translit": "ḫāfa",
+   "fr": "avoir peur (de)",
+   "nature": "verbe",
+   "lecon": "moteur-25",
+   "source_sens": "rédigé par IA",
+   "passe": "خَافَ",
+   "inaccompli": "يَخَافُ",
+   "nom_action": "خَوْفٌ",
+   "exemple": {
+    "ar": "خَافَ الطِّفْلُ مِنَ الْكَلْبِ.",
+    "fr": "L'enfant a eu peur du chien."
+   },
+   "lemme": "xaAfa",
+   "fige": true,
+   "formes": [
+    "خَافَتْ",
+    "خَافُوا",
+    "خِفْتُ",
+    "خِفْنَا",
+    "خِفْتَ",
+    "تَخَافُ",
+    "أَخَافُ",
+    "نَخَافُ",
+    "يَخَافُونَ",
+    "يَخَفْ",
+    "أَخَفْ"
+   ],
+   "remarque": "se construit avec مِنْ",
+   "theme": "qualites"
+  },
+  {
+   "id": "zada",
+   "ar": "زَادَ",
+   "translit": "zāda",
+   "fr": "augmenter",
+   "nature": "verbe",
+   "lecon": "moteur-25",
+   "source_sens": "rédigé par IA",
+   "passe": "زَادَ",
+   "inaccompli": "يَزِيدُ",
+   "nom_action": "زِيَادَةٌ",
+   "exemple": {
+    "ar": "زَادَ الثَّمَنُ.",
+    "fr": "Le prix a augmenté."
+   },
+   "lemme": "zaAda",
+   "fige": true,
+   "formes": [
+    "زَادَتْ",
+    "زَادُوا",
+    "زِدْتُ",
+    "زِدْنَا",
+    "زِدْتَ",
+    "تَزِيدُ",
+    "أَزِيدُ",
+    "نَزِيدُ",
+    "يَزِيدُونَ"
+   ],
+   "remarque": "même racine que le nom de Ziyād",
+   "theme": "argent"
+  },
+  {
+   "id": "qama",
+   "ar": "قَامَ",
+   "translit": "qāma",
+   "fr": "se lever",
+   "nature": "verbe",
+   "lecon": "moteur-25",
+   "source_sens": "rédigé par IA",
+   "passe": "قَامَ",
+   "inaccompli": "يَقُومُ",
+   "nom_action": "قِيَامٌ",
+   "exemple": {
+    "ar": "قَامَ الطَّالِبُ.",
+    "fr": "L'étudiant s'est levé."
+   },
+   "lemme": "qaAma",
+   "fige": true,
+   "formes": [
+    "قَامَتْ",
+    "قَامُوا",
+    "قُمْتُ",
+    "قُمْنَا",
+    "قُمْتَ",
+    "تَقُومُ",
+    "أَقُومُ",
+    "نَقُومُ",
+    "يَقُومُونَ",
+    "يَقُمْ",
+    "أَقُمْ",
+    "قُمْ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "ada",
+   "ar": "عَادَ",
+   "translit": "ʿāda",
+   "fr": "revenir",
+   "nature": "verbe",
+   "lecon": "moteur-25",
+   "source_sens": "rédigé par IA",
+   "passe": "عَادَ",
+   "inaccompli": "يَعُودُ",
+   "nom_action": "عَوْدَةٌ",
+   "exemple": {
+    "ar": "عَادَتِ الْقَافِلَةُ مِنَ الْمَدِينَةِ.",
+    "fr": "La caravane est revenue de la ville."
+   },
+   "lemme": "EaAda",
+   "fige": true,
+   "formes": [
+    "عَادَتْ",
+    "عُدْتُ",
+    "عُدْنَا",
+    "عُدْتَ",
+    "تَعُودُ",
+    "أَعُودُ",
+    "نَعُودُ",
+    "يَعُودُونَ"
+   ],
+   "theme": "voyage"
+  },
+  {
+   "id": "zara",
+   "ar": "زَارَ",
+   "translit": "zāra",
+   "fr": "rendre visite à",
+   "nature": "verbe",
+   "lecon": "moteur-25",
+   "source_sens": "rédigé par IA",
+   "passe": "زَارَ",
+   "inaccompli": "يَزُورُ",
+   "nom_action": "زِيَارَةٌ",
+   "exemple": {
+    "ar": "زَارَ بَاسِمٌ صَدِيقَهُ.",
+    "fr": "Bāsim a rendu visite à son ami."
+   },
+   "lemme": "zuro",
+   "fige": true,
+   "formes": [
+    "زَارَتْ",
+    "زَارُوا",
+    "زُرْتُ",
+    "زُرْنَا",
+    "زُرْتَ",
+    "تَزُورُ",
+    "أَزُورُ",
+    "نَزُورُ",
+    "يَزُورُونَ"
+   ],
+   "theme": "personnes"
+  },
+  {
+   "id": "baa",
+   "ar": "بَاعَ",
+   "translit": "bāʿa",
+   "fr": "vendre",
+   "nature": "verbe",
+   "lecon": "moteur-25",
+   "source_sens": "rédigé par IA",
+   "passe": "بَاعَ",
+   "inaccompli": "يَبِيعُ",
+   "nom_action": "بَيْعٌ",
+   "exemple": {
+    "ar": "بَاعَ التَّاجِرُ الْقَمِيصَ فِي السُّوقِ.",
+    "fr": "Le marchand a vendu la tunique au marché."
+   },
+   "racine": "byE",
+   "fige": true,
+   "formes": [
+    "بَاعَتْ",
+    "بَاعُوا",
+    "بِعْتُ",
+    "بِعْنَا",
+    "بِعْتَ",
+    "تَبِيعُ",
+    "أَبِيعُ",
+    "نَبِيعُ",
+    "يَبِيعُونَ",
+    "بِعْ"
+   ],
+   "theme": "argent"
+  },
+  {
+   "id": "nama",
+   "ar": "نَامَ",
+   "translit": "nāma",
+   "fr": "dormir",
+   "nature": "verbe",
+   "lecon": "moteur-25",
+   "source_sens": "rédigé par IA",
+   "passe": "نَامَ",
+   "inaccompli": "يَنَامُ",
+   "nom_action": "نَوْمٌ",
+   "exemple": {
+    "ar": "نَامَ الطِّفْلُ فِي الْخَيْمَةِ.",
+    "fr": "L'enfant a dormi dans la tente."
+   },
+   "racine": "nwm",
+   "fige": true,
+   "formes": [
+    "نَامَتْ",
+    "نَامُوا",
+    "نِمْتُ",
+    "نِمْنَا",
+    "نِمْتَ",
+    "تَنَامُ",
+    "أَنَامُ",
+    "نَنَامُ",
+    "يَنَامُونَ",
+    "يَنَمْ",
+    "أَنَمْ",
+    "نَمْ"
+   ],
+   "theme": "maison"
+  },
+  {
+   "id": "akhadha",
+   "ar": "أَخَذَ",
+   "translit": "aḫaḏa",
+   "fr": "prendre",
+   "nature": "verbe",
+   "lecon": "moteur-22",
+   "source_sens": "rédigé par IA",
+   "passe": "أَخَذَ",
+   "inaccompli": "يَأْخُذُ",
+   "nom_action": "أَخْذٌ",
+   "exemple": {
+    "ar": "أَخَذَتْ سَلْمَى الْمِفْتَاحَ.",
+    "fr": "Salmā a pris la clé."
+   },
+   "lemme": ">axa*a",
+   "formes": [
+    "آخُذُ",
+    "سَآخُذُ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "saala",
+   "ar": "سَأَلَ",
+   "translit": "saʾala",
+   "fr": "demander, interroger",
+   "nature": "verbe",
+   "lecon": "moteur-22",
+   "source_sens": "rédigé par IA",
+   "passe": "سَأَلَ",
+   "inaccompli": "يَسْأَلُ",
+   "nom_action": "سُؤَالٌ",
+   "exemple": {
+    "ar": "سَأَلَ الطَّالِبُ الْمُعَلِّمَ سُؤَالًا.",
+    "fr": "L'étudiant a posé une question au maître."
+   },
+   "lemme": "sa>ala",
+   "theme": "savoir"
+  },
+  {
+   "id": "akala",
+   "ar": "أَكَلَ",
+   "translit": "akala",
+   "fr": "manger",
+   "nature": "verbe",
+   "lecon": "moteur-22",
+   "source_sens": "rédigé par IA",
+   "passe": "أَكَلَ",
+   "inaccompli": "يَأْكُلُ",
+   "nom_action": "أَكْلٌ",
+   "exemple": {
+    "ar": "أَكَلَ الضُّيُوفُ التَّمْرَ فِي الْمَجْلِسِ.",
+    "fr": "Les invités ont mangé des dattes dans l'assemblée."
+   },
+   "lemme": ">akala",
+   "formes": [
+    "آكُلُ",
+    "سَآكُلُ",
+    "آكُلْ"
+   ],
+   "theme": "maison"
+  },
+  {
+   "id": "ras",
+   "ar": "رَأْسٌ",
+   "translit": "raʾsun",
+   "fr": "tête ; sommet",
+   "nature": "nom",
+   "lecon": "moteur-22",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "ra>os",
+   "exemple": {
+    "ar": "رَأْسُ الْجَمَلِ كَبِيرٌ.",
+    "fr": "La tête du chameau est grande."
+   },
+   "remarque": "son pluriel s'écrit de plusieurs façons : il n'est pas étudié ici",
+   "theme": "corps"
+  },
+  {
+   "id": "badaa",
+   "ar": "بَدَأَ",
+   "translit": "badaʾa",
+   "fr": "commencer",
+   "nature": "verbe",
+   "lecon": "moteur-22",
+   "source_sens": "rédigé par IA",
+   "passe": "بَدَأَ",
+   "inaccompli": "يَبْدَأُ",
+   "nom_action": "بَدْءٌ",
+   "exemple": {
+    "ar": "بَدَأَ الدَّرْسُ فِي الصَّبَاحِ.",
+    "fr": "La leçon a commencé le matin."
+   },
+   "lemme": "bada>a",
+   "remarque": "la forme « ils » s'écrit de plusieurs façons ; elle n'est pas étudiée ici",
+   "theme": "actions"
+  },
+  {
+   "id": "qaraa",
+   "ar": "قَرَأَ",
+   "translit": "qaraʾa",
+   "fr": "lire",
+   "nature": "verbe",
+   "lecon": "moteur-22",
+   "source_sens": "rédigé par IA",
+   "passe": "قَرَأَ",
+   "inaccompli": "يَقْرَأُ",
+   "nom_action": "قِرَاءَةٌ",
+   "exemple": {
+    "ar": "يَقْرَأُ سَمِيرٌ الرِّسَالَةَ.",
+    "fr": "Samīr lit la lettre."
+   },
+   "lemme": "qara>a",
+   "remarque": "la forme « ils » s'écrit de plusieurs façons ; elle n'est pas étudiée ici",
+   "theme": "savoir"
+  },
+  {
+   "id": "masala",
+   "ar": "مَسْأَلَةٌ",
+   "translit": "masʾalatun",
+   "fr": "question, problème",
+   "nature": "nom",
+   "lecon": "moteur-22",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "sAl",
+   "exemple": {
+    "ar": "هَٰذِهِ مَسْأَلَةٌ صَعْبَةٌ.",
+    "fr": "C'est une question difficile."
    },
    "theme": "savoir"
   }

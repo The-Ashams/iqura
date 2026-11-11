@@ -190,7 +190,12 @@
         140,
         36
       ],
-      "lecons": [],
+      "lecons": [
+        22,
+        23,
+        24,
+        25
+      ],
       "scene": "scene_ruines",
       "sol": 80,
       "tranche_j1a": true,

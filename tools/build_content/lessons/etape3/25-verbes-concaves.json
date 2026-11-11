@@ -1,0 +1,563 @@
+{
+  "id": "moteur-25",
+  "etape": 3,
+  "ordre": 25,
+  "format": 3,
+  "titre": "Les verbes concaves",
+  "objectif": "Conjuguer un verbe dont le milieu est و ou ي : قَالَ, يَقُولُ.",
+  "statut": "ia_non_verifie",
+  "lieu": "ruines",
+  "maitre": "ziyad",
+  "prerequis": [
+    "moteur-24"
+  ],
+  "apercu": [
+    "زِيَادٌ",
+    "كَانَ",
+    "قِيلَ"
+  ],
+  "schemes": [
+    "فَاعِل",
+    "مَفْعَل",
+    "فَعَلَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "ziyad",
+          "texte": "Sur cette pierre, on lit قَالَ. Tu le connais déjà : mais où est le و de sa racine ق و ل ?"
+        },
+        {
+          "qui": "ziyad",
+          "texte": "Il se cache dans le ā du milieu. Aujourd'hui, nous apprenons toutes les formes de قَالَ."
+        }
+      ],
+      "objectif": "Conjuguer قَالَ, قَامَ, بَاعَ, نَامَ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je trouve la clé. »",
+          "ar": "… الْمِفْتَاحَ.",
+          "choix_ar": [
+            "أَجِدُ",
+            "وَجَدْتُ",
+            "وَجَدَ"
+          ],
+          "reponse": 0,
+          "explication": "Le و tombe à l'inaccompli (leçon 3.24)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de يَصِلُ ?",
+          "choix_ar": [
+            "و ص ل",
+            "ي ص ل",
+            "ص ل"
+          ],
+          "reponse": 0,
+          "explication": "Le و est tombé (leçon 3.24)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَقَفَ",
+          "choix": [
+            "s'arrêter",
+            "tomber",
+            "poser"
+          ],
+          "reponse": 0,
+          "explication": "وَقَفَ (leçon 3.24)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "قُلْتُ لِسَلْمَى: « الطَّرِيقُ طَوِيلٌ. »",
+          "fr": "J'ai dit à Salmā : « Le chemin est long. »"
+        },
+        {
+          "qui": "ziyad",
+          "ar": "وَمَا قَالَتْ سَلْمَى؟",
+          "fr": "Et qu'a dit Salmā ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "قَالَتْ: « نَامَ الطِّفْلُ، وَلَمْ يَقُمْ. »",
+          "fr": "Elle a dit : « L'enfant a dormi, et il ne s'est pas levé. »"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'a dit Salmā de l'enfant ?",
+        "choix": [
+          "il a dormi et ne s'est pas levé",
+          "il est revenu",
+          "il a eu peur"
+        ],
+        "reponse": 0,
+        "explication": "نَامَ الطِّفْلُ، وَلَمْ يَقُمْ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "jaa",
+        "khafa",
+        "zada",
+        "qama",
+        "ada",
+        "zara",
+        "baa",
+        "nama"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "بَاعَ",
+        "choix": [
+          "vendre",
+          "dormir",
+          "revenir"
+        ],
+        "reponse": 0,
+        "explication": "بَاعَ veut dire « vendre »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le milieu caché",
+      "texte": "Le ā du milieu cache un و ou un ي de la racine : قَالَ (ق و ل), بَاعَ (ب ي ع). Il redevient ū ou ī à l'inaccompli : يَقُولُ, يَبِيعُ.",
+      "exemples": [
+        "قَالَ",
+        "يَقُولُ",
+        "يَبِيعُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de قَامَ ?",
+        "choix_ar": [
+          "ق و م",
+          "ق ا م",
+          "ق م"
+        ],
+        "reponse": 0,
+        "explication": "Le ā cache un و : ق و م (يَقُومُ)."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Quand la syllabe se ferme",
+      "texte": "Quand la syllabe se ferme, la voyelle devient brève : u si l'inaccompli a ū (قُلْتُ, لَمْ يَقُلْ), i sinon (بِعْتُ, نِمْتُ). Jamais « قَالْتُ ».",
+      "exemples": [
+        "قُلْتُ",
+        "بِعْتُ",
+        "نِمْتُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment dit-on « j'ai vendu » ?",
+        "choix_ar": [
+          "بِعْتُ",
+          "بَاعَ",
+          "أَبِيعُ"
+        ],
+        "reponse": 0,
+        "explication": "Syllabe fermée et inaccompli en ī : بِعْتُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Des mots que tu connais",
+      "texte": "Tu connais déjà des mots de racine concave : بَابٌ, سُوقٌ, جَارٌ. Dans بَائِعٌ (ب ي ع), le ي du milieu s'écrit ئ, et مَكَانٌ vient de ك و ن.",
+      "exemples": [
+        "بَائِعٌ",
+        "سُوقٌ",
+        "مَكَانٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de بَائِعٌ ?",
+        "choix_ar": [
+          "ب ي ع",
+          "ب ء ع",
+          "ب ع"
+        ],
+        "reponse": 0,
+        "explication": "Le ي du milieu s'écrit ئ : ب ي ع."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَامَ",
+          "choix": [
+            "dormir",
+            "se lever",
+            "vendre"
+          ],
+          "reponse": 0,
+          "explication": "نَامَ veut dire « dormir »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "زَارَ",
+          "choix": [
+            "rendre visite à",
+            "augmenter",
+            "revenir"
+          ],
+          "reponse": 0,
+          "explication": "زَارَ veut dire « rendre visite à »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai dit » ?",
+          "choix_ar": [
+            "قُلْتُ",
+            "قَالَتْ",
+            "أَقُولُ"
+          ],
+          "reponse": 0,
+          "explication": "« j'ai dit » se dit قُلْتُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je dors » ?",
+          "choix_ar": [
+            "أَنَامُ",
+            "نِمْتُ",
+            "نَامَ"
+          ],
+          "reponse": 0,
+          "explication": "« je dors » se dit أَنَامُ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Retrouve la racine de يَقُولُ.",
+          "tuiles": [
+            "ق",
+            "و",
+            "ل",
+            "ي"
+          ],
+          "solution": [
+            "ق",
+            "و",
+            "ل"
+          ],
+          "explication": "ي est le préfixe ; le ū cache le و : ق و ل.",
+          "ar": "يَقُولُ"
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Retrouve la racine de يَبِيعُ.",
+          "tuiles": [
+            "ب",
+            "ي",
+            "ع",
+            "و"
+          ],
+          "solution": [
+            "ب",
+            "ي",
+            "ع"
+          ],
+          "explication": "Le ī cache le ي : ب ي ع.",
+          "ar": "يَبِيعُ"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans قُمْتُ, quelle lettre de la racine est cachée ?",
+          "choix": [
+            "le و du milieu",
+            "un ا",
+            "le ي du milieu"
+          ],
+          "reponse": 0,
+          "explication": "ق و م : le و s'est effacé, il reste u."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je me suis levé le matin. »",
+          "ar": "… فِي الصَّبَاحِ.",
+          "choix_ar": [
+            "قُمْتُ",
+            "قَامَتْ",
+            "أَقُومُ"
+          ],
+          "reponse": 0,
+          "explication": "« je » au passé : la syllabe se ferme, قُمْتُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'enfant n'a pas dormi. »",
+          "ar": "لَمْ … الطِّفْلُ.",
+          "choix_ar": [
+            "يَنَمِ",
+            "يَنَامُ",
+            "نَامَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ, la voyelle devient brève : يَنَمْ (يَنَمِ devant l'article)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane est revenue de la ville. »",
+          "ar": "… الْقَافِلَةُ مِنَ الْمَدِينَةِ.",
+          "choix_ar": [
+            "عَادَتِ",
+            "عُدْتُ",
+            "تَعُودُ"
+          ],
+          "reponse": 0,
+          "explication": "Passé, sujet féminin : عَادَتِ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Au marché du col",
+      "texte": "Ziyād raconte une journée au marché. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "جَاءَ سَمِيرٌ مِنَ الْقَرْيَةِ، وَزَارَ صَدِيقَهُ.",
+        "فِي السُّوقِ، بَاعَ التَّاجِرُ الْقَمِيصَ، وَزَادَ الثَّمَنُ.",
+        "خَافَ طِفْلٌ مِنَ الْكَلْبِ، وَقَامَ الشَّيْخُ.",
+        "فِي الْمَسَاءِ، عَادَ سَمِيرٌ إِلَى الْقَرْيَةِ، وَنَامَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "De quoi l'enfant a-t-il eu peur ?",
+          "choix": [
+            "du chien",
+            "du vieil homme",
+            "du marchand"
+          ],
+          "reponse": 0,
+          "explication": "خَافَ طِفْلٌ مِنَ الْكَلْبِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a fait Samīr le soir ?",
+          "choix": [
+            "il est revenu au village et a dormi",
+            "il a vendu une tunique",
+            "il a rendu visite à son ami"
+          ],
+          "reponse": 0,
+          "explication": "عَادَ سَمِيرٌ إِلَى الْقَرْيَةِ، وَنَامَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le marchand a vendu la tunique au marché. » ?",
+          "choix_ar": [
+            "بَاعَ التَّاجِرُ الْقَمِيصَ فِي السُّوقِ.",
+            "بِعْتُ التَّاجِرَ الْقَمِيصُ فِي السُّوقِ.",
+            "يَبِيعُ الْقَمِيصُ التَّاجِرَ."
+          ],
+          "reponse": 0,
+          "explication": "« Le marchand a vendu la tunique au marché. » se dit بَاعَ التَّاجِرُ الْقَمِيصَ فِي السُّوقِ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Bāsim a rendu visite à son ami. »",
+          "tuiles": [
+            "صَدِيقَهُ",
+            "بَاسِمٌ",
+            "زَارَ",
+            "زُرْتُ"
+          ],
+          "solution": [
+            "زَارَ",
+            "بَاسِمٌ",
+            "صَدِيقَهُ"
+          ],
+          "explication": "Verbe, sujet, complément."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ô Bāsim, lève-toi ! »",
+          "ar": "يَا بَاسِمُ، …",
+          "choix_ar": [
+            "قُمْ",
+            "قَامَ",
+            "يَقُومُ"
+          ],
+          "reponse": 0,
+          "explication": "Impératif : قُمْ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَامَ",
+          "choix": [
+            "se lever",
+            "dire",
+            "dormir"
+          ],
+          "reponse": 0,
+          "explication": "قَامَ veut dire « se lever »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خَافَ",
+          "choix": [
+            "avoir peur",
+            "revenir",
+            "augmenter"
+          ],
+          "reponse": 0,
+          "explication": "خَافَ veut dire « avoir peur »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَاءَ",
+          "choix": [
+            "venir",
+            "partir",
+            "vendre"
+          ],
+          "reponse": 0,
+          "explication": "جَاءَ veut dire « venir »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je vends » ?",
+          "choix_ar": [
+            "أَبِيعُ",
+            "بِعْتُ",
+            "بَاعَ"
+          ],
+          "reponse": 0,
+          "explication": "« je vends » se dit أَبِيعُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand la syllabe se ferme, le ā du milieu…",
+          "choix": [
+            "devient une voyelle brève",
+            "reste ā",
+            "devient و"
+          ],
+          "reponse": 0,
+          "explication": "قُلْتُ, بِعْتُ, نِمْتُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de يَعُودُ ?",
+          "choix_ar": [
+            "ع و د",
+            "ي ع د",
+            "ع د"
+          ],
+          "reponse": 0,
+          "explication": "Le ū cache le و : ع و د."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de زِدْتُ ?",
+          "choix_ar": [
+            "ز ي د",
+            "ز و د",
+            "ز د"
+          ],
+          "reponse": 0,
+          "explication": "يَزِيدُ a ī : la racine a un ي."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai dit à Salmā : le chemin est long. »",
+          "ar": "… لِسَلْمَى: « الطَّرِيقُ طَوِيلٌ. »",
+          "choix_ar": [
+            "قُلْتُ",
+            "قَالَتْ",
+            "يَقُولُ"
+          ],
+          "reponse": 0,
+          "explication": "« je » au passé : قُلْتُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il ne s'est pas levé. »",
+          "ar": "لَمْ …",
+          "choix_ar": [
+            "يَقُمْ",
+            "يَقُومُ",
+            "قَامَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ, la voyelle devient brève : يَقُمْ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَجَدَ",
+          "choix": [
+            "trouver",
+            "promettre",
+            "peser"
+          ],
+          "reponse": 0,
+          "explication": "وَجَدَ veut dire « trouver ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَدَّ",
+          "choix": [
+            "serrer, attacher",
+            "compter",
+            "tendre"
+          ],
+          "reponse": 0,
+          "explication": "شَدَّ veut dire « serrer, attacher ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de يَضَعُ ?",
+          "choix_ar": [
+            "و ض ع",
+            "ي ض ع",
+            "ض ع"
+          ],
+          "reponse": 0,
+          "explication": "Le و est tombé (leçon 3.24).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu conjugues les verbes concaves : قَالَ / يَقُولُ / قُلْتُ, بَاعَ / يَبِيعُ / بِعْتُ, نَامَ / يَنَامُ / نِمْتُ.",
+      "suite": "Dernière inscription des Ruines : les verbes qui finissent par و ou ي, comme مَشَى."
+    }
+  ]
+}

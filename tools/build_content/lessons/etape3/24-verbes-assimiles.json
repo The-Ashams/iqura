@@ -1,0 +1,544 @@
+{
+  "id": "moteur-24",
+  "etape": 3,
+  "ordre": 24,
+  "format": 3,
+  "titre": "Les verbes assimilés",
+  "objectif": "Conjuguer un verbe dont la racine commence par و : وَجَدَ, يَجِدُ.",
+  "statut": "ia_non_verifie",
+  "lieu": "ruines",
+  "maitre": "ziyad",
+  "prerequis": [
+    "moteur-23"
+  ],
+  "apercu": [
+    "زِيَادٌ"
+  ],
+  "schemes": [
+    "فَعَلَ",
+    "يَفْعِلُ",
+    "يَفْعَلُ",
+    "مِفْعَال",
+    "مَفْعِل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "ziyad",
+          "texte": "Regarde cette inscription : on lit يَجِدُ, mais la racine est و ج د."
+        },
+        {
+          "qui": "ziyad",
+          "texte": "Le و du début s'est effacé à l'inaccompli. Au passé, il est toujours là : وَجَدَ."
+        }
+      ],
+      "objectif": "Reconnaître un verbe assimilé et sa racine."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai tendu la corde. »",
+          "ar": "… الْحَبْلَ.",
+          "choix_ar": [
+            "مَدَدْتُ",
+            "مَدَّتُ",
+            "مَدَّ"
+          ],
+          "reponse": 0,
+          "explication": "Sukūn : les deux د se séparent (leçon 3.23)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de يَعُدُّ ?",
+          "choix_ar": [
+            "ع د د",
+            "ي ع د",
+            "ع د"
+          ],
+          "reponse": 0,
+          "explication": "La shadda cache deux د (leçon 3.23)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَدَّ",
+          "choix": [
+            "rendre, renvoyer",
+            "compter",
+            "attacher"
+          ],
+          "reponse": 0,
+          "explication": "رَدَّ (leçon 3.23)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "وَجَدْتُ الْمِفْتَاحَ تَحْتَ الْكِيسِ!",
+          "fr": "J'ai trouvé la clé sous la bourse !"
+        },
+        {
+          "qui": "ziyad",
+          "ar": "ضَعِ الْمِفْتَاحَ هُنَا، عَلَى الْكُرْسِيِّ.",
+          "fr": "Pose la clé ici, sur la chaise."
+        },
+        {
+          "qui": "basim",
+          "ar": "نَعَمْ. أَضَعُ الْمِفْتَاحَ عَلَى الْكُرْسِيِّ.",
+          "fr": "Oui. Je pose la clé sur la chaise."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où Bāsim a-t-il trouvé la clé ?",
+        "choix": [
+          "sous la bourse",
+          "sur la chaise",
+          "près de la porte"
+        ],
+        "reponse": 0,
+        "explication": "وَجَدْتُ الْمِفْتَاحَ تَحْتَ الْكِيسِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "wajada",
+        "waada",
+        "wadaa",
+        "waqaa",
+        "wazana",
+        "wasala",
+        "waqafa",
+        "mawdi"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "وَصَلَ",
+        "choix": [
+          "arriver (à)",
+          "trouver",
+          "s'arrêter"
+        ],
+        "reponse": 0,
+        "explication": "وَصَلَ veut dire « arriver (à) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le و qui tombe",
+      "texte": "Quand l'inaccompli a i (et parfois a), le و du début tombe : وَجَدَ → يَجِدُ, وَضَعَ → يَضَعُ. Au passé, rien ne change : وَجَدْتُ.",
+      "exemples": [
+        "يَجِدُ",
+        "يَضَعُ",
+        "يَصِلُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de يَضَعُ ?",
+        "choix_ar": [
+          "و ض ع",
+          "ي ض ع",
+          "ض ع"
+        ],
+        "reponse": 0,
+        "explication": "Le و du début est tombé : و ض ع."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le و dans les mots connus",
+      "texte": "Tu connais déjà des mots de racine en و : وَلَدٌ, وَرَقَةٌ, وَاحِدٌ. Dans مِيزَانٌ (و ز ن), le و devient ي après le i : c'est l'instrument pour peser.",
+      "exemples": [
+        "مِيزَانٌ",
+        "وَلَدٌ",
+        "وَاحِدٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de مِيزَانٌ ?",
+        "choix_ar": [
+          "و ز ن",
+          "م ي ز",
+          "ي ز ن"
+        ],
+        "reponse": 0,
+        "explication": "و devient ي après i : و ز ن."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَجَدَ",
+          "choix": [
+            "trouver",
+            "promettre",
+            "tomber"
+          ],
+          "reponse": 0,
+          "explication": "وَجَدَ veut dire « trouver »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَقَعَ",
+          "choix": [
+            "tomber",
+            "s'arrêter",
+            "poser"
+          ],
+          "reponse": 0,
+          "explication": "وَقَعَ veut dire « tomber »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il arrive » ?",
+          "choix_ar": [
+            "يَصِلُ",
+            "وَصَلَ",
+            "وُصُولٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il arrive » se dit يَصِلُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je trouve » ?",
+          "choix_ar": [
+            "أَجِدُ",
+            "وَجَدْتُ",
+            "يَجِدُ"
+          ],
+          "reponse": 0,
+          "explication": "« je trouve » se dit أَجِدُ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Retrouve la racine de يَجِدُ.",
+          "tuiles": [
+            "و",
+            "ج",
+            "د",
+            "ي"
+          ],
+          "solution": [
+            "و",
+            "ج",
+            "د"
+          ],
+          "explication": "ي est le préfixe ; le و du début est tombé.",
+          "ar": "يَجِدُ"
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Retrouve la racine de يَزِنُ.",
+          "tuiles": [
+            "و",
+            "ز",
+            "ن",
+            "ي"
+          ],
+          "solution": [
+            "و",
+            "ز",
+            "ن"
+          ],
+          "explication": "Le و est tombé : و ز ن, comme مِيزَانٌ.",
+          "ar": "يَزِنُ"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans يَقِفُ, quelle lettre de la racine est cachée ?",
+          "choix": [
+            "le و du début",
+            "le ي du début",
+            "un ف"
+          ],
+          "reponse": 0,
+          "explication": "و ق ف : le و est tombé à l'inaccompli."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le changeur pèse l'or. »",
+          "ar": "… الصَّرَّافُ الذَّهَبَ.",
+          "choix_ar": [
+            "يَزِنُ",
+            "وَزَنْتُ",
+            "وَزْنُ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli, le و tombe : يَزِنُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les voyageurs sont arrivés à la ville. »",
+          "ar": "… الْمُسَافِرُونَ إِلَى الْمَدِينَةِ.",
+          "choix_ar": [
+            "وَصَلَ",
+            "يَصِلُ",
+            "وُصُولُ"
+          ],
+          "reponse": 0,
+          "explication": "Passé, verbe en tête au singulier : وَصَلَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Arrête-toi à la porte ! »",
+          "ar": "… عِنْدَ الْبَابِ!",
+          "choix_ar": [
+            "قِفْ",
+            "وَقَفَ",
+            "يَقِفُ"
+          ],
+          "reponse": 0,
+          "explication": "Impératif : قِفْ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "L'arrivée",
+      "texte": "Ziyād raconte l'arrivée d'une caravane. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الْمَسَاءِ، وَصَلَتِ الْقَافِلَةُ إِلَى الْمَدِينَةِ.",
+        "وَقَفَ الْحَارِسُ عِنْدَ الْبَابِ، وَوَزَنَ الصَّرَّافُ الذَّهَبَ.",
+        "وَضَعَ التَّاجِرُ الْأَكْيَاسَ فِي مَوْضِعٍ قَرِيبٍ.",
+        "وَقَعَ كِيسٌ، وَوَجَدَهُ بَاسِمٌ تَحْتَ الْكُرْسِيِّ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quand la caravane est-elle arrivée ?",
+          "choix": [
+            "le soir",
+            "le matin",
+            "à midi"
+          ],
+          "reponse": 0,
+          "explication": "فِي الْمَسَاءِ، وَصَلَتِ الْقَافِلَةُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qui a trouvé la bourse tombée ?",
+          "choix": [
+            "Bāsim",
+            "le gardien",
+            "le changeur"
+          ],
+          "reponse": 0,
+          "explication": "وَوَجَدَهُ بَاسِمٌ تَحْتَ الْكُرْسِيِّ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Salmā a posé le panier sur la chaise. » ?",
+          "choix_ar": [
+            "وَضَعَتْ سَلْمَى السَّلَّةَ عَلَى الْكُرْسِيِّ.",
+            "تَضَعُ السَّلَّةُ سَلْمَى عَلَى الْكُرْسِيِّ.",
+            "وَضَعَ الْكُرْسِيُّ سَلْمَى."
+          ],
+          "reponse": 0,
+          "explication": "« Salmā a posé le panier sur la chaise. » se dit وَضَعَتْ سَلْمَى السَّلَّةَ عَلَى الْكُرْسِيِّ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Le gardien s'est tenu à la porte. »",
+          "tuiles": [
+            "الْبَابِ",
+            "الْحَارِسُ",
+            "وَقَفَ",
+            "عِنْدَ",
+            "قِفْ"
+          ],
+          "solution": [
+            "وَقَفَ",
+            "الْحَارِسُ",
+            "عِنْدَ",
+            "الْبَابِ"
+          ],
+          "explication": "Verbe, sujet, puis عِنْدَ et le lieu."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Pose la bourse ici. »",
+          "ar": "… الْكِيسَ هُنَا.",
+          "choix_ar": [
+            "ضَعِ",
+            "وَضَعَ",
+            "تَضَعُ"
+          ],
+          "reponse": 0,
+          "explication": "Impératif ضَعْ ; devant l'article, le sukūn devient i : ضَعِ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَضَعَ",
+          "choix": [
+            "poser, mettre",
+            "trouver",
+            "promettre"
+          ],
+          "reponse": 0,
+          "explication": "وَضَعَ veut dire « poser, mettre »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَزَنَ",
+          "choix": [
+            "peser",
+            "arriver",
+            "tomber"
+          ],
+          "reponse": 0,
+          "explication": "وَزَنَ veut dire « peser »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَوْضِعٌ",
+          "choix": [
+            "endroit",
+            "balance",
+            "il a posé"
+          ],
+          "reponse": 0,
+          "explication": "مَوْضِعٌ veut dire « endroit »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il s'arrête » ?",
+          "choix_ar": [
+            "يَقِفُ",
+            "وَقَفَ",
+            "قِفْ"
+          ],
+          "reponse": 0,
+          "explication": "« il s'arrête » se dit يَقِفُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "À l'inaccompli de وَجَدَ, le و…",
+          "choix": [
+            "tombe",
+            "reste",
+            "devient ي"
+          ],
+          "reponse": 0,
+          "explication": "Le و du début tombe quand l'inaccompli a i."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de يَصِلُ ?",
+          "choix_ar": [
+            "و ص ل",
+            "ي ص ل",
+            "ص ل"
+          ],
+          "reponse": 0,
+          "explication": "Le و est tombé : و ص ل."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de تَعِدُ ?",
+          "choix_ar": [
+            "و ع د",
+            "ت ع د",
+            "ع د د"
+          ],
+          "reponse": 0,
+          "explication": "Le و est tombé : و ع د."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je trouve la clé. »",
+          "ar": "… الْمِفْتَاحَ.",
+          "choix_ar": [
+            "أَجِدُ",
+            "وَجَدْتُ",
+            "وَجَدَ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli de « je », le و tombe : أَجِدُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le calame est tombé sous la chaise. »",
+          "ar": "… الْقَلَمُ تَحْتَ الْكُرْسِيِّ.",
+          "choix_ar": [
+            "وَقَعَ",
+            "يَقَعُ",
+            "وُقُوعُ"
+          ],
+          "reponse": 0,
+          "explication": "Passé : وَقَعَ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "دَلَّ",
+          "choix": [
+            "indiquer (le chemin)",
+            "tendre",
+            "rendre"
+          ],
+          "reponse": 0,
+          "explication": "دَلَّ veut dire « indiquer (le chemin) ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَدَأَ",
+          "choix": [
+            "commencer",
+            "lire",
+            "prendre"
+          ],
+          "reponse": 0,
+          "explication": "بَدَأَ veut dire « commencer ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment dit-on « nous avons tendu » ?",
+          "choix_ar": [
+            "مَدَدْنَا",
+            "مَدَّنَا",
+            "نَمُدُّ"
+          ],
+          "reponse": 0,
+          "explication": "Sukūn : les deux د se séparent (leçon 3.23).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu conjugues les verbes assimilés : وَجَدَ / يَجِدُ, وَضَعَ / يَضَعُ, وَصَلَ / يَصِلُ. Le و du début tombe à l'inaccompli.",
+      "suite": "Aux Ruines : les verbes dont le milieu se cache, comme قَالَ, يَقُولُ."
+    }
+  ]
+}
