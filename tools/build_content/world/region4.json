@@ -84,7 +84,9 @@
         58
       ],
       "lecons": [
-        10
+        10,
+        11,
+        12
       ],
       "scene": "scene_jardin_maximes",
       "sol": 84,

@@ -1,0 +1,527 @@
+{
+  "id": "cite-11",
+  "etape": 4,
+  "ordre": 11,
+  "format": 3,
+  "titre": "« Ô vous… » : l'appel",
+  "objectif": "Appeler quelqu'un correctement avec يَا et أَيُّهَا.",
+  "statut": "ia_non_verifie",
+  "lieu": "jardin_maximes",
+  "maitre": "hala",
+  "prerequis": [
+    "cite-10"
+  ],
+  "apercu": [
+    "هَالَةُ",
+    "بَاسِمٌ",
+    "سَمِيرٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hala",
+          "texte": "Au jardin, on s'appelle d'un banc à l'autre : Bāsim, gardien, étudiant."
+        },
+        {
+          "qui": "hala",
+          "texte": "Tu connais يَا ; voyons comment le nom change après lui."
+        }
+      ],
+      "objectif": "Employer يَا, أَيُّهَا et أَيَّتُهَا."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les voyageurs ont dormi, sauf le gardien. »",
+          "ar": "نَامَ الْمُسَافِرُونَ إِلَّا …",
+          "choix_ar": [
+            "الْحَارِسَ",
+            "الْحَارِسُ",
+            "الْحَارِسِ"
+          ],
+          "reponse": 0,
+          "explication": "Après إِلَّا, phrase complète : -a (leçon 4.10)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "يَا",
+          "choix": [
+            "ô (pour appeler quelqu'un)",
+            "et",
+            "si"
+          ],
+          "reponse": 0,
+          "explication": "يَا veut dire « ô (pour appeler quelqu'un) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَبُو سَمِيرٍ",
+          "choix": [
+            "le père de Samīr",
+            "le fils de Samīr",
+            "l'ami de Samīr"
+          ],
+          "reponse": 0,
+          "explication": "أَبُو سَمِيرٍ veut dire « le père de Samīr »."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "يَا هَالَةُ، أَيْنَ الْمِفْتَاحُ؟",
+          "fr": "Hāla, où est la clé ?"
+        },
+        {
+          "qui": "hala",
+          "ar": "يَا حَارِسُ، افْتَحِ الْبَابَ.",
+          "fr": "Gardien, ouvre la porte !"
+        },
+        {
+          "qui": "hala",
+          "ar": "يَا أَيُّهَا الْحَاضِرُونَ، هَٰذِهِ قِصَّةُ التَّاجِرِ.",
+          "fr": "Assistance, voici l'histoire du marchand."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "À qui Hāla demande-t-elle d'ouvrir la porte ?",
+        "choix": [
+          "au gardien",
+          "à Bāsim",
+          "à l'assistance"
+        ],
+        "reponse": 0,
+        "explication": "يَا حَارِسُ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ayyuha",
+        "sahib",
+        "nada",
+        "nida",
+        "hadir",
+        "zair"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "زَائِرٌ",
+        "choix": [
+          "visiteur",
+          "gardien",
+          "marchand"
+        ],
+        "reponse": 0,
+        "explication": "زَائِرٌ veut dire « visiteur »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Après يَا : -u sans tanwīn",
+      "texte": "Après يَا, un nom propre ou une personne précise prend -u sans tanwīn : يَا بَاسِمُ، يَا حَارِسُ. Un nom suivi d'un complément prend -a : يَا صَاحِبَ الْبَيْتِ، يَا أَبَا سَمِيرٍ.",
+      "exemples": [
+        "يَا بَاسِمُ",
+        "يَا صَاحِبَ الْبَيْتِ",
+        "يَا أَبَا سَمِيرٍ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Bāsim, assieds-toi ! »",
+        "ar": "يَا …، اجْلِسْ.",
+        "choix_ar": [
+          "بَاسِمُ",
+          "بَاسِمٌ",
+          "بَاسِمًا"
+        ],
+        "reponse": 0,
+        "explication": "Nom propre après يَا : -u sans tanwīn."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Devant الْ : أَيُّهَا",
+      "texte": "Devant un nom avec الْ, on ajoute أَيُّهَا (أَيَّتُهَا au féminin), et le nom reste en -u : يَا أَيُّهَا الطَّالِبُ.",
+      "exemples": [
+        "يَا أَيُّهَا الطَّالِبُ",
+        "يَا أَيَّتُهَا الطَّالِبَةُ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Étudiant, écris la réponse ! »",
+        "ar": "يَا … الطَّالِبُ، اكْتُبِ الْجَوَابَ.",
+        "choix_ar": [
+          "أَيُّهَا",
+          "أَيَّتُهَا",
+          "يَا"
+        ],
+        "reponse": 0,
+        "explication": "Masculin : أَيُّهَا."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Appeler avec نَادَى",
+      "texte": "نَادَى « appeler » prend un complément direct : نَادَى نَدِيمٌ بَاسِمًا. Dans l'appel lui-même, on dit يَا بَاسِمُ.",
+      "exemples": [
+        "نَادَى نَدِيمٌ بَاسِمًا",
+        "يَا بَاسِمُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire نَادَى نَدِيمٌ بَاسِمًا ?",
+        "choix": [
+          "Nadīm a appelé Bāsim.",
+          "Bāsim a appelé Nadīm.",
+          "Nadīm a parlé de Bāsim."
+        ],
+        "reponse": 0,
+        "explication": "بَاسِمًا (-a) est le complément."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَاحِبٌ",
+          "choix": [
+            "compagnon ; propriétaire",
+            "visiteur",
+            "gardien"
+          ],
+          "reponse": 0,
+          "explication": "صَاحِبٌ veut dire « compagnon ; propriétaire »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَادَى",
+          "choix": [
+            "appeler (à haute voix)",
+            "écouter",
+            "répondre"
+          ],
+          "reponse": 0,
+          "explication": "نَادَى veut dire « appeler (à haute voix) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَاضِرٌ",
+          "choix": [
+            "présent",
+            "absent",
+            "content"
+          ],
+          "reponse": 0,
+          "explication": "حَاضِرٌ veut dire « présent »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « chef de caravane, ouvre la porte » ?",
+          "choix_ar": [
+            "يَا صَاحِبَ الْقَافِلَةِ، افْتَحِ الْبَابَ",
+            "يَا صَاحِبُ الْقَافِلَةِ، افْتَحِ الْبَابَ",
+            "يَا أَيُّهَا صَاحِبُ الْقَافِلَةِ، افْتَحِ الْبَابَ"
+          ],
+          "reponse": 0,
+          "explication": "Nom suivi d'un complément : -a ; أَيُّهَا ne va que devant الْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Hāla, où est la clé ? »",
+          "ar": "يَا …، أَيْنَ الْمِفْتَاحُ؟",
+          "choix_ar": [
+            "هَالَةُ",
+            "هَالَةً",
+            "هَالَةَ"
+          ],
+          "reponse": 0,
+          "explication": "Nom propre après يَا : -u, sans tanwīn."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Père de Samīr, voici ta lettre. »",
+          "ar": "يَا … سَمِيرٍ، هَٰذِهِ رِسَالَتُكَ.",
+          "choix_ar": [
+            "أَبَا",
+            "أَبُو",
+            "أَبِي"
+          ],
+          "reponse": 0,
+          "explication": "Nom suivi d'un complément : -a ; pour أَبٌ, c'est أَبَا (leçon 3.28)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Étudiante, voici ta lettre. »",
+          "ar": "يَا … الطَّالِبَةُ، هَٰذِهِ رِسَالَتُكِ.",
+          "choix_ar": [
+            "أَيَّتُهَا",
+            "أَيُّهَا",
+            "يَا"
+          ],
+          "reponse": 0,
+          "explication": "Féminin : أَيَّتُهَا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après يَا, un nom propre prend…",
+          "choix": [
+            "-u sans tanwīn",
+            "-un avec tanwīn",
+            "-a"
+          ],
+          "reponse": 0,
+          "explication": "يَا بَاسِمُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Les appels du jardin",
+      "texte": "Hāla raconte une matinée au jardin. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "وَصَلَ زَائِرٌ إِلَى الْحَدِيقَةِ.",
+        "نَادَتْ هَالَةُ الْحَارِسَ: « يَا حَارِسُ، افْتَحِ الْبَابَ. »",
+        "قَالَ الزَّائِرُ: « يَا صَاحِبَ الْحَدِيقَةِ، أَيْنَ الْمَجْلِسُ؟ »",
+        "قَالَتْ هَالَةُ: « يَا أَيُّهَا الْحَاضِرُونَ، هَٰذَا زَائِرٌ مِنْ بَغْدَادَ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui est arrivé au jardin ?",
+          "choix": [
+            "un visiteur",
+            "un marchand",
+            "un gardien"
+          ],
+          "reponse": 0,
+          "explication": "وَصَلَ زَائِرٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "D'où vient le visiteur ?",
+          "choix": [
+            "de Bagdad",
+            "de la montagne",
+            "du marché"
+          ],
+          "reponse": 0,
+          "explication": "مِنْ بَغْدَادَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Étudiant, écris la réponse ! » ?",
+          "choix_ar": [
+            "يَا أَيُّهَا الطَّالِبُ، اكْتُبِ الْجَوَابَ.",
+            "يَا الطَّالِبُ، اكْتُبِ الْجَوَابَ.",
+            "يَا أَيُّهَا الطَّالِبَ، اكْتُبِ الْجَوَابَ."
+          ],
+          "reponse": 0,
+          "explication": "Devant الْ : أَيُّهَا, et le nom reste en -u."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Gardien, ouvre la porte ! »",
+          "tuiles": [
+            "الْبَابَ",
+            "افْتَحِ",
+            "حَارِسُ،",
+            "يَا",
+            "حَارِسٌ،"
+          ],
+          "solution": [
+            "يَا",
+            "حَارِسُ،",
+            "افْتَحِ",
+            "الْبَابَ"
+          ],
+          "explication": "Après يَا : -u sans tanwīn."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nadīm a appelé Bāsim. »",
+          "ar": "نَادَى نَدِيمٌ …",
+          "choix_ar": [
+            "بَاسِمًا",
+            "بَاسِمُ",
+            "يَا بَاسِمُ"
+          ],
+          "reponse": 0,
+          "explication": "Complément direct de نَادَى : -a."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَيُّهَا",
+          "choix": [
+            "(mot d'appel devant un nom avec الْ)",
+            "lequel ?",
+            "qui ?"
+          ],
+          "reponse": 0,
+          "explication": "أَيُّهَا veut dire « (mot d'appel devant un nom avec الْ) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نِدَاءٌ",
+          "choix": [
+            "appel ; (en grammaire) l'appel",
+            "réponse",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "نِدَاءٌ veut dire « appel ; (en grammaire) l'appel »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Hāla, où est la clé ? » ?",
+          "choix_ar": [
+            "يَا هَالَةُ، أَيْنَ الْمِفْتَاحُ؟",
+            "يَا هَالَةً، أَيْنَ الْمِفْتَاحُ؟",
+            "يَا أَيَّتُهَا هَالَةُ، أَيْنَ الْمِفْتَاحُ؟"
+          ],
+          "reponse": 0,
+          "explication": "Nom propre : -u ; أَيَّتُهَا ne va que devant الْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Gardien, ouvre la porte ! »",
+          "ar": "يَا …، افْتَحِ الْبَابَ.",
+          "choix_ar": [
+            "حَارِسُ",
+            "حَارِسٌ",
+            "حَارِسًا"
+          ],
+          "reponse": 0,
+          "explication": "Personne précise après يَا : -u sans tanwīn."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Maître de maison, ouvre ! »",
+          "ar": "يَا … الْبَيْتِ، افْتَحْ.",
+          "choix_ar": [
+            "صَاحِبَ",
+            "صَاحِبُ",
+            "صَاحِبِ"
+          ],
+          "reponse": 0,
+          "explication": "Nom suivi d'un complément : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Étudiant, écris ! »",
+          "ar": "يَا … الطَّالِبُ، اكْتُبْ.",
+          "choix_ar": [
+            "أَيُّهَا",
+            "أَيَّتُهَا",
+            "أَبَا"
+          ],
+          "reponse": 0,
+          "explication": "Masculin devant الْ : أَيُّهَا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "أَيُّهَا s'emploie…",
+          "choix": [
+            "devant un nom avec الْ",
+            "devant un nom propre",
+            "devant un nom suivi d'un complément"
+          ],
+          "reponse": 0,
+          "explication": "يَا أَيُّهَا الطَّالِبُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans يَا أَبَا سَمِيرٍ, pourquoi أَبَا ?",
+          "choix": [
+            "nom suivi d'un complément : -a",
+            "nom propre : -u",
+            "après أَيُّهَا"
+          ],
+          "reponse": 0,
+          "explication": "يَا + nom suivi d'un complément : -a."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire يَا أَيُّهَا الْحَاضِرُونَ ?",
+          "choix": [
+            "Assistance ! (vous qui êtes présents)",
+            "Les présents sont venus.",
+            "Où sont les présents ?"
+          ],
+          "reponse": 0,
+          "explication": "Appel devant الْ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِلَّا",
+          "choix": [
+            "sauf ; (après une négation) seulement",
+            "si",
+            "aussi"
+          ],
+          "reponse": 0,
+          "explication": "إِلَّا veut dire « sauf ; (après une négation) seulement ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'y a qu'un dirham dans la bourse. »",
+          "ar": "مَا فِي الْكِيسِ إِلَّا …",
+          "choix_ar": [
+            "دِرْهَمٌ",
+            "دِرْهَمًا",
+            "دِرْهَمٍ"
+          ],
+          "reponse": 0,
+          "explication": "Négation + إِلَّا : le nom garde son cas.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَحَدٌ",
+          "choix": [
+            "quelqu'un ; (avec une négation) personne",
+            "tous",
+            "seul"
+          ],
+          "reponse": 0,
+          "explication": "أَحَدٌ veut dire « quelqu'un ; (avec une négation) personne ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu appelles quelqu'un : يَا + nom en -u (personne précise), en -a (nom suivi d'un complément), et يَا أَيُّهَا devant un nom avec الْ.",
+      "suite": "Prochaine leçon : insister avec قَدْ, لَـ et ـَنَّ."
+    }
+  ]
+}
