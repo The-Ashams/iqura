@@ -48,15 +48,15 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Il n'y a pas de pain dans le sac. »",
-          "ar": "… فِي الْكِيسِ خُبْزٌ.",
+          "consigne": "Complète : « Bāsim ne s'est pas assis. »",
+          "ar": "… جَلَسَ بَاسِمٌ.",
           "choix_ar": [
             "مَا",
-            "لَمْ",
-            "لَنْ"
+            "لَنْ",
+            "لَمْ"
           ],
           "reponse": 0,
-          "explication": "مَا nie une phrase sans verbe ici : مَا فِي الْكِيسِ خُبْزٌ."
+          "explication": "مَا + passé (leçon 2.27) ; لَمْ et لَنْ ne vont pas devant un passé."
         },
         {
           "type": "sens",
@@ -82,8 +82,8 @@
         },
         {
           "qui": "basim",
-          "ar": "مَا حَضَرَ أَحَدٌ مِنَ التُّجَّارِ إِلَّا أَبُو سَمِيرٍ.",
-          "fr": "Aucun des marchands n'est venu, sauf Abū Samīr."
+          "ar": "مَا حَضَرَ مِنَ التُّجَّارِ إِلَّا أَبُو سَمِيرٍ.",
+          "fr": "Des marchands, seul Abū Samīr est venu."
         },
         {
           "qui": "hala",
@@ -122,7 +122,7 @@
         "ar": "أَحَدٌ",
         "choix": [
           "quelqu'un ; (avec une négation) personne",
-          "un seul jour",
+          "chacun",
           "tous"
         ],
         "reponse": 0,
@@ -153,7 +153,7 @@
     {
       "type": "regle",
       "titre": "إِلَّا après une négation : « seulement »",
-      "texte": "Après une négation, إِلَّا veut dire « seulement », et le nom garde le cas de sa fonction : مَا حَضَرَ إِلَّا بَاسِمٌ « seul Bāsim est venu ».",
+      "texte": "مَا nie aussi une phrase sans verbe : مَا فِي الْكِيسِ خُبْزٌ. Après une négation, إِلَّا veut dire « seulement », et le nom garde le cas de sa fonction : مَا حَضَرَ إِلَّا بَاسِمٌ.",
       "exemples": [
         "مَا حَضَرَ إِلَّا بَاسِمٌ",
         "مَا فِي الْكِيسِ إِلَّا دِرْهَمٌ"
@@ -255,15 +255,15 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Personne n'est venu, sauf Bāsim. »",
-          "ar": "مَا حَضَرَ أَحَدٌ إِلَّا …",
+          "consigne": "Complète : « Seul Bāsim est venu. »",
+          "ar": "مَا حَضَرَ إِلَّا …",
           "choix_ar": [
             "بَاسِمٌ",
             "بَاسِمًا",
             "بَاسِمٍ"
           ],
           "reponse": 0,
-          "explication": "Phrase niée : le nom garde le cas de sa fonction (sujet, -u)."
+          "explication": "Sans nom exclu avant إِلَّا, le nom garde le cas de sa fonction : sujet, -u."
         },
         {
           "type": "completer",
@@ -406,7 +406,7 @@
           "choix_ar": [
             "مَا حَضَرَ أَحَدٌ",
             "حَضَرَ أَحَدٌ",
-            "مَا حَضَرَ كُلٌّ"
+            "حَضَرَ كُلُّ الطُّلَّابِ"
           ],
           "reponse": 0,
           "explication": "أَحَدٌ avec une négation : « personne »."
@@ -456,7 +456,7 @@
             "au génitif"
           ],
           "reponse": 0,
-          "explication": "غَيْرُ prend le cas du nom exclu."
+          "explication": "غَيْرُ prend le cas qu'aurait le nom après إِلَّا (ici -a) ; le nom qui le suit est au génitif."
         },
         {
           "type": "qcm",

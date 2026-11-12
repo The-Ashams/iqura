@@ -8309,215 +8309,6 @@
    "theme": "actions"
   },
   {
-   "id": "illa",
-   "ar": "إِلَّا",
-   "translit": "illā",
-   "fr": "sauf ; (après une négation) seulement",
-   "nature": "particule",
-   "lecon": "cite-10",
-   "source_sens": "rédigé par IA",
-   "lemme": "<il~aA",
-   "exemple": {
-    "ar": "نَامَ الْمُسَافِرُونَ إِلَّا الْحَارِسَ.",
-    "fr": "Les voyageurs ont dormi, sauf le gardien."
-   },
-   "theme": "particules"
-  },
-  {
-   "id": "ghayr",
-   "ar": "غَيْرُ",
-   "translit": "ġayru",
-   "fr": "autre que, sauf",
-   "nature": "nom",
-   "lecon": "cite-10",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "gayor",
-   "exemple": {
-    "ar": "أُرِيدُ ثَوْبًا غَيْرَ الثَّوْبِ الْأَحْمَرِ.",
-    "fr": "Je veux un autre vêtement que le rouge."
-   },
-   "remarque": "suivi d'un nom au génitif",
-   "theme": "particules"
-  },
-  {
-   "id": "kull",
-   "ar": "كُلٌّ",
-   "translit": "kullun",
-   "fr": "tout, tous",
-   "nature": "nom",
-   "lecon": "cite-10",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "kul~",
-   "exemple": {
-    "ar": "قَرَأْتُ الرَّسَائِلَ كُلَّهَا.",
-    "fr": "J'ai lu toutes les lettres."
-   },
-   "remarque": "ici avec un pluriel défini : كُلُّ الطُّلَّابِ",
-   "theme": "particules"
-  },
-  {
-   "id": "ahad",
-   "ar": "أَحَدٌ",
-   "translit": "aḥadun",
-   "fr": "quelqu'un ; (avec une négation) personne",
-   "nature": "nom",
-   "lecon": "cite-10",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": ">aHad",
-   "exemple": {
-    "ar": "مَا حَضَرَ أَحَدٌ إِلَّا بَاسِمٌ.",
-    "fr": "Personne n'est venu, sauf Bāsim."
-   },
-   "theme": "personnes"
-  },
-  {
-   "id": "hadara",
-   "ar": "حَضَرَ",
-   "translit": "ḥaḍara",
-   "fr": "être présent, venir (à une réunion)",
-   "nature": "verbe",
-   "lecon": "cite-10",
-   "source_sens": "rédigé par IA",
-   "passe": "حَضَرَ",
-   "inaccompli": "يَحْضُرُ",
-   "exemple": {
-    "ar": "حَضَرَ الطُّلَّابُ إِلَّا سَمِيرًا.",
-    "fr": "Les étudiants sont venus, sauf Samīr."
-   },
-   "lemme": "HaDara",
-   "fige": true,
-   "formes": [
-    "حَضَرَتْ"
-   ],
-   "theme": "actions"
-  },
-  {
-   "id": "istithna",
-   "ar": "اسْتِثْنَاءٌ",
-   "translit": "istiṯnāʾun",
-   "fr": "exception",
-   "nature": "nom",
-   "lecon": "cite-10",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "vny",
-   "exemple": {
-    "ar": "إِلَّا حَرْفُ اسْتِثْنَاءٍ.",
-    "fr": "إِلَّا est une particule d'exception."
-   },
-   "theme": "savoir"
-  },
-  {
-   "id": "ayyuha",
-   "ar": "أَيُّهَا",
-   "translit": "ayyuhā",
-   "fr": "(mot d'appel devant un nom avec الْ)",
-   "nature": "particule",
-   "lecon": "cite-11",
-   "source_sens": "rédigé par IA",
-   "lemme": ">ay~uhaA",
-   "fige": true,
-   "formes": [
-    "أَيَّتُهَا"
-   ],
-   "exemple": {
-    "ar": "يَا أَيُّهَا الطَّالِبُ، اكْتُبِ الْجَوَابَ.",
-    "fr": "Étudiant, écris la réponse !"
-   },
-   "remarque": "au féminin : أَيَّتُهَا ; ne change jamais",
-   "theme": "particules"
-  },
-  {
-   "id": "sahib",
-   "ar": "صَاحِبٌ",
-   "translit": "ṣāḥibun",
-   "fr": "compagnon ; propriétaire",
-   "nature": "nom",
-   "lecon": "cite-11",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "SaAHib",
-   "exemple": {
-    "ar": "يَا صَاحِبَ الْبَيْتِ، افْتَحِ الْبَابَ.",
-    "fr": "Maître de maison, ouvre la porte !"
-   },
-   "remarque": "صَاحِبُ الْبَيْتِ : le propriétaire de la maison",
-   "theme": "personnes"
-  },
-  {
-   "id": "nada",
-   "ar": "نَادَى",
-   "translit": "nādā",
-   "fr": "appeler (à haute voix)",
-   "nature": "verbe",
-   "lecon": "cite-11",
-   "source_sens": "rédigé par IA",
-   "passe": "نَادَى",
-   "inaccompli": "يُنَادِي",
-   "exemple": {
-    "ar": "نَادَى نَدِيمٌ بَاسِمًا.",
-    "fr": "Nadīm a appelé Bāsim."
-   },
-   "lemme": "naAdaY`",
-   "fige": true,
-   "formes": [
-    "نَادَتْ"
-   ],
-   "theme": "parole"
-  },
-  {
-   "id": "nida",
-   "ar": "نِدَاءٌ",
-   "translit": "nidāʾun",
-   "fr": "appel ; (en grammaire) l'appel",
-   "nature": "nom",
-   "lecon": "cite-11",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "nidaA^'",
-   "exemple": {
-    "ar": "يَا حَرْفُ نِدَاءٍ.",
-    "fr": "يَا est une particule d'appel."
-   },
-   "theme": "parole"
-  },
-  {
-   "id": "hadir",
-   "ar": "حَاضِرٌ",
-   "translit": "ḥāḍirun",
-   "fr": "présent",
-   "nature": "adjectif",
-   "lecon": "cite-11",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "HDr",
-   "exemple": {
-    "ar": "بَاسِمٌ حَاضِرٌ.",
-    "fr": "Bāsim est présent."
-   },
-   "remarque": "الْحَاضِرُونَ : l'assistance",
-   "theme": "qualites"
-  },
-  {
-   "id": "zair",
-   "ar": "زَائِرٌ",
-   "translit": "zāʾirun",
-   "fr": "visiteur",
-   "nature": "nom",
-   "lecon": "cite-11",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "zwr",
-   "exemple": {
-    "ar": "وَصَلَ زَائِرٌ إِلَى الْحَدِيقَةِ.",
-    "fr": "Un visiteur est arrivé au jardin."
-   },
-   "theme": "personnes"
-  },
-  {
    "id": "qad",
    "ar": "قَدْ",
    "translit": "qad",
@@ -8669,6 +8460,294 @@
     "fr": "Le marchand est parti en quête de profit."
    },
    "theme": "commerce"
+  },
+  {
+   "id": "illa",
+   "ar": "إِلَّا",
+   "translit": "illā",
+   "fr": "sauf ; (après une négation) seulement",
+   "nature": "particule",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "lemme": "<il~aA",
+   "exemple": {
+    "ar": "نَامَ الْمُسَافِرُونَ إِلَّا الْحَارِسَ.",
+    "fr": "Les voyageurs ont dormi, sauf le gardien."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "ghayr",
+   "ar": "غَيْرُ",
+   "translit": "ġayru",
+   "fr": "autre que, sauf",
+   "nature": "nom",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "gayor",
+   "exemple": {
+    "ar": "أُرِيدُ ثَوْبًا غَيْرَ الثَّوْبِ الْأَحْمَرِ.",
+    "fr": "Je veux un autre vêtement que le rouge."
+   },
+   "remarque": "suivi d'un nom au génitif",
+   "theme": "particules"
+  },
+  {
+   "id": "kull",
+   "ar": "كُلٌّ",
+   "translit": "kullun",
+   "fr": "tout, tous",
+   "nature": "nom",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "kul~",
+   "exemple": {
+    "ar": "قَرَأْتُ الرَّسَائِلَ كُلَّهَا.",
+    "fr": "J'ai lu toutes les lettres."
+   },
+   "remarque": "ici avec un pluriel défini : كُلُّ الطُّلَّابِ",
+   "theme": "particules"
+  },
+  {
+   "id": "ahad",
+   "ar": "أَحَدٌ",
+   "translit": "aḥadun",
+   "fr": "quelqu'un ; (avec une négation) personne",
+   "nature": "nom",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">aHad",
+   "exemple": {
+    "ar": "مَا حَضَرَ أَحَدٌ.",
+    "fr": "Personne n'est venu."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "hadara",
+   "ar": "حَضَرَ",
+   "translit": "ḥaḍara",
+   "fr": "être présent, venir (à une réunion)",
+   "nature": "verbe",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "passe": "حَضَرَ",
+   "inaccompli": "يَحْضُرُ",
+   "exemple": {
+    "ar": "حَضَرَ الطُّلَّابُ إِلَّا سَمِيرًا.",
+    "fr": "Les étudiants sont venus, sauf Samīr."
+   },
+   "lemme": "HaDara",
+   "fige": true,
+   "formes": [
+    "حَضَرَتْ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "istithna",
+   "ar": "اسْتِثْنَاءٌ",
+   "translit": "istiṯnāʾun",
+   "fr": "exception",
+   "nature": "nom",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "vny",
+   "exemple": {
+    "ar": "إِلَّا حَرْفُ اسْتِثْنَاءٍ.",
+    "fr": "إِلَّا est une particule d'exception."
+   },
+   "remarque": "حَرْفٌ : ici « particule » (en grammaire)",
+   "theme": "savoir"
+  },
+  {
+   "id": "ayyuha",
+   "ar": "أَيُّهَا",
+   "translit": "ayyuhā",
+   "fr": "(mot d'appel devant un nom avec الْ)",
+   "nature": "particule",
+   "lecon": "cite-11",
+   "source_sens": "rédigé par IA",
+   "lemme": ">ay~uhaA",
+   "fige": true,
+   "formes": [
+    "أَيَّتُهَا"
+   ],
+   "exemple": {
+    "ar": "يَا أَيُّهَا الطَّالِبُ، اكْتُبِ الْجَوَابَ.",
+    "fr": "Étudiant, écris la réponse !"
+   },
+   "remarque": "au féminin : أَيَّتُهَا ; ne change jamais",
+   "theme": "particules"
+  },
+  {
+   "id": "sahib",
+   "ar": "صَاحِبٌ",
+   "translit": "ṣāḥibun",
+   "fr": "compagnon ; propriétaire",
+   "nature": "nom",
+   "lecon": "cite-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "SaAHib",
+   "exemple": {
+    "ar": "يَا صَاحِبَ الْبَيْتِ، افْتَحِ الْبَابَ.",
+    "fr": "Maître de maison, ouvre la porte !"
+   },
+   "remarque": "صَاحِبُ الْبَيْتِ : le propriétaire de la maison",
+   "theme": "personnes"
+  },
+  {
+   "id": "nada",
+   "ar": "نَادَى",
+   "translit": "nādā",
+   "fr": "appeler (à haute voix)",
+   "nature": "verbe",
+   "lecon": "cite-11",
+   "source_sens": "rédigé par IA",
+   "passe": "نَادَى",
+   "inaccompli": "يُنَادِي",
+   "exemple": {
+    "ar": "نَادَى نَدِيمٌ بَاسِمًا.",
+    "fr": "Nadīm a appelé Bāsim."
+   },
+   "lemme": "naAdaY`",
+   "fige": true,
+   "formes": [
+    "نَادَتْ"
+   ],
+   "theme": "parole"
+  },
+  {
+   "id": "nida",
+   "ar": "نِدَاءٌ",
+   "translit": "nidāʾun",
+   "fr": "appel ; (en grammaire) l'appel",
+   "nature": "nom",
+   "lecon": "cite-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "nidaA^'",
+   "exemple": {
+    "ar": "يَا حَرْفُ نِدَاءٍ.",
+    "fr": "يَا est une particule d'appel."
+   },
+   "remarque": "حَرْفٌ : ici « particule » (en grammaire)",
+   "theme": "parole"
+  },
+  {
+   "id": "hadir",
+   "ar": "حَاضِرٌ",
+   "translit": "ḥāḍirun",
+   "fr": "présent",
+   "nature": "adjectif",
+   "lecon": "cite-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "HDr",
+   "exemple": {
+    "ar": "بَاسِمٌ حَاضِرٌ.",
+    "fr": "Bāsim est présent."
+   },
+   "remarque": "الْحَاضِرُونَ : l'assistance",
+   "theme": "qualites"
+  },
+  {
+   "id": "zair",
+   "ar": "زَائِرٌ",
+   "translit": "zāʾirun",
+   "fr": "visiteur",
+   "nature": "nom",
+   "lecon": "cite-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "zwr",
+   "exemple": {
+    "ar": "وَصَلَ زَائِرٌ إِلَى الْحَدِيقَةِ.",
+    "fr": "Un visiteur est arrivé au jardin."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "fa_suite",
+   "ar": "فَـ",
+   "translit": "fa",
+   "fr": "et aussitôt ; donc",
+   "nature": "particule",
+   "lecon": "cite-13",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "دَخَلَ نَدِيمٌ فَجَلَسَ.",
+    "fr": "Nadīm est entré et s'est aussitôt assis."
+   },
+   "remarque": "relie deux actions qui se suivent aussitôt, ou une cause et sa suite",
+   "theme": "particules"
+  },
+  {
+   "id": "bal",
+   "ar": "بَلْ",
+   "translit": "bal",
+   "fr": "mais plutôt, au contraire",
+   "nature": "particule",
+   "lecon": "cite-13",
+   "source_sens": "rédigé par IA",
+   "lemme": "bal",
+   "exemple": {
+    "ar": "مَا حَضَرَ سَمِيرٌ، بَلْ بَاسِمٌ.",
+    "fr": "Ce n'est pas Samīr qui est venu, mais Bāsim."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "lakin",
+   "ar": "لَٰكِنْ",
+   "translit": "lākin",
+   "fr": "mais",
+   "nature": "particule",
+   "lecon": "cite-13",
+   "source_sens": "rédigé par IA",
+   "lemme": "la`kin",
+   "exemple": {
+    "ar": "لَمْ يَكْتُبْ سَمِيرٌ، لَٰكِنْ كَتَبَتْ سَلْمَى.",
+    "fr": "Samīr n'a pas écrit, mais Salmā a écrit."
+   },
+   "remarque": "forme légère de لَٰكِنَّ : suivie du cas normal",
+   "theme": "particules"
+  },
+  {
+   "id": "amma",
+   "ar": "أَمَّا… فَـ",
+   "translit": "ammā… fa",
+   "fr": "quant à…",
+   "nature": "particule",
+   "lecon": "cite-13",
+   "source_sens": "rédigé par IA",
+   "lemme": ">am~aA",
+   "exemple": {
+    "ar": "أَمَّا بَاسِمٌ فَمَشْغُولٌ.",
+    "fr": "Quant à Bāsim, il est occupé."
+   },
+   "remarque": "la réponse prend toujours فَـ",
+   "theme": "particules"
+  },
+  {
+   "id": "aw",
+   "ar": "أَوْ",
+   "translit": "aw",
+   "fr": "ou",
+   "nature": "particule",
+   "lecon": "cite-13",
+   "source_sens": "rédigé par IA",
+   "lemme": ">aw",
+   "exemple": {
+    "ar": "سَنُسَافِرُ الْيَوْمَ أَوْ غَدًا.",
+    "fr": "Nous partirons aujourd'hui ou demain."
+   },
+   "theme": "particules"
   }
  ]
 }

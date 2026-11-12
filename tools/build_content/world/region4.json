@@ -105,7 +105,9 @@
         119,
         42
       ],
-      "lecons": [],
+      "lecons": [
+        13
+      ],
       "scene": "scene_bureau_comptes",
       "sol": 82,
       "tranche_j1a": true,
