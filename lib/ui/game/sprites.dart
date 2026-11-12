@@ -20,4 +20,7 @@ const Map<String, (int, int)> spriteSizes = {
   'widad': (12, 24),
   'precipitation': (43, 46),
   'grande_precipitation': (64, 66),
+  'nadim': (12, 24),
+  'hala': (12, 24),
+  'distraction': (43, 46),
 };

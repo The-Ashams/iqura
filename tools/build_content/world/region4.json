@@ -1,0 +1,145 @@
+{
+  "_comment": "Région 4 « La Cité des Lecteurs » (cahier §5.8, §8.2 ; proposition du 12/11/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_4.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Chapitre A ouvert (Avancé 1).",
+  "statut": "ia",
+  "region": {
+    "id": "r4",
+    "numero": 4,
+    "nom": "La Cité des Lecteurs",
+    "competence": "Lire et parler couramment",
+    "adversaire": "La Distraction",
+    "carte": "scene_carte_r4"
+  },
+  "lieux": [
+    {
+      "id": "porte_cite",
+      "numero": 1,
+      "nom": "La Porte de la Cité",
+      "position": [
+        30,
+        58
+      ],
+      "lecons": [],
+      "scene": "scene_porte_cite",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "messagers"
+      ],
+      "description": "À l'entrée de la Cité des Lecteurs, Nadīm le conteur accueille les voyageurs : ici, on apprend à dire « si… »."
+    },
+    {
+      "id": "messagers",
+      "numero": 2,
+      "nom": "La Maison des messagers",
+      "position": [
+        70,
+        58
+      ],
+      "lecons": [],
+      "scene": "scene_messagers",
+      "sol": 82,
+      "tranche_j1a": true,
+      "liens": [
+        "porte_cite",
+        "conteurs"
+      ],
+      "description": "Les lettres arrivent de partout : on y apprend à rapporter ce que les autres ont dit, à dire quand et pourquoi."
+    },
+    {
+      "id": "conteurs",
+      "numero": 3,
+      "nom": "La Place des conteurs",
+      "position": [
+        72,
+        32
+      ],
+      "lecons": [],
+      "scene": "scene_conteurs",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "messagers",
+        "jardin_maximes"
+      ],
+      "description": "Assis sur son tapis, Nadīm raconte : comment on arrive, combien, de quelle façon et pour quelle raison."
+    },
+    {
+      "id": "jardin_maximes",
+      "numero": 4,
+      "nom": "Le Jardin des maximes",
+      "position": [
+        100,
+        58
+      ],
+      "lecons": [],
+      "scene": "scene_jardin_maximes",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "conteurs",
+        "bureau_comptes"
+      ],
+      "description": "Près du bassin, Hāla lit les maximes gravées : « sauf… », « ô vous… », et les mots qui insistent."
+    },
+    {
+      "id": "bureau_comptes",
+      "numero": 5,
+      "nom": "Le Bureau des comptes",
+      "position": [
+        119,
+        42
+      ],
+      "lecons": [],
+      "scene": "scene_bureau_comptes",
+      "sol": 82,
+      "tranche_j1a": true,
+      "liens": [
+        "jardin_maximes",
+        "labyrinthe"
+      ],
+      "description": "Au comptoir des registres, Hāla apprend à relier les idées et à compter jusqu'à mille."
+    },
+    {
+      "id": "labyrinthe",
+      "numero": 12,
+      "nom": "Le Labyrinthe de la Distraction",
+      "position": [
+        137,
+        70
+      ],
+      "lecons": [],
+      "scene": "scene_labyrinthe",
+      "sol": 80,
+      "tranche_j1a": true,
+      "liens": [
+        "bureau_comptes"
+      ],
+      "description": "Des murs qui se croisent et des lueurs qui détournent le regard : la Distraction mélange tout pour faire perdre le fil."
+    }
+  ],
+  "personnages": [
+    {
+      "id": "nadim",
+      "nom": "Nadīm",
+      "nom_ar": "نَدِيم",
+      "role": "Le conteur et écrivain public",
+      "sprite": "nadim",
+      "lieux": [
+        "porte_cite",
+        "messagers",
+        "conteurs"
+      ]
+    },
+    {
+      "id": "hala",
+      "nom": "Hāla",
+      "nom_ar": "هَالَة",
+      "role": "La gardienne des maximes et des comptes",
+      "sprite": "hala",
+      "lieux": [
+        "jardin_maximes",
+        "bureau_comptes"
+      ]
+    }
+  ]
+}
