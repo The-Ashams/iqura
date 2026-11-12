@@ -7663,124 +7663,6 @@
    "theme": "commerce"
   },
   {
-   "id": "hal_etat",
-   "ar": "حَالٌ",
-   "translit": "ḥālun",
-   "fr": "état ; (en grammaire) le ḥāl",
-   "nature": "nom",
-   "lecon": "cite-06",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "Hwl",
-   "exemple": {
-    "ar": "مَا حَالُكَ؟",
-    "fr": "Comment vas-tu ?"
-   },
-   "theme": "savoir"
-  },
-  {
-   "id": "kayfa",
-   "ar": "كَيْفَ",
-   "translit": "kayfa",
-   "fr": "comment ?",
-   "nature": "interrogatif",
-   "lecon": "cite-06",
-   "source_sens": "rédigé par IA",
-   "lemme": "kayof",
-   "exemple": {
-    "ar": "كَيْفَ رَجَعَتْ سَلْمَى؟",
-    "fr": "Comment Salmā est-elle revenue ?"
-   },
-   "theme": "questions"
-  },
-  {
-   "id": "dahika",
-   "ar": "ضَحِكَ",
-   "translit": "ḍaḥika",
-   "fr": "rire",
-   "nature": "verbe",
-   "lecon": "cite-06",
-   "source_sens": "rédigé par IA",
-   "passe": "ضَحِكَ",
-   "inaccompli": "يَضْحَكُ",
-   "exemple": {
-    "ar": "ضَحِكَ الطِّفْلُ.",
-    "fr": "L'enfant a ri."
-   },
-   "racine": "DHk",
-   "fige": true,
-   "formes": [],
-   "theme": "actions"
-  },
-  {
-   "id": "dahik",
-   "ar": "ضَاحِكٌ",
-   "translit": "ḍāḥikun",
-   "fr": "qui rit, riant",
-   "nature": "adjectif",
-   "lecon": "cite-06",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "DaAHik",
-   "exemple": {
-    "ar": "دَخَلَ الطِّفْلُ ضَاحِكًا.",
-    "fr": "L'enfant est entré en riant."
-   },
-   "theme": "qualites"
-  },
-  {
-   "id": "masrur",
-   "ar": "مَسْرُورٌ",
-   "translit": "masrūrun",
-   "fr": "content",
-   "nature": "adjectif",
-   "lecon": "cite-06",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "masoruwr",
-   "exemple": {
-    "ar": "بَاسِمٌ مَسْرُورٌ.",
-    "fr": "Bāsim est content."
-   },
-   "theme": "qualites"
-  },
-  {
-   "id": "hazin",
-   "ar": "حَزِينٌ",
-   "translit": "ḥazīnun",
-   "fr": "triste",
-   "nature": "adjectif",
-   "lecon": "cite-06",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "Hzn",
-   "exemple": {
-    "ar": "الشَّيْخُ حَزِينٌ.",
-    "fr": "Le vieil homme est triste."
-   },
-   "theme": "qualites"
-  },
-  {
-   "id": "wahdahu",
-   "ar": "وَحْدَهُ",
-   "translit": "waḥdahu",
-   "fr": "seul (lui seul)",
-   "nature": "adverbe",
-   "lecon": "cite-06",
-   "source_sens": "rédigé par IA",
-   "lemme": "waHod",
-   "fige": true,
-   "formes": [
-    "وَحْدَهَا",
-    "وَحْدِي"
-   ],
-   "exemple": {
-    "ar": "جَلَسَ الشَّيْخُ وَحْدَهُ.",
-    "fr": "Le vieil homme s'est assis seul."
-   },
-   "theme": "particules"
-  },
-  {
    "id": "idha",
    "ar": "إِذَا",
    "translit": "iḏā",
@@ -8058,99 +7940,6 @@
    "theme": "actions"
   },
   {
-   "id": "li_anna",
-   "ar": "لِأَنَّ",
-   "translit": "li-anna",
-   "fr": "parce que",
-   "nature": "particule",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "تَأَخَّرْتُ لِأَنَّ الْجَمَلَ مَرِيضٌ.",
-    "fr": "J'ai été en retard parce que le chameau est malade."
-   },
-   "remarque": "لِـ + أَنَّ : suivi d'un nom en -a",
-   "theme": "particules"
-  },
-  {
-   "id": "li_but",
-   "ar": "لِـ",
-   "translit": "li",
-   "fr": "pour (que), suivi d'un verbe au subjonctif",
-   "nature": "particule",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "جَلَسَ بَاسِمٌ لِيَسْمَعَ الْقِصَّةَ.",
-    "fr": "Bāsim s'est assis pour écouter l'histoire."
-   },
-   "remarque": "devant un nom, لِـ veut dire « à, pour » (leçon 2.15)",
-   "theme": "particules"
-  },
-  {
-   "id": "hatta",
-   "ar": "حَتَّى",
-   "translit": "ḥattā",
-   "fr": "jusqu'à ; jusqu'à ce que, pour que",
-   "nature": "particule",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "lemme": "Hat~aY`",
-   "exemple": {
-    "ar": "عَمِلَ النَّجَّارُ حَتَّى الْمَسَاءِ.",
-    "fr": "Le menuisier a travaillé jusqu'au soir."
-   },
-   "theme": "particules"
-  },
-  {
-   "id": "limadha",
-   "ar": "لِمَاذَا",
-   "translit": "limāḏā",
-   "fr": "pourquoi ?",
-   "nature": "interrogatif",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "lemme": "maA*aA",
-   "exemple": {
-    "ar": "لِمَاذَا تَأَخَّرْتَ؟",
-    "fr": "Pourquoi es-tu en retard ?"
-   },
-   "remarque": "لِـ + مَاذَا",
-   "theme": "questions"
-  },
-  {
-   "id": "sabab",
-   "ar": "سَبَبٌ",
-   "translit": "sababun",
-   "fr": "cause, raison",
-   "nature": "nom",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "sbb",
-   "exemple": {
-    "ar": "مَا سَبَبُ التَّأَخُّرِ؟",
-    "fr": "Quelle est la cause du retard ?"
-   },
-   "theme": "savoir"
-  },
-  {
-   "id": "jaiE",
-   "ar": "جَائِعٌ",
-   "translit": "ǧāʾiʿun",
-   "fr": "qui a faim",
-   "nature": "adjectif",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "jwE",
-   "exemple": {
-    "ar": "الطِّفْلُ جَائِعٌ.",
-    "fr": "L'enfant a faim."
-   },
-   "theme": "corps"
-  },
-  {
    "id": "tamyiz",
    "ar": "تَمْيِيزٌ",
    "translit": "tamyīzun",
@@ -8241,6 +8030,283 @@
    },
    "remarque": "employé ici seulement comme tamyīz : أَكْبَرُ سِنًّا",
    "theme": "corps"
+  },
+  {
+   "id": "li_anna",
+   "ar": "لِأَنَّ",
+   "translit": "li-anna",
+   "fr": "parce que",
+   "nature": "particule",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "تَأَخَّرْتُ لِأَنَّ الْجَمَلَ مَرِيضٌ.",
+    "fr": "J'ai été en retard parce que le chameau était malade."
+   },
+   "remarque": "لِـ + أَنَّ : suivi d'un nom en -a",
+   "theme": "particules"
+  },
+  {
+   "id": "li_but",
+   "ar": "لِـ",
+   "translit": "li",
+   "fr": "pour (que), suivi d'un verbe au subjonctif",
+   "nature": "particule",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "جَلَسَ بَاسِمٌ لِيَسْمَعَ الْقِصَّةَ.",
+    "fr": "Bāsim s'est assis pour écouter l'histoire."
+   },
+   "remarque": "devant un nom, لِـ veut dire « à, pour » (leçon 2.15)",
+   "theme": "particules"
+  },
+  {
+   "id": "hatta",
+   "ar": "حَتَّى",
+   "translit": "ḥattā",
+   "fr": "jusqu'à ; jusqu'à ce que, pour que",
+   "nature": "particule",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "lemme": "Hat~aY`",
+   "exemple": {
+    "ar": "عَمِلَ النَّجَّارُ حَتَّى الْمَسَاءِ.",
+    "fr": "Le menuisier a travaillé jusqu'au soir."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "limadha",
+   "ar": "لِمَاذَا",
+   "translit": "limāḏā",
+   "fr": "pourquoi ?",
+   "nature": "interrogatif",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "lemme": "maA*aA",
+   "exemple": {
+    "ar": "لِمَاذَا تَأَخَّرْتَ؟",
+    "fr": "Pourquoi es-tu en retard ?"
+   },
+   "remarque": "لِـ + مَاذَا ; forme courte : لِمَ",
+   "theme": "questions"
+  },
+  {
+   "id": "sabab",
+   "ar": "سَبَبٌ",
+   "translit": "sababun",
+   "fr": "cause, raison",
+   "nature": "nom",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "sabab",
+   "exemple": {
+    "ar": "مَا سَبَبُ التَّأَخُّرِ؟",
+    "fr": "Quelle est la cause du retard ?"
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "jaiE",
+   "ar": "جَائِعٌ",
+   "translit": "ǧāʾiʿun",
+   "fr": "qui a faim",
+   "nature": "adjectif",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jwE",
+   "exemple": {
+    "ar": "الطِّفْلُ جَائِعٌ.",
+    "fr": "L'enfant a faim."
+   },
+   "theme": "corps"
+  },
+  {
+   "id": "hal_etat",
+   "ar": "حَالٌ",
+   "translit": "ḥālun",
+   "fr": "état ; (en grammaire) le ḥāl",
+   "nature": "nom",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hwl",
+   "exemple": {
+    "ar": "مَا حَالُكَ؟",
+    "fr": "Comment vas-tu ?"
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "kayfa",
+   "ar": "كَيْفَ",
+   "translit": "kayfa",
+   "fr": "comment ?",
+   "nature": "interrogatif",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "lemme": "kayof",
+   "exemple": {
+    "ar": "كَيْفَ رَجَعَتْ سَلْمَى؟",
+    "fr": "Comment Salmā est-elle revenue ?"
+   },
+   "theme": "questions"
+  },
+  {
+   "id": "dahika",
+   "ar": "ضَحِكَ",
+   "translit": "ḍaḥika",
+   "fr": "rire",
+   "nature": "verbe",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "passe": "ضَحِكَ",
+   "inaccompli": "يَضْحَكُ",
+   "exemple": {
+    "ar": "ضَحِكَ الطِّفْلُ.",
+    "fr": "L'enfant a ri."
+   },
+   "lemme": "DaHikato",
+   "fige": true,
+   "formes": [],
+   "theme": "actions"
+  },
+  {
+   "id": "dahik",
+   "ar": "ضَاحِكٌ",
+   "translit": "ḍāḥikun",
+   "fr": "qui rit, riant",
+   "nature": "adjectif",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "DaAHik",
+   "exemple": {
+    "ar": "دَخَلَ الطِّفْلُ ضَاحِكًا.",
+    "fr": "L'enfant est entré en riant."
+   },
+   "theme": "qualites"
+  },
+  {
+   "id": "masrur",
+   "ar": "مَسْرُورٌ",
+   "translit": "masrūrun",
+   "fr": "content",
+   "nature": "adjectif",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "masoruwr",
+   "exemple": {
+    "ar": "بَاسِمٌ مَسْرُورٌ.",
+    "fr": "Bāsim est content."
+   },
+   "theme": "qualites"
+  },
+  {
+   "id": "hazin",
+   "ar": "حَزِينٌ",
+   "translit": "ḥazīnun",
+   "fr": "triste",
+   "nature": "adjectif",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hzn",
+   "exemple": {
+    "ar": "الشَّيْخُ حَزِينٌ.",
+    "fr": "Le vieil homme est triste."
+   },
+   "theme": "qualites"
+  },
+  {
+   "id": "wahdahu",
+   "ar": "وَحْدَهُ",
+   "translit": "waḥdahu",
+   "fr": "seul (lui seul)",
+   "nature": "adverbe",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "lemme": "waHod",
+   "fige": true,
+   "formes": [
+    "وَحْدَهَا",
+    "وَحْدِي"
+   ],
+   "exemple": {
+    "ar": "جَلَسَ الشَّيْخُ وَحْدَهُ.",
+    "fr": "Le vieil homme s'est assis seul."
+   },
+   "remarque": "tournure figée qui joue le rôle d'un ḥāl ; elle prend le pronom de la personne",
+   "theme": "particules"
+  },
+  {
+   "id": "mutlaq",
+   "ar": "مُطْلَقٌ",
+   "translit": "muṭlaqun",
+   "fr": "(en grammaire) absolu ; مَفْعُولٌ مُطْلَقٌ",
+   "nature": "adjectif",
+   "lecon": "cite-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Tlq",
+   "exemple": {
+    "ar": "طَرْقًا فِي « طَرَقَ الْبَابَ طَرْقًا » مَفْعُولٌ مُطْلَقٌ.",
+    "fr": "Dans « il a frappé à la porte », طَرْقًا est un mafʿūl muṭlaq."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "marra",
+   "ar": "مَرَّةٌ",
+   "translit": "marratun",
+   "fr": "fois",
+   "nature": "nom",
+   "lecon": "cite-08",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "mar~ap",
+   "exemple": {
+    "ar": "طَرَقْتُ الْبَابَ مَرَّةً.",
+    "fr": "J'ai frappé à la porte une fois."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "jiddan",
+   "ar": "جِدًّا",
+   "translit": "ǧiddan",
+   "fr": "très",
+   "nature": "adverbe",
+   "lecon": "cite-08",
+   "source_sens": "rédigé par IA",
+   "racine": "jdd",
+   "exemple": {
+    "ar": "الطَّرِيقُ طَوِيلٌ جِدًّا.",
+    "fr": "Le chemin est très long."
+   },
+   "remarque": "un mafʿūl muṭlaq devenu figé",
+   "theme": "particules"
+  },
+  {
+   "id": "tarqa",
+   "ar": "طَرْقَةٌ",
+   "translit": "ṭarqatun",
+   "fr": "un coup (frappé à la porte)",
+   "nature": "nom",
+   "lecon": "cite-08",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "Trq",
+   "exemple": {
+    "ar": "طَرَقَ الْحَارِسُ الْبَابَ طَرْقَتَيْنِ.",
+    "fr": "Le gardien a frappé deux coups à la porte."
+   },
+   "remarque": "nom « d'une fois » de طَرَقَ, moule فَعْلَة",
+   "theme": "actions"
   }
  ]
 }

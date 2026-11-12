@@ -1,0 +1,526 @@
+{
+  "id": "cite-08",
+  "etape": 4,
+  "ordre": 8,
+  "format": 3,
+  "titre": "« Il a frappé un coup » : le mafʿūl muṭlaq",
+  "objectif": "Renforcer un verbe, dire la manière ou le nombre de fois avec son nom d'action.",
+  "statut": "ia_non_verifie",
+  "lieu": "conteurs",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-07"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ"
+  ],
+  "schemes": [
+    "فَعْلَة"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Un bon conteur ne dit pas seulement « il a frappé » : il dit comment, et combien de fois."
+        },
+        {
+          "qui": "nadim",
+          "texte": "Pour cela, l'arabe répète le verbe sous la forme de son nom d'action."
+        }
+      ],
+      "objectif": "Employer le mafʿūl muṭlaq."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Combien de dirhams ? »",
+          "ar": "كَمْ …؟",
+          "choix_ar": [
+            "دِرْهَمًا",
+            "دَرَاهِمَ",
+            "دِرْهَمٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après كَمْ : singulier en -a (leçon 4.7)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَرَقَ",
+          "choix": [
+            "frapper (à la porte)",
+            "ouvrir",
+            "fermer"
+          ],
+          "reponse": 0,
+          "explication": "طَرَقَ veut dire « frapper (à la porte) »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le nom d'action de فَرِحَ est…",
+          "choix_ar": [
+            "فَرَحٌ",
+            "فَرِحٌ",
+            "فَرِحَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "فَرِحَ → فَرَحٌ (leçon 3.4)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "ar": "طَرَقَ بَاسِمٌ الْبَابَ طَرْقًا خَفِيفًا.",
+          "fr": "Bāsim a frappé doucement à la porte."
+        },
+        {
+          "qui": "basim",
+          "ar": "ثُمَّ طَرَقَ الْحَارِسُ الْبَابَ طَرْقَتَيْنِ.",
+          "fr": "Puis le gardien a frappé deux coups à la porte."
+        },
+        {
+          "qui": "nadim",
+          "ar": "وَفَرِحَ الطِّفْلُ فَرَحًا كَبِيرًا.",
+          "fr": "Et l'enfant s'est beaucoup réjoui."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Combien de coups le gardien a-t-il frappés ?",
+        "choix": [
+          "deux",
+          "un",
+          "trois"
+        ],
+        "reponse": 0,
+        "explication": "طَرْقَتَيْنِ : deux coups."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "mutlaq",
+        "marra",
+        "jiddan",
+        "tarqa"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مَرَّةٌ",
+        "choix": [
+          "fois",
+          "coup",
+          "porte"
+        ],
+        "reponse": 0,
+        "explication": "مَرَّةٌ veut dire « fois »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le mafʿūl muṭlaq",
+      "texte": "Le mafʿūl muṭlaq est le nom d'action du verbe lui-même, en -a : طَرَقَ الْبَابَ طَرْقًا. Seul, il insiste ; avec un adjectif ou un complément, il dit la manière ; au duel ou avec مَرَّةً, il compte.",
+      "exemples": [
+        "طَرَقَ الْبَابَ طَرْقًا",
+        "طَرْقًا خَفِيفًا",
+        "طَرْقَتَيْنِ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Bāsim a marché d'un pas rapide. »",
+        "ar": "مَشَى بَاسِمٌ … سَرِيعًا.",
+        "choix_ar": [
+          "مَشْيًا",
+          "مَشْيٌ",
+          "الْمَشْيِ"
+        ],
+        "reponse": 0,
+        "explication": "Le nom d'action de مَشَى, en -a : مَشْيًا."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Une fois, deux fois",
+      "texte": "Le moule فَعْلَة donne « une fois » : طَرْقَةٌ « un coup », au duel طَرْقَتَيْنِ « deux coups ». Pour les autres verbes, on emploie مَرَّةً, مَرَّتَيْنِ.",
+      "exemples": [
+        "طَرْقَةٌ",
+        "طَرْقَتَيْنِ",
+        "مَرَّتَيْنِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire طَرَقَ الْبَابَ طَرْقَتَيْنِ ?",
+        "choix": [
+          "Il a frappé deux coups à la porte.",
+          "Il a frappé à deux portes.",
+          "Il a frappé très fort."
+        ],
+        "reponse": 0,
+        "explication": "طَرْقَتَيْنِ : duel de طَرْقَةٌ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Pas un complément direct",
+      "texte": "Dans طَرَقَ الْبَابَ طَرْقًا, la porte est le complément (quoi) et طَرْقًا le mafʿūl muṭlaq (comment). On prend le nom d'action de la fiche du verbe.",
+      "exemples": [
+        "طَرَقَ الْبَابَ طَرْقًا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans جَلَسَ سَمِيرٌ جُلُوسَ الْكَاتِبِ, جُلُوسَ dit…",
+        "choix": [
+          "comment Samīr s'est assis",
+          "où Samīr s'est assis",
+          "qui s'est assis"
+        ],
+        "reponse": 0,
+        "explication": "« Il s'est assis comme un scribe » : la manière."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جِدًّا",
+          "choix": [
+            "très",
+            "un peu",
+            "jamais"
+          ],
+          "reponse": 0,
+          "explication": "جِدًّا veut dire « très »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَرْقَةٌ",
+          "choix": [
+            "un coup (frappé à la porte)",
+            "un chemin",
+            "une porte"
+          ],
+          "reponse": 0,
+          "explication": "طَرْقَةٌ veut dire « un coup (frappé à la porte) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُطْلَقٌ",
+          "choix": [
+            "(en grammaire) absolu ; مَفْعُولٌ مُطْلَقٌ",
+            "complément",
+            "condition"
+          ],
+          "reponse": 0,
+          "explication": "مُطْلَقٌ veut dire « (en grammaire) absolu ; مَفْعُولٌ مُطْلَقٌ »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « l'enfant s'est beaucoup réjoui » ?",
+          "choix_ar": [
+            "فَرِحَ الطِّفْلُ فَرَحًا كَبِيرًا",
+            "فَرِحَ الطِّفْلُ فَرِحًا كَبِيرًا",
+            "فَرِحَ الطِّفْلُ فَرَحٌ كَبِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "Nom d'action de فَرِحَ (فَرَحٌ) en -a, avec un adjectif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a frappé doucement à la porte. »",
+          "ar": "طَرَقَ بَاسِمٌ الْبَابَ … خَفِيفًا.",
+          "choix_ar": [
+            "طَرْقًا",
+            "طَرْقٌ",
+            "الطَّرْقَ"
+          ],
+          "reponse": 0,
+          "explication": "Mafʿūl muṭlaq : le nom d'action en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le gardien a frappé deux coups. »",
+          "ar": "طَرَقَ الْحَارِسُ الْبَابَ …",
+          "choix_ar": [
+            "طَرْقَتَيْنِ",
+            "طَرْقَتَانِ",
+            "طَرْقًا"
+          ],
+          "reponse": 0,
+          "explication": "Duel en -ayni : طَرْقَتَيْنِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chemin est très long. »",
+          "ar": "الطَّرِيقُ طَوِيلٌ …",
+          "choix_ar": [
+            "جِدًّا",
+            "مَرَّةً",
+            "كَثِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "« très » : جِدًّا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le mafʿūl muṭlaq est…",
+          "choix": [
+            "le nom d'action du verbe, en -a",
+            "le complément direct",
+            "un adjectif défini"
+          ],
+          "reponse": 0,
+          "explication": "طَرَقَ الْبَابَ طَرْقًا."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "À la porte du conteur",
+      "texte": "Nadīm raconte l'arrivée d'un visiteur. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "طَرَقَ بَاسِمٌ الْبَابَ طَرْقًا خَفِيفًا.",
+        "ثُمَّ طَرَقَ الْحَارِسُ الْبَابَ طَرْقَتَيْنِ.",
+        "جَلَسَ سَمِيرٌ جُلُوسَ الْكَاتِبِ، وَكَتَبَ الرِّسَالَةَ.",
+        "فَرِحَ بَاسِمٌ فَرَحًا كَبِيرًا، لِأَنَّ الرِّسَالَةَ طَوِيلَةٌ جِدًّا."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Comment Bāsim a-t-il frappé ?",
+          "choix": [
+            "doucement",
+            "très fort",
+            "trois fois"
+          ],
+          "reponse": 0,
+          "explication": "طَرْقًا خَفِيفًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment Samīr s'est-il assis ?",
+          "choix": [
+            "comme un scribe",
+            "seul",
+            "en riant"
+          ],
+          "reponse": 0,
+          "explication": "جُلُوسَ الْكَاتِبِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim a marché d'un pas rapide. » ?",
+          "choix_ar": [
+            "مَشَى بَاسِمٌ مَشْيًا سَرِيعًا.",
+            "مَشَى بَاسِمٌ الْمَشْيَ السَّرِيعُ.",
+            "مَشَى بَاسِمٌ مَشْيٌ سَرِيعٌ."
+          ],
+          "reponse": 0,
+          "explication": "Mafʿūl muṭlaq : مَشْيًا + adjectif en -a."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Le gardien a frappé deux coups à la porte. »",
+          "tuiles": [
+            "طَرْقَتَيْنِ",
+            "الْبَابَ",
+            "الْحَارِسُ",
+            "طَرَقَ",
+            "طَرْقَتَانِ"
+          ],
+          "solution": [
+            "طَرَقَ",
+            "الْحَارِسُ",
+            "الْبَابَ",
+            "طَرْقَتَيْنِ"
+          ],
+          "explication": "Le mafʿūl muṭlaq est en -a ; au duel : -ayni."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Samīr s'est assis comme un scribe. »",
+          "ar": "جَلَسَ سَمِيرٌ … الْكَاتِبِ.",
+          "choix_ar": [
+            "جُلُوسَ",
+            "جُلُوسُ",
+            "جَالِسَ"
+          ],
+          "reponse": 0,
+          "explication": "Nom d'action de جَلَسَ en -a, suivi d'un complément."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَرَّةٌ",
+          "choix": [
+            "fois",
+            "porte",
+            "jour"
+          ],
+          "reponse": 0,
+          "explication": "مَرَّةٌ veut dire « fois »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جِدًّا",
+          "choix": [
+            "très",
+            "jamais",
+            "parfois"
+          ],
+          "reponse": 0,
+          "explication": "جِدًّا veut dire « très »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim a frappé doucement à la porte » ?",
+          "choix_ar": [
+            "طَرَقَ بَاسِمٌ الْبَابَ طَرْقًا خَفِيفًا",
+            "طَرَقَ بَاسِمٌ الْبَابَ طَرْقٌ خَفِيفٌ",
+            "طَرَقَ بَاسِمٌ الْبَابَ الْخَفِيفَ"
+          ],
+          "reponse": 0,
+          "explication": "Mafʿūl muṭlaq en -a, avec un adjectif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'enfant s'est beaucoup réjoui. »",
+          "ar": "فَرِحَ الطِّفْلُ … كَبِيرًا.",
+          "choix_ar": [
+            "فَرَحًا",
+            "فَرِحًا",
+            "فَرَحٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le nom d'action de فَرِحَ est فَرَحٌ ; فَرِحًا serait un ḥāl."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a frappé deux coups. »",
+          "ar": "طَرَقَ الْبَابَ …",
+          "choix_ar": [
+            "طَرْقَتَيْنِ",
+            "طَرْقَةً",
+            "طَرْقًا"
+          ],
+          "reponse": 0,
+          "explication": "Deux coups : duel."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chemin est très long. »",
+          "ar": "الطَّرِيقُ طَوِيلٌ …",
+          "choix_ar": [
+            "جِدًّا",
+            "مَرَّةً",
+            "طَرْقًا"
+          ],
+          "reponse": 0,
+          "explication": "« très » : جِدًّا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans طَرَقَ الْبَابَ طَرْقًا, le complément direct est…",
+          "choix": [
+            "الْبَابَ",
+            "طَرْقًا",
+            "طَرَقَ"
+          ],
+          "reponse": 0,
+          "explication": "طَرْقًا est le mafʿūl muṭlaq."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le moule فَعْلَة donne…",
+          "choix": [
+            "« une fois »",
+            "un lieu",
+            "un instrument"
+          ],
+          "reponse": 0,
+          "explication": "طَرْقَةٌ : un coup."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans جَلَسَ جُلُوسَ الْكَاتِبِ, on dit…",
+          "choix": [
+            "la manière",
+            "le lieu",
+            "le nombre de fois"
+          ],
+          "reponse": 0,
+          "explication": "« comme un scribe »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَمْ",
+          "choix": [
+            "combien ?",
+            "comment ?",
+            "quand ?"
+          ],
+          "reponse": 0,
+          "explication": "كَمْ veut dire « combien ? ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Samīr est plus âgé que Bāsim. »",
+          "ar": "سَمِيرٌ أَكْبَرُ … مِنْ بَاسِمٍ.",
+          "choix_ar": [
+            "سِنًّا",
+            "سِنٌّ",
+            "السِّنُّ"
+          ],
+          "reponse": 0,
+          "explication": "Tamyīz : -a.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَزِينٌ",
+          "choix": [
+            "triste",
+            "content",
+            "seul"
+          ],
+          "reponse": 0,
+          "explication": "حَزِينٌ veut dire « triste ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu renforces un verbe avec son nom d'action (mafʿūl muṭlaq), tu dis la manière et tu comptes les fois.",
+      "suite": "Prochaine leçon : dire pourquoi on agit, avec un nom d'action."
+    }
+  ]
+}

@@ -77,8 +77,8 @@
       "repliques": [
         {
           "qui": "nadim",
-          "ar": "كَيْفَ رَجَعَ بَاسِمٌ مِنَ السُّوقِ؟",
-          "fr": "Comment Bāsim est-il revenu du marché ?"
+          "ar": "كَيْفَ رَجَعْتَ مِنَ السُّوقِ يَا بَاسِمُ؟",
+          "fr": "Comment es-tu revenu du marché, Bāsim ?"
         },
         {
           "qui": "basim",
@@ -151,7 +151,7 @@
     {
       "type": "regle",
       "titre": "Ḥāl ou adjectif ?",
-      "texte": "رَجَعَ الْحَارِسُ الْفَرِحُ : « le gardien joyeux est revenu » (adjectif défini). رَجَعَ الْحَارِسُ فَرِحًا : « le gardien est revenu joyeux » (ḥāl).",
+      "texte": "رَجَعَ الْحَارِسُ الْفَرِحُ « le gardien joyeux est revenu » (adjectif) ; رَجَعَ الْحَارِسُ فَرِحًا « il est revenu joyeux » (ḥāl). Le ḥāl peut aussi dire l'état du complément : شَرِبْتُ الْمَاءَ بَارِدًا.",
       "exemples": [
         "رَجَعَ الْحَارِسُ الْفَرِحُ",
         "رَجَعَ الْحَارِسُ فَرِحًا"
@@ -333,7 +333,7 @@
             "رَجَعَ بَاسِمٌ فَرِحٌ."
           ],
           "reponse": 0,
-          "explication": "Ḥāl : indéfini en -a."
+          "explication": "فَرِحًا dit comment il est revenu ; الْفَرِحُ dirait « Bāsim le joyeux » (adjectif)."
         },
         {
           "type": "ordonner",
@@ -353,11 +353,11 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « J'ai bu l'eau fraîche. »",
+          "consigne": "Complète : « J'ai bu l'eau alors qu'elle était fraîche. »",
           "ar": "شَرِبْتُ الْمَاءَ …",
           "choix_ar": [
             "بَارِدًا",
-            "الْبَارِدُ",
+            "الْبَارِدَ",
             "بَارِدٌ"
           ],
           "reponse": 0,
@@ -456,7 +456,7 @@
           "type": "qcm",
           "consigne": "Le ḥāl est…",
           "choix": [
-            "indéfini, en -a",
+            "le plus souvent indéfini, en -a",
             "défini, en -u",
             "toujours au génitif"
           ],
