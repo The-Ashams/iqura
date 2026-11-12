@@ -36,7 +36,7 @@
       "exercices": [
         {
           "type": "completer",
-          "consigne": "Complète : « On dit que le chemin est long. »",
+          "consigne": "Complète : « Il a dit que le chemin est long. »",
           "ar": "قَالَ … الطَّرِيقَ طَوِيلٌ.",
           "choix_ar": [
             "إِنَّ",
@@ -52,7 +52,7 @@
           "ar": "لَوْلَا الْبَرْدُ …",
           "choix_ar": [
             "لَجَلَسْنَا",
-            "جَلَسْنَا",
+            "نَجْلِسُ",
             "فَجَلَسْنَا"
           ],
           "reponse": 0,
@@ -148,7 +148,7 @@
     {
       "type": "regle",
       "titre": "Rapporter un ordre : أَنْ",
-      "texte": "Pour rapporter un ordre ou une demande : أَنْ + verbe au subjonctif : أَمَرَهُ أَنْ يَكْتُبَ.",
+      "texte": "Pour rapporter un ordre ou une demande : أَنْ + verbe au subjonctif : أَمَرَهُ نَدِيمٌ أَنْ يَكْتُبَ.",
       "exemples": [
         "أَمَرَ التَّاجِرُ الْحَمَّالَ أَنْ يَحْمِلَ الْأَكْيَاسَ"
       ],
@@ -168,7 +168,7 @@
     {
       "type": "regle",
       "titre": "Le temps reste celui de la parole",
-      "texte": "L'arabe garde le temps de la parole rapportée : أَخْبَرَنَا أَنَّهُ مَشْغُولٌ « il nous a appris qu'il était occupé ». Après قَالَ, on garde إِنَّ.",
+      "texte": "L'arabe garde le temps de la parole rapportée : أَخْبَرَنَا أَنَّهُ مَشْغُولٌ « il nous a appris qu'il était occupé ».",
       "exemples": [
         "أَخْبَرَنَا أَنَّهُ مَشْغُولٌ"
       ],
@@ -216,7 +216,7 @@
           "consigne": "Comment dit-on « Nadīm a mentionné que la lettre était longue » ?",
           "choix_ar": [
             "ذَكَرَ نَدِيمٌ أَنَّ الرِّسَالَةَ طَوِيلَةٌ",
-            "ذَكَرَ نَدِيمٌ أَنْ الرِّسَالَةُ طَوِيلَةٌ",
+            "ذَكَرَ نَدِيمٌ أَنَّ الرِّسَالَةُ طَوِيلَةٌ",
             "ذَكَرَ نَدِيمٌ إِنَّ الرِّسَالَةَ طَوِيلَةٌ"
           ],
           "reponse": 0,
@@ -236,8 +236,8 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Le marchand a ordonné au porteur de porter les sacs. »",
-          "ar": "أَمَرَ التَّاجِرُ الْحَمَّالَ … يَحْمِلَ الْأَكْيَاسَ.",
+          "consigne": "Complète : « Le gardien a ordonné à l'enfant de s'asseoir. »",
+          "ar": "أَمَرَ الْحَارِسُ الطِّفْلَ … يَجْلِسَ.",
           "choix_ar": [
             "أَنْ",
             "أَنَّ",
@@ -325,7 +325,7 @@
           "consigne": "Comment dit-on « Je croyais que la porte était ouverte. » ?",
           "choix_ar": [
             "ظَنَنْتُ أَنَّ الْبَابَ مَفْتُوحٌ.",
-            "ظَنَنْتُ أَنْ الْبَابُ مَفْتُوحٌ.",
+            "ظَنَنْتُ أَنَّ الْبَابُ مَفْتُوحٌ.",
             "ظَنَنْتُ إِنَّ الْبَابَ مَفْتُوحًا."
           ],
           "reponse": 0,
@@ -396,7 +396,7 @@
           "consigne": "Comment dit-on « j'ai entendu dire que le marchand était parti » ?",
           "choix_ar": [
             "سَمِعْتُ أَنَّ التَّاجِرَ سَافَرَ",
-            "سَمِعْتُ أَنْ التَّاجِرُ سَافَرَ",
+            "سَمِعْتُ أَنَّ التَّاجِرُ سَافَرَ",
             "سَمِعْتُ إِنَّ التَّاجِرَ سَافَرَ"
           ],
           "reponse": 0,
@@ -416,8 +416,8 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Il a ordonné au porteur de porter les sacs. »",
-          "ar": "أَمَرَ الْحَمَّالَ أَنْ … الْأَكْيَاسَ.",
+          "consigne": "Complète : « Le marchand a ordonné au porteur de porter les sacs. »",
+          "ar": "أَمَرَ التَّاجِرُ الْحَمَّالَ أَنْ … الْأَكْيَاسَ.",
           "choix_ar": [
             "يَحْمِلَ",
             "يَحْمِلُ",
@@ -469,7 +469,7 @@
             "Nous lui avons appris qu'il était occupé."
           ],
           "reponse": 0,
-          "explication": "Le temps reste celui de la parole."
+          "explication": "أَخْبَرَنَا : il nous a appris ; أَنَّهُ : qu'il (était)."
         },
         {
           "type": "sens",
@@ -490,11 +490,11 @@
           "ar": "لَوْ دَرَسْتَ …",
           "choix_ar": [
             "لَفَهِمْتَ",
-            "فَهِمْتَ",
+            "سَتَفْهَمُ",
             "فَافْهَمْ"
           ],
           "reponse": 0,
-          "explication": "Réponse de لَوْ : لَـ.",
+          "explication": "La réponse de لَوْ prend le plus souvent لَـ.",
           "revision": true
         },
         {

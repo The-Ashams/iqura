@@ -36,8 +36,8 @@
       "exercices": [
         {
           "type": "completer",
-          "consigne": "Complète : « Il a ordonné au porteur de porter les sacs. »",
-          "ar": "أَمَرَ الْحَمَّالَ أَنْ … الْأَكْيَاسَ.",
+          "consigne": "Complète : « Le marchand a ordonné au porteur de porter les sacs. »",
+          "ar": "أَمَرَ التَّاجِرُ الْحَمَّالَ أَنْ … الْأَكْيَاسَ.",
           "choix_ar": [
             "يَحْمِلَ",
             "يَحْمِلُ",
@@ -108,7 +108,7 @@
         "hina",
         "lamma",
         "mata",
-        "layl",
+        "laylun",
         "intaha",
         "istayqaza"
       ],
@@ -255,7 +255,7 @@
           "ar": "رَجَعَ التَّاجِرُ بَعْدَ أَنْ … الصُّوفَ.",
           "choix_ar": [
             "بَاعَ",
-            "يَبِيعَ",
+            "يَبِيعُ",
             "بِعْ"
           ],
           "reponse": 0,
@@ -278,7 +278,7 @@
           "consigne": "Après قَبْلَ أَنْ, le verbe est…",
           "choix": [
             "au subjonctif",
-            "au passé",
+            "à l'indicatif (-u)",
             "au jussif"
           ],
           "reponse": 0,
@@ -293,8 +293,8 @@
       "phrases": [
         "لَمَّا وَصَلْنَا إِلَى الْمَدِينَةِ، كَانَ الْبَابُ مَفْتُوحًا.",
         "نِمْنَا فِي اللَّيْلِ، ثُمَّ اسْتَيْقَظْتُ فِي الصَّبَاحِ.",
-        "حِينَ انْتَهَى الدَّرْسُ، خَرَجَ الطُّلَّابُ إِلَى الْحَدِيقَةِ.",
-        "سَأَكْتُبُ لَكَ قَبْلَ أَنْ أُسَافِرَ."
+        "حِينَ انْتَهَى السَّفَرُ، جَلَسْنَا فِي الْحَدِيقَةِ.",
+        "سَأَكْتُبُ لَكَ رِسَالَةً أُخْرَى قَبْلَ أَنْ أَرْجِعَ."
       ],
       "questions": [
         {
@@ -310,14 +310,14 @@
         },
         {
           "type": "qcm",
-          "consigne": "Quand Salmā écrira-t-elle ?",
+          "consigne": "Quand Salmā écrira-t-elle une autre lettre ?",
           "choix": [
-            "avant de partir",
-            "après être partie",
+            "avant de rentrer",
+            "après être rentrée",
             "la nuit"
           ],
           "reponse": 0,
-          "explication": "قَبْلَ أَنْ أُسَافِرَ."
+          "explication": "قَبْلَ أَنْ أَرْجِعَ."
         }
       ]
     },
@@ -411,7 +411,7 @@
           "choix_ar": [
             "لَمَّا وَصَلْنَا، نِمْنَا",
             "لَمَّا نَصِلُ، نَنَامُ",
-            "مَتَى وَصَلْنَا، نِمْنَا"
+            "قَبْلَ وَصَلْنَا، نِمْنَا"
           ],
           "reponse": 0,
           "explication": "لَمَّا + passé."
@@ -454,11 +454,11 @@
         },
         {
           "type": "qcm",
-          "consigne": "Devant un verbe, on dit…",
+          "consigne": "Pour dire « avant » devant un verbe, on dit…",
           "choix": [
             "قَبْلَ أَنْ",
             "قَبْلَ seul",
-            "لَمَّا أَنْ"
+            "قَبْلَ أَنَّ"
           ],
           "reponse": 0,
           "explication": "قَبْلَ أَنْ تُسَافِرَ."

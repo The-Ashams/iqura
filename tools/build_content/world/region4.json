@@ -40,7 +40,8 @@
       ],
       "lecons": [
         3,
-        4
+        4,
+        5
       ],
       "scene": "scene_messagers",
       "sol": 82,
@@ -59,7 +60,9 @@
         72,
         32
       ],
-      "lecons": [],
+      "lecons": [
+        6
+      ],
       "scene": "scene_conteurs",
       "sol": 84,
       "tranche_j1a": true,

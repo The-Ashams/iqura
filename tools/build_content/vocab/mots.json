@@ -7649,7 +7649,7 @@
   {
    "id": "shart",
    "ar": "شَرْطٌ",
-   "translit": "šarṭ",
+   "translit": "šarṭun",
    "fr": "condition",
    "nature": "nom",
    "lecon": "cite-01",
@@ -7666,7 +7666,7 @@
   {
    "id": "shadid",
    "ar": "شَدِيدٌ",
-   "translit": "šadīd",
+   "translit": "šadīdun",
    "fr": "fort, intense",
    "nature": "adjectif",
    "lecon": "cite-01",
@@ -7729,7 +7729,7 @@
   {
    "id": "mal",
    "ar": "مَالٌ",
-   "translit": "māl",
+   "translit": "mālun",
    "fr": "argent, biens",
    "nature": "nom",
    "lecon": "cite-02",
@@ -7837,7 +7837,7 @@
    "ar": "حِينَ",
    "translit": "ḥīna",
    "fr": "quand, au moment où",
-   "nature": "particule",
+   "nature": "adverbe",
    "lecon": "cite-04",
    "source_sens": "rédigé par IA",
    "lemme": "Hiyn",
@@ -7879,9 +7879,9 @@
    "theme": "questions"
   },
   {
-   "id": "layl",
+   "id": "laylun",
    "ar": "لَيْلٌ",
-   "translit": "layl",
+   "translit": "laylun",
    "fr": "nuit",
    "nature": "nom",
    "lecon": "cite-04",
@@ -7891,14 +7891,13 @@
    "exemple": {
     "ar": "نَامَ الْمُسَافِرُونَ فِي اللَّيْلِ.",
     "fr": "Les voyageurs ont dormi la nuit."
-   },
-   "theme": "temps"
+   }
   },
   {
    "id": "intaha",
    "ar": "انْتَهَى",
    "translit": "intahā",
-   "fr": "se terminer, finir",
+   "fr": "se terminer, finir ; cesser",
    "nature": "verbe",
    "lecon": "cite-04",
    "source_sens": "rédigé par IA",
@@ -7938,6 +7937,216 @@
    ],
    "remarque": "forme X de la racine ي ق ظ",
    "theme": "actions"
+  },
+  {
+   "id": "li_anna",
+   "ar": "لِأَنَّ",
+   "translit": "li-anna",
+   "fr": "parce que",
+   "nature": "particule",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "تَأَخَّرْتُ لِأَنَّ الْجَمَلَ مَرِيضٌ.",
+    "fr": "J'ai été en retard parce que le chameau est malade."
+   },
+   "remarque": "لِـ + أَنَّ : suivi d'un nom en -a",
+   "theme": "particules"
+  },
+  {
+   "id": "li_but",
+   "ar": "لِـ",
+   "translit": "li",
+   "fr": "pour (que), suivi d'un verbe au subjonctif",
+   "nature": "particule",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "جَلَسَ بَاسِمٌ لِيَسْمَعَ الْقِصَّةَ.",
+    "fr": "Bāsim s'est assis pour écouter l'histoire."
+   },
+   "remarque": "devant un nom, لِـ veut dire « à, pour » (leçon 2.15)",
+   "theme": "particules"
+  },
+  {
+   "id": "hatta",
+   "ar": "حَتَّى",
+   "translit": "ḥattā",
+   "fr": "jusqu'à ; jusqu'à ce que, pour que",
+   "nature": "particule",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "lemme": "Hat~aY`",
+   "exemple": {
+    "ar": "عَمِلَ النَّجَّارُ حَتَّى الْمَسَاءِ.",
+    "fr": "Le menuisier a travaillé jusqu'au soir."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "limadha",
+   "ar": "لِمَاذَا",
+   "translit": "limāḏā",
+   "fr": "pourquoi ?",
+   "nature": "interrogatif",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "lemme": "maA*aA",
+   "exemple": {
+    "ar": "لِمَاذَا تَأَخَّرْتَ؟",
+    "fr": "Pourquoi es-tu en retard ?"
+   },
+   "remarque": "لِـ + مَاذَا",
+   "theme": "questions"
+  },
+  {
+   "id": "sababun",
+   "ar": "سَبَبٌ",
+   "translit": "sababun",
+   "fr": "cause, raison",
+   "nature": "nom",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "sbb",
+   "exemple": {
+    "ar": "مَا سَبَبُ التَّأَخُّرِ؟",
+    "fr": "Quelle est la cause du retard ?"
+   }
+  },
+  {
+   "id": "jaiE",
+   "ar": "جَائِعٌ",
+   "translit": "ǧāʾiʿun",
+   "fr": "qui a faim",
+   "nature": "adjectif",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jwE",
+   "exemple": {
+    "ar": "الطِّفْلُ جَائِعٌ.",
+    "fr": "L'enfant a faim."
+   },
+   "theme": "corps"
+  },
+  {
+   "id": "hal_etat",
+   "ar": "حَالٌ",
+   "translit": "ḥālun",
+   "fr": "état ; (en grammaire) le ḥāl",
+   "nature": "nom",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hwl",
+   "exemple": {
+    "ar": "مَا حَالُكَ؟",
+    "fr": "Comment vas-tu ?"
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "kayfa",
+   "ar": "كَيْفَ",
+   "translit": "kayfa",
+   "fr": "comment ?",
+   "nature": "interrogatif",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "lemme": "kayof",
+   "exemple": {
+    "ar": "كَيْفَ رَجَعَتْ سَلْمَى؟",
+    "fr": "Comment Salmā est-elle revenue ?"
+   },
+   "theme": "questions"
+  },
+  {
+   "id": "dahika",
+   "ar": "ضَحِكَ",
+   "translit": "ḍaḥika",
+   "fr": "rire",
+   "nature": "verbe",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "passe": "ضَحِكَ",
+   "inaccompli": "يَضْحَكُ",
+   "exemple": {
+    "ar": "ضَحِكَ الطِّفْلُ.",
+    "fr": "L'enfant a ri."
+   },
+   "racine": "DHk",
+   "fige": true,
+   "formes": [],
+   "theme": "actions"
+  },
+  {
+   "id": "dahik",
+   "ar": "ضَاحِكٌ",
+   "translit": "ḍāḥikun",
+   "fr": "qui rit, riant",
+   "nature": "adjectif",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "DaAHik",
+   "exemple": {
+    "ar": "دَخَلَ الطِّفْلُ ضَاحِكًا.",
+    "fr": "L'enfant est entré en riant."
+   },
+   "theme": "qualites"
+  },
+  {
+   "id": "masrur",
+   "ar": "مَسْرُورٌ",
+   "translit": "masrūrun",
+   "fr": "content",
+   "nature": "adjectif",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "masoruwr",
+   "exemple": {
+    "ar": "بَاسِمٌ مَسْرُورٌ.",
+    "fr": "Bāsim est content."
+   },
+   "theme": "qualites"
+  },
+  {
+   "id": "hazin",
+   "ar": "حَزِينٌ",
+   "translit": "ḥazīnun",
+   "fr": "triste",
+   "nature": "adjectif",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hzn",
+   "exemple": {
+    "ar": "الشَّيْخُ حَزِينٌ.",
+    "fr": "Le vieil homme est triste."
+   },
+   "theme": "qualites"
+  },
+  {
+   "id": "wahdahu",
+   "ar": "وَحْدَهُ",
+   "translit": "waḥdahu",
+   "fr": "seul (lui seul)",
+   "nature": "adverbe",
+   "lecon": "cite-06",
+   "source_sens": "rédigé par IA",
+   "lemme": "waHod",
+   "fige": true,
+   "formes": [
+    "وَحْدَهَا",
+    "وَحْدِي"
+   ],
+   "exemple": {
+    "ar": "جَلَسَ الشَّيْخُ وَحْدَهُ.",
+    "fr": "Le vieil homme s'est assis seul."
+   },
+   "theme": "particules"
   }
  ]
 }

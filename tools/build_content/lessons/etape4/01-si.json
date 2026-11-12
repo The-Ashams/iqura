@@ -150,7 +150,7 @@
     {
       "type": "regle",
       "titre": "Quand la réponse prend فَـ",
-      "texte": "La réponse prend فَـ quand elle n'est pas un simple verbe : un ordre, une défense, سَـ ou une phrase nominale. Un simple verbe passé n'en prend pas.",
+      "texte": "La réponse prend فَـ quand elle n'est pas un simple verbe : un ordre, une défense, سَـ ou une phrase nominale. Un simple verbe, au passé ou au jussif après إِنْ, n'en prend pas.",
       "exemples": [
         "فَاكْتُبْ",
         "فَلَا تُسَافِرْ",
@@ -234,7 +234,7 @@
           "choix_ar": [
             "فَسَنُسَافِرُ",
             "سَنُسَافِرُ",
-            "سَافَرْنَا"
+            "نُسَافِرَ"
           ],
           "reponse": 0,
           "explication": "Réponse avec سَـ : فَـ est nécessaire."
@@ -245,11 +245,11 @@
           "ar": "إِذَا وَصَلَتِ الْقَافِلَةُ … الْحَارِسُ الْبَابَ.",
           "choix_ar": [
             "فَتَحَ",
-            "فَيَفْتَحُ",
+            "فَتَحَتْ",
             "فَافْتَحْ"
           ],
           "reponse": 0,
-          "explication": "Simple verbe au passé en réponse : pas de فَـ."
+          "explication": "Simple verbe au passé en réponse : pas de فَـ ; فَتَحَتْ ne s'accorde pas avec الْحَارِسُ."
         },
         {
           "type": "completer",
@@ -270,7 +270,7 @@
           "choix_ar": [
             "نَفْرَحْ",
             "نَفْرَحُ",
-            "فَرِحْنَا"
+            "نَفْرَحَ"
           ],
           "reponse": 0,
           "explication": "Après إِنْ, la réponse au jussif : نَفْرَحْ."
@@ -291,7 +291,7 @@
     {
       "type": "lecture",
       "titre": "À la porte de la Cité",
-      "texte": "Nadīm explique les règles de la porte. Lis ; touche un mot pour voir son sens.",
+      "texte": "Nadīm donne des conseils à l'entrée de la Cité. Lis ; touche un mot pour voir son sens.",
       "phrases": [
         "إِذَا وَصَلَتِ الْقَافِلَةُ فَتَحَ الْحَارِسُ الْبَابَ.",
         "إِذَا كَانَ الْبَرْدُ شَدِيدًا فَلَا تُسَافِرْ.",
@@ -339,7 +339,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Écris dans l'ordre إِنْ, le verbe, la réponse : « Si tu étudies, tu comprendras. »",
+          "consigne": "Remets dans l'ordre : « Si tu étudies, tu comprendras. »",
           "tuiles": [
             "تَفْهَمْ",
             "إِنْ",
@@ -355,7 +355,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Si le froid est vif, reste à la maison. »",
+          "consigne": "Complète : « Si le froid est vif, reste assis à la maison. »",
           "ar": "إِنْ كَانَ الْبَرْدُ شَدِيدًا … فِي الْبَيْتِ.",
           "choix_ar": [
             "فَاجْلِسْ",
@@ -437,7 +437,7 @@
           "choix_ar": [
             "فَتَحَ",
             "فَافْتَحْ",
-            "فَسَيَفْتَحُ"
+            "يَفْتَحَ"
           ],
           "reponse": 0,
           "explication": "Simple verbe passé : pas de فَـ."
