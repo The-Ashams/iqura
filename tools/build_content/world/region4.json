@@ -83,7 +83,9 @@
         100,
         58
       ],
-      "lecons": [],
+      "lecons": [
+        10
+      ],
       "scene": "scene_jardin_maximes",
       "sol": 84,
       "tranche_j1a": true,

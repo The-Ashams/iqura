@@ -1,0 +1,530 @@
+{
+  "id": "cite-10",
+  "etape": 4,
+  "ordre": 10,
+  "format": 3,
+  "titre": "Sauf, excepté",
+  "objectif": "Exclure un élément avec إِلَّا et غَيْرُ ; dire « seulement » avec une négation.",
+  "statut": "ia_non_verifie",
+  "lieu": "jardin_maximes",
+  "maitre": "hala",
+  "prerequis": [
+    "cite-09"
+  ],
+  "apercu": [
+    "هَالَةُ",
+    "بَاسِمٌ",
+    "سَمِيرٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hala",
+          "texte": "Bienvenue au Jardin des maximes : je suis Hāla, je garde les pierres gravées et les comptes."
+        },
+        {
+          "qui": "hala",
+          "texte": "Tous les étudiants sont venus, sauf un : apprenons à dire « sauf »."
+        }
+      ],
+      "objectif": "Employer إِلَّا et غَيْرُ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'enfant a pleuré de peur du chien. »",
+          "ar": "بَكَى الطِّفْلُ … مِنَ الْكَلْبِ.",
+          "choix_ar": [
+            "خَوْفًا",
+            "خَوْفٌ",
+            "خَافَ"
+          ],
+          "reponse": 0,
+          "explication": "Mafʿūl li-aǧlih (leçon 4.9)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'y a pas de pain dans le sac. »",
+          "ar": "… فِي الْكِيسِ خُبْزٌ.",
+          "choix_ar": [
+            "مَا",
+            "لَمْ",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "مَا nie une phrase sans verbe ici : مَا فِي الْكِيسِ خُبْزٌ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الطُّلَّابُ",
+          "choix": [
+            "les étudiants",
+            "les maîtres",
+            "les marchands"
+          ],
+          "reponse": 0,
+          "explication": "الطُّلَّابُ veut dire « les étudiants »."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hala",
+          "ar": "حَضَرَ الطُّلَّابُ إِلَّا سَمِيرًا.",
+          "fr": "Les étudiants sont venus, sauf Samīr."
+        },
+        {
+          "qui": "basim",
+          "ar": "مَا حَضَرَ أَحَدٌ مِنَ التُّجَّارِ إِلَّا أَبُو سَمِيرٍ.",
+          "fr": "Aucun des marchands n'est venu, sauf Abū Samīr."
+        },
+        {
+          "qui": "hala",
+          "ar": "قَرَأْتُ الرَّسَائِلَ إِلَّا رِسَالَةَ سَلْمَى.",
+          "fr": "J'ai lu les lettres, sauf celle de Salmā."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qui n'est pas venu parmi les étudiants ?",
+        "choix": [
+          "Samīr",
+          "Bāsim",
+          "Abū Samīr"
+        ],
+        "reponse": 0,
+        "explication": "إِلَّا سَمِيرًا."
+      },
+      "apercu": [
+        "سَلْمَى"
+      ]
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "illa",
+        "ghayr",
+        "kull",
+        "ahad",
+        "hadara",
+        "istithna"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "أَحَدٌ",
+        "choix": [
+          "quelqu'un ; (avec une négation) personne",
+          "un seul jour",
+          "tous"
+        ],
+        "reponse": 0,
+        "explication": "أَحَدٌ veut dire « quelqu'un ; (avec une négation) personne »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "إِلَّا après une phrase complète",
+      "texte": "Après une phrase complète et affirmative, le nom après إِلَّا est en -a : حَضَرَ الطُّلَّابُ إِلَّا سَمِيرًا. غَيْرُ prend ce même cas, et le nom qui le suit est au génitif : غَيْرَ سَمِيرٍ.",
+      "exemples": [
+        "حَضَرَ الطُّلَّابُ إِلَّا سَمِيرًا",
+        "حَضَرَ الطُّلَّابُ غَيْرَ سَمِيرٍ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Les voyageurs ont dormi, sauf le gardien. »",
+        "ar": "نَامَ الْمُسَافِرُونَ إِلَّا …",
+        "choix_ar": [
+          "الْحَارِسَ",
+          "الْحَارِسُ",
+          "الْحَارِسِ"
+        ],
+        "reponse": 0,
+        "explication": "Phrase complète et affirmative : -a."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "إِلَّا après une négation : « seulement »",
+      "texte": "Après une négation, إِلَّا veut dire « seulement », et le nom garde le cas de sa fonction : مَا حَضَرَ إِلَّا بَاسِمٌ « seul Bāsim est venu ».",
+      "exemples": [
+        "مَا حَضَرَ إِلَّا بَاسِمٌ",
+        "مَا فِي الْكِيسِ إِلَّا دِرْهَمٌ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Il n'y a qu'un dirham dans la bourse. »",
+        "ar": "مَا فِي الْكِيسِ إِلَّا …",
+        "choix_ar": [
+          "دِرْهَمٌ",
+          "دِرْهَمًا",
+          "دِرْهَمٍ"
+        ],
+        "reponse": 0,
+        "explication": "Après la négation, le nom garde son cas : sujet, -u."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "كُلٌّ et أَحَدٌ",
+      "texte": "كُلُّ + pluriel défini veut dire « tous » : كُلُّ الطُّلَّابِ. أَحَدٌ veut dire « quelqu'un », et « personne » avec une négation : مَا حَضَرَ أَحَدٌ.",
+      "exemples": [
+        "كُلُّ الطُّلَّابِ",
+        "مَا حَضَرَ أَحَدٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire مَا حَضَرَ أَحَدٌ ?",
+        "choix": [
+          "Personne n'est venu.",
+          "Quelqu'un est venu.",
+          "Tous sont venus."
+        ],
+        "reponse": 0,
+        "explication": "أَحَدٌ avec une négation : « personne »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِلَّا",
+          "choix": [
+            "sauf ; (après une négation) seulement",
+            "si",
+            "aussi"
+          ],
+          "reponse": 0,
+          "explication": "إِلَّا veut dire « sauf ; (après une négation) seulement »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "غَيْرُ",
+          "choix": [
+            "autre que, sauf",
+            "tout",
+            "avec"
+          ],
+          "reponse": 0,
+          "explication": "غَيْرُ veut dire « autre que, sauf »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَضَرَ",
+          "choix": [
+            "être présent, venir (à une réunion)",
+            "partir",
+            "dormir"
+          ],
+          "reponse": 0,
+          "explication": "حَضَرَ veut dire « être présent, venir (à une réunion) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai lu les lettres, sauf celle de Hāla » ?",
+          "choix_ar": [
+            "قَرَأْتُ الرَّسَائِلَ إِلَّا رِسَالَةَ هَالَةَ",
+            "قَرَأْتُ الرَّسَائِلَ إِلَّا رِسَالَةُ هَالَةَ",
+            "قَرَأْتُ الرَّسَائِلَ غَيْرَ رِسَالَةَ هَالَةَ"
+          ],
+          "reponse": 0,
+          "explication": "Après إِلَّا : -a ; après غَيْرَ, le nom est au génitif (رِسَالَةِ)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les étudiants sont venus, sauf Samīr. »",
+          "ar": "حَضَرَ الطُّلَّابُ غَيْرَ …",
+          "choix_ar": [
+            "سَمِيرٍ",
+            "سَمِيرًا",
+            "سَمِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après غَيْرَ : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Personne n'est venu, sauf Bāsim. »",
+          "ar": "مَا حَضَرَ أَحَدٌ إِلَّا …",
+          "choix_ar": [
+            "بَاسِمٌ",
+            "بَاسِمًا",
+            "بَاسِمٍ"
+          ],
+          "reponse": 0,
+          "explication": "Phrase niée : le nom garde le cas de sa fonction (sujet, -u)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je veux un autre vêtement que le rouge. »",
+          "ar": "أُرِيدُ ثَوْبًا … الثَّوْبِ الْأَحْمَرِ.",
+          "choix_ar": [
+            "غَيْرَ",
+            "إِلَّا",
+            "كُلَّ"
+          ],
+          "reponse": 0,
+          "explication": "« autre que » : غَيْرَ + génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Tous les étudiants sont venus. »",
+          "ar": "حَضَرَ … الطُّلَّابِ.",
+          "choix_ar": [
+            "كُلُّ",
+            "كُلَّ",
+            "أَحَدُ"
+          ],
+          "reponse": 0,
+          "explication": "كُلُّ est le sujet : -u, suivi du pluriel défini."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La réunion du jardin",
+      "texte": "Hāla raconte une réunion au jardin. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "حَضَرَ كُلُّ الطُّلَّابِ إِلَّا سَمِيرًا، لِأَنَّهُ مَرِيضٌ.",
+        "قَرَأَتْ هَالَةُ الرَّسَائِلَ كُلَّهَا إِلَّا رِسَالَةَ سَلْمَى.",
+        "مَا فِي السَّلَّةِ إِلَّا تَمْرٌ.",
+        "أَرَادَ بَاسِمٌ خُبْزًا، فَطَلَبَ طَعَامًا غَيْرَ التَّمْرِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi Samīr n'est-il pas venu ?",
+          "choix": [
+            "parce qu'il est malade",
+            "parce qu'il est en voyage",
+            "parce qu'il dort"
+          ],
+          "reponse": 0,
+          "explication": "لِأَنَّهُ مَرِيضٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'y a-t-il dans le panier ?",
+          "choix": [
+            "seulement des dattes",
+            "du pain et des dattes",
+            "rien"
+          ],
+          "reponse": 0,
+          "explication": "مَا فِي السَّلَّةِ إِلَّا تَمْرٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Il n'y a qu'un dirham dans la bourse. » ?",
+          "choix_ar": [
+            "مَا فِي الْكِيسِ إِلَّا دِرْهَمٌ.",
+            "مَا فِي الْكِيسِ إِلَّا دِرْهَمًا.",
+            "فِي الْكِيسِ إِلَّا دِرْهَمٌ."
+          ],
+          "reponse": 0,
+          "explication": "Négation + إِلَّا : « seulement » ; le nom garde son cas (-u)."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Les voyageurs ont dormi, sauf le gardien. »",
+          "tuiles": [
+            "الْحَارِسَ",
+            "إِلَّا",
+            "الْمُسَافِرُونَ",
+            "نَامَ",
+            "الْحَارِسُ"
+          ],
+          "solution": [
+            "نَامَ",
+            "الْمُسَافِرُونَ",
+            "إِلَّا",
+            "الْحَارِسَ"
+          ],
+          "explication": "Phrase complète et affirmative : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les étudiants sont venus, sauf Samīr. »",
+          "ar": "حَضَرَ الطُّلَّابُ إِلَّا …",
+          "choix_ar": [
+            "سَمِيرًا",
+            "سَمِيرٌ",
+            "سَمِيرٍ"
+          ],
+          "reponse": 0,
+          "explication": "Phrase complète et affirmative : -a."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كُلٌّ",
+          "choix": [
+            "tout, tous",
+            "quelqu'un",
+            "sauf"
+          ],
+          "reponse": 0,
+          "explication": "كُلٌّ veut dire « tout, tous »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتِثْنَاءٌ",
+          "choix": [
+            "exception",
+            "condition",
+            "précision"
+          ],
+          "reponse": 0,
+          "explication": "اسْتِثْنَاءٌ veut dire « exception »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « personne n'est venu » ?",
+          "choix_ar": [
+            "مَا حَضَرَ أَحَدٌ",
+            "حَضَرَ أَحَدٌ",
+            "مَا حَضَرَ كُلٌّ"
+          ],
+          "reponse": 0,
+          "explication": "أَحَدٌ avec une négation : « personne »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les voyageurs ont dormi, sauf le gardien. »",
+          "ar": "نَامَ الْمُسَافِرُونَ إِلَّا …",
+          "choix_ar": [
+            "الْحَارِسَ",
+            "الْحَارِسُ",
+            "الْحَارِسِ"
+          ],
+          "reponse": 0,
+          "explication": "Phrase complète et affirmative : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'y a qu'un dirham dans la bourse. »",
+          "ar": "مَا فِي الْكِيسِ إِلَّا …",
+          "choix_ar": [
+            "دِرْهَمٌ",
+            "دِرْهَمًا",
+            "دِرْهَمٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après la négation, le nom garde son cas."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les étudiants sont venus, sauf Samīr. »",
+          "ar": "حَضَرَ الطُّلَّابُ غَيْرَ …",
+          "choix_ar": [
+            "سَمِيرٍ",
+            "سَمِيرًا",
+            "سَمِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après غَيْرَ : génitif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans حَضَرَ الطُّلَّابُ غَيْرَ سَمِيرٍ, غَيْرَ est…",
+          "choix": [
+            "en -a, comme le nom après إِلَّا",
+            "en -u, comme le sujet",
+            "au génitif"
+          ],
+          "reponse": 0,
+          "explication": "غَيْرُ prend le cas du nom exclu."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après une négation, إِلَّا veut dire…",
+          "choix": [
+            "seulement",
+            "sauf (toujours avec -a)",
+            "aussi"
+          ],
+          "reponse": 0,
+          "explication": "مَا حَضَرَ إِلَّا بَاسِمٌ : seul Bāsim est venu."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire مَا حَضَرَ إِلَّا بَاسِمٌ ?",
+          "choix": [
+            "Seul Bāsim est venu.",
+            "Bāsim n'est pas venu.",
+            "Tous sont venus, sauf Bāsim."
+          ],
+          "reponse": 0,
+          "explication": "Négation + إِلَّا : « seulement »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لِأَجْلِ",
+          "choix": [
+            "pour, à cause de",
+            "sauf",
+            "jusqu'à"
+          ],
+          "reponse": 0,
+          "explication": "لِأَجْلِ veut dire « pour, à cause de ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il est parti en quête de profit. »",
+          "ar": "سَافَرَ … لِلرِّبْحِ.",
+          "choix_ar": [
+            "طَلَبًا",
+            "طَلَبٌ",
+            "الطَّلَبُ"
+          ],
+          "reponse": 0,
+          "explication": "Mafʿūl li-aǧlih : -a.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جِدًّا",
+          "choix": [
+            "très",
+            "jamais",
+            "parfois"
+          ],
+          "reponse": 0,
+          "explication": "جِدًّا veut dire « très ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu exclus avec إِلَّا (-a après une phrase complète, cas de la fonction après une négation) et avec غَيْرُ + génitif ; tu emploies كُلُّ et أَحَدٌ.",
+      "suite": "Prochaine leçon : appeler quelqu'un, avec يَا et أَيُّهَا."
+    }
+  ]
+}

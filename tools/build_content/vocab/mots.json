@@ -8059,71 +8059,6 @@
    "theme": "particules"
   },
   {
-   "id": "mutlaq",
-   "ar": "مُطْلَقٌ",
-   "translit": "muṭlaqun",
-   "fr": "(en grammaire) absolu ; مَفْعُولٌ مُطْلَقٌ",
-   "nature": "adjectif",
-   "lecon": "cite-08",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "Tlq",
-   "exemple": {
-    "ar": "طَرْقًا فِي « طَرَقَ الْبَابَ طَرْقًا » مَفْعُولٌ مُطْلَقٌ.",
-    "fr": "Dans « il a frappé à la porte », طَرْقًا est un mafʿūl muṭlaq."
-   },
-   "theme": "savoir"
-  },
-  {
-   "id": "marra",
-   "ar": "مَرَّةٌ",
-   "translit": "marratun",
-   "fr": "fois",
-   "nature": "nom",
-   "lecon": "cite-08",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "lemme": "mar~ap",
-   "exemple": {
-    "ar": "طَرَقْتُ الْبَابَ مَرَّةً.",
-    "fr": "J'ai frappé à la porte une fois."
-   },
-   "theme": "temps"
-  },
-  {
-   "id": "jiddan",
-   "ar": "جِدًّا",
-   "translit": "ǧiddan",
-   "fr": "très",
-   "nature": "adverbe",
-   "lecon": "cite-08",
-   "source_sens": "rédigé par IA",
-   "racine": "jdd",
-   "exemple": {
-    "ar": "الطَّرِيقُ طَوِيلٌ جِدًّا.",
-    "fr": "Le chemin est très long."
-   },
-   "remarque": "un mafʿūl muṭlaq devenu figé",
-   "theme": "particules"
-  },
-  {
-   "id": "tarqa",
-   "ar": "طَرْقَةٌ",
-   "translit": "ṭarqatun",
-   "fr": "un coup (frappé à la porte)",
-   "nature": "nom",
-   "lecon": "cite-08",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "racine": "Trq",
-   "exemple": {
-    "ar": "طَرَقَ الْحَارِسُ الْبَابَ طَرْقَتَيْنِ.",
-    "fr": "Le gardien a frappé deux coups à la porte."
-   },
-   "remarque": "nom « d'une fois » de طَرَقَ, moule فَعْلَة",
-   "theme": "actions"
-  },
-  {
    "id": "li_anna",
    "ar": "لِأَنَّ",
    "translit": "li-anna",
@@ -8378,6 +8313,173 @@
     "fr": "Le marchand est parti en quête de profit."
    },
    "theme": "commerce"
+  },
+  {
+   "id": "illa",
+   "ar": "إِلَّا",
+   "translit": "illā",
+   "fr": "sauf ; (après une négation) seulement",
+   "nature": "particule",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "lemme": "<il~aA",
+   "exemple": {
+    "ar": "نَامَ الْمُسَافِرُونَ إِلَّا الْحَارِسَ.",
+    "fr": "Les voyageurs ont dormi, sauf le gardien."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "ghayr",
+   "ar": "غَيْرُ",
+   "translit": "ġayru",
+   "fr": "autre que, sauf",
+   "nature": "nom",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "gayor",
+   "exemple": {
+    "ar": "أُرِيدُ ثَوْبًا غَيْرَ الثَّوْبِ الْأَحْمَرِ.",
+    "fr": "Je veux un autre vêtement que le rouge."
+   },
+   "remarque": "suivi d'un nom au génitif",
+   "theme": "particules"
+  },
+  {
+   "id": "kull",
+   "ar": "كُلٌّ",
+   "translit": "kullun",
+   "fr": "tout, tous",
+   "nature": "nom",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "kul~",
+   "exemple": {
+    "ar": "قَرَأْتُ الرَّسَائِلَ كُلَّهَا.",
+    "fr": "J'ai lu toutes les lettres."
+   },
+   "remarque": "ici avec un pluriel défini : كُلُّ الطُّلَّابِ",
+   "theme": "particules"
+  },
+  {
+   "id": "ahad",
+   "ar": "أَحَدٌ",
+   "translit": "aḥadun",
+   "fr": "quelqu'un ; (avec une négation) personne",
+   "nature": "nom",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">aHad",
+   "exemple": {
+    "ar": "مَا حَضَرَ أَحَدٌ إِلَّا بَاسِمٌ.",
+    "fr": "Personne n'est venu, sauf Bāsim."
+   },
+   "theme": "personnes"
+  },
+  {
+   "id": "hadara",
+   "ar": "حَضَرَ",
+   "translit": "ḥaḍara",
+   "fr": "être présent, venir (à une réunion)",
+   "nature": "verbe",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "passe": "حَضَرَ",
+   "inaccompli": "يَحْضُرُ",
+   "exemple": {
+    "ar": "حَضَرَ الطُّلَّابُ إِلَّا سَمِيرًا.",
+    "fr": "Les étudiants sont venus, sauf Samīr."
+   },
+   "lemme": "HaDara",
+   "fige": true,
+   "formes": [
+    "حَضَرَتْ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "istithna",
+   "ar": "اسْتِثْنَاءٌ",
+   "translit": "istiṯnāʾun",
+   "fr": "exception",
+   "nature": "nom",
+   "lecon": "cite-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "vny",
+   "exemple": {
+    "ar": "إِلَّا حَرْفُ اسْتِثْنَاءٍ.",
+    "fr": "إِلَّا est une particule d'exception."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "mutlaq",
+   "ar": "مُطْلَقٌ",
+   "translit": "muṭlaqun",
+   "fr": "(en grammaire) absolu ; مَفْعُولٌ مُطْلَقٌ",
+   "nature": "adjectif",
+   "lecon": "cite-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Tlq",
+   "exemple": {
+    "ar": "طَرْقًا فِي « طَرَقَ الْبَابَ طَرْقًا » مَفْعُولٌ مُطْلَقٌ.",
+    "fr": "Dans « طَرَقَ الْبَابَ طَرْقًا », طَرْقًا est un mafʿūl muṭlaq."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "marra",
+   "ar": "مَرَّةٌ",
+   "translit": "marratun",
+   "fr": "fois",
+   "nature": "nom",
+   "lecon": "cite-08",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "mar~ap",
+   "exemple": {
+    "ar": "طَرَقْتُ الْبَابَ مَرَّةً.",
+    "fr": "J'ai frappé à la porte une fois."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "jiddan",
+   "ar": "جِدًّا",
+   "translit": "ǧiddan",
+   "fr": "très",
+   "nature": "adverbe",
+   "lecon": "cite-08",
+   "source_sens": "rédigé par IA",
+   "racine": "jdd",
+   "exemple": {
+    "ar": "الطَّرِيقُ طَوِيلٌ جِدًّا.",
+    "fr": "Le chemin est très long."
+   },
+   "remarque": "selon l'analyse la plus courante, un mafʿūl muṭlaq devenu figé",
+   "theme": "particules"
+  },
+  {
+   "id": "tarqa",
+   "ar": "طَرْقَةٌ",
+   "translit": "ṭarqatun",
+   "fr": "un coup (frappé à la porte)",
+   "nature": "nom",
+   "lecon": "cite-08",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "Trq",
+   "exemple": {
+    "ar": "طَرَقَ الْحَارِسُ الْبَابَ طَرْقَتَيْنِ.",
+    "fr": "Le gardien a frappé deux coups à la porte."
+   },
+   "remarque": "nom « d'une fois » de طَرَقَ, moule فَعْلَة",
+   "theme": "actions"
   }
  ]
 }

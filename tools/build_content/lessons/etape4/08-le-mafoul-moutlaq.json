@@ -54,12 +54,12 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "طَرَقَ",
           "choix": [
-            "frapper (à la porte)",
-            "ouvrir",
-            "fermer"
+            "il a frappé (une porte, un métal)",
+            "il a ouvert",
+            "il a fermé"
           ],
           "reponse": 0,
-          "explication": "طَرَقَ veut dire « frapper (à la porte) »."
+          "explication": "طَرَقَ veut dire « il a frappé (une porte, un métal) »."
         },
         {
           "type": "qcm",
@@ -70,7 +70,7 @@
             "فَرِحَةٌ"
           ],
           "reponse": 0,
-          "explication": "فَرِحَ → فَرَحٌ (leçon 3.4)."
+          "explication": "فَرِحَ → فَرَحٌ (fiche du verbe ; leçon 3.4)."
         }
       ]
     },
@@ -129,7 +129,7 @@
     {
       "type": "regle",
       "titre": "Le mafʿūl muṭlaq",
-      "texte": "Le mafʿūl muṭlaq est le nom d'action du verbe lui-même, en -a : طَرَقَ الْبَابَ طَرْقًا. Seul, il insiste ; avec un adjectif ou un complément, il dit la manière ; au duel ou avec مَرَّةً, il compte.",
+      "texte": "Le mafʿūl muṭlaq est le nom d'action du verbe (ou طَرْقَةٌ, مَرَّةٌ), en -a : طَرَقَ الْبَابَ طَرْقًا. Seul, il insiste ; avec un adjectif ou un complément, il dit la manière ; au duel, il compte.",
       "exemples": [
         "طَرَقَ الْبَابَ طَرْقًا",
         "طَرْقًا خَفِيفًا",
@@ -151,7 +151,7 @@
     {
       "type": "regle",
       "titre": "Une fois, deux fois",
-      "texte": "Le moule فَعْلَة donne « une fois » : طَرْقَةٌ « un coup », au duel طَرْقَتَيْنِ « deux coups ». Pour les autres verbes, on emploie مَرَّةً, مَرَّتَيْنِ.",
+      "texte": "Le moule فَعْلَة donne « une fois » : طَرْقَةٌ « un coup », au duel طَرْقَتَيْنِ « deux coups ». Avec n'importe quel verbe, on peut aussi compter avec مَرَّةً, مَرَّتَيْنِ : طَرَقَ الْبَابَ مَرَّتَيْنِ.",
       "exemples": [
         "طَرْقَةٌ",
         "طَرْقَتَيْنِ",
@@ -220,12 +220,12 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "مُطْلَقٌ",
           "choix": [
-            "(en grammaire) absolu ; مَفْعُولٌ مُطْلَقٌ",
+            "absolu (en grammaire)",
             "complément",
             "condition"
           ],
           "reponse": 0,
-          "explication": "مُطْلَقٌ veut dire « (en grammaire) absolu ; مَفْعُولٌ مُطْلَقٌ »."
+          "explication": "مُطْلَقٌ veut dire « absolu (en grammaire) »."
         },
         {
           "type": "traduire",
@@ -338,7 +338,7 @@
         },
         {
           "type": "ordonner",
-          "consigne": "Remets dans l'ordre : « Le gardien a frappé deux coups à la porte. »",
+          "consigne": "Remets dans l'ordre verbe, sujet, complément : « Le gardien a frappé deux coups à la porte. »",
           "tuiles": [
             "طَرْقَتَيْنِ",
             "الْبَابَ",
@@ -364,7 +364,7 @@
             "جَالِسَ"
           ],
           "reponse": 0,
-          "explication": "Nom d'action de جَلَسَ en -a, suivi d'un complément."
+          "explication": "Nom d'action de جَلَسَ en -a, suivi d'un complément du nom (iḍāfa)."
         }
       ]
     },
@@ -421,7 +421,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Il a frappé deux coups. »",
+          "consigne": "Complète : « Il a frappé deux coups à la porte. »",
           "ar": "طَرَقَ الْبَابَ …",
           "choix_ar": [
             "طَرْقَتَيْنِ",
