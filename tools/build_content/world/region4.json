@@ -18,7 +18,10 @@
         30,
         58
       ],
-      "lecons": [],
+      "lecons": [
+        1,
+        2
+      ],
       "scene": "scene_porte_cite",
       "sol": 84,
       "tranche_j1a": true,
@@ -35,7 +38,10 @@
         70,
         58
       ],
-      "lecons": [],
+      "lecons": [
+        3,
+        4
+      ],
       "scene": "scene_messagers",
       "sol": 82,
       "tranche_j1a": true,

@@ -1,0 +1,524 @@
+{
+  "id": "cite-04",
+  "etape": 4,
+  "ordre": 4,
+  "format": 3,
+  "titre": "Quand, avant, après",
+  "objectif": "Situer deux actions dans le temps avec حِينَ, لَمَّا, قَبْلَ أَنْ, بَعْدَ أَنْ.",
+  "statut": "ia_non_verifie",
+  "lieu": "messagers",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-03"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ",
+    "سَلْمَى"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Une lettre raconte souvent deux actions : l'une avant, l'autre après."
+        },
+        {
+          "qui": "nadim",
+          "texte": "Apprenons à dire « quand », « avant que » et « après que »."
+        }
+      ],
+      "objectif": "Employer حِينَ, لَمَّا, قَبْلَ أَنْ, بَعْدَ أَنْ et مَتَى."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a ordonné au porteur de porter les sacs. »",
+          "ar": "أَمَرَ الْحَمَّالَ أَنْ … الْأَكْيَاسَ.",
+          "choix_ar": [
+            "يَحْمِلَ",
+            "يَحْمِلُ",
+            "حَمَلَ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : -a (leçon 4.3)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ظَنَّ",
+          "choix": [
+            "penser, croire",
+            "ordonner",
+            "mentionner"
+          ],
+          "reponse": 0,
+          "explication": "ظَنَّ veut dire « penser, croire »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire قَبْلَ الْمَسَاءِ ?",
+          "choix": [
+            "avant le soir",
+            "après le soir",
+            "pendant le soir"
+          ],
+          "reponse": 0,
+          "explication": "قَبْلَ + nom (leçon 3.29)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَتَى تَصِلُ الْقَافِلَةُ؟",
+          "fr": "Quand la caravane arrive-t-elle ?"
+        },
+        {
+          "qui": "nadim",
+          "ar": "تَصِلُ فِي الْمَسَاءِ.",
+          "fr": "Elle arrive le soir."
+        },
+        {
+          "qui": "basim",
+          "ar": "سَأَكْتُبُ الرِّسَالَةَ قَبْلَ أَنْ تَصِلَ.",
+          "fr": "J'écrirai la lettre avant qu'elle n'arrive."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quand la caravane arrive-t-elle ?",
+        "choix": [
+          "le soir",
+          "le matin",
+          "la nuit"
+        ],
+        "reponse": 0,
+        "explication": "تَصِلُ فِي الْمَسَاءِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "hina",
+        "lamma",
+        "mata",
+        "layl",
+        "intaha",
+        "istayqaza"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "اسْتَيْقَظَ",
+        "choix": [
+          "se réveiller",
+          "dormir",
+          "se terminer"
+        ],
+        "reponse": 0,
+        "explication": "اسْتَيْقَظَ veut dire « se réveiller »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "حِينَ et لَمَّا",
+      "texte": "حِينَ et لَمَّا (« quand, lorsque ») sont suivis d'une phrase au passé, puis vient la phrase principale : لَمَّا وَصَلْنَا، نِمْنَا.",
+      "exemples": [
+        "لَمَّا وَصَلْنَا، نِمْنَا",
+        "حِينَ انْتَهَى الدَّرْسُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire لَمَّا وَصَلْنَا، نِمْنَا ?",
+        "choix": [
+          "Lorsque nous sommes arrivés, nous avons dormi.",
+          "Nous dormirons quand nous arriverons.",
+          "Nous ne sommes pas encore arrivés."
+        ],
+        "reponse": 0,
+        "explication": "لَمَّا + passé : « lorsque »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "قَبْلَ أَنْ et بَعْدَ أَنْ",
+      "texte": "Après قَبْلَ أَنْ, le verbe est au subjonctif : قَبْلَ أَنْ تُسَافِرَ. Après بَعْدَ أَنْ, on emploie le plus souvent le passé : بَعْدَ أَنْ بَاعَ الصُّوفَ.",
+      "exemples": [
+        "قَبْلَ أَنْ تُسَافِرَ",
+        "بَعْدَ أَنْ بَاعَ الصُّوفَ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Écris la réponse avant de partir. »",
+        "ar": "اكْتُبِ الْجَوَابَ قَبْلَ أَنْ …",
+        "choix_ar": [
+          "تُسَافِرَ",
+          "تُسَافِرُ",
+          "سَافَرْتَ"
+        ],
+        "reponse": 0,
+        "explication": "Après قَبْلَ أَنْ : subjonctif."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "قَبْلَ ou قَبْلَ أَنْ ?",
+      "texte": "قَبْلَ et بَعْدَ sont suivis d'un nom : قَبْلَ الْمَسَاءِ. Devant un verbe, on ajoute أَنْ : قَبْلَ أَنْ تُسَافِرَ.",
+      "exemples": [
+        "قَبْلَ الْمَسَاءِ",
+        "قَبْلَ أَنْ تُسَافِرَ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Il est rentré après avoir vendu la laine. »",
+        "ar": "رَجَعَ بَعْدَ … بَاعَ الصُّوفَ.",
+        "choix_ar": [
+          "أَنْ",
+          "أَنَّ",
+          "لَمَّا"
+        ],
+        "reponse": 0,
+        "explication": "Devant un verbe : بَعْدَ أَنْ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَمَّا",
+          "choix": [
+            "lorsque (+ passé)",
+            "pourquoi",
+            "si"
+          ],
+          "reponse": 0,
+          "explication": "لَمَّا veut dire « lorsque (+ passé) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "انْتَهَى",
+          "choix": [
+            "se terminer, finir",
+            "se réveiller",
+            "arriver"
+          ],
+          "reponse": 0,
+          "explication": "انْتَهَى veut dire « se terminer, finir »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَيْلٌ",
+          "choix": [
+            "nuit",
+            "soir",
+            "matin"
+          ],
+          "reponse": 0,
+          "explication": "لَيْلٌ veut dire « nuit »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « quand la leçon s'est terminée, les étudiants sont sortis » ?",
+          "choix_ar": [
+            "حِينَ انْتَهَى الدَّرْسُ، خَرَجَ الطُّلَّابُ",
+            "حِينَ يَنْتَهِي الدَّرْسُ، خَرَجَ الطُّلَّابُ",
+            "قَبْلَ انْتَهَى الدَّرْسُ، خَرَجَ الطُّلَّابُ"
+          ],
+          "reponse": 0,
+          "explication": "حِينَ + passé ; قَبْلَ seul ne se met pas devant un verbe."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Lorsque nous sommes arrivés à la ville, la porte était ouverte. »",
+          "ar": "… وَصَلْنَا إِلَى الْمَدِينَةِ، كَانَ الْبَابُ مَفْتُوحًا.",
+          "choix_ar": [
+            "لَمَّا",
+            "مَتَى",
+            "قَبْلَ"
+          ],
+          "reponse": 0,
+          "explication": "« Lorsque » + passé : لَمَّا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand est rentré après avoir vendu la laine. »",
+          "ar": "رَجَعَ التَّاجِرُ بَعْدَ أَنْ … الصُّوفَ.",
+          "choix_ar": [
+            "بَاعَ",
+            "يَبِيعَ",
+            "بِعْ"
+          ],
+          "reponse": 0,
+          "explication": "Après بَعْدَ أَنْ : le plus souvent le passé."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Quand la caravane arrive-t-elle ? »",
+          "ar": "… تَصِلُ الْقَافِلَةُ؟",
+          "choix_ar": [
+            "مَتَى",
+            "لَمَّا",
+            "حِينَ"
+          ],
+          "reponse": 0,
+          "explication": "Question « quand ? » : مَتَى."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après قَبْلَ أَنْ, le verbe est…",
+          "choix": [
+            "au subjonctif",
+            "au passé",
+            "au jussif"
+          ],
+          "reponse": 0,
+          "explication": "قَبْلَ أَنْ تُسَافِرَ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La lettre de Salmā",
+      "texte": "Salmā raconte son voyage dans une lettre. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "لَمَّا وَصَلْنَا إِلَى الْمَدِينَةِ، كَانَ الْبَابُ مَفْتُوحًا.",
+        "نِمْنَا فِي اللَّيْلِ، ثُمَّ اسْتَيْقَظْتُ فِي الصَّبَاحِ.",
+        "حِينَ انْتَهَى الدَّرْسُ، خَرَجَ الطُّلَّابُ إِلَى الْحَدِيقَةِ.",
+        "سَأَكْتُبُ لَكَ قَبْلَ أَنْ أُسَافِرَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Comment était la porte à leur arrivée ?",
+          "choix": [
+            "ouverte",
+            "fermée",
+            "cassée"
+          ],
+          "reponse": 0,
+          "explication": "كَانَ الْبَابُ مَفْتُوحًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand Salmā écrira-t-elle ?",
+          "choix": [
+            "avant de partir",
+            "après être partie",
+            "la nuit"
+          ],
+          "reponse": 0,
+          "explication": "قَبْلَ أَنْ أُسَافِرَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Écris la réponse avant de partir. » ?",
+          "choix_ar": [
+            "اكْتُبِ الْجَوَابَ قَبْلَ أَنْ تُسَافِرَ.",
+            "اكْتُبِ الْجَوَابَ قَبْلَ تُسَافِرَ.",
+            "اكْتُبِ الْجَوَابَ قَبْلَ أَنْ تُسَافِرُ."
+          ],
+          "reponse": 0,
+          "explication": "قَبْلَ أَنْ + subjonctif."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre لَمَّا, le verbe, puis la phrase principale : « Lorsque nous sommes arrivés, nous avons dormi. »",
+          "tuiles": [
+            "نِمْنَا",
+            "لَمَّا",
+            "وَصَلْنَا،",
+            "مَتَى"
+          ],
+          "solution": [
+            "لَمَّا",
+            "وَصَلْنَا،",
+            "نِمْنَا"
+          ],
+          "explication": "لَمَّا + passé ; مَتَى pose une question."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Quand Bāsim s'est réveillé, il a ouvert la porte. »",
+          "ar": "لَمَّا … بَاسِمٌ، فَتَحَ الْبَابَ.",
+          "choix_ar": [
+            "اسْتَيْقَظَ",
+            "يَسْتَيْقِظُ",
+            "اسْتَيْقَظْتُ"
+          ],
+          "reponse": 0,
+          "explication": "لَمَّا + passé, à la personne de Bāsim."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حِينَ",
+          "choix": [
+            "quand, au moment où",
+            "pourquoi",
+            "jusqu'à"
+          ],
+          "reponse": 0,
+          "explication": "حِينَ veut dire « quand, au moment où »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَتَى",
+          "choix": [
+            "quand ?",
+            "où ?",
+            "combien ?"
+          ],
+          "reponse": 0,
+          "explication": "مَتَى veut dire « quand ? »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَيْقَظَ",
+          "choix": [
+            "se réveiller",
+            "se terminer",
+            "dormir"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَيْقَظَ veut dire « se réveiller »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « lorsque nous sommes arrivés, nous avons dormi » ?",
+          "choix_ar": [
+            "لَمَّا وَصَلْنَا، نِمْنَا",
+            "لَمَّا نَصِلُ، نَنَامُ",
+            "مَتَى وَصَلْنَا، نِمْنَا"
+          ],
+          "reponse": 0,
+          "explication": "لَمَّا + passé."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Écris la réponse avant de partir. »",
+          "ar": "اكْتُبِ الْجَوَابَ قَبْلَ أَنْ …",
+          "choix_ar": [
+            "تُسَافِرَ",
+            "تُسَافِرُ",
+            "سَافَرْتَ"
+          ],
+          "reponse": 0,
+          "explication": "قَبْلَ أَنْ + subjonctif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il est rentré après avoir vendu la laine. »",
+          "ar": "رَجَعَ بَعْدَ أَنْ … الصُّوفَ.",
+          "choix_ar": [
+            "بَاعَ",
+            "بِعْ",
+            "يَبِيعُ"
+          ],
+          "reponse": 0,
+          "explication": "بَعْدَ أَنْ + passé."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Avant le soir. »",
+          "ar": "… الْمَسَاءِ.",
+          "choix_ar": [
+            "قَبْلَ",
+            "قَبْلَ أَنْ",
+            "لَمَّا"
+          ],
+          "reponse": 0,
+          "explication": "Devant un nom : قَبْلَ seul."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Devant un verbe, on dit…",
+          "choix": [
+            "قَبْلَ أَنْ",
+            "قَبْلَ seul",
+            "لَمَّا أَنْ"
+          ],
+          "reponse": 0,
+          "explication": "قَبْلَ أَنْ تُسَافِرَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire حِينَ انْتَهَى الدَّرْسُ ?",
+          "choix": [
+            "Quand la leçon s'est terminée",
+            "Avant la fin de la leçon",
+            "Quand la leçon finira-t-elle ?"
+          ],
+          "reponse": 0,
+          "explication": "حِينَ + passé."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَمَرَ",
+          "choix": [
+            "ordonner (à quelqu'un de)",
+            "informer",
+            "croire"
+          ],
+          "reponse": 0,
+          "explication": "أَمَرَ veut dire « ordonner (à quelqu'un de) ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je croyais que la porte était ouverte. »",
+          "ar": "ظَنَنْتُ أَنَّ … مَفْتُوحٌ.",
+          "choix_ar": [
+            "الْبَابَ",
+            "الْبَابُ",
+            "الْبَابِ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنَّ : -a.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَوْ",
+          "choix": [
+            "si (pour ce qui n'a pas eu lieu)",
+            "quand",
+            "sans"
+          ],
+          "reponse": 0,
+          "explication": "لَوْ veut dire « si (pour ce qui n'a pas eu lieu) ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu situes deux actions dans le temps : حِينَ et لَمَّا + passé, قَبْلَ أَنْ + subjonctif, بَعْدَ أَنْ + passé ; tu demandes « quand ? » avec مَتَى.",
+      "suite": "Prochaine leçon : parce que, pour que."
+    }
+  ]
+}

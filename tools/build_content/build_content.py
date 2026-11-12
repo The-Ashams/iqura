@@ -288,7 +288,7 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
     quran_guard.check(lessons.inscriptions(lesson_data), data["quran_pairs"], quran_guard.PAIR)
     for warning in vocab.quran_pair_warnings(
             {k: v for k, v in lessons.arabic_texts(lesson_data).items()
-             if k.startswith("etape2") or k.startswith("vocab")}
+             if k.startswith(("etape2", "etape4", "vocab"))}
             | exams.arabic_texts(exam_data),
             lesson_data.words or [], data["quran_pairs"]):
         print(f"[build_content] AVERTISSEMENT : {warning}", file=sys.stderr)

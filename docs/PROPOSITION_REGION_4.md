@@ -23,7 +23,7 @@ Les chapitres B (la Place des débats, 4.15 à 4.22) et C (l'Atelier des copiste
 
 | Personnage | Rôle |
 | --- | --- |
-| Nadīm (نَدِيم, « compagnon de conversation ») | Le conteur et écrivain public, maître des lieux 1 à 3 ; nouveau |
+| Nadīm (نَدِيم, « compagnon de veillée et de conversation ») | Le conteur et écrivain public, maître des lieux 1 à 3 ; nouveau |
 | Hāla (هَالَة, « halo de la lune ») | La gardienne du Jardin des maximes et des comptes, maîtresse des lieux 4 et 5 ; nouvelle |
 | Bāsim | Le jeune chamelier de la région 2, qui accompagne toujours le voyageur |
 

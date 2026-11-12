@@ -1,0 +1,525 @@
+{
+  "id": "cite-01",
+  "etape": 4,
+  "ordre": 1,
+  "format": 3,
+  "titre": "« Si… »",
+  "objectif": "Dire une condition et sa suite avec إِذَا et إِنْ ; savoir quand la suite prend فَـ.",
+  "statut": "ia_non_verifie",
+  "lieu": "porte_cite",
+  "maitre": "nadim",
+  "prerequis": [
+    "moteur-32"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ",
+    "سَلْمَى"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Bienvenue dans la Cité des Lecteurs : je suis Nadīm, conteur et écrivain public."
+        },
+        {
+          "qui": "nadim",
+          "texte": "Ici, les phrases s'allongent : on commence par « si » et par ce qui arrive alors."
+        }
+      ],
+      "objectif": "Dire une condition avec إِذَا et إِنْ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « La porte n'était pas ouverte. »",
+          "ar": "لَمْ يَكُنِ الْبَابُ …",
+          "choix_ar": [
+            "مَفْتُوحًا",
+            "مَفْتُوحٌ",
+            "مَفْتُوحٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut de كَانَ : -a (leçon 3.32)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire لَا تُسَافِرْ ?",
+          "choix": [
+            "ne pars pas en voyage !",
+            "tu ne voyages pas",
+            "il n'a pas voyagé"
+          ],
+          "reponse": 0,
+          "explication": "لَا + jussif : défense (leçon 3.30)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je veux comprendre. »",
+          "ar": "أُرِيدُ أَنْ …",
+          "choix_ar": [
+            "أَفْهَمَ",
+            "أَفْهَمُ",
+            "أَفْهَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : -a (leçon 3.29)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "أُرِيدُ أَنْ أُسَافِرَ الْيَوْمَ.",
+          "fr": "Je veux partir en voyage aujourd'hui."
+        },
+        {
+          "qui": "nadim",
+          "ar": "إِذَا كَانَ الْبَرْدُ شَدِيدًا فَلَا تُسَافِرْ.",
+          "fr": "Si le froid est vif, ne pars pas."
+        },
+        {
+          "qui": "basim",
+          "ar": "إِنْ رَجَعَ سَمِيرٌ الْيَوْمَ فَسَنُسَافِرُ غَدًا.",
+          "fr": "Si Samīr revient aujourd'hui, nous partirons demain."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que conseille Nadīm ?",
+        "choix": [
+          "ne pas partir si le froid est vif",
+          "partir tout de suite",
+          "attendre Samīr au marché"
+        ],
+        "reponse": 0,
+        "explication": "فَلَا تُسَافِرْ : « alors ne pars pas »."
+      },
+      "apercu": [
+        "سَمِيرٌ"
+      ]
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "idha",
+        "in_shart",
+        "fa_jawab",
+        "shart",
+        "shadid"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "شَدِيدٌ",
+        "choix": [
+          "fort, intense",
+          "froid",
+          "long"
+        ],
+        "reponse": 0,
+        "explication": "شَدِيدٌ veut dire « fort, intense »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "إِذَا et إِنْ",
+      "texte": "إِذَا (« quand, si ») est suivi du passé, mais se traduit souvent par un présent ou un futur. إِنْ (« si ») est suivi du passé ou du jussif : إِنْ تَدْرُسْ تَفْهَمْ.",
+      "exemples": [
+        "إِذَا وَصَلْتَ",
+        "إِنْ تَدْرُسْ تَفْهَمْ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire إِذَا وَصَلْتَ إِلَى الْمَدِينَةِ ?",
+        "choix": [
+          "Quand tu arriveras à la ville",
+          "Tu es arrivé à la ville",
+          "Tu n'es pas arrivé à la ville"
+        ],
+        "reponse": 0,
+        "explication": "إِذَا + passé : sens de futur."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Quand la réponse prend فَـ",
+      "texte": "La réponse prend فَـ quand elle n'est pas un simple verbe : un ordre, une défense, سَـ ou une phrase nominale. Un simple verbe passé n'en prend pas.",
+      "exemples": [
+        "فَاكْتُبْ",
+        "فَلَا تُسَافِرْ",
+        "فَسَنُسَافِرُ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Quand tu arriveras, écris une lettre. »",
+        "ar": "إِذَا وَصَلْتَ … رِسَالَةً.",
+        "choix_ar": [
+          "فَاكْتُبْ",
+          "اكْتُبْ",
+          "كَتَبْتَ"
+        ],
+        "reponse": 0,
+        "explication": "Ordre en réponse : فَـ est nécessaire."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "إِنْ n'est pas إِنَّ",
+      "texte": "إِنْ (« si ») a un sukūn ; إِنَّ (« certes », leçon 3.31) a une shadda : lis toujours les signes.",
+      "exemples": [
+        "إِنْ تَدْرُسْ تَفْهَمْ",
+        "إِنَّ الطَّرِيقَ طَوِيلٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire إِنْ dans إِنْ تَدْرُسْ تَفْهَمْ ?",
+        "choix": [
+          "si",
+          "certes",
+          "que"
+        ],
+        "reponse": 0,
+        "explication": "إِنْ avec sukūn : « si »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِذَا",
+          "choix": [
+            "quand, si (chose attendue)",
+            "certes",
+            "parce que"
+          ],
+          "reponse": 0,
+          "explication": "إِذَا veut dire « quand, si (chose attendue) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَرْطٌ",
+          "choix": [
+            "condition",
+            "réponse",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "شَرْطٌ veut dire « condition »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « si tu étudies, tu comprendras » ?",
+          "choix_ar": [
+            "إِنْ تَدْرُسْ تَفْهَمْ",
+            "إِنَّ تَدْرُسْ تَفْهَمْ",
+            "أَنْ تَدْرُسَ تَفْهَمَ"
+          ],
+          "reponse": 0,
+          "explication": "إِنْ (« si ») + jussif dans les deux parties."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si Bāsim revient aujourd'hui, nous partirons demain. »",
+          "ar": "إِنْ رَجَعَ بَاسِمٌ الْيَوْمَ … غَدًا.",
+          "choix_ar": [
+            "فَسَنُسَافِرُ",
+            "سَنُسَافِرُ",
+            "سَافَرْنَا"
+          ],
+          "reponse": 0,
+          "explication": "Réponse avec سَـ : فَـ est nécessaire."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Quand la caravane arrive, le gardien ouvre la porte. »",
+          "ar": "إِذَا وَصَلَتِ الْقَافِلَةُ … الْحَارِسُ الْبَابَ.",
+          "choix_ar": [
+            "فَتَحَ",
+            "فَيَفْتَحُ",
+            "فَافْتَحْ"
+          ],
+          "reponse": 0,
+          "explication": "Simple verbe au passé en réponse : pas de فَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si le froid est vif, ne pars pas. »",
+          "ar": "إِذَا كَانَ الْبَرْدُ شَدِيدًا … تُسَافِرْ.",
+          "choix_ar": [
+            "فَلَا",
+            "لَا",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Défense en réponse : فَلَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si tu t'assieds avec nous, nous serons contents. »",
+          "ar": "إِنْ تَجْلِسْ مَعَنَا …",
+          "choix_ar": [
+            "نَفْرَحْ",
+            "نَفْرَحُ",
+            "فَرِحْنَا"
+          ],
+          "reponse": 0,
+          "explication": "Après إِنْ, la réponse au jussif : نَفْرَحْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après إِذَا, le verbe est le plus souvent…",
+          "choix": [
+            "au passé",
+            "au subjonctif",
+            "à l'impératif"
+          ],
+          "reponse": 0,
+          "explication": "إِذَا + passé."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "À la porte de la Cité",
+      "texte": "Nadīm explique les règles de la porte. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "إِذَا وَصَلَتِ الْقَافِلَةُ فَتَحَ الْحَارِسُ الْبَابَ.",
+        "إِذَا كَانَ الْبَرْدُ شَدِيدًا فَلَا تُسَافِرْ.",
+        "إِنْ تَدْرُسْ فِي الْمَدِينَةِ تَفْهَمْ.",
+        "إِذَا وَصَلْتَ إِلَى الْمَدِينَةِ فَاكْتُبْ رِسَالَةً إِلَى سَلْمَى."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quand le gardien ouvre-t-il la porte ?",
+          "choix": [
+            "quand la caravane arrive",
+            "le soir",
+            "quand il fait froid"
+          ],
+          "reponse": 0,
+          "explication": "إِذَا وَصَلَتِ الْقَافِلَةُ فَتَحَ الْحَارِسُ الْبَابَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que faire en arrivant à la ville ?",
+          "choix": [
+            "écrire une lettre à Salmā",
+            "partir en voyage",
+            "fermer la porte"
+          ],
+          "reponse": 0,
+          "explication": "فَاكْتُبْ رِسَالَةً إِلَى سَلْمَى."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Quand tu arriveras, écris une lettre. » ?",
+          "choix_ar": [
+            "إِذَا وَصَلْتَ فَاكْتُبْ رِسَالَةً.",
+            "إِذَا وَصَلْتَ اكْتُبْ رِسَالَةً.",
+            "إِنَّ وَصَلْتَ فَاكْتُبْ رِسَالَةً."
+          ],
+          "reponse": 0,
+          "explication": "Ordre en réponse : فَاكْتُبْ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre إِنْ, le verbe, la réponse : « Si tu étudies, tu comprendras. »",
+          "tuiles": [
+            "تَفْهَمْ",
+            "إِنْ",
+            "تَدْرُسْ",
+            "إِنَّ"
+          ],
+          "solution": [
+            "إِنْ",
+            "تَدْرُسْ",
+            "تَفْهَمْ"
+          ],
+          "explication": "إِنْ (« si ») ; إِنَّ veut dire « certes »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si le froid est vif, reste à la maison. »",
+          "ar": "إِنْ كَانَ الْبَرْدُ شَدِيدًا … فِي الْبَيْتِ.",
+          "choix_ar": [
+            "فَاجْلِسْ",
+            "اجْلِسْ",
+            "جَلَسْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Ordre en réponse : فَـ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِنْ",
+          "choix": [
+            "si (chose incertaine)",
+            "certes",
+            "que"
+          ],
+          "reponse": 0,
+          "explication": "إِنْ veut dire « si (chose incertaine) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَدِيدٌ",
+          "choix": [
+            "fort, intense",
+            "facile",
+            "court"
+          ],
+          "reponse": 0,
+          "explication": "شَدِيدٌ veut dire « fort, intense »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « si tu étudies, tu comprendras » ?",
+          "choix_ar": [
+            "إِنْ تَدْرُسْ تَفْهَمْ",
+            "إِنْ تَدْرُسُ تَفْهَمُ",
+            "إِنَّ تَدْرُسْ تَفْهَمْ"
+          ],
+          "reponse": 0,
+          "explication": "إِنْ + jussif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Quand tu arriveras, écris une lettre. »",
+          "ar": "إِذَا وَصَلْتَ … رِسَالَةً.",
+          "choix_ar": [
+            "فَاكْتُبْ",
+            "اكْتُبْ",
+            "تَكْتُبُ"
+          ],
+          "reponse": 0,
+          "explication": "Ordre en réponse : فَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si le froid est vif, ne pars pas. »",
+          "ar": "إِذَا كَانَ الْبَرْدُ شَدِيدًا … تُسَافِرْ.",
+          "choix_ar": [
+            "فَلَا",
+            "لَا",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "Défense en réponse : فَلَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Quand la caravane arrive, le gardien ouvre la porte. »",
+          "ar": "إِذَا وَصَلَتِ الْقَافِلَةُ … الْحَارِسُ الْبَابَ.",
+          "choix_ar": [
+            "فَتَحَ",
+            "فَافْتَحْ",
+            "فَسَيَفْتَحُ"
+          ],
+          "reponse": 0,
+          "explication": "Simple verbe passé : pas de فَـ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La réponse prend فَـ devant…",
+          "choix": [
+            "un ordre ou une défense",
+            "un simple verbe passé",
+            "aucun mot"
+          ],
+          "reponse": 0,
+          "explication": "Ordre, défense, سَـ, phrase nominale : فَـ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après إِذَا, le verbe est…",
+          "choix": [
+            "le plus souvent au passé",
+            "au subjonctif",
+            "toujours au jussif"
+          ],
+          "reponse": 0,
+          "explication": "إِذَا + passé."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle phrase veut dire « Si tu t'assieds avec nous, nous serons contents » ?",
+          "choix_ar": [
+            "إِنْ تَجْلِسْ مَعَنَا نَفْرَحْ",
+            "إِنَّ تَجْلِسَ مَعَنَا نَفْرَحُ",
+            "أَنْ تَجْلِسَ مَعَنَا نَفْرَحَ"
+          ],
+          "reponse": 0,
+          "explication": "إِنْ + jussif dans les deux parties."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَانَ",
+          "choix": [
+            "être (au passé)",
+            "devenir",
+            "rester"
+          ],
+          "reponse": 0,
+          "explication": "كَانَ veut dire « être (au passé) ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَا زَالَ",
+          "choix": [
+            "être toujours",
+            "ne plus être",
+            "devenir"
+          ],
+          "reponse": 0,
+          "explication": "مَا زَالَ veut dire « être toujours ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chemin est vraiment long. »",
+          "ar": "إِنَّ … طَوِيلٌ.",
+          "choix_ar": [
+            "الطَّرِيقَ",
+            "الطَّرِيقُ",
+            "الطَّرِيقِ"
+          ],
+          "reponse": 0,
+          "explication": "Après إِنَّ : sujet en -a.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu dis une condition avec إِذَا et إِنْ, et tu sais quand la réponse prend فَـ.",
+      "suite": "Prochaine leçon : « si seulement… » avec لَوْ et لَوْلَا."
+    }
+  ]
+}

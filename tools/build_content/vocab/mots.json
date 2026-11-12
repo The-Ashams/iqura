@@ -7598,6 +7598,346 @@
     "بَاتَتْ"
    ],
    "theme": "temps"
+  },
+  {
+   "id": "idha",
+   "ar": "إِذَا",
+   "translit": "iḏā",
+   "fr": "quand, si (chose attendue)",
+   "nature": "particule",
+   "lecon": "cite-01",
+   "source_sens": "rédigé par IA",
+   "lemme": "<i*aA",
+   "exemple": {
+    "ar": "إِذَا وَصَلْتَ إِلَى الْمَدِينَةِ فَاكْتُبْ رِسَالَةً.",
+    "fr": "Quand tu arriveras à la ville, écris une lettre."
+   },
+   "remarque": "suivi du passé ; se traduit souvent par un présent ou un futur",
+   "theme": "particules"
+  },
+  {
+   "id": "in_shart",
+   "ar": "إِنْ",
+   "translit": "in",
+   "fr": "si (chose incertaine)",
+   "nature": "particule",
+   "lecon": "cite-01",
+   "source_sens": "rédigé par IA",
+   "lemme": "<in",
+   "exemple": {
+    "ar": "إِنْ تَدْرُسْ تَفْهَمْ.",
+    "fr": "Si tu étudies, tu comprendras."
+   },
+   "remarque": "à ne pas confondre avec إِنَّ « certes » (leçon 3.31)",
+   "theme": "particules"
+  },
+  {
+   "id": "fa_jawab",
+   "ar": "فَـ",
+   "translit": "fa",
+   "fr": "alors (devant la réponse d'une condition)",
+   "nature": "particule",
+   "lecon": "cite-01",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "إِذَا كَانَ الْبَرْدُ شَدِيدًا فَلَا تُسَافِرْ.",
+    "fr": "Si le froid est vif, ne pars pas en voyage."
+   },
+   "remarque": "collé au mot qui suit ; ses autres sens viennent à la leçon 4.13",
+   "theme": "particules"
+  },
+  {
+   "id": "shart",
+   "ar": "شَرْطٌ",
+   "translit": "šarṭ",
+   "fr": "condition",
+   "nature": "nom",
+   "lecon": "cite-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "$rT",
+   "exemple": {
+    "ar": "لِلشَّرْطِ جَوَابٌ.",
+    "fr": "La condition a une réponse."
+   },
+   "remarque": "جَوَابُ الشَّرْطِ : la réponse de la condition",
+   "theme": "savoir"
+  },
+  {
+   "id": "shadid",
+   "ar": "شَدِيدٌ",
+   "translit": "šadīd",
+   "fr": "fort, intense",
+   "nature": "adjectif",
+   "lecon": "cite-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "$adiyd",
+   "exemple": {
+    "ar": "الْبَرْدُ شَدِيدٌ.",
+    "fr": "Le froid est vif."
+   },
+   "theme": "qualites"
+  },
+  {
+   "id": "law",
+   "ar": "لَوْ",
+   "translit": "law",
+   "fr": "si (pour ce qui n'a pas eu lieu)",
+   "nature": "particule",
+   "lecon": "cite-02",
+   "source_sens": "rédigé par IA",
+   "lemme": "law",
+   "exemple": {
+    "ar": "لَوْ دَرَسْتَ لَفَهِمْتَ الدَّرْسَ.",
+    "fr": "Si tu avais étudié, tu aurais compris la leçon."
+   },
+   "remarque": "suivi du passé ; la réponse prend souvent لَـ",
+   "theme": "particules"
+  },
+  {
+   "id": "lawla",
+   "ar": "لَوْلَا",
+   "translit": "lawlā",
+   "fr": "sans, s'il n'y avait pas",
+   "nature": "particule",
+   "lecon": "cite-02",
+   "source_sens": "rédigé par IA",
+   "lemme": "lawolaA^",
+   "exemple": {
+    "ar": "لَوْلَا الْبَرْدُ لَجَلَسْنَا فِي الْحَدِيقَةِ.",
+    "fr": "Sans le froid, nous nous serions assis dans le jardin."
+   },
+   "remarque": "suivi d'un nom en -u",
+   "theme": "particules"
+  },
+  {
+   "id": "la_jawab",
+   "ar": "لَـ",
+   "translit": "la",
+   "fr": "(alors), devant la réponse de لَوْ et de لَوْلَا",
+   "nature": "particule",
+   "lecon": "cite-02",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "لَوْ دَرَسْتَ لَفَهِمْتَ.",
+    "fr": "Si tu avais étudié, tu aurais compris."
+   },
+   "remarque": "collé au verbe ; ne pas confondre avec لِـ « pour, à »",
+   "theme": "particules"
+  },
+  {
+   "id": "mal",
+   "ar": "مَالٌ",
+   "translit": "māl",
+   "fr": "argent, biens",
+   "nature": "nom",
+   "lecon": "cite-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "maAl",
+   "exemple": {
+    "ar": "عِنْدَ التَّاجِرِ مَالٌ.",
+    "fr": "Le marchand a de l'argent."
+   },
+   "theme": "commerce"
+  },
+  {
+   "id": "akhbara",
+   "ar": "أَخْبَرَ",
+   "translit": "aḫbara",
+   "fr": "informer, apprendre (une nouvelle) à",
+   "nature": "verbe",
+   "lecon": "cite-03",
+   "source_sens": "rédigé par IA",
+   "passe": "أَخْبَرَ",
+   "inaccompli": "يُخْبِرُ",
+   "exemple": {
+    "ar": "أَخْبَرَنِي بَاسِمٌ أَنَّ الْقَافِلَةَ وَصَلَتْ.",
+    "fr": "Bāsim m'a appris que la caravane était arrivée."
+   },
+   "racine": "xbr",
+   "fige": true,
+   "formes": [
+    "أَخْبَرَتْ",
+    "أَخْبَرَنِي",
+    "أَخْبَرَتْنِي",
+    "أَخْبَرَنَا"
+   ],
+   "remarque": "forme IV de la racine خ ب ر",
+   "theme": "parole"
+  },
+  {
+   "id": "zanna",
+   "ar": "ظَنَّ",
+   "translit": "ẓanna",
+   "fr": "penser, croire",
+   "nature": "verbe",
+   "lecon": "cite-03",
+   "source_sens": "rédigé par IA",
+   "passe": "ظَنَّ",
+   "inaccompli": "يَظُنُّ",
+   "exemple": {
+    "ar": "ظَنَنْتُ أَنَّ الْبَابَ مَفْتُوحٌ.",
+    "fr": "Je croyais que la porte était ouverte."
+   },
+   "lemme": "Zan~a",
+   "fige": true,
+   "formes": [
+    "ظَنَّتْ",
+    "ظَنَنْتُ",
+    "أَظُنُّ"
+   ],
+   "theme": "savoir"
+  },
+  {
+   "id": "dhakara",
+   "ar": "ذَكَرَ",
+   "translit": "ḏakara",
+   "fr": "mentionner ; se rappeler",
+   "nature": "verbe",
+   "lecon": "cite-03",
+   "source_sens": "rédigé par IA",
+   "passe": "ذَكَرَ",
+   "inaccompli": "يَذْكُرُ",
+   "exemple": {
+    "ar": "ذَكَرَ نَدِيمٌ أَنَّ الرِّسَالَةَ طَوِيلَةٌ.",
+    "fr": "Nadīm a mentionné que la lettre était longue."
+   },
+   "lemme": "*akara",
+   "fige": true,
+   "formes": [
+    "ذَكَرَتْ"
+   ],
+   "theme": "parole"
+  },
+  {
+   "id": "amara",
+   "ar": "أَمَرَ",
+   "translit": "amara",
+   "fr": "ordonner (à quelqu'un de)",
+   "nature": "verbe",
+   "lecon": "cite-03",
+   "source_sens": "rédigé par IA",
+   "passe": "أَمَرَ",
+   "inaccompli": "يَأْمُرُ",
+   "exemple": {
+    "ar": "أَمَرَ التَّاجِرُ الْحَمَّالَ أَنْ يَحْمِلَ الْأَكْيَاسَ.",
+    "fr": "Le marchand a ordonné au porteur de porter les sacs."
+   },
+   "lemme": ">amara",
+   "fige": true,
+   "formes": [
+    "أَمَرَتْ"
+   ],
+   "theme": "parole"
+  },
+  {
+   "id": "hina",
+   "ar": "حِينَ",
+   "translit": "ḥīna",
+   "fr": "quand, au moment où",
+   "nature": "particule",
+   "lecon": "cite-04",
+   "source_sens": "rédigé par IA",
+   "lemme": "Hiyn",
+   "exemple": {
+    "ar": "حِينَ انْتَهَى الدَّرْسُ، خَرَجَ الطُّلَّابُ.",
+    "fr": "Quand la leçon s'est terminée, les étudiants sont sortis."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "lamma",
+   "ar": "لَمَّا",
+   "translit": "lammā",
+   "fr": "lorsque (+ passé)",
+   "nature": "particule",
+   "lecon": "cite-04",
+   "source_sens": "rédigé par IA",
+   "lemme": "lam~aA",
+   "exemple": {
+    "ar": "لَمَّا وَصَلْنَا إِلَى الْمَدِينَةِ، كَانَ الْبَابُ مَفْتُوحًا.",
+    "fr": "Lorsque nous sommes arrivés à la ville, la porte était ouverte."
+   },
+   "remarque": "suivi du passé",
+   "theme": "temps"
+  },
+  {
+   "id": "mata",
+   "ar": "مَتَى",
+   "translit": "matā",
+   "fr": "quand ?",
+   "nature": "interrogatif",
+   "lecon": "cite-04",
+   "source_sens": "rédigé par IA",
+   "lemme": "mataY`",
+   "exemple": {
+    "ar": "مَتَى تَصِلُ الْقَافِلَةُ؟",
+    "fr": "Quand la caravane arrive-t-elle ?"
+   },
+   "theme": "questions"
+  },
+  {
+   "id": "layl",
+   "ar": "لَيْلٌ",
+   "translit": "layl",
+   "fr": "nuit",
+   "nature": "nom",
+   "lecon": "cite-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "layol",
+   "exemple": {
+    "ar": "نَامَ الْمُسَافِرُونَ فِي اللَّيْلِ.",
+    "fr": "Les voyageurs ont dormi la nuit."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "intaha",
+   "ar": "انْتَهَى",
+   "translit": "intahā",
+   "fr": "se terminer, finir",
+   "nature": "verbe",
+   "lecon": "cite-04",
+   "source_sens": "rédigé par IA",
+   "passe": "انْتَهَى",
+   "inaccompli": "يَنْتَهِي",
+   "exemple": {
+    "ar": "انْتَهَى الدَّرْسُ.",
+    "fr": "La leçon s'est terminée."
+   },
+   "lemme": "{ntahaY`",
+   "fige": true,
+   "formes": [
+    "انْتَهَتْ"
+   ],
+   "remarque": "forme VIII de la racine ن ه ي",
+   "theme": "temps"
+  },
+  {
+   "id": "istayqaza",
+   "ar": "اسْتَيْقَظَ",
+   "translit": "istayqaẓa",
+   "fr": "se réveiller",
+   "nature": "verbe",
+   "lecon": "cite-04",
+   "source_sens": "rédigé par IA",
+   "passe": "اسْتَيْقَظَ",
+   "inaccompli": "يَسْتَيْقِظُ",
+   "exemple": {
+    "ar": "اسْتَيْقَظَ بَاسِمٌ فِي الصَّبَاحِ.",
+    "fr": "Bāsim s'est réveillé le matin."
+   },
+   "racine": "yqZ",
+   "fige": true,
+   "formes": [
+    "اسْتَيْقَظَتْ",
+    "اسْتَيْقَظْتُ"
+   ],
+   "remarque": "forme X de la racine ي ق ظ",
+   "theme": "actions"
   }
  ]
 }
