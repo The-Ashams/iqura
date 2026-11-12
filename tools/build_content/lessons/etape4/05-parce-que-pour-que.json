@@ -88,7 +88,7 @@
         {
           "qui": "nadim",
           "ar": "جَلَسَ سَمِيرٌ لِيَسْمَعَ الْقِصَّةَ.",
-          "fr": "Samīr s'est assis pour écouter l'histoire."
+          "fr": "Samīr s'est déjà assis pour écouter l'histoire."
         }
       ],
       "question": {
@@ -508,7 +508,7 @@
           "ar": "… وَصَلْنَا، نِمْنَا.",
           "choix_ar": [
             "لَمَّا",
-            "مَتَى",
+            "لِأَنَّ",
             "لِمَاذَا"
           ],
           "reponse": 0,

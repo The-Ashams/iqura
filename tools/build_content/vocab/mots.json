@@ -7940,191 +7940,6 @@
    "theme": "actions"
   },
   {
-   "id": "tamyiz",
-   "ar": "تَمْيِيزٌ",
-   "translit": "tamyīzun",
-   "fr": "(en grammaire) le tamyīz, la précision",
-   "nature": "nom",
-   "lecon": "cite-07",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "myz",
-   "exemple": {
-    "ar": "دِرْهَمًا فِي « كَمْ دِرْهَمًا » تَمْيِيزٌ.",
-    "fr": "Dans « combien de dirhams », دِرْهَمًا est un tamyīz."
-   },
-   "theme": "savoir"
-  },
-  {
-   "id": "kam",
-   "ar": "كَمْ",
-   "translit": "kam",
-   "fr": "combien ?",
-   "nature": "interrogatif",
-   "lecon": "cite-07",
-   "source_sens": "rédigé par IA",
-   "lemme": "kam",
-   "exemple": {
-    "ar": "كَمْ دِرْهَمًا فِي الْكِيسِ؟",
-    "fr": "Combien de dirhams y a-t-il dans la bourse ?"
-   },
-   "remarque": "suivi d'un singulier indéfini en -a",
-   "theme": "questions"
-  },
-  {
-   "id": "ishrun",
-   "ar": "عِشْرُونَ",
-   "translit": "ʿišrūna",
-   "fr": "vingt",
-   "nature": "nombre",
-   "lecon": "cite-07",
-   "source_sens": "rédigé par IA",
-   "lemme": "Ei$oruwn",
-   "fige": true,
-   "formes": [
-    "عِشْرِينَ"
-   ],
-   "exemple": {
-    "ar": "فِي الْكِيسِ عِشْرُونَ دِرْهَمًا.",
-    "fr": "Il y a vingt dirhams dans la bourse."
-   },
-   "remarque": "ne change pas selon le genre ; -īna à l'accusatif et au génitif",
-   "theme": "nombres"
-  },
-  {
-   "id": "imtalaa",
-   "ar": "امْتَلَأَ",
-   "translit": "imtalaʾa",
-   "fr": "se remplir",
-   "nature": "verbe",
-   "lecon": "cite-07",
-   "source_sens": "rédigé par IA",
-   "passe": "امْتَلَأَ",
-   "inaccompli": "يَمْتَلِئُ",
-   "exemple": {
-    "ar": "امْتَلَأَتِ السَّلَّةُ تَمْرًا.",
-    "fr": "Le panier s'est rempli de dattes."
-   },
-   "racine": "mlA",
-   "fige": true,
-   "formes": [
-    "امْتَلَأَتْ",
-    "امْتَلَأَتِ"
-   ],
-   "remarque": "forme VIII de la racine م ل ء",
-   "theme": "actions"
-  },
-  {
-   "id": "sinn",
-   "ar": "سِنٌّ",
-   "translit": "sinnun",
-   "fr": "âge (dans أَكْبَرُ سِنًّا)",
-   "nature": "nom",
-   "lecon": "cite-07",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "racine": "snn",
-   "exemple": {
-    "ar": "سَمِيرٌ أَكْبَرُ سِنًّا مِنْ بَاسِمٍ.",
-    "fr": "Samīr est plus âgé que Bāsim."
-   },
-   "remarque": "employé ici seulement comme tamyīz : أَكْبَرُ سِنًّا",
-   "theme": "corps"
-  },
-  {
-   "id": "li_anna",
-   "ar": "لِأَنَّ",
-   "translit": "li-anna",
-   "fr": "parce que",
-   "nature": "particule",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "تَأَخَّرْتُ لِأَنَّ الْجَمَلَ مَرِيضٌ.",
-    "fr": "J'ai été en retard parce que le chameau était malade."
-   },
-   "remarque": "لِـ + أَنَّ : suivi d'un nom en -a",
-   "theme": "particules"
-  },
-  {
-   "id": "li_but",
-   "ar": "لِـ",
-   "translit": "li",
-   "fr": "pour (que), suivi d'un verbe au subjonctif",
-   "nature": "particule",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "جَلَسَ بَاسِمٌ لِيَسْمَعَ الْقِصَّةَ.",
-    "fr": "Bāsim s'est assis pour écouter l'histoire."
-   },
-   "remarque": "devant un nom, لِـ veut dire « à, pour » (leçon 2.15)",
-   "theme": "particules"
-  },
-  {
-   "id": "hatta",
-   "ar": "حَتَّى",
-   "translit": "ḥattā",
-   "fr": "jusqu'à ; jusqu'à ce que, pour que",
-   "nature": "particule",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "lemme": "Hat~aY`",
-   "exemple": {
-    "ar": "عَمِلَ النَّجَّارُ حَتَّى الْمَسَاءِ.",
-    "fr": "Le menuisier a travaillé jusqu'au soir."
-   },
-   "theme": "particules"
-  },
-  {
-   "id": "limadha",
-   "ar": "لِمَاذَا",
-   "translit": "limāḏā",
-   "fr": "pourquoi ?",
-   "nature": "interrogatif",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "lemme": "maA*aA",
-   "exemple": {
-    "ar": "لِمَاذَا تَأَخَّرْتَ؟",
-    "fr": "Pourquoi es-tu en retard ?"
-   },
-   "remarque": "لِـ + مَاذَا ; forme courte : لِمَ",
-   "theme": "questions"
-  },
-  {
-   "id": "sabab",
-   "ar": "سَبَبٌ",
-   "translit": "sababun",
-   "fr": "cause, raison",
-   "nature": "nom",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "sabab",
-   "exemple": {
-    "ar": "مَا سَبَبُ التَّأَخُّرِ؟",
-    "fr": "Quelle est la cause du retard ?"
-   },
-   "theme": "savoir"
-  },
-  {
-   "id": "jaiE",
-   "ar": "جَائِعٌ",
-   "translit": "ǧāʾiʿun",
-   "fr": "qui a faim",
-   "nature": "adjectif",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "jwE",
-   "exemple": {
-    "ar": "الطِّفْلُ جَائِعٌ.",
-    "fr": "L'enfant a faim."
-   },
-   "theme": "corps"
-  },
-  {
    "id": "hal_etat",
    "ar": "حَالٌ",
    "translit": "ḥālun",
@@ -8307,6 +8122,262 @@
    },
    "remarque": "nom « d'une fois » de طَرَقَ, moule فَعْلَة",
    "theme": "actions"
+  },
+  {
+   "id": "li_anna",
+   "ar": "لِأَنَّ",
+   "translit": "li-anna",
+   "fr": "parce que",
+   "nature": "particule",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "تَأَخَّرْتُ لِأَنَّ الْجَمَلَ مَرِيضٌ.",
+    "fr": "J'ai été en retard parce que le chameau était malade."
+   },
+   "remarque": "لِـ + أَنَّ : suivi d'un nom en -a",
+   "theme": "particules"
+  },
+  {
+   "id": "li_but",
+   "ar": "لِـ",
+   "translit": "li",
+   "fr": "pour (que), suivi d'un verbe au subjonctif",
+   "nature": "particule",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "جَلَسَ بَاسِمٌ لِيَسْمَعَ الْقِصَّةَ.",
+    "fr": "Bāsim s'est assis pour écouter l'histoire."
+   },
+   "remarque": "devant un nom, لِـ veut dire « à, pour » (leçon 2.15)",
+   "theme": "particules"
+  },
+  {
+   "id": "hatta",
+   "ar": "حَتَّى",
+   "translit": "ḥattā",
+   "fr": "jusqu'à ; jusqu'à ce que, pour que",
+   "nature": "particule",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "lemme": "Hat~aY`",
+   "exemple": {
+    "ar": "عَمِلَ النَّجَّارُ حَتَّى الْمَسَاءِ.",
+    "fr": "Le menuisier a travaillé jusqu'au soir."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "limadha",
+   "ar": "لِمَاذَا",
+   "translit": "limāḏā",
+   "fr": "pourquoi ?",
+   "nature": "interrogatif",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "lemme": "maA*aA",
+   "exemple": {
+    "ar": "لِمَاذَا تَأَخَّرْتَ؟",
+    "fr": "Pourquoi es-tu en retard ?"
+   },
+   "remarque": "لِـ + مَاذَا ; forme courte : لِمَ",
+   "theme": "questions"
+  },
+  {
+   "id": "sabab",
+   "ar": "سَبَبٌ",
+   "translit": "sababun",
+   "fr": "cause, raison",
+   "nature": "nom",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "sabab",
+   "exemple": {
+    "ar": "مَا سَبَبُ التَّأَخُّرِ؟",
+    "fr": "Quelle est la cause du retard ?"
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "jaiE",
+   "ar": "جَائِعٌ",
+   "translit": "ǧāʾiʿun",
+   "fr": "qui a faim",
+   "nature": "adjectif",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jwE",
+   "exemple": {
+    "ar": "الطِّفْلُ جَائِعٌ.",
+    "fr": "L'enfant a faim."
+   },
+   "theme": "corps"
+  },
+  {
+   "id": "tamyiz",
+   "ar": "تَمْيِيزٌ",
+   "translit": "tamyīzun",
+   "fr": "(en grammaire) le tamyīz, la précision",
+   "nature": "nom",
+   "lecon": "cite-07",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "myz",
+   "exemple": {
+    "ar": "دِرْهَمًا فِي « كَمْ دِرْهَمًا » تَمْيِيزٌ.",
+    "fr": "Dans « combien de dirhams », دِرْهَمًا est un tamyīz."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "kam",
+   "ar": "كَمْ",
+   "translit": "kam",
+   "fr": "combien ?",
+   "nature": "interrogatif",
+   "lecon": "cite-07",
+   "source_sens": "rédigé par IA",
+   "lemme": "kam",
+   "exemple": {
+    "ar": "كَمْ دِرْهَمًا فِي الْكِيسِ؟",
+    "fr": "Combien de dirhams y a-t-il dans la bourse ?"
+   },
+   "remarque": "suivi d'un singulier indéfini en -a",
+   "theme": "questions"
+  },
+  {
+   "id": "ishrun",
+   "ar": "عِشْرُونَ",
+   "translit": "ʿišrūna",
+   "fr": "vingt",
+   "nature": "nombre",
+   "lecon": "cite-07",
+   "source_sens": "rédigé par IA",
+   "lemme": "Ei$oruwn",
+   "fige": true,
+   "formes": [
+    "عِشْرِينَ"
+   ],
+   "exemple": {
+    "ar": "فِي الْكِيسِ عِشْرُونَ دِرْهَمًا.",
+    "fr": "Il y a vingt dirhams dans la bourse."
+   },
+   "remarque": "ne change pas selon le genre ; -īna à l'accusatif et au génitif",
+   "theme": "nombres"
+  },
+  {
+   "id": "imtalaa",
+   "ar": "امْتَلَأَ",
+   "translit": "imtalaʾa",
+   "fr": "se remplir",
+   "nature": "verbe",
+   "lecon": "cite-07",
+   "source_sens": "rédigé par IA",
+   "passe": "امْتَلَأَ",
+   "inaccompli": "يَمْتَلِئُ",
+   "exemple": {
+    "ar": "امْتَلَأَتِ السَّلَّةُ تَمْرًا.",
+    "fr": "Le panier s'est rempli de dattes."
+   },
+   "lemme": "{motala>o",
+   "fige": true,
+   "formes": [
+    "امْتَلَأَتْ",
+    "امْتَلَأَتِ"
+   ],
+   "remarque": "forme VIII de la racine م ل ء",
+   "theme": "actions"
+  },
+  {
+   "id": "sinn",
+   "ar": "سِنٌّ",
+   "translit": "sinnun",
+   "fr": "âge (dans أَكْبَرُ سِنًّا)",
+   "nature": "nom",
+   "lecon": "cite-07",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "snn",
+   "exemple": {
+    "ar": "سَمِيرٌ أَكْبَرُ سِنًّا مِنْ بَاسِمٍ.",
+    "fr": "Samīr est plus âgé que Bāsim."
+   },
+   "remarque": "employé ici seulement comme tamyīz : أَكْبَرُ سِنًّا ; sens premier : dent",
+   "theme": "savoir"
+  },
+  {
+   "id": "li_ajli",
+   "ar": "لِأَجْلِ",
+   "translit": "li-aǧli",
+   "fr": "pour, à cause de",
+   "nature": "particule",
+   "lecon": "cite-09",
+   "source_sens": "rédigé par IA",
+   "lemme": ">ajol",
+   "exemple": {
+    "ar": "سَافَرَ لِأَجْلِ التِّجَارَةِ.",
+    "fr": "Il est parti pour le commerce."
+   },
+   "remarque": "مَفْعُولٌ لِأَجْلِهِ : le complément de motif",
+   "theme": "particules"
+  },
+  {
+   "id": "faala",
+   "ar": "فَعَلَ",
+   "translit": "faʿala",
+   "fr": "faire",
+   "nature": "verbe",
+   "lecon": "cite-09",
+   "source_sens": "rédigé par IA",
+   "passe": "فَعَلَ",
+   "inaccompli": "يَفْعَلُ",
+   "exemple": {
+    "ar": "مَاذَا فَعَلَ التَّاجِرُ؟",
+    "fr": "Qu'a fait le marchand ?"
+   },
+   "lemme": "faEala",
+   "fige": true,
+   "formes": [
+    "فَعَلَتْ",
+    "فَعَلْتُ",
+    "أَفْعَلُ"
+   ],
+   "theme": "actions"
+  },
+  {
+   "id": "tijara",
+   "ar": "تِجَارَةٌ",
+   "translit": "tiǧāratun",
+   "fr": "commerce",
+   "nature": "nom",
+   "lecon": "cite-09",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "tija`rap",
+   "exemple": {
+    "ar": "التِّجَارَةُ فِي السُّوقِ.",
+    "fr": "Le commerce se fait au marché."
+   },
+   "theme": "commerce"
+  },
+  {
+   "id": "ribh",
+   "ar": "رِبْحٌ",
+   "translit": "ribḥun",
+   "fr": "gain, profit",
+   "nature": "nom",
+   "lecon": "cite-09",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "rbH",
+   "exemple": {
+    "ar": "سَافَرَ التَّاجِرُ طَلَبًا لِلرِّبْحِ.",
+    "fr": "Le marchand est parti en quête de profit."
+   },
+   "theme": "commerce"
   }
  ]
 }

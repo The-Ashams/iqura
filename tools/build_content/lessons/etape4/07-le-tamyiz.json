@@ -87,8 +87,8 @@
         },
         {
           "qui": "basim",
-          "ar": "سَمِيرٌ أَكْبَرُ سِنًّا مِنِّي، وَعِنْدَهُ أَكْثَرُ.",
-          "fr": "Samīr est plus âgé que moi, et il en a davantage."
+          "ar": "سَمِيرٌ أَكْبَرُ سِنًّا مِنِّي، وَهُوَ أَكْثَرُ كُتُبًا مِنِّي.",
+          "fr": "Samīr est plus âgé que moi, et il a plus de livres que moi."
         }
       ],
       "question": {
@@ -150,7 +150,7 @@
     {
       "type": "regle",
       "titre": "Après كَمْ : le singulier",
-      "texte": "En français, on dit « combien de livres » ; en arabe, après كَمْ, le nom est au singulier : كَمْ كِتَابًا ?",
+      "texte": "En français, on dit « combien de livres » ; en arabe, après كَمْ, le nom est au singulier : كَمْ كِتَابًا؟",
       "exemples": [
         "كَمْ كِتَابًا",
         "كَمْ طَالِبًا"
@@ -161,7 +161,7 @@
         "choix_ar": [
           "كَمْ طَالِبًا؟",
           "كَمْ طُلَّابًا؟",
-          "كَمْ الطَّالِبُ؟"
+          "كَمِ الطَّالِبُ؟"
         ],
         "reponse": 0,
         "explication": "Singulier indéfini en -a."
@@ -343,16 +343,14 @@
             "سِنًّا",
             "أَكْبَرُ",
             "سَمِيرٌ",
-            "مِنْ",
-            "بَاسِمٍ",
+            "مِنْ بَاسِمٍ",
             "سِنٌّ"
           ],
           "solution": [
             "سَمِيرٌ",
             "أَكْبَرُ",
             "سِنًّا",
-            "مِنْ",
-            "بَاسِمٍ"
+            "مِنْ بَاسِمٍ"
           ],
           "explication": "Le tamyīz est en -a : سِنًّا."
         },
@@ -404,7 +402,7 @@
           "choix_ar": [
             "كَمْ دِرْهَمًا؟",
             "كَمْ دَرَاهِمَ؟",
-            "كَمْ الدِّرْهَمُ؟"
+            "كَمِ الدِّرْهَمُ؟"
           ],
           "reponse": 0,
           "explication": "Après كَمْ : singulier en -a."
@@ -415,23 +413,23 @@
           "ar": "فِي الْكِيسِ … دِرْهَمًا.",
           "choix_ar": [
             "عِشْرُونَ",
-            "عِشْرِينَ",
-            "عِشْرُونَ مِنْ"
+            "عَشَرَةُ",
+            "اثْنَانِ"
           ],
           "reponse": 0,
-          "explication": "Ici le nombre est sujet : عِشْرُونَ en -ūna."
+          "explication": "De 11 à 99, le nom compté est au singulier en -a : عِشْرُونَ دِرْهَمًا."
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Le panier s'est rempli de dattes. »",
-          "ar": "… السَّلَّةُ تَمْرًا.",
+          "consigne": "Complète : « Le sac s'est rempli de dattes. »",
+          "ar": "… الْكِيسُ تَمْرًا.",
           "choix_ar": [
-            "امْتَلَأَتِ",
             "امْتَلَأَ",
+            "امْتَلَأَتِ",
             "يَمْتَلِئُ"
           ],
           "reponse": 0,
-          "explication": "السَّلَّةُ est féminin : امْتَلَأَتْ, et امْتَلَأَتِ devant l'article."
+          "explication": "الْكِيسُ est masculin : امْتَلَأَ ; يَمْتَلِئُ dirait « se remplit »."
         },
         {
           "type": "completer",
@@ -440,7 +438,7 @@
           "choix_ar": [
             "سِنًّا",
             "سِنٌّ",
-            "السِّنِّ"
+            "السِّنُّ"
           ],
           "reponse": 0,
           "explication": "Tamyīz : -a."
