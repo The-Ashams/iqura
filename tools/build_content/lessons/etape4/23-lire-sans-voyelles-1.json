@@ -1,0 +1,550 @@
+{
+  "id": "cite-23",
+  "etape": 4,
+  "ordre": 23,
+  "format": 3,
+  "titre": "Lire sans voyelles (1)",
+  "objectif": "Lire un texte simple, fait de mots connus, sans voyelles brèves.",
+  "statut": "ia_non_verifie",
+  "lieu": "atelier_copistes",
+  "maitre": "zuhayr",
+  "prerequis": [
+    "cite-22"
+  ],
+  "apercu": [
+    "زُهَيْرٌ",
+    "بَاسِمٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "zuhayr",
+          "texte": "Bienvenue dans mon atelier. Ici, on copie les livres, et la plupart des livres n'ont pas de voyelles."
+        },
+        {
+          "qui": "zuhayr",
+          "texte": "N'aie pas peur : tu connais déjà les mots. On retire les voyelles petit à petit."
+        }
+      ],
+      "objectif": "Lire sans voyelles brèves."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Quelle voyelle porte le ك de كَتَبَ ?",
+          "choix": [
+            "fatḥa (a)",
+            "ḍamma (u)",
+            "kasra (i)"
+          ],
+          "reponse": 0,
+          "explication": "كَتَبَ : ka-ta-ba."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Que veut dire ce mot ? »",
+          "ar": "مَا … هَٰذِهِ الْكَلِمَةِ؟",
+          "choix_ar": [
+            "مَعْنَى",
+            "مَعْنًى",
+            "كَلَامُ"
+          ],
+          "reponse": 0,
+          "explication": "Devant un nom : مَعْنَى (leçon 4.22)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand est allé au marché. »",
+          "ar": "ذَهَبَ التَّاجِرُ إِلَى …",
+          "choix_ar": [
+            "السُّوقِ",
+            "السُّوقُ",
+            "السُّوقَ"
+          ],
+          "reponse": 0,
+          "explication": "Après إِلَى : génitif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "لَيْسَ فِي هَٰذَا النَّصِّ شَكْلٌ!",
+          "fr": "Ce texte n'a pas de vocalisation !"
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "نَعَمْ، وَلَٰكِنَّ كَلِمَاتِهِ سَهْلَةٌ. انْظُرْ إِلَى الْحُرُوفِ.",
+          "fr": "Oui, mais ses mots sont faciles. Regarde les lettres."
+        },
+        {
+          "qui": "basim",
+          "ar": "أَيْنَ الْحَرَكَاتُ؟",
+          "fr": "Où sont les voyelles ?"
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "فِي رَأْسِكَ!",
+          "fr": "Dans ta tête !"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Selon Zuhayr, où sont les voyelles ?",
+        "choix": [
+          "dans la tête du lecteur",
+          "sous les lettres",
+          "dans un autre livre"
+        ],
+        "reponse": 0,
+        "explication": "فِي رَأْسِكَ!"
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "haraka",
+        "damma",
+        "kasra",
+        "shadda",
+        "shakl",
+        "nass"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "حَرَكَةٌ",
+        "choix": [
+          "voyelle (brève)",
+          "texte",
+          "lettre"
+        ],
+        "reponse": 0,
+        "explication": "حَرَكَةٌ veut dire « voyelle (brève) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Un texte sans voyelles",
+      "texte": "Les textes ordinaires n'écrivent ni les voyelles brèves, ni le sukūn, ni le petit alif (هذا, لكن : on lit toujours hāḏā, lākinna). On s'appuie sur les lettres longues, l'article, les mots-outils et la place du mot.",
+      "exemples": [
+        "ذَهَبَ التَّاجِرُ إِلَى السُّوقِ",
+        "هَٰذَا النَّصُّ سَهْلٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans un texte ordinaire, on n'écrit pas…",
+        "choix": [
+          "les voyelles brèves",
+          "les lettres longues",
+          "l'article"
+        ],
+        "reponse": 0,
+        "explication": "Les lettres longues et l'article restent écrits."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La place décide",
+      "texte": "Un squelette se lit parfois de deux façons : ذَهَبَ « il est allé » ou ذَهَبٌ « or ». En tête de phrase, c'est souvent le verbe ; juste après une préposition, ou suivi d'un adjectif, c'est un nom.",
+      "exemples": [
+        "ذَهَبَ التَّاجِرُ إِلَى السُّوقِ",
+        "فِي الْكِيسِ ذَهَبٌ كَثِيرٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans « في الكيس ذهب كثير », ذهب se lit…",
+        "choix_ar": [
+          "ذَهَبٌ",
+          "ذَهَبَ",
+          "ذُهِبَ"
+        ],
+        "reponse": 0,
+        "explication": "ذهب est suivi de l'adjectif كثير : c'est un nom, ذَهَبٌ « or »."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Palier A : sans voyelles à l'intérieur des mots",
+      "texte": "Zuhayr retire les voyelles à l'intérieur des mots ; il garde la fin et la shadda. Lis d'abord seul.",
+      "sans_voyelles": "A",
+      "phrases": [
+        "ذَهَبَ التَّاجِرُ إِلَى السُّوقِ فِي الصَّبَاحِ.",
+        "حَمَلَ الْحَمَّالُ الْحِمْلَ.",
+        "فِي الْكِيسِ ذَهَبٌ كَثِيرٌ.",
+        "هَٰذَا النَّصُّ سَهْلٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui est allé au marché ?",
+          "choix": [
+            "le marchand",
+            "le portefaix",
+            "l'étudiant"
+          ],
+          "reponse": 0,
+          "explication": "ذَهَبَ التَّاجِرُ إِلَى السُّوقِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'y a-t-il dans le sac ?",
+          "choix": [
+            "beaucoup d'or",
+            "un livre",
+            "du papier"
+          ],
+          "reponse": 0,
+          "explication": "فِي الْكِيسِ ذَهَبٌ كَثِيرٌ."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَدَّةٌ",
+          "choix": [
+            "shadda (signe de la lettre doublée)",
+            "ḍamma (la voyelle u)",
+            "texte"
+          ],
+          "reponse": 0,
+          "explication": "شَدَّةٌ veut dire « shadda (signe de la lettre doublée) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَصٌّ",
+          "choix": [
+            "texte",
+            "voyelle (brève)",
+            "phrase"
+          ],
+          "reponse": 0,
+          "explication": "نَصٌّ veut dire « texte »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَكْلٌ",
+          "choix": [
+            "vocalisation (mettre les voyelles)",
+            "texte",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "شَكْلٌ veut dire « vocalisation (mettre les voyelles) »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis le mot bien vocalisé : « Le portefaix a porté la charge. »",
+          "ar": "حمل الحمال …",
+          "choix_ar": [
+            "الْحِمْلَ",
+            "الْحَمَّالَ",
+            "حَمَلَ"
+          ],
+          "reponse": 0,
+          "explication": "Le complément de حَمَلَ : الْحِمْلَ « la charge »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis le mot bien vocalisé : « L'étudiant a écrit la leçon. »",
+          "ar": "… الطالب الدرس",
+          "choix_ar": [
+            "كَتَبَ",
+            "كُتُبُ",
+            "كُتِبَ"
+          ],
+          "reponse": 0,
+          "explication": "En tête, suivi d'un sujet et d'un complément : le verbe كَتَبَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis le mot bien vocalisé : « Les livres sont sur la chaise. »",
+          "ar": "… على الكرسي",
+          "choix_ar": [
+            "الْكُتُبُ",
+            "كَتَبَ",
+            "الْكَاتِبُ"
+          ],
+          "reponse": 0,
+          "explication": "« les livres » : الْكُتُبُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis la fin bien vocalisée : « Le marchand est allé au marché. »",
+          "ar": "ذهب التاجر إلى …",
+          "choix_ar": [
+            "السُّوقِ",
+            "السُّوقُ",
+            "السُّوقَ"
+          ],
+          "reponse": 0,
+          "explication": "Après إلى : génitif, السُّوقِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis la fin bien vocalisée : « Ce texte est facile. »",
+          "ar": "هذا النص …",
+          "choix_ar": [
+            "سَهْلٌ",
+            "سَهْلًا",
+            "سَهْلٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Palier B : sans voyelle finale",
+      "texte": "Zuhayr retire aussi la voyelle finale et le tanwīn ; il garde la shadda. Lis d'abord seul.",
+      "sans_voyelles": "B",
+      "phrases": [
+        "كَتَبَ الطَّالِبُ الدَّرْسَ.",
+        "الْكُتُبُ عَلَى الْكُرْسِيِّ.",
+        "لَعِبَ الطِّفْلُ فِي الْحَدِيقَةِ.",
+        "جَلَسَ الْكَاتِبُ وَكَتَبَ رِسَالَةً."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où sont les livres ?",
+          "choix": [
+            "sur la chaise",
+            "dans le sac",
+            "au marché"
+          ],
+          "reponse": 0,
+          "explication": "الْكُتُبُ عَلَى الْكُرْسِيِّ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans la 1re phrase, le premier mot se lit…",
+          "choix_ar": [
+            "كَتَبَ",
+            "كُتُبُ",
+            "كُتِبَ"
+          ],
+          "reponse": 0,
+          "explication": "Le verbe en tête, suivi de son sujet : كَتَبَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Ce texte est facile. » ?",
+          "choix_ar": [
+            "هَٰذَا النَّصُّ سَهْلٌ.",
+            "هَٰذَا النَّصِّ سَهْلٌ.",
+            "هَٰذَا النَّصُّ سَهْلًا."
+          ],
+          "reponse": 0,
+          "explication": "Sujet et attribut au nominatif."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre, en commençant par le verbe, puis le sujet, « au marché » et « le matin » : « Le marchand est allé au marché le matin. »",
+          "tuiles": [
+            "الصَّبَاحِ",
+            "فِي",
+            "السُّوقِ",
+            "إِلَى",
+            "التَّاجِرُ",
+            "ذَهَبَ"
+          ],
+          "solution": [
+            "ذَهَبَ",
+            "التَّاجِرُ",
+            "إِلَى",
+            "السُّوقِ",
+            "فِي",
+            "الصَّبَاحِ"
+          ],
+          "explication": "Le verbe en tête, puis le sujet."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis le mot bien vocalisé : « Dans le sac, il y a beaucoup d'or. »",
+          "ar": "في الكيس … كثير",
+          "choix_ar": [
+            "ذَهَبٌ",
+            "ذَهَبَ",
+            "ذُهِبَ"
+          ],
+          "reponse": 0,
+          "explication": "ذهب est suivi de l'adjectif كثير : c'est un nom, ذَهَبٌ « or »."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَسْرَةٌ",
+          "choix": [
+            "kasra (la voyelle i)",
+            "ḍamma (la voyelle u)",
+            "shadda (signe de la lettre doublée)"
+          ],
+          "reponse": 0,
+          "explication": "كَسْرَةٌ veut dire « kasra (la voyelle i) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ضَمَّةٌ",
+          "choix": [
+            "ḍamma (la voyelle u)",
+            "kasra (la voyelle i)",
+            "fatḥa (la voyelle a)"
+          ],
+          "reponse": 0,
+          "explication": "ضَمَّةٌ veut dire « ḍamma (la voyelle u) »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis le mot bien vocalisé : « Le marchand est allé au marché. »",
+          "ar": "… التاجر إلى السوق",
+          "choix_ar": [
+            "ذَهَبَ",
+            "ذَهَبٌ",
+            "ذُهِبَ"
+          ],
+          "reponse": 0,
+          "explication": "Le verbe en tête : ذَهَبَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis le mot bien vocalisé : « Dans le sac, il y a de l'or. »",
+          "ar": "في الكيس …",
+          "choix_ar": [
+            "ذَهَبٌ",
+            "ذَهَبَ",
+            "ذُهِبَ"
+          ],
+          "reponse": 0,
+          "explication": "Un nom : ذَهَبٌ « or »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis la fin bien vocalisée : « Le marchand est allé au marché. »",
+          "ar": "ذهب التاجر إلى …",
+          "choix_ar": [
+            "السُّوقِ",
+            "السُّوقُ",
+            "السُّوقَ"
+          ],
+          "reponse": 0,
+          "explication": "Après إلى : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis le mot bien vocalisé : « Le portefaix a porté la charge. »",
+          "ar": "حمل الحمال …",
+          "choix_ar": [
+            "الْحِمْلَ",
+            "الْحِمْلُ",
+            "الْحِمْلِ"
+          ],
+          "reponse": 0,
+          "explication": "Complément d'objet : accusatif."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Ce texte est facile. » ?",
+          "choix_ar": [
+            "هَٰذَا النَّصُّ سَهْلٌ.",
+            "هَٰذَا النَّصَّ سَهْلٌ.",
+            "هَٰذَا النَّصُّ سَهْلٍ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet et attribut au nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Sans voyelles, on s'appuie sur…",
+          "choix": [
+            "les lettres longues, l'article et la place du mot",
+            "la voyelle de chaque lettre",
+            "le titre du livre"
+          ],
+          "reponse": 0,
+          "explication": "Lettres longues, article, mots-outils, place du mot."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Au palier B, on garde…",
+          "choix": [
+            "la shadda",
+            "la voyelle finale",
+            "toutes les voyelles"
+          ],
+          "reponse": 0,
+          "explication": "Au palier B, seule la shadda reste."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَرَّرَ",
+          "choix": [
+            "répéter",
+            "comprendre",
+            "marchander"
+          ],
+          "reponse": 0,
+          "explication": "كَرَّرَ veut dire « répéter ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Alors nous nous retrouvons demain. »",
+          "ar": "نَلْتَقِي غَدًا … .",
+          "choix_ar": [
+            "إِذَنْ",
+            "إِذَا",
+            "لَمَّا"
+          ],
+          "reponse": 0,
+          "explication": "Pour conclure : إِذَنْ, à la fin.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "دَلِيلٌ",
+          "choix": [
+            "preuve, argument",
+            "opinion, avis",
+            "débat"
+          ],
+          "reponse": 0,
+          "explication": "دَلِيلٌ veut dire « preuve, argument ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu lis sans voyelles à l'intérieur des mots, puis sans voyelle finale ; la place du mot t'aide à choisir (ذَهَبَ ou ذَهَبٌ).",
+      "suite": "Prochaine leçon : lire comme dans un livre, et deviner un mot inconnu."
+    }
+  ]
+}

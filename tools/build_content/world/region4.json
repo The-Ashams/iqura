@@ -171,7 +171,9 @@
         46
       ],
       "lecons": [
-        20
+        20,
+        21,
+        22
       ],
       "scene": "scene_maison_nadim",
       "sol": 84,
@@ -190,7 +192,10 @@
         100,
         24
       ],
-      "lecons": [],
+      "lecons": [
+        23,
+        24
+      ],
       "scene": "scene_atelier_copistes",
       "sol": 84,
       "tranche_j1a": true,

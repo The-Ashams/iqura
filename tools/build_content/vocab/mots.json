@@ -9774,6 +9774,463 @@
    },
    "remarque": "devant un verbe ; لِمَاذَا : pourquoi ?",
    "theme": "questions"
+  },
+  {
+   "id": "ray",
+   "ar": "رَأْيٌ",
+   "translit": "raʾyun",
+   "fr": "opinion, avis",
+   "nature": "nom",
+   "lecon": "cite-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "rAy",
+   "fige": true,
+   "formes": [
+    "رَأْيُكَ",
+    "رَأْيِي"
+   ],
+   "exemple": {
+    "ar": "مَا رَأْيُكَ فِي هَٰذِهِ الْقِصَّةِ؟",
+    "fr": "Que penses-tu de cette histoire ?"
+   },
+   "remarque": "la racine ر أ ي a d'autres emplois (voir) ; la racine ne suffit pas pour le sens",
+   "theme": "savoir"
+  },
+  {
+   "id": "wafaqa",
+   "ar": "وَافَقَ",
+   "translit": "wāfaqa",
+   "fr": "être d'accord avec",
+   "nature": "verbe",
+   "lecon": "cite-21",
+   "source_sens": "rédigé par IA",
+   "passe": "وَافَقَ",
+   "inaccompli": "يُوَافِقُ",
+   "exemple": {
+    "ar": "أُوَافِقُكَ.",
+    "fr": "Je suis d'accord avec toi."
+   },
+   "racine": "wfq",
+   "fige": true,
+   "formes": [
+    "أُوَافِقُكَ",
+    "أُوَافِقُ"
+   ],
+   "remarque": "forme III ; la racine ne suffit pas pour le sens",
+   "theme": "parole"
+  },
+  {
+   "id": "sahih",
+   "ar": "صَحِيحٌ",
+   "translit": "ṣaḥīḥun",
+   "fr": "juste, exact",
+   "nature": "adjectif",
+   "lecon": "cite-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "formes": [
+    "صَحِيحَةٌ"
+   ],
+   "exemple": {
+    "ar": "هَٰذَا صَحِيحٌ.",
+    "fr": "C'est exact."
+   },
+   "theme": "qualites"
+  },
+  {
+   "id": "dalil",
+   "ar": "دَلِيلٌ",
+   "translit": "dalīlun",
+   "fr": "preuve, argument",
+   "nature": "nom",
+   "lecon": "cite-21",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "dll",
+   "fige": true,
+   "formes": [
+    "دَلِيلِي"
+   ],
+   "exemple": {
+    "ar": "دَلِيلِي أَنَّ الطَّرِيقَ صَعْبٌ.",
+    "fr": "Ma preuve, c'est que le chemin est difficile."
+   },
+   "remarque": "même racine que دَلَّ « indiquer » ; la racine ne suffit pas pour le sens",
+   "theme": "savoir"
+  },
+  {
+   "id": "munazara",
+   "ar": "مُنَاظَرَةٌ",
+   "translit": "munāẓaratun",
+   "fr": "débat",
+   "nature": "nom",
+   "lecon": "cite-21",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "nZr",
+   "exemple": {
+    "ar": "اخْتَلَفَ الطَّالِبَانِ فِي الْمُنَاظَرَةِ.",
+    "fr": "Les deux étudiants ont été en désaccord pendant le débat."
+   },
+   "remarque": "même racine que نَظَرَ ; la racine ne suffit pas pour le sens",
+   "theme": "savoir"
+  },
+  {
+   "id": "asabta",
+   "ar": "أَصَبْتَ",
+   "translit": "aṣabta",
+   "fr": "tu as raison",
+   "nature": "verbe",
+   "lecon": "cite-21",
+   "source_sens": "rédigé par IA",
+   "racine": "Swb",
+   "fige": true,
+   "formes": [],
+   "exemple": {
+    "ar": "هَٰذَا صَحِيحٌ، أَصَبْتَ.",
+    "fr": "C'est exact, tu as raison."
+   },
+   "remarque": "forme figée ; la racine ne suffit pas pour le sens",
+   "theme": "parole"
+  },
+  {
+   "id": "karrara",
+   "ar": "كَرَّرَ",
+   "translit": "karrara",
+   "fr": "répéter",
+   "nature": "verbe",
+   "lecon": "cite-22",
+   "source_sens": "rédigé par IA",
+   "passe": "كَرَّرَ",
+   "inaccompli": "يُكَرِّرُ",
+   "exemple": {
+    "ar": "أَرْجُو أَنْ تُكَرِّرَ الْكَلَامَ.",
+    "fr": "Je te prie de répéter tes paroles."
+   },
+   "racine": "krr",
+   "fige": true,
+   "formes": [
+    "تُكَرِّرَ",
+    "كَرِّرْ"
+   ],
+   "remarque": "forme II ; la racine ne suffit pas pour le sens",
+   "theme": "parole"
+  },
+  {
+   "id": "maana",
+   "ar": "مَعْنًى",
+   "translit": "maʿnan",
+   "fr": "sens (d'un mot)",
+   "nature": "nom",
+   "lecon": "cite-22",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "fige": true,
+   "formes": [
+    "الْمَعْنَى",
+    "مَعْنَى"
+   ],
+   "exemple": {
+    "ar": "مَا مَعْنَى هَٰذِهِ الْكَلِمَةِ؟",
+    "fr": "Que veut dire ce mot ?"
+   },
+   "remarque": "finit par ى : son cas ne s'entend pas (maʿnan aux trois cas)",
+   "theme": "savoir"
+  },
+  {
+   "id": "ala_mahl",
+   "ar": "عَلَى مَهْلٍ",
+   "translit": "ʿalā mahlin",
+   "fr": "lentement, sans se presser",
+   "nature": "adverbe",
+   "lecon": "cite-22",
+   "source_sens": "rédigé par IA",
+   "racine": "mhl",
+   "fige": true,
+   "formes": [
+    "مَهْلٍ"
+   ],
+   "exemple": {
+    "ar": "كَرِّرْ عَلَى مَهْلٍ.",
+    "fr": "Répète lentement."
+   },
+   "remarque": "expression ; مَهْلٌ : calme, lenteur ; la racine ne suffit pas pour le sens",
+   "theme": "qualites"
+  },
+  {
+   "id": "kalam",
+   "ar": "كَلَامٌ",
+   "translit": "kalāmun",
+   "fr": "paroles, propos",
+   "nature": "nom",
+   "lecon": "cite-22",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "kala`m",
+   "exemple": {
+    "ar": "لَمْ أَفْهَمِ الْكَلَامَ.",
+    "fr": "Je n'ai pas compris les paroles."
+   },
+   "remarque": "même racine que كَلِمَةٌ ; la racine ne suffit pas pour le sens",
+   "theme": "parole"
+  },
+  {
+   "id": "hiwar",
+   "ar": "حِوَارٌ",
+   "translit": "ḥiwārun",
+   "fr": "conversation, dialogue",
+   "nature": "nom",
+   "lecon": "cite-22",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hwr",
+   "exemple": {
+    "ar": "شُكْرًا لَكَ عَلَى الْحِوَارِ.",
+    "fr": "Merci pour la conversation."
+   },
+   "remarque": "la racine ح و ر a d'autres emplois ; la racine ne suffit pas pour le sens",
+   "theme": "parole"
+  },
+  {
+   "id": "idhan",
+   "ar": "إِذَنْ",
+   "translit": "iḏan",
+   "fr": "donc, alors (pour conclure)",
+   "nature": "particule",
+   "lecon": "cite-22",
+   "source_sens": "rédigé par IA",
+   "lemme": "<i*FA",
+   "exemple": {
+    "ar": "نَلْتَقِي غَدًا إِذَنْ.",
+    "fr": "Alors nous nous retrouvons demain."
+   },
+   "remarque": "s'écrit aussi إِذًا ; ne pas confondre avec إِذَا « si, quand »",
+   "theme": "outils"
+  },
+  {
+   "id": "naltaqi",
+   "ar": "نَلْتَقِي",
+   "translit": "naltaqī",
+   "fr": "nous nous retrouvons",
+   "nature": "verbe",
+   "lecon": "cite-22",
+   "source_sens": "rédigé par IA",
+   "racine": "lqy",
+   "fige": true,
+   "formes": [],
+   "exemple": {
+    "ar": "نَلْتَقِي غَدًا.",
+    "fr": "Nous nous retrouvons demain."
+   },
+   "remarque": "forme figée ; même racine que لَقِيَ ; la racine ne suffit pas pour le sens",
+   "theme": "parole"
+  },
+  {
+   "id": "haraka",
+   "ar": "حَرَكَةٌ",
+   "translit": "ḥarakatun",
+   "fr": "voyelle (brève)",
+   "nature": "nom",
+   "lecon": "cite-23",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "Hrk",
+   "fige": true,
+   "formes": [
+    "الْحَرَكَاتُ",
+    "حَرَكَاتٍ"
+   ],
+   "exemple": {
+    "ar": "فِي هَٰذَا النَّصِّ حَرَكَاتٌ.",
+    "fr": "Dans ce texte, il y a des voyelles."
+   },
+   "remarque": "sens de grammaire ; ailleurs, حَرَكَةٌ veut dire « mouvement » ; la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "damma",
+   "ar": "ضَمَّةٌ",
+   "translit": "ḍammatun",
+   "fr": "ḍamma (la voyelle u)",
+   "nature": "nom",
+   "lecon": "cite-23",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "Dmm",
+   "exemple": {
+    "ar": "عَلَى الْمِيمِ ضَمَّةٌ.",
+    "fr": "Sur le mīm, il y a une ḍamma."
+   },
+   "remarque": "sens de grammaire ; la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "kasra",
+   "ar": "كَسْرَةٌ",
+   "translit": "kasratun",
+   "fr": "kasra (la voyelle i)",
+   "nature": "nom",
+   "lecon": "cite-23",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "exemple": {
+    "ar": "تَحْتَ الْبَاءِ كَسْرَةٌ.",
+    "fr": "Sous le bāʾ, il y a une kasra."
+   },
+   "remarque": "sens de grammaire",
+   "theme": "ecriture"
+  },
+  {
+   "id": "shadda",
+   "ar": "شَدَّةٌ",
+   "translit": "šaddatun",
+   "fr": "shadda (signe de la lettre doublée)",
+   "nature": "nom",
+   "lecon": "cite-23",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "$dd",
+   "exemple": {
+    "ar": "عَلَى اللَّامِ شَدَّةٌ.",
+    "fr": "Sur le lām, il y a une shadda."
+   },
+   "remarque": "sens de grammaire ; la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "shakl",
+   "ar": "شَكْلٌ",
+   "translit": "šaklun",
+   "fr": "vocalisation (mettre les voyelles)",
+   "nature": "nom",
+   "lecon": "cite-23",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "$kl",
+   "exemple": {
+    "ar": "لَيْسَ فِي هَٰذَا النَّصِّ شَكْلٌ.",
+    "fr": "Ce texte n'a pas de vocalisation."
+   },
+   "remarque": "sens de grammaire ; ailleurs, شَكْلٌ veut dire « semblable, sorte ; forme » : la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "nass",
+   "ar": "نَصٌّ",
+   "translit": "naṣṣun",
+   "fr": "texte",
+   "nature": "nom",
+   "lecon": "cite-23",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "fige": true,
+   "formes": [
+    "النَّصُّ",
+    "النَّصِّ"
+   ],
+   "exemple": {
+    "ar": "هَٰذَا النَّصُّ سَهْلٌ.",
+    "fr": "Ce texte est facile."
+   },
+   "theme": "ecriture"
+  },
+  {
+   "id": "asl",
+   "ar": "أَصْلٌ",
+   "translit": "aṣlun",
+   "fr": "origine ; (en grammaire) lettre de la racine",
+   "nature": "nom",
+   "lecon": "cite-24",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "ASl",
+   "fige": true,
+   "formes": [
+    "الْأَصْلُ"
+   ],
+   "exemple": {
+    "ar": "الْأَصْلُ ك ت ب.",
+    "fr": "Les lettres de la racine sont k t b."
+   },
+   "remarque": "sens de grammaire ; la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "wazn_scheme",
+   "ar": "وَزْنٌ",
+   "translit": "waznun",
+   "fr": "(en grammaire) schème",
+   "nature": "nom",
+   "lecon": "cite-24",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "wzn",
+   "fige": true,
+   "formes": [
+    "الْوَزْنُ"
+   ],
+   "exemple": {
+    "ar": "الْوَزْنُ مَفْعَلٌ.",
+    "fr": "Le schème est mafʿal."
+   },
+   "remarque": "sens de grammaire ; ailleurs, وَزْنٌ veut dire « pesée » (de وَزَنَ)",
+   "theme": "ecriture"
+  },
+  {
+   "id": "siyaq",
+   "ar": "سِيَاقٌ",
+   "translit": "siyāqun",
+   "fr": "contexte",
+   "nature": "nom",
+   "lecon": "cite-24",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "swq",
+   "exemple": {
+    "ar": "السِّيَاقُ يُسَاعِدُنَا.",
+    "fr": "Le contexte nous aide."
+   },
+   "remarque": "même racine que سُوقٌ ; la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "fil_gram",
+   "ar": "فِعْلٌ",
+   "translit": "fiʿlun",
+   "fr": "(en grammaire) verbe",
+   "nature": "nom",
+   "lecon": "cite-24",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "fEl",
+   "exemple": {
+    "ar": "كَتَبَ فِعْلٌ.",
+    "fr": "كَتَبَ est un verbe."
+   },
+   "remarque": "sens de grammaire ; ailleurs, فِعْلٌ veut dire « action » ; اسْمٌ : nom, حَرْفٌ : particule",
+   "theme": "ecriture"
+  },
+  {
+   "id": "muhtamal",
+   "ar": "مُحْتَمَلٌ",
+   "translit": "muḥtamalun",
+   "fr": "probable, possible",
+   "nature": "adjectif",
+   "lecon": "cite-24",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hml",
+   "fige": true,
+   "formes": [
+    "الْمُحْتَمَلُ"
+   ],
+   "exemple": {
+    "ar": "الْمَعْنَى الْمُحْتَمَلُ مَكَانُ اللَّعِبِ.",
+    "fr": "Le sens probable est « lieu du jeu »."
+   },
+   "remarque": "même racine que حَمَلَ ; la racine ne suffit pas pour le sens",
+   "theme": "savoir"
   }
  ]
 }
