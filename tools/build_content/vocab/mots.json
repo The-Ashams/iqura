@@ -8426,226 +8426,6 @@
    "theme": "savoir"
   },
   {
-   "id": "ahada_ashar",
-   "ar": "أَحَدَ عَشَرَ",
-   "translit": "aḥada ʿašara",
-   "fr": "onze",
-   "nature": "nombre",
-   "lecon": "cite-14",
-   "source_sens": "rédigé par IA",
-   "racine": "E$r",
-   "fige": true,
-   "formes": [
-    "أَحَدَ",
-    "عَشَرَ",
-    "إِحْدَى",
-    "عَشْرَةَ"
-   ],
-   "exemple": {
-    "ar": "فِي الْكِيسِ أَحَدَ عَشَرَ دِرْهَمًا.",
-    "fr": "Il y a onze dirhams dans la bourse."
-   },
-   "remarque": "au féminin : إِحْدَى عَشْرَةَ ; toujours en -a",
-   "theme": "nombres"
-  },
-  {
-   "id": "ithna_ashar",
-   "ar": "اثْنَا عَشَرَ",
-   "translit": "iṯnā ʿašara",
-   "fr": "douze",
-   "nature": "nombre",
-   "lecon": "cite-14",
-   "source_sens": "rédigé par IA",
-   "racine": "vny",
-   "fige": true,
-   "formes": [
-    "اثْنَا",
-    "اثْنَيْ",
-    "اثْنَتَا",
-    "اثْنَتَيْ"
-   ],
-   "exemple": {
-    "ar": "كَتَبَ سَمِيرٌ اثْنَتَيْ عَشْرَةَ رِسَالَةً.",
-    "fr": "Samīr a écrit douze lettres."
-   },
-   "remarque": "اثْنَا au nominatif, اثْنَيْ à l'accusatif et au génitif ; au féminin : اثْنَتَا عَشْرَةَ",
-   "theme": "nombres"
-  },
-  {
-   "id": "thalathun",
-   "ar": "ثَلَاثُونَ",
-   "translit": "ṯalāṯūna",
-   "fr": "trente",
-   "nature": "nombre",
-   "lecon": "cite-14",
-   "source_sens": "rédigé par IA",
-   "racine": "vlv",
-   "fige": true,
-   "formes": [
-    "ثَلَاثِينَ"
-   ],
-   "exemple": {
-    "ar": "عِنْدَ التَّاجِرِ ثَلَاثُونَ جَمَلًا.",
-    "fr": "Le marchand a trente chameaux."
-   },
-   "theme": "nombres"
-  },
-  {
-   "id": "arbaun",
-   "ar": "أَرْبَعُونَ",
-   "translit": "arbaʿūna",
-   "fr": "quarante",
-   "nature": "nombre",
-   "lecon": "cite-14",
-   "source_sens": "rédigé par IA",
-   "racine": "rbE",
-   "fige": true,
-   "formes": [
-    "أَرْبَعِينَ"
-   ],
-   "exemple": {
-    "ar": "فِي الْمَدْرَسَةِ أَرْبَعُونَ طَالِبًا.",
-    "fr": "Il y a quarante étudiants à l'école."
-   },
-   "theme": "nombres"
-  },
-  {
-   "id": "khamsun",
-   "ar": "خَمْسُونَ",
-   "translit": "ḫamsūna",
-   "fr": "cinquante",
-   "nature": "nombre",
-   "lecon": "cite-14",
-   "source_sens": "rédigé par IA",
-   "lemme": "xamosiyn",
-   "fige": true,
-   "formes": [
-    "خَمْسِينَ"
-   ],
-   "exemple": {
-    "ar": "ثَمَنُ الْقَمِيصِ خَمْسُونَ دِرْهَمًا.",
-    "fr": "Le prix de la chemise est de cinquante dirhams."
-   },
-   "theme": "nombres"
-  },
-  {
-   "id": "sittun",
-   "ar": "سِتُّونَ",
-   "translit": "sittūna",
-   "fr": "soixante",
-   "nature": "nombre",
-   "lecon": "cite-14",
-   "source_sens": "rédigé par IA",
-   "lemme": "sit~iyn",
-   "fige": true,
-   "formes": [
-    "سِتِّينَ"
-   ],
-   "exemple": {
-    "ar": "فِي الدُّكَّانِ سِتُّونَ ثَوْبًا.",
-    "fr": "Il y a soixante vêtements dans la boutique."
-   },
-   "theme": "nombres"
-  },
-  {
-   "id": "sabun",
-   "ar": "سَبْعُونَ",
-   "translit": "sabʿūna",
-   "fr": "soixante-dix",
-   "nature": "nombre",
-   "lecon": "cite-14",
-   "source_sens": "rédigé par IA",
-   "racine": "sbE",
-   "fige": true,
-   "formes": [
-    "سَبْعِينَ"
-   ],
-   "exemple": {
-    "ar": "فِي الصُّنْدُوقِ سَبْعُونَ دِينَارًا.",
-    "fr": "Il y a soixante-dix dinars dans le coffre."
-   },
-   "theme": "nombres"
-  },
-  {
-   "id": "thamanun",
-   "ar": "ثَمَانُونَ",
-   "translit": "ṯamānūna",
-   "fr": "quatre-vingts",
-   "nature": "nombre",
-   "lecon": "cite-14",
-   "source_sens": "rédigé par IA",
-   "lemme": "vama`niyn",
-   "fige": true,
-   "formes": [
-    "ثَمَانِينَ"
-   ],
-   "exemple": {
-    "ar": "فِي الْكِتَابِ ثَمَانُونَ وَرَقَةً.",
-    "fr": "Il y a quatre-vingts feuilles dans le livre."
-   },
-   "theme": "nombres"
-  },
-  {
-   "id": "tisun",
-   "ar": "تِسْعُونَ",
-   "translit": "tisʿūna",
-   "fr": "quatre-vingt-dix",
-   "nature": "nombre",
-   "lecon": "cite-14",
-   "source_sens": "rédigé par IA",
-   "racine": "tsE",
-   "fige": true,
-   "formes": [
-    "تِسْعِينَ"
-   ],
-   "exemple": {
-    "ar": "فِي الرِّسَالَةِ تِسْعُونَ سَطْرًا.",
-    "fr": "Il y a quatre-vingt-dix lignes dans la lettre."
-   },
-   "theme": "nombres"
-  },
-  {
-   "id": "mia",
-   "ar": "مِائَةٌ",
-   "translit": "miʾatun",
-   "fr": "cent",
-   "nature": "nombre",
-   "lecon": "cite-14",
-   "source_sens": "rédigé par IA",
-   "lemme": "miA}ap",
-   "fige": true,
-   "formes": [
-    "مِائَةُ",
-    "مِائَةِ"
-   ],
-   "exemple": {
-    "ar": "ثَمَنُ الْبِسَاطِ مِائَةُ دِرْهَمٍ.",
-    "fr": "Le prix du tapis est de cent dirhams."
-   },
-   "remarque": "l'alif ne se prononce pas (miʾa) ; on écrit aussi مِئَة",
-   "theme": "nombres"
-  },
-  {
-   "id": "alf",
-   "ar": "أَلْفٌ",
-   "translit": "alfun",
-   "fr": "mille",
-   "nature": "nombre",
-   "lecon": "cite-14",
-   "source_sens": "rédigé par IA",
-   "lemme": ">alof",
-   "fige": true,
-   "formes": [
-    "أَلْفُ",
-    "أَلْفِ"
-   ],
-   "exemple": {
-    "ar": "فِي الصُّنْدُوقِ أَلْفُ دِينَارٍ.",
-    "fr": "Il y a mille dinars dans le coffre."
-   },
-   "theme": "nombres"
-  },
-  {
    "id": "li_anna",
    "ar": "لِأَنَّ",
    "translit": "liʾanna",
@@ -8968,6 +8748,226 @@
     "fr": "Nous partirons aujourd'hui ou demain."
    },
    "theme": "particules"
+  },
+  {
+   "id": "ahada_ashar",
+   "ar": "أَحَدَ عَشَرَ",
+   "translit": "aḥada ʿašara",
+   "fr": "onze",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "racine": "E$r",
+   "fige": true,
+   "formes": [
+    "أَحَدَ",
+    "عَشَرَ",
+    "إِحْدَى",
+    "عَشْرَةَ"
+   ],
+   "exemple": {
+    "ar": "فِي الْكِيسِ أَحَدَ عَشَرَ دِرْهَمًا.",
+    "fr": "Il y a onze dirhams dans la bourse."
+   },
+   "remarque": "au féminin : إِحْدَى عَشْرَةَ ; ne change pas selon le cas",
+   "theme": "nombres"
+  },
+  {
+   "id": "ithna_ashar",
+   "ar": "اثْنَا عَشَرَ",
+   "translit": "iṯnā ʿašara",
+   "fr": "douze",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "racine": "vny",
+   "fige": true,
+   "formes": [
+    "اثْنَا",
+    "اثْنَيْ",
+    "اثْنَتَا",
+    "اثْنَتَيْ"
+   ],
+   "exemple": {
+    "ar": "كَتَبَ سَمِيرٌ اثْنَتَيْ عَشْرَةَ رِسَالَةً.",
+    "fr": "Samīr a écrit douze lettres."
+   },
+   "remarque": "اثْنَا au nominatif, اثْنَيْ à l'accusatif et au génitif ; au féminin : اثْنَتَا عَشْرَةَ",
+   "theme": "nombres"
+  },
+  {
+   "id": "thalathun",
+   "ar": "ثَلَاثُونَ",
+   "translit": "ṯalāṯūna",
+   "fr": "trente",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "racine": "vlv",
+   "fige": true,
+   "formes": [
+    "ثَلَاثِينَ"
+   ],
+   "exemple": {
+    "ar": "عِنْدَ التَّاجِرِ ثَلَاثُونَ جَمَلًا.",
+    "fr": "Le marchand a trente chameaux."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "arbaun",
+   "ar": "أَرْبَعُونَ",
+   "translit": "arbaʿūna",
+   "fr": "quarante",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "racine": "rbE",
+   "fige": true,
+   "formes": [
+    "أَرْبَعِينَ"
+   ],
+   "exemple": {
+    "ar": "فِي الْمَدْرَسَةِ أَرْبَعُونَ طَالِبًا.",
+    "fr": "Il y a quarante étudiants à l'école."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "khamsun",
+   "ar": "خَمْسُونَ",
+   "translit": "ḫamsūna",
+   "fr": "cinquante",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "lemme": "xamosiyn",
+   "fige": true,
+   "formes": [
+    "خَمْسِينَ"
+   ],
+   "exemple": {
+    "ar": "ثَمَنُ الْقَمِيصِ خَمْسُونَ دِرْهَمًا.",
+    "fr": "Le prix de la chemise est de cinquante dirhams."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "sittun",
+   "ar": "سِتُّونَ",
+   "translit": "sittūna",
+   "fr": "soixante",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "lemme": "sit~iyn",
+   "fige": true,
+   "formes": [
+    "سِتِّينَ"
+   ],
+   "exemple": {
+    "ar": "عِنْدَ التَّاجِرِ سِتُّونَ ثَوْبًا.",
+    "fr": "Le marchand a soixante vêtements."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "sabun",
+   "ar": "سَبْعُونَ",
+   "translit": "sabʿūna",
+   "fr": "soixante-dix",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "racine": "sbE",
+   "fige": true,
+   "formes": [
+    "سَبْعِينَ"
+   ],
+   "exemple": {
+    "ar": "فِي الصُّنْدُوقِ سَبْعُونَ دِينَارًا.",
+    "fr": "Il y a soixante-dix dinars dans le coffre."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "thamanun",
+   "ar": "ثَمَانُونَ",
+   "translit": "ṯamānūna",
+   "fr": "quatre-vingts",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "lemme": "vama`niyn",
+   "fige": true,
+   "formes": [
+    "ثَمَانِينَ"
+   ],
+   "exemple": {
+    "ar": "فِي الْكِتَابِ ثَمَانُونَ وَرَقَةً.",
+    "fr": "Il y a quatre-vingts feuilles dans le livre."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "tisun",
+   "ar": "تِسْعُونَ",
+   "translit": "tisʿūna",
+   "fr": "quatre-vingt-dix",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "racine": "tsE",
+   "fige": true,
+   "formes": [
+    "تِسْعِينَ"
+   ],
+   "exemple": {
+    "ar": "فِي الرِّسَالَةِ تِسْعُونَ سَطْرًا.",
+    "fr": "Il y a quatre-vingt-dix lignes dans la lettre."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "mia",
+   "ar": "مِائَةٌ",
+   "translit": "miʾatun",
+   "fr": "cent",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "lemme": "miA}ap",
+   "fige": true,
+   "formes": [
+    "مِائَةُ",
+    "مِائَةِ"
+   ],
+   "exemple": {
+    "ar": "ثَمَنُ الْبِسَاطِ مِائَةُ دِرْهَمٍ.",
+    "fr": "Le prix du tapis est de cent dirhams."
+   },
+   "remarque": "l'alif ne se prononce pas (miʾa) ; on écrit aussi مِئَة",
+   "theme": "nombres"
+  },
+  {
+   "id": "alf",
+   "ar": "أَلْفٌ",
+   "translit": "alfun",
+   "fr": "mille",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "lemme": ">alof",
+   "fige": true,
+   "formes": [
+    "أَلْفُ",
+    "أَلْفِ"
+   ],
+   "exemple": {
+    "ar": "فِي الصُّنْدُوقِ أَلْفُ دِينَارٍ.",
+    "fr": "Il y a mille dinars dans le coffre."
+   },
+   "theme": "nombres"
   }
  ]
 }

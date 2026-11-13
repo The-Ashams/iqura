@@ -19,9 +19,7 @@
     "ثَلَاثَ",
     "خَمْسٌ",
     "خَمْسًا",
-    "خَمْسَ",
-    "عَشْرُ",
-    "ثَلَاثُمِائَةِ"
+    "خَمْسَ"
   ],
   "ecrans": [
     {
@@ -51,7 +49,7 @@
             "دِرْهَمٍ"
           ],
           "reponse": 0,
-          "explication": "De 11 à 99 : singulier en -a (leçon 4.7)."
+          "explication": "Après عِشْرُونَ : singulier en -a (leçon 4.7)."
         },
         {
           "type": "sens",
@@ -222,11 +220,11 @@
     {
       "type": "regle",
       "titre": "Les dizaines",
-      "texte": "Les dizaines ne changent pas de genre ; l'unité vient d'abord, reliée par وَ : خَمْسَةٌ وَعِشْرُونَ. Après une préposition ou comme complément, ـُونَ devient ـِينَ : عِشْرِينَ.",
+      "texte": "Les dizaines ne changent pas de genre ; l'unité vient d'abord, reliée par وَ, et suit la règle de 3 à 10 : خَمْسٌ وَعِشْرُونَ رِسَالَةً. Comme complément ou après une préposition, ـُونَ devient ـِينَ.",
       "exemples": [
         "ثَلَاثُونَ",
         "ثَلَاثِينَ",
-        "خَمْسٌ وَعِشْرُونَ"
+        "خَمْسٌ وَعِشْرُونَ رِسَالَةً"
       ],
       "question": {
         "type": "completer",
@@ -317,7 +315,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Il y a treize feuilles. »",
+          "consigne": "Complète : « Il y a treize feuilles ici. »",
           "ar": "هُنَا ثَلَاثَ … وَرَقَةً.",
           "choix_ar": [
             "عَشْرَةَ",
@@ -439,16 +437,15 @@
           "explication": "خَمْسُونَ veut dire « cinquante »."
         },
         {
-          "type": "sens",
-          "consigne": "Que veut dire ce mot ?",
-          "ar": "اثْنَا عَشَرَ",
+          "type": "qcm",
+          "consigne": "Que veut dire اثْنَا عَشَرَ قَلَمًا ?",
           "choix": [
-            "douze",
-            "deux",
-            "vingt"
+            "douze crayons",
+            "deux crayons",
+            "vingt crayons"
           ],
           "reponse": 0,
-          "explication": "اثْنَا عَشَرَ veut dire « douze »."
+          "explication": "اثْنَا عَشَرَ : douze."
         },
         {
           "type": "traduire",
@@ -573,7 +570,7 @@
     },
     {
       "type": "fin",
-      "acquis": "Tu comptes jusqu'à mille : genre inverse de 3 à 10, singulier en -a de 11 à 99, singulier au génitif après مِائَةٌ et أَلْفٌ. Le premier chapitre de la Cité des Lecteurs est terminé !",
+      "acquis": "Tu connais les nombres jusqu'à 99, puis 100 et 1 000 : genre inverse de 3 à 10, singulier en -a de 11 à 99, singulier au génitif après مِائَةٌ et أَلْفٌ. Le premier chapitre de la Cité des Lecteurs est terminé !",
       "suite": "Bientôt, sur la Place des débats : parler, raconter, donner son avis."
     }
   ]
