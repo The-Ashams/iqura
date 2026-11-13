@@ -8810,83 +8810,6 @@
    "theme": "commerce"
   },
   {
-   "id": "fa_suite",
-   "ar": "فَـ",
-   "translit": "fa",
-   "fr": "et aussitôt ; donc",
-   "nature": "particule",
-   "lecon": "cite-13",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "دَخَلَ نَدِيمٌ فَجَلَسَ.",
-    "fr": "Nadīm est entré et s'est aussitôt assis."
-   },
-   "remarque": "relie deux actions qui se suivent aussitôt, ou une cause et sa suite",
-   "theme": "particules"
-  },
-  {
-   "id": "bal",
-   "ar": "بَلْ",
-   "translit": "bal",
-   "fr": "mais plutôt, au contraire",
-   "nature": "particule",
-   "lecon": "cite-13",
-   "source_sens": "rédigé par IA",
-   "lemme": "bal",
-   "exemple": {
-    "ar": "مَا حَضَرَ سَمِيرٌ، بَلْ بَاسِمٌ.",
-    "fr": "Ce n'est pas Samīr qui est venu, mais Bāsim."
-   },
-   "theme": "particules"
-  },
-  {
-   "id": "lakin",
-   "ar": "لَٰكِنْ",
-   "translit": "lākin",
-   "fr": "mais",
-   "nature": "particule",
-   "lecon": "cite-13",
-   "source_sens": "rédigé par IA",
-   "lemme": "la`kin",
-   "exemple": {
-    "ar": "لَمْ يَكْتُبْ سَمِيرٌ، لَٰكِنْ كَتَبَتْ سَلْمَى.",
-    "fr": "Samīr n'a pas écrit, mais Salmā a écrit."
-   },
-   "remarque": "forme légère de لَٰكِنَّ : suivie du cas normal",
-   "theme": "particules"
-  },
-  {
-   "id": "amma",
-   "ar": "أَمَّا… فَـ",
-   "translit": "ammā fa",
-   "fr": "quant à…",
-   "nature": "particule",
-   "lecon": "cite-13",
-   "source_sens": "rédigé par IA",
-   "lemme": ">am~aA",
-   "exemple": {
-    "ar": "أَمَّا بَاسِمٌ فَمَشْغُولٌ.",
-    "fr": "Quant à Bāsim, il est occupé."
-   },
-   "remarque": "la réponse prend toujours فَـ",
-   "theme": "particules"
-  },
-  {
-   "id": "aw",
-   "ar": "أَوْ",
-   "translit": "aw",
-   "fr": "ou",
-   "nature": "particule",
-   "lecon": "cite-13",
-   "source_sens": "rédigé par IA",
-   "lemme": ">aw",
-   "exemple": {
-    "ar": "سَنُسَافِرُ الْيَوْمَ أَوْ غَدًا.",
-    "fr": "Nous partirons aujourd'hui ou demain."
-   },
-   "theme": "particules"
-  },
-  {
    "id": "qad",
    "ar": "قَدْ",
    "translit": "qad",
@@ -8968,6 +8891,83 @@
     "fr": "Je n'oublierai jamais cette histoire."
    },
    "theme": "temps"
+  },
+  {
+   "id": "fa_suite",
+   "ar": "فَـ",
+   "translit": "fa",
+   "fr": "et aussitôt ; donc",
+   "nature": "particule",
+   "lecon": "cite-13",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "دَخَلَ نَدِيمٌ فَجَلَسَ.",
+    "fr": "Nadīm est entré et s'est aussitôt assis."
+   },
+   "remarque": "relie deux actions qui se suivent aussitôt, ou une cause et sa suite",
+   "theme": "particules"
+  },
+  {
+   "id": "bal",
+   "ar": "بَلْ",
+   "translit": "bal",
+   "fr": "mais plutôt, au contraire",
+   "nature": "particule",
+   "lecon": "cite-13",
+   "source_sens": "rédigé par IA",
+   "lemme": "bal",
+   "exemple": {
+    "ar": "مَا حَضَرَ سَمِيرٌ، بَلْ بَاسِمٌ.",
+    "fr": "Ce n'est pas Samīr qui est venu, mais Bāsim."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "lakin",
+   "ar": "لَٰكِنْ",
+   "translit": "lākin",
+   "fr": "mais",
+   "nature": "particule",
+   "lecon": "cite-13",
+   "source_sens": "rédigé par IA",
+   "lemme": "la`kin",
+   "exemple": {
+    "ar": "لَمْ يَكْتُبْ سَمِيرٌ، لَٰكِنْ كَتَبَتْ سَلْمَى.",
+    "fr": "Samīr n'a pas écrit, mais Salmā a écrit."
+   },
+   "remarque": "forme légère de لَٰكِنَّ : suivie du cas normal",
+   "theme": "particules"
+  },
+  {
+   "id": "amma",
+   "ar": "أَمَّا… فَـ",
+   "translit": "ammā fa",
+   "fr": "quant à…",
+   "nature": "particule",
+   "lecon": "cite-13",
+   "source_sens": "rédigé par IA",
+   "lemme": ">am~aA",
+   "exemple": {
+    "ar": "أَمَّا بَاسِمٌ فَمَشْغُولٌ.",
+    "fr": "Quant à Bāsim, il est occupé."
+   },
+   "remarque": "la réponse prend toujours فَـ",
+   "theme": "particules"
+  },
+  {
+   "id": "aw",
+   "ar": "أَوْ",
+   "translit": "aw",
+   "fr": "ou",
+   "nature": "particule",
+   "lecon": "cite-13",
+   "source_sens": "rédigé par IA",
+   "lemme": ">aw",
+   "exemple": {
+    "ar": "سَنُسَافِرُ الْيَوْمَ أَوْ غَدًا.",
+    "fr": "Nous partirons aujourd'hui ou demain."
+   },
+   "theme": "particules"
   }
  ]
 }

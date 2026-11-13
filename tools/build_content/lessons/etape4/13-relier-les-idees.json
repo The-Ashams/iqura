@@ -79,18 +79,18 @@
       "repliques": [
         {
           "qui": "hala",
-          "ar": "أَيْنَ بَاسِمٌ وَسَمِيرٌ؟",
-          "fr": "Où sont Bāsim et Samīr ?"
+          "ar": "أَيْنَ نَدِيمٌ وَسَمِيرٌ؟",
+          "fr": "Où sont Nadīm et Samīr ?"
         },
         {
           "qui": "basim",
-          "ar": "أَمَّا بَاسِمٌ فَمَشْغُولٌ، وَأَمَّا سَمِيرٌ فَفِي الْمَدْرَسَةِ.",
-          "fr": "Quant à Bāsim, il est occupé ; quant à Samīr, il est à l'école."
+          "ar": "أَمَّا نَدِيمٌ فَمَشْغُولٌ، وَأَمَّا سَمِيرٌ فَفِي الْمَدْرَسَةِ.",
+          "fr": "Quant à Nadīm, il est occupé ; quant à Samīr, il est à l'école."
         },
         {
           "qui": "hala",
-          "ar": "سَنُسَافِرُ الْيَوْمَ أَوْ غَدًا.",
-          "fr": "Nous partirons aujourd'hui ou demain."
+          "ar": "كَانَ الْبَرْدُ شَدِيدًا فَرَجَعَ التَّاجِرُ.",
+          "fr": "Le froid était vif, donc le marchand est rentré."
         }
       ],
       "question": {
@@ -276,14 +276,14 @@
         },
         {
           "type": "qcm",
-          "consigne": "لَٰكِنْ (léger) est suivi…",
+          "consigne": "Après لَٰكِنْ (léger), le nom…",
           "choix": [
-            "du cas normal",
-            "d'un nom en -a",
-            "d'un verbe au jussif"
+            "garde le cas qu'il aurait sans لَٰكِنْ",
+            "passe toujours en -a",
+            "passe toujours en -i"
           ],
           "reponse": 0,
-          "explication": "لَٰكِنَّ (lourd) + nom en -a ; لَٰكِنْ + cas normal."
+          "explication": "لَٰكِنْ ne change pas le cas ; c'est لَٰكِنَّ (lourd) qui met le nom en -a."
         }
       ]
     },
@@ -292,7 +292,7 @@
       "titre": "Le registre de Hāla",
       "texte": "Hāla lit son registre du jour. Lis ; touche un mot pour voir son sens.",
       "phrases": [
-        "دَخَلَ التَّاجِرُ فَجَلَسَ عِنْدَ الْمَكْتَبِ.",
+        "دَخَلَ التَّاجِرُ فَجَلَسَ عِنْدَ الْبَابِ.",
         "قَرَأَ سَمِيرٌ الرِّسَالَةَ ثُمَّ كَتَبَ الْجَوَابَ.",
         "مَا حَضَرَ نَدِيمٌ، بَلْ بَاسِمٌ.",
         "أَمَّا سَلْمَى فَفِي الْمَدْرَسَةِ، وَسَتَرْجِعُ الْيَوْمَ أَوْ غَدًا."
