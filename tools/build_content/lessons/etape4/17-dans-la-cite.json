@@ -21,7 +21,7 @@
       "repliques": [
         {
           "qui": "nadim",
-          "texte": "La Cité est grande : pour trouver le marché, il faut savoir demander son chemin."
+          "texte": "La Cité est grande : pour trouver l'école, il faut savoir demander son chemin."
         },
         {
           "qui": "nadim",
@@ -52,7 +52,7 @@
           "choix_ar": [
             "تَفْهَمْ",
             "تَفْهَمُ",
-            "فَهِمْتَ"
+            "تَفْهَمَ"
           ],
           "reponse": 0,
           "explication": "إِنْ + jussif dans les deux parties (leçon 4.1)."
@@ -76,13 +76,13 @@
       "repliques": [
         {
           "qui": "basim",
-          "ar": "هَلْ تَدُلُّنِي عَلَى السُّوقِ؟",
-          "fr": "Peux-tu m'indiquer le marché ?"
+          "ar": "هَلْ تَدُلُّنِي عَلَى الْمَدْرَسَةِ؟",
+          "fr": "Peux-tu m'indiquer l'école ?"
         },
         {
           "qui": "nadim",
-          "ar": "تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ السُّوقَ عَلَى يَسَارِكَ.",
-          "fr": "Tu passes le pont, puis tu trouves le marché à ta gauche."
+          "ar": "تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ الْمَدْرَسَةَ عَلَى يَسَارِكَ.",
+          "fr": "Tu passes par le pont, puis tu trouves l'école à ta gauche."
         },
         {
           "qui": "nadim",
@@ -92,14 +92,14 @@
       ],
       "question": {
         "type": "qcm",
-        "consigne": "Où est le marché ?",
+        "consigne": "Où est l'école ?",
         "choix": [
           "à gauche, après le pont",
           "à droite, avant le pont",
-          "derrière l'école"
+          "derrière le marché"
         ],
         "reponse": 0,
-        "explication": "تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ السُّوقَ عَلَى يَسَارِكَ."
+        "explication": "تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ الْمَدْرَسَةَ عَلَى يَسَارِكَ."
       }
     },
     {
@@ -149,7 +149,7 @@
     {
       "type": "regle",
       "titre": "Donner un chemin",
-      "texte": "Pour indiquer un chemin, on parle à l'inaccompli : تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ الْحَدِيقَةَ عَلَى يَمِينِكَ.",
+      "texte": "Ici, pour indiquer poliment un chemin, on parle à l'inaccompli : تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ الْحَدِيقَةَ عَلَى يَمِينِكَ.",
       "exemples": [
         "تَمُرُّ بِالْجِسْرِ",
         "عَلَى يَمِينِكَ"
@@ -159,7 +159,7 @@
         "consigne": "Pour dire « à ta droite », on dit…",
         "choix_ar": [
           "عَلَى يَمِينِكَ",
-          "فِي يَمِينِكَ",
+          "عَلَى يَمِينُكَ",
           "يَمِينِكَ"
         ],
         "reponse": 0,
@@ -251,12 +251,12 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Tu passes le pont. »",
+          "consigne": "Complète : « Tu passes par le pont. »",
           "ar": "… بِالْجِسْرِ.",
           "choix_ar": [
             "تَمُرُّ",
-            "مَرَرْتَ",
-            "مُرَّ"
+            "مَرَرْتُ",
+            "نَمُرُّ"
           ],
           "reponse": 0,
           "explication": "Pour indiquer un chemin : l'inaccompli, تَمُرُّ."
@@ -291,9 +291,9 @@
       "titre": "Le chemin du marché",
       "texte": "Nadīm explique le chemin à un visiteur. Lis ; touche un mot pour voir son sens.",
       "phrases": [
-        "السُّوقُ قَرِيبٌ مِنَ الْجِسْرِ.",
+        "السُّوقُ قَرِيبَةٌ مِنَ الْجِسْرِ.",
         "تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ الْمَدْرَسَةَ عَلَى يَمِينِكَ.",
-        "السُّوقُ خَلْفَ الْمَدْرَسَةِ، وَالْحَدِيقَةُ أَمَامَهَا.",
+        "السُّوقُ خَلْفَ الْمَدْرَسَةِ، وَالْحَدِيقَةُ أَمَامَ الْمَدْرَسَةِ.",
         "بَيْتِي بَيْنَ السُّوقِ وَالْمَدْرَسَةِ."
       ],
       "questions": [
@@ -326,10 +326,10 @@
       "exercices": [
         {
           "type": "traduire",
-          "consigne": "Comment dit-on « Tu passes le pont, puis tu trouves le jardin à ta droite. » ?",
+          "consigne": "Comment dit-on « Tu passes par le pont, puis tu trouves le jardin à ta droite. » ?",
           "choix_ar": [
             "تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ الْحَدِيقَةَ عَلَى يَمِينِكَ.",
-            "تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ الْحَدِيقَةُ فِي يَمِينِكَ.",
+            "تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ الْحَدِيقَةُ عَلَى يَمِينُكَ.",
             "مَرَرْتُ بِالْجِسْرِ، ثُمَّ وَجَدْتُ الْحَدِيقَةَ عَلَى يَمِينِي."
           ],
           "reponse": 0,
@@ -467,7 +467,7 @@
           "consigne": "مَرَّ veut dire « passer » ; مَرَّةٌ veut dire…",
           "choix": [
             "fois",
-            "passage",
+            "porte",
             "pont"
           ],
           "reponse": 0,

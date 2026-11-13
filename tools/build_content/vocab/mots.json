@@ -8970,113 +8970,6 @@
    "theme": "savoir"
   },
   {
-   "id": "yamin",
-   "ar": "يَمِينٌ",
-   "translit": "yamīnun",
-   "fr": "droite",
-   "nature": "nom",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "yamiyn",
-   "exemple": {
-    "ar": "الْحَدِيقَةُ عَلَى يَمِينِكَ.",
-    "fr": "Le jardin est à ta droite."
-   },
-   "remarque": "ici seulement dans عَلَى يَمِينِكَ, عَلَى يَمِينِ + lieu",
-   "theme": "lieux"
-  },
-  {
-   "id": "yasar",
-   "ar": "يَسَارٌ",
-   "translit": "yasārun",
-   "fr": "gauche",
-   "nature": "nom",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "ysr",
-   "exemple": {
-    "ar": "الْمَدْرَسَةُ عَلَى يَسَارِكَ.",
-    "fr": "L'école est à ta gauche."
-   },
-   "theme": "lieux"
-  },
-  {
-   "id": "amama",
-   "ar": "أَمَامَ",
-   "translit": "amāma",
-   "fr": "devant",
-   "nature": "adverbe",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "lemme": ">amaAm",
-   "exemple": {
-    "ar": "السُّوقُ أَمَامَكَ.",
-    "fr": "Le marché est devant toi."
-   },
-   "remarque": "suivi du génitif",
-   "theme": "lieux"
-  },
-  {
-   "id": "khalfa",
-   "ar": "خَلْفَ",
-   "translit": "ḫalfa",
-   "fr": "derrière",
-   "nature": "adverbe",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "lemme": "xalof",
-   "exemple": {
-    "ar": "الْحَدِيقَةُ خَلْفَ الْقَصْرِ.",
-    "fr": "Le jardin est derrière le palais."
-   },
-   "remarque": "suivi du génitif",
-   "theme": "lieux"
-  },
-  {
-   "id": "bayna",
-   "ar": "بَيْنَ",
-   "translit": "bayna",
-   "fr": "entre",
-   "nature": "adverbe",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "lemme": "bayon",
-   "exemple": {
-    "ar": "بَيْتُ نَدِيمٍ بَيْنَ السُّوقِ وَالْمَدْرَسَةِ.",
-    "fr": "La maison de Nadīm est entre le marché et l'école."
-   },
-   "remarque": "بَيْنَ X وَ Y",
-   "theme": "lieux"
-  },
-  {
-   "id": "marra_bi",
-   "ar": "مَرَّ بِـ",
-   "translit": "marra bi",
-   "fr": "passer par, passer devant",
-   "nature": "verbe",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "passe": "مَرَّ بِـ",
-   "inaccompli": "يَمُرُّ",
-   "exemple": {
-    "ar": "مَرَرْتُ بِالسُّوقِ فِي الصَّبَاحِ.",
-    "fr": "Je suis passé par le marché le matin."
-   },
-   "lemme": "mar~a",
-   "fige": true,
-   "formes": [
-    "مَرَّ",
-    "مَرَرْتُ",
-    "مَرَرْنَا",
-    "تَمُرُّ",
-    "نَمُرُّ"
-   ],
-   "remarque": "verbe doublé : مَرَرْتُ, mais تَمُرُّ ; toujours suivi de بِـ",
-   "theme": "lieux"
-  },
-  {
    "id": "yawm",
    "ar": "يَوْمٌ",
    "translit": "yawmun",
@@ -9478,7 +9371,7 @@
     "ar": "هَٰذِهِ أُسْرَةُ نَدِيمٍ.",
     "fr": "Voici la famille de Nadīm."
    },
-   "remarque": "la racine ne suffit pas pour le sens : dans le Corpus, elle a le sens de captivité",
+   "remarque": "la racine ne suffit pas pour le sens : dans le Corpus, elle sert surtout à parler des captifs",
    "theme": "famille"
   },
   {
@@ -9497,6 +9390,271 @@
    },
    "remarque": "la racine ne suffit pas pour le sens : elle a d'autres emplois",
    "theme": "metiers"
+  },
+  {
+   "id": "yamin",
+   "ar": "يَمِينٌ",
+   "translit": "yamīnun",
+   "fr": "droite",
+   "nature": "nom",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "yamiyn",
+   "exemple": {
+    "ar": "الْحَدِيقَةُ عَلَى يَمِينِكَ.",
+    "fr": "Le jardin est à ta droite."
+   },
+   "remarque": "ici seulement dans عَلَى يَمِينِكَ, عَلَى يَمِينِ + lieu",
+   "theme": "lieux"
+  },
+  {
+   "id": "yasar",
+   "ar": "يَسَارٌ",
+   "translit": "yasārun",
+   "fr": "gauche",
+   "nature": "nom",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "ysr",
+   "exemple": {
+    "ar": "الْمَدْرَسَةُ عَلَى يَسَارِكَ.",
+    "fr": "L'école est à ta gauche."
+   },
+   "remarque": "la racine ne suffit pas pour le sens : elle a d'autres emplois",
+   "theme": "lieux"
+  },
+  {
+   "id": "amama",
+   "ar": "أَمَامَ",
+   "translit": "amāma",
+   "fr": "devant",
+   "nature": "nom_lieu",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "lemme": ">amaAm",
+   "exemple": {
+    "ar": "السُّوقُ أَمَامَكَ.",
+    "fr": "Le marché est devant toi."
+   },
+   "remarque": "suivi du génitif",
+   "theme": "lieux"
+  },
+  {
+   "id": "khalfa",
+   "ar": "خَلْفَ",
+   "translit": "ḫalfa",
+   "fr": "derrière",
+   "nature": "nom_lieu",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "lemme": "xalof",
+   "exemple": {
+    "ar": "الْحَدِيقَةُ خَلْفَ الْقَصْرِ.",
+    "fr": "Le jardin est derrière le palais."
+   },
+   "remarque": "suivi du génitif",
+   "theme": "lieux"
+  },
+  {
+   "id": "bayna",
+   "ar": "بَيْنَ",
+   "translit": "bayna",
+   "fr": "entre",
+   "nature": "nom_lieu",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "lemme": "bayon",
+   "exemple": {
+    "ar": "بَيْتُ نَدِيمٍ بَيْنَ السُّوقِ وَالْمَدْرَسَةِ.",
+    "fr": "La maison de Nadīm est entre le marché et l'école."
+   },
+   "remarque": "بَيْنَ X وَ Y",
+   "theme": "lieux"
+  },
+  {
+   "id": "marra_bi",
+   "ar": "مَرَّ بِـ",
+   "translit": "marra bi",
+   "fr": "passer par, passer devant",
+   "nature": "verbe",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "passe": "مَرَّ بِـ",
+   "inaccompli": "يَمُرُّ",
+   "exemple": {
+    "ar": "مَرَرْتُ بِالسُّوقِ فِي الصَّبَاحِ.",
+    "fr": "Je suis passé par le marché le matin."
+   },
+   "lemme": "mar~a",
+   "fige": true,
+   "formes": [
+    "مَرَّ",
+    "مَرَرْتُ",
+    "مَرَرْنَا",
+    "تَمُرُّ",
+    "نَمُرُّ"
+   ],
+   "remarque": "verbe doublé : مَرَرْتُ, mais تَمُرُّ ; toujours suivi de بِـ",
+   "theme": "lieux"
+  },
+  {
+   "id": "ishtara",
+   "ar": "اشْتَرَى",
+   "translit": "ištarā",
+   "fr": "acheter",
+   "nature": "verbe",
+   "lecon": "cite-19",
+   "source_sens": "rédigé par IA",
+   "passe": "اشْتَرَى",
+   "inaccompli": "يَشْتَرِي",
+   "exemple": {
+    "ar": "اشْتَرَيْتُ قِرْطَاسًا لِزُهَيْرٍ.",
+    "fr": "J'ai acheté du papier pour Zuhayr."
+   },
+   "lemme": "{$otaraY`",
+   "fige": true,
+   "formes": [
+    "اشْتَرَتْ",
+    "اشْتَرَيْتُ",
+    "أَشْتَرِي",
+    "نَشْتَرِي"
+   ],
+   "remarque": "forme VIII de la racine ش ر ي ; le prix suit بِـ",
+   "theme": "commerce"
+  },
+  {
+   "id": "silaa",
+   "ar": "سِلْعَةٌ",
+   "translit": "silʿatun",
+   "fr": "marchandise",
+   "nature": "nom",
+   "lecon": "cite-19",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "exemple": {
+    "ar": "هَٰذِهِ السِّلْعَةُ رَخِيصَةٌ.",
+    "fr": "Cette marchandise est bon marché."
+   },
+   "theme": "commerce"
+  },
+  {
+   "id": "rakhis",
+   "ar": "رَخِيصٌ",
+   "translit": "raḫīṣun",
+   "fr": "bon marché",
+   "nature": "adjectif",
+   "lecon": "cite-19",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "fige": true,
+   "formes": [
+    "رَخِيصَةٌ",
+    "أَرْخَصُ",
+    "أَرْخَصَ"
+   ],
+   "exemple": {
+    "ar": "هَٰذَا الْبِسَاطُ رَخِيصٌ.",
+    "fr": "Ce tapis est bon marché."
+   },
+   "remarque": "élatif : أَرْخَصُ « moins cher »",
+   "theme": "commerce"
+  },
+  {
+   "id": "sawama",
+   "ar": "سَاوَمَ",
+   "translit": "sāwama",
+   "fr": "marchander",
+   "nature": "verbe",
+   "lecon": "cite-19",
+   "source_sens": "rédigé par IA",
+   "passe": "سَاوَمَ",
+   "inaccompli": "يُسَاوِمُ",
+   "exemple": {
+    "ar": "سَاوَمَ بَاسِمٌ الْبَائِعَ.",
+    "fr": "Bāsim a marchandé avec le vendeur."
+   },
+   "racine": "swm",
+   "fige": true,
+   "formes": [
+    "سَاوَمْتُ"
+   ],
+   "remarque": "forme III ; la racine ne suffit pas pour le sens",
+   "theme": "commerce"
+  },
+  {
+   "id": "arju",
+   "ar": "أَرْجُو",
+   "translit": "arǧū",
+   "fr": "je te prie de, j'espère (+ أَنْ)",
+   "nature": "verbe",
+   "lecon": "cite-19",
+   "source_sens": "rédigé par IA",
+   "passe": "أَرْجُو",
+   "inaccompli": "",
+   "exemple": {
+    "ar": "أَرْجُو أَنْ تَنْتَظِرَنِي قَلِيلًا.",
+    "fr": "Je te prie de m'attendre un peu."
+   },
+   "racine": "rjw",
+   "fige": true,
+   "formes": [],
+   "remarque": "forme figée, toujours suivie de أَنْ + subjonctif",
+   "theme": "parole"
+  },
+  {
+   "id": "shukran",
+   "ar": "شُكْرًا",
+   "translit": "šukran",
+   "fr": "merci",
+   "nature": "adverbe",
+   "lecon": "cite-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "$ukor",
+   "fige": true,
+   "formes": [
+    "لَكَ",
+    "لَكِ"
+   ],
+   "exemple": {
+    "ar": "شُكْرًا لَكَ.",
+    "fr": "Merci."
+   },
+   "remarque": "expression figée : seule, ou شُكْرًا لَكَ / لَكِ ; ne change pas",
+   "theme": "parole"
+  },
+  {
+   "id": "miatan",
+   "ar": "مِائَتَانِ",
+   "translit": "miʾatāni",
+   "fr": "deux cents",
+   "nature": "nombre",
+   "lecon": "cite-19",
+   "source_sens": "rédigé par IA",
+   "lemme": "miA}ap",
+   "fige": true,
+   "formes": [
+    "مِائَتَا",
+    "مِائَتَيْ",
+    "بِمِائَتَيْ",
+    "ثَلَاثُمِائَةِ",
+    "ثَلَاثُمِائَةٍ",
+    "بِثَلَاثِمِائَةِ",
+    "أَرْبَعُمِائَةِ",
+    "خَمْسُمِائَةِ",
+    "بِخَمْسِمِائَةِ",
+    "سِتُّمِائَةِ",
+    "سَبْعُمِائَةِ",
+    "ثَمَانِمِائَةِ",
+    "تِسْعُمِائَةِ"
+   ],
+   "exemple": {
+    "ar": "ثَمَنُ الْبِسَاطِ مِائَتَا دِرْهَمٍ.",
+    "fr": "Le prix du tapis est de deux cents dirhams."
+   },
+   "remarque": "مِائَتَا devant le nom ; de 300 à 900 en un seul mot : ثَلَاثُمِائَةٍ",
+   "theme": "nombres"
   }
  ]
 }

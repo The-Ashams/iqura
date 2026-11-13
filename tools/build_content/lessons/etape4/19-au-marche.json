@@ -1,0 +1,535 @@
+{
+  "id": "cite-19",
+  "etape": 4,
+  "ordre": 19,
+  "format": 3,
+  "titre": "Au marché : acheter, négocier, politesse",
+  "objectif": "Demander un prix, acheter, marchander poliment, remercier ; compter de 200 à 900.",
+  "statut": "ia_non_verifie",
+  "lieu": "marche_couvert",
+  "maitre": "hala",
+  "prerequis": [
+    "cite-18"
+  ],
+  "apercu": [
+    "هَالَةُ",
+    "بَاسِمٌ",
+    "زُهَيْرٍ",
+    "بِكَمْ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hala",
+          "texte": "Sous la toile du Marché couvert, je tiens les comptes : on y demande les prix, on marchande, on remercie."
+        },
+        {
+          "qui": "hala",
+          "texte": "Les prix montent vite ici : apprenons aussi les centaines."
+        }
+      ],
+      "objectif": "Acheter et marchander poliment."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « depuis un mois »",
+          "ar": "مُنْذُ …",
+          "choix_ar": [
+            "شَهْرٍ",
+            "شَهْرًا",
+            "شَهْرٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après مُنْذُ : génitif (leçon 4.18)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « cent dirhams »",
+          "ar": "مِائَةُ …",
+          "choix_ar": [
+            "دِرْهَمٍ",
+            "دِرْهَمًا",
+            "دَرَاهِمَ"
+          ],
+          "reponse": 0,
+          "explication": "Après مِائَةٌ : génitif singulier (leçon 4.14)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَاعَ",
+          "choix": [
+            "vendre",
+            "acheter",
+            "donner"
+          ],
+          "reponse": 0,
+          "explication": "بَاعَ veut dire « vendre »."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "بِكَمْ هَٰذَا الْبِسَاطُ؟",
+          "fr": "Combien coûte ce tapis ?"
+        },
+        {
+          "qui": "hala",
+          "ar": "بِثَلَاثِمِائَةِ دِرْهَمٍ.",
+          "fr": "Trois cents dirhams."
+        },
+        {
+          "qui": "basim",
+          "ar": "الثَّمَنُ كَثِيرٌ؛ أُرِيدُ بِسَاطًا أَرْخَصَ مِنْ هَٰذَا.",
+          "fr": "C'est cher ; je veux un tapis moins cher que celui-ci."
+        },
+        {
+          "qui": "hala",
+          "ar": "هَٰذَا بِمِائَتَيْ دِرْهَمٍ.",
+          "fr": "Celui-ci coûte deux cents dirhams."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Combien coûte le premier tapis ?",
+        "choix": [
+          "trois cents dirhams",
+          "deux cents dirhams",
+          "cent dirhams"
+        ],
+        "reponse": 0,
+        "explication": "بِثَلَاثِمِائَةِ دِرْهَمٍ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ishtara",
+        "silaa",
+        "rakhis",
+        "sawama",
+        "arju",
+        "shukran",
+        "miatan"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "رَخِيصٌ",
+        "choix": [
+          "bon marché",
+          "cher",
+          "neuf"
+        ],
+        "reponse": 0,
+        "explication": "رَخِيصٌ veut dire « bon marché »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le prix suit بِـ",
+      "texte": "Le prix suit بِـ : بِعْتُ الْبِسَاطَ بِمِائَةِ دِرْهَمٍ. Pour demander le prix : بِكَمْ هَٰذَا, « combien ».",
+      "exemples": [
+        "بِمِائَةِ دِرْهَمٍ",
+        "بِكَمْ هَٰذَا"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « J'ai vendu le tapis cent dirhams. »",
+        "ar": "بِعْتُ الْبِسَاطَ … دِرْهَمٍ.",
+        "choix_ar": [
+          "بِمِائَةِ",
+          "مِائَةُ",
+          "لِمِائَةِ"
+        ],
+        "reponse": 0,
+        "explication": "Le prix suit بِـ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les centaines",
+      "texte": "200 se dit مِائَتَانِ, et مِائَتَا devant le nom. De 300 à 900, l'unité et مِائَة s'écrivent en un seul mot : ثَلَاثُمِائَةِ دِرْهَمٍ ; le nom reste au singulier, au génitif.",
+      "exemples": [
+        "مِائَتَا دِرْهَمٍ",
+        "ثَلَاثُمِائَةِ دِرْهَمٍ",
+        "خَمْسُمِائَةِ دِينَارٍ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « deux cents dirhams »",
+        "ar": "… دِرْهَمٍ",
+        "choix_ar": [
+          "مِائَتَا",
+          "مِائَتَانِ",
+          "مِائَةُ"
+        ],
+        "reponse": 0,
+        "explication": "Devant le nom, le ن tombe : مِائَتَا."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La politesse",
+      "texte": "Pour demander poliment : أَرْجُو أَنْ + subjonctif, « je te prie de ». Pour remercier : شُكْرًا لَكَ, qui ne change pas.",
+      "exemples": [
+        "أَرْجُو أَنْ تَنْتَظِرَنِي",
+        "شُكْرًا لَكَ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Je te prie de m'attendre un peu. »",
+        "ar": "أَرْجُو أَنْ … قَلِيلًا.",
+        "choix_ar": [
+          "تَنْتَظِرَنِي",
+          "تَنْتَظِرُنِي",
+          "انْتَظِرْنِي"
+        ],
+        "reponse": 0,
+        "explication": "Après أَنْ : subjonctif."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اشْتَرَى",
+          "choix": [
+            "acheter",
+            "vendre",
+            "marchander"
+          ],
+          "reponse": 0,
+          "explication": "اشْتَرَى veut dire « acheter »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سِلْعَةٌ",
+          "choix": [
+            "marchandise",
+            "prix",
+            "marché"
+          ],
+          "reponse": 0,
+          "explication": "سِلْعَةٌ veut dire « marchandise »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شُكْرًا",
+          "choix": [
+            "merci",
+            "bienvenue",
+            "pardon"
+          ],
+          "reponse": 0,
+          "explication": "شُكْرًا veut dire « merci »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai acheté du papier pour Zuhayr » ?",
+          "choix_ar": [
+            "اشْتَرَيْتُ قِرْطَاسًا لِزُهَيْرٍ",
+            "بِعْتُ قِرْطَاسًا لِزُهَيْرٍ",
+            "اشْتَرَيْتُ قِرْطَاسٌ لِزُهَيْرٍ"
+          ],
+          "reponse": 0,
+          "explication": "اشْتَرَى : acheter ; complément en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « trois cents dirhams »",
+          "ar": "… دِرْهَمٍ",
+          "choix_ar": [
+            "ثَلَاثُمِائَةِ",
+            "ثَلَاثَةُ مِائَةٍ",
+            "ثَلَاثُونَ"
+          ],
+          "reponse": 0,
+          "explication": "De 300 à 900 : un seul mot."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a marchandé avec le vendeur. »",
+          "ar": "… بَاسِمٌ الْبَائِعَ.",
+          "choix_ar": [
+            "سَاوَمَ",
+            "اشْتَرَى",
+            "بَاعَ"
+          ],
+          "reponse": 0,
+          "explication": "« marchander » : سَاوَمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je veux un tapis moins cher que celui-ci. »",
+          "ar": "أُرِيدُ بِسَاطًا … مِنْ هَٰذَا.",
+          "choix_ar": [
+            "أَرْخَصَ",
+            "رَخِيصًا",
+            "أَرْخَصُ"
+          ],
+          "reponse": 0,
+          "explication": "Élatif accordé avec بِسَاطًا : -a, sans tanwīn."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour demander le prix, on dit…",
+          "choix_ar": [
+            "بِكَمْ هَٰذَا",
+            "كَمْ هَٰذَا بِـ",
+            "مَتَى هَٰذَا"
+          ],
+          "reponse": 0,
+          "explication": "Le prix suit بِـ : بِكَمْ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Au Marché couvert",
+      "texte": "Bāsim fait ses achats. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "ذَهَبَ بَاسِمٌ إِلَى السُّوقِ لِيَشْتَرِيَ قِرْطَاسًا.",
+        "سَأَلَ الْبَائِعَ: « بِكَمْ هَٰذَا الْقِرْطَاسُ؟ »",
+        "قَالَ الْبَائِعُ: « بِخَمْسِمِائَةِ دِرْهَمٍ. » فَسَاوَمَهُ بَاسِمٌ.",
+        "اشْتَرَى بَاسِمٌ الْقِرْطَاسَ بِأَرْبَعِمِائَةِ دِرْهَمٍ، وَقَالَ: « شُكْرًا لَكَ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Combien Bāsim a-t-il payé le papier ?",
+          "choix": [
+            "quatre cents dirhams",
+            "cinq cents dirhams",
+            "trois cents dirhams"
+          ],
+          "reponse": 0,
+          "explication": "بِأَرْبَعِمِائَةِ دِرْهَمٍ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a fait Bāsim après le premier prix ?",
+          "choix": [
+            "il a marchandé",
+            "il est parti",
+            "il a vendu"
+          ],
+          "reponse": 0,
+          "explication": "فَسَاوَمَهُ بَاسِمٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « cette marchandise est bon marché » ?",
+          "choix_ar": [
+            "هَٰذِهِ السِّلْعَةُ رَخِيصَةٌ",
+            "هَٰذِهِ السِّلْعَةُ رَخِيصٌ",
+            "هَٰذَا السِّلْعَةُ رَخِيصَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Accord au féminin : هَٰذِهِ, رَخِيصَةٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Le prix du tapis est de deux cents dirhams. »",
+          "tuiles": [
+            "دِرْهَمٍ",
+            "مِائَتَا",
+            "الْبِسَاطِ",
+            "ثَمَنُ",
+            "مِائَتَانِ"
+          ],
+          "solution": [
+            "ثَمَنُ",
+            "الْبِسَاطِ",
+            "مِائَتَا",
+            "دِرْهَمٍ"
+          ],
+          "explication": "Devant le nom : مِائَتَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je te prie de m'attendre. »",
+          "ar": "أَرْجُو … تَنْتَظِرَنِي.",
+          "choix_ar": [
+            "أَنْ",
+            "أَنَّ",
+            "لِأَنَّ"
+          ],
+          "reponse": 0,
+          "explication": "أَرْجُو أَنْ + subjonctif."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَاوَمَ",
+          "choix": [
+            "marchander",
+            "acheter",
+            "remercier"
+          ],
+          "reponse": 0,
+          "explication": "سَاوَمَ veut dire « marchander »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مِائَتَانِ",
+          "choix": [
+            "deux cents",
+            "deux mille",
+            "vingt"
+          ],
+          "reponse": 0,
+          "explication": "مِائَتَانِ veut dire « deux cents »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai vendu le tapis cent dirhams » ?",
+          "choix_ar": [
+            "بِعْتُ الْبِسَاطَ بِمِائَةِ دِرْهَمٍ",
+            "بِعْتُ الْبِسَاطَ مِائَةَ دِرْهَمًا",
+            "اشْتَرَيْتُ الْبِسَاطَ بِمِائَةِ دِرْهَمٍ"
+          ],
+          "reponse": 0,
+          "explication": "بَاعَ : vendre ; le prix suit بِـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « cinq cents dinars »",
+          "ar": "… دِينَارٍ",
+          "choix_ar": [
+            "خَمْسُمِائَةِ",
+            "خَمْسُونَ",
+            "خَمْسُ مِائَاتٍ"
+          ],
+          "reponse": 0,
+          "explication": "De 300 à 900 : un seul mot."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Combien coûte ce tapis ? »",
+          "ar": "… هَٰذَا الْبِسَاطُ؟",
+          "choix_ar": [
+            "بِكَمْ",
+            "كَمْ",
+            "مَتَى"
+          ],
+          "reponse": 0,
+          "explication": "Le prix : بِكَمْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « deux cents dirhams »",
+          "ar": "… دِرْهَمٍ",
+          "choix_ar": [
+            "مِائَتَا",
+            "مِائَتَانِ",
+            "اثْنَا"
+          ],
+          "reponse": 0,
+          "explication": "مِائَتَا devant le nom."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour remercier, on dit…",
+          "choix_ar": [
+            "شُكْرًا لَكَ",
+            "مَرْحَبًا بِكَ",
+            "بِكَمْ هَٰذَا"
+          ],
+          "reponse": 0,
+          "explication": "شُكْرًا لَكَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après أَرْجُو أَنْ, le verbe est…",
+          "choix": [
+            "au subjonctif",
+            "au passé",
+            "à l'impératif"
+          ],
+          "reponse": 0,
+          "explication": "أَرْجُو أَنْ تَنْتَظِرَنِي."
+        },
+        {
+          "type": "qcm",
+          "consigne": "اشْتَرَى veut dire…",
+          "choix": [
+            "acheter",
+            "vendre",
+            "louer"
+          ],
+          "reponse": 0,
+          "explication": "بَاعَ : vendre ; اشْتَرَى : acheter."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُنْذُ",
+          "choix": [
+            "depuis",
+            "pendant",
+            "avant"
+          ],
+          "reponse": 0,
+          "explication": "مُنْذُ veut dire « depuis ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je suis arrivé jeudi. »",
+          "ar": "وَصَلْتُ … الْخَمِيسِ.",
+          "choix_ar": [
+            "يَوْمَ",
+            "يَوْمُ",
+            "يَوْمٍ"
+          ],
+          "reponse": 0,
+          "explication": "Complément de temps : accusatif.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَيْنَ",
+          "choix": [
+            "entre",
+            "derrière",
+            "devant"
+          ],
+          "reponse": 0,
+          "explication": "بَيْنَ veut dire « entre ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu demandes un prix (بِكَمْ), tu achètes (اشْتَرَى), tu marchandes (سَاوَمَ), tu demandes poliment (أَرْجُو أَنْ) et tu remercies (شُكْرًا لَكَ) ; tu comptes de 200 à 900.",
+      "suite": "Chez Nadīm : raconter sa journée."
+    }
+  ]
+}
