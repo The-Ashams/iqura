@@ -170,7 +170,9 @@
         55,
         46
       ],
-      "lecons": [],
+      "lecons": [
+        20
+      ],
       "scene": "scene_maison_nadim",
       "sol": 84,
       "tranche_j1a": true,
@@ -178,7 +180,7 @@
         "marche_couvert",
         "atelier_copistes"
       ],
-      "description": "Chez Nadīm, autour d'un thé, on raconte sa journée et on apprend à mener une conversation."
+      "description": "Chez Nadīm, autour d'un plat de dattes, on raconte sa journée et on apprend à mener une conversation."
     },
     {
       "id": "atelier_copistes",

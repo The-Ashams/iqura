@@ -292,7 +292,7 @@
       "texte": "Nadīm explique le chemin à un visiteur. Lis ; touche un mot pour voir son sens.",
       "phrases": [
         "السُّوقُ قَرِيبَةٌ مِنَ الْجِسْرِ.",
-        "تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ الْمَدْرَسَةَ عَلَى يَمِينِكَ.",
+        "تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ الْمَدْرَسَةَ عَلَى يَسَارِكَ.",
         "السُّوقُ خَلْفَ الْمَدْرَسَةِ، وَالْحَدِيقَةُ أَمَامَ الْمَدْرَسَةِ.",
         "بَيْتِي بَيْنَ السُّوقِ وَالْمَدْرَسَةِ."
       ],
@@ -301,12 +301,12 @@
           "type": "qcm",
           "consigne": "Où est l'école, après le pont ?",
           "choix": [
-            "à droite",
             "à gauche",
+            "à droite",
             "derrière le marché"
           ],
           "reponse": 0,
-          "explication": "عَلَى يَمِينِكَ."
+          "explication": "عَلَى يَسَارِكَ."
         },
         {
           "type": "qcm",

@@ -702,3 +702,19 @@ Références :
 - `/home/user/iqura/lib/ui/game/dictionary_screen.dart` (recherche par racine seulement : vue « parcourir » à ajouter)
 - `/home/user/iqura/docs/DECISIONS_A_REVOIR.md` (§1, source du dictionnaire)
 - `/home/user/iqura/assets/content/iqura_content.db`
+
+## Décisions du conseiller sur les doutes du relecteur (13/11/2026, leçons 4.15 à 4.18)
+
+1. **بِخَيْرٍ** : pas de lemme ni de fréquence ; racine `xyr` seule, avec l'avertissement ; remarque « expression figée, formée de بِـ et de خَيْرٌ « bien » ». Le lemme xayor compte aussi « meilleur que » et « biens ».
+2. **يَمِينٌ et خَلْفَ** : lemme et fréquence retirés, racines `ymn` et `xlf` seules : le Corpus mêle d'autres sens (« serment »). Confiance moyenne : on remettra le lemme de خَلْف si une requête montre qu'il ne compte que « derrière ».
+3. **Liste fermée de سَنَة** : corrigée en « de 13 à 18, de 20 à 29, de 31 à 39 ; jamais 11, 12 ni 19 ». سَنَوَاتٍ est admis avec 3, 4, 5, 6, 8 et 10 (jamais 7 ni 9), nombre sans ة.
+4. **يَوْمًا** : non ajouté à la fiche tant qu'aucune leçon ne s'en sert.
+5. **مُنْذُ + nominatif** : attesté en classique ; on retire tous les choix au nominatif après مُنْذُ. La règle dit « suivi ici du génitif ».
+6. **فِي رَجَبٍ** avec tanwīn et **شَعْبَانُ** en déclinaison partielle : gardés.
+7. **Tableau des 12 mois** : reporté. Dans les phrases, seuls رَجَب et شَعْبَان ; aucun autre mois sans aperçu dans la leçon qui s'en sert ; مُحَرَّم, رَمَضَان, ذُو الْقَعْدَةِ, ذُو الْحِجَّةِ hors des phrases.
+
+## Choix de construction (13/11/2026)
+
+- 4.17 et 4.18 au Marché couvert (lieu 7), comme le prévoit `docs/PROPOSITION_REGION_4.md` ; Nadīm y reste le maître, Hāla prend la leçon 4.19.
+- 4.20 : le thé (anachronique) est remplacé par des dattes ; أَوَّلُ en tête de fiche sans tanwīn (diptote au sens « premier »), أَوَّلًا « d'abord ».
+- 4.19 : شُكْرًا ne change pas, لَكَ / لَكِ selon la personne ; le prix se demande avec بِكَمْ (aucun choix كَمْ seul).

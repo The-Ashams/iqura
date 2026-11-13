@@ -136,7 +136,7 @@
     {
       "type": "regle",
       "titre": "Le prix suit بِـ",
-      "texte": "Le prix suit بِـ : بِعْتُ الْبِسَاطَ بِمِائَةِ دِرْهَمٍ. Pour demander le prix : بِكَمْ هَٰذَا, « combien ».",
+      "texte": "Le prix suit بِـ : بِعْتُ الْبِسَاطَ بِمِائَةِ دِرْهَمٍ. Pour demander le prix : بِكَمْ هَٰذَا, « pour combien ».",
       "exemples": [
         "بِمِائَةِ دِرْهَمٍ",
         "بِكَمْ هَٰذَا"
@@ -157,7 +157,7 @@
     {
       "type": "regle",
       "titre": "Les centaines",
-      "texte": "200 se dit مِائَتَانِ, et مِائَتَا devant le nom. De 300 à 900, l'unité et مِائَة s'écrivent en un seul mot : ثَلَاثُمِائَةِ دِرْهَمٍ ; le nom reste au singulier, au génitif.",
+      "texte": "200 se dit مِائَتَانِ, et مِائَتَا devant le nom. De 300 à 900, l'unité et مِائَةٌ s'écrivent en un seul mot : ثَلَاثُمِائَةِ دِرْهَمٍ ; le nom reste au singulier, au génitif.",
       "exemples": [
         "مِائَتَا دِرْهَمٍ",
         "ثَلَاثُمِائَةِ دِرْهَمٍ",
@@ -179,7 +179,7 @@
     {
       "type": "regle",
       "titre": "La politesse",
-      "texte": "Pour demander poliment : أَرْجُو أَنْ + subjonctif, « je te prie de ». Pour remercier : شُكْرًا لَكَ, qui ne change pas.",
+      "texte": "Pour demander poliment : أَرْجُو أَنْ + subjonctif, « je te prie de ». Pour remercier : شُكْرًا, qui ne change pas ; on ajoute لَكَ (à un homme) ou لَكِ (à une femme).",
       "exemples": [
         "أَرْجُو أَنْ تَنْتَظِرَنِي",
         "شُكْرًا لَكَ"
@@ -245,7 +245,7 @@
             "اشْتَرَيْتُ قِرْطَاسٌ لِزُهَيْرٍ"
           ],
           "reponse": 0,
-          "explication": "اشْتَرَى : acheter ; complément en -a."
+          "explication": "اشْتَرَى : acheter ; complément d'objet à l'accusatif : قِرْطَاسًا."
         },
         {
           "type": "completer",
@@ -253,8 +253,8 @@
           "ar": "… دِرْهَمٍ",
           "choix_ar": [
             "ثَلَاثُمِائَةِ",
-            "ثَلَاثَةُ مِائَةٍ",
-            "ثَلَاثُونَ"
+            "ثَلَاثُونَ",
+            "ثَلَاثَةُ"
           ],
           "reponse": 0,
           "explication": "De 300 à 900 : un seul mot."
@@ -265,8 +265,8 @@
           "ar": "… بَاسِمٌ الْبَائِعَ.",
           "choix_ar": [
             "سَاوَمَ",
-            "اشْتَرَى",
-            "بَاعَ"
+            "سَأَلَ",
+            "انْتَظَرَ"
           ],
           "reponse": 0,
           "explication": "« marchander » : سَاوَمَ."
@@ -288,7 +288,7 @@
           "consigne": "Pour demander le prix, on dit…",
           "choix_ar": [
             "بِكَمْ هَٰذَا",
-            "كَمْ هَٰذَا بِـ",
+            "أَيْنَ هَٰذَا",
             "مَتَى هَٰذَا"
           ],
           "reponse": 0,
@@ -423,7 +423,7 @@
           "choix_ar": [
             "خَمْسُمِائَةِ",
             "خَمْسُونَ",
-            "خَمْسُ مِائَاتٍ"
+            "خَمْسَةُ"
           ],
           "reponse": 0,
           "explication": "De 300 à 900 : un seul mot."
@@ -434,7 +434,7 @@
           "ar": "… هَٰذَا الْبِسَاطُ؟",
           "choix_ar": [
             "بِكَمْ",
-            "كَمْ",
+            "أَيْنَ",
             "مَتَى"
           ],
           "reponse": 0,
