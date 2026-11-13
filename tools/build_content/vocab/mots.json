@@ -9456,7 +9456,7 @@
    "formes": [
     "خَالَةٌ",
     "خَالُ",
-    "خَالُهُ"
+    "خَالِي"
    ],
    "exemple": {
     "ar": "خَالُ بَاسِمٍ حَدَّادٌ.",
@@ -9478,7 +9478,7 @@
     "ar": "هَٰذِهِ أُسْرَةُ نَدِيمٍ.",
     "fr": "Voici la famille de Nadīm."
    },
-   "remarque": "la racine ne suffit pas pour le sens : elle a d'autres emplois",
+   "remarque": "la racine ne suffit pas pour le sens : dans le Corpus, elle a le sens de captivité",
    "theme": "famille"
   },
   {
@@ -9492,8 +9492,8 @@
    "genre": "f",
    "racine": "Hrf",
    "exemple": {
-    "ar": "حِرْفَةُ سَمِيرٍ التِّجَارَةُ.",
-    "fr": "Le métier de Samīr, c'est le commerce."
+    "ar": "حِرْفَةُ أَبِي سَمِيرٍ التِّجَارَةُ.",
+    "fr": "Le métier du père de Samīr, c'est le commerce."
    },
    "remarque": "la racine ne suffit pas pour le sens : elle a d'autres emplois",
    "theme": "metiers"

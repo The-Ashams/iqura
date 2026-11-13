@@ -22,7 +22,9 @@
     "خِيَاطَةٌ"
   ],
   "schemes": [
-    "فِعَالَة"
+    "فِعَالَة",
+    "فَعِيل",
+    "مَفْعُول"
   ],
   "ecrans": [
     {
@@ -49,7 +51,7 @@
           "choix_ar": [
             "اسْمِي",
             "اسْمُكَ",
-            "أَنَا اسْمِي"
+            "اسْمُهُ"
           ],
           "reponse": 0,
           "explication": "« mon nom » : اسْمِي (leçon 4.15)."
@@ -138,7 +140,7 @@
     {
       "type": "regle",
       "titre": "La parenté par l'annexion",
-      "texte": "La parenté se dit par l'annexion : عَمُّ بَاسِمٍ, ابْنُ عَمِّي. أَبٌ et أَخٌ deviennent أَبُو / أَبَا / أَبِي devant un complément.",
+      "texte": "La parenté se dit par l'annexion : عَمُّ بَاسِمٍ, ابْنُ عَمِّي. أَبٌ et أَخٌ deviennent أَبُو / أَبَا / أَبِي et أَخُو / أَخَا / أَخِي devant un complément.",
       "exemples": [
         "عَمُّ بَاسِمٍ",
         "ابْنُ عَمِّي",
@@ -160,7 +162,7 @@
     {
       "type": "regle",
       "titre": "Les noms de métier",
-      "texte": "Le nom d'un métier suit souvent le moule فِعَالَة : نِجَارَةٌ, خِيَاطَةٌ, كِتَابَةٌ, تِجَارَةٌ.",
+      "texte": "Le nom de l'activité d'un métier suit souvent le moule فِعَالَة : نِجَارَةٌ, خِيَاطَةٌ « la couture », تِجَارَةٌ. Celui qui l'exerce : نَجَّارٌ, خَيَّاطَةٌ « la couturière ».",
       "exemples": [
         "نِجَارَةٌ",
         "خِيَاطَةٌ",
@@ -168,11 +170,11 @@
       ],
       "question": {
         "type": "qcm",
-        "consigne": "Le métier du نَجَّارٌ (menuisier) s'appelle…",
+        "consigne": "Le métier du نَجَّار (menuisier) s'appelle…",
         "choix_ar": [
           "نِجَارَةٌ",
           "نَجَّارٌ",
-          "نِجَارَةٍ"
+          "تِجَارَةٌ"
         ],
         "reponse": 0,
         "explication": "Moule فِعَالَة : نِجَارَةٌ ; نَجَّارٌ est celui qui l'exerce."
@@ -266,16 +268,16 @@
           "ar": "لُبْنَى … نَدِيمٍ.",
           "choix_ar": [
             "زَوْجَةُ",
-            "زَوْجُ",
+            "زَوْجَةٍ",
             "زَوْجَةً"
           ],
           "reponse": 0,
-          "explication": "Attribut au nominatif, au féminin : زَوْجَةُ."
+          "explication": "Attribut au nominatif : زَوْجَةُ."
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Le métier de Samīr, c'est le commerce. »",
-          "ar": "حِرْفَةُ سَمِيرٍ …",
+          "consigne": "Complète : « Le métier du père de Samīr, c'est le commerce. »",
+          "ar": "حِرْفَةُ أَبِي سَمِيرٍ …",
           "choix_ar": [
             "التِّجَارَةُ",
             "التَّاجِرُ",
@@ -300,7 +302,7 @@
     {
       "type": "lecture",
       "titre": "La famille de Nadīm",
-      "texte": "Nadīm présente sa famille. Lis ; touche un mot pour voir son sens.",
+      "texte": "Voici la famille de Nadīm. Lis ; touche un mot pour voir son sens.",
       "phrases": [
         "هَٰذِهِ أُسْرَةُ نَدِيمٍ.",
         "لُبْنَى زَوْجَةُ نَدِيمٍ، وَهِيَ خَيَّاطَةٌ.",
@@ -466,11 +468,11 @@
         },
         {
           "type": "qcm",
-          "consigne": "Le moule des noms de métier est souvent…",
+          "consigne": "Le nom de l'activité (la menuiserie, la couture) suit souvent le moule…",
           "choix_ar": [
             "فِعَالَة",
             "مَفْعُول",
-            "فَاعِل"
+            "فَعِيل"
           ],
           "reponse": 0,
           "explication": "نِجَارَةٌ, خِيَاطَةٌ."
