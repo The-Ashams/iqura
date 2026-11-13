@@ -127,7 +127,9 @@
         40,
         30
       ],
-      "lecons": [],
+      "lecons": [
+        15
+      ],
       "scene": "scene_debats",
       "sol": 84,
       "tranche_j1a": true,
@@ -256,7 +258,10 @@
       "lieux": [
         "porte_cite",
         "messagers",
-        "conteurs"
+        "conteurs",
+        "place_debats",
+        "marche_couvert",
+        "maison_nadim"
       ]
     },
     {
@@ -267,7 +272,20 @@
       "sprite": "hala",
       "lieux": [
         "jardin_maximes",
-        "bureau_comptes"
+        "bureau_comptes",
+        "marche_couvert"
+      ]
+    },
+    {
+      "id": "zuhayr",
+      "nom": "Zuhayr",
+      "nom_ar": "زُهَيْرٌ",
+      "role": "Le maître copiste",
+      "sprite": "zuhayr",
+      "lieux": [
+        "atelier_copistes",
+        "salle_dictionnaire",
+        "grande_salle"
       ]
     }
   ]

@@ -35,6 +35,8 @@ Après les montagnes, le voyageur arrive dans la Cité des Lecteurs : on y lit d
 | --- | --- |
 | Nadīm (نَدِيم, « compagnon de veillée et de conversation ») | Le conteur et écrivain public, maître des lieux 1 à 3 ; nouveau |
 | Hāla (هَالَة, « halo de la lune ») | La gardienne du Jardin des maximes et des comptes, maîtresse des lieux 4 et 5 ; nouvelle |
+| Zuhayr (زُهَيْرٌ, « petite fleur ») | Le maître copiste, maître des lieux 9 à 11 (chapitre C) ; nouveau |
+| Lubnā (لُبْنَى) et ʿĀmir (عَامِرٌ) | La femme et le fils de Nadīm (leçon 4.16) ; nouveaux |
 | Bāsim | Le jeune chamelier de la région 2, qui accompagne toujours le voyageur |
 
 Aucun nom de prophète ni de figure religieuse. Sens des noms : rédigé par IA.

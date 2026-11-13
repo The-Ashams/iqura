@@ -8968,6 +8968,135 @@
    },
    "remarque": "employé ici seulement comme tamyīz : أَكْبَرُ سِنًّا ; sens premier : dent",
    "theme": "savoir"
+  },
+  {
+   "id": "marhaban",
+   "ar": "مَرْحَبًا",
+   "translit": "marḥaban",
+   "fr": "bienvenue",
+   "nature": "adverbe",
+   "lecon": "cite-15",
+   "source_sens": "rédigé par IA",
+   "lemme": "maroHab",
+   "exemple": {
+    "ar": "مَرْحَبًا بِكَ.",
+    "fr": "Sois le bienvenu."
+   },
+   "remarque": "seul, ou suivi de بِكَ / بِكِ",
+   "theme": "parole"
+  },
+  {
+   "id": "ahlan",
+   "ar": "أَهْلًا وَسَهْلًا",
+   "translit": "ahlan wa-sahlan",
+   "fr": "sois le bienvenu",
+   "nature": "adverbe",
+   "lecon": "cite-15",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "أَهْلًا وَسَهْلًا يَا بَاسِمُ.",
+    "fr": "Sois le bienvenu, Bāsim."
+   },
+   "remarque": "expression d'accueil",
+   "fige": true,
+   "formes": [
+    "أَهْلًا",
+    "وَسَهْلًا"
+   ],
+   "theme": "parole"
+  },
+  {
+   "id": "bikhayr",
+   "ar": "بِخَيْرٍ",
+   "translit": "bi-ḫayrin",
+   "fr": "bien (« je vais bien »)",
+   "nature": "adverbe",
+   "lecon": "cite-15",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "أَنَا بِخَيْرٍ.",
+    "fr": "Je vais bien."
+   },
+   "remarque": "forme figée, en réponse à كَيْفَ حَالُكَ",
+   "theme": "parole"
+  },
+  {
+   "id": "balad",
+   "ar": "بَلَدٌ",
+   "translit": "baladun",
+   "fr": "pays, contrée",
+   "nature": "nom",
+   "lecon": "cite-15",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "balad",
+   "exemple": {
+    "ar": "بَلَدِي بَعِيدٌ.",
+    "fr": "Mon pays est loin."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "wulida",
+   "ar": "وُلِدَ",
+   "translit": "wulida",
+   "fr": "naître (« il est né »)",
+   "nature": "verbe",
+   "lecon": "cite-15",
+   "source_sens": "rédigé par IA",
+   "passe": "وُلِدَ",
+   "inaccompli": "",
+   "exemple": {
+    "ar": "وُلِدْتُ فِي قَرْيَةٍ صَغِيرَةٍ.",
+    "fr": "Je suis né dans un petit village."
+   },
+   "racine": "wld",
+   "fige": true,
+   "formes": [
+    "وُلِدْتُ",
+    "وُلِدَتْ"
+   ],
+   "remarque": "passif ; toujours suivi de فِي + lieu",
+   "theme": "actions"
+  },
+  {
+   "id": "nashaa",
+   "ar": "نَشَأَ",
+   "translit": "našaʾa",
+   "fr": "grandir (quelque part)",
+   "nature": "verbe",
+   "lecon": "cite-15",
+   "source_sens": "rédigé par IA",
+   "passe": "نَشَأَ",
+   "inaccompli": "",
+   "exemple": {
+    "ar": "نَشَأْتُ فِي بَغْدَادَ.",
+    "fr": "J'ai grandi à Bagdad."
+   },
+   "racine": "n$A",
+   "fige": true,
+   "formes": [
+    "نَشَأْتُ",
+    "نَشَأَتْ"
+   ],
+   "remarque": "suivi de فِي + lieu",
+   "theme": "actions"
+  },
+  {
+   "id": "madha",
+   "ar": "مَاذَا",
+   "translit": "māḏā",
+   "fr": "que ? quoi ?",
+   "nature": "interrogatif",
+   "lecon": "cite-15",
+   "source_sens": "rédigé par IA",
+   "lemme": "maA*aA",
+   "exemple": {
+    "ar": "مَاذَا تَعْمَلُ؟",
+    "fr": "Que fais-tu ?"
+   },
+   "remarque": "devant un verbe ; لِمَاذَا : pourquoi ?",
+   "theme": "questions"
   }
  ]
 }
