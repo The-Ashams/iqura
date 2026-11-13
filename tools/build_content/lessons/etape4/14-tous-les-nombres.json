@@ -4,7 +4,7 @@
   "ordre": 14,
   "format": 3,
   "titre": "Tous les nombres",
-  "objectif": "Dire et écrire les nombres jusqu'à mille avec le nom compté.",
+  "objectif": "Dire et écrire les nombres jusqu'à 99, puis cent et mille, avec le nom compté.",
   "statut": "ia_non_verifie",
   "lieu": "bureau_comptes",
   "maitre": "hala",
@@ -31,10 +31,10 @@
         },
         {
           "qui": "hala",
-          "texte": "Tu sais compter jusqu'à dix ; allons jusqu'à mille."
+          "texte": "Tu sais compter jusqu'à dix ; allons jusqu'à 99, puis cent et mille."
         }
       ],
-      "objectif": "Compter jusqu'à mille, avec le bon nom compté."
+      "objectif": "Compter jusqu'à 99, puis cent et mille, avec le bon nom compté."
     },
     {
       "type": "echauffement",
@@ -440,9 +440,9 @@
           "type": "qcm",
           "consigne": "Que veut dire اثْنَا عَشَرَ قَلَمًا ?",
           "choix": [
-            "douze crayons",
-            "deux crayons",
-            "vingt crayons"
+            "douze calames",
+            "deux calames",
+            "vingt calames"
           ],
           "reponse": 0,
           "explication": "اثْنَا عَشَرَ : douze."

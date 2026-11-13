@@ -194,6 +194,18 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Tests | Les 32 leçons de la région 3 jouées de bout en bout ; examen de la région 3 joué, son coupé et son actif (`test/ui/lesson_player_test.dart`) ; contrôles de l'épreuve « décoder » (`tools/build_content/test_build_content.py`) |
 | À faire | Test de l'utilisateur quand il le souhaite ; ensuite Avancé 1 (leçons 4.1 à 4.14, région 4) |
 
+## 1 quaterdecies. Niveau Avancé 1 (leçons 4.1 à 4.14, région 4 « La Cité des Lecteurs », chapitre A, 12 et 13/11/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Monde | Région 4 ouverte après l'examen de la région 3 : la Porte de la Cité (4.1, 4.2), la Maison des messagers (4.3 à 4.5), la Place des conteurs (4.6 à 4.9), le Jardin des maximes (4.10 à 4.12), le Bureau des comptes (4.13, 4.14), le Labyrinthe de la Distraction (révisions ; boss au niveau Avancé 2) ; maîtres Nadīm et Hāla ; carte, décors et sprite de la Distraction en pixel art ; proposition `docs/PROPOSITION_REGION_4.md` à valider |
+| Leçons | `tools/build_content/lessons/etape4/01` à `14` (cite-01 à cite-14) : إِذَا / إِنْ et فَـ, لَوْ / لَوْلَا, أَنَّ / أَنْ, حِينَ / لَمَّا / قَبْلَ أَنْ, لِأَنَّ / لِـ / حَتَّى, ḥāl, tamyīz, mafʿūl muṭlaq, mafʿūl li-aǧlih, إِلَّا / غَيْرُ, appel, insistance, liaisons, nombres jusqu'à 1 000 ; environ 75 mots nouveaux |
+| Pipeline | Avertissement des paires coraniques étendu aux leçons de la région 4 ; exception « onze et douze » (décision de l'utilisateur du 12/11/2026) |
+| Plan et décisions | `docs/relectures/decisions-avance-1.md` (plan du conseiller, doutes tranchés, liste de fin de niveau) |
+| Relecture | `docs/relectures/2026-11-13-avance-1.md` : 4 « Validé », 10 « Validé avec doutes » ; doutes tranchés par le conseiller |
+| Tests | Les 14 leçons de la région 4 jouées de bout en bout (`test/ui/lesson_player_test.dart`) ; test de l'exception onze et douze |
+| À faire | Test de l'utilisateur quand il le souhaite ; ensuite Avancé 2 (leçons 4.15 à 4.28 et boss de la région 4) |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -254,7 +266,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 11. Intermédiaire 1 construit et relu (§1 undecies) : à tester par l'utilisateur.
 12. Intermédiaire 2 construit et relu (§1 duodecies).
 13. Intermédiaire 3 construit et relu (§1 terdecies) : toute la région 3 est prête à tester.
-14. Suivant : Avancé 1 (leçons 4.1 à 4.14, région 4), sur une proposition de région 4 à écrire.
+14. Avancé 1 construit et relu (§1 quaterdecies).
+15. Suivant : Avancé 2 (leçons 4.15 à 4.28 et boss de la région 4).
 
 ## 5. Problèmes connus
 
