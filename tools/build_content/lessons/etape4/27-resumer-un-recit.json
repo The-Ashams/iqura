@@ -1,0 +1,518 @@
+{
+  "id": "cite-27",
+  "etape": 4,
+  "ordre": 27,
+  "format": 3,
+  "titre": "Résumer un récit",
+  "objectif": "Reformuler un récit lu en 3 à 5 phrases.",
+  "statut": "ia_non_verifie",
+  "lieu": "grande_salle",
+  "maitre": "zuhayr",
+  "prerequis": [
+    "cite-26"
+  ],
+  "apercu": [
+    "زُهَيْرٌ",
+    "بَاسِمٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "zuhayr",
+          "texte": "Voici la Grande Salle de lecture. On y lit des récits, puis on les résume pour les autres lecteurs."
+        },
+        {
+          "qui": "zuhayr",
+          "texte": "Résumer, ce n'est pas recopier : on garde le début, le milieu, la fin et l'idée la plus importante."
+        }
+      ],
+      "objectif": "Résumer un récit en quelques phrases."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a dit qu'il était fatigué. »",
+          "ar": "قَالَ … تَعِبٌ.",
+          "choix_ar": [
+            "إِنَّهُ",
+            "أَنَّهُ",
+            "لِأَنَّهُ"
+          ],
+          "reponse": 0,
+          "explication": "Après قَالَ : إِنَّ (leçon 4.3)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand est parti en voyage, puis il est arrivé. »",
+          "ar": "سَافَرَ التَّاجِرُ، … وَصَلَ.",
+          "choix_ar": [
+            "ثُمَّ",
+            "لَٰكِنْ",
+            "أَوْ"
+          ],
+          "reponse": 0,
+          "explication": "La suite : ثُمَّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Cela dit, je suis arrivé. »",
+          "ar": "أَمَّا بَعْدُ، … وَصَلْتُ.",
+          "choix_ar": [
+            "فَقَدْ",
+            "ثُمَّ",
+            "لَمَّا"
+          ],
+          "reponse": 0,
+          "explication": "Après أَمَّا بَعْدُ : فَـ (leçon 4.26)."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le marchand et son âne",
+      "texte": "Lis le récit ; ensuite, tu le résumeras.",
+      "phrases": [
+        "سَافَرَ تَاجِرٌ مَعَ حِمَارِهِ إِلَى مَدِينَةٍ بَعِيدَةٍ.",
+        "كَانَ الطَّرِيقُ طَوِيلًا، فَنَامَ التَّاجِرُ تَحْتَ شَجَرَةٍ.",
+        "لَمَّا اسْتَيْقَظَ، كَانَ الْمَسَاءُ قَدْ جَاءَ.",
+        "قَالَ التَّاجِرُ: « تَأَخَّرْتُ، لِأَنِّي نِمْتُ فِي الطَّرِيقِ. »",
+        "ثُمَّ مَشَى فِي اللَّيْلِ، وَفِي الصَّبَاحِ وَصَلَ إِلَى الْمَدِينَةِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi le marchand est-il en retard ?",
+          "choix": [
+            "il a dormi en chemin",
+            "son âne était malade",
+            "il s'est perdu"
+          ],
+          "reponse": 0,
+          "explication": "تَأَخَّرْتُ، لِأَنِّي نِمْتُ فِي الطَّرِيقِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand est-il arrivé en ville ?",
+          "choix": [
+            "le matin",
+            "le soir",
+            "à midi"
+          ],
+          "reponse": 0,
+          "explication": "وَفِي الصَّبَاحِ وَصَلَ إِلَى الْمَدِينَةِ."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "zuhayr",
+          "ar": "قَرَأْتَ قِصَّةَ التَّاجِرِ. لَخِّصْهَا لِي.",
+          "fr": "Tu as lu l'histoire du marchand. Résume-la-moi."
+        },
+        {
+          "qui": "basim",
+          "ar": "فِي بِدَايَةِ الْقِصَّةِ سَافَرَ التَّاجِرُ، وَفِي وَسَطِهَا تَأَخَّرَ، وَفِي نِهَايَتِهَا وَصَلَ.",
+          "fr": "Au début de l'histoire, le marchand part en voyage ; au milieu, il prend du retard ; à la fin, il arrive."
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "أَصَبْتَ! وَمَا أَهَمُّ فِكْرَةٍ؟",
+          "fr": "Tu as raison ! Et quelle est l'idée la plus importante ?"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que se passe-t-il au milieu de l'histoire ?",
+        "choix": [
+          "le marchand prend du retard",
+          "le marchand arrive",
+          "le marchand part"
+        ],
+        "reponse": 0,
+        "explication": "وَفِي وَسَطِهَا تَأَخَّرَ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "lakhkhasa",
+        "fikra",
+        "muhimm",
+        "bidaya",
+        "nihaya",
+        "wasat"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "فِكْرَةٌ",
+        "choix": [
+          "idée",
+          "fin",
+          "début"
+        ],
+        "reponse": 0,
+        "explication": "فِكْرَةٌ veut dire « idée »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Résumer",
+      "texte": "Résumer, c'est garder le début, le milieu et la fin, et l'idée la plus importante. On rapporte les paroles au discours indirect (قَالَ إِنَّهُ) et on relie par ثُمَّ, فَـ, لَٰكِنْ.",
+      "exemples": [
+        "فِي بِدَايَةِ الْقِصَّةِ",
+        "فِي وَسَطِهَا",
+        "فِي نِهَايَتِهَا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que garde un bon résumé ?",
+        "choix": [
+          "le début, le milieu, la fin et l'idée importante",
+          "toutes les phrases du récit",
+          "seulement la fin"
+        ],
+        "reponse": 0,
+        "explication": "On ne recopie pas : on garde l'essentiel."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le plus important",
+      "texte": "أَهَمُّ veut dire « le plus important ». Suivi d'un nom indéfini au génitif singulier : أَهَمُّ فِكْرَةٍ « l'idée la plus importante ».",
+      "exemples": [
+        "أَهَمُّ فِكْرَةٍ",
+        "مُهِمٌّ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « l'idée la plus importante »",
+        "ar": "أَهَمُّ …",
+        "choix_ar": [
+          "فِكْرَةٍ",
+          "فِكْرَةٌ",
+          "الْفِكْرَةُ"
+        ],
+        "reponse": 0,
+        "explication": "أَهَمُّ + nom indéfini au génitif."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَخَّصَ",
+          "choix": [
+            "résumer",
+            "recopier",
+            "expliquer"
+          ],
+          "reponse": 0,
+          "explication": "لَخَّصَ veut dire « résumer »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بِدَايَةٌ",
+          "choix": [
+            "début",
+            "fin",
+            "milieu"
+          ],
+          "reponse": 0,
+          "explication": "بِدَايَةٌ veut dire « début »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُهِمٌّ",
+          "choix": [
+            "important",
+            "facile",
+            "long"
+          ],
+          "reponse": 0,
+          "explication": "مُهِمٌّ veut dire « important »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le marchand a dit qu'il avait dormi en chemin. » ?",
+          "choix_ar": [
+            "قَالَ التَّاجِرُ إِنَّهُ نَامَ فِي الطَّرِيقِ.",
+            "قَالَ التَّاجِرُ: « نِمْتُ فِي الطَّرِيقِ. »",
+            "قَالَ التَّاجِرُ إِنَّهُ يَنَامُ فِي الطَّرِيقِ."
+          ],
+          "reponse": 0,
+          "explication": "Discours indirect : قَالَ إِنَّهُ + verbe à la 3e personne."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Au début de l'histoire, le marchand part. »",
+          "ar": "فِي … الْقِصَّةِ سَافَرَ التَّاجِرُ.",
+          "choix_ar": [
+            "بِدَايَةِ",
+            "نِهَايَةِ",
+            "وَسَطِ"
+          ],
+          "reponse": 0,
+          "explication": "Le début : بِدَايَةِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « À la fin de l'histoire, il arrive. »",
+          "ar": "فِي … الْقِصَّةِ وَصَلَ.",
+          "choix_ar": [
+            "نِهَايَةِ",
+            "بِدَايَةِ",
+            "وَسَطِ"
+          ],
+          "reponse": 0,
+          "explication": "La fin : نِهَايَةِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'étudiant a résumé l'histoire. »",
+          "ar": "… الطَّالِبُ الْقِصَّةَ.",
+          "choix_ar": [
+            "لَخَّصَ",
+            "لَخِّصْ",
+            "يُلَخِّصُ"
+          ],
+          "reponse": 0,
+          "explication": "Au passé : لَخَّصَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le meilleur résumé du récit du marchand ?",
+          "choix_ar": [
+            "سَافَرَ تَاجِرٌ، فَنَامَ فِي الطَّرِيقِ وَتَأَخَّرَ، ثُمَّ وَصَلَ فِي الصَّبَاحِ.",
+            "قَالَ التَّاجِرُ: « نِمْتُ فِي الطَّرِيقِ. »",
+            "سَافَرَ تَاجِرٌ، وَوَصَلَ إِلَى الْمَدِينَةِ فِي الْمَسَاءِ."
+          ],
+          "reponse": 0,
+          "explication": "Le début, le milieu, la fin, au discours indirect ; il est arrivé le matin."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans un résumé, « نِمْتُ » (dit par le marchand) devient…",
+          "choix_ar": [
+            "إِنَّهُ نَامَ",
+            "نِمْتُ",
+            "أَنَامُ"
+          ],
+          "reponse": 0,
+          "explication": "On change de personne : discours indirect."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre, en commençant par « au début de l'histoire », puis le verbe : « Au début de l'histoire, le marchand part. »",
+          "tuiles": [
+            "التَّاجِرُ",
+            "سَافَرَ",
+            "الْقِصَّةِ",
+            "بِدَايَةِ",
+            "فِي"
+          ],
+          "solution": [
+            "فِي",
+            "بِدَايَةِ",
+            "الْقِصَّةِ",
+            "سَافَرَ",
+            "التَّاجِرُ"
+          ],
+          "explication": "Le moment d'abord, puis le verbe et son sujet."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'idée la plus importante est que le marchand a pris du retard parce qu'il avait dormi. »",
+          "ar": "أَهَمُّ فِكْرَةٍ أَنَّ … تَأَخَّرَ لِأَنَّهُ نَامَ.",
+          "choix_ar": [
+            "التَّاجِرَ",
+            "التَّاجِرُ",
+            "التَّاجِرِ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنَّ : nom en -a."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Résume à ton tour le récit du marchand en 3 à 5 phrases : le début, le milieu, la fin, l'idée importante.",
+          "modele": [
+            "فِي بِدَايَةِ الْقِصَّةِ سَافَرَ تَاجِرٌ مَعَ حِمَارِهِ.",
+            "فِي وَسَطِهَا نَامَ تَحْتَ شَجَرَةٍ، فَتَأَخَّرَ.",
+            "فِي نِهَايَتِهَا وَصَلَ إِلَى الْمَدِينَةِ فِي الصَّبَاحِ.",
+            "أَهَمُّ فِكْرَةٍ أَنَّ التَّاجِرَ تَأَخَّرَ لِأَنَّهُ نَامَ فِي الطَّرِيقِ."
+          ],
+          "explication": "Compare : as-tu le début, le milieu, la fin, et as-tu changé de personne (نَامَ, et non نِمْتُ) ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نِهَايَةٌ",
+          "choix": [
+            "fin",
+            "début",
+            "milieu"
+          ],
+          "reponse": 0,
+          "explication": "نِهَايَةٌ veut dire « fin »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَسَطٌ",
+          "choix": [
+            "milieu",
+            "fin",
+            "idée"
+          ],
+          "reponse": 0,
+          "explication": "وَسَطٌ veut dire « milieu »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « au milieu de l'histoire »",
+          "ar": "فِي … الْقِصَّةِ",
+          "choix_ar": [
+            "وَسَطِ",
+            "وَسَطَ",
+            "وَسَطٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « l'idée la plus importante »",
+          "ar": "… فِكْرَةٍ",
+          "choix_ar": [
+            "أَهَمُّ",
+            "مُهِمٌّ",
+            "مُهِمَّةُ"
+          ],
+          "reponse": 0,
+          "explication": "« le plus important » : أَهَمُّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Résume l'histoire. »",
+          "ar": "… الْقِصَّةَ.",
+          "choix_ar": [
+            "لَخِّصْ",
+            "لَخَّصَ",
+            "يُلَخِّصُ"
+          ],
+          "reponse": 0,
+          "explication": "L'impératif : لَخِّصْ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Il a dit qu'il était en retard. » ?",
+          "choix_ar": [
+            "قَالَ إِنَّهُ تَأَخَّرَ.",
+            "قَالَ: « تَأَخَّرْتُ. »",
+            "قَالَ أَنَّهُ تَأَخَّرَ."
+          ],
+          "reponse": 0,
+          "explication": "Discours indirect : قَالَ إِنَّهُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Un résumé…",
+          "choix": [
+            "garde l'essentiel en changeant de personne",
+            "recopie toutes les phrases",
+            "ne garde que les paroles"
+          ],
+          "reponse": 0,
+          "explication": "On ne recopie pas."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire أَهَمُّ فِكْرَةٍ ?",
+          "choix": [
+            "l'idée la plus importante",
+            "une idée importante",
+            "toutes les idées"
+          ],
+          "reponse": 0,
+          "explication": "أَهَمُّ + nom indéfini : le plus important."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour relier les étapes d'un résumé, on emploie…",
+          "choix": [
+            "ثُمَّ, فَـ, لَٰكِنْ",
+            "أَمَّا بَعْدُ",
+            "مِنْ… إِلَى…"
+          ],
+          "reponse": 0,
+          "explication": "Les liens du récit (leçon 4.13)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَمَّا بَعْدُ",
+          "choix": [
+            "cela dit, quant à ce qui suit (formule de lettre)",
+            "à la fin de la lettre",
+            "ton ami"
+          ],
+          "reponse": 0,
+          "explication": "أَمَّا بَعْدُ veut dire « cela dit, quant à ce qui suit (formule de lettre) ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai eu la nostalgie du village. »",
+          "ar": "اشْتَقْتُ … الْقَرْيَةِ.",
+          "choix_ar": [
+            "إِلَى",
+            "عَنِ",
+            "فِي"
+          ],
+          "reponse": 0,
+          "explication": "اشْتَاقَ إِلَى.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَرْحٌ",
+          "choix": [
+            "explication",
+            "article (d'un dictionnaire, classé par racine)",
+            "ordre (de classement)"
+          ],
+          "reponse": 0,
+          "explication": "شَرْحٌ veut dire « explication ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu résumes un récit : début, milieu, fin (بِدَايَة, وَسَط, نِهَايَة), l'idée la plus importante (أَهَمُّ فِكْرَةٍ), au discours indirect.",
+      "suite": "Prochaine leçon : un texte classique."
+    }
+  ]
+}

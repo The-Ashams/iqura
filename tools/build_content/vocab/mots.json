@@ -10379,14 +10379,14 @@
    "inaccompli": "يَشْتَاقُ",
    "exemple": {
     "ar": "اشْتَقْتُ إِلَى الْقَرْيَةِ.",
-    "fr": "La nostalgie du village me prend."
+    "fr": "J'ai eu la nostalgie du village."
    },
    "fige": true,
    "formes": [
     "اشْتَقْتُ",
     "أَشْتَاقُ"
    ],
-   "remarque": "forme VIII ; toujours suivi de إِلَى",
+   "remarque": "forme VIII ; suivi de إِلَى",
    "theme": "sentiments"
   },
   {
@@ -10399,8 +10399,8 @@
    "source_sens": "rédigé par IA",
    "genre": "m",
    "exemple": {
-    "ar": "فِي قَلْبِي شَوْقٌ إِلَى الْأَصْدِقَاءِ.",
-    "fr": "J'ai la nostalgie de mes amis."
+    "ar": "شَوْقِي إِلَى الْقَرْيَةِ كَبِيرٌ.",
+    "fr": "Ma nostalgie du village est grande."
    },
    "theme": "sentiments"
   },
@@ -10417,6 +10417,7 @@
     "ar": "عُنْوَانُ الرِّسَالَةِ قَصِيرٌ.",
     "fr": "L'en-tête de la lettre est court."
    },
+   "remarque": "aujourd'hui, aussi « adresse »",
    "theme": "ecriture"
   },
   {
@@ -10451,6 +10452,136 @@
    },
    "remarque": "terme classique des lettres : « celui à qui l'on a écrit »",
    "theme": "ecriture"
+  },
+  {
+   "id": "lakhkhasa",
+   "ar": "لَخَّصَ",
+   "translit": "laḫḫaṣa",
+   "fr": "résumer",
+   "nature": "verbe",
+   "lecon": "cite-27",
+   "source_sens": "rédigé par IA",
+   "passe": "لَخَّصَ",
+   "inaccompli": "يُلَخِّصُ",
+   "fige": true,
+   "formes": [
+    "لَخِّصْ",
+    "لَخَّصْتُ"
+   ],
+   "exemple": {
+    "ar": "لَخَّصَ الطَّالِبُ الْقِصَّةَ فِي ثَلَاثِ جُمَلٍ.",
+    "fr": "L'étudiant a résumé l'histoire en trois phrases."
+   },
+   "remarque": "forme II ; تَلْخِيصٌ : résumé",
+   "theme": "ecriture"
+  },
+  {
+   "id": "fikra",
+   "ar": "فِكْرَةٌ",
+   "translit": "fikratun",
+   "fr": "idée",
+   "nature": "nom",
+   "lecon": "cite-27",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "fkr",
+   "fige": true,
+   "formes": [
+    "فِكْرَةٍ"
+   ],
+   "exemple": {
+    "ar": "هَٰذِهِ فِكْرَةٌ جَمِيلَةٌ.",
+    "fr": "C'est une belle idée."
+   },
+   "remarque": "sens premier : réflexion, pensée ; la racine ne suffit pas pour le sens",
+   "theme": "savoir"
+  },
+  {
+   "id": "muhimm",
+   "ar": "مُهِمٌّ",
+   "translit": "muhimmun",
+   "fr": "important",
+   "nature": "adjectif",
+   "lecon": "cite-27",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "hmm",
+   "fige": true,
+   "formes": [
+    "مُهِمَّةٌ",
+    "أَهَمُّ"
+   ],
+   "exemple": {
+    "ar": "هَٰذِهِ فِكْرَةٌ مُهِمَّةٌ.",
+    "fr": "C'est une idée importante."
+   },
+   "remarque": "أَهَمُّ : le plus important ; la racine ne suffit pas pour le sens",
+   "theme": "qualites"
+  },
+  {
+   "id": "bidaya",
+   "ar": "بِدَايَةٌ",
+   "translit": "bidāyatun",
+   "fr": "début",
+   "nature": "nom",
+   "lecon": "cite-27",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "bdA",
+   "fige": true,
+   "formes": [
+    "بِدَايَةِ"
+   ],
+   "exemple": {
+    "ar": "فِي بِدَايَةِ الْقِصَّةِ سَافَرَ التَّاجِرُ.",
+    "fr": "Au début de l'histoire, le marchand part en voyage."
+   },
+   "remarque": "même racine que بَدَأَ ; la racine ne suffit pas pour le sens",
+   "theme": "temps"
+  },
+  {
+   "id": "nihaya",
+   "ar": "نِهَايَةٌ",
+   "translit": "nihāyatun",
+   "fr": "fin",
+   "nature": "nom",
+   "lecon": "cite-27",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "nhy",
+   "fige": true,
+   "formes": [
+    "نِهَايَةِ",
+    "نِهَايَتِهَا"
+   ],
+   "exemple": {
+    "ar": "فِي نِهَايَةِ الْقِصَّةِ وَصَلَ التَّاجِرُ.",
+    "fr": "À la fin de l'histoire, le marchand arrive."
+   },
+   "remarque": "même racine que انْتَهَى ; la racine ne suffit pas pour le sens",
+   "theme": "temps"
+  },
+  {
+   "id": "wasat",
+   "ar": "وَسَطٌ",
+   "translit": "wasaṭun",
+   "fr": "milieu",
+   "nature": "nom",
+   "lecon": "cite-27",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "wsT",
+   "fige": true,
+   "formes": [
+    "وَسَطِ",
+    "وَسَطِهَا"
+   ],
+   "exemple": {
+    "ar": "فِي وَسَطِ الْقِصَّةِ تَأَخَّرَ التَّاجِرُ.",
+    "fr": "Au milieu de l'histoire, le marchand prend du retard."
+   },
+   "remarque": "la racine ne suffit pas pour le sens",
+   "theme": "lieux"
   }
  ]
 }

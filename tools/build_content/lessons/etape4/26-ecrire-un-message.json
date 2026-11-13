@@ -83,7 +83,7 @@
         },
         {
           "qui": "zuhayr",
-          "ar": "اُكْتُبْ أَوَّلًا: مِنْ بَاسِمٍ إِلَى سَمِيرٍ، ثُمَّ: أَمَّا بَعْدُ.",
+          "ar": "اكْتُبْ أَوَّلًا: مِنْ بَاسِمٍ إِلَى سَمِيرٍ، ثُمَّ: أَمَّا بَعْدُ.",
           "fr": "Écris d'abord : de Bāsim à Samīr, puis : « cela dit »."
         },
         {
@@ -135,7 +135,7 @@
     {
       "type": "regle",
       "titre": "Les parties d'une lettre",
-      "texte": "Une lettre classique : مِنْ (qui écrit), puis إِلَى (à qui) ; أَمَّا بَعْدُ suivi de فَـ ; le message ; la date, كَتَبْتُهُ فِي + mois ; la signature, صَدِيقُكَ + nom.",
+      "texte": "Une lettre : مِنْ (qui écrit), puis إِلَى (à qui) ; أَمَّا بَعْدُ suivi de فَـ ; le message ; la date, كَتَبْتُهَا فِي + mois ; la signature, صَدِيقُكَ + nom.",
       "exemples": [
         "مِنْ بَاسِمٍ إِلَى سَمِيرٍ",
         "أَمَّا بَعْدُ، فَقَدْ وَصَلْتُ",
@@ -143,11 +143,11 @@
       ],
       "question": {
         "type": "qcm",
-        "consigne": "Par quoi commence une lettre classique ?",
+        "consigne": "Par quoi commence la lettre ?",
         "choix_ar": [
           "مِنْ بَاسِمٍ إِلَى سَمِيرٍ",
           "صَدِيقُكَ بَاسِمٌ",
-          "كَتَبْتُهُ فِي رَجَبٍ"
+          "كَتَبْتُهَا فِي رَجَبٍ"
         ],
         "reponse": 0,
         "explication": "D'abord qui écrit, puis à qui."
@@ -215,7 +215,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « La nostalgie du village me prend. »",
+          "consigne": "Complète : « J'ai eu la nostalgie du village. »",
           "ar": "اشْتَقْتُ … الْقَرْيَةِ.",
           "choix_ar": [
             "إِلَى",
@@ -266,7 +266,7 @@
           "choix_ar": [
             "أَمَّا بَعْدُ",
             "صَدِيقُكَ بَاسِمٌ",
-            "كَتَبْتُهُ فِي رَجَبٍ"
+            "كَتَبْتُهَا فِي رَجَبٍ"
           ],
           "reponse": 0,
           "explication": "Puis vient « cela dit »."
@@ -283,7 +283,7 @@
         "أَسْكُنُ فِي بَيْتٍ قَرِيبٍ مِنَ السُّوقِ، وَأَدْرُسُ مَعَ زُهَيْرٍ.",
         "النَّصُّ صَعْبٌ، لَٰكِنَّ الْمُعْجَمَ يُسَاعِدُنِي.",
         "اشْتَقْتُ إِلَى الْقَرْيَةِ وَإِلَى الْأَصْدِقَاءِ، وَأَرْجُو أَنْ تَكْتُبَ لِي رِسَالَةً.",
-        "كَتَبْتُهُ فِي رَجَبٍ. صَدِيقُكَ بَاسِمٌ."
+        "كَتَبْتُهَا فِي رَجَبٍ. صَدِيقُكَ بَاسِمٌ."
       ],
       "questions": [
         {
@@ -336,22 +336,22 @@
           "ar": "أَرْجُو أَنْ تَكْتُبَ … رِسَالَةً.",
           "choix_ar": [
             "لِي",
-            "إِلَيَّ",
+            "عَنِّي",
             "مِنِّي"
           ],
           "reponse": 0,
-          "explication": "Écrire à quelqu'un : كَتَبَ لِـ."
+          "explication": "Écrire à quelqu'un : كَتَبَ لِـ ou كَتَبَ إِلَى."
         },
         {
           "type": "ecrire",
-          "consigne": "Écris à ton tour une lettre de 5 phrases à un ami : en-tête, أَمَّا بَعْدُ، فَـ, ton message, la date, la signature.",
+          "consigne": "Écris à ton tour une lettre d'au moins 5 phrases à un ami : en-tête, أَمَّا بَعْدُ، فَـ, ton message, la date, la signature.",
           "modele": [
             "مِنْ بَاسِمٍ إِلَى سَمِيرٍ.",
             "أَمَّا بَعْدُ، فَقَدْ وَصَلْتُ إِلَى الْمَدِينَةِ يَوْمَ الْخَمِيسِ.",
             "أَسْكُنُ فِي بَيْتٍ قَرِيبٍ مِنَ السُّوقِ، وَأَدْرُسُ مَعَ زُهَيْرٍ.",
             "النَّصُّ صَعْبٌ، لَٰكِنَّ الْمُعْجَمَ يُسَاعِدُنِي.",
             "اشْتَقْتُ إِلَى الْقَرْيَةِ وَإِلَى الْأَصْدِقَاءِ، وَأَرْجُو أَنْ تَكْتُبَ لِي رِسَالَةً.",
-            "كَتَبْتُهُ فِي رَجَبٍ. صَدِيقُكَ بَاسِمٌ."
+            "كَتَبْتُهَا فِي رَجَبٍ. صَدِيقُكَ بَاسِمٌ."
           ],
           "explication": "Compare : as-tu l'en-tête, أَمَّا بَعْدُ suivi de فَـ, la date et la signature ?"
         }
@@ -441,7 +441,7 @@
             "après أَمَّا بَعْدُ"
           ],
           "reponse": 0,
-          "explication": "كَتَبْتُهُ فِي + mois, puis la signature."
+          "explication": "كَتَبْتُهَا فِي + mois, puis la signature."
         },
         {
           "type": "qcm",
@@ -484,7 +484,7 @@
           "ar": "أَبْحَثُ … كَلِمَةٍ.",
           "choix_ar": [
             "عَنْ",
-            "فِي",
+            "مِنْ",
             "إِلَى"
           ],
           "reponse": 0,

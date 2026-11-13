@@ -234,7 +234,9 @@
         80,
         18
       ],
-      "lecons": [],
+      "lecons": [
+        27
+      ],
       "scene": "scene_grande_salle",
       "sol": 84,
       "tranche_j1a": true,
