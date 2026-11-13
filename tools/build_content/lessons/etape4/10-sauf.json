@@ -211,12 +211,12 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "غَيْرُ",
           "choix": [
-            "autre que, sauf",
+            "autre que, sauf ; non- (devant un adjectif)",
             "tout",
             "avec"
           ],
           "reponse": 0,
-          "explication": "غَيْرُ veut dire « autre que, sauf »."
+          "explication": "غَيْرُ veut dire « autre que, sauf ; non- (devant un adjectif) »."
         },
         {
           "type": "sens",

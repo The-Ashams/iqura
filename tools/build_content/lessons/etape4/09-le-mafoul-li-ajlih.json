@@ -238,8 +238,8 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Le marchand a offert des dattes aux invités pour les honorer. »",
-          "ar": "قَدَّمَ التَّاجِرُ التَّمْرَ لِلضُّيُوفِ … لَهُمْ.",
+          "consigne": "Complète : « Bāsim a porté le sac du maître pour l'honorer. »",
+          "ar": "حَمَلَ بَاسِمٌ كِيسَ الْمُعَلِّمِ … لَهُ.",
           "choix_ar": [
             "إِكْرَامًا",
             "إِكْرَامٌ",
@@ -292,7 +292,7 @@
       "phrases": [
         "سَافَرَ التَّاجِرُ إِلَى بَغْدَادَ طَلَبًا لِلرِّبْحِ.",
         "لَبِسَ ثَوْبَيْنِ خَوْفًا مِنَ الْبَرْدِ.",
-        "فِي بَغْدَادَ، قَدَّمَ التَّمْرَ لِضُيُوفِهِ إِكْرَامًا لَهُمْ.",
+        "فِي بَغْدَادَ، حَمَلَ بَاسِمٌ كِيسَ الْمُعَلِّمِ إِكْرَامًا لَهُ.",
         "لَمَّا وَصَلَ التَّاجِرُ إِلَى بَيْتِهِ، سَأَلَهُ بَاسِمٌ عَنْ بَغْدَادَ."
       ],
       "questions": [
@@ -301,7 +301,7 @@
           "consigne": "Pourquoi le marchand a-t-il mis deux vêtements ?",
           "choix": [
             "par crainte du froid",
-            "pour honorer ses invités",
+            "pour honorer le maître",
             "pour le commerce"
           ],
           "reponse": 0,
@@ -309,14 +309,14 @@
         },
         {
           "type": "qcm",
-          "consigne": "Pourquoi a-t-il offert des dattes ?",
+          "consigne": "Pourquoi Bāsim a-t-il porté le sac du maître ?",
           "choix": [
-            "pour honorer ses invités",
+            "pour l'honorer",
             "par peur",
             "pour gagner de l'argent"
           ],
           "reponse": 0,
-          "explication": "إِكْرَامًا لَهُمْ."
+          "explication": "إِكْرَامًا لَهُ."
         }
       ]
     },
@@ -407,8 +407,8 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Il a offert des dattes pour les honorer. »",
-          "ar": "قَدَّمَ التَّمْرَ … لَهُمْ.",
+          "consigne": "Complète : « Il a porté le sac pour l'honorer. »",
+          "ar": "حَمَلَ الْكِيسَ … لَهُ.",
           "choix_ar": [
             "إِكْرَامًا",
             "إِكْرَامٌ",

@@ -569,3 +569,88 @@ Références :
 - `/home/user/iqura/tools/build_content/quran_guard.py`
 - `/home/user/iqura/tools/build_content/lessons/etape2/19-compter.json` (l. 175 : nom féminin compté « pour plus tard »)
 - `/home/user/iqura/assets/content/iqura_content.db`
+
+---
+
+# Décisions — doutes restants du relecteur, Avancé 1 (4.1 à 4.14)
+
+Stade : région 4, leçons 4.1 à 4.14 ; acquis : régions 1 à 3, plus le plan d'Avancé 1 (`/home/user/iqura/docs/relectures/decisions-avance-1.md`).
+
+## Décisions
+
+1. **(4.1) إِذَا et إِنْ : on retire le lien vers le lemme.**
+   - **Motif** : on fait comme pour le لَا de défense. Les lemmes `<in` et `<i*aA` regroupent dans le Corpus des emplois que la fiche n'enseigne pas (négation, forme allégée, surprise). Le nombre affiché serait donc trompeur.
+   - **Correction** : sur les deux fiches, ni lemme ni nombre. Remarque à ajouter : « mot très fréquent ; le Corpus compte ensemble ses différents emplois ».
+   - Confiance : haute.
+
+2. **(4.4) لَمَّا reste « particule ».**
+   - **Motif** : c'est l'avis de Sībawayh (« particule d'un fait qui en entraîne un autre »). D'autres grammairiens en font un adverbe de temps ; les deux avis existent, et « particule » est le plus courant dans l'enseignement.
+   - Aucune correction.
+   - Confiance : moyenne. Ce n'est qu'une étiquette, rien n'est affirmé dans la règle.
+
+3. **(4.6) حَالٌ : on garde le genre « m » et on ajoute une remarque.**
+   - **Remarque** : « s'emploie aussi au féminin : حَالٌ حَسَنَةٌ ».
+   - **Motif** : en classique, le mot s'emploie aux deux genres, et le champ n'accepte qu'une valeur.
+   - Confiance : haute.
+
+4. **(4.7) كَمْ + pluriel : on remplace les distracteurs.**
+   - **Motif** : on ne marque pas comme faute une forme que les grammairiens de Koufa admettaient.
+   - **Correction** : les distracteurs deviennent كَمْ دِرْهَمٌ ? (nominatif) et كَمِ الدِّرْهَمَ ? (défini). Explication : « après كَمْ, un singulier indéfini en -a : كَمْ دِرْهَمًا ? ».
+   - Confiance : haute.
+
+5. **(4.8) فَعْلَة / فِعْلَة : le report est acté.**
+   - Le moule فِعْلَة (la manière) n'est pas nécessaire pour ce niveau. Il va avec les noms d'une fois et de manière, à reprendre en 5.9 ou plus tard.
+   - Confiance : haute.
+
+6. **(4.9) On remplace mon modèle « قَدَّمَ التَّمْرَ لِضُيُوفِهِ إِكْرَامًا لَهُمْ ».**
+   - **Motif** : des invités honorés par un hôte qui leur sert à manger, c'est assez proche d'un récit du Coran (les hôtes d'Abraham) pour l'écarter. La prudence passe avant tout.
+   - **Nouveau modèle** : « حَمَلَ بَاسِمٌ كِيسَ الْمُعَلِّمِ إِكْرَامًا لَهُ. » (« Bāsim a porté le sac du maître pour l'honorer. »)
+   - **Règle ajoutée** : إِكْرَامًا ne s'emploie jamais avec ضَيْف ni avec de la nourriture.
+   - Confiance : haute.
+
+7. **(4.10) غَيْرُ : la forme sans tanwīn est voulue.**
+   - **Motif** : le mot est toujours en annexion, et les grammaires le citent ainsi.
+   - **Remarque à ajouter** : « toujours suivi d'un nom au génitif ».
+   - **Sens** : « autre que, sauf ; non- (devant un adjectif) ».
+   - Aucun exemple « non- » avec un participe passif (règle du plan).
+   - Confiance : haute.
+
+8. **(4.11) أَيُّهَا passe en « nom ».**
+   - **Motif** : le Corpus le classe comme nom (NN), et c'est exact (أَيُّ est le nom appelé, suivi de هَا).
+   - **Remarque à ajouter** : « mot d'appel : toujours entre يَا et un nom avec الْ ; il ne change jamais ».
+   - **Effet** : le mot comptera dans le contrôle des paires. C'est une sécurité de plus.
+   - Confiance : moyenne-haute.
+
+9. **(4.13) لَٰكِنْ sans وَ devant une phrase verbale : on garde.**
+   - **Motif** : devant une phrase, لَٰكِنْ allégé ouvre une nouvelle phrase, avec ou sans وَ. Les deux sont classiques.
+   - **Correction** : une remarque dans la leçon, « on trouve souvent وَلَٰكِنْ », sans exemple avec وَلَٰكِنْ (B5 du plan).
+   - Confiance : haute.
+
+10. **(4.14) Fiches « أَحَدَ عَشَرَ » et « اثْنَا عَشَرَ » seules : conforme.**
+    - Le titre d'une fiche est le nom du nombre, ce que l'exception de l'utilisateur couvre.
+    - **Condition** : l'exemple de chaque fiche contient un nom compté de la liste fermée.
+    - Confiance : haute.
+
+**Écarts au plan, actés :**
+- **لَمَا absent de 4.2 : accepté.** Cela évite la confusion avec لَمَّا ; reporté en 5.4.
+- **أَخْبَرَتْنِي ajouté aux formes de أَخْبَرَ : accepté.** Forme régulière, sans tournure du Coran.
+- **« كَانَ الْبَرْدُ شَدِيدًا فَرَجَعَ التَّاجِرُ » : accepté.** C'est un فَـ de cause correct, sans tournure à risque.
+- **4.14 sans 300 à 900 : accepté**, à une condition : aucune règle ne doit prétendre couvrir tous les nombres jusqu'à 1 000. Les centaines de 300 à 900 vont en 4.19 (au marché).
+- **4.14 sans « écrire un compte en toutes lettres » : accepté** si la part de production de la leçon reste d'au moins 40 % (sinon, on rétablit cet exercice).
+
+## Décisions pour l'utilisateur (fin du niveau Avancé 1)
+
+1. Les leçons 4.1 à 4.14 enseignent les phrases longues : « si », « si seulement », « il a dit que », « quand », « parce que », « sauf », l'appel (« ô… »), l'insistance, les mots qui relient les idées, et les nombres.
+2. Onze et douze sont écrits en toutes lettres, comme tu l'as décidé, et toujours avec un nom ordinaire (dirham, livre, lettre…).
+3. Les nombres de 300 à 900 passent à la leçon du marché (4.19).
+4. Les tournures trop proches du Coran sont écartées, et le verbe « frapper » (ضَرَبَ) n'est pas employé : on frappe à la porte avec un autre verbe.
+5. Une phrase sur des invités honorés par un repas est remplacée, parce qu'elle rappelait de loin un récit du Coran.
+6. Les maximes du Jardin sont inventées, signalées « rédigé par IA » et attribuées à personne.
+7. Les mots « si » (إِذَا, إِنْ) n'affichent pas de nombre d'occurrences dans le Coran : ce nombre mélangerait plusieurs emplois.
+8. Quelques retouches sur les fiches : « état » (حَالٌ) s'emploie aux deux genres ; أَيُّهَا est présenté comme un mot d'appel ; غَيْرُ veut aussi dire « non- ».
+9. Dans la leçon sur « combien ? », les fausses réponses ne marquent plus comme faute une forme admise par certains grammairiens anciens.
+10. Reports : les mots du temps (jour, mois, année, heure) en 4.18, « merci » (شُكْرًا) en 4.19, le « lamā » de la réponse niée en 5.4, les noms « d'une fois » et « de manière » plus tard.
+
+À ajouter à `/home/user/iqura/docs/relectures/decisions-avance-1.md`. Aucun fichier modifié.
+
+Mise en œuvre (13/11/2026) : toutes ces décisions sont appliquées dans les leçons et les fiches ; les rapports du relecteur sont dans `2026-11-13-avance-1.md`.

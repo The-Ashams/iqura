@@ -160,7 +160,7 @@
         "consigne": "Comment dit-on « Combien d'étudiants ? »",
         "choix_ar": [
           "كَمْ طَالِبًا؟",
-          "كَمْ طُلَّابًا؟",
+          "كَمْ طَالِبٌ؟",
           "كَمِ الطَّالِبُ؟"
         ],
         "reponse": 0,
@@ -330,8 +330,8 @@
           "consigne": "Comment dit-on « Combien de livres as-tu ? » ?",
           "choix_ar": [
             "كَمْ كِتَابًا عِنْدَكَ؟",
-            "كَمْ كُتُبًا عِنْدَكَ؟",
-            "كَمْ كِتَابٌ عِنْدَكَ؟"
+            "كَمْ كِتَابٌ عِنْدَكَ؟",
+            "كَمِ الْكِتَابَ عِنْدَكَ؟"
           ],
           "reponse": 0,
           "explication": "Après كَمْ : singulier indéfini en -a."
@@ -401,7 +401,7 @@
           "consigne": "Comment dit-on « combien de dirhams ? » ?",
           "choix_ar": [
             "كَمْ دِرْهَمًا؟",
-            "كَمْ دَرَاهِمَ؟",
+            "كَمْ دِرْهَمٌ؟",
             "كَمِ الدِّرْهَمُ؟"
           ],
           "reponse": 0,
