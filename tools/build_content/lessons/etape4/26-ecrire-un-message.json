@@ -30,7 +30,7 @@
           "texte": "D'abord qui écrit et à qui, puis « cela dit », le message, la date et la signature."
         }
       ],
-      "objectif": "Écrire une lettre classique."
+      "objectif": "Écrire une lettre."
     },
     {
       "type": "echauffement",
@@ -340,7 +340,7 @@
             "مِنِّي"
           ],
           "reponse": 0,
-          "explication": "Écrire à quelqu'un : كَتَبَ لِـ ou كَتَبَ إِلَى."
+          "explication": "Écrire à quelqu'un : كَتَبَ لِـ ou كَتَبَ إِلَى ; عَنِّي : à ma place."
         },
         {
           "type": "ecrire",
@@ -411,7 +411,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « J'ai la nostalgie de mes amis. »",
+          "consigne": "Complète : « J'ai eu la nostalgie des amis. »",
           "ar": "اشْتَقْتُ … الْأَصْدِقَاءِ.",
           "choix_ar": [
             "إِلَى",
@@ -508,7 +508,7 @@
     },
     {
       "type": "fin",
-      "acquis": "Tu écris une lettre classique : مِنْ… إِلَى…, أَمَّا بَعْدُ، فَـ…, le message, la date et la signature.",
+      "acquis": "Tu écris une lettre : مِنْ… إِلَى…, أَمَّا بَعْدُ، فَـ…, le message, la date et la signature.",
       "suite": "Prochaine leçon : résumer un récit, dans la Grande Salle de lecture."
     }
   ]

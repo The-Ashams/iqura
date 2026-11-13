@@ -298,7 +298,7 @@
             "سَافَرَ تَاجِرٌ، وَوَصَلَ إِلَى الْمَدِينَةِ فِي الْمَسَاءِ."
           ],
           "reponse": 0,
-          "explication": "Le début, le milieu, la fin, au discours indirect ; il est arrivé le matin."
+          "explication": "Le début, le milieu et la fin, à la 3e personne, sans recopier les paroles ; il est arrivé le matin."
         },
         {
           "type": "qcm",
@@ -426,7 +426,7 @@
         },
         {
           "type": "traduire",
-          "consigne": "Comment dit-on « Il a dit qu'il était en retard. » ?",
+          "consigne": "Comment dit-on « Il a dit qu'il avait pris du retard. » ?",
           "choix_ar": [
             "قَالَ إِنَّهُ تَأَخَّرَ.",
             "قَالَ: « تَأَخَّرْتُ. »",
