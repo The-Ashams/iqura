@@ -31,6 +31,7 @@ class DictionaryScreen extends ConsumerStatefulWidget {
 
 class _DictionaryScreenState extends ConsumerState<DictionaryScreen> {
   late final _controller = TextEditingController(text: widget.initialQuery);
+  bool _browse = false;
 
   @override
   void dispose() {
@@ -68,13 +69,53 @@ class _DictionaryScreenState extends ConsumerState<DictionaryScreen> {
                   prefixIcon: Icon(Icons.search),
                 ),
               ),
-              const SizedBox(height: 8),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: TextButton.icon(
+                  icon: Icon(_browse ? Icons.search : Icons.account_tree),
+                  label: Text(
+                    _browse ? 'Revenir à la recherche' : 'Parcourir par racine',
+                  ),
+                  onPressed: () => setState(() => _browse = !_browse),
+                ),
+              ),
               Text(
                 DictionaryScreen.sourceNotice,
                 style: TextStyle(color: GameColors.muted, fontSize: 13),
               ),
               const SizedBox(height: 8),
-              if (results.isEmpty)
+              if (_browse)
+                for (final e in rootsByFirstLetter(words).entries)
+                  PixelWindow(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Text(
+                          e.key,
+                          textDirection: TextDirection.rtl,
+                          style: TextStyle(
+                            color: GameColors.accent,
+                            fontSize: 26,
+                          ),
+                        ),
+                        Wrap(
+                          textDirection: TextDirection.rtl,
+                          spacing: 8,
+                          children: [
+                            for (final r in e.value)
+                              ActionChip(
+                                label: Text(r.split('').join(' ')),
+                                onPressed: () => setState(() {
+                                  _controller.text = r.replaceAll(' ', '');
+                                  _browse = false;
+                                }),
+                              ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  )
+              else if (results.isEmpty)
                 PixelWindow(
                   child: Text(
                     words.isEmpty
@@ -83,22 +124,23 @@ class _DictionaryScreenState extends ConsumerState<DictionaryScreen> {
                         : 'Aucun mot trouvé.',
                   ),
                 ),
-              for (final w in results) ...[
-                WordCard(word: w),
-                _Status(
-                  word: w,
-                  learned: progress[w.lessonId]?.completed ?? false,
-                  inReviews: reviews.get('sens:${w.id}') != null,
-                  onAdd: () {
-                    reviews.createCards(w.lessonId, [
-                      (id: 'sens:${w.id}', kind: CardKind.sens, target: w.id),
-                    ]);
-                    ref.read(dueCountProvider.notifier).refresh();
-                    setState(() {});
-                  },
-                ),
-                const SizedBox(height: 12),
-              ],
+              if (!_browse)
+                for (final w in results) ...[
+                  WordCard(word: w),
+                  _Status(
+                    word: w,
+                    learned: progress[w.lessonId]?.completed ?? false,
+                    inReviews: reviews.get('sens:${w.id}') != null,
+                    onAdd: () {
+                      reviews.createCards(w.lessonId, [
+                        (id: 'sens:${w.id}', kind: CardKind.sens, target: w.id),
+                      ]);
+                      ref.read(dueCountProvider.notifier).refresh();
+                      setState(() {});
+                    },
+                  ),
+                  const SizedBox(height: 12),
+                ],
             ],
           ),
         ),

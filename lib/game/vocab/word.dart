@@ -262,3 +262,18 @@ List<Word> searchWords(List<Word> words, String query) {
       if (_plain(w.french).contains(p)) w,
   ];
 }
+
+/// Racines du dictionnaire, groupées par première lettre dans l'ordre de
+/// l'alphabet (leçon 4.25 : chercher un mot par sa racine).
+Map<String, List<String>> rootsByFirstLetter(List<Word> words) {
+  final roots = {
+    for (final w in words)
+      if (w.rootLetters != null && w.rootLetters!.trim().isNotEmpty)
+        w.rootLetters!.trim(),
+  }.toList()..sort();
+  final out = <String, List<String>>{};
+  for (final r in roots) {
+    out.putIfAbsent(r.substring(0, 1), () => []).add(r);
+  }
+  return out;
+}
