@@ -9237,6 +9237,113 @@
    },
    "remarque": "la racine ne suffit pas pour le sens : elle a d'autres emplois",
    "theme": "metiers"
+  },
+  {
+   "id": "yamin",
+   "ar": "يَمِينٌ",
+   "translit": "yamīnun",
+   "fr": "droite",
+   "nature": "nom",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "yamiyn",
+   "exemple": {
+    "ar": "الْحَدِيقَةُ عَلَى يَمِينِكَ.",
+    "fr": "Le jardin est à ta droite."
+   },
+   "remarque": "ici seulement dans عَلَى يَمِينِكَ, عَلَى يَمِينِ + lieu",
+   "theme": "lieux"
+  },
+  {
+   "id": "yasar",
+   "ar": "يَسَارٌ",
+   "translit": "yasārun",
+   "fr": "gauche",
+   "nature": "nom",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "ysr",
+   "exemple": {
+    "ar": "الْمَدْرَسَةُ عَلَى يَسَارِكَ.",
+    "fr": "L'école est à ta gauche."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "amama",
+   "ar": "أَمَامَ",
+   "translit": "amāma",
+   "fr": "devant",
+   "nature": "adverbe",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "lemme": ">amaAm",
+   "exemple": {
+    "ar": "السُّوقُ أَمَامَكَ.",
+    "fr": "Le marché est devant toi."
+   },
+   "remarque": "suivi du génitif",
+   "theme": "lieux"
+  },
+  {
+   "id": "khalfa",
+   "ar": "خَلْفَ",
+   "translit": "ḫalfa",
+   "fr": "derrière",
+   "nature": "adverbe",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "lemme": "xalof",
+   "exemple": {
+    "ar": "الْحَدِيقَةُ خَلْفَ الْقَصْرِ.",
+    "fr": "Le jardin est derrière le palais."
+   },
+   "remarque": "suivi du génitif",
+   "theme": "lieux"
+  },
+  {
+   "id": "bayna",
+   "ar": "بَيْنَ",
+   "translit": "bayna",
+   "fr": "entre",
+   "nature": "adverbe",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "lemme": "bayon",
+   "exemple": {
+    "ar": "بَيْتُ نَدِيمٍ بَيْنَ السُّوقِ وَالْمَدْرَسَةِ.",
+    "fr": "La maison de Nadīm est entre le marché et l'école."
+   },
+   "remarque": "بَيْنَ X وَ Y",
+   "theme": "lieux"
+  },
+  {
+   "id": "marra_bi",
+   "ar": "مَرَّ بِـ",
+   "translit": "marra bi",
+   "fr": "passer par, passer devant",
+   "nature": "verbe",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "passe": "مَرَّ بِـ",
+   "inaccompli": "يَمُرُّ",
+   "exemple": {
+    "ar": "مَرَرْتُ بِالسُّوقِ فِي الصَّبَاحِ.",
+    "fr": "Je suis passé par le marché le matin."
+   },
+   "lemme": "mar~a",
+   "fige": true,
+   "formes": [
+    "مَرَّ",
+    "مَرَرْتُ",
+    "مَرَرْنَا",
+    "تَمُرُّ",
+    "نَمُرُّ"
+   ],
+   "remarque": "verbe doublé : مَرَرْتُ, mais تَمُرُّ ; toujours suivi de بِـ",
+   "theme": "lieux"
   }
  ]
 }
