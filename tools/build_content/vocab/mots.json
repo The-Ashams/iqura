@@ -9097,6 +9097,146 @@
    },
    "remarque": "devant un verbe ; لِمَاذَا : pourquoi ?",
    "theme": "questions"
+  },
+  {
+   "id": "ibn",
+   "ar": "ابْنٌ",
+   "translit": "ibnun",
+   "fr": "fils",
+   "nature": "nom",
+   "lecon": "cite-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "{bon",
+   "exemple": {
+    "ar": "عَامِرٌ ابْنُ نَدِيمٍ.",
+    "fr": "ʿĀmir est le fils de Nadīm."
+   },
+   "remarque": "ابْنُ عَمٍّ : cousin (fils de l'oncle paternel)",
+   "theme": "famille"
+  },
+  {
+   "id": "zawj",
+   "ar": "زَوْجٌ",
+   "translit": "zawǧun",
+   "fr": "époux ; زَوْجَةٌ : épouse",
+   "nature": "nom",
+   "lecon": "cite-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "zawoj",
+   "fige": true,
+   "formes": [
+    "زَوْجَةٌ",
+    "زَوْجَةُ"
+   ],
+   "exemple": {
+    "ar": "لُبْنَى زَوْجَةُ نَدِيمٍ.",
+    "fr": "Lubnā est l'épouse de Nadīm."
+   },
+   "remarque": "en arabe classique, زَوْجٌ se dit aussi de l'épouse",
+   "theme": "famille"
+  },
+  {
+   "id": "jadd",
+   "ar": "جَدٌّ",
+   "translit": "ǧaddun",
+   "fr": "grand-père ; جَدَّةٌ : grand-mère",
+   "nature": "nom",
+   "lecon": "cite-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jdd",
+   "fige": true,
+   "formes": [
+    "جَدَّةٌ",
+    "جَدُّ",
+    "جَدَّةُ"
+   ],
+   "exemple": {
+    "ar": "جَدُّ سَلْمَى كَانَ تَاجِرًا.",
+    "fr": "Le grand-père de Salmā était marchand."
+   },
+   "theme": "famille"
+  },
+  {
+   "id": "amm",
+   "ar": "عَمٌّ",
+   "translit": "ʿammun",
+   "fr": "oncle (côté du père) ; عَمَّةٌ : tante",
+   "nature": "nom",
+   "lecon": "cite-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "Eam~",
+   "fige": true,
+   "formes": [
+    "عَمَّةٌ",
+    "عَمُّ",
+    "عَمِّي",
+    "عَمٍّ"
+   ],
+   "exemple": {
+    "ar": "عَمُّ بَاسِمٍ نَجَّارٌ.",
+    "fr": "L'oncle paternel de Bāsim est menuisier."
+   },
+   "theme": "famille"
+  },
+  {
+   "id": "khal",
+   "ar": "خَالٌ",
+   "translit": "ḫālun",
+   "fr": "oncle (côté de la mère) ; خَالَةٌ : tante",
+   "nature": "nom",
+   "lecon": "cite-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "xaAl",
+   "fige": true,
+   "formes": [
+    "خَالَةٌ",
+    "خَالُ",
+    "خَالُهُ"
+   ],
+   "exemple": {
+    "ar": "خَالُ بَاسِمٍ حَدَّادٌ.",
+    "fr": "L'oncle maternel de Bāsim est forgeron."
+   },
+   "theme": "famille"
+  },
+  {
+   "id": "usra",
+   "ar": "أُسْرَةٌ",
+   "translit": "usratun",
+   "fr": "famille (les proches)",
+   "nature": "nom",
+   "lecon": "cite-16",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "Asr",
+   "exemple": {
+    "ar": "هَٰذِهِ أُسْرَةُ نَدِيمٍ.",
+    "fr": "Voici la famille de Nadīm."
+   },
+   "remarque": "la racine ne suffit pas pour le sens : elle a d'autres emplois",
+   "theme": "famille"
+  },
+  {
+   "id": "hirfa",
+   "ar": "حِرْفَةٌ",
+   "translit": "ḥirfatun",
+   "fr": "métier",
+   "nature": "nom",
+   "lecon": "cite-16",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "Hrf",
+   "exemple": {
+    "ar": "حِرْفَةُ سَمِيرٍ التِّجَارَةُ.",
+    "fr": "Le métier de Samīr, c'est le commerce."
+   },
+   "remarque": "la racine ne suffit pas pour le sens : elle a d'autres emplois",
+   "theme": "metiers"
   }
  ]
 }

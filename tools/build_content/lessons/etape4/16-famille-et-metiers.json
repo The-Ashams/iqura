@@ -1,0 +1,536 @@
+{
+  "id": "cite-16",
+  "etape": 4,
+  "ordre": 16,
+  "format": 3,
+  "titre": "Famille et métiers",
+  "objectif": "Nommer et décrire ses proches, dire leur métier.",
+  "statut": "ia_non_verifie",
+  "lieu": "place_debats",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-15"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ",
+    "سَلْمَى",
+    "لُبْنَى",
+    "عَامِرٌ",
+    "نِجَارَةٌ",
+    "خِيَاطَةٌ"
+  ],
+  "schemes": [
+    "فِعَالَة"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Après le nom et le pays, on parle des siens : la famille et le métier de chacun."
+        },
+        {
+          "qui": "nadim",
+          "texte": "Je te présente ma famille : Lubnā, mon épouse, et ʿĀmir, mon fils."
+        }
+      ],
+      "objectif": "Parler de sa famille et des métiers."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je m'appelle Bāsim. »",
+          "ar": "… بَاسِمٌ.",
+          "choix_ar": [
+            "اسْمِي",
+            "اسْمُكَ",
+            "أَنَا اسْمِي"
+          ],
+          "reponse": 0,
+          "explication": "« mon nom » : اسْمِي (leçon 4.15)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَلَدٌ",
+          "choix": [
+            "pays, contrée",
+            "famille",
+            "maison"
+          ],
+          "reponse": 0,
+          "explication": "بَلَدٌ veut dire « pays, contrée »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le père de Samīr est marchand. »",
+          "ar": "… سَمِيرٍ تَاجِرٌ.",
+          "choix_ar": [
+            "أَبُو",
+            "أَبَا",
+            "أَبِي"
+          ],
+          "reponse": 0,
+          "explication": "Sujet, devant un complément : أَبُو (leçon 3.28)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "ar": "هَٰذِهِ أُسْرَتِي: لُبْنَى وَعَامِرٌ.",
+          "fr": "Voici ma famille : Lubnā et ʿĀmir."
+        },
+        {
+          "qui": "nadim",
+          "ar": "لُبْنَى خَيَّاطَةٌ، وَعَامِرٌ طَالِبٌ فِي الْمَدْرَسَةِ.",
+          "fr": "Lubnā est couturière, et ʿĀmir est élève à l'école."
+        },
+        {
+          "qui": "basim",
+          "ar": "عَمِّي نَجَّارٌ، وَخَالِي حَدَّادٌ.",
+          "fr": "Mon oncle paternel est menuisier, et mon oncle maternel est forgeron."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le métier de Lubnā ?",
+        "choix": [
+          "couturière",
+          "marchande",
+          "élève"
+        ],
+        "reponse": 0,
+        "explication": "لُبْنَى خَيَّاطَةٌ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ibn",
+        "zawj",
+        "jadd",
+        "amm",
+        "khal",
+        "usra",
+        "hirfa"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "خَالٌ",
+        "choix": [
+          "oncle (côté de la mère) ; خَالَةٌ : tante",
+          "oncle (côté du père) ; عَمَّةٌ : tante",
+          "grand-père"
+        ],
+        "reponse": 0,
+        "explication": "خَالٌ : du côté de la mère ; عَمٌّ : du côté du père."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La parenté par l'annexion",
+      "texte": "La parenté se dit par l'annexion : عَمُّ بَاسِمٍ, ابْنُ عَمِّي. أَبٌ et أَخٌ deviennent أَبُو / أَبَا / أَبِي devant un complément.",
+      "exemples": [
+        "عَمُّ بَاسِمٍ",
+        "ابْنُ عَمِّي",
+        "أَبُو سَمِيرٍ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « l'oncle paternel de Bāsim »",
+        "ar": "عَمُّ …",
+        "choix_ar": [
+          "بَاسِمٍ",
+          "بَاسِمٌ",
+          "بَاسِمًا"
+        ],
+        "reponse": 0,
+        "explication": "Annexion : le complément est au génitif."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les noms de métier",
+      "texte": "Le nom d'un métier suit souvent le moule فِعَالَة : نِجَارَةٌ, خِيَاطَةٌ, كِتَابَةٌ, تِجَارَةٌ.",
+      "exemples": [
+        "نِجَارَةٌ",
+        "خِيَاطَةٌ",
+        "تِجَارَةٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Le métier du نَجَّارٌ (menuisier) s'appelle…",
+        "choix_ar": [
+          "نِجَارَةٌ",
+          "نَجَّارٌ",
+          "نِجَارَةٍ"
+        ],
+        "reponse": 0,
+        "explication": "Moule فِعَالَة : نِجَارَةٌ ; نَجَّارٌ est celui qui l'exerce."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "عَمٌّ ou خَالٌ ?",
+      "texte": "عَمٌّ et عَمَّةٌ sont du côté du père ; خَالٌ et خَالَةٌ, du côté de la mère.",
+      "exemples": [
+        "عَمِّي",
+        "خَالِي"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Le frère de ta mère est ton…",
+        "choix_ar": [
+          "خَالٌ",
+          "عَمٌّ",
+          "جَدٌّ"
+        ],
+        "reponse": 0,
+        "explication": "Côté de la mère : خَالٌ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أُسْرَةٌ",
+          "choix": [
+            "famille (les proches)",
+            "maison",
+            "métier"
+          ],
+          "reponse": 0,
+          "explication": "أُسْرَةٌ veut dire « famille (les proches) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حِرْفَةٌ",
+          "choix": [
+            "métier",
+            "famille",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "حِرْفَةٌ veut dire « métier »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَدٌّ",
+          "choix": [
+            "grand-père ; جَدَّةٌ : grand-mère",
+            "oncle",
+            "fils"
+          ],
+          "reponse": 0,
+          "explication": "جَدٌّ veut dire « grand-père ; جَدَّةٌ : grand-mère »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ʿĀmir est le fils de Nadīm » ?",
+          "choix_ar": [
+            "عَامِرٌ ابْنُ نَدِيمٍ",
+            "عَامِرٌ ابْنٌ نَدِيمٌ",
+            "عَامِرٌ ابْنَ نَدِيمٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut ابْنُ, annexé à نَدِيمٍ au génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le grand-père de Salmā était marchand. »",
+          "ar": "… سَلْمَى كَانَ تَاجِرًا.",
+          "choix_ar": [
+            "جَدُّ",
+            "جَدَّ",
+            "جَدِّ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet : جَدُّ, annexé à سَلْمَى."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Lubnā est l'épouse de Nadīm. »",
+          "ar": "لُبْنَى … نَدِيمٍ.",
+          "choix_ar": [
+            "زَوْجَةُ",
+            "زَوْجُ",
+            "زَوْجَةً"
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif, au féminin : زَوْجَةُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le métier de Samīr, c'est le commerce. »",
+          "ar": "حِرْفَةُ سَمِيرٍ …",
+          "choix_ar": [
+            "التِّجَارَةُ",
+            "التَّاجِرُ",
+            "تَاجِرٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le métier : le nom en فِعَالَة, التِّجَارَةُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le frère de ton père est ton…",
+          "choix_ar": [
+            "عَمٌّ",
+            "خَالٌ",
+            "ابْنٌ"
+          ],
+          "reponse": 0,
+          "explication": "Côté du père : عَمٌّ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La famille de Nadīm",
+      "texte": "Nadīm présente sa famille. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "هَٰذِهِ أُسْرَةُ نَدِيمٍ.",
+        "لُبْنَى زَوْجَةُ نَدِيمٍ، وَهِيَ خَيَّاطَةٌ.",
+        "عَامِرٌ ابْنُ نَدِيمٍ، وَهُوَ طَالِبٌ فِي الْمَدْرَسَةِ.",
+        "جَدُّ عَامِرٍ كَانَ نَجَّارًا، وَحِرْفَةُ نَدِيمٍ الْكِتَابَةُ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que fait ʿĀmir ?",
+          "choix": [
+            "il est élève",
+            "il est menuisier",
+            "il est couturier"
+          ],
+          "reponse": 0,
+          "explication": "وَهُوَ طَالِبٌ فِي الْمَدْرَسَةِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le métier de Nadīm ?",
+          "choix": [
+            "l'écriture",
+            "le commerce",
+            "la menuiserie"
+          ],
+          "reponse": 0,
+          "explication": "حِرْفَةُ نَدِيمٍ الْكِتَابَةُ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Mon oncle paternel est menuisier. » ?",
+          "choix_ar": [
+            "عَمِّي نَجَّارٌ.",
+            "خَالِي نَجَّارٌ.",
+            "عَمِّي نِجَارَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "Côté du père : عَمِّي ; le métier de la personne : نَجَّارٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Mon cousin est aussi mon ami. »",
+          "tuiles": [
+            "أَيْضًا",
+            "صَدِيقِي",
+            "عَمِّي",
+            "ابْنُ",
+            "ابْنٌ"
+          ],
+          "solution": [
+            "ابْنُ",
+            "عَمِّي",
+            "صَدِيقِي",
+            "أَيْضًا"
+          ],
+          "explication": "ابْنُ est annexé à عَمِّي : pas de tanwīn."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le grand-père de Bāsim était marchand. »",
+          "ar": "كَانَ جَدُّ بَاسِمٍ …",
+          "choix_ar": [
+            "تَاجِرًا",
+            "تَاجِرٌ",
+            "تِجَارَةً"
+          ],
+          "reponse": 0,
+          "explication": "Attribut de كَانَ : -a."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ابْنٌ",
+          "choix": [
+            "fils",
+            "frère",
+            "père"
+          ],
+          "reponse": 0,
+          "explication": "ابْنٌ veut dire « fils »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَمٌّ",
+          "choix": [
+            "oncle (côté du père) ; عَمَّةٌ : tante",
+            "oncle (côté de la mère) ; خَالَةٌ : tante",
+            "grand-père"
+          ],
+          "reponse": 0,
+          "explication": "عَمٌّ : du côté du père."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Lubnā est l'épouse de Nadīm » ?",
+          "choix_ar": [
+            "لُبْنَى زَوْجَةُ نَدِيمٍ",
+            "لُبْنَى زَوْجَةٌ نَدِيمٌ",
+            "لُبْنَى زَوْجَةَ نَدِيمٍ"
+          ],
+          "reponse": 0,
+          "explication": "زَوْجَةُ annexé à نَدِيمٍ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « l'oncle maternel de Bāsim »",
+          "ar": "… بَاسِمٍ",
+          "choix_ar": [
+            "خَالُ",
+            "عَمُّ",
+            "خَالٌ"
+          ],
+          "reponse": 0,
+          "explication": "Côté de la mère, annexé : خَالُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « ʿĀmir est le fils de Nadīm. »",
+          "ar": "عَامِرٌ … نَدِيمٍ.",
+          "choix_ar": [
+            "ابْنُ",
+            "ابْنٌ",
+            "ابْنَ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut annexé : ابْنُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le métier du couturier : la couture. »",
+          "ar": "حِرْفَةُ الْخَيَّاطِ …",
+          "choix_ar": [
+            "الْخِيَاطَةُ",
+            "الْخَيَّاطُ",
+            "خَيَّاطٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le métier : moule فِعَالَة."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La sœur de ta mère est ta…",
+          "choix_ar": [
+            "خَالَةٌ",
+            "عَمَّةٌ",
+            "جَدَّةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Côté de la mère : خَالَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le moule des noms de métier est souvent…",
+          "choix_ar": [
+            "فِعَالَة",
+            "مَفْعُول",
+            "فَاعِل"
+          ],
+          "reponse": 0,
+          "explication": "نِجَارَةٌ, خِيَاطَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans عَمُّ بَاسِمٍ, بَاسِمٍ est…",
+          "choix": [
+            "au génitif (annexion)",
+            "au nominatif",
+            "à l'accusatif"
+          ],
+          "reponse": 0,
+          "explication": "Le complément d'annexion est au génitif."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وُلِدَ",
+          "choix": [
+            "naître (« il est né »)",
+            "grandir",
+            "habiter"
+          ],
+          "reponse": 0,
+          "explication": "وُلِدَ veut dire « naître (« il est né ») ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je suis né dans un petit village. »",
+          "ar": "… فِي قَرْيَةٍ صَغِيرَةٍ.",
+          "choix_ar": [
+            "وُلِدْتُ",
+            "وُلِدَتْ",
+            "نَشَأَتْ"
+          ],
+          "reponse": 0,
+          "explication": "« je » : وُلِدْتُ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَرْحَبًا",
+          "choix": [
+            "bienvenue",
+            "merci",
+            "au revoir"
+          ],
+          "reponse": 0,
+          "explication": "مَرْحَبًا veut dire « bienvenue ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu parles de ta famille (ابْنٌ, زَوْجَةٌ, جَدٌّ, عَمٌّ, خَالٌ) et des métiers en فِعَالَة.",
+      "suite": "Au Marché couvert : demander et donner son chemin."
+    }
+  ]
+}
