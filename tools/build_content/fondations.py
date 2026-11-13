@@ -28,8 +28,8 @@ from mini_donjon import LessonError, check_question, check_short
 
 SCREEN_TYPES = {"entree", "echauffement", "dialogue", "mots", "regle",
                 "entrainement", "lecture", "atelier", "mini_boss", "fin"}
-PRODUCTION = {"ordonner", "traduire", "completer", "repondre", "repeter", "reconstruire"}
-ATELIER_TYPES = {"ordonner", "traduire", "completer", "repondre"}
+PRODUCTION = {"ordonner", "traduire", "completer", "repondre", "repeter", "reconstruire", "ecrire"}
+ATELIER_TYPES = {"ordonner", "traduire", "completer", "repondre", "ecrire"}
 READING_TYPES = {"qcm", "sens", "reperer_mot"}
 BOSS_TYPES = {"qcm", "sens", "traduire", "completer", "ecouter", "lire"}
 MIN_KNOWN = 0.95

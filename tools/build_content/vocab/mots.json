@@ -10227,10 +10227,230 @@
    ],
    "exemple": {
     "ar": "الْمَعْنَى الْمُحْتَمَلُ مَكَانُ اللَّعِبِ.",
-    "fr": "Le sens possible est « lieu du jeu »."
+    "fr": "Le sens possible est « le lieu du jeu »."
    },
    "remarque": "même racine que حَمَلَ ; la racine ne suffit pas pour le sens",
    "theme": "savoir"
+  },
+  {
+   "id": "muajam",
+   "ar": "مُعْجَمٌ",
+   "translit": "muʿǧamun",
+   "fr": "dictionnaire",
+   "nature": "nom",
+   "lecon": "cite-25",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Ejm",
+   "fige": true,
+   "formes": [
+    "الْمُعْجَمُ",
+    "الْمُعْجَمِ"
+   ],
+   "exemple": {
+    "ar": "بَحَثْتُ عَنِ الْكَلِمَةِ فِي الْمُعْجَمِ.",
+    "fr": "J'ai cherché le mot dans le dictionnaire."
+   },
+   "remarque": "la racine ع ج م a d'autres emplois : la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "bahatha",
+   "ar": "بَحَثَ",
+   "translit": "baḥaṯa",
+   "fr": "chercher (+ عَنْ)",
+   "nature": "verbe",
+   "lecon": "cite-25",
+   "source_sens": "rédigé par IA",
+   "passe": "بَحَثَ",
+   "inaccompli": "يَبْحَثُ",
+   "exemple": {
+    "ar": "أَبْحَثُ عَنْ كَلِمَةٍ.",
+    "fr": "Je cherche un mot."
+   },
+   "racine": "bHv",
+   "fige": true,
+   "formes": [
+    "بَحَثْتُ",
+    "أَبْحَثُ",
+    "ابْحَثْ"
+   ],
+   "remarque": "au sens de « chercher », suivi de عَنْ ; la racine ne suffit pas pour le sens",
+   "theme": "actions"
+  },
+  {
+   "id": "madda_dict",
+   "ar": "مَادَّةٌ",
+   "translit": "māddatun",
+   "fr": "article (d'un dictionnaire, classé par racine)",
+   "nature": "nom",
+   "lecon": "cite-25",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "mdd",
+   "fige": true,
+   "formes": [
+    "مَادَّةِ"
+   ],
+   "exemple": {
+    "ar": "فِي مَادَّةِ « ك ت ب » كَلِمَاتٌ كَثِيرَةٌ.",
+    "fr": "Dans l'article « k t b », il y a beaucoup de mots."
+   },
+   "remarque": "même racine que مَدَّ ; la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "sharh",
+   "ar": "شَرْحٌ",
+   "translit": "šarḥun",
+   "fr": "explication",
+   "nature": "nom",
+   "lecon": "cite-25",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "$rH",
+   "exemple": {
+    "ar": "شَرْحُ هَٰذِهِ الْكَلِمَةِ قَصِيرٌ.",
+    "fr": "L'explication de ce mot est courte."
+   },
+   "remarque": "nom d'action de شَرَحَ « expliquer » ; la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "mufrad",
+   "ar": "مُفْرَدٌ",
+   "translit": "mufradun",
+   "fr": "(en grammaire) singulier",
+   "nature": "nom",
+   "lecon": "cite-25",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "frd",
+   "exemple": {
+    "ar": "مُفْرَدُ « مَدَارِس » مَدْرَسَةٌ.",
+    "fr": "Le singulier de « madāris » est madrasa."
+   },
+   "remarque": "sens de grammaire ; la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "tartib",
+   "ar": "تَرْتِيبٌ",
+   "translit": "tartībun",
+   "fr": "ordre (de classement)",
+   "nature": "nom",
+   "lecon": "cite-25",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "تَرْتِيبُ الْمُعْجَمِ بِالْحُرُوفِ.",
+    "fr": "Le classement du dictionnaire se fait par lettres."
+   },
+   "theme": "ecriture"
+  },
+  {
+   "id": "amma_bad",
+   "ar": "أَمَّا بَعْدُ",
+   "translit": "ammā baʿdu",
+   "fr": "cela dit, quant à ce qui suit (formule de lettre)",
+   "nature": "adverbe",
+   "lecon": "cite-26",
+   "source_sens": "rédigé par IA",
+   "fige": true,
+   "formes": [
+    "بَعْدُ"
+   ],
+   "exemple": {
+    "ar": "أَمَّا بَعْدُ، فَقَدْ وَصَلْتُ إِلَى الْمَدِينَةِ.",
+    "fr": "Cela dit, je suis arrivé en ville."
+   },
+   "remarque": "formule ancienne des lettres et des discours ; toujours suivie de فَـ",
+   "theme": "ecriture"
+  },
+  {
+   "id": "ishtaqa",
+   "ar": "اشْتَاقَ",
+   "translit": "ištāqa",
+   "fr": "avoir la nostalgie de, désirer revoir (+ إِلَى)",
+   "nature": "verbe",
+   "lecon": "cite-26",
+   "source_sens": "rédigé par IA",
+   "passe": "اشْتَاقَ",
+   "inaccompli": "يَشْتَاقُ",
+   "exemple": {
+    "ar": "اشْتَقْتُ إِلَى الْقَرْيَةِ.",
+    "fr": "La nostalgie du village me prend."
+   },
+   "fige": true,
+   "formes": [
+    "اشْتَقْتُ",
+    "أَشْتَاقُ"
+   ],
+   "remarque": "forme VIII ; toujours suivi de إِلَى",
+   "theme": "sentiments"
+  },
+  {
+   "id": "shawq",
+   "ar": "شَوْقٌ",
+   "translit": "šawqun",
+   "fr": "nostalgie, désir de revoir",
+   "nature": "nom",
+   "lecon": "cite-26",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "فِي قَلْبِي شَوْقٌ إِلَى الْأَصْدِقَاءِ.",
+    "fr": "J'ai la nostalgie de mes amis."
+   },
+   "theme": "sentiments"
+  },
+  {
+   "id": "unwan",
+   "ar": "عُنْوَانٌ",
+   "translit": "ʿunwānun",
+   "fr": "titre, en-tête",
+   "nature": "nom",
+   "lecon": "cite-26",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "عُنْوَانُ الرِّسَالَةِ قَصِيرٌ.",
+    "fr": "L'en-tête de la lettre est court."
+   },
+   "theme": "ecriture"
+  },
+  {
+   "id": "tarikh",
+   "ar": "تَارِيخٌ",
+   "translit": "tārīḫun",
+   "fr": "date (d'une lettre)",
+   "nature": "nom",
+   "lecon": "cite-26",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "تَارِيخُ الرِّسَالَةِ فِي آخِرِهَا.",
+    "fr": "La date de la lettre est à la fin."
+   },
+   "theme": "ecriture"
+  },
+  {
+   "id": "maktub_ilayh",
+   "ar": "الْمَكْتُوبُ إِلَيْهِ",
+   "translit": "al-maktūbu ilayhi",
+   "fr": "le destinataire (d'une lettre)",
+   "nature": "nom",
+   "lecon": "cite-26",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "fige": true,
+   "formes": [],
+   "exemple": {
+    "ar": "الْمَكْتُوبُ إِلَيْهِ صَدِيقِي.",
+    "fr": "Le destinataire est mon ami."
+   },
+   "remarque": "terme classique des lettres : « celui à qui l'on a écrit »",
+   "theme": "ecriture"
   }
  ]
 }

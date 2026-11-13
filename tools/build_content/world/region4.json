@@ -213,7 +213,10 @@
         132,
         28
       ],
-      "lecons": [],
+      "lecons": [
+        25,
+        26
+      ],
       "scene": "scene_dictionnaire",
       "sol": 84,
       "tranche_j1a": true,

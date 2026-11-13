@@ -36,7 +36,9 @@ QUESTION_TYPES = {"qcm", "points", "formes", "reconnaitre", "ecouter", "paires",
                   # Région 2 (cahier §6.4) : sens du mot (arabe → français),
                   # traduire (français → arabe), compléter, ordonner une
                   # phrase, répondre à un personnage.
-                  "sens", "traduire", "completer", "ordonner", "repondre"}
+                  "sens", "traduire", "completer", "ordonner", "repondre",
+                  # Région 4 (4.26) : écrire, comparé à un modèle, sans note.
+                  "ecrire"}
 # Au combat : jamais de translittération (§6.2) ; le nom d'une lettre se fait
 # écouter (« ecouter_lettre »), il ne s'affiche pas en lettres latines.
 BOSS_TYPES = {"qcm", "points", "formes", "ecouter", "paires", "lire", "ecouter_lettre"}
@@ -136,6 +138,14 @@ def check_question(q: dict, where: str, check_ar, inscription: list[str] | None 
             raise LessonError(f"{where} : tuiles ou solution invalides")
         if unicodedata.normalize("NFC", "".join(sol)) != unicodedata.normalize("NFC", q["audio"]):
             raise LessonError(f"{where} : la solution ne reforme pas le mot entendu")
+    elif kind == "ecrire":
+        # Région 4 (4.26) : écrire librement, puis comparer à un modèle ;
+        # jamais noté (règle absolue 5), auto-évalué par le joueur.
+        model = q.get("modele", [])
+        if not 3 <= len(model) <= 10:
+            raise LessonError(f"{where} : modèle de 3 à 10 phrases attendu")
+        for t in model:
+            check_ar(t)
     elif kind == "tracer":
         if not q.get("lettre"):
             raise LessonError(f"{where} : lettre à tracer absente")

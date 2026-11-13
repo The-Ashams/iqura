@@ -1,0 +1,516 @@
+{
+  "id": "cite-25",
+  "etape": 4,
+  "ordre": 25,
+  "format": 3,
+  "titre": "Le dictionnaire",
+  "objectif": "Trouver un mot par sa racine dans le dictionnaire.",
+  "statut": "ia_non_verifie",
+  "lieu": "salle_dictionnaire",
+  "maitre": "zuhayr",
+  "prerequis": [
+    "cite-24"
+  ],
+  "apercu": [
+    "زُهَيْرٌ",
+    "بَاسِمٌ",
+    "مَدَارِس",
+    "مَوَاضِع",
+    "يَكْتُبُونَ",
+    "اجْتَمَعْنَا",
+    "ك ت ب",
+    "د ر س",
+    "ق و ل",
+    "ج م ع",
+    "و ض ع"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "zuhayr",
+          "texte": "Voici la Salle du dictionnaire. Ici, les mots ne sont pas rangés comme on les lit, mais par racine."
+        },
+        {
+          "qui": "zuhayr",
+          "texte": "Pour trouver un mot, il faut d'abord retrouver sa racine. Je vais te montrer."
+        }
+      ],
+      "objectif": "Chercher un mot par sa racine."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : les lettres de la racine de « الملعب »",
+          "ar": "الْأَصْلُ …",
+          "choix_ar": [
+            "ل ع ب",
+            "م ل ع",
+            "ع ب م"
+          ],
+          "reponse": 0,
+          "explication": "On retire l'article et le م du schème (leçon 4.24)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je n'ai pas compris. »",
+          "ar": "لَمْ …",
+          "choix_ar": [
+            "أَفْهَمْ",
+            "أَفْهَمُ",
+            "فَهِمْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : jussif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans انْتَظَرَ, le ت…",
+          "choix": [
+            "est une lettre ajoutée (forme VIII)",
+            "appartient à la racine",
+            "est un pronom"
+          ],
+          "reponse": 0,
+          "explication": "انْتَظَرَ : racine ن ظ ر."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "أَبْحَثُ عَنْ كَلِمَةِ « مَوَاضِع »، وَلَمْ أَجِدْهَا.",
+          "fr": "Je cherche le mot « mawāḍiʿ », et je ne l'ai pas trouvé."
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "ابْحَثْ عَنِ الْمُفْرَدِ أَوَّلًا: مَوْضِعٌ، وَالْأَصْلُ و ض ع.",
+          "fr": "Cherche d'abord le singulier : mawḍiʿ, et la racine est w ḍ ʿ."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَجَدْتُهَا فِي مَادَّةِ « و ض ع »!",
+          "fr": "Je l'ai trouvé dans l'article « w ḍ ʿ » !"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment Bāsim a-t-il trouvé le mot ?",
+        "choix": [
+          "par le singulier, puis la racine",
+          "par la première lettre du pluriel",
+          "en demandant à un marchand"
+        ],
+        "reponse": 0,
+        "explication": "ابْحَثْ عَنِ الْمُفْرَدِ أَوَّلًا."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "muajam",
+        "bahatha",
+        "madda_dict",
+        "sharh",
+        "mufrad",
+        "tartib"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مُعْجَمٌ",
+        "choix": [
+          "dictionnaire",
+          "texte",
+          "lettre"
+        ],
+        "reponse": 0,
+        "explication": "مُعْجَمٌ veut dire « dictionnaire »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Retrouver la racine",
+      "texte": "On retire les préfixes et les suffixes, on revient au singulier et au passé, on retrouve la lettre cachée, puis on cherche l'article de cette racine (مَادَّة), dans l'ordre de l'alphabet.",
+      "exemples": [
+        "يَكْتُبُونَ : ك ت ب",
+        "مَدَارِس : مَدْرَسَة : د ر س",
+        "قُلْتُ : ق و ل",
+        "اجْتَمَعْنَا : ج م ع"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pour chercher « مدارس », on cherche d'abord…",
+        "choix": [
+          "le singulier مَدْرَسَة, puis la racine د ر س",
+          "la lettre م",
+          "le mot مدارس tel quel"
+        ],
+        "reponse": 0,
+        "explication": "Un pluriel se cherche par son singulier."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les dictionnaires anciens",
+      "texte": "Certains grands dictionnaires anciens, comme Lisān al-ʿArab, se consultaient à l'origine d'abord par la dernière lettre de la racine. Dans IQURA, on cherche par la première lettre.",
+      "exemples": [
+        "ك ت ب",
+        "و ض ع"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans le dictionnaire d'IQURA, on cherche une racine par…",
+        "choix": [
+          "sa première lettre",
+          "sa dernière lettre",
+          "sa longueur"
+        ],
+        "reponse": 0,
+        "explication": "Ici : la première lettre de la racine."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَحَثَ",
+          "choix": [
+            "chercher (+ عَنْ)",
+            "trouver",
+            "expliquer"
+          ],
+          "reponse": 0,
+          "explication": "بَحَثَ veut dire « chercher (+ عَنْ) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُفْرَدٌ",
+          "choix": [
+            "(en grammaire) singulier",
+            "(en grammaire) pluriel",
+            "dictionnaire"
+          ],
+          "reponse": 0,
+          "explication": "مُفْرَدٌ veut dire « (en grammaire) singulier »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَرْحٌ",
+          "choix": [
+            "explication",
+            "article (d'un dictionnaire, classé par racine)",
+            "ordre (de classement)"
+          ],
+          "reponse": 0,
+          "explication": "شَرْحٌ veut dire « explication »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : la racine de « يكتبون »",
+          "ar": "الْأَصْلُ …",
+          "choix_ar": [
+            "ك ت ب",
+            "ي ك ت",
+            "ت ب و"
+          ],
+          "reponse": 0,
+          "explication": "On retire ي et ون : ك ت ب."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : la racine de « قُلْتُ »",
+          "ar": "الْأَصْلُ …",
+          "choix_ar": [
+            "ق و ل",
+            "ق ل ت",
+            "ق ل ل"
+          ],
+          "reponse": 0,
+          "explication": "قُلْتُ vient de قَالَ : la lettre cachée est و."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : la racine de « اجتمعنا »",
+          "ar": "الْأَصْلُ …",
+          "choix_ar": [
+            "ج م ع",
+            "ت م ع",
+            "ج ت م"
+          ],
+          "reponse": 0,
+          "explication": "Forme VIII : on retire ا, le ت ajouté et نا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je cherche un mot. »",
+          "ar": "أَبْحَثُ … كَلِمَةٍ.",
+          "choix_ar": [
+            "عَنْ",
+            "فِي",
+            "إِلَى"
+          ],
+          "reponse": 0,
+          "explication": "Au sens de « chercher », بَحَثَ se construit avec عَنْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le singulier de madāris est madrasa. »",
+          "ar": "… « مَدَارِس » مَدْرَسَةٌ.",
+          "choix_ar": [
+            "مُفْرَدُ",
+            "مَادَّةُ",
+            "شَرْحُ"
+          ],
+          "reponse": 0,
+          "explication": "Le singulier : مُفْرَدُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Dans la Salle du dictionnaire",
+      "texte": "Bāsim cherche un mot. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "بَحَثَ بَاسِمٌ عَنْ كَلِمَةٍ فِي الْمُعْجَمِ، وَلَمْ يَجِدْهَا.",
+        "قَالَ زُهَيْرٌ: « ابْحَثْ عَنِ الْمُفْرَدِ أَوَّلًا. »",
+        "وَجَدَ بَاسِمٌ الْكَلِمَةَ فِي الْمُعْجَمِ.",
+        "كَانَ شَرْحُ الْكَلِمَةِ قَصِيرًا وَسَهْلًا."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que conseille Zuhayr ?",
+          "choix": [
+            "chercher d'abord le singulier",
+            "chercher la dernière lettre",
+            "demander à Nadīm"
+          ],
+          "reponse": 0,
+          "explication": "ابْحَثْ عَنِ الْمُفْرَدِ أَوَّلًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment était l'explication du mot ?",
+          "choix": [
+            "courte et facile",
+            "longue et difficile",
+            "absente"
+          ],
+          "reponse": 0,
+          "explication": "كَانَ شَرْحُ الْكَلِمَةِ قَصِيرًا وَسَهْلًا."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « J'ai cherché le mot dans le dictionnaire. » ?",
+          "choix_ar": [
+            "بَحَثْتُ عَنِ الْكَلِمَةِ فِي الْمُعْجَمِ.",
+            "بَحَثْتُ عَنِ الْكَلِمَةِ مِنَ الْمُعْجَمِ.",
+            "بَحَثْتُ عَنِ الْكَلِمَةِ إِلَى الْمُعْجَمِ."
+          ],
+          "reponse": 0,
+          "explication": "بَحَثَ عَنْ ; « dans » : فِي."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre, en commençant par le verbe, puis « un mot », puis « dans le dictionnaire » : « Je cherche un mot dans le dictionnaire. »",
+          "tuiles": [
+            "الْمُعْجَمِ",
+            "فِي",
+            "كَلِمَةٍ",
+            "عَنْ",
+            "أَبْحَثُ"
+          ],
+          "solution": [
+            "أَبْحَثُ",
+            "عَنْ",
+            "كَلِمَةٍ",
+            "فِي",
+            "الْمُعْجَمِ"
+          ],
+          "explication": "Le verbe, عَنْ et le mot cherché, puis le lieu."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'explication de ce mot est courte. »",
+          "ar": "… هَٰذِهِ الْكَلِمَةِ قَصِيرٌ.",
+          "choix_ar": [
+            "شَرْحُ",
+            "شَرْحَ",
+            "شَرْحٍ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet : nominatif, sans tanwīn devant un nom."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَادَّةٌ",
+          "choix": [
+            "article (d'un dictionnaire, classé par racine)",
+            "explication",
+            "singulier"
+          ],
+          "reponse": 0,
+          "explication": "مَادَّةٌ veut dire « article (d'un dictionnaire, classé par racine) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَرْتِيبٌ",
+          "choix": [
+            "ordre (de classement)",
+            "explication",
+            "dictionnaire"
+          ],
+          "reponse": 0,
+          "explication": "تَرْتِيبٌ veut dire « ordre (de classement) »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : la racine de « مواضع »",
+          "ar": "الْأَصْلُ …",
+          "choix_ar": [
+            "و ض ع",
+            "م و ض",
+            "ض ع م"
+          ],
+          "reponse": 0,
+          "explication": "Singulier مَوْضِعٌ ; le م est celui du schème."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : la racine de « مدارس »",
+          "ar": "الْأَصْلُ …",
+          "choix_ar": [
+            "د ر س",
+            "م د ر",
+            "ر س م"
+          ],
+          "reponse": 0,
+          "explication": "Singulier مَدْرَسَةٌ : د ر س."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai cherché le mot. »",
+          "ar": "بَحَثْتُ … الْكَلِمَةِ.",
+          "choix_ar": [
+            "عَنِ",
+            "فِي",
+            "مِنَ"
+          ],
+          "reponse": 0,
+          "explication": "بَحَثَ عَنْ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le singulier de « madāris » » ?",
+          "choix_ar": [
+            "مُفْرَدُ « مَدَارِس »",
+            "مَادَّةُ « مَدَارِس »",
+            "شَرْحُ « مَدَارِس »"
+          ],
+          "reponse": 0,
+          "explication": "Le singulier : مُفْرَدُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Un pluriel comme مدارس se cherche…",
+          "choix": [
+            "par son singulier",
+            "tel quel",
+            "par sa dernière lettre"
+          ],
+          "reponse": 0,
+          "explication": "On revient au singulier."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Un verbe comme قلت se cherche…",
+          "choix": [
+            "par sa racine, avec la lettre cachée",
+            "par la lettre ت",
+            "par son pluriel"
+          ],
+          "reponse": 0,
+          "explication": "قُلْتُ : ق و ل."
+        },
+        {
+          "type": "qcm",
+          "consigne": "À l'origine, Lisān al-ʿArab se consultait d'abord par…",
+          "choix": [
+            "la dernière lettre de la racine",
+            "la première lettre du mot",
+            "le sens"
+          ],
+          "reponse": 0,
+          "explication": "Certains dictionnaires anciens suivent la dernière lettre."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَصْلٌ",
+          "choix": [
+            "origine ; (en grammaire) racine d'un mot (ses lettres de base)",
+            "contexte",
+            "schème"
+          ],
+          "reponse": 0,
+          "explication": "أَصْلٌ veut dire « origine ; (en grammaire) racine d'un mot (ses lettres de base) ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le schème est mafʿal. »",
+          "ar": "… مَفْعَلٌ.",
+          "choix_ar": [
+            "الْوَزْنُ",
+            "الْأَصْلُ",
+            "السِّيَاقُ"
+          ],
+          "reponse": 0,
+          "explication": "Le schème : الْوَزْنُ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَرَّرَ",
+          "choix": [
+            "répéter",
+            "comprendre",
+            "marchander"
+          ],
+          "reponse": 0,
+          "explication": "كَرَّرَ veut dire « répéter ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu retrouves la racine d'un mot (préfixes, suffixes, singulier, lettre cachée) et tu le cherches dans le dictionnaire, dans la bonne مَادَّة. Essaie : ouvre le Dictionnaire et touche « Parcourir par racine ».",
+      "suite": "Prochaine leçon : écrire une lettre."
+    }
+  ]
+}

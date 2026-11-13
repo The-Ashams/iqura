@@ -152,6 +152,12 @@ Future<void> answer(WidgetTester tester, {bool right = true}) async {
       await tapOn(tester, find.text('Ma voix'));
       await tapOn(tester, find.text("J'ai répété"));
       return;
+    case QuestionKind.ecrire:
+      // Écrire, voir le modèle, continuer : jamais noté.
+      await tester.enterText(find.byKey(const Key('ecrire')), 'مِنْ');
+      await tapOn(tester, find.text('Voir le modèle'));
+      await tapOn(tester, find.text('Continuer'));
+      return;
     case QuestionKind.reconstruire || QuestionKind.ordonner:
       final parts = right ? q.solution : q.solution.reversed.toList();
       for (final t in parts) {
@@ -263,7 +269,7 @@ void main() {
     for (var i = 0; i <= 14; i++) 'dechiffrer-${i.toString().padLeft(2, '0')}',
     for (var i = 1; i <= 30; i++) 'fondations-${i.toString().padLeft(2, '0')}',
     for (var i = 1; i <= 32; i++) 'moteur-${i.toString().padLeft(2, '0')}',
-    for (var i = 1; i <= 24; i++) 'cite-${i.toString().padLeft(2, '0')}',
+    for (var i = 1; i <= 26; i++) 'cite-${i.toString().padLeft(2, '0')}',
   ]) {
     testWidgets('$id : jouée de bout en bout, la leçon suivante s’ouvre', (
       tester,
@@ -830,6 +836,41 @@ void main() {
       expect(find.text('ذَهَبَ'), findsOneWidget);
     },
   );
+
+  testWidgets('écrire : texte libre, puis modèle, sans note', (tester) async {
+    var continued = false;
+    var graded = false;
+    final q = LessonQuestion.fromJson(const {
+      'type': 'ecrire',
+      'consigne': 'Écris une lettre.',
+      'modele': ['مِنْ بَاسِمٍ إِلَى سَمِيرٍ.', 'صَدِيقُكَ بَاسِمٌ.'],
+      'explication': 'Compare toi-même.',
+    });
+    expect(q.kind.ungraded, isTrue);
+    expect(q.kind.production, isTrue);
+    await tester.pumpWidget(
+      appWith(
+        Scaffold(
+          body: SingleChildScrollView(
+            child: QuestionView(
+              question: q,
+              onAnswered: (_, _) => graded = true,
+              onContinue: () => continued = true,
+            ),
+          ),
+        ),
+      ),
+    );
+    await tester.enterText(find.byKey(const Key('ecrire')), 'مِنْ');
+    expect(find.text('صَدِيقُكَ بَاسِمٌ.'), findsNothing);
+    await tester.tap(find.text('Voir le modèle'));
+    await tester.pump();
+    expect(find.text('صَدِيقُكَ بَاسِمٌ.'), findsOneWidget);
+    await tester.tap(find.text('Continuer'));
+    await tester.pump();
+    expect(continued, isTrue);
+    expect(graded, isFalse);
+  });
 
   testWidgets(
     'fiche de mot : schème après le début de 3.2, nom d\'action après 3.4',

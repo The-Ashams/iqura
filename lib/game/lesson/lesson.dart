@@ -61,7 +61,9 @@ enum QuestionKind {
   traduire,
   completer,
   ordonner,
-  repondre;
+  repondre,
+  // Région 4 (4.26) : écrire librement, puis comparer à un modèle.
+  ecrire;
 
   static QuestionKind parse(String s) => switch (s) {
     'qcm' => qcm,
@@ -82,12 +84,13 @@ enum QuestionKind {
     'completer' => completer,
     'ordonner' => ordonner,
     'repondre' => repondre,
+    'ecrire' => ecrire,
     _ => throw FormatException('type de question inconnu : $s'),
   };
 
   /// Exercice sans bonne ou mauvaise réponse (tracer, répéter à voix
-  /// haute) : jamais noté (cahier v3 §3.5, pas de note automatique).
-  bool get ungraded => this == tracer || this == repeter;
+  /// haute, écrire) : jamais noté (cahier v3 §3.5, pas de note automatique).
+  bool get ungraded => this == tracer || this == repeter || this == ecrire;
 
   /// Tuiles à assembler : lettres d'un mot ([reconstruire]) ou mots d'une
   /// phrase ([ordonner]).
@@ -99,6 +102,7 @@ enum QuestionKind {
       this == traduire ||
       this == completer ||
       this == repondre ||
+      this == ecrire ||
       this == repeter ||
       this == reconstruire;
 }
@@ -122,6 +126,7 @@ class LessonQuestion {
     this.word,
     this.reply,
     this.revision = false,
+    this.model = const [],
   });
 
   factory LessonQuestion.fromJson(Map<String, dynamic> j) {
@@ -156,6 +161,7 @@ class LessonQuestion {
               arabic: (j['replique'] as Map)['ar'] as String,
             ),
       revision: j['revision'] == true,
+      model: ((j['modele'] as List?) ?? const []).cast<String>(),
     );
   }
 
@@ -191,6 +197,9 @@ class LessonQuestion {
 
   /// Question de révision (leçons précédentes), au mini-boss.
   final bool revision;
+
+  /// Modèle montré après l'écriture libre (« écrire »), phrase par phrase.
+  final List<String> model;
 }
 
 /// Son coupé (jalon J6) : « répéter à voix haute » est masqué, faute de

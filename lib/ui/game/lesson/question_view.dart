@@ -309,6 +309,16 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
   // Ordre d'affichage des réponses (indices dans `q.choices`).
   late final List<int> _order;
 
+  // Écrire : texte du joueur, puis modèle montré pour comparer.
+  final _writing = TextEditingController();
+  bool _modelShown = false;
+
+  @override
+  void dispose() {
+    _writing.dispose();
+    super.dispose();
+  }
+
   LessonQuestion get q => widget.question;
 
   /// Texte joué par la question, s'il y en a un.
@@ -423,6 +433,7 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
     QuestionKind.reconstruire || QuestionKind.ordonner => _rebuild(),
     QuestionKind.tracer => _trace(),
     QuestionKind.repeter => _repeat(),
+    QuestionKind.ecrire => _write(),
     _ => _choices(),
   };
 
@@ -577,6 +588,55 @@ class _QuestionViewState extends ConsumerState<QuestionView> {
     RepeatAloud(text: q.arabic!),
     const SizedBox(height: 8),
     if (!_done) PanelButton(label: 'J\'ai répété', onPressed: _finishUngraded),
+  ];
+
+  /// Écrire librement, puis comparer soi-même au modèle : aucune note
+  /// automatique (règle absolue 5), rien n'est enregistré.
+  List<Widget> _write() => [
+    Directionality(
+      textDirection: TextDirection.rtl,
+      child: TextField(
+        key: const Key('ecrire'),
+        controller: _writing,
+        minLines: 4,
+        maxLines: 10,
+        readOnly: _modelShown,
+        style: const TextStyle(fontFamily: 'Amiri', fontSize: 24),
+        decoration: const InputDecoration(
+          border: OutlineInputBorder(),
+          hintText: 'Écris ici, en arabe',
+        ),
+      ),
+    ),
+    const SizedBox(height: 10),
+    if (!_modelShown)
+      PanelButton(
+        label: 'Voir le modèle',
+        onPressed: () => setState(() => _modelShown = true),
+      )
+    else ...[
+      const Text(
+        'Modèle (rédigé par IA) : compare toi-même, sans note.',
+        textAlign: TextAlign.center,
+        style: TextStyle(fontSize: 16),
+      ),
+      const SizedBox(height: 6),
+      for (final line in q.model)
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 2),
+          child: ArabicText(
+            line,
+            baseSize: 28,
+            style: const TextStyle(color: PanelColors.ink),
+          ),
+        ),
+      if (q.explanation != null) ...[
+        const SizedBox(height: 8),
+        Text(q.explanation!, textAlign: TextAlign.center),
+      ],
+      const SizedBox(height: 10),
+      if (!_done) PanelButton(label: 'Continuer', onPressed: _finishUngraded),
+    ],
   ];
 
   List<Widget> _feedback() => [

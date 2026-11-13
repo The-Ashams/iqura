@@ -1,0 +1,515 @@
+{
+  "id": "cite-26",
+  "etape": 4,
+  "ordre": 26,
+  "format": 3,
+  "titre": "Écrire un message",
+  "objectif": "Écrire une lettre de 5 à 10 phrases, avec ses formules classiques.",
+  "statut": "ia_non_verifie",
+  "lieu": "salle_dictionnaire",
+  "maitre": "zuhayr",
+  "prerequis": [
+    "cite-25"
+  ],
+  "apercu": [
+    "زُهَيْرٌ",
+    "بَاسِمٌ",
+    "سَمِيرٍ",
+    "سَمِيرٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "zuhayr",
+          "texte": "Bāsim veut écrire à son ami Samīr, resté au village. Une lettre a ses formules : je vais te les montrer."
+        },
+        {
+          "qui": "zuhayr",
+          "texte": "D'abord qui écrit et à qui, puis « cela dit », le message, la date et la signature."
+        }
+      ],
+      "objectif": "Écrire une lettre classique."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Quant au marchand, il est arrivé. »",
+          "ar": "أَمَّا التَّاجِرُ … وَصَلَ.",
+          "choix_ar": [
+            "فَقَدْ",
+            "ثُمَّ",
+            "لِأَنَّ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَمَّا : فَـ (leçon 4.13)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je te prie de m'écrire une lettre. »",
+          "ar": "أَرْجُو أَنْ … لِي رِسَالَةً.",
+          "choix_ar": [
+            "تَكْتُبَ",
+            "تَكْتُبُ",
+            "كَتَبْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : subjonctif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai cherché le mot dans le dictionnaire. »",
+          "ar": "بَحَثْتُ … الْكَلِمَةِ فِي الْمُعْجَمِ.",
+          "choix_ar": [
+            "عَنِ",
+            "إِلَى",
+            "مِنَ"
+          ],
+          "reponse": 0,
+          "explication": "بَحَثَ عَنْ (leçon 4.25)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "أُرِيدُ أَنْ أَكْتُبَ رِسَالَةً إِلَى سَمِيرٍ. اشْتَقْتُ إِلَيْهِ.",
+          "fr": "Je veux écrire une lettre à Samīr. Il me manque."
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "اُكْتُبْ أَوَّلًا: مِنْ بَاسِمٍ إِلَى سَمِيرٍ، ثُمَّ: أَمَّا بَعْدُ.",
+          "fr": "Écris d'abord : de Bāsim à Samīr, puis : « cela dit »."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَفِي آخِرِ الرِّسَالَةِ؟",
+          "fr": "Et à la fin de la lettre ?"
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "التَّارِيخُ، ثُمَّ: صَدِيقُكَ بَاسِمٌ.",
+          "fr": "La date, puis : ton ami Bāsim."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que met-on à la fin de la lettre ?",
+        "choix": [
+          "la date et la signature",
+          "« cela dit »",
+          "le nom du destinataire seul"
+        ],
+        "reponse": 0,
+        "explication": "التَّارِيخُ، ثُمَّ: صَدِيقُكَ بَاسِمٌ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "amma_bad",
+        "ishtaqa",
+        "shawq",
+        "unwan",
+        "tarikh",
+        "maktub_ilayh"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "الْمَكْتُوبُ إِلَيْهِ",
+        "choix": [
+          "le destinataire (d'une lettre)",
+          "la date (d'une lettre)",
+          "l'en-tête"
+        ],
+        "reponse": 0,
+        "explication": "الْمَكْتُوبُ إِلَيْهِ veut dire « le destinataire (d'une lettre) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les parties d'une lettre",
+      "texte": "Une lettre classique : مِنْ (qui écrit), puis إِلَى (à qui) ; أَمَّا بَعْدُ suivi de فَـ ; le message ; la date, كَتَبْتُهُ فِي + mois ; la signature, صَدِيقُكَ + nom.",
+      "exemples": [
+        "مِنْ بَاسِمٍ إِلَى سَمِيرٍ",
+        "أَمَّا بَعْدُ، فَقَدْ وَصَلْتُ",
+        "صَدِيقُكَ بَاسِمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Par quoi commence une lettre classique ?",
+        "choix_ar": [
+          "مِنْ بَاسِمٍ إِلَى سَمِيرٍ",
+          "صَدِيقُكَ بَاسِمٌ",
+          "كَتَبْتُهُ فِي رَجَبٍ"
+        ],
+        "reponse": 0,
+        "explication": "D'abord qui écrit, puis à qui."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "بَعْدُ ou بَعْدَ ?",
+      "texte": "Dans أَمَّا بَعْدُ, بَعْدُ n'a pas de complément : il finit toujours en -u, et فَـ suit obligatoirement. Avec un nom, on dit بَعْدَ : بَعْدَ الظُّهْرِ.",
+      "exemples": [
+        "أَمَّا بَعْدُ، فَقَدْ وَصَلْتُ",
+        "بَعْدَ الظُّهْرِ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Cela dit, je suis arrivé en ville. »",
+        "ar": "أَمَّا … ، فَقَدْ وَصَلْتُ إِلَى الْمَدِينَةِ.",
+        "choix_ar": [
+          "بَعْدُ",
+          "بَعْدَ",
+          "بَعْدِ"
+        ],
+        "reponse": 0,
+        "explication": "Sans complément : بَعْدُ, en -u."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَوْقٌ",
+          "choix": [
+            "nostalgie, désir de revoir",
+            "date (d'une lettre)",
+            "titre, en-tête"
+          ],
+          "reponse": 0,
+          "explication": "شَوْقٌ veut dire « nostalgie, désir de revoir »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَارِيخٌ",
+          "choix": [
+            "date (d'une lettre)",
+            "titre, en-tête",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "تَارِيخٌ veut dire « date (d'une lettre) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اشْتَاقَ",
+          "choix": [
+            "avoir la nostalgie de, désirer revoir (+ إِلَى)",
+            "chercher (+ عَنْ)",
+            "écrire"
+          ],
+          "reponse": 0,
+          "explication": "اشْتَاقَ veut dire « avoir la nostalgie de, désirer revoir (+ إِلَى) »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La nostalgie du village me prend. »",
+          "ar": "اشْتَقْتُ … الْقَرْيَةِ.",
+          "choix_ar": [
+            "إِلَى",
+            "عَنِ",
+            "فِي"
+          ],
+          "reponse": 0,
+          "explication": "اشْتَاقَ est suivi de إِلَى."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète la signature : « Ton ami Bāsim »",
+          "ar": "… بَاسِمٌ.",
+          "choix_ar": [
+            "صَدِيقُكَ",
+            "صَدِيقِكَ",
+            "صَدِيقَكَ"
+          ],
+          "reponse": 0,
+          "explication": "Au nominatif : صَدِيقُكَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Cela dit, je suis arrivé jeudi. »",
+          "ar": "أَمَّا بَعْدُ، … وَصَلْتُ يَوْمَ الْخَمِيسِ.",
+          "choix_ar": [
+            "فَقَدْ",
+            "قَدْ",
+            "ثُمَّ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَمَّا بَعْدُ : فَـ obligatoire."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « De Bāsim à Samīr. » ?",
+          "choix_ar": [
+            "مِنْ بَاسِمٍ إِلَى سَمِيرٍ.",
+            "إِلَى بَاسِمٍ مِنْ سَمِيرٍ.",
+            "مِنْ بَاسِمٌ إِلَى سَمِيرٌ."
+          ],
+          "reponse": 0,
+          "explication": "مِنْ : qui écrit ; إِلَى : à qui ; génitif après les deux."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'écrit-on juste après l'en-tête (مِنْ, إِلَى) ?",
+          "choix_ar": [
+            "أَمَّا بَعْدُ",
+            "صَدِيقُكَ بَاسِمٌ",
+            "كَتَبْتُهُ فِي رَجَبٍ"
+          ],
+          "reponse": 0,
+          "explication": "Puis vient « cela dit »."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La lettre de Bāsim",
+      "texte": "Voici la lettre de Bāsim à Samīr. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "مِنْ بَاسِمٍ إِلَى سَمِيرٍ.",
+        "أَمَّا بَعْدُ، فَقَدْ وَصَلْتُ إِلَى الْمَدِينَةِ يَوْمَ الْخَمِيسِ.",
+        "أَسْكُنُ فِي بَيْتٍ قَرِيبٍ مِنَ السُّوقِ، وَأَدْرُسُ مَعَ زُهَيْرٍ.",
+        "النَّصُّ صَعْبٌ، لَٰكِنَّ الْمُعْجَمَ يُسَاعِدُنِي.",
+        "اشْتَقْتُ إِلَى الْقَرْيَةِ وَإِلَى الْأَصْدِقَاءِ، وَأَرْجُو أَنْ تَكْتُبَ لِي رِسَالَةً.",
+        "كَتَبْتُهُ فِي رَجَبٍ. صَدِيقُكَ بَاسِمٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui est le destinataire de la lettre ?",
+          "choix": [
+            "Samīr",
+            "Zuhayr",
+            "Bāsim"
+          ],
+          "reponse": 0,
+          "explication": "مِنْ بَاسِمٍ إِلَى سَمِيرٍ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'est-ce qui aide Bāsim ?",
+          "choix": [
+            "le dictionnaire",
+            "le marchand",
+            "Samīr"
+          ],
+          "reponse": 0,
+          "explication": "لَٰكِنَّ الْمُعْجَمَ يُسَاعِدُنِي."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Remets l'en-tête dans l'ordre : « De Bāsim à Samīr. »",
+          "tuiles": [
+            "سَمِيرٍ",
+            "إِلَى",
+            "بَاسِمٍ",
+            "مِنْ"
+          ],
+          "solution": [
+            "مِنْ",
+            "بَاسِمٍ",
+            "إِلَى",
+            "سَمِيرٍ"
+          ],
+          "explication": "D'abord qui écrit (مِنْ), puis à qui (إِلَى)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je te prie de m'écrire une lettre. »",
+          "ar": "أَرْجُو أَنْ تَكْتُبَ … رِسَالَةً.",
+          "choix_ar": [
+            "لِي",
+            "إِلَيَّ",
+            "مِنِّي"
+          ],
+          "reponse": 0,
+          "explication": "Écrire à quelqu'un : كَتَبَ لِـ."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris à ton tour une lettre de 5 phrases à un ami : en-tête, أَمَّا بَعْدُ، فَـ, ton message, la date, la signature.",
+          "modele": [
+            "مِنْ بَاسِمٍ إِلَى سَمِيرٍ.",
+            "أَمَّا بَعْدُ، فَقَدْ وَصَلْتُ إِلَى الْمَدِينَةِ يَوْمَ الْخَمِيسِ.",
+            "أَسْكُنُ فِي بَيْتٍ قَرِيبٍ مِنَ السُّوقِ، وَأَدْرُسُ مَعَ زُهَيْرٍ.",
+            "النَّصُّ صَعْبٌ، لَٰكِنَّ الْمُعْجَمَ يُسَاعِدُنِي.",
+            "اشْتَقْتُ إِلَى الْقَرْيَةِ وَإِلَى الْأَصْدِقَاءِ، وَأَرْجُو أَنْ تَكْتُبَ لِي رِسَالَةً.",
+            "كَتَبْتُهُ فِي رَجَبٍ. صَدِيقُكَ بَاسِمٌ."
+          ],
+          "explication": "Compare : as-tu l'en-tête, أَمَّا بَعْدُ suivi de فَـ, la date et la signature ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَمَّا بَعْدُ",
+          "choix": [
+            "cela dit, quant à ce qui suit (formule de lettre)",
+            "à la fin de la lettre",
+            "ton ami"
+          ],
+          "reponse": 0,
+          "explication": "أَمَّا بَعْدُ veut dire « cela dit, quant à ce qui suit (formule de lettre) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عُنْوَانٌ",
+          "choix": [
+            "titre, en-tête",
+            "date (d'une lettre)",
+            "nostalgie, désir de revoir"
+          ],
+          "reponse": 0,
+          "explication": "عُنْوَانٌ veut dire « titre, en-tête »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Cela dit, je suis arrivé. »",
+          "ar": "أَمَّا بَعْدُ، … وَصَلْتُ.",
+          "choix_ar": [
+            "فَقَدْ",
+            "ثُمَّ",
+            "لَمَّا"
+          ],
+          "reponse": 0,
+          "explication": "Après أَمَّا بَعْدُ : فَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « cela dit »",
+          "ar": "أَمَّا …",
+          "choix_ar": [
+            "بَعْدُ",
+            "بَعْدَ",
+            "بَعْدِ"
+          ],
+          "reponse": 0,
+          "explication": "Sans complément : بَعْدُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai la nostalgie de mes amis. »",
+          "ar": "اشْتَقْتُ … الْأَصْدِقَاءِ.",
+          "choix_ar": [
+            "إِلَى",
+            "عَنِ",
+            "مِنَ"
+          ],
+          "reponse": 0,
+          "explication": "اشْتَاقَ إِلَى."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Ton ami Bāsim. » ?",
+          "choix_ar": [
+            "صَدِيقُكَ بَاسِمٌ.",
+            "صَدِيقِكَ بَاسِمٍ.",
+            "صَدِيقُكَ بَاسِمًا."
+          ],
+          "reponse": 0,
+          "explication": "La signature, au nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La date d'une lettre vient…",
+          "choix": [
+            "à la fin, avant la signature",
+            "au tout début",
+            "après أَمَّا بَعْدُ"
+          ],
+          "reponse": 0,
+          "explication": "كَتَبْتُهُ فِي + mois, puis la signature."
+        },
+        {
+          "type": "qcm",
+          "consigne": "الْمَكْتُوبُ إِلَيْهِ, c'est…",
+          "choix": [
+            "le destinataire",
+            "celui qui écrit",
+            "la date"
+          ],
+          "reponse": 0,
+          "explication": "« celui à qui l'on a écrit »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « مِنْ بَاسِمٍ إِلَى سَمِيرٍ », qui écrit ?",
+          "choix": [
+            "Bāsim",
+            "Samīr",
+            "Zuhayr"
+          ],
+          "reponse": 0,
+          "explication": "مِنْ : celui qui écrit."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُعْجَمٌ",
+          "choix": [
+            "dictionnaire",
+            "texte",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "مُعْجَمٌ veut dire « dictionnaire ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je cherche un mot. »",
+          "ar": "أَبْحَثُ … كَلِمَةٍ.",
+          "choix_ar": [
+            "عَنْ",
+            "فِي",
+            "إِلَى"
+          ],
+          "reponse": 0,
+          "explication": "بَحَثَ عَنْ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُفْرَدٌ",
+          "choix": [
+            "(en grammaire) singulier",
+            "(en grammaire) pluriel",
+            "dictionnaire"
+          ],
+          "reponse": 0,
+          "explication": "مُفْرَدٌ veut dire « (en grammaire) singulier ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu écris une lettre classique : مِنْ… إِلَى…, أَمَّا بَعْدُ، فَـ…, le message, la date et la signature.",
+      "suite": "Prochaine leçon : résumer un récit, dans la Grande Salle de lecture."
+    }
+  ]
+}
