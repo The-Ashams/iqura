@@ -491,12 +491,12 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "وُلِدَ",
           "choix": [
-            "naître (« il est né »)",
+            "naître (il est né)",
             "grandir",
             "habiter"
           ],
           "reponse": 0,
-          "explication": "وُلِدَ veut dire « naître (« il est né ») ».",
+          "explication": "وُلِدَ veut dire « naître (il est né) ».",
           "revision": true
         },
         {

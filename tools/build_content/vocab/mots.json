@@ -8970,6 +8970,266 @@
    "theme": "savoir"
   },
   {
+   "id": "yamin",
+   "ar": "يَمِينٌ",
+   "translit": "yamīnun",
+   "fr": "droite",
+   "nature": "nom",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "yamiyn",
+   "exemple": {
+    "ar": "الْحَدِيقَةُ عَلَى يَمِينِكَ.",
+    "fr": "Le jardin est à ta droite."
+   },
+   "remarque": "ici seulement dans عَلَى يَمِينِكَ, عَلَى يَمِينِ + lieu",
+   "theme": "lieux"
+  },
+  {
+   "id": "yasar",
+   "ar": "يَسَارٌ",
+   "translit": "yasārun",
+   "fr": "gauche",
+   "nature": "nom",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "ysr",
+   "exemple": {
+    "ar": "الْمَدْرَسَةُ عَلَى يَسَارِكَ.",
+    "fr": "L'école est à ta gauche."
+   },
+   "theme": "lieux"
+  },
+  {
+   "id": "amama",
+   "ar": "أَمَامَ",
+   "translit": "amāma",
+   "fr": "devant",
+   "nature": "adverbe",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "lemme": ">amaAm",
+   "exemple": {
+    "ar": "السُّوقُ أَمَامَكَ.",
+    "fr": "Le marché est devant toi."
+   },
+   "remarque": "suivi du génitif",
+   "theme": "lieux"
+  },
+  {
+   "id": "khalfa",
+   "ar": "خَلْفَ",
+   "translit": "ḫalfa",
+   "fr": "derrière",
+   "nature": "adverbe",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "lemme": "xalof",
+   "exemple": {
+    "ar": "الْحَدِيقَةُ خَلْفَ الْقَصْرِ.",
+    "fr": "Le jardin est derrière le palais."
+   },
+   "remarque": "suivi du génitif",
+   "theme": "lieux"
+  },
+  {
+   "id": "bayna",
+   "ar": "بَيْنَ",
+   "translit": "bayna",
+   "fr": "entre",
+   "nature": "adverbe",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "lemme": "bayon",
+   "exemple": {
+    "ar": "بَيْتُ نَدِيمٍ بَيْنَ السُّوقِ وَالْمَدْرَسَةِ.",
+    "fr": "La maison de Nadīm est entre le marché et l'école."
+   },
+   "remarque": "بَيْنَ X وَ Y",
+   "theme": "lieux"
+  },
+  {
+   "id": "marra_bi",
+   "ar": "مَرَّ بِـ",
+   "translit": "marra bi",
+   "fr": "passer par, passer devant",
+   "nature": "verbe",
+   "lecon": "cite-17",
+   "source_sens": "rédigé par IA",
+   "passe": "مَرَّ بِـ",
+   "inaccompli": "يَمُرُّ",
+   "exemple": {
+    "ar": "مَرَرْتُ بِالسُّوقِ فِي الصَّبَاحِ.",
+    "fr": "Je suis passé par le marché le matin."
+   },
+   "lemme": "mar~a",
+   "fige": true,
+   "formes": [
+    "مَرَّ",
+    "مَرَرْتُ",
+    "مَرَرْنَا",
+    "تَمُرُّ",
+    "نَمُرُّ"
+   ],
+   "remarque": "verbe doublé : مَرَرْتُ, mais تَمُرُّ ; toujours suivi de بِـ",
+   "theme": "lieux"
+  },
+  {
+   "id": "yawm",
+   "ar": "يَوْمٌ",
+   "translit": "yawmun",
+   "fr": "jour",
+   "nature": "nom",
+   "lecon": "cite-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "yawom",
+   "fige": true,
+   "formes": [
+    "يَوْمَ",
+    "أَيَّامٍ"
+   ],
+   "exemple": {
+    "ar": "وَصَلْتُ يَوْمَ الْخَمِيسِ.",
+    "fr": "Je suis arrivé jeudi."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "usbu",
+   "ar": "أُسْبُوعٌ",
+   "translit": "usbūʿun",
+   "fr": "semaine",
+   "nature": "nom",
+   "lecon": "cite-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "sbE",
+   "fige": true,
+   "formes": [
+    "أُسْبُوعَيْنِ",
+    "أَسَابِيعَ"
+   ],
+   "exemple": {
+    "ar": "سَافَرَ التَّاجِرُ أُسْبُوعَيْنِ.",
+    "fr": "Le marchand a voyagé deux semaines."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "shahr",
+   "ar": "شَهْرٌ",
+   "translit": "šahrun",
+   "fr": "mois",
+   "nature": "nom",
+   "lecon": "cite-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "$ahor",
+   "fige": true,
+   "formes": [
+    "أَشْهُرٍ"
+   ],
+   "exemple": {
+    "ar": "أَسْكُنُ فِي الْمَدِينَةِ مُنْذُ شَهْرٍ.",
+    "fr": "J'habite en ville depuis un mois."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "sana",
+   "ar": "سَنَةٌ",
+   "translit": "sanatun",
+   "fr": "année",
+   "nature": "nom",
+   "lecon": "cite-18",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "sanap",
+   "fige": true,
+   "formes": [
+    "سَنَةً",
+    "سَنَوَاتٍ"
+   ],
+   "exemple": {
+    "ar": "أَنَا ابْنُ خَمْسٍ وَعِشْرِينَ سَنَةً.",
+    "fr": "J'ai vingt-cinq ans."
+   },
+   "remarque": "pluriel : سَنَوَاتٌ ; on dit aussi عَامٌ",
+   "theme": "temps"
+  },
+  {
+   "id": "saa",
+   "ar": "سَاعَةٌ",
+   "translit": "sāʿatun",
+   "fr": "heure (durée), moment",
+   "nature": "nom",
+   "lecon": "cite-18",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "saAEap",
+   "fige": true,
+   "formes": [
+    "سَاعَتَيْنِ",
+    "سَاعَاتٍ"
+   ],
+   "exemple": {
+    "ar": "انْتَظَرْتُ صَدِيقِي سَاعَتَيْنِ.",
+    "fr": "J'ai attendu mon ami deux heures."
+   },
+   "remarque": "une durée ; l'heure de l'horloge n'est pas employée",
+   "theme": "temps"
+  },
+  {
+   "id": "zuhr",
+   "ar": "ظُهْرٌ",
+   "translit": "ẓuhrun",
+   "fr": "midi",
+   "nature": "nom",
+   "lecon": "cite-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Zhr",
+   "exemple": {
+    "ar": "يَبْدَأُ الدَّرْسُ بَعْدَ الظُّهْرِ.",
+    "fr": "La leçon commence après midi."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "asr",
+   "ar": "عَصْرٌ",
+   "translit": "ʿaṣrun",
+   "fr": "fin d'après-midi",
+   "nature": "nom",
+   "lecon": "cite-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "EaSor",
+   "exemple": {
+    "ar": "رَجَعَ التُّجَّارُ بَعْدَ الْعَصْرِ.",
+    "fr": "Les marchands sont rentrés en fin d'après-midi."
+   },
+   "theme": "temps"
+  },
+  {
+   "id": "mundhu",
+   "ar": "مُنْذُ",
+   "translit": "munḏu",
+   "fr": "depuis",
+   "nature": "particule",
+   "lecon": "cite-18",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "أَسْكُنُ هُنَا مُنْذُ أُسْبُوعٍ.",
+    "fr": "J'habite ici depuis une semaine."
+   },
+   "remarque": "suivi du génitif",
+   "theme": "temps"
+  },
+  {
    "id": "marhaban",
    "ar": "مَرْحَبًا",
    "translit": "marḥaban",
@@ -8982,7 +9242,7 @@
     "ar": "مَرْحَبًا بِكَ.",
     "fr": "Sois le bienvenu."
    },
-   "remarque": "seul, ou suivi de بِكَ / بِكِ",
+   "remarque": "expression figée, dite par celui qui accueille ; seule, ou suivie de بِكَ / بِكِ",
    "theme": "parole"
   },
   {
@@ -9009,7 +9269,7 @@
    "id": "bikhayr",
    "ar": "بِخَيْرٍ",
    "translit": "bi-ḫayrin",
-   "fr": "bien (« je vais bien »)",
+   "fr": "bien (je vais bien)",
    "nature": "adverbe",
    "lecon": "cite-15",
    "source_sens": "rédigé par IA",
@@ -9017,7 +9277,7 @@
     "ar": "أَنَا بِخَيْرٍ.",
     "fr": "Je vais bien."
    },
-   "remarque": "forme figée, en réponse à كَيْفَ حَالُكَ",
+   "remarque": "expression figée, en réponse à كَيْفَ حَالُكَ",
    "theme": "parole"
   },
   {
@@ -9040,7 +9300,7 @@
    "id": "wulida",
    "ar": "وُلِدَ",
    "translit": "wulida",
-   "fr": "naître (« il est né »)",
+   "fr": "naître (il est né)",
    "nature": "verbe",
    "lecon": "cite-15",
    "source_sens": "rédigé par IA",
@@ -9237,113 +9497,6 @@
    },
    "remarque": "la racine ne suffit pas pour le sens : elle a d'autres emplois",
    "theme": "metiers"
-  },
-  {
-   "id": "yamin",
-   "ar": "يَمِينٌ",
-   "translit": "yamīnun",
-   "fr": "droite",
-   "nature": "nom",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "yamiyn",
-   "exemple": {
-    "ar": "الْحَدِيقَةُ عَلَى يَمِينِكَ.",
-    "fr": "Le jardin est à ta droite."
-   },
-   "remarque": "ici seulement dans عَلَى يَمِينِكَ, عَلَى يَمِينِ + lieu",
-   "theme": "lieux"
-  },
-  {
-   "id": "yasar",
-   "ar": "يَسَارٌ",
-   "translit": "yasārun",
-   "fr": "gauche",
-   "nature": "nom",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "ysr",
-   "exemple": {
-    "ar": "الْمَدْرَسَةُ عَلَى يَسَارِكَ.",
-    "fr": "L'école est à ta gauche."
-   },
-   "theme": "lieux"
-  },
-  {
-   "id": "amama",
-   "ar": "أَمَامَ",
-   "translit": "amāma",
-   "fr": "devant",
-   "nature": "adverbe",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "lemme": ">amaAm",
-   "exemple": {
-    "ar": "السُّوقُ أَمَامَكَ.",
-    "fr": "Le marché est devant toi."
-   },
-   "remarque": "suivi du génitif",
-   "theme": "lieux"
-  },
-  {
-   "id": "khalfa",
-   "ar": "خَلْفَ",
-   "translit": "ḫalfa",
-   "fr": "derrière",
-   "nature": "adverbe",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "lemme": "xalof",
-   "exemple": {
-    "ar": "الْحَدِيقَةُ خَلْفَ الْقَصْرِ.",
-    "fr": "Le jardin est derrière le palais."
-   },
-   "remarque": "suivi du génitif",
-   "theme": "lieux"
-  },
-  {
-   "id": "bayna",
-   "ar": "بَيْنَ",
-   "translit": "bayna",
-   "fr": "entre",
-   "nature": "adverbe",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "lemme": "bayon",
-   "exemple": {
-    "ar": "بَيْتُ نَدِيمٍ بَيْنَ السُّوقِ وَالْمَدْرَسَةِ.",
-    "fr": "La maison de Nadīm est entre le marché et l'école."
-   },
-   "remarque": "بَيْنَ X وَ Y",
-   "theme": "lieux"
-  },
-  {
-   "id": "marra_bi",
-   "ar": "مَرَّ بِـ",
-   "translit": "marra bi",
-   "fr": "passer par, passer devant",
-   "nature": "verbe",
-   "lecon": "cite-17",
-   "source_sens": "rédigé par IA",
-   "passe": "مَرَّ بِـ",
-   "inaccompli": "يَمُرُّ",
-   "exemple": {
-    "ar": "مَرَرْتُ بِالسُّوقِ فِي الصَّبَاحِ.",
-    "fr": "Je suis passé par le marché le matin."
-   },
-   "lemme": "mar~a",
-   "fige": true,
-   "formes": [
-    "مَرَّ",
-    "مَرَرْتُ",
-    "مَرَرْنَا",
-    "تَمُرُّ",
-    "نَمُرُّ"
-   ],
-   "remarque": "verbe doublé : مَرَرْتُ, mais تَمُرُّ ; toujours suivi de بِـ",
-   "theme": "lieux"
   }
  ]
 }

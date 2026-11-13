@@ -33,7 +33,7 @@
           "texte": "Dis qui tu es, d'où tu viens, ce que tu fais et ce que tu aimes."
         }
       ],
-      "objectif": "Se présenter en six ou huit phrases."
+      "objectif": "Se présenter en six à huit phrases."
     },
     {
       "type": "echauffement",
@@ -139,7 +139,7 @@
     {
       "type": "regle",
       "titre": "Se présenter",
-      "texte": "Pour se présenter : اسْمِي, أَنَا مِنْ, وُلِدْتُ فِي, نَشَأْتُ فِي, أَسْكُنُ فِي, puis أُحِبُّ + nom d'action (أُحِبُّ الْقِرَاءَةَ).",
+      "texte": "Pour se présenter : اسْمِي, أَنَا مِنْ, وُلِدْتُ فِي, نَشَأْتُ فِي, أَسْكُنُ فِي, puis أُحِبُّ + nom ou nom d'action (أُحِبُّ الْقِرَاءَةَ).",
       "exemples": [
         "اسْمِي بَاسِمٌ",
         "وُلِدْتُ فِي دِمَشْقَ",
@@ -151,11 +151,11 @@
         "ar": "… بَاسِمٌ.",
         "choix_ar": [
           "اسْمِي",
-          "أَنَا اسْمِي",
+          "اسْمَكَ",
           "اسْمُكَ"
         ],
         "reponse": 0,
-        "explication": "On dit اسْمِي, « mon nom (est) »."
+        "explication": "« mon nom » : اسْمِي ; اسْمُكَ veut dire « ton nom »."
       }
     },
     {
@@ -289,7 +289,7 @@
           "type": "qcm",
           "consigne": "Pour dire ce qu'on aime, on emploie…",
           "choix": [
-            "أُحِبُّ + nom d'action",
+            "أُحِبُّ + nom (ou nom d'action)",
             "أُرِيدُ + passé",
             "اسْمِي + verbe"
           ],
@@ -303,8 +303,8 @@
       "titre": "Bāsim se présente",
       "texte": "Bāsim se présente devant l'assemblée. Lis ; touche un mot pour voir son sens.",
       "phrases": [
-        "مَرْحَبًا. اسْمِي بَاسِمٌ.",
-        "وُلِدْتُ فِي قَرْيَةٍ صَغِيرَةٍ، وَنَشَأْتُ فِي الصَّحْرَاءِ.",
+        "اسْمِي بَاسِمٌ، وَأَنَا مِنْ بَلَدٍ بَعِيدٍ.",
+        "وُلِدْتُ فِي قَرْيَةٍ صَغِيرَةٍ، وَنَشَأْتُ فِي بَغْدَادَ.",
         "أَسْكُنُ الْآنَ فِي بَيْتٍ قَرِيبٍ مِنَ السُّوقِ.",
         "أَتَعَلَّمُ الْقِرَاءَةَ وَالْكِتَابَةَ، وَأُحِبُّ الْقِصَصَ."
       ],
@@ -313,12 +313,12 @@
           "type": "qcm",
           "consigne": "Où Bāsim a-t-il grandi ?",
           "choix": [
-            "dans le désert",
+            "à Bagdad",
             "au marché",
-            "à Bagdad"
+            "à Damas"
           ],
           "reponse": 0,
-          "explication": "نَشَأْتُ فِي الصَّحْرَاءِ."
+          "explication": "نَشَأْتُ فِي بَغْدَادَ."
         },
         {
           "type": "qcm",
@@ -386,24 +386,24 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "بِخَيْرٍ",
           "choix": [
-            "bien (« je vais bien »)",
+            "bien (je vais bien)",
             "bienvenue",
             "merci"
           ],
           "reponse": 0,
-          "explication": "بِخَيْرٍ veut dire « bien (« je vais bien ») »."
+          "explication": "بِخَيْرٍ veut dire « bien (je vais bien) »."
         },
         {
           "type": "sens",
           "consigne": "Que veut dire ce mot ?",
           "ar": "وُلِدَ",
           "choix": [
-            "naître (« il est né »)",
+            "naître (il est né)",
             "grandir",
             "mourir"
           ],
           "reponse": 0,
-          "explication": "وُلِدَ veut dire « naître (« il est né ») »."
+          "explication": "وُلِدَ veut dire « naître (il est né) »."
         },
         {
           "type": "traduire",
@@ -423,7 +423,7 @@
           "choix_ar": [
             "اسْمِي",
             "اسْمُهُ",
-            "أَنَا اسْمِي"
+            "اسْمَكَ"
           ],
           "reponse": 0,
           "explication": "« mon nom » : اسْمِي."
