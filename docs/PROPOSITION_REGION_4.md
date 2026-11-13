@@ -17,7 +17,17 @@ Après les montagnes, le voyageur arrive dans la Cité des Lecteurs : on y lit d
 | 5 | Le Bureau des comptes | 4.13 Relier les idées, 4.14 Tous les nombres |
 | 12 | Le Labyrinthe de la Distraction | Expédition (révisions) ; boss de la région à la fin du niveau Avancé 2 |
 
-Les chapitres B (la Place des débats, 4.15 à 4.22) et C (l'Atelier des copistes, 4.23 à 4.28) viendront avec le niveau Avancé 2 (lieux 6 à 11).
+## Chapitres B et C — Parler, puis lire et écrire seul (leçons 4.15 à 4.28, niveau Avancé 2, ajouté le 13/11/2026)
+
+| N° | Lieu | Leçons |
+| --- | --- | --- |
+| 6 | La Place des débats | 4.15 Se présenter en détail, 4.16 Famille et métiers |
+| 7 | Le Marché couvert | 4.17 Dans la cité, 4.18 Le temps qui passe, 4.19 Au marché |
+| 8 | La Maison de Nadīm | 4.20 Raconter sa journée, 4.21 Donner son avis, 4.22 Mener une conversation |
+| 9 | L'Atelier des copistes | 4.23 et 4.24 Lire sans voyelles |
+| 10 | La Salle du dictionnaire | 4.25 Le dictionnaire, 4.26 Écrire un message |
+| 11 | La Grande Salle de lecture | 4.27 Résumer un récit, 4.28 Un texte classique |
+| 12 | Le Labyrinthe de la Distraction | Examen de la région 4 (boss : la Grande Distraction) |
 
 ## Personnages
 

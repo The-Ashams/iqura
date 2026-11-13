@@ -62,6 +62,7 @@ class CombatScene extends FlameGame {
             ? (switch (region) {
                 2 => 'grand_mirage.png',
                 3 => 'grande_precipitation.png',
+                4 => 'grande_distraction.png',
                 _ => 'gardien.png',
               })
             : region == 4
