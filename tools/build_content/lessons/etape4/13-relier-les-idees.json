@@ -505,12 +505,12 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "صَاحِبٌ",
           "choix": [
-            "compagnon ; propriétaire",
+            "compagnon ; propriétaire, maître (de)",
             "visiteur",
             "gardien"
           ],
           "reponse": 0,
-          "explication": "صَاحِبٌ veut dire « compagnon ; propriétaire ».",
+          "explication": "صَاحِبٌ veut dire « compagnon ; propriétaire, maître (de) ».",
           "revision": true
         }
       ]

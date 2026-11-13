@@ -8059,99 +8059,6 @@
    "theme": "particules"
   },
   {
-   "id": "li_anna",
-   "ar": "لِأَنَّ",
-   "translit": "li-anna",
-   "fr": "parce que",
-   "nature": "particule",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "تَأَخَّرْتُ لِأَنَّ الْجَمَلَ مَرِيضٌ.",
-    "fr": "J'ai été en retard parce que le chameau était malade."
-   },
-   "remarque": "لِـ + أَنَّ : suivi d'un nom en -a",
-   "theme": "particules"
-  },
-  {
-   "id": "li_but",
-   "ar": "لِـ",
-   "translit": "li",
-   "fr": "pour (que), suivi d'un verbe au subjonctif",
-   "nature": "particule",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "جَلَسَ بَاسِمٌ لِيَسْمَعَ الْقِصَّةَ.",
-    "fr": "Bāsim s'est assis pour écouter l'histoire."
-   },
-   "remarque": "devant un nom, لِـ veut dire « à, pour » (leçon 2.15)",
-   "theme": "particules"
-  },
-  {
-   "id": "hatta",
-   "ar": "حَتَّى",
-   "translit": "ḥattā",
-   "fr": "jusqu'à ; jusqu'à ce que, pour que",
-   "nature": "particule",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "lemme": "Hat~aY`",
-   "exemple": {
-    "ar": "عَمِلَ النَّجَّارُ حَتَّى الْمَسَاءِ.",
-    "fr": "Le menuisier a travaillé jusqu'au soir."
-   },
-   "theme": "particules"
-  },
-  {
-   "id": "limadha",
-   "ar": "لِمَاذَا",
-   "translit": "limāḏā",
-   "fr": "pourquoi ?",
-   "nature": "interrogatif",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "lemme": "maA*aA",
-   "exemple": {
-    "ar": "لِمَاذَا تَأَخَّرْتَ؟",
-    "fr": "Pourquoi es-tu en retard ?"
-   },
-   "remarque": "لِـ + مَاذَا ; forme courte : لِمَ",
-   "theme": "questions"
-  },
-  {
-   "id": "sabab",
-   "ar": "سَبَبٌ",
-   "translit": "sababun",
-   "fr": "cause, raison",
-   "nature": "nom",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "sabab",
-   "exemple": {
-    "ar": "مَا سَبَبُ التَّأَخُّرِ؟",
-    "fr": "Quelle est la cause du retard ?"
-   },
-   "theme": "savoir"
-  },
-  {
-   "id": "jaiE",
-   "ar": "جَائِعٌ",
-   "translit": "ǧāʾiʿun",
-   "fr": "qui a faim",
-   "nature": "adjectif",
-   "lecon": "cite-05",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "jwE",
-   "exemple": {
-    "ar": "الطِّفْلُ جَائِعٌ.",
-    "fr": "L'enfant a faim."
-   },
-   "theme": "corps"
-  },
-  {
    "id": "tamyiz",
    "ar": "تَمْيِيزٌ",
    "translit": "tamyīzun",
@@ -8309,157 +8216,111 @@
    "theme": "actions"
   },
   {
-   "id": "qad",
-   "ar": "قَدْ",
-   "translit": "qad",
-   "fr": "(insiste sur le passé) ; (avec l'inaccompli) parfois",
+   "id": "ayyuha",
+   "ar": "أَيُّهَا",
+   "translit": "ayyuhā",
+   "fr": "(mot d'appel devant un nom avec الْ)",
    "nature": "particule",
-   "lecon": "cite-12",
+   "lecon": "cite-11",
    "source_sens": "rédigé par IA",
-   "lemme": "qad",
-   "exemple": {
-    "ar": "قَدْ وَصَلَتِ الْقَافِلَةُ.",
-    "fr": "La caravane est bien arrivée."
-   },
-   "theme": "particules"
-  },
-  {
-   "id": "la_tawkid",
-   "ar": "لَـ",
-   "translit": "la",
-   "fr": "vraiment (insistance)",
-   "nature": "particule",
-   "lecon": "cite-12",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "إِنَّ الطَّرِيقَ لَطَوِيلٌ.",
-    "fr": "Le chemin est vraiment long."
-   },
-   "remarque": "collé au mot ; ne pas confondre avec لِـ « à, pour »",
-   "theme": "particules"
-  },
-  {
-   "id": "tawkid",
-   "ar": "تَوْكِيدٌ",
-   "translit": "tawkīdun",
-   "fr": "insistance",
-   "nature": "nom",
-   "lecon": "cite-12",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "tawokiyd",
-   "exemple": {
-    "ar": "نُونُ التَّوْكِيدِ فِي « لَأَكْتُبَنَّ ».",
-    "fr": "Le nūn d'insistance dans « لَأَكْتُبَنَّ »."
-   },
-   "theme": "savoir"
-  },
-  {
-   "id": "tala",
-   "ar": "طَالَ",
-   "translit": "ṭāla",
-   "fr": "être long, durer",
-   "nature": "verbe",
-   "lecon": "cite-12",
-   "source_sens": "rédigé par IA",
-   "passe": "طَالَ",
-   "inaccompli": "يَطُولُ",
-   "exemple": {
-    "ar": "طَالَ الطَّرِيقُ.",
-    "fr": "Le chemin a été long."
-   },
-   "lemme": "TaAla",
+   "lemme": ">ay~uhaA",
    "fige": true,
    "formes": [
-    "طَالَتْ"
+    "أَيَّتُهَا"
    ],
-   "theme": "temps"
-  },
-  {
-   "id": "abadan",
-   "ar": "أَبَدًا",
-   "translit": "abadan",
-   "fr": "jamais (avec une négation)",
-   "nature": "adverbe",
-   "lecon": "cite-12",
-   "source_sens": "rédigé par IA",
-   "racine": "Abd",
    "exemple": {
-    "ar": "لَنْ أَنْسَى هَٰذِهِ الْقِصَّةَ أَبَدًا.",
-    "fr": "Je n'oublierai jamais cette histoire."
+    "ar": "يَا أَيُّهَا الطَّالِبُ، اكْتُبِ الْجَوَابَ.",
+    "fr": "Étudiant, écris la réponse !"
    },
-   "theme": "temps"
-  },
-  {
-   "id": "li_ajli",
-   "ar": "لِأَجْلِ",
-   "translit": "li-aǧli",
-   "fr": "pour, à cause de (لِـ + أَجْلٌ)",
-   "nature": "particule",
-   "lecon": "cite-09",
-   "source_sens": "rédigé par IA",
-   "lemme": ">ajol",
-   "exemple": {
-    "ar": "سَافَرَ لِأَجْلِ التِّجَارَةِ.",
-    "fr": "Il est parti pour le commerce."
-   },
-   "remarque": "مَفْعُولٌ لِأَجْلِهِ : le complément de motif",
+   "remarque": "au féminin : أَيَّتُهَا ; ne change jamais",
    "theme": "particules"
   },
   {
-   "id": "faala",
-   "ar": "فَعَلَ",
-   "translit": "faʿala",
-   "fr": "faire",
-   "nature": "verbe",
-   "lecon": "cite-09",
-   "source_sens": "rédigé par IA",
-   "passe": "فَعَلَ",
-   "inaccompli": "يَفْعَلُ",
-   "exemple": {
-    "ar": "مَاذَا فَعَلَ التَّاجِرُ؟",
-    "fr": "Qu'a fait le marchand ?"
-   },
-   "lemme": "faEala",
-   "fige": true,
-   "formes": [
-    "فَعَلَتْ",
-    "فَعَلْتُ",
-    "أَفْعَلُ"
-   ],
-   "theme": "actions"
-  },
-  {
-   "id": "tijara",
-   "ar": "تِجَارَةٌ",
-   "translit": "tiǧāratun",
-   "fr": "commerce",
+   "id": "sahib",
+   "ar": "صَاحِبٌ",
+   "translit": "ṣāḥibun",
+   "fr": "compagnon ; propriétaire, maître (de)",
    "nature": "nom",
-   "lecon": "cite-09",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "lemme": "tija`rap",
-   "exemple": {
-    "ar": "التِّجَارَةُ فِي السُّوقِ.",
-    "fr": "Le commerce se fait au marché."
-   },
-   "theme": "commerce"
-  },
-  {
-   "id": "ribh",
-   "ar": "رِبْحٌ",
-   "translit": "ribḥun",
-   "fr": "gain, profit",
-   "nature": "nom",
-   "lecon": "cite-09",
+   "lecon": "cite-11",
    "source_sens": "rédigé par IA",
    "genre": "m",
-   "racine": "rbH",
+   "lemme": "SaAHib",
    "exemple": {
-    "ar": "سَافَرَ التَّاجِرُ طَلَبًا لِلرِّبْحِ.",
-    "fr": "Le marchand est parti en quête de profit."
+    "ar": "يَا صَاحِبَ الْبَيْتِ، افْتَحِ الْبَابَ.",
+    "fr": "Maître de maison, ouvre la porte !"
    },
-   "theme": "commerce"
+   "remarque": "صَاحِبُ الْبَيْتِ : le propriétaire de la maison",
+   "theme": "personnes"
+  },
+  {
+   "id": "nada",
+   "ar": "نَادَى",
+   "translit": "nādā",
+   "fr": "appeler (à haute voix)",
+   "nature": "verbe",
+   "lecon": "cite-11",
+   "source_sens": "rédigé par IA",
+   "passe": "نَادَى",
+   "inaccompli": "يُنَادِي",
+   "exemple": {
+    "ar": "نَادَى نَدِيمٌ بَاسِمًا.",
+    "fr": "Nadīm a appelé Bāsim."
+   },
+   "lemme": "naAdaY`",
+   "fige": true,
+   "formes": [
+    "نَادَتْ"
+   ],
+   "theme": "parole"
+  },
+  {
+   "id": "nida",
+   "ar": "نِدَاءٌ",
+   "translit": "nidāʾun",
+   "fr": "appel ; (en grammaire) l'appel",
+   "nature": "nom",
+   "lecon": "cite-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "nidaA^'",
+   "exemple": {
+    "ar": "سَمِعْتُ نِدَاءَ الْحَارِسِ.",
+    "fr": "J'ai entendu l'appel du gardien."
+   },
+   "theme": "parole"
+  },
+  {
+   "id": "hadir",
+   "ar": "حَاضِرٌ",
+   "translit": "ḥāḍirun",
+   "fr": "présent",
+   "nature": "adjectif",
+   "lecon": "cite-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "HDr",
+   "exemple": {
+    "ar": "بَاسِمٌ حَاضِرٌ.",
+    "fr": "Bāsim est présent."
+   },
+   "remarque": "الْحَاضِرُونَ : l'assistance",
+   "theme": "qualites"
+  },
+  {
+   "id": "zair",
+   "ar": "زَائِرٌ",
+   "translit": "zāʾirun",
+   "fr": "visiteur",
+   "nature": "nom",
+   "lecon": "cite-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "zwr",
+   "exemple": {
+    "ar": "وَصَلَ زَائِرٌ إِلَى الْحَدِيقَةِ.",
+    "fr": "Un visiteur est arrivé au jardin."
+   },
+   "theme": "personnes"
   },
   {
    "id": "illa",
@@ -8565,112 +8426,388 @@
    "theme": "savoir"
   },
   {
-   "id": "ayyuha",
-   "ar": "أَيُّهَا",
-   "translit": "ayyuhā",
-   "fr": "(mot d'appel devant un nom avec الْ)",
-   "nature": "particule",
-   "lecon": "cite-11",
+   "id": "ahada_ashar",
+   "ar": "أَحَدَ عَشَرَ",
+   "translit": "aḥada ʿašara",
+   "fr": "onze",
+   "nature": "nombre",
+   "lecon": "cite-14",
    "source_sens": "rédigé par IA",
-   "lemme": ">ay~uhaA",
+   "racine": "E$r",
    "fige": true,
    "formes": [
-    "أَيَّتُهَا"
+    "أَحَدَ",
+    "عَشَرَ",
+    "إِحْدَى",
+    "عَشْرَةَ"
    ],
    "exemple": {
-    "ar": "يَا أَيُّهَا الطَّالِبُ، اكْتُبِ الْجَوَابَ.",
-    "fr": "Étudiant, écris la réponse !"
+    "ar": "فِي الْكِيسِ أَحَدَ عَشَرَ دِرْهَمًا.",
+    "fr": "Il y a onze dirhams dans la bourse."
    },
-   "remarque": "au féminin : أَيَّتُهَا ; ne change jamais",
+   "remarque": "au féminin : إِحْدَى عَشْرَةَ ; toujours en -a",
+   "theme": "nombres"
+  },
+  {
+   "id": "ithna_ashar",
+   "ar": "اثْنَا عَشَرَ",
+   "translit": "iṯnā ʿašara",
+   "fr": "douze",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "racine": "vny",
+   "fige": true,
+   "formes": [
+    "اثْنَا",
+    "اثْنَيْ",
+    "اثْنَتَا",
+    "اثْنَتَيْ"
+   ],
+   "exemple": {
+    "ar": "كَتَبَ سَمِيرٌ اثْنَتَيْ عَشْرَةَ رِسَالَةً.",
+    "fr": "Samīr a écrit douze lettres."
+   },
+   "remarque": "اثْنَا au nominatif, اثْنَيْ à l'accusatif et au génitif ; au féminin : اثْنَتَا عَشْرَةَ",
+   "theme": "nombres"
+  },
+  {
+   "id": "thalathun",
+   "ar": "ثَلَاثُونَ",
+   "translit": "ṯalāṯūna",
+   "fr": "trente",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "racine": "vlv",
+   "fige": true,
+   "formes": [
+    "ثَلَاثِينَ"
+   ],
+   "exemple": {
+    "ar": "عِنْدَ التَّاجِرِ ثَلَاثُونَ جَمَلًا.",
+    "fr": "Le marchand a trente chameaux."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "arbaun",
+   "ar": "أَرْبَعُونَ",
+   "translit": "arbaʿūna",
+   "fr": "quarante",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "racine": "rbE",
+   "fige": true,
+   "formes": [
+    "أَرْبَعِينَ"
+   ],
+   "exemple": {
+    "ar": "فِي الْمَدْرَسَةِ أَرْبَعُونَ طَالِبًا.",
+    "fr": "Il y a quarante étudiants à l'école."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "khamsun",
+   "ar": "خَمْسُونَ",
+   "translit": "ḫamsūna",
+   "fr": "cinquante",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "lemme": "xamosiyn",
+   "fige": true,
+   "formes": [
+    "خَمْسِينَ"
+   ],
+   "exemple": {
+    "ar": "ثَمَنُ الْقَمِيصِ خَمْسُونَ دِرْهَمًا.",
+    "fr": "Le prix de la chemise est de cinquante dirhams."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "sittun",
+   "ar": "سِتُّونَ",
+   "translit": "sittūna",
+   "fr": "soixante",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "lemme": "sit~iyn",
+   "fige": true,
+   "formes": [
+    "سِتِّينَ"
+   ],
+   "exemple": {
+    "ar": "فِي الدُّكَّانِ سِتُّونَ ثَوْبًا.",
+    "fr": "Il y a soixante vêtements dans la boutique."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "sabun",
+   "ar": "سَبْعُونَ",
+   "translit": "sabʿūna",
+   "fr": "soixante-dix",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "racine": "sbE",
+   "fige": true,
+   "formes": [
+    "سَبْعِينَ"
+   ],
+   "exemple": {
+    "ar": "فِي الصُّنْدُوقِ سَبْعُونَ دِينَارًا.",
+    "fr": "Il y a soixante-dix dinars dans le coffre."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "thamanun",
+   "ar": "ثَمَانُونَ",
+   "translit": "ṯamānūna",
+   "fr": "quatre-vingts",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "lemme": "vama`niyn",
+   "fige": true,
+   "formes": [
+    "ثَمَانِينَ"
+   ],
+   "exemple": {
+    "ar": "فِي الْكِتَابِ ثَمَانُونَ وَرَقَةً.",
+    "fr": "Il y a quatre-vingts feuilles dans le livre."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "tisun",
+   "ar": "تِسْعُونَ",
+   "translit": "tisʿūna",
+   "fr": "quatre-vingt-dix",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "racine": "tsE",
+   "fige": true,
+   "formes": [
+    "تِسْعِينَ"
+   ],
+   "exemple": {
+    "ar": "فِي الرِّسَالَةِ تِسْعُونَ سَطْرًا.",
+    "fr": "Il y a quatre-vingt-dix lignes dans la lettre."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "mia",
+   "ar": "مِائَةٌ",
+   "translit": "miʾatun",
+   "fr": "cent",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "lemme": "miA}ap",
+   "fige": true,
+   "formes": [
+    "مِائَةُ",
+    "مِائَةِ"
+   ],
+   "exemple": {
+    "ar": "ثَمَنُ الْبِسَاطِ مِائَةُ دِرْهَمٍ.",
+    "fr": "Le prix du tapis est de cent dirhams."
+   },
+   "remarque": "l'alif ne se prononce pas (miʾa) ; on écrit aussi مِئَة",
+   "theme": "nombres"
+  },
+  {
+   "id": "alf",
+   "ar": "أَلْفٌ",
+   "translit": "alfun",
+   "fr": "mille",
+   "nature": "nombre",
+   "lecon": "cite-14",
+   "source_sens": "rédigé par IA",
+   "lemme": ">alof",
+   "fige": true,
+   "formes": [
+    "أَلْفُ",
+    "أَلْفِ"
+   ],
+   "exemple": {
+    "ar": "فِي الصُّنْدُوقِ أَلْفُ دِينَارٍ.",
+    "fr": "Il y a mille dinars dans le coffre."
+   },
+   "theme": "nombres"
+  },
+  {
+   "id": "li_anna",
+   "ar": "لِأَنَّ",
+   "translit": "liʾanna",
+   "fr": "parce que",
+   "nature": "particule",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "تَأَخَّرْتُ لِأَنَّ الْجَمَلَ مَرِيضٌ.",
+    "fr": "J'ai été en retard parce que le chameau était malade."
+   },
+   "remarque": "لِـ + أَنَّ : suivi d'un nom en -a",
    "theme": "particules"
   },
   {
-   "id": "sahib",
-   "ar": "صَاحِبٌ",
-   "translit": "ṣāḥibun",
-   "fr": "compagnon ; propriétaire",
-   "nature": "nom",
-   "lecon": "cite-11",
+   "id": "li_but",
+   "ar": "لِـ",
+   "translit": "li",
+   "fr": "pour (que), suivi d'un verbe au subjonctif",
+   "nature": "particule",
+   "lecon": "cite-05",
    "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "SaAHib",
    "exemple": {
-    "ar": "يَا صَاحِبَ الْبَيْتِ، افْتَحِ الْبَابَ.",
-    "fr": "Maître de maison, ouvre la porte !"
+    "ar": "جَلَسَ بَاسِمٌ لِيَسْمَعَ الْقِصَّةَ.",
+    "fr": "Bāsim s'est assis pour écouter l'histoire."
    },
-   "remarque": "صَاحِبُ الْبَيْتِ : le propriétaire de la maison",
-   "theme": "personnes"
+   "remarque": "devant un nom, لِـ veut dire « à, pour » (leçon 2.15)",
+   "theme": "particules"
   },
   {
-   "id": "nada",
-   "ar": "نَادَى",
-   "translit": "nādā",
-   "fr": "appeler (à haute voix)",
-   "nature": "verbe",
-   "lecon": "cite-11",
+   "id": "hatta",
+   "ar": "حَتَّى",
+   "translit": "ḥattā",
+   "fr": "jusqu'à ; jusqu'à ce que, pour que",
+   "nature": "particule",
+   "lecon": "cite-05",
    "source_sens": "rédigé par IA",
-   "passe": "نَادَى",
-   "inaccompli": "يُنَادِي",
+   "lemme": "Hat~aY`",
    "exemple": {
-    "ar": "نَادَى نَدِيمٌ بَاسِمًا.",
-    "fr": "Nadīm a appelé Bāsim."
+    "ar": "عَمِلَ النَّجَّارُ حَتَّى الْمَسَاءِ.",
+    "fr": "Le menuisier a travaillé jusqu'au soir."
    },
-   "lemme": "naAdaY`",
+   "theme": "particules"
+  },
+  {
+   "id": "limadha",
+   "ar": "لِمَاذَا",
+   "translit": "limāḏā",
+   "fr": "pourquoi ?",
+   "nature": "interrogatif",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "lemme": "maA*aA",
+   "exemple": {
+    "ar": "لِمَاذَا تَأَخَّرْتَ؟",
+    "fr": "Pourquoi es-tu en retard ?"
+   },
+   "remarque": "لِـ + مَاذَا ; forme courte : لِمَ",
+   "theme": "questions"
+  },
+  {
+   "id": "sabab",
+   "ar": "سَبَبٌ",
+   "translit": "sababun",
+   "fr": "cause, raison",
+   "nature": "nom",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "sabab",
+   "exemple": {
+    "ar": "مَا سَبَبُ التَّأَخُّرِ؟",
+    "fr": "Quelle est la cause du retard ?"
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "jaiE",
+   "ar": "جَائِعٌ",
+   "translit": "ǧāʾiʿun",
+   "fr": "qui a faim",
+   "nature": "adjectif",
+   "lecon": "cite-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jwE",
+   "exemple": {
+    "ar": "الطِّفْلُ جَائِعٌ.",
+    "fr": "L'enfant a faim."
+   },
+   "theme": "corps"
+  },
+  {
+   "id": "li_ajli",
+   "ar": "لِأَجْلِ",
+   "translit": "liʾaǧli",
+   "fr": "pour, à cause de (لِـ + أَجْلٌ)",
+   "nature": "particule",
+   "lecon": "cite-09",
+   "source_sens": "rédigé par IA",
+   "lemme": ">ajol",
+   "exemple": {
+    "ar": "سَافَرَ لِأَجْلِ التِّجَارَةِ.",
+    "fr": "Il est parti pour le commerce."
+   },
+   "remarque": "مَفْعُولٌ لِأَجْلِهِ : le complément de motif",
+   "theme": "particules"
+  },
+  {
+   "id": "faala",
+   "ar": "فَعَلَ",
+   "translit": "faʿala",
+   "fr": "faire",
+   "nature": "verbe",
+   "lecon": "cite-09",
+   "source_sens": "rédigé par IA",
+   "passe": "فَعَلَ",
+   "inaccompli": "يَفْعَلُ",
+   "exemple": {
+    "ar": "مَاذَا فَعَلَ التَّاجِرُ؟",
+    "fr": "Qu'a fait le marchand ?"
+   },
+   "lemme": "faEala",
    "fige": true,
    "formes": [
-    "نَادَتْ"
+    "فَعَلَتْ",
+    "فَعَلْتُ",
+    "أَفْعَلُ"
    ],
-   "theme": "parole"
+   "theme": "actions"
   },
   {
-   "id": "nida",
-   "ar": "نِدَاءٌ",
-   "translit": "nidāʾun",
-   "fr": "appel ; (en grammaire) l'appel",
+   "id": "tijara",
+   "ar": "تِجَارَةٌ",
+   "translit": "tiǧāratun",
+   "fr": "commerce",
    "nature": "nom",
-   "lecon": "cite-11",
+   "lecon": "cite-09",
    "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "nidaA^'",
+   "genre": "f",
+   "lemme": "tija`rap",
    "exemple": {
-    "ar": "يَا حَرْفُ نِدَاءٍ.",
-    "fr": "يَا est une particule d'appel."
+    "ar": "التِّجَارَةُ فِي السُّوقِ.",
+    "fr": "Le commerce se fait au marché."
    },
-   "remarque": "حَرْفٌ : ici « particule » (en grammaire)",
-   "theme": "parole"
+   "theme": "commerce"
   },
   {
-   "id": "hadir",
-   "ar": "حَاضِرٌ",
-   "translit": "ḥāḍirun",
-   "fr": "présent",
-   "nature": "adjectif",
-   "lecon": "cite-11",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "HDr",
-   "exemple": {
-    "ar": "بَاسِمٌ حَاضِرٌ.",
-    "fr": "Bāsim est présent."
-   },
-   "remarque": "الْحَاضِرُونَ : l'assistance",
-   "theme": "qualites"
-  },
-  {
-   "id": "zair",
-   "ar": "زَائِرٌ",
-   "translit": "zāʾirun",
-   "fr": "visiteur",
+   "id": "ribh",
+   "ar": "رِبْحٌ",
+   "translit": "ribḥun",
+   "fr": "gain, profit",
    "nature": "nom",
-   "lecon": "cite-11",
+   "lecon": "cite-09",
    "source_sens": "rédigé par IA",
    "genre": "m",
-   "racine": "zwr",
+   "racine": "rbH",
    "exemple": {
-    "ar": "وَصَلَ زَائِرٌ إِلَى الْحَدِيقَةِ.",
-    "fr": "Un visiteur est arrivé au jardin."
+    "ar": "سَافَرَ التَّاجِرُ طَلَبًا لِلرِّبْحِ.",
+    "fr": "Le marchand est parti en quête de profit."
    },
-   "theme": "personnes"
+   "theme": "commerce"
   },
   {
    "id": "fa_suite",
@@ -8721,7 +8858,7 @@
   {
    "id": "amma",
    "ar": "أَمَّا… فَـ",
-   "translit": "ammā… fa",
+   "translit": "ammā fa",
    "fr": "quant à…",
    "nature": "particule",
    "lecon": "cite-13",
@@ -8748,6 +8885,89 @@
     "fr": "Nous partirons aujourd'hui ou demain."
    },
    "theme": "particules"
+  },
+  {
+   "id": "qad",
+   "ar": "قَدْ",
+   "translit": "qad",
+   "fr": "(insiste sur le passé) ; (avec l'inaccompli) parfois",
+   "nature": "particule",
+   "lecon": "cite-12",
+   "source_sens": "rédigé par IA",
+   "lemme": "qad",
+   "exemple": {
+    "ar": "قَدْ وَصَلَتِ الْقَافِلَةُ.",
+    "fr": "La caravane est bien arrivée."
+   },
+   "theme": "particules"
+  },
+  {
+   "id": "la_tawkid",
+   "ar": "لَـ",
+   "translit": "la",
+   "fr": "vraiment (insistance)",
+   "nature": "particule",
+   "lecon": "cite-12",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "إِنَّ الطَّرِيقَ لَطَوِيلٌ.",
+    "fr": "Le chemin est vraiment long."
+   },
+   "remarque": "collé au mot ; ne pas confondre avec لِـ « à, pour »",
+   "theme": "particules"
+  },
+  {
+   "id": "tawkid",
+   "ar": "تَوْكِيدٌ",
+   "translit": "tawkīdun",
+   "fr": "insistance",
+   "nature": "nom",
+   "lecon": "cite-12",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "tawokiyd",
+   "exemple": {
+    "ar": "نُونُ التَّوْكِيدِ فِي « لَأَكْتُبَنَّ ».",
+    "fr": "Le nūn d'insistance dans « لَأَكْتُبَنَّ »."
+   },
+   "theme": "savoir"
+  },
+  {
+   "id": "tala",
+   "ar": "طَالَ",
+   "translit": "ṭāla",
+   "fr": "être long, durer",
+   "nature": "verbe",
+   "lecon": "cite-12",
+   "source_sens": "rédigé par IA",
+   "passe": "طَالَ",
+   "inaccompli": "يَطُولُ",
+   "exemple": {
+    "ar": "طَالَ الطَّرِيقُ.",
+    "fr": "Le chemin a été long."
+   },
+   "lemme": "TaAla",
+   "fige": true,
+   "formes": [
+    "طَالَتْ"
+   ],
+   "theme": "temps"
+  },
+  {
+   "id": "abadan",
+   "ar": "أَبَدًا",
+   "translit": "abadan",
+   "fr": "jamais (avec une négation)",
+   "nature": "adverbe",
+   "lecon": "cite-12",
+   "source_sens": "rédigé par IA",
+   "lemme": ">abadFA",
+   "remarque": "sans négation : toujours, à jamais",
+   "exemple": {
+    "ar": "لَنْ أَنْسَى هَٰذِهِ الْقِصَّةَ أَبَدًا.",
+    "fr": "Je n'oublierai jamais cette histoire."
+   },
+   "theme": "temps"
   }
  ]
 }

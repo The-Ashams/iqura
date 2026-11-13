@@ -59,16 +59,15 @@
           "explication": "يَا veut dire « ô (pour appeler quelqu'un) »."
         },
         {
-          "type": "sens",
-          "consigne": "Que veut dire ce mot ?",
-          "ar": "أَبُو سَمِيرٍ",
+          "type": "qcm",
+          "consigne": "Que veut dire l'expression أَبُو سَمِيرٍ ?",
           "choix": [
             "le père de Samīr",
             "le fils de Samīr",
             "l'ami de Samīr"
           ],
           "reponse": 0,
-          "explication": "أَبُو سَمِيرٍ veut dire « le père de Samīr »."
+          "explication": "أَبُو : « père de » (leçon 3.28)."
         }
       ]
     },
@@ -129,7 +128,7 @@
     {
       "type": "regle",
       "titre": "Après يَا : -u sans tanwīn",
-      "texte": "Après يَا, un nom propre ou une personne précise prend -u sans tanwīn : يَا بَاسِمُ، يَا حَارِسُ. Un nom suivi d'un complément prend -a : يَا صَاحِبَ الْبَيْتِ، يَا أَبَا سَمِيرٍ.",
+      "texte": "Après يَا, un nom propre seul ou une personne précise prend -u sans tanwīn : يَا بَاسِمُ، يَا حَارِسُ. Un nom suivi d'un complément prend -a : يَا صَاحِبَ الْبَيْتِ، يَا أَبَا سَمِيرٍ.",
       "exemples": [
         "يَا بَاسِمُ",
         "يَا صَاحِبَ الْبَيْتِ",
@@ -197,12 +196,12 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "صَاحِبٌ",
           "choix": [
-            "compagnon ; propriétaire",
+            "compagnon ; propriétaire, maître (de)",
             "visiteur",
             "gardien"
           ],
           "reponse": 0,
-          "explication": "صَاحِبٌ veut dire « compagnon ; propriétaire »."
+          "explication": "صَاحِبٌ veut dire « compagnon ; propriétaire, maître (de) »."
         },
         {
           "type": "sens",
@@ -277,7 +276,7 @@
         },
         {
           "type": "qcm",
-          "consigne": "Après يَا, un nom propre prend…",
+          "consigne": "Après يَا, un nom propre seul (sans complément) prend…",
           "choix": [
             "-u sans tanwīn",
             "-un avec tanwīn",
@@ -291,7 +290,7 @@
     {
       "type": "lecture",
       "titre": "Les appels du jardin",
-      "texte": "Hāla raconte une matinée au jardin. Lis ; touche un mot pour voir son sens.",
+      "texte": "Voici une matinée au jardin. Lis ; touche un mot pour voir son sens.",
       "phrases": [
         "وَصَلَ زَائِرٌ إِلَى الْحَدِيقَةِ.",
         "نَادَتْ هَالَةُ الْحَارِسَ: « يَا حَارِسُ، افْتَحِ الْبَابَ. »",

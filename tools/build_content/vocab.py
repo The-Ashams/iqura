@@ -365,6 +365,11 @@ def write(con: sqlite3.Connection, words: list[dict], lesson_order: dict[str, tu
     return len(rows)
 
 
+# Onze et douze (décision de l'utilisateur, 12/11/2026, cahier §16) : le nom
+# de ces deux nombres n'est pas un extrait ; la paire n'est pas signalée.
+ELEVEN_TWELVE = ({"احد", "احدي", "اثنا", "اثني", "اثنتا", "اثنتي"}, {"عشر", "عشره"})
+
+
 def quran_pair_warnings(texts: dict[str, str], words: list[dict],
                         pairs: set[tuple[str, ...]]) -> list[str]:
     """Paires qui se suivent dans le Coran (décision du conseiller,
@@ -394,6 +399,8 @@ def quran_pair_warnings(texts: dict[str, str], words: list[dict],
             continue
         for i in range(len(ws) - 1):
             if (ws[i], ws[i + 1]) not in pairs:
+                continue
+            if key(toks[i]) in ELEVEN_TWELVE[0] and key(toks[i + 1]) in ELEVEN_TWELVE[1]:
                 continue
             kinds = [kind(t) for t in toks[i:i + 2]]
             if None not in kinds and "plein" in kinds:

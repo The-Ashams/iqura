@@ -170,6 +170,16 @@ class ExamTest(unittest.TestCase):
             self.check(exam)
 
 
+class ElevenTwelveTest(unittest.TestCase):
+    def test_onze_et_douze_ne_sont_pas_signales(self):
+        words = [{"id": "n", "ar": "أَحَدَ عَشَرَ", "nature": "nombre", "formes": ["أَحَدَ", "عَشَرَ"]}]
+        pairs = {("أحد", "عشر")}
+        texts = {"t": "فِي الْكِيسِ أَحَدَ عَشَرَ دِرْهَمًا."}
+        import quran_guard
+        pairs = {tuple(quran_guard.words_of("أَحَدَ عَشَرَ"))}
+        self.assertEqual(vocab.quran_pair_warnings(texts, words, pairs), [])
+
+
 class DoubledMarkTest(unittest.TestCase):
     def test_signe_double_refuse(self):
         self.assertEqual(vocab.doubled_mark("أََجِدُ"), "\u064e\u064e")

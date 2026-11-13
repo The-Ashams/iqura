@@ -50,7 +50,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Le chemin est vraiment long. »",
+          "consigne": "Complète : « Certes, le chemin est long. »",
           "ar": "إِنَّ … طَوِيلٌ.",
           "choix_ar": [
             "الطَّرِيقَ",
@@ -120,7 +120,7 @@
         "ar": "أَبَدًا",
         "choix": [
           "jamais (avec une négation)",
-          "toujours",
+          "souvent",
           "parfois"
         ],
         "reponse": 0,
@@ -233,10 +233,10 @@
           "choix_ar": [
             "لَقَدْ فَهِمْتُ الدَّرْسَ",
             "لَنْ أَفْهَمَ الدَّرْسَ",
-            "قَدْ أَفْهَمُ الدَّرْسَ"
+            "قَدْ أَنْسَى الدَّرْسَ"
           ],
           "reponse": 0,
-          "explication": "لَقَدْ + passé : insistance ; قَدْ أَفْهَمُ dirait « il arrive que je comprenne »."
+          "explication": "لَقَدْ + passé : insistance ; لَنْ أَفْهَمَ dirait « je ne comprendrai pas »."
         },
         {
           "type": "completer",
@@ -292,10 +292,10 @@
       "titre": "Les maximes du bassin",
       "texte": "Hāla lit les maximes gravées près du bassin (maximes rédigées par IA). Lis ; touche un mot pour voir son sens.",
       "phrases": [
-        "إِنَّ الصَّبْرَ لَجَمِيلٌ.",
+        "إِنَّ الطَّرِيقَ الطَّوِيلَ لَجَمِيلٌ.",
         "قَدْ يَطُولُ الطَّرِيقُ، لَٰكِنَّ الْمُسَافِرَ يَصِلُ.",
         "لَا تَتْرُكَنَّ الْكِتَابَةَ.",
-        "قَالَ بَاسِمٌ: « لَقَدْ فَهِمْتُ، وَلَنْ أَنْسَى أَبَدًا. »"
+        "لَقَدْ فَهِمْتُ، وَلَنْ أَنْسَى أَبَدًا."
       ],
       "questions": [
         {
@@ -311,11 +311,11 @@
         },
         {
           "type": "qcm",
-          "consigne": "Que dit Bāsim ?",
+          "consigne": "Que dit la dernière maxime ?",
           "choix": [
-            "qu'il a vraiment compris et n'oubliera jamais",
-            "qu'il n'a pas compris",
-            "qu'il oubliera vite"
+            "« J'ai vraiment compris et je n'oublierai jamais »",
+            "« Je n'ai pas compris »",
+            "« J'oublierai vite »"
           ],
           "reponse": 0,
           "explication": "لَقَدْ فَهِمْتُ، وَلَنْ أَنْسَى أَبَدًا."
@@ -330,11 +330,11 @@
           "consigne": "Comment dit-on « Le chemin est vraiment long. » ?",
           "choix_ar": [
             "إِنَّ الطَّرِيقَ لَطَوِيلٌ.",
-            "إِنَّ لَالطَّرِيقَ طَوِيلٌ.",
+            "إِنَّ لَلطَّرِيقَ طَوِيلٌ.",
             "إِنَّ الطَّرِيقَ لَطَوِيلًا."
           ],
           "reponse": 0,
-          "explication": "لَـ va sur l'attribut, jamais sur le sujet."
+          "explication": "لَـ va sur l'attribut, pas sur le sujet qui suit إِنَّ."
         },
         {
           "type": "ordonner",
@@ -376,7 +376,7 @@
           "ar": "أَبَدًا",
           "choix": [
             "jamais (avec une négation)",
-            "toujours",
+            "hier",
             "vite"
           ],
           "reponse": 0,
@@ -411,7 +411,7 @@
           "ar": "… يَتَأَخَّرُ بَاسِمٌ.",
           "choix_ar": [
             "قَدْ",
-            "لَقَدْ",
+            "لَمْ",
             "لَنْ"
           ],
           "reponse": 0,
@@ -419,7 +419,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « J'écrirai sans faute. »",
+          "consigne": "Complète : « J'écrirai demain, sans faute. »",
           "ar": "… غَدًا.",
           "choix_ar": [
             "لَأَكْتُبَنَّ",

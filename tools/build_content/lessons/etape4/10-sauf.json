@@ -153,7 +153,7 @@
     {
       "type": "regle",
       "titre": "إِلَّا après une négation : « seulement »",
-      "texte": "مَا nie aussi une phrase sans verbe : مَا فِي الْكِيسِ خُبْزٌ. Après une négation, إِلَّا veut dire « seulement », et le nom garde le cas de sa fonction : مَا حَضَرَ إِلَّا بَاسِمٌ.",
+      "texte": "مَا nie aussi une phrase sans verbe qui commence par فِي : مَا فِي الْكِيسِ خُبْزٌ. Après une négation, إِلَّا veut dire « seulement », et le nom garde le cas de sa fonction : مَا حَضَرَ إِلَّا بَاسِمٌ.",
       "exemples": [
         "مَا حَضَرَ إِلَّا بَاسِمٌ",
         "مَا فِي الْكِيسِ إِلَّا دِرْهَمٌ"
