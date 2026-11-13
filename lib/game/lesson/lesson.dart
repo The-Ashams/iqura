@@ -4,6 +4,7 @@
 library;
 
 import '../../core/audio_policy.dart';
+import '../../engines/arabic/vowels.dart';
 
 /// Marque « gauche à droite » (U+200E), invisible.
 const String _lrm = '\u200E';
@@ -263,6 +264,9 @@ sealed class LessonStep {
         text: frenchWithArabic(j['texte'] as String),
         inscription: strings(j['inscription']),
         sentences: strings(j['phrases']),
+        vowelLevel: vowelLevelFrom(j['sans_voyelles'] as String?),
+        keep: strings(j['garder']).toSet(),
+        source: j['source'] as String?,
         questions: [
           for (final e in j['questions'] as List)
             LessonQuestion.fromJson(e as Map<String, dynamic>),
@@ -365,7 +369,20 @@ class ReadingStep extends LessonStep {
     this.sentences = const [],
     this.title,
     this.mushaf = false,
+    this.vowelLevel,
+    this.keep = const {},
+    this.source,
   });
+
+  /// Palier de lecture sans voyelles (région 4, chapitre C) ; nul : vocalisé.
+  final VowelLevel? vowelLevel;
+
+  /// Mots gardés vocalisés au palier C (mots vraiment ambigus).
+  final Set<String> keep;
+
+  /// Source d'un texte classique (titre, auteur, édition, page) ; nul :
+  /// exemple construit.
+  final String? source;
 
   /// Court texte gradué (région 2) : phrases, mots touchables.
   final List<String> sentences;

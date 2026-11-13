@@ -33,6 +33,7 @@ ATELIER_TYPES = {"ordonner", "traduire", "completer", "repondre"}
 READING_TYPES = {"qcm", "sens", "reperer_mot"}
 BOSS_TYPES = {"qcm", "sens", "traduire", "completer", "ecouter", "lire"}
 MIN_KNOWN = 0.95
+VOWEL_LEVELS = {"A", "B", "C"}
 MIN_PRODUCTION = 0.40
 
 
@@ -162,6 +163,15 @@ def validate(lesson: dict, *, check_ar, known_keys: set[str], lesson_words: list
                 question(q, f"{here} question {j + 1}", READING_TYPES)
             if "extraits" in s or "verset" in s:
                 raise LessonError(f"{here} : aucun verset ni extrait coranique (avenant n° 1)")
+            # Région 4, chapitre C : texte affiché sans voyelles par paliers
+            # (plan d'Avancé 2, 4.23) ; il reste écrit vocalisé dans les données.
+            level = s.get("sans_voyelles")
+            if level is not None and level not in VOWEL_LEVELS:
+                raise LessonError(f"{here} : palier sans voyelles inconnu {level}")
+            all_tokens = {t for p in phrases for t in p.split()}
+            for t in s.get("garder", []):
+                if level != "C" or t not in all_tokens:
+                    raise LessonError(f"{here} : « {t} » à garder vocalisé : palier C et mot du texte attendus")
         elif t == "atelier":
             exs = s.get("exercices", [])
             if not 2 <= len(exs) <= 6:

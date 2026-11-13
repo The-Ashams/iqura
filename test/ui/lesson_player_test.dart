@@ -17,6 +17,7 @@ import 'package:iqura/features/resources/resources.dart';
 import 'package:iqura/features/review/review.dart';
 import 'package:iqura/features/settings/settings.dart';
 import 'package:iqura/game/lesson/lesson.dart';
+import 'package:iqura/engines/arabic/vowels.dart';
 import 'package:iqura/game/exam/region_exam.dart';
 import 'package:iqura/ui/game/exam/data_exam_screen.dart';
 import 'package:iqura/ui/game/exam/region_exam_screen.dart';
@@ -784,6 +785,31 @@ void main() {
       );
     });
   }
+
+  testWidgets(
+    'lecture sans voyelles : palier, bouton seulement après la réponse',
+    (tester) async {
+      Widget text(bool allowed) => appWith(
+        Scaffold(
+          body: GradedText(
+            sentences: const ['ذَهَبَ التَّاجِرُ إِلَى السُّوقِ.'],
+            vowelLevel: VowelLevel.c,
+            revealAllowed: allowed,
+          ),
+        ),
+      );
+      await tester.pumpWidget(text(false));
+      await tester.pump();
+      expect(find.text('ذهب'), findsOneWidget);
+      expect(find.text('ذَهَبَ'), findsNothing);
+      expect(find.text('Voir les voyelles (après ta réponse)'), findsOneWidget);
+      await tester.pumpWidget(text(true));
+      await tester.pump();
+      await tester.tap(find.text('Voir les voyelles'));
+      await tester.pump();
+      expect(find.text('ذَهَبَ'), findsOneWidget);
+    },
+  );
 
   testWidgets(
     'fiche de mot : schème après le début de 3.2, nom d\'action après 3.4',

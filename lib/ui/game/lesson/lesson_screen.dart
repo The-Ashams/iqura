@@ -566,6 +566,7 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
   int? _tapped;
   int? _selected;
   bool? _right;
+  bool _answeredText = false;
 
   LessonQuestion get _q => widget.step.questions[_question];
 
@@ -584,6 +585,7 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
       _tapped = null;
       _selected = null;
       _right = null;
+      _answeredText = false;
     });
   }
 
@@ -621,7 +623,12 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
         ),
         const SizedBox(height: 12),
         if (widget.step.sentences.isNotEmpty)
-          GradedText(sentences: widget.step.sentences)
+          GradedText(
+            sentences: widget.step.sentences,
+            vowelLevel: widget.step.vowelLevel,
+            keep: widget.step.keep,
+            revealAllowed: _answeredText,
+          )
         else
           Container(
             padding: const EdgeInsets.all(16),
@@ -654,7 +661,7 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
           ),
         const SizedBox(height: 6),
         Text(
-          '${_ReadingView.source} · rédigé par IA',
+          widget.step.source ?? '${_ReadingView.source} · rédigé par IA',
           style: TextStyle(color: GameColors.muted, fontSize: 13),
         ),
         const SizedBox(height: 12),
@@ -666,6 +673,7 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
           QuestionView(
             key: ValueKey('lecture-$_question'),
             question: q,
+            onAnswered: (_, _) => setState(() => _answeredText = true),
             onContinue: _nextQuestion,
           ),
       ],

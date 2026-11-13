@@ -8,6 +8,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/audio_policy.dart';
 import '../../../core/providers.dart';
+import '../../../engines/arabic/vowels.dart';
 import '../../../features/progress/lesson_progress.dart';
 import '../../../game/lesson/lesson.dart';
 import '../../../game/vocab/word.dart';
@@ -260,13 +261,41 @@ class _Line extends StatelessWidget {
 /// Court texte gradué : chaque phrase s'entend en la touchant longuement ;
 /// chaque mot se touche pour voir sa fiche (cahier §4 : « le mot inconnu
 /// devient une carte »).
-class GradedText extends ConsumerWidget {
-  const GradedText({super.key, required this.sentences});
+class GradedText extends ConsumerStatefulWidget {
+  const GradedText({
+    super.key,
+    required this.sentences,
+    this.vowelLevel,
+    this.keep = const {},
+    this.revealAllowed = true,
+  });
 
   final List<String> sentences;
 
+  /// Palier sans voyelles ; nul : texte vocalisé.
+  final VowelLevel? vowelLevel;
+  final Set<String> keep;
+
+  /// « Voir les voyelles » : seulement après la réponse (jamais pendant une
+  /// question notée).
+  final bool revealAllowed;
+
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<GradedText> createState() => _GradedTextState();
+}
+
+class _GradedTextState extends ConsumerState<GradedText> {
+  bool _vowels = false;
+
+  String _shown(String t) {
+    final level = widget.vowelLevel;
+    if (level == null || (_vowels && widget.revealAllowed)) return t;
+    return widget.keep.contains(t) ? t : stripWord(t, level);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final sentences = widget.sentences;
     final db = ref.watch(contentDatabaseProvider);
     return Container(
       padding: const EdgeInsets.all(16),
@@ -340,7 +369,7 @@ class GradedText extends ConsumerWidget {
                               );
                             },
                             child: ArabicText(
-                              t,
+                              _shown(t),
                               baseSize: 30,
                               style: const TextStyle(color: Color(0xFF2A1F18)),
                             ),
@@ -355,6 +384,22 @@ class GradedText extends ConsumerWidget {
             'Touche un mot pour voir son sens.',
             style: TextStyle(color: Color(0xFF6A5D4D), fontSize: 13),
           ),
+          if (widget.vowelLevel != null)
+            Align(
+              alignment: Alignment.centerLeft,
+              child: TextButton(
+                onPressed: widget.revealAllowed
+                    ? () => setState(() => _vowels = !_vowels)
+                    : null,
+                child: Text(
+                  !widget.revealAllowed
+                      ? 'Voir les voyelles (après ta réponse)'
+                      : _vowels
+                      ? 'Cacher les voyelles'
+                      : 'Voir les voyelles',
+                ),
+              ),
+            ),
         ],
       ),
     );
