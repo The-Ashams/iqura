@@ -132,7 +132,7 @@
     {
       "type": "regle",
       "titre": "Un texte sans voyelles",
-      "texte": "Les textes ordinaires n'écrivent ni les voyelles brèves, ni le sukūn, ni le petit alif (هذا, لكن : on lit toujours hāḏā, lākinna). On s'appuie sur les lettres longues, l'article, les mots-outils et la place du mot.",
+      "texte": "Les textes ordinaires n'écrivent ni les voyelles brèves, ni le sukūn, ni le petit alif (هذا, لكن : on lit quand même le ā long). On s'appuie sur les lettres longues, l'article, les mots-outils et la place du mot.",
       "exemples": [
         "ذَهَبَ التَّاجِرُ إِلَى السُّوقِ",
         "هَٰذَا النَّصُّ سَهْلٌ"
@@ -152,14 +152,14 @@
     {
       "type": "regle",
       "titre": "La place décide",
-      "texte": "Un squelette se lit parfois de deux façons : ذَهَبَ « il est allé » ou ذَهَبٌ « or ». En tête de phrase, c'est souvent le verbe ; juste après une préposition, ou suivi d'un adjectif, c'est un nom.",
+      "texte": "Un squelette se lit parfois de deux façons : ذَهَبَ « il est allé » ou ذَهَبٌ « or ». En tête, souvent le verbe ; juste après une préposition, un nom ; suivi d'un adjectif, souvent un nom.",
       "exemples": [
         "ذَهَبَ التَّاجِرُ إِلَى السُّوقِ",
         "فِي الْكِيسِ ذَهَبٌ كَثِيرٌ"
       ],
       "question": {
         "type": "qcm",
-        "consigne": "Dans « في الكيس ذهب كثير », ذهب se lit…",
+        "consigne": "« Dans le sac, il y a beaucoup d'or » : dans « في الكيس ذهب كثير », ذهب se lit…",
         "choix_ar": [
           "ذَهَبٌ",
           "ذَهَبَ",
@@ -266,7 +266,7 @@
             "كُتِبَ"
           ],
           "reponse": 0,
-          "explication": "En tête, suivi d'un sujet et d'un complément : le verbe كَتَبَ."
+          "explication": "Le verbe en tête, avec son sujet الطالب et son complément الدرس : c'est l'actif, كَتَبَ."
         },
         {
           "type": "completer",
@@ -338,7 +338,7 @@
             "كُتِبَ"
           ],
           "reponse": 0,
-          "explication": "Le verbe en tête, suivi de son sujet : كَتَبَ."
+          "explication": "Le verbe en tête, avec son sujet الطالب : c'est l'actif, كَتَبَ."
         }
       ]
     },

@@ -718,3 +718,17 @@ Références :
 - 4.17 et 4.18 au Marché couvert (lieu 7), comme le prévoit `docs/PROPOSITION_REGION_4.md` ; Nadīm y reste le maître, Hāla prend la leçon 4.19.
 - 4.20 : le thé (anachronique) est remplacé par des dattes ; أَوَّلُ en tête de fiche sans tanwīn (diptote au sens « premier »), أَوَّلًا « d'abord ».
 - 4.19 : شُكْرًا ne change pas, لَكَ / لَكِ selon la personne ; le prix se demande avec بِكَمْ (aucun choix كَمْ seul).
+
+## Décisions du conseiller (13/11/2026, leçons 4.21 et 4.22)
+
+1. **إِذَنْ + inaccompli** : إِذَنْ se place après la phrase (« نَلْتَقِي غَدًا إِذَنْ ») ; postposé, il ne gouverne pas le verbe, qui reste à l'indicatif. On n'enseigne pas le subjonctif après إِذَنْ. ⚠ ajouté : jamais إِذَنْ en tête directement suivi d'un inaccompli. Même place en 4.24 (« الْمَعْنَى الْمُحْتَمَلُ إِذَنْ مَكَانُ اللَّعِبِ »).
+2. **« lentement »** : عَلَى مَهْلٍ (classique) remplace بِبُطْءٍ (surtout moderne) ; racine mhl.
+3. **أَرَى أَنْ + verbe** : « je suis d'avis de », d'où « je propose de ».
+4. **مَعْنًى** : hors Corpus, aucune racine affichée (ع ن ي absente de la source ; jamais rattaché à Enw). Le plan (« R Eny ») est corrigé ainsi.
+
+## Choix de construction (13/11/2026, suite)
+
+- 4.21 et 4.22 ont lieu à la Maison de Nadīm (lieu 8), comme dans `docs/PROPOSITION_REGION_4.md` ; la mention « Place des débats » du plan ci-dessus pour ces deux leçons est remplacée.
+- Par prudence (même règle que يَمِين, خَلْف, بِخَيْرٍ) : رَأْيٌ, دَلِيلٌ, أَصَبْتَ, أَصْلٌ, وَزْنٌ, فِعْلٌ en racine seule, sans lemme ni fréquence (les lemmes du Corpus couvrent d'autres sens).
+- 4.22 : « Damas » remplacé (mot non enseigné) ; le dialogue porte sur le débat de 4.21.
+- 4.24 : les deux lectures au palier C contiennent chacune un mot nouveau à deviner (مَلْعَب, مَكْتَب), dans la limite de 5 %.

@@ -10139,7 +10139,7 @@
    "id": "asl",
    "ar": "أَصْلٌ",
    "translit": "aṣlun",
-   "fr": "origine ; (en grammaire) lettre de la racine",
+   "fr": "origine ; (en grammaire) racine d'un mot (ses lettres de base)",
    "nature": "nom",
    "lecon": "cite-24",
    "source_sens": "rédigé par IA",
@@ -10151,7 +10151,7 @@
    ],
    "exemple": {
     "ar": "الْأَصْلُ ك ت ب.",
-    "fr": "Les lettres de la racine sont k t b."
+    "fr": "La racine est k t b."
    },
    "remarque": "sens de grammaire ; la racine ne suffit pas pour le sens",
    "theme": "ecriture"
@@ -10215,7 +10215,7 @@
    "id": "muhtamal",
    "ar": "مُحْتَمَلٌ",
    "translit": "muḥtamalun",
-   "fr": "probable, possible",
+   "fr": "possible, envisageable",
    "nature": "adjectif",
    "lecon": "cite-24",
    "source_sens": "rédigé par IA",
@@ -10227,7 +10227,7 @@
    ],
    "exemple": {
     "ar": "الْمَعْنَى الْمُحْتَمَلُ مَكَانُ اللَّعِبِ.",
-    "fr": "Le sens probable est « lieu du jeu »."
+    "fr": "Le sens possible est « lieu du jeu »."
    },
    "remarque": "même racine que حَمَلَ ; la racine ne suffit pas pour le sens",
    "theme": "savoir"
