@@ -1,0 +1,518 @@
+{
+  "id": "cite-02",
+  "etape": 4,
+  "ordre": 2,
+  "format": 3,
+  "titre": "« Si seulement… »",
+  "objectif": "Dire ce qui n'a pas eu lieu avec لَوْ, et « sans… » avec لَوْلَا.",
+  "statut": "ia_non_verifie",
+  "lieu": "porte_cite",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-01"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ",
+    "سَلْمَى"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Avec إِنْ, la chose peut encore arriver."
+        },
+        {
+          "qui": "nadim",
+          "texte": "Avec لَوْ, elle n'a pas eu lieu : on imagine ce qui serait arrivé."
+        }
+      ],
+      "objectif": "Employer لَوْ et لَوْلَا avec une réponse en لَـ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Quand tu arriveras, écris une lettre. »",
+          "ar": "إِذَا وَصَلْتَ … رِسَالَةً.",
+          "choix_ar": [
+            "فَاكْتُبْ",
+            "اكْتُبْ",
+            "كَتَبْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Ordre en réponse : فَـ (leçon 4.1)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَرْطٌ",
+          "choix": [
+            "condition",
+            "réponse",
+            "question"
+          ],
+          "reponse": 0,
+          "explication": "شَرْطٌ veut dire « condition »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire إِنْ dans إِنْ تَدْرُسْ تَفْهَمْ ?",
+          "choix": [
+            "si",
+            "certes",
+            "que"
+          ],
+          "reponse": 0,
+          "explication": "إِنْ « si » (leçon 4.1)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "وَصَلْنَا بَعْدَ الْمَسَاءِ.",
+          "fr": "Nous sommes arrivés à la nuit tombée."
+        },
+        {
+          "qui": "nadim",
+          "ar": "لَوْ كَانَ الطَّرِيقُ قَصِيرًا لَوَصَلْنَا قَبْلَ الْمَسَاءِ.",
+          "fr": "Si le chemin avait été court, nous serions arrivés avant le soir."
+        },
+        {
+          "qui": "basim",
+          "ar": "لَوْلَا الْبَرْدُ لَجَلَسْنَا فِي الْحَدِيقَةِ.",
+          "fr": "Sans le froid, nous nous serions assis dans le jardin."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pourquoi ne se sont-ils pas assis dans le jardin ?",
+        "choix": [
+          "à cause du froid",
+          "parce que le chemin était court",
+          "parce qu'ils sont arrivés tôt"
+        ],
+        "reponse": 0,
+        "explication": "لَوْلَا الْبَرْدُ : « sans le froid »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "law",
+        "lawla",
+        "la_jawab",
+        "mal"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مَالٌ",
+        "choix": [
+          "argent, biens",
+          "marché",
+          "chemin"
+        ],
+        "reponse": 0,
+        "explication": "مَالٌ veut dire « argent, biens »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "لَوْ : ce qui n'a pas eu lieu",
+      "texte": "لَوْ (« si » pour ce qui n'a pas eu lieu) est suivi du passé, et sa réponse prend souvent لَـ : لَوْ دَرَسْتَ لَفَهِمْتَ.",
+      "exemples": [
+        "لَوْ دَرَسْتَ لَفَهِمْتَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire لَوْ دَرَسْتَ لَفَهِمْتَ ?",
+        "choix": [
+          "Si tu avais étudié, tu aurais compris.",
+          "Si tu étudies, tu comprendras.",
+          "Tu as étudié et tu as compris."
+        ],
+        "reponse": 0,
+        "explication": "لَوْ : ce qui n'a pas eu lieu."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "لَوْلَا : « sans… »",
+      "texte": "لَوْلَا (« sans ») est suivi d'un nom en -u, puis d'une réponse en لَـ : لَوْلَا الْبَرْدُ لَجَلَسْنَا فِي الْحَدِيقَةِ.",
+      "exemples": [
+        "لَوْلَا الْبَرْدُ",
+        "لَجَلَسْنَا"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Sans le froid, nous nous serions assis dans le jardin. »",
+        "ar": "لَوْلَا … لَجَلَسْنَا فِي الْحَدِيقَةِ.",
+        "choix_ar": [
+          "الْبَرْدُ",
+          "الْبَرْدَ",
+          "الْبَرْدِ"
+        ],
+        "reponse": 0,
+        "explication": "Après لَوْلَا : nom en -u."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "إِنْ ou لَوْ ?",
+      "texte": "إِنْ دَرَسْتَ فَهِمْتَ : c'est encore possible. لَوْ دَرَسْتَ لَفَهِمْتَ : ce n'est pas arrivé.",
+      "exemples": [
+        "إِنْ دَرَسْتَ فَهِمْتَ",
+        "لَوْ دَرَسْتَ لَفَهِمْتَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Bāsim n'a pas étudié. Que lui dit-on ?",
+        "choix_ar": [
+          "لَوْ دَرَسْتَ لَفَهِمْتَ",
+          "إِنْ دَرَسْتَ فَهِمْتَ",
+          "إِذَا دَرَسْتَ فَهِمْتَ"
+        ],
+        "reponse": 0,
+        "explication": "Ce n'est pas arrivé : لَوْ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَوْ",
+          "choix": [
+            "si (pour ce qui n'a pas eu lieu)",
+            "sans",
+            "quand"
+          ],
+          "reponse": 0,
+          "explication": "لَوْ veut dire « si (pour ce qui n'a pas eu lieu) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَوْلَا",
+          "choix": [
+            "sans, s'il n'y avait pas",
+            "si",
+            "certes"
+          ],
+          "reponse": 0,
+          "explication": "لَوْلَا veut dire « sans, s'il n'y avait pas »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « si tu avais étudié, tu aurais compris la leçon » ?",
+          "choix_ar": [
+            "لَوْ دَرَسْتَ لَفَهِمْتَ الدَّرْسَ",
+            "إِنْ دَرَسْتَ فَهِمْتَ الدَّرْسَ",
+            "لَوْلَا دَرَسْتَ لَفَهِمْتَ الدَّرْسَ"
+          ],
+          "reponse": 0,
+          "explication": "Ce qui n'a pas eu lieu : لَوْ + لَـ ; لَوْلَا est suivi d'un nom."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si le chemin avait été court, nous serions arrivés avant le soir. »",
+          "ar": "لَوْ كَانَ الطَّرِيقُ قَصِيرًا … قَبْلَ الْمَسَاءِ.",
+          "choix_ar": [
+            "لَوَصَلْنَا",
+            "فَوَصَلْنَا",
+            "نَصِلُ"
+          ],
+          "reponse": 0,
+          "explication": "Réponse de لَوْ : لَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si j'avais de l'argent, je partirais pour Bagdad. »",
+          "ar": "لَوْ كَانَ عِنْدِي … لَسَافَرْتُ إِلَى بَغْدَادَ.",
+          "choix_ar": [
+            "مَالٌ",
+            "مَالًا",
+            "مَالٍ"
+          ],
+          "reponse": 0,
+          "explication": "مَالٌ est le sujet de كَانَ : il reste en -u."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Sans Salmā, j'aurais oublié la clé. »",
+          "ar": "لَوْلَا سَلْمَى … الْمِفْتَاحَ.",
+          "choix_ar": [
+            "لَنَسِيتُ",
+            "أَنْسَى",
+            "فَنَسِيتُ"
+          ],
+          "reponse": 0,
+          "explication": "Réponse de لَوْلَا : لَـ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après لَوْلَا, le nom est…",
+          "choix": [
+            "en -u",
+            "en -a",
+            "en -i"
+          ],
+          "reponse": 0,
+          "explication": "لَوْلَا الْبَرْدُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle phrase dit une chose encore possible ?",
+          "choix_ar": [
+            "إِنْ دَرَسْتَ فَهِمْتَ",
+            "لَوْ دَرَسْتَ لَفَهِمْتَ",
+            "لَوْلَا الدَّرْسُ لَفَهِمْتَ"
+          ],
+          "reponse": 0,
+          "explication": "إِنْ : encore possible."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le marchand en retard",
+      "texte": "Nadīm raconte l'arrivée d'un marchand. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "وَصَلَ التَّاجِرُ إِلَى الْمَدِينَةِ بَعْدَ الْمَسَاءِ.",
+        "قَالَ: « لَوْ كَانَ الطَّرِيقُ قَصِيرًا لَوَصَلْتُ قَبْلَ الْمَسَاءِ. »",
+        "« لَوْلَا الْبَرْدُ لَجَلَسْتُ فِي السُّوقِ. »",
+        "« لَوْ كَانَ عِنْدِي مَالٌ لَسَافَرْتُ إِلَى بَغْدَادَ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quand le marchand est-il arrivé ?",
+          "choix": [
+            "à la nuit tombée",
+            "avant le soir",
+            "le matin"
+          ],
+          "reponse": 0,
+          "explication": "بَعْدَ الْمَسَاءِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'est-ce qui lui manque pour aller à Bagdad ?",
+          "choix": [
+            "de l'argent",
+            "un chameau",
+            "une lettre"
+          ],
+          "reponse": 0,
+          "explication": "لَوْ كَانَ عِنْدِي مَالٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Sans le froid, nous nous serions assis dans le jardin. » ?",
+          "choix_ar": [
+            "لَوْلَا الْبَرْدُ لَجَلَسْنَا فِي الْحَدِيقَةِ.",
+            "لَوْلَا الْبَرْدَ لَجَلَسْنَا فِي الْحَدِيقَةِ.",
+            "لَوِ الْبَرْدُ جَلَسْنَا فِي الْحَدِيقَةِ."
+          ],
+          "reponse": 0,
+          "explication": "لَوْلَا + nom en -u, réponse en لَـ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre لَوْ, le verbe, la réponse : « Si tu avais étudié, tu aurais compris. »",
+          "tuiles": [
+            "لَفَهِمْتَ",
+            "دَرَسْتَ",
+            "لَوْ",
+            "فَفَهِمْتَ"
+          ],
+          "solution": [
+            "لَوْ",
+            "دَرَسْتَ",
+            "لَفَهِمْتَ"
+          ],
+          "explication": "La réponse de لَوْ prend ici لَـ : لَفَهِمْتَ ; فَـ ne convient pas après لَوْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Sans Bāsim, la caravane serait partie. »",
+          "ar": "لَوْلَا بَاسِمٌ … الْقَافِلَةُ.",
+          "choix_ar": [
+            "لَسَافَرَتِ",
+            "سَتُسَافِرُ",
+            "فَسَافَرَتِ"
+          ],
+          "reponse": 0,
+          "explication": "Réponse de لَوْلَا : لَـ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَوْ",
+          "choix": [
+            "si (pour ce qui n'a pas eu lieu)",
+            "si (chose attendue)",
+            "sans"
+          ],
+          "reponse": 0,
+          "explication": "لَوْ veut dire « si (pour ce qui n'a pas eu lieu) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَالٌ",
+          "choix": [
+            "argent, biens",
+            "chemin",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "مَالٌ veut dire « argent, biens »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « sans le froid, nous nous serions assis » ?",
+          "choix_ar": [
+            "لَوْلَا الْبَرْدُ لَجَلَسْنَا",
+            "لَوْلَا الْبَرْدِ جَلَسْنَا",
+            "لَوِ الْبَرْدُ لَجَلَسْنَا"
+          ],
+          "reponse": 0,
+          "explication": "لَوْلَا + -u ; réponse en لَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si tu avais étudié, tu aurais compris. »",
+          "ar": "لَوْ دَرَسْتَ …",
+          "choix_ar": [
+            "لَفَهِمْتَ",
+            "فَفَهِمْتَ",
+            "تَفْهَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Réponse de لَوْ : لَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Sans Salmā, j'aurais oublié la clé. »",
+          "ar": "لَوْلَا … لَنَسِيتُ الْمِفْتَاحَ.",
+          "choix_ar": [
+            "سَلْمَى",
+            "لِسَلْمَى",
+            "مَعَ سَلْمَى"
+          ],
+          "reponse": 0,
+          "explication": "لَوْلَا est suivi directement du nom."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si le chemin avait été court, nous serions arrivés. »",
+          "ar": "لَوْ كَانَ الطَّرِيقُ … لَوَصَلْنَا.",
+          "choix_ar": [
+            "قَصِيرًا",
+            "قَصِيرٌ",
+            "قَصِيرٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut de كَانَ : -a."
+        },
+        {
+          "type": "qcm",
+          "consigne": "لَوْ parle d'une chose…",
+          "choix": [
+            "qui n'a pas eu lieu",
+            "qui va sûrement arriver",
+            "qui arrive chaque jour"
+          ],
+          "reponse": 0,
+          "explication": "لَوْ : irréel."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après لَوْلَا (« sans »), on met…",
+          "choix": [
+            "un nom en -u",
+            "un verbe au passé",
+            "un nom en -a"
+          ],
+          "reponse": 0,
+          "explication": "لَوْلَا الْبَرْدُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle phrase dit une chose qui n'a pas eu lieu ?",
+          "choix_ar": [
+            "لَوْ دَرَسْتَ لَفَهِمْتَ",
+            "إِنْ دَرَسْتَ فَهِمْتَ",
+            "إِذَا دَرَسْتَ فَهِمْتَ"
+          ],
+          "reponse": 0,
+          "explication": "لَوْ + لَـ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِذَا",
+          "choix": [
+            "quand, si (chose attendue)",
+            "sans",
+            "jamais"
+          ],
+          "reponse": 0,
+          "explication": "إِذَا veut dire « quand, si (chose attendue) ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si le froid est vif, ne pars pas. »",
+          "ar": "إِذَا كَانَ الْبَرْدُ شَدِيدًا … تُسَافِرْ.",
+          "choix_ar": [
+            "فَلَا",
+            "لَا",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Défense en réponse : فَلَا.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَارَ",
+          "choix": [
+            "devenir",
+            "rester",
+            "être"
+          ],
+          "reponse": 0,
+          "explication": "صَارَ veut dire « devenir ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu dis ce qui n'a pas eu lieu avec لَوْ, et « sans… » avec لَوْلَا, la réponse en لَـ.",
+      "suite": "À la Maison des messagers : rapporter ce que quelqu'un a dit."
+    }
+  ]
+}

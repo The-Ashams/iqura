@@ -1,0 +1,407 @@
+/// Écrans des leçons de la région 2 (format 3) : dialogue, les mots, texte
+/// gradué à lire (mots touchables), et la fiche de mot partagée avec le
+/// dictionnaire.
+library;
+
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../../core/audio_policy.dart';
+import '../../../core/providers.dart';
+import '../../../engines/arabic/vowels.dart';
+import '../../../features/progress/lesson_progress.dart';
+import '../../../game/lesson/lesson.dart';
+import '../../../game/vocab/word.dart';
+import '../../widgets/arabic_text.dart';
+import '../pixel.dart';
+import 'question_view.dart';
+
+/// Dialogue : répliques en arabe (touche pour entendre), traduction à la
+/// demande, puis la question « qu'as-tu compris ? ».
+class DialogueView extends ConsumerStatefulWidget {
+  const DialogueView({super.key, required this.step, required this.onNext});
+
+  final DialogueStep step;
+  final VoidCallback onNext;
+
+  @override
+  ConsumerState<DialogueView> createState() => _DialogueViewState();
+}
+
+class _DialogueViewState extends ConsumerState<DialogueView> {
+  bool _french = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final names = {
+      for (final c in ref.watch(contentDatabaseProvider).allCharacters())
+        c.id: c.name,
+    };
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        PixelWindow(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              for (final l in widget.step.lines) ...[
+                Text(
+                  l.speaker == 'voyageur' ? 'Toi' : names[l.speaker] ?? '',
+                  style: TextStyle(color: GameColors.accent, fontSize: 15),
+                ),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: SpokenArabic(l.arabic, size: 32),
+                ),
+                if (_french)
+                  Text(
+                    l.french,
+                    style: TextStyle(color: GameColors.muted, fontSize: 15),
+                  ),
+                const SizedBox(height: 8),
+              ],
+              Row(
+                children: [
+                  TextButton(
+                    onPressed: () => setState(() => _french = !_french),
+                    child: Text(
+                      _french ? 'Cacher la traduction' : 'Voir la traduction',
+                    ),
+                  ),
+                  const Spacer(),
+                  ConstructedExampleTag(color: GameColors.muted),
+                ],
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 12),
+        QuestionView(question: widget.step.question, onContinue: widget.onNext),
+      ],
+    );
+  }
+}
+
+/// Les mots : une fiche par mot nouveau, puis la question.
+class WordsView extends ConsumerWidget {
+  const WordsView({super.key, required this.step, required this.onNext});
+
+  final WordsStep step;
+  final VoidCallback onNext;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final db = ref.watch(contentDatabaseProvider);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        for (final id in step.words)
+          if (db.word(id) case final w?)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 10),
+              child: WordCard(word: w),
+            ),
+        QuestionView(question: step.question, onContinue: onNext),
+      ],
+    );
+  }
+}
+
+/// Fiche de mot complète (avenant n° 2) : sens, nature, genre, pluriel,
+/// passé et inaccompli, racine et famille, fréquence, exemple, sources.
+class WordCard extends ConsumerWidget {
+  const WordCard({super.key, required this.word, this.compact = false});
+
+  final Word word;
+
+  /// Sans famille ni exemple (aperçu au toucher d'un mot).
+  final bool compact;
+
+  /// Leçon qui enseigne le schème (3.2) et le nom d'action (3.4) : ces
+  /// lignes restent masquées tant que la leçon n'est pas commencée
+  /// (décision du conseiller, 07/11/2026).
+  static const schemeLesson = 'moteur-02';
+  static const actionNounLesson = 'moteur-04';
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final w = word;
+    final progress = ref.watch(lessonProgressProvider);
+    final showScheme = progress.containsKey(schemeLesson);
+    final showActionNoun = progress.containsKey(actionNounLesson);
+    final family = w.rootId == null || compact
+        ? const <Word>[]
+        : [
+            for (final o in ref.watch(contentDatabaseProvider).words())
+              if (o.rootId == w.rootId && o.id != w.id) o,
+          ];
+    final muted = TextStyle(color: GameColors.muted, fontSize: 14);
+    return PixelWindow(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(w.french, style: const TextStyle(fontSize: 20)),
+                    Text('${w.natureLabel} · ${w.translit}', style: muted),
+                    if (w.remark != null) Text(w.remark!, style: muted),
+                  ],
+                ),
+              ),
+              SpokenArabic(w.arabic, size: 40),
+            ],
+          ),
+          if (showScheme && w.scheme != null)
+            _Line(
+              label: 'Schème (calculé à partir du Corpus)',
+              arabic: w.scheme!,
+            ),
+          if (w.plural != null) _Line(label: 'Pluriel', arabic: w.plural!),
+          if (showScheme && w.pluralScheme != null)
+            _Line(label: 'Schème du pluriel', arabic: w.pluralScheme!),
+          if (w.past != null) _Line(label: 'Passé', arabic: w.past!),
+          if (w.present != null) _Line(label: 'Inaccompli', arabic: w.present!),
+          if (showActionNoun && w.actionNoun != null)
+            _Line(label: "Nom d'action", arabic: w.actionNoun!),
+          if (w.rootLetters != null) ...[
+            const SizedBox(height: 6),
+            Row(
+              children: [
+                Text('Racine : ', style: muted),
+                ArabicText(
+                  w.rootLetters!.split('').join(' '),
+                  baseSize: 24,
+                  style: TextStyle(color: GameColors.accent),
+                ),
+                const Spacer(),
+                if (w.occurrences != null)
+                  Text('${w.occurrences} fois dans le Coran', style: muted),
+              ],
+            ),
+            if (family.isNotEmpty)
+              Wrap(
+                spacing: 12,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  Text('Même racine :', style: muted),
+                  for (final o in family)
+                    Text.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                            text: o.arabic,
+                            style: const TextStyle(
+                              fontFamily: ArabicFonts.text,
+                              fontSize: 22,
+                            ),
+                          ),
+                          TextSpan(text: ' (${o.french})', style: muted),
+                        ],
+                      ),
+                    ),
+                ],
+              ),
+            if (!compact)
+              Text(
+                'La racine aide à retenir ; elle ne suffit pas à deviner le '
+                'sens d\'un mot.',
+                style: muted.copyWith(fontSize: 12),
+              ),
+          ],
+          if (!compact && w.exampleArabic != null) ...[
+            const SizedBox(height: 6),
+            Align(
+              alignment: Alignment.centerRight,
+              child: SpokenArabic(w.exampleArabic!, size: 26),
+            ),
+            Text(w.exampleFrench ?? '', style: muted),
+          ],
+          const SizedBox(height: 4),
+          Text(
+            [
+              if (w.lemmaId != null)
+                'Racine et fréquence : Quranic Arabic Corpus'
+              else if (w.rootId != null)
+                'Racine : Quranic Arabic Corpus (mot absent du Corpus)',
+              'Sens${w.exampleArabic != null ? ' et exemple' : ''} : '
+                  '${w.meaningSource}',
+              if (w.exampleArabic != null) 'exemple construit',
+            ].join(' · '),
+            style: muted.copyWith(fontSize: 12),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _Line extends StatelessWidget {
+  const _Line({required this.label, required this.arabic});
+
+  final String label;
+  final String arabic;
+
+  @override
+  Widget build(BuildContext context) => Row(
+    children: [
+      Text(
+        '$label : ',
+        style: TextStyle(color: GameColors.muted, fontSize: 14),
+      ),
+      const Spacer(),
+      SpokenArabic(arabic, size: 26),
+    ],
+  );
+}
+
+/// Court texte gradué : chaque phrase s'entend en la touchant longuement ;
+/// chaque mot se touche pour voir sa fiche (cahier §4 : « le mot inconnu
+/// devient une carte »).
+class GradedText extends ConsumerStatefulWidget {
+  const GradedText({
+    super.key,
+    required this.sentences,
+    this.vowelLevel,
+    this.keep = const {},
+    this.revealAllowed = true,
+  });
+
+  final List<String> sentences;
+
+  /// Palier sans voyelles ; nul : texte vocalisé.
+  final VowelLevel? vowelLevel;
+  final Set<String> keep;
+
+  /// « Voir les voyelles » : seulement après la réponse (jamais pendant une
+  /// question notée).
+  final bool revealAllowed;
+
+  @override
+  ConsumerState<GradedText> createState() => _GradedTextState();
+}
+
+class _GradedTextState extends ConsumerState<GradedText> {
+  bool _vowels = false;
+
+  String _shown(String t) {
+    final level = widget.vowelLevel;
+    if (level == null || (_vowels && widget.revealAllowed)) return t;
+    return widget.keep.contains(t) ? t : stripWord(t, level);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final sentences = widget.sentences;
+    final db = ref.watch(contentDatabaseProvider);
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: const Color(0xFFF6EFDF),
+        borderRadius: BorderRadius.circular(6),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          for (final s in sentences)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 6),
+              child: Row(
+                textDirection: TextDirection.rtl,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  if (AudioPolicy.enabled)
+                    IconButton(
+                      tooltip: 'Écouter la phrase (synthèse)',
+                      icon: const Icon(Icons.volume_up, size: 20),
+                      color: const Color(0xFF4A3F33),
+                      onPressed: db.audioFile(s) == null
+                          ? null
+                          : () => playLessonAudio(ref, s),
+                    ),
+                  Expanded(
+                    child: Wrap(
+                      textDirection: TextDirection.rtl,
+                      spacing: 8,
+                      runSpacing: 2,
+                      children: [
+                        for (final t in s.split(' '))
+                          InkWell(
+                            onTap: () {
+                              final found = db.wordsForToken(t);
+                              if (found.isEmpty) return;
+                              showModalBottomSheet<void>(
+                                context: context,
+                                backgroundColor: GameColors.night,
+                                isScrollControlled: found.length > 1,
+                                builder: (_) => SingleChildScrollView(
+                                  padding: const EdgeInsets.all(12),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.stretch,
+                                    children: [
+                                      if (found.length > 1)
+                                        Text(
+                                          'Plusieurs mots s\'écrivent ainsi : '
+                                          'regarde les voyelles.',
+                                          style: TextStyle(
+                                            color: GameColors.muted,
+                                            fontSize: 14,
+                                          ),
+                                        ),
+                                      for (final w in found)
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                            bottom: 8,
+                                          ),
+                                          child: WordCard(
+                                            word: w,
+                                            compact: true,
+                                          ),
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
+                            child: ArabicText(
+                              _shown(t),
+                              baseSize: 30,
+                              style: const TextStyle(color: Color(0xFF2A1F18)),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          const Text(
+            'Touche un mot pour voir son sens.',
+            style: TextStyle(color: Color(0xFF6A5D4D), fontSize: 13),
+          ),
+          if (widget.vowelLevel != null)
+            Align(
+              alignment: Alignment.centerLeft,
+              child: TextButton(
+                onPressed: widget.revealAllowed
+                    ? () => setState(() => _vowels = !_vowels)
+                    : null,
+                child: Text(
+                  !widget.revealAllowed
+                      ? 'Voir les voyelles (après ta réponse)'
+                      : _vowels
+                      ? 'Cacher les voyelles'
+                      : 'Voir les voyelles',
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}

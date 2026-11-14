@@ -1,0 +1,575 @@
+{
+  "id": "moteur-19",
+  "etape": 3,
+  "ordre": 19,
+  "format": 3,
+  "titre": "La forme X",
+  "objectif": "Comprendre la forme X اسْتَفْعَلَ : demander, ou juger qu'une chose est telle.",
+  "statut": "ia_non_verifie",
+  "lieu": "tour",
+  "maitre": "rabab",
+  "prerequis": [
+    "moteur-18"
+  ],
+  "apercu": [
+    "رَبَابُ",
+    "سَلْمَى"
+  ],
+  "schemes": [
+    "اسْتَفْعَلَ",
+    "يَسْتَفْعِلُ",
+    "اسْتِفْعَال",
+    "افْتَعَلَ",
+    "يَفْتَعِلُ",
+    "أَفْعَلَ",
+    "انْفَعَلَ",
+    "تَفَاعَلَ",
+    "فَعَلَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "texte": "Nous voici à la Tour du guet. D'en haut, on voit loin, on demande, on juge."
+        },
+        {
+          "qui": "rabab",
+          "texte": "La forme X met اسْتَـ devant la racine : طَعَامٌ « nourriture » → اسْتَطْعَمَ « demander à manger »."
+        }
+      ],
+      "objectif": "Reconnaître la forme X et ses deux sens les plus fréquents."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج م ع dans le moule افْتَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اجْتَمَعَ",
+            "جَمَعَ",
+            "جَمْعٌ"
+          ],
+          "reponse": 0,
+          "explication": "ج م ع dans افْتَعَلَ : اجْتَمَعَ (leçon 3.18)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de اضْطَرَبَ ?",
+          "choix_ar": [
+            "ض ر ب",
+            "ض ط ر",
+            "ط ر ب"
+          ],
+          "reponse": 0,
+          "explication": "Le ت de la forme VIII devient ط (leçon 3.18)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَمَعَ",
+          "choix": [
+            "il a écouté attentivement",
+            "il a entendu",
+            "il a demandé"
+          ],
+          "reponse": 0,
+          "explication": "Forme VIII de س م ع (leçon 3.18)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "اسْتَكْثَرْتُ الثَّمَنَ فِي السُّوقِ!",
+          "fr": "J'ai trouvé le prix trop élevé au marché !"
+        },
+        {
+          "qui": "rabab",
+          "ar": "وَالْقَمِيصُ؟",
+          "fr": "Et la tunique ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "اسْتَحْسَنْتُ الْقَمِيصَ، وَلَٰكِنَّ الثَّمَنَ كَثِيرٌ.",
+          "fr": "J'ai trouvé la tunique belle, mais le prix est élevé."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'a pensé Bāsim de la tunique ?",
+        "choix": [
+          "il l'a trouvée belle",
+          "il l'a trouvée petite",
+          "il l'a trouvée laide"
+        ],
+        "reponse": 0,
+        "explication": "اسْتَحْسَنْتُ الْقَمِيصَ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "istakhraja",
+        "istatama",
+        "istafhama",
+        "istansakha",
+        "istakthara",
+        "istasghara",
+        "istahsana",
+        "istaqbala"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "اسْتَقْبَلَ",
+        "choix": [
+          "il a accueilli",
+          "il a écouté",
+          "il a demandé"
+        ],
+        "reponse": 0,
+        "explication": "اسْتَقْبَلَ veut dire « il a accueilli »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "اسْتَـ devant la racine",
+      "texte": "Forme X, moule اسْتَفْعَلَ : souvent demander quelque chose (اسْتَطْعَمَ « demander à manger », اسْتَفْهَمَ « demander une explication ») ou juger qu'une chose est telle (اسْتَكْثَرَ « trouver que c'est beaucoup »).",
+      "exemples": [
+        "اسْتَطْعَمَ",
+        "اسْتَفْهَمَ",
+        "اسْتَكْثَرَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire اسْتَصْغَرَ, de صَغِيرٌ « petit » ?",
+        "choix": [
+          "trouver petit",
+          "devenir petit",
+          "plus petit"
+        ],
+        "reponse": 0,
+        "explication": "Forme X : juger qu'une chose est telle."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Inaccompli et nom d'action",
+      "texte": "Inaccompli يَسْتَفْعِلُ : يَسْتَخْرِجُ « il extrait ». Nom d'action اسْتِفْعَال : اسْتِخْرَاجٌ « extraction ».",
+      "exemples": [
+        "يَسْتَخْرِجُ",
+        "اسْتِخْرَاجٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est l'inaccompli de اسْتَقْبَلَ ?",
+        "choix_ar": [
+          "يَسْتَقْبِلُ",
+          "يُقَابِلُ",
+          "اسْتِقْبَالٌ"
+        ],
+        "reponse": 0,
+        "explication": "Forme X : يَسْتَفْعِلُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Attention aux ressemblances",
+      "texte": "اسْتَمَعَ est une forme VIII (س م ع), et اسْمٌ un nom : on compte les lettres de la racine avant de dire « forme X ».",
+      "exemples": [
+        "اسْتَمَعَ",
+        "اسْمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Lequel est une forme X ?",
+        "choix_ar": [
+          "اسْتَخْرَجَ",
+          "اسْتَمَعَ",
+          "اسْمٌ"
+        ],
+        "reponse": 0,
+        "explication": "اسْتَـ + خ ر ج : forme X."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Une tendance",
+      "texte": "Demander ou juger, ce n'est qu'une tendance de la forme X : اسْتَقْبَلَ « accueillir » ne demande ni ne juge. On vérifie toujours dans le dictionnaire.",
+      "exemples": [
+        "اسْتَقْبَلَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Lequel ne dit ni une demande ni un jugement ?",
+        "choix_ar": [
+          "اسْتَقْبَلَ",
+          "اسْتَطْعَمَ",
+          "اسْتَكْثَرَ"
+        ],
+        "reponse": 0,
+        "explication": "اسْتَقْبَلَ « accueillir » : un contre-exemple de la tendance."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَخْرَجَ",
+          "choix": [
+            "il a extrait, tiré",
+            "il a écouté attentivement",
+            "il est sorti"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَخْرَجَ veut dire « il a extrait, tiré »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَحْسَنَ",
+          "choix": [
+            "il a trouvé beau",
+            "il a été beau",
+            "il a réparé"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَحْسَنَ veut dire « il a trouvé beau »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il accueille » ?",
+          "choix_ar": [
+            "يَسْتَقْبِلُ",
+            "يُقَابِلُ",
+            "اسْتَقْبَلَ"
+          ],
+          "reponse": 0,
+          "explication": "« il accueille » se dit يَسْتَقْبِلُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il fait copier » ?",
+          "choix_ar": [
+            "يَسْتَنْسِخُ",
+            "اسْتَنْسَخَ",
+            "يَكْتُبُ"
+          ],
+          "reponse": 0,
+          "explication": "« il fait copier » se dit يَسْتَنْسِخُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de اسْتَفْهَمَ ?",
+          "choix_ar": [
+            "اسْتَفْعَلَ",
+            "افْتَعَلَ",
+            "انْفَعَلَ"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَـ + racine : اسْتَفْعَلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de اسْتَخْرَجَ ?",
+          "choix_ar": [
+            "خ ر ج",
+            "س ت خ",
+            "س خ ر"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَـ est la forme : خ ر ج."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ث ر dans le moule اسْتَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اسْتَكْثَرَ",
+            "كَثُرَ",
+            "أَكْثَرُ"
+          ],
+          "reponse": 0,
+          "explication": "ك ث ر dans اسْتَفْعَلَ : اسْتَكْثَرَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ه م dans le moule اسْتَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اسْتَفْهَمَ",
+            "فَهَّمَ",
+            "فَهِمَ"
+          ],
+          "reponse": 0,
+          "explication": "ف ه م dans اسْتَفْعَلَ : اسْتَفْهَمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le vieil homme a accueilli les invités. »",
+          "ar": "… الشَّيْخُ الضُّيُوفَ.",
+          "choix_ar": [
+            "اسْتَقْبَلَ",
+            "قَابَلَ",
+            "يَسْتَقْبِلُ"
+          ],
+          "reponse": 0,
+          "explication": "Forme X, passé : اسْتَقْبَلَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les hommes tirent l'eau du puits. »",
+          "ar": "… الرِّجَالُ الْمَاءَ مِنَ الْبِئْرِ.",
+          "choix_ar": [
+            "يَسْتَخْرِجُ",
+            "اسْتَخْرَجَ",
+            "يَخْرُجُ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli, verbe en tête au singulier : يَسْتَخْرِجُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Au pied de la tour",
+      "texte": "Rabāb raconte une journée au pied de la tour. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الصَّبَاحِ، اسْتَخْرَجَ الرِّجَالُ الْمَاءَ مِنَ الْبِئْرِ.",
+        "وَاسْتَقْبَلَ الشَّيْخُ الضُّيُوفَ عِنْدَ الْبَابِ.",
+        "اسْتَطْعَمَ فَقِيرٌ الْخَبَّازَ، وَقَدَّمَ الْخَبَّازُ الْخُبْزَ.",
+        "فِي الْمَسَاءِ، اسْتَنْسَخَ التَّاجِرُ كِتَابًا قَدِيمًا."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'a fait le boulanger ?",
+          "choix": [
+            "il a offert le pain",
+            "il a demandé à manger",
+            "il a accueilli les invités"
+          ],
+          "reponse": 0,
+          "explication": "وَقَدَّمَ الْخَبَّازُ الْخُبْزَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a fait le marchand le soir ?",
+          "choix": [
+            "il a fait copier un vieux livre",
+            "il a écrit une lettre",
+            "il a trouvé le prix trop élevé"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَنْسَخَ التَّاجِرُ كِتَابًا قَدِيمًا."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le voyageur a trouvé le prix trop élevé. » ?",
+          "choix_ar": [
+            "اسْتَكْثَرَ الْمُسَافِرُ الثَّمَنَ.",
+            "كَثُرَ الْمُسَافِرُ الثَّمَنَ.",
+            "الثَّمَنُ اسْتَكْثَرَ الْمُسَافِرَ."
+          ],
+          "reponse": 0,
+          "explication": "« Le voyageur a trouvé le prix trop élevé. » se dit اسْتَكْثَرَ الْمُسَافِرُ الثَّمَنَ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « L'étudiant a demandé une explication au maître. »",
+          "tuiles": [
+            "الْمُعَلِّمَ",
+            "الطَّالِبُ",
+            "اسْتَفْهَمَ",
+            "فَهِمَ"
+          ],
+          "solution": [
+            "اسْتَفْهَمَ",
+            "الطَّالِبُ",
+            "الْمُعَلِّمَ"
+          ],
+          "explication": "Verbe, sujet, puis la personne interrogée en complément."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Salmā a trouvé la tunique belle. »",
+          "ar": "… سَلْمَى الْقَمِيصَ.",
+          "choix_ar": [
+            "اسْتَحْسَنَتْ",
+            "حَسُنَتْ",
+            "اسْتَحْسَنَ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet féminin (une personne) : اسْتَحْسَنَتْ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَطْعَمَ",
+          "choix": [
+            "il a demandé à manger",
+            "il a nourri",
+            "il a mangé"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَطْعَمَ veut dire « il a demandé à manger »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَكْثَرَ",
+          "choix": [
+            "il a trouvé que c'était beaucoup",
+            "il est devenu nombreux",
+            "plus nombreux"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَكْثَرَ veut dire « il a trouvé que c'était beaucoup »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَنْسَخَ",
+          "choix": [
+            "il a fait copier",
+            "il a vendu",
+            "il a correspondu avec"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَنْسَخَ veut dire « il a fait copier »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il demande une explication » ?",
+          "choix_ar": [
+            "يَسْتَفْهِمُ",
+            "يُفَهِّمُ",
+            "يَفْهَمُ"
+          ],
+          "reponse": 0,
+          "explication": "« il demande une explication » se dit يَسْتَفْهِمُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La forme X veut souvent dire…",
+          "choix": [
+            "demander, ou juger qu'une chose est telle",
+            "faire l'action ensemble",
+            "subir l'action"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَطْعَمَ, اسْتَكْثَرَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le nom d'action de اسْتَخْرَجَ ?",
+          "choix_ar": [
+            "اسْتِخْرَاجٌ",
+            "إِخْرَاجٌ",
+            "خُرُوجٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme X : اسْتِفْعَال."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ص غ ر dans le moule اسْتَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اسْتَصْغَرَ",
+            "صَغِيرٌ",
+            "أَصْغَرُ"
+          ],
+          "reponse": 0,
+          "explication": "ص غ ر dans اسْتَفْعَلَ : اسْتَصْغَرَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ح س ن dans le moule اسْتَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اسْتَحْسَنَ",
+            "حَسُنَ",
+            "يَحْسُنُ"
+          ],
+          "reponse": 0,
+          "explication": "ح س ن dans اسْتَفْعَلَ : اسْتَحْسَنَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand fait copier le livre. »",
+          "ar": "التَّاجِرُ … الْكِتَابَ.",
+          "choix_ar": [
+            "يَسْتَنْسِخُ",
+            "اسْتَنْسَخَ",
+            "يَكْتُبُ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli de la forme X : يَسْتَنْسِخُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق ر ب dans le moule افْتَعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اقْتَرَبَ",
+            "يَقْتَرِبُ",
+            "قَرِيبٌ"
+          ],
+          "reponse": 0,
+          "explication": "افْتَعَلَ : اقْتَرَبَ (leçon 3.18).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "انْصَرَفَ",
+          "choix": [
+            "il s'en est allé",
+            "il s'est renversé",
+            "il est parti en courant"
+          ],
+          "reponse": 0,
+          "explication": "انْصَرَفَ veut dire « il s'en est allé ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de انْتَظَرَ ?",
+          "choix_ar": [
+            "افْتَعَلَ",
+            "انْفَعَلَ",
+            "اسْتَفْعَلَ"
+          ],
+          "reponse": 0,
+          "explication": "Le ن est de la racine : افْتَعَلَ (leçon 3.18).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais la forme X اسْتَفْعَلَ / يَسْتَفْعِلُ : اسْتَطْعَمَ « demander à manger », اسْتَكْثَرَ « trouver que c'est beaucoup », اسْتَقْبَلَ « accueillir ».",
+      "suite": "À la Tour du guet : les participes et les noms d'action de toutes les formes."
+    }
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "id": "cite-24",
+  "etape": 4,
+  "ordre": 24,
+  "format": 3,
+  "titre": "Lire sans voyelles (2)",
+  "objectif": "Lire comme dans un livre, et deviner un mot inconnu par la racine, le schème et le contexte.",
+  "statut": "ia_non_verifie",
+  "lieu": "atelier_copistes",
+  "maitre": "zuhayr",
+  "prerequis": [
+    "cite-23"
+  ],
+  "apercu": [
+    "زُهَيْرٌ",
+    "بَاسِمٌ",
+    "الْمَلْعَبِ",
+    "مَلْعَبٌ",
+    "الْمَكْتَبِ",
+    "مَكْتَبٌ",
+    "مَفْعَلٌ",
+    "ل ع ب",
+    "ك ت ب"
+  ],
+  "schemes": [
+    "مَفْعَل",
+    "فَاعِل",
+    "مَفْعُول"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "zuhayr",
+          "texte": "Aujourd'hui, plus aucune voyelle : on lit comme dans un livre."
+        },
+        {
+          "qui": "zuhayr",
+          "texte": "Et si un mot t'est inconnu, tu as trois outils : la racine, le schème, le contexte."
+        }
+      ],
+      "objectif": "Lire au palier C et deviner un mot inconnu."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Choisis le mot bien vocalisé : « Le marchand est allé au marché. »",
+          "ar": "… التاجر إلى السوق",
+          "choix_ar": [
+            "ذَهَبَ",
+            "ذَهَبٌ",
+            "ذُهِبَ"
+          ],
+          "reponse": 0,
+          "explication": "Le verbe en tête : ذَهَبَ (leçon 4.23)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le schème فَاعِل donne souvent…",
+          "choix": [
+            "celui qui fait l'action",
+            "le lieu de l'action",
+            "ce qui subit l'action"
+          ],
+          "reponse": 0,
+          "explication": "كَاتِبٌ : celui qui écrit (région 3)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le schème مَفْعُول donne souvent…",
+          "choix": [
+            "ce qui subit l'action",
+            "celui qui fait l'action",
+            "le lieu de l'action"
+          ],
+          "reponse": 0,
+          "explication": "مَكْتُوبٌ : ce qui est écrit."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَا مَعْنَى هَٰذِهِ الْكَلِمَةِ: « الْمَلْعَبِ »؟",
+          "fr": "Que veut dire ce mot : « al-malʿab » ?"
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "انْظُرْ إِلَى الْأَصْلِ: ل ع ب، وَالْوَزْنُ مَفْعَلٌ.",
+          "fr": "Regarde les lettres de la racine : l ʿ b, et le schème est mafʿal."
+        },
+        {
+          "qui": "basim",
+          "ar": "الْمَعْنَى الْمُحْتَمَلُ إِذَنْ مَكَانُ اللَّعِبِ!",
+          "fr": "Donc le sens possible est « le lieu du jeu » !"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le sens possible de « الملعب » ?",
+        "choix": [
+          "le lieu du jeu",
+          "celui qui joue",
+          "le jeu lui-même"
+        ],
+        "reponse": 0,
+        "explication": "مَفْعَل : souvent un lieu."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "asl",
+        "wazn_scheme",
+        "siyaq",
+        "fil_gram",
+        "muhtamal"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "سِيَاقٌ",
+        "choix": [
+          "contexte",
+          "schème",
+          "texte"
+        ],
+        "reponse": 0,
+        "explication": "سِيَاقٌ veut dire « contexte »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Trois outils",
+      "texte": "Deviner un mot : 1) les lettres de la racine ; 2) le schème, qui donne le type de mot (مَفْعَل : lieu, فَاعِل : celui qui fait, مَفْعُول : ce qui subit) ; 3) le contexte (verbe ou nom).",
+      "exemples": [
+        "مَلْعَبٌ : ل ع ب ، مَفْعَل",
+        "مَكْتَبٌ : ك ت ب ، مَفْعَل"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Le schème مَفْعَل donne souvent…",
+        "choix": [
+          "un lieu",
+          "celui qui fait l'action",
+          "un verbe"
+        ],
+        "reponse": 0,
+        "explication": "مَلْعَبٌ : lieu du jeu ; مَكْتَبٌ : lieu où l'on écrit."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Une piste, pas une certitude",
+      "texte": "La racine donne une piste, pas le sens certain : on vérifie au dictionnaire. Attention, des lettres souvent ajoutées, comme ن, ت ou م, peuvent aussi appartenir à la racine : ن dans انْتَظَرَ, ت dans مَكْتَبٌ.",
+      "exemples": [
+        "انْتَظَرَ : ن ظ ر",
+        "مَكْتَبٌ : ك ت ب"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Après avoir deviné un mot par sa racine, on…",
+        "choix": [
+          "vérifie au dictionnaire",
+          "est sûr du sens",
+          "oublie le contexte"
+        ],
+        "reponse": 0,
+        "explication": "La racine ne suffit pas pour le sens."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Palier C : comme dans un livre",
+      "texte": "Plus aucune voyelle. Lis d'abord seul ; si un mot te résiste, sers-toi de tes trois outils.",
+      "sans_voyelles": "C",
+      "phrases": [
+        "خَرَجَ الْأَطْفَالُ مِنَ الْبَيْتِ فِي الصَّبَاحِ.",
+        "ذَهَبُوا إِلَى الْمَلْعَبِ وَلَعِبُوا كَثِيرًا.",
+        "ثُمَّ رَجَعُوا إِلَى الْبَيْتِ فِي الْمَسَاءِ.",
+        "قَالَتِ الْأُمُّ: « هَلْ لَعِبْتُمْ كَثِيرًا؟ »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où les enfants sont-ils allés ?",
+          "choix": [
+            "au terrain de jeu",
+            "au marché",
+            "à l'école"
+          ],
+          "reponse": 0,
+          "explication": "ذَهَبُوا إِلَى الْمَلْعَبِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand les enfants sont-ils rentrés ?",
+          "choix": [
+            "le soir",
+            "le matin",
+            "à midi"
+          ],
+          "reponse": 0,
+          "explication": "رَجَعُوا إِلَى الْبَيْتِ فِي الْمَسَاءِ."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَصْلٌ",
+          "choix": [
+            "origine ; (en grammaire) racine d'un mot (ses lettres de base)",
+            "contexte",
+            "schème"
+          ],
+          "reponse": 0,
+          "explication": "أَصْلٌ veut dire « origine ; (en grammaire) racine d'un mot (ses lettres de base) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَزْنٌ",
+          "choix": [
+            "(en grammaire) schème",
+            "(en grammaire) verbe",
+            "texte"
+          ],
+          "reponse": 0,
+          "explication": "وَزْنٌ veut dire « (en grammaire) schème »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُحْتَمَلٌ",
+          "choix": [
+            "possible, envisageable",
+            "certain",
+            "difficile"
+          ],
+          "reponse": 0,
+          "explication": "مُحْتَمَلٌ veut dire « possible, envisageable »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : les lettres de la racine de « الملعب »",
+          "ar": "الْأَصْلُ …",
+          "choix_ar": [
+            "ل ع ب",
+            "م ل ع",
+            "ع ب م"
+          ],
+          "reponse": 0,
+          "explication": "On retire l'article et le م du schème مَفْعَل."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : les lettres de la racine de « مكتب »",
+          "ar": "الْأَصْلُ …",
+          "choix_ar": [
+            "ك ت ب",
+            "م ك ت",
+            "ت ب م"
+          ],
+          "reponse": 0,
+          "explication": "Le م appartient au schème مَفْعَل."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis le mot bien vocalisé : « Les enfants sont allés au terrain de jeu. »",
+          "ar": "ذهب الأطفال إلى …",
+          "choix_ar": [
+            "الْمَلْعَبِ",
+            "الْمَلْعَبُ",
+            "الْمَلْعَبَ"
+          ],
+          "reponse": 0,
+          "explication": "Après إلى : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « كَتَبَ est un verbe. »",
+          "ar": "كَتَبَ …",
+          "choix_ar": [
+            "فِعْلٌ",
+            "اسْمٌ",
+            "حَرْفٌ"
+          ],
+          "reponse": 0,
+          "explication": "كَتَبَ : un verbe, فِعْلٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le schème est mafʿal. »",
+          "ar": "… مَفْعَلٌ.",
+          "choix_ar": [
+            "الْوَزْنُ",
+            "الْأَصْلُ",
+            "السِّيَاقُ"
+          ],
+          "reponse": 0,
+          "explication": "Le schème : الْوَزْنُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La salle d'écriture",
+      "texte": "Encore sans voyelles. Un mot est nouveau : devine-le avec tes trois outils.",
+      "sans_voyelles": "C",
+      "phrases": [
+        "جَلَسَ الْكَاتِبُ فِي الْمَكْتَبِ.",
+        "كَتَبَ رِسَالَةً طَوِيلَةً إِلَى صَدِيقِهِ.",
+        "ثُمَّ قَرَأَ الرِّسَالَةَ عَلَى مَهْلٍ.",
+        "وَفِي الْمَسَاءِ رَجَعَ إِلَى بَيْتِهِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que veut probablement dire « المكتب » ici ?",
+          "choix": [
+            "le lieu où l'on écrit",
+            "celui qui écrit",
+            "la lettre écrite"
+          ],
+          "reponse": 0,
+          "explication": "ك ت ب + مَفْعَل : un lieu."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a fait le scribe le soir ?",
+          "choix": [
+            "il est rentré chez lui",
+            "il a écrit une lettre",
+            "il a lu un livre"
+          ],
+          "reponse": 0,
+          "explication": "وَفِي الْمَسَاءِ رَجَعَ إِلَى بَيْتِهِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le sens possible est « le lieu du jeu ». » ?",
+          "choix_ar": [
+            "الْمَعْنَى الْمُحْتَمَلُ مَكَانُ اللَّعِبِ.",
+            "الْمَعْنَى الْمُحْتَمَلَ مَكَانُ اللَّعِبِ.",
+            "الْمَعْنَى الْمُحْتَمَلُ مَكَانٌ اللَّعِبِ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet et attribut au nominatif ; مَكَانُ sans tanwīn devant un nom."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre, en commençant par le verbe : « Le scribe s'est assis dans la salle d'écriture. »",
+          "tuiles": [
+            "الْمَكْتَبِ",
+            "فِي",
+            "الْكَاتِبُ",
+            "جَلَسَ"
+          ],
+          "solution": [
+            "جَلَسَ",
+            "الْكَاتِبُ",
+            "فِي",
+            "الْمَكْتَبِ"
+          ],
+          "explication": "Le verbe, le sujet, puis le lieu ; on peut aussi commencer par le sujet."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le contexte nous aide. »",
+          "ar": "… يُسَاعِدُنَا.",
+          "choix_ar": [
+            "السِّيَاقُ",
+            "السِّيَاقَ",
+            "السِّيَاقِ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet en tête de phrase nominale : nominatif."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سِيَاقٌ",
+          "choix": [
+            "contexte",
+            "schème",
+            "origine"
+          ],
+          "reponse": 0,
+          "explication": "سِيَاقٌ veut dire « contexte »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فِعْلٌ",
+          "choix": [
+            "(en grammaire) verbe",
+            "(en grammaire) nom",
+            "(en grammaire) particule"
+          ],
+          "reponse": 0,
+          "explication": "فِعْلٌ veut dire « (en grammaire) verbe »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le schème مَفْعَل donne souvent…",
+          "choix": [
+            "un lieu",
+            "celui qui fait l'action",
+            "ce qui subit l'action"
+          ],
+          "reponse": 0,
+          "explication": "مَلْعَبٌ, مَكْتَبٌ : des lieux."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : les lettres de la racine de « الملعب »",
+          "ar": "الْأَصْلُ …",
+          "choix_ar": [
+            "ل ع ب",
+            "م ل ع",
+            "ع ب م"
+          ],
+          "reponse": 0,
+          "explication": "On retire l'article et le م du schème."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis le mot bien vocalisé : « Le scribe s'est assis dans la salle d'écriture. »",
+          "ar": "جلس الكاتب في …",
+          "choix_ar": [
+            "الْمَكْتَبِ",
+            "الْمَكْتَبُ",
+            "الْمَكْتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "Après في : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le sens possible est le lieu du jeu. »",
+          "ar": "الْمَعْنَى … مَكَانُ اللَّعِبِ.",
+          "choix_ar": [
+            "الْمُحْتَمَلُ",
+            "الْمُحْتَمَلَ",
+            "الْمُحْتَمَلِ"
+          ],
+          "reponse": 0,
+          "explication": "Adjectif accordé au nominatif."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « كَتَبَ est un verbe. » ?",
+          "choix_ar": [
+            "كَتَبَ فِعْلٌ.",
+            "كَتَبَ اسْمٌ.",
+            "كَتَبَ حَرْفٌ."
+          ],
+          "reponse": 0,
+          "explication": "فِعْلٌ : verbe."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Deviner un mot par sa racine donne…",
+          "choix": [
+            "une piste, à vérifier au dictionnaire",
+            "le sens certain",
+            "toujours un verbe"
+          ],
+          "reponse": 0,
+          "explication": "La racine ne suffit pas pour le sens."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans انْتَظَرَ, le ن…",
+          "choix": [
+            "appartient à la racine ن ظ ر",
+            "appartient à la racine ن ت ظ",
+            "est la lettre du schème, comme le ت"
+          ],
+          "reponse": 0,
+          "explication": "Certaines lettres « ajoutées » sont dans la racine."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَدَّةٌ",
+          "choix": [
+            "shadda (signe de la lettre doublée)",
+            "ḍamma (la voyelle u)",
+            "texte"
+          ],
+          "reponse": 0,
+          "explication": "شَدَّةٌ veut dire « shadda (signe de la lettre doublée) ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis le mot bien vocalisé : « Dans le sac, il y a de l'or. »",
+          "ar": "في الكيس …",
+          "choix_ar": [
+            "ذَهَبٌ",
+            "ذَهَبَ",
+            "ذُهِبَ"
+          ],
+          "reponse": 0,
+          "explication": "Un nom : ذَهَبٌ « or ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَصٌّ",
+          "choix": [
+            "texte",
+            "voyelle (brève)",
+            "phrase"
+          ],
+          "reponse": 0,
+          "explication": "نَصٌّ veut dire « texte ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu lis sans aucune voyelle, et tu devines un mot inconnu avec la racine, le schème (مَفْعَل : lieu) et le contexte, puis tu vérifies au dictionnaire.",
+      "suite": "Prochaine leçon : chercher un mot dans le dictionnaire."
+    }
+  ]
+}

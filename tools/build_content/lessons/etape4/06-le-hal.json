@@ -1,0 +1,524 @@
+{
+  "id": "cite-06",
+  "etape": 4,
+  "ordre": 6,
+  "format": 3,
+  "titre": "« Il est venu en courant » : le ḥāl",
+  "objectif": "Dire dans quel état quelqu'un fait une action, avec le ḥāl.",
+  "statut": "ia_non_verifie",
+  "lieu": "conteurs",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-05"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ",
+    "سَلْمَى"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Sur la Place des conteurs, on ne dit pas seulement ce que font les gens, mais comment ils le font."
+        },
+        {
+          "qui": "nadim",
+          "texte": "Revenu joyeux, triste ou seul : c'est le ḥāl."
+        }
+      ],
+      "objectif": "Employer le ḥāl et la question كَيْفَ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il s'est assis pour écouter. »",
+          "ar": "جَلَسَ …",
+          "choix_ar": [
+            "لِيَسْمَعَ",
+            "لِيَسْمَعُ",
+            "لِأَنَّ"
+          ],
+          "reponse": 0,
+          "explication": "لِـ + subjonctif (leçon 4.5)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَرِحٌ",
+          "choix": [
+            "joyeux",
+            "triste",
+            "fatigué"
+          ],
+          "reponse": 0,
+          "explication": "فَرِحٌ veut dire « joyeux »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'étais malade hier. »",
+          "ar": "كُنْتُ … أَمْسِ.",
+          "choix_ar": [
+            "مَرِيضًا",
+            "مَرِيضٌ",
+            "مَرِيضٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut de كَانَ : -a (leçon 3.32)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "ar": "كَيْفَ رَجَعْتَ مِنَ السُّوقِ يَا بَاسِمُ؟",
+          "fr": "Comment es-tu revenu du marché, Bāsim ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "رَجَعْتُ فَرِحًا.",
+          "fr": "Je suis revenu tout joyeux."
+        },
+        {
+          "qui": "nadim",
+          "ar": "وَدَخَلَ الطِّفْلُ الْبَيْتَ ضَاحِكًا.",
+          "fr": "Et l'enfant est entré dans la maison en riant."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment Bāsim est-il revenu ?",
+        "choix": [
+          "joyeux",
+          "triste",
+          "seul"
+        ],
+        "reponse": 0,
+        "explication": "رَجَعْتُ فَرِحًا."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "hal_etat",
+        "kayfa",
+        "dahika",
+        "dahik",
+        "masrur",
+        "hazin",
+        "wahdahu"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "حَزِينٌ",
+        "choix": [
+          "triste",
+          "content",
+          "seul"
+        ],
+        "reponse": 0,
+        "explication": "حَزِينٌ veut dire « triste »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le ḥāl",
+      "texte": "Le ḥāl dit dans quel état est quelqu’un pendant l’action, en réponse à كَيْفَ « comment ». C’est un nom indéfini en -a, accordé avec la personne : رَجَعَتْ سَلْمَى فَرِحَةً.",
+      "exemples": [
+        "رَجَعَ بَاسِمٌ فَرِحًا",
+        "رَجَعَتْ سَلْمَى فَرِحَةً"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Salmā est revenue toute joyeuse. »",
+        "ar": "رَجَعَتْ سَلْمَى …",
+        "choix_ar": [
+          "فَرِحَةً",
+          "فَرِحًا",
+          "الْفَرِحَةُ"
+        ],
+        "reponse": 0,
+        "explication": "Ḥāl indéfini en -a, au féminin pour Salmā."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Ḥāl ou adjectif ?",
+      "texte": "رَجَعَ الْحَارِسُ الْفَرِحُ « le gardien joyeux est revenu » (adjectif) ; رَجَعَ الْحَارِسُ فَرِحًا « il est revenu joyeux » (ḥāl). Le ḥāl peut aussi dire l'état du complément : شَرِبْتُ الْمَاءَ بَارِدًا.",
+      "exemples": [
+        "رَجَعَ الْحَارِسُ الْفَرِحُ",
+        "رَجَعَ الْحَارِسُ فَرِحًا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans رَجَعَ الْحَارِسُ فَرِحًا, فَرِحًا est…",
+        "choix": [
+          "un ḥāl : il dit comment il est revenu",
+          "un adjectif du gardien",
+          "un complément direct"
+        ],
+        "reponse": 0,
+        "explication": "Indéfini en -a : ḥāl."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le ḥāl avec وَهُوَ",
+      "texte": "Le ḥāl peut aussi être une petite phrase après وَ : دَخَلَ نَدِيمٌ الْمَجْلِسَ وَهُوَ يَحْمِلُ رِسَالَةً « en portant une lettre ».",
+      "exemples": [
+        "وَهُوَ يَحْمِلُ رِسَالَةً"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire دَخَلَ نَدِيمٌ الْمَجْلِسَ وَهُوَ يَحْمِلُ رِسَالَةً ?",
+        "choix": [
+          "Nadīm est entré dans l'assemblée en portant une lettre.",
+          "Nadīm est entré, et il a porté une lettre plus tard.",
+          "Nadīm porte une lettre à l'assemblée."
+        ],
+        "reponse": 0,
+        "explication": "وَ du ḥāl : « en… »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَيْفَ",
+          "choix": [
+            "comment ?",
+            "pourquoi ?",
+            "quand ?"
+          ],
+          "reponse": 0,
+          "explication": "كَيْفَ veut dire « comment ? »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَسْرُورٌ",
+          "choix": [
+            "content",
+            "triste",
+            "malade"
+          ],
+          "reponse": 0,
+          "explication": "مَسْرُورٌ veut dire « content »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَحْدَهُ",
+          "choix": [
+            "seul (lui seul)",
+            "avec lui",
+            "tous"
+          ],
+          "reponse": 0,
+          "explication": "وَحْدَهُ veut dire « seul (lui seul) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « l'enfant est entré dans la maison en riant » ?",
+          "choix_ar": [
+            "دَخَلَ الطِّفْلُ الْبَيْتَ ضَاحِكًا",
+            "دَخَلَ الطِّفْلُ الضَّاحِكُ الْبَيْتَ",
+            "دَخَلَ الطِّفْلُ الْبَيْتَ ضَاحِكٌ"
+          ],
+          "reponse": 0,
+          "explication": "Ḥāl indéfini en -a : ضَاحِكًا ; الضَّاحِكُ dirait « l'enfant rieur »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim est revenu du marché tout joyeux. »",
+          "ar": "رَجَعَ بَاسِمٌ مِنَ السُّوقِ …",
+          "choix_ar": [
+            "فَرِحًا",
+            "فَرِحٌ",
+            "الْفَرِحُ"
+          ],
+          "reponse": 0,
+          "explication": "Ḥāl : indéfini en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le vieil homme s'est assis seul. »",
+          "ar": "جَلَسَ الشَّيْخُ …",
+          "choix_ar": [
+            "وَحْدَهُ",
+            "وَحْدَهَا",
+            "وَحْدِي"
+          ],
+          "reponse": 0,
+          "explication": "Le vieil homme : ـهُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Salmā est revenue à dos de monture. »",
+          "ar": "رَجَعَتْ سَلْمَى …",
+          "choix_ar": [
+            "رَاكِبَةً",
+            "رَاكِبًا",
+            "رَاكِبَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Ḥāl au féminin en -a."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le ḥāl répond à la question…",
+          "choix": [
+            "كَيْفَ ? (comment ?)",
+            "مَاذَا ? (quoi ?)",
+            "مَتَى ? (quand ?)"
+          ],
+          "reponse": 0,
+          "explication": "Le ḥāl dit l'état : كَيْفَ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le retour du marché",
+      "texte": "Nadīm raconte une journée sur la place. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "رَجَعَ بَاسِمٌ مِنَ السُّوقِ فَرِحًا.",
+        "دَخَلَ الطِّفْلُ الْبَيْتَ ضَاحِكًا.",
+        "جَلَسَ الشَّيْخُ وَحْدَهُ فِي الْحَدِيقَةِ.",
+        "دَخَلَ نَدِيمٌ الْمَجْلِسَ وَهُوَ يَحْمِلُ رِسَالَةً."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Comment l'enfant est-il entré ?",
+          "choix": [
+            "en riant",
+            "en pleurant",
+            "seul"
+          ],
+          "reponse": 0,
+          "explication": "ضَاحِكًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'avait Nadīm en entrant ?",
+          "choix": [
+            "une lettre",
+            "un livre",
+            "du pain"
+          ],
+          "reponse": 0,
+          "explication": "وَهُوَ يَحْمِلُ رِسَالَةً."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim est revenu tout joyeux. » ?",
+          "choix_ar": [
+            "رَجَعَ بَاسِمٌ فَرِحًا.",
+            "رَجَعَ بَاسِمٌ الْفَرِحُ.",
+            "رَجَعَ بَاسِمٌ فَرِحٌ."
+          ],
+          "reponse": 0,
+          "explication": "فَرِحًا dit comment il est revenu ; الْفَرِحُ dirait « Bāsim le joyeux » (adjectif)."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Bāsim est revenu joyeux. »",
+          "tuiles": [
+            "فَرِحًا",
+            "بَاسِمٌ",
+            "رَجَعَ",
+            "فَرِحٌ"
+          ],
+          "solution": [
+            "رَجَعَ",
+            "بَاسِمٌ",
+            "فَرِحًا"
+          ],
+          "explication": "L'état pendant l'action devient un ḥāl en -a : فَرِحًا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai bu l'eau alors qu'elle était fraîche. »",
+          "ar": "شَرِبْتُ الْمَاءَ …",
+          "choix_ar": [
+            "بَارِدًا",
+            "الْبَارِدَ",
+            "بَارِدٌ"
+          ],
+          "reponse": 0,
+          "explication": "Ḥāl qui porte sur le complément : بَارِدًا."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَالٌ",
+          "choix": [
+            "état ; (en grammaire) le ḥāl",
+            "chemin",
+            "cause"
+          ],
+          "reponse": 0,
+          "explication": "حَالٌ veut dire « état ; (en grammaire) le ḥāl »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ضَحِكَ",
+          "choix": [
+            "rire",
+            "pleurer",
+            "crier"
+          ],
+          "reponse": 0,
+          "explication": "ضَحِكَ veut dire « rire »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَيْفَ",
+          "choix": [
+            "comment ?",
+            "combien ?",
+            "pourquoi ?"
+          ],
+          "reponse": 0,
+          "explication": "كَيْفَ veut dire « comment ? »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Salmā est revenue toute joyeuse » ?",
+          "choix_ar": [
+            "رَجَعَتْ سَلْمَى فَرِحَةً",
+            "رَجَعَتْ سَلْمَى فَرِحًا",
+            "رَجَعَتْ سَلْمَى الْفَرِحَةُ"
+          ],
+          "reponse": 0,
+          "explication": "Ḥāl accordé : féminin, -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'enfant est entré en riant. »",
+          "ar": "دَخَلَ الطِّفْلُ …",
+          "choix_ar": [
+            "ضَاحِكًا",
+            "ضَاحِكٌ",
+            "الضَّاحِكُ"
+          ],
+          "reponse": 0,
+          "explication": "Ḥāl : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Elle s'est assise seule. »",
+          "ar": "جَلَسَتْ …",
+          "choix_ar": [
+            "وَحْدَهَا",
+            "وَحْدَهُ",
+            "وَحْدِي"
+          ],
+          "reponse": 0,
+          "explication": "Pour elle : ـهَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nadīm est entré en portant une lettre. »",
+          "ar": "دَخَلَ نَدِيمٌ … يَحْمِلُ رِسَالَةً.",
+          "choix_ar": [
+            "وَهُوَ",
+            "لِأَنَّ",
+            "حَتَّى"
+          ],
+          "reponse": 0,
+          "explication": "Ḥāl en phrase : وَهُوَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le ḥāl est…",
+          "choix": [
+            "le plus souvent indéfini, en -a",
+            "défini, en -u",
+            "toujours au génitif"
+          ],
+          "reponse": 0,
+          "explication": "رَجَعَ فَرِحًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans رَجَعَ الْحَارِسُ الْفَرِحُ, الْفَرِحُ est…",
+          "choix": [
+            "un adjectif",
+            "un ḥāl",
+            "un complément direct"
+          ],
+          "reponse": 0,
+          "explication": "Défini : adjectif."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لِأَنَّ",
+          "choix": [
+            "parce que",
+            "pour que",
+            "jusqu'à"
+          ],
+          "reponse": 0,
+          "explication": "لِأَنَّ veut dire « parce que ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « parce que le chemin est long »",
+          "ar": "لِأَنَّ … طَوِيلٌ",
+          "choix_ar": [
+            "الطَّرِيقَ",
+            "الطَّرِيقُ",
+            "الطَّرِيقِ"
+          ],
+          "reponse": 0,
+          "explication": "Après لِأَنَّ : -a.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حِينَ",
+          "choix": [
+            "quand, au moment où",
+            "jusqu'à",
+            "si"
+          ],
+          "reponse": 0,
+          "explication": "حِينَ veut dire « quand, au moment où ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu dis dans quel état on agit avec le ḥāl (indéfini, en -a) ou avec وَهُوَ, et tu demandes « comment ? » avec كَيْفَ.",
+      "suite": "Prochaine leçon : la précision, le tamyīz."
+    }
+  ]
+}

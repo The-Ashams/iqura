@@ -5,9 +5,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/app_info.dart';
 import 'features/profile/profile.dart';
 import 'features/settings/settings.dart';
+import 'ui/game/pixel.dart';
 import 'ui/screens/onboarding_screen.dart';
 import 'ui/shell/app_shell.dart';
 import 'ui/theme.dart';
+import 'ui/widgets/screen_scaler.dart';
 
 const _localizations = <LocalizationsDelegate<Object>>[
   GlobalMaterialLocalizations.delegate,
@@ -31,12 +33,19 @@ class IquraApp extends ConsumerWidget {
       themeMode: themeMode,
       // Animations désactivées : le signal est transmis à tous les widgets
       // (MediaQuery.disableAnimations) et les transitions de page supprimées.
-      builder: (context, child) => animations
-          ? child!
-          : MediaQuery(
-              data: MediaQuery.of(context).copyWith(disableAnimations: true),
-              child: child!,
-            ),
+      // La palette du jeu suit le thème clair ou sombre (GameThemeScope).
+      // Sur grand écran, toute l'interface est agrandie (ScreenScaler).
+      builder: (context, child) => GameThemeScope(
+        child: ScreenScaler(
+          child: animations
+              ? child!
+              : MediaQuery(
+                  data: MediaQuery.of(context)
+                      .copyWith(disableAnimations: true),
+                  child: child!,
+                ),
+        ),
+      ),
       locale: const Locale('fr'),
       supportedLocales: const [Locale('fr')],
       localizationsDelegates: _localizations,

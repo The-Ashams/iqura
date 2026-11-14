@@ -15,7 +15,7 @@ La norme *Arabica* est la translittération de la revue *Arabica* (Brill), déri
 - Brill, *Arabica — Instructions for Authors*, qui demande ʾ (U+02BE) pour la hamza et ʿ (U+02BF) pour le ʿayn : https://brill.com/fileasset/downloads_products/Author_Instructions/ARAB.pdf
 - Norme DIN 31635 (1982), *Umschrift des arabischen Alphabets*.
 
-⚠️ Ces deux documents n'étaient pas accessibles depuis l'environnement de développement le 20 octobre 2026. La table ci-dessous a été établie à partir des descriptions publiques de la norme et doit être **recoupée avec le document de l'INALCO**. Statut : *rédigé par IA — non vérifié*.
+⚠️ Ces deux documents n'étaient pas accessibles depuis l'environnement de développement le 20 octobre 2026. La table ci-dessous a été établie à partir des descriptions publiques de la norme et doit être **recoupée avec le document de l'INALCO**. Statut : *rédigé par IA*.
 
 ## Consonnes
 

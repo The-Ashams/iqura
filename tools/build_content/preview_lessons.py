@@ -2,8 +2,8 @@
 """Page HTML d'aperçu des leçons, pour relecture.
 
 Tout est lu dans la base de contenu générée (assets/content/iqura_content.db) :
-leçons, fiches des lettres et, pour les extraits coraniques, le texte Tanzil
-et la traduction Hamidullah par référence. Rien n'est recopié à la main.
+leçons, fiches des lettres, salles de lecture (exemples construits ; aucun
+verset, avenant n° 1). Rien n'est recopié à la main.
 
 Usage : python3 tools/build_content/preview_lessons.py SORTIE.html [--etape 1] [--jusqua N]
 """
@@ -18,6 +18,7 @@ import os
 import re
 import sqlite3
 import sys
+import unicodedata
 
 DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..",
                   "assets", "content", "iqura_content.db")
@@ -55,18 +56,6 @@ ZONE_POS = {
     "cavite": (118, 92),
 }
 
-EXERCISE_TEXT = {
-    "reconnaitre_lettre": "Reconnaître : une lettre s'affiche, choisir son nom.",
-    "formes": "Formes : une forme (début, milieu, fin) s'affiche, choisir la lettre.",
-    "points": "Les points : distinguer des lettres de même silhouette.",
-    "lire": "Lire : un mot ou une syllabe vocalisés s'affichent, choisir la bonne translittération.",
-    "reconstruire": "Reconstruire (jeu A) : assembler lettres et voyelles pour écrire un mot donné en translittération.",
-    "reperer": "Repérer (salle d'étude, jamais en combat) : toucher la lettre demandée dans un mot du Coran.",
-    "qcm": "Questions de compréhension.",
-    "controle_final": "Contrôle final : questions tirées de la leçon ; seuil de réussite",
-}
-SOURCE_TEXT = {"syllabes": "syllabes de la leçon", "exemples": "mots de la leçon",
-               "coran": "mots coraniques cités"}
 
 
 _ARABIC_RUN = re.compile("([\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u200d]+)")
@@ -88,7 +77,9 @@ def ar(s: str, quran: bool = False, cls: str = "") -> str:
 
 
 def articulation_svg(zone: str, label: str) -> str:
-    x, y = ZONE_POS[zone]
+    # Zone sans position dans cet aperçu : schéma sans point (l'application
+    # a son propre schéma).
+    x, y = ZONE_POS.get(zone, (-50, -50))
     hl = (f'<ellipse cx="118" cy="95" rx="62" ry="40" class="zone"/>' if zone == "cavite"
           else f'<circle cx="{x}" cy="{y}" r="9" class="zone"/>')
     return f"""<svg viewBox="0 0 220 170" role="img" aria-label="{e(label)}" class="svg">
@@ -119,97 +110,110 @@ def letter_card(card: sqlite3.Row, zone_label: str) -> str:
   {liaison}
   <div class="artic">{articulation_svg(card["zone_id"], zone_label)}
     <div><p class="zone-l">{e(zone_label)}</p><p>{fr(card["pronunciation"])}</p>
-    <p class="ia">Description et schéma rédigés par IA — non vérifiés</p></div></div>
+    <p class="ia">Description et schéma rédigés par IA</p></div></div>
 </article>"""
 
 
-def highlight_verse(text: str, tokens: list[str]) -> str:
-    out, pos = [], 0
-    for t in tokens:
-        i = text.find(t, pos)
-        if i < 0:
-            continue
-        out.append(e(text[pos:i]))
-        out.append(f"<mark>{e(t)}</mark>")
-        pos = i + len(t)
-    out.append(e(text[pos:]))
+SCREEN_LABEL = {
+    "entree": "Entrée", "echauffement": "Échauffement", "decouverte": "Découverte",
+    "element": "La lettre", "regle": "La règle", "entrainement": "Salle d'entraînement",
+    "lecture": "Salle de lecture (sans combat)", "mini_boss": "Mini-boss",
+    "fin": "Fin",
+}
+QUESTION_LABEL = {
+    "qcm": "Question", "points": "Les points", "formes": "Les formes",
+    "reconnaitre": "Reconnaître", "ecouter": "Écouter et choisir",
+    "paires": "Paires proches", "lire": "Lire (choisir le bon son)",
+    "reconstruire": "Reconstruire", "tracer": "Tracer", "repeter": "Répéter à voix haute",
+    "reperer_mot": "Repérer", "compter": "Compter",
+    "ecouter_lettre": "Écouter le nom d'une lettre",
+}
+
+
+def question_html(q: dict, inscription: list[str] | None = None) -> str:
+    kind = q["type"]
+    head = (f'<p class="qk">{e(QUESTION_LABEL[kind])}'
+            + (' · <span class="rev">révision</span>' if q.get("revision") else "")
+            + f'</p><p class="qc">{fr(q["consigne"])}</p>')
+    body = ""
+    if q.get("audio"):
+        body += f'<p class="heard">Son joué : {snd(q["audio"]) or ar(q["audio"])}</p>'
+    if q.get("ar") and kind != "repeter":
+        body += f'<p>{ar(q["ar"], cls="xl")}</p>'
+    if kind == "lire":
+        opts = "".join(
+            f'<li{" class=ok" if i == q["reponse"] else ""}>Son {i + 1} {snd(c)}'
+            f'{" ✔ " + ar(c) if i == q["reponse"] else ""}</li>'
+            for i, c in enumerate(q["choix_audio"]))
+        body += f'<ol class="opts">{opts}</ol>'
+    elif "choix_ar" in q or "choix" in q:
+        choices = q.get("choix_ar") or q["choix"]
+        fmt = ar if "choix_ar" in q else fr
+        opts = "".join(f'<li{" class=ok" if i == q["reponse"] else ""}>{fmt(c)}'
+                       f'{" ✔" if i == q["reponse"] else ""}</li>' for i, c in enumerate(choices))
+        body += f'<ul class="opts row">{opts}</ul>'
+    elif kind == "reconstruire":
+        body += ('<p>Tuiles : ' + " ".join(ar(t) for t in q["tuiles"])
+                 + ' — solution : ' + " + ".join(ar(t) for t in q["solution"]) + "</p>")
+    elif kind == "tracer":
+        body += f'<p>Lettre à tracer : {ar(q["lettre"], cls="xl")}</p>'
+    elif kind == "repeter":
+        body += f'<p>{ar(q["ar"], cls="xl")} {snd(q["ar"])}</p>'
+    elif kind in ("compter", "reperer_mot") and inscription is not None:
+        word = inscription[q["mot"]]
+        body += f'<p>Mot : {ar(word)}'
+        if kind == "compter":
+            lettre = q["lettre"]
+            form = "NFD" if unicodedata.combining(lettre[:1]) and len(lettre) == 1 else "NFC"
+            body += f' — réponse (calculée) : {unicodedata.normalize(form, word).count(lettre)}'
+        body += "</p>"
+    if q.get("explication"):
+        body += f'<p class="expl">Après une erreur : {fr(q["explication"])}</p>'
+    return f'<div class="question">{head}{body}</div>'
+
+
+def screens_html(con, lesson: dict, cards: dict, zones: dict, names: dict) -> str:
+    out = []
+    for n, s in enumerate(lesson["ecrans"], 1):
+        t = s["type"]
+        inner = ""
+        if t == "entree":
+            inner += "".join(f'<p class="line"><b>{e(names[r["qui"]])}</b> : {fr(r["texte"])}</p>'
+                             for r in s["repliques"])
+            inner += f'<p class="goal">Objectif : {fr(s["objectif"])}</p>'
+        elif t == "decouverte":
+            inner += '<p class="support">' + " ".join(
+                f'{ar(a, cls="xl")}{snd(a)}' for a in s["support"]) + "</p>"
+            inner += question_html(s["question"])
+        elif t == "element":
+            inner += '<div class="cards">' + letter_card(
+                cards[s["lettre"]], zones[cards[s["lettre"]]["zone_id"]]) + "</div>"
+            inner += question_html(s["question"])
+        elif t == "regle":
+            inner += f'<p class="rulet"><b>{fr(s["titre"])}</b> — {fr(s["texte"])}</p>'
+            inner += '<div class="syls">' + "".join(
+                f'<div class="syl">{ar(a)}{snd(a)}</div>' for a in s.get("exemples", [])) + "</div>"
+            inner += question_html(s["question"])
+        elif t == "entrainement":
+            inner += "".join(question_html(q) for q in s["exercices"])
+        elif t == "lecture":
+            inner += f'<p><b>{fr(s.get("titre", ""))}</b> — {fr(s["texte"])}</p>'
+            inner += (f'<p class="support" dir="rtl">{"  ".join(ar(w, cls="xl") for w in s["inscription"])}</p>'
+                      '<p class="ia">Exemple construit — rédigé par IA</p>')
+            inner += "".join(question_html(q, s["inscription"]) for q in s["questions"])
+        elif t == "mini_boss":
+            qs = s["questions"]
+            rev = sum(1 for q in qs if q.get("revision"))
+            inner += (f'<p class="goal">Combat contre une brume d\'oubli : {len(qs)} questions dans un panneau '
+                      f'neutre, sans translittération ; réussite à {round(s["seuil"] * 100)} % ; '
+                      f'{rev} question(s) de révision.</p>')
+            inner += "".join(question_html(q) for q in qs)
+        elif t == "fin":
+            inner += f'<p class="goal">Ce que tu sais maintenant : {fr(s["acquis"])}</p>'
+            if s.get("suite"):
+                inner += f'<p>{fr(s["suite"])}</p>'
+        out.append(f'<section class="screen"><p class="sn">Écran {n} · {e(SCREEN_LABEL[t])}</p>{inner}</section>')
     return "".join(out)
-
-
-def quran_extract(con: sqlite3.Connection, ex: dict) -> str:
-    s, a = (int(x) for x in ex["verset"].split(":"))
-    text, tr, surah = con.execute(
-        "SELECT v.text_uthmani, vt.text, su.name_translit FROM verse v "
-        "JOIN verse_translation vt ON vt.verse_id = v.id "
-        "JOIN surah su ON su.id = v.surah_id WHERE v.surah_id = ? AND v.ayah = ?",
-        (s, a),
-    ).fetchone()
-    tokens = [con.execute("SELECT text FROM token WHERE id = ?", (t,)).fetchone()[0]
-              for t in ex.get("mots", [])]
-    letters = ex.get("lettres", [])
-    hunt = (f'<p class="hunt">À repérer : {" ".join(ar(l) for l in letters)}</p>' if letters else "")
-    return f"""<figure class="quran">
-  <blockquote lang="ar" dir="rtl" class="ar q verse">{highlight_verse(text, tokens)}</blockquote>
-  <figcaption><span class="tr">« {e(tr)} »</span>
-  <span class="ref">Coran {s}:{a} ({e(surah)}) — texte Tanzil (vérifié par SHA-256), traduction Hamidullah</span></figcaption>
-  {hunt}
-</figure>"""
-
-
-def section_html(con, sec: dict, cards: dict, zones: dict) -> str:
-    t = sec["type"]
-    title = f'<h3>{fr(sec["titre"])}</h3>' if sec.get("titre") else ""
-    if t in ("texte", "regle"):
-        cls = "rule" if t == "regle" else "prose"
-        return f'<section class="{cls}">{title}<p>{fr(sec["corps"])}</p></section>'
-    if t == "encadre":
-        return f'<aside class="box"><p>{fr(sec["corps"])}</p></aside>'
-    if t == "lettres":
-        return '<div class="cards">' + "".join(
-            letter_card(cards[c], zones[cards[c]["zone_id"]]) for c in sec["lettres"]) + "</div>"
-    if t == "syllabes":
-        cells = "".join(f'<div class="syl">{ar(i["ar"])}<span>{e(i["translit"])}</span>{snd(i["ar"])}</div>'
-                        for i in sec["items"])
-        return f'<section><h3>Syllabes</h3><div class="syls">{cells}</div></section>'
-    if t == "exemples":
-        rows = "".join(
-            f'<tr><td class="w">{ar(i["ar"])}{snd(i["ar"])}</td><td class="tl">{e(i["translit"])}</td><td>{e(i["fr"])}</td></tr>'
-            for i in sec["items"])
-        return (f'<section>{title}<div class="tbl"><table><thead><tr><th>Mot</th><th>Translittération</th>'
-                f'<th>Sens</th></tr></thead><tbody>{rows}</tbody></table></div>'
-                f'<p class="ia">Exemples construits — rédigés par IA, non vérifiés</p></section>')
-    if t == "decomposition":
-        parts = " + ".join(ar(c) for c in sec["lettres"])
-        return (f'<section class="decomp"><div class="eq">{parts} → {ar(sec["ar"], cls="xl")}</div>{snd(sec["ar"])}'
-                f'<p><span class="tl">{e(sec["translit"])}</span> — {e(sec["fr"])}</p>'
-                f'<p class="note">{fr(sec["note"])}</p></section>')
-    if t == "coran":
-        body = f'<p>{fr(sec["corps"])}</p>' if sec.get("corps") else ""
-        return (f'<section class="qsec">{title}{body}'
-                + "".join(quran_extract(con, x) for x in sec["extraits"]) + "</section>")
-    return ""
-
-
-def exercises_html(exs: list[dict]) -> str:
-    items = []
-    for ex in exs:
-        if ex["type"] == "qcm":
-            qs = "".join(
-                f'<li><strong>{fr(q["question"])}</strong> '
-                f'<span class="choices">{" / ".join(("✔ " if k == q["reponse"] else "") + fr(c) for k, c in enumerate(q["choix"]))}</span>'
-                f'<br><span class="expl">{fr(q["explication"])}</span></li>'
-                for q in ex["items"])
-            items.append(f"<li>{e(EXERCISE_TEXT['qcm'])}<ol class='qcm'>{qs}</ol></li>")
-        else:
-            extra = ""
-            if ex.get("lettres"):
-                extra = " Lettres : " + " ".join(ar(c) for c in ex["lettres"])
-            if ex.get("source"):
-                extra = f" Sur : {e(SOURCE_TEXT[ex['source']])}."
-            if ex["type"] == "controle_final":
-                extra = f" {round(ex['seuil'] * 100)} %."
-            items.append(f"<li>{e(EXERCISE_TEXT[ex['type']])}{extra}</li>")
-    return "<section class='ex'><h3>Exercices</h3><ul>" + "".join(items) + "</ul></section>"
 
 
 CSS = """
@@ -262,7 +266,6 @@ th{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.0
 td.w{text-align:right}.tl{font-style:italic}
 .decomp .eq{display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:flex-start}
 .quran{margin:10px 0 0;border:1px solid var(--line);border-radius:8px;padding:12px 16px;background:var(--bg)}
-.verse{margin:0;font-size:1.9rem;line-height:2.2;text-align:right}
 mark{background:var(--mark);color:inherit;border-radius:4px;padding:0 2px}
 figcaption{display:flex;flex-direction:column;gap:2px;margin-top:6px}
 .tr{font-style:italic}.ref{font-size:.8rem;color:var(--muted)}
@@ -270,6 +273,15 @@ figcaption{display:flex;flex-direction:column;gap:2px;margin-top:6px}
 .ex ul{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:6px}
 .ex .ar{font-size:1.3rem}.qcm{margin-top:6px;display:flex;flex-direction:column;gap:6px}
 .choices{color:var(--muted)}.expl{font-size:.88rem;color:var(--muted)}
+.screen{border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.sn{font-family:var(--f-head);color:var(--accent);font-size:.9rem;letter-spacing:.03em;text-transform:uppercase;margin:0}
+.line{margin:0}.goal{font-weight:600}.support{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.question{border-top:1px dashed var(--line);padding-top:8px}
+.qk{margin:0;font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.qc{margin:0 0 4px;font-weight:600}.rev{color:var(--ia)}
+.opts{margin:4px 0;padding-left:1.2rem}.opts.row{display:flex;flex-wrap:wrap;gap:6px 18px;list-style:none;padding:0}
+.opts .ok{font-weight:700;color:var(--accent)}.opts .ar{font-size:1.4rem}
+.heard .snd{display:inline-block;vertical-align:middle}
 footer{margin-top:32px;font-size:.85rem;color:var(--muted)}
 @media (max-width:520px){.artic{grid-template-columns:1fr}.svg{width:140px}}
 """
@@ -286,14 +298,18 @@ def render(stage: int, upto: int | None) -> str:
         "SELECT content FROM lesson WHERE stage = ? ORDER BY ordinal", (stage,))]
     if upto is not None:
         lessons = [l for l in lessons if l["ordre"] <= upto]
+    names = {r["id"]: r["name"] for r in con.execute("SELECT id, name FROM character")}
     toc = "".join(f'<a href="#{e(l["id"])}">{l["ordre"]}. {fr(l["titre"])}</a>' for l in lessons)
     body = []
     for l in lessons:
-        secs = "".join(section_html(con, s, cards, zones) for s in l["sections"])
+        place = con.execute("SELECT name FROM place WHERE id = ?", (l["lieu"],)).fetchone()[0]
+        secs = (f'<p class="obj">Lieu : {e(place)} · maître : {e(names[l["maitre"]])}</p>'
+                + screens_html(con, l, cards, zones, names))
+        ex = ""
         body.append(f"""<article class="lesson" id="{e(l['id'])}">
   <header><div class="lh"><span class="num">Leçon {l['ordre']}</span><h2>{fr(l['titre'])}</h2></div>
-  <p class="obj">{fr(l['objectif'])}</p><span class="ia">Leçon rédigée par IA — non vérifiée</span></header>
-  {secs}{exercises_html(l['exercices'])}
+  <p class="obj">{fr(l['objectif'])}</p><span class="ia">Leçon rédigée par IA</span></header>
+  {secs}{ex}
 </article>""")
     return f"""<title>Leçons Déchiffrer IQURA</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -304,12 +320,11 @@ def render(stage: int, upto: int | None) -> str:
 <div class="wrap">
 <h1>Étape 1 · Déchiffrer</h1>
 <p class="lead">Aperçu pour relecture des leçons {lessons[0]['ordre']} à {lessons[-1]['ordre']}, généré depuis la base de contenu IQURA (version {e(version)}).
-Les versets sont lus dans la base vérifiée (texte Tanzil, traduction Hamidullah) ; les mots surlignés sont ceux que la leçon cite.
-Chaque lettre, syllabe et mot a son enregistrement : <b>voix de synthèse</b> (Chatterbox Multilingual), coupée automatiquement après le mot. Les extraits coraniques n'ont pas d'audio ici : ils viendront des récitations (al-Ḥuṣarī).</p>
+Aucun verset ni extrait coranique (avenant n° 1) : les salles de lecture n'utilisent que des exemples construits.
+Chaque lettre, syllabe et mot a son enregistrement : <b>voix de synthèse</b> (Chatterbox Multilingual), coupée automatiquement après le mot.</p>
 <nav class="toc">{toc}</nav>
 {''.join(body)}
-<footer>Texte coranique : Tanzil Project (tanzil.net), CC BY 3.0. Traduction : Muhammad Hamidullah, via Tanzil.
-Translittération : norme Arabica (table dans docs/TRANSLITTERATION.md). Polices Amiri et Amiri Quran (SIL OFL 1.1).</footer>
+<footer>Translittération : norme Arabica (table dans docs/TRANSLITTERATION.md). Polices Amiri et Amiri Quran (SIL OFL 1.1).</footer>
 </div>"""
 
 

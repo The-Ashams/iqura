@@ -1,0 +1,560 @@
+{
+  "id": "fondations-01",
+  "etape": 2,
+  "ordre": 1,
+  "format": 3,
+  "titre": "Le campement de la caravane",
+  "objectif": "Reconnaître la nature d'un mot : nom, verbe ou particule.",
+  "statut": "ia_non_verifie",
+  "lieu": "campement",
+  "maitre": "rashid_oasis",
+  "prerequis": [
+    "dechiffrer-14"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rashid_oasis",
+          "texte": "Bienvenue à l'oasis, voyageur ! Tu sais lire toutes les lettres ; ici, tu vas comprendre ce que tu lis."
+        },
+        {
+          "qui": "basim",
+          "texte": "Moi, c'est Bāsim. Je m'occupe des chameaux de la caravane."
+        }
+      ],
+      "objectif": "Reconnaître un nom, un verbe et une particule."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كِتَابٌ",
+          "choix": [
+            "un livre",
+            "une porte",
+            "une feuille"
+          ],
+          "reponse": 0,
+          "explication": "كِتَابٌ veut dire « un livre » (leçon 12)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "الشَّمْسُ",
+          "choix_audio": [
+            "الشَّمْسُ",
+            "الْقَمَرُ",
+            "النُّورُ"
+          ],
+          "reponse": 0,
+          "explication": "الشَّمْسُ se dit « aš-šamsu », le soleil (leçon 13)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَلْبٌ",
+          "choix": [
+            "un cœur",
+            "un chien",
+            "une lune"
+          ],
+          "reponse": 0,
+          "explication": "قَلْبٌ veut dire « un cœur » (leçon 7)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "هَٰذَا جَمَلٌ.",
+          "fr": "Ceci est un chameau."
+        },
+        {
+          "qui": "rashid_oasis",
+          "ar": "وَهَٰذَا بَيْتٌ.",
+          "fr": "Et ceci est une maison."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَهَٰذَا مَاءٌ.",
+          "fr": "Et ceci, c'est de l'eau."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que montre Bāsim en premier ?",
+        "choix": [
+          "un chameau",
+          "une maison",
+          "de l'eau"
+        ],
+        "reponse": 0,
+        "explication": "هَٰذَا جَمَلٌ : « ceci est un chameau »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "rajul",
+        "jamal",
+        "bayt",
+        "ma",
+        "wa"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "رَجُلٌ",
+        "choix": [
+          "un homme",
+          "un chameau",
+          "une maison"
+        ],
+        "reponse": 0,
+        "explication": "رَجُلٌ veut dire « un homme »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "dhahaba",
+        "kharaja",
+        "dakhala",
+        "fi",
+        "min",
+        "ila"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "دَخَلَ",
+        "choix": [
+          "il est entré",
+          "il est sorti",
+          "il est allé"
+        ],
+        "reponse": 0,
+        "explication": "دَخَلَ veut dire « il est entré »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Nom, verbe, particule",
+      "texte": "En arabe, chaque mot est un nom, un verbe ou une particule. Un nom peut porter le tanwīn ou l'article الْ ; un verbe au passé finit souvent par une fatḥa.",
+      "exemples": [
+        "رَجُلٌ",
+        "الْبَيْتُ",
+        "خَرَجَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la nature du mot خَرَجَ ?",
+        "choix": [
+          "un nom",
+          "un verbe",
+          "une particule"
+        ],
+        "reponse": 1,
+        "explication": "خَرَجَ est un verbe au passé : « il est sorti »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La particule",
+      "texte": "Une particule ne porte ni tanwīn ni article. Les particules فِي « dans », مِنْ « de, depuis », إِلَى « vers » relient les mots.",
+      "exemples": [
+        "فِي",
+        "مِنْ",
+        "إِلَى"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel mot est une particule ?",
+        "choix_ar": [
+          "إِلَى",
+          "جَمَلٌ",
+          "دَخَلَ"
+        ],
+        "reponse": 0,
+        "explication": "إِلَى « vers » est une particule ; جَمَلٌ est un nom, دَخَلَ un verbe."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَمَلٌ",
+          "choix": [
+            "un chameau",
+            "un homme",
+            "de l'eau"
+          ],
+          "reponse": 0,
+          "explication": "جَمَلٌ veut dire « un chameau »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une maison » ?",
+          "choix_ar": [
+            "بَيْتٌ",
+            "مَاءٌ",
+            "رَجُلٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une maison » se dit بَيْتٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un homme » ?",
+          "choix_ar": [
+            "رَجُلٌ",
+            "جَمَلٌ",
+            "مَاءٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un homme » se dit رَجُلٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la nature du mot الْمَاءُ ?",
+          "choix": [
+            "un nom",
+            "un verbe",
+            "une particule"
+          ],
+          "reponse": 0,
+          "explication": "الْمَاءُ porte l'article الْ : c'est un nom."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "خَرَجَ",
+          "choix_ar": [
+            "خَرَجَ",
+            "دَخَلَ",
+            "ذَهَبَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était خَرَجَ « il est sorti »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il est entré » ?",
+          "choix_ar": [
+            "دَخَلَ",
+            "خَرَجَ",
+            "ذَهَبَ"
+          ],
+          "reponse": 0,
+          "explication": "« il est entré » se dit دَخَلَ."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "هَٰذَا رَجُلٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel mot est un verbe ?",
+          "choix_ar": [
+            "ذَهَبَ",
+            "بَيْتٌ",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "ذَهَبَ « il est allé » est un verbe au passé."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète la phrase : « Ceci est un chameau. »",
+          "ar": "هَٰذَا … .",
+          "choix_ar": [
+            "جَمَلٌ",
+            "فِي",
+            "دَخَلَ"
+          ],
+          "reponse": 0,
+          "explication": "Après هَٰذَا vient un nom : هَٰذَا جَمَلٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets les mots dans l'ordre : « Ceci est une maison. »",
+          "tuiles": [
+            "بَيْتٌ",
+            "هَٰذَا",
+            "رَجُلٌ"
+          ],
+          "solution": [
+            "هَٰذَا",
+            "بَيْتٌ"
+          ],
+          "explication": "هَٰذَا بَيْتٌ : d'abord هَٰذَا « ceci », puis le nom."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Les étiquettes de Bāsim",
+      "texte": "Bāsim a écrit des étiquettes pour la caravane. Lis-les ; touche un mot pour voir son sens.",
+      "phrases": [
+        "هَٰذَا جَمَلٌ.",
+        "هَٰذَا رَجُلٌ.",
+        "هَٰذَا بَيْتٌ.",
+        "وَهَٰذَا مَاءٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'est-ce qui n'est pas sur les étiquettes ?",
+          "choix": [
+            "une porte",
+            "un chameau",
+            "de l'eau"
+          ],
+          "reponse": 0,
+          "explication": "Les étiquettes parlent d'un chameau, d'un homme, d'une maison et d'eau ; pas de porte."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَجُلٌ",
+          "choix": [
+            "un homme",
+            "une maison",
+            "un chameau"
+          ],
+          "reponse": 0,
+          "explication": "رَجُلٌ veut dire « un homme »."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Ceci est un homme. »",
+          "tuiles": [
+            "رَجُلٌ",
+            "هَٰذَا",
+            "جَمَلٌ"
+          ],
+          "solution": [
+            "هَٰذَا",
+            "رَجُلٌ"
+          ],
+          "explication": "هَٰذَا رَجُلٌ : « ceci », puis « un homme »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « de l'eau » ?",
+          "choix_ar": [
+            "مَاءٌ",
+            "بَيْتٌ",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "« de l'eau » se dit مَاءٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment écris-tu « il est allé » ?",
+          "choix_ar": [
+            "ذَهَبَ",
+            "دَخَلَ",
+            "إِلَى"
+          ],
+          "reponse": 0,
+          "explication": "« il est allé » se dit ذَهَبَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ceci est un chameau. »",
+          "ar": "… جَمَلٌ.",
+          "choix_ar": [
+            "هَٰذَا",
+            "فِي",
+            "خَرَجَ"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذَا جَمَلٌ : la phrase commence par هَٰذَا « ceci »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Et ceci est une maison. »",
+          "tuiles": [
+            "وَهَٰذَا",
+            "بَيْتٌ",
+            "مَاءٌ"
+          ],
+          "solution": [
+            "وَهَٰذَا",
+            "بَيْتٌ"
+          ],
+          "explication": "وَهَٰذَا بَيْتٌ : وَ « et » se colle au mot qui suit."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَجُلٌ",
+          "choix": [
+            "un homme",
+            "un chameau",
+            "de l'eau"
+          ],
+          "reponse": 0,
+          "explication": "رَجُلٌ veut dire « un homme »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَيْتٌ",
+          "choix": [
+            "une maison",
+            "un homme",
+            "de l'eau"
+          ],
+          "reponse": 0,
+          "explication": "بَيْتٌ veut dire « une maison »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَاءٌ",
+          "choix": [
+            "de l'eau",
+            "une maison",
+            "un chameau"
+          ],
+          "reponse": 0,
+          "explication": "مَاءٌ veut dire « de l'eau »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il est sorti » ?",
+          "choix_ar": [
+            "خَرَجَ",
+            "دَخَلَ",
+            "ذَهَبَ"
+          ],
+          "reponse": 0,
+          "explication": "« il est sorti » se dit خَرَجَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « vers » ?",
+          "choix_ar": [
+            "إِلَى",
+            "فِي",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "« vers » se dit إِلَى."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la nature du mot دَخَلَ ?",
+          "choix": [
+            "un nom",
+            "un verbe",
+            "une particule"
+          ],
+          "reponse": 1,
+          "explication": "دَخَلَ est un verbe au passé : « il est entré »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel mot est un nom ?",
+          "choix_ar": [
+            "جَمَلٌ",
+            "مِنْ",
+            "ذَهَبَ"
+          ],
+          "reponse": 0,
+          "explication": "جَمَلٌ porte le tanwīn : c'est un nom."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel mot est une particule ?",
+          "choix_ar": [
+            "فِي",
+            "رَجُلٌ",
+            "خَرَجَ"
+          ],
+          "reponse": 0,
+          "explication": "فِي « dans » est une particule."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "ذَهَبَ",
+          "choix_ar": [
+            "ذَهَبَ",
+            "دَخَلَ",
+            "خَرَجَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était ذَهَبَ « il est allé »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كِتَابٌ",
+          "choix": [
+            "un livre",
+            "une porte",
+            "un scribe"
+          ],
+          "reponse": 0,
+          "explication": "كِتَابٌ veut dire « un livre ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الْقَمَرُ",
+          "choix": [
+            "la lune",
+            "le soleil",
+            "la lumière"
+          ],
+          "reponse": 0,
+          "explication": "الْقَمَرُ veut dire « la lune ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَجَرَةٌ",
+          "choix": [
+            "un arbre",
+            "une feuille",
+            "une ville"
+          ],
+          "reponse": 0,
+          "explication": "شَجَرَةٌ veut dire « un arbre ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais un nom (tanwīn, الْ), un verbe au passé et une particule. هَٰذَا est un nom, même sans tanwīn : هَٰذَا جَمَلٌ « ceci est un chameau ».",
+      "suite": "Bāsim t'attend au campement pour parler des filles et des garçons de la caravane."
+    }
+  ]
+}

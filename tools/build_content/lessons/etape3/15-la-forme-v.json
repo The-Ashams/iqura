@@ -1,0 +1,578 @@
+{
+  "id": "moteur-15",
+  "etape": 3,
+  "ordre": 15,
+  "format": 3,
+  "titre": "La forme V",
+  "objectif": "Comprendre la forme V تَفَعَّلَ : l'action de la forme II revient sur le sujet.",
+  "statut": "ia_non_verifie",
+  "lieu": "copistes",
+  "maitre": "rabab",
+  "prerequis": [
+    "moteur-14"
+  ],
+  "apercu": [
+    "رَبَابُ"
+  ],
+  "schemes": [
+    "تَفَعَّلَ",
+    "يَتَفَعَّلُ",
+    "تَفَعُّل",
+    "فَعَّلَ",
+    "يُفَعِّلُ",
+    "تَفْعِيل",
+    "أَفْعَلَ",
+    "يُفْعِلُ",
+    "فَاعَلَ",
+    "فَعَلَ",
+    "فَعِلَ",
+    "فَعُلَ",
+    "تَفْعُلُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "texte": "Bienvenue dans la Salle des copistes. Ici, nous recopions la forme II, avec un تَـ devant."
+        },
+        {
+          "qui": "rabab",
+          "texte": "عَلَّمَ, c'est « enseigner » ; تَعَلَّمَ, c'est « apprendre » : l'enseignement revient sur toi."
+        }
+      ],
+      "objectif": "Reconnaître la forme V et son inaccompli."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج ل س dans le moule أَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "أَجْلَسَ",
+            "جَالَسَ",
+            "جَلَسَ"
+          ],
+          "reponse": 0,
+          "explication": "ج ل س dans أَفْعَلَ : أَجْلَسَ (leçon 3.14)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Lequel veut dire « il fait sortir » ?",
+          "choix_ar": [
+            "يُخْرِجُ",
+            "يَخْرُجُ",
+            "خُرُوجٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme IV : يُخْرِجُ (leçon 3.14)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَلَّمَ",
+          "choix": [
+            "il a enseigné",
+            "il a su",
+            "il a appris"
+          ],
+          "reponse": 0,
+          "explication": "عَلَّمَ : forme II, « enseigner » (leçon 3.12)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَنْ عَلَّمَ الطُّلَّابَ الْكِتَابَةَ؟",
+          "fr": "Qui a enseigné l'écriture aux étudiants ?"
+        },
+        {
+          "qui": "rabab",
+          "ar": "أَنَا عَلَّمْتُ، وَهُمْ تَعَلَّمُوا.",
+          "fr": "Moi, j'ai enseigné, et eux ont appris."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَأَنَا أَتَعَلَّمُ الْآنَ!",
+          "fr": "Et moi, j'apprends maintenant !"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qui a enseigné l'écriture ?",
+        "choix": [
+          "Rabāb",
+          "Bāsim",
+          "les étudiants"
+        ],
+        "reponse": 0,
+        "explication": "أَنَا عَلَّمْتُ، وَهُمْ تَعَلَّمُوا."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "taallama",
+        "takallama",
+        "taqaddama",
+        "tafarraqa",
+        "tahaddatha",
+        "tadhakkara",
+        "taajjaba"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "تَفَرَّقَ",
+        "choix": [
+          "il s'est dispersé",
+          "il a séparé",
+          "il a quitté"
+        ],
+        "reponse": 0,
+        "explication": "تَفَرَّقَ veut dire « il s'est dispersé »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "تَـ devant la forme II",
+      "texte": "Forme V, moule تَفَعَّلَ : تَـ devant la forme II. Souvent, l'action de la forme II revient sur le sujet : فَرَّقَ « disperser » → تَفَرَّقَ « se disperser ».",
+      "exemples": [
+        "تَعَلَّمَ",
+        "تَفَرَّقَ",
+        "تَقَدَّمَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire تَقَدَّمَ, de قَدَّمَ « mettre devant » ?",
+        "choix": [
+          "s'avancer",
+          "offrir",
+          "ancien"
+        ],
+        "reponse": 0,
+        "explication": "Forme V : l'action revient sur le sujet, « s'avancer »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Inaccompli en a",
+      "texte": "L'inaccompli de la forme V a a sur le préfixe et avant la dernière lettre : يَتَعَلَّمُ, sans le u ni le i de يُعَلِّمُ. Nom d'action : تَفَعُّل (تَعَلُّمٌ « apprentissage »).",
+      "exemples": [
+        "يَتَعَلَّمُ",
+        "يَتَكَلَّمُ",
+        "تَعَلُّمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est l'inaccompli de تَكَلَّمَ ?",
+        "choix_ar": [
+          "يَتَكَلَّمُ",
+          "يُكَلِّمُ",
+          "تَكَلَّمَ"
+        ],
+        "reponse": 0,
+        "explication": "Forme V : يَتَفَعَّلُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Deux تَـ différents",
+      "texte": "Le تَـ de la forme V fait partie du verbe : il reste au passé (تَعَلَّمَ). Celui de تَكْتُبُ marque la personne, à l'inaccompli seulement.",
+      "exemples": [
+        "تَعَلَّمَ",
+        "تَكْتُبُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans تَعَلَّمَ, le تَـ…",
+        "choix": [
+          "fait partie de la forme V",
+          "indique « tu »",
+          "indique « elle »"
+        ],
+        "reponse": 0,
+        "explication": "Il reste au passé : il fait partie du verbe."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Une tendance",
+      "texte": "Le sens « l'action revient sur le sujet » n'est qu'une tendance : pour تَعَجَّبَ « s'étonner », tu ne connais aucune forme II de départ. On vérifie toujours dans le dictionnaire.",
+      "exemples": [
+        "تَعَجَّبَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire تَعَجَّبَ ?",
+        "choix": [
+          "s'étonner",
+          "plaire à",
+          "se souvenir"
+        ],
+        "reponse": 0,
+        "explication": "تَعَجَّبَ : « s'étonner »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَعَلَّمَ",
+          "choix": [
+            "il a appris",
+            "il a enseigné",
+            "il a su"
+          ],
+          "reponse": 0,
+          "explication": "تَعَلَّمَ veut dire « il a appris »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَذَكَّرَ",
+          "choix": [
+            "il s'est souvenu",
+            "il a parlé",
+            "il s'est étonné"
+          ],
+          "reponse": 0,
+          "explication": "تَذَكَّرَ veut dire « il s'est souvenu »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il parle » ?",
+          "choix_ar": [
+            "يَتَكَلَّمُ",
+            "تَكَلَّمَ",
+            "كَلِمَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il parle » se dit يَتَكَلَّمُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il apprend » ?",
+          "choix_ar": [
+            "يَتَعَلَّمُ",
+            "يُعَلِّمُ",
+            "يَعْلَمُ"
+          ],
+          "reponse": 0,
+          "explication": "« il apprend » se dit يَتَعَلَّمُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de تَحَدَّثَ ?",
+          "choix_ar": [
+            "تَفَعَّلَ",
+            "فَعَّلَ",
+            "أَفْعَلَ"
+          ],
+          "reponse": 0,
+          "explication": "تَـ + forme II : تَفَعَّلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le nom d'action de تَعَلَّمَ ?",
+          "choix_ar": [
+            "تَعَلُّمٌ",
+            "تَعْلِيمٌ",
+            "عِلْمٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme V : تَفَعُّل ; تَعْلِيمٌ est celui de عَلَّمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ل م dans le moule تَفَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَكَلَّمَ",
+            "كَلَّمَ",
+            "يُكَلِّمُ"
+          ],
+          "reponse": 0,
+          "explication": "ك ل م dans تَفَعَّلَ : تَكَلَّمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ر ق dans le moule تَفَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَفَرَّقَ",
+            "فَرَّقَ",
+            "فَارَقَ"
+          ],
+          "reponse": 0,
+          "explication": "ف ر ق dans تَفَعَّلَ : تَفَرَّقَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane s'est avancée. »",
+          "ar": "… الْقَافِلَةُ.",
+          "choix_ar": [
+            "تَقَدَّمَتِ",
+            "قَدَّمَتِ",
+            "تَتَقَدَّمُ"
+          ],
+          "reponse": 0,
+          "explication": "Forme V au passé ; avec un sujet féminin, on met d'habitude تْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les étudiants apprennent l'écriture. »",
+          "ar": "… الطُّلَّابُ الْكِتَابَةَ.",
+          "choix_ar": [
+            "يَتَعَلَّمُ",
+            "يُعَلِّمُ",
+            "يَعْلَمُ"
+          ],
+          "reponse": 0,
+          "explication": "Verbe en tête au singulier : يَتَعَلَّمُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Dans la salle",
+      "texte": "Rabāb raconte une soirée dans la Salle des copistes. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الْمَسَاءِ، تَكَلَّمَ الشَّيْخُ فِي الْمَجْلِسِ.",
+        "تَذَكَّرَ الشَّيْخُ قِصَّةً، وَتَعَجَّبَ الطُّلَّابُ.",
+        "تَقَدَّمَ طَالِبٌ، وَتَحَدَّثَ إِلَى الشَّيْخِ.",
+        "ثُمَّ تَفَرَّقَ الطُّلَّابُ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "De quoi le vieil homme s'est-il souvenu ?",
+          "choix": [
+            "d'une histoire",
+            "d'une lettre",
+            "d'un chemin"
+          ],
+          "reponse": 0,
+          "explication": "تَذَكَّرَ الشَّيْخُ قِصَّةً."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'ont fait les étudiants à la fin ?",
+          "choix": [
+            "ils se sont dispersés",
+            "ils se sont avancés",
+            "ils ont écrit"
+          ],
+          "reponse": 0,
+          "explication": "ثُمَّ تَفَرَّقَ الطُّلَّابُ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Les invités se sont dispersés le soir. » ?",
+          "choix_ar": [
+            "تَفَرَّقَ الضُّيُوفُ فِي الْمَسَاءِ.",
+            "فَرَّقَ الضُّيُوفَ فِي الْمَسَاءِ.",
+            "الضُّيُوفُ تَفَرَّقَ فِي الْمَسَاءُ."
+          ],
+          "reponse": 0,
+          "explication": "« Les invités se sont dispersés le soir. » se dit تَفَرَّقَ الضُّيُوفُ فِي الْمَسَاءِ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Bāsim s'est souvenu de l'histoire. »",
+          "tuiles": [
+            "الْقِصَّةَ",
+            "بَاسِمٌ",
+            "تَذَكَّرَ",
+            "يَتَذَكَّرُ"
+          ],
+          "solution": [
+            "تَذَكَّرَ",
+            "بَاسِمٌ",
+            "الْقِصَّةَ"
+          ],
+          "explication": "Verbe, sujet, complément."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'apprends maintenant. »",
+          "ar": "… الْآنَ.",
+          "choix_ar": [
+            "أَتَعَلَّمُ",
+            "أُعَلِّمُ",
+            "تَعَلَّمَ"
+          ],
+          "reponse": 0,
+          "explication": "« je » à l'inaccompli : أَتَعَلَّمُ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَكَلَّمَ",
+          "choix": [
+            "il a parlé",
+            "il a adressé la parole à",
+            "un mot"
+          ],
+          "reponse": 0,
+          "explication": "تَكَلَّمَ veut dire « il a parlé »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَقَدَّمَ",
+          "choix": [
+            "il s'est avancé",
+            "il a offert",
+            "ancien"
+          ],
+          "reponse": 0,
+          "explication": "تَقَدَّمَ veut dire « il s'est avancé »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَعَجَّبَ",
+          "choix": [
+            "il s'est étonné",
+            "il a plu à",
+            "il s'est souvenu"
+          ],
+          "reponse": 0,
+          "explication": "تَعَجَّبَ veut dire « il s'est étonné »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il se souvient » ?",
+          "choix_ar": [
+            "يَتَذَكَّرُ",
+            "تَذَكَّرَ",
+            "تَذَكُّرٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il se souvient » se dit يَتَذَكَّرُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La forme V, c'est…",
+          "choix": [
+            "تَـ devant la forme II",
+            "تَـ devant la forme III",
+            "أَ devant la racine"
+          ],
+          "reponse": 0,
+          "explication": "تَفَعَّلَ = تَـ + فَعَّلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de تَفَرَّقَ ?",
+          "choix_ar": [
+            "يَتَفَرَّقُ",
+            "يُفَرِّقُ",
+            "يُفَارِقُ"
+          ],
+          "reponse": 0,
+          "explication": "Forme V : يَتَفَعَّلُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ع ل م dans le moule تَفَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَعَلَّمَ",
+            "عَلَّمَ",
+            "عَلِمَ"
+          ],
+          "reponse": 0,
+          "explication": "ع ل م dans تَفَعَّلَ : تَعَلَّمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق د م dans le moule تَفَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَقَدَّمَ",
+            "قَدَّمَ",
+            "قَدِيمٌ"
+          ],
+          "reponse": 0,
+          "explication": "ق د م dans تَفَعَّلَ : تَقَدَّمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les marchands ont conversé au marché. »",
+          "ar": "… التُّجَّارُ فِي السُّوقِ.",
+          "choix_ar": [
+            "تَحَدَّثَ",
+            "حَدَّثَ",
+            "يُحَدِّثُ"
+          ],
+          "reponse": 0,
+          "explication": "Forme V, verbe en tête au singulier : تَحَدَّثَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ر م dans le moule أَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "أَكْرَمَ",
+            "يُكْرِمُ",
+            "إِكْرَامٌ"
+          ],
+          "reponse": 0,
+          "explication": "أَفْعَلَ : أَكْرَمَ (leçon 3.14).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَافَرَ",
+          "choix": [
+            "il a voyagé",
+            "voyageur",
+            "il a quitté"
+          ],
+          "reponse": 0,
+          "explication": "سَافَرَ veut dire « il a voyagé ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de أَرْسَلَ ?",
+          "choix_ar": [
+            "يُرْسِلُ",
+            "يَرْسُلُ",
+            "رِسَالَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme IV : يُفْعِلُ (leçon 3.14) ; يَرْسُلُ est absent de notre dictionnaire.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais la forme V تَفَعَّلَ / يَتَفَعَّلُ : تَعَلَّمَ « apprendre », تَكَلَّمَ « parler », تَفَرَّقَ « se disperser ».",
+      "suite": "Chez les copistes : la forme VI, quand on agit les uns avec les autres."
+    }
+  ]
+}

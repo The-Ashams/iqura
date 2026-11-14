@@ -24,13 +24,10 @@ void main() {
     const t = Transliterator();
     var checked = 0;
     for (final lesson in lessons()) {
-      for (final section in (lesson['sections'] as List).cast<Map>()) {
-        final items = switch (section['type']) {
-          'syllabes' || 'exemples' => (section['items'] as List).cast<Map>(),
-          'decomposition' => [section],
-          _ => const <Map>[],
-        };
-        for (final item in items) {
+      final elements = (lesson['elements'] as Map?) ?? const {};
+      for (final kind in ['syllabes', 'mots']) {
+        for (final item
+            in ((elements[kind] as List?) ?? const []).cast<Map>()) {
           expect(
             t.transliterate(item['ar'] as String),
             item['translit'],
@@ -40,27 +37,35 @@ void main() {
         }
       }
     }
+    // Fiches de mots (région 2).
+    for (final r in db.select('SELECT ar, translit FROM word')) {
+      expect(
+        t.transliterate(r['ar'] as String),
+        r['translit'],
+        reason: r['ar'] as String,
+      );
+      checked++;
+    }
     expect(checked, greaterThan(20));
   });
 
-  test(
-    'les leçons ne contiennent aucun texte coranique, seulement des références',
-    () {
-      for (final lesson in lessons()) {
-        for (final section in (lesson['sections'] as List).cast<Map>()) {
-          if (section['type'] != 'coran') continue;
-          for (final e in (section['extraits'] as List).cast<Map>()) {
-            expect(
-              e.keys.toSet().difference({'verset', 'mots', 'lettres'}),
-              isEmpty,
-            );
-          }
+  test('aucun verset ni extrait coranique dans les leçons (avenant n° 1)', () {
+    for (final lesson in lessons()) {
+      for (final part in (lesson['ecrans'] as List).cast<Map>()) {
+        expect(part['type'], isNot('coran'), reason: lesson['id'] as String);
+        expect(part.containsKey('extraits'), isFalse);
+        expect(part.containsKey('verset'), isFalse);
+        for (final q in [
+          ...((part['questions'] as List?) ?? const []),
+          ...((part['exercices'] as List?) ?? const []),
+        ].cast<Map>()) {
+          expect(q['mot'], anyOf(isNull, isA<int>()));
         }
       }
-    },
-  );
+    }
+  });
 
-  test('toute leçon est marquée « rédigé par IA — non vérifié »', () {
+  test('toute leçon est marquée « rédigé par IA »', () {
     for (final lesson in lessons()) {
       expect(
         lesson['statut'],

@@ -1,0 +1,616 @@
+{
+  "id": "moteur-26",
+  "etape": 3,
+  "ordre": 26,
+  "format": 3,
+  "titre": "Les verbes défectueux",
+  "objectif": "Conjuguer un verbe dont la dernière lettre est و ou ي : دَعَا, مَشَى, نَسِيَ.",
+  "statut": "ia_non_verifie",
+  "lieu": "ruines",
+  "maitre": "ziyad",
+  "prerequis": [
+    "moteur-25"
+  ],
+  "apercu": [
+    "زِيَادٌ"
+  ],
+  "schemes": [
+    "فَعَلَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "ziyad",
+          "texte": "Dernière inscription des Ruines : la fin du verbe s'est effacée."
+        },
+        {
+          "qui": "ziyad",
+          "texte": "Dans مَشَى, la racine est م ش ي : le ي final est devenu une voyelle longue."
+        }
+      ],
+      "objectif": "Conjuguer دَعَا, مَشَى, نَسِيَ, بَنَى."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai dit à Salmā : le chemin est long. »",
+          "ar": "… لِسَلْمَى: « الطَّرِيقُ طَوِيلٌ. »",
+          "choix_ar": [
+            "قُلْتُ",
+            "قَالَتْ",
+            "أَقُولُ"
+          ],
+          "reponse": 0,
+          "explication": "« je » au passé : قُلْتُ (leçon 3.25)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de يَبِيعُ ?",
+          "choix_ar": [
+            "ب ي ع",
+            "ي ب ع",
+            "ب ع"
+          ],
+          "reponse": 0,
+          "explication": "Le ī cache un ي (leçon 3.25)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَامَ",
+          "choix": [
+            "dormir",
+            "se lever",
+            "revenir"
+          ],
+          "reponse": 0,
+          "explication": "نَامَ (leçon 3.25)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "نَسِيتُ الْمِفْتَاحَ فِي الْبَيْتِ!",
+          "fr": "J'ai oublié la clé à la maison !"
+        },
+        {
+          "qui": "ziyad",
+          "ar": "وَأَيْنَ الْبَيْتُ؟",
+          "fr": "Et où est la maison ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "قَرِيبٌ. أَمْشِي إِلَى الْبَيْتِ، وَأَرْجِعُ.",
+          "fr": "Tout près. Je marche jusqu'à la maison, et je reviens."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'a oublié Bāsim ?",
+        "choix": [
+          "la clé",
+          "la bourse",
+          "la lettre"
+        ],
+        "reponse": 0,
+        "explication": "نَسِيتُ الْمِفْتَاحَ فِي الْبَيْتِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "raa",
+        "daa",
+        "laqiya",
+        "nasiya",
+        "baqiya",
+        "banaa",
+        "masha",
+        "baka"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "بَنَى",
+        "choix": [
+          "construire",
+          "rester",
+          "pleurer"
+        ],
+        "reponse": 0,
+        "explication": "بَنَى veut dire « construire »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La fin qui s'allonge",
+      "texte": "La dernière lettre و ou ي devient souvent une voyelle longue : دَعَا يَدْعُو, مَشَى يَمْشِي, نَسِيَ يَنْسَى. Racine en و : le ā s'écrit ا (دَعَا) ; racine en ي : il s'écrit ى (مَشَى).",
+      "exemples": [
+        "دَعَا",
+        "يَدْعُو",
+        "مَشَى",
+        "يَمْشِي"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de مَشَى ?",
+        "choix_ar": [
+          "م ش ي",
+          "م ش و",
+          "م ش ا"
+        ],
+        "reponse": 0,
+        "explication": "ى final : racine en ي."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les personnes au passé",
+      "texte": "Avec تُ, نَا et تَ, la lettre cachée revient : دَعَوْتُ, مَشَيْتُ, بَنَيْتُ. Pour نَسِيَ et بَقِيَ, elle devient ī : نَسِيتُ, بَقِيتُ.",
+      "exemples": [
+        "دَعَوْتُ",
+        "مَشَيْتُ",
+        "نَسِيتُ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « J'ai marché jusqu'au pont. »",
+        "ar": "… إِلَى الْجِسْرِ.",
+        "choix_ar": [
+          "مَشَيْتُ",
+          "مَشَتْ",
+          "أَمْشِي"
+        ],
+        "reponse": 0,
+        "explication": "« je » au passé : le ي revient, مَشَيْتُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "« Elle » au passé",
+      "texte": "Avec ـَتْ (« elle »), la voyelle longue finale tombe : دَعَتْ, مَشَتْ, بَنَتْ. Mais نَسِيَ et بَقِيَ gardent leur ي : نَسِيَتْ, بَقِيَتْ.",
+      "exemples": [
+        "دَعَتْ",
+        "مَشَتْ",
+        "نَسِيَتْ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Elle a marché jusqu'au pont. »",
+        "ar": "… إِلَى الْجِسْرِ.",
+        "choix_ar": [
+          "مَشَتْ",
+          "مَشَيْتُ",
+          "تَمْشِي"
+        ],
+        "reponse": 0,
+        "explication": "« elle » au passé : la voyelle longue tombe, مَشَتْ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "« Ils », à reconnaître",
+      "texte": "À reconnaître seulement : دَعَوْا « ils ont appelé », مَشَوْا « ils ont marché ». La dernière lettre de la racine tombe ; وْا est la terminaison de « ils » : on lit -aw.",
+      "exemples": [
+        "دَعَوْا",
+        "مَشَوْا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire مَشَوْا ?",
+        "choix": [
+          "ils ont marché",
+          "il a marché",
+          "elle a marché"
+        ],
+        "reponse": 0,
+        "explication": "مَشَوْا : « ils ont marché »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Après لَمْ",
+      "texte": "Après لَمْ, la voyelle longue de la fin devient brève : لَمْ يَدْعُ, لَمْ يَمْشِ, لَمْ يَنْسَ.",
+      "exemples": [
+        "لَمْ يَدْعُ",
+        "لَمْ يَمْشِ",
+        "لَمْ يَنْسَ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « L'étudiant n'a pas oublié la leçon. »",
+        "ar": "لَمْ … الطَّالِبُ الدَّرْسَ.",
+        "choix_ar": [
+          "يَنْسَ",
+          "يَنْسَى",
+          "نَسِيَ"
+        ],
+        "reponse": 0,
+        "explication": "Après لَمْ, ā devient a bref : يَنْسَ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَسِيَ",
+          "choix": [
+            "oublier",
+            "rester",
+            "rencontrer"
+          ],
+          "reponse": 0,
+          "explication": "نَسِيَ veut dire « oublier »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَقِيَ",
+          "choix": [
+            "rencontrer",
+            "appeler",
+            "voir"
+          ],
+          "reponse": 0,
+          "explication": "لَقِيَ veut dire « rencontrer »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je marche » ?",
+          "choix_ar": [
+            "أَمْشِي",
+            "مَشَيْتُ",
+            "تَمْشِي"
+          ],
+          "reponse": 0,
+          "explication": "« je marche » se dit أَمْشِي."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai construit » ?",
+          "choix_ar": [
+            "بَنَيْتُ",
+            "بَنَتْ",
+            "أَبْنِي"
+          ],
+          "reponse": 0,
+          "explication": "« j'ai construit » se dit بَنَيْتُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Tu as oublié la clé ? »",
+          "ar": "هَلْ … الْمِفْتَاحَ؟",
+          "choix_ar": [
+            "نَسِيتَ",
+            "نَسِيتُ",
+            "تَنْسَى"
+          ],
+          "reponse": 0,
+          "explication": "« tu » au passé : نَسِيتَ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Retrouve la racine de يَدْعُو.",
+          "tuiles": [
+            "د",
+            "ع",
+            "و",
+            "ي"
+          ],
+          "solution": [
+            "د",
+            "ع",
+            "و"
+          ],
+          "explication": "ي est le préfixe ; le ū final cache le و : د ع و.",
+          "ar": "يَدْعُو"
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Retrouve la racine de بَنَيْتُ.",
+          "tuiles": [
+            "ب",
+            "ن",
+            "ي",
+            "ت"
+          ],
+          "solution": [
+            "ب",
+            "ن",
+            "ي"
+          ],
+          "explication": "تُ est la terminaison de « je » : ب ن ي.",
+          "ar": "بَنَيْتُ"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans يَبْكِي, quelle lettre de la racine est cachée ?",
+          "choix": [
+            "le ي final",
+            "le و final",
+            "un ا"
+          ],
+          "reponse": 0,
+          "explication": "ب ك ي : le ī final cache le ي."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai appelé Bāsim. »",
+          "ar": "… بَاسِمًا.",
+          "choix_ar": [
+            "دَعَوْتُ",
+            "دَعَتْ",
+            "أَدْعُو"
+          ],
+          "reponse": 0,
+          "explication": "« je » au passé : le و revient, دَعَوْتُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'enfant n'a pas pleuré. »",
+          "ar": "لَمْ … الطِّفْلُ.",
+          "choix_ar": [
+            "يَبْكِ",
+            "يَبْكِي",
+            "بَكَى"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ, ī devient i bref : يَبْكِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je reste à la maison. »",
+          "ar": "… فِي الْبَيْتِ.",
+          "choix_ar": [
+            "أَبْقَى",
+            "بَقِيتُ",
+            "تَبْقَى"
+          ],
+          "reponse": 0,
+          "explication": "« je » à l'inaccompli : أَبْقَى."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le soir près du pont",
+      "texte": "Ziyād raconte une soirée. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الْمَسَاءِ، مَشَى بَاسِمٌ إِلَى الْجِسْرِ.",
+        "لَقِيَ بَاسِمٌ صَدِيقَهُ، وَدَعَا الصَّدِيقَ إِلَى الْبَيْتِ.",
+        "بَنَى النَّجَّارُ بَيْتًا صَغِيرًا عِنْدَ الْجِسْرِ.",
+        "بَقِيَ الصَّدِيقَانِ فِي الْبَيْتِ، وَلَمْ يَنْسَ بَاسِمٌ الْمِفْتَاحَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui Bāsim a-t-il rencontré ?",
+          "choix": [
+            "son ami",
+            "le menuisier",
+            "le marchand"
+          ],
+          "reponse": 0,
+          "explication": "لَقِيَ بَاسِمٌ صَدِيقَهُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a construit le menuisier ?",
+          "choix": [
+            "une petite maison",
+            "un pont",
+            "une tente"
+          ],
+          "reponse": 0,
+          "explication": "بَنَى النَّجَّارُ بَيْتًا صَغِيرًا."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le menuisier a construit une petite maison. » ?",
+          "choix_ar": [
+            "بَنَى النَّجَّارُ بَيْتًا صَغِيرًا.",
+            "بَنَيْتُ النَّجَّارُ بَيْتًا صَغِيرًا.",
+            "يَبْنِي بَيْتٌ صَغِيرٌ النَّجَّارَ."
+          ],
+          "reponse": 0,
+          "explication": "بَنَى النَّجَّارُ بَيْتًا صَغِيرًا. بَنَيْتُ est la forme de « je », impossible avec النَّجَّارُ pour sujet ; dans la 3e phrase, sujet et complément sont inversés."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Samīr a rencontré son ami. »",
+          "tuiles": [
+            "صَدِيقَهُ",
+            "سَمِيرٌ",
+            "لَقِيَ",
+            "لَقِيتُ"
+          ],
+          "solution": [
+            "لَقِيَ",
+            "سَمِيرٌ",
+            "صَدِيقَهُ"
+          ],
+          "explication": "Verbe, sujet, complément. لَقِيتُ veut dire « j'ai rencontré » : avec سَمِيرٌ pour sujet, il faut لَقِيَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nous avons marché jusqu'au pont. »",
+          "ar": "… إِلَى الْجِسْرِ.",
+          "choix_ar": [
+            "مَشَيْنَا",
+            "مَشَتْ",
+            "نَمْشِي"
+          ],
+          "reponse": 0,
+          "explication": "« nous » au passé : مَشَيْنَا."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "دَعَا",
+          "choix": [
+            "appeler, inviter",
+            "voir",
+            "marcher"
+          ],
+          "reponse": 0,
+          "explication": "دَعَا veut dire « appeler, inviter »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَقِيَ",
+          "choix": [
+            "rester",
+            "pleurer",
+            "construire"
+          ],
+          "reponse": 0,
+          "explication": "بَقِيَ veut dire « rester »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَأَى",
+          "choix": [
+            "voir",
+            "lire",
+            "appeler"
+          ],
+          "reponse": 0,
+          "explication": "رَأَى veut dire « voir »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai oublié » ?",
+          "choix_ar": [
+            "نَسِيتُ",
+            "نَسِيَتْ",
+            "أَنْسَى"
+          ],
+          "reponse": 0,
+          "explication": "« j'ai oublié » se dit نَسِيتُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans un verbe défectueux, la dernière lettre و ou ي…",
+          "choix": [
+            "devient souvent une voyelle longue",
+            "tombe toujours",
+            "devient une hamza"
+          ],
+          "reponse": 0,
+          "explication": "دَعَا, مَشَى, نَسِيَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de دَعَا ?",
+          "choix_ar": [
+            "د ع و",
+            "د ع ي",
+            "د ع ا"
+          ],
+          "reponse": 0,
+          "explication": "ا final : racine en و (يَدْعُو)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de يَلْقَى ?",
+          "choix_ar": [
+            "ل ق ي",
+            "ي ل ق",
+            "ل ق ا"
+          ],
+          "reponse": 0,
+          "explication": "لَقِيَ : racine en ي."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'a pas marché. »",
+          "ar": "لَمْ …",
+          "choix_ar": [
+            "يَمْشِ",
+            "يَمْشِي",
+            "مَشَى"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ, ī devient i bref : يَمْشِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Elle a construit une maison. »",
+          "ar": "… بَيْتًا.",
+          "choix_ar": [
+            "بَنَتْ",
+            "بَنَيْتُ",
+            "تَبْنِي"
+          ],
+          "reponse": 0,
+          "explication": "« elle » au passé : بَنَتْ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَامَ",
+          "choix": [
+            "se lever",
+            "dire",
+            "dormir"
+          ],
+          "reponse": 0,
+          "explication": "قَامَ veut dire « se lever ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَضَعَ",
+          "choix": [
+            "poser, mettre",
+            "trouver",
+            "tomber"
+          ],
+          "reponse": 0,
+          "explication": "وَضَعَ veut dire « poser, mettre ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment dit-on « j'ai vendu » ?",
+          "choix_ar": [
+            "بِعْتُ",
+            "بَاعَ",
+            "أَبِيعُ"
+          ],
+          "reponse": 0,
+          "explication": "Syllabe fermée : بِعْتُ (leçon 3.25).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu conjugues les verbes défectueux : دَعَا / يَدْعُو / دَعَوْتُ, مَشَى / يَمْشِي / مَشَيْتُ, نَسِيَ / يَنْسَى / نَسِيتُ. Les Ruines n'ont plus de secret !",
+      "suite": "Au Tribunal des scribes : Widād explique la fin de chaque mot par sa fonction."
+    }
+  ]
+}

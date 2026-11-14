@@ -1,0 +1,558 @@
+{
+  "id": "moteur-16",
+  "etape": 3,
+  "ordre": 16,
+  "format": 3,
+  "titre": "La forme VI",
+  "objectif": "Comprendre la forme VI تَفَاعَلَ : l'action réciproque.",
+  "statut": "ia_non_verifie",
+  "lieu": "copistes",
+  "maitre": "rabab",
+  "prerequis": [
+    "moteur-15"
+  ],
+  "apercu": [
+    "رَبَابُ"
+  ],
+  "schemes": [
+    "تَفَاعَلَ",
+    "يَتَفَاعَلُ",
+    "تَفَاعُل",
+    "فَاعَلَ",
+    "يُفَاعِلُ",
+    "تَفَعَّلَ",
+    "يَتَفَعَّلُ",
+    "تَفَعُّل",
+    "فَعَّلَ",
+    "أَفْعَلَ",
+    "فَعِيل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "texte": "Après la forme II vient la forme V. Après la forme III vient la forme VI : تَـ devant فَاعَلَ."
+        },
+        {
+          "qui": "rabab",
+          "texte": "كَاتَبَ, c'est « écrire à quelqu'un » ; تَكَاتَبَ, c'est « s'écrire l'un à l'autre »."
+        }
+      ],
+      "objectif": "Reconnaître la forme VI et dire une action réciproque."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ر ق dans le moule تَفَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَفَرَّقَ",
+            "فَرَّقَ",
+            "فَارَقَ"
+          ],
+          "reponse": 0,
+          "explication": "ف ر ق dans تَفَعَّلَ : تَفَرَّقَ (leçon 3.15)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de تَعَلَّمَ ?",
+          "choix_ar": [
+            "يَتَعَلَّمُ",
+            "يُعَلِّمُ",
+            "يَعْلَمُ"
+          ],
+          "reponse": 0,
+          "explication": "Forme V : يَتَعَلَّمُ (leçon 3.15)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَاتَبَ",
+          "choix": [
+            "il a correspondu avec",
+            "il a écrit",
+            "scribe"
+          ],
+          "reponse": 0,
+          "explication": "كَاتَبَ : forme III (leçon 3.13)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "تَعَارَفْنَا فِي الْقَافِلَةِ، أَنَا وَسَمِيرٌ.",
+          "fr": "Nous avons fait connaissance dans la caravane, Samīr et moi."
+        },
+        {
+          "qui": "rabab",
+          "ar": "وَالْآنَ؟",
+          "fr": "Et maintenant ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "الْآنَ نَتَكَاتَبُ.",
+          "fr": "Maintenant, nous nous écrivons."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que font Bāsim et Samīr maintenant ?",
+        "choix": [
+          "ils s'écrivent",
+          "ils font la course",
+          "ils se disputent"
+        ],
+        "reponse": 0,
+        "explication": "الْآنَ نَتَكَاتَبُ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "takaataba",
+        "taaarafa",
+        "taqaasama",
+        "tasaabaqa",
+        "tanaazaa",
+        "tashaabaha",
+        "tasaafaha",
+        "tamaarada"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "تَقَاسَمَ",
+        "choix": [
+          "se partager",
+          "se diviser",
+          "se séparer"
+        ],
+        "reponse": 0,
+        "explication": "تَقَاسَمَ veut dire « se partager »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les uns avec les autres",
+      "texte": "Forme VI, moule تَفَاعَلَ : تَـ devant la forme III. Elle dit souvent une action réciproque ; le verbe en tête reste au singulier : تَكَاتَبَ الصَّدِيقَانِ « les deux amis se sont écrit ».",
+      "exemples": [
+        "تَكَاتَبَ",
+        "تَعَارَفَ",
+        "تَصَافَحَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire تَصَافَحَ الرَّجُلَانِ ?",
+        "choix": [
+          "Les deux hommes se sont serré la main.",
+          "L'homme a serré la main.",
+          "Les deux hommes se sont disputés."
+        ],
+        "reponse": 0,
+        "explication": "Forme VI : action réciproque."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Inaccompli, nom d'action, faire semblant",
+      "texte": "L'inaccompli garde a : يَتَكَاتَبُ ; le nom d'action suit le moule تَفَاعُل (تَعَارُفٌ). Parfois, la forme VI veut dire « faire semblant » : مَرِيضٌ → تَمَارَضَ « faire le malade ».",
+      "exemples": [
+        "يَتَكَاتَبُ",
+        "تَعَارُفٌ",
+        "تَمَارَضَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire تَمَارَضَ ?",
+        "choix": [
+          "faire semblant d'être malade",
+          "être malade",
+          "soigner"
+        ],
+        "reponse": 0,
+        "explication": "Forme VI : parfois « faire semblant »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Compter le ā",
+      "texte": "تَفَاعَلَ a un ā après la 1re lettre ; تَفَعَّلَ a une shadda : تَكَاتَبَ (VI) ≠ تَكَلَّمَ (V). On compte les lettres avant de traduire.",
+      "exemples": [
+        "تَكَاتَبَ",
+        "تَكَلَّمَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "تَعَارَفَ est une forme…",
+        "choix": [
+          "VI (un ā)",
+          "V (une shadda)",
+          "III"
+        ],
+        "reponse": 0,
+        "explication": "تَ عَ ا رَ فَ : تَفَاعَلَ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَعَارَفَ",
+          "choix": [
+            "faire connaissance",
+            "savoir",
+            "s'écrire"
+          ],
+          "reponse": 0,
+          "explication": "تَعَارَفَ veut dire « faire connaissance »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَنَازَعَ",
+          "choix": [
+            "se disputer",
+            "se partager",
+            "faire la course ensemble"
+          ],
+          "reponse": 0,
+          "explication": "تَنَازَعَ veut dire « se disputer »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils se ressemblent » ?",
+          "choix_ar": [
+            "يَتَشَابَهُونَ",
+            "تَشَابُهٌ",
+            "يَتَكَاتَبُونَ"
+          ],
+          "reponse": 0,
+          "explication": "« ils se ressemblent » se dit يَتَشَابَهُونَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils font la course ensemble » ?",
+          "choix_ar": [
+            "يَتَسَابَقُونَ",
+            "تَسَابُقٌ",
+            "يَتَنَازَعُونَ"
+          ],
+          "reponse": 0,
+          "explication": "« ils font la course ensemble » se dit يَتَسَابَقُونَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de تَقَاسَمَ ?",
+          "choix_ar": [
+            "تَفَاعَلَ",
+            "تَفَعَّلَ",
+            "فَاعَلَ"
+          ],
+          "reponse": 0,
+          "explication": "تَـ + un ā : تَفَاعَلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le nom d'action de تَعَارَفَ ?",
+          "choix_ar": [
+            "تَعَارُفٌ",
+            "مَعْرِفَةٌ",
+            "يَتَعَارَفُ"
+          ],
+          "reponse": 0,
+          "explication": "Forme VI : تَفَاعُل."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine س ب ق dans le moule تَفَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَسَابَقَ",
+            "سَابَقَ",
+            "يُسَابِقُ"
+          ],
+          "reponse": 0,
+          "explication": "س ب ق dans تَفَاعَلَ : تَسَابَقَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ت ب dans le moule تَفَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَكَاتَبَ",
+            "كَاتَبَ",
+            "كَاتِبٌ"
+          ],
+          "reponse": 0,
+          "explication": "ك ت ب dans تَفَاعَلَ : تَكَاتَبَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les deux amis se sont écrit. »",
+          "ar": "… الصَّدِيقَانِ.",
+          "choix_ar": [
+            "تَكَاتَبَ",
+            "كَاتَبَ",
+            "تَكَاتَبُوا"
+          ],
+          "reponse": 0,
+          "explication": "Forme VI, verbe en tête au singulier : تَكَاتَبَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les deux mots se ressemblaient. »",
+          "ar": "… الْكَلِمَتَانِ.",
+          "choix_ar": [
+            "تَشَابَهَتِ",
+            "تَتَشَابَهَانِ",
+            "تَشَابُهٌ"
+          ],
+          "reponse": 0,
+          "explication": "Verbe en tête : singulier, sans terminaison de duel (pas تَتَشَابَهَانِ) ; avec un sujet féminin, on met d'habitude تْ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Au pont",
+      "texte": "Rabāb raconte une après-midi près du pont. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "تَسَابَقَ الْأَطْفَالُ إِلَى الْجِسْرِ.",
+        "عِنْدَ الْجِسْرِ، تَقَاسَمَ الْأَطْفَالُ التَّمْرَ.",
+        "تَنَازَعَ طِفْلَانِ، ثُمَّ تَصَافَحَ الطِّفْلَانِ.",
+        "وَتَمَارَضَ طِفْلٌ صَغِيرٌ، وَتَعَجَّبَ الشَّيْخُ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'ont fait les deux enfants après la dispute ?",
+          "choix": [
+            "ils se sont serré la main",
+            "ils ont fait la course",
+            "ils se sont écrit"
+          ],
+          "reponse": 0,
+          "explication": "ثُمَّ تَصَافَحَ الطِّفْلَانِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le petit enfant était-il vraiment malade ?",
+          "choix": [
+            "non, il faisait semblant",
+            "oui",
+            "on ne le sait pas"
+          ],
+          "reponse": 0,
+          "explication": "تَمَارَضَ : il a fait semblant d'être malade."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Les voyageurs ont fait connaissance dans la caravane. » ?",
+          "choix_ar": [
+            "تَعَارَفَ الْمُسَافِرُونَ فِي الْقَافِلَةِ.",
+            "عَرَفَ الْمُسَافِرُونَ فِي الْقَافِلَةِ.",
+            "تَعَارَفُوا الْمُسَافِرِينَ فِي الْقَافِلَةُ."
+          ],
+          "reponse": 0,
+          "explication": "« Les voyageurs ont fait connaissance dans la caravane. » se dit تَعَارَفَ الْمُسَافِرُونَ فِي الْقَافِلَةِ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Les enfants se sont partagé les dattes. »",
+          "tuiles": [
+            "التَّمْرَ",
+            "الْأَطْفَالُ",
+            "تَقَاسَمَ",
+            "تَقَاسَمُوا"
+          ],
+          "solution": [
+            "تَقَاسَمَ",
+            "الْأَطْفَالُ",
+            "التَّمْرَ"
+          ],
+          "explication": "Verbe en tête au singulier, sujet, complément."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Maintenant, nous nous écrivons. »",
+          "ar": "الْآنَ …",
+          "choix_ar": [
+            "نَتَكَاتَبُ",
+            "نُكَاتِبُ",
+            "نَكْتُبُ"
+          ],
+          "reponse": 0,
+          "explication": "« nous » à l'inaccompli de la forme VI : نَتَكَاتَبُ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَكَاتَبَ",
+          "choix": [
+            "s'écrire (l'un à l'autre)",
+            "se serrer la main",
+            "se disputer"
+          ],
+          "reponse": 0,
+          "explication": "تَكَاتَبَ veut dire « s'écrire l'un à l'autre »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَشَابَهَ",
+          "choix": [
+            "se ressembler",
+            "se disputer",
+            "se partager"
+          ],
+          "reponse": 0,
+          "explication": "تَشَابَهَ veut dire « se ressembler »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَصَافَحَ",
+          "choix": [
+            "se serrer la main",
+            "faire connaissance",
+            "faire la course ensemble"
+          ],
+          "reponse": 0,
+          "explication": "تَصَافَحَ veut dire « se serrer la main »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils se disputent » ?",
+          "choix_ar": [
+            "يَتَنَازَعُونَ",
+            "يَتَسَابَقُونَ",
+            "يَتَعَارَفُونَ"
+          ],
+          "reponse": 0,
+          "explication": "« ils se disputent » se dit يَتَنَازَعُونَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La forme VI dit souvent…",
+          "choix": [
+            "une action réciproque",
+            "faire faire l'action",
+            "demander l'action"
+          ],
+          "reponse": 0,
+          "explication": "تَكَاتَبَ الصَّدِيقَانِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de تَقَاسَمَ ?",
+          "choix_ar": [
+            "يَتَقَاسَمُ",
+            "يَتَقَاسِمُ",
+            "تَقَاسُمٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme VI : يَتَفَاعَلُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ع ر ف dans le moule تَفَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَعَارَفَ",
+            "عَرَفَ",
+            "يَعْرِفُ"
+          ],
+          "reponse": 0,
+          "explication": "ع ر ف dans تَفَاعَلَ : تَعَارَفَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ن ز ع dans le moule تَفَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَنَازَعَ",
+            "يَتَنَازَعُ",
+            "تَنَازُعٌ"
+          ],
+          "reponse": 0,
+          "explication": "ن ز ع dans تَفَاعَلَ : تَنَازَعَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les deux hommes se sont serré la main. »",
+          "ar": "… الرَّجُلَانِ.",
+          "choix_ar": [
+            "تَصَافَحَ",
+            "تَصَافَحَا",
+            "تَصَافُحٌ"
+          ],
+          "reponse": 0,
+          "explication": "Verbe en tête au singulier : تَصَافَحَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ذ ك ر dans le moule تَفَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "تَذَكَّرَ",
+            "يَتَذَكَّرُ",
+            "تَذَكُّرٌ"
+          ],
+          "reponse": 0,
+          "explication": "تَفَعَّلَ : تَذَكَّرَ (leçon 3.15).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَصْلَحَ",
+          "choix": [
+            "il a réparé",
+            "il a envoyé",
+            "il a nourri"
+          ],
+          "reponse": 0,
+          "explication": "أَصْلَحَ veut dire « il a réparé ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de تَكَلَّمَ ?",
+          "choix_ar": [
+            "تَفَعَّلَ",
+            "تَفَاعَلَ",
+            "فَعَّلَ"
+          ],
+          "reponse": 0,
+          "explication": "تَفَعَّلَ (leçon 3.15).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais la forme VI تَفَاعَلَ / يَتَفَاعَلُ : تَكَاتَبَ, تَعَارَفَ, تَقَاسَمَ. Elle dit souvent une action réciproque.",
+      "suite": "Chez les copistes : la forme VII, quand une chose s'ouvre ou se rompt d'elle-même."
+    }
+  ]
+}

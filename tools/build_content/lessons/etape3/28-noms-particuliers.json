@@ -1,0 +1,580 @@
+{
+  "id": "moteur-28",
+  "etape": 3,
+  "ordre": 28,
+  "format": 3,
+  "titre": "Noms particuliers",
+  "objectif": "Reconnaître les noms sans tanwīn et les noms comme أَبُو, أَخُو.",
+  "statut": "ia_non_verifie",
+  "lieu": "tribunal",
+  "maitre": "widad",
+  "prerequis": [
+    "moteur-27"
+  ],
+  "apercu": [
+    "وِدَادُ",
+    "بَغْدَادَ",
+    "بَغْدَادُ",
+    "دِمَشْقَ",
+    "دِمَشْقُ",
+    "رَبَابَ",
+    "نُورَةُ",
+    "فَعْلَاءُ"
+  ],
+  "schemes": [
+    "أَفْعَلُ",
+    "فَعْلَاءُ",
+    "مَفَاعِلُ",
+    "مَفَاعِيلُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "widad",
+          "texte": "Au tribunal, certains noms refusent le tanwīn. On dit مِنْ بَغْدَادَ, avec a, et non « بَغْدَادٍ »."
+        },
+        {
+          "qui": "widad",
+          "texte": "Et d'autres allongent leur voyelle devant un nom : أَبُو بَاسِمٍ."
+        }
+      ],
+      "objectif": "Reconnaître les diptotes et les noms comme أَبُو."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le village est loin du fleuve. »",
+          "ar": "الْقَرْيَةُ بَعِيدَةٌ … النَّهْرِ.",
+          "choix_ar": [
+            "عَنِ",
+            "بِـ",
+            "عَلَى"
+          ],
+          "reponse": 0,
+          "explication": "بَعِيدٌ عَنْ (leçon 3.27)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Un complément direct comme الْبَابَ finit par…",
+          "choix": [
+            "-a",
+            "-u",
+            "-i"
+          ],
+          "reponse": 0,
+          "explication": "مَفْعُولٌ بِهِ : -a (leçon 3.27)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جُمْلَةٌ",
+          "choix": [
+            "phrase",
+            "mot",
+            "nouvelle"
+          ],
+          "reponse": 0,
+          "explication": "جُمْلَةٌ (leçon 3.27)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "widad",
+          "ar": "أَيْنَ أَبُو بَاسِمٍ؟",
+          "fr": "Où est le père de Bāsim (Abū Bāsim) ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "سَافَرَ إِلَى بَغْدَادَ.",
+          "fr": "Il est parti en voyage pour Bagdad."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où est parti le père de Bāsim ?",
+        "choix": [
+          "à Bagdad",
+          "à Damas",
+          "au marché"
+        ],
+        "reponse": 0,
+        "explication": "سَافَرَ إِلَى بَغْدَادَ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ab",
+        "akh",
+        "dhu",
+        "ukht",
+        "abyad",
+        "aswad",
+        "ahmar"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "أُخْتٌ",
+        "choix": [
+          "sœur",
+          "frère",
+          "mère"
+        ],
+        "reponse": 0,
+        "explication": "أُخْتٌ veut dire « sœur »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les noms sans tanwīn",
+      "texte": "Certains noms n'ont jamais de tanwīn et font -a au lieu de -i : مِنْ بَغْدَادَ, مَعَ رَبَابَ, ثَلَاثَةُ دَرَاهِمَ. Avec الْ ou en iḍāfa, ils reprennent -i : فِي الْمَفَاتِيحِ.",
+      "exemples": [
+        "بَغْدَادَ",
+        "رَبَابَ",
+        "دَرَاهِمَ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Le marchand est parti en voyage pour Bagdad. »",
+        "ar": "سَافَرَ التَّاجِرُ إِلَى …",
+        "choix_ar": [
+          "بَغْدَادَ",
+          "بَغْدَادٍ",
+          "بَغْدَادِ"
+        ],
+        "reponse": 0,
+        "explication": "Ville sans tanwīn : -a après إِلَى."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Qui sont-ils ?",
+      "texte": "Les noms sans tanwīn sont souvent : des prénoms féminins (رَبَابُ, وِدَادُ), des villes (بَغْدَادُ, دِمَشْقُ), le moule أَفْعَلُ (أَكْبَرُ, أَحْمَرُ), et des pluriels comme دَرَاهِمُ, مَفَاتِيحُ.",
+      "exemples": [
+        "وِدَادُ",
+        "دِمَشْقُ",
+        "أَحْمَرُ",
+        "مَفَاتِيحُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Lequel de ces mots n'a jamais de tanwīn ?",
+        "choix_ar": [
+          "دَرَاهِمُ",
+          "دِرْهَمٌ",
+          "كِتَابٌ"
+        ],
+        "reponse": 0,
+        "explication": "Pluriel de la forme مَفَاعِلُ (comme مَدَارِسُ) : sans tanwīn."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "أَبُو, أَخُو",
+      "texte": "أَبٌ « père », أَخٌ « frère » (et ذُو « qui a ») allongent leur voyelle devant un nom : أَبُو بَاسِمٍ (-u), أَبَا بَاسِمٍ (-a), أَبِي بَاسِمٍ (-i).",
+      "exemples": [
+        "أَبُو بَاسِمٍ",
+        "أَخَا سَلْمَى",
+        "أَبِي بَاسِمٍ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Je me suis assis avec le père de Bāsim. »",
+        "ar": "جَلَسْتُ مَعَ … بَاسِمٍ.",
+        "choix_ar": [
+          "أَبِي",
+          "أَبُو",
+          "أَبَا"
+        ],
+        "reponse": 0,
+        "explication": "Après مَعَ : -i, أَبِي."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les couleurs",
+      "texte": "Les couleurs suivent le moule أَفْعَلُ, et au féminin فَعْلَاءُ : أَبْيَضُ / بَيْضَاءُ, أَسْوَدُ / سَوْدَاءُ. Ce ne sont pas des comparatifs, et au singulier elles n'ont jamais de tanwīn.",
+      "exemples": [
+        "أَبْيَضُ",
+        "بَيْضَاءُ",
+        "أَسْوَدُ",
+        "سَوْدَاءُ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « C'est une tente noire. »",
+        "ar": "هَٰذِهِ خَيْمَةٌ …",
+        "choix_ar": [
+          "سَوْدَاءُ",
+          "أَسْوَدُ",
+          "سَوْدَاءٌ"
+        ],
+        "reponse": 0,
+        "explication": "Féminin فَعْلَاءُ, sans tanwīn : سَوْدَاءُ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَبْيَضُ",
+          "choix": [
+            "blanc",
+            "noir",
+            "plus grand"
+          ],
+          "reponse": 0,
+          "explication": "أَبْيَضُ veut dire « blanc »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَخٌ",
+          "choix": [
+            "frère",
+            "père",
+            "ami"
+          ],
+          "reponse": 0,
+          "explication": "أَخٌ veut dire « frère »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le père de Samīr » ?",
+          "choix_ar": [
+            "أَبُو سَمِيرٍ",
+            "أَبٌ سَمِيرٌ",
+            "أَبُو سَمِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "أَبُو سَمِيرٍ : أَبُو devant le nom, et le nom qui suit au cas -i."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « de Damas » ?",
+          "choix_ar": [
+            "مِنْ دِمَشْقَ",
+            "مِنْ دِمَشْقٍ",
+            "مِنْ دِمَشْقُ"
+          ],
+          "reponse": 0,
+          "explication": "« de Damas » se dit مِنْ دِمَشْقَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi dit-on مَعَ رَبَابَ et non « مَعَ رَبَابٍ » ?",
+          "choix": [
+            "prénom féminin sans tanwīn : -a",
+            "complément direct",
+            "faute d'écriture"
+          ],
+          "reponse": 0,
+          "explication": "Les prénoms féminins, en général, n'ont pas de tanwīn."
+        },
+        {
+          "type": "qcm",
+          "consigne": "أَحْمَرُ, c'est…",
+          "choix": [
+            "une couleur : rouge",
+            "un comparatif : plus rouge",
+            "un verbe"
+          ],
+          "reponse": 0,
+          "explication": "Les couleurs ont le moule أَفْعَلُ sans être des comparatifs."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a trois dirhams dans la bourse. »",
+          "ar": "فِي الْكِيسِ ثَلَاثَةُ …",
+          "choix_ar": [
+            "دَرَاهِمَ",
+            "دَرَاهِمٍ",
+            "دِرْهَمٌ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel sans tanwīn : -a au lieu de -i."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai vu le frère de Salmā. »",
+          "ar": "رَأَيْتُ … سَلْمَى.",
+          "choix_ar": [
+            "أَخَا",
+            "أَخُو",
+            "أَخِي"
+          ],
+          "reponse": 0,
+          "explication": "Complément direct : -a, أَخَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La neige est blanche. »",
+          "ar": "الثَّلْجُ …",
+          "choix_ar": [
+            "أَبْيَضُ",
+            "أَبْيَضٌ",
+            "بَيْضَاءُ"
+          ],
+          "reponse": 0,
+          "explication": "Masculin, sans tanwīn : أَبْيَضُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le frère de Salmā est au marché. »",
+          "ar": "… سَلْمَى فِي السُّوقِ.",
+          "choix_ar": [
+            "أَخُو",
+            "أَخَا",
+            "أَخِي"
+          ],
+          "reponse": 0,
+          "explication": "Sujet : -u, أَخُو."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Des voyageurs au tribunal",
+      "texte": "Widād raconte l'arrivée d'une famille. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "جَاءَ أَبُو سَمِيرٍ مِنْ دِمَشْقَ.",
+        "وَأُخْتُ سَمِيرٍ فِي الْمَدْرَسَةِ مَعَ رَبَابَ.",
+        "فِي الْكِيسِ ثَلَاثَةُ دَرَاهِمَ، وَالصُّنْدُوقُ أَحْمَرُ.",
+        "جَلَسَ أَخُو سَلْمَى فِي خَيْمَةٍ سَوْدَاءَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "D'où est venu le père de Samīr ?",
+          "choix": [
+            "de Damas",
+            "de Bagdad",
+            "du village"
+          ],
+          "reponse": 0,
+          "explication": "جَاءَ أَبُو سَمِيرٍ مِنْ دِمَشْقَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "De quelle couleur est le coffre ?",
+          "choix": [
+            "rouge",
+            "noir",
+            "blanc"
+          ],
+          "reponse": 0,
+          "explication": "وَالصُّنْدُوقُ أَحْمَرُ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le père de Bāsim est marchand. » ?",
+          "choix_ar": [
+            "أَبُو بَاسِمٍ تَاجِرٌ.",
+            "أَبَا بَاسِمٍ تَاجِرٌ.",
+            "أَبُو بَاسِمٌ تَاجِرٌ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet : -u, أَبُو ; le nom qui suit est au cas -i, بَاسِمٍ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Bāsim s'est assis avec Rabāb. »",
+          "tuiles": [
+            "رَبَابَ",
+            "بَاسِمٌ",
+            "جَلَسَ",
+            "مَعَ",
+            "رَبَابٍ"
+          ],
+          "solution": [
+            "جَلَسَ",
+            "بَاسِمٌ",
+            "مَعَ",
+            "رَبَابَ"
+          ],
+          "explication": "Prénom féminin sans tanwīn : رَبَابَ après مَعَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le frère de Salmā s'est assis dans une tente noire. »",
+          "ar": "جَلَسَ أَخُو سَلْمَى فِي خَيْمَةٍ …",
+          "choix_ar": [
+            "سَوْدَاءَ",
+            "سَوْدَاءٍ",
+            "أَسْوَدَ"
+          ],
+          "reponse": 0,
+          "explication": "Adjectif sans tanwīn, au génitif : -a, سَوْدَاءَ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَسْوَدُ",
+          "choix": [
+            "noir",
+            "blanc",
+            "rouge"
+          ],
+          "reponse": 0,
+          "explication": "أَسْوَدُ veut dire « noir »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَبٌ",
+          "choix": [
+            "père",
+            "frère",
+            "fils"
+          ],
+          "reponse": 0,
+          "explication": "أَبٌ veut dire « père »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَحْمَرُ",
+          "choix": [
+            "rouge",
+            "plus rouge",
+            "noir"
+          ],
+          "reponse": 0,
+          "explication": "أَحْمَرُ veut dire « rouge »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « avec Widād » ?",
+          "choix_ar": [
+            "مَعَ وِدَادَ",
+            "مَعَ وِدَادٍ",
+            "مَعَ وِدَادُ"
+          ],
+          "reponse": 0,
+          "explication": "« avec Widād » se dit مَعَ وِدَادَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Un nom sans tanwīn et sans الْ, après une préposition, finit par…",
+          "choix": [
+            "-a",
+            "-i",
+            "-un"
+          ],
+          "reponse": 0,
+          "explication": "مِنْ بَغْدَادَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Avec الْ, un nom sans tanwīn…",
+          "choix": [
+            "reprend -i après une préposition",
+            "garde -a",
+            "prend le tanwīn"
+          ],
+          "reponse": 0,
+          "explication": "فِي الْمَفَاتِيحِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le féminin de أَبْيَضُ ?",
+          "choix_ar": [
+            "بَيْضَاءُ",
+            "سَوْدَاءُ",
+            "حَمْرَاءُ"
+          ],
+          "reponse": 0,
+          "explication": "Moule فَعْلَاءُ : بَيْضَاءُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je me suis assis avec le père de Samīr. »",
+          "ar": "جَلَسْتُ مَعَ … سَمِيرٍ.",
+          "choix_ar": [
+            "أَبِي",
+            "أَبُو",
+            "أَبَا"
+          ],
+          "reponse": 0,
+          "explication": "Après مَعَ : -i, أَبِي."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il est venu de Damas. »",
+          "ar": "جَاءَ مِنْ …",
+          "choix_ar": [
+            "دِمَشْقَ",
+            "دِمَشْقٍ",
+            "دِمَشْقِ"
+          ],
+          "reponse": 0,
+          "explication": "Ville sans tanwīn : -a."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَنْ",
+          "choix": [
+            "de, au sujet de",
+            "avec",
+            "sur"
+          ],
+          "reponse": 0,
+          "explication": "عَنْ veut dire « de, au sujet de ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَشَى",
+          "choix": [
+            "marcher",
+            "rester",
+            "voir"
+          ],
+          "reponse": 0,
+          "explication": "مَشَى veut dire « marcher ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans كَتَبَ سَمِيرٌ الرِّسَالَةَ, الرِّسَالَةَ est…",
+          "choix": [
+            "complément direct",
+            "sujet du verbe",
+            "attribut"
+          ],
+          "reponse": 0,
+          "explication": "مَفْعُولٌ بِهِ (leçon 3.27).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais les noms sans tanwīn (بَغْدَادَ, رَبَابَ, دَرَاهِمَ, أَحْمَرُ) et les noms qui allongent leur voyelle : أَبُو, أَبَا, أَبِي.",
+      "suite": "Au Tribunal : « pour qu'il écrive », le subjonctif."
+    }
+  ]
+}

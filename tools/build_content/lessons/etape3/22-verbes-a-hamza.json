@@ -1,0 +1,593 @@
+{
+  "id": "moteur-22",
+  "etape": 3,
+  "ordre": 22,
+  "format": 3,
+  "titre": "Les verbes à hamza",
+  "objectif": "Lire et conjuguer un verbe dont la racine contient ء.",
+  "statut": "ia_non_verifie",
+  "lieu": "ruines",
+  "maitre": "ziyad",
+  "prerequis": [
+    "moteur-21"
+  ],
+  "apercu": [
+    "زِيَادٌ"
+  ],
+  "schemes": [
+    "فَعَلَ",
+    "يَفْعَلُ",
+    "مَفْعَلَة",
+    "مُفْتَعِل",
+    "مُسْتَفْعِل",
+    "مُفَاعِل",
+    "يُفْعَلُ",
+    "يُفْعِلُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "ziyad",
+          "texte": "Bienvenue aux Ruines. Je suis Ziyād : je déchiffre les inscriptions que le temps a abîmées."
+        },
+        {
+          "qui": "ziyad",
+          "texte": "Certaines racines ont une lettre fragile. Commençons par la hamza : elle reste, mais change de support."
+        }
+      ],
+      "objectif": "Lire et conjuguer أَخَذَ, سَأَلَ, أَكَلَ, قَرَأَ, بَدَأَ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « La porte a été ouverte. »",
+          "ar": "… الْبَابُ.",
+          "choix_ar": [
+            "فُتِحَ",
+            "فَتَحَ",
+            "مِفْتَاحٌ"
+          ],
+          "reponse": 0,
+          "explication": "Passif (leçon 3.21)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de مُسْتَمِعٌ ?",
+          "choix_ar": [
+            "مُفْتَعِل",
+            "مُسْتَفْعِل",
+            "مُفَاعِل"
+          ],
+          "reponse": 0,
+          "explication": "Forme VIII (leçon 3.20)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَطْلُوبٌ",
+          "choix": [
+            "demandé",
+            "étudiant",
+            "il a demandé"
+          ],
+          "reponse": 0,
+          "explication": "مَطْلُوبٌ : « demandé » (leçon 3.21)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَنْ أَخَذَ الْمِفْتَاحَ؟",
+          "fr": "Qui a pris la clé ?"
+        },
+        {
+          "qui": "ziyad",
+          "ar": "أَخَذَتْ سَلْمَى الْمِفْتَاحَ فِي الصَّبَاحِ.",
+          "fr": "Salmā a pris la clé le matin."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَأَنَا آخُذُ الْكِيسَ.",
+          "fr": "Et moi, je prends la bourse."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qui a pris la clé ?",
+        "choix": [
+          "Salmā",
+          "Bāsim",
+          "Ziyād"
+        ],
+        "reponse": 0,
+        "explication": "أَخَذَتْ سَلْمَى الْمِفْتَاحَ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "akhadha",
+        "saala",
+        "akala",
+        "ras",
+        "badaa",
+        "qaraa",
+        "masala"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "قَرَأَ",
+        "choix": [
+          "lire",
+          "écrire",
+          "demander"
+        ],
+        "reponse": 0,
+        "explication": "قَرَأَ veut dire « lire »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Une lettre qui change de support",
+      "texte": "ء est une vraie lettre de la racine : seul son support (أ, ؤ, ئ, ou ء seule) change selon les voyelles voisines. سَأَلَ, يَسْأَلُ, سُؤَالٌ, comme أَرْضٌ ou بِئْرٌ : la racine garde ء.",
+      "exemples": [
+        "سَأَلَ",
+        "يَسْأَلُ",
+        "سُؤَالٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de سُؤَالٌ ?",
+        "choix_ar": [
+          "س ء ل",
+          "س و ل",
+          "س ل"
+        ],
+        "reponse": 0,
+        "explication": "ء compte dans la racine, quel que soit son support."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Deux hamzas : آ",
+      "texte": "Une hamza avec a, suivie d'une hamza sans voyelle, s'écrit آ : أَنَا آكُلُ, سَآخُذُ. On n'écrit jamais « أَأْكُلُ ».",
+      "exemples": [
+        "آكُلُ",
+        "آخُذُ",
+        "سَآكُلُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment écrit-on « je mange » ?",
+        "choix_ar": [
+          "آكُلُ",
+          "أَكَلْتُ",
+          "سَآكُلُ"
+        ],
+        "reponse": 0,
+        "explication": "أَ + ء au début : آكُلُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les personnes",
+      "texte": "Au passé, la hamza reste à sa place : أَخَذْتُ, أَخَذْنَا, أَخَذْتَ. À l'inaccompli aussi : تَأْخُذُ, نَأْخُذُ ; pour أَخَذَ et أَكَلَ (ء en 1re lettre), seul « je » s'écrit آ : آخُذُ.",
+      "exemples": [
+        "أَخَذْتُ",
+        "أَخَذْنَا",
+        "أَخَذْتَ",
+        "تَأْخُذُ",
+        "نَأْخُذُ",
+        "آخُذُ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Nous mangeons des dattes. »",
+        "ar": "… التَّمْرَ.",
+        "choix_ar": [
+          "نَأْكُلُ",
+          "آكُلُ",
+          "أَكَلْنَا"
+        ],
+        "reponse": 0,
+        "explication": "« nous » à l'inaccompli : نَأْكُلُ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَخَذَ",
+          "choix": [
+            "prendre",
+            "manger",
+            "commencer"
+          ],
+          "reponse": 0,
+          "explication": "أَخَذَ veut dire « prendre »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَدَأَ",
+          "choix": [
+            "commencer",
+            "lire",
+            "demander"
+          ],
+          "reponse": 0,
+          "explication": "بَدَأَ veut dire « commencer »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il lit » ?",
+          "choix_ar": [
+            "يَقْرَأُ",
+            "قَرَأَ",
+            "قِرَاءَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il lit » se dit يَقْرَأُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je prends » ?",
+          "choix_ar": [
+            "آخُذُ",
+            "أَخَذْتُ",
+            "سَآخُذُ"
+          ],
+          "reponse": 0,
+          "explication": "« je prends » se dit آخُذُ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Retrouve la racine de يَسْأَلُ.",
+          "tuiles": [
+            "س",
+            "ء",
+            "ل",
+            "ي"
+          ],
+          "solution": [
+            "س",
+            "ء",
+            "ل"
+          ],
+          "explication": "ي est le préfixe ; ء reste dans la racine.",
+          "ar": "يَسْأَلُ"
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Retrouve la racine de آكُلُ.",
+          "tuiles": [
+            "ء",
+            "ك",
+            "ل",
+            "ا"
+          ],
+          "solution": [
+            "ء",
+            "ك",
+            "ل"
+          ],
+          "explication": "آ cache deux hamzas : celle de « je » et celle de la racine.",
+          "ar": "آكُلُ"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans يَقْرَأُ, à quelle place de la racine se trouve ء ?",
+          "choix": [
+            "la 3e",
+            "la 1re",
+            "la 2e"
+          ],
+          "reponse": 0,
+          "explication": "ق ر ء : ء est la 3e lettre ; l'alif n'est que son support."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La leçon a commencé le matin. »",
+          "ar": "… الدَّرْسُ فِي الصَّبَاحِ.",
+          "choix_ar": [
+            "بَدَأَ",
+            "يَبْدَأُ",
+            "بَدْءٌ"
+          ],
+          "reponse": 0,
+          "explication": "Passé : بَدَأَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je mangerai des dattes. »",
+          "ar": "… التَّمْرَ.",
+          "choix_ar": [
+            "سَآكُلُ",
+            "سَأَكَلَ",
+            "أَكَلَ"
+          ],
+          "reponse": 0,
+          "explication": "Futur : سَـ + آكُلُ = سَآكُلُ. سَأَكَلَ est une forme fautive : سَـ ne se met jamais devant le passé."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Tu as pris la clé ? »",
+          "ar": "هَلْ … الْمِفْتَاحَ؟",
+          "choix_ar": [
+            "أَخَذْتَ",
+            "أَخَذْتُ",
+            "تَأْخُذُ"
+          ],
+          "reponse": 0,
+          "explication": "« tu » au passé : أَخَذْتَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je n'ai pas mangé. »",
+          "ar": "لَمْ …",
+          "choix_ar": [
+            "آكُلْ",
+            "آكُلُ",
+            "أَكَلْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ, le -u final devient sukūn : لَمْ آكُلْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Salmā a pris la clé. »",
+          "ar": "… سَلْمَى الْمِفْتَاحَ.",
+          "choix_ar": [
+            "أَخَذَتْ",
+            "أَخَذَ",
+            "تَأْخُذُ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet féminin (une personne) : أَخَذَتْ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "L'inscription de la colonne",
+      "texte": "Ziyād raconte une matinée aux Ruines. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الصَّبَاحِ، بَدَأَ الدَّرْسُ عِنْدَ الصَّخْرَةِ.",
+        "قَرَأَ الطُّلَّابُ الْكَلِمَاتِ، وَسَأَلَ طَالِبٌ سُؤَالًا.",
+        "ثُمَّ أَكَلَ الطُّلَّابُ التَّمْرَ، وَأَخَذُوا الْأَوْرَاقَ.",
+        "قَالَ بَاسِمٌ: « سَآخُذُ الْكِيسَ، وَأَقْرَأُ الرِّسَالَةَ فِي الْمَسَاءِ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où la leçon a-t-elle commencé ?",
+          "choix": [
+            "près du rocher",
+            "au marché",
+            "dans la tente"
+          ],
+          "reponse": 0,
+          "explication": "بَدَأَ الدَّرْسُ عِنْدَ الصَّخْرَةِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand Bāsim lira-t-il la lettre ?",
+          "choix": [
+            "le soir",
+            "le matin",
+            "demain matin"
+          ],
+          "reponse": 0,
+          "explication": "وَأَقْرَأُ الرِّسَالَةَ فِي الْمَسَاءِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « L'étudiant a posé une question au maître. » ?",
+          "choix_ar": [
+            "سَأَلَ الطَّالِبُ الْمُعَلِّمَ سُؤَالًا.",
+            "سُؤَالُ الطَّالِبِ الْمُعَلِّمُ.",
+            "سَأَلَتِ الطَّالِبُ الْمُعَلِّمَ سُؤَالًا."
+          ],
+          "reponse": 0,
+          "explication": "« L'étudiant a posé une question au maître. » se dit سَأَلَ الطَّالِبُ الْمُعَلِّمَ سُؤَالًا."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Samīr lit la lettre. »",
+          "tuiles": [
+            "الرِّسَالَةَ",
+            "سَمِيرٌ",
+            "يَقْرَأُ",
+            "قِرَاءَةٌ"
+          ],
+          "solution": [
+            "يَقْرَأُ",
+            "سَمِيرٌ",
+            "الرِّسَالَةَ"
+          ],
+          "explication": "Verbe, sujet, complément."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je ne mange pas maintenant. »",
+          "ar": "لَا … الْآنَ.",
+          "choix_ar": [
+            "آكُلُ",
+            "أَأْكُلُ",
+            "يَأْكُلُ"
+          ],
+          "reponse": 0,
+          "explication": "« je » : آكُلُ (on n'écrit jamais أَأْكُلُ)."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَأَلَ",
+          "choix": [
+            "demander, interroger",
+            "répondre",
+            "lire"
+          ],
+          "reponse": 0,
+          "explication": "سَأَلَ veut dire « demander, interroger »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَأْسٌ",
+          "choix": [
+            "tête",
+            "main",
+            "porte"
+          ],
+          "reponse": 0,
+          "explication": "رَأْسٌ veut dire « tête »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَسْأَلَةٌ",
+          "choix": [
+            "question, problème",
+            "réponse",
+            "leçon"
+          ],
+          "reponse": 0,
+          "explication": "مَسْأَلَةٌ veut dire « question, problème »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il mange » ?",
+          "choix_ar": [
+            "يَأْكُلُ",
+            "أَكَلَ",
+            "آكُلُ"
+          ],
+          "reponse": 0,
+          "explication": "« il mange » se dit يَأْكُلُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand أَ est suivi d'une hamza sans voyelle, on écrit…",
+          "choix_ar": [
+            "آ",
+            "أَ",
+            "ئ"
+          ],
+          "reponse": 0,
+          "explication": "آكُلُ, آخُذُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de يَأْخُذُ ?",
+          "choix_ar": [
+            "ء خ ذ",
+            "ي خ ذ",
+            "خ ذ"
+          ],
+          "reponse": 0,
+          "explication": "ي est le préfixe : ء خ ذ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de قِرَاءَةٌ ?",
+          "choix_ar": [
+            "ق ر ء",
+            "ق ر ا",
+            "ق ر ة"
+          ],
+          "reponse": 0,
+          "explication": "ة est une terminaison, pas une lettre de la racine ; ء est la 3e lettre : ق ر ء."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'étudiant lit la leçon. »",
+          "ar": "… الطَّالِبُ الدَّرْسَ.",
+          "choix_ar": [
+            "يَقْرَأُ",
+            "قِرَاءَةُ",
+            "قَرَأْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli : يَقْرَأُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je prendrai la bourse. »",
+          "ar": "… الْكِيسَ.",
+          "choix_ar": [
+            "سَآخُذُ",
+            "سَأَخَذَ",
+            "أَخَذْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Futur : سَآخُذُ. سَأَخَذَ est fautif : سَـ ne se met jamais devant le passé."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فُتِحَ",
+          "choix": [
+            "il a été ouvert",
+            "il a ouvert",
+            "ouvert (adjectif)"
+          ],
+          "reponse": 0,
+          "explication": "فُتِحَ veut dire « il a été ouvert ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَقْبَلَ",
+          "choix": [
+            "accueillir",
+            "demander",
+            "rencontrer"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَقْبَلَ veut dire « accueillir ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de يُفْهَمُ ?",
+          "choix_ar": [
+            "يُفْعَلُ",
+            "يَفْعَلُ",
+            "يُفْعِلُ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli passif (leçon 3.21).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu lis et conjugues les verbes à hamza : أَخَذَ, سَأَلَ, أَكَلَ, قَرَأَ, بَدَأَ. Une hamza avec a suivie d'une hamza sans voyelle s'écrit آ : آكُلُ, سَآخُذُ.",
+      "suite": "Aux Ruines : les verbes dont deux lettres sont semblables, comme مَدَّ."
+    }
+  ]
+}

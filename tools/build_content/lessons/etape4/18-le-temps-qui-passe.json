@@ -1,0 +1,561 @@
+{
+  "id": "cite-18",
+  "etape": 4,
+  "ordre": 18,
+  "format": 3,
+  "titre": "Le temps qui passe",
+  "objectif": "Dire les jours, les mois, les moments de la journée, une durée, son âge.",
+  "statut": "ia_non_verifie",
+  "lieu": "marche_couvert",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-17"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ",
+    "عَامِرٌ",
+    "الْأَحَدُ",
+    "الِاثْنَانِ",
+    "الثُّلَاثَاءُ",
+    "الْأَرْبِعَاءُ",
+    "الْخَمِيسُ",
+    "الْخَمِيسِ",
+    "الْجُمُعَةُ",
+    "السَّبْتُ",
+    "رَجَبٍ",
+    "رَجَبٌ",
+    "شَعْبَانُ",
+    "بِنْتُ",
+    "خَمْسٍ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Au marché, on parle de jours et de mois : quand arrive la caravane, depuis quand tu es là."
+        },
+        {
+          "qui": "nadim",
+          "texte": "Les Anciens divisaient la journée en moments : matin, midi, fin d'après-midi, soir, nuit."
+        }
+      ],
+      "objectif": "Dire quand, depuis quand et pendant combien de temps."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « derrière le palais »",
+          "ar": "خَلْفَ …",
+          "choix_ar": [
+            "الْقَصْرِ",
+            "الْقَصْرُ",
+            "الْقَصْرَ"
+          ],
+          "reponse": 0,
+          "explication": "Après خَلْفَ : génitif (leçon 4.17)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « trois livres »",
+          "ar": "ثَلَاثَةُ …",
+          "choix_ar": [
+            "كُتُبٍ",
+            "كِتَابًا",
+            "كُتُبٌ"
+          ],
+          "reponse": 0,
+          "explication": "De 3 à 10 : pluriel au génitif (leçon 4.14)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَبَاحٌ",
+          "choix": [
+            "matin",
+            "soir",
+            "nuit"
+          ],
+          "reponse": 0,
+          "explication": "صَبَاحٌ veut dire « matin »."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "ar": "مَتَى وَصَلْتَ إِلَى الْمَدِينَةِ؟",
+          "fr": "Quand es-tu arrivé en ville ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "وَصَلْتُ يَوْمَ الْخَمِيسِ، وَأَسْكُنُ هُنَا مُنْذُ أُسْبُوعٍ.",
+          "fr": "Je suis arrivé jeudi, et j'habite ici depuis une semaine."
+        },
+        {
+          "qui": "nadim",
+          "ar": "ابْنُ كَمْ أَنْتَ؟",
+          "fr": "Quel âge as-tu ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "أَنَا ابْنُ خَمْسَ عَشْرَةَ سَنَةً.",
+          "fr": "J'ai quinze ans."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Depuis quand Bāsim habite-t-il en ville ?",
+        "choix": [
+          "depuis une semaine",
+          "depuis un mois",
+          "depuis un an"
+        ],
+        "reponse": 0,
+        "explication": "مُنْذُ أُسْبُوعٍ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "yawm",
+        "usbu",
+        "shahr",
+        "sana",
+        "saa",
+        "zuhr",
+        "asr",
+        "mundhu"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "شَهْرٌ",
+        "choix": [
+          "mois",
+          "semaine",
+          "année"
+        ],
+        "reponse": 0,
+        "explication": "شَهْرٌ veut dire « mois »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Dire quand",
+      "texte": "Pour dire quand, on met le nom de temps à l'accusatif : يَوْمَ الْخَمِيسِ, صَبَاحًا. Pour dire combien de temps, même accusatif : سَافَرَ التَّاجِرُ أُسْبُوعَيْنِ.",
+      "exemples": [
+        "يَوْمَ الْخَمِيسِ",
+        "صَبَاحًا",
+        "سَافَرَ التَّاجِرُ أُسْبُوعَيْنِ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Je suis arrivé jeudi. »",
+        "ar": "وَصَلْتُ … الْخَمِيسِ.",
+        "choix_ar": [
+          "يَوْمَ",
+          "يَوْمُ",
+          "يَوْمٍ"
+        ],
+        "reponse": 0,
+        "explication": "Complément de temps : accusatif, يَوْمَ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Depuis, et l'âge",
+      "texte": "مُنْذُ (« depuis ») est suivi ici du génitif : مُنْذُ شَهْرٍ. Pour dire son âge : أَنَا ابْنُ عِشْرِينَ سَنَةً, et au féminin بِنْتُ.",
+      "exemples": [
+        "مُنْذُ شَهْرٍ",
+        "أَنَا ابْنُ عِشْرِينَ سَنَةً"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « depuis un mois »",
+        "ar": "مُنْذُ …",
+        "choix_ar": [
+          "شَهْرٍ",
+          "شَهْرًا",
+          "أُسْبُوعٍ"
+        ],
+        "reponse": 0,
+        "explication": "Après مُنْذُ : génitif."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les jours et les mois",
+      "texte": "Les jours viennent des nombres : الْأَحَدُ, الِاثْنَانِ, الثُّلَاثَاءُ, الْأَرْبِعَاءُ, الْخَمِيسُ, puis الْجُمُعَةُ et السَّبْتُ. Les mois sont lunaires, par exemple رَجَبٌ et شَعْبَانُ.",
+      "exemples": [
+        "الْأَحَدُ",
+        "الْخَمِيسُ",
+        "السَّبْتُ",
+        "رَجَبٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "الْخَمِيسُ vient du nombre…",
+        "choix": [
+          "cinq",
+          "sept",
+          "deux"
+        ],
+        "reponse": 0,
+        "explication": "خَمْسَةٌ : cinq ; الْخَمِيسُ est le cinquième jour."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أُسْبُوعٌ",
+          "choix": [
+            "semaine",
+            "mois",
+            "jour"
+          ],
+          "reponse": 0,
+          "explication": "أُسْبُوعٌ veut dire « semaine »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَصْرٌ",
+          "choix": [
+            "fin d'après-midi",
+            "matin",
+            "midi"
+          ],
+          "reponse": 0,
+          "explication": "عَصْرٌ veut dire « fin d'après-midi »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُنْذُ",
+          "choix": [
+            "depuis",
+            "pendant",
+            "avant"
+          ],
+          "reponse": 0,
+          "explication": "مُنْذُ veut dire « depuis »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'habite en ville depuis un mois » ?",
+          "choix_ar": [
+            "أَسْكُنُ فِي الْمَدِينَةِ مُنْذُ شَهْرٍ",
+            "أَسْكُنُ فِي الْمَدِينَةِ مُنْذُ شَهْرًا",
+            "سَكَنْتُ فِي الْمَدِينَةِ شَهْرٌ"
+          ],
+          "reponse": 0,
+          "explication": "مُنْذُ + génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand a voyagé deux semaines. »",
+          "ar": "سَافَرَ التَّاجِرُ …",
+          "choix_ar": [
+            "أُسْبُوعَيْنِ",
+            "أُسْبُوعَانِ",
+            "أُسْبُوعٍ"
+          ],
+          "reponse": 0,
+          "explication": "Durée à l'accusatif ; duel en -ayni."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai attendu mon ami deux heures. »",
+          "ar": "انْتَظَرْتُ صَدِيقِي …",
+          "choix_ar": [
+            "سَاعَتَيْنِ",
+            "سَاعَتَانِ",
+            "سَاعَةٍ"
+          ],
+          "reponse": 0,
+          "explication": "Durée à l'accusatif ; duel en -ayni."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Mon oncle est rentré à Bagdad en Rajab. »",
+          "ar": "رَجَعَ عَمِّي إِلَى بَغْدَادَ فِي …",
+          "choix_ar": [
+            "رَجَبٍ",
+            "رَجَبٌ",
+            "رَجَبًا"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : génitif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour dire son âge, on dit…",
+          "choix_ar": [
+            "أَنَا ابْنُ عِشْرِينَ سَنَةً",
+            "عِنْدِي عِشْرُونَ سَنَةً",
+            "أَنَا عِشْرُونَ سَنَةً"
+          ],
+          "reponse": 0,
+          "explication": "En arabe classique : « fils de vingt ans »."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La semaine de Bāsim",
+      "texte": "Bāsim raconte sa semaine en ville. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "وَصَلْتُ إِلَى الْمَدِينَةِ يَوْمَ الْخَمِيسِ.",
+        "أَسْكُنُ عِنْدَ نَدِيمٍ مُنْذُ أُسْبُوعٍ.",
+        "يَبْدَأُ الدَّرْسُ بَعْدَ الظُّهْرِ، وَيَنْتَهِي قَبْلَ الْعَصْرِ.",
+        "عَامِرٌ ابْنُ خَمْسَ عَشْرَةَ سَنَةً، وَهُوَ طَالِبٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quand Bāsim est-il arrivé ?",
+          "choix": [
+            "jeudi",
+            "samedi",
+            "dimanche"
+          ],
+          "reponse": 0,
+          "explication": "يَوْمَ الْخَمِيسِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand finit la leçon ?",
+          "choix": [
+            "avant la fin d'après-midi",
+            "après le soir",
+            "le matin"
+          ],
+          "reponse": 0,
+          "explication": "يَنْتَهِي قَبْلَ الْعَصْرِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « J'ai vingt-cinq ans. » ?",
+          "choix_ar": [
+            "أَنَا ابْنُ خَمْسٍ وَعِشْرِينَ سَنَةً.",
+            "أَنَا ابْنُ خَمْسٍ وَعِشْرِينَ سَنَةٍ.",
+            "عِنْدِي خَمْسٌ وَعِشْرُونَ سَنَةً."
+          ],
+          "reponse": 0,
+          "explication": "ابْنُ + nombre ; de 11 à 99, سَنَةً au singulier en -a."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre de la phrase française : « Je suis arrivé en ville jeudi. »",
+          "tuiles": [
+            "الْخَمِيسِ",
+            "يَوْمَ",
+            "الْمَدِينَةِ",
+            "إِلَى",
+            "وَصَلْتُ"
+          ],
+          "solution": [
+            "وَصَلْتُ",
+            "إِلَى",
+            "الْمَدِينَةِ",
+            "يَوْمَ",
+            "الْخَمِيسِ"
+          ],
+          "explication": "On suit l'ordre de la phrase française ; يَوْمَ الْخَمِيسِ peut aussi venir juste après le verbe."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La leçon commence après midi. »",
+          "ar": "يَبْدَأُ الدَّرْسُ بَعْدَ …",
+          "choix_ar": [
+            "الظُّهْرِ",
+            "الظُّهْرُ",
+            "الظُّهْرَ"
+          ],
+          "reponse": 0,
+          "explication": "Après بَعْدَ : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand a voyagé trois semaines. »",
+          "ar": "سَافَرَ التَّاجِرُ … أَسَابِيعَ.",
+          "choix_ar": [
+            "ثَلَاثَةَ",
+            "ثَلَاثَةُ",
+            "ثَلَاثَ"
+          ],
+          "reponse": 0,
+          "explication": "Durée à l'accusatif ; أُسْبُوعٌ est masculin, donc ثَلَاثَةَ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "يَوْمٌ",
+          "choix": [
+            "jour",
+            "nuit",
+            "mois"
+          ],
+          "reponse": 0,
+          "explication": "يَوْمٌ veut dire « jour »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَنَةٌ",
+          "choix": [
+            "année",
+            "heure",
+            "semaine"
+          ],
+          "reponse": 0,
+          "explication": "سَنَةٌ veut dire « année »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je suis arrivé jeudi » ?",
+          "choix_ar": [
+            "وَصَلْتُ يَوْمَ الْخَمِيسِ",
+            "وَصَلْتُ يَوْمُ الْخَمِيسِ",
+            "وَصَلْتُ الْخَمِيسَ يَوْمًا"
+          ],
+          "reponse": 0,
+          "explication": "Complément de temps : يَوْمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « depuis une semaine »",
+          "ar": "مُنْذُ …",
+          "choix_ar": [
+            "أُسْبُوعٍ",
+            "أُسْبُوعًا",
+            "شَهْرٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après مُنْذُ : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai attendu deux heures. »",
+          "ar": "انْتَظَرْتُ …",
+          "choix_ar": [
+            "سَاعَتَيْنِ",
+            "سَاعَتَانِ",
+            "سَاعَةٍ"
+          ],
+          "reponse": 0,
+          "explication": "Durée à l'accusatif : -ayni."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a quinze ans. »",
+          "ar": "هُوَ ابْنُ خَمْسَ عَشْرَةَ …",
+          "choix_ar": [
+            "سَنَةً",
+            "سَنَوَاتٍ",
+            "سَنَةٍ"
+          ],
+          "reponse": 0,
+          "explication": "De 11 à 99 : singulier en -a."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour dire « quand », le nom de temps est…",
+          "choix": [
+            "à l'accusatif, sans préposition",
+            "toujours au nominatif",
+            "toujours après مُنْذُ"
+          ],
+          "reponse": 0,
+          "explication": "يَوْمَ الْخَمِيسِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le jour الْأَحَدُ vient du nombre…",
+          "choix": [
+            "un",
+            "dix",
+            "cent"
+          ],
+          "reponse": 0,
+          "explication": "أَحَدٌ : un ; c'est le premier jour."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour une fille, on dit son âge avec…",
+          "choix_ar": [
+            "بِنْتُ",
+            "ابْنُ",
+            "أُخْتُ"
+          ],
+          "reponse": 0,
+          "explication": "بِنْتُ عِشْرِينَ سَنَةً."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "يَمِينٌ",
+          "choix": [
+            "droite",
+            "gauche",
+            "derrière"
+          ],
+          "reponse": 0,
+          "explication": "يَمِينٌ veut dire « droite ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « entre le marché et l'école »",
+          "ar": "بَيْنَ السُّوقِ وَ…",
+          "choix_ar": [
+            "الْمَدْرَسَةِ",
+            "الْمَدْرَسَةُ",
+            "الْمَدْرَسَةَ"
+          ],
+          "reponse": 0,
+          "explication": "Génitif.",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire عَمٌّ ?",
+          "choix": [
+            "oncle (côté du père)",
+            "oncle (côté de la mère)",
+            "grand-père"
+          ],
+          "reponse": 0,
+          "explication": "عَمٌّ : côté du père.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu dis quand (يَوْمَ الْخَمِيسِ, بَعْدَ الظُّهْرِ), depuis quand (مُنْذُ + génitif), pendant combien de temps, et ton âge (أَنَا ابْنُ… سَنَةً).",
+      "suite": "Prochaine leçon : acheter et négocier au marché."
+    }
+  ]
+}

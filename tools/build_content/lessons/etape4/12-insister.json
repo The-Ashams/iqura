@@ -1,0 +1,524 @@
+{
+  "id": "cite-12",
+  "etape": 4,
+  "ordre": 12,
+  "format": 3,
+  "titre": "Insister",
+  "objectif": "Renforcer une affirmation ou une promesse avec قَدْ, لَـ et ـَنَّ.",
+  "statut": "ia_non_verifie",
+  "lieu": "jardin_maximes",
+  "maitre": "hala",
+  "prerequis": [
+    "cite-11"
+  ],
+  "apercu": [
+    "هَالَةُ",
+    "بَاسِمٌ",
+    "لَأَكْتُبَنَّ",
+    "تَتْرُكَنَّ",
+    "لَنَحْفَظَنَّ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hala",
+          "texte": "Sur les pierres du jardin, les maximes insistent : c'est bien fait, c'est vraiment vrai, je le ferai sans faute."
+        },
+        {
+          "qui": "hala",
+          "texte": "Trois outils pour cela : قَدْ, لَـ et ـَنَّ."
+        }
+      ],
+      "objectif": "Employer قَدْ, لَـ d'insistance et le nūn d'insistance."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Gardien, ouvre la porte ! »",
+          "ar": "يَا …، افْتَحِ الْبَابَ.",
+          "choix_ar": [
+            "حَارِسُ",
+            "حَارِسٌ",
+            "حَارِسًا"
+          ],
+          "reponse": 0,
+          "explication": "Après يَا : -u sans tanwīn (leçon 4.11)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Certes, le chemin est long. »",
+          "ar": "إِنَّ … طَوِيلٌ.",
+          "choix_ar": [
+            "الطَّرِيقَ",
+            "الطَّرِيقُ",
+            "الطَّرِيقِ"
+          ],
+          "reponse": 0,
+          "explication": "Après إِنَّ : sujet en -a (leçon 3.31)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَنْ",
+          "choix": [
+            "ne… pas (au futur)",
+            "ne… pas (au passé)",
+            "si"
+          ],
+          "reponse": 0,
+          "explication": "لَنْ veut dire « ne… pas (au futur) »."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "قَدْ وَصَلَتِ الْقَافِلَةُ.",
+          "fr": "La caravane est bien arrivée."
+        },
+        {
+          "qui": "hala",
+          "ar": "إِنَّ الطَّرِيقَ لَطَوِيلٌ، وَقَدْ يَتَأَخَّرُ التُّجَّارُ.",
+          "fr": "Le chemin est vraiment long, et il arrive que les marchands soient en retard."
+        },
+        {
+          "qui": "basim",
+          "ar": "لَأَكْتُبَنَّ الرِّسَالَةَ غَدًا.",
+          "fr": "J'écrirai la lettre demain, sans faute."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que promet Bāsim ?",
+        "choix": [
+          "d'écrire la lettre demain",
+          "de partir demain",
+          "d'attendre les marchands"
+        ],
+        "reponse": 0,
+        "explication": "لَأَكْتُبَنَّ الرِّسَالَةَ غَدًا."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "qad",
+        "la_tawkid",
+        "tawkid",
+        "tala",
+        "abadan"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "أَبَدًا",
+        "choix": [
+          "jamais (avec une négation)",
+          "souvent",
+          "parfois"
+        ],
+        "reponse": 0,
+        "explication": "أَبَدًا veut dire « jamais (avec une négation) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "قَدْ",
+      "texte": "قَدْ + passé dit qu'une action est bien faite : قَدْ وَصَلَتِ الْقَافِلَةُ. قَدْ + inaccompli veut dire « parfois, peut-être » : قَدْ يَتَأَخَّرُ بَاسِمٌ.",
+      "exemples": [
+        "قَدْ وَصَلَتِ الْقَافِلَةُ",
+        "قَدْ يَتَأَخَّرُ بَاسِمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire قَدْ يَتَأَخَّرُ بَاسِمٌ ?",
+        "choix": [
+          "Il arrive que Bāsim soit en retard.",
+          "Bāsim est bien en retard.",
+          "Bāsim n'est jamais en retard."
+        ],
+        "reponse": 0,
+        "explication": "قَدْ + inaccompli : « parfois »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "لَـ d'insistance",
+      "texte": "لَـ renforce l'attribut après إِنَّ : إِنَّ الطَّرِيقَ لَطَوِيلٌ. Devant قَدْ, il renforce le passé : لَقَدْ فَهِمْتُ الدَّرْسَ.",
+      "exemples": [
+        "إِنَّ الطَّرِيقَ لَطَوِيلٌ",
+        "لَقَدْ فَهِمْتُ الدَّرْسَ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Le chemin est vraiment long. »",
+        "ar": "إِنَّ الطَّرِيقَ …",
+        "choix_ar": [
+          "لَطَوِيلٌ",
+          "لِطَوِيلٍ",
+          "لَطَوِيلًا"
+        ],
+        "reponse": 0,
+        "explication": "لَـ sur l'attribut, qui reste en -u."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le nūn d'insistance",
+      "texte": "ـَنَّ, à la fin d'un inaccompli précédé de لَـ ou de لَا, en fait une promesse ou une défense ferme : لَأَكْتُبَنَّ « j'écrirai sans faute », لَا تَتْرُكَنَّ « ne laisse surtout pas ».",
+      "exemples": [
+        "لَأَكْتُبَنَّ",
+        "لَا تَتْرُكَنَّ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire لَا تَتْرُكَنَّ الْبَابَ مَفْتُوحًا ?",
+        "choix": [
+          "Ne laisse surtout pas la porte ouverte.",
+          "Tu n'as pas laissé la porte ouverte.",
+          "Tu ne laisseras jamais la porte."
+        ],
+        "reponse": 0,
+        "explication": "لَا + ـَنَّ : défense ferme."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَدْ",
+          "choix": [
+            "(insiste sur le passé) ; (avec l'inaccompli) parfois",
+            "jamais",
+            "si"
+          ],
+          "reponse": 0,
+          "explication": "قَدْ veut dire « (insiste sur le passé) ; (avec l'inaccompli) parfois »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَالَ",
+          "choix": [
+            "être long, durer",
+            "être court",
+            "finir"
+          ],
+          "reponse": 0,
+          "explication": "طَالَ veut dire « être long, durer »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَوْكِيدٌ",
+          "choix": [
+            "insistance",
+            "exception",
+            "condition"
+          ],
+          "reponse": 0,
+          "explication": "تَوْكِيدٌ veut dire « insistance »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai vraiment compris la leçon » ?",
+          "choix_ar": [
+            "لَقَدْ فَهِمْتُ الدَّرْسَ",
+            "لَنْ أَفْهَمَ الدَّرْسَ",
+            "قَدْ أَنْسَى الدَّرْسَ"
+          ],
+          "reponse": 0,
+          "explication": "لَقَدْ + passé : insistance ; لَنْ أَفْهَمَ dirait « je ne comprendrai pas »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane est bien arrivée. »",
+          "ar": "… وَصَلَتِ الْقَافِلَةُ.",
+          "choix_ar": [
+            "قَدْ",
+            "لَنْ",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "قَدْ + passé : l'action est bien faite."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je n'oublierai jamais cette histoire. »",
+          "ar": "لَنْ أَنْسَى هَٰذِهِ الْقِصَّةَ …",
+          "choix_ar": [
+            "أَبَدًا",
+            "قَدْ",
+            "جِدًّا"
+          ],
+          "reponse": 0,
+          "explication": "« jamais » avec une négation : أَبَدًا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'écrirai la lettre demain, sans faute. »",
+          "ar": "… الرِّسَالَةَ غَدًا.",
+          "choix_ar": [
+            "لَأَكْتُبَنَّ",
+            "لَا أَكْتُبُ",
+            "لَمْ أَكْتُبْ"
+          ],
+          "reponse": 0,
+          "explication": "Promesse ferme : لَـ + inaccompli + ـَنَّ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après إِنَّ, لَـ se met…",
+          "choix": [
+            "sur l'attribut",
+            "sur le sujet",
+            "sur إِنَّ"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّ الطَّرِيقَ لَطَوِيلٌ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Les maximes du bassin",
+      "texte": "Hāla lit les maximes gravées près du bassin (maximes rédigées par IA). Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "إِنَّ الطَّرِيقَ الطَّوِيلَ لَجَمِيلٌ.",
+        "قَدْ يَطُولُ الطَّرِيقُ، لَٰكِنَّ الْمُسَافِرَ يَصِلُ.",
+        "لَا تَتْرُكَنَّ الْكِتَابَةَ.",
+        "لَقَدْ فَهِمْتُ، وَلَنْ أَنْسَى أَبَدًا."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que dit la maxime sur le chemin ?",
+          "choix": [
+            "il peut être long, mais le voyageur arrive",
+            "il est toujours court",
+            "il ne finit jamais"
+          ],
+          "reponse": 0,
+          "explication": "قَدْ يَطُولُ الطَّرِيقُ، لَٰكِنَّ الْمُسَافِرَ يَصِلُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que dit la dernière maxime ?",
+          "choix": [
+            "« J'ai vraiment compris et je n'oublierai jamais »",
+            "« Je n'ai pas compris »",
+            "« J'oublierai vite »"
+          ],
+          "reponse": 0,
+          "explication": "لَقَدْ فَهِمْتُ، وَلَنْ أَنْسَى أَبَدًا."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le chemin est vraiment long. » ?",
+          "choix_ar": [
+            "إِنَّ الطَّرِيقَ لَطَوِيلٌ.",
+            "إِنَّ لَلطَّرِيقَ طَوِيلٌ.",
+            "إِنَّ الطَّرِيقَ لَطَوِيلًا."
+          ],
+          "reponse": 0,
+          "explication": "لَـ va sur l'attribut, pas sur le sujet qui suit إِنَّ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « La caravane est bien arrivée. »",
+          "tuiles": [
+            "الْقَافِلَةُ",
+            "وَصَلَتِ",
+            "قَدْ",
+            "لَنْ"
+          ],
+          "solution": [
+            "قَدْ",
+            "وَصَلَتِ",
+            "الْقَافِلَةُ"
+          ],
+          "explication": "قَدْ + passé : insistance ; لَنْ va avec l'inaccompli."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ne laisse surtout pas la porte ouverte. »",
+          "ar": "لَا … الْبَابَ مَفْتُوحًا.",
+          "choix_ar": [
+            "تَتْرُكَنَّ",
+            "تَتْرُكُ",
+            "تَرَكْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Défense ferme : لَا + ـَنَّ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَبَدًا",
+          "choix": [
+            "jamais (avec une négation)",
+            "hier",
+            "vite"
+          ],
+          "reponse": 0,
+          "explication": "أَبَدًا veut dire « jamais (avec une négation) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَـ",
+          "choix": [
+            "vraiment (insistance)",
+            "pour",
+            "ne… pas"
+          ],
+          "reponse": 0,
+          "explication": "لَـ veut dire « vraiment (insistance) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le chemin est vraiment long » ?",
+          "choix_ar": [
+            "إِنَّ الطَّرِيقَ لَطَوِيلٌ",
+            "إِنَّ الطَّرِيقُ لَطَوِيلٌ",
+            "إِنَّ الطَّرِيقَ لِطَوِيلٍ"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّ + sujet en -a ; لَـ sur l'attribut en -u."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il arrive que Bāsim soit en retard. »",
+          "ar": "… يَتَأَخَّرُ بَاسِمٌ.",
+          "choix_ar": [
+            "قَدْ",
+            "لَمْ",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "قَدْ + inaccompli : « parfois »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'écrirai demain, sans faute. »",
+          "ar": "… غَدًا.",
+          "choix_ar": [
+            "لَأَكْتُبَنَّ",
+            "لَأَكْتُبُ",
+            "أَكْتُبْ"
+          ],
+          "reponse": 0,
+          "explication": "Promesse ferme : ـَنَّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai vraiment compris. »",
+          "ar": "… فَهِمْتُ.",
+          "choix_ar": [
+            "لَقَدْ",
+            "قَدْ لَا",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "لَقَدْ + passé."
+        },
+        {
+          "type": "qcm",
+          "consigne": "قَدْ + passé veut dire…",
+          "choix": [
+            "l'action est bien faite",
+            "parfois",
+            "jamais"
+          ],
+          "reponse": 0,
+          "explication": "قَدْ وَصَلَتِ الْقَافِلَةُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le nūn d'insistance ـَنَّ se met…",
+          "choix": [
+            "à la fin d'un inaccompli après لَـ ou لَا",
+            "à la fin d'un passé",
+            "après إِنَّ"
+          ],
+          "reponse": 0,
+          "explication": "لَأَكْتُبَنَّ, لَا تَتْرُكَنَّ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans إِنَّ الطَّرِيقَ لَطَوِيلٌ, لَـ est…",
+          "choix": [
+            "une insistance",
+            "la préposition « pour »",
+            "une négation"
+          ],
+          "reponse": 0,
+          "explication": "لَـ d'insistance."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَادَى",
+          "choix": [
+            "appeler (à haute voix)",
+            "écouter",
+            "répondre"
+          ],
+          "reponse": 0,
+          "explication": "نَادَى veut dire « appeler (à haute voix) ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Étudiant, écris ! »",
+          "ar": "يَا … الطَّالِبُ، اكْتُبْ.",
+          "choix_ar": [
+            "أَيُّهَا",
+            "أَيَّتُهَا",
+            "أَبَا"
+          ],
+          "reponse": 0,
+          "explication": "Devant الْ : أَيُّهَا.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "غَيْرُ",
+          "choix": [
+            "autre que, sauf ; non- (devant un adjectif)",
+            "tout",
+            "avec"
+          ],
+          "reponse": 0,
+          "explication": "غَيْرُ veut dire « autre que, sauf ; non- (devant un adjectif) ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu insistes avec قَدْ (+ passé : bien fait ; + inaccompli : parfois), لَـ (sur l'attribut, devant قَدْ) et ـَنَّ (promesse ou défense ferme).",
+      "suite": "Au Bureau des comptes : relier les idées."
+    }
+  ]
+}

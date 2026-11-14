@@ -1,0 +1,563 @@
+{
+  "id": "fondations-19",
+  "etape": 2,
+  "ordre": 19,
+  "format": 3,
+  "titre": "Compter jusqu'à dix",
+  "objectif": "Dire des quantités simples avec les nombres de 1 à 10.",
+  "statut": "ia_non_verifie",
+  "lieu": "balance",
+  "maitre": "salma",
+  "prerequis": [
+    "fondations-18"
+  ],
+  "apercu": [
+    "ثَلَاثُ غُرَفٍ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "salma",
+          "texte": "Voici la balance du changeur. Ici, on compte les pièces, les bourses, les marchands."
+        },
+        {
+          "qui": "salma",
+          "texte": "Apprends les nombres de un à dix, et comment les placer."
+        }
+      ],
+      "objectif": "Compter jusqu'à dix."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des calames » ?",
+          "choix_ar": [
+            "أَقْلَامٌ",
+            "قَلَمَانِ",
+            "قَلَمٌ"
+          ],
+          "reponse": 0,
+          "explication": "قَلَمٌ fait أَقْلَامٌ (leçon 2.18)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كِيسٌ",
+          "choix": [
+            "sac, bourse",
+            "coffre",
+            "clé"
+          ],
+          "reponse": 0,
+          "explication": "كِيسٌ veut dire « bourse » (leçon 2.13)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « deux lits » ?",
+          "choix_ar": [
+            "سَرِيرَانِ",
+            "سَرِيرٌ",
+            "سَرِيرِي"
+          ],
+          "reponse": 0,
+          "explication": "-āni : deux (leçon 2.16)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَا فِي الصُّنْدُوقِ؟",
+          "fr": "Qu'y a-t-il dans le coffre ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "فِي الصُّنْدُوقِ ثَلَاثَةُ أَكْيَاسٍ.",
+          "fr": "Il y a trois bourses dans le coffre."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَمَا فِي الْكِيسِ؟",
+          "fr": "Et qu'y a-t-il dans la bourse ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "فِي الْكِيسِ دِينَارٌ وَاحِدٌ.",
+          "fr": "Il y a un seul dinar dans la bourse."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Combien de bourses y a-t-il dans le coffre ?",
+        "choix": [
+          "trois",
+          "une",
+          "dix"
+        ],
+        "reponse": 0,
+        "explication": "ثَلَاثَةُ أَكْيَاسٍ : trois bourses."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "wahid",
+        "ithnan",
+        "thalatha",
+        "arbaa",
+        "khamsa"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "خَمْسَةٌ",
+        "choix": [
+          "cinq",
+          "trois",
+          "quatre"
+        ],
+        "reponse": 0,
+        "explication": "خَمْسَةٌ veut dire « cinq »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "sitta",
+        "saba",
+        "thamaniya",
+        "tisa",
+        "ashara"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "عَشَرَةٌ",
+        "choix": [
+          "dix",
+          "huit",
+          "sept"
+        ],
+        "reponse": 0,
+        "explication": "عَشَرَةٌ veut dire « dix »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Un et deux",
+      "texte": "1 et 2 viennent après le nom, comme des adjectifs : كِتَابٌ وَاحِدٌ « un seul livre ». Pour deux, le duel suffit : كِتَابَانِ ; اثْنَانِ s'ajoute pour insister.",
+      "exemples": [
+        "كِتَابٌ وَاحِدٌ",
+        "كِتَابَانِ",
+        "خَيْمَةٌ وَاحِدَةٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment dit-on « un seul calame » ?",
+        "choix_ar": [
+          "قَلَمٌ وَاحِدٌ",
+          "وَاحِدٌ قَلَمٌ",
+          "قَلَمٌ وَاحِدَةٌ"
+        ],
+        "reponse": 0,
+        "explication": "Le nombre suit le nom et s'accorde : قَلَمٌ وَاحِدٌ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "De trois à dix",
+      "texte": "De 3 à 10, le nombre vient avant un pluriel indéfini au génitif : ثَلَاثَةُ كُتُبٍ. Si le singulier est masculin (كِتَابٌ), le nombre a un ة ; s'il est féminin, c'est l'inverse (ثَلَاثُ غُرَفٍ), pour plus tard.",
+      "exemples": [
+        "ثَلَاثَةُ كُتُبٍ",
+        "خَمْسَةُ تُجَّارٍ",
+        "عَشَرَةُ أَقْلَامٍ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « trois livres ».",
+        "ar": "ثَلَاثَةُ …",
+        "choix_ar": [
+          "كُتُبٍ",
+          "كُتُبٌ",
+          "كِتَابٍ"
+        ],
+        "reponse": 0,
+        "explication": "Après 3 à 10 : pluriel indéfini au génitif."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَبْعَةٌ",
+          "choix": [
+            "sept",
+            "six",
+            "neuf"
+          ],
+          "reponse": 0,
+          "explication": "سَبْعَةٌ veut dire « sept »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَرْبَعَةٌ",
+          "choix": [
+            "quatre",
+            "huit",
+            "deux"
+          ],
+          "reponse": 0,
+          "explication": "أَرْبَعَةٌ veut dire « quatre »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « huit » ?",
+          "choix_ar": [
+            "ثَمَانِيَةٌ",
+            "ثَلَاثَةٌ",
+            "تِسْعَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« huit » se dit ثَمَانِيَةٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « cinq marchands » ?",
+          "choix_ar": [
+            "خَمْسَةُ تُجَّارٍ",
+            "خَمْسَةُ تَاجِرٍ",
+            "خَمْسَةُ تُجَّارٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le nombre, puis le pluriel au génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « six maisons ».",
+          "ar": "سِتَّةُ …",
+          "choix_ar": [
+            "بُيُوتٍ",
+            "بُيُوتٌ",
+            "بَيْتٍ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel indéfini au génitif : بُيُوتٍ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « une seule tente ».",
+          "ar": "خَيْمَةٌ …",
+          "choix_ar": [
+            "وَاحِدَةٌ",
+            "وَاحِدٌ",
+            "اثْنَتَانِ"
+          ],
+          "reponse": 0,
+          "explication": "خَيْمَةٌ est féminin : وَاحِدَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « ثَلَاثَةُ كُتُبٍ », pourquoi كُتُبٍ finit-il par -in ?",
+          "choix": [
+            "il est au génitif après le nombre",
+            "il est sujet",
+            "il est féminin"
+          ],
+          "reponse": 0,
+          "explication": "Le nombre est suivi d'un génitif."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "تِسْعَةٌ",
+          "choix_ar": [
+            "تِسْعَةٌ",
+            "سَبْعَةٌ",
+            "سِتَّةٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était تِسْعَةٌ « neuf »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « J'ai trois calames. »",
+          "tuiles": [
+            "ثَلَاثَةُ",
+            "لِي",
+            "أَقْلَامٍ",
+            "قَلَمٌ"
+          ],
+          "solution": [
+            "لِي",
+            "ثَلَاثَةُ",
+            "أَقْلَامٍ"
+          ],
+          "explication": "لِي, puis le nombre et le pluriel au génitif."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "فِي السُّوقِ خَمْسَةُ تُجَّارٍ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Chez le changeur",
+      "texte": "Salmā fait ses comptes. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي السُّوقِ خَمْسَةُ تُجَّارٍ.",
+        "لِي ثَلَاثَةُ أَكْيَاسٍ وَدِينَارٌ وَاحِدٌ.",
+        "ثَمَنُ الْقَمِيصِ دِرْهَمَانِ.",
+        "وَفِي الصُّنْدُوقِ عَشَرَةُ سُيُوفٍ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Combien coûte la chemise ?",
+          "choix": [
+            "deux dirhams",
+            "un dinar",
+            "trois dirhams"
+          ],
+          "reponse": 0,
+          "explication": "ثَمَنُ الْقَمِيصِ دِرْهَمَانِ : deux dirhams."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Combien de marchands y a-t-il au marché ?",
+          "choix": [
+            "cinq",
+            "trois",
+            "dix"
+          ],
+          "reponse": 0,
+          "explication": "خَمْسَةُ تُجَّارٍ : cinq marchands."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te demande le prix de la chemise. Elle coûte deux dirhams.",
+          "replique": {
+            "qui": "basim",
+            "ar": "مَا ثَمَنُ الْقَمِيصِ؟"
+          },
+          "choix_ar": [
+            "ثَمَنُ الْقَمِيصِ دِرْهَمَانِ.",
+            "ثَمَنُ الْقَمِيصِ دِرْهَمٌ.",
+            "ثَمَنُ الْقَمِيصِ دِرْهَمَيْنِ."
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif, au duel : دِرْهَمَانِ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « quatre maisons » ?",
+          "choix_ar": [
+            "أَرْبَعَةُ بُيُوتٍ",
+            "أَرْبَعَةُ بَيْتٍ",
+            "أَرْبَعَةُ بُيُوتٌ"
+          ],
+          "reponse": 0,
+          "explication": "« quatre maisons » se dit أَرْبَعَةُ بُيُوتٍ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Il y a dix épées dans le coffre. »",
+          "tuiles": [
+            "عَشَرَةُ",
+            "فِي",
+            "الصُّنْدُوقِ",
+            "سُيُوفٍ"
+          ],
+          "solution": [
+            "فِي",
+            "الصُّنْدُوقِ",
+            "عَشَرَةُ",
+            "سُيُوفٍ"
+          ],
+          "explication": "Le lieu d'abord, puis le nombre et le pluriel au génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai un seul dinar. »",
+          "ar": "لِي دِينَارٌ …",
+          "choix_ar": [
+            "وَاحِدٌ",
+            "وَاحِدَةٌ",
+            "اثْنَانِ"
+          ],
+          "reponse": 0,
+          "explication": "دِينَارٌ est masculin : وَاحِدٌ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَلَاثَةٌ",
+          "choix": [
+            "trois",
+            "huit",
+            "deux"
+          ],
+          "reponse": 0,
+          "explication": "ثَلَاثَةٌ veut dire « trois »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سِتَّةٌ",
+          "choix": [
+            "six",
+            "sept",
+            "dix"
+          ],
+          "reponse": 0,
+          "explication": "سِتَّةٌ veut dire « six »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَمَانِيَةٌ",
+          "choix": [
+            "huit",
+            "trois",
+            "neuf"
+          ],
+          "reponse": 0,
+          "explication": "ثَمَانِيَةٌ veut dire « huit »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « dix » ?",
+          "choix_ar": [
+            "عَشَرَةٌ",
+            "تِسْعَةٌ",
+            "سَبْعَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« dix » se dit عَشَرَةٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « trois calames » ?",
+          "choix_ar": [
+            "ثَلَاثَةُ أَقْلَامٍ",
+            "ثَلَاثَةُ قَلَمٍ",
+            "ثَلَاثَةُ أَقْلَامٌ"
+          ],
+          "reponse": 0,
+          "explication": "« trois calames » se dit ثَلَاثَةُ أَقْلَامٍ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « sept bourses ».",
+          "ar": "سَبْعَةُ …",
+          "choix_ar": [
+            "أَكْيَاسٍ",
+            "أَكْيَاسٌ",
+            "كِيسٍ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel indéfini au génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « un seul livre ».",
+          "ar": "كِتَابٌ …",
+          "choix_ar": [
+            "وَاحِدٌ",
+            "وَاحِدَةٌ",
+            "ثَلَاثَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "1 suit le nom et s'accorde."
+        },
+        {
+          "type": "qcm",
+          "consigne": "De 3 à 10, le nom qui suit le nombre est…",
+          "choix": [
+            "un pluriel indéfini au génitif",
+            "un singulier au nominatif",
+            "un duel"
+          ],
+          "reponse": 0,
+          "explication": "ثَلَاثَةُ كُتُبٍ."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "خَمْسَةٌ",
+          "choix_ar": [
+            "خَمْسَةٌ",
+            "خَيْمَةٌ",
+            "عَشَرَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était خَمْسَةٌ « cinq »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سُيُوفٌ",
+          "choix": [
+            "épées",
+            "invités",
+            "maisons"
+          ],
+          "reponse": 0,
+          "explication": "سُيُوفٌ veut dire « épées ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des menuisiers » ?",
+          "choix_ar": [
+            "نَجَّارُونَ",
+            "نَجَّارَانِ",
+            "نَجَّارٌ"
+          ],
+          "reponse": 0,
+          "explication": "« des menuisiers » se dit نَجَّارُونَ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَمَنٌ",
+          "choix": [
+            "prix",
+            "pièce",
+            "bourse"
+          ],
+          "reponse": 0,
+          "explication": "ثَمَنٌ veut dire « prix ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu comptes de un à dix : 1 et 2 après le nom ; de 3 à 10 avant un pluriel au génitif, avec ة si le singulier est masculin (ثَلَاثَةُ كُتُبٍ).",
+      "suite": "Dernière leçon du marché : dire « il n'est pas »."
+    }
+  ]
+}

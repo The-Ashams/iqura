@@ -1,0 +1,28 @@
+/// Taille d'origine (pixels) des personnages de `assets/art/`, pour les
+/// placer dans les scènes. Vérifiée contre les images par un test.
+const Map<String, (int, int)> spriteSizes = {
+  'voyageur': (12, 24),
+  'voyageur_combat': (17, 32),
+  'nura': (16, 26),
+  'samir': (10, 22),
+  'layla': (12, 26),
+  'rashid': (12, 24),
+  'suhayl': (12, 24),
+  'brume': (43, 46),
+  'gardien': (48, 56),
+  'basim': (12, 24),
+  'salma': (13, 24),
+  'mirage': (43, 46),
+  'grand_mirage': (64, 66),
+  'hilal': (12, 24),
+  'rabab': (12, 24),
+  'ziyad': (12, 24),
+  'widad': (12, 24),
+  'precipitation': (43, 46),
+  'grande_precipitation': (64, 66),
+  'nadim': (12, 24),
+  'hala': (12, 24),
+  'zuhayr': (12, 24),
+  'distraction': (43, 46),
+  'grande_distraction': (64, 66),
+};

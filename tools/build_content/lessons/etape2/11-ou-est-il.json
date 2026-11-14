@@ -1,0 +1,571 @@
+{
+  "id": "fondations-11",
+  "etape": 2,
+  "ordre": 11,
+  "format": 3,
+  "titre": "Où est-il ?",
+  "objectif": "Situer une chose : dans, sur, de, vers ; le nom finit par i après ces mots.",
+  "statut": "ia_non_verifie",
+  "lieu": "souk",
+  "maitre": "salma",
+  "prerequis": [
+    "fondations-10"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "salma",
+          "texte": "Bienvenue au souk ! Je suis Salmā, je vends du pain, de l'huile et de la viande."
+        },
+        {
+          "qui": "salma",
+          "texte": "Ici, tout se cherche : apprends à dire où sont les choses."
+        }
+      ],
+      "objectif": "Dire où se trouve une chose."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Où est le chameau ? »",
+          "ar": "… الْجَمَلُ؟",
+          "choix_ar": [
+            "أَيْنَ",
+            "مَنْ",
+            "هَلْ"
+          ],
+          "reponse": 0,
+          "explication": "أَيْنَ demande un lieu (leçon 2.10)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فِي",
+          "choix": [
+            "dans",
+            "sur",
+            "vers"
+          ],
+          "reponse": 0,
+          "explication": "فِي veut dire « dans » (leçon 2.1)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la tente est grande » ?",
+          "choix_ar": [
+            "الْخَيْمَةُ كَبِيرَةٌ.",
+            "الْخَيْمَةُ كَبِيرٌ.",
+            "خَيْمَةٌ كَبِيرَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Phrase nominale : nom défini, attribut accordé (leçon 2.6)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "أَيْنَ الْخُبْزُ؟",
+          "fr": "Où est le pain ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "الْخُبْزُ فِي السَّلَّةِ.",
+          "fr": "Le pain est dans le panier."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَأَيْنَ الزَّيْتُ؟",
+          "fr": "Et où est l'huile ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "الزَّيْتُ عَلَى الْكُرْسِيِّ.",
+          "fr": "L'huile est sur la chaise."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où est le pain ?",
+        "choix": [
+          "dans le panier",
+          "sur la chaise",
+          "dans la tente"
+        ],
+        "reponse": 0,
+        "explication": "الْخُبْزُ فِي السَّلَّةِ : dans le panier."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "suq",
+        "khubz",
+        "zayt",
+        "lahm",
+        "salla"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "سَلَّةٌ",
+        "choix": [
+          "panier",
+          "pain",
+          "huile"
+        ],
+        "reponse": 0,
+        "explication": "سَلَّةٌ veut dire « panier »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ala",
+        "bab",
+        "kitab"
+      ],
+      "question": {
+        "type": "traduire",
+        "consigne": "Comment dit-on « sur » ?",
+        "choix_ar": [
+          "عَلَى",
+          "فِي",
+          "مِنْ"
+        ],
+        "reponse": 0,
+        "explication": "« sur » se dit عَلَى."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Après فِي، عَلَى، مِنْ، إِلَى",
+      "texte": "Après فِي، عَلَى، مِنْ، إِلَى, le nom finit par i : فِي الْبَيْتِ ; sans article, par -in : فِي بَيْتٍ. La leçon 12 de la région 1 l'a montré ; la leçon suivante explique pourquoi.",
+      "exemples": [
+        "فِي الْبَيْتِ",
+        "فِي بَيْتٍ",
+        "عَلَى الْكُرْسِيِّ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « dans la tente ».",
+        "ar": "فِي …",
+        "choix_ar": [
+          "الْخَيْمَةِ",
+          "الْخَيْمَةُ",
+          "خَيْمَةٌ"
+        ],
+        "reponse": 0,
+        "explication": "Après فِي, le nom finit par i : فِي الْخَيْمَةِ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "مِنْ devant l'article",
+      "texte": "Devant l'article, مِنْ prend une fatḥa pour se lier au mot suivant : مِنَ الْقَرْيَةِ « du village ».",
+      "exemples": [
+        "مِنَ الْقَرْيَةِ",
+        "التَّاجِرُ مِنَ الْقَرْيَةِ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « التَّاجِرُ مِنَ الْقَرْيَةِ » ?",
+        "choix": [
+          "Le marchand est du village.",
+          "Le marchand est au village.",
+          "Le marchand va au village."
+        ],
+        "reponse": 0,
+        "explication": "مِنْ « de » : il vient du village."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خُبْزٌ",
+          "choix": [
+            "pain",
+            "viande",
+            "huile"
+          ],
+          "reponse": 0,
+          "explication": "خُبْزٌ veut dire « pain »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَحْمٌ",
+          "choix": [
+            "viande",
+            "pain",
+            "panier"
+          ],
+          "reponse": 0,
+          "explication": "لَحْمٌ veut dire « viande »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « sur la chaise » ?",
+          "choix_ar": [
+            "عَلَى الْكُرْسِيِّ",
+            "فِي الْكُرْسِيِّ",
+            "عَلَى الْكُرْسِيُّ"
+          ],
+          "reponse": 0,
+          "explication": "عَلَى « sur », et le nom finit par i : عَلَى الْكُرْسِيِّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le livre est dans la maison. »",
+          "ar": "الْكِتَابُ فِي …",
+          "choix_ar": [
+            "الْبَيْتِ",
+            "الْبَيْتُ",
+            "بَيْتٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : الْبَيْتِ, avec i."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La viande est dans un panier. »",
+          "ar": "اللَّحْمُ فِي …",
+          "choix_ar": [
+            "سَلَّةٍ",
+            "سَلَّةٌ",
+            "السَّلَّةُ"
+          ],
+          "reponse": 0,
+          "explication": "Sans article, après فِي : -in, سَلَّةٍ."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "زَيْتٌ",
+          "choix_ar": [
+            "زَيْتٌ",
+            "بَيْتٌ",
+            "خُبْزٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était زَيْتٌ « huile »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Le pain est dans le panier. »",
+          "tuiles": [
+            "فِي",
+            "الْخُبْزُ",
+            "السَّلَّةِ",
+            "عَلَى"
+          ],
+          "solution": [
+            "الْخُبْزُ",
+            "فِي",
+            "السَّلَّةِ"
+          ],
+          "explication": "Le nom d'abord, puis le lieu : الْخُبْزُ فِي السَّلَّةِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans الْخُبْزُ فِي السَّلَّةِ, pourquoi السَّلَّةِ finit-il par i ?",
+          "choix": [
+            "il vient après فِي",
+            "il est féminin",
+            "il est au début"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي, le nom finit par i."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "الْخُبْزُ فِي السَّلَّةِ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « du village » ?",
+          "choix_ar": [
+            "مِنَ الْقَرْيَةِ",
+            "فِي الْقَرْيَةِ",
+            "مِنْ الْقَرْيَةُ"
+          ],
+          "reponse": 0,
+          "explication": "مِنْ devient مِنَ devant l'article, et le nom finit par i."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Au souk",
+      "texte": "Salmā range son étal. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "نَحْنُ فِي السُّوقِ.",
+        "الْخُبْزُ فِي السَّلَّةِ.",
+        "الزَّيْتُ عَلَى الْكُرْسِيِّ.",
+        "التَّاجِرُ مِنَ الْقَرْيَةِ، وَاللَّحْمُ فِي الْخَيْمَةِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où est l'huile ?",
+          "choix": [
+            "sur la chaise",
+            "dans le panier",
+            "dans la tente"
+          ],
+          "reponse": 0,
+          "explication": "الزَّيْتُ عَلَى الْكُرْسِيِّ : sur la chaise."
+        },
+        {
+          "type": "qcm",
+          "consigne": "D'où vient le marchand ?",
+          "choix": [
+            "du village",
+            "de la montagne",
+            "du fleuve"
+          ],
+          "reponse": 0,
+          "explication": "التَّاجِرُ مِنَ الْقَرْيَةِ : du village."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim cherche le livre. Il est sur la chaise.",
+          "replique": {
+            "qui": "basim",
+            "ar": "أَيْنَ الْكِتَابُ؟"
+          },
+          "choix_ar": [
+            "الْكِتَابُ عَلَى الْكُرْسِيِّ.",
+            "الْكِتَابُ عَلَى الْكُرْسِيُّ.",
+            "الْكِتَابُ كُرْسِيٌّ."
+          ],
+          "reponse": 0,
+          "explication": "عَلَى « sur », puis le nom en i : عَلَى الْكُرْسِيِّ."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Salmā te demande où tu vas. Tu vas au marché.",
+          "replique": {
+            "qui": "salma",
+            "ar": "إِلَى أَيْنَ؟"
+          },
+          "choix_ar": [
+            "إِلَى السُّوقِ.",
+            "فِي السُّوقِ.",
+            "مِنَ السُّوقِ."
+          ],
+          "reponse": 0,
+          "explication": "إِلَى أَيْنَ « vers où » est une question courte, sans verbe ; on répond de la même façon : إِلَى السُّوقِ « au marché »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « La viande est dans la tente. »",
+          "tuiles": [
+            "الْخَيْمَةِ",
+            "اللَّحْمُ",
+            "فِي",
+            "مِنَ"
+          ],
+          "solution": [
+            "اللَّحْمُ",
+            "فِي",
+            "الْخَيْمَةِ"
+          ],
+          "explication": "اللَّحْمُ فِي الْخَيْمَةِ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le livre est sur la chaise » ?",
+          "choix_ar": [
+            "الْكِتَابُ عَلَى الْكُرْسِيِّ.",
+            "الْكِتَابُ فِي الْكُرْسِيِّ.",
+            "الْكُرْسِيُّ عَلَى الْكِتَابِ."
+          ],
+          "reponse": 0,
+          "explication": "« le livre est sur la chaise » se dit الْكِتَابُ عَلَى الْكُرْسِيِّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La porte est petite. »",
+          "ar": "… صَغِيرٌ.",
+          "choix_ar": [
+            "الْبَابُ",
+            "الْبَابِ",
+            "بَابٍ"
+          ],
+          "reponse": 0,
+          "explication": "Le nom dont on parle finit par u : الْبَابُ. Seul un nom placé après فِي، عَلَى، مِنْ، إِلَى finit par i."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَلَى",
+          "choix": [
+            "sur",
+            "dans",
+            "de"
+          ],
+          "reponse": 0,
+          "explication": "عَلَى veut dire « sur »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سُوقٌ",
+          "choix": [
+            "marché",
+            "panier",
+            "porte"
+          ],
+          "reponse": 0,
+          "explication": "سُوقٌ veut dire « marché »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "زَيْتٌ",
+          "choix": [
+            "huile",
+            "pain",
+            "viande"
+          ],
+          "reponse": 0,
+          "explication": "زَيْتٌ veut dire « huile »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le pain » ?",
+          "choix_ar": [
+            "الْخُبْزُ",
+            "اللَّحْمُ",
+            "الزَّيْتُ"
+          ],
+          "reponse": 0,
+          "explication": "« le pain » se dit الْخُبْزُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « dans la maison » ?",
+          "choix_ar": [
+            "فِي الْبَيْتِ",
+            "فِي الْبَيْتُ",
+            "عَلَى الْبَيْتِ"
+          ],
+          "reponse": 0,
+          "explication": "فِي « dans », puis le nom en i."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'huile est dans le panier. »",
+          "ar": "الزَّيْتُ فِي …",
+          "choix_ar": [
+            "السَّلَّةِ",
+            "السَّلَّةُ",
+            "سَلَّةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : السَّلَّةِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand est du village. »",
+          "ar": "التَّاجِرُ … الْقَرْيَةِ.",
+          "choix_ar": [
+            "مِنَ",
+            "عَلَى",
+            "هَلْ"
+          ],
+          "reponse": 0,
+          "explication": "مِنَ الْقَرْيَةِ « du village »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "بَابٌ",
+          "choix_ar": [
+            "بَابٌ",
+            "كِتَابٌ",
+            "لَحْمٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était بَابٌ « porte »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après فِي, عَلَى, مِنْ, le nom finit par…",
+          "choix": [
+            "i",
+            "u",
+            "a"
+          ],
+          "reponse": 0,
+          "explication": "Après ces mots, le nom finit par i (ou -in)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَيْنَ",
+          "choix": [
+            "où ?",
+            "qui ?",
+            "quoi ?"
+          ],
+          "reponse": 0,
+          "explication": "أَيْنَ veut dire « où ? ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils » ?",
+          "choix_ar": [
+            "هُمْ",
+            "هُنَّ",
+            "نَحْنُ"
+          ],
+          "reponse": 0,
+          "explication": "« ils » se dit هُمْ.",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « une lampe neuve ».",
+          "ar": "سِرَاجٌ …",
+          "choix_ar": [
+            "جَدِيدٌ",
+            "جَدِيدَةٌ",
+            "الْجَدِيدُ"
+          ],
+          "reponse": 0,
+          "explication": "سِرَاجٌ جَدِيدٌ.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu dis où sont les choses avec فِي, عَلَى, مِنْ, إِلَى, et tu sais qu'après eux le nom finit par i.",
+      "suite": "Prochaine leçon : pourquoi la fin des mots change."
+    }
+  ]
+}

@@ -1,0 +1,552 @@
+{
+  "id": "moteur-01",
+  "etape": 3,
+  "ordre": 1,
+  "format": 3,
+  "titre": "La racine",
+  "objectif": "Trouver les trois lettres solides d'un mot.",
+  "statut": "ia_non_verifie",
+  "lieu": "col",
+  "maitre": "hilal",
+  "prerequis": [
+    "fondations-30"
+  ],
+  "apercu": [
+    "هِلَالٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "texte": "Bienvenue dans les montagnes, voyageur : je suis Hilāl, le forgeron. Ici, on apprend comment les mots se fabriquent."
+        },
+        {
+          "qui": "hilal",
+          "texte": "Chaque mot cache des lettres solides, comme le métal dans la pierre : sa racine. Apprends à la trouver."
+        }
+      ],
+      "objectif": "Trouver la racine d'un mot."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « les marchands qui sont revenus ».",
+          "ar": "التُّجَّارُ … رَجَعُوا",
+          "choix_ar": [
+            "الَّذِينَ",
+            "الَّذِي",
+            "الَّتِي"
+          ],
+          "reponse": 0,
+          "explication": "Personnes au pluriel : الَّذِينَ (leçon 2.30)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous sortirons demain » ?",
+          "choix_ar": [
+            "سَنَخْرُجُ غَدًا",
+            "خَرَجْنَا أَمْسِ",
+            "لَا نَخْرُجُ"
+          ],
+          "reponse": 0,
+          "explication": "Futur : سَـ + inaccompli (leçon 2.28)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَاتِبٌ",
+          "choix": [
+            "scribe",
+            "livre",
+            "il a écrit"
+          ],
+          "reponse": 0,
+          "explication": "كَاتِبٌ : « scribe » (leçon 2.23)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hilal",
+          "ar": "صَعِدْنَا الْجَبَلَ فِي الصَّبَاحِ، وَالْبَرْدُ كَثِيرٌ.",
+          "fr": "Nous avons gravi la montagne le matin, et il fait très froid."
+        },
+        {
+          "qui": "basim",
+          "ar": "نَعَمْ، فِي الْجَبَلِ ثَلْجٌ كَثِيرٌ.",
+          "fr": "Oui, il y a beaucoup de neige sur la montagne."
+        },
+        {
+          "qui": "hilal",
+          "ar": "وَهَٰذِهِ صَخْرَةٌ كَبِيرَةٌ.",
+          "fr": "Et voici un grand rocher."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'y a-t-il sur la montagne ?",
+        "choix": [
+          "beaucoup de neige",
+          "beaucoup d'eau",
+          "un grand marché"
+        ],
+        "reponse": 0,
+        "explication": "فِي الْجَبَلِ ثَلْجٌ كَثِيرٌ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "dars",
+        "bard",
+        "thalj",
+        "sakhra",
+        "fahm_charbon",
+        "nuhas",
+        "saida"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "صَعِدَ",
+        "choix": [
+          "il est monté",
+          "il est sorti",
+          "il est revenu"
+        ],
+        "reponse": 0,
+        "explication": "صَعِدَ veut dire « il est monté »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La racine",
+      "texte": "La plupart des mots arabes ont trois lettres solides, toujours dans le même ordre (parfois quatre : دِرْهَمٌ → د ر ه م) : leur racine. كَتَبَ, كَاتِبٌ et كِتَابٌ ont la racine ك ت ب.",
+      "exemples": [
+        "كَتَبَ",
+        "كَاتِبٌ",
+        "كِتَابٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de كَاتِبٌ ?",
+        "choix_ar": [
+          "ك ت ب",
+          "ك ا ت",
+          "ت ب ك"
+        ],
+        "reponse": 0,
+        "explication": "On enlève le ا long : ك ت ب, dans cet ordre."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Trouver la racine",
+      "texte": "Enlève l'article, la fin, les préfixes du verbe (يَـ, تَـ, نَـ, سَـ) et les voyelles longues ا, و, ي ; s'il reste plus de trois lettres, enlève un م ou un أ du début : الْمِفْتَاحُ → ف ت ح.",
+      "exemples": [
+        "الْمِفْتَاحُ",
+        "الْأَحْمَالُ",
+        "يَكْتُبُونَ"
+      ],
+      "question": {
+        "type": "ordonner",
+        "consigne": "Trouve la racine de ce mot : touche ses lettres dans l'ordre.",
+        "tuiles": [
+          "ل",
+          "ح",
+          "م",
+          "ا"
+        ],
+        "solution": [
+          "ح",
+          "م",
+          "ل"
+        ],
+        "explication": "On enlève الـ, le أ ajouté, le ا long et la fin : ح م ل.",
+        "ar": "الْأَحْمَالُ"
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Attention",
+      "texte": "La racine aide à repérer et à retenir les mots d'une famille ; elle ne permet pas de deviner le sens exact de chaque mot. Avec و, ي, ء ou une lettre doublée, elle se cache parfois (chapitre C).",
+      "exemples": [
+        "ذَهَبَ",
+        "ذَهَبٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "ذَهَبَ « il est allé » et ذَهَبٌ « l'or » ont la même racine. Que faut-il en conclure ?",
+        "choix": [
+          "la racine ne donne pas le sens exact",
+          "l'or va quelque part",
+          "ce sont deux fois le même mot"
+        ],
+        "reponse": 0,
+        "explication": "Même racine ذ ه ب, sens très différents : vérifie toujours dans le dictionnaire."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَرْدٌ",
+          "choix": [
+            "le froid",
+            "la neige",
+            "le rocher"
+          ],
+          "reponse": 0,
+          "explication": "بَرْدٌ veut dire « le froid »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نُحَاسٌ",
+          "choix": [
+            "cuivre",
+            "charbon",
+            "fer"
+          ],
+          "reponse": 0,
+          "explication": "نُحَاسٌ veut dire « cuivre »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le rocher » ?",
+          "choix_ar": [
+            "الصَّخْرَةُ",
+            "الثَّلْجُ",
+            "الْجَبَلُ"
+          ],
+          "reponse": 0,
+          "explication": "« le rocher » se dit الصَّخْرَةُ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Trouve la racine de ce mot.",
+          "tuiles": [
+            "ب",
+            "ل",
+            "ط",
+            "ا"
+          ],
+          "solution": [
+            "ط",
+            "ل",
+            "ب"
+          ],
+          "explication": "On enlève الـ, le ا long et la fin ; la shadda double ل, qu'on ne garde qu'une fois : ط ل ب.",
+          "ar": "الطُّلَّابُ"
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Trouve la racine de ce mot.",
+          "tuiles": [
+            "ن",
+            "ك",
+            "ب",
+            "ت",
+            "ي"
+          ],
+          "solution": [
+            "ك",
+            "ت",
+            "ب"
+          ],
+          "explication": "On enlève يَـ … ـُونَ : ك ت ب.",
+          "ar": "يَكْتُبُونَ"
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Trouve la racine de ce mot.",
+          "tuiles": [
+            "ص",
+            "د",
+            "ع",
+            "ن"
+          ],
+          "solution": [
+            "ص",
+            "ع",
+            "د"
+          ],
+          "explication": "On enlève la fin ـنَا : ص ع د.",
+          "ar": "صَعِدْنَا"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Lequel n'est pas de la famille ك ت ب ?",
+          "choix_ar": [
+            "قَلَمٌ",
+            "كِتَابٌ",
+            "كُتُبٌ"
+          ],
+          "reponse": 0,
+          "explication": "قَلَمٌ a la racine ق ل م."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de دُرُوسٌ ?",
+          "choix_ar": [
+            "د ر س",
+            "د و ر",
+            "ر س د"
+          ],
+          "reponse": 0,
+          "explication": "On enlève le و long et la fin : د ر س, comme دَرَسَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les voyageurs ont gravi la montagne. »",
+          "ar": "… الْمُسَافِرُونَ الْجَبَلَ.",
+          "choix_ar": [
+            "صَعِدَ",
+            "صَعِدُوا",
+            "يَصْعَدُ"
+          ],
+          "reponse": 0,
+          "explication": "Verbe en tête : au singulier, صَعِدَ (leçon 2.23)."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le col enneigé",
+      "texte": "Hilāl et Bāsim montent vers la forge. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "صَعِدَ هِلَالٌ وَبَاسِمٌ الْجَبَلَ فِي الصَّبَاحِ.",
+        "فِي الْجَبَلِ ثَلْجٌ كَثِيرٌ، وَالْبَرْدُ كَثِيرٌ.",
+        "جَلَسَ هِلَالٌ عِنْدَ صَخْرَةٍ كَبِيرَةٍ.",
+        "قَالَ هِلَالٌ: « الْفَحْمُ وَالنُّحَاسُ فِي السَّلَّةِ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quand sont-ils montés ?",
+          "choix": [
+            "le matin",
+            "le soir",
+            "hier"
+          ],
+          "reponse": 0,
+          "explication": "فِي الصَّبَاحِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Où Hilāl s'est-il assis ?",
+          "choix": [
+            "près d'un grand rocher",
+            "dans la forge",
+            "au marché"
+          ],
+          "reponse": 0,
+          "explication": "عِنْدَ صَخْرَةٍ كَبِيرَةٍ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Il y a beaucoup de neige sur la montagne. » ?",
+          "choix_ar": [
+            "فِي الْجَبَلِ ثَلْجٌ كَثِيرٌ.",
+            "الْجَبَلُ فِي ثَلْجٍ كَثِيرٍ.",
+            "ثَلْجٌ الْجَبَلُ كَثِيرٌ."
+          ],
+          "reponse": 0,
+          "explication": "« Il y a beaucoup de neige sur la montagne. » se dit فِي الْجَبَلِ ثَلْجٌ كَثِيرٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Les voyageurs ont gravi la montagne. »",
+          "tuiles": [
+            "الْجَبَلَ",
+            "صَعِدَ",
+            "الْمُسَافِرُونَ",
+            "صَعِدُوا"
+          ],
+          "solution": [
+            "صَعِدَ",
+            "الْمُسَافِرُونَ",
+            "الْجَبَلَ"
+          ],
+          "explication": "Verbe en tête au singulier, sujet, puis complément en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il fait très froid. »",
+          "ar": "… كَثِيرٌ.",
+          "choix_ar": [
+            "الْبَرْدُ",
+            "بَرْدٌ",
+            "الْبَرْدَ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet défini, en -u : الْبَرْدُ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَلْجٌ",
+          "choix": [
+            "neige",
+            "froid",
+            "rocher"
+          ],
+          "reponse": 0,
+          "explication": "ثَلْجٌ veut dire « neige »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَخْرَةٌ",
+          "choix": [
+            "rocher",
+            "montagne",
+            "charbon"
+          ],
+          "reponse": 0,
+          "explication": "صَخْرَةٌ veut dire « rocher »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَحْمٌ",
+          "choix": [
+            "charbon",
+            "cuivre",
+            "pain"
+          ],
+          "reponse": 0,
+          "explication": "فَحْمٌ veut dire « charbon »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la leçon » ?",
+          "choix_ar": [
+            "الدَّرْسُ",
+            "الْبَرْدُ",
+            "الطَّالِبُ"
+          ],
+          "reponse": 0,
+          "explication": "« la leçon » se dit الدَّرْسُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de الْكُتَّابُ ?",
+          "choix_ar": [
+            "ك ت ب",
+            "ل ك ت",
+            "ت ب ك"
+          ],
+          "reponse": 0,
+          "explication": "On enlève الـ, le ا long et la fin ; la shadda double ت, qu'on ne garde qu'une fois : ك ت ب."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de الْمَفَاتِيحُ ?",
+          "choix_ar": [
+            "ف ت ح",
+            "م ف ت",
+            "ت ح ي"
+          ],
+          "reponse": 0,
+          "explication": "On enlève الـ, le م ajouté, les longues ا et ي : ف ت ح."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de يَحْمِلُونَ ?",
+          "choix_ar": [
+            "ح م ل",
+            "ي ح م",
+            "م ل ن"
+          ],
+          "reponse": 0,
+          "explication": "On enlève يَـ … ـُونَ : ح م ل."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Lequel est de la famille د ر س ?",
+          "choix_ar": [
+            "دَرْسٌ",
+            "دِرْهَمٌ",
+            "دَارٌ"
+          ],
+          "reponse": 0,
+          "explication": "دَرْسٌ : د ر س."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Les lettres de la racine…",
+          "choix": [
+            "gardent toujours leur ordre",
+            "peuvent changer d'ordre",
+            "sont toujours au début du mot"
+          ],
+          "reponse": 0,
+          "explication": "ك ت ب reste ك ت ب dans كِتَابٌ, كَاتِبٌ, يَكْتُبُونَ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَيَخْرُجُ",
+          "choix": [
+            "il sortira",
+            "il est sorti",
+            "sors !"
+          ],
+          "reponse": 0,
+          "explication": "سَيَخْرُجُ veut dire « il sortira ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la lettre que j'ai écrite » ?",
+          "choix_ar": [
+            "الرِّسَالَةُ الَّتِي كَتَبْتُهَا",
+            "الرِّسَالَةُ الَّذِي كَتَبْتُهُ",
+            "رِسَالَةٌ الَّتِي كَتَبْتُهَا"
+          ],
+          "reponse": 0,
+          "explication": "« la lettre que j'ai écrite » se dit الرِّسَالَةُ الَّتِي كَتَبْتُهَا.",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je n'ai pas compris. »",
+          "ar": "لَمْ …",
+          "choix_ar": [
+            "أَفْهَمْ",
+            "فَهِمْتُ",
+            "أَفْهَمُ"
+          ],
+          "reponse": 0,
+          "explication": "لَمْ + inaccompli avec sukūn.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais trouver la racine d'un mot : ses trois lettres solides, dans l'ordre (كَاتِبٌ → ك ت ب).",
+      "suite": "À la forge, Hilāl va te montrer les moules des mots."
+    }
+  ]
+}

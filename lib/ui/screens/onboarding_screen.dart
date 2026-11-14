@@ -52,7 +52,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Apprendre l’arabe et l’arabe coranique.',
+                    'Apprendre l’arabe classique, la langue du Coran.',
                     textAlign: TextAlign.center,
                     style: theme.textTheme.bodyLarge,
                   ),

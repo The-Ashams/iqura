@@ -1,0 +1,566 @@
+{
+  "id": "moteur-14",
+  "etape": 3,
+  "ordre": 14,
+  "format": 3,
+  "titre": "La forme IV",
+  "objectif": "Comprendre la forme IV أَفْعَلَ : faire faire l'action.",
+  "statut": "ia_non_verifie",
+  "lieu": "moulin",
+  "maitre": "rabab",
+  "prerequis": [
+    "moteur-13"
+  ],
+  "apercu": [
+    "رَبَابُ"
+  ],
+  "schemes": [
+    "أَفْعَلَ",
+    "يُفْعِلُ",
+    "إِفْعَال",
+    "أَفْعَلُ",
+    "فَاعَلَ",
+    "يُفَاعِلُ",
+    "فَعَّلَ",
+    "يُفَعِّلُ",
+    "فَعَلَ",
+    "فَعُلَ",
+    "فَعِلَ",
+    "مُفَاعَلَة",
+    "أَفْعُلُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "texte": "Dernier tour de roue au moulin : un أَ se pose devant la racine."
+        },
+        {
+          "qui": "rabab",
+          "texte": "خَرَجَ, c'est « sortir » ; أَخْرَجَ, c'est « faire sortir » quelqu'un ou quelque chose."
+        }
+      ],
+      "objectif": "Reconnaître la forme IV et dire « faire faire »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine س ع د dans le moule فَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "سَاعَدَ",
+            "سَعِيدٌ",
+            "يُسَاعِدُ"
+          ],
+          "reponse": 0,
+          "explication": "س ع د dans فَاعَلَ : سَاعَدَ (leçon 3.13)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de سَافَرَ ?",
+          "choix_ar": [
+            "يُسَافِرُ",
+            "سَافَرَ",
+            "مُسَافِرٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme III : يُسَافِرُ (leçon 3.13)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَهَّمَ",
+          "choix": [
+            "il a fait comprendre",
+            "il a compris",
+            "la compréhension"
+          ],
+          "reponse": 0,
+          "explication": "Forme II de فَهِمَ (leçon 3.12)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "ar": "هَلْ خَرَجَ الْجَمَلُ؟",
+          "fr": "Le chameau est sorti ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "نَعَمْ، أَخْرَجْتُ الْجَمَلَ فِي الصَّبَاحِ.",
+          "fr": "Oui, j'ai fait sortir le chameau le matin."
+        },
+        {
+          "qui": "rabab",
+          "ar": "وَهَلْ أَطْعَمْتَ الْجَمَلَ؟",
+          "fr": "Et tu as donné à manger au chameau ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "نَعَمْ، وَأَدْخَلْتُ الْجَمَلَ فِي الْمَسَاءِ.",
+          "fr": "Oui, et je l'ai fait rentrer le soir."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quand Bāsim a-t-il fait rentrer le chameau ?",
+        "choix": [
+          "le soir",
+          "le matin",
+          "à midi"
+        ],
+        "reponse": 0,
+        "explication": "أَدْخَلْتُ الْجَمَلَ فِي الْمَسَاءِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "akhraja",
+        "adkhala",
+        "ajlasa",
+        "atama",
+        "arsala",
+        "akrama",
+        "aslaha",
+        "ajaba"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "أَصْلَحَ",
+        "choix": [
+          "il a réparé",
+          "il a envoyé",
+          "il a fait sortir"
+        ],
+        "reponse": 0,
+        "explication": "أَصْلَحَ veut dire « il a réparé »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Un أَ devant la racine",
+      "texte": "Forme IV, moule أَفْعَلَ : أَ devant la racine, sukūn sur la 1re lettre. Elle veut souvent dire « faire faire » : خَرَجَ « sortir » → أَخْرَجَ « faire sortir ».",
+      "exemples": [
+        "أَخْرَجَ",
+        "أَدْخَلَ",
+        "أَجْلَسَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire أَجْلَسَ ?",
+        "choix": [
+          "faire asseoir",
+          "s'asseoir",
+          "tenir compagnie à"
+        ],
+        "reponse": 0,
+        "explication": "Forme IV de جَلَسَ : faire asseoir."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Inaccompli et nom d'action",
+      "texte": "À l'inaccompli, u puis i : يُخْرِجُ « il fait sortir », à ne pas confondre avec يَخْرُجُ « il sort ». Nom d'action : إِفْعَال (إِخْرَاجٌ).",
+      "exemples": [
+        "يُخْرِجُ",
+        "يَخْرُجُ",
+        "إِخْرَاجٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Lequel veut dire « il fait sortir » ?",
+        "choix_ar": [
+          "يُخْرِجُ",
+          "يَخْرُجُ",
+          "خَرَجَ"
+        ],
+        "reponse": 0,
+        "explication": "Forme IV, inaccompli en u : يُخْرِجُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Trois moules qui se ressemblent",
+      "texte": "Ne confonds pas أَكْرَمَ « il a honoré » (أَفْعَلَ), أَكْبَرُ « plus grand » (أَفْعَلُ) et أَكْتُبُ « j'écris ». Et la forme est une tendance : أَرْسَلَ « envoyer » ne vient d'aucun verbe simple connu.",
+      "exemples": [
+        "أَكْرَمَ",
+        "أَكْبَرُ",
+        "أَكْتُبُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans الْجَمَلُ أَكْبَرُ مِنَ الْحِمَارِ, أَكْبَرُ c'est…",
+        "choix": [
+          "un élatif : plus grand",
+          "un verbe de forme IV",
+          "« j'écris »"
+        ],
+        "reponse": 0,
+        "explication": "أَكْبَرُ : moule أَفْعَلُ, l'élatif (leçon 3.8)."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَرْسَلَ",
+          "choix": [
+            "il a envoyé",
+            "il a fait entrer",
+            "une lettre"
+          ],
+          "reponse": 0,
+          "explication": "أَرْسَلَ veut dire « il a envoyé »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَطْعَمَ",
+          "choix": [
+            "il a donné à manger",
+            "il a mangé",
+            "un repas"
+          ],
+          "reponse": 0,
+          "explication": "أَطْعَمَ veut dire « il a donné à manger »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il fait entrer » ?",
+          "choix_ar": [
+            "يُدْخِلُ",
+            "يَدْخُلُ",
+            "أَدْخَلَ"
+          ],
+          "reponse": 0,
+          "explication": "« il fait entrer » se dit يُدْخِلُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il répare » ?",
+          "choix_ar": [
+            "يُصْلِحُ",
+            "أَصْلَحَ",
+            "إِصْلَاحٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il répare » se dit يُصْلِحُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de أَكْرَمَ ?",
+          "choix_ar": [
+            "أَفْعَلَ",
+            "أَفْعَلُ",
+            "فَاعَلَ"
+          ],
+          "reponse": 0,
+          "explication": "أَ + racine, sukūn sur la 1re lettre : verbe de forme IV."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le nom d'action de أَخْرَجَ ?",
+          "choix_ar": [
+            "إِخْرَاجٌ",
+            "خُرُوجٌ",
+            "مَخْرَجٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme IV : إِفْعَال ; خُرُوجٌ est le nom d'action de خَرَجَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine خ ر ج dans le moule أَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "أَخْرَجَ",
+            "خَرَجَ",
+            "خَارِجٌ"
+          ],
+          "reponse": 0,
+          "explication": "خ ر ج dans أَفْعَلَ : أَخْرَجَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج ل س dans le moule أَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "أَجْلَسَ",
+            "جَالَسَ",
+            "جَلَسَ"
+          ],
+          "reponse": 0,
+          "explication": "ج ل س dans أَفْعَلَ : أَجْلَسَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le forgeron a réparé la clé. »",
+          "ar": "… الْحَدَّادُ الْمِفْتَاحَ.",
+          "choix_ar": [
+            "أَصْلَحَ",
+            "يُصْلِحُ",
+            "إِصْلَاحٌ"
+          ],
+          "reponse": 0,
+          "explication": "Passé, verbe en tête : أَصْلَحَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand envoie une lettre. »",
+          "ar": "التَّاجِرُ … رِسَالَةً.",
+          "choix_ar": [
+            "يُرْسِلُ",
+            "أَرْسَلَ",
+            "رِسَالَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli de la forme IV : يُرْسِلُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "L'hôte du moulin",
+      "texte": "Rabāb raconte l'arrivée d'un invité. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "أَدْخَلَ الْحَارِسُ الضَّيْفَ.",
+        "أَجْلَسَ الشَّيْخُ الضَّيْفَ فِي الْمَجْلِسِ، وَأَكْرَمَ الضَّيْفَ.",
+        "أَطْعَمَ الطَّبَّاخُ الضَّيْفَ، وَأَعْجَبَ الطَّعَامُ الضَّيْفَ.",
+        "فِي الْمَسَاءِ، أَرْسَلَ الضَّيْفُ رِسَالَةً إِلَى صَدِيقِهِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où le vieil homme a-t-il fait asseoir l'invité ?",
+          "choix": [
+            "dans l'assemblée",
+            "dans la cuisine",
+            "au marché"
+          ],
+          "reponse": 0,
+          "explication": "أَجْلَسَ الشَّيْخُ الضَّيْفَ فِي الْمَجْلِسِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le repas a-t-il plu à l'invité ?",
+          "choix": [
+            "oui",
+            "non",
+            "on ne le sait pas"
+          ],
+          "reponse": 0,
+          "explication": "أَعْجَبَ الطَّعَامُ الضَّيْفَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim a fait sortir le chameau. » ?",
+          "choix_ar": [
+            "أَخْرَجَ بَاسِمٌ الْجَمَلَ.",
+            "خَرَجَ بَاسِمٌ الْجَمَلُ.",
+            "الْجَمَلُ أَخْرَجَ بَاسِمًا."
+          ],
+          "reponse": 0,
+          "explication": "« Bāsim a fait sortir le chameau. » se dit أَخْرَجَ بَاسِمٌ الْجَمَلَ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Le palais a plu aux voyageurs. »",
+          "tuiles": [
+            "الْمُسَافِرِينَ",
+            "الْقَصْرُ",
+            "أَعْجَبَ",
+            "أَعْجَبَتْ"
+          ],
+          "solution": [
+            "أَعْجَبَ",
+            "الْقَصْرُ",
+            "الْمُسَافِرِينَ"
+          ],
+          "explication": "La chose qui plaît est le sujet ; les voyageurs sont le complément."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le cuisinier a donné à manger aux invités. »",
+          "ar": "… الطَّبَّاخُ الضُّيُوفَ.",
+          "choix_ar": [
+            "أَطْعَمَ",
+            "طَعَامٌ",
+            "يُطْعِمُ"
+          ],
+          "reponse": 0,
+          "explication": "Forme IV, passé : أَطْعَمَ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَخْرَجَ",
+          "choix": [
+            "il a fait sortir",
+            "il est sorti",
+            "la sortie"
+          ],
+          "reponse": 0,
+          "explication": "أَخْرَجَ veut dire « il a fait sortir »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَكْرَمَ",
+          "choix": [
+            "il a traité avec honneur",
+            "plus grand",
+            "il a fait asseoir"
+          ],
+          "reponse": 0,
+          "explication": "أَكْرَمَ veut dire « il a traité avec honneur »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَعْجَبَ",
+          "choix": [
+            "il a plu à",
+            "il a envoyé",
+            "il a réparé"
+          ],
+          "reponse": 0,
+          "explication": "أَعْجَبَ veut dire « il a plu à »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il fait asseoir » ?",
+          "choix_ar": [
+            "يُجْلِسُ",
+            "يَجْلِسُ",
+            "جَالَسَ"
+          ],
+          "reponse": 0,
+          "explication": "« il fait asseoir » se dit يُجْلِسُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La forme IV veut souvent dire…",
+          "choix": [
+            "faire faire l'action",
+            "faire l'action avec quelqu'un",
+            "subir l'action"
+          ],
+          "reponse": 0,
+          "explication": "خَرَجَ → أَخْرَجَ « faire sortir »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de أَطْعَمَ ?",
+          "choix_ar": [
+            "يُطْعِمُ",
+            "يَطْعَمُ",
+            "إِطْعَامٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme IV : يُفْعِلُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine د خ ل dans le moule أَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "أَدْخَلَ",
+            "دَخَلَ",
+            "مَدْخَلٌ"
+          ],
+          "reponse": 0,
+          "explication": "د خ ل dans أَفْعَلَ : أَدْخَلَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ص ل ح dans le moule أَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "أَصْلَحَ",
+            "يُصْلِحُ",
+            "إِصْلَاحٌ"
+          ],
+          "reponse": 0,
+          "explication": "ص ل ح dans أَفْعَلَ : أَصْلَحَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le gardien fait entrer les marchands. »",
+          "ar": "الْحَارِسُ … التُّجَّارَ.",
+          "choix_ar": [
+            "يُدْخِلُ",
+            "يَدْخُلُ",
+            "دُخُولٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme IV : يُدْخِلُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ص ح ب dans le moule فَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "صَاحَبَ",
+            "يُصَاحِبُ",
+            "سَاعَدَ"
+          ],
+          "reponse": 0,
+          "explication": "فَاعَلَ : صَاحَبَ (leçon 3.13).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَطَّعَ",
+          "choix": [
+            "il a coupé en morceaux",
+            "un morceau",
+            "il a présenté"
+          ],
+          "reponse": 0,
+          "explication": "قَطَّعَ veut dire « il a coupé en morceaux ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de كَلَّمَ ?",
+          "choix_ar": [
+            "فَعَّلَ",
+            "فَاعَلَ",
+            "أَفْعَلَ"
+          ],
+          "reponse": 0,
+          "explication": "فَعَّلَ (leçon 3.12).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais la forme IV أَفْعَلَ / يُفْعِلُ : أَخْرَجَ « faire sortir », أَجْلَسَ « faire asseoir », أَصْلَحَ « réparer ».",
+      "suite": "Dans la Salle des copistes : la forme V, quand l'action revient sur soi."
+    }
+  ]
+}

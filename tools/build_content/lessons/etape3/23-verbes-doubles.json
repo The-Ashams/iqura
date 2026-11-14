@@ -1,0 +1,565 @@
+{
+  "id": "moteur-23",
+  "etape": 3,
+  "ordre": 23,
+  "format": 3,
+  "titre": "Les verbes doublés",
+  "objectif": "Conjuguer un verbe dont la 2e et la 3e lettre sont semblables : مَدَّ.",
+  "statut": "ia_non_verifie",
+  "lieu": "ruines",
+  "maitre": "ziyad",
+  "prerequis": [
+    "moteur-22"
+  ],
+  "apercu": [
+    "زِيَادٌ",
+    "أَقَلُّ",
+    "أَخَفُّ"
+  ],
+  "schemes": [
+    "فَعَلَ",
+    "فَعَّلَ",
+    "أَفْعَلَ",
+    "يُفْعِلُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "ziyad",
+          "texte": "Sur cette colonne, deux lettres semblables se sont collées l'une à l'autre."
+        },
+        {
+          "qui": "ziyad",
+          "texte": "Dans مَدَّ, la racine est م د د : la shadda cache deux د. Parfois, elles se séparent."
+        }
+      ],
+      "objectif": "Reconnaître et conjuguer مَدَّ, رَدَّ, عَدَّ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je mange maintenant. »",
+          "ar": "… الْآنَ.",
+          "choix_ar": [
+            "آكُلُ",
+            "أَكَلْتُ",
+            "سَآكُلُ"
+          ],
+          "reponse": 0,
+          "explication": "« je » : آكُلُ (leçon 3.22)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de سُؤَالٌ ?",
+          "choix_ar": [
+            "س ء ل",
+            "س و ل",
+            "س ل"
+          ],
+          "reponse": 0,
+          "explication": "ء compte dans la racine (leçon 3.22)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَخَذَ",
+          "choix": [
+            "prendre",
+            "manger",
+            "lire"
+          ],
+          "reponse": 0,
+          "explication": "أَخَذَ : « prendre » (leçon 3.22)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَدَدْتُ الْحَبْلَ، وَشَدَدْتُ الْحِمْلَ عَلَى الْجَمَلِ.",
+          "fr": "J'ai tendu la corde, et j'ai attaché la charge sur le chameau."
+        },
+        {
+          "qui": "ziyad",
+          "ar": "وَهَلْ عَدَدْتَ الْأَكْيَاسَ؟",
+          "fr": "Et as-tu compté les bourses ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "نَعَمْ، عَدَدْتُ الْأَكْيَاسَ: عَدَدُهَا عَشَرَةٌ.",
+          "fr": "Oui, j'ai compté les bourses : il y en a dix."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Combien y a-t-il de bourses ?",
+        "choix": [
+          "dix",
+          "trois",
+          "cinq"
+        ],
+        "reponse": 0,
+        "explication": "عَدَدُهَا عَشَرَةٌ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ahabba",
+        "radda",
+        "adad",
+        "madda",
+        "adda",
+        "dalla",
+        "shadda_v"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "عَدَّ",
+        "choix": [
+          "compter",
+          "rendre",
+          "tendre"
+        ],
+        "reponse": 0,
+        "explication": "عَدَّ veut dire « compter »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Deux lettres qui se collent",
+      "texte": "Les deux lettres semblables se fondent en une shadda quand la dernière porte une voyelle : مَدَّ, يَمُدُّ, مَدُّوا. Elles se séparent quand elle porte un sukūn : مَدَدْتُ, مَدَدْنَا.",
+      "exemples": [
+        "مَدَّ",
+        "يَمُدُّ",
+        "مَدَدْتُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment dit-on « j'ai tendu » ?",
+        "choix_ar": [
+          "مَدَدْتُ",
+          "مَدَّتُ",
+          "مَدَّ"
+        ],
+        "reponse": 0,
+        "explication": "Sukūn sur la dernière lettre : les deux د se séparent."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Des mots que tu connais",
+      "texte": "Tu connais déjà des mots de racine doublée : أُمٌّ, حَارٌّ, سَلَّةٌ, قِصَّةٌ (ق ص ص). Et أَقَلُّ « moins nombreux », أَخَفُّ « plus léger » ont la racine de قَلِيلٌ, خَفِيفٌ.",
+      "exemples": [
+        "أُمٌّ",
+        "سَلَّةٌ",
+        "قِصَّةٌ",
+        "أَقَلُّ",
+        "أَخَفُّ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de قِصَّةٌ ?",
+        "choix_ar": [
+          "ق ص ص",
+          "ق ص ة",
+          "ق ص"
+        ],
+        "reponse": 0,
+        "explication": "La shadda cache deux ص."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "أَحَبَّ, une forme IV",
+      "texte": "أَحَبَّ « aimer » est une forme IV de ح ب ب : son inaccompli a u, يُحِبُّ, comme يُخْرِجُ. Ne le confonds pas avec يَمُدُّ, dont le préfixe a a (يَـ).",
+      "exemples": [
+        "أَحَبَّ",
+        "يُحِبُّ",
+        "يَمُدُّ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la racine de يُحِبُّ ?",
+        "choix_ar": [
+          "ح ب ب",
+          "ي ح ب",
+          "ح ب"
+        ],
+        "reponse": 0,
+        "explication": "La shadda cache deux ب : ح ب ب."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَدَّ",
+          "choix": [
+            "rendre, renvoyer",
+            "compter",
+            "attacher"
+          ],
+          "reponse": 0,
+          "explication": "رَدَّ veut dire « rendre, renvoyer »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "دَلَّ",
+          "choix": [
+            "indiquer (le chemin)",
+            "tendre",
+            "aimer"
+          ],
+          "reponse": 0,
+          "explication": "دَلَّ veut dire « indiquer (le chemin) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il compte » ?",
+          "choix_ar": [
+            "يَعُدُّ",
+            "أَعُدُّ",
+            "عَدَّ"
+          ],
+          "reponse": 0,
+          "explication": "« il compte » se dit يَعُدُّ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous avons tendu » ?",
+          "choix_ar": [
+            "مَدَدْنَا",
+            "مَدَّنَا",
+            "نَمُدُّ"
+          ],
+          "reponse": 0,
+          "explication": "Sukūn sur la dernière lettre : مَدَدْنَا. Dans مَدَّنَا, نَا est complément et non sujet : « il nous a étendus »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Retrouve la racine de مَدَّ.",
+          "tuiles": [
+            "م",
+            "د",
+            "د",
+            "ا"
+          ],
+          "solution": [
+            "م",
+            "د",
+            "د"
+          ],
+          "explication": "La shadda cache deux د : م د د.",
+          "ar": "مَدَّ"
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Retrouve la racine de يَعُدُّ.",
+          "tuiles": [
+            "ع",
+            "د",
+            "د",
+            "ي"
+          ],
+          "solution": [
+            "ع",
+            "د",
+            "د"
+          ],
+          "explication": "ي est le préfixe ; la shadda cache deux د.",
+          "ar": "يَعُدُّ"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle lettre cache la shadda de رَدَّ ?",
+          "choix": [
+            "deux د",
+            "deux ر",
+            "un ر et un د"
+          ],
+          "reponse": 0,
+          "explication": "ر د د : la shadda est sur le د."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai rendu la clé. »",
+          "ar": "… الْمِفْتَاحَ.",
+          "choix_ar": [
+            "رَدَدْتُ",
+            "رَدَّتُ",
+            "أَرُدُّ"
+          ],
+          "reponse": 0,
+          "explication": "رَدَّتُ est fautif : devant تُ, la dernière د porte un sukūn et les deux د se séparent, رَدَدْتُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim attache la charge. »",
+          "ar": "… بَاسِمٌ الْحِمْلَ.",
+          "choix_ar": [
+            "يَشُدُّ",
+            "تَشُدُّ",
+            "شَدَّ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli, « il » : يَشُدُّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'enfant aime les dattes. »",
+          "ar": "… الطِّفْلُ التَّمْرَ.",
+          "choix_ar": [
+            "يُحِبُّ",
+            "يَحُبُّ",
+            "أَحَبَّ"
+          ],
+          "reponse": 0,
+          "explication": "Forme IV, inaccompli en u : يُحِبُّ ; يَحُبُّ est absent de notre dictionnaire."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Avant le départ",
+      "texte": "Ziyād raconte les préparatifs d'une caravane. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "مَدَّ الْحَمَّالُ الْحَبْلَ، وَشَدَّ الْحِمْلَ عَلَى الْجَمَلِ.",
+        "عَدَّ التَّاجِرُ الْأَكْيَاسَ: عَدَدُ الْأَكْيَاسِ سِتَّةٌ.",
+        "رَدَّ بَاسِمٌ الْمِفْتَاحَ إِلَى سَلْمَى.",
+        "وَدَلَّ الشَّيْخُ الْمُسَافِرِينَ عَلَى الطَّرِيقِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Combien y a-t-il de bourses ?",
+          "choix": [
+            "six",
+            "dix",
+            "deux"
+          ],
+          "reponse": 0,
+          "explication": "عَدَدُ الْأَكْيَاسِ سِتَّةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qui a indiqué le chemin aux voyageurs ?",
+          "choix": [
+            "le vieil homme",
+            "le porteur",
+            "Bāsim"
+          ],
+          "reponse": 0,
+          "explication": "دَلَّ الشَّيْخُ الْمُسَافِرِينَ عَلَى الطَّرِيقِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le porteur a tendu la corde. » ?",
+          "choix_ar": [
+            "مَدَّ الْحَمَّالُ الْحَبْلَ.",
+            "مَدَّ الْحَبْلُ الْحَمَّالَ.",
+            "الْحَبْلُ مَدَّ الْحَمَّالَ."
+          ],
+          "reponse": 0,
+          "explication": "« Le porteur a tendu la corde. » se dit مَدَّ الْحَمَّالُ الْحَبْلَ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Le marchand a compté les bourses. »",
+          "tuiles": [
+            "الْأَكْيَاسَ",
+            "التَّاجِرُ",
+            "عَدَّ",
+            "عَدَدَ"
+          ],
+          "solution": [
+            "عَدَّ",
+            "التَّاجِرُ",
+            "الْأَكْيَاسَ"
+          ],
+          "explication": "Verbe, sujet, complément."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nous avons compté les bourses. »",
+          "ar": "… الْأَكْيَاسَ.",
+          "choix_ar": [
+            "عَدَدْنَا",
+            "عَدَّنَا",
+            "نَعُدُّ"
+          ],
+          "reponse": 0,
+          "explication": "Sukūn : عَدَدْنَا. عَدَّنَا voudrait dire « il nous a comptés »."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَدَّ",
+          "choix": [
+            "tendre, étendre",
+            "compter",
+            "rendre"
+          ],
+          "reponse": 0,
+          "explication": "مَدَّ veut dire « tendre, étendre »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَدَّ",
+          "choix": [
+            "serrer, attacher",
+            "indiquer",
+            "aimer"
+          ],
+          "reponse": 0,
+          "explication": "شَدَّ veut dire « serrer, attacher »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَدَدٌ",
+          "choix": [
+            "nombre",
+            "il a compté",
+            "dix"
+          ],
+          "reponse": 0,
+          "explication": "عَدَدٌ veut dire « nombre »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai compté » ?",
+          "choix_ar": [
+            "عَدَدْتُ",
+            "عَدَّتُ",
+            "أَعُدُّ"
+          ],
+          "reponse": 0,
+          "explication": "عَدَّتُ est fautif : devant تُ, les deux د se séparent, عَدَدْتُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand les deux lettres semblables se séparent-elles ?",
+          "choix": [
+            "quand la dernière porte un sukūn",
+            "toujours à l'inaccompli",
+            "jamais"
+          ],
+          "reponse": 0,
+          "explication": "مَدَدْتُ, مَدَدْنَا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de شَدَّ ?",
+          "choix_ar": [
+            "ش د د",
+            "ش د ا",
+            "ش د"
+          ],
+          "reponse": 0,
+          "explication": "La shadda cache deux د."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de يَرُدُّ ?",
+          "choix_ar": [
+            "ر د د",
+            "ي ر د",
+            "ر د"
+          ],
+          "reponse": 0,
+          "explication": "ي est le préfixe ; la shadda cache deux د."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le vieil homme indique le chemin aux voyageurs. »",
+          "ar": "الشَّيْخُ … الْمُسَافِرِينَ عَلَى الطَّرِيقِ.",
+          "choix_ar": [
+            "يَدُلُّ",
+            "دَلَّ",
+            "تَدُلُّ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli, « il » : يَدُلُّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai tendu la corde. »",
+          "ar": "… الْحَبْلَ.",
+          "choix_ar": [
+            "مَدَدْتُ",
+            "مَدَّتُ",
+            "أَمُدُّ"
+          ],
+          "reponse": 0,
+          "explication": "مَدَّتُ est fautif (à ne pas confondre avec مَدَّتْ « elle a tendu ») : devant تُ, les deux د se séparent, مَدَدْتُ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَرَأَ",
+          "choix": [
+            "lire",
+            "écrire",
+            "commencer"
+          ],
+          "reponse": 0,
+          "explication": "قَرَأَ veut dire « lire ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَسْأَلَةٌ",
+          "choix": [
+            "question, problème",
+            "réponse",
+            "école"
+          ],
+          "reponse": 0,
+          "explication": "مَسْأَلَةٌ veut dire « question, problème ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment écrit-on « je prends » ?",
+          "choix_ar": [
+            "آخُذُ",
+            "أَأْخُذُ",
+            "يَأْخُذُ"
+          ],
+          "reponse": 0,
+          "explication": "Deux hamzas au début : آ (leçon 3.22).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu conjugues les verbes doublés : مَدَّ, يَمُدُّ, mais مَدَدْتُ quand la dernière lettre porte un sukūn.",
+      "suite": "Aux Ruines : les verbes dont le و du début disparaît, comme وَجَدَ, يَجِدُ."
+    }
+  ]
+}
