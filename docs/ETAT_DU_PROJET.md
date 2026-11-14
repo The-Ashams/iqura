@@ -206,6 +206,19 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Tests | Les 14 leçons de la région 4 jouées de bout en bout (`test/ui/lesson_player_test.dart`) ; test de l'exception onze et douze |
 | À faire | Test de l'utilisateur quand il le souhaite ; ensuite Avancé 2 (leçons 4.15 à 4.28 et boss de la région 4) |
 
+## 1 quindecies. Niveau Avancé 2 (leçons 4.15 à 4.28 et examen de la région 4, chapitres B et C, 13 et 14/11/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Monde | Lieux 6 à 11 de la région 4 : Place des débats (4.15, 4.16), Marché couvert (4.17 à 4.19), Maison de Nadīm (4.20 à 4.22), Atelier des copistes (4.23, 4.24), Salle du dictionnaire (4.25, 4.26), Grande Salle de lecture (4.27, 4.28) ; maître Zuhayr ; boss « la Grande Distraction » au Labyrinthe |
+| Leçons | `tools/build_content/lessons/etape4/15` à `28` (cite-15 à cite-28) : se présenter, famille et métiers, chemin, temps, marché et centaines, journée, avis, conversation, lire sans voyelles (paliers A, B, C), dictionnaire, lettre, résumé, fable de Kalīla wa Dimna (éd. Cheikho 1905) |
+| Application | Lecture sans voyelles par paliers (bouton « voir les voyelles » après la réponse) ; dictionnaire « parcourir par racine » ; exercice « écrire » (texte libre puis modèle, sans note) ; écran « texte classique » (source, lexique, traduction après la réponse, texte de l'édition) ; examen avec épreuve « dialogue » et fin du récit sans voyelles |
+| Examen | `tools/build_content/exams/examen-r4.json` : récit « Le papier du copiste » (environ 420 mots, partie 4 au palier B, 12 questions), dialogue avec Nadīm (6), 5 phrases à remettre en ordre |
+| Plan et décisions | `docs/relectures/decisions-avance-2.md` ; source de la fable : `docs/sources/kalila-cheikho-1905-p89.txt` |
+| Relecture | `docs/relectures/2026-11-13-avance-2.md` |
+| Tests | Les 28 leçons de la région 4 et l'examen de la région 4 joués de bout en bout ; tests « écrire » et « lecture sans voyelles » |
+| À faire | Test de l'utilisateur quand il le souhaite ; ensuite Classique avancé 1 (leçons 5.1 à 5.7, région 5) |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -267,7 +280,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 12. Intermédiaire 2 construit et relu (§1 duodecies).
 13. Intermédiaire 3 construit et relu (§1 terdecies) : toute la région 3 est prête à tester.
 14. Avancé 1 construit et relu (§1 quaterdecies).
-15. Suivant : Avancé 2 (leçons 4.15 à 4.28 et boss de la région 4).
+15. Avancé 2 construit et relu (§1 quindecies) : toute la région 4 est prête à tester.
+16. Suivant : Classique avancé 1 (leçons 5.1 à 5.7, région 5).
 
 ## 5. Problèmes connus
 
