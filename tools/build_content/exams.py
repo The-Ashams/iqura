@@ -82,6 +82,13 @@ def arabic_parts(exam: dict) -> list[tuple[str, str, str]]:
     out = []
     for i, p in enumerate(exam["lecture"]["phrases"]):
         out.append((f"{f} · récit {i + 1}", "phrase", p))
+    bare = exam["lecture"].get("sans_voyelles") or {}
+    for i, p in enumerate(bare.get("phrases", [])):
+        out.append((f"{f} · récit sans voyelles {i + 1}", "phrase", p))
+    for i, q in enumerate((exam.get("dialogue") or {}).get("questions", [])):
+        out.append((f"{f} · dialogue {i + 1} · réplique", "phrase", q["replique"]["ar"]))
+        for j, c in enumerate(q.get("choix_ar", [])):
+            out.append((f"{f} · dialogue {i + 1} · choix {j + 1}", None, c))
     for i, q in enumerate(exam["ecoute"]["questions"]):
         out.append((f"{f} · écoute {i + 1}", "phrase", q["audio"]))
         for j, c in enumerate(q.get("choix_ar", [])):
@@ -164,13 +171,35 @@ def validate(exams: list[dict], lessons: list[dict], words: list[dict],
         _seuil(lecture, f"{where} · lecture")
         if not lecture.get("phrases") or not lecture.get("questions"):
             raise ExamError(f"{where} : récit ou questions absents")
-        n = sum(len(vocab.tokens(p)) for p in lecture["phrases"])
+        bare = lecture.get("sans_voyelles")
+        if bare is not None:
+            # Région 4 : dernière partie du récit sans voyelles (palier A à C),
+            # écrite vocalisée dans les données.
+            if bare.get("palier") not in ("A", "B", "C") or not bare.get("phrases"):
+                raise ExamError(f"{where} : partie sans voyelles : palier et phrases attendus")
+        n = sum(len(vocab.tokens(p))
+                for p in lecture["phrases"] + (bare or {}).get("phrases", []))
         if n < MIN_STORY_WORDS:
             raise ExamError(f"{where} : récit de {n} mots ({MIN_STORY_WORDS} au moins)")
         for i, q in enumerate(lecture["questions"]):
             if q.get("type") != "qcm":
                 raise ExamError(f"{where} · lecture {i + 1} : type qcm attendu")
             _choices(q, "choix", f"{where} · lecture {i + 1}")
+
+        dialogue = exam.get("dialogue")
+        if dialogue is not None:
+            # Région 4 : choisir la bonne réplique dans un dialogue.
+            _seuil(dialogue, f"{where} · dialogue")
+            if not dialogue.get("questions"):
+                raise ExamError(f"{where} : dialogue sans questions")
+            for i, q in enumerate(dialogue["questions"]):
+                w = f"{where} · dialogue {i + 1}"
+                if q.get("type") != "repondre":
+                    raise ExamError(f"{w} : type repondre attendu")
+                rep = q.get("replique") or {}
+                if rep.get("qui") not in characters or not rep.get("ar"):
+                    raise ExamError(f"{w} : réplique ou personnage invalide")
+                _choices(q, "choix_ar", w)
 
         ecoute = exam["ecoute"]
         _seuil(ecoute, f"{where} · écoute")

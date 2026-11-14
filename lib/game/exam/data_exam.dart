@@ -4,6 +4,7 @@
 /// (racine, moule, sens). Le contenu vient de `tools/build_content/exams/`.
 library;
 
+import '../../engines/arabic/vowels.dart';
 import '../lesson/lesson.dart';
 
 /// Une réponse libre : l'apprenant répond, puis compare avec les modèles et
@@ -51,6 +52,10 @@ class DataExam {
     required this.repliesPass,
     this.decoding = const [],
     this.decodingPass = 1,
+    this.storyBare = const [],
+    this.storyBareLevel,
+    this.dialogue = const [],
+    this.dialoguePass = 1,
   });
 
   factory DataExam.fromJson(Map<String, dynamic> j) {
@@ -62,6 +67,8 @@ class DataExam {
     final ecoute = j['ecoute'] as Map<String, dynamic>;
     final reponses = j['reponses'] as Map<String, dynamic>;
     final decodage = j['decodage'] as Map<String, dynamic>?;
+    final dialogue = j['dialogue'] as Map<String, dynamic>?;
+    final bare = lecture['sans_voyelles'] as Map<String, dynamic>?;
     return DataExam(
       id: j['id'] as String,
       region: j['region'] as int,
@@ -96,6 +103,14 @@ class DataExam {
       decodingPass: decodage == null
           ? 1
           : (decodage['seuil'] as num).toDouble(),
+      storyBare: bare == null
+          ? const []
+          : (bare['phrases'] as List).cast<String>(),
+      storyBareLevel: vowelLevelFrom(bare?['palier'] as String?),
+      dialogue: dialogue == null ? const [] : questions(dialogue),
+      dialoguePass: dialogue == null
+          ? 1
+          : (dialogue['seuil'] as num).toDouble(),
     );
   }
 
@@ -117,6 +132,15 @@ class DataExam {
   final List<LessonQuestion> decoding;
   final double decodingPass;
 
+  /// Dernière partie du récit, affichée sans voyelles (région 4 : palier B)
+  /// pendant les questions ; vocalisée ensuite, au résultat.
+  final List<String> storyBare;
+  final VowelLevel? storyBareLevel;
+
+  /// Dialogue avec un personnage : choisir la bonne réplique (région 4).
+  final List<LessonQuestion> dialogue;
+  final double dialoguePass;
+
   /// Phrases à remettre en ordre : la seule partie notée de « répondre ».
   int get gradedReplies => replies.where((r) => r.question != null).length;
 
@@ -125,15 +149,18 @@ class DataExam {
   int get listeningMark => mark(listening.length, listeningPass);
   int get repliesMark => mark(gradedReplies, repliesPass);
   int get decodingMark => mark(decoding.length, decodingPass);
+  int get dialogueMark => mark(dialogue.length, dialoguePass);
 
   bool passed({
     required int reading,
     required int listening,
     required int replies,
     int decoding = 0,
+    int dialogue = 0,
   }) =>
       reading >= readingMark &&
       listening >= listeningMark &&
       replies >= repliesMark &&
-      decoding >= decodingMark;
+      decoding >= decodingMark &&
+      dialogue >= dialogueMark;
 }

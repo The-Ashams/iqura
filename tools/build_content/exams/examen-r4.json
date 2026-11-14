@@ -1,0 +1,466 @@
+{
+ "id": "examen-r4",
+ "region": 4,
+ "lieu": "labyrinthe",
+ "titre": "La Grande Distraction",
+ "statut": "ia_non_verifie",
+ "adversaire": "grande_distraction",
+ "intro": "Dans le Labyrinthe, la Grande Distraction mélange tout pour te faire perdre le fil. Trois épreuves pour la dissiper : lire un récit, dialoguer avec Nadīm, remettre des phrases en ordre.",
+ "lecture": {
+  "titre": "Le papier du copiste",
+  "seuil": 0.83,
+  "phrases": [
+   "يَوْمَ الْخَمِيسِ، فِي الصَّبَاحِ، جَلَسَ بَاسِمٌ مَعَ زُهَيْرٍ فِي مَكَانِ الْكُتُبِ.",
+   "قَالَ زُهَيْرٌ: « عِنْدَنَا عَمَلٌ كَثِيرٌ الْيَوْمَ، وَلَيْسَ عِنْدَنَا قِرْطَاسٌ. »",
+   "« اذْهَبْ إِلَى السُّوقِ، وَارْجِعْ قَبْلَ الْمَسَاءِ، لِأَنَّ الْعَمَلَ لَا يَنْتَظِرُ. »",
+   "قَالَ بَاسِمٌ: « أَشْتَرِي الْقِرْطَاسَ وَأَرْجِعُ قَبْلَ الْعَصْرِ. »",
+   "وَكَانَ فِي الْمَكَانِ طَالِبٌ جَدِيدٌ يَجْلِسُ وَحْدَهُ.",
+   "قَالَ لَهُ بَاسِمٌ: « مَرْحَبًا! أَنَا بَاسِمٌ، وُلِدْتُ فِي قَرْيَةٍ صَغِيرَةٍ، وَأَدْرُسُ هُنَا مَعَ زُهَيْرٍ. »",
+   "قَالَ الطَّالِبُ: « أَهْلًا وَسَهْلًا. أَنَا مِنْ بَلَدٍ بَعِيدٍ، وَهَٰذَا أَوَّلُ أُسْبُوعٍ لِي فِي الْمَدِينَةِ. »",
+   "تَكَلَّمَ بَاسِمٌ مَعَهُ طَوِيلًا، وَنَسِيَ الْقِرْطَاسَ.",
+   "ثُمَّ نَظَرَ إِلَى زُهَيْرٍ، فَخَرَجَ مِنَ الْمَكَانِ.",
+   "لَمْ يَعْرِفْ بَاسِمٌ الطَّرِيقَ إِلَى السُّوقِ، فَسَأَلَ رَجُلًا: « هَلْ تَدُلُّنِي عَلَى السُّوقِ؟ »",
+   "قَالَ الرَّجُلُ: « تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ السُّوقَ عَلَى يَسَارِكَ. »",
+   "مَرَّ بَاسِمٌ بِالْجِسْرِ، فَرَأَى بَيْتَ نَدِيمٍ بَيْنَ السُّوقِ وَالْمَدْرَسَةِ.",
+   "قَالَ بَاسِمٌ: « أَزُورُ نَدِيمًا قَلِيلًا، ثُمَّ أَذْهَبُ إِلَى السُّوقِ. »",
+   "فَتَحَ نَدِيمٌ الْبَابَ، وَقَالَ: « مَرْحَبًا بِكَ يَا بَاسِمُ! »",
+   "وَكَانَتْ فِي الْبَيْتِ لُبْنَى، زَوْجُ نَدِيمٍ، وَعَامِرٌ ابْنُهُ.",
+   "عَامِرٌ طَالِبٌ فِي الْمَدْرَسَةِ، وَهُوَ ابْنُ خَمْسَ عَشْرَةَ سَنَةً.",
+   "سَأَلَهُ عَامِرٌ: « مَاذَا تَعْمَلُ فِي الْمَدِينَةِ؟ »",
+   "قَالَ بَاسِمٌ: « أَدْرُسُ مَعَ زُهَيْرٍ، وَأَكْتُبُ كُلَّ مَسَاءٍ. »",
+   "جَلَسَ بَاسِمٌ مَعَهُمْ طَوِيلًا، حَتَّى جَاءَ الظُّهْرُ.",
+   "ثُمَّ قَالَ: « شُكْرًا لَكُمْ، عِنْدِي عَمَلٌ. نَلْتَقِي غَدًا إِذَنْ. »",
+   "وَصَلَ بَاسِمٌ إِلَى السُّوقِ بَعْدَ الظُّهْرِ.",
+   "رَأَى قِرْطَاسًا جَمِيلًا عِنْدَ بَائِعٍ، فَسَأَلَهُ: « بِكَمْ هَٰذَا الْقِرْطَاسُ؟ »",
+   "قَالَ الْبَائِعُ: « بِأَرْبَعِمِائَةِ دِرْهَمٍ. »",
+   "فَسَاوَمَهُ بَاسِمٌ، وَكَانَتْ هَالَةُ تَنْظُرُ إِلَيْهِمَا.",
+   "قَالَ بَاسِمٌ: « هَلْ عِنْدَكَ أَرْخَصُ مِنْ هَٰذَا؟ »",
+   "فَاشْتَرَى الْقِرْطَاسَ بِثَلَاثِمِائَةِ دِرْهَمٍ، وَقَالَ لِلْبَائِعِ: « شُكْرًا لَكَ. »",
+   "فِي الطَّرِيقِ، رَأَى طَالِبَيْنِ فِي مُنَاظَرَةٍ.",
+   "قَالَ طَالِبٌ: « أَرَى أَنَّ الشَّكْلَ مُهِمٌّ، لِأَنَّ النَّصَّ يَصِيرُ سَهْلًا. »",
+   "قَالَ صَدِيقُهُ: « لَا أُوَافِقُكَ؛ دَلِيلِي أَنَّ الْكُتُبَ الْقَدِيمَةَ لَيْسَ فِيهَا شَكْلٌ. »",
+   "سَأَلَا بَاسِمًا: « مَا رَأْيُكَ؟ »",
+   "قَالَ بَاسِمٌ: « أَرَى أَنَّ الشَّكْلَ مُهِمٌّ لِلطَّالِبِ الْجَدِيدِ. »",
+   "ثُمَّ قَالَ طَالِبٌ كَلِمَةً صَعْبَةً، فَلَمْ يَفْهَمْهَا بَاسِمٌ.",
+   "قَالَ بَاسِمٌ: « لَمْ أَفْهَمْ. أَرْجُو أَنْ تُكَرِّرَهَا عَلَى مَهْلٍ. »",
+   "فَكَرَّرَهَا الطَّالِبُ، وَلَٰكِنَّ بَاسِمًا لَمْ يَعْرِفْ مَعْنَاهَا.",
+   "فَذَهَبَ إِلَى الْمُعْجَمِ، وَبَحَثَ عَنِ الْكَلِمَةِ فِي مَادَّتِهَا، فَوَجَدَهَا.",
+   "وَلَمَّا خَرَجَ، كَانَ الْعَصْرُ قَدْ جَاءَ."
+  ],
+  "sans_voyelles": {
+   "palier": "B",
+   "phrases": [
+    "رَجَعَ بَاسِمٌ إِلَى زُهَيْرٍ قَبْلَ الْمَسَاءِ بِقَلِيلٍ.",
+    "قَالَ لَهُ زُهَيْرٌ: « تَأَخَّرْتَ، وَلَٰكِنَّ الْقِرْطَاسَ جَمِيلٌ. »",
+    "ثُمَّ قَرَأَ بَاسِمٌ مَعَ زُهَيْرٍ نَصًّا قَصِيرًا لَيْسَ فِيهِ شَكْلٌ.",
+    "كَانَ النَّصُّ عَنْ تَاجِرٍ نَامَ فِي الطَّرِيقِ، فَتَأَخَّرَ.",
+    "ضَحِكَ بَاسِمٌ وَقَالَ: « تَأَخَّرْتُ كَهَٰذَا التَّاجِرِ! »",
+    "وَفِي الْمَسَاءِ كَتَبَ بَاسِمٌ رِسَالَةً إِلَى سَمِيرٍ.",
+    "كَتَبَ فِيهَا: « أَمَّا بَعْدُ، فَقَدْ ذَهَبْتُ الْيَوْمَ إِلَى السُّوقِ، وَاشْتَرَيْتُ قِرْطَاسًا. »",
+    "« فِي بِدَايَةِ يَوْمِي تَكَلَّمْتُ كَثِيرًا، وَفِي وَسَطِهِ تَأَخَّرْتُ، وَفِي نِهَايَتِهِ رَجَعْتُ. »",
+    "« كُنْتُ تَعِبًا، لَٰكِنِّي كُنْتُ فَرِحًا. صَدِيقُكَ بَاسِمٌ. »"
+   ]
+  },
+  "questions": [
+   {
+    "type": "qcm",
+    "consigne": "Quel jour se passe l'histoire ?",
+    "choix": [
+     "jeudi",
+     "vendredi",
+     "samedi"
+    ],
+    "reponse": 0,
+    "explication": "يَوْمَ الْخَمِيسِ."
+   },
+   {
+    "type": "qcm",
+    "consigne": "Pourquoi Zuhayr envoie-t-il Bāsim au marché ?",
+    "choix": [
+     "ils n'ont plus de papier",
+     "il a faim",
+     "il cherche Nadīm"
+    ],
+    "reponse": 0,
+    "explication": "لَيْسَ عِنْدَنَا قِرْطَاسٌ."
+   },
+   {
+    "type": "qcm",
+    "consigne": "D'où vient le nouvel étudiant ?",
+    "choix": [
+     "d'un pays lointain",
+     "d'un petit village",
+     "de la ville"
+    ],
+    "reponse": 0,
+    "explication": "أَنَا مِنْ بَلَدٍ بَعِيدٍ."
+   },
+   {
+    "type": "qcm",
+    "consigne": "Où est le marché, d'après l'homme ?",
+    "choix": [
+     "à gauche, après le pont",
+     "à droite, avant le pont",
+     "derrière l'école"
+    ],
+    "reponse": 0,
+    "explication": "تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ السُّوقَ عَلَى يَسَارِكَ."
+   },
+   {
+    "type": "qcm",
+    "consigne": "Qui est ʿĀmir ?",
+    "choix": [
+     "le fils de Nadīm",
+     "le frère de Bāsim",
+     "le vendeur"
+    ],
+    "reponse": 0,
+    "explication": "وَعَامِرٌ ابْنُهُ."
+   },
+   {
+    "type": "qcm",
+    "consigne": "À quel prix Bāsim a-t-il acheté le papier ?",
+    "choix": [
+     "trois cents dirhams",
+     "quatre cents dirhams",
+     "trente dirhams"
+    ],
+    "reponse": 0,
+    "explication": "بِثَلَاثِمِائَةِ دِرْهَمٍ."
+   },
+   {
+    "type": "qcm",
+    "consigne": "Pourquoi, selon le premier étudiant, la vocalisation est-elle importante ?",
+    "choix": [
+     "elle rend le texte facile",
+     "les vieux livres en ont",
+     "Zuhayr l'a dit"
+    ],
+    "reponse": 0,
+    "explication": "لِأَنَّ النَّصَّ يَصِيرُ سَهْلًا."
+   },
+   {
+    "type": "qcm",
+    "consigne": "Quel est l'avis de Bāsim ?",
+    "choix": [
+     "la vocalisation est importante pour le nouvel étudiant",
+     "les vieux livres sont faciles",
+     "le débat est inutile"
+    ],
+    "reponse": 0,
+    "explication": "أَرَى أَنَّ الشَّكْلَ مُهِمٌّ لِلطَّالِبِ الْجَدِيدِ."
+   },
+   {
+    "type": "qcm",
+    "consigne": "Qu'a fait Bāsim pour comprendre le mot ?",
+    "choix": [
+     "il l'a cherché dans le dictionnaire",
+     "il a demandé à Hāla",
+     "il l'a écrit à Samīr"
+    ],
+    "reponse": 0,
+    "explication": "وَبَحَثَ عَنِ الْكَلِمَةِ فِي مَادَّتِهَا."
+   },
+   {
+    "type": "qcm",
+    "consigne": "Dans la dernière partie, que veut dire « تأخرت » dans la bouche de Zuhayr ?",
+    "choix": [
+     "tu as pris du retard",
+     "je suis en retard",
+     "tu es rentré tôt"
+    ],
+    "reponse": 0,
+    "explication": "تَأَخَّرْتَ : « tu » ; Zuhayr parle à Bāsim."
+   },
+   {
+    "type": "qcm",
+    "consigne": "Dans quel ordre Bāsim a-t-il vu ces personnes ?",
+    "choix": [
+     "le nouvel étudiant, Nadīm, le vendeur",
+     "Nadīm, le vendeur, le nouvel étudiant",
+     "le vendeur, Nadīm, le nouvel étudiant"
+    ],
+    "reponse": 0,
+    "explication": "Le matin à l'atelier, puis chez Nadīm, puis au marché."
+   },
+   {
+    "type": "qcm",
+    "consigne": "Quel est le meilleur résumé de la journée ?",
+    "choix": [
+     "Bāsim, distrait toute la journée, a acheté le papier et il est rentré juste avant le soir.",
+     "Bāsim est allé au marché le matin et il est rentré à midi.",
+     "Bāsim n'a pas trouvé le marché et il est resté chez Nadīm."
+    ],
+    "reponse": 0,
+    "explication": "Le début, le milieu et la fin de la journée."
+   }
+  ]
+ },
+ "dialogue": {
+  "seuil": 0.83,
+  "questions": [
+   {
+    "type": "repondre",
+    "consigne": "Nadīm t'accueille. Réponds-lui.",
+    "replique": {
+     "qui": "nadim",
+     "ar": "مَرْحَبًا بِكَ! مَنْ أَنْتَ، وَمِنْ أَيْنَ أَنْتَ؟"
+    },
+    "choix_ar": [
+     "أَهْلًا وَسَهْلًا. أَنَا مُسَافِرٌ، وَبَلَدِي بَعِيدٌ.",
+     "شُكْرًا لَكَ. نَلْتَقِي غَدًا.",
+     "أَهْلًا وَسَهْلًا. أَنَا مُسَافِرًا، وَبَلَدِي بَعِيدٌ."
+    ],
+    "reponse": 0,
+    "explication": "On salue, puis on se présente ; attribut au nominatif : مُسَافِرٌ."
+   },
+   {
+    "type": "repondre",
+    "consigne": "Nadīm te demande ce que tu fais en ville.",
+    "replique": {
+     "qui": "nadim",
+     "ar": "مَاذَا تَعْمَلُ فِي الْمَدِينَةِ؟"
+    },
+    "choix_ar": [
+     "أَدْرُسُ مَعَ زُهَيْرٍ.",
+     "أَدْرُسُ مَعَ زُهَيْرٌ.",
+     "مَرْحَبًا بِكَ."
+    ],
+    "reponse": 0,
+    "explication": "Après مَعَ : génitif, زُهَيْرٍ."
+   },
+   {
+    "type": "repondre",
+    "consigne": "Nadīm parle très vite ; tu n'as pas compris.",
+    "replique": {
+     "qui": "nadim",
+     "ar": "كَانَتِ الْمُنَاظَرَةُ طَوِيلَةً، وَكَانَ الطَّالِبَانِ يَتَكَلَّمَانِ كَثِيرًا."
+    },
+    "choix_ar": [
+     "لَمْ أَفْهَمْ. أَرْجُو أَنْ تُكَرِّرَ الْكَلَامَ عَلَى مَهْلٍ.",
+     "لَمْ أَفْهَمْ. أَرْجُو أَنْ تُكَرِّرُ الْكَلَامَ عَلَى مَهْلٍ.",
+     "أُوَافِقُكَ، أَصَبْتَ."
+    ],
+    "reponse": 0,
+    "explication": "Faire répéter ; après أَنْ : subjonctif, تُكَرِّرَ."
+   },
+   {
+    "type": "repondre",
+    "consigne": "Nadīm te demande le chemin du marché.",
+    "replique": {
+     "qui": "nadim",
+     "ar": "هَلْ تَعْرِفُ الطَّرِيقَ إِلَى السُّوقِ؟"
+    },
+    "choix_ar": [
+     "نَعَمْ، تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ السُّوقَ عَلَى يَسَارِكَ.",
+     "نَعَمْ، تَمُرُّ بِالْجِسْرِ، ثُمَّ تَجِدُ السُّوقُ عَلَى يَسَارِكَ.",
+     "بِكَمْ هَٰذَا؟"
+    ],
+    "reponse": 0,
+    "explication": "Complément d'objet : السُّوقَ."
+   },
+   {
+    "type": "repondre",
+    "consigne": "Nadīm te demande ton avis.",
+    "replique": {
+     "qui": "nadim",
+     "ar": "مَا رَأْيُكَ؟ هَلْ نَقْرَأُ النَّصَّ بِالْحَرَكَاتِ؟"
+    },
+    "choix_ar": [
+     "أَرَى أَنْ نَقْرَأَهُ بِالْحَرَكَاتِ أَوَّلًا، لِأَنَّهُ صَعْبٌ.",
+     "أَرَى أَنْ نَقْرَأُهُ بِالْحَرَكَاتِ أَوَّلًا، لِأَنَّهُ صَعْبٌ.",
+     "لَمْ أَفْهَمْ."
+    ],
+    "reponse": 0,
+    "explication": "أَرَى أَنْ + subjonctif : « je suis d'avis de »."
+   },
+   {
+    "type": "repondre",
+    "consigne": "La leçon est finie : conclus poliment.",
+    "replique": {
+     "qui": "nadim",
+     "ar": "انْتَهَى الدَّرْسُ."
+    },
+    "choix_ar": [
+     "شُكْرًا لَكَ. نَلْتَقِي غَدًا إِذَنْ.",
+     "مَرْحَبًا بِكَ.",
+     "مَا مَعْنَى هَٰذِهِ الْكَلِمَةِ؟"
+    ],
+    "reponse": 0,
+    "explication": "On remercie, puis on se donne rendez-vous."
+   }
+  ]
+ },
+ "ecoute": {
+  "seuil": 0.66,
+  "questions": [
+   {
+    "type": "qcm",
+    "consigne": "Écoute. Que veut dire cette phrase ?",
+    "audio": "نَلْتَقِي غَدًا إِذَنْ.",
+    "choix": [
+     "Alors nous nous retrouvons demain.",
+     "Nous nous sommes retrouvés hier.",
+     "Si nous nous retrouvons demain."
+    ],
+    "reponse": 0,
+    "explication": "نَلْتَقِي : nous nous retrouvons."
+   },
+   {
+    "type": "qcm",
+    "consigne": "Écoute. Que veut dire cette phrase ?",
+    "audio": "بِكَمْ هَٰذَا الْقِرْطَاسُ؟",
+    "choix": [
+     "Combien coûte ce papier ?",
+     "Où est ce papier ?",
+     "Quand achètes-tu ce papier ?"
+    ],
+    "reponse": 0,
+    "explication": "بِكَمْ : à combien."
+   },
+   {
+    "type": "qcm",
+    "consigne": "Écoute. Que veut dire cette phrase ?",
+    "audio": "لَمْ أَفْهَمْ.",
+    "choix": [
+     "Je n'ai pas compris.",
+     "Je comprends.",
+     "Il n'a pas compris."
+    ],
+    "reponse": 0,
+    "explication": "لَمْ + jussif."
+   }
+  ]
+ },
+ "reponses": {
+  "seuil": 0.8,
+  "questions": [
+   {
+    "type": "ordonner",
+    "consigne": "Zuhayr te demande de te présenter. Réponds dans l'ordre : ton nom, puis ton lieu de naissance.",
+    "replique": {
+     "qui": "zuhayr",
+     "ar": "مَنْ أَنْتَ؟"
+    },
+    "tuiles": [
+     "قَرْيَةٍ",
+     "اسْمِي",
+     "فِي",
+     "بَاسِمٌ",
+     "وُلِدْتُ",
+     "قَرْيَةٌ"
+    ],
+    "solution": [
+     "اسْمِي",
+     "بَاسِمٌ",
+     "وُلِدْتُ",
+     "فِي",
+     "قَرْيَةٍ"
+    ],
+    "explication": "Après فِي : génitif, قَرْيَةٍ."
+   },
+   {
+    "type": "ordonner",
+    "consigne": "Nadīm te demande où est sa maison. Réponds dans l'ordre : « la maison de Nadīm », puis « entre le marché et l'école ».",
+    "replique": {
+     "qui": "nadim",
+     "ar": "أَيْنَ بَيْتِي؟"
+    },
+    "tuiles": [
+     "الْمَدْرَسَةِ",
+     "بَيْنَ",
+     "نَدِيمٍ",
+     "وَالْمَدْرَسَةُ",
+     "السُّوقِ",
+     "بَيْتُ",
+     "وَ"
+    ],
+    "solution": [
+     "بَيْتُ",
+     "نَدِيمٍ",
+     "بَيْنَ",
+     "السُّوقِ",
+     "وَ",
+     "الْمَدْرَسَةِ"
+    ],
+    "explication": "بَيْنَ : génitif, السُّوقِ et الْمَدْرَسَةِ."
+   },
+   {
+    "type": "ordonner",
+    "consigne": "Hāla te demande ce que tu as acheté. Réponds dans l'ordre : le verbe, le papier, puis le prix.",
+    "replique": {
+     "qui": "hala",
+     "ar": "مَاذَا اشْتَرَيْتَ؟"
+    },
+    "tuiles": [
+     "دِرْهَمٍ",
+     "اشْتَرَيْتُ",
+     "بِثَلَاثِمِائَةِ",
+     "قِرْطَاسًا",
+     "دَرَاهِمَ"
+    ],
+    "solution": [
+     "اشْتَرَيْتُ",
+     "قِرْطَاسًا",
+     "بِثَلَاثِمِائَةِ",
+     "دِرْهَمٍ"
+    ],
+    "explication": "Le prix avec بِـ ; après مِائَة : singulier au génitif."
+   },
+   {
+    "type": "ordonner",
+    "consigne": "Nadīm te demande ton avis sur l'histoire. Réponds dans l'ordre : ton avis, puis la raison.",
+    "replique": {
+     "qui": "nadim",
+     "ar": "مَا رَأْيُكَ فِي الْقِصَّةِ؟"
+    },
+    "tuiles": [
+     "سَهْلَةٌ",
+     "أَرَى",
+     "كَلِمَاتِهَا",
+     "جَمِيلَةٌ",
+     "لِأَنَّ",
+     "الْقِصَّةَ",
+     "أَنَّ",
+     "الْقِصَّةُ"
+    ],
+    "solution": [
+     "أَرَى",
+     "أَنَّ",
+     "الْقِصَّةَ",
+     "جَمِيلَةٌ",
+     "لِأَنَّ",
+     "كَلِمَاتِهَا",
+     "سَهْلَةٌ"
+    ],
+    "explication": "Après أَنَّ : nom en -a, الْقِصَّةَ."
+   },
+   {
+    "type": "ordonner",
+    "consigne": "Zuhayr lit ta lettre à Samīr. Remets-en le début dans l'ordre : la formule, puis « je suis arrivé en ville ».",
+    "replique": {
+     "qui": "zuhayr",
+     "ar": "كَيْفَ تَبْدَأُ رِسَالَتَكَ؟"
+    },
+    "tuiles": [
+     "الْمَدِينَةِ",
+     "أَمَّا",
+     "إِلَى",
+     "فَقَدْ",
+     "بَعْدُ",
+     "وَصَلْتُ",
+     "بَعْدَ"
+    ],
+    "solution": [
+     "أَمَّا",
+     "بَعْدُ",
+     "فَقَدْ",
+     "وَصَلْتُ",
+     "إِلَى",
+     "الْمَدِينَةِ"
+    ],
+    "explication": "أَمَّا بَعْدُ (en -u), puis فَـ."
+   }
+  ]
+ }
+}

@@ -26,7 +26,7 @@ import '../lesson/fondations_views.dart' show GradedText;
 import '../lesson/question_view.dart';
 import '../pixel.dart';
 
-enum _Stage { intro, reading, decoding, listening, replies, result }
+enum _Stage { intro, reading, decoding, dialogue, listening, replies, result }
 
 class DataExamScreen extends ConsumerStatefulWidget {
   const DataExamScreen({super.key, required this.region, this.random});
@@ -50,6 +50,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
   int _listening = 0;
   int _replies = 0;
   int _decoding = 0;
+  int _dialogue = 0;
   int _freeOk = 0;
   bool _showModels = false;
   bool _reported = false;
@@ -79,7 +80,10 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
   /// Nombre d'épreuves : lecture, décodage (région 3 et plus), écoute (si
   /// le son est actif), réponses.
   int get _trialCount =>
-      2 + (_exam.decoding.isNotEmpty ? 1 : 0) + (AudioPolicy.enabled ? 1 : 0);
+      2 +
+      (_exam.decoding.isNotEmpty ? 1 : 0) +
+      (_exam.dialogue.isNotEmpty ? 1 : 0) +
+      (AudioPolicy.enabled ? 1 : 0);
 
   // Son coupé (jalon J6) : pas d'épreuve d'écoute.
   int get _listeningCount => AudioPolicy.enabled ? _exam.listening.length : 0;
@@ -87,11 +91,12 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
   int get _foeMax =>
       (_exam.reading.length +
           _exam.decoding.length +
+          _exam.dialogue.length +
           _listeningCount +
           _exam.gradedReplies) *
       10;
   int get _foeHp =>
-      _foeMax - (_reading + _decoding + _listening + _replies) * 10;
+      _foeMax - (_reading + _decoding + _dialogue + _listening + _replies) * 10;
 
   void _restart() {
     _stage = _Stage.intro;
@@ -102,6 +107,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
     _listening = 0;
     _replies = 0;
     _decoding = 0;
+    _dialogue = 0;
     _freeOk = 0;
     _showModels = false;
     _reported = false;
@@ -115,6 +121,8 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
           _reading++;
         case _Stage.decoding:
           _decoding++;
+        case _Stage.dialogue:
+          _dialogue++;
         case _Stage.listening:
           _listening++;
         case _Stage.replies:
@@ -144,6 +152,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
   int get _count => switch (_stage) {
     _Stage.reading => _exam.reading.length,
     _Stage.decoding => _exam.decoding.length,
+    _Stage.dialogue => _exam.dialogue.length,
     _Stage.listening => _exam.listening.length,
     _Stage.replies => _exam.replies.length,
     _ => 0,
@@ -162,12 +171,10 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
       _index = 0;
       switch (_stage) {
         case _Stage.reading:
-          _stage = _exam.decoding.isNotEmpty
-              ? _Stage.decoding
-              : AudioPolicy.enabled
-              ? _Stage.listening
-              : _Stage.replies;
+          _stage = _exam.decoding.isNotEmpty ? _Stage.decoding : _afterDecoding;
         case _Stage.decoding:
+          _stage = _afterDecoding;
+        case _Stage.dialogue:
           _stage = AudioPolicy.enabled ? _Stage.listening : _Stage.replies;
         case _Stage.listening:
           _stage = _Stage.replies;
@@ -180,11 +187,18 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
     });
   }
 
+  _Stage get _afterDecoding => _exam.dialogue.isNotEmpty
+      ? _Stage.dialogue
+      : AudioPolicy.enabled
+      ? _Stage.listening
+      : _Stage.replies;
+
   bool get _passed => _exam.passed(
     reading: _reading,
     listening: AudioPolicy.enabled ? _listening : _exam.listeningMark,
     replies: _replies,
     decoding: _decoding,
+    dialogue: _dialogue,
   );
 
   void _report() {
@@ -195,7 +209,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
         .read(lessonProgressProvider.notifier)
         .recordBoss(
           _exam.id,
-          score: _reading + _decoding + _listening + _replies,
+          score: _reading + _decoding + _dialogue + _listening + _replies,
           passed: passed,
         );
     playSfx(ref, passed ? Sfx.victoire : Sfx.repli);
@@ -252,8 +266,13 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
                   _exam.decoding[_index],
                   _exam.decoding.length,
                 ),
+                _Stage.dialogue => _question(
+                  'Épreuve ${_exam.decoding.isNotEmpty ? 3 : 2} · Dialogue',
+                  _exam.dialogue[_index],
+                  _exam.dialogue.length,
+                ),
                 _Stage.listening => _question(
-                  'Épreuve ${_exam.decoding.isNotEmpty ? 3 : 2} · Écoute',
+                  'Épreuve ${2 + (_exam.decoding.isNotEmpty ? 1 : 0) + (_exam.dialogue.isNotEmpty ? 1 : 0)} · Écoute',
                   _exam.listening[_index],
                   _exam.listening.length,
                 ),
@@ -282,6 +301,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
             'récit et répondre à ${_exam.reading.length} questions '
             '(${_exam.readingMark} bonnes réponses nécessaires) ; '
             '${_exam.decoding.isNotEmpty ? 'décoder des mots inconnus : ${_exam.decoding.length} questions (${_exam.decodingMark} nécessaires) ; ' : ''}'
+            '${_exam.dialogue.isNotEmpty ? 'dialoguer : choisir ${_exam.dialogue.length} répliques (${_exam.dialogueMark} nécessaires) ; ' : ''}'
             '${AudioPolicy.enabled ? 'écouter ${_exam.listening.length} phrases (${_exam.listeningMark} nécessaires) ; ' : ''}'
             'répondre à des '
             'personnages : ${_exam.gradedReplies} phrases à remettre en ordre '
@@ -312,6 +332,18 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
     ),
     const SizedBox(height: 8),
     GradedText(sentences: _exam.story),
+    if (_exam.storyBare.isNotEmpty) ...[
+      const SizedBox(height: 8),
+      const Text('Dernière partie, sans voyelles :'),
+      const SizedBox(height: 4),
+      // Voyelles cachées pendant les questions (jamais pendant une question
+      // notée) ; la version vocalisée s'affiche au résultat.
+      GradedText(
+        sentences: _exam.storyBare,
+        vowelLevel: _exam.storyBareLevel,
+        revealAllowed: false,
+      ),
+    ],
     const SizedBox(height: 6),
     Text(
       'Récit construit · rédigé par IA',
@@ -475,6 +507,11 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
                 'Décoder : $_decoding / ${_exam.decoding.length} '
                 '(${_exam.decodingMark} nécessaires).',
               ),
+            if (_exam.dialogue.isNotEmpty)
+              Text(
+                'Dialogue : $_dialogue / ${_exam.dialogue.length} '
+                '(${_exam.dialogueMark} nécessaires).',
+              ),
             if (AudioPolicy.enabled)
               Text(
                 'Écoute : $_listening / ${_exam.listening.length} '
@@ -489,6 +526,12 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
                 'Réponses libres : tu as jugé $_freeOk réponse(s) sur $free '
                 'conforme(s) au modèle (auto-évaluation, non notée).',
               ),
+            if (_exam.storyBare.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              const Text('La dernière partie du récit, avec ses voyelles :'),
+              const SizedBox(height: 4),
+              GradedText(sentences: _exam.storyBare),
+            ],
             if (passed) ...[
               const SizedBox(height: 6),
               Text(

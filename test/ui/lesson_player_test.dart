@@ -792,6 +792,58 @@ void main() {
         isTrue,
       );
     });
+
+    testWidgets('examen de la région 4 (son ${sound ? 'actif' : 'coupé'}) : '
+        'récit (fin sans voyelles), dialogue, remettre en ordre', (
+      tester,
+    ) async {
+      AudioPolicy.enabled = sound;
+      addTearDown(() => AudioPolicy.enabled = false);
+      tester.view.physicalSize = const Size(800, 9000);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final exam = contentDb.regionExam(4)!;
+      expect(exam.id, 'examen-r4');
+      expect(exam.place, 'labyrinthe');
+      expect(exam.dialogue, hasLength(6));
+      expect(exam.storyBareLevel, VowelLevel.b);
+      await tester.pumpWidget(
+        appWith(DataExamScreen(region: 4, random: Random(6))),
+      );
+      await settle(tester);
+      expect(find.textContaining('dialoguer'), findsWidgets);
+      await tapOn(tester, find.text('Commencer'));
+      // La dernière partie du récit s'affiche sans voyelles.
+      expect(find.byType(GradedText), findsNWidgets(2));
+      var graded = 0;
+      var sawDialogue = false;
+      for (var guard = 0; guard < 60; guard++) {
+        if (find.textContaining('· Dialogue').evaluate().isNotEmpty) {
+          sawDialogue = true;
+        }
+        if (find.byType(QuestionView).evaluate().isNotEmpty) {
+          await answer(tester);
+          graded++;
+        } else {
+          break;
+        }
+      }
+      expect(sawDialogue, isTrue);
+      expect(
+        graded,
+        exam.reading.length +
+            exam.dialogue.length +
+            (sound ? exam.listening.length : 0) +
+            exam.gradedReplies,
+      );
+      expect(find.textContaining('se dissipe'), findsOneWidget);
+      expect(find.textContaining('Dialogue : 6 / 6'), findsOneWidget);
+      expect(find.textContaining('avec ses voyelles'), findsOneWidget);
+      expect(
+        LessonProgressRepository(userDb).get('examen-r4').completed,
+        isTrue,
+      );
+    });
   }
 
   testWidgets('dictionnaire : parcourir par racine, puis voir ses mots', (
