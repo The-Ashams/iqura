@@ -374,14 +374,14 @@
         },
         {
           "ar": "الْمَنْطِقُ",
-          "fr": "ici : la parole (ailleurs : la logique)"
+          "fr": "ici : la parole (plus tard : la logique)"
         },
         {
           "ar": "فَاهَا",
           "fr": "sa bouche (فَمٌ devant un pronom, à l'accusatif)"
         }
       ],
-      "note": "Entre parenthèses : mots ajoutés par l'éditeur. (…) : une courte réplique de colère de la tortue (une malédiction) est omise ici.",
+      "note": "(…) : coupure faite ici, pas par l'éditeur : une courte réplique de colère de la tortue (une malédiction) est omise.",
       "questions": [
         {
           "type": "qcm",
@@ -598,7 +598,7 @@
           "type": "qcm",
           "consigne": "Dans un texte ancien, une tournure hors des règles apprises…",
           "choix": [
-            "s'explique sans se corriger",
+            "on l'explique sans la corriger",
             "est une faute à corriger",
             "se saute"
           ],
