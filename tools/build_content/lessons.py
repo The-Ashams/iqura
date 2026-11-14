@@ -261,6 +261,11 @@ def arabic_texts(data: LessonData) -> dict[str, str]:
         for i, s in enumerate(lesson["ecrans"]):
             if s.get("inscription"):
                 out[f"{lesson['_file']} · salle de lecture {i + 1}"] = " ".join(s["inscription"])
+            # Texte classique (4.28) : graphie de l'édition et lexique.
+            for j, t in enumerate(s.get("edition", [])):
+                out[f"{lesson['_file']} · écran {i + 1} · édition {j + 1}"] = t
+            for j, e in enumerate(s.get("lexique", [])):
+                out[f"{lesson['_file']} · écran {i + 1} · lexique {j + 1}"] = e["ar"]
     for w in data.words or []:
         out[f"vocab · {w['id']}"] = w["ar"]
         if w.get("exemple"):

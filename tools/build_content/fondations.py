@@ -151,7 +151,20 @@ def validate(lesson: dict, *, check_ar, known_keys: set[str], lesson_words: list
                 ar(p, here, all_known=False)
                 words += len(vocab.tokens(p))
                 unknown += len(vocab.unknown(p, known_keys, known_endings))
-            if words == 0 or (words - unknown) / words < MIN_KNOWN:
+            classic = "source" in s
+            if classic:
+                # Texte classique cité (4.28) : source, lexique (10 mots au
+                # plus), traduction phrase par phrase ; il n'est pas fait que
+                # de mots connus.
+                lex = s.get("lexique", [])
+                if not s["source"] or not 1 <= len(lex) <= 10 \
+                        or any(not e.get("ar") or not e.get("fr") for e in lex):
+                    raise LessonError(f"{here} : texte classique : source et lexique (1 à 10 mots) attendus")
+                for e in lex:
+                    check_ar(e["ar"])
+                if len(s.get("traduction", [])) != len(phrases):
+                    raise LessonError(f"{here} : texte classique : une traduction par phrase attendue")
+            elif words == 0 or (words - unknown) / words < MIN_KNOWN:
                 raise LessonError(
                     f"{here} : {words - unknown} mots connus sur {words} (95 % au moins)")
             qs = s.get("questions", [])

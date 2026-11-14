@@ -10582,6 +10582,72 @@
    },
    "remarque": "la racine ne suffit pas pour le sens",
    "theme": "lieux"
+  },
+  {
+   "id": "nuqsan",
+   "ar": "نُقْصَانٌ",
+   "translit": "nuqṣānun",
+   "fr": "baisse, diminution",
+   "nature": "nom",
+   "lecon": "cite-28",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "nqS",
+   "fige": true,
+   "formes": [
+    "نُقْصَانَ",
+    "نُقْصَانُ",
+    "نُقْصَانًا"
+   ],
+   "exemple": {
+    "ar": "رَأَى التَّاجِرُ نُقْصَانَ الْمَاءِ.",
+    "fr": "Le marchand a vu la baisse de l'eau."
+   },
+   "remarque": "la racine ne suffit pas pour le sens",
+   "theme": "savoir"
+  },
+  {
+   "id": "mantiq",
+   "ar": "مَنْطِقٌ",
+   "translit": "manṭiqun",
+   "fr": "parole (ici) ; ailleurs : logique",
+   "nature": "nom",
+   "lecon": "cite-28",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "nTq",
+   "fige": true,
+   "formes": [
+    "الْمَنْطِقِ",
+    "بِالْمَنْطِقِ"
+   ],
+   "exemple": {
+    "ar": "فَتَحَتْ فَاهَا بِالْمَنْطِقِ.",
+    "fr": "Elle a ouvert la bouche pour parler."
+   },
+   "remarque": "dans les textes anciens, souvent « la parole » ; la racine ne suffit pas pour le sens",
+   "theme": "parole"
+  },
+  {
+   "id": "hawaa",
+   "ar": "هَوَاءٌ",
+   "translit": "hawāʾun",
+   "fr": "air",
+   "nature": "nom",
+   "lecon": "cite-28",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "hwy",
+   "fige": true,
+   "formes": [
+    "الْهَوَاءِ"
+   ],
+   "exemple": {
+    "ar": "طَارَتِ الْبَطَّتَانِ فِي الْهَوَاءِ.",
+    "fr": "Les deux canards ont volé dans les airs."
+   },
+   "remarque": "la racine ه و ي a d'autres emplois : la racine ne suffit pas pour le sens",
+   "theme": "nature"
   }
  ]
 }

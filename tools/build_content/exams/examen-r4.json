@@ -24,7 +24,7 @@
    "مَرَّ بَاسِمٌ بِالْجِسْرِ، فَرَأَى بَيْتَ نَدِيمٍ بَيْنَ السُّوقِ وَالْمَدْرَسَةِ.",
    "قَالَ بَاسِمٌ: « أَزُورُ نَدِيمًا قَلِيلًا، ثُمَّ أَذْهَبُ إِلَى السُّوقِ. »",
    "فَتَحَ نَدِيمٌ الْبَابَ، وَقَالَ: « مَرْحَبًا بِكَ يَا بَاسِمُ! »",
-   "وَكَانَتْ فِي الْبَيْتِ لُبْنَى، زَوْجُ نَدِيمٍ، وَعَامِرٌ ابْنُهُ.",
+   "وَكَانَتْ فِي الْبَيْتِ لُبْنَى، زَوْجَةُ نَدِيمٍ، وَعَامِرٌ ابْنُهُ.",
    "عَامِرٌ طَالِبٌ فِي الْمَدْرَسَةِ، وَهُوَ ابْنُ خَمْسَ عَشْرَةَ سَنَةً.",
    "سَأَلَهُ عَامِرٌ: « مَاذَا تَعْمَلُ فِي الْمَدِينَةِ؟ »",
    "قَالَ بَاسِمٌ: « أَدْرُسُ مَعَ زُهَيْرٍ، وَأَكْتُبُ كُلَّ مَسَاءٍ. »",
@@ -40,11 +40,11 @@
    "قَالَ طَالِبٌ: « أَرَى أَنَّ الشَّكْلَ مُهِمٌّ، لِأَنَّ النَّصَّ يَصِيرُ سَهْلًا. »",
    "قَالَ صَدِيقُهُ: « لَا أُوَافِقُكَ؛ دَلِيلِي أَنَّ الْكُتُبَ الْقَدِيمَةَ لَيْسَ فِيهَا شَكْلٌ. »",
    "سَأَلَا بَاسِمًا: « مَا رَأْيُكَ؟ »",
-   "قَالَ بَاسِمٌ: « أَرَى أَنَّ الشَّكْلَ مُهِمٌّ لِلطَّالِبِ الْجَدِيدِ. »",
+   "قَالَ بَاسِمٌ: « أَرَى أَنَّ الشَّكْلَ مُهِمٌّ لِطَالِبٍ جَدِيدٍ. »",
    "ثُمَّ قَالَ طَالِبٌ كَلِمَةً صَعْبَةً، فَلَمْ يَفْهَمْهَا بَاسِمٌ.",
    "قَالَ بَاسِمٌ: « لَمْ أَفْهَمْ. أَرْجُو أَنْ تُكَرِّرَهَا عَلَى مَهْلٍ. »",
    "فَكَرَّرَهَا الطَّالِبُ، وَلَٰكِنَّ بَاسِمًا لَمْ يَعْرِفْ مَعْنَاهَا.",
-   "فَذَهَبَ إِلَى الْمُعْجَمِ، وَبَحَثَ عَنِ الْكَلِمَةِ فِي مَادَّتِهَا، فَوَجَدَهَا.",
+   "فَرَجَعَ إِلَى الْمُعْجَمِ، وَبَحَثَ عَنِ الْكَلِمَةِ فِي مَادَّتِهَا، فَوَجَدَهَا.",
    "وَلَمَّا خَرَجَ، كَانَ الْعَصْرُ قَدْ جَاءَ."
   ],
   "sans_voyelles": {
@@ -143,12 +143,12 @@
     "type": "qcm",
     "consigne": "Quel est l'avis de Bāsim ?",
     "choix": [
-     "la vocalisation est importante pour le nouvel étudiant",
+     "la vocalisation est importante pour un nouvel étudiant",
      "les vieux livres sont faciles",
      "le débat est inutile"
     ],
     "reponse": 0,
-    "explication": "أَرَى أَنَّ الشَّكْلَ مُهِمٌّ لِلطَّالِبِ الْجَدِيدِ."
+    "explication": "أَرَى أَنَّ الشَّكْلَ مُهِمٌّ لِطَالِبٍ جَدِيدٍ."
    },
    {
     "type": "qcm",
@@ -163,7 +163,7 @@
    },
    {
     "type": "qcm",
-    "consigne": "Dans la dernière partie, que veut dire « تأخرت » dans la bouche de Zuhayr ?",
+    "consigne": "Dans la dernière partie, que veut dire « تأخّرت » dans la bouche de Zuhayr ?",
     "choix": [
      "tu as pris du retard",
      "je suis en retard",
@@ -181,7 +181,7 @@
      "le vendeur, Nadīm, le nouvel étudiant"
     ],
     "reponse": 0,
-    "explication": "Le matin à l'atelier, puis chez Nadīm, puis au marché."
+    "explication": "Le matin au lieu des livres, puis chez Nadīm, puis au marché."
    },
    {
     "type": "qcm",
@@ -246,7 +246,7 @@
    },
    {
     "type": "repondre",
-    "consigne": "Nadīm te demande le chemin du marché.",
+    "consigne": "Nadīm veut savoir si tu as trouvé le chemin du marché.",
     "replique": {
      "qui": "nadim",
      "ar": "هَلْ تَعْرِفُ الطَّرِيقَ إِلَى السُّوقِ؟"
@@ -337,9 +337,9 @@
   "questions": [
    {
     "type": "ordonner",
-    "consigne": "Zuhayr te demande de te présenter. Réponds dans l'ordre : ton nom, puis ton lieu de naissance.",
+    "consigne": "Nadīm demande à Bāsim qui il est. Réponds pour Bāsim : commence par اسْمِي, puis « je suis né dans un village ».",
     "replique": {
-     "qui": "zuhayr",
+     "qui": "nadim",
      "ar": "مَنْ أَنْتَ؟"
     },
     "tuiles": [
@@ -361,33 +361,31 @@
    },
    {
     "type": "ordonner",
-    "consigne": "Nadīm te demande où est sa maison. Réponds dans l'ordre : « la maison de Nadīm », puis « entre le marché et l'école ».",
+    "consigne": "Hāla te demande où est la maison de Nadīm. Réponds dans l'ordre : « la maison de Nadīm », puis « entre le marché et l'école ».",
     "replique": {
-     "qui": "nadim",
-     "ar": "أَيْنَ بَيْتِي؟"
+     "qui": "hala",
+     "ar": "أَيْنَ بَيْتُ نَدِيمٍ؟"
     },
     "tuiles": [
-     "الْمَدْرَسَةِ",
+     "وَالْمَدْرَسَةِ",
      "بَيْنَ",
      "نَدِيمٍ",
      "وَالْمَدْرَسَةُ",
      "السُّوقِ",
-     "بَيْتُ",
-     "وَ"
+     "بَيْتُ"
     ],
     "solution": [
      "بَيْتُ",
      "نَدِيمٍ",
      "بَيْنَ",
      "السُّوقِ",
-     "وَ",
-     "الْمَدْرَسَةِ"
+     "وَالْمَدْرَسَةِ"
     ],
     "explication": "بَيْنَ : génitif, السُّوقِ et الْمَدْرَسَةِ."
    },
    {
     "type": "ordonner",
-    "consigne": "Hāla te demande ce que tu as acheté. Réponds dans l'ordre : le verbe, le papier, puis le prix.",
+    "consigne": "Hāla demande à Bāsim ce qu'il a acheté. Réponds dans l'ordre : le verbe, le papier, puis le prix.",
     "replique": {
      "qui": "hala",
      "ar": "مَاذَا اشْتَرَيْتَ؟"
@@ -409,7 +407,7 @@
    },
    {
     "type": "ordonner",
-    "consigne": "Nadīm te demande ton avis sur l'histoire. Réponds dans l'ordre : ton avis, puis la raison.",
+    "consigne": "Nadīm te demande ton avis sur l'histoire. Réponds dans l'ordre : « l'histoire est belle », puis « parce que ses mots sont faciles ».",
     "replique": {
      "qui": "nadim",
      "ar": "مَا رَأْيُكَ فِي الْقِصَّةِ؟"
@@ -437,7 +435,7 @@
    },
    {
     "type": "ordonner",
-    "consigne": "Zuhayr lit ta lettre à Samīr. Remets-en le début dans l'ordre : la formule, puis « je suis arrivé en ville ».",
+    "consigne": "Zuhayr demande à Bāsim comment commence sa lettre à Samīr. Remets-en le début dans l'ordre : la formule, puis « je suis arrivé en ville ».",
     "replique": {
      "qui": "zuhayr",
      "ar": "كَيْفَ تَبْدَأُ رِسَالَتَكَ؟"

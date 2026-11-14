@@ -276,6 +276,18 @@ sealed class LessonStep {
         vowelLevel: vowelLevelFrom(j['sans_voyelles'] as String?),
         keep: strings(j['garder']).toSet(),
         source: j['source'] as String?,
+        glossary: [
+          for (final e in ((j['lexique'] as List?) ?? const []).cast<Map>())
+            (
+              arabic: e['ar'] as String,
+              french: frenchWithArabic(e['fr'] as String),
+            ),
+        ],
+        translation: [
+          for (final t in strings(j['traduction'])) frenchWithArabic(t),
+        ],
+        edition: strings(j['edition']),
+        note: _fr(j['note']),
         questions: [
           for (final e in j['questions'] as List)
             LessonQuestion.fromJson(e as Map<String, dynamic>),
@@ -381,6 +393,10 @@ class ReadingStep extends LessonStep {
     this.vowelLevel,
     this.keep = const {},
     this.source,
+    this.glossary = const [],
+    this.translation = const [],
+    this.edition = const [],
+    this.note,
   });
 
   /// Palier de lecture sans voyelles (région 4, chapitre C) ; nul : vocalisé.
@@ -392,6 +408,19 @@ class ReadingStep extends LessonStep {
   /// Source d'un texte classique (titre, auteur, édition, page) ; nul :
   /// exemple construit.
   final String? source;
+
+  /// Texte classique : lexique des mots nouveaux (10 au plus).
+  final List<({String arabic, String french})> glossary;
+
+  /// Texte classique : traduction française, phrase par phrase (rédigée
+  /// par IA), montrée après la réponse.
+  final List<String> translation;
+
+  /// Texte classique : graphie de l'édition, telle qu'imprimée.
+  final List<String> edition;
+
+  /// Remarque sous le texte (coupe signalée, ajouts de l'éditeur).
+  final String? note;
 
   /// Court texte gradué (région 2) : phrases, mots touchables.
   final List<String> sentences;

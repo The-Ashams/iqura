@@ -732,3 +732,19 @@ Références :
 - Par prudence (même règle que يَمِين, خَلْف, بِخَيْرٍ) : رَأْيٌ, دَلِيلٌ, أَصَبْتَ, أَصْلٌ, وَزْنٌ, فِعْلٌ en racine seule, sans lemme ni fréquence (les lemmes du Corpus couvrent d'autres sens).
 - 4.22 : « Damas » remplacé (mot non enseigné) ; le dialogue porte sur le débat de 4.21.
 - 4.24 : les deux lectures au palier C contiennent chacune un mot nouveau à deviner (مَلْعَب, مَكْتَب), dans la limite de 5 %.
+
+## Décision du conseiller (14/11/2026, leçon 4.28)
+
+- Texte : fable « la tortue et les deux canards », Kalīla wa Dimna, éd. Cheikho (Beyrouth, 1905), p. 89, domaine public ; transcription mot à mot du fac-similé (archive.org) : `docs/sources/kalila-cheikho-1905-p89.txt`.
+- La seule réplique « malédiction qui nomme Dieu » est omise et signalée « (…) » avec une note visible ; rien d'autre n'est coupé ni ajouté. L'extrait commence à « زَعَمُوا ».
+- « السَّلَامُ عَلَيْكِ » gardé (décision du §16 du 13/11/2026).
+- Deux versions : vocalisée (hamzas et vocalisation rédigées par IA, relues) et graphie de l'édition (bouton) ; parenthèses = ajouts de l'éditeur.
+- Tournures anciennes expliquées, pas corrigées (« وَرَأَوْكِ النَّاسُ » ; la forme apprise « رَآهَا النَّاسُ » figure aussi dans le texte).
+- Lexique de 10 mots ; trois fiches : نُقْصَانٌ, مَنْطِقٌ, هَوَاءٌ (racines seules).
+- Nouveauté technique : écran de lecture « texte classique » (source, lexique, traduction après la réponse, texte de l'édition) ; seul un texte sourcé peut contenir des mots non enseignés.
+
+## Examen de la région 4 (14/11/2026)
+
+- Récit « Le papier du copiste » d'environ 420 mots (au lieu de 800 : le texte reste fait de mots enseignés) ; partie 4 au palier B, vocalisée au résultat.
+- Bāsim achète « du papier » (ورقات et مداد non enseignés ou exclus) ; « Damas » remplacé ; âge de ʿĀmir : خَمْسَ عَشْرَةَ سَنَةً.
+- Nouvelle épreuve « Dialogue » (6 répliques de Nadīm, 5 justes nécessaires).

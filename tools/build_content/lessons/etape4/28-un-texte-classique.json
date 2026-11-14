@@ -1,0 +1,656 @@
+{
+  "id": "cite-28",
+  "etape": 4,
+  "ordre": 28,
+  "format": 3,
+  "titre": "Un texte classique",
+  "objectif": "Lire un court extrait d'une œuvre classique profane, avec un lexique, et en comprendre le sens.",
+  "statut": "ia_non_verifie",
+  "lieu": "grande_salle",
+  "maitre": "zuhayr",
+  "prerequis": [
+    "cite-27"
+  ],
+  "apercu": [
+    "زُهَيْرٌ",
+    "بَاسِمٌ",
+    "سُلَحْفَاةٌ",
+    "السُّلَحْفَاةُ",
+    "بَطَّتَانِ",
+    "الْبَطَّتَانِ",
+    "عُودٍ",
+    "زَعَمُوا",
+    "رَآهَا النَّاسُ",
+    "وَرَأَوْكِ النَّاسُ",
+    "رَآهَا",
+    "النَّاسُ",
+    "وَرَأَوْكِ",
+    "زَعَمُوا أَنَّ",
+    "طَارَتِ",
+    "الْبَطَّتَيْنِ",
+    "نَقَصَ",
+    "فَاهَا",
+    "رَأَوْا"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "zuhayr",
+          "texte": "Aujourd'hui, un vrai texte ancien : une fable de Kalīla wa Dimna, traduite en arabe par Ibn al-Muqaffaʿ il y a plus de mille ans."
+        },
+        {
+          "qui": "zuhayr",
+          "texte": "Dans un chapitre du livre, un oiseau raconte cette fable à son compagnon. Elle contient des mots nouveaux : le lexique t'aidera."
+        }
+      ],
+      "objectif": "Lire une fable ancienne, avec un lexique."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Au début de l'histoire, le marchand part en voyage. »",
+          "ar": "فِي … الْقِصَّةِ سَافَرَ التَّاجِرُ.",
+          "choix_ar": [
+            "بِدَايَةِ",
+            "نِهَايَةِ",
+            "وَسَطِ"
+          ],
+          "reponse": 0,
+          "explication": "Le début : بِدَايَةِ (leçon 4.27)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a dit qu'il avait dormi. »",
+          "ar": "قَالَ … نَامَ.",
+          "choix_ar": [
+            "إِنَّهُ",
+            "أَنَّهُ",
+            "لِأَنَّهُ"
+          ],
+          "reponse": 0,
+          "explication": "Après قَالَ : إِنَّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Quand il est entré, il s'est assis. »",
+          "ar": "… دَخَلَ جَلَسَ.",
+          "choix_ar": [
+            "لَمَّا",
+            "لَنْ",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "« quand » + passé : لَمَّا (leçon 4.4)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "هَٰذَا كِتَابٌ قَدِيمٌ جِدًّا!",
+          "fr": "C'est un livre très ancien !"
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "نَعَمْ، وَفِيهِ قِصَصٌ قَصِيرَةٌ.",
+          "fr": "Oui, et il contient de courtes histoires."
+        },
+        {
+          "qui": "basim",
+          "ar": "هَلْ فِيهِ كَلِمَاتٌ صَعْبَةٌ؟",
+          "fr": "Y a-t-il des mots difficiles ?"
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "قَلِيلٌ، وَالشَّرْحُ تَحْتَ النَّصِّ.",
+          "fr": "Quelques-uns, et l'explication est sous le texte."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que contient le livre ?",
+        "choix": [
+          "de courtes histoires",
+          "des lettres",
+          "des comptes"
+        ],
+        "reponse": 0,
+        "explication": "قِصَصٌ قَصِيرَةٌ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "nuqsan",
+        "mantiq",
+        "hawaa"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "هَوَاءٌ",
+        "choix": [
+          "air",
+          "eau",
+          "terre"
+        ],
+        "reponse": 0,
+        "explication": "هَوَاءٌ veut dire « air »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Lire un texte ancien",
+      "texte": "Une fable ancienne commence souvent par زَعَمُوا أَنَّ « on raconte que ». On lit avec le lexique et le contexte, sans chercher chaque mot.",
+      "exemples": [
+        "زَعَمُوا أَنَّ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire زَعَمُوا أَنَّ au début d'une fable ?",
+        "choix": [
+          "on raconte que",
+          "ils ont vu que",
+          "il faut que"
+        ],
+        "reponse": 0,
+        "explication": "La formule d'ouverture des fables."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Tournures anciennes",
+      "texte": "Le texte ancien a parfois des tournures hors des règles apprises, comme وَرَأَوْكِ النَّاسُ : on les explique sans les corriger. La forme apprise, رَآهَا النَّاسُ, apparaît aussi dans la fable.",
+      "exemples": [
+        "رَآهَا النَّاسُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans رَآهَا النَّاسُ, le verbe est…",
+        "choix": [
+          "au singulier, car le sujet suit",
+          "au pluriel",
+          "au duel"
+        ],
+        "reponse": 0,
+        "explication": "Verbe en tête : singulier, même avec un sujet pluriel."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "La fable (1) : la source baisse",
+      "texte": "Lis ; le lexique est sous le texte.",
+      "phrases": [
+        "زَعَمُوا أَنَّ عَيْنًا كَانَ فِيهَا بَطَّتَانِ وَسُلَحْفَاةٌ، وَكَانَ بَيْنَهُمْ لِلْجِوَارِ أُلْفٌ.",
+        "فَنَقَصَ فِي بَعْضِ الْأَزْمِنَةِ مَاءُ تِلْكَ الْعَيْنِ نُقْصَانًا فَاحِشًا.",
+        "فَلَمَّا رَأَتِ الْبَطَّتَانِ نُقْصَانَ الْمَاءِ (قَالَتَا:) يَنْبَغِي لَنَا تَرْكُ هَٰذِهِ الْعَيْنِ وَالتَّحَوُّلُ مِنْهَا."
+      ],
+      "source": "Kalīla wa Dimna, trad. arabe d'Ibn al-Muqaffaʿ, éd. L. Cheikho, Beyrouth, Imprimerie catholique, 1905, p. 89 (domaine public), extrait · vocalisation et hamzas rédigées par IA, relues",
+      "edition": [
+        "زعموا انَّ عينًا كان فيها بطّتان وسلحفاة وكان بينهم للجوار أُلفٌ. فنقص في بعض الازمنة ماء تلك العين نقصانًا فاحشًا. فلما رأت البطتان نقصان الماء (قالتا:) ينبغي لنا ترك هذه العين والتحوّل منها"
+      ],
+      "traduction": [
+        "On raconte qu'il y avait, dans une source, deux canards et une tortue, liés d'amitié parce qu'ils étaient voisins.",
+        "Un jour, l'eau de cette source baissa énormément.",
+        "Quand les deux canards virent l'eau baisser, (ils dirent :) « Nous devons quitter cette source et partir ailleurs. »"
+      ],
+      "lexique": [
+        {
+          "ar": "عَيْنٌ",
+          "fr": "ici : source, point d'eau (ailleurs : œil)"
+        },
+        {
+          "ar": "أُلْفٌ",
+          "fr": "attachement, amitié ; لِلْجِوَارِ : à cause du voisinage"
+        },
+        {
+          "ar": "فَاحِشٌ",
+          "fr": "ici : énorme, excessif (faux ami : pas « honteux »)"
+        }
+      ],
+      "note": "Entre parenthèses : mots ajoutés par l'éditeur.",
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui vivait près de la source ?",
+          "choix": [
+            "deux canards et une tortue",
+            "deux tortues et un canard",
+            "un oiseau et un poisson"
+          ],
+          "reponse": 0,
+          "explication": "بَطَّتَانِ وَسُلَحْفَاةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi les canards veulent-ils partir ?",
+          "choix": [
+            "l'eau de la source a beaucoup baissé",
+            "la tortue les a chassés",
+            "l'hiver est arrivé"
+          ],
+          "reponse": 0,
+          "explication": "نُقْصَانَ الْمَاءِ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La fable (2) : les adieux",
+      "texte": "Lis ; le lexique est sous le texte.",
+      "phrases": [
+        "فَوَدَّعَتَا السُّلَحْفَاةَ وَقَالَتَا: السَّلَامُ عَلَيْكِ، فَإِنَّا ذَاهِبَانِ.",
+        "قَالَتِ السُّلَحْفَاةُ: إِنَّمَا اشْتَدَّ نُقْصَانُ هَٰذَا الْمَاءِ عَلَى مِثْلِ هَٰذِهِ الشَّقِيَّةِ الَّتِي لَا تَقْدِرُ أَنْ تَعِيشَ إِلَّا بِالْمَاءِ.",
+        "فَأَمَّا أَنْتُمَا فَإِنَّكُمَا تَعِيشَانِ حَيْثُ تَوَجَّهْتُمَا، فَاحْتَالَا لِي وَاذْهَبَا بِي مَعَكُمَا."
+      ],
+      "source": "Kalīla wa Dimna, trad. arabe d'Ibn al-Muqaffaʿ, éd. L. Cheikho, Beyrouth, Imprimerie catholique, 1905, p. 89 (domaine public), extrait · vocalisation et hamzas rédigées par IA, relues",
+      "edition": [
+        "فودّعتا السلحفاة وقالتا: السلام عليكِ فانّا ذاهبان. قالت السلحفاة: انما اشتد نقصان هذا الماء على مثل هذه الشقيّة التي لا تقدر ان تعيش الّا بالماء فاما انتما فانكما تعيشان حيث توجّهتما فاحتالا لي واذهبا بي معكما"
+      ],
+      "traduction": [
+        "Elles firent leurs adieux à la tortue et dirent : « Paix sur toi, nous partons. »",
+        "La tortue dit : « Cette baisse de l'eau est dure surtout pour une malheureuse comme moi, qui ne peut vivre que dans l'eau.",
+        "Mais vous, vous vivez partout où vous allez : trouvez un moyen pour moi, et emmenez-moi avec vous. »"
+      ],
+      "lexique": [
+        {
+          "ar": "الشَّقِيَّةُ",
+          "fr": "la malheureuse (la tortue parle d'elle-même)"
+        },
+        {
+          "ar": "احْتَالَ لِـ",
+          "fr": "trouver un moyen pour quelqu'un"
+        }
+      ],
+      "note": "Entre parenthèses : mots ajoutés par l'éditeur.",
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi la tortue ne peut-elle pas partir seule ?",
+          "choix": [
+            "elle ne peut vivre que dans l'eau",
+            "elle est trop vieille",
+            "elle a peur des canards"
+          ],
+          "reponse": 0,
+          "explication": "لَا تَقْدِرُ أَنْ تَعِيشَ إِلَّا بِالْمَاءِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que demande la tortue ?",
+          "choix": [
+            "qu'ils l'emmènent avec eux",
+            "qu'ils restent avec elle",
+            "qu'ils lui apportent de l'eau"
+          ],
+          "reponse": 0,
+          "explication": "وَاذْهَبَا بِي مَعَكُمَا."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La fable (3) : la condition",
+      "texte": "Lis ; le lexique est sous le texte.",
+      "phrases": [
+        "قَالَتَا: إِنَّا لَنْ نَقْدِرَ عَلَى أَنْ نَذْهَبَ بِكِ مَعَنَا إِلَّا أَنْ تَشْرِطِي لَنَا، إِذَا جَعَلْنَاكِ فِي الْهَوَاءِ وَرَأَوْكِ النَّاسُ فَذَكَرُوكِ، أَلَّا تُجِيبِيهِمْ.",
+        "فَقَبِلَتْ ذَٰلِكَ وَشَرَطَتْ أَلَّا تُجِيبَ أَحَدًا. (قَالَتْ: نَعَمْ.) غَيْرَ أَنْ كَيْفَ السَّبِيلُ لَكُمَا إِلَى حَمْلِي؟",
+        "قَالَتَا: تَعَضِّينَ عَلَى وَسَطِ عُودٍ، وَنَأْخُذُ بِطَرَفَيْهِ، وَنَعْلُو بِهِ فِي الْهَوَاءِ."
+      ],
+      "source": "Kalīla wa Dimna, trad. arabe d'Ibn al-Muqaffaʿ, éd. L. Cheikho, Beyrouth, Imprimerie catholique, 1905, p. 89 (domaine public), extrait · vocalisation et hamzas rédigées par IA, relues",
+      "edition": [
+        "قالتا: انّا لن نقدر على ان نذهب بكِ معنا الا ان تشرطي لنا اذا جعلناكِ في الهواء ورأوكِ الناس فذكروكِ ألّا تجيبيهم. فقبلت ذلك وشرطت ألّا تجيب احدًا (قالت: نعم.) غير ان كيف السبيل لكما الى حملي. قالتا: تعضّين على وسط عود ونأخذ بطرفيهِ ونعلو به في الهواء"
+      ],
+      "traduction": [
+        "Ils dirent : « Nous ne pourrons t'emmener que si tu nous promets ceci : quand nous t'aurons emportée dans les airs et que les gens, te voyant, parleront de toi, tu ne leur répondras pas. »",
+        "Elle accepta et promit de ne répondre à personne (elle dit : oui). « Seulement, comment pourrez-vous me porter ? »",
+        "Ils dirent : « Tu serreras entre tes dents le milieu d'un bâton, nous en prendrons les deux bouts et nous nous élèverons avec lui dans les airs. »"
+      ],
+      "lexique": [
+        {
+          "ar": "شَرَطَ",
+          "fr": "s'engager à, promettre une condition"
+        },
+        {
+          "ar": "عَضَّ عَلَى",
+          "fr": "serrer entre les dents, mordre"
+        }
+      ],
+      "note": "Entre parenthèses : mots ajoutés par l'éditeur.",
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quelle condition les canards posent-ils ?",
+          "choix": [
+            "ne répondre à personne",
+            "ne pas regarder en bas",
+            "ne pas dormir"
+          ],
+          "reponse": 0,
+          "explication": "أَلَّا تُجِيبِيهِمْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment vont-ils la porter ?",
+          "choix": [
+            "elle serre un bâton entre ses dents",
+            "sur leur dos",
+            "dans un sac"
+          ],
+          "reponse": 0,
+          "explication": "تَعَضِّينَ عَلَى وَسَطِ عُودٍ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La fable (4) : la chute",
+      "texte": "Lis ; le lexique est sous le texte.",
+      "phrases": [
+        "فَرَضِيَتْ بِذَٰلِكَ، وَحَمَلَتَاهَا وَاسْتَعْلَتَا بِهَا.",
+        "فَلَمَّا رَآهَا النَّاسُ تَنَادَوْا وَقَالُوا: انْظُرُوا إِلَى الْعَجَبِ! سُلَحْفَاةٌ بَيْنَ بَطَّتَيْنِ فِي الْهَوَاءِ!",
+        "فَلَمَّا سَمِعَتِ السُّلَحْفَاةُ مَقَالَتَهُمْ وَتَعَجُّبَهُمْ مِنْهَا قَالَتْ: (…)",
+        "فَلَمَّا فَتَحَتْ فَاهَا بِالْمَنْطِقِ وَقَعَتْ إِلَى الْأَرْضِ فَمَاتَتْ."
+      ],
+      "source": "Kalīla wa Dimna, trad. arabe d'Ibn al-Muqaffaʿ, éd. L. Cheikho, Beyrouth, Imprimerie catholique, 1905, p. 89 (domaine public), extrait · vocalisation et hamzas rédigées par IA, relues",
+      "edition": [
+        "فرضيت بذلك وحملتاها واستعلتا بها فلما رآها الناس تنادوا وقالوا: انظروا الى العجب سلحفاة بين بطّتين في الهواء فلما سمعت السلحفاة مقالتهم وتعجّبهم منها قالت: (…) فلما فتحت فاها بالمنطق وقعت الى الارض فماتت"
+      ],
+      "traduction": [
+        "Elle accepta, et ils l'emportèrent et s'élevèrent avec elle.",
+        "Quand les gens la virent, ils s'appelèrent les uns les autres en disant : « Regardez cette merveille ! Une tortue entre deux canards dans les airs ! »",
+        "Quand la tortue entendit leurs paroles et leur étonnement, elle dit : (…)",
+        "Et dès qu'elle ouvrit la bouche pour parler, elle tomba à terre et mourut."
+      ],
+      "lexique": [
+        {
+          "ar": "اسْتَعْلَى بِـ",
+          "fr": "s'élever avec, emporter en hauteur"
+        },
+        {
+          "ar": "الْمَنْطِقُ",
+          "fr": "ici : la parole (ailleurs : la logique)"
+        },
+        {
+          "ar": "فَاهَا",
+          "fr": "sa bouche (فَم devant un pronom, à l'accusatif)"
+        }
+      ],
+      "note": "Entre parenthèses : mots ajoutés par l'éditeur. (…) : une courte réplique de colère de la tortue (une malédiction) est omise ici.",
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi la tortue est-elle tombée ?",
+          "choix": [
+            "elle a ouvert la bouche pour parler",
+            "le bâton s'est cassé",
+            "les canards l'ont lâchée"
+          ],
+          "reponse": 0,
+          "explication": "فَلَمَّا فَتَحَتْ فَاهَا بِالْمَنْطِقِ وَقَعَتْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'ont dit les gens en la voyant ?",
+          "choix": [
+            "« Regardez cette merveille ! »",
+            "« Lâchez-la ! »",
+            "« Paix sur vous ! »"
+          ],
+          "reponse": 0,
+          "explication": "انْظُرُوا إِلَى الْعَجَبِ!"
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « La tortue a vu les deux canards. »",
+          "ar": "رَأَتِ السُّلَحْفَاةُ …",
+          "choix_ar": [
+            "الْبَطَّتَيْنِ",
+            "الْبَطَّتَانِ",
+            "الْبَطَّتَيْنُ"
+          ],
+          "reponse": 0,
+          "explication": "Complément d'objet au duel : -ayni."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La tortue est tombée à terre. »",
+          "ar": "وَقَعَتِ السُّلَحْفَاةُ إِلَى …",
+          "choix_ar": [
+            "الْأَرْضِ",
+            "الْأَرْضُ",
+            "الْأَرْضَ"
+          ],
+          "reponse": 0,
+          "explication": "Après إِلَى : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les gens l'ont vue. »",
+          "ar": "رَآهَا …",
+          "choix_ar": [
+            "النَّاسُ",
+            "النَّاسَ",
+            "النَّاسِ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet : nominatif."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Elle a ouvert la bouche pour parler. » ?",
+          "choix_ar": [
+            "فَتَحَتْ فَاهَا بِالْمَنْطِقِ.",
+            "فَتَحَتْ فُوهَا بِالْمَنْطِقِ.",
+            "فَتَحَتْ فَاهَا بِالْمَنْطِقُ."
+          ],
+          "reponse": 0,
+          "explication": "فَاهَا : sa bouche, à l'accusatif ; après بِـ : génitif."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Les deux canards ont volé dans les airs. » ?",
+          "choix_ar": [
+            "طَارَتِ الْبَطَّتَانِ فِي الْهَوَاءِ.",
+            "طَارَتِ الْبَطَّتَانِ فِي الْهَوَاءُ.",
+            "طَارَتِ الْبَطَّتَانِ إِلَى الْهَوَاءُ."
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : génitif, الْهَوَاءِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand a vu la baisse de l'eau. »",
+          "ar": "رَأَى التَّاجِرُ … الْمَاءِ.",
+          "choix_ar": [
+            "نُقْصَانَ",
+            "نُقْصَانُ",
+            "نُقْصَانٍ"
+          ],
+          "reponse": 0,
+          "explication": "Complément d'objet, devant un nom : نُقْصَانَ."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Résume la fable en 3 phrases : le début, le milieu, la fin.",
+          "modele": [
+            "فِي بِدَايَةِ الْقِصَّةِ نَقَصَ مَاءُ الْعَيْنِ.",
+            "فِي وَسَطِهَا حَمَلَتِ الْبَطَّتَانِ السُّلَحْفَاةَ فِي الْهَوَاءِ.",
+            "فِي نِهَايَتِهَا فَتَحَتِ السُّلَحْفَاةُ فَاهَا، فَوَقَعَتْ."
+          ],
+          "explication": "Compare : as-tu le début, le milieu et la fin, à la 3e personne ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نُقْصَانٌ",
+          "choix": [
+            "baisse, diminution",
+            "air",
+            "parole (ici) ; ailleurs : logique"
+          ],
+          "reponse": 0,
+          "explication": "نُقْصَانٌ veut dire « baisse, diminution »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَنْطِقٌ",
+          "choix": [
+            "parole (ici) ; ailleurs : logique",
+            "baisse, diminution",
+            "air"
+          ],
+          "reponse": 0,
+          "explication": "مَنْطِقٌ veut dire « parole (ici) ; ailleurs : logique »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « dans les airs »",
+          "ar": "فِي …",
+          "choix_ar": [
+            "الْهَوَاءِ",
+            "الْهَوَاءُ",
+            "الْهَوَاءَ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « On raconte que… »",
+          "ar": "… أَنَّ",
+          "choix_ar": [
+            "زَعَمُوا",
+            "قَالَتَا",
+            "رَأَوْا"
+          ],
+          "reponse": 0,
+          "explication": "La formule des fables : زَعَمُوا أَنَّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a dit qu'il avait vu une tortue. »",
+          "ar": "قَالَ … رَأَى سُلَحْفَاةً.",
+          "choix_ar": [
+            "إِنَّهُ",
+            "أَنَّهُ",
+            "لِأَنَّهُ"
+          ],
+          "reponse": 0,
+          "explication": "Après قَالَ : إِنَّ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le marchand a vu la baisse de l'eau. » ?",
+          "choix_ar": [
+            "رَأَى التَّاجِرُ نُقْصَانَ الْمَاءِ.",
+            "رَأَى التَّاجِرُ نُقْصَانُ الْمَاءِ.",
+            "رَأَى التَّاجِرَ نُقْصَانَ الْمَاءِ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet au nominatif, complément à l'accusatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Kalīla wa Dimna a été traduit en arabe par…",
+          "choix": [
+            "Ibn al-Muqaffaʿ",
+            "Zuhayr",
+            "Lisān al-ʿArab"
+          ],
+          "reponse": 0,
+          "explication": "Ibn al-Muqaffaʿ, au VIIIe siècle."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la condition posée à la tortue ?",
+          "choix": [
+            "ne répondre à personne",
+            "ne pas regarder en bas",
+            "ne pas dormir"
+          ],
+          "reponse": 0,
+          "explication": "أَلَّا تُجِيبِيهِمْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans un texte ancien, une tournure hors des règles apprises…",
+          "choix": [
+            "s'explique sans se corriger",
+            "est une faute à corriger",
+            "se saute"
+          ],
+          "reponse": 0,
+          "explication": "On l'explique dans le lexique."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَخَّصَ",
+          "choix": [
+            "résumer",
+            "recopier",
+            "expliquer"
+          ],
+          "reponse": 0,
+          "explication": "لَخَّصَ veut dire « résumer ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « l'idée la plus importante »",
+          "ar": "أَهَمُّ …",
+          "choix_ar": [
+            "فِكْرَةٍ",
+            "فِكْرَةٌ",
+            "الْفِكْرَةُ"
+          ],
+          "reponse": 0,
+          "explication": "أَهَمُّ + nom indéfini au génitif.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَمَّا بَعْدُ",
+          "choix": [
+            "cela dit, quant à ce qui suit (formule de lettre)",
+            "à la fin de la lettre",
+            "ton ami"
+          ],
+          "reponse": 0,
+          "explication": "أَمَّا بَعْدُ veut dire « cela dit, quant à ce qui suit (formule de lettre) ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu as lu une fable ancienne de Kalīla wa Dimna, avec un lexique, et tu en as compris le sens.",
+      "suite": "Il ne te reste que l'examen de la région : le Labyrinthe de la Distraction."
+    }
+  ]
+}

@@ -567,6 +567,8 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
   int? _selected;
   bool? _right;
   bool _answeredText = false;
+  bool _showTranslation = false;
+  bool _showEdition = false;
 
   LessonQuestion get _q => widget.step.questions[_question];
 
@@ -664,6 +666,7 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
           widget.step.source ?? '${_ReadingView.source} · rédigé par IA',
           style: TextStyle(color: GameColors.muted, fontSize: 13),
         ),
+        ..._classic(),
         const SizedBox(height: 12),
         if (locate)
           _locate(q)
@@ -678,6 +681,69 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
           ),
       ],
     );
+  }
+
+  /// Texte classique (4.28) : remarque, lexique, graphie de l'édition et,
+  /// après la réponse, traduction.
+  List<Widget> _classic() {
+    final step = widget.step;
+    if (step.source == null) return const [];
+    return [
+      if (step.note != null) ...[
+        const SizedBox(height: 6),
+        Text(
+          step.note!,
+          style: TextStyle(color: GameColors.muted, fontSize: 13),
+        ),
+      ],
+      if (step.glossary.isNotEmpty) ...[
+        const SizedBox(height: 10),
+        Text(
+          'Lexique',
+          style: TextStyle(color: GameColors.accent, fontSize: 16),
+        ),
+        for (final e in step.glossary)
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(child: Text(e.french)),
+              const SizedBox(width: 8),
+              ArabicText(e.arabic, baseSize: 26),
+            ],
+          ),
+      ],
+      if (step.edition.isNotEmpty) ...[
+        const SizedBox(height: 8),
+        PixelCommand(
+          label: _showEdition
+              ? 'Cacher le texte de l\'édition'
+              : 'Voir le texte de l\'édition',
+          onPressed: () => setState(() => _showEdition = !_showEdition),
+        ),
+        if (_showEdition)
+          for (final t in step.edition) ArabicText(t, baseSize: 26),
+      ],
+      if (step.translation.isNotEmpty) ...[
+        const SizedBox(height: 8),
+        PixelCommand(
+          label: !_answeredText
+              ? 'Voir la traduction (après ta réponse)'
+              : _showTranslation
+              ? 'Cacher la traduction'
+              : 'Voir la traduction',
+          onPressed: _answeredText
+              ? () => setState(() => _showTranslation = !_showTranslation)
+              : null,
+        ),
+        if (_showTranslation && _answeredText) ...[
+          for (final t in step.translation) Text(t),
+          Text(
+            'Traduction rédigée par IA',
+            style: TextStyle(color: GameColors.muted, fontSize: 13),
+          ),
+        ],
+      ],
+    ];
   }
 
   Widget _locate(LessonQuestion q) => QuestionPanel(
