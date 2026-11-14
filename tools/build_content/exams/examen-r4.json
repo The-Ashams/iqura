@@ -44,7 +44,7 @@
    "ثُمَّ قَالَ طَالِبٌ كَلِمَةً صَعْبَةً، فَلَمْ يَفْهَمْهَا بَاسِمٌ.",
    "قَالَ بَاسِمٌ: « لَمْ أَفْهَمْ. أَرْجُو أَنْ تُكَرِّرَهَا عَلَى مَهْلٍ. »",
    "فَكَرَّرَهَا الطَّالِبُ، وَلَٰكِنَّ بَاسِمًا لَمْ يَعْرِفْ مَعْنَاهَا.",
-   "فَرَجَعَ إِلَى الْمُعْجَمِ، وَبَحَثَ عَنِ الْكَلِمَةِ فِي مَادَّتِهَا، فَوَجَدَهَا.",
+   "فَذَهَبَ إِلَى مَكَانِ الْكُتُبِ، وَبَحَثَ عَنِ الْكَلِمَةِ فِي الْمُعْجَمِ، فِي مَادَّتِهَا، فَوَجَدَهَا.",
    "وَلَمَّا خَرَجَ، كَانَ الْعَصْرُ قَدْ جَاءَ."
   ],
   "sans_voyelles": {
@@ -181,7 +181,7 @@
      "le vendeur, Nadīm, le nouvel étudiant"
     ],
     "reponse": 0,
-    "explication": "Le matin au lieu des livres, puis chez Nadīm, puis au marché."
+    "explication": "Le matin à l'endroit des livres (مَكَانِ الْكُتُبِ), puis chez Nadīm, puis au marché."
    },
    {
     "type": "qcm",
@@ -246,7 +246,7 @@
    },
    {
     "type": "repondre",
-    "consigne": "Nadīm veut savoir si tu as trouvé le chemin du marché.",
+    "consigne": "Nadīm veut savoir si tu connais le chemin du marché.",
     "replique": {
      "qui": "nadim",
      "ar": "هَلْ تَعْرِفُ الطَّرِيقَ إِلَى السُّوقِ؟"
@@ -431,11 +431,11 @@
      "كَلِمَاتِهَا",
      "سَهْلَةٌ"
     ],
-    "explication": "Après أَنَّ : nom en -a, الْقِصَّةَ."
+    "explication": "Après أَنَّ : nom en -a, الْقِصَّةَ ; après لِأَنَّ aussi : كَلِمَاتِهَا ; سَهْلَةٌ au féminin singulier (pluriel de choses)."
    },
    {
     "type": "ordonner",
-    "consigne": "Zuhayr demande à Bāsim comment commence sa lettre à Samīr. Remets-en le début dans l'ordre : la formule, puis « je suis arrivé en ville ».",
+    "consigne": "Zuhayr demande à Bāsim comment pourrait commencer une lettre à Samīr. Remets-en le début dans l'ordre : la formule, puis « je suis arrivé en ville ».",
     "replique": {
      "qui": "zuhayr",
      "ar": "كَيْفَ تَبْدَأُ رِسَالَتَكَ؟"
