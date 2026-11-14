@@ -699,7 +699,7 @@ class _ReadingViewState extends ConsumerState<_ReadingView> {
       if (step.glossary.isNotEmpty) ...[
         const SizedBox(height: 10),
         Text(
-          'Lexique',
+          'Lexique (rédigé par IA)',
           style: TextStyle(color: GameColors.accent, fontSize: 16),
         ),
         for (final e in step.glossary)

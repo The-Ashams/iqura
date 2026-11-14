@@ -10604,13 +10604,13 @@
     "fr": "Le marchand a vu la baisse de l'eau."
    },
    "remarque": "la racine ne suffit pas pour le sens",
-   "theme": "savoir"
+   "theme": "nombres"
   },
   {
    "id": "mantiq",
    "ar": "مَنْطِقٌ",
    "translit": "manṭiqun",
-   "fr": "parole (ici) ; ailleurs : logique",
+   "fr": "parole, langage ; plus tard : logique",
    "nature": "nom",
    "lecon": "cite-28",
    "source_sens": "rédigé par IA",
@@ -10619,11 +10619,12 @@
    "fige": true,
    "formes": [
     "الْمَنْطِقِ",
-    "بِالْمَنْطِقِ"
+    "بِالْمَنْطِقِ",
+    "مَنْطِقَ"
    ],
    "exemple": {
-    "ar": "فَتَحَتْ فَاهَا بِالْمَنْطِقِ.",
-    "fr": "Elle a ouvert la bouche pour parler."
+    "ar": "سَمِعْتُ مَنْطِقَ الطَّالِبِ.",
+    "fr": "J'ai entendu les paroles de l'étudiant."
    },
    "remarque": "dans les textes anciens, souvent « la parole » ; la racine ne suffit pas pour le sens",
    "theme": "parole"
@@ -10643,8 +10644,8 @@
     "الْهَوَاءِ"
    ],
    "exemple": {
-    "ar": "طَارَتِ الْبَطَّتَانِ فِي الْهَوَاءِ.",
-    "fr": "Les deux canards ont volé dans les airs."
+    "ar": "حَمَلَتِ الْبَطَّتَانِ السُّلَحْفَاةَ فِي الْهَوَاءِ.",
+    "fr": "Les deux canards ont porté la tortue dans les airs."
    },
    "remarque": "la racine ه و ي a d'autres emplois : la racine ne suffit pas pour le sens",
    "theme": "nature"

@@ -26,7 +26,6 @@
     "النَّاسُ",
     "وَرَأَوْكِ",
     "زَعَمُوا أَنَّ",
-    "طَارَتِ",
     "الْبَطَّتَيْنِ",
     "نَقَصَ",
     "فَاهَا",
@@ -108,7 +107,7 @@
         },
         {
           "qui": "zuhayr",
-          "ar": "قَلِيلٌ، وَالشَّرْحُ تَحْتَ النَّصِّ.",
+          "ar": "قَلِيلٌ مِنْهَا، وَالشَّرْحُ تَحْتَ النَّصِّ.",
           "fr": "Quelques-uns, et l'explication est sous le texte."
         }
       ],
@@ -147,7 +146,7 @@
     {
       "type": "regle",
       "titre": "Lire un texte ancien",
-      "texte": "Une fable ancienne commence souvent par زَعَمُوا أَنَّ « on raconte que ». On lit avec le lexique et le contexte, sans chercher chaque mot.",
+      "texte": "Dans Kalīla wa Dimna, une fable commence souvent par زَعَمُوا أَنَّ « on raconte que » (ailleurs, زَعَمَ veut souvent dire « prétendre »). On lit avec le lexique et le contexte.",
       "exemples": [
         "زَعَمُوا أَنَّ"
       ],
@@ -211,7 +210,7 @@
         },
         {
           "ar": "فَاحِشٌ",
-          "fr": "ici : énorme, excessif (faux ami : pas « honteux »)"
+          "fr": "ici : énorme, excessif (ailleurs : honteux, indécent)"
         }
       ],
       "note": "Entre parenthèses : mots ajoutés par l'éditeur.",
@@ -251,10 +250,10 @@
       ],
       "source": "Kalīla wa Dimna, trad. arabe d'Ibn al-Muqaffaʿ, éd. L. Cheikho, Beyrouth, Imprimerie catholique, 1905, p. 89 (domaine public), extrait · vocalisation et hamzas rédigées par IA, relues",
       "edition": [
-        "فودّعتا السلحفاة وقالتا: السلام عليكِ فانّا ذاهبان. قالت السلحفاة: انما اشتد نقصان هذا الماء على مثل هذه الشقيّة التي لا تقدر ان تعيش الّا بالماء فاما انتما فانكما تعيشان حيث توجّهتما فاحتالا لي واذهبا بي معكما"
+        "فودّعتا السلحفاة وقالتا: السلام عليكِ فانّا ذاهبان. قالت السلحفاة: انما اشتد نقصان هذا الماء على مثل هذه الشقيّة التي لا تقدر ان تعيش الّا بالماء فاما انتما فانكما تعيشان حيث توجّهتما فاحتالا لي واذهبا بي معكما."
       ],
       "traduction": [
-        "Elles firent leurs adieux à la tortue et dirent : « Paix sur toi, nous partons. »",
+        "Ils firent leurs adieux à la tortue et dirent : « Paix sur toi, nous partons. »",
         "La tortue dit : « Cette baisse de l'eau est dure surtout pour une malheureuse comme moi, qui ne peut vivre que dans l'eau.",
         "Mais vous, vous vivez partout où vous allez : trouvez un moyen pour moi, et emmenez-moi avec vous. »"
       ],
@@ -268,7 +267,7 @@
           "fr": "trouver un moyen pour quelqu'un"
         }
       ],
-      "note": "Entre parenthèses : mots ajoutés par l'éditeur.",
+      "note": "Entre parenthèses : mots ajoutés par l'éditeur. فَإِنَّا ذَاهِبَانِ : accord du texte ancien (duel masculin pour les deux canards).",
       "questions": [
         {
           "type": "qcm",
@@ -305,7 +304,7 @@
       ],
       "source": "Kalīla wa Dimna, trad. arabe d'Ibn al-Muqaffaʿ, éd. L. Cheikho, Beyrouth, Imprimerie catholique, 1905, p. 89 (domaine public), extrait · vocalisation et hamzas rédigées par IA, relues",
       "edition": [
-        "قالتا: انّا لن نقدر على ان نذهب بكِ معنا الا ان تشرطي لنا اذا جعلناكِ في الهواء ورأوكِ الناس فذكروكِ ألّا تجيبيهم. فقبلت ذلك وشرطت ألّا تجيب احدًا (قالت: نعم.) غير ان كيف السبيل لكما الى حملي. قالتا: تعضّين على وسط عود ونأخذ بطرفيهِ ونعلو به في الهواء"
+        "قالتا: انّا لن نقدر على ان نذهب بكِ معنا الا ان تشرطي لنا اذا جعلناكِ في الهواء ورأوكِ الناس فذكروكِ ألّا تجيبيهم. فقبلت ذلك وشرطت ألّا تجيب احدًا (قالت: نعم.) غير ان كيف السبيل لكما الى حملي. قالتا: تعضّين على وسط عود ونأخذ بطرفيهِ ونعلو به في الهواء."
       ],
       "traduction": [
         "Ils dirent : « Nous ne pourrons t'emmener que si tu nous promets ceci : quand nous t'aurons emportée dans les airs et que les gens, te voyant, parleront de toi, tu ne leur répondras pas. »",
@@ -322,7 +321,7 @@
           "fr": "serrer entre les dents, mordre"
         }
       ],
-      "note": "Entre parenthèses : mots ajoutés par l'éditeur.",
+      "note": "Entre parenthèses : mots ajoutés par l'éditeur. وَرَأَوْكِ النَّاسُ : tournure du texte ancien, verbe au pluriel avant son sujet ; la règle apprise donne رَآكِ النَّاسُ. غَيْرَ أَنْ : seulement, mais.",
       "questions": [
         {
           "type": "qcm",
@@ -360,7 +359,7 @@
       ],
       "source": "Kalīla wa Dimna, trad. arabe d'Ibn al-Muqaffaʿ, éd. L. Cheikho, Beyrouth, Imprimerie catholique, 1905, p. 89 (domaine public), extrait · vocalisation et hamzas rédigées par IA, relues",
       "edition": [
-        "فرضيت بذلك وحملتاها واستعلتا بها فلما رآها الناس تنادوا وقالوا: انظروا الى العجب سلحفاة بين بطّتين في الهواء فلما سمعت السلحفاة مقالتهم وتعجّبهم منها قالت: (…) فلما فتحت فاها بالمنطق وقعت الى الارض فماتت"
+        "فرضيت بذلك وحملتاها واستعلتا بها فلما رآها الناس تنادوا وقالوا: انظروا الى العجب سلحفاة بين بطّتين في الهواء. فلما سمعت السلحفاة مقالتهم وتعجّبهم منها قالت: (…) فلما فتحت فاها بالمنطق وقعت الى الارض فماتت."
       ],
       "traduction": [
         "Elle accepta, et ils l'emportèrent et s'élevèrent avec elle.",
@@ -379,7 +378,7 @@
         },
         {
           "ar": "فَاهَا",
-          "fr": "sa bouche (فَم devant un pronom, à l'accusatif)"
+          "fr": "sa bouche (فَمٌ devant un pronom, à l'accusatif)"
         }
       ],
       "note": "Entre parenthèses : mots ajoutés par l'éditeur. (…) : une courte réplique de colère de la tortue (une malédiction) est omise ici.",
@@ -465,14 +464,14 @@
       "exercices": [
         {
           "type": "traduire",
-          "consigne": "Comment dit-on « Les deux canards ont volé dans les airs. » ?",
+          "consigne": "Comment dit-on « Les deux canards ont porté la tortue dans les airs. » ?",
           "choix_ar": [
-            "طَارَتِ الْبَطَّتَانِ فِي الْهَوَاءِ.",
-            "طَارَتِ الْبَطَّتَانِ فِي الْهَوَاءُ.",
-            "طَارَتِ الْبَطَّتَانِ إِلَى الْهَوَاءُ."
+            "حَمَلَتِ الْبَطَّتَانِ السُّلَحْفَاةَ فِي الْهَوَاءِ.",
+            "حَمَلَتِ الْبَطَّتَانِ السُّلَحْفَاةَ فِي الْهَوَاءُ.",
+            "حَمَلَتِ الْبَطَّتَانِ السُّلَحْفَاةُ فِي الْهَوَاءِ."
           ],
           "reponse": 0,
-          "explication": "Après فِي : génitif, الْهَوَاءِ."
+          "explication": "Complément : السُّلَحْفَاةَ ; après فِي : génitif, الْهَوَاءِ."
         },
         {
           "type": "completer",
@@ -509,7 +508,7 @@
           "choix": [
             "baisse, diminution",
             "air",
-            "parole (ici) ; ailleurs : logique"
+            "parole, langage ; plus tard : logique"
           ],
           "reponse": 0,
           "explication": "نُقْصَانٌ veut dire « baisse, diminution »."
@@ -519,12 +518,12 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "مَنْطِقٌ",
           "choix": [
-            "parole (ici) ; ailleurs : logique",
+            "parole, langage ; plus tard : logique",
             "baisse, diminution",
             "air"
           ],
           "reponse": 0,
-          "explication": "مَنْطِقٌ veut dire « parole (ici) ; ailleurs : logique »."
+          "explication": "مَنْطِقٌ veut dire « parole, langage ; plus tard : logique »."
         },
         {
           "type": "completer",
@@ -578,8 +577,8 @@
           "consigne": "Kalīla wa Dimna a été traduit en arabe par…",
           "choix": [
             "Ibn al-Muqaffaʿ",
-            "Zuhayr",
-            "Lisān al-ʿArab"
+            "Bāsim",
+            "Nadīm"
           ],
           "reponse": 0,
           "explication": "Ibn al-Muqaffaʿ, au VIIIe siècle."
@@ -604,7 +603,7 @@
             "se saute"
           ],
           "reponse": 0,
-          "explication": "On l'explique dans le lexique."
+          "explication": "On l'explique dans une note, sans la corriger."
         },
         {
           "type": "sens",
