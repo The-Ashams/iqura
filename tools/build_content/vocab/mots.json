@@ -10651,89 +10651,6 @@
    "theme": "nature"
   },
   {
-   "id": "lamma_jazm",
-   "ar": "لَمَّا",
-   "translit": "lammā",
-   "fr": "(+ jussif) pas encore",
-   "nature": "particule",
-   "lecon": "sens-04",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "لَمَّا يَصِلْ بَاسِمٌ.",
-    "fr": "Bāsim n'est pas encore arrivé."
-   },
-   "remarque": "sens nouveau : لَمَّا + jussif « pas encore » ; لَمَّا + passé « lorsque » ; c'est la forme du verbe qui décide",
-   "theme": "outils"
-  },
-  {
-   "id": "in_nafy",
-   "ar": "إِنْ",
-   "translit": "in",
-   "fr": "(négation) ne pas ; avec إِلَّا : ne que",
-   "nature": "particule",
-   "lecon": "sens-04",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ.",
-    "fr": "Il n'y a dans la bourse qu'un dirham."
-   },
-   "remarque": "sens nouveau : si إِلَّا suit, c'est une négation ; si un verbe et une réponse suivent, c'est une condition",
-   "theme": "outils"
-  },
-  {
-   "id": "nafy",
-   "ar": "نَفْيٌ",
-   "translit": "nafyun",
-   "fr": "(grammaire) négation",
-   "nature": "nom",
-   "lecon": "sens-04",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "nfy",
-   "exemple": {
-    "ar": "« لَمْ » حَرْفُ نَفْيٍ.",
-    "fr": "« لَمْ » est une particule de négation."
-   },
-   "remarque": "sens de grammaire ; la racine ن ف ي a d'autres emplois : la racine ne suffit pas pour le sens",
-   "theme": "ecriture"
-  },
-  {
-   "id": "shay",
-   "ar": "شَيْءٌ",
-   "translit": "šayʾun",
-   "fr": "chose ; (avec une négation) rien",
-   "nature": "nom",
-   "lecon": "sens-04",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "$aYo'",
-   "fige": true,
-   "formes": [
-    "شَيْءٌ"
-   ],
-   "exemple": {
-    "ar": "لَمْ يَبْقَ فِي الْكِيسِ شَيْءٌ.",
-    "fr": "Il ne reste rien dans la bourse."
-   },
-   "remarque": "ici seulement avec une négation : لَمْ يَبْقَ … شَيْءٌ, مَا فِي … شَيْءٌ",
-   "theme": "savoir"
-  },
-  {
-   "id": "qattu",
-   "ar": "قَطُّ",
-   "translit": "qaṭṭu",
-   "fr": "jamais (au passé)",
-   "nature": "adverbe",
-   "lecon": "sens-04",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "مَا رَكِبْتُ جَمَلًا قَطُّ.",
-    "fr": "Je ne suis jamais monté sur un chameau."
-   },
-   "remarque": "suit un passé nié ; pour l'avenir, on dit plutôt أَبَدًا",
-   "theme": "temps"
-  },
-  {
    "id": "qasam",
    "ar": "قَسَمٌ",
    "translit": "qasamun",
@@ -11060,6 +10977,158 @@
     "fr": "L'histoire du marchand est étonnante."
    },
    "theme": "qualites"
+  },
+  {
+   "id": "lamma_jazm",
+   "ar": "لَمَّا",
+   "translit": "lammā",
+   "fr": "(+ jussif) pas encore",
+   "nature": "particule",
+   "lecon": "sens-04",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "لَمَّا يَصِلْ بَاسِمٌ.",
+    "fr": "Bāsim n'est pas encore arrivé."
+   },
+   "remarque": "sens nouveau : لَمَّا + jussif « pas encore » ; لَمَّا + passé « lorsque » ; c'est la forme du verbe qui décide",
+   "theme": "outils"
+  },
+  {
+   "id": "in_nafy",
+   "ar": "إِنْ",
+   "translit": "in",
+   "fr": "(négation) ne pas ; avec إِلَّا : ne que",
+   "nature": "particule",
+   "lecon": "sens-04",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ.",
+    "fr": "Il n'y a dans la bourse qu'un dirham."
+   },
+   "remarque": "sens nouveau : si إِلَّا suit, c'est une négation ; si un verbe et une réponse suivent, c'est une condition",
+   "theme": "outils"
+  },
+  {
+   "id": "nafy",
+   "ar": "نَفْيٌ",
+   "translit": "nafyun",
+   "fr": "(grammaire) négation",
+   "nature": "nom",
+   "lecon": "sens-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "nfy",
+   "exemple": {
+    "ar": "« لَمْ » حَرْفُ نَفْيٍ.",
+    "fr": "« لَمْ » est une particule de négation."
+   },
+   "remarque": "sens de grammaire ; la racine ن ف ي a d'autres emplois : la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "shay",
+   "ar": "شَيْءٌ",
+   "translit": "šayʾun",
+   "fr": "chose ; (avec une négation) rien",
+   "nature": "nom",
+   "lecon": "sens-04",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "$aYo'",
+   "fige": true,
+   "formes": [
+    "شَيْءٌ"
+   ],
+   "exemple": {
+    "ar": "لَمْ يَبْقَ فِي الْكِيسِ شَيْءٌ.",
+    "fr": "Il ne reste rien dans la bourse."
+   },
+   "remarque": "ici seulement avec une négation : لَمْ يَبْقَ … شَيْءٌ, مَا فِي … شَيْءٌ",
+   "theme": "savoir"
+  },
+  {
+   "id": "qattu",
+   "ar": "قَطُّ",
+   "translit": "qaṭṭu",
+   "fr": "jamais (au passé)",
+   "nature": "adverbe",
+   "lecon": "sens-04",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "مَا رَكِبْتُ جَمَلًا قَطُّ.",
+    "fr": "Je ne suis jamais monté sur un chameau."
+   },
+   "remarque": "suit un passé nié ; pour l'avenir, on dit أَبَدًا",
+   "theme": "temps"
+  },
+  {
+   "id": "hadhf",
+   "ar": "حَذْفٌ",
+   "translit": "ḥaḏfun",
+   "fr": "(grammaire) omission",
+   "nature": "nom",
+   "lecon": "sens-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "فِي « بِخَيْرٍ » حَذْفٌ.",
+    "fr": "Dans « بِخَيْرٍ », il y a une omission."
+   },
+   "remarque": "sens de grammaire",
+   "theme": "ecriture"
+  },
+  {
+   "id": "mahdhuf",
+   "ar": "مَحْذُوفٌ",
+   "translit": "maḥḏūfun",
+   "fr": "(grammaire) sous-entendu, omis",
+   "nature": "adjectif",
+   "lecon": "sens-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "الْمُبْتَدَأُ مَحْذُوفٌ.",
+    "fr": "Le sujet est sous-entendu."
+   },
+   "remarque": "sens de grammaire ; schème مَفْعُول",
+   "theme": "ecriture"
+  },
+  {
+   "id": "taqdir",
+   "ar": "تَقْدِيرٌ",
+   "translit": "taqdīrun",
+   "fr": "(grammaire) restitution du mot sous-entendu",
+   "nature": "nom",
+   "lecon": "sens-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "qdr",
+   "exemple": {
+    "ar": "تَقْدِيرُهُ: أَنَا بِخَيْرٍ.",
+    "fr": "On le restitue ainsi : je vais bien."
+   },
+   "remarque": "ici, terme de grammaire seulement ; dans le Coran, cette racine a aussi le sens de destin et de mesure : la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "bab_kitab",
+   "ar": "بَابٌ",
+   "translit": "bābun",
+   "fr": "(dans un livre) chapitre",
+   "nature": "nom",
+   "lecon": "sens-06",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "fige": true,
+   "formes": [
+    "بَابُ"
+   ],
+   "exemple": {
+    "ar": "بَابُ الْحُرُوفِ.",
+    "fr": "Chapitre des lettres."
+   },
+   "remarque": "sens nouveau d'un mot connu (« porte »)",
+   "theme": "ecriture"
   }
  ]
 }

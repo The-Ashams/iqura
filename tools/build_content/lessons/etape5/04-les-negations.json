@@ -49,7 +49,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Je ne partirai pas. »",
+          "consigne": "Complète : « Je ne voyagerai pas. »",
           "ar": "… أُسَافِرَ.",
           "choix_ar": [
             "لَنْ",
@@ -154,7 +154,7 @@
     {
       "type": "regle",
       "titre": "إِنْ de négation",
-      "texte": "إِنْ peut nier comme مَا, le plus souvent avec إِلَّا : إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ. Si إِلَّا suit, c'est une négation ; si un verbe et une réponse suivent, c'est une condition.",
+      "texte": "إِنْ peut nier comme مَا, le plus souvent avec إِلَّا : إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ. Le plus souvent, si إِلَّا suit, c'est une négation ; si un verbe et une réponse suivent, c'est une condition.",
       "exemples": [
         "إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ",
         "إِنْ بَاسِمٌ إِلَّا طَالِبٌ"
@@ -174,10 +174,10 @@
     {
       "type": "regle",
       "titre": "لَمَا et قَطُّ",
-      "texte": "La réponse niée de لَوْ prend لَمَا : لَوْ كَانَ الطَّرِيقُ قَصِيرًا لَمَا تَأَخَّرْنَا. قَطُّ (« jamais ») suit un passé nié ; pour l'avenir, on dit plutôt أَبَدًا.",
+      "texte": "La réponse niée de لَوْ prend لَمَا : لَوْ كَانَ الطَّرِيقُ قَصِيرًا لَمَا تَأَخَّرْنَا. قَطُّ (« jamais ») suit un passé nié ; pour l'avenir, on dit أَبَدًا.",
       "exemples": [
-        "مَا رَكِبْتُ جَمَلًا قَطُّ",
-        "لَمْ يَبْقَ فِي الْكِيسِ شَيْءٌ"
+        "لَوْ كَانَ الطَّرِيقُ قَصِيرًا لَمَا تَأَخَّرْنَا",
+        "مَا رَكِبْتُ جَمَلًا قَطُّ"
       ],
       "question": {
         "type": "completer",
@@ -185,7 +185,7 @@
         "ar": "مَا رَكِبْتُ جَمَلًا …",
         "choix_ar": [
           "قَطُّ",
-          "أَبَدًا",
+          "غَدًا",
           "لَمَّا"
         ],
         "reponse": 0,
@@ -198,9 +198,9 @@
       "texte": "Lis ; touche un mot pour voir son sens.",
       "phrases": [
         "الرِّسَالَةُ مَكْتُوبَةٌ، وَلَٰكِنْ لَمَّا يُرْسِلْهَا سَمِيرٌ.",
-        "قَالَ سَمِيرٌ: « إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ، وَمَا سَافَرْتُ قَطُّ. »",
-        "قَالَ حَازِمٌ: « لَوْ كَانَ الطَّرِيقُ قَصِيرًا لَمَا تَأَخَّرَتِ الرِّسَالَةُ. »",
-        "ثُمَّ أَعْطَاهُ دِرْهَمًا، فَلَمْ يَبْقَ فِي كِيسِ حَازِمٍ شَيْءٌ."
+        "قَالَ سَمِيرٌ: « مَا سَافَرْتُ قَطُّ، وَإِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ. »",
+        "قَالَ حَازِمٌ: « لَوْ كَانَ الطَّرِيقُ قَصِيرًا لَمَا تَأَخَّرَتِ الْقَافِلَةُ. »",
+        "ثُمَّ قَدَّمَ لَهُ حَازِمٌ دِرْهَمًا، فَلَمْ يَبْقَ فِي كِيسِ حَازِمٍ شَيْءٌ."
       ],
       "questions": [
         {
@@ -216,7 +216,7 @@
         },
         {
           "type": "qcm",
-          "consigne": "Combien de dirhams a Samīr ?",
+          "consigne": "Combien de dirhams Samīr avait-il d'abord dans sa bourse ?",
           "choix": [
             "un seul",
             "aucun",
@@ -348,7 +348,7 @@
             "جَمَلًا",
             "رَكِبْتُ",
             "مَا",
-            "أَبَدًا"
+            "غَدًا"
           ],
           "solution": [
             "مَا",
@@ -375,16 +375,15 @@
       "seuil": 0.8,
       "questions": [
         {
-          "type": "sens",
-          "consigne": "Que veut dire ce mot ?",
-          "ar": "إِنْ",
+          "type": "qcm",
+          "consigne": "Dans إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ, que veut dire إِنْ ?",
           "choix": [
-            "(négation) ne pas ; avec إِلَّا : ne que",
+            "une négation : ne… que, avec إِلَّا",
             "si",
             "que"
           ],
           "reponse": 0,
-          "explication": "إِنْ veut dire « (négation) ne pas ; avec إِلَّا : ne que »."
+          "explication": "إِلَّا suit : c'est une négation."
         },
         {
           "type": "sens",
@@ -428,7 +427,7 @@
           "ar": "مَا سَافَرْتُ …",
           "choix_ar": [
             "قَطُّ",
-            "أَبَدًا",
+            "لَمَّا",
             "غَدًا"
           ],
           "reponse": 0,
