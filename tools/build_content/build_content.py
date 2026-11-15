@@ -284,7 +284,7 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
     for where_, text in {**lessons.arabic_texts(lesson_data), **world.arabic_texts(world_data),
                          **exams.arabic_texts(exam_data)}.items():
         # Seule exception : l'écran « formule » de la leçon 5.1.
-        if where_.startswith("etape5/01-les-serments.json") and (
+        if where_.replace("\\", "/").startswith("etape5/01-les-serments.json") and (
                 vocab.key(text) in vocab.SACRED_OATHS or vocab.key(text.replace(" ", "")) == "لااقسم"):
             continue
         why = vocab.sacred_oath(text)
