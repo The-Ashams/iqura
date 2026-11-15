@@ -59,7 +59,9 @@
         42,
         30
       ],
-      "lecons": [],
+      "lecons": [
+        5
+      ],
       "scene": "scene_verger_ordre",
       "sol": 84,
       "tranche_j1a": true,

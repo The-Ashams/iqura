@@ -1,0 +1,502 @@
+{
+  "id": "sens-05",
+  "etape": 5,
+  "ordre": 5,
+  "format": 3,
+  "titre": "L'ordre des mots et l'insistance",
+  "objectif": "Reconnaître un mot mis en tête et dire ce qu'il met en relief ; savoir le faire.",
+  "statut": "ia_non_verifie",
+  "lieu": "verger_ordre",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-04"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "texte": "Dans ce verger, les arbres sont en rangs ; mais en arabe, on peut changer l'ordre des mots pour mettre l'un d'eux en valeur."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Le cas, lui, ne change pas : c'est la place qui parle."
+        }
+      ],
+      "objectif": "Mettre un mot en tête."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai écrit la lettre. »",
+          "ar": "كَتَبْتُ …",
+          "choix_ar": [
+            "الرِّسَالَةَ",
+            "الرِّسَالَةُ",
+            "الرِّسَالَةِ"
+          ],
+          "reponse": 0,
+          "explication": "Complément d'objet : accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a un dirham dans la bourse. »",
+          "ar": "فِي الْكِيسِ …",
+          "choix_ar": [
+            "دِرْهَمٌ",
+            "دِرْهَمًا",
+            "دِرْهَمٍ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet indéfini placé après : nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim n'est pas encore arrivé. »",
+          "ar": "… يَصِلْ بَاسِمٌ.",
+          "choix_ar": [
+            "لَمَّا",
+            "لَمَا",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "« pas encore » : لَمَّا, vu juste avant."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "ar": "هَلْ كَتَبْتَ الْقِصَّةَ يَا بَاسِمُ؟",
+          "fr": "As-tu écrit l'histoire, Bāsim ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "الرِّسَالَةَ كَتَبْتُ، لَا الْقِصَّةَ.",
+          "fr": "C'est la lettre que j'ai écrite, pas l'histoire."
+        },
+        {
+          "qui": "hazim",
+          "ar": "وَأَيْنَ جَلَسْتُمْ؟",
+          "fr": "Et où vous êtes-vous assis ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "فِي الْحَدِيقَةِ جَلَسْنَا، لَا فِي الْبَيْتِ.",
+          "fr": "C'est dans le jardin que nous nous sommes assis, pas dans la maison."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'a écrit Bāsim ?",
+        "choix": [
+          "la lettre, pas l'histoire",
+          "l'histoire",
+          "rien"
+        ],
+        "reponse": 0,
+        "explication": "الرِّسَالَةَ كَتَبْتُ، لَا الْقِصَّةَ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "taqdim_gram",
+        "takhir",
+        "ihtimam",
+        "bad"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "بَعْضٌ",
+        "choix": [
+          "une partie, quelques-uns",
+          "chose",
+          "tout"
+        ],
+        "reponse": 0,
+        "explication": "بَعْضٌ veut dire « une partie, quelques-uns »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La mise en tête",
+      "texte": "On peut mettre en tête (تَقْدِيمٌ) un complément, ou une préposition avec son nom. Il est alors mis en relief, souvent au sens de « c'est X, et pas autre chose » ; le cas ne change pas.",
+      "exemples": [
+        "الرِّسَالَةَ كَتَبْتُ",
+        "فِي الْحَدِيقَةِ جَلَسْنَا",
+        "إِلَى السُّوقِ ذَهَبَ بَاسِمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire الرِّسَالَةَ كَتَبْتُ ?",
+        "choix": [
+          "C'est la lettre que j'ai écrite.",
+          "La lettre m'a écrit.",
+          "J'écrirai la lettre."
+        ],
+        "reponse": 0,
+        "explication": "Complément mis en tête, toujours à l'accusatif."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Ce que tu connais déjà",
+      "texte": "Tu connais déjà une mise en tête obligatoire : فِي الْكِيسِ دِرْهَمٌ (sujet indéfini placé après). Le sens exact d'une mise en tête dépend du contexte ; dans un texte réel, l'expliquer est le travail des commentateurs.",
+      "exemples": [
+        "فِي الْكِيسِ دِرْهَمٌ",
+        "بَاسِمٌ كَتَبَ الرِّسَالَةَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "بَاسِمٌ كَتَبَ الرِّسَالَةَ met en relief…",
+        "choix": [
+          "Bāsim (c'est lui qui a écrit)",
+          "la lettre",
+          "le moment"
+        ],
+        "reponse": 0,
+        "explication": "Le sujet mis en tête."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Au verger",
+      "texte": "Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "قَالَ حَازِمٌ: « مَنْ كَتَبَ الرِّسَالَةَ؟ »",
+        "قَالَ سَمِيرٌ: « بَاسِمٌ كَتَبَ الرِّسَالَةَ، لَا أَنَا. »",
+        "قَالَ بَاسِمٌ: « نَعَمْ، وَإِلَى السُّوقِ ذَهَبْتُ بَعْدَ ذَلِكَ، لَا إِلَى الْمَدْرَسَةِ. »",
+        "قَالَ حَازِمٌ: « وَهَلْ حَفِظْتَ الدُّرُوسَ؟ » قَالَ: « حَفِظْتُ بَعْضَ الدُّرُوسِ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui a écrit la lettre ?",
+          "choix": [
+            "Bāsim",
+            "Samīr",
+            "Ḥāzim"
+          ],
+          "reponse": 0,
+          "explication": "بَاسِمٌ كَتَبَ الرِّسَالَةَ، لَا أَنَا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Où Bāsim est-il allé ensuite ?",
+          "choix": [
+            "au marché, pas à l'école",
+            "à l'école",
+            "chez Ḥāzim"
+          ],
+          "reponse": 0,
+          "explication": "وَإِلَى السُّوقِ ذَهَبْتُ … لَا إِلَى الْمَدْرَسَةِ."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَقْدِيمٌ",
+          "choix": [
+            "(grammaire) mise en tête",
+            "(grammaire) mise après",
+            "(grammaire) négation"
+          ],
+          "reponse": 0,
+          "explication": "تَقْدِيمٌ veut dire « (grammaire) mise en tête »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اهْتِمَامٌ",
+          "choix": [
+            "intérêt, attention qu'on porte",
+            "restriction",
+            "omission"
+          ],
+          "reponse": 0,
+          "explication": "اهْتِمَامٌ veut dire « intérêt, attention qu'on porte »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets en tête : « C'est la lettre que j'ai écrite. »",
+          "ar": "… كَتَبْتُ.",
+          "choix_ar": [
+            "الرِّسَالَةَ",
+            "الرِّسَالَةُ",
+            "الرِّسَالَةِ"
+          ],
+          "reponse": 0,
+          "explication": "Le complément mis en tête garde l'accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets en tête : « C'est dans le jardin que nous nous sommes assis. »",
+          "ar": "فِي … جَلَسْنَا.",
+          "choix_ar": [
+            "الْحَدِيقَةِ",
+            "الْحَدِيقَةُ",
+            "الْحَدِيقَةَ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : génitif, même en tête."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai appris une partie des leçons. »",
+          "ar": "حَفِظْتُ … الدُّرُوسِ.",
+          "choix_ar": [
+            "بَعْضَ",
+            "بَعْضُ",
+            "بَعْضٍ"
+          ],
+          "reponse": 0,
+          "explication": "Complément : accusatif, sans tanwīn devant le nom."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « C'est au marché que Bāsim est allé. » ?",
+          "choix_ar": [
+            "إِلَى السُّوقِ ذَهَبَ بَاسِمٌ.",
+            "إِلَى السُّوقُ ذَهَبَ بَاسِمٌ.",
+            "إِلَى السُّوقِ ذَهَبَ بَاسِمًا."
+          ],
+          "reponse": 0,
+          "explication": "Préposition et nom en tête ; le sujet reste au nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand on met un complément en tête, son cas…",
+          "choix": [
+            "ne change pas",
+            "devient le nominatif",
+            "devient le génitif"
+          ],
+          "reponse": 0,
+          "explication": "C'est la place qui change, pas le cas."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Toute mise en tête veut-elle dire « seulement » ?",
+          "choix": [
+            "non, cela dépend du contexte",
+            "oui, toujours",
+            "jamais"
+          ],
+          "reponse": 0,
+          "explication": "Souvent, pas toujours."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre en mettant la lettre en tête : « C'est la lettre que j'ai écrite. »",
+          "tuiles": [
+            "كَتَبْتُ",
+            "الرِّسَالَةَ",
+            "الرِّسَالَةُ"
+          ],
+          "solution": [
+            "الرِّسَالَةَ",
+            "كَتَبْتُ"
+          ],
+          "explication": "Le complément en tête, à l'accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets en tête : « C'est au marché que Bāsim est allé. »",
+          "ar": "… ذَهَبَ بَاسِمٌ.",
+          "choix_ar": [
+            "إِلَى السُّوقِ",
+            "السُّوقُ",
+            "السُّوقَ إِلَى"
+          ],
+          "reponse": 0,
+          "explication": "La préposition et son nom ensemble, en tête."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Réécris en mettant en relief le mot entre crochets : كَتَبْتُ الرِّسَالَةَ [la lettre] ; جَلَسْنَا فِي الْحَدِيقَةِ [dans le jardin] ; ذَهَبَ بَاسِمٌ إِلَى السُّوقِ [au marché].",
+          "modele": [
+            "الرِّسَالَةَ كَتَبْتُ.",
+            "فِي الْحَدِيقَةِ جَلَسْنَا.",
+            "إِلَى السُّوقِ ذَهَبَ بَاسِمٌ."
+          ],
+          "explication": "Compare : le mot mis en tête garde son cas."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَأْخِيرٌ",
+          "choix": [
+            "(grammaire) mise après",
+            "(grammaire) mise en tête",
+            "retard"
+          ],
+          "reponse": 0,
+          "explication": "تَأْخِيرٌ veut dire « (grammaire) mise après »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَعْضٌ",
+          "choix": [
+            "une partie, quelques-uns",
+            "chose",
+            "tout"
+          ],
+          "reponse": 0,
+          "explication": "بَعْضٌ veut dire « une partie, quelques-uns »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets en tête : « C'est la lettre que j'ai écrite. »",
+          "ar": "… كَتَبْتُ.",
+          "choix_ar": [
+            "الرِّسَالَةَ",
+            "الرِّسَالَةُ",
+            "الرِّسَالَةِ"
+          ],
+          "reponse": 0,
+          "explication": "Accusatif, même en tête."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets en tête : « C'est dans la maison que nous nous sommes assis. »",
+          "ar": "فِي … جَلَسْنَا.",
+          "choix_ar": [
+            "الْبَيْتِ",
+            "الْبَيْتُ",
+            "الْبَيْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai appris une partie des leçons. »",
+          "ar": "حَفِظْتُ … الدُّرُوسِ.",
+          "choix_ar": [
+            "بَعْضَ",
+            "بَعْضُ",
+            "بَعْضٍ"
+          ],
+          "reponse": 0,
+          "explication": "Accusatif, sans tanwīn."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « C'est Bāsim qui a écrit la lettre. » ?",
+          "choix_ar": [
+            "بَاسِمٌ كَتَبَ الرِّسَالَةَ.",
+            "بَاسِمًا كَتَبَ الرِّسَالَةَ.",
+            "بَاسِمٌ كَتَبَ الرِّسَالَةُ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet en tête au nominatif, complément à l'accusatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que met en relief فِي الْحَدِيقَةِ جَلَسْنَا ?",
+          "choix": [
+            "le lieu",
+            "le verbe",
+            "les personnes"
+          ],
+          "reponse": 0,
+          "explication": "La préposition et son nom, en tête."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans un texte réel, la raison précise d'une mise en tête…",
+          "choix": [
+            "relève des commentateurs",
+            "est toujours « seulement »",
+            "n'existe pas"
+          ],
+          "reponse": 0,
+          "explication": "IQURA ne l'explique pas."
+        },
+        {
+          "type": "qcm",
+          "consigne": "الرِّسَالَةَ كَتَبْتُ et كَتَبْتُ الرِّسَالَةَ…",
+          "choix": [
+            "ont les mêmes mots, mais pas le même relief",
+            "n'ont pas le même cas",
+            "ne veulent rien dire"
+          ],
+          "reponse": 0,
+          "explication": "Même cas, autre relief."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَطُّ",
+          "choix": [
+            "jamais (au passé)",
+            "toujours",
+            "pas encore"
+          ],
+          "reponse": 0,
+          "explication": "قَطُّ veut dire « jamais (au passé) ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'y a dans la bourse qu'un dirham. »",
+          "ar": "… فِي الْكِيسِ إِلَّا دِرْهَمٌ.",
+          "choix_ar": [
+            "إِنْ",
+            "إِنَّ",
+            "أَنْ"
+          ],
+          "reponse": 0,
+          "explication": "إِنْ de négation.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِنَّمَا",
+          "choix": [
+            "ne… que, seulement",
+            "parce que",
+            "si"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّمَا veut dire « ne… que, seulement ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais et tu fais une mise en tête (تَقْدِيمٌ) : الرِّسَالَةَ كَتَبْتُ, فِي الْحَدِيقَةِ جَلَسْنَا ; le cas ne change pas.",
+      "suite": "Prochaine leçon : les mots sous-entendus."
+    }
+  ]
+}

@@ -249,11 +249,11 @@ def sacred_oath(text: str) -> str | None:
     لَا أُقْسِمُ ; None sinon."""
     keys = [key(t) for t in tokens(text)]
     for i, k in enumerate(keys):
-        if k in SACRED_OATHS:
+        if k in SACRED_OATHS or (k[:1] in ("ف", "و") and k[1:] in SACRED_OATHS):
             return f"serment par Dieu « {tokens(text)[i]} » hors de l'écran prévu"
-        if k == "اقسم" and i > 0 and keys[i - 1] in ("لا", "فلا"):
-            if keys[i - 1] == "فلا" or i + 1 < len(keys):
-                return "« لَا أُقْسِمُ » suivi d'un mot ou précédé de فَـ"
+        if k == "اقسم" and i > 0 and keys[i - 1] in ("لا", "فلا", "ولا"):
+            if keys[i - 1] != "لا" or i + 1 < len(keys):
+                return "« لَا أُقْسِمُ » suivi d'un mot ou précédé de فَـ ou وَ"
     return None
 
 

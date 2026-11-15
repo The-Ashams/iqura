@@ -16,7 +16,6 @@
     "بَاسِمٌ",
     "سَمِيرٌ",
     "سُؤَالُ",
-    "أَمْ",
     "أَكَتَبْتَ",
     "أَلَمْ",
     "أَلَيْسَ",
@@ -59,7 +58,7 @@
           "choix_ar": [
             "بَلَى",
             "نَعَمْ",
-            "كَلَّا"
+            "أَلَا"
           ],
           "reponse": 0,
           "explication": "بَلَى annule la négation, vu juste avant."
@@ -98,8 +97,8 @@
         },
         {
           "qui": "basim",
-          "ar": "بَلَى، وَقِصَّتُهَا عَجِيبَةٌ!",
-          "fr": "Si, et son histoire est étonnante !"
+          "ar": "بَلَى، كَتَبْتَهَا، وَقِصَّتُهَا عَجِيبَةٌ!",
+          "fr": "Si, tu l'as écrite, et son histoire est étonnante !"
         }
       ],
       "question": {
@@ -150,7 +149,7 @@
         "choix_ar": [
           "بَلَى",
           "نَعَمْ",
-          "كَلَّا"
+          "أَلَا"
         ],
         "reponse": 0,
         "explication": "Après une question négative, « si » : بَلَى."
@@ -202,7 +201,7 @@
       "phrases": [
         "قَالَ سَمِيرٌ: « أُسَافِرُ الْيَوْمَ. »",
         "قَالَ حَازِمٌ: « أَتُسَافِرُ وَالْبَرْدُ شَدِيدٌ؟ أَلَيْسَ الطَّرِيقُ طَوِيلًا؟ »",
-        "قَالَ سَمِيرٌ: « بَلَى، وَلَٰكِنْ هَلْ فِي الْكِيسِ إِلَّا دِرْهَمٌ؟ »",
+        "قَالَ سَمِيرٌ: « بَلَى، عَرَفْتُ ذَٰلِكَ، وَلَٰكِنْ هَلْ فِي الْكِيسِ إِلَّا دِرْهَمٌ؟ »",
         "قَالَ حَازِمٌ: « أَلَا تَجْلِسُ مَعَنَا الْيَوْمَ، وَتُسَافِرُ غَدًا؟ »"
       ],
       "questions": [
@@ -238,24 +237,24 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "تَقْرِيرٌ",
           "choix": [
-            "(grammaire) question qui fait reconnaître, qui affirme",
-            "(grammaire) question de reproche, de désapprobation",
+            "(grammaire) affirmation (sens d'une question)",
+            "(grammaire) reproche, désapprobation (sens d'une question)",
             "(grammaire) restriction"
           ],
           "reponse": 0,
-          "explication": "تَقْرِيرٌ veut dire « (grammaire) question qui fait reconnaître, qui affirme »."
+          "explication": "تَقْرِيرٌ veut dire « (grammaire) affirmation (sens d'une question) »."
         },
         {
           "type": "sens",
           "consigne": "Que veut dire ce mot ?",
           "ar": "إِنْكَارٌ",
           "choix": [
-            "(grammaire) question de reproche, de désapprobation",
-            "(grammaire) question qui fait reconnaître, qui affirme",
+            "(grammaire) reproche, désapprobation (sens d'une question)",
+            "(grammaire) affirmation (sens d'une question)",
             "(grammaire) appel à l'attention"
           ],
           "reponse": 0,
-          "explication": "إِنْكَارٌ veut dire « (grammaire) question de reproche, de désapprobation »."
+          "explication": "إِنْكَارٌ veut dire « (grammaire) reproche, désapprobation (sens d'une question) »."
         },
         {
           "type": "completer",
@@ -300,7 +299,7 @@
           "choix_ar": [
             "نَعَمْ",
             "بَلَى",
-            "كَلَّا"
+            "أَلَا"
           ],
           "reponse": 0,
           "explication": "Après une question négative, نَعَمْ confirme la négation."
@@ -418,7 +417,7 @@
           "choix_ar": [
             "بَلَى",
             "نَعَمْ",
-            "كَلَّا"
+            "أَلَا"
           ],
           "reponse": 0,
           "explication": "بَلَى : « si »."

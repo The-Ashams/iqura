@@ -442,7 +442,7 @@
           "consigne": "Au passé négatif, la réponse du serment prend…",
           "choix_ar": [
             "مَا",
-            "لَمْ",
+            "لَنْ",
             "فَمَا"
           ],
           "reponse": 0,
@@ -450,7 +450,7 @@
         },
         {
           "type": "qcm",
-          "consigne": "Quel mot ouvre un serment sans complément ?",
+          "consigne": "Quel mot peut ouvrir un serment, suivi directement de sa réponse ?",
           "choix_ar": [
             "أُقْسِمُ",
             "لَقَدْ",
