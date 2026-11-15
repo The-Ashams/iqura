@@ -15,7 +15,6 @@
     "حَازِمٌ",
     "بَاسِمٌ",
     "سَمِيرٌ",
-    "الْمُبْتَدَأُ",
     "تَقْدِيرُهُ"
   ],
   "ecrans": [
@@ -134,7 +133,7 @@
     {
       "type": "regle",
       "titre": "Omettre et rétablir",
-      "texte": "L'arabe omet volontiers un mot évident (حَذْفٌ) ; pour comprendre, on le rétablit (تَقْدِيرٌ). On le fait seulement quand une seule restitution est possible.",
+      "texte": "L'arabe omet volontiers un mot évident (حَذْفٌ) ; pour comprendre, on le rétablit (تَقْدِيرٌ). On le fait seulement quand le contexte rend le sens certain, avec la restitution la plus simple.",
       "exemples": [
         "سَمِيرٌ",
         "كَتَبَهَا سَمِيرٌ"
@@ -176,7 +175,7 @@
     {
       "type": "regle",
       "titre": "Les formules",
-      "texte": "Les formules مَرْحَبًا, أَهْلًا وَسَهْلًا, شُكْرًا ont aussi un verbe sous-entendu : les grammairiens le rétablissent de plusieurs façons. On le sait, sans écrire de restitution.",
+      "texte": "Les formules مَرْحَبًا, أَهْلًا وَسَهْلًا, شُكْرًا ont aussi un verbe sous-entendu ; pour مَرْحَبًا et أَهْلًا وَسَهْلًا, les grammairiens le rétablissent de plusieurs façons. On le sait, sans écrire de restitution.",
       "exemples": [
         "مَرْحَبًا",
         "شُكْرًا"
@@ -201,14 +200,14 @@
         "فَتَحَ حَازِمٌ كِتَابًا قَدِيمًا، وَقَرَأَ: « بَابُ الْحُرُوفِ ».",
         "قَالَ بَاسِمٌ: « مَا مَعْنَى هَٰذَا؟ » قَالَ حَازِمٌ: « تَقْدِيرُهُ: هَٰذَا بَابُ الْحُرُوفِ. »",
         "ثُمَّ قَرَأَ سَمِيرٌ الرِّسَالَةَ وَفَهِمَ.",
-        "قَالَ حَازِمٌ: « فَهِمَهَا سَمِيرٌ : الضَّمِيرُ مَحْذُوفٌ. »"
+        "قَالَ حَازِمٌ: « تَقْدِيرُهُ: وَفَهِمَهَا. »"
       ],
       "questions": [
         {
           "type": "qcm",
           "consigne": "Que veut dire « بَابُ الْحُرُوفِ » dans le livre ?",
           "choix": [
-            "Chapitre des lettres",
+            "chapitre des lettres",
             "la porte des lettres",
             "les lettres sont ouvertes"
           ],
@@ -286,10 +285,10 @@
           "choix_ar": [
             "هَٰذَا",
             "هَٰذِهِ",
-            "هُوَ"
+            "هَٰؤُلَاءِ"
           ],
           "reponse": 0,
-          "explication": "بَابٌ est masculin : هَٰذَا."
+          "explication": "بَابٌ est masculin singulier : هَٰذَا."
         },
         {
           "type": "completer",
@@ -318,12 +317,12 @@
           "type": "qcm",
           "consigne": "On rétablit un mot sous-entendu…",
           "choix": [
-            "seulement quand c'est certain",
+            "seulement quand le contexte rend le sens certain",
             "toujours, même s'il y a plusieurs choix",
             "jamais"
           ],
           "reponse": 0,
-          "explication": "Une seule restitution possible."
+          "explication": "Le contexte doit rendre le sens certain."
         }
       ]
     },
@@ -357,7 +356,7 @@
         },
         {
           "type": "ecrire",
-          "consigne": "Rétablis le mot sous-entendu dans ces réponses courtes : « فِي السُّوقِ » (de Bāsim), « بِخَيْرٍ » (de toi), « سَمِيرٌ » (l'auteur de la lettre).",
+          "consigne": "Rétablis le mot sous-entendu dans ces réponses courtes : « فِي السُّوقِ » (de Bāsim), « بِخَيْرٍ » (ta réponse à كَيْفَ حَالُكَ), « سَمِيرٌ » (l'auteur de la lettre).",
           "modele": [
             "هُوَ فِي السُّوقِ.",
             "أَنَا بِخَيْرٍ.",
@@ -426,7 +425,7 @@
           "choix_ar": [
             "هَٰذَا",
             "هَٰذِهِ",
-            "هَؤُلَاءِ"
+            "هَٰؤُلَاءِ"
           ],
           "reponse": 0,
           "explication": "بَابٌ : masculin."
@@ -457,7 +456,7 @@
           "type": "qcm",
           "consigne": "On ne rétablit un mot que si…",
           "choix": [
-            "une seule restitution est possible",
+            "le contexte rend le sens certain",
             "le texte est long",
             "le mot est un verbe"
           ],
@@ -466,7 +465,7 @@
         },
         {
           "type": "qcm",
-          "consigne": "Dans « قَرَأَ الرِّسَالَةَ وَفَهِمَ », ce qui manque est…",
+          "consigne": "Dans « قَرَأَ سَمِيرٌ الرِّسَالَةَ وَفَهِمَ », ce qui manque est…",
           "choix": [
             "le pronom complément",
             "le sujet",

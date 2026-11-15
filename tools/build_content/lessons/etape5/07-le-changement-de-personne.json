@@ -15,8 +15,7 @@
     "حَازِمٌ",
     "بَاسِمٌ",
     "سَمِيرٌ",
-    "ضَمِيرُ",
-    "APX"
+    "ضَمِيرُ"
   ],
   "ecrans": [
     {
@@ -84,7 +83,7 @@
         },
         {
           "qui": "basim",
-          "ar": "تَكَلَّمَ عَنِ الطَّالِبِ، ثُمَّ تَكَلَّمَ إِلَيْهِ!",
+          "ar": "تَكَلَّمَ عَنِ الطَّالِبِ، ثُمَّ كَلَّمَهُ!",
           "fr": "Il a parlé de l'étudiant, puis il lui a parlé !"
         },
         {
@@ -161,7 +160,7 @@
         "choix": [
           "de « tu » à « il », pour Samīr",
           "de « je » à « tu »",
-          "d'une personne à une autre personne"
+          "de Samīr à un autre homme"
         ],
         "reponse": 0,
         "explication": "أَنْتَ (tu), puis سَمِيرٌ لَا يَنْسَى (il), pour le même Samīr."
@@ -170,7 +169,7 @@
     {
       "type": "regle",
       "titre": "Ce qui n'est pas un iltifāt",
-      "texte": "Ce n'est pas un الْتِفَاتٌ quand une autre personne parle (avec قَالَ), ni quand on parle d'une autre personne. La signature d'une lettre (صَدِيقُكَ بَاسِمٌ) est une formule, pas un الْتِفَاتٌ.",
+      "texte": "Ce n'est pas un الْتِفَاتٌ quand une autre personne parle (avec قَالَ, ou dans une lettre avec كَتَبَ), ni quand on parle d'une autre personne. La signature d'une lettre (صَدِيقُكَ بَاسِمٌ) est une formule, pas un الْتِفَاتٌ.",
       "exemples": [
         "قَالَ بَاسِمٌ: « أَنَا تَعِبٌ. »"
       ],
@@ -286,7 +285,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Réécris à une seule personne : « Ô étudiant, tu es fatigué ! » devient « l'étudiant est fatigué ».",
+          "consigne": "Réécris le passage à la 3e personne : la 2e phrase devient « l'étudiant est fatigué ».",
           "ar": "… تَعِبٌ.",
           "choix_ar": [
             "الطَّالِبُ",
@@ -400,7 +399,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Réécris à une seule personne : « Ô étudiant, tu es fatigué ! » devient « l'étudiant est fatigué ».",
+          "consigne": "Réécris le passage à la 3e personne : la 2e phrase devient « l'étudiant est fatigué ».",
           "ar": "… تَعِبٌ.",
           "choix_ar": [
             "الطَّالِبُ",
@@ -439,7 +438,7 @@
           "choix": [
             "de la même personne, à une autre personne grammaticale",
             "d'une autre personne",
-            "toujours de Dieu"
+            "de deux personnes à la fois"
           ],
           "reponse": 0,
           "explication": "Même personne, autre pronom."

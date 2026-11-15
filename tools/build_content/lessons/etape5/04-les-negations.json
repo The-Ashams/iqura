@@ -154,7 +154,7 @@
     {
       "type": "regle",
       "titre": "إِنْ de négation",
-      "texte": "إِنْ peut nier comme مَا, le plus souvent avec إِلَّا : إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ. Le plus souvent, si إِلَّا suit, c'est une négation ; si un verbe et une réponse suivent, c'est une condition.",
+      "texte": "إِنْ peut nier comme مَا, le plus souvent avec إِلَّا : إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ. En général, si إِلَّا suit, c'est une négation ; si un verbe et une réponse suivent, c'est une condition.",
       "exemples": [
         "إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ",
         "إِنْ بَاسِمٌ إِلَّا طَالِبٌ"
@@ -457,7 +457,7 @@
         },
         {
           "type": "qcm",
-          "consigne": "Si إِلَّا suit إِنْ, إِنْ est…",
+          "consigne": "En général, si إِلَّا suit إِنْ, إِنْ est…",
           "choix": [
             "une négation",
             "une condition",

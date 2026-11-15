@@ -10932,7 +10932,7 @@
     "ar": "إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ.",
     "fr": "Il n'y a dans la bourse qu'un dirham."
    },
-   "remarque": "sens nouveau : si إِلَّا suit, c'est une négation ; si un verbe et une réponse suivent, c'est une condition",
+   "remarque": "sens nouveau : le plus souvent, si إِلَّا suit, c'est une négation ; si un verbe et une réponse suivent, c'est une condition",
    "theme": "outils"
   },
   {
@@ -10987,6 +10987,79 @@
    },
    "remarque": "suit un passé nié ; pour l'avenir, on dit أَبَدًا",
    "theme": "temps"
+  },
+  {
+   "id": "taqdim_gram",
+   "ar": "تَقْدِيمٌ",
+   "translit": "taqdīmun",
+   "fr": "(grammaire) mise en tête",
+   "nature": "nom",
+   "lecon": "sens-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "qdm",
+   "exemple": {
+    "ar": "فِي « الرِّسَالَةَ كَتَبْتُ » تَقْدِيمٌ.",
+    "fr": "Dans « الرِّسَالَةَ كَتَبْتُ », il y a une mise en tête."
+   },
+   "remarque": "sens de grammaire du nom d'action de قَدَّمَ ; la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "takhir",
+   "ar": "تَأْخِيرٌ",
+   "translit": "taʾḫīrun",
+   "fr": "(grammaire) mise après",
+   "nature": "nom",
+   "lecon": "sens-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Axr",
+   "exemple": {
+    "ar": "التَّقْدِيمُ وَالتَّأْخِيرُ.",
+    "fr": "La mise en tête et la mise après."
+   },
+   "remarque": "même racine que تَأَخَّرَ ; la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "ihtimam",
+   "ar": "اهْتِمَامٌ",
+   "translit": "ihtimāmun",
+   "fr": "intérêt, attention qu'on porte",
+   "nature": "nom",
+   "lecon": "sens-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "hmm",
+   "exemple": {
+    "ar": "التَّقْدِيمُ لِلِاهْتِمَامِ.",
+    "fr": "La mise en tête marque l'attention qu'on porte au mot."
+   },
+   "remarque": "même racine que مُهِمٌّ ; la racine ne suffit pas pour le sens",
+   "theme": "savoir"
+  },
+  {
+   "id": "bad",
+   "ar": "بَعْضٌ",
+   "translit": "baʿḍun",
+   "fr": "une partie, quelques-uns",
+   "nature": "nom",
+   "lecon": "sens-05",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "baEoD",
+   "fige": true,
+   "formes": [
+    "بَعْضَ",
+    "بَعْضُ"
+   ],
+   "exemple": {
+    "ar": "حَفِظْتُ بَعْضَ الدُّرُوسِ.",
+    "fr": "J'ai appris une partie des leçons."
+   },
+   "remarque": "ici seulement بَعْضُ + nom concret défini",
+   "theme": "nombres"
   },
   {
    "id": "hadhf",
@@ -11141,79 +11214,6 @@
    },
    "remarque": "ici, terme de grammaire seulement ; dans le Coran, la racine a aussi un sens religieux : la racine ne suffit pas pour le sens",
    "theme": "ecriture"
-  },
-  {
-   "id": "taqdim_gram",
-   "ar": "تَقْدِيمٌ",
-   "translit": "taqdīmun",
-   "fr": "(grammaire) mise en tête",
-   "nature": "nom",
-   "lecon": "sens-05",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "qdm",
-   "exemple": {
-    "ar": "فِي « الرِّسَالَةَ كَتَبْتُ » تَقْدِيمٌ.",
-    "fr": "Dans « الرِّسَالَةَ كَتَبْتُ », il y a une mise en tête."
-   },
-   "remarque": "sens de grammaire du nom d'action de قَدَّمَ ; la racine ne suffit pas pour le sens",
-   "theme": "ecriture"
-  },
-  {
-   "id": "takhir",
-   "ar": "تَأْخِيرٌ",
-   "translit": "taʾḫīrun",
-   "fr": "(grammaire) mise après",
-   "nature": "nom",
-   "lecon": "sens-05",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "Axr",
-   "exemple": {
-    "ar": "التَّقْدِيمُ وَالتَّأْخِيرُ.",
-    "fr": "La mise en tête et la mise après."
-   },
-   "remarque": "même racine que تَأَخَّرَ ; la racine ne suffit pas pour le sens",
-   "theme": "ecriture"
-  },
-  {
-   "id": "ihtimam",
-   "ar": "اهْتِمَامٌ",
-   "translit": "ihtimāmun",
-   "fr": "intérêt, attention qu'on porte",
-   "nature": "nom",
-   "lecon": "sens-05",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "hmm",
-   "exemple": {
-    "ar": "التَّقْدِيمُ لِلِاهْتِمَامِ.",
-    "fr": "La mise en tête marque l'attention qu'on porte au mot."
-   },
-   "remarque": "même racine que مُهِمٌّ ; la racine ne suffit pas pour le sens",
-   "theme": "savoir"
-  },
-  {
-   "id": "bad",
-   "ar": "بَعْضٌ",
-   "translit": "baʿḍun",
-   "fr": "une partie, quelques-uns",
-   "nature": "nom",
-   "lecon": "sens-05",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "lemme": "baEoD",
-   "fige": true,
-   "formes": [
-    "بَعْضَ",
-    "بَعْضُ"
-   ],
-   "exemple": {
-    "ar": "حَفِظْتُ بَعْضَ الدُّرُوسِ.",
-    "fr": "J'ai appris une partie des leçons."
-   },
-   "remarque": "ici seulement بَعْضُ + nom concret défini",
-   "theme": "nombres"
   }
  ]
 }
