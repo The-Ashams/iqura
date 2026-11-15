@@ -340,7 +340,8 @@ class BuildTest(unittest.TestCase):
                          [("Le Désert des Lettres", "L'Oubli"),
                           ("L'Oasis des Fondations", "La Confusion"),
                           ("Les Montagnes du Moteur", "La Précipitation"),
-                      ("La Cité des Lecteurs", "La Distraction")])
+                      ("La Cité des Lecteurs", "La Distraction"),
+                      ("Les Jardins du Sens", "L'Impatience")])
         self.assertEqual(self.q("SELECT COUNT(*) FROM place WHERE region_id = 'r1'"), [(12,)])
         j1a = {r[0] for r in self.q("SELECT id FROM place WHERE in_j1a = 1 AND region_id = 'r1'")}
         self.assertEqual(len(j1a), 12)

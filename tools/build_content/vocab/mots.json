@@ -10649,6 +10649,97 @@
    },
    "remarque": "la racine ه و ي a d'autres emplois : la racine ne suffit pas pour le sens",
    "theme": "nature"
+  },
+  {
+   "id": "qasam",
+   "ar": "قَسَمٌ",
+   "translit": "qasamun",
+   "fr": "serment ; جَوَابُ الْقَسَمِ : la réponse du serment",
+   "nature": "nom",
+   "lecon": "sens-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "qasam",
+   "fige": true,
+   "formes": [
+    "الْقَسَمِ",
+    "قَسَمُ"
+   ],
+   "exemple": {
+    "ar": "قَسَمُ بَاسِمٍ صَادِقٌ.",
+    "fr": "Le serment de Bāsim est sincère."
+   },
+   "remarque": "la racine ق س م a d'autres emplois (partager) : la racine ne suffit pas pour le sens",
+   "theme": "parole"
+  },
+  {
+   "id": "aqsama",
+   "ar": "أَقْسَمَ",
+   "translit": "aqsama",
+   "fr": "jurer",
+   "nature": "verbe",
+   "lecon": "sens-01",
+   "source_sens": "rédigé par IA",
+   "passe": "أَقْسَمَ",
+   "inaccompli": "يُقْسِمُ",
+   "lemme": ">aqosamu",
+   "fige": true,
+   "formes": [
+    "أُقْسِمُ",
+    "أَقْسَمَتْ",
+    "أَقْسَمْتُ"
+   ],
+   "exemple": {
+    "ar": "أُقْسِمُ لَأَكْتُبَنَّ الرِّسَالَةَ غَدًا.",
+    "fr": "Je jure que j'écrirai la lettre demain."
+   },
+   "remarque": "forme IV ; ici, toujours suivi directement de la réponse du serment",
+   "theme": "parole"
+  },
+  {
+   "id": "halafa",
+   "ar": "حَلَفَ",
+   "translit": "ḥalafa",
+   "fr": "jurer",
+   "nature": "verbe",
+   "lecon": "sens-01",
+   "source_sens": "rédigé par IA",
+   "passe": "حَلَفَ",
+   "inaccompli": "يَحْلِفُ",
+   "lemme": "Halafo",
+   "fige": true,
+   "formes": [
+    "حَلَفَتْ",
+    "حَلَفْتُ",
+    "أَحْلِفُ"
+   ],
+   "exemple": {
+    "ar": "حَلَفْتُ لَا أَتَأَخَّرُ غَدًا.",
+    "fr": "J'ai juré de ne pas être en retard demain."
+   },
+   "remarque": "ici, toujours suivi directement de la réponse du serment",
+   "theme": "parole"
+  },
+  {
+   "id": "sadiq_sincere",
+   "ar": "صَادِقٌ",
+   "translit": "ṣādiqun",
+   "fr": "sincère, qui dit vrai",
+   "nature": "adjectif",
+   "lecon": "sens-01",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "SaAdiq",
+   "fige": true,
+   "formes": [
+    "صَادِقَةٌ"
+   ],
+   "exemple": {
+    "ar": "سَمِيرٌ صَادِقٌ.",
+    "fr": "Samīr est sincère."
+   },
+   "remarque": "même racine que صَدِيقٌ « ami » ; la racine ne suffit pas pour le sens",
+   "theme": "qualites"
   }
  ]
 }
