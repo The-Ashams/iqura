@@ -83,8 +83,8 @@
         },
         {
           "qui": "basim",
-          "ar": "تَكَلَّمَ عَنِ الطَّالِبِ، ثُمَّ كَلَّمَهُ!",
-          "fr": "Il a parlé de l'étudiant, puis il lui a parlé !"
+          "ar": "ذَكَرَ الطَّالِبَ، ثُمَّ كَلَّمَهُ!",
+          "fr": "Il a mentionné l'étudiant, puis il lui a parlé !"
         },
         {
           "qui": "hazim",
@@ -169,7 +169,7 @@
     {
       "type": "regle",
       "titre": "Ce qui n'est pas un iltifāt",
-      "texte": "Ce n'est pas un الْتِفَاتٌ quand une autre personne parle (avec قَالَ, ou dans une lettre avec كَتَبَ), ni quand on parle d'une autre personne. La signature d'une lettre (صَدِيقُكَ بَاسِمٌ) est une formule, pas un الْتِفَاتٌ.",
+      "texte": "Pas de الْتِفَاتٌ quand une autre personne parle (avec قَالَ, ou كَتَبَ avant une lettre : son auteur parle), ni quand on parle d'une autre personne. La signature d'une lettre (صَدِيقُكَ بَاسِمٌ) est une formule, pas un الْتِفَاتٌ.",
       "exemples": [
         "قَالَ بَاسِمٌ: « أَنَا تَعِبٌ. »"
       ],
@@ -205,7 +205,7 @@
             "d'un autre Bāsim"
           ],
           "reponse": 0,
-          "explication": "Bāsim parle de lui par son nom : de « je » à « il »."
+          "explication": "Bāsim parle de lui par son nom : de « je » à « il ». Dans la lettre, c'est un الْتِفَاتٌ."
         },
         {
           "type": "qcm",

@@ -9,7 +9,7 @@ Rapports de l'agent relecteur-arabe (résumés ; textes complets dans les transc
 | 5.3 La question qui affirme | 2 | Validé avec doutes | بَلَى jamais suivi de وَ ; gloses de تَقْرِيرٌ et إِنْكَارٌ |
 | 5.4 Les négations classiques | 2 | Validé avec doutes | question sans contexte sur إِنْ ; أَعْطَى non enseigné ; أَبَدًا retiré des distracteurs |
 | 5.5 L'ordre des mots | 2 | Validé avec doutes | ذَٰلِكَ ; écran « Le sujet en tête » ; distracteur « retard » |
-| 5.6 Les mots sous-entendus | voir fin | | ضَمِير employé trop tôt ; deux réponses justes ; règle « le contexte rend le sens certain » |
-| 5.7 Le changement de personne | voir fin | | nom divin retiré d'un choix du mini-boss ; كَلَّمَهُ |
+| 5.6 Les mots sous-entendus | 2 | Validé | ضَمِير employé trop tôt ; deux réponses justes ; règle « le contexte rend le sens certain » |
+| 5.7 Le changement de personne | 3 | Validé | nom divin retiré d'un choix du mini-boss ; ذَكَرَ الطَّالِبَ، ثُمَّ كَلَّمَهُ (au lieu de تَكَلَّمَ عَنْ, tournure moderne) ; règle sur la lettre précisée |
 
 Doutes gardés : لَا أُقْسِمُ montré seul (plan du conseiller) ; نَعَمْ après une question qui affirme ; سُؤَالُ / اسْتِفْهَامُ ; وَإِنْ… إِلَّا après une virgule (5.4) ; يَا أَيُّهَا الطَّالِبُ dans l'exemple d'iltifāt.
