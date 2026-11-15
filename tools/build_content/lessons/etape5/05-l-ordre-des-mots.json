@@ -26,7 +26,7 @@
         },
         {
           "qui": "hazim",
-          "texte": "Le cas, lui, ne change pas : c'est la place qui parle."
+          "texte": "On met en tête le mot qui nous intéresse le plus (اهْتِمَامٌ) ; son cas ne change pas."
         }
       ],
       "objectif": "Mettre un mot en tête."
@@ -147,7 +147,7 @@
           "J'écrirai la lettre."
         ],
         "reponse": 0,
-        "explication": "Complément mis en tête, toujours à l'accusatif."
+        "explication": "Le complément mis en tête garde son accusatif ; avec -u, il faudrait le reprendre par ـهَا : الرِّسَالَةُ كَتَبْتُهَا."
       }
     },
     {
@@ -155,12 +155,31 @@
       "titre": "Ce que tu connais déjà",
       "texte": "Tu connais déjà une mise en tête obligatoire : فِي الْكِيسِ دِرْهَمٌ (sujet indéfini placé après). Le sens exact d'une mise en tête dépend du contexte ; dans un texte réel, l'expliquer est le travail des commentateurs.",
       "exemples": [
-        "فِي الْكِيسِ دِرْهَمٌ",
-        "بَاسِمٌ كَتَبَ الرِّسَالَةَ"
+        "فِي الْكِيسِ دِرْهَمٌ"
       ],
       "question": {
         "type": "qcm",
-        "consigne": "بَاسِمٌ كَتَبَ الرِّسَالَةَ met en relief…",
+        "consigne": "Dans فِي الْكِيسِ دِرْهَمٌ, la mise en tête de فِي الْكِيسِ est…",
+        "choix": [
+          "obligatoire, car le sujet est indéfini",
+          "un choix pour insister",
+          "une faute"
+        ],
+        "reponse": 0,
+        "explication": "Sujet indéfini : il vient après."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le sujet en tête",
+      "texte": "Le sujet peut aussi venir en tête : بَاسِمٌ كَتَبَ الرِّسَالَةَ, « c'est Bāsim qui a écrit ». Il devient le مُبْتَدَأٌ, reste au nominatif, et le verbe s'accorde en tout avec lui (الطُّلَّابُ كَتَبُوا).",
+      "exemples": [
+        "بَاسِمٌ كَتَبَ الرِّسَالَةَ",
+        "كَتَبَ بَاسِمٌ الرِّسَالَةَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "En réponse à « Qui a écrit la lettre ? », بَاسِمٌ كَتَبَ الرِّسَالَةَ met en relief…",
         "choix": [
           "Bāsim (c'est lui qui a écrit)",
           "la lettre",
@@ -177,7 +196,7 @@
       "phrases": [
         "قَالَ حَازِمٌ: « مَنْ كَتَبَ الرِّسَالَةَ؟ »",
         "قَالَ سَمِيرٌ: « بَاسِمٌ كَتَبَ الرِّسَالَةَ، لَا أَنَا. »",
-        "قَالَ بَاسِمٌ: « نَعَمْ، وَإِلَى السُّوقِ ذَهَبْتُ بَعْدَ ذَلِكَ، لَا إِلَى الْمَدْرَسَةِ. »",
+        "قَالَ بَاسِمٌ: « نَعَمْ، وَإِلَى السُّوقِ ذَهَبْتُ بَعْدَ ذَٰلِكَ، لَا إِلَى الْمَدْرَسَةِ. »",
         "قَالَ حَازِمٌ: « وَهَلْ حَفِظْتَ الدُّرُوسَ؟ » قَالَ: « حَفِظْتُ بَعْضَ الدُّرُوسِ. »"
       ],
       "questions": [
@@ -318,7 +337,7 @@
             "الرِّسَالَةَ",
             "كَتَبْتُ"
           ],
-          "explication": "Le complément en tête, à l'accusatif."
+          "explication": "Le complément en tête garde l'accusatif ; avec -u, il faudrait الرِّسَالَةُ كَتَبْتُهَا."
         },
         {
           "type": "completer",
@@ -355,7 +374,7 @@
           "choix": [
             "(grammaire) mise après",
             "(grammaire) mise en tête",
-            "retard"
+            "(grammaire) restriction"
           ],
           "reponse": 0,
           "explication": "تَأْخِيرٌ veut dire « (grammaire) mise après »."

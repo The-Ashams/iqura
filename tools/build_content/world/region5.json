@@ -80,7 +80,9 @@
         120,
         26
       ],
-      "lecons": [],
+      "lecons": [
+        7
+      ],
       "scene": "scene_pavillon_voix",
       "sol": 84,
       "tranche_j1a": true,
