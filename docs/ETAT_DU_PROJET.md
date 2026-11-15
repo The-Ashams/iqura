@@ -219,6 +219,19 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Tests | Les 28 leçons de la région 4 et l'examen de la région 4 joués de bout en bout ; tests « écrire » et « lecture sans voyelles » |
 | À faire | Test de l'utilisateur quand il le souhaite ; ensuite Classique avancé 1 (leçons 5.1 à 5.7, région 5) |
 
+## 1 sexdecies. Niveau Classique avancé 1 (leçons 5.1 à 5.7, région 5 « Les Jardins du Sens », chapitre A, 15/11/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Monde | Région 5 : la Porte des Jardins (5.1, 5.2), la Fontaine des Questions (5.3, 5.4), le Verger de l'Ordre (5.5, 5.6), le Pavillon des Voix (5.7), la Clairière de l'Impatience (révisions ; examen final au niveau Classique avancé 3) ; maître Ḥāzim ; carte, décors et sprite de l'Impatience en pixel art ; proposition `docs/PROPOSITION_REGION_5.md` à valider |
+| Leçons | `tools/build_content/lessons/etape5/01` à `07` (sens-01 à sens-07) : serments (verbe + réponse), إِنَّمَا / كَلَّا / بَلَى / أَلَا, question qui affirme (أَ, أَلَمْ, أَلَيْسَ), négations (لَمَّا « pas encore », إِنْ, لَمَا, قَطُّ), mise en tête, mots sous-entendus, changement de personne ; environ 33 mots nouveaux, tous les exemples construits |
+| Application | Écran « formule » (règle sans question, mots seuls) ; moteur de translittération : alif de liaison devant une lettre solaire (الْتِفَاتٌ → iltifātun) |
+| Pipeline | Garde-fou du serment par Dieu : وَاللَّهِ, تَاللَّهِ, بِاللَّهِ seulement sur l'écran « formule » de 5.1 ; لَا أُقْسِمُ jamais suivi d'un mot |
+| Plan et décisions | `docs/relectures/decisions-classique-avance-1.md` ; décision de l'utilisateur du 15/11/2026 (serment par Dieu) au cahier §16 |
+| Relecture | `docs/relectures/2026-11-15-classique-avance-1.md` |
+| Tests | Les 7 leçons jouées de bout en bout ; tests du moteur de translittération |
+| À faire | Test de l'utilisateur quand il le souhaite ; ensuite Classique avancé 2 (leçons 5.8 à 5.13) |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -281,7 +294,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 13. Intermédiaire 3 construit et relu (§1 terdecies) : toute la région 3 est prête à tester.
 14. Avancé 1 construit et relu (§1 quaterdecies).
 15. Avancé 2 construit et relu (§1 quindecies) : toute la région 4 est prête à tester.
-16. Suivant : Classique avancé 1 (leçons 5.1 à 5.7, région 5).
+16. Classique avancé 1 construit et relu (§1 sexdecies).
+17. Suivant : Classique avancé 2 (leçons 5.8 à 5.13).
 
 ## 5. Problèmes connus
 
