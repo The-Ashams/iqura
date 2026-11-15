@@ -10740,6 +10740,102 @@
    },
    "remarque": "même racine que صَدِيقٌ « ami » ; la racine ne suffit pas pour le sens",
    "theme": "qualites"
+  },
+  {
+   "id": "innama",
+   "ar": "إِنَّمَا",
+   "translit": "innamā",
+   "fr": "ne… que, seulement",
+   "nature": "particule",
+   "lecon": "sens-02",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "إِنَّمَا بَاسِمٌ طَالِبٌ.",
+    "fr": "Bāsim n'est qu'un étudiant."
+   },
+   "remarque": "إِنَّ + مَا : مَا annule l'effet de إِنَّ, le nom qui suit est au nominatif",
+   "theme": "outils"
+  },
+  {
+   "id": "kalla",
+   "ar": "كَلَّا",
+   "translit": "kallā",
+   "fr": "non ! pas du tout",
+   "nature": "particule",
+   "lecon": "sens-02",
+   "source_sens": "rédigé par IA",
+   "lemme": "kal~aA",
+   "exemple": {
+    "ar": "هَلْ نَسِيتَ الْمِفْتَاحَ؟ كَلَّا، الْمِفْتَاحُ فِي الْكِيسِ.",
+    "fr": "As-tu oublié la clé ? Pas du tout, elle est dans la bourse."
+   },
+   "remarque": "rejette fortement ce qui vient d'être dit ; certains grammairiens lui donnent aussi un autre sens, non enseigné ici",
+   "theme": "outils"
+  },
+  {
+   "id": "bala",
+   "ar": "بَلَى",
+   "translit": "balā",
+   "fr": "si ! (contre une négation)",
+   "nature": "particule",
+   "lecon": "sens-02",
+   "source_sens": "rédigé par IA",
+   "lemme": "balaY`",
+   "exemple": {
+    "ar": "لَمْ يَكْتُبْ سَمِيرٌ الرِّسَالَةَ؟ بَلَى، كَتَبَهَا أَمْسِ.",
+    "fr": "Samīr n'a pas écrit la lettre ? Si, il l'a écrite hier."
+   },
+   "remarque": "annule une négation ; après une négation, نَعَمْ la confirme",
+   "theme": "outils"
+  },
+  {
+   "id": "ala_tanbih",
+   "ar": "أَلَا",
+   "translit": "alā",
+   "fr": "(attire l'attention) eh bien !",
+   "nature": "particule",
+   "lecon": "sens-02",
+   "source_sens": "rédigé par IA",
+   "lemme": ">alaA^",
+   "exemple": {
+    "ar": "أَلَا إِنَّ الْقَافِلَةَ قَدْ وَصَلَتْ.",
+    "fr": "Eh bien ! La caravane est arrivée."
+   },
+   "remarque": "en tête de phrase ; à ne pas confondre avec أَلَّا (أَنْ + لَا) ni avec إِلَّا",
+   "theme": "outils"
+  },
+  {
+   "id": "hasr",
+   "ar": "حَصْرٌ",
+   "translit": "ḥaṣrun",
+   "fr": "(grammaire) restriction",
+   "nature": "nom",
+   "lecon": "sens-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "HSr",
+   "exemple": {
+    "ar": "إِنَّمَا أَدَاةُ حَصْرٍ.",
+    "fr": "إِنَّمَا est un outil de restriction."
+   },
+   "remarque": "sens de grammaire ; la racine ح ص ر a d'autres emplois : la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "tanbih",
+   "ar": "تَنْبِيهٌ",
+   "translit": "tanbīhun",
+   "fr": "(grammaire) appel à l'attention",
+   "nature": "nom",
+   "lecon": "sens-02",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "أَلَا حَرْفُ تَنْبِيهٍ.",
+    "fr": "أَلَا est une particule d'appel à l'attention."
+   },
+   "remarque": "sens de grammaire",
+   "theme": "ecriture"
   }
  ]
 }
