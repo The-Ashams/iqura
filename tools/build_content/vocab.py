@@ -238,6 +238,25 @@ def known_keys(word: dict) -> set[str]:
     return keys
 
 
+# Serment par Dieu (décision de l'utilisateur du 15/11/2026) : seulement sur
+# l'écran « formule » de 5.1, chaque mot seul ; nulle part ailleurs. لَا أُقْسِمُ
+# n'est jamais suivi d'un autre mot ni précédé de فَـ.
+SACRED_OATHS = {"والله", "تالله", "بالله"}
+
+
+def sacred_oath(text: str) -> str | None:
+    """Raison du refus si `text` contient un serment par Dieu ou une suite de
+    لَا أُقْسِمُ ; None sinon."""
+    keys = [key(t) for t in tokens(text)]
+    for i, k in enumerate(keys):
+        if k in SACRED_OATHS:
+            return f"serment par Dieu « {tokens(text)[i]} » hors de l'écran prévu"
+        if k == "اقسم" and i > 0 and keys[i - 1] in ("لا", "فلا"):
+            if keys[i - 1] == "فلا" or i + 1 < len(keys):
+                return "« لَا أُقْسِمُ » suivi d'un mot ou précédé de فَـ"
+    return None
+
+
 def tokens(text: str) -> list[str]:
     return [t for t in PUNCT.sub(" ", text).split() if quran_guard.words_of(t)]
 

@@ -38,7 +38,9 @@
         80,
         46
       ],
-      "lecons": [],
+      "lecons": [
+        3
+      ],
       "scene": "scene_fontaine_questions",
       "sol": 80,
       "tranche_j1a": true,

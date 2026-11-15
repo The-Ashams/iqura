@@ -1,0 +1,529 @@
+{
+  "id": "sens-03",
+  "etape": 5,
+  "ordre": 3,
+  "format": 3,
+  "titre": "La question qui affirme",
+  "objectif": "Poser une question avec أَ ; reconnaître une question qui affirme, qui reproche ou qui nie.",
+  "statut": "ia_non_verifie",
+  "lieu": "fontaine_questions",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-02"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ",
+    "سُؤَالُ",
+    "أَمْ",
+    "أَكَتَبْتَ",
+    "أَلَمْ",
+    "أَلَيْسَ",
+    "أَتُسَافِرُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "texte": "Assieds-toi près de la fontaine. Certaines questions ne demandent rien : elles affirment, ou elles reprochent."
+        },
+        {
+          "qui": "hazim",
+          "texte": "C'est le contexte qui le dit ; ici, je te le donnerai toujours en français."
+        }
+      ],
+      "objectif": "Reconnaître les questions qui affirment."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Est-ce que tu as écrit la lettre ? »",
+          "ar": "… كَتَبْتَ الرِّسَالَةَ؟",
+          "choix_ar": [
+            "هَلْ",
+            "مَا",
+            "لَا"
+          ],
+          "reponse": 0,
+          "explication": "La question simple : هَلْ, vue en région 2."
+        },
+        {
+          "type": "completer",
+          "consigne": "Réponds « si » à « Tu n'as pas compris ? »",
+          "ar": "…، فَهِمْتُ.",
+          "choix_ar": [
+            "بَلَى",
+            "نَعَمْ",
+            "كَلَّا"
+          ],
+          "reponse": 0,
+          "explication": "بَلَى annule la négation, vu juste avant."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chemin n'est pas long. »",
+          "ar": "لَيْسَ الطَّرِيقُ …",
+          "choix_ar": [
+            "طَوِيلًا",
+            "طَوِيلٌ",
+            "طَوِيلٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَيْسَ : attribut à l'accusatif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "ar": "أَكَتَبْتَ الرِّسَالَةَ يَا بَاسِمُ؟",
+          "fr": "As-tu écrit la lettre, Bāsim ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "نَعَمْ، كَتَبْتُهَا.",
+          "fr": "Oui, je l'ai écrite."
+        },
+        {
+          "qui": "hazim",
+          "ar": "أَلَمْ أَكْتُبْ لَكَ رِسَالَةً أَمْسِ؟",
+          "fr": "Ne t'ai-je pas écrit une lettre hier ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "بَلَى، وَقِصَّتُهَا عَجِيبَةٌ!",
+          "fr": "Si, et son histoire est étonnante !"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "La question « أَلَمْ أَكْتُبْ لَكَ رِسَالَةً أَمْسِ؟ » veut dire que Ḥāzim…",
+        "choix": [
+          "a bien écrit une lettre hier",
+          "n'a pas écrit de lettre",
+          "veut écrire une lettre"
+        ],
+        "reponse": 0,
+        "explication": "Question qui affirme : la réponse attendue est بَلَى."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "hamza_q",
+        "taqrir",
+        "inkar",
+        "ajib"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "عَجِيبٌ",
+        "choix": [
+          "étonnant",
+          "difficile",
+          "ancien"
+        ],
+        "reponse": 0,
+        "explication": "عَجِيبٌ veut dire « étonnant »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La question avec أَ",
+      "texte": "أَ, collé au premier mot, pose une question comme هَلْ : أَكَتَبْتَ الرِّسَالَةَ؟ Avec لَمْ ou لَيْسَ, il forme أَلَمْ (avec le jussif) et أَلَيْسَ ; on y répond بَلَى (« si ») ou نَعَمْ (« non, en effet »).",
+      "exemples": [
+        "أَكَتَبْتَ الرِّسَالَةَ؟",
+        "أَلَمْ تَفْهَمِ الدَّرْسَ؟",
+        "أَلَيْسَ الطَّرِيقُ طَوِيلًا؟"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "« أَلَمْ تَفْهَمِ الدَّرْسَ؟ » Tu as compris : tu réponds…",
+        "choix_ar": [
+          "بَلَى",
+          "نَعَمْ",
+          "كَلَّا"
+        ],
+        "reponse": 0,
+        "explication": "Après une question négative, « si » : بَلَى."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Questions qui ne demandent rien",
+      "texte": "Selon le contexte, une question peut affirmer (أَلَمْ, أَلَيْسَ : تَقْرِيرٌ), reprocher (إِنْكَارٌ) ou nier (هَلْ suivi de إِلَّا : « rien d'autre que »). C'est le contexte qui décide.",
+      "exemples": [
+        "أَتُسَافِرُ وَالْبَرْدُ شَدِيدٌ؟",
+        "هَلْ فِي الْكِيسِ إِلَّا دِرْهَمٌ؟"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "« هَلْ فِي الْكِيسِ إِلَّا دِرْهَمٌ؟ » veut dire…",
+        "choix": [
+          "il n'y a qu'un dirham dans la bourse",
+          "y a-t-il un dirham dans la bourse ?",
+          "il y a beaucoup de dirhams"
+        ],
+        "reponse": 0,
+        "explication": "هَلْ suivi de إِلَّا : « rien d'autre que »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Proposer poliment",
+      "texte": "أَلَا suivi d'un inaccompli à la 2e personne propose poliment : أَلَا تَجْلِسُ مَعَنَا؟ « ne veux-tu pas t'asseoir avec nous ? »",
+      "exemples": [
+        "أَلَا تَجْلِسُ مَعَنَا؟"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "أَلَا تَجْلِسُ مَعَنَا؟ est…",
+        "choix": [
+          "une invitation polie",
+          "un reproche",
+          "une négation"
+        ],
+        "reponse": 0,
+        "explication": "أَلَا + inaccompli : proposer."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "À la fontaine",
+      "texte": "Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "قَالَ سَمِيرٌ: « أُسَافِرُ الْيَوْمَ. »",
+        "قَالَ حَازِمٌ: « أَتُسَافِرُ وَالْبَرْدُ شَدِيدٌ؟ أَلَيْسَ الطَّرِيقُ طَوِيلًا؟ »",
+        "قَالَ سَمِيرٌ: « بَلَى، وَلَٰكِنْ هَلْ فِي الْكِيسِ إِلَّا دِرْهَمٌ؟ »",
+        "قَالَ حَازِمٌ: « أَلَا تَجْلِسُ مَعَنَا الْيَوْمَ، وَتُسَافِرُ غَدًا؟ »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que reproche Ḥāzim à Samīr ?",
+          "choix": [
+            "de partir par grand froid",
+            "d'être en retard",
+            "d'avoir oublié la clé"
+          ],
+          "reponse": 0,
+          "explication": "أَتُسَافِرُ وَالْبَرْدُ شَدِيدٌ؟"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que propose Ḥāzim à la fin ?",
+          "choix": [
+            "rester aujourd'hui et partir demain",
+            "partir tout de suite",
+            "acheter du papier"
+          ],
+          "reponse": 0,
+          "explication": "أَلَا تَجْلِسُ مَعَنَا الْيَوْمَ، وَتُسَافِرُ غَدًا؟"
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَقْرِيرٌ",
+          "choix": [
+            "(grammaire) question qui fait reconnaître, qui affirme",
+            "(grammaire) question de reproche, de désapprobation",
+            "(grammaire) restriction"
+          ],
+          "reponse": 0,
+          "explication": "تَقْرِيرٌ veut dire « (grammaire) question qui fait reconnaître, qui affirme »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِنْكَارٌ",
+          "choix": [
+            "(grammaire) question de reproche, de désapprobation",
+            "(grammaire) question qui fait reconnaître, qui affirme",
+            "(grammaire) appel à l'attention"
+          ],
+          "reponse": 0,
+          "explication": "إِنْكَارٌ veut dire « (grammaire) question de reproche, de désapprobation »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « As-tu écrit la lettre ? »",
+          "ar": "… الرِّسَالَةَ؟",
+          "choix_ar": [
+            "أَكَتَبْتَ",
+            "كَتَبْتَ أَ",
+            "أَكْتُبُ"
+          ],
+          "reponse": 0,
+          "explication": "أَ se colle au premier mot."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « N'as-tu pas compris la leçon ? »",
+          "ar": "أَلَمْ … الدَّرْسَ؟",
+          "choix_ar": [
+            "تَفْهَمِ",
+            "تَفْهَمُ",
+            "فَهِمْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَلَمْ : jussif (kasra de liaison devant l'article)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chemin n'est-il pas long ? »",
+          "ar": "أَلَيْسَ الطَّرِيقُ …",
+          "choix_ar": [
+            "طَوِيلًا",
+            "طَوِيلٌ",
+            "طَوِيلٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَلَيْسَ : attribut à l'accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Réponds « non, en effet » à « N'as-tu pas faim ? »",
+          "ar": "…، لَسْتُ جَائِعًا.",
+          "choix_ar": [
+            "نَعَمْ",
+            "بَلَى",
+            "كَلَّا"
+          ],
+          "reponse": 0,
+          "explication": "Après une question négative, نَعَمْ confirme la négation."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Ne veux-tu pas t'asseoir avec nous ? » ?",
+          "choix_ar": [
+            "أَلَا تَجْلِسُ مَعَنَا؟",
+            "أَلَّا تَجْلِسُ مَعَنَا؟",
+            "إِلَّا تَجْلِسُ مَعَنَا؟"
+          ],
+          "reponse": 0,
+          "explication": "Proposer poliment : أَلَا + inaccompli."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le sens « qui affirme » d'une question se devine…",
+          "choix": [
+            "par le contexte",
+            "par la première lettre",
+            "toujours, sans contexte"
+          ],
+          "reponse": 0,
+          "explication": "C'est le contexte qui décide."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Ne t'ai-je pas écrit une lettre hier ? » ?",
+          "choix_ar": [
+            "أَلَمْ أَكْتُبْ لَكَ رِسَالَةً أَمْسِ؟",
+            "أَلَمْ أَكْتُبُ لَكَ رِسَالَةً أَمْسِ؟",
+            "أَلَا أَكْتُبُ لَكَ رِسَالَةً أَمْسِ؟"
+          ],
+          "reponse": 0,
+          "explication": "أَلَمْ + jussif : أَكْتُبْ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre, en commençant par أَلَيْسَ : « Le chemin n'est-il pas long ? »",
+          "tuiles": [
+            "طَوِيلًا",
+            "الطَّرِيقُ",
+            "أَلَيْسَ",
+            "طَوِيلٌ"
+          ],
+          "solution": [
+            "أَلَيْسَ",
+            "الطَّرِيقُ",
+            "طَوِيلًا"
+          ],
+          "explication": "أَلَيْسَ, le sujet, puis l'attribut à l'accusatif."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Transforme en questions qui affirment : « Tu as compris la leçon », « Tu as écrit la lettre » et « Le chemin est long ».",
+          "modele": [
+            "أَلَمْ تَفْهَمِ الدَّرْسَ؟",
+            "أَلَمْ تَكْتُبِ الرِّسَالَةَ؟",
+            "أَلَيْسَ الطَّرِيقُ طَوِيلًا؟"
+          ],
+          "explication": "Compare : أَلَمْ + jussif, أَلَيْسَ + attribut à l'accusatif ; la réponse attendue est بَلَى."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَ",
+          "choix": [
+            "est-ce que ? (collé au premier mot)",
+            "eh bien !",
+            "si ! (contre une négation)"
+          ],
+          "reponse": 0,
+          "explication": "أَ veut dire « est-ce que ? (collé au premier mot) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَجِيبٌ",
+          "choix": [
+            "étonnant",
+            "sincère, qui dit vrai",
+            "ancien"
+          ],
+          "reponse": 0,
+          "explication": "عَجِيبٌ veut dire « étonnant »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « N'as-tu pas écrit la lettre ? »",
+          "ar": "أَلَمْ … الرِّسَالَةَ؟",
+          "choix_ar": [
+            "تَكْتُبِ",
+            "تَكْتُبُ",
+            "كَتَبْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَلَمْ : jussif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Réponds « si » à « Le chemin n'est-il pas long ? »",
+          "ar": "…",
+          "choix_ar": [
+            "بَلَى",
+            "نَعَمْ",
+            "كَلَّا"
+          ],
+          "reponse": 0,
+          "explication": "بَلَى : « si »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ne veux-tu pas t'asseoir avec nous ? »",
+          "ar": "… تَجْلِسُ مَعَنَا؟",
+          "choix_ar": [
+            "أَلَا",
+            "أَلَّا",
+            "إِلَّا"
+          ],
+          "reponse": 0,
+          "explication": "Proposer : أَلَا."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « L'histoire du marchand est étonnante. » ?",
+          "choix_ar": [
+            "قِصَّةُ التَّاجِرِ عَجِيبَةٌ.",
+            "قِصَّةُ التَّاجِرِ عَجِيبٌ.",
+            "قِصَّةَ التَّاجِرِ عَجِيبَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "Attribut féminin au nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "« أَتُسَافِرُ وَالْبَرْدُ شَدِيدٌ؟ » est surtout…",
+          "choix": [
+            "un reproche",
+            "une vraie question sur le voyage",
+            "un serment"
+          ],
+          "reponse": 0,
+          "explication": "Question de reproche : إِنْكَارٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après une question négative, نَعَمْ veut dire…",
+          "choix": [
+            "« non, en effet »",
+            "« si »",
+            "« pas du tout »"
+          ],
+          "reponse": 0,
+          "explication": "نَعَمْ confirme la négation."
+        },
+        {
+          "type": "qcm",
+          "consigne": "هَلْ suivi de إِلَّا veut dire…",
+          "choix": [
+            "rien d'autre que",
+            "est-ce que",
+            "jamais"
+          ],
+          "reponse": 0,
+          "explication": "Question qui nie."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَلَّا",
+          "choix": [
+            "non ! pas du tout",
+            "si ! (contre une négation)",
+            "eh bien !"
+          ],
+          "reponse": 0,
+          "explication": "كَلَّا veut dire « non ! pas du tout ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim n'est qu'un étudiant. »",
+          "ar": "إِنَّمَا بَاسِمٌ …",
+          "choix_ar": [
+            "طَالِبٌ",
+            "طَالِبًا",
+            "طَالِبٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après إِنَّمَا : nominatif.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَلَفَ",
+          "choix": [
+            "jurer",
+            "promettre",
+            "partager"
+          ],
+          "reponse": 0,
+          "explication": "حَلَفَ veut dire « jurer ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu poses une question avec أَ, tu reconnais أَلَمْ et أَلَيْسَ, et tu sais qu'une question peut affirmer, reprocher ou nier selon le contexte.",
+      "suite": "Prochaine leçon : les négations classiques."
+    }
+  ]
+}

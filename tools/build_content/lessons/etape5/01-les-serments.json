@@ -15,9 +15,6 @@
     "حَازِمٌ",
     "بَاسِمٌ",
     "سَمِيرٌ",
-    "وَاللَّهِ",
-    "تَاللَّهِ",
-    "لَا أُقْسِمُ",
     "جَوَابُ الْقَسَمِ"
   ],
   "ecrans": [
@@ -45,7 +42,7 @@
           "choix_ar": [
             "لَأَكْتُبَنَّ",
             "لَأَكْتُبُ",
-            "لَكَتَبْتُ"
+            "فَكَتَبْتُ"
           ],
           "reponse": 0,
           "explication": "Promesse ferme : لَـ + inaccompli + ـَنَّ (leçon 4.12)."
@@ -131,7 +128,7 @@
     {
       "type": "regle",
       "titre": "Les trois parties d'un serment",
-      "texte": "Un serment a trois parties : l'outil (وَ, بِـ, تَ, suivis du génitif) ou un verbe (أُقْسِمُ, حَلَفْتُ) ; ce par quoi l'on jure ; et la réponse, جَوَابُ الْقَسَمِ. Ici, on n'écrit jamais la deuxième partie.",
+      "texte": "Trois parties : l'outil (وَ, بِـ, تَ, avec le génitif) ou un verbe (أُقْسِمُ, حَلَفْتُ) ; ce par quoi l'on jure ; la réponse, جَوَابُ الْقَسَمِ. Ici, la deuxième partie n'est pas écrite (sauf « par Dieu », plus loin).",
       "exemples": [
         "أُقْسِمُ لَأَكْتُبَنَّ الرِّسَالَةَ"
       ],
@@ -171,41 +168,21 @@
     {
       "type": "regle",
       "titre": "Le serment par Dieu",
-      "texte": "Les deux mots ci-dessous veulent dire « par Dieu » ; fait de grammaire, le تَ de serment ne s'emploie, sauf rares exceptions, qu'avec le nom de Dieu. Pour savoir quand et comment jurer, on se renvoie aux savants.",
+      "texte": "Les deux mots ci-dessous veulent dire « par Dieu » ; fait de grammaire, le تَ de serment ne s'emploie, sauf rares exceptions, qu'avec le nom de Dieu. Pour savoir quand et comment jurer, IQURA renvoie aux savants.",
+      "formule": true,
       "exemples": [
         "وَاللَّهِ",
         "تَاللَّهِ"
-      ],
-      "question": {
-        "type": "qcm",
-        "consigne": "Avec quel nom le تَ de serment s'emploie-t-il ?",
-        "choix": [
-          "le nom de Dieu, sauf rares exceptions",
-          "n'importe quel nom",
-          "un verbe"
-        ],
-        "reponse": 0,
-        "explication": "C'est un fait de grammaire."
-      }
+      ]
     },
     {
       "type": "regle",
       "titre": "Une tournure solennelle",
       "texte": "لَا أُقْسِمُ est une tournure solennelle de l'arabe classique, à reconnaître seulement. Les grammairiens ont proposé plusieurs analyses de ce لَا ; IQURA ne choisit pas et renvoie aux ouvrages et aux savants.",
+      "formule": true,
       "exemples": [
         "لَا أُقْسِمُ"
-      ],
-      "question": {
-        "type": "qcm",
-        "consigne": "Que fait IQURA de la tournure لَا أُقْسِمُ ?",
-        "choix": [
-          "il la fait reconnaître, sans choisir d'analyse",
-          "il l'explique avec certitude",
-          "il la fait employer dans des phrases"
-        ],
-        "reponse": 0,
-        "explication": "Plusieurs analyses existent : on renvoie aux savants."
-      }
+      ]
     },
     {
       "type": "lecture",
@@ -299,7 +276,7 @@
           "ar": "حَلَفَ بَاسِمٌ … الدَّرْسَ.",
           "choix_ar": [
             "لَيَحْفَظَنَّ",
-            "لَحَفِظَ",
+            "فَحَفِظَ",
             "فَيَحْفَظُ"
           ],
           "reponse": 0,
@@ -404,20 +381,20 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Je jure que j'écrirai la lettre. »",
-          "ar": "أُقْسِمُ … الرِّسَالَةَ.",
+          "consigne": "Complète la réponse du serment : « que j'écrirai la lettre »",
+          "ar": "… الرِّسَالَةَ.",
           "choix_ar": [
             "لَأَكْتُبَنَّ",
             "فَأَكْتُبُ",
             "كَتَبْتُ"
           ],
           "reponse": 0,
-          "explication": "Futur affirmatif : لَـ…ـَنَّ."
+          "explication": "Futur affirmatif : لَـ, l'inaccompli et ـَنَّ."
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Je jure que la caravane est bien arrivée. »",
-          "ar": "أُقْسِمُ … وَصَلَتِ الْقَافِلَةُ.",
+          "consigne": "Complète la réponse du serment : « que la caravane est bien arrivée »",
+          "ar": "… وَصَلَتِ الْقَافِلَةُ.",
           "choix_ar": [
             "لَقَدْ",
             "فَقَدْ",
@@ -428,8 +405,8 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « J'ai juré de ne pas être en retard. »",
-          "ar": "حَلَفْتُ … أَتَأَخَّرُ.",
+          "consigne": "Complète la réponse du serment : « de ne pas être en retard »",
+          "ar": "… أَتَأَخَّرُ.",
           "choix_ar": [
             "لَا",
             "فَلَا",
@@ -462,25 +439,25 @@
         },
         {
           "type": "qcm",
-          "consigne": "Le تَ de serment s'emploie…",
-          "choix": [
-            "avec le nom de Dieu, sauf rares exceptions",
-            "avec tous les noms",
-            "avec un verbe"
+          "consigne": "Au passé négatif, la réponse du serment prend…",
+          "choix_ar": [
+            "مَا",
+            "لَمْ",
+            "فَمَا"
           ],
           "reponse": 0,
-          "explication": "Fait de grammaire."
+          "explication": "Passé négatif : مَا + passé."
         },
         {
           "type": "qcm",
-          "consigne": "لَا أُقْسِمُ est…",
-          "choix": [
-            "une tournure solennelle, à reconnaître",
-            "une faute",
-            "une négation simple, à employer partout"
+          "consigne": "Quel mot ouvre un serment sans complément ?",
+          "choix_ar": [
+            "أُقْسِمُ",
+            "لَقَدْ",
+            "إِنَّ"
           ],
           "reponse": 0,
-          "explication": "On la reconnaît ; les analyses varient."
+          "explication": "Le verbe de serment, suivi de la réponse."
         },
         {
           "type": "sens",

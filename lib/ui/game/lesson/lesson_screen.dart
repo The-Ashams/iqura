@@ -381,17 +381,21 @@ class _ExplainViewState extends ConsumerState<_ExplainView> {
                         ),
                     ],
                   ),
-                  ConstructedExampleTag(color: GameColors.muted),
+                  if (!s.formula)
+                    ConstructedExampleTag(color: GameColors.muted),
                 ],
               ],
             ),
           ),
         const SizedBox(height: 12),
-        QuestionView(
-          question: s.question,
-          onContinue: widget.onNext,
-          random: widget.random,
-        ),
+        if (s.question != null)
+          QuestionView(
+            question: s.question!,
+            onContinue: widget.onNext,
+            random: widget.random,
+          )
+        else
+          PixelCommand(label: 'Suite', onPressed: widget.onNext),
       ],
     );
   }

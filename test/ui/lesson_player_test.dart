@@ -198,6 +198,8 @@ Future<bool> playLesson(
         } else {
           await tapOn(tester, find.text('Suite'));
         }
+      case ExplainStep(question: null):
+        await tapOn(tester, find.text('Suite'));
       case ExplainStep() || DialogueStep() || WordsStep():
         await answer(tester);
       case PracticeStep():
@@ -270,7 +272,7 @@ void main() {
     for (var i = 1; i <= 30; i++) 'fondations-${i.toString().padLeft(2, '0')}',
     for (var i = 1; i <= 32; i++) 'moteur-${i.toString().padLeft(2, '0')}',
     for (var i = 1; i <= 28; i++) 'cite-${i.toString().padLeft(2, '0')}',
-    for (var i = 1; i <= 2; i++) 'sens-${i.toString().padLeft(2, '0')}',
+    for (var i = 1; i <= 3; i++) 'sens-${i.toString().padLeft(2, '0')}',
   ]) {
     testWidgets('$id : jouée de bout en bout, la leçon suivante s’ouvre', (
       tester,

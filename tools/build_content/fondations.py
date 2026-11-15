@@ -64,6 +64,9 @@ def validate(lesson: dict, *, check_ar, known_keys: set[str], lesson_words: list
         return t in apercu or t in schemes or len(vocab.key(t)) == 1
 
     def ar(text: str, here: str, all_known: bool = True) -> None:
+        why = vocab.sacred_oath(text)
+        if why:
+            raise LessonError(f"{here} : {why}")
         if text in apercu:
             return
         check_ar(text)
@@ -130,6 +133,19 @@ def validate(lesson: dict, *, check_ar, known_keys: set[str], lesson_words: list
                     raise LessonError(f"{here} : {wid} n'est pas un mot introduit par cette leçon")
             presented |= set(ids)
             question(s["question"], here)
+        elif t == "regle" and s.get("formule"):
+            # Formule sacrée ou tournure à reconnaître seulement (5.1, décision
+            # du 15/11/2026) : mots seuls, sans question, ni carte, ni combat.
+            check_short(s["texte"], "règle", here)
+            if "question" in s:
+                raise LessonError(f"{here} : écran « formule » sans question attendu")
+            ex = s.get("exemples", [])
+            if not ex:
+                raise LessonError(f"{here} : écran « formule » sans exemple")
+            for a in ex:
+                check_ar(a)
+                if len(vocab.tokens(a)) > 2:
+                    raise LessonError(f"{here} : écran « formule » : mots seuls attendus")
         elif t == "regle":
             check_short(s["texte"], "règle", here)
             for a in s.get("exemples", []):

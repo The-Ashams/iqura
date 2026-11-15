@@ -246,6 +246,9 @@ def validate(exams: list[dict], lessons: list[dict], words: list[dict],
         schemes = {s for l in lessons if l["etape"] <= exam["region"]
                    for s in l.get("schemes", [])}
         for w, _, text in arabic_parts(exam):
+            why = vocab.sacred_oath(text)
+            if why:
+                raise ExamError(f"{w} : {why}")
             missing = [t for t in vocab.unknown(text, known, endings)
                        if t not in schemes and len(vocab.key(t)) != 1]
             if missing:

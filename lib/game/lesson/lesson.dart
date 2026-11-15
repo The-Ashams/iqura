@@ -242,7 +242,8 @@ sealed class LessonStep {
         arabic: [...strings(j['support']), ...strings(j['exemples'])],
         mushaf: j['mushaf'] == true,
         letter: j['lettre'] as String?,
-        question: q(j['question'])!,
+        formula: j['formule'] == true,
+        question: q(j['question']),
       ),
       'dialogue' => DialogueStep(
         lines: [
@@ -329,7 +330,12 @@ class ExplainStep extends LessonStep {
     this.arabic = const [],
     this.letter,
     this.mushaf = false,
+    this.formula = false,
   });
+
+  /// Formule sacrée ou tournure à reconnaître seulement (5.1, décision du
+  /// 15/11/2026) : mots seuls, sans question ni exemple construit.
+  final bool formula;
 
   /// Exemples écrits à la manière du Mushaf (leçon 14).
   final bool mushaf;
@@ -343,7 +349,9 @@ class ExplainStep extends LessonStep {
 
   /// Lettre présentée (écran « élément »).
   final String? letter;
-  final LessonQuestion question;
+
+  /// Question de l'écran ; nulle pour un écran « formule ».
+  final LessonQuestion? question;
 }
 
 class PracticeStep extends LessonStep {

@@ -279,6 +279,15 @@ def write(con: sqlite3.Connection, data: dict) -> dict[str, int]:
                    {p["id"] for r in world_data for p in r["lieux"]},
                    {c["id"] for r in world_data for c in r["personnages"]}, art, con)
     world_counts["region_exams"] = exams.write(con, exam_data)
+    # Serment par Dieu (15/11/2026) : seulement les mots seuls de l'écran
+    # « formule » de 5.1 ; nulle part ailleurs (leçons, fiches, monde, examens).
+    for where_, text in {**lessons.arabic_texts(lesson_data), **world.arabic_texts(world_data),
+                         **exams.arabic_texts(exam_data)}.items():
+        if vocab.key(text) in vocab.SACRED_OATHS or vocab.key(text.replace(" ", "")) == "لااقسم":
+            continue
+        why = vocab.sacred_oath(text)
+        if why:
+            raise lessons.LessonError(f"{where_} : {why}")
     # Avenant n° 1 : aucune suite de mots du Coran dans le contenu.
     quran_guard.check(
         {**lessons.arabic_texts(lesson_data), **world.arabic_texts(world_data),

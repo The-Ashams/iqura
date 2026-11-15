@@ -14,8 +14,7 @@
   "apercu": [
     "حَازِمٌ",
     "بَاسِمٌ",
-    "سَمِيرٌ",
-    "أَدَاةُ"
+    "سَمِيرٌ"
   ],
   "ecrans": [
     {
@@ -27,7 +26,7 @@
         },
         {
           "qui": "hazim",
-          "texte": "Écoute Bāsim et Samīr se répondre, et observe ces quatre mots."
+          "texte": "Lis ce que se disent Bāsim et Samīr, et observe ces quatre mots."
         }
       ],
       "objectif": "Comprendre quatre particules fréquentes."
@@ -41,8 +40,8 @@
           "ar": "مَا بَاسِمٌ … طَالِبٌ.",
           "choix_ar": [
             "إِلَّا",
-            "أَلَّا",
-            "أَلَا"
+            "لَمْ",
+            "لَا"
           ],
           "reponse": 0,
           "explication": "« seulement » : مَا et إِلَّا, vus en région 4."
@@ -156,7 +155,7 @@
     {
       "type": "regle",
       "titre": "كَلَّا et بَلَى",
-      "texte": "كَلَّا rejette fortement ce qui vient d'être dit : « non, pas du tout ». بَلَى répond « si » à une phrase négative et annule la négation ; après une négation, نَعَمْ confirme au contraire la négation.",
+      "texte": "كَلَّا rejette fortement une affirmation : « non, pas du tout » (on ne lui enseigne pas ici un autre sens, discuté). بَلَى répond « si » à une phrase négative ; نَعَمْ la confirme.",
       "exemples": [
         "كَلَّا، الْمِفْتَاحُ فِي الْكِيسِ",
         "بَلَى، كَتَبْتُهَا أَمْسِ"
@@ -167,7 +166,7 @@
         "choix_ar": [
           "بَلَى",
           "نَعَمْ",
-          "كَلَّا"
+          "أَلَا"
         ],
         "reponse": 0,
         "explication": "بَلَى annule la négation : « si ! »."
@@ -198,7 +197,7 @@
       "texte": "Lis ; touche un mot pour voir son sens.",
       "phrases": [
         "قَالَ بَاسِمٌ: « لَمْ تَشْتَرِ الْقِرْطَاسَ يَا سَمِيرُ. »",
-        "قَالَ سَمِيرٌ: « بَلَى، اشْتَرَيْتُهُ، وَلَٰكِنْ إِنَّمَا فِي الْكِيسِ دِرْهَمٌ وَاحِدٌ الْآنَ. »",
+        "قَالَ سَمِيرٌ: « بَلَى، اشْتَرَيْتُهُ، وَلَٰكِنْ إِنَّمَا فِي الْكِيسِ الْآنَ دِرْهَمٌ وَاحِدٌ. »",
         "قَالَ بَاسِمٌ: « هَلْ نَسِيتَ الْمِفْتَاحَ؟ »",
         "قَالَ سَمِيرٌ: « كَلَّا، الْمِفْتَاحُ فِي الْكِيسِ. أَلَا إِنَّ الْقَافِلَةَ قَدْ وَصَلَتْ! »"
       ],
@@ -297,7 +296,7 @@
           "choix_ar": [
             "بَلَى",
             "نَعَمْ",
-            "كَلَّا"
+            "أَلَا"
           ],
           "reponse": 0,
           "explication": "Contre une négation : بَلَى."
@@ -358,13 +357,14 @@
         },
         {
           "type": "ecrire",
-          "consigne": "Dis de trois façons que Bāsim n'est qu'un étudiant.",
+          "consigne": "Dis de deux façons que Bāsim n'est qu'un étudiant, puis de deux façons que Samīr n'est qu'un marchand.",
           "modele": [
             "مَا بَاسِمٌ إِلَّا طَالِبٌ.",
             "إِنَّمَا بَاسِمٌ طَالِبٌ.",
-            "بَاسِمٌ طَالِبٌ لَا غَيْرُ."
+            "مَا سَمِيرٌ إِلَّا تَاجِرٌ.",
+            "إِنَّمَا سَمِيرٌ تَاجِرٌ."
           ],
-          "explication": "Compare : مَا et إِلَّا, puis إِنَّمَا ; la 3e façon, لَا غَيْرُ, est une variante plus simple."
+          "explication": "Compare : مَا et إِلَّا, puis إِنَّمَا, avec le nominatif."
         }
       ]
     },
@@ -415,7 +415,7 @@
           "choix_ar": [
             "بَلَى",
             "نَعَمْ",
-            "كَلَّا"
+            "إِنَّمَا"
           ],
           "reponse": 0,
           "explication": "بَلَى annule la négation."
@@ -438,7 +438,7 @@
           "choix_ar": [
             "إِنَّمَا فِي الْكِيسِ دِرْهَمٌ.",
             "إِنَّمَا فِي الْكِيسِ دِرْهَمًا.",
-            "إِنَّ فِي الْكِيسِ إِلَّا دِرْهَمٌ."
+            "إِنَّمَا فِي الْكِيسِ دِرْهَمٍ."
           ],
           "reponse": 0,
           "explication": "إِنَّمَا + nominatif."

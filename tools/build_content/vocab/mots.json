@@ -10681,7 +10681,6 @@
    "lecon": "sens-01",
    "source_sens": "rédigé par IA",
    "passe": "أَقْسَمَ",
-   "inaccompli": "يُقْسِمُ",
    "lemme": ">aqosamu",
    "fige": true,
    "formes": [
@@ -10782,8 +10781,8 @@
    "source_sens": "rédigé par IA",
    "lemme": "balaY`",
    "exemple": {
-    "ar": "لَمْ يَكْتُبْ سَمِيرٌ الرِّسَالَةَ؟ بَلَى، كَتَبَهَا أَمْسِ.",
-    "fr": "Samīr n'a pas écrit la lettre ? Si, il l'a écrite hier."
+    "ar": "لَمْ يَكْتُبْ سَمِيرٌ الرِّسَالَةَ. بَلَى، كَتَبَهَا أَمْسِ.",
+    "fr": "Samīr n'a pas écrit la lettre. Si, il l'a écrite hier."
    },
    "remarque": "annule une négation ; après une négation, نَعَمْ la confirme",
    "theme": "outils"
@@ -10815,8 +10814,8 @@
    "genre": "m",
    "racine": "HSr",
    "exemple": {
-    "ar": "إِنَّمَا أَدَاةُ حَصْرٍ.",
-    "fr": "إِنَّمَا est un outil de restriction."
+    "ar": "« إِنَّمَا » حَرْفُ حَصْرٍ.",
+    "fr": "« إِنَّمَا » est une particule de restriction."
    },
    "remarque": "sens de grammaire ; la racine ح ص ر a d'autres emplois : la racine ne suffit pas pour le sens",
    "theme": "ecriture"
@@ -10831,11 +10830,80 @@
    "source_sens": "rédigé par IA",
    "genre": "m",
    "exemple": {
-    "ar": "أَلَا حَرْفُ تَنْبِيهٍ.",
-    "fr": "أَلَا est une particule d'appel à l'attention."
+    "ar": "« أَلَا » حَرْفُ تَنْبِيهٍ.",
+    "fr": "« أَلَا » est une particule d'appel à l'attention."
    },
    "remarque": "sens de grammaire",
    "theme": "ecriture"
+  },
+  {
+   "id": "hamza_q",
+   "ar": "أَ",
+   "translit": "a",
+   "fr": "est-ce que ? (collé au premier mot)",
+   "nature": "particule",
+   "lecon": "sens-03",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "أَكَتَبْتَ الرِّسَالَةَ؟",
+    "fr": "As-tu écrit la lettre ?"
+   },
+   "remarque": "pose une question comme هَلْ ; avec لَمْ et لَيْسَ : أَلَمْ, أَلَيْسَ",
+   "theme": "outils"
+  },
+  {
+   "id": "taqrir",
+   "ar": "تَقْرِيرٌ",
+   "translit": "taqrīrun",
+   "fr": "(grammaire) question qui fait reconnaître, qui affirme",
+   "nature": "nom",
+   "lecon": "sens-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "qrr",
+   "exemple": {
+    "ar": "أَلَمْ تَفْهَمِ الدَّرْسَ؟ سُؤَالُ تَقْرِيرٍ.",
+    "fr": "« N'as-tu pas compris la leçon ? » : question qui affirme."
+   },
+   "remarque": "sens de grammaire ; la racine ق ر ر a d'autres emplois : la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "inkar",
+   "ar": "إِنْكَارٌ",
+   "translit": "inkārun",
+   "fr": "(grammaire) question de reproche, de désapprobation",
+   "nature": "nom",
+   "lecon": "sens-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "nkr",
+   "exemple": {
+    "ar": "أَتُسَافِرُ وَالْبَرْدُ شَدِيدٌ؟ سُؤَالُ إِنْكَارٍ.",
+    "fr": "« Tu pars alors que le froid est si vif ? » : question de reproche."
+   },
+   "remarque": "sens de grammaire ; la racine ن ك ر a d'autres emplois : la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
+   "id": "ajib",
+   "ar": "عَجِيبٌ",
+   "translit": "ʿaǧībun",
+   "fr": "étonnant",
+   "nature": "adjectif",
+   "lecon": "sens-03",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "Eajiyb",
+   "fige": true,
+   "formes": [
+    "عَجِيبَةٌ"
+   ],
+   "exemple": {
+    "ar": "قِصَّةُ التَّاجِرِ عَجِيبَةٌ.",
+    "fr": "L'histoire du marchand est étonnante."
+   },
+   "theme": "qualites"
   }
  ]
 }
