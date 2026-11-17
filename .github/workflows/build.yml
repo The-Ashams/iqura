@@ -153,3 +153,32 @@ jobs:
           name: iqura-windows
           path: build/windows/x64/runner/Release/
           if-no-files-found: error
+
+  publication:
+    # Lien de téléchargement direct, sans compte GitHub (les « Artifacts »
+    # d'une compilation demandent d'être connecté). Remplacée à chaque envoi.
+    name: Publication (téléchargement sans compte)
+    needs: [android, windows]
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dl
+
+      - name: Publier la dernière version
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          mkdir out
+          cp dl/iqura-android/app-release.apk out/iqura.apk
+          (cd out && sha256sum iqura.apk > iqura.apk.sha256)
+          (cd dl/iqura-windows && zip -qr ../../out/iqura-windows.zip .)
+          (cd out && sha256sum iqura-windows.zip > iqura-windows.zip.sha256)
+          gh release delete derniere-version --yes --cleanup-tag || true
+          gh release create derniere-version out/* --prerelease --target "$GITHUB_SHA" \
+            --title "IQURA, dernière version (${GITHUB_SHA::7})" \
+            --notes "Version de test compilée automatiquement depuis le commit ${GITHUB_SHA::7}. Android : iqura.apk. Windows : iqura-windows.zip (décompresser, puis lancer iqura.exe). Remplacée à chaque nouvelle version."
