@@ -77,12 +77,12 @@
       "type": "dialogue",
       "repliques": [
         {
-          "qui": "basim",
-          "ar": "أَعْطَانِي نَدِيمٌ قَلَمًا جَدِيدًا!",
-          "fr": "Nadīm m'a donné un calame neuf !"
+          "qui": "hala",
+          "ar": "أَعْطَى نَدِيمٌ بَاسِمًا قَلَمًا جَدِيدًا!",
+          "fr": "Nadīm a donné un calame neuf à Bāsim !"
         },
         {
-          "qui": "hala",
+          "qui": "basim",
           "ar": "نَدِيمٌ صَدِيقٌ صَادِقٌ.",
           "fr": "Nadīm est un ami sincère."
         },
@@ -101,7 +101,7 @@
           "un dirham"
         ],
         "reponse": 0,
-        "explication": "أَعْطَانِي نَدِيمٌ قَلَمًا جَدِيدًا."
+        "explication": "أَعْطَى نَدِيمٌ بَاسِمًا قَلَمًا جَدِيدًا."
       }
     },
     {
@@ -151,7 +151,7 @@
     {
       "type": "regle",
       "titre": "Dire une qualité",
-      "texte": "Une qualité se dit avec un nom (صَبْرٌ, صِدْقٌ, et son contraire كَذِبٌ) ou avec un adjectif (أَمِينٌ, صَادِقٌ). أَعْطَى a deux compléments à l'accusatif : la personne, puis la chose.",
+      "texte": "Une qualité se dit avec un nom (صَبْرٌ, صِدْقٌ ; un défaut : كَذِبٌ) ou avec un adjectif (أَمِينٌ, صَادِقٌ). أَعْطَى a deux compléments à l'accusatif : la personne, puis la chose.",
       "exemples": [
         "صَبْرُ بَاسِمٍ عَجِيبٌ.",
         "نَدِيمٌ صَدِيقٌ أَمِينٌ.",
@@ -249,7 +249,7 @@
           "choix": [
             "propos, conversation, récit",
             "patience, endurance",
-            "nouvelle"
+            "mensonge"
           ],
           "reponse": 0,
           "explication": "حَدِيثٌ veut dire « propos, conversation, récit »."
@@ -361,7 +361,7 @@
           "type": "ecrire",
           "consigne": "Décris un ami en trois phrases : une action, puis deux qualités (avec أَمِينٌ, صَبْرٌ, صِدْقٌ ou كَذِبٌ).",
           "modele": [
-            "أَعْطَانِي صَدِيقِي كِتَابًا.",
+            "أَعْطَى صَدِيقِي زُهَيْرًا كِتَابًا.",
             "صَدِيقِي أَمِينٌ، وَلَا يُحِبُّ الْكَذِبَ.",
             "وَصَبْرُهُ عَجِيبٌ."
           ],
@@ -403,7 +403,7 @@
           "ar": "حَدِيثٌ",
           "choix": [
             "propos, conversation, récit",
-            "nouvelle",
+            "mensonge",
             "lettre"
           ],
           "reponse": 0,
@@ -468,15 +468,16 @@
           "explication": "La personne, puis la chose."
         },
         {
-          "type": "qcm",
-          "consigne": "آمِين (avec ā) et أَمِينٌ…",
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَذِبٌ",
           "choix": [
-            "sont deux mots différents",
-            "sont le même mot",
-            "veulent dire « sincère »"
+            "mensonge",
+            "sincérité, vérité (dans la parole)",
+            "propos, conversation, récit"
           ],
           "reponse": 0,
-          "explication": "أَمِينٌ : digne de confiance."
+          "explication": "كَذِبٌ veut dire « mensonge »."
         },
         {
           "type": "sens",

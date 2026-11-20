@@ -105,7 +105,7 @@
     {
       "type": "regle",
       "titre": "Ce que tu connais déjà",
-      "texte": "Nature : أَرْضٌ, شَمْسٌ, نَجْمٌ, جَبَلٌ, نَهْرٌ, بِئْرٌ, شَجَرَةٌ, نَخْلَةٌ, زَهْرَةٌ, ثَلْجٌ. Temps : لَيْلٌ, نَهَارٌ, يَوْمٌ, شَهْرٌ, سَنَةٌ, سَاعَةٌ, صَبَاحٌ, مَسَاءٌ, وَقْتٌ.",
+      "texte": "Nature : أَرْضٌ, شَمْسٌ, نَجْمٌ, جَبَلٌ, نَهْرٌ, بِئْرٌ, شَجَرَةٌ, نَخْلَةٌ, ثَمَرَةٌ, زَهْرَةٌ, ثَلْجٌ, بَرْدٌ. Temps : لَيْلٌ, نَهَارٌ, يَوْمٌ, أُسْبُوعٌ, شَهْرٌ, سَنَةٌ, سَاعَةٌ, صَبَاحٌ, مَسَاءٌ, عَصْرٌ, وَقْتٌ.",
       "exemples": [
         "أَرْضٌ",
         "جَبَلٌ",
@@ -324,7 +324,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Il pleut, Bāsim reste à la maison à cause de la pluie. »",
+          "consigne": "Complète : « Bāsim est resté à la maison à cause de la pluie. »",
           "ar": "بَقِيَ بَاسِمٌ فِي الْبَيْتِ بِسَبَبِ …",
           "choix_ar": [
             "الْمَطَرِ",
@@ -483,7 +483,7 @@
           "consigne": "À quel thème appartient قَمَرٌ ?",
           "choix": [
             "la nature (le ciel)",
-            "le temps",
+            "la maison",
             "le marché"
           ],
           "reponse": 0,

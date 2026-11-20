@@ -6549,7 +6549,7 @@
    "id": "akhadha",
    "ar": "أَخَذَ",
    "translit": "aḫaḏa",
-   "fr": "prendre",
+   "fr": "prendre ; + inaccompli : se mettre à",
    "nature": "verbe",
    "lecon": "moteur-22",
    "source_sens": "rédigé par IA",
@@ -6612,7 +6612,7 @@
    "id": "ras",
    "ar": "رَأْسٌ",
    "translit": "raʾsun",
-   "fr": "tête ; sommet",
+   "fr": "tête ; sommet ; chef (d'un groupe)",
    "nature": "nom",
    "lecon": "moteur-22",
    "source_sens": "rédigé par IA",
@@ -7619,7 +7619,7 @@
    "id": "lawla",
    "ar": "لَوْلَا",
    "translit": "lawlā",
-   "fr": "sans, s'il n'y avait pas",
+   "fr": "sans, s'il n'y avait pas ; + passé : pourquoi… ne pas ?",
    "nature": "particule",
    "lecon": "cite-02",
    "source_sens": "rédigé par IA",
@@ -7628,7 +7628,7 @@
     "ar": "لَوْلَا الْبَرْدُ لَجَلَسْنَا فِي الْحَدِيقَةِ.",
     "fr": "Sans le froid, nous nous serions assis dans le jardin."
    },
-   "remarque": "suivi d'un nom en -u",
+   "remarque": "suivi d'un nom en -u : « sans » ; suivi d'un verbe au passé : un reproche (vu en 5.12)",
    "theme": "particules"
   },
   {
@@ -11243,7 +11243,7 @@
     "ar": "بَيْنَمَا بَاسِمٌ جَالِسٌ فِي الْحَدِيقَةِ إِذْ وَصَلَ زُهَيْرٌ.",
     "fr": "Tandis que Bāsim était assis dans le jardin, voilà que Zuhayr arriva."
    },
-   "remarque": "suivi d'une phrase nominale ; souvent, la suite commence par إِذْ (« voilà que »)",
+   "remarque": "suivi le plus souvent d'une phrase nominale ; souvent, la suite commence par إِذْ (« voilà que »)",
    "theme": "outils"
   },
   {
@@ -11280,8 +11280,8 @@
    "genre": "m",
    "fige": true,
    "exemple": {
-    "ar": "قَالَ الرَّاوِي: كَانَ فِي الْمَدِينَةِ تَاجِرٌ.",
-    "fr": "Le narrateur dit : il y avait dans la ville un marchand."
+    "ar": "قَالَ الرَّاوِي: كَانَ فِي السُّوقِ تَاجِرٌ.",
+    "fr": "Le narrateur dit : il y avait au marché un marchand."
    },
    "remarque": "sans article : رَاوٍ (le ي tombe, sauf à l'accusatif : رَاوِيًا) ; dans la langue des savants, le mot désigne aussi celui qui rapporte des paroles ; ici, le conteur",
    "theme": "ecriture"
@@ -11523,8 +11523,7 @@
     "أَعْطَتْ",
     "أَعْطَيْتُ",
     "أُعْطِي",
-    "يُعْطِي",
-    "أَعْطَانِي"
+    "يُعْطِي"
    ],
    "remarque": "forme IV ; deux compléments à l'accusatif : la personne, puis la chose",
    "theme": "actions"

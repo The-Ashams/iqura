@@ -93,8 +93,8 @@
         },
         {
           "qui": "basim",
-          "ar": "عَيْنٌ وَعَيْنٌ: كَلِمَةٌ وَاحِدَةٌ، وَمَعْنَيَانِ!",
-          "fr": "« ʿayn » et « ʿayn » : un seul mot, et deux sens !"
+          "ar": "كَلِمَةُ عَيْنٍ لَهَا مَعْنَيَانِ!",
+          "fr": "Le mot « ʿayn » a deux sens !"
         }
       ],
       "question": {
@@ -131,7 +131,7 @@
     {
       "type": "regle",
       "titre": "Le contexte choisit",
-      "texte": "Un même mot peut avoir plusieurs sens : le dictionnaire les range, le contexte choisit. Ce n'est pas la même chose que deux mots écrits pareil (إِنْ et إِنَّ) ni que deux mots de même racine.",
+      "texte": "Un même mot peut avoir plusieurs sens : le dictionnaire les range, le contexte choisit. Ce n'est pas la même chose que deux mots qui s'écrivent pareil sans voyelles (إِنْ et إِنَّ) ni que deux mots de même racine.",
       "exemples": [
         "عَيْنُ نَدِيمٍ مَرِيضَةٌ.",
         "وَجَدَتِ الْقَافِلَةُ عَيْنَ مَاءٍ قَرِيبَةً."
@@ -171,7 +171,7 @@
     {
       "type": "regle",
       "titre": "لَوْلَا : nom ou verbe ?",
-      "texte": "لَوْلَا + nom veut dire « sans » (connu) ; لَوْلَا + verbe au passé, à la 2e personne, veut dire « pourquoi n'as-tu pas », un reproche ou une invitation.",
+      "texte": "لَوْلَا + nom veut dire « sans » (connu) ; لَوْلَا + verbe au passé, à la 2e personne, veut dire « pourquoi n'as-tu pas » : un reproche.",
       "exemples": [
         "لَوْلَا الْمَطَرُ لَسَافَرْنَا.",
         "لَوْلَا انْتَظَرْتَ بَاسِمًا!"
@@ -185,7 +185,7 @@
           "Tu as attendu Bāsim."
         ],
         "reponse": 0,
-        "explication": "لَوْلَا + verbe : « pourquoi… ne pas »."
+        "explication": "لَوْلَا + passé : un reproche."
       }
     },
     {
@@ -214,7 +214,7 @@
       "phrases": [
         "بَيْتُ زُهَيْرٍ عَلَى رَأْسِ الْجَبَلِ، وَزُهَيْرٌ رَأْسُ التُّجَّارِ فِي السُّوقِ.",
         "«لِسَانُ الْعَرَبِ» مُعْجَمٌ كَبِيرٌ.",
-        "أَخَذَ بَاسِمٌ الْقَلَمَ، ثُمَّ أَخَذَ يَكْتُبُ الرِّسَالَةَ."
+        "أَخَذَ بَاسِمٌ الْقَلَمَ، ثُمَّ أَخَذَ بَاسِمٌ يَكْتُبُ الرِّسَالَةَ."
       ],
       "questions": [
         {
@@ -383,7 +383,7 @@
         {
           "type": "completer",
           "consigne": "Choisis le sens par le contexte : « Il a pris le calame, puis s'est mis à écrire. »",
-          "ar": "أَخَذَ الْقَلَمَ، ثُمَّ … يَكْتُبُ.",
+          "ar": "أَخَذَ بَاسِمٌ الْقَلَمَ، ثُمَّ … بَاسِمٌ يَكْتُبُ.",
           "choix_ar": [
             "أَخَذَ",
             "أَعْطَى",
@@ -397,7 +397,7 @@
           "consigne": "Écris deux phrases où عَيْنٌ a deux sens différents, puis une phrase avec رَأْسٌ au sens de « chef ».",
           "modele": [
             "عَيْنُ الطِّفْلِ صَغِيرَةٌ.",
-            "شَرِبْنَا مِنْ عَيْنِ مَاءٍ.",
+            "وَجَدَتِ الْقَافِلَةُ عَيْنَ مَاءٍ قَرِيبَةً.",
             "زُهَيْرٌ رَأْسُ التُّجَّارِ."
           ],
           "explication": "Compare : est-ce le contexte qui montre le sens dans chaque phrase ?"
@@ -468,8 +468,8 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Pourquoi n'as-tu pas posé la question ! »",
-          "ar": "لَوْلَا …!",
+          "consigne": "Complète : « Pourquoi n'as-tu pas interrogé Zuhayr ! »",
+          "ar": "لَوْلَا … زُهَيْرًا!",
           "choix_ar": [
             "سَأَلْتَ",
             "السُّؤَالُ",
