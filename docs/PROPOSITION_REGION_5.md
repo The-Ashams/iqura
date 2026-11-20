@@ -18,7 +18,16 @@ Le décor reste en français et ne reprend **aucune image du Paradis** décrit d
 | 4 | Le Pavillon des Voix | 5.7 Le changement de personne |
 | 12 | La Clairière de l'Impatience | Expédition (révisions) ; examen final de la région 5 à la fin du niveau Classique avancé 3 |
 
-Les lieux 5 à 11 viendront avec Classique avancé 2 et 3 (leçons 5.8 à 5.20).
+## Chapitre B — Lire et nommer le sens (leçons 5.8 à 5.13, niveau Classique avancé 2 ; ajouté le 15/11/2026)
+
+| N° | Lieu | Leçons |
+| --- | --- | --- |
+| 5 | La Cour des Conteurs | 5.8 La narration classique (Zuhayr raconte) |
+| 6 | La Pépinière des Formes | 5.9 Les formes verbales en contexte |
+| 7 | L'Herbier des Thèmes | 5.10 et 5.11 Le vocabulaire par thèmes (Hāla classe les mots) |
+| 8 | Le Labyrinthe des Sens | 5.12 Un mot, plusieurs sens ; 5.13 Mots proches, sens distincts (Nūra garde les dictionnaires) |
+
+Les lieux 9 à 11 viendront avec Classique avancé 3 (leçons 5.14 à 5.20).
 
 ## Personnages
 
@@ -26,7 +35,8 @@ Les lieux 5 à 11 viendront avec Classique avancé 2 et 3 (leçons 5.8 à 5.20).
 | --- | --- |
 | Ḥāzim (حَازِمٌ, « résolu, avisé ») | Le maître des Jardins, grammairien et rhétoricien, sans rôle religieux ; nouveau. Alternative proposée par le conseiller : Nasīm (نَسِيمٌ, « brise ») |
 | Bāsim | Le jeune chamelier de la région 2, qui accompagne toujours le voyageur |
-| Zuhayr, Nadīm, Hāla | Peuvent revenir dans les dialogues ; Zuhayr reviendra pour les lectures de textes classiques (5.16 à 5.18) |
+| Zuhayr, Nadīm, Hāla | Reviennent dans les dialogues : Zuhayr raconte en 5.8 et reviendra pour les lectures de textes classiques (5.16 à 5.18) ; Hāla classe les mots par thème (5.10, 5.11) |
+| Nūra | L'archiviste de la région 1, gardienne des dictionnaires (5.12, 5.13) ; alternative : Nadīm |
 
 Aucun nom de prophète ni de figure religieuse. Sens des noms : rédigé par IA.
 

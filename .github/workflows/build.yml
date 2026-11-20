@@ -156,10 +156,12 @@ jobs:
 
   publication:
     # Lien de téléchargement direct, sans compte GitHub (les « Artifacts »
-    # d'une compilation demandent d'être connecté). Remplacée à chaque envoi.
+    # d'une compilation demandent d'être connecté). Seulement pour une version
+    # prête à tester : message de commit contenant « [publier] », ou lancement
+    # manuel ; les envois de travail en cours ne remplacent pas le lien.
     name: Publication (téléchargement sans compte)
     needs: [android, windows]
-    if: github.event_name != 'pull_request'
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && contains(github.event.head_commit.message, '[publier]'))
     runs-on: ubuntu-latest
     permissions:
       contents: write

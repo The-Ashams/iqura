@@ -11214,6 +11214,448 @@
    },
    "remarque": "ici, terme de grammaire seulement ; dans le Coran, la racine a aussi un sens religieux : la racine ne suffit pas pour le sens",
    "theme": "ecriture"
+  },
+  {
+   "id": "idh",
+   "ar": "إِذْ",
+   "translit": "iḏ",
+   "fr": "quand, alors que (au passé)",
+   "nature": "particule",
+   "lecon": "sens-08",
+   "source_sens": "rédigé par IA",
+   "lemme": "<i*",
+   "exemple": {
+    "ar": "كَانَ نَدِيمٌ يَكْتُبُ الرِّسَالَةَ إِذْ وَصَلَتْ هَالَةُ.",
+    "fr": "Nadīm écrivait la lettre quand Hāla arriva."
+   },
+   "remarque": "au milieu de la phrase, après une phrase au passé ; ne pas confondre avec إِذَا et إِذَنْ",
+   "theme": "outils"
+  },
+  {
+   "id": "baynama",
+   "ar": "بَيْنَمَا",
+   "translit": "baynamā",
+   "fr": "tandis que, pendant que",
+   "nature": "particule",
+   "lecon": "sens-08",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "بَيْنَمَا بَاسِمٌ جَالِسٌ فِي الْحَدِيقَةِ إِذْ وَصَلَ زُهَيْرٌ.",
+    "fr": "Tandis que Bāsim était assis dans le jardin, voilà que Zuhayr arriva."
+   },
+   "remarque": "suivi d'une phrase nominale ; souvent, la suite commence par إِذْ (« voilà que »)",
+   "theme": "outils"
+  },
+  {
+   "id": "haka",
+   "ar": "حَكَى",
+   "translit": "ḥakā",
+   "fr": "raconter",
+   "nature": "verbe",
+   "lecon": "sens-08",
+   "source_sens": "rédigé par IA",
+   "passe": "حَكَى",
+   "inaccompli": "يَحْكِي",
+   "formes": [
+    "حَكَتْ",
+    "حَكَيْتُ",
+    "يَحْكِي",
+    "يُحْكَى"
+   ],
+   "exemple": {
+    "ar": "يُحْكَى أَنَّ تَاجِرًا كَانَ لَهُ جَمَلٌ عَجِيبٌ.",
+    "fr": "On raconte qu'un marchand avait un chameau étonnant."
+   },
+   "remarque": "يُحْكَى أَنَّ : formule figée, « on raconte que »",
+   "theme": "ecriture"
+  },
+  {
+   "id": "rawi",
+   "ar": "الرَّاوِي",
+   "translit": "al-rāwī",
+   "fr": "le narrateur, celui qui raconte",
+   "nature": "nom",
+   "lecon": "sens-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "fige": true,
+   "exemple": {
+    "ar": "قَالَ الرَّاوِي: كَانَ فِي الْمَدِينَةِ تَاجِرٌ.",
+    "fr": "Le narrateur dit : il y avait dans la ville un marchand."
+   },
+   "remarque": "sans article : رَاوٍ (le ي tombe, sauf à l'accusatif : رَاوِيًا) ; dans la langue des savants, le mot désigne aussi celui qui rapporte des paroles ; ici, le conteur",
+   "theme": "ecriture"
+  },
+  {
+   "id": "aqbala",
+   "ar": "أَقْبَلَ",
+   "translit": "aqbala",
+   "fr": "s'avancer, venir (vers) ; أَقْبَلَ عَلَى : s'appliquer à",
+   "nature": "verbe",
+   "lecon": "sens-09",
+   "source_sens": "rédigé par IA",
+   "passe": "أَقْبَلَ",
+   "inaccompli": "يُقْبِلُ",
+   "exemple": {
+    "ar": "أَقْبَلَ بَاسِمٌ عَلَى الدَّرْسِ.",
+    "fr": "Bāsim s'est appliqué à la leçon."
+   },
+   "lemme": ">aqobala",
+   "fige": true,
+   "formes": [
+    "أَقْبَلَتْ",
+    "يُقْبِلُ"
+   ],
+   "remarque": "forme IV de la racine ق ب ل, celle de قَبْلَ « avant » et de اسْتَقْبَلَ : la racine ne suffit pas pour le sens",
+   "theme": "deplacement"
+  },
+  {
+   "id": "adraka",
+   "ar": "أَدْرَكَ",
+   "translit": "adraka",
+   "fr": "rattraper, atteindre",
+   "nature": "verbe",
+   "lecon": "sens-09",
+   "source_sens": "rédigé par IA",
+   "passe": "أَدْرَكَ",
+   "inaccompli": "يُدْرِكُ",
+   "exemple": {
+    "ar": "أَدْرَكَ بَاسِمٌ الْقَافِلَةَ قَبْلَ الْمَسَاءِ.",
+    "fr": "Bāsim a rattrapé la caravane avant le soir."
+   },
+   "lemme": ">adoraka",
+   "fige": true,
+   "formes": [
+    "أَدْرَكَتْ",
+    "أَدْرَكْتُ"
+   ],
+   "remarque": "forme IV de la racine د ر ك",
+   "theme": "deplacement"
+  },
+  {
+   "id": "istataa",
+   "ar": "اسْتَطَاعَ",
+   "translit": "istaṭāʿa",
+   "fr": "pouvoir (+ أَنْ + subjonctif)",
+   "nature": "verbe",
+   "lecon": "sens-09",
+   "source_sens": "rédigé par IA",
+   "passe": "اسْتَطَاعَ",
+   "inaccompli": "يَسْتَطِيعُ",
+   "exemple": {
+    "ar": "لَا أَسْتَطِيعُ أَنْ أَحْمِلَ هَٰذَا الْكِيسَ.",
+    "fr": "Je ne peux pas porter ce sac."
+   },
+   "lemme": "{sotaTaAEa",
+   "fige": true,
+   "formes": [
+    "اسْتَطَعْتُ",
+    "أَسْتَطِيعُ",
+    "تَسْتَطِيعُ",
+    "يَسْتَطِيعُ"
+   ],
+   "remarque": "forme X d'une racine creuse : le ā devient ī à l'inaccompli et tombe dans اسْتَطَعْتُ ; même racine que طَاعَةٌ (obéissance) : la racine ne suffit pas pour le sens",
+   "theme": "actions"
+  },
+  {
+   "id": "aqama",
+   "ar": "أَقَامَ",
+   "translit": "aqāma",
+   "fr": "séjourner, demeurer (dans un lieu)",
+   "nature": "verbe",
+   "lecon": "sens-09",
+   "source_sens": "rédigé par IA",
+   "passe": "أَقَامَ",
+   "inaccompli": "يُقِيمُ",
+   "exemple": {
+    "ar": "أَقَامَ زُهَيْرٌ فِي دِمَشْقَ شَهْرًا.",
+    "fr": "Zuhayr a séjourné un mois à Damas."
+   },
+   "lemme": ">aqaAma",
+   "fige": true,
+   "formes": [
+    "أَقَامَتْ",
+    "أَقَمْتُ",
+    "يُقِيمُ"
+   ],
+   "remarque": "forme IV de la racine de قَامَ « se lever » ; ici, seulement « séjourner » : la racine ne suffit pas pour le sens",
+   "theme": "deplacement"
+  },
+  {
+   "id": "tafakkara",
+   "ar": "تَفَكَّرَ",
+   "translit": "tafakkara",
+   "fr": "réfléchir (à)",
+   "nature": "verbe",
+   "lecon": "sens-09",
+   "source_sens": "rédigé par IA",
+   "passe": "تَفَكَّرَ",
+   "inaccompli": "يَتَفَكَّرُ",
+   "exemple": {
+    "ar": "تَفَكَّرَ بَاسِمٌ فِي الْجَوَابِ، ثُمَّ كَتَبَهُ.",
+    "fr": "Bāsim a réfléchi à la réponse, puis l'a écrite."
+   },
+   "lemme": "yatafak~aru",
+   "fige": true,
+   "formes": [
+    "تَفَكَّرْتُ",
+    "يَتَفَكَّرُ"
+   ],
+   "remarque": "forme V de la racine ف ك ر, avec فِي",
+   "theme": "actions"
+  },
+  {
+   "id": "samaa",
+   "ar": "سَمَاءٌ",
+   "translit": "samāʾun",
+   "fr": "ciel",
+   "nature": "nom",
+   "lecon": "sens-10",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "samaA^'",
+   "exemple": {
+    "ar": "فِي السَّمَاءِ نُجُومٌ كَثِيرَةٌ.",
+    "fr": "Il y a beaucoup d'étoiles dans le ciel."
+   },
+   "remarque": "féminin sans ة ; dans les textes religieux, le mot a d'autres emplois, qu'IQURA n'explique pas ; ici : le ciel qu'on voit",
+   "theme": "nature"
+  },
+  {
+   "id": "qamar",
+   "ar": "قَمَرٌ",
+   "translit": "qamarun",
+   "fr": "lune",
+   "nature": "nom",
+   "lecon": "sens-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "qamar",
+   "exemple": {
+    "ar": "سَافَرَتِ الْقَافِلَةُ تَحْتَ الْقَمَرِ.",
+    "fr": "La caravane a voyagé sous la lune."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "bahr",
+   "ar": "بَحْرٌ",
+   "translit": "baḥrun",
+   "fr": "mer",
+   "nature": "nom",
+   "lecon": "sens-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "baHor",
+   "exemple": {
+    "ar": "الْبَحْرُ بَعِيدٌ عَنِ الْقَرْيَةِ.",
+    "fr": "La mer est loin du village."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "rih",
+   "ar": "رِيحٌ",
+   "translit": "rīḥun",
+   "fr": "vent",
+   "nature": "nom",
+   "lecon": "sens-10",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "riyH",
+   "exemple": {
+    "ar": "الرِّيحُ شَدِيدَةٌ الْيَوْمَ.",
+    "fr": "Le vent est fort aujourd'hui."
+   },
+   "remarque": "féminin sans ة ; même racine que رُوحٌ « esprit » : la racine ne suffit pas pour le sens",
+   "theme": "nature"
+  },
+  {
+   "id": "matar",
+   "ar": "مَطَرٌ",
+   "translit": "maṭarun",
+   "fr": "pluie",
+   "nature": "nom",
+   "lecon": "sens-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "m~aTar",
+   "exemple": {
+    "ar": "بَقِيَ بَاسِمٌ فِي الْبَيْتِ بِسَبَبِ الْمَطَرِ.",
+    "fr": "Bāsim est resté à la maison à cause de la pluie."
+   },
+   "theme": "nature"
+  },
+  {
+   "id": "fajr",
+   "ar": "فَجْرٌ",
+   "translit": "faǧrun",
+   "fr": "aube",
+   "nature": "nom",
+   "lecon": "sens-10",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "fajor",
+   "exemple": {
+    "ar": "انْطَلَقَتِ الْقَافِلَةُ عِنْدَ الْفَجْرِ.",
+    "fr": "La caravane s'est mise en route à l'aube."
+   },
+   "remarque": "l'aube, avant le matin (صَبَاحٌ)",
+   "theme": "temps"
+  },
+  {
+   "id": "aata",
+   "ar": "أَعْطَى",
+   "translit": "aʿṭā",
+   "fr": "donner (à quelqu'un, quelque chose)",
+   "nature": "verbe",
+   "lecon": "sens-11",
+   "source_sens": "rédigé par IA",
+   "passe": "أَعْطَى",
+   "inaccompli": "يُعْطِي",
+   "exemple": {
+    "ar": "أَعْطَى بَاسِمٌ زُهَيْرًا كِتَابًا.",
+    "fr": "Bāsim a donné un livre à Zuhayr."
+   },
+   "lemme": ">aEoTaY`",
+   "fige": true,
+   "formes": [
+    "أَعْطَتْ",
+    "أَعْطَيْتُ",
+    "أُعْطِي",
+    "يُعْطِي",
+    "أَعْطَانِي"
+   ],
+   "remarque": "forme IV ; deux compléments à l'accusatif : la personne, puis la chose",
+   "theme": "actions"
+  },
+  {
+   "id": "sabr",
+   "ar": "صَبْرٌ",
+   "translit": "ṣabrun",
+   "fr": "patience, endurance",
+   "nature": "nom",
+   "lecon": "sens-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "Sabor",
+   "formes": [
+    "صَبَرَ",
+    "صَبَرَتْ",
+    "صَبَرْتُ",
+    "يَصْبِرُ"
+   ],
+   "exemple": {
+    "ar": "صَبْرُ بَاسِمٍ عَجِيبٌ.",
+    "fr": "La patience de Bāsim est étonnante."
+   },
+   "remarque": "verbe : صَبَرَ, يَصْبِرُ « patienter » ; c'est ce qui répond à l'Impatience",
+   "theme": "qualites"
+  },
+  {
+   "id": "sidq",
+   "ar": "صِدْقٌ",
+   "translit": "ṣidqun",
+   "fr": "sincérité, vérité (dans la parole)",
+   "nature": "nom",
+   "lecon": "sens-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "Sidoq",
+   "exemple": {
+    "ar": "أُحِبُّ الصِّدْقَ فِي الْكَلَامِ.",
+    "fr": "J'aime la sincérité dans les paroles."
+   },
+   "remarque": "même racine que صَادِقٌ « sincère »",
+   "theme": "qualites"
+  },
+  {
+   "id": "kadhib",
+   "ar": "كَذِبٌ",
+   "translit": "kaḏibun",
+   "fr": "mensonge",
+   "nature": "nom",
+   "lecon": "sens-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "ka*ib",
+   "exemple": {
+    "ar": "لَا أُحِبُّ الْكَذِبَ.",
+    "fr": "Je n'aime pas le mensonge."
+   },
+   "remarque": "le contraire de صِدْقٌ « sincérité »",
+   "theme": "qualites"
+  },
+  {
+   "id": "amin",
+   "ar": "أَمِينٌ",
+   "translit": "amīnun",
+   "fr": "digne de confiance",
+   "nature": "adjectif",
+   "lecon": "sens-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">amiyn",
+   "formes": [
+    "أَمِينَةٌ"
+   ],
+   "exemple": {
+    "ar": "نَدِيمٌ صَدِيقٌ أَمِينٌ.",
+    "fr": "Nadīm est un ami digne de confiance."
+   },
+   "remarque": "ne pas confondre avec آمِين, mot d'une formule religieuse",
+   "theme": "qualites"
+  },
+  {
+   "id": "hadith",
+   "ar": "حَدِيثٌ",
+   "translit": "ḥadīṯun",
+   "fr": "propos, conversation, récit",
+   "nature": "nom",
+   "lecon": "sens-11",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "Hadiyv",
+   "exemple": {
+    "ar": "كَانَ حَدِيثُ زُهَيْرٍ طَوِيلًا وَجَمِيلًا.",
+    "fr": "Les propos de Zuhayr étaient longs et beaux."
+   },
+   "remarque": "dans la langue des savants, le mot a aussi un sens religieux ; ici : propos, conversation",
+   "theme": "parole"
+  },
+  {
+   "id": "ayn",
+   "ar": "عَيْنٌ",
+   "translit": "ʿaynun",
+   "fr": "œil ; source (d'eau)",
+   "nature": "nom",
+   "lecon": "sens-12",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "Eayon",
+   "exemple": {
+    "ar": "وَجَدَتِ الْقَافِلَةُ عَيْنَ مَاءٍ قَرِيبَةً.",
+    "fr": "La caravane a trouvé une source tout près."
+   },
+   "remarque": "féminin sans ة ; deux sens : le contexte choisit",
+   "theme": "corps"
+  },
+  {
+   "id": "lisan",
+   "ar": "لِسَانٌ",
+   "translit": "lisānun",
+   "fr": "langue (l'organe) ; langue (parlée)",
+   "nature": "nom",
+   "lecon": "sens-12",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "lisaAn",
+   "exemple": {
+    "ar": "لِسَانُ الطِّفْلِ صَغِيرٌ.",
+    "fr": "La langue de l'enfant est petite."
+   },
+   "remarque": "deux sens : le contexte choisit ; « Lisān al-ʿArab » est le titre d'un grand dictionnaire ancien",
+   "theme": "corps"
   }
  ]
 }

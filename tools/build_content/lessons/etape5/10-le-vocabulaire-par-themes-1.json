@@ -1,0 +1,550 @@
+{
+  "id": "sens-10",
+  "etape": 5,
+  "ordre": 10,
+  "format": 3,
+  "titre": "Le vocabulaire par thèmes (1)",
+  "objectif": "Apprendre et classer les mots fréquents du monde créé, de la nature et du temps.",
+  "statut": "ia_non_verifie",
+  "lieu": "herbier_themes",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-09"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "هَالَةُ",
+    "بَاسِمٌ",
+    "مَكَانِهَا"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "texte": "Dans cet herbier, Hāla range les mots comme des feuilles : par thème."
+        },
+        {
+          "qui": "hala",
+          "texte": "Aujourd'hui : le ciel, la nature et le temps. Des mots très fréquents dans les textes anciens."
+        }
+      ],
+      "objectif": "Classer les mots de la nature et du temps."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "À quel thème appartient نَهَارٌ ?",
+          "choix": [
+            "le temps",
+            "la nature",
+            "la maison"
+          ],
+          "reponse": 0,
+          "explication": "نَهَارٌ, « le jour (la clarté) » : le temps."
+        },
+        {
+          "type": "qcm",
+          "consigne": "À quel thème appartient جَبَلٌ ?",
+          "choix": [
+            "la nature",
+            "le temps",
+            "le marché"
+          ],
+          "reponse": 0,
+          "explication": "جَبَلٌ, « montagne » : la nature."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane est partie le soir. »",
+          "ar": "انْطَلَقَتِ الْقَافِلَةُ فِي …",
+          "choix_ar": [
+            "الْمَسَاءِ",
+            "النَّخْلَةِ",
+            "الْبِئْرِ"
+          ],
+          "reponse": 0,
+          "explication": "Un moment de la journée : الْمَسَاءِ."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "الرِّيحُ شَدِيدَةٌ الْيَوْمَ!",
+          "fr": "Le vent est fort aujourd'hui !"
+        },
+        {
+          "qui": "hala",
+          "ar": "نَعَمْ، وَالْمَطَرُ قَرِيبٌ.",
+          "fr": "Oui, et la pluie est proche."
+        },
+        {
+          "qui": "basim",
+          "ar": "إِذَنْ نَبْقَى فِي الْبَيْتِ.",
+          "fr": "Alors restons à la maison."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pourquoi Bāsim veut-il rester à la maison ?",
+        "choix": [
+          "le vent est fort et la pluie est proche",
+          "il fait trop chaud",
+          "la mer est loin"
+        ],
+        "reponse": 0,
+        "explication": "الرِّيحُ شَدِيدَةٌ, وَالْمَطَرُ قَرِيبٌ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Ce que tu connais déjà",
+      "texte": "Nature : أَرْضٌ, شَمْسٌ, نَجْمٌ, جَبَلٌ, نَهْرٌ, بِئْرٌ, شَجَرَةٌ, نَخْلَةٌ, زَهْرَةٌ, ثَلْجٌ. Temps : لَيْلٌ, نَهَارٌ, يَوْمٌ, شَهْرٌ, سَنَةٌ, سَاعَةٌ, صَبَاحٌ, مَسَاءٌ, وَقْتٌ.",
+      "exemples": [
+        "أَرْضٌ",
+        "جَبَلٌ",
+        "لَيْلٌ",
+        "سَنَةٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Lequel de ces mots est un mot du temps ?",
+        "choix": [
+          "سَنَةٌ",
+          "جَبَلٌ",
+          "بِئْرٌ"
+        ],
+        "reponse": 0,
+        "explication": "سَنَةٌ, « année »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "samaa",
+        "qamar",
+        "bahr",
+        "rih",
+        "matar",
+        "fajr"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "فَجْرٌ",
+        "choix": [
+          "aube",
+          "pluie",
+          "vent"
+        ],
+        "reponse": 0,
+        "explication": "فَجْرٌ veut dire « aube »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le sens général",
+      "texte": "Un dictionnaire donne d'abord un sens général. Beaucoup de ces mots ont aussi, dans le Coran, des emplois qu'IQURA n'explique pas : on apprend le sens général, l'explication des textes revient aux commentateurs.",
+      "exemples": [
+        "سَمَاءٌ",
+        "قَمَرٌ",
+        "بَحْرٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans IQURA, سَمَاءٌ veut dire…",
+        "choix": [
+          "le ciel qu'on voit (sens général)",
+          "un sens religieux expliqué",
+          "la mer"
+        ],
+        "reponse": 0,
+        "explication": "On apprend le sens général."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Deux féminins sans ة",
+      "texte": "رِيحٌ et سَمَاءٌ sont féminins, même sans ة : l'adjectif et le verbe s'accordent au féminin.",
+      "exemples": [
+        "الرِّيحُ شَدِيدَةٌ الْيَوْمَ.",
+        "السَّمَاءُ جَمِيلَةٌ."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Le vent est fort aujourd'hui. »",
+        "ar": "الرِّيحُ … الْيَوْمَ.",
+        "choix_ar": [
+          "شَدِيدَةٌ",
+          "شَدِيدٌ",
+          "شَدِيدًا"
+        ],
+        "reponse": 0,
+        "explication": "رِيحٌ est féminin : شَدِيدَةٌ."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Le voyage de la caravane",
+      "texte": "Récit construit, rédigé par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "انْطَلَقَتِ الْقَافِلَةُ عِنْدَ الْفَجْرِ.",
+        "كَانَتِ الرِّيحُ شَدِيدَةً، وَكَانَ الْبَحْرُ بَعِيدًا.",
+        "فِي الْمَسَاءِ، اسْتَرَاحَ التُّجَّارُ تَحْتَ الْقَمَرِ، وَفِي السَّمَاءِ نُجُومٌ كَثِيرَةٌ.",
+        "وَفِي الصَّبَاحِ، بَقِيَتِ الْقَافِلَةُ فِي مَكَانِهَا بِسَبَبِ الْمَطَرِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quand la caravane est-elle partie ?",
+          "choix": [
+            "à l'aube",
+            "le soir",
+            "à midi"
+          ],
+          "reponse": 0,
+          "explication": "عِنْدَ الْفَجْرِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi la caravane est-elle restée sur place au matin ?",
+          "choix": [
+            "à cause de la pluie",
+            "à cause du vent",
+            "à cause de la mer"
+          ],
+          "reponse": 0,
+          "explication": "بِسَبَبِ الْمَطَرِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Où les marchands se sont-ils reposés le soir ?",
+          "choix": [
+            "sous la lune",
+            "près de la mer",
+            "sous la pluie"
+          ],
+          "reponse": 0,
+          "explication": "تَحْتَ الْقَمَرِ."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رِيحٌ",
+          "choix": [
+            "vent",
+            "pluie",
+            "ciel"
+          ],
+          "reponse": 0,
+          "explication": "رِيحٌ veut dire « vent »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَطَرٌ",
+          "choix": [
+            "pluie",
+            "mer",
+            "aube"
+          ],
+          "reponse": 0,
+          "explication": "مَطَرٌ veut dire « pluie »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَحْرٌ",
+          "choix": [
+            "mer",
+            "fleuve",
+            "puits"
+          ],
+          "reponse": 0,
+          "explication": "بَحْرٌ veut dire « mer »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَمَرٌ",
+          "choix": [
+            "lune",
+            "étoile",
+            "soleil"
+          ],
+          "reponse": 0,
+          "explication": "قَمَرٌ veut dire « lune »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane s'est mise en route à l'aube. »",
+          "ar": "انْطَلَقَتِ الْقَافِلَةُ عِنْدَ …",
+          "choix_ar": [
+            "الْفَجْرِ",
+            "الْبَحْرِ",
+            "الْمَطَرِ"
+          ],
+          "reponse": 0,
+          "explication": "L'aube : الْفَجْرُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a beaucoup d'étoiles dans le ciel. »",
+          "ar": "فِي … نُجُومٌ كَثِيرَةٌ.",
+          "choix_ar": [
+            "السَّمَاءِ",
+            "الْبَحْرِ",
+            "الرِّيحِ"
+          ],
+          "reponse": 0,
+          "explication": "Le ciel : السَّمَاءُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La mer est loin du village. »",
+          "ar": "… بَعِيدٌ عَنِ الْقَرْيَةِ.",
+          "choix_ar": [
+            "الْبَحْرُ",
+            "الرِّيحُ",
+            "السَّمَاءُ"
+          ],
+          "reponse": 0,
+          "explication": "بَعِيدٌ est masculin : الْبَحْرُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il pleut, Bāsim reste à la maison à cause de la pluie. »",
+          "ar": "بَقِيَ بَاسِمٌ فِي الْبَيْتِ بِسَبَبِ …",
+          "choix_ar": [
+            "الْمَطَرِ",
+            "الْفَجْرِ",
+            "الْقَمَرِ"
+          ],
+          "reponse": 0,
+          "explication": "La pluie : الْمَطَرُ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim est resté à la maison à cause de la pluie. » ?",
+          "choix_ar": [
+            "بَقِيَ بَاسِمٌ فِي الْبَيْتِ بِسَبَبِ الْمَطَرِ.",
+            "بَقِيَ بَاسِمٌ فِي الْبَيْتِ بِسَبَبِ الْبَحْرِ.",
+            "بَقِيَ بَاسِمٌ فِي الْبَيْتِ بِسَبَبُ الْمَطَرِ."
+          ],
+          "reponse": 0,
+          "explication": "بِسَبَبِ + génitif : الْمَطَرِ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « La caravane a voyagé sous la lune. »",
+          "tuiles": [
+            "سَافَرَتِ",
+            "الْقَافِلَةُ",
+            "تَحْتَ",
+            "الْقَمَرِ"
+          ],
+          "solution": [
+            "سَافَرَتِ",
+            "الْقَافِلَةُ",
+            "تَحْتَ",
+            "الْقَمَرِ"
+          ],
+          "explication": "Verbe, sujet, puis تَحْتَ + génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Accorde : « Le vent est fort. »",
+          "ar": "الرِّيحُ …",
+          "choix_ar": [
+            "شَدِيدَةٌ",
+            "شَدِيدٌ",
+            "شَدِيدَانِ"
+          ],
+          "reponse": 0,
+          "explication": "رِيحٌ est féminin."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris trois phrases sur le temps qu'il fait pendant un voyage, avec trois mots de la leçon.",
+          "modele": [
+            "انْطَلَقْنَا عِنْدَ الْفَجْرِ.",
+            "كَانَتِ الرِّيحُ شَدِيدَةً.",
+            "بَقِيَتِ الْقَافِلَةُ فِي مَكَانِهَا بِسَبَبِ الْمَطَرِ."
+          ],
+          "explication": "Compare : as-tu accordé رِيحٌ et سَمَاءٌ au féminin ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَمَاءٌ",
+          "choix": [
+            "ciel",
+            "mer",
+            "lune"
+          ],
+          "reponse": 0,
+          "explication": "سَمَاءٌ veut dire « ciel »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَجْرٌ",
+          "choix": [
+            "aube",
+            "soir",
+            "pluie"
+          ],
+          "reponse": 0,
+          "explication": "فَجْرٌ veut dire « aube »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَطَرٌ",
+          "choix": [
+            "pluie",
+            "vent",
+            "neige"
+          ],
+          "reponse": 0,
+          "explication": "مَطَرٌ veut dire « pluie »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le vent est fort aujourd'hui. »",
+          "ar": "الرِّيحُ … الْيَوْمَ.",
+          "choix_ar": [
+            "شَدِيدَةٌ",
+            "شَدِيدٌ",
+            "شَدِيدًا"
+          ],
+          "reponse": 0,
+          "explication": "رِيحٌ est féminin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane a voyagé sous la lune. »",
+          "ar": "سَافَرَتِ الْقَافِلَةُ تَحْتَ …",
+          "choix_ar": [
+            "الْقَمَرِ",
+            "الْبَحْرِ",
+            "الْفَجْرِ"
+          ],
+          "reponse": 0,
+          "explication": "La lune : الْقَمَرُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La mer est loin du village. »",
+          "ar": "الْبَحْرُ … عَنِ الْقَرْيَةِ.",
+          "choix_ar": [
+            "بَعِيدٌ",
+            "بَعِيدَةٌ",
+            "قَرِيبَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "الْبَحْرُ est masculin : بَعِيدٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « La caravane s'est mise en route à l'aube. » ?",
+          "choix_ar": [
+            "انْطَلَقَتِ الْقَافِلَةُ عِنْدَ الْفَجْرِ.",
+            "انْطَلَقَتِ الْقَافِلَةُ عِنْدَ الْمَسَاءِ.",
+            "انْطَلَقَ الْقَافِلَةُ عِنْدَ الْفَجْرِ."
+          ],
+          "reponse": 0,
+          "explication": "قَافِلَةٌ est féminin : انْطَلَقَتْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "À quel thème appartient قَمَرٌ ?",
+          "choix": [
+            "la nature (le ciel)",
+            "le temps",
+            "le marché"
+          ],
+          "reponse": 0,
+          "explication": "La lune : le monde qu'on voit."
+        },
+        {
+          "type": "qcm",
+          "consigne": "IQURA donne de ces mots…",
+          "choix": [
+            "le sens général, sans expliquer les textes",
+            "le sens de chaque verset",
+            "un sens religieux"
+          ],
+          "reponse": 0,
+          "explication": "L'explication des textes revient aux commentateurs."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَقَامَ",
+          "choix": [
+            "séjourner, demeurer (dans un lieu)",
+            "se lever",
+            "rattraper, atteindre"
+          ],
+          "reponse": 0,
+          "explication": "أَقَامَ veut dire « séjourner, demeurer (dans un lieu) ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَيْنَمَا",
+          "choix": [
+            "tandis que, pendant que",
+            "lorsque",
+            "quand, alors que (au passé)"
+          ],
+          "reponse": 0,
+          "explication": "بَيْنَمَا veut dire « tandis que, pendant que ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je ne peux pas porter ce sac. »",
+          "ar": "لَا … أَنْ أَحْمِلَ هَٰذَا الْكِيسَ.",
+          "choix_ar": [
+            "أَسْتَطِيعُ",
+            "اسْتَطَعْتُ",
+            "يَسْتَطِيعُ"
+          ],
+          "reponse": 0,
+          "explication": "1re personne de l'inaccompli.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu connais six mots de la nature et du temps (سَمَاءٌ, قَمَرٌ, بَحْرٌ, رِيحٌ, مَطَرٌ, فَجْرٌ) et tu sais les classer avec ceux que tu connaissais.",
+      "suite": "Prochaine leçon, toujours dans l'Herbier : les actions et les qualités des personnes."
+    }
+  ]
+}

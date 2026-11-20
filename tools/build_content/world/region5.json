@@ -1,5 +1,5 @@
 {
-  "_comment": "Région 5 « Les Jardins du Sens » (cahier §5.9, §8.2 ; proposition du 15/11/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_5.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Chapitre A (Classique avancé 1) ; les lieux 5 à 11 viendront avec Classique avancé 2 et 3.",
+  "_comment": "Région 5 « Les Jardins du Sens » (cahier §5.9, §8.2 ; proposition du 15/11/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_5.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Chapitre A (Classique avancé 1), lieux 5 à 8 (Classique avancé 2) ; les lieux 9 à 11 viendront avec Classique avancé 3.",
   "statut": "ia",
   "region": {
     "id": "r5",
@@ -88,9 +88,91 @@
       "tranche_j1a": true,
       "liens": [
         "verger_ordre",
+        "cour_conteurs",
         "clairiere_impatience"
       ],
       "description": "Sous la coupole, on écoute un texte passer du « il » au « tu » : le changement de personne."
+    },
+    {
+      "id": "cour_conteurs",
+      "numero": 5,
+      "nom": "La Cour des Conteurs",
+      "position": [
+        100,
+        72
+      ],
+      "lecons": [
+        8
+      ],
+      "scene": "scene_cour_conteurs",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "pavillon_voix",
+        "pepiniere_formes"
+      ],
+      "description": "Une cour pavée autour d'un vieux tapis : Zuhayr y raconte à la manière ancienne, épisode après épisode."
+    },
+    {
+      "id": "pepiniere_formes",
+      "numero": 6,
+      "nom": "La Pépinière des Formes",
+      "position": [
+        60,
+        76
+      ],
+      "lecons": [
+        9
+      ],
+      "scene": "scene_pepiniere_formes",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "cour_conteurs",
+        "herbier_themes"
+      ],
+      "description": "De jeunes plants alignés dans des pots : d'une même racine poussent plusieurs verbes."
+    },
+    {
+      "id": "herbier_themes",
+      "numero": 7,
+      "nom": "L'Herbier des Thèmes",
+      "position": [
+        16,
+        40
+      ],
+      "lecons": [
+        10,
+        11
+      ],
+      "scene": "scene_herbier_themes",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "pepiniere_formes",
+        "labyrinthe_sens"
+      ],
+      "description": "Des planches de feuilles séchées, rangées par thème : Hāla y classe les mots du ciel, du temps et des qualités."
+    },
+    {
+      "id": "labyrinthe_sens",
+      "numero": 8,
+      "nom": "Le Labyrinthe des Sens",
+      "position": [
+        64,
+        14
+      ],
+      "lecons": [
+        12
+      ],
+      "scene": "scene_labyrinthe_sens",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "herbier_themes",
+        "clairiere_impatience"
+      ],
+      "description": "Des allées de buis qui se séparent : un mot a plusieurs sens, deux mots proches ne disent pas tout à fait la même chose."
     },
     {
       "id": "clairiere_impatience",
@@ -105,7 +187,8 @@
       "sol": 80,
       "tranche_j1a": true,
       "liens": [
-        "pavillon_voix"
+        "pavillon_voix",
+        "labyrinthe_sens"
       ],
       "description": "Herbe brûlée et sable qui file : l'Impatience pousse à lire trop vite et à tout vouloir tout de suite."
     }
@@ -121,7 +204,11 @@
         "porte_jardins",
         "fontaine_questions",
         "verger_ordre",
-        "pavillon_voix"
+        "pavillon_voix",
+        "cour_conteurs",
+        "pepiniere_formes",
+        "herbier_themes",
+        "labyrinthe_sens"
       ]
     }
   ]
