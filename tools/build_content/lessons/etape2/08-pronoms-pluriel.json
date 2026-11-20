@@ -1,0 +1,564 @@
+{
+  "id": "fondations-08",
+  "etape": 2,
+  "ordre": 8,
+  "format": 3,
+  "titre": "La caravane se rassemble",
+  "objectif": "Parler d'un groupe : nous, vous, ils, elles ; reconnaître le duel.",
+  "statut": "ia_non_verifie",
+  "lieu": "palmiers",
+  "maitre": "basim",
+  "prerequis": [
+    "fondations-07"
+  ],
+  "apercu": [
+    "رَاشِدٌ",
+    "بَاسِمٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "basim",
+          "texte": "Le soir approche : toute la caravane se rassemble près du puits."
+        },
+        {
+          "qui": "basim",
+          "texte": "Pour parler de plusieurs personnes, il faut d'autres pronoms. Et pour deux, l'arabe a même des formes à part !"
+        }
+      ],
+      "objectif": "Dire nous, vous, ils, elles, ici et là-bas."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « elle » ?",
+          "choix_ar": [
+            "هِيَ",
+            "هُوَ",
+            "أَنْتِ"
+          ],
+          "reponse": 0,
+          "explication": "« elle » se dit هِيَ (leçon 2.7)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Elle est voyageuse ».",
+          "ar": "هِيَ …",
+          "choix_ar": [
+            "مُسَافِرَةٌ",
+            "مُسَافِرٌ",
+            "الْمُسَافِرَةُ"
+          ],
+          "reponse": 0,
+          "explication": "هِيَ مُسَافِرَةٌ : féminin (leçon 2.7)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَرِيبٌ",
+          "choix": [
+            "proche",
+            "lointain",
+            "grand"
+          ],
+          "reponse": 0,
+          "explication": "قَرِيبٌ veut dire « proche » (leçon 2.6)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "نَحْنُ هُنَا.",
+          "fr": "Nous sommes ici."
+        },
+        {
+          "qui": "rashid_oasis",
+          "ar": "وَهُمْ هُنَاكَ.",
+          "fr": "Et eux sont là-bas."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَأَنْتُمْ هُنَا.",
+          "fr": "Et vous, vous êtes ici."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où sont « eux » (هُمْ) ?",
+        "choix": [
+          "là-bas",
+          "ici",
+          "au village"
+        ],
+        "reponse": 0,
+        "explication": "وَهُمْ هُنَاكَ : « et eux sont là-bas »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "nahnu",
+        "antum",
+        "antunna",
+        "hum",
+        "hunna"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "نَحْنُ",
+        "choix": [
+          "nous",
+          "vous",
+          "ils"
+        ],
+        "reponse": 0,
+        "explication": "نَحْنُ veut dire « nous »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "antuma",
+        "huma",
+        "huna",
+        "hunaka"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "هُنَاكَ",
+        "choix": [
+          "là-bas",
+          "ici",
+          "eux deux"
+        ],
+        "reponse": 0,
+        "explication": "هُنَاكَ veut dire « là-bas »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Nous, vous, ils, elles",
+      "texte": "نَحْنُ « nous », أَنْتُمْ « vous » (hommes ou groupe mixte), أَنْتُنَّ « vous » (femmes), هُمْ « ils », هُنَّ « elles ».",
+      "exemples": [
+        "نَحْنُ هُنَا.",
+        "هُمْ هُنَاكَ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment dit-on « elles » ?",
+        "choix_ar": [
+          "هُنَّ",
+          "هُمْ",
+          "هِيَ"
+        ],
+        "reponse": 0,
+        "explication": "هُنَّ « elles » ; هُمْ veut dire « ils »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "À deux : le duel",
+      "texte": "Pour deux (personnes ou choses), l'arabe a des formes à part : أَنْتُمَا « vous deux », هُمَا « eux deux, elles deux ». Reconnais-les ; tu les utiliseras plus tard.",
+      "exemples": [
+        "أَنْتُمَا",
+        "هُمَا"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "هُمَا",
+        "choix": [
+          "eux deux, elles deux",
+          "ils (plus de deux)",
+          "nous"
+        ],
+        "reponse": 0,
+        "explication": "هُمَا veut dire « eux deux, elles deux »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous » ?",
+          "choix_ar": [
+            "نَحْنُ",
+            "هُمْ",
+            "أَنْتُمْ"
+          ],
+          "reponse": 0,
+          "explication": "« nous » se dit نَحْنُ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هُمْ",
+          "choix": [
+            "ils",
+            "elles",
+            "nous"
+          ],
+          "reponse": 0,
+          "explication": "هُمْ veut dire « ils »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nous sommes ici ».",
+          "ar": "… هُنَا.",
+          "choix_ar": [
+            "نَحْنُ",
+            "هُمْ",
+            "هُنَّ"
+          ],
+          "reponse": 0,
+          "explication": "نَحْنُ هُنَا : « nous sommes ici »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "هُنَاكَ",
+          "choix_ar": [
+            "هُنَاكَ",
+            "هُنَا",
+            "هُنَّ"
+          ],
+          "reponse": 0,
+          "explication": "C'était هُنَاكَ « là-bas »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Ils sont là-bas. »",
+          "tuiles": [
+            "هُنَاكَ",
+            "هُمْ",
+            "هُنَا"
+          ],
+          "solution": [
+            "هُمْ",
+            "هُنَاكَ"
+          ],
+          "explication": "هُمْ هُنَاكَ : le pronom, puis « là-bas »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour parler à un groupe de femmes, tu dis…",
+          "choix_ar": [
+            "أَنْتُنَّ",
+            "أَنْتُمْ",
+            "أَنْتِ"
+          ],
+          "reponse": 0,
+          "explication": "أَنْتُنَّ « vous » (des femmes)."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "نَحْنُ هُنَا."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ici » ?",
+          "choix_ar": [
+            "هُنَا",
+            "هُنَاكَ",
+            "هُمَا"
+          ],
+          "reponse": 0,
+          "explication": "« ici » se dit هُنَا."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَنْتُمَا",
+          "choix": [
+            "vous deux",
+            "vous (plus de deux)",
+            "eux deux"
+          ],
+          "reponse": 0,
+          "explication": "أَنْتُمَا veut dire « vous deux »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Elles sont ici ».",
+          "ar": "هُنَّ …",
+          "choix_ar": [
+            "هُنَا",
+            "هُنَاكَ",
+            "هُمْ"
+          ],
+          "reponse": 0,
+          "explication": "هُنَّ هُنَا : « elles sont ici »."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Qui est où ?",
+      "texte": "Le voyageur regarde la caravane se rassembler. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "أَنَا هُنَا، وَأَنْتَ هُنَا.",
+        "نَحْنُ هُنَا.",
+        "رَاشِدٌ وَبَاسِمٌ هُنَاكَ.",
+        "هُمَا هُنَاكَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où sont Rāšid et Bāsim ?",
+          "choix": [
+            "là-bas",
+            "ici",
+            "au village"
+          ],
+          "reponse": 0,
+          "explication": "رَاشِدٌ وَبَاسِمٌ هُنَاكَ : là-bas."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi le texte dit-il هُمَا ?",
+          "choix": [
+            "Ils sont deux.",
+            "Ils sont nombreux.",
+            "Il n'y a qu'une seule personne."
+          ],
+          "reponse": 0,
+          "explication": "هُمَا s'emploie pour deux personnes : Rāšid et Bāsim."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Nous sommes ici. »",
+          "tuiles": [
+            "هُنَا",
+            "نَحْنُ",
+            "هُنَاكَ"
+          ],
+          "solution": [
+            "نَحْنُ",
+            "هُنَا"
+          ],
+          "explication": "نَحْنُ هُنَا."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te dit où est le groupe et te demande où tu es. Que réponds-tu ?",
+          "replique": {
+            "qui": "basim",
+            "ar": "نَحْنُ هُنَا، وَأَنْتَ؟"
+          },
+          "choix_ar": [
+            "أَنَا هُنَا.",
+            "هُمْ هُنَا.",
+            "هُمَا هُنَا."
+          ],
+          "reponse": 0,
+          "explication": "Pour parler de toi : أَنَا هُنَا « je suis ici »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « elles » ?",
+          "choix_ar": [
+            "هُنَّ",
+            "هُمْ",
+            "هِيَ"
+          ],
+          "reponse": 0,
+          "explication": "« elles » se dit هُنَّ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Elles sont là-bas. »",
+          "tuiles": [
+            "هُنَاكَ",
+            "هُنَّ",
+            "هُمْ"
+          ],
+          "solution": [
+            "هُنَّ",
+            "هُنَاكَ"
+          ],
+          "explication": "هُنَّ هُنَاكَ : « elles sont là-bas »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « là-bas » ?",
+          "choix_ar": [
+            "هُنَاكَ",
+            "هُنَا",
+            "هُمَا"
+          ],
+          "reponse": 0,
+          "explication": "« là-bas » se dit هُنَاكَ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَحْنُ",
+          "choix": [
+            "nous",
+            "vous",
+            "ils"
+          ],
+          "reponse": 0,
+          "explication": "نَحْنُ veut dire « nous »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هُنَّ",
+          "choix": [
+            "elles",
+            "ils",
+            "nous"
+          ],
+          "reponse": 0,
+          "explication": "هُنَّ veut dire « elles »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "هُنَا",
+          "choix": [
+            "ici",
+            "là-bas",
+            "eux deux"
+          ],
+          "reponse": 0,
+          "explication": "هُنَا veut dire « ici »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils » ?",
+          "choix_ar": [
+            "هُمْ",
+            "هُنَّ",
+            "نَحْنُ"
+          ],
+          "reponse": 0,
+          "explication": "« ils » se dit هُمْ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « vous (des hommes) » ?",
+          "choix_ar": [
+            "أَنْتُمْ",
+            "أَنْتُنَّ",
+            "أَنْتَ"
+          ],
+          "reponse": 0,
+          "explication": "« vous (des hommes) » se dit أَنْتُمْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ils sont ici ».",
+          "ar": "… هُنَا.",
+          "choix_ar": [
+            "هُمْ",
+            "هُنَّ",
+            "نَحْنُ"
+          ],
+          "reponse": 0,
+          "explication": "هُمْ هُنَا : « ils sont ici »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire هُمَا ?",
+          "choix": [
+            "eux deux, elles deux",
+            "ils (plus de deux)",
+            "nous"
+          ],
+          "reponse": 0,
+          "explication": "هُمَا : deux personnes."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "نَحْنُ",
+          "choix_ar": [
+            "نَحْنُ",
+            "هُنَا",
+            "هُنَّ"
+          ],
+          "reponse": 0,
+          "explication": "C'était نَحْنُ « nous »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour dire « vous » à des femmes, tu dis…",
+          "choix_ar": [
+            "أَنْتُنَّ",
+            "أَنْتُمْ",
+            "هُنَّ"
+          ],
+          "reponse": 0,
+          "explication": "أَنْتُنَّ « vous » (des femmes)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَاجِرٌ",
+          "choix": [
+            "un marchand",
+            "un voyageur",
+            "un nom"
+          ],
+          "reponse": 0,
+          "explication": "تَاجِرٌ veut dire « un marchand ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je » ?",
+          "choix_ar": [
+            "أَنَا",
+            "أَنْتَ",
+            "هُوَ"
+          ],
+          "reponse": 0,
+          "explication": "« je » se dit أَنَا.",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le village est proche ».",
+          "ar": "الْقَرْيَةُ …",
+          "choix_ar": [
+            "قَرِيبَةٌ",
+            "قَرِيبٌ",
+            "الْقَرِيبَةُ"
+          ],
+          "reponse": 0,
+          "explication": "الْقَرْيَةُ قَرِيبَةٌ.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu dis nous, vous, ils, elles : نَحْنُ هُنَا, هُمْ هُنَاكَ ; et tu reconnais le duel : أَنْتُمَا, هُمَا.",
+      "suite": "Ce soir, autour du feu, on décrit les choses avec des adjectifs."
+    }
+  ]
+}

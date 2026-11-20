@@ -1,0 +1,539 @@
+{
+  "id": "cite-05",
+  "etape": 4,
+  "ordre": 5,
+  "format": 3,
+  "titre": "Parce que, pour que",
+  "objectif": "Dire la cause avec لِأَنَّ, le but avec لِـ et حَتَّى.",
+  "statut": "ia_non_verifie",
+  "lieu": "messagers",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-04"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Une bonne lettre explique : pourquoi on a agi, et dans quel but."
+        },
+        {
+          "qui": "nadim",
+          "texte": "Aujourd'hui : « parce que » et « pour que »."
+        }
+      ],
+      "objectif": "Employer لِأَنَّ, لِـ, حَتَّى et لِمَاذَا."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Écris la réponse avant de partir. »",
+          "ar": "اكْتُبِ الْجَوَابَ قَبْلَ أَنْ …",
+          "choix_ar": [
+            "تُسَافِرَ",
+            "تُسَافِرُ",
+            "سَافَرْتَ"
+          ],
+          "reponse": 0,
+          "explication": "قَبْلَ أَنْ + subjonctif (leçon 4.4)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَتَى",
+          "choix": [
+            "quand ?",
+            "pourquoi ?",
+            "où ?"
+          ],
+          "reponse": 0,
+          "explication": "مَتَى veut dire « quand ? »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je croyais que la porte était ouverte. »",
+          "ar": "ظَنَنْتُ أَنَّ … مَفْتُوحٌ.",
+          "choix_ar": [
+            "الْبَابَ",
+            "الْبَابُ",
+            "الْبَابِ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنَّ : -a (leçon 4.3)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "ar": "لِمَاذَا تَأَخَّرْتَ يَا بَاسِمُ؟",
+          "fr": "Pourquoi es-tu en retard, Bāsim ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "لِأَنَّ الْجَمَلَ مَرِيضٌ.",
+          "fr": "Parce que le chameau est malade."
+        },
+        {
+          "qui": "nadim",
+          "ar": "جَلَسَ سَمِيرٌ لِيَسْمَعَ الْقِصَّةَ.",
+          "fr": "Samīr s'est déjà assis pour écouter l'histoire."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pourquoi Bāsim est-il en retard ?",
+        "choix": [
+          "le chameau est malade",
+          "il a dormi tard",
+          "le chemin est long"
+        ],
+        "reponse": 0,
+        "explication": "لِأَنَّ الْجَمَلَ مَرِيضٌ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "li_anna",
+        "li_but",
+        "hatta",
+        "limadha",
+        "sabab",
+        "jaiE"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "سَبَبٌ",
+        "choix": [
+          "cause, raison",
+          "but",
+          "réponse"
+        ],
+        "reponse": 0,
+        "explication": "سَبَبٌ veut dire « cause, raison »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La cause : لِأَنَّ",
+      "texte": "لِأَنَّ (« parce que ») est suivi d'une phrase nominale, sujet en -a : لِأَنَّ الطَّرِيقَ طَوِيلٌ.",
+      "exemples": [
+        "لِأَنَّ الطَّرِيقَ طَوِيلٌ",
+        "لِأَنَّهُ جَائِعٌ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « parce que le chameau est malade »",
+        "ar": "لِأَنَّ … مَرِيضٌ",
+        "choix_ar": [
+          "الْجَمَلَ",
+          "الْجَمَلُ",
+          "الْجَمَلِ"
+        ],
+        "reponse": 0,
+        "explication": "Après لِأَنَّ : sujet en -a."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le but : لِـ et حَتَّى",
+      "texte": "لِـ et حَتَّى (« pour que », « jusqu'à ce que ») mettent le verbe au subjonctif : جَلَسَ لِيَسْمَعَ. Suivi d'un nom, حَتَّى veut dire « jusqu'à » : حَتَّى الْمَسَاءِ.",
+      "exemples": [
+        "جَلَسَ لِيَسْمَعَ",
+        "حَتَّى الْمَسَاءِ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Il est allé au marché pour vendre la laine. »",
+        "ar": "ذَهَبَ إِلَى السُّوقِ لِ… الصُّوفَ.",
+        "choix_ar": [
+          "يَبِيعَ",
+          "يَبِيعُ",
+          "بَاعَ"
+        ],
+        "reponse": 0,
+        "explication": "لِـ + subjonctif : لِيَبِيعَ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Trois لِـ",
+      "texte": "لِأَنَّ + nom en -a (« parce que ») ; لِـ + verbe en -a (« pour ») ; لِـ + nom au génitif (« à, pour », leçon 2.15).",
+      "exemples": [
+        "لِأَنَّ الْبَرْدَ شَدِيدٌ",
+        "لِيَسْمَعَ",
+        "لِلطِّفْلِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans جَلَسَ لِيَسْمَعَ الْقِصَّةَ, لِـ veut dire…",
+        "choix": [
+          "pour (que)",
+          "parce que",
+          "à (quelqu'un)"
+        ],
+        "reponse": 0,
+        "explication": "لِـ + verbe : le but."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لِمَاذَا",
+          "choix": [
+            "pourquoi ?",
+            "quand ?",
+            "comment ?"
+          ],
+          "reponse": 0,
+          "explication": "لِمَاذَا veut dire « pourquoi ? »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَائِعٌ",
+          "choix": [
+            "qui a faim",
+            "malade",
+            "fatigué"
+          ],
+          "reponse": 0,
+          "explication": "جَائِعٌ veut dire « qui a faim »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَتَّى",
+          "choix": [
+            "jusqu'à ; jusqu'à ce que, pour que",
+            "parce que",
+            "avant"
+          ],
+          "reponse": 0,
+          "explication": "حَتَّى veut dire « jusqu'à ; jusqu'à ce que, pour que »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Samīr a mis un vêtement de laine parce que le froid est vif » ?",
+          "choix_ar": [
+            "لَبِسَ سَمِيرٌ ثَوْبًا مِنْ صُوفٍ لِأَنَّ الْبَرْدَ شَدِيدٌ",
+            "لَبِسَ سَمِيرٌ ثَوْبًا مِنْ صُوفٍ لِأَنَّ الْبَرْدُ شَدِيدٌ",
+            "لَبِسَ سَمِيرٌ ثَوْبًا مِنْ صُوفٍ لِأَنَّ الْبَرْدِ شَدِيدٌ"
+          ],
+          "reponse": 0,
+          "explication": "لِأَنَّ + sujet en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim s'est assis dans l'assemblée pour écouter l'histoire. »",
+          "ar": "جَلَسَ بَاسِمٌ فِي الْمَجْلِسِ … الْقِصَّةَ.",
+          "choix_ar": [
+            "لِيَسْمَعَ",
+            "لِأَنَّ",
+            "لِيَسْمَعُ"
+          ],
+          "reponse": 0,
+          "explication": "But : لِـ + subjonctif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le menuisier a travaillé jusqu'au soir. »",
+          "ar": "عَمِلَ النَّجَّارُ … الْمَسَاءِ.",
+          "choix_ar": [
+            "حَتَّى",
+            "لِأَنَّ",
+            "لِـ"
+          ],
+          "reponse": 0,
+          "explication": "حَتَّى + nom : « jusqu'à »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'enfant a demandé du pain parce qu'il a faim. »",
+          "ar": "طَلَبَ الطِّفْلُ الْخُبْزَ … جَائِعٌ.",
+          "choix_ar": [
+            "لِأَنَّهُ",
+            "لِيَكُونَ",
+            "حَتَّى"
+          ],
+          "reponse": 0,
+          "explication": "Cause : لِأَنَّ, ici avec ـهُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a attendu jusqu'à ce que Nadīm écrive la lettre. »",
+          "ar": "انْتَظَرَ بَاسِمٌ حَتَّى … نَدِيمٌ الرِّسَالَةَ.",
+          "choix_ar": [
+            "يَكْتُبَ",
+            "يَكْتُبُ",
+            "يَكْتُبْ"
+          ],
+          "reponse": 0,
+          "explication": "حَتَّى + verbe : subjonctif en -a."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après لِأَنَّ, le sujet est…",
+          "choix": [
+            "en -a",
+            "en -u",
+            "en -i"
+          ],
+          "reponse": 0,
+          "explication": "لِأَنَّ الطَّرِيقَ طَوِيلٌ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le retard du messager",
+      "texte": "Nadīm explique le retard d'un messager. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "تَأَخَّرَ حَامِلُ الرِّسَالَةِ لِأَنَّ الطَّرِيقَ طَوِيلٌ.",
+        "مَشَى حَتَّى الْمَسَاءِ، ثُمَّ نَامَ فِي الْخَيْمَةِ.",
+        "كَانَ جَائِعًا.",
+        "فِي الصَّبَاحِ، ذَهَبَ إِلَى السُّوقِ لِيَطْلُبَ الْخُبْزَ.",
+        "ثُمَّ رَجَعَ إِلَى الطَّرِيقِ لِيَحْمِلَ الرِّسَالَةَ إِلَى نَدِيمٍ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi le messager est-il en retard ?",
+          "choix": [
+            "parce que le chemin est long",
+            "parce qu'il est malade",
+            "parce qu'il a perdu la lettre"
+          ],
+          "reponse": 0,
+          "explication": "لِأَنَّ الطَّرِيقَ طَوِيلٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi est-il allé au marché ?",
+          "choix": [
+            "pour demander du pain",
+            "pour vendre la lettre",
+            "pour dormir"
+          ],
+          "reponse": 0,
+          "explication": "لِيَطْلُبَ الْخُبْزَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « pourquoi es-tu en retard » ?",
+          "choix_ar": [
+            "لِمَاذَا تَأَخَّرْتَ؟",
+            "مَتَى تَأَخَّرْتَ؟",
+            "لِأَنَّ الْجَمَلَ تَأَخَّرَ"
+          ],
+          "reponse": 0,
+          "explication": "Pour demander la raison : لِمَاذَا ; مَتَى demande le moment."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre : verbe, sujet, puis le but : « Bāsim s'est assis pour écouter. »",
+          "tuiles": [
+            "لِيَسْمَعَ",
+            "بَاسِمٌ",
+            "جَلَسَ",
+            "لِأَنَّ"
+          ],
+          "solution": [
+            "جَلَسَ",
+            "بَاسِمٌ",
+            "لِيَسْمَعَ"
+          ],
+          "explication": "Le but : لِـ + subjonctif ; لِأَنَّ dit la cause."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand est allé au marché pour vendre la laine. »",
+          "ar": "ذَهَبَ التَّاجِرُ إِلَى السُّوقِ … الصُّوفَ.",
+          "choix_ar": [
+            "لِيَبِيعَ",
+            "لِأَنَّ",
+            "لِيَبِيعُ"
+          ],
+          "reponse": 0,
+          "explication": "But : لِـ + subjonctif."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لِأَنَّ",
+          "choix": [
+            "parce que",
+            "pour que",
+            "jusqu'à"
+          ],
+          "reponse": 0,
+          "explication": "لِأَنَّ veut dire « parce que »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَبَبٌ",
+          "choix": [
+            "cause, raison",
+            "chemin",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "سَبَبٌ veut dire « cause, raison »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لِمَاذَا",
+          "choix": [
+            "pourquoi ?",
+            "quand ?",
+            "combien ?"
+          ],
+          "reponse": 0,
+          "explication": "لِمَاذَا veut dire « pourquoi ? »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « parce que le froid est vif » ?",
+          "choix_ar": [
+            "لِأَنَّ الْبَرْدَ شَدِيدٌ",
+            "لِأَنَّ الْبَرْدُ شَدِيدٌ",
+            "لِيَكُونَ الْبَرْدُ شَدِيدًا"
+          ],
+          "reponse": 0,
+          "explication": "لِأَنَّ + sujet en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il s'est assis pour écouter l'histoire. »",
+          "ar": "جَلَسَ … الْقِصَّةَ.",
+          "choix_ar": [
+            "لِيَسْمَعَ",
+            "لِيَسْمَعُ",
+            "لِأَنَّ"
+          ],
+          "reponse": 0,
+          "explication": "لِـ + subjonctif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a travaillé jusqu'au soir. »",
+          "ar": "عَمِلَ … الْمَسَاءِ.",
+          "choix_ar": [
+            "حَتَّى",
+            "لِأَنَّ",
+            "قَبْلَ أَنْ"
+          ],
+          "reponse": 0,
+          "explication": "حَتَّى + nom."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a demandé du pain parce qu'il a faim. »",
+          "ar": "طَلَبَ الْخُبْزَ لِأَنَّهُ …",
+          "choix_ar": [
+            "جَائِعٌ",
+            "جَائِعًا",
+            "جَائِعٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après لِأَنَّهُ, l'attribut reste en -u."
+        },
+        {
+          "type": "qcm",
+          "consigne": "لِـ + verbe au subjonctif dit…",
+          "choix": [
+            "le but",
+            "la cause",
+            "le lieu"
+          ],
+          "reponse": 0,
+          "explication": "جَلَسَ لِيَسْمَعَ : le but."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire حَتَّى الْمَسَاءِ ?",
+          "choix": [
+            "jusqu'au soir",
+            "avant le soir",
+            "parce que c'est le soir"
+          ],
+          "reponse": 0,
+          "explication": "حَتَّى + nom : « jusqu'à »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَمَّا",
+          "choix": [
+            "lorsque (+ passé)",
+            "pourquoi",
+            "jusqu'à"
+          ],
+          "reponse": 0,
+          "explication": "لَمَّا veut dire « lorsque (+ passé) ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Lorsque nous sommes arrivés, nous avons dormi. »",
+          "ar": "… وَصَلْنَا، نِمْنَا.",
+          "choix_ar": [
+            "لَمَّا",
+            "لِأَنَّ",
+            "لِمَاذَا"
+          ],
+          "reponse": 0,
+          "explication": "لَمَّا + passé.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَخْبَرَ",
+          "choix": [
+            "informer, apprendre (une nouvelle) à",
+            "ordonner",
+            "croire"
+          ],
+          "reponse": 0,
+          "explication": "أَخْبَرَ veut dire « informer, apprendre (une nouvelle) à ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu dis la cause avec لِأَنَّ, le but avec لِـ et حَتَّى + subjonctif, et tu demandes « pourquoi ? » avec لِمَاذَا.",
+      "suite": "À la Place des conteurs : dire dans quel état on agit."
+    }
+  ]
+}

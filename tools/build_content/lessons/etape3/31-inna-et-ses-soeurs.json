@@ -1,0 +1,565 @@
+{
+  "id": "moteur-31",
+  "etape": 3,
+  "ordre": 31,
+  "format": 3,
+  "titre": "« Certes… » : إِنَّ et ses sœurs",
+  "objectif": "Comprendre إِنَّ et ses sœurs, qui mettent le sujet en -a.",
+  "statut": "ia_non_verifie",
+  "lieu": "bibliotheque_col",
+  "maitre": "widad",
+  "prerequis": [
+    "moteur-30"
+  ],
+  "apercu": [
+    "وِدَادُ"
+  ],
+  "schemes": [],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "widad",
+          "texte": "Dans cette bibliothèque, de petits mots changent la fin du sujet. Le plus célèbre est إِنَّ."
+        },
+        {
+          "qui": "widad",
+          "texte": "الطَّرِيقُ طَوِيلٌ devient إِنَّ الطَّرِيقَ طَوِيلٌ : le chemin est vraiment long."
+        }
+      ],
+      "objectif": "Employer إِنَّ, أَنَّ, لَٰكِنَّ, لَعَلَّ, كَأَنَّ, لَيْتَ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ne te hâte pas ! »",
+          "ar": "لَا …",
+          "choix_ar": [
+            "تَتَعَجَّلْ",
+            "تَتَعَجَّلُ",
+            "تَعَجَّلَ"
+          ],
+          "reponse": 0,
+          "explication": "Défense : jussif (leçon 3.30)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire لَا تَكْتُبُ ?",
+          "choix": [
+            "tu n'écris pas",
+            "n'écris pas !",
+            "tu n'as pas écrit"
+          ],
+          "reponse": 0,
+          "explication": "-u : simple négation (leçon 3.30)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خَطَأٌ",
+          "choix": [
+            "erreur",
+            "ce qui est juste",
+            "moment"
+          ],
+          "reponse": 0,
+          "explication": "خَطَأٌ (leçon 3.30)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "إِنَّ الطَّرِيقَ طَوِيلٌ!",
+          "fr": "Le chemin est vraiment long !"
+        },
+        {
+          "qui": "widad",
+          "ar": "لَعَلَّ الْقَرْيَةَ قَرِيبَةٌ.",
+          "fr": "Le village est peut-être proche."
+        },
+        {
+          "qui": "basim",
+          "ar": "لَيْتَ الطَّرِيقَ قَصِيرٌ!",
+          "fr": "Si seulement le chemin était court !"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que pense Widād du village ?",
+        "choix": [
+          "il est peut-être proche",
+          "il est loin",
+          "il est grand"
+        ],
+        "reponse": 0,
+        "explication": "لَعَلَّ الْقَرْيَةَ قَرِيبَةٌ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "inna",
+        "anna",
+        "lakinna",
+        "laalla",
+        "kaanna",
+        "layta"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "لَعَلَّ",
+        "choix": [
+          "peut-être que",
+          "si seulement",
+          "mais"
+        ],
+        "reponse": 0,
+        "explication": "لَعَلَّ veut dire « peut-être que »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le sujet passe en -a",
+      "texte": "إِنَّ et ses sœurs se placent devant une phrase nominale : le sujet passe en -a, l'attribut reste en -u. الطَّرِيقُ طَوِيلٌ → إِنَّ الطَّرِيقَ طَوِيلٌ.",
+      "exemples": [
+        "إِنَّ الطَّرِيقَ طَوِيلٌ",
+        "لَعَلَّ سَمِيرًا فِي الْمَدْرَسَةِ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Le jardin est vraiment beau. »",
+        "ar": "إِنَّ … جَمِيلَةٌ.",
+        "choix_ar": [
+          "الْحَدِيقَةَ",
+          "الْحَدِيقَةُ",
+          "الْحَدِيقَةِ"
+        ],
+        "reponse": 0,
+        "explication": "Après إِنَّ, le sujet passe en -a."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "إِنَّ ou أَنَّ",
+      "texte": "En début de phrase et après قَالَ, on écrit إِنَّ ; après les autres verbes, أَنَّ « que » : عَرَفْتُ أَنَّ الْحَارِسَ عِنْدَ الْبَابِ. Ne confonds pas أَنَّ (+ nom) et أَنْ (+ verbe).",
+      "exemples": [
+        "عَرَفْتُ أَنَّ",
+        "أُرِيدُ أَنْ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « J'ai su que le gardien était à la porte. »",
+        "ar": "عَرَفْتُ … الْحَارِسَ عِنْدَ الْبَابِ.",
+        "choix_ar": [
+          "أَنَّ",
+          "أَنْ",
+          "إِنَّ"
+        ],
+        "reponse": 0,
+        "explication": "Après un verbe autre que قَالَ, et devant un nom : أَنَّ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les sœurs",
+      "texte": "Les sœurs de إِنَّ font la même chose : لَٰكِنَّ « mais », لَعَلَّ « peut-être que », كَأَنَّ « on dirait que », لَيْتَ « si seulement ».",
+      "exemples": [
+        "لَٰكِنَّ",
+        "لَعَلَّ",
+        "كَأَنَّ",
+        "لَيْتَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire كَأَنَّ السُّوقَ مَدِينَةٌ ?",
+        "choix": [
+          "On dirait que le marché est une ville.",
+          "Le marché est peut-être une ville.",
+          "Si seulement le marché était une ville !"
+        ],
+        "reponse": 0,
+        "explication": "كَأَنَّ : « on dirait que »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Avec un pronom collé",
+      "texte": "إِنَّ et أَنَّ peuvent prendre un pronom collé : إِنَّهُ « certes il », أَنَّهَا « qu'elle ».",
+      "exemples": [
+        "إِنَّهُ",
+        "أَنَّهَا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire عَرَفْتُ أَنَّهُ فِي السُّوقِ ?",
+        "choix": [
+          "J'ai su qu'il était au marché.",
+          "J'ai su qu'elle était au marché.",
+          "Il est vraiment au marché."
+        ],
+        "reponse": 0,
+        "explication": "أَنَّهُ : « qu'il »."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَيْتَ",
+          "choix": [
+            "si seulement",
+            "peut-être que",
+            "certes"
+          ],
+          "reponse": 0,
+          "explication": "لَيْتَ veut dire « si seulement »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَٰكِنَّ",
+          "choix": [
+            "mais",
+            "que",
+            "on dirait que"
+          ],
+          "reponse": 0,
+          "explication": "لَٰكِنَّ veut dire « mais »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Samīr est peut-être à l'école. » ?",
+          "choix_ar": [
+            "لَعَلَّ سَمِيرًا فِي الْمَدْرَسَةِ.",
+            "لَعَلَّ سَمِيرٌ فِي الْمَدْرَسَةِ.",
+            "لَيْتَ سَمِيرًا فِي الْمَدْرَسَةِ."
+          ],
+          "reponse": 0,
+          "explication": "Après لَعَلَّ, le sujet passe en -a : سَمِيرًا ; لَيْتَ veut dire « si seulement »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le chemin est vraiment long » ?",
+          "choix_ar": [
+            "إِنَّ الطَّرِيقَ طَوِيلٌ",
+            "إِنَّ الطَّرِيقُ طَوِيلٌ",
+            "إِنَّ الطَّرِيقَ طَوِيلًا"
+          ],
+          "reponse": 0,
+          "explication": "Après إِنَّ : sujet en -a, attribut en -u."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après إِنَّ, l'attribut…",
+          "choix": [
+            "reste en -u",
+            "passe en -a",
+            "passe en -i"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّ الطَّرِيقَ طَوِيلٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire أَنَّ ?",
+          "choix": [
+            "que (+ nom)",
+            "que (+ verbe)",
+            "je"
+          ],
+          "reponse": 0,
+          "explication": "أَنَّ + nom ; أَنْ + verbe."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La maison est petite, mais le jardin est grand. »",
+          "ar": "الْبَيْتُ صَغِيرٌ، لَٰكِنَّ … كَبِيرَةٌ.",
+          "choix_ar": [
+            "الْحَدِيقَةَ",
+            "الْحَدِيقَةُ",
+            "حَدِيقَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَٰكِنَّ, le sujet passe en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si seulement le chemin était court ! »",
+          "ar": "لَيْتَ الطَّرِيقَ …",
+          "choix_ar": [
+            "قَصِيرٌ",
+            "قَصِيرًا",
+            "قَصِيرٍ"
+          ],
+          "reponse": 0,
+          "explication": "L'attribut reste en -u."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai su qu'elle était à la maison. »",
+          "ar": "عَرَفْتُ … فِي الْبَيْتِ.",
+          "choix_ar": [
+            "أَنَّهَا",
+            "أَنَّهُ",
+            "إِنَّهَا"
+          ],
+          "reponse": 0,
+          "explication": "Après عَرَفْتُ, on écrit أَنَّ (pas إِنَّ) ; ـهَا = « elle » (ـهُ = « il »)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Samīr a dit : le chemin est vraiment long. »",
+          "ar": "قَالَ سَمِيرٌ: « … الطَّرِيقَ طَوِيلٌ. »",
+          "choix_ar": [
+            "إِنَّ",
+            "أَنَّ",
+            "أَنْ"
+          ],
+          "reponse": 0,
+          "explication": "Après قَالَ : إِنَّ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Une lettre à la bibliothèque",
+      "texte": "Widād lit une lettre arrivée à la bibliothèque. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "إِنَّ الثَّلْجَ كَثِيرٌ فِي الْجِبَالِ.",
+        "عَرَفْنَا أَنَّ الْقَافِلَةَ قَرِيبَةٌ، لَٰكِنَّ الطَّرِيقَ صَعْبٌ.",
+        "كَأَنَّ الثَّلْجَ بِسَاطٌ أَبْيَضُ.",
+        "لَعَلَّ الْقَافِلَةَ فِي الْمَدِينَةِ غَدًا."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Comment est le chemin ?",
+          "choix": [
+            "difficile",
+            "court",
+            "facile"
+          ],
+          "reponse": 0,
+          "explication": "لَٰكِنَّ الطَّرِيقَ صَعْبٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "À quoi ressemble la neige ?",
+          "choix": [
+            "à un tapis blanc",
+            "à une maison",
+            "à un fleuve"
+          ],
+          "reponse": 0,
+          "explication": "كَأَنَّ الثَّلْجَ بِسَاطٌ أَبْيَضُ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « On dirait que le marché est une ville. » ?",
+          "choix_ar": [
+            "كَأَنَّ السُّوقَ مَدِينَةٌ.",
+            "كَأَنَّ السُّوقُ مَدِينَةٌ.",
+            "لَعَلَّ السُّوقَ مَدِينَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "كَأَنَّ « on dirait que », sujet en -a."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre إِنَّ, sujet, attribut : « Le chemin est vraiment long. »",
+          "tuiles": [
+            "طَوِيلٌ",
+            "الطَّرِيقَ",
+            "إِنَّ",
+            "الطَّرِيقُ"
+          ],
+          "solution": [
+            "إِنَّ",
+            "الطَّرِيقَ",
+            "طَوِيلٌ"
+          ],
+          "explication": "إِنَّ, le sujet en -a, puis l'attribut en -u. الطَّرِيقُ (-u) ne convient pas après إِنَّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le village est peut-être proche. »",
+          "ar": "لَعَلَّ … قَرِيبَةٌ.",
+          "choix_ar": [
+            "الْقَرْيَةَ",
+            "الْقَرْيَةُ",
+            "الْقَرْيَةِ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَعَلَّ, le sujet passe en -a."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِنَّ",
+          "choix": [
+            "certes (insiste)",
+            "si",
+            "que (+ verbe)"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّ veut dire « certes (insiste) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَأَنَّ",
+          "choix": [
+            "on dirait que",
+            "peut-être que",
+            "mais"
+          ],
+          "reponse": 0,
+          "explication": "كَأَنَّ veut dire « on dirait que »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَنَّ",
+          "choix": [
+            "que (+ nom)",
+            "que (+ verbe)",
+            "si seulement"
+          ],
+          "reponse": 0,
+          "explication": "أَنَّ veut dire « que (+ nom) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « mais le jardin est grand » ?",
+          "choix_ar": [
+            "لَٰكِنَّ الْحَدِيقَةَ كَبِيرَةٌ",
+            "لَٰكِنَّ الْحَدِيقَةُ كَبِيرَةٌ",
+            "لَٰكِنَّ الْحَدِيقَةَ كَبِيرَةً"
+          ],
+          "reponse": 0,
+          "explication": "Après لَٰكِنَّ : sujet en -a, attribut en -u."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après إِنَّ, le sujet…",
+          "choix": [
+            "passe en -a",
+            "reste en -u",
+            "passe en -i"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّ الطَّرِيقَ…"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après قَالَ, on écrit…",
+          "choix": [
+            "إِنَّ",
+            "أَنَّ",
+            "أَنْ"
+          ],
+          "reponse": 0,
+          "explication": "قَالَ سَمِيرٌ: « إِنَّ… »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire لَيْتَ الطَّرِيقَ قَصِيرٌ ?",
+          "choix": [
+            "Si seulement le chemin était court !",
+            "Le chemin est peut-être court.",
+            "Le chemin est vraiment court."
+          ],
+          "reponse": 0,
+          "explication": "لَيْتَ : « si seulement »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chemin est vraiment difficile. »",
+          "ar": "إِنَّ الطَّرِيقَ …",
+          "choix_ar": [
+            "صَعْبٌ",
+            "صَعْبًا",
+            "صَعْبٍ"
+          ],
+          "reponse": 0,
+          "explication": "L'attribut reste en -u."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « On dirait que la neige est un tapis. »",
+          "ar": "كَأَنَّ … بِسَاطٌ.",
+          "choix_ar": [
+            "الثَّلْجَ",
+            "الثَّلْجُ",
+            "الثَّلْجِ"
+          ],
+          "reponse": 0,
+          "explication": "Après كَأَنَّ, le sujet passe en -a."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَأَخَّرَ",
+          "choix": [
+            "être en retard",
+            "se hâter",
+            "rester"
+          ],
+          "reponse": 0,
+          "explication": "تَأَخَّرَ veut dire « être en retard ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَنْ",
+          "choix": [
+            "ne… pas (au futur)",
+            "ne… pas (au passé)",
+            "pour que"
+          ],
+          "reponse": 0,
+          "explication": "لَنْ veut dire « ne… pas (au futur) ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Lequel s'adresse à une femme ?",
+          "choix_ar": [
+            "اكْتُبِي",
+            "اكْتُبْ",
+            "اكْتُبُوا"
+          ],
+          "reponse": 0,
+          "explication": "Impératif féminin (leçon 3.30).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu emploies إِنَّ et ses sœurs (أَنَّ, لَٰكِنَّ, لَعَلَّ, كَأَنَّ, لَيْتَ) : le sujet passe en -a, l'attribut reste en -u.",
+      "suite": "Dernière leçon de la région : كَانَ « il était » et ses sœurs."
+    }
+  ]
+}

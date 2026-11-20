@@ -1,0 +1,560 @@
+{
+  "id": "moteur-13",
+  "etape": 3,
+  "ordre": 13,
+  "format": 3,
+  "titre": "La forme III",
+  "objectif": "Comprendre la forme III فَاعَلَ : l'action faite avec ou envers quelqu'un.",
+  "statut": "ia_non_verifie",
+  "lieu": "moulin",
+  "maitre": "rabab",
+  "prerequis": [
+    "moteur-12"
+  ],
+  "apercu": [
+    "رَبَابُ"
+  ],
+  "schemes": [
+    "فَاعَلَ",
+    "يُفَاعِلُ",
+    "فَعُلَ",
+    "فَعِلَ",
+    "مُفَاعَلَة",
+    "فِعَال",
+    "فَاعِل",
+    "فَعَّلَ",
+    "يُفَعِّلُ",
+    "فَعَلَ",
+    "مُفَاعِل",
+    "فَعَّال"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "texte": "La roue tourne encore. Cette fois, elle ajoute un ā après la 1re lettre de la racine."
+        },
+        {
+          "qui": "rabab",
+          "texte": "جَلَسَ, c'est « s'asseoir ». جَالَسَ, c'est « s'asseoir avec quelqu'un », lui tenir compagnie."
+        }
+      ],
+      "objectif": "Reconnaître la forme III et dire une action faite avec quelqu'un."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ر ق dans le moule فَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "فَرَّقَ",
+            "يُفَرِّقُ",
+            "قَدَّمَ"
+          ],
+          "reponse": 0,
+          "explication": "ف ر ق dans فَعَّلَ : فَرَّقَ (leçon 3.12)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de عَلَّمَ ?",
+          "choix_ar": [
+            "يُعَلِّمُ",
+            "يَعْلَمُ",
+            "عَلِمَ"
+          ],
+          "reponse": 0,
+          "explication": "Forme II : يُعَلِّمُ (leçon 3.12)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَدَّمَ",
+          "choix": [
+            "il a offert",
+            "il a coupé",
+            "il a parlé à"
+          ],
+          "reponse": 0,
+          "explication": "قَدَّمَ : « offrir, présenter » (leçon 3.12)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "جَالَسْتُ الشَّيْخَ فِي الْمَجْلِسِ.",
+          "fr": "J'ai tenu compagnie au vieil homme dans l'assemblée."
+        },
+        {
+          "qui": "rabab",
+          "ar": "وَهَلْ سَاعَدْتَ الشَّيْخَ؟",
+          "fr": "Et tu as aidé le vieil homme ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "نَعَمْ، وَصَاحَبْتُ الشَّيْخَ فِي الطَّرِيقِ.",
+          "fr": "Oui, et j'ai accompagné le vieil homme en chemin."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'a fait Bāsim en chemin ?",
+        "choix": [
+          "il a accompagné le vieil homme",
+          "il a fait la course",
+          "il a quitté le village"
+        ],
+        "reponse": 0,
+        "explication": "صَاحَبْتُ الشَّيْخَ فِي الطَّرِيقِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "safara",
+        "jaalasa",
+        "kaataba",
+        "saaada",
+        "faaraqa",
+        "saabaqa",
+        "saahaba",
+        "qaabala"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "سَاعَدَ",
+        "choix": [
+          "il a aidé",
+          "il a voyagé",
+          "il a rencontré"
+        ],
+        "reponse": 0,
+        "explication": "سَاعَدَ veut dire « il a aidé »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Un ā après la 1re lettre",
+      "texte": "Forme III, moule فَاعَلَ : souvent une action faite avec ou envers quelqu'un. Avec ces verbes, la personne est complément direct, sans مَعَ : جَالَسَ الشَّيْخَ « il a tenu compagnie au vieil homme ».",
+      "exemples": [
+        "جَالَسَ",
+        "كَاتَبَ",
+        "سَابَقَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Comment dit-on « il a tenu compagnie au vieil homme » ?",
+        "choix_ar": [
+          "جَالَسَ الشَّيْخَ",
+          "جَلَسَ الشَّيْخَ",
+          "جَالِسٌ الشَّيْخُ"
+        ],
+        "reponse": 0,
+        "explication": "Forme III, la personne est complément direct."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Inaccompli et nom d'action",
+      "texte": "Inaccompli en u, comme la forme II : يُسَافِرُ ; مُسَافِرٌ, que tu connais, remplace يُ par مُ. Nom d'action : مُفَاعَلَة (مُسَاعَدَةٌ « aide »), parfois فِعَال (فِرَاقٌ).",
+      "exemples": [
+        "يُسَافِرُ",
+        "مُسَافِرٌ",
+        "مُسَاعَدَةٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est l'inaccompli de سَاعَدَ ?",
+        "choix_ar": [
+          "يُسَاعِدُ",
+          "مُسَاعَدَةٌ",
+          "سَاعَدَ"
+        ],
+        "reponse": 0,
+        "explication": "Forme III : يُفَاعِلُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Une tendance",
+      "texte": "سَافَرَ « voyager » est une forme III, mais on voyage aussi seul : le sens de la forme est une tendance. Et فَاعَلَ, le verbe, n'est pas فَاعِل, celui qui fait : كَاتَبَ ≠ كَاتِبٌ.",
+      "exemples": [
+        "سَافَرَ",
+        "كَاتَبَ",
+        "كَاتِبٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "كَاتِبٌ, c'est…",
+        "choix": [
+          "celui qui écrit (forme I)",
+          "il a correspondu avec",
+          "la correspondance"
+        ],
+        "reponse": 0,
+        "explication": "كَاتِبٌ : moule فَاعِل, celui qui fait."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَارَقَ",
+          "choix": [
+            "il a quitté",
+            "il a aidé",
+            "il a rencontré"
+          ],
+          "reponse": 0,
+          "explication": "فَارَقَ : « il a quitté ». « Séparer » des choses, c'est فَرَّقَ (forme II)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَاحَبَ",
+          "choix": [
+            "il a accompagné",
+            "un ami",
+            "il a aidé"
+          ],
+          "reponse": 0,
+          "explication": "صَاحَبَ veut dire « il a accompagné »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il voyage » ?",
+          "choix_ar": [
+            "يُسَافِرُ",
+            "سَافَرَ",
+            "مُسَافِرٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il voyage » se dit يُسَافِرُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il aide » ?",
+          "choix_ar": [
+            "يُسَاعِدُ",
+            "سَاعَدَ",
+            "سَعِيدٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il aide » se dit يُسَاعِدُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de قَابَلَ ?",
+          "choix_ar": [
+            "فَاعَلَ",
+            "فَاعِل",
+            "فَعَّلَ"
+          ],
+          "reponse": 0,
+          "explication": "قَ ا بَ لَ : un ā après la 1re lettre, فَاعَلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "جَالَسَ ou جَلَسَ : lequel veut dire « tenir compagnie à » ?",
+          "choix_ar": [
+            "جَالَسَ",
+            "جَلَسَ",
+            "جَالِسٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme III : جَالَسَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ت ب dans le moule فَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "كَاتَبَ",
+            "كَاتِبٌ",
+            "كَتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "ك ت ب dans فَاعَلَ : كَاتَبَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine س ب ق dans le moule فَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "سَابَقَ",
+            "يُسَابِقُ",
+            "سَافَرَ"
+          ],
+          "reponse": 0,
+          "explication": "س ب ق dans فَاعَلَ : سَابَقَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le porteur a aidé le marchand. »",
+          "ar": "… الْحَمَّالُ التَّاجِرَ.",
+          "choix_ar": [
+            "سَاعَدَ",
+            "يُسَاعِدُ",
+            "سَعِيدٌ"
+          ],
+          "reponse": 0,
+          "explication": "Passé, verbe en tête : سَاعَدَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane voyage le matin. »",
+          "ar": "… الْقَافِلَةُ فِي الصَّبَاحِ.",
+          "choix_ar": [
+            "تُسَافِرُ",
+            "مُسَافِرٌ",
+            "سَافَرَ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli avec un sujet féminin : تُسَافِرُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le départ",
+      "texte": "Rabāb raconte le départ d'une caravane. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "قَابَلَ التَّاجِرُ الصَّرَّافَ فِي السُّوقِ.",
+        "سَاعَدَ الْحَمَّالُ التَّاجِرَ، وَحَمَلَ الْأَحْمَالَ.",
+        "فِي الصَّبَاحِ، فَارَقَتِ الْقَافِلَةُ الْقَرْيَةَ.",
+        "صَاحَبَ بَاسِمٌ الْقَافِلَةَ، وَسَابَقَ الطِّفْلُ صَدِيقَهُ إِلَى الْجِسْرِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui le marchand a-t-il rencontré au marché ?",
+          "choix": [
+            "le changeur",
+            "le porteur",
+            "Bāsim"
+          ],
+          "reponse": 0,
+          "explication": "قَابَلَ التَّاجِرُ الصَّرَّافَ فِي السُّوقِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Jusqu'où l'enfant a-t-il fait la course ?",
+          "choix": [
+            "jusqu'au pont",
+            "jusqu'au marché",
+            "jusqu'à la maison"
+          ],
+          "reponse": 0,
+          "explication": "سَابَقَ الطِّفْلُ صَدِيقَهُ إِلَى الْجِسْرِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le voyageur a quitté le village. » ?",
+          "choix_ar": [
+            "فَارَقَ الْمُسَافِرُ الْقَرْيَةَ.",
+            "فَرَّقَ الْمُسَافِرُ الْقَرْيَةُ.",
+            "الْقَرْيَةُ فَارَقَ الْمُسَافِرَ."
+          ],
+          "reponse": 0,
+          "explication": "« Le voyageur a quitté le village. » se dit فَارَقَ الْمُسَافِرُ الْقَرْيَةَ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Bāsim a tenu compagnie au vieil homme. »",
+          "tuiles": [
+            "الشَّيْخَ",
+            "بَاسِمٌ",
+            "جَالَسَ",
+            "مَعَ"
+          ],
+          "solution": [
+            "جَالَسَ",
+            "بَاسِمٌ",
+            "الشَّيْخَ"
+          ],
+          "explication": "Forme III : la personne est complément direct, sans مَعَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le scribe a correspondu avec son ami. »",
+          "ar": "… الْكَاتِبُ صَدِيقَهُ.",
+          "choix_ar": [
+            "كَاتَبَ",
+            "كَتَبَ",
+            "كَاتِبٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme III : كَاتَبَ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَالَسَ",
+          "choix": [
+            "il a tenu compagnie à",
+            "il s'est assis",
+            "assis"
+          ],
+          "reponse": 0,
+          "explication": "جَالَسَ veut dire « il a tenu compagnie à »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَابَقَ",
+          "choix": [
+            "il a fait la course avec",
+            "il a voyagé",
+            "il a quitté"
+          ],
+          "reponse": 0,
+          "explication": "سَابَقَ veut dire « il a fait la course avec »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَابَلَ",
+          "choix": [
+            "il a rencontré",
+            "il a accompagné",
+            "il a aidé"
+          ],
+          "reponse": 0,
+          "explication": "قَابَلَ veut dire « il a rencontré »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il accompagne » ?",
+          "choix_ar": [
+            "يُصَاحِبُ",
+            "صَاحَبَ",
+            "صَدِيقٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il accompagne » se dit يُصَاحِبُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Avec جَالَسَ, la personne est…",
+          "choix": [
+            "complément direct, sans مَعَ",
+            "après مَعَ",
+            "sujet"
+          ],
+          "reponse": 0,
+          "explication": "جَالَسَ الشَّيْخَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le nom d'action de سَاعَدَ ?",
+          "choix_ar": [
+            "مُسَاعَدَةٌ",
+            "سَاعَدَ",
+            "يُسَاعِدُ"
+          ],
+          "reponse": 0,
+          "explication": "Moule مُفَاعَلَة : مُسَاعَدَةٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج ل س dans le moule فَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "جَالَسَ",
+            "جَالِسٌ",
+            "جَلَسَ"
+          ],
+          "reponse": 0,
+          "explication": "ج ل س dans فَاعَلَ : جَالَسَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ر ق dans le moule فَاعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "فَارَقَ",
+            "فَرَّقَ",
+            "يُفَرِّقُ"
+          ],
+          "reponse": 0,
+          "explication": "ف ر ق dans فَاعَلَ : فَارَقَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand rencontre le changeur. »",
+          "ar": "التَّاجِرُ … الصَّرَّافَ.",
+          "choix_ar": [
+            "يُقَابِلُ",
+            "قَابَلَ",
+            "مُقَابَلَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme III, inaccompli : يُقَابِلُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق ط ع dans le moule فَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "قَطَّعَ",
+            "قِطْعَةٌ",
+            "يُقَطِّعُ"
+          ],
+          "reponse": 0,
+          "explication": "فَعَّلَ : قَطَّعَ (leçon 3.12).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَلَّمَ",
+          "choix": [
+            "il a enseigné",
+            "il a su",
+            "il a travaillé"
+          ],
+          "reponse": 0,
+          "explication": "عَلَّمَ veut dire « il a enseigné ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de حَسُنَ ?",
+          "choix_ar": [
+            "فَعُلَ",
+            "فَعِلَ",
+            "فَعَلَ"
+          ],
+          "reponse": 0,
+          "explication": "فَعُلَ (leçon 3.11).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais la forme III فَاعَلَ / يُفَاعِلُ : جَالَسَ, سَاعَدَ, كَاتَبَ. Avec ces verbes, la personne est complément direct.",
+      "suite": "Dernier tour de roue au moulin : la forme IV, avec أَ."
+    }
+  ]
+}

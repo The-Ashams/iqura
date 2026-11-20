@@ -1,0 +1,521 @@
+{
+  "id": "cite-03",
+  "etape": 4,
+  "ordre": 3,
+  "format": 3,
+  "titre": "« Il a dit que… »",
+  "objectif": "Rapporter une parole ou une pensée avec أَنَّ, un ordre avec أَنْ.",
+  "statut": "ia_non_verifie",
+  "lieu": "messagers",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-02"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ",
+    "سَلْمَى"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "À la Maison des messagers, chacun rapporte ce que les autres ont dit."
+        },
+        {
+          "qui": "nadim",
+          "texte": "Pour une parole ou une pensée, on emploie أَنَّ ; pour un ordre, أَنْ."
+        }
+      ],
+      "objectif": "Rapporter une parole, une pensée, un ordre."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a dit que le chemin est long. »",
+          "ar": "قَالَ … الطَّرِيقَ طَوِيلٌ.",
+          "choix_ar": [
+            "إِنَّ",
+            "أَنَّ",
+            "لَوْ"
+          ],
+          "reponse": 0,
+          "explication": "Après قَالَ : إِنَّ (leçon 3.31)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Sans le froid, nous nous serions assis. »",
+          "ar": "لَوْلَا الْبَرْدُ …",
+          "choix_ar": [
+            "لَجَلَسْنَا",
+            "نَجْلِسُ",
+            "فَجَلَسْنَا"
+          ],
+          "reponse": 0,
+          "explication": "Réponse de لَوْلَا : لَـ (leçon 4.2)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je veux écrire. »",
+          "ar": "أُرِيدُ أَنْ …",
+          "choix_ar": [
+            "أَكْتُبَ",
+            "أَكْتُبُ",
+            "كَتَبْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : -a (leçon 3.29)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "ar": "أَخْبَرَنِي بَاسِمٌ أَنَّ الْقَافِلَةَ وَصَلَتْ.",
+          "fr": "Bāsim m'a appris que la caravane était arrivée."
+        },
+        {
+          "qui": "basim",
+          "ar": "نَعَمْ، وَأَمَرَ التَّاجِرُ الْحَمَّالَ أَنْ يَحْمِلَ الْأَكْيَاسَ.",
+          "fr": "Oui, et le marchand a ordonné au porteur de porter les sacs."
+        },
+        {
+          "qui": "nadim",
+          "ar": "ظَنَنْتُ أَنَّ الْقَافِلَةَ بَعِيدَةٌ.",
+          "fr": "Je croyais que la caravane était loin."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'a appris Nadīm ?",
+        "choix": [
+          "que la caravane était arrivée",
+          "que le porteur était malade",
+          "que la caravane était loin"
+        ],
+        "reponse": 0,
+        "explication": "أَخْبَرَنِي بَاسِمٌ أَنَّ الْقَافِلَةَ وَصَلَتْ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "akhbara",
+        "zanna",
+        "dhakara",
+        "amara"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "أَخْبَرَ",
+        "choix": [
+          "informer, apprendre (une nouvelle) à",
+          "ordonner",
+          "penser"
+        ],
+        "reponse": 0,
+        "explication": "أَخْبَرَ veut dire « informer, apprendre (une nouvelle) à »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Rapporter une parole : أَنَّ",
+      "texte": "Pour rapporter une parole ou une pensée : أَنَّ + phrase nominale, sujet en -a : أَخْبَرَنِي أَنَّ الطَّرِيقَ طَوِيلٌ.",
+      "exemples": [
+        "أَخْبَرَنِي أَنَّ الطَّرِيقَ طَوِيلٌ",
+        "ظَنَنْتُ أَنَّ الْبَابَ مَفْتُوحٌ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Je croyais que la porte était ouverte. »",
+        "ar": "ظَنَنْتُ أَنَّ … مَفْتُوحٌ.",
+        "choix_ar": [
+          "الْبَابَ",
+          "الْبَابُ",
+          "الْبَابِ"
+        ],
+        "reponse": 0,
+        "explication": "Après أَنَّ : sujet en -a."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Rapporter un ordre : أَنْ",
+      "texte": "Pour rapporter un ordre ou une demande : أَنْ + verbe au subjonctif : أَمَرَهُ نَدِيمٌ أَنْ يَكْتُبَ.",
+      "exemples": [
+        "أَمَرَ التَّاجِرُ الْحَمَّالَ أَنْ يَحْمِلَ الْأَكْيَاسَ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Le marchand a ordonné au porteur de porter les sacs. »",
+        "ar": "أَمَرَ التَّاجِرُ الْحَمَّالَ أَنْ … الْأَكْيَاسَ.",
+        "choix_ar": [
+          "يَحْمِلَ",
+          "يَحْمِلُ",
+          "حَمَلَ"
+        ],
+        "reponse": 0,
+        "explication": "Après أَنْ : subjonctif en -a."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le temps reste celui de la parole",
+      "texte": "L'arabe garde le temps de la parole rapportée : أَخْبَرَنَا أَنَّهُ مَشْغُولٌ « il nous a appris qu'il était occupé ».",
+      "exemples": [
+        "أَخْبَرَنَا أَنَّهُ مَشْغُولٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Bāsim dit : « أَنَا مَشْغُولٌ ». Comment le rapporter ?",
+        "choix_ar": [
+          "أَخْبَرَنَا بَاسِمٌ أَنَّهُ مَشْغُولٌ",
+          "أَخْبَرَنَا بَاسِمٌ أَنَا مَشْغُولٌ",
+          "أَخْبَرَنَا بَاسِمٌ أَنْ مَشْغُولٌ"
+        ],
+        "reponse": 0,
+        "explication": "أَنَا devient ـهُ : أَنَّهُ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ظَنَّ",
+          "choix": [
+            "penser, croire",
+            "mentionner",
+            "informer"
+          ],
+          "reponse": 0,
+          "explication": "ظَنَّ veut dire « penser, croire »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَمَرَ",
+          "choix": [
+            "ordonner (à quelqu'un de)",
+            "informer",
+            "se rappeler"
+          ],
+          "reponse": 0,
+          "explication": "أَمَرَ veut dire « ordonner (à quelqu'un de) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Nadīm a mentionné que la lettre était longue » ?",
+          "choix_ar": [
+            "ذَكَرَ نَدِيمٌ أَنَّ الرِّسَالَةَ طَوِيلَةٌ",
+            "ذَكَرَ نَدِيمٌ أَنَّ الرِّسَالَةُ طَوِيلَةٌ",
+            "ذَكَرَ نَدِيمٌ إِنَّ الرِّسَالَةَ طَوِيلَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Parole rapportée : أَنَّ + sujet en -a ; إِنَّ ne vient qu'après قَالَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai entendu dire que le marchand était parti pour Bagdad. »",
+          "ar": "سَمِعْتُ … التَّاجِرَ سَافَرَ إِلَى بَغْدَادَ.",
+          "choix_ar": [
+            "أَنَّ",
+            "أَنْ",
+            "إِنْ"
+          ],
+          "reponse": 0,
+          "explication": "Parole rapportée : أَنَّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le gardien a ordonné à l'enfant de s'asseoir. »",
+          "ar": "أَمَرَ الْحَارِسُ الطِّفْلَ … يَجْلِسَ.",
+          "choix_ar": [
+            "أَنْ",
+            "أَنَّ",
+            "إِنَّ"
+          ],
+          "reponse": 0,
+          "explication": "Ordre rapporté : أَنْ + subjonctif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim nous a appris qu'il était occupé. »",
+          "ar": "أَخْبَرَنَا بَاسِمٌ … مَشْغُولٌ.",
+          "choix_ar": [
+            "أَنَّهُ",
+            "أَنَا",
+            "إِنَّهُ"
+          ],
+          "reponse": 0,
+          "explication": "أَنَا devient ـهُ : أَنَّهُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après قَالَ, on emploie…",
+          "choix": [
+            "إِنَّ",
+            "أَنَّ",
+            "أَنْ"
+          ],
+          "reponse": 0,
+          "explication": "On dit قَالَ إِنَّ (leçon 3.31)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour rapporter un ordre, on emploie…",
+          "choix": [
+            "أَنْ + subjonctif",
+            "أَنَّ + nom en -a",
+            "إِنْ + jussif"
+          ],
+          "reponse": 0,
+          "explication": "أَمَرَهُ نَدِيمٌ أَنْ يَكْتُبَ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Les nouvelles du jour",
+      "texte": "Nadīm lit les nouvelles reçues à la Maison des messagers. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "أَخْبَرَنِي بَاسِمٌ أَنَّ الْقَافِلَةَ وَصَلَتْ.",
+        "ذَكَرَ التَّاجِرُ أَنَّ الطَّرِيقَ طَوِيلٌ.",
+        "سَمِعْتُ أَنَّ سَلْمَى كَتَبَتْ رِسَالَةً.",
+        "أَمَرَ التَّاجِرُ الْحَمَّالَ أَنْ يَحْمِلَ الْأَكْيَاسَ إِلَى السُّوقِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'a dit le marchand ?",
+          "choix": [
+            "que le chemin était long",
+            "que la caravane était partie",
+            "que Salmā était malade"
+          ],
+          "reponse": 0,
+          "explication": "ذَكَرَ التَّاجِرُ أَنَّ الطَّرِيقَ طَوِيلٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a-t-il ordonné au porteur ?",
+          "choix": [
+            "de porter les sacs au marché",
+            "d'écrire une lettre",
+            "d'ouvrir la porte"
+          ],
+          "reponse": 0,
+          "explication": "أَنْ يَحْمِلَ الْأَكْيَاسَ إِلَى السُّوقِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Je croyais que la porte était ouverte. » ?",
+          "choix_ar": [
+            "ظَنَنْتُ أَنَّ الْبَابَ مَفْتُوحٌ.",
+            "ظَنَنْتُ أَنَّ الْبَابُ مَفْتُوحٌ.",
+            "ظَنَنْتُ إِنَّ الْبَابَ مَفْتُوحًا."
+          ],
+          "reponse": 0,
+          "explication": "أَنَّ + sujet en -a, attribut en -u."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Rapporte la parole de Bāsim (« أَنَا مَشْغُولٌ ») : verbe, sujet, puis أَنَّهُ.",
+          "tuiles": [
+            "مَشْغُولٌ",
+            "بَاسِمٌ",
+            "أَنَّهُ",
+            "أَخْبَرَنَا",
+            "أَنَا"
+          ],
+          "solution": [
+            "أَخْبَرَنَا",
+            "بَاسِمٌ",
+            "أَنَّهُ",
+            "مَشْغُولٌ"
+          ],
+          "explication": "Dans une parole rapportée, أَنَا devient ـهُ : أَنَّهُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Salmā m'a appris que la lettre était arrivée. »",
+          "ar": "أَخْبَرَتْنِي سَلْمَى أَنَّ … وَصَلَتْ.",
+          "choix_ar": [
+            "الرِّسَالَةَ",
+            "الرِّسَالَةُ",
+            "رِسَالَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنَّ : sujet en -a."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ذَكَرَ",
+          "choix": [
+            "mentionner ; se rappeler",
+            "ordonner",
+            "informer"
+          ],
+          "reponse": 0,
+          "explication": "ذَكَرَ veut dire « mentionner ; se rappeler »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَخْبَرَ",
+          "choix": [
+            "informer, apprendre (une nouvelle) à",
+            "croire",
+            "écrire"
+          ],
+          "reponse": 0,
+          "explication": "أَخْبَرَ veut dire « informer, apprendre (une nouvelle) à »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'ai entendu dire que le marchand était parti » ?",
+          "choix_ar": [
+            "سَمِعْتُ أَنَّ التَّاجِرَ سَافَرَ",
+            "سَمِعْتُ أَنَّ التَّاجِرُ سَافَرَ",
+            "سَمِعْتُ إِنَّ التَّاجِرَ سَافَرَ"
+          ],
+          "reponse": 0,
+          "explication": "Parole rapportée : أَنَّ + sujet en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je croyais que la porte était ouverte. »",
+          "ar": "ظَنَنْتُ أَنَّ … مَفْتُوحٌ.",
+          "choix_ar": [
+            "الْبَابَ",
+            "الْبَابُ",
+            "بَابٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنَّ : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand a ordonné au porteur de porter les sacs. »",
+          "ar": "أَمَرَ التَّاجِرُ الْحَمَّالَ أَنْ … الْأَكْيَاسَ.",
+          "choix_ar": [
+            "يَحْمِلَ",
+            "يَحْمِلُ",
+            "يَحْمِلْ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim nous a appris qu'il était occupé. »",
+          "ar": "أَخْبَرَنَا بَاسِمٌ … مَشْغُولٌ.",
+          "choix_ar": [
+            "أَنَّهُ",
+            "أَنَّهَا",
+            "أَنْ"
+          ],
+          "reponse": 0,
+          "explication": "Bāsim : ـهُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour rapporter une parole ou une pensée, on emploie…",
+          "choix": [
+            "أَنَّ",
+            "أَنْ",
+            "لَوْ"
+          ],
+          "reponse": 0,
+          "explication": "أَنَّ + phrase nominale."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après قَالَ, on emploie…",
+          "choix": [
+            "إِنَّ",
+            "أَنَّ",
+            "أَنْ"
+          ],
+          "reponse": 0,
+          "explication": "On dit قَالَ إِنَّ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire أَخْبَرَنَا أَنَّهُ مَشْغُولٌ ?",
+          "choix": [
+            "Il nous a appris qu'il était occupé.",
+            "Il nous a ordonné d'être occupés.",
+            "Nous lui avons appris qu'il était occupé."
+          ],
+          "reponse": 0,
+          "explication": "أَخْبَرَنَا : il nous a appris ; أَنَّهُ : qu'il (était)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَوْلَا",
+          "choix": [
+            "sans, s'il n'y avait pas",
+            "si",
+            "quand"
+          ],
+          "reponse": 0,
+          "explication": "لَوْلَا veut dire « sans, s'il n'y avait pas ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si tu avais étudié, tu aurais compris. »",
+          "ar": "لَوْ دَرَسْتَ …",
+          "choix_ar": [
+            "لَفَهِمْتَ",
+            "سَتَفْهَمُ",
+            "فَافْهَمْ"
+          ],
+          "reponse": 0,
+          "explication": "La réponse de لَوْ prend le plus souvent لَـ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَدِيدٌ",
+          "choix": [
+            "fort, intense",
+            "léger",
+            "court"
+          ],
+          "reponse": 0,
+          "explication": "شَدِيدٌ veut dire « fort, intense ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu rapportes une parole ou une pensée avec أَنَّ, et un ordre avec أَنْ + subjonctif.",
+      "suite": "Prochaine leçon : quand, avant, après."
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "id": "moteur-30",
+  "etape": 3,
+  "ordre": 30,
+  "format": 3,
+  "titre": "Le jussif",
+  "objectif": "Comprendre « il n'a pas écrit » et « n'écris pas ! ».",
+  "statut": "ia_non_verifie",
+  "lieu": "bibliotheque_col",
+  "maitre": "widad",
+  "prerequis": [
+    "moteur-29"
+  ],
+  "apercu": [
+    "وِدَادُ"
+  ],
+  "schemes": [
+    "تَفَعَّلَ",
+    "يَتَفَعَّلُ",
+    "تَفَعُّل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "widad",
+          "texte": "Bienvenue à la Bibliothèque du col. Ici, on ne court pas : la Précipitation guette ceux qui se hâtent."
+        },
+        {
+          "qui": "widad",
+          "texte": "Pour dire « ne te hâte pas ! », l'arabe a la défense : لَا تَتَعَجَّلْ."
+        }
+      ],
+      "objectif": "Employer لَمْ et la défense avec le jussif."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je veux écrire. »",
+          "ar": "أُرِيدُ أَنْ …",
+          "choix_ar": [
+            "أَكْتُبَ",
+            "أَكْتُبُ",
+            "كَتَبْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : -a (leçon 3.29)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire لَنْ يَجْلِسَ ?",
+          "choix": [
+            "il ne s'assiéra pas",
+            "il ne s'est pas assis",
+            "il veut s'asseoir"
+          ],
+          "reponse": 0,
+          "explication": "لَنْ : futur nié (leçon 3.29)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَبْلَ",
+          "choix": [
+            "avant",
+            "après",
+            "loin"
+          ],
+          "reponse": 0,
+          "explication": "قَبْلَ (leçon 3.29)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "أُرِيدُ أَنْ أَقْرَأَ الرِّسَالَةَ الْآنَ!",
+          "fr": "Je veux lire la lettre maintenant !"
+        },
+        {
+          "qui": "widad",
+          "ar": "لَا تَتَعَجَّلْ. هَٰذَا وَقْتُ الدَّرْسِ.",
+          "fr": "Ne te hâte pas. C'est l'heure de la leçon."
+        },
+        {
+          "qui": "basim",
+          "ar": "نَعَمْ، لَنْ أَتَعَجَّلَ.",
+          "fr": "D'accord, je ne me hâterai pas."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que dit Widād à Bāsim ?",
+        "choix": [
+          "de ne pas se hâter",
+          "de lire vite",
+          "de sortir"
+        ],
+        "reponse": 0,
+        "explication": "لَا تَتَعَجَّلْ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "la_nahy",
+        "taajjala",
+        "taakhkhara",
+        "waqt",
+        "khata",
+        "sawab"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "خَطَأٌ",
+        "choix": [
+          "erreur",
+          "ce qui est juste",
+          "moment"
+        ],
+        "reponse": 0,
+        "explication": "خَطَأٌ veut dire « erreur »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La défense : لَا + jussif",
+      "texte": "La forme qui suit لَمْ (لَمْ يَكْتُبْ, avec sukūn) s'appelle le jussif. Pour interdire, on met لَا devant le jussif de « tu » ou de « vous » : لَا تَكْتُبْ « n'écris pas ».",
+      "exemples": [
+        "لَا تَكْتُبْ",
+        "لَا تَجْلِسْ",
+        "لَا تَتَعَجَّلْ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Lequel veut dire « n'écris pas ! » ?",
+        "choix_ar": [
+          "لَا تَكْتُبْ",
+          "لَا تَكْتُبُ",
+          "لَمْ تَكْتُبْ"
+        ],
+        "reponse": 0,
+        "explication": "Défense : لَا + jussif (sukūn)."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le ن qui tombe, la voyelle qui s'abrège",
+      "texte": "Au jussif, après لَمْ ou la défense, ـُونَ et ـِينَ perdent leur ن : لَمْ يَكْتُبُوا, لَا تَجْلِسِي. Une voyelle longue finale s'abrège : لَمْ يَنْسَ.",
+      "exemples": [
+        "لَمْ يَكْتُبُوا",
+        "لَا تَجْلِسِي",
+        "لَا تَلْعَبُوا"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Ne jouez pas dans la cuisine ! »",
+        "ar": "لَا … فِي الْمَطْبَخِ.",
+        "choix_ar": [
+          "تَلْعَبُوا",
+          "تَلْعَبُونَ",
+          "تَلْعَبْ"
+        ],
+        "reponse": 0,
+        "explication": "« vous » : ـُونَ perd son ن, تَلْعَبُوا."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'impératif complet",
+      "texte": "L'impératif suit le jussif sans le préfixe : اكْتُبْ (à un homme), اكْتُبِي (à une femme), اكْتُبُوا (à plusieurs). Devant l'article, le sukūn devient i : اكْتُبِ الرِّسَالَةَ.",
+      "exemples": [
+        "اكْتُبْ",
+        "اكْتُبِي",
+        "اكْتُبُوا"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Salmā, écris la lettre ! »",
+        "ar": "يَا سَلْمَى، … الرِّسَالَةَ.",
+        "choix_ar": [
+          "اكْتُبِي",
+          "اكْتُبِ",
+          "اكْتُبُوا"
+        ],
+        "reponse": 0,
+        "explication": "À une femme : اكْتُبِي."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَأَخَّرَ",
+          "choix": [
+            "être en retard",
+            "se hâter",
+            "rester"
+          ],
+          "reponse": 0,
+          "explication": "تَأَخَّرَ veut dire « être en retard »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَوَابٌ",
+          "choix": [
+            "ce qui est juste",
+            "erreur",
+            "réponse"
+          ],
+          "reponse": 0,
+          "explication": "صَوَابٌ veut dire « ce qui est juste »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ne t'assieds pas ici ! » ?",
+          "choix_ar": [
+            "لَا تَجْلِسْ هُنَا!",
+            "لَا تَجْلِسُ هُنَا!",
+            "لَمْ تَجْلِسْ هُنَا!"
+          ],
+          "reponse": 0,
+          "explication": "« ne t'assieds pas ici ! » se dit لَا تَجْلِسْ هُنَا!."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils n'ont pas écrit » ?",
+          "choix_ar": [
+            "لَمْ يَكْتُبُوا",
+            "لَمْ يَكْتُبُونَ",
+            "لَا يَكْتُبُونَ"
+          ],
+          "reponse": 0,
+          "explication": "« ils n'ont pas écrit » se dit لَمْ يَكْتُبُوا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire لَا تَكْتُبُ ?",
+          "choix": [
+            "tu n'écris pas",
+            "n'écris pas !",
+            "tu n'as pas écrit"
+          ],
+          "reponse": 0,
+          "explication": "-u : simple négation, pas une défense."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après لَمْ, que devient يَكْتُبُونَ ?",
+          "choix_ar": [
+            "يَكْتُبُوا",
+            "يَكْتُبُونَ",
+            "يَكْتُبْ"
+          ],
+          "reponse": 0,
+          "explication": "Pour « ils », ـُونَ perd son ن : لَمْ يَكْتُبُوا ; يَكْتُبْ est la forme de « il »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Salmā, ne t'assieds pas ici ! »",
+          "ar": "يَا سَلْمَى، لَا … هُنَا.",
+          "choix_ar": [
+            "تَجْلِسِي",
+            "تَجْلِسِينَ",
+            "تَجْلِسْ"
+          ],
+          "reponse": 0,
+          "explication": "À une femme : ـِينَ perd son ن, تَجْلِسِي."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ne te hâte pas ! »",
+          "ar": "لَا …",
+          "choix_ar": [
+            "تَتَعَجَّلْ",
+            "تَتَعَجَّلُ",
+            "تَتَعَجَّلَ"
+          ],
+          "reponse": 0,
+          "explication": "Défense : jussif, تَتَعَجَّلْ ; -u et -a sont d'autres modes."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'enfant ne s'est pas levé. »",
+          "ar": "لَمْ … الطِّفْلُ.",
+          "choix_ar": [
+            "يَقُمِ",
+            "يَقُومُ",
+            "قَامَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : يَقُمْ ; devant l'article, يَقُمِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « N'écris pas sur le mur ! »",
+          "ar": "لَا … عَلَى الْجِدَارِ.",
+          "choix_ar": [
+            "تَكْتُبْ",
+            "تَكْتُبُ",
+            "كَتَبْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Défense : لَا + jussif."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Les règles de la bibliothèque",
+      "texte": "Widād a écrit les règles de la bibliothèque. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "لَا تَتَعَجَّلْ فِي الْكِتَابَةِ.",
+        "لَا تَكْتُبْ عَلَى الْكُتُبِ، وَلَا تَتْرُكِ الْبَابَ مَفْتُوحًا.",
+        "لَا تَلْعَبُوا هُنَا، وَلَا تَتَأَخَّرُوا عَنِ الدَّرْسِ.",
+        "الْخَطَأُ سَهْلٌ، وَالصَّوَابُ صَعْبٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que ne faut-il pas laisser ouvert ?",
+          "choix": [
+            "la porte",
+            "les livres",
+            "la fenêtre"
+          ],
+          "reponse": 0,
+          "explication": "وَلَا تَتْرُكِ الْبَابَ مَفْتُوحًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Selon Widād, qu'est-ce qui est difficile ?",
+          "choix": [
+            "ce qui est juste",
+            "l'erreur",
+            "la lecture"
+          ],
+          "reponse": 0,
+          "explication": "وَالصَّوَابُ صَعْبٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Ne jouez pas dans la cuisine ! » ?",
+          "choix_ar": [
+            "لَا تَلْعَبُوا فِي الْمَطْبَخِ!",
+            "لَا تَلْعَبُونَ فِي الْمَطْبَخِ!",
+            "لَمْ تَلْعَبُوا فِي الْمَطْبَخِ!"
+          ],
+          "reponse": 0,
+          "explication": "« Ne jouez pas dans la cuisine ! » se dit لَا تَلْعَبُوا فِي الْمَطْبَخِ!."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre : « Ne laisse pas la porte ouverte ! »",
+          "tuiles": [
+            "مَفْتُوحًا",
+            "الْبَابَ",
+            "تَتْرُكِ",
+            "لَا",
+            "تَتْرُكُ"
+          ],
+          "solution": [
+            "لَا",
+            "تَتْرُكِ",
+            "الْبَابَ",
+            "مَفْتُوحًا"
+          ],
+          "explication": "Défense, verbe au jussif (i devant l'article), complément, puis l'état. تَتْرُكُ (-u) dirait « tu ne laisses pas »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Écrivez la leçon ! »",
+          "ar": "… الدَّرْسَ.",
+          "choix_ar": [
+            "اكْتُبُوا",
+            "اكْتُبْ",
+            "تَكْتُبُونَ"
+          ],
+          "reponse": 0,
+          "explication": "À plusieurs : اكْتُبُوا."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَعَجَّلَ",
+          "choix": [
+            "se hâter",
+            "être en retard",
+            "revenir"
+          ],
+          "reponse": 0,
+          "explication": "تَعَجَّلَ veut dire « se hâter »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَقْتٌ",
+          "choix": [
+            "temps, moment",
+            "jour",
+            "erreur"
+          ],
+          "reponse": 0,
+          "explication": "وَقْتٌ veut dire « temps, moment »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire cette expression : لَا تَتْرُكْ ?",
+          "choix": [
+            "ne laisse pas !",
+            "tu ne laisses pas",
+            "tu n'as pas laissé"
+          ],
+          "reponse": 0,
+          "explication": "Défense : لَا + jussif."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « n'écris pas ! » ?",
+          "choix_ar": [
+            "لَا تَكْتُبْ",
+            "لَا تَكْتُبُ",
+            "لَنْ تَكْتُبَ"
+          ],
+          "reponse": 0,
+          "explication": "« n'écris pas ! » se dit لَا تَكْتُبْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La défense, c'est لَا suivi…",
+          "choix": [
+            "du jussif",
+            "du subjonctif",
+            "du passé"
+          ],
+          "reponse": 0,
+          "explication": "لَا تَكْتُبْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire لَمْ يَنْسَ ?",
+          "choix": [
+            "il n'a pas oublié",
+            "il n'oubliera pas",
+            "n'oublie pas !"
+          ],
+          "reponse": 0,
+          "explication": "لَمْ + jussif : passé nié."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Lequel s'adresse à une femme ?",
+          "choix_ar": [
+            "اكْتُبِي",
+            "اكْتُبْ",
+            "اكْتُبُوا"
+          ],
+          "reponse": 0,
+          "explication": "اكْتُبِي : à une femme."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ils n'ont pas écrit la leçon. »",
+          "ar": "لَمْ … الدَّرْسَ.",
+          "choix_ar": [
+            "يَكْتُبُوا",
+            "يَكْتُبُونَ",
+            "يَكْتُبِ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : ـُونَ perd son ن ; يَكْتُبِ est la forme de « il »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ne sois pas en retard ! »",
+          "ar": "لَا …",
+          "choix_ar": [
+            "تَتَأَخَّرْ",
+            "تَتَأَخَّرُ",
+            "تَأَخَّرْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Défense : jussif."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَيْ",
+          "choix": [
+            "pour que",
+            "avant",
+            "ne… pas"
+          ],
+          "reponse": 0,
+          "explication": "كَيْ veut dire « pour que ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَخٌ",
+          "choix": [
+            "frère",
+            "père",
+            "sœur"
+          ],
+          "reponse": 0,
+          "explication": "أَخٌ veut dire « frère ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après أَنْ, l'inaccompli finit par…",
+          "choix": [
+            "-a",
+            "-u",
+            "un sukūn"
+          ],
+          "reponse": 0,
+          "explication": "Subjonctif (leçon 3.29).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu emploies le jussif : لَمْ يَكْتُبُوا, la défense لَا تَكْتُبْ, et l'impératif complet اكْتُبْ, اكْتُبِي, اكْتُبُوا.",
+      "suite": "Dans la bibliothèque : إِنَّ « certes » et ses sœurs."
+    }
+  ]
+}

@@ -1,0 +1,555 @@
+{
+  "id": "fondations-27",
+  "etape": 2,
+  "ordre": 27,
+  "format": 3,
+  "titre": "Il n'a pas écrit",
+  "objectif": "Nier un verbe : مَا (passé), لَا (présent), et une introduction à لَمْ.",
+  "statut": "ia_non_verifie",
+  "lieu": "salle_scribes",
+  "maitre": "samir_oasis",
+  "prerequis": [
+    "fondations-26"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "texte": "Un étudiant lève la main : il n'a pas compris la question !"
+        },
+        {
+          "qui": "samir_oasis",
+          "texte": "Pour dire « ne… pas » avec un verbe, l'arabe a plusieurs petits mots."
+        }
+      ],
+      "objectif": "Dire « je n'ai pas compris », « je ne sais pas »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous écrivons » ?",
+          "choix_ar": [
+            "نَكْتُبُ",
+            "كَتَبْنَا",
+            "يَكْتُبُونَ"
+          ],
+          "reponse": 0,
+          "explication": "نَـ : « nous », au présent (leçon 2.26)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les étudiants étudient. »",
+          "ar": "الطُّلَّابُ …",
+          "choix_ar": [
+            "يَدْرُسُونَ",
+            "يَدْرُسُ",
+            "نَدْرُسُ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet avant le verbe : accord complet (leçon 2.26)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَيْسَ",
+          "choix": [
+            "ne pas être",
+            "non",
+            "est-ce que ?"
+          ],
+          "reponse": 0,
+          "explication": "لَيْسَ nie une phrase nominale (leçon 2.20)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "ar": "هَلْ فَهِمْتَ السُّؤَالَ؟",
+          "fr": "As-tu compris la question ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "لَا، مَا فَهِمْتُ السُّؤَالَ.",
+          "fr": "Non, je n'ai pas compris la question."
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "وَهَلْ تَعْرِفُ الْجَوَابَ؟",
+          "fr": "Et connais-tu la réponse ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "لَا أَعْرِفُ الْجَوَابَ.",
+          "fr": "Je ne connais pas la réponse."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Bāsim a-t-il compris la question ?",
+        "choix": [
+          "non",
+          "oui",
+          "un peu"
+        ],
+        "reponse": 0,
+        "explication": "مَا فَهِمْتُ السُّؤَالَ : je n'ai pas compris."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ma_nafi",
+        "la_nafi",
+        "lam"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "لَمْ",
+        "choix": [
+          "ne… pas (sens passé)",
+          "non",
+          "quoi ?"
+        ],
+        "reponse": 0,
+        "explication": "لَمْ veut dire « ne… pas (sens passé) »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "fahima",
+        "suaal",
+        "jawab"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "جَوَابٌ",
+        "choix": [
+          "réponse",
+          "question",
+          "leçon"
+        ],
+        "reponse": 0,
+        "explication": "جَوَابٌ veut dire « réponse »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "مَا et لَا",
+      "texte": "Dans cette leçon, مَا devant un passé : مَا جَلَسَ « il ne s'est pas assis ». لَا devant un inaccompli : لَا يَجْلِسُ « il ne s'assoit pas ».",
+      "exemples": [
+        "مَا جَلَسَ",
+        "لَا يَجْلِسُ",
+        "مَا فَهِمْتُ",
+        "لَا أَعْرِفُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « لَا أَفْهَمُ » ?",
+        "choix": [
+          "je ne comprends pas",
+          "je n'ai pas compris",
+          "non, je comprends"
+        ],
+        "reponse": 0,
+        "explication": "لَا + inaccompli : « ne… pas », au présent."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "لَمْ",
+      "texte": "لَمْ, très courant en classique, se met devant l'inaccompli, dont le -u final devient sukūn ; le sens est celui du passé : لَمْ يَكْتُبْ « il n'a pas écrit ».",
+      "exemples": [
+        "يَكْتُبُ",
+        "لَمْ يَكْتُبْ",
+        "لَمْ أَفْهَمْ",
+        "لَمْ يَرْجِعْ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "« لَمْ يَرْجِعْ » veut dire…",
+        "choix": [
+          "il n'est pas revenu",
+          "il ne revient pas",
+          "il reviendra"
+        ],
+        "reponse": 0,
+        "explication": "لَمْ : sens passé."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَهِمَ",
+          "choix": [
+            "il a compris",
+            "il a connu",
+            "il a cherché"
+          ],
+          "reponse": 0,
+          "explication": "فَهِمَ veut dire « il a compris »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سُؤَالٌ",
+          "choix": [
+            "question",
+            "réponse",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "سُؤَالٌ veut dire « question »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il n'est pas sorti » ?",
+          "choix_ar": [
+            "مَا خَرَجَ",
+            "لَا خَرَجَ",
+            "خَرَجَ"
+          ],
+          "reponse": 0,
+          "explication": "Pour dire simplement « il n'est pas sorti », on met مَا devant le passé : مَا خَرَجَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je ne sais pas » ?",
+          "choix_ar": [
+            "لَا أَعْرِفُ",
+            "لَا عَرَفْتُ",
+            "عَرَفْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Présent nié : لَا + inaccompli."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je n'ai pas compris la question. »",
+          "ar": "… فَهِمْتُ السُّؤَالَ.",
+          "choix_ar": [
+            "مَا",
+            "لَا",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Devant un passé : مَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'habite pas en ville. »",
+          "ar": "… يَسْكُنُ فِي الْمَدِينَةِ.",
+          "choix_ar": [
+            "لَا",
+            "لَمْ",
+            "نَعَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Devant un inaccompli, au présent : لَا (après لَمْ, il faudrait un sukūn : لَمْ يَسْكُنْ, au sens passé)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Rāšid n'est pas revenu. »",
+          "ar": "لَمْ … رَاشِدٌ.",
+          "choix_ar": [
+            "يَرْجِعْ",
+            "رَجَعَ",
+            "يَرْجِعُونَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : inaccompli avec sukūn."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "لَا أَعْرِفُ",
+          "choix_ar": [
+            "لَا أَعْرِفُ",
+            "مَا عَرَفْتُ",
+            "لَمْ أَعْرِفْ"
+          ],
+          "reponse": 0,
+          "explication": "C'était لَا أَعْرِفُ « je ne sais pas »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Je ne connais pas la réponse. »",
+          "tuiles": [
+            "الْجَوَابَ",
+            "لَا",
+            "أَعْرِفُ",
+            "عَرَفْتُ"
+          ],
+          "solution": [
+            "لَا",
+            "أَعْرِفُ",
+            "الْجَوَابَ"
+          ],
+          "explication": "لَا, puis l'inaccompli, puis le complément."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "مَا فَهِمْتُ السُّؤَالَ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La question difficile",
+      "texte": "Samīr raconte une leçon dans la salle des scribes. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "كَتَبَ سَمِيرٌ سُؤَالًا عَلَى الْقِرْطَاسِ.",
+        "مَا فَهِمَ الطُّلَّابُ السُّؤَالَ.",
+        "لَمْ يَكْتُبْ بَاسِمٌ الْجَوَابَ.",
+        "وَلَا يَعْرِفُ الطُّلَّابُ الْجَوَابَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Les étudiants ont-ils compris la question ?",
+          "choix": [
+            "non",
+            "oui",
+            "on ne sait pas"
+          ],
+          "reponse": 0,
+          "explication": "مَا فَهِمَ الطُّلَّابُ السُّؤَالَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Bāsim a-t-il écrit la réponse ?",
+          "choix": [
+            "non",
+            "oui",
+            "le soir"
+          ],
+          "reponse": 0,
+          "explication": "لَمْ يَكْتُبْ بَاسِمٌ الْجَوَابَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Samīr te demande si tu as compris. Tu n'as pas compris.",
+          "replique": {
+            "qui": "samir_oasis",
+            "ar": "هَلْ فَهِمْتَ الدَّرْسَ؟"
+          },
+          "choix_ar": [
+            "لَا، مَا فَهِمْتُ الدَّرْسَ.",
+            "لَا، لَا فَهِمْتُ الدَّرْسَ.",
+            "نَعَمْ، مَا فَهِمْتُ الدَّرْسَ."
+          ],
+          "reponse": 0,
+          "explication": "Passé nié : مَا + passé."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te demande si tu connais la réponse. Tu ne la connais pas.",
+          "replique": {
+            "qui": "basim",
+            "ar": "هَلْ تَعْرِفُ الْجَوَابَ؟"
+          },
+          "choix_ar": [
+            "لَا، لَا أَعْرِفُ الْجَوَابَ.",
+            "لَا، لَا يَعْرِفُ الْجَوَابَ.",
+            "نَعَمْ، لَا أَعْرِفُ."
+          ],
+          "reponse": 0,
+          "explication": "« je » : لَا أَعْرِفُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il ne comprend pas » ?",
+          "choix_ar": [
+            "لَا يَفْهَمُ",
+            "مَا فَهِمَ",
+            "لَا أَفْهَمُ"
+          ],
+          "reponse": 0,
+          "explication": "« il ne comprend pas » se dit لَا يَفْهَمُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je n'ai pas écrit de lettre. »",
+          "ar": "لَمْ … رِسَالَةً.",
+          "choix_ar": [
+            "أَكْتُبْ",
+            "كَتَبْتُ",
+            "يَكْتُبْ"
+          ],
+          "reponse": 0,
+          "explication": "لَمْ + inaccompli de « je », avec sukūn : أَكْتُبْ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire « لَا يَكْتُبُ » ?",
+          "choix": [
+            "il n'écrit pas",
+            "il n'a pas écrit",
+            "il écrira"
+          ],
+          "reponse": 0,
+          "explication": "لَا + inaccompli : présent nié."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire « مَا رَجَعَ » ?",
+          "choix": [
+            "il n'est pas revenu",
+            "il ne revient pas",
+            "il est revenu"
+          ],
+          "reponse": 0,
+          "explication": "مَا + passé : passé nié."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَهِمَ",
+          "choix": [
+            "il a compris",
+            "il a étudié",
+            "il a habité"
+          ],
+          "reponse": 0,
+          "explication": "فَهِمَ veut dire « il a compris »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la réponse » ?",
+          "choix_ar": [
+            "الْجَوَابُ",
+            "السُّؤَالُ",
+            "الدَّرْسُ"
+          ],
+          "reponse": 0,
+          "explication": "« la réponse » se dit الْجَوَابُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je ne comprends pas » ?",
+          "choix_ar": [
+            "لَا أَفْهَمُ",
+            "مَا فَهِمْتُ",
+            "أَفْهَمُ"
+          ],
+          "reponse": 0,
+          "explication": "« je ne comprends pas » se dit لَا أَفْهَمُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'est pas entré. »",
+          "ar": "… دَخَلَ.",
+          "choix_ar": [
+            "مَا",
+            "لَا",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Devant un passé : مَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nous ne savons pas. »",
+          "ar": "لَا …",
+          "choix_ar": [
+            "نَعْرِفُ",
+            "عَرَفْنَا",
+            "يَعْرِفُ"
+          ],
+          "reponse": 0,
+          "explication": "لَا + inaccompli de « nous »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après لَمْ, l'inaccompli…",
+          "choix": [
+            "en général, prend un sukūn, et le sens est passé",
+            "garde -u, et le sens est futur",
+            "devient un passé"
+          ],
+          "reponse": 0,
+          "explication": "لَمْ يَكْتُبْ : « il n'a pas écrit »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "لَمْ يَرْجِعْ",
+          "choix_ar": [
+            "لَمْ يَرْجِعْ",
+            "مَا رَجَعَ",
+            "لَا يَرْجِعُ"
+          ],
+          "reponse": 0,
+          "explication": "C'était لَمْ يَرْجِعْ « il n'est pas revenu »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils fabriquent » ?",
+          "choix_ar": [
+            "يَصْنَعُونَ",
+            "نَصْنَعُ",
+            "صَنَعُوا"
+          ],
+          "reponse": 0,
+          "explication": "« ils fabriquent » se dit يَصْنَعُونَ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قِرْطَاسٌ",
+          "choix": [
+            "feuille à écrire, papier",
+            "encrier",
+            "livre"
+          ],
+          "reponse": 0,
+          "explication": "قِرْطَاسٌ veut dire « feuille à écrire, papier ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَسْكُنُ",
+          "choix": [
+            "j'habite",
+            "il habite",
+            "nous habitons"
+          ],
+          "reponse": 0,
+          "explication": "أَسْكُنُ veut dire « j'habite ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu nies un verbe : مَا + passé (مَا جَلَسَ), لَا + inaccompli (لَا يَجْلِسُ), et tu reconnais لَمْ (لَمْ يَكْتُبْ).",
+      "suite": "Prochaine étape : le jardin du conteur, pour parler du futur."
+    }
+  ]
+}

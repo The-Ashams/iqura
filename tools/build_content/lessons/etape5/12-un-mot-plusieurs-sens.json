@@ -1,0 +1,562 @@
+{
+  "id": "sens-12",
+  "etape": 5,
+  "ordre": 12,
+  "format": 3,
+  "titre": "Un mot, plusieurs sens",
+  "objectif": "Savoir qu'un mot a un sens général et des sens particuliers, et choisir le bon sens grâce au contexte.",
+  "statut": "ia_non_verifie",
+  "lieu": "labyrinthe_sens",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-11"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "نُورَةُ",
+    "بَاسِمٌ",
+    "نَدِيمٍ",
+    "زُهَيْرٍ",
+    "زُهَيْرٌ",
+    "الْعَرَبِ",
+    "لَسَافَرْنَا",
+    "يَكْتُبُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nura",
+          "texte": "Bienvenue dans le Labyrinthe : à chaque carrefour, un même mot prend un chemin différent."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Le dictionnaire range les sens ; c'est le contexte, سِيَاقٌ, qui choisit le bon chemin."
+        }
+      ],
+      "objectif": "Choisir le sens d'un mot grâce au contexte."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سِيَاقٌ",
+          "choix": [
+            "contexte",
+            "dictionnaire",
+            "sens"
+          ],
+          "reponse": 0,
+          "explication": "سِيَاقٌ veut dire « contexte »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَأْسٌ",
+          "choix": [
+            "tête ; sommet",
+            "langue",
+            "œil"
+          ],
+          "reponse": 0,
+          "explication": "رَأْسٌ : « tête ; sommet » (connu) ; un nouveau sens arrive dans cette leçon."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Sans la pluie, nous serions partis. »",
+          "ar": "… الْمَطَرُ لَسَافَرْنَا.",
+          "choix_ar": [
+            "لَوْلَا",
+            "لَمَّا",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "لَوْلَا + nom : « sans », vu en région 4."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "عَيْنُ نَدِيمٍ مَرِيضَةٌ.",
+          "fr": "Nadīm a mal à l'œil."
+        },
+        {
+          "qui": "nura",
+          "ar": "وَالْقَافِلَةُ وَجَدَتْ عَيْنَ مَاءٍ.",
+          "fr": "Et la caravane a trouvé une source."
+        },
+        {
+          "qui": "basim",
+          "ar": "كَلِمَةُ عَيْنٍ لَهَا مَعْنَيَانِ!",
+          "fr": "Le mot « ʿayn » a deux sens !"
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans وَجَدَتِ الْقَافِلَةُ عَيْنَ مَاءٍ, عَيْنٌ veut dire…",
+        "choix": [
+          "une source",
+          "un œil",
+          "une langue"
+        ],
+        "reponse": 0,
+        "explication": "عَيْنُ مَاءٍ : le contexte (l'eau) choisit « source »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ayn",
+        "lisan"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "لِسَانٌ",
+        "choix": [
+          "langue (l'organe) ; langue (parlée)",
+          "œil ; source (d'eau)",
+          "tête ; sommet"
+        ],
+        "reponse": 0,
+        "explication": "لِسَانٌ veut dire « langue (l'organe) ; langue (parlée) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le contexte choisit",
+      "texte": "Un même mot peut avoir plusieurs sens : le dictionnaire les range, le contexte choisit. Ce n'est pas la même chose que deux mots qui s'écrivent pareil sans voyelles (إِنْ et إِنَّ) ni que deux mots de même racine.",
+      "exemples": [
+        "عَيْنُ نَدِيمٍ مَرِيضَةٌ.",
+        "وَجَدَتِ الْقَافِلَةُ عَيْنَ مَاءٍ قَرِيبَةً."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans عَيْنُ نَدِيمٍ مَرِيضَةٌ, عَيْنٌ veut dire…",
+        "choix": [
+          "œil",
+          "source",
+          "chef"
+        ],
+        "reponse": 0,
+        "explication": "Une personne malade : l'œil."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Des sens nouveaux pour des mots connus",
+      "texte": "رَأْسٌ veut aussi dire « chef » (رَأْسُ التُّجَّارِ). أَخَذَ suivi d'un inaccompli, sans أَنْ, veut dire « se mettre à ».",
+      "exemples": [
+        "زُهَيْرٌ رَأْسُ التُّجَّارِ فِي السُّوقِ.",
+        "أَخَذَ بَاسِمٌ يَكْتُبُ الرِّسَالَةَ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "أَخَذَ بَاسِمٌ يَكْتُبُ veut dire…",
+        "choix": [
+          "Bāsim se mit à écrire",
+          "Bāsim prit le calame",
+          "Bāsim a écrit"
+        ],
+        "reponse": 0,
+        "explication": "أَخَذَ + inaccompli : « se mettre à »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "لَوْلَا : nom ou verbe ?",
+      "texte": "لَوْلَا + nom veut dire « sans » (connu) ; لَوْلَا + verbe au passé, à la 2e personne, veut dire « pourquoi n'as-tu pas » : un reproche.",
+      "exemples": [
+        "لَوْلَا الْمَطَرُ لَسَافَرْنَا.",
+        "لَوْلَا انْتَظَرْتَ بَاسِمًا!"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "لَوْلَا انْتَظَرْتَ بَاسِمًا! veut dire…",
+        "choix": [
+          "Pourquoi n'as-tu pas attendu Bāsim !",
+          "Sans Bāsim, tu aurais attendu.",
+          "Tu as attendu Bāsim."
+        ],
+        "reponse": 0,
+        "explication": "لَوْلَا + passé : un reproche."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Ce qu'IQURA ne fait pas",
+      "texte": "IQURA ne choisit jamais le sens d'un mot dans un passage du Coran : c'est le travail des commentateurs. Ici, on apprend à lire le contexte de phrases construites.",
+      "exemples": [
+        "سِيَاقٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pour le sens d'un mot dans un passage du Coran, IQURA…",
+        "choix": [
+          "renvoie aux commentateurs",
+          "choisit un sens",
+          "donne tous les sens possibles"
+        ],
+        "reponse": 0,
+        "explication": "Sens linguistique seulement."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Les carrefours du Labyrinthe",
+      "texte": "Exemples construits, rédigés par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "بَيْتُ زُهَيْرٍ عَلَى رَأْسِ الْجَبَلِ، وَزُهَيْرٌ رَأْسُ التُّجَّارِ فِي السُّوقِ.",
+        "«لِسَانُ الْعَرَبِ» مُعْجَمٌ كَبِيرٌ.",
+        "أَخَذَ بَاسِمٌ الْقَلَمَ، ثُمَّ أَخَذَ بَاسِمٌ يَكْتُبُ الرِّسَالَةَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Dans la phrase 1, le premier رَأْسٌ veut dire…",
+          "choix": [
+            "sommet",
+            "chef",
+            "tête"
+          ],
+          "reponse": 0,
+          "explication": "رَأْسُ الْجَبَلِ : le sommet de la montagne."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans la phrase 1, le second رَأْسٌ veut dire…",
+          "choix": [
+            "chef",
+            "sommet",
+            "tête"
+          ],
+          "reponse": 0,
+          "explication": "رَأْسُ التُّجَّارِ : le chef des marchands."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans la phrase 3, le second أَخَذَ veut dire…",
+          "choix": [
+            "se mettre à",
+            "prendre",
+            "donner"
+          ],
+          "reponse": 0,
+          "explication": "أَخَذَ يَكْتُبُ : il se mit à écrire."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَيْنٌ",
+          "choix": [
+            "œil ; source (d'eau)",
+            "langue (l'organe) ; langue (parlée)",
+            "tête ; sommet"
+          ],
+          "reponse": 0,
+          "explication": "عَيْنٌ veut dire « œil ; source (d'eau) »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans «لِسَانُ الْعَرَبِ» مُعْجَمٌ, لِسَانٌ veut dire…",
+          "choix": [
+            "langue parlée",
+            "langue (l'organe)",
+            "œil"
+          ],
+          "reponse": 0,
+          "explication": "Un dictionnaire : la langue que l'on parle."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim se mit à écrire la lettre. »",
+          "ar": "أَخَذَ بَاسِمٌ … الرِّسَالَةَ.",
+          "choix_ar": [
+            "يَكْتُبُ",
+            "أَنْ يَكْتُبَ",
+            "كَتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "أَخَذَ + inaccompli, sans أَنْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Zuhayr est le chef des marchands. »",
+          "ar": "زُهَيْرٌ … التُّجَّارِ.",
+          "choix_ar": [
+            "رَأْسُ",
+            "عَيْنُ",
+            "لِسَانُ"
+          ],
+          "reponse": 0,
+          "explication": "Le chef : رَأْسٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Pourquoi n'as-tu pas attendu Bāsim ! »",
+          "ar": "… انْتَظَرْتَ بَاسِمًا!",
+          "choix_ar": [
+            "لَوْلَا",
+            "لَمْ",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "لَوْلَا + verbe."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane a trouvé une source tout près. »",
+          "ar": "وَجَدَتِ الْقَافِلَةُ … مَاءٍ قَرِيبَةً.",
+          "choix_ar": [
+            "عَيْنَ",
+            "رَأْسَ",
+            "لِسَانَ"
+          ],
+          "reponse": 0,
+          "explication": "Une source : عَيْنُ مَاءٍ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La langue de l'enfant est petite. »",
+          "ar": "… الطِّفْلِ صَغِيرٌ.",
+          "choix_ar": [
+            "لِسَانُ",
+            "عَيْنُ",
+            "رَأْسُ"
+          ],
+          "reponse": 0,
+          "explication": "L'organe : لِسَانٌ (masculin : صَغِيرٌ)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Ce qui décide du sens d'un mot, c'est…",
+          "choix": [
+            "le contexte",
+            "la racine seule",
+            "la longueur du mot"
+          ],
+          "reponse": 0,
+          "explication": "Le contexte, سِيَاقٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim se mit à écrire la lettre. » ?",
+          "choix_ar": [
+            "أَخَذَ بَاسِمٌ يَكْتُبُ الرِّسَالَةَ.",
+            "أَخَذَ بَاسِمٌ الرِّسَالَةَ.",
+            "أَخَذَ بَاسِمٌ أَنْ يَكْتُبَ الرِّسَالَةَ."
+          ],
+          "reponse": 0,
+          "explication": "أَخَذَ + inaccompli, sans أَنْ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Nadīm a mal à l'œil. »",
+          "tuiles": [
+            "عَيْنُ",
+            "نَدِيمٍ",
+            "مَرِيضَةٌ"
+          ],
+          "solution": [
+            "عَيْنُ",
+            "نَدِيمٍ",
+            "مَرِيضَةٌ"
+          ],
+          "explication": "عَيْنٌ est féminin : مَرِيضَةٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis le sens par le contexte : « Bāsim a pris le calame, puis s'est mis à écrire. »",
+          "ar": "أَخَذَ بَاسِمٌ الْقَلَمَ، ثُمَّ … بَاسِمٌ يَكْتُبُ.",
+          "choix_ar": [
+            "أَخَذَ",
+            "أَعْطَى",
+            "صَبَرَ"
+          ],
+          "reponse": 0,
+          "explication": "Le même verbe, deux sens."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris deux phrases où عَيْنٌ a deux sens différents, puis une phrase avec رَأْسٌ au sens de « chef ».",
+          "modele": [
+            "عَيْنُ الطِّفْلِ صَغِيرَةٌ.",
+            "وَجَدَتِ الْقَافِلَةُ عَيْنَ مَاءٍ قَرِيبَةً.",
+            "زُهَيْرٌ رَأْسُ التُّجَّارِ."
+          ],
+          "explication": "Compare : est-ce le contexte qui montre le sens dans chaque phrase ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَيْنٌ",
+          "choix": [
+            "œil ; source (d'eau)",
+            "tête ; sommet",
+            "langue (l'organe) ; langue (parlée)"
+          ],
+          "reponse": 0,
+          "explication": "عَيْنٌ veut dire « œil ; source (d'eau) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لِسَانٌ",
+          "choix": [
+            "langue (l'organe) ; langue (parlée)",
+            "œil ; source (d'eau)",
+            "propos, conversation, récit"
+          ],
+          "reponse": 0,
+          "explication": "لِسَانٌ veut dire « langue (l'organe) ; langue (parlée) »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans عَيْنُ مَاءٍ, عَيْنٌ veut dire…",
+          "choix": [
+            "source",
+            "œil",
+            "chef"
+          ],
+          "reponse": 0,
+          "explication": "Avec l'eau : la source."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans رَأْسُ التُّجَّارِ, رَأْسٌ veut dire…",
+          "choix": [
+            "chef",
+            "tête",
+            "sommet"
+          ],
+          "reponse": 0,
+          "explication": "D'un groupe de personnes : le chef."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim se mit à lire. »",
+          "ar": "أَخَذَ بَاسِمٌ …",
+          "choix_ar": [
+            "يَقْرَأُ",
+            "قَرَأَ",
+            "أَنْ يَقْرَأَ"
+          ],
+          "reponse": 0,
+          "explication": "أَخَذَ + inaccompli."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Pourquoi n'as-tu pas interrogé Zuhayr ! »",
+          "ar": "لَوْلَا … زُهَيْرًا!",
+          "choix_ar": [
+            "سَأَلْتَ",
+            "السُّؤَالُ",
+            "سُؤَالٌ"
+          ],
+          "reponse": 0,
+          "explication": "لَوْلَا + passé à la 2e personne."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Sans la pluie, nous serions partis. »",
+          "ar": "لَوْلَا … لَسَافَرْنَا.",
+          "choix_ar": [
+            "الْمَطَرُ",
+            "الْمَطَرَ",
+            "مَطَرٍ"
+          ],
+          "reponse": 0,
+          "explication": "لَوْلَا + nom au nominatif."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Zuhayr est le chef des marchands. » ?",
+          "choix_ar": [
+            "زُهَيْرٌ رَأْسُ التُّجَّارِ.",
+            "زُهَيْرٌ رَأْسَ التُّجَّارِ.",
+            "زُهَيْرٌ الرَّأْسُ التُّجَّارِ."
+          ],
+          "reponse": 0,
+          "explication": "Annexion : رَأْسُ التُّجَّارِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le sens d'un mot dans un passage du Coran…",
+          "choix": [
+            "relève des commentateurs ; IQURA ne le choisit pas",
+            "est toujours le premier du dictionnaire",
+            "se devine par la racine"
+          ],
+          "reponse": 0,
+          "explication": "Sens linguistique seulement."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَذِبٌ",
+          "choix": [
+            "mensonge",
+            "sincérité, vérité (dans la parole)",
+            "patience, endurance"
+          ],
+          "reponse": 0,
+          "explication": "كَذِبٌ veut dire « mensonge ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a donné un livre à Zuhayr. »",
+          "ar": "أَعْطَى بَاسِمٌ … كِتَابًا.",
+          "choix_ar": [
+            "زُهَيْرًا",
+            "زُهَيْرٌ",
+            "زُهَيْرٍ"
+          ],
+          "reponse": 0,
+          "explication": "La personne : accusatif.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رِيحٌ",
+          "choix": [
+            "vent",
+            "pluie",
+            "ciel"
+          ],
+          "reponse": 0,
+          "explication": "رِيحٌ veut dire « vent ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais qu'un mot peut avoir plusieurs sens (عَيْنٌ, لِسَانٌ, رَأْسٌ, أَخَذَ, لَوْلَا) et tu laisses le contexte choisir.",
+      "suite": "Prochaine leçon, au fond du Labyrinthe : des mots proches qui ne disent pas tout à fait la même chose."
+    }
+  ]
+}

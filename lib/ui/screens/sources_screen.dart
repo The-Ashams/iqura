@@ -19,9 +19,9 @@ class SourcesScreen extends ConsumerWidget {
         padding: const EdgeInsets.all(16),
         children: [
           Text(
-            'Le texte coranique est copié tel quel depuis Tanzil et vérifié '
-            'par empreinte SHA-256 à chaque démarrage. Les racines, lemmes et '
-            'segments viennent du Quranic Arabic Corpus.',
+            'Les racines, les lemmes et leurs fréquences viennent du Quranic '
+            'Arabic Corpus. L’application ne contient ni le texte du Coran, ni '
+            'traduction, ni récitation : les exemples sont construits.',
             style: theme.textTheme.bodyMedium,
           ),
           const SizedBox(height: 8),

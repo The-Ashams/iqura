@@ -1,0 +1,538 @@
+{
+  "id": "fondations-03",
+  "etape": 2,
+  "ordre": 3,
+  "format": 3,
+  "titre": "Le repas de la caravane",
+  "objectif": "Dire « un » ou « le » : nom indéfini et nom défini.",
+  "statut": "ia_non_verifie",
+  "lieu": "campement",
+  "maitre": "rashid_oasis",
+  "prerequis": [
+    "fondations-02"
+  ],
+  "apercu": [
+    "رَاشِدٌ",
+    "بَاسِمٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rashid_oasis",
+          "texte": "C'est l'heure du repas ! Bāsim apporte de quoi manger et boire."
+        },
+        {
+          "qui": "rashid_oasis",
+          "texte": "Écoute bien le début et la fin des mots : ils disent s'il s'agit d'« un » repas ou du repas."
+        }
+      ],
+      "objectif": "Dire « un » ou « le »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Quel est le genre du nom نَاقَةٌ ?",
+          "choix": [
+            "masculin",
+            "féminin",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 1,
+          "explication": "نَاقَةٌ finit par ة : il est féminin (leçon 2.2)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une maison » ?",
+          "choix_ar": [
+            "بَيْتٌ",
+            "خَيْمَةٌ",
+            "مَاءٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une maison » se dit بَيْتٌ (leçon 2.1)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَلَدٌ",
+          "choix": [
+            "un garçon",
+            "une fille",
+            "une mère"
+          ],
+          "reponse": 0,
+          "explication": "وَلَدٌ veut dire « un enfant, un garçon » (leçon 2.2)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "rashid_oasis",
+          "ar": "هَٰذَا طَعَامٌ.",
+          "fr": "Ceci est de la nourriture."
+        },
+        {
+          "qui": "basim",
+          "ar": "تَمْرٌ وَلَبَنٌ.",
+          "fr": "Des dattes et du lait."
+        },
+        {
+          "qui": "rashid_oasis",
+          "ar": "التَّمْرُ وَاللَّبَنُ… وَالْمَاءُ!",
+          "fr": "Les dattes et le lait… et l'eau !"
+        }
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "التَّمْرُ",
+        "choix": [
+          "les dattes",
+          "le lait",
+          "l'eau"
+        ],
+        "reponse": 0,
+        "explication": "التَّمْرُ veut dire « les dattes »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "taam",
+        "tariq",
+        "nakhla",
+        "tamr",
+        "laban"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "نَخْلَةٌ",
+        "choix": [
+          "un palmier",
+          "des dattes",
+          "un chemin"
+        ],
+        "reponse": 0,
+        "explication": "نَخْلَةٌ veut dire « un palmier »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Un livre, le livre",
+      "texte": "Le tanwīn marque un nom indéfini : كِتَابٌ « un livre ». Avec l'article الْ, le nom est défini et perd son tanwīn : الْكِتَابُ « le livre ».",
+      "exemples": [
+        "كِتَابٌ",
+        "الْكِتَابُ",
+        "طَرِيقٌ",
+        "الطَّرِيقُ"
+      ],
+      "question": {
+        "type": "traduire",
+        "consigne": "Comment dit-on « le chemin » ?",
+        "choix_ar": [
+          "الطَّرِيقُ",
+          "طَرِيقٌ",
+          "الطَّرِيقٌ"
+        ],
+        "reponse": 0,
+        "explication": "الطَّرِيقُ « aṭ-ṭarīqu » : devant ط, le ل ne s'entend pas (leçon 13). الطَّرِيقٌ n'existe pas : l'article et le tanwīn ne vont jamais ensemble."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les noms de personnes",
+      "texte": "Les noms de personnes comme رَاشِدٌ et بَاسِمٌ gardent leur tanwīn : il ne veut pas dire « un » ici.",
+      "exemples": [
+        "رَاشِدٌ",
+        "بَاسِمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pourquoi رَاشِدٌ porte-t-il un tanwīn ?",
+        "choix": [
+          "C'est un nom de personne : il le garde.",
+          "Il veut dire « un Rāšid ».",
+          "C'est un verbe."
+        ],
+        "reponse": 0,
+        "explication": "Les noms de personnes comme رَاشِدٌ gardent leur tanwīn."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le lait » ?",
+          "choix_ar": [
+            "اللَّبَنُ",
+            "لَبَنٌ",
+            "اللَّبَنٌ"
+          ],
+          "reponse": 0,
+          "explication": "اللَّبَنُ : avec الْ, une seule ḍamma. اللَّبَنٌ n'existe pas : l'article et le tanwīn ne vont jamais ensemble."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le nom الْبَيْتُ est-il défini ou indéfini ?",
+          "choix": [
+            "défini (« le, la »)",
+            "indéfini (« un, une »)",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 0,
+          "explication": "الْبَيْتُ porte l'article : il est défini, « la maison »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le nom طَعَامٌ est-il défini ou indéfini ?",
+          "choix": [
+            "défini (« le, la »)",
+            "indéfini (« un, une »)",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 1,
+          "explication": "طَعَامٌ porte le tanwīn : il est indéfini, « de la nourriture »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "التَّمْرُ",
+          "choix_ar": [
+            "التَّمْرُ",
+            "تَمْرٌ",
+            "الطَّرِيقُ"
+          ],
+          "reponse": 0,
+          "explication": "C'était التَّمْرُ « les dattes »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Rends le nom défini : « le palmier ».",
+          "ar": "نَخْلَةٌ، …",
+          "choix_ar": [
+            "النَّخْلَةُ",
+            "نَخْلَةٌ",
+            "الْخَيْمَةُ"
+          ],
+          "reponse": 0,
+          "explication": "النَّخْلَةُ : l'article, et plus de tanwīn."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الطَّعَامُ",
+          "choix": [
+            "la nourriture",
+            "le chemin",
+            "le lait"
+          ],
+          "reponse": 0,
+          "explication": "الطَّعَامُ veut dire « la nourriture »."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "الطَّعَامُ وَالْمَاءُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un chemin » ?",
+          "choix_ar": [
+            "طَرِيقٌ",
+            "الطَّرِيقُ",
+            "طَعَامٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un chemin » se dit طَرِيقٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « le lait et les dattes ».",
+          "tuiles": [
+            "اللَّبَنُ",
+            "وَالتَّمْرُ",
+            "لَبَنٌ"
+          ],
+          "solution": [
+            "اللَّبَنُ",
+            "وَالتَّمْرُ"
+          ],
+          "explication": "اللَّبَنُ وَالتَّمْرُ : deux noms définis, reliés par وَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le nom الشَّمْسُ est-il défini ou indéfini ?",
+          "choix": [
+            "défini (« le, la »)",
+            "indéfini (« un, une »)",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 0,
+          "explication": "الشَّمْسُ est défini : le ل de l'article ne s'entend pas devant ش (leçon 13)."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le repas de la caravane",
+      "texte": "Bāsim a noté ce qu'il voit au campement. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "هَٰذَا طَعَامٌ.",
+        "تَمْرٌ وَلَبَنٌ وَمَاءٌ.",
+        "هَٰذَا طَرِيقٌ.",
+        "النَّخْلَةُ وَالْبِئْرُ وَالْخَيْمَةُ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que peut-on boire au repas ?",
+          "choix": [
+            "du lait et de l'eau",
+            "du lait seulement",
+            "de l'eau seulement"
+          ],
+          "reponse": 0,
+          "explication": "تَمْرٌ وَلَبَنٌ وَمَاءٌ : des dattes, du lait et de l'eau."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel mot du texte est défini ?",
+          "choix_ar": [
+            "النَّخْلَةُ",
+            "طَعَامٌ",
+            "طَرِيقٌ"
+          ],
+          "reponse": 0,
+          "explication": "النَّخْلَةُ porte l'article الْ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Ceci est un chemin. »",
+          "tuiles": [
+            "طَرِيقٌ",
+            "هَٰذَا",
+            "الطَّرِيقُ"
+          ],
+          "solution": [
+            "هَٰذَا",
+            "طَرِيقٌ"
+          ],
+          "explication": "هَٰذَا طَرِيقٌ : « un chemin », avec le tanwīn."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « les dattes et le lait ».",
+          "ar": "التَّمْرُ وَ…",
+          "choix_ar": [
+            "اللَّبَنُ",
+            "لَبَنٌ",
+            "الْمَاءُ"
+          ],
+          "reponse": 0,
+          "explication": "التَّمْرُ وَاللَّبَنُ : les deux noms sont définis."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la tente » ?",
+          "choix_ar": [
+            "الْخَيْمَةُ",
+            "خَيْمَةٌ",
+            "النَّخْلَةُ"
+          ],
+          "reponse": 0,
+          "explication": "الْخَيْمَةُ : l'article, et une seule ḍamma."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « la mère et la fille ».",
+          "tuiles": [
+            "الْأُمُّ",
+            "وَالْبِنْتُ",
+            "وَبِنْتٌ"
+          ],
+          "solution": [
+            "الْأُمُّ",
+            "وَالْبِنْتُ"
+          ],
+          "explication": "الْأُمُّ وَالْبِنْتُ : deux noms définis."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un palmier » ?",
+          "choix_ar": [
+            "نَخْلَةٌ",
+            "النَّخْلَةُ",
+            "نَارٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un palmier » se dit نَخْلَةٌ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَمْرٌ",
+          "choix": [
+            "des dattes",
+            "du lait",
+            "un palmier"
+          ],
+          "reponse": 0,
+          "explication": "تَمْرٌ veut dire « des dattes »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَبَنٌ",
+          "choix": [
+            "du lait",
+            "de l'eau",
+            "des dattes"
+          ],
+          "reponse": 0,
+          "explication": "لَبَنٌ veut dire « du lait »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الطَّرِيقُ",
+          "choix": [
+            "le chemin",
+            "un chemin",
+            "la nourriture"
+          ],
+          "reponse": 0,
+          "explication": "الطَّرِيقُ veut dire « le chemin »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la nourriture » ?",
+          "choix_ar": [
+            "الطَّعَامُ",
+            "طَعَامٌ",
+            "الطَّرِيقُ"
+          ],
+          "reponse": 0,
+          "explication": "« la nourriture » se dit الطَّعَامُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un palmier » ?",
+          "choix_ar": [
+            "نَخْلَةٌ",
+            "النَّخْلَةُ",
+            "تَمْرٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un palmier » se dit نَخْلَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le nom النَّخْلَةُ est-il défini ou indéfini ?",
+          "choix": [
+            "défini (« le, la »)",
+            "indéfini (« un, une »)",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 0,
+          "explication": "النَّخْلَةُ porte l'article : défini."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le nom لَبَنٌ est-il défini ou indéfini ?",
+          "choix": [
+            "défini (« le, la »)",
+            "indéfini (« un, une »)",
+            "ni l'un ni l'autre"
+          ],
+          "reponse": 1,
+          "explication": "لَبَنٌ porte le tanwīn : indéfini."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel nom est indéfini ?",
+          "choix_ar": [
+            "طَرِيقٌ",
+            "الْبَيْتُ",
+            "الْمَاءُ"
+          ],
+          "reponse": 0,
+          "explication": "طَرِيقٌ porte le tanwīn."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "طَعَامٌ",
+          "choix_ar": [
+            "طَعَامٌ",
+            "الطَّعَامُ",
+            "طَرِيقٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était طَعَامٌ « de la nourriture »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خَيْمَةٌ",
+          "choix": [
+            "une tente",
+            "un feu",
+            "une mère"
+          ],
+          "reponse": 0,
+          "explication": "خَيْمَةٌ veut dire « une tente ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une fille » ?",
+          "choix_ar": [
+            "بِنْتٌ",
+            "وَلَدٌ",
+            "أُمٌّ"
+          ],
+          "reponse": 0,
+          "explication": "« une fille » se dit بِنْتٌ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَجُلٌ",
+          "choix": [
+            "un homme",
+            "un garçon",
+            "un chameau"
+          ],
+          "reponse": 0,
+          "explication": "رَجُلٌ veut dire « un homme ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais dire « un » avec le tanwīn (طَرِيقٌ) et « le » avec l'article (الطَّرِيقُ).",
+      "suite": "Rāšid t'attend sous sa tente pour te montrer ses objets."
+    }
+  ]
+}

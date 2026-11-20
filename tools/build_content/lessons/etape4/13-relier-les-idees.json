@@ -1,0 +1,524 @@
+{
+  "id": "cite-13",
+  "etape": 4,
+  "ordre": 13,
+  "format": 3,
+  "titre": "Relier les idées",
+  "objectif": "Relier deux phrases selon le sens avec فَـ, ثُمَّ, بَلْ, لَٰكِنْ, أَمَّا… فَـ et أَوْ.",
+  "statut": "ia_non_verifie",
+  "lieu": "bureau_comptes",
+  "maitre": "hala",
+  "prerequis": [
+    "cite-12"
+  ],
+  "apercu": [
+    "هَالَةُ",
+    "بَاسِمٌ",
+    "سَمِيرٌ",
+    "سَلْمَى",
+    "نَدِيمٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hala",
+          "texte": "Au Bureau des comptes, un registre bien tenu relie les faits : d'abord ceci, aussitôt cela, puis le reste."
+        },
+        {
+          "qui": "hala",
+          "texte": "Voici les petits mots qui relient les idées."
+        }
+      ],
+      "objectif": "Employer فَـ, ثُمَّ, بَلْ, لَٰكِنْ, أَمَّا… فَـ, أَوْ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane est bien arrivée. »",
+          "ar": "… وَصَلَتِ الْقَافِلَةُ.",
+          "choix_ar": [
+            "قَدْ",
+            "لَنْ",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "قَدْ + passé (leçon 4.12)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثُمَّ",
+          "choix": [
+            "puis",
+            "mais",
+            "ou"
+          ],
+          "reponse": 0,
+          "explication": "ثُمَّ veut dire « puis »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si le froid est vif, ne pars pas. »",
+          "ar": "إِذَا كَانَ الْبَرْدُ شَدِيدًا … تُسَافِرْ.",
+          "choix_ar": [
+            "فَلَا",
+            "لَا",
+            "ثُمَّ لَا"
+          ],
+          "reponse": 0,
+          "explication": "Réponse d'une condition : فَـ (leçon 4.1)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hala",
+          "ar": "أَيْنَ نَدِيمٌ وَسَمِيرٌ؟",
+          "fr": "Où sont Nadīm et Samīr ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "أَمَّا نَدِيمٌ فَمَشْغُولٌ، وَأَمَّا سَمِيرٌ فَفِي الْمَدْرَسَةِ.",
+          "fr": "Quant à Nadīm, il est occupé ; quant à Samīr, il est à l'école."
+        },
+        {
+          "qui": "hala",
+          "ar": "كَانَ الْبَرْدُ شَدِيدًا فَرَجَعَ التَّاجِرُ.",
+          "fr": "Le froid était vif, donc le marchand est rentré."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où est Samīr ?",
+        "choix": [
+          "à l'école",
+          "au marché",
+          "en voyage"
+        ],
+        "reponse": 0,
+        "explication": "وَأَمَّا سَمِيرٌ فَفِي الْمَدْرَسَةِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "fa_suite",
+        "bal",
+        "lakin",
+        "amma",
+        "aw"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "أَوْ",
+        "choix": [
+          "ou",
+          "mais",
+          "puis"
+        ],
+        "reponse": 0,
+        "explication": "أَوْ veut dire « ou »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "فَـ et ثُمَّ",
+      "texte": "فَـ relie deux actions qui se suivent aussitôt, ou une cause et sa suite ; ثُمَّ, deux actions séparées par un temps : قَرَأَ الرِّسَالَةَ ثُمَّ كَتَبَ الْجَوَابَ.",
+      "exemples": [
+        "دَخَلَ نَدِيمٌ فَجَلَسَ",
+        "قَرَأَ ثُمَّ كَتَبَ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Nadīm est entré et s'est aussitôt assis. »",
+        "ar": "دَخَلَ نَدِيمٌ …",
+        "choix_ar": [
+          "فَجَلَسَ",
+          "ثُمَّ جَلَسَ",
+          "أَوْ جَلَسَ"
+        ],
+        "reponse": 0,
+        "explication": "Aussitôt : فَـ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "بَلْ et لَٰكِنْ",
+      "texte": "بَلْ corrige (« non pas X, mais Y ») : مَا حَضَرَ سَمِيرٌ، بَلْ بَاسِمٌ. لَٰكِنْ oppose deux faits : لَمْ يَكْتُبْ سَمِيرٌ، لَٰكِنْ كَتَبَتْ سَلْمَى.",
+      "exemples": [
+        "مَا حَضَرَ سَمِيرٌ، بَلْ بَاسِمٌ",
+        "لَٰكِنْ كَتَبَتْ سَلْمَى"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire مَا حَضَرَ سَمِيرٌ، بَلْ بَاسِمٌ ?",
+        "choix": [
+          "Ce n'est pas Samīr qui est venu, mais Bāsim.",
+          "Samīr et Bāsim sont venus.",
+          "Ni Samīr ni Bāsim ne sont venus."
+        ],
+        "reponse": 0,
+        "explication": "بَلْ corrige."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "أَمَّا… فَـ",
+      "texte": "أَمَّا… فَـ met un mot en avant ; après أَمَّا, فَـ est obligatoire : أَمَّا بَاسِمٌ فَمَشْغُولٌ.",
+      "exemples": [
+        "أَمَّا بَاسِمٌ فَمَشْغُولٌ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Quant à Bāsim, il est occupé. »",
+        "ar": "أَمَّا بَاسِمٌ …",
+        "choix_ar": [
+          "فَمَشْغُولٌ",
+          "مَشْغُولٌ",
+          "ثُمَّ مَشْغُولٌ"
+        ],
+        "reponse": 0,
+        "explication": "Après أَمَّا : فَـ obligatoire."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَلْ",
+          "choix": [
+            "mais plutôt, au contraire",
+            "ou",
+            "puis"
+          ],
+          "reponse": 0,
+          "explication": "بَلْ veut dire « mais plutôt, au contraire »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَٰكِنْ",
+          "choix": [
+            "mais",
+            "donc",
+            "ou"
+          ],
+          "reponse": 0,
+          "explication": "لَٰكِنْ veut dire « mais »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَمَّا… فَـ",
+          "choix": [
+            "quant à",
+            "si",
+            "sauf"
+          ],
+          "reponse": 0,
+          "explication": "أَمَّا met un mot en avant : « quant à »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Samīr a lu la lettre, puis il a écrit la réponse » ?",
+          "choix_ar": [
+            "قَرَأَ سَمِيرٌ الرِّسَالَةَ ثُمَّ كَتَبَ الْجَوَابَ",
+            "قَرَأَ سَمِيرٌ الرِّسَالَةَ أَوْ كَتَبَ الْجَوَابَ",
+            "قَرَأَ سَمِيرٌ الرِّسَالَةَ بَلْ كَتَبَ الْجَوَابَ"
+          ],
+          "reponse": 0,
+          "explication": "« puis » : ثُمَّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nous partirons aujourd'hui ou demain. »",
+          "ar": "سَنُسَافِرُ الْيَوْمَ … غَدًا.",
+          "choix_ar": [
+            "أَوْ",
+            "بَلْ",
+            "ثُمَّ"
+          ],
+          "reponse": 0,
+          "explication": "« ou » : أَوْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Samīr n'a pas écrit la lettre, mais Salmā l'a écrite. »",
+          "ar": "لَمْ يَكْتُبْ سَمِيرٌ الرِّسَالَةَ، … كَتَبَتْهَا سَلْمَى.",
+          "choix_ar": [
+            "لَٰكِنْ",
+            "أَوْ",
+            "أَمَّا"
+          ],
+          "reponse": 0,
+          "explication": "Opposition : لَٰكِنْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Quant à Samīr, il est à l'école. »",
+          "ar": "أَمَّا سَمِيرٌ … الْمَدْرَسَةِ.",
+          "choix_ar": [
+            "فَفِي",
+            "فِي",
+            "ثُمَّ فِي"
+          ],
+          "reponse": 0,
+          "explication": "Après أَمَّا : فَـ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après لَٰكِنْ (léger), le nom…",
+          "choix": [
+            "garde le cas qu'il aurait sans لَٰكِنْ",
+            "passe toujours en -a",
+            "passe toujours en -i"
+          ],
+          "reponse": 0,
+          "explication": "لَٰكِنْ ne change pas le cas ; c'est لَٰكِنَّ (lourd) qui met le nom en -a."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le registre de Hāla",
+      "texte": "Hāla lit son registre du jour. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "دَخَلَ التَّاجِرُ فَجَلَسَ عِنْدَ الْبَابِ.",
+        "قَرَأَ سَمِيرٌ الرِّسَالَةَ ثُمَّ كَتَبَ الْجَوَابَ.",
+        "مَا حَضَرَ نَدِيمٌ، بَلْ بَاسِمٌ.",
+        "أَمَّا سَلْمَى فَفِي الْمَدْرَسَةِ، وَسَتَرْجِعُ الْيَوْمَ أَوْ غَدًا."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui est venu ?",
+          "choix": [
+            "Bāsim",
+            "Nadīm",
+            "Salmā"
+          ],
+          "reponse": 0,
+          "explication": "مَا حَضَرَ نَدِيمٌ، بَلْ بَاسِمٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand Salmā reviendra-t-elle ?",
+          "choix": [
+            "aujourd'hui ou demain",
+            "dans un mois",
+            "jamais"
+          ],
+          "reponse": 0,
+          "explication": "الْيَوْمَ أَوْ غَدًا."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Quant à Bāsim, il est occupé. » ?",
+          "choix_ar": [
+            "أَمَّا بَاسِمٌ فَمَشْغُولٌ.",
+            "أَمَّا بَاسِمٌ مَشْغُولٌ.",
+            "أَمَّا بَاسِمًا فَمَشْغُولٌ."
+          ],
+          "reponse": 0,
+          "explication": "Après أَمَّا : فَـ obligatoire ; le nom reste en -u."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Nadīm est entré et s'est aussitôt assis. »",
+          "tuiles": [
+            "فَجَلَسَ",
+            "نَدِيمٌ",
+            "دَخَلَ",
+            "أَوْ"
+          ],
+          "solution": [
+            "دَخَلَ",
+            "نَدِيمٌ",
+            "فَجَلَسَ"
+          ],
+          "explication": "Aussitôt : فَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ce n'est pas Samīr qui est venu, mais Bāsim. »",
+          "ar": "مَا حَضَرَ سَمِيرٌ، … بَاسِمٌ.",
+          "choix_ar": [
+            "بَلْ",
+            "أَوْ",
+            "ثُمَّ"
+          ],
+          "reponse": 0,
+          "explication": "Correction : بَلْ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَـ",
+          "choix": [
+            "et aussitôt ; donc",
+            "mais",
+            "ou"
+          ],
+          "reponse": 0,
+          "explication": "فَـ veut dire « et aussitôt ; donc »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَوْ",
+          "choix": [
+            "ou",
+            "et",
+            "mais"
+          ],
+          "reponse": 0,
+          "explication": "أَوْ veut dire « ou »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « quant à Bāsim, il est occupé » ?",
+          "choix_ar": [
+            "أَمَّا بَاسِمٌ فَمَشْغُولٌ",
+            "أَمَّا بَاسِمٌ مَشْغُولٌ",
+            "إِمَّا بَاسِمٌ فَمَشْغُولٌ"
+          ],
+          "reponse": 0,
+          "explication": "أَمَّا (« quant à ») + فَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a lu la lettre, puis il a écrit la réponse. »",
+          "ar": "قَرَأَ الرِّسَالَةَ … كَتَبَ الْجَوَابَ.",
+          "choix_ar": [
+            "ثُمَّ",
+            "بَلْ",
+            "أَوْ"
+          ],
+          "reponse": 0,
+          "explication": "« puis » : ثُمَّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ce n'est pas Samīr qui est venu, mais Bāsim. »",
+          "ar": "مَا حَضَرَ سَمِيرٌ، … بَاسِمٌ.",
+          "choix_ar": [
+            "بَلْ",
+            "ثُمَّ",
+            "أَوْ"
+          ],
+          "reponse": 0,
+          "explication": "بَلْ corrige."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Quant à Samīr, il est à l'école. »",
+          "ar": "أَمَّا سَمِيرٌ … الْمَدْرَسَةِ.",
+          "choix_ar": [
+            "فَفِي",
+            "فِي",
+            "بَلْ فِي"
+          ],
+          "reponse": 0,
+          "explication": "Après أَمَّا : فَـ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après أَمَّا, فَـ est…",
+          "choix": [
+            "obligatoire",
+            "interdit",
+            "facultatif"
+          ],
+          "reponse": 0,
+          "explication": "أَمَّا بَاسِمٌ فَمَشْغُولٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "ثُمَّ relie deux actions…",
+          "choix": [
+            "séparées par un temps",
+            "qui se suivent aussitôt",
+            "qui s'opposent"
+          ],
+          "reponse": 0,
+          "explication": "Aussitôt : فَـ ; avec un temps : ثُمَّ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle phrase dit « mais » pour opposer deux faits ?",
+          "choix_ar": [
+            "لَمْ يَكْتُبْ سَمِيرٌ، لَٰكِنْ كَتَبَتْ سَلْمَى",
+            "كَتَبَ سَمِيرٌ ثُمَّ كَتَبَتْ سَلْمَى",
+            "كَتَبَ سَمِيرٌ أَوْ سَلْمَى"
+          ],
+          "reponse": 0,
+          "explication": "لَٰكِنْ oppose."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَدْ",
+          "choix": [
+            "(insiste sur le passé) ; (avec l'inaccompli) parfois",
+            "jamais",
+            "si"
+          ],
+          "reponse": 0,
+          "explication": "قَدْ veut dire « (insiste sur le passé) ; (avec l'inaccompli) parfois ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chemin est vraiment long. »",
+          "ar": "إِنَّ الطَّرِيقَ …",
+          "choix_ar": [
+            "لَطَوِيلٌ",
+            "لِطَوِيلٍ",
+            "لَطَوِيلًا"
+          ],
+          "reponse": 0,
+          "explication": "لَـ sur l'attribut.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَاحِبٌ",
+          "choix": [
+            "compagnon ; propriétaire, maître (de)",
+            "visiteur",
+            "gardien"
+          ],
+          "reponse": 0,
+          "explication": "صَاحِبٌ veut dire « compagnon ; propriétaire, maître (de) ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu relies les idées : فَـ (aussitôt, donc), ثُمَّ (puis), بَلْ (mais plutôt), لَٰكِنْ (mais), أَمَّا… فَـ (quant à), أَوْ (ou).",
+      "suite": "Dernière leçon du chapitre : tous les nombres jusqu'à mille."
+    }
+  ]
+}

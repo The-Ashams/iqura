@@ -1,0 +1,536 @@
+{
+  "id": "fondations-05",
+  "etape": 2,
+  "ordre": 5,
+  "format": 3,
+  "titre": "Au loin, depuis la tente",
+  "objectif": "Montrer ce qui est loin : ذَٰلِكَ, تِلْكَ.",
+  "statut": "ia_non_verifie",
+  "lieu": "tente",
+  "maitre": "rashid_oasis",
+  "prerequis": [
+    "fondations-04"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rashid_oasis",
+          "texte": "Viens à l'entrée de la tente. D'ici, on voit loin."
+        },
+        {
+          "qui": "rashid_oasis",
+          "texte": "Pour ce qui est loin, on ne dit plus هَٰذَا ni هَٰذِهِ."
+        }
+      ],
+      "objectif": "Dire « cela est… » avec ذَٰلِكَ et تِلْكَ."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète avec هَٰذَا ou هَٰذِهِ.",
+          "ar": "… غُرْفَةٌ.",
+          "choix_ar": [
+            "هَٰذِهِ",
+            "هَٰذَا",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذِهِ غُرْفَةٌ : nom féminin (leçon 2.4)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سِرَاجٌ",
+          "choix": [
+            "une lampe",
+            "un calame",
+            "un siège"
+          ],
+          "reponse": 0,
+          "explication": "سِرَاجٌ veut dire « une lampe » (leçon 2.4)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le chemin » ?",
+          "choix_ar": [
+            "الطَّرِيقُ",
+            "طَرِيقٌ",
+            "الطَّعَامُ"
+          ],
+          "reponse": 0,
+          "explication": "الطَّرِيقُ : avec l'article, plus de tanwīn (leçon 2.3)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "rashid_oasis",
+          "ar": "ذَٰلِكَ جَبَلٌ.",
+          "fr": "Cela est une montagne."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَتِلْكَ قَرْيَةٌ.",
+          "fr": "Et cela est un village."
+        },
+        {
+          "qui": "rashid_oasis",
+          "ar": "وَهَٰذَا جَمَلٌ.",
+          "fr": "Et ceci est un chameau."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'est-ce qui est tout près de Rāšid ?",
+        "choix": [
+          "un chameau",
+          "une montagne",
+          "un village"
+        ],
+        "reponse": 0,
+        "explication": "Pour le chameau, Rāšid dit هَٰذَا : il est proche."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "dhalika",
+        "tilka",
+        "jabal",
+        "qarya",
+        "nahr"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "جَبَلٌ",
+        "choix": [
+          "une montagne",
+          "un village",
+          "un fleuve"
+        ],
+        "reponse": 0,
+        "explication": "جَبَلٌ veut dire « une montagne »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Cela : ذَٰلِكَ, تِلْكَ",
+      "texte": "Pour montrer ce qui est loin, on dit ذَٰلِكَ devant un nom masculin et تِلْكَ devant un nom féminin.",
+      "exemples": [
+        "ذَٰلِكَ جَبَلٌ.",
+        "تِلْكَ قَرْيَةٌ."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Le fleuve est loin. Complète.",
+        "ar": "… نَهْرٌ.",
+        "choix_ar": [
+          "ذَٰلِكَ",
+          "تِلْكَ",
+          "مِنْ"
+        ],
+        "reponse": 0,
+        "explication": "ذَٰلِكَ نَهْرٌ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Proche ou loin",
+      "texte": "Proche : هَٰذَا, هَٰذِهِ ; loin : ذَٰلِكَ, تِلْكَ. On choisit selon la distance et le genre du nom.",
+      "exemples": [
+        "هَٰذِهِ خَيْمَةٌ.",
+        "تِلْكَ خَيْمَةٌ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "La tente est loin. Que dis-tu ?",
+        "choix_ar": [
+          "تِلْكَ خَيْمَةٌ.",
+          "هَٰذِهِ خَيْمَةٌ.",
+          "ذَٰلِكَ خَيْمَةٌ."
+        ],
+        "reponse": 0,
+        "explication": "Loin et féminin : تِلْكَ خَيْمَةٌ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "La montagne est loin. Complète.",
+          "ar": "… جَبَلٌ.",
+          "choix_ar": [
+            "ذَٰلِكَ",
+            "تِلْكَ",
+            "هَٰذِهِ"
+          ],
+          "reponse": 0,
+          "explication": "ذَٰلِكَ جَبَلٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Le puits est loin. Complète.",
+          "ar": "… بِئْرٌ.",
+          "choix_ar": [
+            "تِلْكَ",
+            "ذَٰلِكَ",
+            "هَٰذَا"
+          ],
+          "reponse": 0,
+          "explication": "تِلْكَ بِئْرٌ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَرْيَةٌ",
+          "choix": [
+            "un village",
+            "une montagne",
+            "un fleuve"
+          ],
+          "reponse": 0,
+          "explication": "قَرْيَةٌ veut dire « un village »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un fleuve » ?",
+          "choix_ar": [
+            "نَهْرٌ",
+            "جَبَلٌ",
+            "نَجْمٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un fleuve » se dit نَهْرٌ."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "تِلْكَ",
+          "choix_ar": [
+            "تِلْكَ",
+            "ذَٰلِكَ",
+            "هَٰذِهِ"
+          ],
+          "reponse": 0,
+          "explication": "C'était تِلْكَ « cela » (féminin)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "L'étoile est loin. Que dis-tu ?",
+          "choix_ar": [
+            "ذَٰلِكَ نَجْمٌ.",
+            "تِلْكَ نَجْمٌ.",
+            "هَٰذَا نَجْمٌ."
+          ],
+          "reponse": 0,
+          "explication": "نَجْمٌ est masculin et loin : ذَٰلِكَ نَجْمٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Cela est un village. »",
+          "tuiles": [
+            "قَرْيَةٌ",
+            "تِلْكَ",
+            "ذَٰلِكَ"
+          ],
+          "solution": [
+            "تِلْكَ",
+            "قَرْيَةٌ"
+          ],
+          "explication": "تِلْكَ قَرْيَةٌ : loin et féminin."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "ذَٰلِكَ جَبَلٌ، وَتِلْكَ قَرْيَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le mot تِلْكَ montre…",
+          "choix": [
+            "ce qui est loin (féminin)",
+            "ce qui est proche (féminin)",
+            "ce qui est loin (masculin)"
+          ],
+          "reponse": 0,
+          "explication": "تِلْكَ montre un nom féminin lointain."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une montagne » ?",
+          "choix_ar": [
+            "جَبَلٌ",
+            "قَرْيَةٌ",
+            "نَهْرٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une montagne » se dit جَبَلٌ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Depuis l'entrée de la tente",
+      "texte": "Rāšid décrit ce qu'il voit, de près et de loin. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "هَٰذِهِ خَيْمَةٌ، وَهَٰذَا جَمَلٌ.",
+        "ذَٰلِكَ جَبَلٌ.",
+        "وَتِلْكَ قَرْيَةٌ.",
+        "وَذَٰلِكَ نَهْرٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'est-ce qui est près de Rāšid ?",
+          "choix": [
+            "une tente et un chameau",
+            "une montagne",
+            "un fleuve"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذِهِ et هَٰذَا : la tente et le chameau sont proches."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel mot montre un nom féminin lointain ?",
+          "choix_ar": [
+            "تِلْكَ",
+            "ذَٰلِكَ",
+            "هَٰذَا"
+          ],
+          "reponse": 0,
+          "explication": "تِلْكَ قَرْيَةٌ : loin et féminin."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Écris : « Cela est une montagne. »",
+          "tuiles": [
+            "جَبَلٌ",
+            "ذَٰلِكَ",
+            "تِلْكَ"
+          ],
+          "solution": [
+            "ذَٰلِكَ",
+            "جَبَلٌ"
+          ],
+          "explication": "ذَٰلِكَ جَبَلٌ : loin et masculin."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Le puits est loin : écris « Cela est un puits ».",
+          "tuiles": [
+            "بِئْرٌ",
+            "تِلْكَ",
+            "ذَٰلِكَ"
+          ],
+          "solution": [
+            "تِلْكَ",
+            "بِئْرٌ"
+          ],
+          "explication": "بِئْرٌ est féminin : تِلْكَ بِئْرٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ceci est une tente, et cela est un village. »",
+          "ar": "هَٰذِهِ خَيْمَةٌ، وَ… قَرْيَةٌ.",
+          "choix_ar": [
+            "تِلْكَ",
+            "ذَٰلِكَ",
+            "هَٰذَا"
+          ],
+          "reponse": 0,
+          "explication": "وَتِلْكَ قَرْيَةٌ : le village est loin et féminin."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « cela (devant un nom masculin) » ?",
+          "choix_ar": [
+            "ذَٰلِكَ",
+            "تِلْكَ",
+            "هَٰذَا"
+          ],
+          "reponse": 0,
+          "explication": "Loin et masculin : ذَٰلِكَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un village » ?",
+          "choix_ar": [
+            "قَرْيَةٌ",
+            "جَبَلٌ",
+            "نَهْرٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un village » se dit قَرْيَةٌ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَهْرٌ",
+          "choix": [
+            "un fleuve",
+            "une montagne",
+            "un puits"
+          ],
+          "reponse": 0,
+          "explication": "نَهْرٌ veut dire « un fleuve »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَبَلٌ",
+          "choix": [
+            "une montagne",
+            "un village",
+            "une étoile"
+          ],
+          "reponse": 0,
+          "explication": "جَبَلٌ veut dire « une montagne »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تِلْكَ",
+          "choix": [
+            "cela (féminin)",
+            "ceci (féminin)",
+            "cela (masculin)"
+          ],
+          "reponse": 0,
+          "explication": "تِلْكَ veut dire « cela (féminin) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « un village » ?",
+          "choix_ar": [
+            "قَرْيَةٌ",
+            "نَهْرٌ",
+            "خَيْمَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« un village » se dit قَرْيَةٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Le village est loin. Complète.",
+          "ar": "… قَرْيَةٌ.",
+          "choix_ar": [
+            "تِلْكَ",
+            "ذَٰلِكَ",
+            "فِي"
+          ],
+          "reponse": 0,
+          "explication": "تِلْكَ قَرْيَةٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Le fleuve est loin. Complète.",
+          "ar": "… نَهْرٌ.",
+          "choix_ar": [
+            "ذَٰلِكَ",
+            "تِلْكَ",
+            "إِلَى"
+          ],
+          "reponse": 0,
+          "explication": "ذَٰلِكَ نَهْرٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La tente est tout près. Que dis-tu ?",
+          "choix_ar": [
+            "هَٰذِهِ خَيْمَةٌ.",
+            "تِلْكَ خَيْمَةٌ.",
+            "هَٰذَا خَيْمَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "Proche et féminin : هَٰذِهِ خَيْمَةٌ."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "ذَٰلِكَ",
+          "choix_ar": [
+            "ذَٰلِكَ",
+            "تِلْكَ",
+            "هَٰذَا"
+          ],
+          "reponse": 0,
+          "explication": "C'était ذَٰلِكَ « cela » (masculin)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le mot ذَٰلِكَ montre…",
+          "choix": [
+            "ce qui est loin (masculin)",
+            "ce qui est proche (masculin)",
+            "ce qui est loin (féminin)"
+          ],
+          "reponse": 0,
+          "explication": "ذَٰلِكَ : loin et masculin."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَلَمٌ",
+          "choix": [
+            "un calame",
+            "un siège",
+            "une lampe"
+          ],
+          "reponse": 0,
+          "explication": "قَلَمٌ veut dire « un calame ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « une chambre » ?",
+          "choix_ar": [
+            "غُرْفَةٌ",
+            "خَيْمَةٌ",
+            "قَرْيَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "« une chambre » se dit غُرْفَةٌ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَارٌ",
+          "choix": [
+            "un feu",
+            "une terre",
+            "un soleil"
+          ],
+          "reponse": 0,
+          "explication": "نَارٌ veut dire « un feu ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu montres ce qui est loin : ذَٰلِكَ جَبَلٌ, تِلْكَ قَرْيَةٌ ; et ce qui est proche : هَٰذَا, هَٰذِهِ.",
+      "suite": "Au puits aux palmiers, Bāsim t'apprend à décrire ce que tu vois."
+    }
+  ]
+}

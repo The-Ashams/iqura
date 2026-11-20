@@ -2,9 +2,12 @@
   "id": "dechiffrer-03",
   "etape": 1,
   "ordre": 3,
-  "titre": "ج ح خ et la ḍamma",
-  "objectif": "Reconnaître ǧīm, ḥāʾ et ḫāʾ, distinguer ḥ et ḫ, lire la ḍamma (u).",
+  "format": 2,
+  "titre": "La couronne du joaillier",
+  "objectif": "Reconnaître ج, ح et خ, distinguer ḥ et ḫ, lire la ḍamma (u) ; lire تَاج, جَنَاح, حَبِيب, خَابَ, حُجِبَ.",
   "statut": "ia_non_verifie",
+  "lieu": "marche",
+  "maitre": "samir",
   "prerequis": [
     "dechiffrer-02"
   ],
@@ -18,196 +21,538 @@
       "damma"
     ]
   },
-  "sections": [
+  "apercu": [
+    "ـجـ",
+    "ـحـ",
+    "ـخـ",
+    "جـ",
+    "حـ",
+    "خـ"
+  ],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "جَ",
+        "translit": "ǧa"
+      },
+      {
+        "ar": "حَ",
+        "translit": "ḥa"
+      },
+      {
+        "ar": "خَ",
+        "translit": "ḫa"
+      },
+      {
+        "ar": "بُ",
+        "translit": "bu"
+      },
+      {
+        "ar": "جُ",
+        "translit": "ǧu"
+      },
+      {
+        "ar": "حُ",
+        "translit": "ḥu"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "تَاج",
+        "translit": "tāǧ",
+        "fr": "couronne"
+      },
+      {
+        "ar": "جَنَاح",
+        "translit": "ǧanāḥ",
+        "fr": "aile"
+      },
+      {
+        "ar": "حَبِيب",
+        "translit": "ḥabīb",
+        "fr": "bien-aimé"
+      },
+      {
+        "ar": "خَابَ",
+        "translit": "ḫāba",
+        "fr": "il a échoué"
+      },
+      {
+        "ar": "حُجِبَ",
+        "translit": "ḥuǧiba",
+        "fr": "il a été caché"
+      }
+    ]
+  },
+  "ecrans": [
     {
-      "type": "texte",
-      "titre": "Une nouvelle famille",
-      "corps": "ج, ح et خ ont la même silhouette, comme un crochet ouvert vers la gauche. Le point fait la différence : un point dans le creux (ǧ), aucun point (ḥ), un point au-dessus (ḫ)."
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir",
+          "texte": "Salut, voyageur, moi c'est Samīr, apprenti copiste ! Laylā m'a dit que tu lisais les enseignes."
+        },
+        {
+          "qui": "samir",
+          "texte": "Le joaillier a peint une couronne au-dessus de son mot, mais personne ne sait plus le lire. On essaie ?"
+        }
+      ],
+      "objectif": "Lire l'enseigne du joaillier."
     },
     {
-      "type": "lettres",
-      "lettres": [
-        "ج",
-        "ح",
-        "خ"
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "نِي",
+          "choix_ar": [
+            "نِ",
+            "نِي",
+            "نَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « nī », long : kasra et ي."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "بَنَات",
+          "choix_audio": [
+            "نَبَات",
+            "بَنَات",
+            "ثَابِت"
+          ],
+          "reponse": 1,
+          "explication": "بَنَات se lit « banāt »."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle a un point au-dessus ?",
+          "choix_ar": [
+            "ب",
+            "ي",
+            "ن"
+          ],
+          "reponse": 2,
+          "explication": "ن porte un point au-dessus."
+        }
       ]
     },
     {
-      "type": "encadre",
-      "corps": "ح et خ n'existent pas en français. ح est un souffle chuchoté, serré, au milieu de la gorge ; خ est un son raclé, plus haut, presque dans la bouche. Ne les remplacez pas par un « h » ou un « k » : en arabe, ils changent le sens des mots."
+      "type": "decouverte",
+      "support": [
+        "تَاج"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Le dernier signe, à gauche, ressemble à un crochet avec un point dans le creux. Le connais-tu ?",
+        "choix": [
+          "Non, c'est une nouvelle lettre",
+          "Oui, c'est ب",
+          "Oui, c'est ن"
+        ],
+        "reponse": 0,
+        "explication": "C'est une nouvelle lettre : ج. Le début du mot, تَا, tu sais déjà le lire."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ج",
+      "question": {
+        "type": "points",
+        "consigne": "Laquelle a un point dans le creux ?",
+        "choix_ar": [
+          "ح",
+          "ج",
+          "خ"
+        ],
+        "reponse": 1,
+        "explication": "ج a son point dans le creux du crochet."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "ح",
+      "question": {
+        "type": "points",
+        "consigne": "Laquelle n'a aucun point ?",
+        "choix_ar": [
+          "خ",
+          "ج",
+          "ح"
+        ],
+        "reponse": 2,
+        "explication": "ح n'a aucun point : c'est le « ahh » soufflé de la gorge."
+      }
+    },
+    {
+      "type": "element",
+      "lettre": "خ",
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "خَ",
+        "choix_ar": [
+          "حَ",
+          "خَ",
+          "جَ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « ḫa » : le son raclé, avec un point au-dessus."
+      }
     },
     {
       "type": "regle",
-      "titre": "La ḍamma : le son « u »",
-      "corps": "La ḍamma est un petit wāw (و) au-dessus de la consonne : ـُ. Elle se prononce « u », comme le « ou » de « loup » (et non comme le « u » de « lune »). بُ = bu, حُ = ḥu, جُ = ǧu."
+      "titre": "La ḍamma",
+      "texte": "La ḍamma est une petite boucle au-dessus de la lettre : un petit و, lettre que tu verras plus tard. Elle se lit « u », comme le « ou » de « loup ».",
+      "exemples": [
+        "بُ",
+        "جُ",
+        "حُ"
+      ],
+      "question": {
+        "type": "ecouter",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "بُ",
+        "choix_ar": [
+          "بَ",
+          "بِ",
+          "بُ"
+        ],
+        "reponse": 2,
+        "explication": "Tu as entendu « bu » : la ḍamma au-dessus de ب."
+      }
     },
     {
-      "type": "syllabes",
-      "items": [
-        {
-          "ar": "جَ",
-          "translit": "ǧa"
-        },
-        {
-          "ar": "حَ",
-          "translit": "ḥa"
-        },
-        {
-          "ar": "خَ",
-          "translit": "ḫa"
-        },
-        {
-          "ar": "حِ",
-          "translit": "ḥi"
-        },
-        {
-          "ar": "خُ",
-          "translit": "ḫu"
-        },
-        {
-          "ar": "بُ",
-          "translit": "bu"
-        },
-        {
-          "ar": "جَا",
-          "translit": "ǧā"
-        },
-        {
-          "ar": "حَا",
-          "translit": "ḥā"
-        }
-      ]
+      "type": "regle",
+      "titre": "Trois petits signes",
+      "texte": "Tu connais maintenant les trois voyelles brèves : fatḥa « a », kasra « i », ḍamma « u ». Elles changent la lecture, et souvent le sens.",
+      "exemples": [
+        "حَ",
+        "حُ"
+      ],
+      "question": {
+        "type": "lire",
+        "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+        "ar": "حُجِبَ",
+        "choix_audio": [
+          "حُجِبَ",
+          "حَبِيب",
+          "خَابَ"
+        ],
+        "reponse": 0,
+        "explication": "حُجِبَ se lit « ḥuǧiba » : ḍamma, kasra, fatḥa."
+      }
     },
     {
-      "type": "exemples",
-      "titre": "Mots",
-      "items": [
+      "type": "entrainement",
+      "exercices": [
         {
-          "ar": "بَحَثَ",
-          "translit": "baḥaṯa",
-          "fr": "il a cherché"
-        },
-        {
-          "ar": "نَجَحَ",
-          "translit": "naǧaḥa",
-          "fr": "il a réussi"
-        },
-        {
-          "ar": "حَجَبَ",
-          "translit": "ḥaǧaba",
-          "fr": "il a caché"
-        },
-        {
-          "ar": "خَابَ",
-          "translit": "ḫāba",
-          "fr": "il a échoué"
-        },
-        {
-          "ar": "نَجَا",
-          "translit": "naǧā",
-          "fr": "il a été sauvé"
-        },
-        {
-          "ar": "حُجِبَ",
-          "translit": "ḥuǧiba",
-          "fr": "il a été caché"
-        },
-        {
-          "ar": "بُنِيَ",
-          "translit": "buniya",
-          "fr": "il a été construit"
-        }
-      ]
-    },
-    {
-      "type": "encadre",
-      "corps": "Comparez حَجَبَ (ḥaǧaba, il a caché) et حُجِبَ (ḥuǧiba, il a été caché) : mêmes lettres, voyelles différentes, sens différent. Les petits signes comptent autant que les lettres."
-    },
-    {
-      "type": "coran",
-      "titre": "Dans le Coran",
-      "corps": "Repérez ج, ح et خ dans ces versets.",
-      "extraits": [
-        {
-          "verset": "89:1",
-          "mots": [
-            "89:1:1"
+          "type": "reconnaitre",
+          "consigne": "Comment s'appelle cette lettre ?",
+          "ar": "خ",
+          "choix": [
+            "ḫāʾ",
+            "ḥāʾ",
+            "ǧīm"
           ],
-          "lettres": [
-            "ج"
-          ]
+          "reponse": 0,
+          "explication": "Un point au-dessus : ḫāʾ, le son raclé."
         },
         {
-          "verset": "93:1",
-          "mots": [
-            "93:1:1"
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "حَ",
+          "choix_ar": [
+            "خَ",
+            "حَ",
+            "جَ"
           ],
-          "lettres": [
-            "ح"
-          ]
+          "reponse": 1,
+          "explication": "C'était « ḥa », soufflé et serré, sans point."
         },
         {
-          "verset": "78:8",
-          "mots": [
-            "78:8:1",
-            "78:8:2"
-          ],
-          "lettres": [
+          "type": "formes",
+          "consigne": "De quelle lettre est cette forme ?",
+          "ar": "جـ",
+          "choix_ar": [
+            "ح",
             "خ",
             "ج"
-          ]
+          ],
+          "reponse": 2,
+          "explication": "Un point dessous : ج, au début d'un mot."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "جُ",
+          "choix_ar": [
+            "جَ",
+            "جُ",
+            "حُ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ǧu » : ج et la ḍamma."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "حُ",
+          "choix_ar": [
+            "حُ",
+            "خَ",
+            "حَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ḥu » : ح et la ḍamma."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "جَنَاح",
+          "choix_audio": [
+            "تَاج",
+            "جَنَاح",
+            "حَبِيب"
+          ],
+          "reponse": 1,
+          "explication": "جَنَاح se lit « ǧanāḥ » : ǧa, nā, puis ح sans voyelle."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "حَبِيب",
+          "choix_audio": [
+            "خَابَ",
+            "جَنَاح",
+            "حَبِيب"
+          ],
+          "reponse": 2,
+          "explication": "حَبِيب se lit « ḥabīb » : ḥa, bī long, puis ب sans voyelle."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "تَاج",
+          "tuiles": [
+            "تَ",
+            "ا",
+            "ج",
+            "ح"
+          ],
+          "solution": [
+            "تَ",
+            "ا",
+            "ج"
+          ],
+          "explication": "تَاج : تَ, l'alif, puis ج sans voyelle."
+        },
+        {
+          "type": "tracer",
+          "consigne": "Trace la lettre ج en suivant les points.",
+          "lettre": "ج"
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "جَنَاح"
         }
       ]
-    }
-  ],
-  "exercices": [
-    {
-      "type": "reconnaitre_lettre",
-      "lettres": [
-        "ج",
-        "ح",
-        "خ"
-      ]
     },
     {
-      "type": "formes",
-      "lettres": [
-        "ج",
-        "ح",
-        "خ"
-      ]
-    },
-    {
-      "type": "points",
-      "lettres": [
-        "ج",
-        "ح",
-        "خ"
-      ]
-    },
-    {
-      "type": "lire",
-      "source": "syllabes"
-    },
-    {
-      "type": "lire",
-      "source": "exemples"
-    },
-    {
-      "type": "reconstruire",
-      "source": "exemples"
-    },
-    {
-      "type": "reperer",
-      "source": "coran"
-    },
-    {
-      "type": "controle_final",
-      "sources": [
-        "syllabes",
-        "exemples"
+      "type": "lecture",
+      "titre": "L'enseigne du joaillier",
+      "texte": "Sur son enseigne, le joaillier a gravé des mots. Compte les lettres et trouve l'aile.",
+      "inscription": [
+        "تَاج",
+        "جَنَاح",
+        "حَبِيب",
+        "حُجِبَ"
       ],
-      "seuil": 0.8
+      "questions": [
+        {
+          "type": "compter",
+          "consigne": "Combien de ج vois-tu dans ce mot ?",
+          "mot": 0,
+          "lettre": "ج"
+        },
+        {
+          "type": "compter",
+          "consigne": "Combien de ب vois-tu dans ce mot ?",
+          "mot": 2,
+          "lettre": "ب"
+        },
+        {
+          "type": "compter",
+          "consigne": "Combien de ḍamma vois-tu dans ce mot ?",
+          "mot": 3,
+          "lettre": "ُ"
+        },
+        {
+          "type": "reperer_mot",
+          "consigne": "Touche le mot qui veut dire « aile ».",
+          "mot": 1,
+          "explication": "جَنَاح se lit « ǧanāḥ » : aile."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "خَ",
+          "choix_ar": [
+            "خَ",
+            "حَ",
+            "جَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « ḫa », raclé."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "حَ",
+          "choix_ar": [
+            "جَ",
+            "خَ",
+            "حَ"
+          ],
+          "reponse": 2,
+          "explication": "C'était « ḥa », soufflé."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بُ",
+          "choix_ar": [
+            "بُ",
+            "بَ",
+            "بِ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « bu »."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "جَ",
+          "choix_ar": [
+            "حَ",
+            "جَ",
+            "جُ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ǧa »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "تَاج",
+          "choix_audio": [
+            "تَاج",
+            "جَنَاح",
+            "خَابَ"
+          ],
+          "reponse": 0,
+          "explication": "تَاج se lit « tāǧ »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "خَابَ",
+          "choix_audio": [
+            "حُجِبَ",
+            "خَابَ",
+            "تَاج"
+          ],
+          "reponse": 1,
+          "explication": "خَابَ se lit « ḫāba »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "جَنَاح",
+          "choix_audio": [
+            "حَبِيب",
+            "تَاج",
+            "جَنَاح"
+          ],
+          "reponse": 2,
+          "explication": "جَنَاح se lit « ǧanāḥ »."
+        },
+        {
+          "type": "ecouter_lettre",
+          "consigne": "Écoute et choisis la lettre.",
+          "choix_ar": [
+            "ج",
+            "ح",
+            "خ"
+          ],
+          "reponse": 1,
+          "explication": "C'était ح (ḥāʾ) : sans point."
+        },
+        {
+          "type": "formes",
+          "consigne": "De quelle lettre est cette forme ?",
+          "ar": "ـخـ",
+          "choix_ar": [
+            "ج",
+            "خ",
+            "ح"
+          ],
+          "reponse": 1,
+          "explication": "Un point au-dessus : خ, au milieu d'un mot."
+        },
+        {
+          "type": "paires",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بِي",
+          "choix_ar": [
+            "بِ",
+            "بِي",
+            "بَا"
+          ],
+          "reponse": 1,
+          "explication": "C'était « bī », long (leçon 2)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "نَبَات",
+          "choix_audio": [
+            "نَبَات",
+            "بَنَات",
+            "ثَابِت"
+          ],
+          "reponse": 0,
+          "explication": "نَبَات se lit « nabāt » (leçon 2)."
+        },
+        {
+          "type": "points",
+          "revision": true,
+          "consigne": "Laquelle a deux points dessous ?",
+          "choix_ar": [
+            "ي",
+            "ت",
+            "ن"
+          ],
+          "reponse": 0,
+          "explication": "ي porte deux points sous la ligne (leçon 2)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais lire ج, ح et خ, et les trois voyelles brèves : تَاج, جَنَاح, حَبِيب, خَابَ, حُجِبَ.",
+      "suite": "L'enseigne du joaillier brille de nouveau, et le troisième sceau de la porte se brise."
     }
   ]
 }

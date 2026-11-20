@@ -1,0 +1,558 @@
+{
+  "id": "fondations-28",
+  "etape": 2,
+  "ordre": 28,
+  "format": 3,
+  "titre": "Il écrira",
+  "objectif": "Parler du futur avec سَـ et سَوْفَ.",
+  "statut": "ia_non_verifie",
+  "lieu": "jardin_conteur",
+  "maitre": "samir_oasis",
+  "prerequis": [
+    "fondations-27"
+  ],
+  "terminaisons": [
+    "futur"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "samir_oasis",
+          "texte": "Le soir, au jardin du conteur, on écoute des histoires et on fait des projets."
+        },
+        {
+          "qui": "samir_oasis",
+          "texte": "Pour dire ce qui se fera, il suffit d'ajouter un petit mot devant l'inaccompli."
+        }
+      ],
+      "objectif": "Dire ce qui se fera demain."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je n'ai pas compris la question. »",
+          "ar": "… فَهِمْتُ السُّؤَالَ.",
+          "choix_ar": [
+            "مَا",
+            "لَا",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Devant un passé : مَا (leçon 2.27)."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous écrivons » ?",
+          "choix_ar": [
+            "نَكْتُبُ",
+            "كَتَبْنَا",
+            "يَكْتُبُونَ"
+          ],
+          "reponse": 0,
+          "explication": "نَـ : « nous », au présent (leçon 2.26)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire « لَمْ يَرْجِعْ » ?",
+          "choix": [
+            "il n'est pas revenu",
+            "il ne revient pas",
+            "il reviendra"
+          ],
+          "reponse": 0,
+          "explication": "لَمْ : sens passé (leçon 2.27)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "هَلْ سَيَرْجِعُ رَاشِدٌ؟",
+          "fr": "Rāšid reviendra-t-il ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "نَعَمْ، سَيَرْجِعُ رَاشِدٌ غَدًا.",
+          "fr": "Oui, Rāšid reviendra demain."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَنَحْنُ؟",
+          "fr": "Et nous ?"
+        },
+        {
+          "qui": "samir_oasis",
+          "ar": "سَوْفَ نَسْمَعُ قِصَّةً جَدِيدَةً فِي الْحَدِيقَةِ.",
+          "fr": "Nous écouterons une nouvelle histoire dans le jardin."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quand Rāšid reviendra-t-il ?",
+        "choix": [
+          "demain",
+          "hier",
+          "aujourd'hui"
+        ],
+        "reponse": 0,
+        "explication": "سَيَرْجِعُ رَاشِدٌ غَدًا : demain."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "sa",
+        "sawfa",
+        "ghadan"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "غَدًا",
+        "choix": [
+          "demain",
+          "hier",
+          "aujourd'hui"
+        ],
+        "reponse": 0,
+        "explication": "غَدًا veut dire « demain »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "samia",
+        "qissa",
+        "hadiqa",
+        "qala"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "قِصَّةٌ",
+        "choix": [
+          "histoire, récit",
+          "jardin",
+          "lettre"
+        ],
+        "reponse": 0,
+        "explication": "قِصَّةٌ veut dire « histoire, récit »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le futur",
+      "texte": "سَـ collé à l'inaccompli, ou سَوْفَ devant lui, annonce le futur : سَيَكْتُبُ, سَوْفَ يَكْتُبُ « il écrira ». سَوْفَ s'emploie souvent pour un futur plus lointain ou plus appuyé.",
+      "exemples": [
+        "سَيَكْتُبُ",
+        "سَوْفَ يَكْتُبُ",
+        "سَأَكْتُبُ",
+        "سَنَسْمَعُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire « سَنَرْجِعُ » ?",
+        "choix": [
+          "nous reviendrons",
+          "nous revenons",
+          "nous sommes revenus"
+        ],
+        "reponse": 0,
+        "explication": "سَـ + inaccompli : futur."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "قَالَ, قَالَتْ",
+      "texte": "Pour faire parler quelqu'un, on écrit قَالَ « il a dit » ou قَالَتْ « elle a dit », puis son nom et ses paroles, comme قَالَتْ سَلْمَى suivi de la phrase. Le reste de ce verbe viendra plus tard.",
+      "exemples": [
+        "قَالَ رَاشِدٌ",
+        "قَالَتْ سَلْمَى"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Salmā a dit… »",
+        "ar": "… سَلْمَى",
+        "choix_ar": [
+          "قَالَتْ",
+          "قَالَ",
+          "سَمِعَتْ"
+        ],
+        "reponse": 0,
+        "explication": "Salmā est une femme : قَالَتْ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَمِعَ",
+          "choix": [
+            "il a entendu, il a écouté",
+            "il a dit",
+            "il a compris"
+          ],
+          "reponse": 0,
+          "explication": "سَمِعَ veut dire « il a entendu, il a écouté »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَدِيقَةٌ",
+          "choix": [
+            "jardin",
+            "histoire",
+            "chambre"
+          ],
+          "reponse": 0,
+          "explication": "حَدِيقَةٌ veut dire « jardin »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il écrira » ?",
+          "choix_ar": [
+            "سَيَكْتُبُ",
+            "يَكْتُبُ",
+            "كَتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "سَـ + inaccompli : futur."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'écouterai » ?",
+          "choix_ar": [
+            "سَأَسْمَعُ",
+            "أَسْمَعُ",
+            "سَمِعْتُ"
+          ],
+          "reponse": 0,
+          "explication": "سَـ + أَسْمَعُ : la hamza reste."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nous écouterons une histoire. »",
+          "ar": "… نَسْمَعُ قِصَّةً.",
+          "choix_ar": [
+            "سَوْفَ",
+            "لَمْ",
+            "مَا"
+          ],
+          "reponse": 0,
+          "explication": "سَوْفَ devant l'inaccompli : futur."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je reviendrai demain. »",
+          "ar": "سَأَرْجِعُ …",
+          "choix_ar": [
+            "غَدًا",
+            "أَمْسِ",
+            "ثُمَّ"
+          ],
+          "reponse": 0,
+          "explication": "« demain » : غَدًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Peut-on mettre سَـ devant un passé comme كَتَبَ ?",
+          "choix": [
+            "non, seulement devant l'inaccompli",
+            "oui",
+            "seulement au féminin"
+          ],
+          "reponse": 0,
+          "explication": "سَـ et سَوْفَ vont devant l'inaccompli."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "سَوْفَ",
+          "choix_ar": [
+            "سَوْفَ",
+            "سَمِعَ",
+            "قَالَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était سَوْفَ, le mot du futur."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, puis « demain » : « Rāšid reviendra demain. »",
+          "tuiles": [
+            "غَدًا",
+            "سَيَرْجِعُ",
+            "رَاشِدٌ",
+            "رَجَعَ"
+          ],
+          "solution": [
+            "سَيَرْجِعُ",
+            "رَاشِدٌ",
+            "غَدًا"
+          ],
+          "explication": "Verbe au futur, sujet, puis « demain » (l'arabe permet aussi d'autres ordres)."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "سَوْفَ نَسْمَعُ قِصَّةً جَدِيدَةً."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Les projets du soir",
+      "texte": "Au jardin, chacun dit ce qu'il fera demain. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "قَالَ رَاشِدٌ: « سَأَرْكَبُ الْجَمَلَ غَدًا. »",
+        "قَالَتْ سَلْمَى: « سَأَكْتُبُ الرِّسَالَةَ غَدًا. »",
+        "وَقَالَ سَمِيرٌ: « سَوْفَ نَسْمَعُ قِصَّةً فِي الْحَدِيقَةِ. »",
+        "فَرِحَ بَاسِمٌ، وَجَلَسَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que fera Salmā demain ?",
+          "choix": [
+            "elle écrira la lettre",
+            "elle montera sur le chameau",
+            "elle étudiera"
+          ],
+          "reponse": 0,
+          "explication": "سَأَكْتُبُ الرِّسَالَةَ غَدًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Où écoutera-t-on l'histoire ?",
+          "choix": [
+            "dans le jardin",
+            "au marché",
+            "dans la tente"
+          ],
+          "reponse": 0,
+          "explication": "فِي الْحَدِيقَةِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Samīr te demande si tu reviendras demain. Oui.",
+          "replique": {
+            "qui": "samir_oasis",
+            "ar": "هَلْ سَتَرْجِعُ غَدًا؟"
+          },
+          "choix_ar": [
+            "نَعَمْ، سَأَرْجِعُ غَدًا.",
+            "نَعَمْ، رَجَعْتُ غَدًا.",
+            "نَعَمْ، سَيَرْجِعُ غَدًا."
+          ],
+          "reponse": 0,
+          "explication": "Pour toi, au futur : سَأَرْجِعُ."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te demande ce que vous ferez au jardin. Vous écouterez une histoire.",
+          "replique": {
+            "qui": "basim",
+            "ar": "وَفِي الْحَدِيقَةِ؟"
+          },
+          "choix_ar": [
+            "سَوْفَ نَسْمَعُ قِصَّةً.",
+            "سَمِعْنَا قِصَّةً.",
+            "لَا نَسْمَعُ قِصَّةً."
+          ],
+          "reponse": 0,
+          "explication": "Au futur : سَوْفَ نَسْمَعُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « elle écrira la lettre » ?",
+          "choix_ar": [
+            "سَتَكْتُبُ الرِّسَالَةَ.",
+            "كَتَبَتِ الرِّسَالَةَ.",
+            "تَكْتُبُ الرِّسَالَةَ."
+          ],
+          "reponse": 0,
+          "explication": "« elle écrira la lettre » se dit سَتَكْتُبُ الرِّسَالَةَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Rāšid a dit : je reviendrai. »",
+          "ar": "… رَاشِدٌ: « سَأَرْجِعُ. »",
+          "choix_ar": [
+            "قَالَ",
+            "قَالَتْ",
+            "سَمِعَ"
+          ],
+          "reponse": 0,
+          "explication": "Rāšid est un homme : قَالَ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَوْفَ",
+          "choix": [
+            "(futur, devant l'inaccompli)",
+            "demain",
+            "puis"
+          ],
+          "reponse": 0,
+          "explication": "سَوْفَ veut dire « (futur, devant l'inaccompli) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قِصَّةٌ",
+          "choix": [
+            "histoire, récit",
+            "lettre",
+            "question"
+          ],
+          "reponse": 0,
+          "explication": "قِصَّةٌ veut dire « histoire, récit »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَمِعَ",
+          "choix": [
+            "il a entendu, il a écouté",
+            "il a dit",
+            "il a écrit"
+          ],
+          "reponse": 0,
+          "explication": "سَمِعَ veut dire « il a entendu, il a écouté »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « demain » ?",
+          "choix_ar": [
+            "غَدًا",
+            "أَمْسِ",
+            "الْيَوْمَ"
+          ],
+          "reponse": 0,
+          "explication": "« demain » se dit غَدًا."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « nous reviendrons » ?",
+          "choix_ar": [
+            "سَنَرْجِعُ",
+            "رَجَعْنَا",
+            "نَرْجِعُ"
+          ],
+          "reponse": 0,
+          "explication": "« nous reviendrons » se dit سَنَرْجِعُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il entendra l'histoire. »",
+          "ar": "… الْقِصَّةَ.",
+          "choix_ar": [
+            "سَيَسْمَعُ",
+            "سَمِعَ",
+            "لَمْ يَسْمَعْ"
+          ],
+          "reponse": 0,
+          "explication": "Futur : سَـ + inaccompli."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Salmā a dit… »",
+          "ar": "… سَلْمَى",
+          "choix_ar": [
+            "قَالَتْ",
+            "قَالَ",
+            "سَمِعَ"
+          ],
+          "reponse": 0,
+          "explication": "Pour une femme : قَالَتْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "سَـ et سَوْفَ se mettent devant…",
+          "choix": [
+            "l'inaccompli",
+            "le passé",
+            "un nom"
+          ],
+          "reponse": 0,
+          "explication": "Devant l'inaccompli : futur."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "حَدِيقَةٌ",
+          "choix_ar": [
+            "حَدِيقَةٌ",
+            "قِصَّةٌ",
+            "صَدِيقٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était حَدِيقَةٌ « jardin »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je ne connais pas la réponse. »",
+          "ar": "… أَعْرِفُ الْجَوَابَ.",
+          "choix_ar": [
+            "لَا",
+            "لَمْ",
+            "نَعَمْ"
+          ],
+          "reponse": 0,
+          "explication": "لَا + inaccompli.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَالِبٌ",
+          "choix": [
+            "étudiant",
+            "scribe",
+            "gardien"
+          ],
+          "reponse": 0,
+          "explication": "طَالِبٌ veut dire « étudiant ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « ils étudient » ?",
+          "choix_ar": [
+            "يَدْرُسُونَ",
+            "نَدْرُسُ",
+            "دَرَسُوا"
+          ],
+          "reponse": 0,
+          "explication": "« ils étudient » se dit يَدْرُسُونَ.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu parles du futur : سَيَكْتُبُ، سَوْفَ يَكْتُبُ, et tu fais parler quelqu'un avec قَالَ / قَالَتْ.",
+      "suite": "Prochaine leçon : donner un ordre, « écris ! »."
+    }
+  ]
+}

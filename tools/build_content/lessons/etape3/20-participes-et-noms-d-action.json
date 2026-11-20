@@ -1,0 +1,586 @@
+{
+  "id": "moteur-20",
+  "etape": 3,
+  "ordre": 20,
+  "format": 3,
+  "titre": "Participes et noms d'action",
+  "objectif": "Reconnaître les participes et les noms d'action des formes II à X.",
+  "statut": "ia_non_verifie",
+  "lieu": "tour",
+  "maitre": "rabab",
+  "prerequis": [
+    "moteur-19"
+  ],
+  "apercu": [
+    "رَبَابُ"
+  ],
+  "schemes": [
+    "مُفَعِّل",
+    "مُفَعَّل",
+    "افْتَعَلَ",
+    "اسْتَفْعَلَ",
+    "انْفَعَلَ",
+    "مُتَفَعِّل",
+    "مُفَاعِل",
+    "مُفْعِل",
+    "مُفْعَل",
+    "مُفْتَعِل",
+    "مُسْتَفْعِل",
+    "مُنْفَعِل",
+    "مُتَفَاعِل",
+    "اسْتِفْعَال",
+    "تَفْعِيل",
+    "مُفَاعَلَة",
+    "إِفْعَال",
+    "تَفَعُّل",
+    "تَفَاعُل",
+    "انْفِعَال",
+    "افْتِعَال",
+    "مَفْعُول",
+    "فَاعِل",
+    "يُفَعِّلُ",
+    "يَتَفَعَّلُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "texte": "Du haut de la tour, regarde : مُعَلِّمٌ, مُسَافِرٌ, مُتَعَلِّمٌ… Tous ces mots commencent par مُ."
+        },
+        {
+          "qui": "rabab",
+          "texte": "Ce sont les participes des formes II à X. Avec leurs noms d'action, ils remplissent les textes."
+        }
+      ],
+      "objectif": "Reconnaître un participe et un nom d'action de chaque forme."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ث ر dans le moule اسْتَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اسْتَكْثَرَ",
+            "كَثُرَ",
+            "أَكْثَرُ"
+          ],
+          "reponse": 0,
+          "explication": "ك ث ر dans اسْتَفْعَلَ : اسْتَكْثَرَ (leçon 3.19)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de عَلَّمَ ?",
+          "choix_ar": [
+            "يُعَلِّمُ",
+            "يَعْلَمُ",
+            "يَتَعَلَّمُ"
+          ],
+          "reponse": 0,
+          "explication": "Forme II : يُعَلِّمُ (leçon 3.12)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَقْبَلَ",
+          "choix": [
+            "il a accueilli",
+            "il a compris",
+            "il a demandé"
+          ],
+          "reponse": 0,
+          "explication": "Forme X (leçon 3.19)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَنْ مُرْسِلُ الرِّسَالَةِ؟",
+          "fr": "Qui est l'expéditeur de la lettre ?"
+        },
+        {
+          "qui": "rabab",
+          "ar": "مُرْسِلُ الرِّسَالَةِ تَاجِرٌ، وَالْحَمَّالُ مُسَاعِدُ التَّاجِرِ.",
+          "fr": "L'expéditeur de la lettre est un marchand, et le porteur est l'aide du marchand."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qui est l'expéditeur de la lettre ?",
+        "choix": [
+          "un marchand",
+          "le porteur",
+          "Rabāb"
+        ],
+        "reponse": 0,
+        "explication": "مُرْسِلُ الرِّسَالَةِ تَاجِرٌ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "mutaallim",
+        "musaid",
+        "mursil",
+        "mutafarriq",
+        "mustami",
+        "mukhtalif",
+        "muqatta",
+        "istifham"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مُخْتَلِفٌ",
+        "choix": [
+          "différent",
+          "dispersé",
+          "auditeur"
+        ],
+        "reponse": 0,
+        "explication": "مُخْتَلِفٌ veut dire « différent »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Celui qui fait : مُ + i",
+      "texte": "Participe actif des formes II à X : on remplace le préfixe de l'inaccompli par مُ, avec i avant la dernière lettre. يُعَلِّمُ → مُعَلِّمٌ « celui qui enseigne », يَتَعَلَّمُ → مُتَعَلِّمٌ « celui qui apprend ».",
+      "exemples": [
+        "مُعَلِّمٌ",
+        "مُتَعَلِّمٌ",
+        "مُسْتَمِعٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le participe actif de يُسَاعِدُ ?",
+        "choix_ar": [
+          "مُسَاعِدٌ",
+          "مُسَاعَدَةٌ",
+          "سَاعَدَ"
+        ],
+        "reponse": 0,
+        "explication": "مُ à la place de يُ : مُسَاعِدٌ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Ce qui est fait : مُ + a",
+      "texte": "Participe passif : مُ, avec a avant la dernière lettre : مُقَطَّعٌ « coupé en morceaux ». Sans voyelles, actif et passif s'écrivent pareil : on regarde la voyelle.",
+      "exemples": [
+        "مُقَطَّعٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "مُقَطَّعٌ veut dire…",
+        "choix": [
+          "coupé en morceaux",
+          "celui qui coupe",
+          "un morceau"
+        ],
+        "reponse": 0,
+        "explication": "a avant la dernière lettre : ce qui est fait."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les noms d'action",
+      "texte": "Chaque forme a un nom d'action régulier : تَفْعِيل (II), مُفَاعَلَة (III), إِفْعَال (IV), تَفَعُّل (V), تَفَاعُل (VI), انْفِعَال (VII), افْتِعَال (VIII), اسْتِفْعَال (X).",
+      "exemples": [
+        "تَعْلِيمٌ",
+        "اجْتِمَاعٌ",
+        "اسْتِفْهَامٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "اسْتِفْهَامٌ est le nom d'action de quelle forme ?",
+        "choix": [
+          "X",
+          "VIII",
+          "IV"
+        ],
+        "reponse": 0,
+        "explication": "Moule اسْتِفْعَال : forme X."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Moules voisins",
+      "texte": "Ne confonds pas مُفْعِل (مُرْسِلٌ, forme IV : sukūn sur la 1re lettre de la racine) et مُفَعِّل (مُعَلِّمٌ, forme II : shadda sur la 2e).",
+      "exemples": [
+        "مُرْسِلٌ",
+        "مُعَلِّمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "مُرْسِلٌ vient de quelle forme ?",
+        "choix": [
+          "IV",
+          "II",
+          "I"
+        ],
+        "reponse": 0,
+        "explication": "مُفْعِل : participe actif de la forme IV."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُتَعَلِّمٌ",
+          "choix": [
+            "apprenant",
+            "maître",
+            "science"
+          ],
+          "reponse": 0,
+          "explication": "مُتَعَلِّمٌ veut dire « apprenant »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُتَفَرِّقٌ",
+          "choix": [
+            "dispersé, épars",
+            "différent",
+            "réuni"
+          ],
+          "reponse": 0,
+          "explication": "مُتَفَرِّقٌ veut dire « dispersé, épars »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « l'auditeur » ?",
+          "choix_ar": [
+            "الْمُسْتَمِعُ",
+            "الِاسْتِمَاعُ",
+            "اسْتَمَعَ"
+          ],
+          "reponse": 0,
+          "explication": "« l'auditeur » se dit الْمُسْتَمِعُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « l'expéditeur » ?",
+          "choix_ar": [
+            "الْمُرْسِلُ",
+            "الرِّسَالَةُ",
+            "الْإِرْسَالُ"
+          ],
+          "reponse": 0,
+          "explication": "« l'expéditeur » se dit الْمُرْسِلُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de مُسْتَمِعٌ ?",
+          "choix_ar": [
+            "مُفْتَعِل",
+            "مُسْتَفْعِل",
+            "مُفَاعِل"
+          ],
+          "reponse": 0,
+          "explication": "Forme VIII (اسْتَمَعَ) : مُفْتَعِل."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le nom d'action de اجْتَمَعَ ?",
+          "choix_ar": [
+            "اجْتِمَاعٌ",
+            "جَمْعٌ",
+            "يَجْتَمِعُ"
+          ],
+          "reponse": 0,
+          "explication": "Forme VIII : افْتِعَال."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ع ل م dans le moule مُتَفَعِّل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مُتَعَلِّمٌ",
+            "مُعَلِّمٌ",
+            "تَعَلَّمَ"
+          ],
+          "reponse": 0,
+          "explication": "ع ل م dans مُتَفَعِّل : مُتَعَلِّمٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق ط ع dans le moule مُفَعَّل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مُقَطَّعٌ",
+            "قَطَّعَ",
+            "قِطْعَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "ق ط ع dans مُفَعَّل : مُقَطَّعٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La viande est coupée en morceaux. »",
+          "ar": "اللَّحْمُ …",
+          "choix_ar": [
+            "مُقَطَّعٌ",
+            "قَطَّعَ",
+            "قِطْعَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Participe passif de la forme II : مُقَطَّعٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les deux chemins sont différents. »",
+          "ar": "الطَّرِيقَانِ …",
+          "choix_ar": [
+            "مُخْتَلِفَانِ",
+            "مُخْتَلِفٌ",
+            "اخْتَلَفَ"
+          ],
+          "reponse": 0,
+          "explication": "L'attribut s'accorde au duel : مُخْتَلِفَانِ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le village de la montagne",
+      "texte": "Rabāb décrit le village au pied de la tour. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الْجَبَلِ قَرْيَةٌ، وَالْبُيُوتُ مُتَفَرِّقَةٌ.",
+        "الطَّرِيقَانِ إِلَى الْقَرْيَةِ مُخْتَلِفَانِ: طَرِيقٌ طَوِيلٌ وَطَرِيقٌ قَصِيرٌ.",
+        "الْمُعَلِّمُ وَالْمُتَعَلِّمُ وَالْمُسْتَمِعُ فِي الْمَجْلِسِ.",
+        "قَالَ الْمُعَلِّمُ: « هَلْ » كَلِمَةُ اسْتِفْهَامٍ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Comment sont les maisons du village ?",
+          "choix": [
+            "éparses",
+            "grandes",
+            "nouvelles"
+          ],
+          "reponse": 0,
+          "explication": "وَالْبُيُوتُ مُتَفَرِّقَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Combien de chemins mènent au village ?",
+          "choix": [
+            "deux",
+            "un",
+            "trois"
+          ],
+          "reponse": 0,
+          "explication": "الطَّرِيقَانِ إِلَى الْقَرْيَةِ مُخْتَلِفَانِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « L'expéditeur de la lettre est un marchand. » ?",
+          "choix_ar": [
+            "مُرْسِلُ الرِّسَالَةِ تَاجِرٌ.",
+            "مُرْسِلٌ الرِّسَالَةِ تَاجِرٌ.",
+            "الرِّسَالَةُ مُرْسِلٌ تَاجِرٌ."
+          ],
+          "reponse": 0,
+          "explication": "« L'expéditeur de la lettre est un marchand. » se dit مُرْسِلُ الرِّسَالَةِ تَاجِرٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre sujet, attribut : « Le porteur est l'aide du marchand. »",
+          "tuiles": [
+            "التَّاجِرِ",
+            "الْحَمَّالُ",
+            "مُسَاعِدُ",
+            "مُسَاعَدَةُ"
+          ],
+          "solution": [
+            "الْحَمَّالُ",
+            "مُسَاعِدُ",
+            "التَّاجِرِ"
+          ],
+          "explication": "Phrase nominale : sujet, puis l'attribut en iḍāfa."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les maisons sont éparses. »",
+          "ar": "الْبُيُوتُ …",
+          "choix_ar": [
+            "مُتَفَرِّقَةٌ",
+            "مُتَفَرِّقٌ",
+            "مُتَفَرِّقَانِ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de choses : attribut au féminin singulier (leçon 3.7)."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُسَاعِدٌ",
+          "choix": [
+            "aide, assistant",
+            "aide (le fait d'aider)",
+            "il a aidé"
+          ],
+          "reponse": 0,
+          "explication": "مُسَاعِدٌ veut dire « aide, assistant »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُرْسِلٌ",
+          "choix": [
+            "expéditeur",
+            "lettre",
+            "envoyé"
+          ],
+          "reponse": 0,
+          "explication": "مُرْسِلٌ veut dire « expéditeur »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتِفْهَامٌ",
+          "choix": [
+            "interrogation",
+            "compréhension",
+            "réponse"
+          ],
+          "reponse": 0,
+          "explication": "اسْتِفْهَامٌ veut dire « interrogation »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « l'apprenant » ?",
+          "choix_ar": [
+            "الْمُتَعَلِّمُ",
+            "الْمُعَلِّمُ",
+            "التَّعَلُّمُ"
+          ],
+          "reponse": 0,
+          "explication": "« l'apprenant » se dit الْمُتَعَلِّمُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le participe actif des formes II à X a…",
+          "choix": [
+            "مُ et i avant la dernière lettre",
+            "مَ et و avant la dernière lettre",
+            "مُ et a avant la dernière lettre"
+          ],
+          "reponse": 0,
+          "explication": "مُعَلِّمٌ, مُسْتَمِعٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le nom d'action de la forme IV ?",
+          "choix_ar": [
+            "إِفْعَال",
+            "تَفْعِيل",
+            "افْتِعَال"
+          ],
+          "reponse": 0,
+          "explication": "أَخْرَجَ → إِخْرَاجٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine خ ل ف dans le moule مُفْتَعِل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مُخْتَلِفٌ",
+            "اخْتَلَفَ",
+            "اخْتِلَافٌ"
+          ],
+          "reponse": 0,
+          "explication": "خ ل ف dans مُفْتَعِل : مُخْتَلِفٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ه م dans le moule اسْتِفْعَال. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اسْتِفْهَامٌ",
+            "اسْتَفْهَمَ",
+            "فَهْمٌ"
+          ],
+          "reponse": 0,
+          "explication": "ف ه م dans اسْتِفْعَال : اسْتِفْهَامٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'apprenant est dans l'assemblée. »",
+          "ar": "… فِي الْمَجْلِسِ.",
+          "choix_ar": [
+            "الْمُتَعَلِّمُ",
+            "تَعَلَّمَ",
+            "الْمُعَلِّمُ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet de la phrase nominale : الْمُتَعَلِّمُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ح س ن dans le moule اسْتَفْعَلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "اسْتَحْسَنَ",
+            "حَسُنَ",
+            "يَحْسُنُ"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَفْعَلَ : اسْتَحْسَنَ (leçon 3.19).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَطْعَمَ",
+          "choix": [
+            "il a demandé à manger",
+            "il a nourri",
+            "il a mangé"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَطْعَمَ veut dire « il a demandé à manger ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de اقْتَرَبَ ?",
+          "choix_ar": [
+            "افْتَعَلَ",
+            "اسْتَفْعَلَ",
+            "انْفَعَلَ"
+          ],
+          "reponse": 0,
+          "explication": "افْتَعَلَ (leçon 3.18).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais les participes (مُتَعَلِّمٌ, مُرْسِلٌ, مُقَطَّعٌ) et les noms d'action de toutes les formes.",
+      "suite": "Dernière leçon de la tour : la voix passive."
+    }
+  ]
+}

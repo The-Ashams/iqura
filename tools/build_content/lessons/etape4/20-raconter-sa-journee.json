@@ -1,0 +1,530 @@
+{
+  "id": "cite-20",
+  "etape": 4,
+  "ordre": 20,
+  "format": 3,
+  "titre": "Raconter sa journée",
+  "objectif": "Raconter au passé, dans l'ordre ; dire une habitude.",
+  "statut": "ia_non_verifie",
+  "lieu": "maison_nadim",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-19"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Assieds-toi, prends des dattes : raconte-moi ta journée, du matin au soir."
+        },
+        {
+          "qui": "nadim",
+          "texte": "On raconte au passé, dans l'ordre : d'abord, puis, ensuite."
+        }
+      ],
+      "objectif": "Raconter sa journée et dire ses habitudes."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « deux cents dirhams »",
+          "ar": "… دِرْهَمٍ",
+          "choix_ar": [
+            "مِائَتَا",
+            "مِائَتَانِ",
+            "مِائَةُ"
+          ],
+          "reponse": 0,
+          "explication": "Devant le nom : مِائَتَا (leçon 4.19)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nadīm est entré et s'est aussitôt assis. »",
+          "ar": "دَخَلَ نَدِيمٌ …",
+          "choix_ar": [
+            "فَجَلَسَ",
+            "أَوْ جَلَسَ",
+            "بَلْ جَلَسَ"
+          ],
+          "reponse": 0,
+          "explication": "Aussitôt : فَـ (leçon 4.13)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim jouait dans le jardin. »",
+          "ar": "كَانَ بَاسِمٌ … فِي الْحَدِيقَةِ.",
+          "choix_ar": [
+            "يَلْعَبُ",
+            "لَعِبَ",
+            "يَلْعَبَ"
+          ],
+          "reponse": 0,
+          "explication": "كَانَ + inaccompli : habitude ou durée (leçon 3.32)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "ar": "مَاذَا فَعَلْتَ الْيَوْمَ؟",
+          "fr": "Qu'as-tu fait aujourd'hui ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "أَوَّلًا ذَهَبْتُ إِلَى السُّوقِ، ثُمَّ جَلَسْتُ فِي الْمَدْرَسَةِ حَتَّى الْعَصْرِ.",
+          "fr": "D'abord je suis allé au marché, puis je suis resté (assis) à l'école jusqu'à la fin de l'après-midi."
+        },
+        {
+          "qui": "basim",
+          "ar": "كُنْتُ تَعِبًا، فَاسْتَرَحْتُ قَلِيلًا.",
+          "fr": "J'étais fatigué, alors je me suis un peu reposé."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où Bāsim est-il allé d'abord ?",
+        "choix": [
+          "au marché",
+          "à l'école",
+          "chez son oncle"
+        ],
+        "reponse": 0,
+        "explication": "أَوَّلًا ذَهَبْتُ إِلَى السُّوقِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "awwal",
+        "akhir",
+        "ghasala",
+        "taib",
+        "istaraha",
+        "adatun"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "تَعِبٌ",
+        "choix": [
+          "fatigué",
+          "malade",
+          "content"
+        ],
+        "reponse": 0,
+        "explication": "تَعِبٌ veut dire « fatigué »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Raconter dans l'ordre",
+      "texte": "On raconte au passé, avec ثُمَّ, فَـ, بَعْدَ أَنْ, لَمَّا. Pour une habitude passée : كَانَ + inaccompli, كُنْتُ أَكْتُبُ كُلَّ مَسَاءٍ.",
+      "exemples": [
+        "أَوَّلًا ذَهَبْتُ",
+        "ثُمَّ جَلَسْتُ",
+        "كُنْتُ أَكْتُبُ كُلَّ مَسَاءٍ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire كُنْتُ أَكْتُبُ كُلَّ مَسَاءٍ ?",
+        "choix": [
+          "J'écrivais chaque soir.",
+          "J'ai écrit un soir.",
+          "J'écrirai ce soir."
+        ],
+        "reponse": 0,
+        "explication": "كَانَ + inaccompli : une habitude passée."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "« Chaque »",
+      "texte": "كُلّ + singulier indéfini veut dire « chaque » ; ici, complément de temps, il est en -a : كُلَّ صَبَاحٍ, كُلَّ مَسَاءٍ. Avec un pluriel défini, كُلّ veut dire « tous », comme tu l'as déjà vu.",
+      "exemples": [
+        "كُلَّ صَبَاحٍ",
+        "كُلَّ أُسْبُوعٍ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Je bois du lait chaque matin. »",
+        "ar": "أَشْرَبُ اللَّبَنَ كُلَّ …",
+        "choix_ar": [
+          "صَبَاحٍ",
+          "الصَّبَاحِ",
+          "صَبَاحًا"
+        ],
+        "reponse": 0,
+        "explication": "Complément de temps : كُلَّ, puis le singulier indéfini au génitif."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Dernier ou autre ?",
+      "texte": "آخِرٌ (i sur le خ) veut dire « dernier, fin » : آخِرُ الْأُسْبُوعِ. آخَرُ (avec a) veut dire « autre » : on lit toujours les voyelles.",
+      "exemples": [
+        "آخِرُ الْأُسْبُوعِ",
+        "فِي آخِرِ الْأُسْبُوعِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire فِي آخِرِ الْأُسْبُوعِ ?",
+        "choix": [
+          "à la fin de la semaine",
+          "dans une autre semaine",
+          "au début de la semaine"
+        ],
+        "reponse": 0,
+        "explication": "آخِرٌ : la fin."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَادَةٌ",
+          "choix": [
+            "habitude",
+            "journée",
+            "règle"
+          ],
+          "reponse": 0,
+          "explication": "عَادَةٌ veut dire « habitude »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَرَاحَ",
+          "choix": [
+            "se reposer",
+            "se réveiller",
+            "laver"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَرَاحَ veut dire « se reposer »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَوَّلُ",
+          "choix": [
+            "premier ; أَوَّلًا : d'abord",
+            "dernier",
+            "seul"
+          ],
+          "reponse": 0,
+          "explication": "أَوَّلُ veut dire « premier ; أَوَّلًا : d'abord »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je me suis réveillé le matin, puis j'ai lavé mon vêtement » ?",
+          "choix_ar": [
+            "اسْتَيْقَظْتُ فِي الصَّبَاحِ، ثُمَّ غَسَلْتُ ثَوْبِي",
+            "اسْتَيْقَظْتُ فِي الصَّبَاحِ، ثُمَّ يَغْسِلُ ثَوْبِي",
+            "اسْتَيْقَظَ فِي الصَّبَاحِ، ثُمَّ غَسَلَ ثَوْبِي"
+          ],
+          "reponse": 0,
+          "explication": "Au passé, à la 1re personne : اسْتَيْقَظْتُ, غَسَلْتُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'étais fatigué, alors je me suis un peu reposé. »",
+          "ar": "كُنْتُ تَعِبًا، … قَلِيلًا.",
+          "choix_ar": [
+            "فَاسْتَرَحْتُ",
+            "أَوِ اسْتَرَحْتُ",
+            "وَلَٰكِنِ اسْتَرَحْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Une cause et sa suite : فَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a l'habitude d'écrire le soir. »",
+          "ar": "عَادَةُ بَاسِمٍ أَنْ … فِي الْمَسَاءِ.",
+          "choix_ar": [
+            "يَكْتُبَ",
+            "يَكْتُبُ",
+            "كَتَبَ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : subjonctif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je lisais chaque soir. »",
+          "ar": "كُنْتُ … كُلَّ مَسَاءٍ.",
+          "choix_ar": [
+            "أَقْرَأُ",
+            "قَرَأْتُ",
+            "أَقْرَأَ"
+          ],
+          "reponse": 0,
+          "explication": "Habitude passée : كَانَ + inaccompli."
+        },
+        {
+          "type": "qcm",
+          "consigne": "كُلَّ صَبَاحٍ veut dire…",
+          "choix": [
+            "chaque matin",
+            "tous les matins ensemble",
+            "le matin entier"
+          ],
+          "reponse": 0,
+          "explication": "كُلَّ + singulier indéfini : chaque."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La journée de Bāsim",
+      "texte": "Bāsim raconte sa journée à Nadīm. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "اسْتَيْقَظْتُ فِي الصَّبَاحِ، ثُمَّ غَسَلْتُ ثَوْبِي.",
+        "أَوَّلًا ذَهَبْتُ إِلَى السُّوقِ، ثُمَّ جَلَسْتُ فِي الْمَدْرَسَةِ.",
+        "لَمَّا انْتَهَى الدَّرْسُ، كُنْتُ تَعِبًا، فَاسْتَرَحْتُ قَلِيلًا.",
+        "عَادَتِي أَنْ أَكْتُبَ رِسَالَةً كُلَّ مَسَاءٍ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'a fait Bāsim après la leçon ?",
+          "choix": [
+            "il s'est reposé",
+            "il est allé au marché",
+            "il a lavé son vêtement"
+          ],
+          "reponse": 0,
+          "explication": "فَاسْتَرَحْتُ قَلِيلًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est l'habitude de Bāsim ?",
+          "choix": [
+            "écrire une lettre chaque soir",
+            "aller au marché chaque matin",
+            "dormir l'après-midi"
+          ],
+          "reponse": 0,
+          "explication": "عَادَتِي أَنْ أَكْتُبَ رِسَالَةً كُلَّ مَسَاءٍ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « À la fin de la semaine, j'ai rendu visite à mon oncle. » ?",
+          "choix_ar": [
+            "فِي آخِرِ الْأُسْبُوعِ زُرْتُ عَمِّي.",
+            "فِي آخَرِ الْأُسْبُوعِ زُرْتُ عَمِّي.",
+            "فِي آخِرِ الْأُسْبُوعِ أَزُورُ عَمِّي."
+          ],
+          "reponse": 0,
+          "explication": "آخِرُ (avec i) : la fin ; au passé : زُرْتُ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets la journée dans l'ordre : « D'abord je suis allé au marché, puis à l'école. »",
+          "tuiles": [
+            "الْمَدْرَسَةِ",
+            "إِلَى",
+            "ثُمَّ",
+            "السُّوقِ",
+            "إِلَى",
+            "ذَهَبْتُ",
+            "أَوَّلًا"
+          ],
+          "solution": [
+            "أَوَّلًا",
+            "ذَهَبْتُ",
+            "إِلَى",
+            "السُّوقِ",
+            "ثُمَّ",
+            "إِلَى",
+            "الْمَدْرَسَةِ"
+          ],
+          "explication": "أَوَّلًا ouvre le récit ; ثُمَّ relie la suite."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je bois du lait chaque matin. »",
+          "ar": "أَشْرَبُ اللَّبَنَ … صَبَاحٍ.",
+          "choix_ar": [
+            "كُلَّ",
+            "كُلُّ",
+            "أَوَّلَ"
+          ],
+          "reponse": 0,
+          "explication": "Complément de temps : كُلَّ + singulier indéfini."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "غَسَلَ",
+          "choix": [
+            "laver",
+            "porter",
+            "se reposer"
+          ],
+          "reponse": 0,
+          "explication": "غَسَلَ veut dire « laver »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "آخِرٌ",
+          "choix": [
+            "dernier, fin",
+            "autre",
+            "premier"
+          ],
+          "reponse": 0,
+          "explication": "آخِرٌ veut dire « dernier, fin »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « j'étais fatigué » ?",
+          "choix_ar": [
+            "كُنْتُ تَعِبًا",
+            "كُنْتُ تَعِبٌ",
+            "كَانَ تَعِبًا"
+          ],
+          "reponse": 0,
+          "explication": "« j'étais » : كُنْتُ ; attribut en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « chaque soir »",
+          "ar": "كُلَّ …",
+          "choix_ar": [
+            "مَسَاءٍ",
+            "الْمَسَاءِ",
+            "مَسَاءً"
+          ],
+          "reponse": 0,
+          "explication": "كُلَّ + singulier indéfini au génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je me suis un peu reposé. »",
+          "ar": "… قَلِيلًا.",
+          "choix_ar": [
+            "اسْتَرَحْتُ",
+            "اسْتَرَاحَ",
+            "يَسْتَرِيحُ"
+          ],
+          "reponse": 0,
+          "explication": "« je » au passé : اسْتَرَحْتُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « D'abord, je suis allé au marché. »",
+          "ar": "… ذَهَبْتُ إِلَى السُّوقِ.",
+          "choix_ar": [
+            "أَوَّلًا",
+            "آخِرًا",
+            "أَوَّلُ"
+          ],
+          "reponse": 0,
+          "explication": "« d'abord » : أَوَّلًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour une habitude passée, on dit…",
+          "choix": [
+            "كَانَ + inaccompli",
+            "قَدْ + inaccompli",
+            "لَنْ + subjonctif"
+          ],
+          "reponse": 0,
+          "explication": "كُنْتُ أَكْتُبُ كُلَّ مَسَاءٍ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "آخِرٌ et آخَرُ diffèrent par…",
+          "choix": [
+            "la voyelle du ḫ (خ) : i ou a",
+            "la première lettre",
+            "rien"
+          ],
+          "reponse": 0,
+          "explication": "آخِرٌ : dernier ; آخَرُ : autre."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire كُلَّ أُسْبُوعٍ ?",
+          "choix": [
+            "chaque semaine",
+            "toute la semaine passée",
+            "la dernière semaine"
+          ],
+          "reponse": 0,
+          "explication": "كُلَّ + singulier indéfini : chaque."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اشْتَرَى",
+          "choix": [
+            "acheter",
+            "vendre",
+            "marchander"
+          ],
+          "reponse": 0,
+          "explication": "اشْتَرَى veut dire « acheter ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Combien coûte ce tapis ? »",
+          "ar": "… هَٰذَا الْبِسَاطُ؟",
+          "choix_ar": [
+            "بِكَمْ",
+            "كَمْ",
+            "مَتَى"
+          ],
+          "reponse": 0,
+          "explication": "Le prix : بِكَمْ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شُكْرًا",
+          "choix": [
+            "merci",
+            "bienvenue",
+            "pardon"
+          ],
+          "reponse": 0,
+          "explication": "شُكْرًا veut dire « merci ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu racontes ta journée dans l'ordre (أَوَّلًا, ثُمَّ, فَـ, لَمَّا), tu dis une habitude (كُنْتُ + inaccompli, كُلَّ مَسَاءٍ).",
+      "suite": "Prochaine leçon : donner son avis."
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "id": "sens-08",
+  "etape": 5,
+  "ordre": 8,
+  "format": 3,
+  "titre": "La narration classique",
+  "objectif": "Suivre et écrire un court récit à la manière ancienne : épisodes, enchaînements, répliques.",
+  "statut": "ia_non_verifie",
+  "lieu": "cour_conteurs",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-07"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "زُهَيْرٌ",
+    "بَاسِمٌ",
+    "نَدِيمٌ",
+    "هَالَةُ",
+    "جَمَلُكَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "texte": "Dans cette cour, Zuhayr raconte comme les auteurs anciens : un épisode, puis un autre, avec des répliques."
+        },
+        {
+          "qui": "zuhayr",
+          "texte": "Écoute bien les petits mots qui font avancer le récit. Mes histoires sont inventées, rédigées par IA."
+        }
+      ],
+      "objectif": "Suivre un récit à la manière ancienne."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim partit pour Damas, puis revint. »",
+          "ar": "سَافَرَ بَاسِمٌ إِلَى دِمَشْقَ، … رَجَعَ.",
+          "choix_ar": [
+            "ثُمَّ",
+            "إِذَا",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "Une étape après un temps : ثُمَّ, vu en région 4."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Lorsque la leçon se termina, Bāsim sortit. »",
+          "ar": "… انْتَهَى الدَّرْسُ خَرَجَ بَاسِمٌ.",
+          "choix_ar": [
+            "لَمَّا",
+            "لَمْ",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "لَمَّا + passé : « lorsque », vu en région 4."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand a dit : Où est la clé ? »",
+          "ar": "… التَّاجِرُ: « أَيْنَ الْمِفْتَاحُ؟ »",
+          "choix_ar": [
+            "قَالَ",
+            "جَلَسَ",
+            "نَامَ"
+          ],
+          "reponse": 0,
+          "explication": "Une réplique commence par قَالَ."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "zuhayr",
+          "ar": "بَيْنَمَا بَاسِمٌ جَالِسٌ فِي الْحَدِيقَةِ إِذْ وَصَلَ نَدِيمٌ.",
+          "fr": "Tandis que Bāsim était assis dans le jardin, voilà que Nadīm arriva."
+        },
+        {
+          "qui": "basim",
+          "ar": "أَنَا فِي الْقِصَّةِ! وَمَاذَا بَعْدَ ذَٰلِكَ؟",
+          "fr": "Je suis dans l'histoire ! Et ensuite ?"
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "فَلَمَّا جَلَسَ نَدِيمٌ، أَخْبَرَهُ بِخَبَرٍ عَجِيبٍ.",
+          "fr": "Puis, lorsque Nadīm s'assit, il lui apprit une nouvelle étonnante."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans le récit de Zuhayr, que fait Nadīm d'abord ?",
+        "choix": [
+          "il arrive au jardin",
+          "il s'en va",
+          "il dort"
+        ],
+        "reponse": 0,
+        "explication": "إِذْ وَصَلَ نَدِيمٌ : « voilà que Nadīm arriva »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "idh",
+        "baynama",
+        "haka",
+        "rawi"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "بَيْنَمَا",
+        "choix": [
+          "tandis que, pendant que",
+          "quand, alors que (au passé)",
+          "on raconte que"
+        ],
+        "reponse": 0,
+        "explication": "بَيْنَمَا veut dire « tandis que, pendant que »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Tandis que…, voilà que…",
+      "texte": "بَيْنَمَا + phrase nominale (le plus souvent), puis إِذْ + passé : « tandis que…, voilà que » ; seul, après une phrase au passé, إِذْ veut dire « quand, alors que ».",
+      "exemples": [
+        "بَيْنَمَا بَاسِمٌ جَالِسٌ فِي الْحَدِيقَةِ إِذْ وَصَلَ زُهَيْرٌ.",
+        "كَانَ نَدِيمٌ يَكْتُبُ الرِّسَالَةَ إِذْ وَصَلَتْ هَالَةُ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Après بَيْنَمَا, on trouve le plus souvent…",
+        "choix": [
+          "une phrase nominale",
+          "un verbe au passé",
+          "un serment"
+        ],
+        "reponse": 0,
+        "explication": "بَيْنَمَا بَاسِمٌ جَالِسٌ : sujet et attribut."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Puis, lorsque…",
+      "texte": "فَلَمَّا ou وَلَمَّا + passé ouvre l'épisode suivant (« puis, lorsque ») ; la réponse vient sans فَـ, et ثُمَّ marque une étape après un temps.",
+      "exemples": [
+        "فَلَمَّا وَصَلَتِ الْقَافِلَةُ إِلَى الْمَدِينَةِ، اسْتَرَاحَ التُّجَّارُ.",
+        "سَافَرَ زُهَيْرٌ إِلَى دِمَشْقَ، ثُمَّ رَجَعَ بَعْدَ شَهْرٍ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Après فَلَمَّا وَصَلَتِ الْقَافِلَةُ, la réponse…",
+        "choix": [
+          "vient sans فَـ : اسْتَرَاحَ التُّجَّارُ",
+          "commence toujours par فَـ",
+          "est au futur"
+        ],
+        "reponse": 0,
+        "explication": "La réponse de لَمَّا vient sans فَـ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les répliques",
+      "texte": "Dans les récits anciens, une réplique commence par قَالَ (قَالَتْ pour une femme, قُلْتُ pour le conteur), la réponse souvent par فَقَالَ ou de nouveau قَالَ. Ces textes n'ont pas de guillemets : ceux d'IQURA ne sont qu'une aide.",
+      "exemples": [
+        "قَالَ زُهَيْرٌ لِبَاسِمٍ: « أَيْنَ الْكِتَابُ؟ » فَقَالَ بَاسِمٌ: « فِي الْكِيسِ. »"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "La réponse à une réplique commence souvent par…",
+        "choix": [
+          "فَقَالَ",
+          "بَيْنَمَا",
+          "لَمَّا"
+        ],
+        "reponse": 0,
+        "explication": "قَالَ…, فَقَالَ…"
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "À reconnaître : وَإِذْ",
+      "texte": "Dans les textes anciens, وَإِذْ ouvre le récit d'un moment passé (« et lorsque »), à reconnaître seulement. Les grammairiens l'analysent de plusieurs façons ; IQURA ne choisit pas et renvoie aux ouvrages.",
+      "formule": true,
+      "exemples": [
+        "وَإِذْ"
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le chameau étonnant",
+      "texte": "Récit construit, rédigé par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "قَالَ الرَّاوِي: يُحْكَى أَنَّ تَاجِرًا اسْمُهُ سَمِيرٌ كَانَ لَهُ جَمَلٌ عَجِيبٌ.",
+        "بَيْنَمَا سَمِيرٌ جَالِسٌ فِي السُّوقِ إِذْ وَصَلَ بَاسِمٌ.",
+        "قَالَ بَاسِمٌ: « أَيْنَ جَمَلُكَ؟ » فَقَالَ سَمِيرٌ: « فِي الْحَدِيقَةِ. »",
+        "فَلَمَّا وَصَلَ بَاسِمٌ إِلَى الْحَدِيقَةِ، وَجَدَ الْجَمَلَ يَنَامُ تَحْتَ نَخْلَةٍ.",
+        "ثُمَّ رَجَعَ بَاسِمٌ إِلَى السُّوقِ. قَالَ بَاسِمٌ لِسَمِيرٍ: « جَمَلُكَ عَجِيبٌ، يَنَامُ فِي النَّهَارِ! » فَضَحِكَ سَمِيرٌ.",
+        "فَقَالَ سَمِيرٌ: « جَمَلِي يَعْمَلُ فِي اللَّيْلِ، وَيَنَامُ فِي النَّهَارِ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où le marchand Samīr est-il assis quand Bāsim arrive ?",
+          "choix": [
+            "au marché",
+            "dans le jardin",
+            "sous un palmier"
+          ],
+          "reponse": 0,
+          "explication": "بَيْنَمَا سَمِيرٌ جَالِسٌ فِي السُّوقِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que trouve Bāsim dans le jardin ?",
+          "choix": [
+            "le chameau qui dort sous un palmier",
+            "le marchand qui écrit",
+            "une lettre"
+          ],
+          "reponse": 0,
+          "explication": "وَجَدَ الْجَمَلَ يَنَامُ تَحْتَ نَخْلَةٍ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel mot ouvre l'épisode du jardin ?",
+          "choix": [
+            "فَلَمَّا",
+            "بَيْنَمَا",
+            "ثُمَّ"
+          ],
+          "reponse": 0,
+          "explication": "فَلَمَّا وَصَلَ بَاسِمٌ إِلَى الْحَدِيقَةِ…"
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِذْ",
+          "choix": [
+            "quand, alors que (au passé)",
+            "si (condition)",
+            "donc, alors"
+          ],
+          "reponse": 0,
+          "explication": "إِذْ veut dire « quand, alors que (au passé) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَكَى",
+          "choix": [
+            "raconter",
+            "écrire",
+            "oublier"
+          ],
+          "reponse": 0,
+          "explication": "حَكَى veut dire « raconter »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الرَّاوِي",
+          "choix": [
+            "le narrateur, celui qui raconte",
+            "le marchand",
+            "le copiste"
+          ],
+          "reponse": 0,
+          "explication": "الرَّاوِي veut dire « le narrateur, celui qui raconte »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Tandis que Nadīm écrivait, voilà que Hāla arriva. »",
+          "ar": "… نَدِيمٌ يَكْتُبُ إِذْ وَصَلَتْ هَالَةُ.",
+          "choix_ar": [
+            "بَيْنَمَا",
+            "لَمَّا",
+            "ثُمَّ"
+          ],
+          "reponse": 0,
+          "explication": "بَيْنَمَا + phrase nominale."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nadīm écrivait la lettre quand Hāla arriva. »",
+          "ar": "كَانَ نَدِيمٌ يَكْتُبُ الرِّسَالَةَ … وَصَلَتْ هَالَةُ.",
+          "choix_ar": [
+            "إِذْ",
+            "لَنْ",
+            "إِذَنْ"
+          ],
+          "reponse": 0,
+          "explication": "Un moment passé : إِذْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Puis, lorsque la caravane arriva, les marchands se reposèrent. »",
+          "ar": "فَلَمَّا وَصَلَتِ الْقَافِلَةُ، … التُّجَّارُ.",
+          "choix_ar": [
+            "اسْتَرَاحَ",
+            "فَاسْتَرَاحَ",
+            "يَسْتَرِيحُ"
+          ],
+          "reponse": 0,
+          "explication": "La réponse de لَمَّا vient sans فَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète la réponse : « Où est le livre ? », « Dans le sac ».",
+          "ar": "قَالَ زُهَيْرٌ: « أَيْنَ الْكِتَابُ؟ » … بَاسِمٌ: « فِي الْكِيسِ. »",
+          "choix_ar": [
+            "فَقَالَ",
+            "بَيْنَمَا",
+            "إِذْ"
+          ],
+          "reponse": 0,
+          "explication": "La réponse : فَقَالَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « On raconte qu'un marchand avait un chameau étonnant. » ?",
+          "choix_ar": [
+            "يُحْكَى أَنَّ تَاجِرًا كَانَ لَهُ جَمَلٌ عَجِيبٌ.",
+            "يُحْكَى أَنَّ تَاجِرٌ كَانَ لَهُ جَمَلٌ عَجِيبٌ.",
+            "يُحْكَى أَنَّ تَاجِرًا كَانَ لَهُ جَمَلًا عَجِيبًا."
+          ],
+          "reponse": 0,
+          "explication": "Après أَنَّ : accusatif (تَاجِرًا) ; جَمَلٌ est le sujet de كَانَ لَهُ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Zuhayr partit pour Damas, puis revint. »",
+          "tuiles": [
+            "سَافَرَ",
+            "زُهَيْرٌ",
+            "إِلَى",
+            "دِمَشْقَ،",
+            "ثُمَّ",
+            "رَجَعَ"
+          ],
+          "solution": [
+            "سَافَرَ",
+            "زُهَيْرٌ",
+            "إِلَى",
+            "دِمَشْقَ،",
+            "ثُمَّ",
+            "رَجَعَ"
+          ],
+          "explication": "D'abord le départ, puis ثُمَّ et le retour."
+        },
+        {
+          "type": "completer",
+          "consigne": "Change le discours rapporté en dialogue : « Bāsim demanda au marchand où était son chameau. »",
+          "ar": "… بَاسِمٌ لِلتَّاجِرِ: « أَيْنَ جَمَلُكَ؟ »",
+          "choix_ar": [
+            "قَالَ",
+            "فَلَمَّا",
+            "بَيْنَمَا"
+          ],
+          "reponse": 0,
+          "explication": "Une réplique commence par قَالَ."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris un petit récit de trois phrases : la 1re avec بَيْنَمَا et إِذْ, la 2e avec فَلَمَّا, la 3e avec ثُمَّ et une réplique avec قَالَ.",
+          "modele": [
+            "بَيْنَمَا بَاسِمٌ جَالِسٌ فِي السُّوقِ إِذْ وَصَلَتِ الْقَافِلَةُ.",
+            "فَلَمَّا وَصَلَتِ الْقَافِلَةُ، اسْتَرَاحَ التُّجَّارُ.",
+            "ثُمَّ قَالَ بَاسِمٌ: « الْقَافِلَةُ هُنَا! »"
+          ],
+          "explication": "Compare : as-tu une phrase nominale après بَيْنَمَا, et une réponse sans فَـ après لَمَّا ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَيْنَمَا",
+          "choix": [
+            "tandis que, pendant que",
+            "quand, alors que (au passé)",
+            "lorsque"
+          ],
+          "reponse": 0,
+          "explication": "بَيْنَمَا veut dire « tandis que, pendant que »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِذْ",
+          "choix": [
+            "quand, alors que (au passé)",
+            "donc, alors",
+            "si (condition)"
+          ],
+          "reponse": 0,
+          "explication": "إِذْ veut dire « quand, alors que (au passé) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَكَى",
+          "choix": [
+            "raconter",
+            "réfléchir",
+            "mentionner ; se rappeler"
+          ],
+          "reponse": 0,
+          "explication": "حَكَى veut dire « raconter »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الرَّاوِي",
+          "choix": [
+            "le narrateur, celui qui raconte",
+            "le marchand",
+            "le copiste"
+          ],
+          "reponse": 0,
+          "explication": "الرَّاوِي veut dire « le narrateur, celui qui raconte »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai raconté l'histoire. »",
+          "ar": "… الْقِصَّةَ.",
+          "choix_ar": [
+            "حَكَيْتُ",
+            "حَكَتْ",
+            "يَحْكِي"
+          ],
+          "reponse": 0,
+          "explication": "1re personne du passé : حَكَيْتُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Réponse de لَمَّا : « Bāsim sortit ».",
+          "ar": "… بَاسِمٌ.",
+          "choix_ar": [
+            "خَرَجَ",
+            "فَخَرَجَ",
+            "يَخْرُجُ"
+          ],
+          "reponse": 0,
+          "explication": "Réponse de لَمَّا sans فَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim était assis dans le jardin. »",
+          "ar": "كَانَ بَاسِمٌ … فِي الْحَدِيقَةِ.",
+          "choix_ar": [
+            "جَالِسًا",
+            "جَالِسٌ",
+            "جَالِسٍ"
+          ],
+          "reponse": 0,
+          "explication": "جَالِسًا est l'attribut de كَانَ : accusatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans un récit ancien, la réponse à une réplique commence souvent par…",
+          "choix": [
+            "فَقَالَ",
+            "لَمَّا",
+            "بَيْنَمَا"
+          ],
+          "reponse": 0,
+          "explication": "قَالَ…, فَقَالَ…"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après بَيْنَمَا, on trouve le plus souvent…",
+          "choix": [
+            "une phrase nominale",
+            "un verbe au passé",
+            "un serment"
+          ],
+          "reponse": 0,
+          "explication": "بَيْنَمَا + sujet et attribut."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الْتِفَاتٌ",
+          "choix": [
+            "(rhétorique) changement de personne",
+            "(grammaire) pronom",
+            "(grammaire) omission"
+          ],
+          "reponse": 0,
+          "explication": "الْتِفَاتٌ veut dire « (rhétorique) changement de personne ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ضَمِيرٌ",
+          "choix": [
+            "(grammaire) pronom",
+            "(grammaire) mise en tête",
+            "(grammaire) négation"
+          ],
+          "reponse": 0,
+          "explication": "ضَمِيرٌ veut dire « (grammaire) pronom ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « أَنْتَ » est le pronom de la 2e personne.",
+          "ar": "« أَنْتَ » ضَمِيرُ …",
+          "choix_ar": [
+            "الْمُخَاطَبِ",
+            "الْمُتَكَلِّمِ",
+            "الْغَائِبِ"
+          ],
+          "reponse": 0,
+          "explication": "Celui à qui l'on parle.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu suis un récit à la manière ancienne : بَيْنَمَا… إِذْ…, فَلَمَّا…, ثُمَّ…, les répliques avec قَالَ et فَقَالَ ; tu reconnais وَإِذْ.",
+      "suite": "Prochaine étape, la Pépinière des Formes : reconnaître les formes des verbes dans un texte."
+    }
+  ]
+}

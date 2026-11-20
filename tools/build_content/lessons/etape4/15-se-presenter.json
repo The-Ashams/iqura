@@ -1,0 +1,535 @@
+{
+  "id": "cite-15",
+  "etape": 4,
+  "ordre": 15,
+  "format": 3,
+  "titre": "Se présenter en détail",
+  "objectif": "Accueillir et se présenter : nom, pays, naissance, lieu de vie, métier, goûts.",
+  "statut": "ia_non_verifie",
+  "lieu": "place_debats",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-14"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ",
+    "السَّلَامُ",
+    "عَلَيْكُمْ",
+    "وَعَلَيْكُمُ",
+    "دِمَشْقَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Sur la Place des débats, on parle en arabe classique : d'abord, on accueille et on se présente."
+        },
+        {
+          "qui": "nadim",
+          "texte": "Dis qui tu es, d'où tu viens, ce que tu fais et ce que tu aimes."
+        }
+      ],
+      "objectif": "Se présenter en six à huit phrases."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a vingt dirhams dans la bourse. »",
+          "ar": "فِي الْكِيسِ عِشْرُونَ …",
+          "choix_ar": [
+            "دِرْهَمًا",
+            "دَرَاهِمَ",
+            "دِرْهَمٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après عِشْرُونَ : singulier en -a (leçon 4.14)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim, assieds-toi ! »",
+          "ar": "يَا …، اجْلِسْ.",
+          "choix_ar": [
+            "بَاسِمُ",
+            "بَاسِمٌ",
+            "بَاسِمًا"
+          ],
+          "reponse": 0,
+          "explication": "Après يَا : -u sans tanwīn (leçon 4.11)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَيْفَ",
+          "choix": [
+            "comment ?",
+            "pourquoi ?",
+            "quand ?"
+          ],
+          "reponse": 0,
+          "explication": "كَيْفَ veut dire « comment ? »."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "ar": "مَرْحَبًا بِكَ. مَا اسْمُكَ؟",
+          "fr": "Sois le bienvenu. Quel est ton nom ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "اسْمِي بَاسِمٌ، وَأَنَا مِنْ قَرْيَةٍ صَغِيرَةٍ.",
+          "fr": "Je m'appelle Bāsim, je viens d'un petit village."
+        },
+        {
+          "qui": "nadim",
+          "ar": "أَهْلًا وَسَهْلًا. مَاذَا تَعْمَلُ؟",
+          "fr": "Sois le bienvenu. Que fais-tu ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "أَتَعَلَّمُ الْقِرَاءَةَ، وَأُحِبُّ الْقِصَصَ.",
+          "fr": "J'apprends la lecture, et j'aime les histoires."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "D'où vient Bāsim ?",
+        "choix": [
+          "d'un petit village",
+          "de Bagdad",
+          "d'une grande ville"
+        ],
+        "reponse": 0,
+        "explication": "أَنَا مِنْ قَرْيَةٍ صَغِيرَةٍ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "marhaban",
+        "ahlan",
+        "bikhayr",
+        "balad",
+        "wulida",
+        "nashaa",
+        "madha"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "بَلَدٌ",
+        "choix": [
+          "pays, contrée",
+          "village",
+          "maison"
+        ],
+        "reponse": 0,
+        "explication": "بَلَدٌ veut dire « pays, contrée »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Se présenter",
+      "texte": "Pour se présenter : اسْمِي, أَنَا مِنْ, وُلِدْتُ فِي, نَشَأْتُ فِي, أَسْكُنُ فِي, puis أُحِبُّ + nom ou nom d'action (أُحِبُّ الْقِرَاءَةَ).",
+      "exemples": [
+        "اسْمِي بَاسِمٌ",
+        "وُلِدْتُ فِي دِمَشْقَ",
+        "أُحِبُّ الْقِرَاءَةَ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Je m'appelle Bāsim. »",
+        "ar": "… بَاسِمٌ.",
+        "choix_ar": [
+          "اسْمِي",
+          "اسْمَكَ",
+          "اسْمُكَ"
+        ],
+        "reponse": 0,
+        "explication": "« mon nom » : اسْمِي ; اسْمُكَ veut dire « ton nom »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Accueillir",
+      "texte": "Pour accueillir : مَرْحَبًا بِكَ, أَهْلًا وَسَهْلًا. Pour demander des nouvelles, كَيْفَ حَالُكَ, et l'on répond بِخَيْرٍ.",
+      "exemples": [
+        "مَرْحَبًا بِكَ",
+        "أَهْلًا وَسَهْلًا",
+        "بِخَيْرٍ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "On te demande كَيْفَ حَالُكَ ? Que réponds-tu ?",
+        "choix_ar": [
+          "بِخَيْرٍ",
+          "مَرْحَبًا بِكَ",
+          "اسْمِي بَاسِمٌ"
+        ],
+        "reponse": 0,
+        "explication": "كَيْفَ حَالُكَ ? — بِخَيْرٍ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La salutation de paix",
+      "texte": "On salue aussi par السَّلَامُ عَلَيْكُمْ, « la paix sur vous » ; on répond وَعَلَيْكُمُ السَّلَامُ, « et sur vous la paix ».",
+      "exemples": [
+        "السَّلَامُ عَلَيْكُمْ",
+        "وَعَلَيْكُمُ السَّلَامُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que répond-on à السَّلَامُ عَلَيْكُمْ ?",
+        "choix_ar": [
+          "وَعَلَيْكُمُ السَّلَامُ",
+          "بِخَيْرٍ",
+          "اسْمِي بَاسِمٌ"
+        ],
+        "reponse": 0,
+        "explication": "La réponse reprend la salutation : وَعَلَيْكُمُ السَّلَامُ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَرْحَبًا",
+          "choix": [
+            "bienvenue",
+            "merci",
+            "au revoir"
+          ],
+          "reponse": 0,
+          "explication": "مَرْحَبًا veut dire « bienvenue »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَشَأَ",
+          "choix": [
+            "grandir (quelque part)",
+            "naître",
+            "habiter"
+          ],
+          "reponse": 0,
+          "explication": "نَشَأَ veut dire « grandir (quelque part) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَاذَا",
+          "choix": [
+            "que ? quoi ?",
+            "qui ?",
+            "où ?"
+          ],
+          "reponse": 0,
+          "explication": "مَاذَا demande « que », devant un verbe."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je suis né dans un petit village » ?",
+          "choix_ar": [
+            "وُلِدْتُ فِي قَرْيَةٍ صَغِيرَةٍ",
+            "وُلِدْتُ قَرْيَةٌ صَغِيرَةٌ",
+            "نَشَأْتُ قَرْيَةً صَغِيرَةً"
+          ],
+          "reponse": 0,
+          "explication": "وُلِدْتُ + فِي + lieu au génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai grandi à Bagdad. »",
+          "ar": "… فِي بَغْدَادَ.",
+          "choix_ar": [
+            "نَشَأْتُ",
+            "نَشَأَتْ",
+            "وُلِدَتْ"
+          ],
+          "reponse": 0,
+          "explication": "« je » : نَشَأْتُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Que fais-tu ? »",
+          "ar": "… تَعْمَلُ؟",
+          "choix_ar": [
+            "مَاذَا",
+            "مَتَى",
+            "كَمْ"
+          ],
+          "reponse": 0,
+          "explication": "« que ? » devant un verbe : مَاذَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'habite une maison proche du marché. »",
+          "ar": "أَسْكُنُ فِي بَيْتٍ … مِنَ السُّوقِ.",
+          "choix_ar": [
+            "قَرِيبٍ",
+            "قَرِيبًا",
+            "قَرِيبٌ"
+          ],
+          "reponse": 0,
+          "explication": "Adjectif accordé avec بَيْتٍ : génitif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour dire ce qu'on aime, on emploie…",
+          "choix": [
+            "أُحِبُّ + nom (ou nom d'action)",
+            "أُرِيدُ + passé",
+            "اسْمِي + verbe"
+          ],
+          "reponse": 0,
+          "explication": "أُحِبُّ الْقِرَاءَةَ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Bāsim se présente",
+      "texte": "Bāsim se présente devant l'assemblée. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "اسْمِي بَاسِمٌ، وَأَنَا مِنْ بَلَدٍ بَعِيدٍ.",
+        "وُلِدْتُ فِي قَرْيَةٍ صَغِيرَةٍ، وَنَشَأْتُ فِي بَغْدَادَ.",
+        "أَسْكُنُ الْآنَ فِي بَيْتٍ قَرِيبٍ مِنَ السُّوقِ.",
+        "أَتَعَلَّمُ الْقِرَاءَةَ وَالْكِتَابَةَ، وَأُحِبُّ الْقِصَصَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où Bāsim a-t-il grandi ?",
+          "choix": [
+            "à Bagdad",
+            "au marché",
+            "à Damas"
+          ],
+          "reponse": 0,
+          "explication": "نَشَأْتُ فِي بَغْدَادَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'aime Bāsim ?",
+          "choix": [
+            "les histoires",
+            "le commerce",
+            "les voyages"
+          ],
+          "reponse": 0,
+          "explication": "أُحِبُّ الْقِصَصَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Je m'appelle Bāsim, je viens d'un pays lointain. » ?",
+          "choix_ar": [
+            "اسْمِي بَاسِمٌ، وَأَنَا مِنْ بَلَدٍ بَعِيدٍ.",
+            "أَنَا اسْمِي بَاسِمٌ، مِنْ بَلَدٌ بَعِيدٌ.",
+            "اسْمُكَ بَاسِمٌ، وَأَنْتَ مِنْ بَلَدٍ بَعِيدٍ."
+          ],
+          "reponse": 0,
+          "explication": "اسْمِي ; مِنْ + génitif."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Je suis né à Damas. »",
+          "tuiles": [
+            "دِمَشْقَ",
+            "فِي",
+            "وُلِدْتُ",
+            "وُلِدَتْ"
+          ],
+          "solution": [
+            "وُلِدْتُ",
+            "فِي",
+            "دِمَشْقَ"
+          ],
+          "explication": "« je » : وُلِدْتُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'aime la lecture. »",
+          "ar": "أُحِبُّ …",
+          "choix_ar": [
+            "الْقِرَاءَةَ",
+            "الْقِرَاءَةُ",
+            "أَقْرَأُ"
+          ],
+          "reponse": 0,
+          "explication": "أُحِبُّ + nom d'action, complément en -a."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بِخَيْرٍ",
+          "choix": [
+            "bien (je vais bien)",
+            "bienvenue",
+            "merci"
+          ],
+          "reponse": 0,
+          "explication": "بِخَيْرٍ veut dire « bien (je vais bien) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وُلِدَ",
+          "choix": [
+            "naître (il est né)",
+            "grandir",
+            "mourir"
+          ],
+          "reponse": 0,
+          "explication": "وُلِدَ veut dire « naître (il est né) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je viens d'un pays lointain » ?",
+          "choix_ar": [
+            "أَنَا مِنْ بَلَدٍ بَعِيدٍ",
+            "أَنَا مِنْ بَلَدٌ بَعِيدٌ",
+            "أَنَا بَلَدٍ بَعِيدٍ"
+          ],
+          "reponse": 0,
+          "explication": "مِنْ + génitif, adjectif accordé."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je m'appelle Samīr. »",
+          "ar": "… سَمِيرٌ.",
+          "choix_ar": [
+            "اسْمِي",
+            "اسْمُهُ",
+            "اسْمَكَ"
+          ],
+          "reponse": 0,
+          "explication": "« mon nom » : اسْمِي."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Que fais-tu ? »",
+          "ar": "… تَعْمَلُ؟",
+          "choix_ar": [
+            "مَاذَا",
+            "لِمَاذَا",
+            "مَتَى"
+          ],
+          "reponse": 0,
+          "explication": "« que ? » : مَاذَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je suis née à Bagdad. »",
+          "ar": "… فِي بَغْدَادَ.",
+          "choix_ar": [
+            "وُلِدْتُ",
+            "وُلِدَتْ",
+            "وُلِدَ"
+          ],
+          "reponse": 0,
+          "explication": "« je » (homme ou femme) : وُلِدْتُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "On te demande كَيْفَ حَالُكَ ? Tu réponds…",
+          "choix_ar": [
+            "بِخَيْرٍ",
+            "أَهْلًا وَسَهْلًا",
+            "مِنْ قَرْيَةٍ"
+          ],
+          "reponse": 0,
+          "explication": "بِخَيْرٍ : je vais bien."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour accueillir quelqu'un, on dit…",
+          "choix_ar": [
+            "مَرْحَبًا بِكَ",
+            "بِخَيْرٍ",
+            "مَاذَا تَعْمَلُ"
+          ],
+          "reponse": 0,
+          "explication": "مَرْحَبًا بِكَ : sois le bienvenu."
+        },
+        {
+          "type": "qcm",
+          "consigne": "أُحِبُّ est suivi…",
+          "choix": [
+            "d'un nom d'action ou d'un nom",
+            "d'un verbe au passé",
+            "de مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "أُحِبُّ الْقِرَاءَةَ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَلْفٌ",
+          "choix": [
+            "mille",
+            "cent",
+            "dix"
+          ],
+          "reponse": 0,
+          "explication": "أَلْفٌ veut dire « mille ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a mille dinars dans le coffre. »",
+          "ar": "فِي الصُّنْدُوقِ أَلْفُ …",
+          "choix_ar": [
+            "دِينَارٍ",
+            "دِينَارًا",
+            "دَنَانِيرَ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَلْفٌ : génitif singulier.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَمَّا… فَـ",
+          "choix": [
+            "quant à",
+            "si",
+            "sauf"
+          ],
+          "reponse": 0,
+          "explication": "أَمَّا met un mot en avant.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu accueilles et tu te présentes : ton nom, ton pays, ta naissance, où tu vis, ce que tu fais et ce que tu aimes.",
+      "suite": "Prochaine leçon, chez Nadīm : la famille et les métiers."
+    }
+  ]
+}

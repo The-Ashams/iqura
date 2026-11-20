@@ -1,0 +1,566 @@
+{
+  "id": "moteur-11",
+  "etape": 3,
+  "ordre": 11,
+  "format": 3,
+  "titre": "La forme I",
+  "objectif": "Reconnaître فَعَلَ, فَعِلَ, فَعُلَ et la voyelle de l'inaccompli.",
+  "statut": "ia_non_verifie",
+  "lieu": "moulin",
+  "maitre": "rabab",
+  "prerequis": [
+    "moteur-10"
+  ],
+  "apercu": [
+    "رَبَابُ",
+    "كَبِرَ",
+    "يَكْبَرُ",
+    "الْمُجَرَّدُ"
+  ],
+  "schemes": [
+    "فَعَلَ",
+    "فَعِلَ",
+    "فَعُلَ",
+    "يَفْعُلُ",
+    "يَفْعِلُ",
+    "يَفْعَلُ",
+    "فَعِيل",
+    "فَعْل",
+    "فِعْل",
+    "فُعْل",
+    "فَاعِل",
+    "فُعُول",
+    "مِفْعَال",
+    "مَفْعَل",
+    "مِفْعَل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "texte": "Bienvenue au Moulin des formes. Je suis Rabāb, copiste : je recopie les verbes de forme en forme."
+        },
+        {
+          "qui": "rabab",
+          "texte": "Avant de faire tourner la roue, regardons la forme simple, la forme I, avec ses trois voyelles."
+        }
+      ],
+      "objectif": "Reconnaître les trois moules du verbe simple."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ت ب dans le moule فَاعِل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "كَاتِبٌ",
+            "كِتَابٌ",
+            "مَكْتُوبٌ"
+          ],
+          "reponse": 0,
+          "explication": "فَاعِل : celui qui fait (leçon 3.3)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "D'où vient مِصْرِيٌّ ?",
+          "choix": [
+            "de مِصْرُ",
+            "de مِصْبَاحٌ",
+            "de مَسْكَنٌ"
+          ],
+          "reponse": 0,
+          "explication": "Nisba : مِصْرُ → مِصْرِيٌّ (leçon 3.9)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَكْثَرُ",
+          "choix": [
+            "plus nombreux",
+            "beaucoup",
+            "le plus grand"
+          ],
+          "reponse": 0,
+          "explication": "أَكْثَرُ : élatif de كَثِيرٌ (leçon 3.8)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "ar": "نَظَرَ الطِّفْلُ إِلَى الصَّقْرِ.",
+          "fr": "L'enfant a regardé le faucon."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَالصَّقْرُ؟",
+          "fr": "Et le faucon ?"
+        },
+        {
+          "qui": "rabab",
+          "ar": "كَبُرَ الصَّقْرُ، وَثَقُلَ.",
+          "fr": "Le faucon a grandi, et il est devenu lourd."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'est devenu le faucon ?",
+        "choix": [
+          "grand et lourd",
+          "petit et léger",
+          "malade"
+        ],
+        "reponse": 0,
+        "explication": "كَبُرَ الصَّقْرُ، وَثَقُلَ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "alima",
+        "amila",
+        "nazara",
+        "kabura",
+        "kathura",
+        "thaqula",
+        "buda",
+        "hasuna"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "ثَقُلَ",
+        "choix": [
+          "il est devenu lourd",
+          "le poids",
+          "il a porté"
+        ],
+        "reponse": 0,
+        "explication": "ثَقُلَ veut dire « il est devenu lourd »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le sens d'un verbe",
+      "texte": "Un verbe arabe se cite au passé, à la forme « il » : كَتَبَ « il a écrit ». Dans tes fiches, son sens est maintenant donné à l'infinitif : « écrire ».",
+      "exemples": [
+        "كَتَبَ",
+        "عَلِمَ"
+      ],
+      "question": {
+        "type": "traduire",
+        "consigne": "Comment cite-t-on le verbe « savoir » ?",
+        "choix_ar": [
+          "عَلِمَ",
+          "يَعْلَمُ",
+          "عِلْمٌ"
+        ],
+        "reponse": 0,
+        "explication": "On cite le verbe au passé, forme « il » : عَلِمَ « savoir »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Trois voyelles au passé",
+      "texte": "La forme I a trois moules : فَعَلَ (نَظَرَ), فَعِلَ (عَلِمَ) et فَعُلَ (ثَقُلَ). فَعُلَ dit une qualité ou un état, comme l'adjectif de même racine : ثَقُلَ, comme ثَقِيلٌ.",
+      "exemples": [
+        "نَظَرَ",
+        "عَلِمَ",
+        "ثَقُلَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est le moule de كَثُرَ ?",
+        "choix_ar": [
+          "فَعُلَ",
+          "فَعَلَ",
+          "فَعِلَ"
+        ],
+        "reponse": 0,
+        "explication": "كَ ثُ رَ : u sur la 2e lettre, فَعُلَ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La voyelle de l'inaccompli",
+      "texte": "فَعَلَ fait يَفْعُلُ, يَفْعِلُ ou يَفْعَلُ : on l'apprend avec le verbe (دَخَلَ يَدْخُلُ, رَجَعَ يَرْجِعُ). فَعِلَ fait le plus souvent يَفْعَلُ, et فَعُلَ toujours يَفْعُلُ, sans complément direct.",
+      "exemples": [
+        "يَنْظُرُ",
+        "يَعْلَمُ",
+        "يَثْقُلُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est l'inaccompli de عَمِلَ ?",
+        "choix_ar": [
+          "يَعْمَلُ",
+          "يَعْمُلُ",
+          "يَعْمِلُ"
+        ],
+        "reponse": 0,
+        "explication": "فَعِلَ fait le plus souvent يَفْعَلُ : يَعْمَلُ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَلِمَ",
+          "choix": [
+            "il a su",
+            "il a enseigné",
+            "il a écrit"
+          ],
+          "reponse": 0,
+          "explication": "عَلِمَ veut dire « il a su »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَعُدَ",
+          "choix": [
+            "il a été loin",
+            "il a été près",
+            "il est revenu"
+          ],
+          "reponse": 0,
+          "explication": "بَعُدَ veut dire « il a été loin »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il travaille » ?",
+          "choix_ar": [
+            "يَعْمَلُ",
+            "عَمِلَ",
+            "عَمَلٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il travaille » se dit يَعْمَلُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il regarde » ?",
+          "choix_ar": [
+            "يَنْظُرُ",
+            "نَظَرَ",
+            "يَعْلَمُ"
+          ],
+          "reponse": 0,
+          "explication": "« il regarde » se dit يَنْظُرُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de عَلِمَ ?",
+          "choix_ar": [
+            "فَعِلَ",
+            "فَعَلَ",
+            "فَعُلَ"
+          ],
+          "reponse": 0,
+          "explication": "عَ لِ مَ : i sur la 2e lettre."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de كَثُرَ ?",
+          "choix_ar": [
+            "يَكْثُرُ",
+            "يَكْثَرُ",
+            "يَكْثِرُ"
+          ],
+          "reponse": 0,
+          "explication": "فَعُلَ fait toujours يَفْعُلُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ح س ن dans le moule فَعُلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "حَسُنَ",
+            "يَحْسُنُ",
+            "جَمِيلٌ"
+          ],
+          "reponse": 0,
+          "explication": "ح س ن dans فَعُلَ : حَسُنَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ع م ل dans le moule فَعِلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "عَمِلَ",
+            "يَعْمَلُ",
+            "عَلِمَ"
+          ],
+          "reponse": 0,
+          "explication": "ع م ل dans فَعِلَ : عَمِلَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le coffre est devenu lourd. »",
+          "ar": "… الصُّنْدُوقُ.",
+          "choix_ar": [
+            "ثَقُلَ",
+            "ثَقِيلٌ",
+            "ثِقَلٌ"
+          ],
+          "reponse": 0,
+          "explication": "Verbe en tête : ثَقُلَ الصُّنْدُوقُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel adjectif a la même racine que كَثُرَ ?",
+          "choix_ar": [
+            "كَثِيرٌ",
+            "كَبِيرٌ",
+            "قَلِيلٌ"
+          ],
+          "reponse": 0,
+          "explication": "ك ث ر : كَثِيرٌ « nombreux »."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Au moulin",
+      "texte": "Rabāb raconte la journée du moulin. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "يَعْمَلُ النَّجَّارُ فِي الصَّبَاحِ.",
+        "كَثُرَ التُّجَّارُ فِي السُّوقِ.",
+        "نَظَرَ الطِّفْلُ إِلَى الصَّقْرِ.",
+        "عَلِمَ الطَّالِبُ الْجَوَابَ، وَكَتَبَهُ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Quand le menuisier travaille-t-il ?",
+          "choix": [
+            "le matin",
+            "le soir",
+            "demain"
+          ],
+          "reponse": 0,
+          "explication": "يَعْمَلُ النَّجَّارُ فِي الصَّبَاحِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a fait l'étudiant ?",
+          "choix": [
+            "il a su la réponse et l'a écrite",
+            "il a posé une question",
+            "il a regardé le faucon"
+          ],
+          "reponse": 0,
+          "explication": "عَلِمَ الطَّالِبُ الْجَوَابَ، وَكَتَبَهُ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « La ville s'est agrandie. » ?",
+          "choix_ar": [
+            "كَبُرَتِ الْمَدِينَةُ.",
+            "الْمَدِينَةُ كَبِيرٌ.",
+            "كَبُرَتِ الْقَرْيَةُ."
+          ],
+          "reponse": 0,
+          "explication": "« La ville s'est agrandie. » se dit كَبُرَتِ الْمَدِينَةُ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « L'enfant a regardé le faucon. »",
+          "tuiles": [
+            "الصَّقْرِ",
+            "نَظَرَ",
+            "إِلَى",
+            "الطِّفْلُ",
+            "يَنْظُرُ"
+          ],
+          "solution": [
+            "نَظَرَ",
+            "الطِّفْلُ",
+            "إِلَى",
+            "الصَّقْرِ"
+          ],
+          "explication": "Le verbe, le sujet, puis إِلَى et le complément."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le menuisier travaille le matin. »",
+          "ar": "… النَّجَّارُ فِي الصَّبَاحِ.",
+          "choix_ar": [
+            "يَعْمَلُ",
+            "يَعْمِلُ",
+            "عَمَلٌ"
+          ],
+          "reponse": 0,
+          "explication": "عَمِلَ يَعْمَلُ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَظَرَ",
+          "choix": [
+            "il a regardé",
+            "il a su",
+            "il a ouvert"
+          ],
+          "reponse": 0,
+          "explication": "نَظَرَ veut dire « il a regardé »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَسُنَ",
+          "choix": [
+            "il a été beau",
+            "il a été loin",
+            "il a été lourd"
+          ],
+          "reponse": 0,
+          "explication": "حَسُنَ veut dire « il a été beau »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَثُرَ",
+          "choix": [
+            "il est devenu nombreux",
+            "il a grandi",
+            "beaucoup"
+          ],
+          "reponse": 0,
+          "explication": "كَثُرَ veut dire « il est devenu nombreux »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il sait » ?",
+          "choix_ar": [
+            "يَعْلَمُ",
+            "عَلِمَ",
+            "يَعْمَلُ"
+          ],
+          "reponse": 0,
+          "explication": "« il sait » se dit يَعْلَمُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel moule dit une qualité ou un état ?",
+          "choix_ar": [
+            "فَعُلَ",
+            "فَعَلَ",
+            "فَاعِل"
+          ],
+          "reponse": 0,
+          "explication": "فَعُلَ : ثَقُلَ, كَثُرَ, حَسُنَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de بَعُدَ ?",
+          "choix_ar": [
+            "يَبْعُدُ",
+            "يَبْعَدُ",
+            "يَبْعِدُ"
+          ],
+          "reponse": 0,
+          "explication": "فَعُلَ fait toujours يَفْعُلُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ث ر dans le moule فَعُلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "كَثُرَ",
+            "كَثِيرٌ",
+            "أَكْثَرُ"
+          ],
+          "reponse": 0,
+          "explication": "ك ث ر dans فَعُلَ : كَثُرَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ع ل م dans le moule فَعِلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "عَلِمَ",
+            "يَعْلَمُ",
+            "عَمِلَ"
+          ],
+          "reponse": 0,
+          "explication": "ع ل م dans فَعِلَ : عَلِمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le village était loin. »",
+          "ar": "… الْقَرْيَةُ.",
+          "choix_ar": [
+            "بَعُدَتِ",
+            "بَعِيدَةٌ",
+            "يَبْعُدُ"
+          ],
+          "reponse": 0,
+          "explication": "Passé ; avec un sujet féminin, on met d'habitude تْ : بَعُدَتِ الْقَرْيَةُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج ل س dans le moule فَاعِل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "جَالِسٌ",
+            "جُلُوسٌ",
+            "مَجْلِسٌ"
+          ],
+          "reponse": 0,
+          "explication": "فَاعِل : جَالِسٌ (leçon 3.3).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَدْرَسَةٌ",
+          "choix": [
+            "école",
+            "leçon",
+            "étude"
+          ],
+          "reponse": 0,
+          "explication": "مَدْرَسَةٌ veut dire « école ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de مِصْبَاحٌ ?",
+          "choix_ar": [
+            "مِفْعَال",
+            "مَفْعَل",
+            "مِفْعَل"
+          ],
+          "reponse": 0,
+          "explication": "مِفْعَال : l'instrument (leçon 3.5).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais les trois moules de la forme I : فَعَلَ, فَعِلَ, فَعُلَ, et tu sais que فَعُلَ fait toujours يَفْعُلُ.",
+      "suite": "Au moulin, la roue tourne : la forme II, avec sa shadda."
+    }
+  ]
+}

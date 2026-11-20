@@ -31,15 +31,9 @@ import sys
 
 import numpy as np
 
-from trim import expected_min_duration, trim_first_utterance
+from trim import expected_max_duration, expected_min_duration, trim_first_utterance
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-
-
-def expected_max_duration(text: str) -> float:
-    """Durée maximale plausible : 0,6 s + 0,22 s par lettre arabe."""
-    letters = sum(1 for c in text if "ء" <= c <= "ي")
-    return 0.6 + 0.22 * letters
 
 
 def lesson_texts() -> list[tuple[str, str, str]]:
@@ -59,7 +53,8 @@ def tsv_texts(path: str) -> list[tuple[str, str, str]]:
     return rows
 
 
-def generate(rows, out_dir: str, tries: int) -> list[dict]:
+def generate(rows, out_dir: str, tries: int, first_seed: int = 0,
+             keep_raw: bool = False) -> list[dict]:
     import soundfile as sf
     import torch
     from chatterbox.mtl_tts import ChatterboxMultilingualTTS
@@ -70,10 +65,12 @@ def generate(rows, out_dir: str, tries: int) -> list[dict]:
     for key, kind, text in rows:
         lo, hi = expected_min_duration(text), expected_max_duration(text)
         best = None
-        for seed in range(tries):
+        for seed in range(first_seed, first_seed + tries):
             torch.manual_seed(seed)
             wav = model.generate(text, language_id="ar")
             raw = wav.squeeze(0).cpu().numpy()
+            if keep_raw:
+                sf.write(os.path.join(out_dir, f"{key}.brut{seed}.wav"), raw, model.sr)
             try:
                 res = trim_first_utterance(raw, model.sr)
             except ValueError:
@@ -110,11 +107,19 @@ def main() -> None:
     ap.add_argument("sortie")
     ap.add_argument("--lecons", action="store_true")
     ap.add_argument("--essais", type=int, default=5)
+    ap.add_argument("--premiere-graine", type=int, default=0,
+                    help="pour écarter des graines refusées à l'écoute")
+    ap.add_argument("--seulement", nargs="+", metavar="TEXTE",
+                    help="ne régénérer que ces textes arabes")
+    ap.add_argument("--brut", action="store_true",
+                    help="garder aussi chaque sortie brute, pour analyse")
     args = ap.parse_args()
     if args.lecons == bool(args.textes):
         ap.error("donner soit un fichier de textes, soit --lecons")
     rows = lesson_texts() if args.lecons else tsv_texts(args.textes)
-    report = generate(rows, args.sortie, args.essais)
+    if args.seulement:
+        rows = [r for r in rows if r[2] in set(args.seulement)]
+    report = generate(rows, args.sortie, args.essais, args.premiere_graine, args.brut)
     with open(os.path.join(args.sortie, "rapport.json"), "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=1)
 
