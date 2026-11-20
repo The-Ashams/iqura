@@ -11216,77 +11216,6 @@
    "theme": "ecriture"
   },
   {
-   "id": "idh",
-   "ar": "إِذْ",
-   "translit": "iḏ",
-   "fr": "quand, alors que (au passé)",
-   "nature": "particule",
-   "lecon": "sens-08",
-   "source_sens": "rédigé par IA",
-   "lemme": "<i*",
-   "exemple": {
-    "ar": "كَانَ نَدِيمٌ يَكْتُبُ الرِّسَالَةَ إِذْ وَصَلَتْ هَالَةُ.",
-    "fr": "Nadīm écrivait la lettre quand Hāla arriva."
-   },
-   "remarque": "au milieu de la phrase, après une phrase au passé ; ne pas confondre avec إِذَا et إِذَنْ",
-   "theme": "outils"
-  },
-  {
-   "id": "baynama",
-   "ar": "بَيْنَمَا",
-   "translit": "baynamā",
-   "fr": "tandis que, pendant que",
-   "nature": "particule",
-   "lecon": "sens-08",
-   "source_sens": "rédigé par IA",
-   "exemple": {
-    "ar": "بَيْنَمَا بَاسِمٌ جَالِسٌ فِي الْحَدِيقَةِ إِذْ وَصَلَ زُهَيْرٌ.",
-    "fr": "Tandis que Bāsim était assis dans le jardin, voilà que Zuhayr arriva."
-   },
-   "remarque": "suivi le plus souvent d'une phrase nominale ; souvent, la suite commence par إِذْ (« voilà que »)",
-   "theme": "outils"
-  },
-  {
-   "id": "haka",
-   "ar": "حَكَى",
-   "translit": "ḥakā",
-   "fr": "raconter",
-   "nature": "verbe",
-   "lecon": "sens-08",
-   "source_sens": "rédigé par IA",
-   "passe": "حَكَى",
-   "inaccompli": "يَحْكِي",
-   "formes": [
-    "حَكَتْ",
-    "حَكَيْتُ",
-    "يَحْكِي",
-    "يُحْكَى"
-   ],
-   "exemple": {
-    "ar": "يُحْكَى أَنَّ تَاجِرًا كَانَ لَهُ جَمَلٌ عَجِيبٌ.",
-    "fr": "On raconte qu'un marchand avait un chameau étonnant."
-   },
-   "remarque": "يُحْكَى أَنَّ : formule figée, « on raconte que »",
-   "theme": "ecriture"
-  },
-  {
-   "id": "rawi",
-   "ar": "الرَّاوِي",
-   "translit": "al-rāwī",
-   "fr": "le narrateur, celui qui raconte",
-   "nature": "nom",
-   "lecon": "sens-08",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "fige": true,
-   "exemple": {
-    "ar": "قَالَ الرَّاوِي: كَانَ فِي السُّوقِ تَاجِرٌ.",
-    "fr": "Le narrateur dit : il y avait au marché un marchand."
-   },
-   "remarque": "sans article : رَاوٍ (le ي tombe, sauf à l'accusatif : رَاوِيًا) ; dans la langue des savants, le mot désigne aussi celui qui rapporte des paroles ; ici, le conteur",
-   "theme": "ecriture"
-  },
-  {
    "id": "aqbala",
    "ar": "أَقْبَلَ",
    "translit": "aqbala",
@@ -11502,6 +11431,77 @@
    },
    "remarque": "l'aube, avant le matin (صَبَاحٌ)",
    "theme": "temps"
+  },
+  {
+   "id": "idh",
+   "ar": "إِذْ",
+   "translit": "iḏ",
+   "fr": "quand, alors que (au passé)",
+   "nature": "particule",
+   "lecon": "sens-08",
+   "source_sens": "rédigé par IA",
+   "lemme": "<i*",
+   "exemple": {
+    "ar": "كَانَ نَدِيمٌ يَكْتُبُ الرِّسَالَةَ إِذْ وَصَلَتْ هَالَةُ.",
+    "fr": "Nadīm écrivait la lettre quand Hāla arriva."
+   },
+   "remarque": "au milieu de la phrase, après une phrase au passé ; ne pas confondre avec إِذَا et إِذَنْ",
+   "theme": "outils"
+  },
+  {
+   "id": "baynama",
+   "ar": "بَيْنَمَا",
+   "translit": "baynamā",
+   "fr": "tandis que, pendant que",
+   "nature": "particule",
+   "lecon": "sens-08",
+   "source_sens": "rédigé par IA",
+   "exemple": {
+    "ar": "بَيْنَمَا بَاسِمٌ جَالِسٌ فِي الْحَدِيقَةِ إِذْ وَصَلَ زُهَيْرٌ.",
+    "fr": "Tandis que Bāsim était assis dans le jardin, voilà que Zuhayr arriva."
+   },
+   "remarque": "suivi le plus souvent d'une phrase nominale ; souvent, la suite commence par إِذْ (« voilà que »)",
+   "theme": "outils"
+  },
+  {
+   "id": "haka",
+   "ar": "حَكَى",
+   "translit": "ḥakā",
+   "fr": "raconter",
+   "nature": "verbe",
+   "lecon": "sens-08",
+   "source_sens": "rédigé par IA",
+   "passe": "حَكَى",
+   "inaccompli": "يَحْكِي",
+   "formes": [
+    "حَكَتْ",
+    "حَكَيْتُ",
+    "يَحْكِي",
+    "يُحْكَى"
+   ],
+   "exemple": {
+    "ar": "يُحْكَى أَنَّ تَاجِرًا كَانَ لَهُ جَمَلٌ عَجِيبٌ.",
+    "fr": "On raconte qu'un marchand avait un chameau étonnant."
+   },
+   "remarque": "يُحْكَى أَنَّ : formule figée, « on raconte que »",
+   "theme": "ecriture"
+  },
+  {
+   "id": "rawi",
+   "ar": "الرَّاوِي",
+   "translit": "al-rāwī",
+   "fr": "le narrateur, celui qui raconte",
+   "nature": "nom",
+   "lecon": "sens-08",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "fige": true,
+   "exemple": {
+    "ar": "قَالَ الرَّاوِي: كَانَ فِي السُّوقِ تَاجِرٌ.",
+    "fr": "Le narrateur dit : il y avait au marché un marchand."
+   },
+   "remarque": "sans article : رَاوٍ (le ي tombe, sauf à l'accusatif : رَاوِيًا) ; dans la langue des savants, le mot désigne aussi celui qui rapporte des paroles ; ici, le conteur",
+   "theme": "ecriture"
   },
   {
    "id": "aata",

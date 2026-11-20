@@ -472,3 +472,82 @@ Références :
 - `/home/user/iqura/tools/build_content/lessons/etape4/28-un-texte-classique.json` (زَعَمُوا أَنَّ, عَيْن « source »)
 - `/home/user/iqura/tools/build_content/lessons/etape3/28-noms-particuliers.json` (le nom en -in n'y est pas)
 - `/home/user/iqura/assets/content/iqura_content.db`
+
+---
+
+## Doutes du relecteur tranchés (20/11/2026)
+
+# Décision — Doutes du relecteur, Classique avancé 2 (5.8 à 5.12)
+
+Question : cinq doutes du relecteur. (1) Quelle est la portée de B6 au combat ? (2) Garde-t-on كَذِبٌ à la place de كَرِيمٌ ? (3) Garde-t-on « وَمَاذَا بَعْدَ ذَٰلِكَ؟ » ? (4) Comment classer قَمَرٌ, et que veut dire « sujet nommé » après ثُمَّ ? (5) لَوْلَا + passé exprime-t-il seulement le reproche ?
+Stade : région 5, leçons 5.8 à 5.12 ; acquis : régions 1 à 4, leçons 5.1 à 5.7, ثُمَّ et فَـ (4.13), لَمَّا (4.4), discours rapporté (4.3), formes II à X, verbes faibles, subjonctif.
+
+## Décision
+
+**1. Portée de B6 : lecture étroite, avec un ajout.**
+- **Au combat sont interdits :**
+  - toute phrase construite avec un outil propre au récit de 5.8 : بَيْنَمَا… إِذْ, إِذْ, فَلَمَّا / وَلَمَّا, قَالَ / قَالَتْ / فَقَالَ + réplique ;
+  - les formules d'ouverture de conte : يُحْكَى أَنَّ, زَعَمُوا أَنَّ, قَالَ الرَّاوِي, et « كَانَ فِي + lieu + nom indéfini ».
+- **Restent permises au combat :** les phrases simples construites, y compris avec ثُمَّ (acquis en 4.13), si elles respectent les listes ⚠.
+- **5.9 : conforme.** Les phrases « تَفَكَّرَ بَاسِمٌ فِي الْجَوَابِ، ثُمَّ كَتَبَهُ. », « أَقَامَ زُهَيْرٌ فِي دِمَشْقَ شَهْرًا » et « أَقْبَلَتِ الْقَافِلَةُ… » restent.
+- **5.8 : remplacer la question « كَانَ فِي السُّوقِ … » du mini-boss** (fichier `08-la-narration-classique.json`, l. 470 à 481) par :
+  - consigne : « Complète : « Bāsim était assis dans le jardin. » » ;
+  - phrase : « كَانَ بَاسِمٌ … فِي الْحَدِيقَةِ. » ;
+  - choix : جَالِسًا / جَالِسٌ / جَالِسٍ ; bonne réponse : جَالِسًا ;
+  - explication : « جَالِسًا est l'attribut de كَانَ : accusatif. »
+- La tournure « كَانَ فِي السُّوقِ تَاجِرٌ » peut rester hors combat (fiche رَاوٍ, lectures).
+
+**2. Garder كَذِبٌ.** On n'ajoute pas d'autre qualité positive à ce niveau.
+- **Formulations à garder :** dire « une qualité ou un défaut », comme le fait déjà la règle (« un défaut : كَذِبٌ »). Dans mots.json, si le schéma le permet, le thème de la fiche `kadhib` devient « qualités et défauts » ; sinon on le laisse.
+- **Liste ⚠ de كَذِب, à compléter :**
+  - jamais كَذِبًا ;
+  - jamais avec افْتَرَى, « عَلَى اللَّهِ », تَصِفُ, أَلْسِنَة, دَم, قَمِيص ;
+  - seulement la forme définie الْكَذِبَ, avec un sujet humain nommé (« لَا يُحِبُّ الْكَذِبَ » après un nom propre : conforme).
+- **Ce qu'on ne fait pas :** ne pas remettre كَرِيمٌ, ni un autre adjectif de `DIVINE_NAMES` (حَلِيم, عَظِيم…). Si l'on veut plus tard un nom de qualité positive, prendre عَدْل dans la réserve (jamais بِالْعَدْلِ), mais pas à ce niveau.
+
+**3. Garder « أَنَا فِي الْقِصَّةِ! وَمَاذَا بَعْدَ ذَٰلِكَ؟ ».** Rien à changer.
+
+**4a. قَمَرٌ : conforme.** Le fichier propose déjà « la nature (le ciel) / la maison / le marché » (`10-le-vocabulaire-par-themes-1.json`, l. 483 à 490). Le distracteur ambigu « le temps » n'y est plus.
+
+**4b. « Sujet nommé » s'entend dans la phrase.**
+- **La règle :** le personnage est nommé dans la même phrase, avant ou juste après ثُمَّ. Le verbe qui suit ثُمَّ peut avoir un sujet sous-entendu qui renvoie à ce nom. Exemples conformes : « سَافَرَ زُهَيْرٌ إِلَى دِمَشْقَ، ثُمَّ رَجَعَ بَعْدَ شَهْرٍ », « … ثُمَّ كَتَبَهُ ».
+- **Interdit :** une phrase où personne n'est nommé, ou ثُمَّ suivi d'un pronom isolé (liste ⚠ inchangée).
+- **Même règle pour أَخَذَ « se mettre à »** (5.12) :
+  - « أَخَذَ بَاسِمٌ الْقَلَمَ، ثُمَّ أَخَذَ يَكْتُبُ الرِّسَالَةَ. » est conforme ; répéter بَاسِمٌ n'est pas nécessaire ;
+  - le modèle de l'atelier « أَخَذَ الْقَلَمَ، ثُمَّ … يَكْتُبُ. » ne nomme personne : écrire « أَخَذَ بَاسِمٌ الْقَلَمَ، ثُمَّ … يَكْتُبُ. »
+
+**5. D'accord : لَوْلَا + passé = reproche.**
+- **Règle de 5.12 à écrire :** « لَوْلَا + verbe au passé, à la 2e personne, veut dire « pourquoi n'as-tu pas… ? » : un reproche. » Retirer « ou une invitation ».
+- **Ne pas enseigner** لَوْلَا + inaccompli (invitation) à ce niveau.
+- **Fiche لَوْلَا dans mots.json :** ajouter ce sens, sans nouvelle carte : « + passé à la 2e personne : pourquoi n'as-tu pas… ? (reproche) ». Ajouter aussi « chef (d'un groupe) » à la fiche رَأْس, comme le demande le relecteur.
+- **Source :** n'afficher « source : Muġnī » qu'après lecture du passage. D'ici là, garder « rédigé par IA ».
+
+## Pourquoi
+
+1. B6 prolonge B6 de Classique avancé 1 : les mots seuls peuvent servir, jamais la phrase type de la leçon. Le §16 du 23/10/2026 admet au mini-boss des mots présents dans le Coran, dans un panneau neutre ; il n'interdit pas les phrases simples construites, et les niveaux précédents en ont. Le risque réel tient aux cadres de récit. Le cas « كَانَ فِي الْمَدِينَةِ » (bloquant du relecteur) le montre : une ouverture de conte peut reprendre un début de verset sans que le garde-fou la voie, à cause du وَ. Ces ouvertures restent donc hors du combat.
+2. Le pipeline exclut كَرِيم (`tools/build_content/vocab.py`, l. 223 à 227, `DIVINE_NAMES`). La leçon garde trois qualités positives (صَبْر, صِدْق, أَمِين, plus صَادِق déjà connu), et كَذِب forme avec صِدْق une paire de contraires utile. كَذِب était dans la réserve du plan, et le relecteur n'a pas d'autre réserve de langue.
+3. « وَمَاذَا بَعْدَ ذَٰلِكَ؟ » est une relance courante de la conversation. Elle n'a qu'un mot en commun avec le passage évoqué : ce n'est ni un extrait ni une suite de 3 mots.
+4. Le modèle « سَافَرَ زُهَيْرٌ…، ثُمَّ رَجَعَ… » vient de mon propre plan (C 5.8) : le sujet y est sous-entendu après ثُمَّ. La règle visait donc la phrase entière, pas le mot qui suit ثُمَّ. Le but est d'éviter les phrases sans personnage, avec des pronoms seuls, qui rappellent davantage le texte coranique.
+5. C'est la doctrine des grammairiens classiques, que reprend Ibn Hišām dans *Muġnī al-labīb* (entrée « لولا ») : avec le passé, توبيخ et تنديم (reproche, regret) ; avec l'inaccompli, تحضيض et عرض (incitation, invitation). Tous les exemples de 5.12 sont au passé.
+
+## Confiance
+
+- 1 : **moyenne-haute**. L'ajout des « ouvertures de conte » est un choix de prudence, pas une règle du cahier.
+- 2, 3 et 4 : **haute**.
+- 5 : **haute** sur la règle. La page du *Muġnī* n'a pas été lue dans le dépôt, donc pas de « source » affichée.
+
+## Résumé pour l'utilisateur
+
+- **Combats** : pas de phrases de conte (« tandis que… », « il y avait au marché… »). Les phrases simples restent permises.
+- **Qualités** : « généreux » est refusé par le programme parce que c'est aussi un nom divin. On garde « mensonge » comme contraire de « sincérité ».
+- **« Pourquoi n'as-tu pas… ? »** avec لَوْلَا est présenté comme un reproche, et non comme une invitation.
+
+Fichiers concernés :
+- /home/user/iqura/tools/build_content/lessons/etape5/08-la-narration-classique.json (mini-boss, l. 470 à 481)
+- /home/user/iqura/tools/build_content/lessons/etape5/11-le-vocabulaire-par-themes-2.json
+- /home/user/iqura/tools/build_content/lessons/etape5/12-un-mot-plusieurs-sens.json (règle لَوْلَا ; modèle de l'atelier avec أَخَذَ)
+- /home/user/iqura/tools/build_content/vocab/mots.json (fiches kadhib, لَوْلَا, رَأْس)
+- /home/user/iqura/tools/build_content/vocab.py (l. 223 à 227)
+- À enregistrer dans /home/user/iqura/docs/relectures/decisions-classique-avance-2.md
+
+Je n'ai modifié aucun fichier.

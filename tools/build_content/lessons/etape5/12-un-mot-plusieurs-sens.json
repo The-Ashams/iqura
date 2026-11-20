@@ -62,7 +62,7 @@
             "œil"
           ],
           "reponse": 0,
-          "explication": "رَأْسٌ veut dire « tête ; sommet »."
+          "explication": "رَأْسٌ : « tête ; sommet » (connu) ; un nouveau sens arrive dans cette leçon."
         },
         {
           "type": "completer",
@@ -382,7 +382,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Choisis le sens par le contexte : « Il a pris le calame, puis s'est mis à écrire. »",
+          "consigne": "Choisis le sens par le contexte : « Bāsim a pris le calame, puis s'est mis à écrire. »",
           "ar": "أَخَذَ بَاسِمٌ الْقَلَمَ، ثُمَّ … بَاسِمٌ يَكْتُبُ.",
           "choix_ar": [
             "أَخَذَ",
@@ -473,7 +473,7 @@
           "choix_ar": [
             "سَأَلْتَ",
             "السُّؤَالُ",
-            "تَسْأَلُ"
+            "سُؤَالٌ"
           ],
           "reponse": 0,
           "explication": "لَوْلَا + passé à la 2e personne."

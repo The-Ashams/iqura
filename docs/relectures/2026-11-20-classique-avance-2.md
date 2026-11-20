@@ -142,3 +142,80 @@ Stade : région 5, leçons 5.10 à 5.12 ; notions supposées acquises : régions
 - Le garde-fou des 3 mots (`quran_guard.py`) et la règle des 95 % de mots connus : je ne les ai pas exécutés. Il faut lancer `python3 tools/build_content/build_content.py`.
 - Les sources de dictionnaire de 5.12 (Lisān al-ʿArab, al-Qāmūs, Ibn ʿAqīl, Muġnī), non encore lues. La mention « rédigé par IA » est donc la bonne.
 - L'audio, suspendu.
+---
+
+# Rapport de relecture : leçons 5.8 à 5.12 (Classique avancé 2), passage ciblé sur les corrections
+
+Fichiers relus :
+- /home/user/iqura/tools/build_content/lessons/etape5/08-la-narration-classique.json
+- /home/user/iqura/tools/build_content/lessons/etape5/09-les-formes-verbales-en-contexte.json
+- /home/user/iqura/tools/build_content/lessons/etape5/10-le-vocabulaire-par-themes-1.json
+- /home/user/iqura/tools/build_content/lessons/etape5/11-le-vocabulaire-par-themes-2.json
+- /home/user/iqura/tools/build_content/lessons/etape5/12-un-mot-plusieurs-sens.json
+- /home/user/iqura/tools/build_content/vocab/mots.json : fiches de 5.8 à 5.12 (baynama, haka, rawi, aata, sabr, sidq, kadhib, amin, hadith, ayn, lisan), et akhadha (l. 6549), ras (l. 6612), lawla (l. 7619)
+- Pour vérifier, les listes ⚠ du plan : /home/user/iqura/docs/relectures/decisions-classique-avance-2.md (C 5.8 à 5.12)
+
+Stade : région 5, leçons 5.8 à 5.12. Notions supposées acquises : régions 1 à 4 et leçons 5.1 à 5.7, puis chaque leçon relue.
+
+## Verdict, par leçon
+- **5.8 : Validé avec doutes.** Il ne reste que le doute B6, déjà soumis au conseiller.
+- **5.9 : Validé avec doutes.** Même doute B6.
+- **5.10 : Validé.**
+- **5.11 : À corriger.** Il reste un point Important, que j'avais manqué au 1er passage. La correction tient en un mot.
+- **5.12 : Validé avec doutes.** Deux mineurs et un doute sur les fiches.
+
+## Bloquant
+- Aucun.
+
+## Important
+- [5.11 · lecture « Portrait de Nadīm », phrase 2 : « أَعْطَى بَاسِمًا قَلَمًا جَدِيدًا. »] **Problème** : la liste ⚠ de أَعْطَى demande un « sujet humain nommé ». Ici le sujet n'est pas exprimé (Nadīm est sous-entendu depuis la phrase 1). C'est le même genre d'écart que celui de « ثُمَّ أَخَذَ يَكْتُبُ », corrigé en 5.12. La grammaire est juste, et je ne vois aucune suite de 3 mots du Coran.
+  - Je l'avais manqué au 1er passage. Je le signale maintenant par souci de cohérence avec le reste du niveau.
+  - **Correction proposée** : « أَعْطَى نَدِيمٌ بَاسِمًا قَلَمًا جَدِيدًا. » (la phrase existe déjà dans le dialogue). Autre solution : faire valider l'écart par `conseiller-arabe`.
+  - **Confiance** : haute sur l'écart au plan, faible sur le risque réel.
+
+## Mineur
+- [5.11 · « apercu »] « أَصْدِقَائِهِ » ne se trouve plus nulle part dans la leçon : c'est un reste d'une version précédente. Comme `lessons.py` (l. 158) ajoute les formes de l'aperçu aux mots « connus », cette forme compte comme connue sans avoir été montrée. **Correction** : la retirer de « apercu ».
+- [5.12 · mini-boss « لَوْلَا … زُهَيْرًا! », distracteur تَسْأَلُ] « لَوْلَا تَسْأَلُ زُهَيْرًا! » est aussi de l'arabe juste : avec l'inaccompli, لَوْلَا pousse à agir (« pourquoi ne demandes-tu pas à Zuhayr ? »). Seule la consigne au passé départage, comme pour les mineurs du 1er passage. **Correction** : remplacer تَسْأَلُ par un distracteur qui ne fait pas une phrase, par exemple « سُؤَالٌ » (un nom indéfini, sans réponse en لَـ). Ou garder tel quel, puisque la consigne départage.
+- [5.12 · atelier, consigne « Il a pris le calame, puis s'est mis à écrire. »] L'arabe dit maintenant بَاسِمٌ deux fois, mais le français dit « Il ». **Correction** : « Bāsim a pris le calame, puis s'est mis à écrire. »
+- [5.12 · échauffement 2, رَأْسٌ] Le choix juste et l'explication disent « tête ; sommet », alors que la fiche dit maintenant « tête ; sommet ; chef (d'un groupe) ». C'est défendable (on y révise ce qui est connu avant d'apprendre le nouveau sens). On peut écrire dans l'explication : « (connu) ; un nouveau sens arrive ».
+
+## Doutes (à soumettre au conseiller, ne pas trancher)
+- [mots.json · fiches `lawla` (leçon cite-02), `akhadha` et `ras` (leçon moteur-22)] **Ce qui me fait douter** : les nouveaux sens vus en 5.12 sont maintenant écrits dans les fiches elles-mêmes. Or ces fiches appartiennent aux leçons 4.2 et 3.22, et le schéma de mots.json n'a pas de champ pour un sens ajouté plus tard. Un apprenant de 4.2 voit donc déjà « + passé : pourquoi… ne pas ? » sur la carte لَوْلَا, avant d'avoir vu la notion (point F1). C'est moi qui avais proposé cet ajout « si le schéma le permet » : il ne le permet pas.
+  - **Pistes** :
+    1. Garder : la fiche sert de référence, et la remarque dit « (vu en 5.12) ».
+    2. Ajouter au schéma un champ du type « sens ajoutés avec leur leçon », que l'application n'afficherait qu'à partir de cette leçon.
+    3. Revenir aux anciens sens et ne mettre les nouveaux que dans la remarque.
+  - **Confiance** : moyenne. L'effet pédagogique est faible, mais l'ordre des notions n'est pas respecté.
+- Les doutes B6 et كَرِيمٌ → كَذِبٌ sont chez le conseiller : je n'ai pas d'élément nouveau.
+
+## Points vérifiés sans problème
+- **A (respect du Coran)** :
+  - la fiche رَاوٍ dit maintenant « كَانَ فِي السُّوقِ تَاجِرٌ » : il n'y a plus de reprise de 27:48 ;
+  - plus de آمِين dans le combat de 5.11 ; il ne reste que dans la remarque de la fiche أَمِينٌ, comme prévu ;
+  - la nouvelle phrase de la lecture de 5.8 (« فَقَالَ سَمِيرٌ: « جَمَلِي يَعْمَلُ فِي اللَّيْلِ، وَيَنَامُ فِي النَّهَارِ. » ») ne reprend aucune suite connue du Coran ;
+  - listes ⚠ respectées : « ثُمَّ رَجَعَ بَاسِمٌ » (verbe de la Cité, sujet nommé), قَالَ / فَقَالَ toujours suivis d'un nom, فَلَمَّا + وَصَلَ / جَلَسَ ;
+  - en 5.12 : أَخَذَ « se mettre à » a partout un sujet nommé et n'est suivi que de يَكْتُبُ ou يَقْرَأُ ; لَوْلَا n'est suivi que de انْتَظَرْتَ ou سَأَلْتَ, avec un nom propre ; عَيْن n'apparaît jamais avec حَدِيقَة, نَهْر, un nombre ou un duel (مَعْنَيَانِ est le duel de مَعْنًى) ; رَأْس apparaît sans فَوْقَ.
+- **C (forme)** :
+  - vocalisation et cas justes dans toutes les phrases corrigées : أَعْطَى نَدِيمٌ بَاسِمًا قَلَمًا جَدِيدًا, أَعْطَى صَدِيقِي زُهَيْرًا كِتَابًا, لَوْلَا سَأَلْتَ زُهَيْرًا, عَيْنَ مَاءٍ قَرِيبَةً (accord au féminin), كَلِمَةُ عَيْنٍ لَهَا مَعْنَيَانِ ;
+  - les distracteurs لَنْ et نَامَ de 5.8 sont sans ambiguïté.
+- **D (sens)** :
+  - « لَوْلَا + passé : un reproche » est juste (sans « invitation ») ;
+  - « s'écrivent pareil sans voyelles » est juste ;
+  - les consignes au passé de 5.10 sont justes ;
+  - la remarque « un défaut : كَذِبٌ » est juste ;
+  - les fiches رَأْسٌ, أَخَذَ et لَوْلَا sont justes sur le fond.
+- **F (pédagogie)** :
+  - les consignes « Réponse de لَمَّا : … » ne dévoilent plus la règle du فَـ ;
+  - « ت glissé » est ajouté en 5.9 ;
+  - la fiche بَيْنَمَا dit « le plus souvent » ;
+  - la révision de 5.10 est complète (ثَمَرَة, بَرْد, أُسْبُوع, عَصْر) ;
+  - le distracteur « la maison » pour قَمَرٌ ne prête plus à confusion ;
+  - le distracteur « mensonge » pour حَدِيثٌ ne prête plus à confusion ;
+  - le récit de 5.8 fait environ 59 mots, c'est-à-dire la limite basse du plan.
+- **G (statuts et sources)** : « rédigé par IA » figure sur les fiches et sur les récits construits.
+
+## Ce que je n'ai pas pu vérifier
+- Je n'ai exécuté ni le garde-fou des 3 mots ni le contrôle des 95 % de mots connus : il faut lancer `python3 tools/build_content/build_content.py`.
+- Les lemmes et les fréquences du Corpus : je n'ai pas d'accès à la base. C'est `vocab.validate` qui fait foi.
+- L'audio est suspendu.
+Suite donnée (20/11/2026) : point Important de 5.11 corrigé (أَعْطَى نَدِيمٌ…), mineurs corrigés ; décisions du conseiller appliquées (combat de 5.8 sans ouverture de conte ; fiches لَوْلَا et رَأْسٌ complétées : piste 1, la remarque dit « vu en 5.12 »).

@@ -445,15 +445,15 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète la formule « on raconte que ».",
-          "ar": "… أَنَّ",
+          "consigne": "Complète : « J'ai raconté l'histoire. »",
+          "ar": "… الْقِصَّةَ.",
           "choix_ar": [
-            "يُحْكَى",
             "حَكَيْتُ",
-            "حَكَتْ"
+            "حَكَتْ",
+            "يَحْكِي"
           ],
           "reponse": 0,
-          "explication": "Formule figée : يُحْكَى أَنَّ."
+          "explication": "1re personne du passé : حَكَيْتُ."
         },
         {
           "type": "completer",
@@ -469,15 +469,15 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « Il y avait au marché un marchand. »",
-          "ar": "كَانَ فِي السُّوقِ …",
+          "consigne": "Complète : « Bāsim était assis dans le jardin. »",
+          "ar": "كَانَ بَاسِمٌ … فِي الْحَدِيقَةِ.",
           "choix_ar": [
-            "تَاجِرٌ",
-            "تَاجِرًا",
-            "تَاجِرٍ"
+            "جَالِسًا",
+            "جَالِسٌ",
+            "جَالِسٍ"
           ],
           "reponse": 0,
-          "explication": "تَاجِرٌ est le sujet de كَانَ : nominatif."
+          "explication": "جَالِسًا est l'attribut de كَانَ : accusatif."
         },
         {
           "type": "qcm",
