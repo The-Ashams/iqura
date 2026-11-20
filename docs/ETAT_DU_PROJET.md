@@ -295,7 +295,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 14. Avancé 1 construit et relu (§1 quaterdecies).
 15. Avancé 2 construit et relu (§1 quindecies) : toute la région 4 est prête à tester.
 16. Classique avancé 1 construit et relu (§1 sexdecies).
-17. Suivant : Classique avancé 2 (leçons 5.8 à 5.13).
+17. En cours : Classique avancé 2 (leçons 5.8 à 5.13) ; lieux 5 à 8 et leçons 5.8 à 5.12 écrits, en relecture ; 5.13 attend la lecture des sources anciennes.
+18. Lien de téléchargement direct (sans compte GitHub) : https://github.com/The-Ashams/iqura/releases/tag/derniere-version ; mis à jour seulement par un envoi marqué pour la publication (voir `.github/workflows/build.yml`).
 
 ## 5. Problèmes connus
 
