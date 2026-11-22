@@ -227,7 +227,10 @@
         150,
         10
       ],
-      "lecons": [],
+      "lecons": [
+        19,
+        20
+      ],
       "scene": "scene_belvedere",
       "sol": 84,
       "tranche_j1a": true,

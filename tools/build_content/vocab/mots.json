@@ -12037,6 +12037,134 @@
    },
    "remarque": "schème فَعَّالٌ, celui des métiers ; la racine ne suffit pas pour le sens",
    "theme": "metiers"
+  },
+  {
+   "id": "jaala",
+   "ar": "جَعَلَ",
+   "translit": "ǧaʿala",
+   "fr": "mettre, placer ; + inaccompli : se mettre à",
+   "nature": "verbe",
+   "lecon": "sens-19",
+   "source_sens": "rédigé par IA",
+   "passe": "جَعَلَ",
+   "inaccompli": "يَجْعَلُ",
+   "exemple": {
+    "ar": "جَعَلَ بَاسِمٌ الْكِتَابَ فِي الْكِيسِ.",
+    "fr": "Bāsim a mis le livre dans le sac."
+   },
+   "lemme": "jaEala",
+   "fige": true,
+   "formes": [
+    "جَعَلَتْ",
+    "جَعَلْتُ",
+    "يَجْعَلُ"
+   ],
+   "remarque": "avec un inaccompli, comme أَخَذَ : جَعَلَ زُهَيْرٌ يَقْرَأُ « Zuhayr se mit à lire »",
+   "theme": "actions"
+  },
+  {
+   "id": "amr",
+   "ar": "أَمْرٌ",
+   "translit": "amrun",
+   "fr": "affaire, chose",
+   "nature": "nom",
+   "lecon": "sens-19",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": ">amor",
+   "fige": true,
+   "formes": [
+    "الْأَمْرَ"
+   ],
+   "exemple": {
+    "ar": "هَٰذَا أَمْرٌ سَهْلٌ.",
+    "fr": "C'est une chose facile."
+   },
+   "remarque": "ne pas confondre avec le verbe أَمَرَ (ordonner), connu ; le mot a d'autres emplois, qu'IQURA n'explique pas",
+   "theme": "savoir"
+  },
+  {
+   "id": "nafs",
+   "ar": "نَفْسٌ",
+   "translit": "nafsun",
+   "fr": "soi-même (pour insister)",
+   "nature": "nom",
+   "lecon": "sens-19",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "lemme": "nafos",
+   "fige": true,
+   "formes": [
+    "بِنَفْسِهِ",
+    "بِنَفْسِهَا",
+    "نَفْسُهُ",
+    "نَفْسُهَا"
+   ],
+   "exemple": {
+    "ar": "كَتَبَ بَاسِمٌ الرِّسَالَةَ بِنَفْسِهِ.",
+    "fr": "Bāsim a écrit la lettre lui-même."
+   },
+   "remarque": "ici seulement pour insister (lui-même, elle-même) ; le mot a d'autres sens dans les textes religieux, qu'IQURA n'explique pas",
+   "theme": "personnes"
+  },
+  {
+   "id": "nas",
+   "ar": "نَاسٌ",
+   "translit": "nāsun",
+   "fr": "gens",
+   "nature": "nom",
+   "lecon": "sens-19",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "n~aAs",
+   "fige": true,
+   "formes": [
+    "النَّاسُ"
+   ],
+   "exemple": {
+    "ar": "فِي السُّوقِ نَاسٌ كَثِيرُونَ.",
+    "fr": "Il y a beaucoup de gens au marché."
+   },
+   "remarque": "nom collectif : il désigne plusieurs personnes",
+   "theme": "personnes"
+  },
+  {
+   "id": "mithl",
+   "ar": "مِثْلٌ",
+   "translit": "miṯlun",
+   "fr": "pareil à, comme",
+   "nature": "nom",
+   "lecon": "sens-19",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "mivol",
+   "fige": true,
+   "formes": [
+    "مِثْلُ"
+   ],
+   "exemple": {
+    "ar": "بَيْتُ زُهَيْرٍ مِثْلُ بَيْتِ نَدِيمٍ.",
+    "fr": "La maison de Zuhayr est comme celle de Nadīm."
+   },
+   "remarque": "suivi d'un nom au génitif ; ne pas confondre avec مَثَلٌ (exemple, fable)",
+   "theme": "outils"
+  },
+  {
+   "id": "marhala",
+   "ar": "مَرْحَلَةٌ",
+   "translit": "marḥalatun",
+   "fr": "étape",
+   "nature": "nom",
+   "lecon": "sens-20",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "rHl",
+   "exemple": {
+    "ar": "هَٰذِهِ مَرْحَلَةٌ جَدِيدَةٌ.",
+    "fr": "C'est une nouvelle étape."
+   },
+   "remarque": "à l'origine, la distance parcourue en un jour de voyage ; la racine ne suffit pas pour le sens",
+   "theme": "voyage"
   }
  ]
 }

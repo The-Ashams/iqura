@@ -1,0 +1,541 @@
+{
+  "id": "sens-19",
+  "etape": 5,
+  "ordre": 19,
+  "format": 3,
+  "titre": "Le vocabulaire fréquent : bilan",
+  "objectif": "Revoir les mots les plus fréquents du Corpus qu'on connaît déjà, et en apprendre cinq.",
+  "statut": "ia_non_verifie",
+  "lieu": "belvedere",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-18"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "هَالَةُ",
+    "نُورَةُ",
+    "بَاسِمٌ",
+    "زُهَيْرٌ",
+    "زُهَيْرٍ",
+    "نَدِيمٍ",
+    "كَثِيرُونَ",
+    "أَفْهَمُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hala",
+          "texte": "Du Belvédère, on voit tout le chemin parcouru. Et dans le Grimoire, on voit tous les mots appris."
+        },
+        {
+          "qui": "nura",
+          "texte": "Parmi les 200 mots les plus fréquents du Coran, tu en connais déjà près de 90. Aujourd'hui, cinq de plus."
+        }
+      ],
+      "objectif": "Faire le bilan du vocabulaire fréquent."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَالَ",
+          "choix": [
+            "il a dit",
+            "il a vu",
+            "il est venu"
+          ],
+          "reponse": 0,
+          "explication": "قَالَ veut dire « il a dit »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le calame est sur le livre. »",
+          "ar": "الْقَلَمُ … الْكِتَابِ.",
+          "choix_ar": [
+            "عَلَى",
+            "إِلَى",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "Sur : عَلَى, l'un des mots les plus fréquents."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "يَوْمٌ",
+          "choix": [
+            "jour",
+            "nuit",
+            "mois"
+          ],
+          "reponse": 0,
+          "explication": "يَوْمٌ veut dire « jour »."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "كَمْ كَلِمَةً أَعْرِفُ؟",
+          "fr": "Combien de mots est-ce que je connais ?"
+        },
+        {
+          "qui": "nura",
+          "ar": "انْظُرْ فِي الْكِتَابِ: كَلِمَاتٌ كَثِيرَةٌ!",
+          "fr": "Regarde dans le Grimoire : beaucoup de mots !"
+        },
+        {
+          "qui": "hala",
+          "ar": "وَالْيَوْمَ خَمْسُ كَلِمَاتٍ جَدِيدَةٍ.",
+          "fr": "Et aujourd'hui, cinq mots nouveaux."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Combien de mots nouveaux aujourd'hui ?",
+        "choix": [
+          "cinq",
+          "trois",
+          "dix"
+        ],
+        "reponse": 0,
+        "explication": "خَمْسُ كَلِمَاتٍ جَدِيدَةٍ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Ce que mesure le Grimoire",
+      "texte": "Le Grimoire affiche « Les mots que tu connais représentent X % des mots du Coran ». C'est une familiarité avec le vocabulaire, calculée sur les seules fréquences du Corpus, pas une compréhension du Coran.",
+      "exemples": [
+        "مِنْ",
+        "فِي",
+        "قَالَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Le pourcentage du Grimoire mesure…",
+        "choix": [
+          "une familiarité avec le vocabulaire",
+          "une compréhension du Coran",
+          "une note de récitation"
+        ],
+        "reponse": 0,
+        "explication": "Fréquences seulement, aucun texte."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "jaala",
+        "amr",
+        "nafs",
+        "nas",
+        "mithl"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "نَاسٌ",
+        "choix": [
+          "gens",
+          "chose, affaire",
+          "pareil à, comme"
+        ],
+        "reponse": 0,
+        "explication": "نَاسٌ veut dire « gens »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les mots du dictionnaire seulement",
+      "texte": "Certains mots très fréquents (par exemple « croire », « messager », « créer ») ont un sens religieux : ils restent dans le dictionnaire, sans exercice. IQURA ne les explique pas : voir les ouvrages et les savants.",
+      "exemples": [
+        "قَالَ",
+        "كَانَ",
+        "عَلِمَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Les mots au sens religieux, dans IQURA…",
+        "choix": [
+          "sont seulement dans le dictionnaire, sans exercice",
+          "sont expliqués en détail",
+          "sont au combat"
+        ],
+        "reponse": 0,
+        "explication": "Sens linguistique seulement."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Des mots et leurs fréquences",
+      "texte": "Les petits mots (مِنْ, فِي, عَلَى, إِلَى) sont les plus fréquents ; puis viennent des verbes (قَالَ, كَانَ, جَعَلَ) et des noms (يَوْمٌ, أَرْضٌ, نَاسٌ). Ces nombres viennent du Quranic Arabic Corpus.",
+      "exemples": [
+        "مِنْ",
+        "قَالَ",
+        "جَعَلَ",
+        "يَوْمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Selon le Corpus, lequel est le plus fréquent ?",
+        "choix": [
+          "قَالَ (environ 1 600 fois)",
+          "رَأَى (environ 270 fois)",
+          "أَكَلَ (environ 90 fois)"
+        ],
+        "reponse": 0,
+        "explication": "قَالَ : 1 618 occurrences ; رَأَى : 271 ; أَكَلَ : 93."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Au marché",
+      "texte": "Récit construit, rédigé par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي السُّوقِ نَاسٌ كَثِيرُونَ.",
+        "جَعَلَ بَاسِمٌ الْكِتَابَ فِي الْكِيسِ، ثُمَّ كَتَبَ الرِّسَالَةَ بِنَفْسِهِ.",
+        "بَيْتُ زُهَيْرٍ مِثْلُ بَيْتِ نَدِيمٍ.",
+        "قَالَ زُهَيْرٌ: « هَٰذَا أَمْرٌ سَهْلٌ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où Bāsim met-il le livre ?",
+          "choix": [
+            "dans le sac",
+            "sur la table",
+            "dans la maison"
+          ],
+          "reponse": 0,
+          "explication": "جَعَلَ بَاسِمٌ الْكِتَابَ فِي الْكِيسِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qui a écrit la lettre ?",
+          "choix": [
+            "Bāsim lui-même",
+            "Zuhayr",
+            "Nadīm"
+          ],
+          "reponse": 0,
+          "explication": "بِنَفْسِهِ : lui-même."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La maison de Zuhayr est…",
+          "choix": [
+            "comme celle de Nadīm",
+            "plus grande que celle de Nadīm",
+            "loin du marché"
+          ],
+          "reponse": 0,
+          "explication": "مِثْلُ بَيْتِ نَدِيمٍ."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَعَلَ",
+          "choix": [
+            "mettre, placer ; + inaccompli : se mettre à",
+            "prendre",
+            "donner"
+          ],
+          "reponse": 0,
+          "explication": "جَعَلَ veut dire « mettre, placer ; + inaccompli : se mettre à »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَمْرٌ",
+          "choix": [
+            "affaire, chose",
+            "ordonner",
+            "gens"
+          ],
+          "reponse": 0,
+          "explication": "أَمْرٌ veut dire « affaire, chose »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مِثْلٌ",
+          "choix": [
+            "pareil à, comme",
+            "exemple, fable",
+            "seul"
+          ],
+          "reponse": 0,
+          "explication": "مِثْلٌ veut dire « pareil à, comme »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a mis le livre dans le sac. »",
+          "ar": "… بَاسِمٌ الْكِتَابَ فِي الْكِيسِ.",
+          "choix_ar": [
+            "جَعَلَ",
+            "أَخَذَ",
+            "أَعْطَى"
+          ],
+          "reponse": 0,
+          "explication": "Mettre, placer : جَعَلَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a écrit la lettre lui-même. »",
+          "ar": "كَتَبَ بَاسِمٌ الرِّسَالَةَ …",
+          "choix_ar": [
+            "بِنَفْسِهِ",
+            "بِنَفْسِهَا",
+            "نَفْسُهَا"
+          ],
+          "reponse": 0,
+          "explication": "Bāsim : masculin, بِنَفْسِهِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a beaucoup de gens au marché. »",
+          "ar": "فِي السُّوقِ … كَثِيرُونَ.",
+          "choix_ar": [
+            "نَاسٌ",
+            "نَاسًا",
+            "نَاسٍ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet mis après : nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « C'est une chose facile. »",
+          "ar": "هَٰذَا … سَهْلٌ.",
+          "choix_ar": [
+            "أَمْرٌ",
+            "أَمَرَ",
+            "أَمْرًا"
+          ],
+          "reponse": 0,
+          "explication": "Le nom أَمْرٌ, pas le verbe أَمَرَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Zuhayr se mit à lire la lettre. »",
+          "ar": "جَعَلَ زُهَيْرٌ … الرِّسَالَةَ.",
+          "choix_ar": [
+            "يَقْرَأُ",
+            "قَرَأَ",
+            "أَنْ يَقْرَأَ"
+          ],
+          "reponse": 0,
+          "explication": "جَعَلَ + inaccompli : se mettre à."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « La maison de Zuhayr est comme celle de Nadīm. » ?",
+          "choix_ar": [
+            "بَيْتُ زُهَيْرٍ مِثْلُ بَيْتِ نَدِيمٍ.",
+            "بَيْتُ زُهَيْرٍ مِثْلَ بَيْتِ نَدِيمٍ.",
+            "بَيْتُ زُهَيْرٍ مِثْلُ بَيْتُ نَدِيمٍ."
+          ],
+          "reponse": 0,
+          "explication": "مِثْلُ : attribut au nominatif, suivi d'un génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je ne comprends pas cette affaire. »",
+          "ar": "لَا أَفْهَمُ هَٰذَا …",
+          "choix_ar": [
+            "الْأَمْرَ",
+            "الْأَمْرُ",
+            "الْأَمْرِ"
+          ],
+          "reponse": 0,
+          "explication": "Après هَٰذَا, le nom suit son cas : complément, accusatif."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris trois phrases avec trois des cinq mots nouveaux (جَعَلَ, أَمْرٌ, نَفْسٌ, نَاسٌ, مِثْلٌ).",
+          "modele": [
+            "جَعَلْتُ الْقَلَمَ فِي الْكِيسِ.",
+            "فِي الْمَدِينَةِ نَاسٌ كَثِيرُونَ.",
+            "كِتَابِي مِثْلُ كِتَابِكَ."
+          ],
+          "explication": "Compare : as-tu mis un génitif après مِثْلُ ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "جَعَلَ",
+          "choix": [
+            "mettre, placer ; + inaccompli : se mettre à",
+            "prendre",
+            "donner"
+          ],
+          "reponse": 0,
+          "explication": "جَعَلَ veut dire « mettre, placer ; + inaccompli : se mettre à »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَاسٌ",
+          "choix": [
+            "gens",
+            "chose, affaire",
+            "pareil à, comme"
+          ],
+          "reponse": 0,
+          "explication": "نَاسٌ veut dire « gens »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَفْسٌ",
+          "choix": [
+            "soi-même (pour insister)",
+            "gens",
+            "chose, affaire"
+          ],
+          "reponse": 0,
+          "explication": "نَفْسٌ veut dire « soi-même (pour insister) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مِنْ",
+          "choix": [
+            "de, depuis (point de départ)",
+            "dans",
+            "sur"
+          ],
+          "reponse": 0,
+          "explication": "مِنْ veut dire « de, depuis (point de départ) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَلِمَ",
+          "choix": [
+            "savoir, connaître (une chose)",
+            "faire, travailler",
+            "voir"
+          ],
+          "reponse": 0,
+          "explication": "عَلِمَ veut dire « savoir, connaître (une chose) »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a mis le livre dans le sac. »",
+          "ar": "جَعَلَ بَاسِمٌ … فِي الْكِيسِ.",
+          "choix_ar": [
+            "الْكِتَابَ",
+            "الْكِتَابُ",
+            "الْكِتَابِ"
+          ],
+          "reponse": 0,
+          "explication": "Complément direct : accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Hāla a écrit la lettre elle-même. »",
+          "ar": "كَتَبَتْ هَالَةُ الرِّسَالَةَ …",
+          "choix_ar": [
+            "بِنَفْسِهَا",
+            "بِنَفْسِهِ",
+            "نَفْسُهُ"
+          ],
+          "reponse": 0,
+          "explication": "Hāla : féminin, بِنَفْسِهَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « mon livre est comme ton livre »",
+          "ar": "كِتَابِي … كِتَابِكَ",
+          "choix_ar": [
+            "مِثْلُ",
+            "مِثْلَ",
+            "مِثْلِ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut : nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Selon le Corpus, lequel est le plus fréquent ?",
+          "choix": [
+            "جَعَلَ (340 fois)",
+            "مِثْلٌ (75 fois)",
+            "أَخٌ (75 fois)"
+          ],
+          "reponse": 0,
+          "explication": "Fréquences du Quranic Arabic Corpus."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَمَكَةٌ",
+          "choix": [
+            "poisson",
+            "filet",
+            "étang"
+          ],
+          "reponse": 0,
+          "explication": "سَمَكَةٌ veut dire « poisson ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَصْلٌ",
+          "choix": [
+            "section (d'un livre)",
+            "(dans un livre) chapitre",
+            "différence"
+          ],
+          "reponse": 0,
+          "explication": "فَصْلٌ veut dire « section (d'un livre) ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Vocalise : « في النهر » (dans la rivière).",
+          "ar": "فِي …",
+          "choix_ar": [
+            "النَّهْرِ",
+            "النَّهْرُ",
+            "النَّهْرَ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : génitif.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu as fait le bilan des mots les plus fréquents du Corpus et appris cinq mots de plus : جَعَلَ, أَمْرٌ, نَفْسٌ (soi-même), نَاسٌ, مِثْلٌ.",
+      "suite": "Dernière leçon, au Belvédère : ce que tu sais faire, et comment poursuivre."
+    }
+  ]
+}
