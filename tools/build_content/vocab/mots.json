@@ -316,7 +316,8 @@
    "source_sens": "rédigé par IA",
    "genre": "m",
    "pluriel": "أَسْمَاءٌ",
-   "lemme": "{som"
+   "lemme": "{som",
+   "remarque": "en grammaire, اسْمٌ veut aussi dire « nom » (vu en 5.14)"
   },
   {
    "id": "hal",
@@ -2607,7 +2608,8 @@
     "ar": "الْحَرْفُ صَغِيرٌ.",
     "fr": "La lettre est petite."
    },
-   "theme": "savoir"
+   "theme": "savoir",
+   "remarque": "en grammaire, حَرْفٌ veut aussi dire « particule » (vu en 5.14)"
   },
   {
    "id": "satr",
@@ -11736,91 +11738,25 @@
    "theme": "savoir"
   },
   {
-   "id": "ism_gram",
-   "ar": "اسْمٌ",
-   "translit": "ismun",
-   "fr": "(en grammaire) nom",
+   "id": "fasl",
+   "ar": "فَصْلٌ",
+   "translit": "faṣlun",
+   "fr": "section (d'un livre)",
    "nature": "nom",
-   "lecon": "sens-14",
+   "lecon": "sens-16",
    "source_sens": "rédigé par IA",
    "genre": "m",
-   "lemme": "{som",
+   "racine": "fSl",
    "fige": true,
    "formes": [
-    "الِاسْمُ"
+    "الْفَصْلُ",
+    "الْفَصْلِ"
    ],
    "exemple": {
-    "ar": "« كِتَابٌ » اسْمٌ.",
-    "fr": "« kitābun » est un nom."
+    "ar": "فِي هَٰذَا الْفَصْلِ كَلِمَاتٌ صَعْبَةٌ.",
+    "fr": "Dans cette section, il y a des mots difficiles."
    },
-   "remarque": "sens de grammaire ; pour les grammairiens arabes, l'adjectif, le pronom et le démonstratif sont aussi des noms",
-   "theme": "ecriture"
-  },
-  {
-   "id": "harf_gram",
-   "ar": "حَرْفٌ",
-   "translit": "ḥarfun",
-   "fr": "(en grammaire) particule",
-   "nature": "nom",
-   "lecon": "sens-14",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "Hrf",
-   "exemple": {
-    "ar": "« فِي » حَرْفٌ.",
-    "fr": "« fī » est une particule."
-   },
-   "remarque": "sens de grammaire ; ailleurs, حَرْفٌ veut dire « lettre » (de l'alphabet)",
-   "theme": "ecriture"
-  },
-  {
-   "id": "naat",
-   "ar": "نَعْتٌ",
-   "translit": "naʿtun",
-   "fr": "(en grammaire) adjectif qui suit un nom",
-   "nature": "nom",
-   "lecon": "sens-14",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "exemple": {
-    "ar": "« طَوِيلَةً » نَعْتٌ.",
-    "fr": "« ṭawīlatan » est un adjectif qui qualifie le nom."
-   },
-   "remarque": "il suit le nom qu'il qualifie en cas, genre, nombre et article ; on dit aussi صِفَةٌ",
-   "theme": "ecriture"
-  },
-  {
-   "id": "zarf",
-   "ar": "ظَرْفٌ",
-   "translit": "ẓarfun",
-   "fr": "(en grammaire) complément de temps ou de lieu",
-   "nature": "nom",
-   "lecon": "sens-14",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "exemple": {
-    "ar": "« أَمَامَ » ظَرْفٌ.",
-    "fr": "« amāma » est un complément de lieu."
-   },
-   "remarque": "à l'accusatif : صَبَاحًا (le matin), أَمَامَ (devant)",
-   "theme": "ecriture"
-  },
-  {
-   "id": "mudaf_ilayh",
-   "ar": "مُضَافٌ إِلَيْهِ",
-   "translit": "muḍāfun ilayhi",
-   "fr": "(en grammaire) second nom de l'iḍāfa",
-   "nature": "nom",
-   "lecon": "sens-14",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "Dyf",
-   "fige": true,
-   "exemple": {
-    "ar": "فِي « كِتَابُ نَدِيمٍ »، « نَدِيمٍ » مُضَافٌ إِلَيْهِ.",
-    "fr": "Dans « le livre de Nadīm », « Nadīm » est le second nom de l'iḍāfa."
-   },
-   "remarque": "toujours au génitif ; même racine que ضَيْفٌ (hôte) : la racine ne suffit pas pour le sens",
+   "remarque": "un livre ancien se divise en chapitres (بَابٌ) et en sections (فَصْلٌ) ; dans le Corpus, la racine a d'autres emplois (séparer ; décision) : la racine ne suffit pas pour le sens",
    "theme": "ecriture"
   },
   {
@@ -11933,25 +11869,91 @@
    "theme": "ecriture"
   },
   {
-   "id": "fasl",
-   "ar": "فَصْلٌ",
-   "translit": "faṣlun",
-   "fr": "section (d'un livre)",
+   "id": "ism_gram",
+   "ar": "اسْمٌ",
+   "translit": "ismun",
+   "fr": "(en grammaire) nom",
    "nature": "nom",
-   "lecon": "sens-16",
+   "lecon": "sens-14",
    "source_sens": "rédigé par IA",
    "genre": "m",
-   "racine": "fSl",
+   "lemme": "{som",
    "fige": true,
    "formes": [
-    "الْفَصْلُ",
-    "الْفَصْلِ"
+    "الِاسْمُ"
    ],
    "exemple": {
-    "ar": "فِي هَٰذَا الْفَصْلِ كَلِمَاتٌ صَعْبَةٌ.",
-    "fr": "Dans cette section, il y a des mots difficiles."
+    "ar": "« كِتَابٌ » اسْمٌ.",
+    "fr": "« kitābun » est un nom."
    },
-   "remarque": "un livre ancien se divise en chapitres (بَابٌ) et en sections (فَصْلٌ) ; dans le Corpus, la racine a d'autres emplois (séparer ; décision) : la racine ne suffit pas pour le sens",
+   "remarque": "sens de grammaire ; pour les grammairiens arabes, l'adjectif, le pronom et le démonstratif sont aussi des noms",
+   "theme": "ecriture"
+  },
+  {
+   "id": "harf_gram",
+   "ar": "حَرْفٌ",
+   "translit": "ḥarfun",
+   "fr": "(en grammaire) particule",
+   "nature": "nom",
+   "lecon": "sens-14",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Hrf",
+   "exemple": {
+    "ar": "« فِي » حَرْفٌ.",
+    "fr": "« fī » est une particule."
+   },
+   "remarque": "sens de grammaire ; ailleurs, حَرْفٌ veut dire « lettre » (de l'alphabet)",
+   "theme": "ecriture"
+  },
+  {
+   "id": "naat",
+   "ar": "نَعْتٌ",
+   "translit": "naʿtun",
+   "fr": "(en grammaire) adjectif qui suit un nom",
+   "nature": "nom",
+   "lecon": "sens-14",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "« طَوِيلَةً » نَعْتٌ.",
+    "fr": "« ṭawīlatan » est un adjectif qui qualifie le nom."
+   },
+   "remarque": "il suit le nom qu'il qualifie en cas, genre, nombre et article ; on dit aussi صِفَةٌ",
+   "theme": "ecriture"
+  },
+  {
+   "id": "zarf",
+   "ar": "ظَرْفٌ",
+   "translit": "ẓarfun",
+   "fr": "(en grammaire) complément de temps ou de lieu",
+   "nature": "nom",
+   "lecon": "sens-14",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "« أَمَامَ » ظَرْفٌ.",
+    "fr": "« amāma » est un complément de lieu."
+   },
+   "remarque": "à l'accusatif : صَبَاحًا (le matin), أَمَامَ (devant)",
+   "theme": "ecriture"
+  },
+  {
+   "id": "mudaf_ilayh",
+   "ar": "مُضَافٌ إِلَيْهِ",
+   "translit": "muḍāfun ilayhi",
+   "fr": "(en grammaire) second nom de l'iḍāfa",
+   "nature": "nom",
+   "lecon": "sens-14",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Dyf",
+   "fige": true,
+   "exemple": {
+    "ar": "فِي « كِتَابُ نَدِيمٍ »، « نَدِيمٍ » مُضَافٌ إِلَيْهِ.",
+    "fr": "Dans « le livre de Nadīm », « Nadīm » est le second nom de l'iḍāfa."
+   },
+   "remarque": "toujours au génitif ; même racine que ضَيْفٌ (hôte) : la racine ne suffit pas pour le sens",
    "theme": "ecriture"
   }
  ]

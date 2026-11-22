@@ -4,7 +4,7 @@
   "ordre": 14,
   "format": 3,
   "titre": "Analyser une phrase mot par mot",
-  "objectif": "Pour chaque mot d'une phrase construite, donner sa racine, son schème, sa nature et sa fonction.",
+  "objectif": "Pour chaque mot d'une phrase construite, donner sa racine, sa nature et sa fonction.",
   "statut": "ia_non_verifie",
   "lieu": "table_grammairiens",
   "maitre": "hazim",
@@ -133,7 +133,7 @@
     {
       "type": "regle",
       "titre": "Trois natures",
-      "texte": "Pour les grammairiens arabes, chaque mot est un nom (اسْمٌ), un verbe (فِعْلٌ) ou une particule (حَرْفٌ), comme le dit Ibn Mālik. L'adjectif, le pronom et le démonstratif sont des noms.",
+      "texte": "Pour les grammairiens arabes, chaque mot est un nom (اسْمٌ), un verbe (فِعْلٌ) ou une particule (حَرْفٌ), comme le dit Ibn Mālik dans le vers de l'Alfiyya déjà lu. L'adjectif, le pronom et le démonstratif sont des noms.",
       "exemples": [
         "كِتَابٌ",
         "كَتَبَ",
@@ -160,20 +160,20 @@
       ],
       "question": {
         "type": "qcm",
-        "consigne": "Dans cette phrase, « بَاسِمٌ » a pour racine…",
+        "consigne": "Dans la grille, que note-t-on pour « بَاسِمٌ » ?",
         "choix": [
-          "aucune à donner : c'est un nom propre",
-          "ب س م",
-          "ك ت ب"
+          "seulement « nom propre » (ni racine ni schème)",
+          "la racine ك ت ب",
+          "le schème فِعَالٌ"
         ],
         "reponse": 0,
-        "explication": "Un nom propre : « nom propre », sans racine à analyser."
+        "explication": "Le prénom vient bien de ب س م (sourire), mais dans la grille on écrit seulement « nom propre »."
       }
     },
     {
       "type": "regle",
       "titre": "Trois fonctions nouvelles",
-      "texte": "نَعْتٌ : l'adjectif, qui suit le cas de son nom. ظَرْفٌ : le complément de temps ou de lieu, à l'accusatif (صَبَاحًا, أَمَامَ) ; مُضَافٌ إِلَيْهِ : le second nom de l'iḍāfa, au génitif.",
+      "texte": "نَعْتٌ : l'adjectif, qui suit son nom en cas, genre, nombre et article ; ظَرْفٌ : le complément de temps ou de lieu, à l'accusatif (صَبَاحًا, أَمَامَ) ; مُضَافٌ إِلَيْهِ : le second nom de l'iḍāfa, au génitif.",
       "exemples": [
         "جَلَسَ زُهَيْرٌ فِي الْحَدِيقَةِ صَبَاحًا.",
         "قَرَأَتْ هَالَةُ كِتَابَ نَدِيمٍ."
@@ -300,6 +300,17 @@
           "explication": "كِتَابٌ : nom."
         },
         {
+          "type": "qcm",
+          "consigne": "Dans la grille, la racine (أَصْلٌ) de « رِسَالَةً » est…",
+          "choix": [
+            "ر س ل",
+            "ر س ة",
+            "س ل ة"
+          ],
+          "reponse": 0,
+          "explication": "On enlève la voyelle longue et le ة : ر س ل."
+        },
+        {
           "type": "completer",
           "consigne": "Complète : « Bāsim a écrit une longue lettre » (accorde l'adjectif).",
           "ar": "كَتَبَ بَاسِمٌ رِسَالَةً …",
@@ -382,7 +393,7 @@
         },
         {
           "type": "ecrire",
-          "consigne": "Écris une phrase avec un verbe, un sujet, un complément et un adjectif, puis donne la fonction de chaque mot en français.",
+          "consigne": "Écris une phrase avec un verbe, un sujet, un complément et un adjectif, puis donne la fonction de chaque mot en arabe.",
           "modele": [
             "كَتَبَ زُهَيْرٌ رِسَالَةً قَصِيرَةً.",
             "« كَتَبَ » فِعْلٌ، وَ« زُهَيْرٌ » فَاعِلٌ.",

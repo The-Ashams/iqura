@@ -139,8 +139,8 @@
     },
     {
       "type": "regle",
-      "titre": "Les quatre cas",
-      "texte": "Pour les noms : مَرْفُوعٌ (-u), مَنْصُوبٌ (-a), مَجْرُورٌ (-i). Pour l'inaccompli : مَرْفُوعٌ, مَنْصُوبٌ après أَنْ ou لَنْ, مَجْزُومٌ après لَمْ.",
+      "titre": "Les quatre marques de l'iʿrāb",
+      "texte": "Pour les noms : مَرْفُوعٌ (-u), مَنْصُوبٌ (-a), مَجْرُورٌ (-i). Pour l'inaccompli : مَرْفُوعٌ sans particule, مَنْصُوبٌ après أَنْ ou لَنْ, مَجْزُومٌ après لَمْ.",
       "exemples": [
         "زُهَيْرٌ",
         "الرِّسَالَةَ",
@@ -203,7 +203,7 @@
     {
       "type": "regle",
       "titre": "Deux analyses",
-      "texte": "Quand deux analyses sont possibles, les grammairiens disent فِيهِ وَجْهَانِ ; IQURA les montre sans choisir. Après وَ, le mot prend le cas du mot auquel il est relié.",
+      "texte": "Quand deux analyses sont possibles, les grammairiens disent فِيهِ وَجْهَانِ ; IQURA les montre sans choisir.",
       "exemples": [
         "فِي هَٰذِهِ الْكَلِمَةِ وَجْهَانِ."
       ],
@@ -217,6 +217,26 @@
         ],
         "reponse": 0,
         "explication": "وَجْهٌ : manière d'analyser."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le وَ qui relie",
+      "texte": "Après le وَ qui relie deux mots (« et »), le second prend le cas du premier. Les autres وَ (début de phrase, circonstance) ne relient pas deux mots.",
+      "exemples": [
+        "وَصَلَ زُهَيْرٌ وَبَاسِمٌ.",
+        "رَأَيْتُ زُهَيْرًا وَبَاسِمًا."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans رَأَيْتُ زُهَيْرًا وَبَاسِمًا, « بَاسِمًا » est à l'accusatif parce que…",
+        "choix": [
+          "il est relié par وَ à زُهَيْرًا, complément",
+          "il est sujet",
+          "il suit فِي"
+        ],
+        "reponse": 0,
+        "explication": "Il prend le cas du mot auquel il est relié."
       }
     },
     {
@@ -318,7 +338,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « la lettre : complément au cas direct. »",
+          "consigne": "Complète : « la lettre : complément à l'accusatif. »",
           "ar": "« الرِّسَالَةَ » مَفْعُولٌ بِهِ …",
           "choix_ar": [
             "مَنْصُوبٌ",
@@ -383,7 +403,7 @@
       "exercices": [
         {
           "type": "traduire",
-          "consigne": "Comment dit-on « Zuhayr frappa à la porte d'un coup (complément absolu). » ?",
+          "consigne": "Comment dit-on « Zuhayr frappa bel et bien à la porte (complément absolu, d'insistance). » ?",
           "choix_ar": [
             "طَرَقَ زُهَيْرٌ الْبَابَ طَرْقًا.",
             "طَرَقَ زُهَيْرٌ الْبَابَ طَرْقٌ.",
