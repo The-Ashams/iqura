@@ -12063,28 +12063,6 @@
    "theme": "voyage"
   },
   {
-   "id": "fasl",
-   "ar": "فَصْلٌ",
-   "translit": "faṣlun",
-   "fr": "section (d'un livre)",
-   "nature": "nom",
-   "lecon": "sens-16",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "fSl",
-   "fige": true,
-   "formes": [
-    "الْفَصْلُ",
-    "الْفَصْلِ"
-   ],
-   "exemple": {
-    "ar": "فِي هَٰذَا الْفَصْلِ كَلِمَاتٌ صَعْبَةٌ.",
-    "fr": "Dans cette section, il y a des mots difficiles."
-   },
-   "remarque": "un livre ancien se divise en chapitres (بَابٌ) et en sections (فَصْلٌ) ; dans le Corpus, la racine a d'autres emplois (séparer ; décision) : la racine ne suffit pas pour le sens",
-   "theme": "ecriture"
-  },
-  {
    "id": "thalab",
    "ar": "ثَعْلَبٌ",
    "translit": "ṯaʿlabun",
@@ -12165,6 +12143,28 @@
    },
    "remarque": "la forme en -ayyāʾ désigne souvent un métier ; la racine ne suffit pas pour le sens",
    "theme": "metiers"
+  },
+  {
+   "id": "fasl",
+   "ar": "فَصْلٌ",
+   "translit": "faṣlun",
+   "fr": "section (d'un livre)",
+   "nature": "nom",
+   "lecon": "sens-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "fSl",
+   "fige": true,
+   "formes": [
+    "الْفَصْلُ",
+    "الْفَصْلِ"
+   ],
+   "exemple": {
+    "ar": "فِي هَٰذَا الْفَصْلِ كَلِمَاتٌ صَعْبَةٌ.",
+    "fr": "Dans cette section, il y a des mots difficiles."
+   },
+   "remarque": "un livre ancien se divise en chapitres (بَابٌ) et en sections (فَصْلٌ) ; dans le Corpus, la racine a d'autres emplois (séparer ; décision) : la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
   }
  ]
 }
