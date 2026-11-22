@@ -272,7 +272,7 @@ void main() {
     for (var i = 1; i <= 30; i++) 'fondations-${i.toString().padLeft(2, '0')}',
     for (var i = 1; i <= 32; i++) 'moteur-${i.toString().padLeft(2, '0')}',
     for (var i = 1; i <= 28; i++) 'cite-${i.toString().padLeft(2, '0')}',
-    for (var i = 1; i <= 13; i++) 'sens-${i.toString().padLeft(2, '0')}',
+    for (var i = 1; i <= 20; i++) 'sens-${i.toString().padLeft(2, '0')}',
   ]) {
     testWidgets('$id : jouée de bout en bout, la leçon suivante s’ouvre', (
       tester,
@@ -848,6 +848,54 @@ void main() {
       );
     });
   }
+
+  testWidgets('examen de la région 5 : récit, analyser, vocabulaire, '
+      'remettre en ordre', (tester) async {
+    tester.view.physicalSize = const Size(800, 9000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final exam = contentDb.regionExam(5)!;
+    expect(exam.id, 'examen-r5');
+    expect(exam.place, 'clairiere_impatience');
+    expect(exam.decodingTitle, 'Analyser');
+    expect(exam.decoding, hasLength(20));
+    expect(exam.vocabulary, hasLength(20));
+    await tester.pumpWidget(
+      appWith(DataExamScreen(region: 5, random: Random(5))),
+    );
+    await settle(tester);
+    expect(find.textContaining('vocabulaire fréquent'), findsWidgets);
+    await tapOn(tester, find.text('Commencer'));
+    var graded = 0;
+    var sawAnalyse = false;
+    var sawVocabulary = false;
+    for (var guard = 0; guard < 80; guard++) {
+      if (find.textContaining('· Analyser').evaluate().isNotEmpty) {
+        sawAnalyse = true;
+      }
+      if (find.textContaining('· Vocabulaire').evaluate().isNotEmpty) {
+        sawVocabulary = true;
+      }
+      if (find.byType(QuestionView).evaluate().isNotEmpty) {
+        await answer(tester);
+        graded++;
+      } else {
+        break;
+      }
+    }
+    expect(sawAnalyse, isTrue);
+    expect(sawVocabulary, isTrue);
+    expect(
+      graded,
+      exam.reading.length +
+          exam.decoding.length +
+          exam.vocabulary.length +
+          exam.gradedReplies,
+    );
+    expect(find.textContaining('se dissipe'), findsOneWidget);
+    expect(find.textContaining('Vocabulaire : 20 / 20'), findsOneWidget);
+    expect(LessonProgressRepository(userDb).get('examen-r5').completed, isTrue);
+  });
 
   testWidgets('dictionnaire : parcourir par racine, puis voir ses mots', (
     tester,

@@ -17,7 +17,6 @@
     "زُهَيْرٌ",
     "نَصًّا",
     "وَزْنَهَا",
-    "سَأَدْرُسُ",
     "أَعْرِفُ"
   ],
   "ecrans": [
@@ -91,20 +90,20 @@
         },
         {
           "qui": "hazim",
-          "ar": "هَٰذَا بَابٌ، وَبَعْدَهُ أَبْوَابٌ كَثِيرَةٌ.",
-          "fr": "C'est une porte ; après elle, il y en a beaucoup d'autres."
+          "ar": "هَٰذِهِ بِدَايَةُ الطَّرِيقِ، وَالطَّرِيقُ طَوِيلٌ.",
+          "fr": "C'est le début du chemin, et le chemin est long."
         }
       ],
       "question": {
         "type": "qcm",
         "consigne": "Que dit Ḥāzim ?",
         "choix": [
-          "c'est une porte, beaucoup d'autres suivent",
+          "c'est le début du chemin, et le chemin est long",
           "tout est fini",
           "il faut tout recommencer"
         ],
         "reponse": 0,
-        "explication": "هَٰذَا بَابٌ، وَبَعْدَهُ أَبْوَابٌ كَثِيرَةٌ."
+        "explication": "هَٰذِهِ بِدَايَةُ الطَّرِيقِ، وَالطَّرِيقُ طَوِيلٌ."
       }
     },
     {
@@ -189,6 +188,25 @@
     },
     {
       "type": "regle",
+      "titre": "Des livres rencontrés",
+      "texte": "En chemin, tu as rencontré quelques livres anciens : l'Alfiyya d'Ibn Mālik, la Durrat al-ġawwāṣ d'al-Ḥarīrī, Kalīla wa Dimna traduit par Ibn al-Muqaffaʿ. Ce sont des rencontres, pas des conseils de lecture sur le Coran.",
+      "exemples": [
+        "كِتَابٌ قَدِيمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Les livres anciens rencontrés dans IQURA sont…",
+        "choix": [
+          "des livres de langue et de fables, rencontrés en chemin",
+          "des explications du Coran",
+          "des livres de prière"
+        ],
+        "reponse": 0,
+        "explication": "Grammaire, langue et fables."
+      }
+    },
+    {
+      "type": "regle",
       "titre": "Pour aller plus loin",
       "texte": "IQURA ne t'apprend ni la récitation ni l'explication du Coran, et ne te recommande ni ouvrage ni école. Si tu veux aller plus loin, demande conseil à des enseignants qualifiés, en qui tu as confiance.",
       "exemples": [
@@ -236,7 +254,7 @@
         "« تَعَلَّمْتُ الْحُرُوفَ أَوَّلًا، ثُمَّ الْكَلِمَاتِ. »",
         "« وَقَرَأْتُ كُتُبًا كَثِيرَةً فِي الْمَدِينَةِ، وَكِتَابًا قَدِيمًا فِي الْحَدِيقَةِ. »",
         "« وَهَٰذِهِ مَرْحَلَةٌ جَدِيدَةٌ. »",
-        "« وَبَعْدَ ذَٰلِكَ، سَأَدْرُسُ مَعَ مُعَلِّمٍ. »"
+        "« وَبَعْدَ ذَٰلِكَ، سَأَتَعَلَّمُ مِنْ مُعَلِّمٍ. »"
       ],
       "questions": [
         {
@@ -259,7 +277,7 @@
             "il écrira un dictionnaire"
           ],
           "reponse": 0,
-          "explication": "سَأَدْرُسُ مَعَ مُعَلِّمٍ."
+          "explication": "سَأَتَعَلَّمُ مِنْ مُعَلِّمٍ."
         }
       ]
     },
@@ -328,15 +346,15 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète : « J'étudierai avec un enseignant. »",
-          "ar": "سَأَدْرُسُ مَعَ …",
+          "consigne": "Complète : « J'apprendrai auprès d'un enseignant. »",
+          "ar": "سَأَتَعَلَّمُ مِنْ …",
           "choix_ar": [
             "مُعَلِّمٍ",
             "مُعَلِّمٌ",
             "مُعَلِّمًا"
           ],
           "reponse": 0,
-          "explication": "Après مَعَ : génitif."
+          "explication": "Après مِنْ : génitif."
         }
       ]
     },
@@ -372,7 +390,7 @@
           "modele": [
             "أَسْتَطِيعُ أَنْ أَقْرَأَ نَصًّا قَدِيمًا.",
             "أَعْرِفُ أَصْلَ الْكَلِمَةِ وَوَزْنَهَا.",
-            "سَأَدْرُسُ مَعَ مُعَلِّمٍ."
+            "سَأَتَعَلَّمُ مِنْ مُعَلِّمٍ."
           ],
           "explication": "Ce carnet est à toi : il n'y a pas de note."
         }

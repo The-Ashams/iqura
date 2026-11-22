@@ -421,3 +421,85 @@ Références :
 - /home/user/iqura/tools/build_content/vocab.py (l. 223-227 `DIVINE_NAMES`, l. 244-257 serment)
 - /home/user/iqura/lib/ui/game/grimoire_screen.dart (l. 236-273), /home/user/iqura/lib/features/review/review.dart (l. 322-342), /home/user/iqura/lib/data/content_db/content_database.dart (l. 375-378)
 - /home/user/iqura/assets/content/iqura_content.db
+
+
+---
+
+## Doutes du relecteur tranchés (22/11/2026)
+
+# Décision : doutes du relecteur, Classique avancé 3 (5.14 à 5.20)
+
+Question : sept doutes du relecteur sur les leçons 5.14 à 5.20 (et une coupure en 5.13).
+Stade : région 5, leçons 5.14 à 5.20 ; acquis : régions 1 à 4 et leçons 5.1 à 5.13 (iʿrāb de 3.27, mafʿūl muṭlaq de 4.8, termes cite-06 à cite-25 et sens-02 à sens-13). Les mots بِدَايَةٌ, طَرِيقٌ, طَوِيلٌ et تَعَلَّمَ sont déjà enseignés (vérifié dans `mots.json` ou par le relecteur).
+
+## Décision
+
+**1. Longueur du récit de 5.16 (207 mots) : accepté, à deux conditions.**
+- Dans le plan et le compte rendu, remplacer « 350 à 450 mots » par « environ 200 mots en 4 parties (limite de l'écran de lecture) ».
+- Le récit doit rester la plus longue lecture construite de la région 5 jusque-là. Si une lecture précédente est plus longue, ajouter une 5e partie.
+- Pour l'examen final (partie A), « environ 500 mots » devient un objectif et non un seuil : il faut un récit plus long que celui de 5.16 (5 ou 6 parties), dans les limites du pipeline.
+
+**2. « فَإِذَا الْكِتَابُ الْأَحْمَرُ فِيهِ » : d'accord. Le distracteur « فَإِذَا زُهَيْرٌ وَاقِفًا » est à remplacer.**
+- La phrase du récit est correcte : sujet défini, et فِيهِ pour dire où est le livre. Elle rend aussi la réponse explicite.
+- Le distracteur وَاقِفًا n'est **pas** faux. Les grammairiens classiques admettent « فَإِذَا زَيْدٌ قَائِمًا », avec l'accusatif comme ḥāl, à côté du nominatif. C'est le cœur de la célèbre « question de la guêpe » (al-masʾala al-zunbūriyya). Le relecteur se trompe en le disant « faux sans discussion ».
+- À écrire à la place : **« فَتَحَ بَاسِمٌ الْبَابَ، فَإِذَا زُهَيْرًا وَاقِفٌ. »** Ce sujet à l'accusatif est faux sans discussion.
+- On garde la bonne réponse « فَإِذَا زُهَيْرٌ وَاقِفٌ » et le distracteur « فَإِذَا وَقَفَ زُهَيْرٌ ».
+- Dans l'explication l. 426, « au nominatif » porte désormais sur le nom : écrire « فَإِذَا + nom au nominatif + participe ».
+- Ma liste fermée du plan (« nom + adjectif ou participe ») s'élargit à « nom défini + فِيهِ ».
+
+**3. Schèmes écrits à la main retirés de أَجْوَفُ et صَيَّادٌ : d'accord.**
+- Pour expliquer pourquoi أَجْوَفُ est sans tanwīn, on peut écrire : « sans tanwīn, comme أَحْمَرُ (leçon de la couleur) ». On ne donne pas de schème.
+
+**4. Coupures : d'accord pour les trois.**
+- 5.18 : le deuxième poisson, et « لا تقنط » avec lui.
+- 5.13 : « أَوْ سَاجِدًا ».
+- Chaque coupure est marquée « (…) » et expliquée par une note visible. La note ne doit pas en donner une raison inexacte : « une autre position » (5.13) et « l'histoire du deuxième poisson est omise » (5.18) suffisent et sont honnêtes.
+
+**5. Leçon 5.20 : trois points.**
+- a) Remplacer « سَأَدْرُسُ مَعَ مُعَلِّمٍ » par **« سَأَتَعَلَّمُ مِنْ مُعَلِّمٍ »** aux trois endroits : l. 239 (« وَبَعْدَ ذَٰلِكَ، سَأَتَعَلَّمُ مِنْ مُعَلِّمٍ. »), l. 262 et l. 375. Mettre aussi les tuiles de l'Atelier à jour. Traduction : « J'apprendrai auprès d'un enseignant. »
+- b) Remplacer « هَٰذَا بَابٌ، وَبَعْدَهُ أَبْوَابٌ كَثِيرَةٌ » par **« هَٰذِهِ بِدَايَةُ الطَّرِيقِ، وَالطَّرِيقُ طَوِيلٌ. »**, aux l. 94 et 107. Traduction et bon choix du QCM : « C'est le début du chemin, et le chemin est long. »
+- c) Écran « Pour aller plus loin » : ajouter une phrase avant « ne te recommande ni ouvrage ni école ». « En chemin, tu as rencontré quelques livres anciens : l'*Alfiyya* d'Ibn Mālik, la *Durrat al-ġawwāṣ* d'al-Ḥarīrī, *Kalīla wa Dimna* dans la traduction d'Ibn al-Muqaffaʿ. » Reprendre les titres exactement comme ils s'affichent dans les champs « source » de 4.28, 5.13, 5.17 et 5.18. Le reste de l'écran ne change pas.
+
+**6. Leçons 5.14 et 5.15.**
+- Fiches ism_gram et harf_gram séparées, avec un renvoi sur les fiches اسْمٌ et حَرْفٌ : d'accord. Point technique pour Claude Code : l'indicateur ne doit compter le lemme {som qu'une seule fois.
+- Nature « adjectif » pour مَرْفُوعٌ, مَنْصُوبٌ, مَجْرُورٌ et مَجْزُومٌ : on garde, sans remarque de plus.
+- Distracteur خَبَرٌ pour « الْجَدِيدُ » : à remplacer par **مَفْعُولٌ بِهِ**.
+
+**7. Leçon 5.19, mots religieux : d'accord avec « IQURA ne les enseigne pas, ni en exercice ni au combat ».**
+- On n'ajoute « tu les trouveras dans le dictionnaire, avec une note » que si Claude Code a vérifié qu'ils y sont bien, avec la note « terme à sens religieux ».
+
+## Pourquoi
+
+- **Point 1** : la limite vient de l'écran de lecture et du contrôle des 95 % de mots connus, pas de la langue. 207 mots en 4 parties demandent bien de suivre des reprises et des transitions. Ce qui compte, c'est que le texte soit plus long que les lectures précédentes et que l'examen le soit encore plus.
+- **Point 2** : après le إِذَا de surprise, Sībawayh et les Basriens acceptent le nominatif et l'accusatif. Un QCM ne doit avoir qu'une seule bonne réponse (F4). Un sujet à l'accusatif sans particule qui le gouverne est faux sans discussion.
+- **Point 3** : c'est la règle B3 du plan et la décision du 05/11/2026 (seul le schème calculé par le pipeline est affiché ; aucun pour les racines faibles).
+- **Point 4** : on coupe un texte recopié en le signalant, ce qui suit la méthode des 13 et 14/11/2026. On écarte « لا تقنط » parce que cette tournure est proche d'un verset, et « سَاجِدًا » parce que ce mot est lié à la prière. Ce sont deux choix prudents qui ne déforment pas le propos de l'auteur.
+- **Point 5** : « دَرَسَ مَعَ » est un calque moderne de « étudier avec ». La tournure classique « قَرَأَ / دَرَسَ عَلَى » utilise un sens de عَلَى qui n'a pas été enseigné. « تَعَلَّمَ مِنْ » est classique et n'emploie que des mots connus. Mon interdit « بَاب chapitre : jamais أَبْوَاب » vient du risque de suites coraniques et de la confusion porte / chapitre juste après 5.16. La phrase de remplacement garde l'image et n'emploie que des mots connus. Enfin, citer les livres déjà lus comme des rencontres reste dans le plan (0.d) et se rapproche du cahier §5.9 (« ouvrages et enseignants »), sans rien recommander sur le Coran.
+- **Point 6** : on suit le précédent fil_gram. Dans « الْكِتَابُ الْجَدِيدُ فِي الْبَيْتِ », la lecture « le livre est le nouveau » est théoriquement possible : mieux vaut un distracteur qu'on ne peut pas défendre.
+- **Point 7** : règle d'honnêteté (§3.5) : on n'affirme pas ce qui n'a pas été vérifié.
+
+## Confiance
+
+- **Haute** pour les points 2, 3, 4, 6 et 7, et pour 5a et 5b.
+- **Moyenne** pour le point 1 : la comparaison avec la longueur des lectures précédentes n'est pas mesurée, Claude Code doit la vérifier.
+- **Moyenne** pour 5c : c'est un choix de cohérence avec le cahier, pas une question de langue.
+- Comme toujours, le garde-fou de 3 mots et le contrôle des mots connus doivent passer sur les nouvelles phrases : زُهَيْرًا وَاقِفٌ, سَأَتَعَلَّمُ مِنْ مُعَلِّمٍ, بِدَايَةُ الطَّرِيقِ.
+
+## Résumé pour l'utilisateur
+
+1. Le long récit de 5.16 fait environ 200 mots (limite de l'écran), et l'examen final en aura un plus long.
+2. Un faux choix de 5.16 était en fait juste en arabe classique : il est remplacé par une forme vraiment fausse.
+3. Aucun schème n'est donné pour les mots à racine faible, comme convenu.
+4. Les coupures dans les textes anciens sont gardées et signalées par « (…) ».
+5. En 5.20, « étudier avec » devient la tournure classique « apprendre auprès d'un enseignant ».
+6. En 5.20, l'image de la porte devient « c'est le début du chemin, et le chemin est long ».
+7. La dernière leçon rappelle les livres anciens rencontrés en chemin, sans rien recommander sur le Coran.
+8. En 5.14, un faux choix ambigu de l'exercice d'analyse est remplacé.
+
+Fichiers concernés (aucun modifié) :
+- /home/user/iqura/tools/build_content/lessons/etape5/16-suivre-un-texte-long.json (l. 421-426)
+- /home/user/iqura/tools/build_content/lessons/etape5/20-vers-le-coran.json (l. 94, 107, 193, 239, 262, 375)
+- /home/user/iqura/tools/build_content/lessons/etape5/14-analyser-une-phrase.json (mini-boss, « الْجَدِيدُ »)
+- /home/user/iqura/tools/build_content/lessons/etape5/19-le-vocabulaire-frequent-bilan.json
+- /home/user/iqura/tools/build_content/lessons/etape5/13-mots-proches-sens-distincts.json et 18-lire-un-texte-non-vocalise.json (coupures gardées)
+- À enregistrer dans /home/user/iqura/docs/relectures/decisions-classique-avance-3.md

@@ -1,0 +1,796 @@
+{
+  "id": "examen-r5",
+  "region": 5,
+  "lieu": "clairiere_impatience",
+  "titre": "La Grande Impatience",
+  "statut": "ia_non_verifie",
+  "adversaire": "grande_impatience",
+  "intro": "Dans la Clairière, la Grande Impatience veut que tu lises trop vite et que tu abandonnes. Quatre épreuves pour la calmer : lire un récit, analyser des phrases, revoir les mots fréquents, remettre des phrases en ordre.",
+  "lecture": {
+    "titre": "Bāsim et le vieux livre",
+    "seuil": 0.83,
+    "phrases": [
+      "بَيْنَمَا بَاسِمٌ جَالِسٌ فِي الْحَدِيقَةِ إِذْ وَصَلَ زُهَيْرٌ.",
+      "كَانَ بَاسِمٌ يَنْتَظِرُ زُهَيْرًا، وَكَانَ زُهَيْرٌ يَحْمِلُ كِتَابًا قَدِيمًا كَبِيرًا.",
+      "قَالَ زُهَيْرٌ: « هَلْ قَرَأْتَ الْكِتَابَ الْقَدِيمَ؟ » فَقَالَ بَاسِمٌ: « لَمَّا أَقْرَأْهُ. »",
+      "قَالَ زُهَيْرٌ: « أَلَمْ تَعِدْ بِذَٰلِكَ؟ » فَقَالَ بَاسِمٌ: « بَلَى، وَأُقْسِمُ لَأَقْرَأَنَّهُ الْيَوْمَ. »",
+      "فَلَمَّا انْتَهَى الْحَدِيثُ، فَتَحَ بَاسِمٌ الْكِتَابَ، فَإِذَا الْكَلِمَاتُ صَعْبَةٌ.",
+      "كَانَ الْكِتَابُ عَنْ مُدُنٍ بَعِيدَةٍ وَعَنْ تُجَّارٍ سَافَرُوا إِلَيْهَا.",
+      "وَكَانَ بَاسِمٌ يُحِبُّ السَّفَرَ، وَلَٰكِنَّهُ لَمْ يَقْرَأْ كِتَابًا قَدِيمًا قَبْلَ ذَٰلِكَ.",
+      "إِنْ فِي الْكِتَابِ إِلَّا كَلِمَاتٌ قَلِيلَةٌ يَعْرِفُهَا.",
+      "فَأَخَذَ بَاسِمٌ الْمُعْجَمَ، وَجَعَلَ يَبْحَثُ عَنْ كُلِّ كَلِمَةٍ.",
+      "وَكَتَبَ بَاسِمٌ مَعْنَى كُلِّ كَلِمَةٍ، ثُمَّ قَرَأَ الْجُمْلَةَ مَرَّةً أُخْرَى.",
+      "أَمَّا الْكَلِمَاتُ الْقَدِيمَةُ فَوَجَدَهَا فِي الْمُعْجَمِ، وَأَمَّا أَسْمَاءُ الْمُدُنِ فَلَمْ يَجِدْهَا.",
+      "ثُمَّ وَصَلَتْ هَالَةُ، فَسَأَلَتْ: « هَلْ تَقْرَأُ الْكِتَابَ الْقَدِيمَ؟ »",
+      "قَالَ بَاسِمٌ: « نَعَمْ، الْكِتَابَ أَقْرَأُ، لَا الرِّسَالَةَ! »",
+      "قَالَتْ هَالَةُ: « إِنَّمَا الصَّبْرُ مِفْتَاحُ الْفَهْمِ. »",
+      "وَجَلَسَتْ هَالَةُ مَعَهُ، وَسَاعَدَتْهُ قَلِيلًا.",
+      "ثُمَّ ذَهَبَتْ هَالَةُ إِلَى السُّوقِ، وَبَقِيَ بَاسِمٌ فِي الْحَدِيقَةِ.",
+      "قَرَأَ بَاسِمٌ وَكَتَبَ حَتَّى الْمَسَاءِ، وَلَمْ يَتْرُكِ الْكِتَابَ.",
+      "وَفِي الْمَسَاءِ وَصَلَ نَدِيمٌ، فَرَأَى بَاسِمًا يَكْتُبُ.",
+      "قَالَ نَدِيمٌ: « مَا هَٰذَا؟ » فَقَالَ بَاسِمٌ: « هَٰذِهِ كَلِمَاتُ الْكِتَابِ الْقَدِيمِ، وَمَعْنَى كُلِّ كَلِمَةٍ. »",
+      "فَلَمَّا انْتَهَى النَّهَارُ، كَانَ بَاسِمٌ قَدْ قَرَأَ الْبَابَ الْأَوَّلَ."
+    ],
+    "sans_voyelles": {
+      "palier": "C",
+      "phrases": [
+        "وَفِي الصَّبَاحِ، ذَهَبَ بَاسِمٌ إِلَى زُهَيْرٍ.",
+        "قَالَ بَاسِمٌ: « قَرَأْتُ الْبَابَ الْأَوَّلَ، وَفَهِمْتُ أَكْثَرَهُ. »",
+        "قَالَ زُهَيْرٌ: « أَصَبْتَ! وَغَدًا تَقْرَأُ بَابًا آخَرَ. »",
+        "ثُمَّ أَعْطَى زُهَيْرٌ بَاسِمًا قَلَمًا جَدِيدًا.",
+        "قَالَ زُهَيْرٌ: « الطَّرِيقُ طَوِيلٌ، فَاقْرَأْ كُلَّ يَوْمٍ قَلِيلًا. »"
+      ]
+    },
+    "questions": [
+      {
+        "type": "qcm",
+        "consigne": "Où est Bāsim quand Zuhayr arrive ?",
+        "choix": [
+          "dans le jardin",
+          "au marché",
+          "dans la bibliothèque"
+        ],
+        "reponse": 0,
+        "explication": "بَيْنَمَا بَاسِمٌ جَالِسٌ فِي الْحَدِيقَةِ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Bāsim a-t-il lu le vieux livre au début ?",
+        "choix": [
+          "pas encore",
+          "oui, en entier",
+          "il ne le lira jamais"
+        ],
+        "reponse": 0,
+        "explication": "لَمَّا أَقْرَأْهُ : pas encore."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Pourquoi Bāsim dit-il بَلَى ?",
+        "choix": [
+          "pour répondre « si » à une question négative",
+          "pour dire « non »",
+          "pour poser une question"
+        ],
+        "reponse": 0,
+        "explication": "أَلَمْ تَعِدْ؟ — بَلَى : si."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que promet Bāsim ?",
+        "choix": [
+          "de lire le livre aujourd'hui",
+          "d'écrire une lettre",
+          "d'aller au marché"
+        ],
+        "reponse": 0,
+        "explication": "أُقْسِمُ لَأَقْرَأَنَّهُ الْيَوْمَ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que découvre Bāsim en ouvrant le livre ?",
+        "choix": [
+          "que les mots sont difficiles",
+          "que le livre est vide",
+          "que le livre est neuf"
+        ],
+        "reponse": 0,
+        "explication": "فَإِذَا الْكَلِمَاتُ صَعْبَةٌ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "إِنْ فِي الْكِتَابِ إِلَّا كَلِمَاتٌ قَلِيلَةٌ يَعْرِفُهَا veut dire…",
+        "choix": [
+          "il n'y a dans le livre que peu de mots qu'il connaît",
+          "si le livre a peu de mots",
+          "le livre a beaucoup de mots"
+        ],
+        "reponse": 0,
+        "explication": "إِنْ… إِلَّا : ne… que."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que fait Bāsim avec le dictionnaire ?",
+        "choix": [
+          "il se met à chercher chaque mot",
+          "il le range",
+          "il le donne à Hāla"
+        ],
+        "reponse": 0,
+        "explication": "جَعَلَ يَبْحَثُ : il se mit à chercher."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Quels mots ne trouve-t-il pas dans le dictionnaire ?",
+        "choix": [
+          "les noms des villes",
+          "les mots anciens",
+          "les verbes"
+        ],
+        "reponse": 0,
+        "explication": "وَأَمَّا أَسْمَاءُ الْمُدُنِ فَلَمْ يَجِدْهَا."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Dans الْكِتَابَ أَقْرَأُ، لَا الرِّسَالَةَ, le complément est placé en tête pour…",
+        "choix": [
+          "insister : c'est le livre, pas la lettre",
+          "poser une question",
+          "faire un serment"
+        ],
+        "reponse": 0,
+        "explication": "La mise en tête insiste."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que dit Hāla ?",
+        "choix": [
+          "la patience est la clé de la compréhension",
+          "il faut lire vite",
+          "le livre est facile"
+        ],
+        "reponse": 0,
+        "explication": "إِنَّمَا الصَّبْرُ مِفْتَاحُ الْفَهْمِ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Le lendemain, qu'a fait Bāsim ?",
+        "choix": [
+          "il a lu le premier chapitre et en a compris la plus grande partie",
+          "il n'a rien lu",
+          "il a perdu le livre"
+        ],
+        "reponse": 0,
+        "explication": "قَرَأْتُ الْبَابَ الْأَوَّلَ، وَفَهِمْتُ أَكْثَرَهُ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Que lira Bāsim demain ?",
+        "choix": [
+          "un autre chapitre",
+          "une lettre",
+          "le dictionnaire"
+        ],
+        "reponse": 0,
+        "explication": "وَغَدًا تَقْرَأُ بَابًا آخَرَ."
+      }
+    ]
+  },
+  "decodage": {
+    "titre": "Analyser",
+    "annonce": "analyser des phrases aux tournures classiques",
+    "seuil": 0.8,
+    "mots": [],
+    "questions": [
+      {
+        "type": "qcm",
+        "consigne": "Dans كَتَبَ زُهَيْرٌ رِسَالَةً, « زُهَيْرٌ » est…",
+        "choix": [
+          "فَاعِلٌ مَرْفُوعٌ",
+          "مَفْعُولٌ بِهِ مَنْصُوبٌ",
+          "مُضَافٌ إِلَيْهِ مَجْرُورٌ"
+        ],
+        "reponse": 0,
+        "explication": "Le sujet du verbe, au nominatif."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Dans كَتَبَ زُهَيْرٌ رِسَالَةً, « رِسَالَةً » est…",
+        "choix": [
+          "مَفْعُولٌ بِهِ مَنْصُوبٌ",
+          "فَاعِلٌ مَرْفُوعٌ",
+          "نَعْتٌ"
+        ],
+        "reponse": 0,
+        "explication": "Complément direct, à l'accusatif."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Dans قَرَأَتْ هَالَةُ كِتَابَ نَدِيمٍ, « نَدِيمٍ » est…",
+        "choix": [
+          "مُضَافٌ إِلَيْهِ مَجْرُورٌ",
+          "فَاعِلٌ مَرْفُوعٌ",
+          "ظَرْفٌ"
+        ],
+        "reponse": 0,
+        "explication": "Second nom de l'iḍāfa."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Dans كَانَ الْمَاءُ بَارِدًا, « بَارِدًا » est…",
+        "choix": [
+          "خَبَرُ كَانَ مَنْصُوبٌ",
+          "اسْمُ كَانَ مَرْفُوعٌ",
+          "حَالٌ"
+        ],
+        "reponse": 0,
+        "explication": "L'attribut de كَانَ est à l'accusatif."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Dans إِنَّ الطَّرِيقَ طَوِيلٌ, « الطَّرِيقَ » est…",
+        "choix": [
+          "اسْمُ إِنَّ مَنْصُوبٌ",
+          "خَبَرُ إِنَّ مَرْفُوعٌ",
+          "مَجْرُورٌ"
+        ],
+        "reponse": 0,
+        "explication": "Le nom de إِنَّ est à l'accusatif."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Dans لَمْ يَكْتُبْ نَدِيمٌ, « يَكْتُبْ » est…",
+        "choix": [
+          "مَجْزُومٌ بِلَمْ",
+          "مَنْصُوبٌ بِأَنْ",
+          "مَرْفُوعٌ"
+        ],
+        "reponse": 0,
+        "explication": "Après لَمْ : jussif."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Dans جَلَسَ زُهَيْرٌ صَبَاحًا, « صَبَاحًا » est…",
+        "choix": [
+          "ظَرْفٌ مَنْصُوبٌ",
+          "مَفْعُولٌ بِهِ",
+          "نَعْتٌ"
+        ],
+        "reponse": 0,
+        "explication": "Complément de temps, à l'accusatif."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Dans قَرَأَ بَاسِمٌ كِتَابًا قَدِيمًا, « قَدِيمًا » est…",
+        "choix": [
+          "نَعْتٌ",
+          "حَالٌ",
+          "خَبَرٌ"
+        ],
+        "reponse": 0,
+        "explication": "Il suit كِتَابًا : même cas, indéfini."
+      },
+      {
+        "type": "qcm",
+        "consigne": "أُقْسِمُ لَأَكْتُبَنَّ الرِّسَالَةَ : la partie لَأَكْتُبَنَّ الرِّسَالَةَ est…",
+        "choix": [
+          "la réponse du serment",
+          "le serment par Dieu",
+          "une question"
+        ],
+        "reponse": 0,
+        "explication": "Verbe de serment, puis sa réponse."
+      },
+      {
+        "type": "qcm",
+        "consigne": "إِنْ بَاسِمٌ إِلَّا طَالِبٌ veut dire…",
+        "choix": [
+          "Bāsim n'est qu'un étudiant",
+          "si Bāsim est étudiant",
+          "Bāsim n'est pas étudiant"
+        ],
+        "reponse": 0,
+        "explication": "إِنْ… إِلَّا : ne… que."
+      },
+      {
+        "type": "qcm",
+        "consigne": "إِنَّمَا الْكِتَابُ فِي الْكِيسِ veut dire…",
+        "choix": [
+          "le livre n'est que dans le sac (et nulle part ailleurs)",
+          "le livre n'est pas dans le sac",
+          "est-ce que le livre est dans le sac ?"
+        ],
+        "reponse": 0,
+        "explication": "إِنَّمَا : restriction."
+      },
+      {
+        "type": "qcm",
+        "consigne": "أَلَيْسَ هَٰذَا كِتَابَكَ؟ est une question qui…",
+        "choix": [
+          "affirme : « c'est bien ton livre »",
+          "demande vraiment",
+          "nie"
+        ],
+        "reponse": 0,
+        "explication": "La question qui affirme."
+      },
+      {
+        "type": "qcm",
+        "consigne": "لَمَّا يَصِلْ بَاسِمٌ veut dire…",
+        "choix": [
+          "Bāsim n'est pas encore arrivé",
+          "quand Bāsim est arrivé",
+          "Bāsim n'arrivera pas"
+        ],
+        "reponse": 0,
+        "explication": "لَمَّا + jussif : pas encore."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Dans الرِّسَالَةَ كَتَبْتُ، لَا الْكِتَابَ, la mise en tête de الرِّسَالَةَ…",
+        "choix": [
+          "insiste sur la lettre",
+          "change le sens du verbe",
+          "en fait le sujet"
+        ],
+        "reponse": 0,
+        "explication": "Taqdīm : insistance."
+      },
+      {
+        "type": "qcm",
+        "consigne": "« أَيْنَ بَاسِمٌ؟ — فِي السُّوقِ. » Le mot sous-entendu dans la réponse est…",
+        "choix": [
+          "هُوَ",
+          "أَنَا",
+          "كَانَ"
+        ],
+        "reponse": 0,
+        "explication": "هُوَ فِي السُّوقِ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "« جَلَسَ الطَّالِبُ يَكْتُبُ. يَا أَيُّهَا الطَّالِبُ، أَنْتَ تَعِبٌ! » On passe…",
+        "choix": [
+          "de « il » à « tu » pour la même personne",
+          "de « je » à « il »",
+          "d'une personne à une autre"
+        ],
+        "reponse": 0,
+        "explication": "Un changement de personne."
+      },
+      {
+        "type": "qcm",
+        "consigne": "لَوْلَا انْتَظَرْتَ بَاسِمًا! exprime…",
+        "choix": [
+          "un reproche : pourquoi ne l'as-tu pas attendu ?",
+          "une condition",
+          "un serment"
+        ],
+        "reponse": 0,
+        "explication": "لَوْلَا + passé : reproche."
+      },
+      {
+        "type": "qcm",
+        "consigne": "La racine (أَصْلٌ) de اسْتَقْبَلَ est…",
+        "choix": [
+          "ق ب ل",
+          "س ت ق",
+          "ت ق ب"
+        ],
+        "reponse": 0,
+        "explication": "On enlève اسْتَـ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "La forme de تَفَكَّرَ est…",
+        "choix": [
+          "V",
+          "II",
+          "X"
+        ],
+        "reponse": 0,
+        "explication": "تَفَعَّلَ."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Pour les grammairiens arabes, « فِي » est…",
+        "choix": [
+          "un حَرْفٌ (particule)",
+          "un اسْمٌ",
+          "un فِعْلٌ"
+        ],
+        "reponse": 0,
+        "explication": "Une particule."
+      }
+    ]
+  },
+  "vocabulaire": {
+    "seuil": 0.8,
+    "questions": [
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "قَالَ",
+        "choix": [
+          "il a dit",
+          "il a vu",
+          "il a écrit"
+        ],
+        "reponse": 0,
+        "explication": "قَالَ veut dire « il a dit »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "كَانَ",
+        "choix": [
+          "être (au passé)",
+          "avoir",
+          "faire"
+        ],
+        "reponse": 0,
+        "explication": "كَانَ veut dire « être (au passé) »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "عَلِمَ",
+        "choix": [
+          "savoir, connaître (une chose)",
+          "faire, travailler",
+          "voir"
+        ],
+        "reponse": 0,
+        "explication": "عَلِمَ veut dire « savoir, connaître (une chose) »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "يَوْمٌ",
+        "choix": [
+          "jour",
+          "nuit",
+          "mois"
+        ],
+        "reponse": 0,
+        "explication": "يَوْمٌ veut dire « jour »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "أَرْضٌ",
+        "choix": [
+          "terre, sol",
+          "ciel",
+          "mer"
+        ],
+        "reponse": 0,
+        "explication": "أَرْضٌ veut dire « terre, sol »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "جَعَلَ",
+        "choix": [
+          "mettre, placer ; + inaccompli : se mettre à",
+          "prendre",
+          "donner (à quelqu'un, quelque chose)"
+        ],
+        "reponse": 0,
+        "explication": "جَعَلَ veut dire « mettre, placer ; + inaccompli : se mettre à »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "نَاسٌ",
+        "choix": [
+          "gens",
+          "chose, affaire",
+          "pareil à, comme"
+        ],
+        "reponse": 0,
+        "explication": "نَاسٌ veut dire « gens »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "شَيْءٌ",
+        "choix": [
+          "chose ; (avec une négation) rien",
+          "partie",
+          "personne"
+        ],
+        "reponse": 0,
+        "explication": "شَيْءٌ veut dire « chose ; (avec une négation) rien »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "كِتَابٌ",
+        "choix": [
+          "livre ; écrit",
+          "lettre",
+          "plume"
+        ],
+        "reponse": 0,
+        "explication": "كِتَابٌ veut dire « livre ; écrit »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "قَبْلَ",
+        "choix": [
+          "avant",
+          "après",
+          "avec"
+        ],
+        "reponse": 0,
+        "explication": "قَبْلَ veut dire « avant »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "بَعْدَ",
+        "choix": [
+          "après",
+          "avant",
+          "chez, auprès de"
+        ],
+        "reponse": 0,
+        "explication": "بَعْدَ veut dire « après »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "سَمَاءٌ",
+        "choix": [
+          "ciel",
+          "mer",
+          "lune"
+        ],
+        "reponse": 0,
+        "explication": "سَمَاءٌ veut dire « ciel »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "عَمِلَ",
+        "choix": [
+          "faire, travailler",
+          "savoir, connaître (une chose)",
+          "manger"
+        ],
+        "reponse": 0,
+        "explication": "عَمِلَ veut dire « faire, travailler »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "رَأَى",
+        "choix": [
+          "voir",
+          "entendre",
+          "dire"
+        ],
+        "reponse": 0,
+        "explication": "رَأَى veut dire « voir »."
+      },
+      {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "وَجَدَ",
+        "choix": [
+          "trouver",
+          "perdre",
+          "porter"
+        ],
+        "reponse": 0,
+        "explication": "وَجَدَ veut dire « trouver »."
+      },
+      {
+        "type": "traduire",
+        "consigne": "Comment dit-on « il a dit » ?",
+        "choix_ar": [
+          "قَالَ",
+          "كَانَ",
+          "رَأَى"
+        ],
+        "reponse": 0,
+        "explication": "قَالَ : il a dit."
+      },
+      {
+        "type": "traduire",
+        "consigne": "Comment dit-on « jour » ?",
+        "choix_ar": [
+          "يَوْمٌ",
+          "لَيْلٌ",
+          "شَهْرٌ"
+        ],
+        "reponse": 0,
+        "explication": "يَوْمٌ : jour."
+      },
+      {
+        "type": "traduire",
+        "consigne": "Comment dit-on « gens » ?",
+        "choix_ar": [
+          "نَاسٌ",
+          "أَمْرٌ",
+          "مِثْلٌ"
+        ],
+        "reponse": 0,
+        "explication": "نَاسٌ : gens."
+      },
+      {
+        "type": "traduire",
+        "consigne": "Comment dit-on « trouver » ?",
+        "choix_ar": [
+          "وَجَدَ",
+          "أَخَذَ",
+          "جَعَلَ"
+        ],
+        "reponse": 0,
+        "explication": "وَجَدَ : trouver."
+      },
+      {
+        "type": "traduire",
+        "consigne": "Comment dit-on « terre, sol » ?",
+        "choix_ar": [
+          "أَرْضٌ",
+          "سَمَاءٌ",
+          "بَحْرٌ"
+        ],
+        "reponse": 0,
+        "explication": "أَرْضٌ : terre, sol."
+      }
+    ]
+  },
+  "ecoute": {
+    "seuil": 0.66,
+    "questions": [
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "لَمَّا أَقْرَأْهُ.",
+        "choix": [
+          "Je ne l'ai pas encore lu.",
+          "Je l'ai lu.",
+          "Je le lirai."
+        ],
+        "reponse": 0,
+        "explication": "لَمَّا + jussif : pas encore."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "بَلَى، فَهِمْتُ.",
+        "choix": [
+          "Si, j'ai compris.",
+          "Non, je n'ai pas compris.",
+          "Est-ce que tu as compris ?"
+        ],
+        "reponse": 0,
+        "explication": "بَلَى : si."
+      },
+      {
+        "type": "qcm",
+        "consigne": "Écoute. Que veut dire cette phrase ?",
+        "audio": "الْكِتَابَ أَقْرَأُ.",
+        "choix": [
+          "C'est le livre que je lis.",
+          "Le livre est lu.",
+          "Je n'ai pas lu le livre."
+        ],
+        "reponse": 0,
+        "explication": "Mise en tête : insistance."
+      }
+    ]
+  },
+  "reponses": {
+    "seuil": 0.8,
+    "questions": [
+      {
+        "type": "ordonner",
+        "consigne": "Zuhayr demande si tu as lu le livre. Réponds « pas encore » : لَمَّا, puis le verbe « je l'ai lu ».",
+        "replique": {
+          "qui": "zuhayr",
+          "ar": "هَلْ قَرَأْتَ الْكِتَابَ؟"
+        },
+        "tuiles": [
+          "لَمَّا",
+          "أَقْرَأْهُ",
+          "أَقْرَأُهُ"
+        ],
+        "solution": [
+          "لَمَّا",
+          "أَقْرَأْهُ"
+        ],
+        "explication": "لَمَّا + jussif : أَقْرَأْهُ."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Ḥāzim demande : « N'as-tu pas compris ? » Réponds « Si, j'ai compris la leçon » : بَلَى, puis le verbe, puis « la leçon ».",
+        "replique": {
+          "qui": "hazim",
+          "ar": "أَلَمْ تَفْهَمْ؟"
+        },
+        "tuiles": [
+          "بَلَى،",
+          "فَهِمْتُ",
+          "الدَّرْسَ",
+          "نَعَمْ،",
+          "الدَّرْسُ"
+        ],
+        "solution": [
+          "بَلَى،",
+          "فَهِمْتُ",
+          "الدَّرْسَ"
+        ],
+        "explication": "Après une question négative : بَلَى ; complément à l'accusatif."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Hāla demande ce que tu lis. Réponds en mettant « le livre » en tête : « C'est le livre que je lis ».",
+        "replique": {
+          "qui": "hala",
+          "ar": "مَاذَا تَقْرَأُ؟"
+        },
+        "tuiles": [
+          "الْكِتَابَ",
+          "أَقْرَأُ",
+          "الْكِتَابُ"
+        ],
+        "solution": [
+          "الْكِتَابَ",
+          "أَقْرَأُ"
+        ],
+        "explication": "Complément mis en tête, toujours à l'accusatif."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Bāsim demande ce que contient le sac. Réponds « Il n'y a dans le sac qu'un livre » : إِنْ, puis « dans le sac », puis إِلَّا et « un livre ».",
+        "replique": {
+          "qui": "basim",
+          "ar": "مَاذَا فِي الْكِيسِ؟"
+        },
+        "tuiles": [
+          "إِنْ",
+          "فِي",
+          "الْكِيسِ",
+          "إِلَّا",
+          "كِتَابٌ",
+          "كِتَابًا"
+        ],
+        "solution": [
+          "إِنْ",
+          "فِي",
+          "الْكِيسِ",
+          "إِلَّا",
+          "كِتَابٌ"
+        ],
+        "explication": "إِنْ… إِلَّا ; le sujet mis après reste au nominatif."
+      },
+      {
+        "type": "ordonner",
+        "consigne": "Nūra demande ce que tu as fait. Réponds « J'ai mis le livre dans le sac » : le verbe, puis « le livre », puis « dans le sac ».",
+        "replique": {
+          "qui": "nura",
+          "ar": "مَاذَا فَعَلْتَ؟"
+        },
+        "tuiles": [
+          "جَعَلْتُ",
+          "الْكِتَابَ",
+          "فِي",
+          "الْكِيسِ",
+          "الْكِتَابُ"
+        ],
+        "solution": [
+          "جَعَلْتُ",
+          "الْكِتَابَ",
+          "فِي",
+          "الْكِيسِ"
+        ],
+        "explication": "جَعَلَ : mettre ; complément à l'accusatif."
+      }
+    ]
+  }
+}
