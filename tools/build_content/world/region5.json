@@ -205,7 +205,9 @@
         136,
         40
       ],
-      "lecons": [],
+      "lecons": [
+        16
+      ],
       "scene": "scene_bibliotheque_jardin",
       "sol": 84,
       "tranche_j1a": true,

@@ -1,0 +1,588 @@
+{
+  "id": "sens-16",
+  "etape": 5,
+  "ordre": 16,
+  "format": 3,
+  "titre": "Suivre un texte long",
+  "objectif": "Suivre un récit en quatre parties : dire à quoi renvoie chaque reprise, repérer les transitions et résumer.",
+  "statut": "ia_non_verifie",
+  "lieu": "bibliotheque_jardin",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-15"
+  ],
+  "apercu": [
+    "الْمُفَاجَأَةِ",
+    "حَازِمٌ",
+    "زُهَيْرٌ",
+    "سَمِيرٌ",
+    "بَاسِمٌ",
+    "نَدِيمٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "zuhayr",
+          "texte": "Bienvenue dans la Bibliothèque. Aujourd'hui, un récit plus long, en quatre parties : il faut le suivre sans se perdre."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Regarde les petits mots qui relient les parties, et les pronoms qui reprennent les noms. L'histoire est inventée."
+        }
+      ],
+      "objectif": "Suivre un long récit."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَابٌ",
+          "choix": [
+            "(dans un livre) chapitre",
+            "section (d'un livre)",
+            "phrase"
+          ],
+          "reponse": 0,
+          "explication": "بَابٌ veut dire « (dans un livre) chapitre »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Puis, lorsque la leçon se termina, Bāsim sortit. »",
+          "ar": "… انْتَهَى الدَّرْسُ، خَرَجَ بَاسِمٌ.",
+          "choix_ar": [
+            "فَلَمَّا",
+            "بَيْنَمَا",
+            "إِذْ"
+          ],
+          "reponse": 0,
+          "explication": "فَلَمَّا ouvre l'épisode suivant."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a écrit une longue lettre. »",
+          "ar": "كَتَبَ بَاسِمٌ رِسَالَةً …",
+          "choix_ar": [
+            "طَوِيلَةً",
+            "طَوِيلَةٌ",
+            "طَوِيلٍ"
+          ],
+          "reponse": 0,
+          "explication": "نَعْتٌ : accusatif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "فَتَحْتُ الْبَابَ، فَإِذَا زُهَيْرٌ وَاقِفٌ!",
+          "fr": "J'ai ouvert la porte, et voilà Zuhayr debout !"
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "« فَإِذَا » : هَٰذِهِ كَلِمَةُ الْمُفَاجَأَةِ.",
+          "fr": "« fa-iḏā » : c'est le mot de la surprise."
+        },
+        {
+          "qui": "hazim",
+          "ar": "وَبَعْدَهَا اسْمٌ، لَا فِعْلٌ.",
+          "fr": "Et après lui vient un nom, pas un verbe."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Après فَإِذَا de surprise, on trouve…",
+        "choix": [
+          "un nom",
+          "un verbe au passé",
+          "un serment"
+        ],
+        "reponse": 0,
+        "explication": "فَإِذَا زُهَيْرٌ وَاقِفٌ : un nom, puis un participe."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "fasl"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "فَصْلٌ",
+        "choix": [
+          "section (d'un livre)",
+          "(dans un livre) chapitre",
+          "différence"
+        ],
+        "reponse": 0,
+        "explication": "فَصْلٌ veut dire « section (d'un livre) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La structure",
+      "texte": "Un récit a une ouverture (يُحْكَى أَنَّ, كَانَ), des épisodes (فَلَمَّا, ثُمَّ, بَيْنَمَا et إِذْ) et une fin. Les livres anciens se divisent en chapitres (بَابٌ) et en sections (فَصْلٌ).",
+      "exemples": [
+        "قَرَأَتْ هَالَةُ الْبَابَ الْأَوَّلَ مِنَ الْكِتَابِ.",
+        "فِي هَٰذَا الْفَصْلِ كَلِمَاتٌ صَعْبَةٌ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Un livre ancien se divise en…",
+        "choix": [
+          "chapitres (بَابٌ) et sections (فَصْلٌ)",
+          "versets",
+          "lettres seulement"
+        ],
+        "reponse": 0,
+        "explication": "بَابٌ, puis فَصْلٌ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les reprises",
+      "texte": "Un nom déjà dit revient par un pronom (ـهُ, ـهَا) ou par هَٰذَا ou ذَٰلِكَ + le nom (هَٰذَا التَّاجِرُ). Pour chaque pronom, cherche le nom d'avant qui s'accorde avec lui.",
+      "exemples": [
+        "وَصَلَ تَاجِرٌ إِلَى السُّوقِ. كَانَ هَٰذَا التَّاجِرُ يَبِيعُ الْكُتُبَ، وَكَانَتْ كُتُبُهُ قَدِيمَةً."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans كُتُبُهُ, le ـهُ renvoie à…",
+        "choix": [
+          "التَّاجِرُ",
+          "السُّوقِ",
+          "الْكُتُبَ"
+        ],
+        "reponse": 0,
+        "explication": "Le marchand : ses livres."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les transitions",
+      "texte": "بَعْدَ ذَٰلِكَ (après cela) et عِنْدَ ذَٰلِكَ (à ce moment) relient deux épisodes. فَإِذَا + nom = « et voilà que », la surprise ; ce n'est pas le إِذَا de la condition.",
+      "exemples": [
+        "بَعْدَ ذَٰلِكَ، رَجَعَ زُهَيْرٌ إِلَى الْبَيْتِ.",
+        "فَتَحَ نَدِيمٌ الْكِيسَ، فَإِذَا الدَّرَاهِمُ قَلِيلَةٌ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans فَتَحَ نَدِيمٌ الْكِيسَ، فَإِذَا الدَّرَاهِمُ قَلِيلَةٌ, فَإِذَا veut dire…",
+        "choix": [
+          "et voilà que (surprise)",
+          "si (condition)",
+          "quand (au passé)"
+        ],
+        "reponse": 0,
+        "explication": "La surprise : il y avait peu de dirhams."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Le livre rouge (1) : l'ouverture",
+      "texte": "Récit construit, rédigé par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "يُحْكَى أَنَّ تَاجِرًا اسْمُهُ سَمِيرٌ كَانَ يَبِيعُ الْكُتُبَ فِي سُوقِ دِمَشْقَ.",
+        "كَانَ هَٰذَا التَّاجِرُ يُحِبُّ الْكُتُبَ الْقَدِيمَةَ، وَكَانَتْ كُتُبُهُ كَثِيرَةً.",
+        "وَكَانَ لَهُ صَدِيقٌ اسْمُهُ زُهَيْرٌ، يَكْتُبُ الْكُتُبَ وَيَقْرَؤُهَا."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que vend Samīr ?",
+          "choix": [
+            "des livres",
+            "des chameaux",
+            "des tapis"
+          ],
+          "reponse": 0,
+          "explication": "كَانَ يَبِيعُ الْكُتُبَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans كُتُبُهُ (phrase 2), le ـهُ renvoie à…",
+          "choix": [
+            "هَٰذَا التَّاجِرُ (Samīr)",
+            "زُهَيْرٌ",
+            "السُّوقِ"
+          ],
+          "reponse": 0,
+          "explication": "Les livres du marchand."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le livre rouge (2) : la visite",
+      "texte": "Récit construit, rédigé par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "بَيْنَمَا زُهَيْرٌ جَالِسٌ فِي غُرْفَتِهِ إِذْ وَصَلَ سَمِيرٌ.",
+        "قَالَ سَمِيرٌ: « لَا أَجِدُ كِتَابًا قَدِيمًا مِنْ كُتُبِي. »",
+        "فَقَالَ زُهَيْرٌ: « مَا اسْمُ هَٰذَا الْكِتَابِ؟ »",
+        "قَالَ سَمِيرٌ: « لَا أَذْكُرُ اسْمَهُ، وَلَٰكِنَّهُ كِتَابٌ أَحْمَرُ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où est Zuhayr quand Samīr arrive ?",
+          "choix": [
+            "dans sa chambre",
+            "au marché",
+            "dans le jardin"
+          ],
+          "reponse": 0,
+          "explication": "جَالِسٌ فِي غُرْفَتِهِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans اسْمَهُ (phrase 4), le ـهُ renvoie à…",
+          "choix": [
+            "le livre",
+            "Samīr",
+            "Zuhayr"
+          ],
+          "reponse": 0,
+          "explication": "Il ne se souvient pas du nom du livre."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le livre rouge (3) : la recherche",
+      "texte": "Récit construit, rédigé par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فَلَمَّا انْتَهَى الْحَدِيثُ، خَرَجَ زُهَيْرٌ مَعَ سَمِيرٍ إِلَى السُّوقِ.",
+        "بَحَثَ زُهَيْرٌ عَنِ الْكِتَابِ فِي كُلِّ مَكَانٍ، ثُمَّ فَتَحَ صُنْدُوقًا قَدِيمًا.",
+        "فَإِذَا كِتَابٌ أَحْمَرُ صَغِيرٌ.",
+        "عِنْدَ ذَٰلِكَ، ضَحِكَ سَمِيرٌ. قَالَ سَمِيرٌ: « هَٰذَا كِتَابِي! »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Où Zuhayr trouve-t-il le livre ?",
+          "choix": [
+            "dans un vieux coffre",
+            "dans sa chambre",
+            "sous un palmier"
+          ],
+          "reponse": 0,
+          "explication": "فَتَحَ صُنْدُوقًا قَدِيمًا، فَإِذَا كِتَابٌ أَحْمَرُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel mot marque la surprise ?",
+          "choix": [
+            "فَإِذَا",
+            "ثُمَّ",
+            "فَلَمَّا"
+          ],
+          "reponse": 0,
+          "explication": "فَإِذَا كِتَابٌ أَحْمَرُ صَغِيرٌ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le livre rouge (4) : la fin",
+      "texte": "Récit construit, rédigé par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "بَعْدَ ذَٰلِكَ، رَجَعَ زُهَيْرٌ إِلَى غُرْفَتِهِ.",
+        "وَكَتَبَ هَٰذِهِ الْقِصَّةَ فِي الْفَصْلِ الْأَوَّلِ مِنْ كِتَابٍ جَدِيدٍ.",
+        "ثُمَّ قَالَ زُهَيْرٌ لِبَاسِمٍ: « اقْرَأْ هَٰذَا الْفَصْلَ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'écrit Zuhayr ?",
+          "choix": [
+            "cette histoire, dans la 1re section d'un nouveau livre",
+            "une lettre à Samīr",
+            "un dictionnaire"
+          ],
+          "reponse": 0,
+          "explication": "كَتَبَ هَٰذِهِ الْقِصَّةَ فِي الْفَصْلِ الْأَوَّلِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle transition ouvre la dernière partie ?",
+          "choix": [
+            "بَعْدَ ذَٰلِكَ",
+            "بَيْنَمَا",
+            "يُحْكَى أَنَّ"
+          ],
+          "reponse": 0,
+          "explication": "Après cela."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَصْلٌ",
+          "choix": [
+            "section (d'un livre)",
+            "(dans un livre) chapitre",
+            "contexte"
+          ],
+          "reponse": 0,
+          "explication": "فَصْلٌ veut dire « section (d'un livre) »."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets les quatre parties dans l'ordre (premiers mots).",
+          "tuiles": [
+            "يُحْكَى",
+            "بَيْنَمَا",
+            "فَلَمَّا",
+            "بَعْدَ"
+          ],
+          "solution": [
+            "يُحْكَى",
+            "بَيْنَمَا",
+            "فَلَمَّا",
+            "بَعْدَ"
+          ],
+          "explication": "Ouverture, visite, recherche, fin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nadīm ouvrit la bourse : et voilà qu'il y avait peu de dirhams. »",
+          "ar": "فَتَحَ نَدِيمٌ الْكِيسَ، … الدَّرَاهِمُ قَلِيلَةٌ.",
+          "choix_ar": [
+            "فَإِذَا",
+            "فَلَمَّا",
+            "بَيْنَمَا"
+          ],
+          "reponse": 0,
+          "explication": "La surprise : فَإِذَا + nom."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Après cela, Zuhayr rentra à la maison. »",
+          "ar": "… ذَٰلِكَ، رَجَعَ زُهَيْرٌ إِلَى الْبَيْتِ.",
+          "choix_ar": [
+            "بَعْدَ",
+            "فَإِذَا",
+            "إِذْ"
+          ],
+          "reponse": 0,
+          "explication": "بَعْدَ ذَٰلِكَ : après cela."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète la reprise : « Un marchand arriva ; ce marchand vendait des livres ».",
+          "ar": "وَصَلَ تَاجِرٌ. كَانَ … التَّاجِرُ يَبِيعُ الْكُتُبَ.",
+          "choix_ar": [
+            "هَٰذَا",
+            "هَٰذِهِ",
+            "هُوَ"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذَا + le nom déjà dit."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Hāla a lu le premier chapitre du livre. »",
+          "ar": "قَرَأَتْ هَالَةُ … الْأَوَّلَ مِنَ الْكِتَابِ.",
+          "choix_ar": [
+            "الْبَابَ",
+            "الْبَابُ",
+            "الْبَابِ"
+          ],
+          "reponse": 0,
+          "explication": "Complément direct : accusatif."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim ouvrit la porte, et voilà Zuhayr debout. » ?",
+          "choix_ar": [
+            "فَتَحَ بَاسِمٌ الْبَابَ، فَإِذَا زُهَيْرٌ وَاقِفٌ.",
+            "فَتَحَ بَاسِمٌ الْبَابَ، فَإِذَا وَقَفَ زُهَيْرٌ.",
+            "فَتَحَ بَاسِمٌ الْبَابَ، إِذَا زُهَيْرٌ وَاقِفٌ."
+          ],
+          "reponse": 0,
+          "explication": "فَإِذَا + nom + participe."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Dans cette section, il y a des mots difficiles. »",
+          "ar": "فِي هَٰذَا … كَلِمَاتٌ صَعْبَةٌ.",
+          "choix_ar": [
+            "الْفَصْلِ",
+            "الْفَصْلُ",
+            "الْفَصْلَ"
+          ],
+          "reponse": 0,
+          "explication": "Après هَٰذَا, le nom suit le cas : génitif après فِي."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Résume « Le livre rouge » en trois phrases : le début, la surprise, la fin.",
+          "modele": [
+            "لَا يَجِدُ سَمِيرٌ كِتَابًا أَحْمَرَ.",
+            "يَفْتَحُ زُهَيْرٌ صُنْدُوقًا، فَإِذَا الْكِتَابُ فِيهِ.",
+            "يَكْتُبُ زُهَيْرٌ الْقِصَّةَ فِي كِتَابٍ جَدِيدٍ."
+          ],
+          "explication": "Compare : as-tu gardé l'ordre des parties et la surprise ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَصْلٌ",
+          "choix": [
+            "section (d'un livre)",
+            "(dans un livre) chapitre",
+            "manière d'analyser"
+          ],
+          "reponse": 0,
+          "explication": "فَصْلٌ veut dire « section (d'un livre) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَابٌ",
+          "choix": [
+            "(dans un livre) chapitre",
+            "section (d'un livre)",
+            "phrase"
+          ],
+          "reponse": 0,
+          "explication": "بَابٌ veut dire « (dans un livre) chapitre »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Après cela, Bāsim sortit. »",
+          "ar": "بَعْدَ …، خَرَجَ بَاسِمٌ.",
+          "choix_ar": [
+            "ذَٰلِكَ",
+            "ذَٰلِكِ",
+            "هُوَ"
+          ],
+          "reponse": 0,
+          "explication": "بَعْدَ ذَٰلِكَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nadīm ouvrit la bourse : il y avait peu de dirhams. »",
+          "ar": "فَتَحَ نَدِيمٌ الْكِيسَ، فَإِذَا … قَلِيلَةٌ.",
+          "choix_ar": [
+            "الدَّرَاهِمُ",
+            "الدَّرَاهِمَ",
+            "الدَّرَاهِمِ"
+          ],
+          "reponse": 0,
+          "explication": "Après فَإِذَا : un nom au nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète la reprise : « Le marchand vendait des livres, et ses livres étaient anciens. »",
+          "ar": "كَانَ التَّاجِرُ يَبِيعُ الْكُتُبَ، وَكَانَتْ … قَدِيمَةً.",
+          "choix_ar": [
+            "كُتُبُهُ",
+            "كُتُبُهَا",
+            "كُتُبُكَ"
+          ],
+          "reponse": 0,
+          "explication": "Le pronom renvoie au marchand : ـهُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "فَإِذَا de surprise est suivi…",
+          "choix": [
+            "d'un nom",
+            "d'un verbe au passé",
+            "de لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "فَإِذَا + nom."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Un livre ancien se divise en…",
+          "choix": [
+            "chapitres et sections",
+            "versets",
+            "phrases seulement"
+          ],
+          "reponse": 0,
+          "explication": "بَابٌ, فَصْلٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Hāla a lu le premier chapitre du livre. » ?",
+          "choix_ar": [
+            "قَرَأَتْ هَالَةُ الْبَابَ الْأَوَّلَ مِنَ الْكِتَابِ.",
+            "قَرَأَتْ هَالَةُ الْبَابُ الْأَوَّلُ مِنَ الْكِتَابِ.",
+            "قَرَأَ هَالَةُ الْبَابَ الْأَوَّلَ مِنَ الْكِتَابِ."
+          ],
+          "reponse": 0,
+          "explication": "Complément direct à l'accusatif ; verbe au féminin."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَرْفُوعٌ",
+          "choix": [
+            "(en grammaire) au nominatif ; à l'indicatif",
+            "(en grammaire) au génitif",
+            "(en grammaire) au jussif"
+          ],
+          "reponse": 0,
+          "explication": "مَرْفُوعٌ veut dire « (en grammaire) au nominatif ; à l'indicatif ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Et sa marque de nominatif est la ḍamma. »",
+          "ar": "وَعَلَامَةُ رَفْعِهِ …",
+          "choix_ar": [
+            "الضَّمَّةُ",
+            "الْفَتْحَةُ",
+            "الْكَسْرَةُ"
+          ],
+          "reponse": 0,
+          "explication": "Nominatif : ḍamma.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ظَرْفٌ",
+          "choix": [
+            "(en grammaire) complément de temps ou de lieu",
+            "(en grammaire) particule",
+            "(en grammaire) adjectif qui suit un nom"
+          ],
+          "reponse": 0,
+          "explication": "ظَرْفٌ veut dire « (en grammaire) complément de temps ou de lieu ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu suis un récit long : ses parties, ses transitions (بَعْدَ ذَٰلِكَ, عِنْدَ ذَٰلِكَ, فَإِذَا) et ses reprises (pronoms, هَٰذَا + nom).",
+      "suite": "Prochaine leçon, dans la même Bibliothèque : un vrai texte ancien, avec ses voyelles."
+    }
+  ]
+}
