@@ -310,3 +310,10 @@ Je n'ai trouvé aucun point de la catégorie A dans les quatre fichiers.
 - Le nombre d'occurrences des lemmes (aucun n'est affiché) ; leur présence seule a été confirmée.
 - Le passage du garde-fou `quran_guard.py` : je ne l'ai pas exécuté.
 - Le commentaire d'Ibn ʿAqīl, qui n'a pas été lu (voir Doutes).
+---
+
+# Leçon 5.13, 2e passage (22/11/2026) : Validé avec doutes
+
+Aucun point bloquant ni important. Mineur corrigé (remarque de la fiche قَعَدَ alignée sur la source). Doute 1 (al-Ḥarīrī juge l'usage « اجْلِسْ au debout » moins bon) : règle précisée « un usage qu'il juge moins bon ». Doute 2 (coupure de « أَوْ سَاجِدًا ») : gardée, signalée « (…) » et expliquée, comme la coupure de la malédiction dans Kalīla (décision du 14/11/2026).
+
+Bilan du niveau : 5.8, 5.9, 5.12 et 5.13 « Validé avec doutes », 5.10 et 5.11 « Validé » après corrections ; doutes tranchés par le conseiller (decisions-classique-avance-2.md).
