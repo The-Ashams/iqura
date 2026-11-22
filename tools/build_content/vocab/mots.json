@@ -11655,6 +11655,85 @@
    },
    "remarque": "deux sens : le contexte choisit ; « Lisān al-ʿArab » est le titre d'un grand dictionnaire ancien",
    "theme": "corps"
+  },
+  {
+   "id": "qaada",
+   "ar": "قَعَدَ",
+   "translit": "qaʿada",
+   "fr": "s'asseoir (en venant de la station debout)",
+   "nature": "verbe",
+   "lecon": "sens-13",
+   "source_sens": "rédigé par IA",
+   "passe": "قَعَدَ",
+   "inaccompli": "يَقْعُدُ",
+   "exemple": {
+    "ar": "وَقَفَ بَاسِمٌ طَوِيلًا، ثُمَّ قَعَدَ.",
+    "fr": "Bāsim resta longtemps debout, puis s'assit."
+   },
+   "lemme": "qaEada",
+   "fige": true,
+   "formes": [
+    "قَعَدَتْ",
+    "قَعَدْتُ",
+    "اقْعُدْ"
+   ],
+   "remarque": "selon al-Ḫalīl, rapporté par al-Ḥarīrī : on dit اقْعُدْ à celui qui est debout ; dans l'usage courant, جَلَسَ et قَعَدَ s'emploient souvent l'un pour l'autre",
+   "theme": "actions"
+  },
+  {
+   "id": "qawl",
+   "ar": "قَوْلٌ",
+   "translit": "qawlun",
+   "fr": "(grammaire) parole, énoncé (sens large)",
+   "nature": "nom",
+   "lecon": "sens-13",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "lemme": "qawol",
+   "exemple": {
+    "ar": "«كِتَابٌ» قَوْلٌ، وَلَيْسَ كَلَامًا.",
+    "fr": "« kitābun » est un qawl, pas un kalām."
+   },
+   "remarque": "nom d'action de قَالَ ; selon Ibn Mālik, le قَوْلٌ est plus général que le كَلَامٌ",
+   "theme": "parole"
+  },
+  {
+   "id": "farq",
+   "ar": "فَرْقٌ",
+   "translit": "farqun",
+   "fr": "différence",
+   "nature": "nom",
+   "lecon": "sens-13",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "frq",
+   "fige": true,
+   "formes": [
+    "الْفَرْقُ"
+   ],
+   "exemple": {
+    "ar": "مَا الْفَرْقُ بَيْنَ جَلَسَ وَقَعَدَ؟",
+    "fr": "Quelle est la différence entre jalasa et qaʿada ?"
+   },
+   "remarque": "الْفَرْقُ بَيْنَ… وَ… : la différence entre… et… ; dans le Corpus, la racine a d'autres emplois (séparer) : la racine ne suffit pas pour le sens",
+   "theme": "savoir"
+  },
+  {
+   "id": "mutaradif",
+   "ar": "مُتَرَادِفٌ",
+   "translit": "mutarādifun",
+   "fr": "synonyme",
+   "nature": "nom",
+   "lecon": "sens-13",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "rdf",
+   "exemple": {
+    "ar": "لَيْسَ كُلُّ لَفْظَيْنِ مُتَقَارِبَيْنِ مُتَرَادِفَيْنِ.",
+    "fr": "Deux mots proches ne sont pas toujours synonymes."
+   },
+   "remarque": "dans le Corpus, la racine a un autre emploi (suivre de près) : la racine ne suffit pas pour le sens",
+   "theme": "savoir"
   }
  ]
 }

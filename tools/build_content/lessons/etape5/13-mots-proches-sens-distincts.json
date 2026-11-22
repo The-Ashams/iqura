@@ -1,0 +1,627 @@
+{
+  "id": "sens-13",
+  "etape": 5,
+  "ordre": 13,
+  "format": 3,
+  "titre": "Mots proches, sens distincts",
+  "objectif": "Découvrir que des mots proches ne sont pas toujours synonymes, d'après ce qu'en disent des auteurs anciens nommés.",
+  "statut": "ia_non_verifie",
+  "lieu": "labyrinthe_sens",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-12"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "نُورَةُ",
+    "بَاسِمٌ",
+    "نَدِيمٌ",
+    "قَائِمًا",
+    "نَائِمًا",
+    "اجْلِسْ",
+    "الْخَلِيلَ",
+    "الْخَلِيلُ",
+    "الْحَرِيرِيُّ",
+    "فَرَّقَ",
+    "حَكَاهُ",
+    "لَفْظَيْنِ",
+    "مُتَقَارِبَيْنِ",
+    "مُتَرَادِفَيْنِ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nura",
+          "texte": "Au fond du Labyrinthe, deux allées presque pareilles : deux mots proches. Les auteurs anciens ont écrit des livres sur leurs différences."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Aujourd'hui, on lit deux d'entre eux, dans des éditions anciennes. Et l'on dit toujours qui parle."
+        }
+      ],
+      "objectif": "Distinguer des mots proches, selon des auteurs anciens."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nadīm s'est assis dans le jardin. »",
+          "ar": "… نَدِيمٌ فِي الْحَدِيقَةِ.",
+          "choix_ar": [
+            "جَلَسَ",
+            "قَامَ",
+            "خَرَجَ"
+          ],
+          "reponse": 0,
+          "explication": "S'asseoir : جَلَسَ (connu)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَلَامٌ",
+          "choix": [
+            "paroles, propos",
+            "phrase",
+            "lettre (de l'alphabet)"
+          ],
+          "reponse": 0,
+          "explication": "كَلَامٌ veut dire « paroles, propos »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim resta longtemps debout. »",
+          "ar": "… بَاسِمٌ طَوِيلًا.",
+          "choix_ar": [
+            "وَقَفَ",
+            "نَامَ",
+            "جَلَسَ"
+          ],
+          "reponse": 0,
+          "explication": "Se tenir debout : وَقَفَ."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "جَلَسَ وَقَعَدَ: الْمَعْنَى وَاحِدٌ!",
+          "fr": "« jalasa » et « qaʿada » : le sens est le même !"
+        },
+        {
+          "qui": "nura",
+          "ar": "فِي الْكَلَامِ، نَعَمْ. وَلَٰكِنَّ الْخَلِيلَ فَرَّقَ بَيْنَهُمَا.",
+          "fr": "Dans l'usage, oui. Mais al-Ḫalīl les distinguait."
+        },
+        {
+          "qui": "hazim",
+          "ar": "اقْرَأْ مَا حَكَاهُ الْحَرِيرِيُّ.",
+          "fr": "Lis ce qu'en rapporte al-Ḥarīrī."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que dit Nūra ?",
+        "choix": [
+          "dans l'usage, les deux mots se valent, mais al-Ḫalīl les distinguait",
+          "les deux mots n'ont rien à voir",
+          "قَعَدَ n'existe pas"
+        ],
+        "reponse": 0,
+        "explication": "فِي الْكَلَامِ، نَعَمْ. وَلَٰكِنَّ الْخَلِيلَ فَرَّقَ بَيْنَهُمَا."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "qaada",
+        "qawl",
+        "farq",
+        "mutaradif"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مُتَرَادِفٌ",
+        "choix": [
+          "synonyme",
+          "différence",
+          "(grammaire) parole, énoncé (sens large)"
+        ],
+        "reponse": 0,
+        "explication": "مُتَرَادِفٌ veut dire « synonyme »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les livres des différences",
+      "texte": "Des auteurs anciens ont écrit sur « la différence entre » deux mots proches (الْفَرْقُ بَيْنَ) ; ils ne sont pas toujours d'accord, on dit donc toujours qui parle, et dans quel livre.",
+      "exemples": [
+        "الْفَرْقُ بَيْنَ جَلَسَ وَقَعَدَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quand IQURA donne une nuance entre deux mots proches, il dit…",
+        "choix": [
+          "quel auteur la donne, et dans quel livre",
+          "que c'est une règle pour tous",
+          "que les deux mots sont toujours synonymes"
+        ],
+        "reponse": 0,
+        "explication": "Une nuance est toujours attribuée à son auteur."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Al-Ḥarīrī : s'asseoir",
+      "texte": "Texte ancien. Lis ; le lexique est sous le texte.",
+      "phrases": [
+        "وَيَقُولُونَ لِلْقَائِمِ: اجْلِسْ.",
+        "وَالِاخْتِيَارُ عَلَى مَا حَكَاهُ الْخَلِيلُ بْنُ أَحْمَدَ أَنْ يُقَالَ لِمَنْ كَانَ قَائِمًا: اقْعُدْ، وَلِمَنْ كَانَ نَائِمًا (…): اجْلِسْ.",
+        "وَعَلَّلَ بَعْضُهُمْ لِهَٰذَا الِاخْتِيَارِ بِأَنَّ الْقُعُودَ هُوَ الِانْتِقَالُ مِنْ عُلْوٍ إِلَى سُفْلٍ (…)، وَأَنَّ الْجُلُوسَ هُوَ الِانْتِقَالُ مِنْ سُفْلٍ إِلَى عُلْوٍ."
+      ],
+      "source": "al-Ḥarīrī, Durrat al-ġawwāṣ, éd. H. Thorbecke, Leipzig, 1871, p. 143 (domaine public), extrait · vocalisation complétée par IA, relue",
+      "edition": [
+        "ويقولون لِلْقائم ٱجْلِسْ والاخْتِيارُ على ما حَكاهُ الخَليلُ بنُ أَحْمَدَ أَن يقالَ لِمَنْ كان قائمًا ٱقْعُدْ ولِمَنْ كان نائمًا (…) ٱجْلِسْ ، وعَلَّلَ بَعْضُهم لِهذا الاختيارِ بِأَنَّ القُعودَ هو الانْتِقالُ مِنْ عُلْوٍ الى سُفْلٍ (…) وأَنَّ الجُلوسَ هو الانْتِقالُ من سُفْلٍ إلى عُلْوٍ"
+      ],
+      "traduction": [
+        "Les gens disent à celui qui est debout : « ijlis » (assieds-toi).",
+        "Mais le meilleur usage, selon ce que rapporte al-Ḫalīl ibn Aḥmad, est de dire à celui qui est debout : « uqʿud », et à celui qui est couché (…) : « ijlis ».",
+        "Certains l'expliquent ainsi : le quʿūd est le passage du haut vers le bas (…), et le ǧulūs le passage du bas vers le haut."
+      ],
+      "lexique": [
+        {
+          "ar": "الِاخْتِيَارُ",
+          "fr": "ici : l'usage préférable"
+        },
+        {
+          "ar": "عَلَّلَ لِـ",
+          "fr": "donner la raison de"
+        },
+        {
+          "ar": "عُلْوٌ، سُفْلٌ",
+          "fr": "le haut, le bas"
+        }
+      ],
+      "note": "(…) : coupures faites ici, pas par l'éditeur : un autre cas de position, puis un exemple de mot de la même racine.",
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Selon al-Ḫalīl, que dit-on à quelqu'un qui est debout ?",
+          "choix": [
+            "اقْعُدْ",
+            "اجْلِسْ",
+            "قُمْ"
+          ],
+          "reponse": 0,
+          "explication": "لِمَنْ كَانَ قَائِمًا: اقْعُدْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Selon l'explication rapportée, le جُلُوسٌ est…",
+          "choix": [
+            "le passage du bas vers le haut",
+            "le passage du haut vers le bas",
+            "le fait de rester debout"
+          ],
+          "reponse": 0,
+          "explication": "الْجُلُوسُ هُوَ الِانْتِقَالُ مِنْ سُفْلٍ إِلَى عُلْوٍ."
+        }
+      ]
+    },
+    {
+      "type": "regle",
+      "titre": "قَعَدَ et جَلَسَ",
+      "texte": "Selon al-Ḫalīl, rapporté par al-Ḥarīrī : on s'assoit avec قَعَدَ quand on était debout, avec جَلَسَ quand on était couché. Dans l'usage courant, les deux s'emploient souvent l'un pour l'autre.",
+      "exemples": [
+        "وَقَفَ بَاسِمٌ طَوِيلًا، ثُمَّ قَعَدَ.",
+        "اسْتَيْقَظَ نَدِيمٌ فَجَلَسَ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Selon cette nuance, اسْتَيْقَظَ نَدِيمٌ فَجَلَسَ convient parce que Nadīm…",
+        "choix": [
+          "était couché",
+          "était debout",
+          "marchait"
+        ],
+        "reponse": 0,
+        "explication": "Il se réveille : il était couché, donc جَلَسَ."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Ibn Mālik : parole et énoncé",
+      "texte": "Texte ancien, en vers. Lis ; le lexique est sous le texte.",
+      "phrases": [
+        "كَلَامُنَا لَفْظٌ مُفِيدٌ كَاسْتَقِمْ",
+        "وَاسْمٌ وَفِعْلٌ ثُمَّ حَرْفٌ الْكَلِمْ",
+        "وَاحِدُهُ كَلِمَةٌ وَالْقَوْلُ عَمّْ"
+      ],
+      "source": "Ibn Mālik, Alfiyya, éd. A. I. Silvestre de Sacy, Paris, 1833, texte arabe p. 3 (domaine public) · vocalisation de l'édition",
+      "edition": [
+        "كَلَامُنَا لَفْظٌ مُفِيدٌ كَٱسْتَقِمْ ... وَٱسْمٌ وَفِعْلٌ ثُمَّ حَرْفٌ ٱلْكَلِمْ",
+        "وَاحِدُهُ كَلِمَةٌ وَٱلْقَوْلُ عَمْ"
+      ],
+      "traduction": [
+        "Notre kalām (énoncé) est un ensemble de sons qui donne un sens complet, comme « istaqim » (« tiens-toi droit »).",
+        "Le nom, le verbe, puis la particule forment le kalim (les mots).",
+        "Son unité est la kalima (le mot), et le qawl est plus général."
+      ],
+      "lexique": [
+        {
+          "ar": "لَفْظٌ",
+          "fr": "ce qu'on prononce, suite de sons"
+        },
+        {
+          "ar": "مُفِيدٌ",
+          "fr": "ici : qui donne un sens complet"
+        },
+        {
+          "ar": "عَمَّ",
+          "fr": "être général, englober"
+        }
+      ],
+      "note": "Ce sont les deux premiers vers d'un célèbre poème de grammaire ; « istaqim » y est un exemple de grammairien. L'édition imprime la rime عَمْ ; on lit عَمّْ.",
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Selon Ibn Mālik, le كَلَامٌ est…",
+          "choix": [
+            "un énoncé qui donne un sens complet",
+            "un seul mot",
+            "une lettre"
+          ],
+          "reponse": 0,
+          "explication": "كَلَامُنَا لَفْظٌ مُفِيدٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Selon Ibn Mālik, le قَوْلٌ est…",
+          "choix": [
+            "plus général que le كَلَامٌ",
+            "plus petit qu'une lettre",
+            "la même chose que la particule"
+          ],
+          "reponse": 0,
+          "explication": "وَالْقَوْلُ عَمّْ."
+        }
+      ]
+    },
+    {
+      "type": "regle",
+      "titre": "قَوْلٌ et كَلَامٌ",
+      "texte": "Selon Ibn Mālik, le كَلَامٌ est un énoncé qui donne un sens complet ; le قَوْلٌ est plus général : un seul mot est déjà un قَوْلٌ, mais pas un كَلَامٌ.",
+      "exemples": [
+        "«الْكِتَابُ جَدِيدٌ» كَلَامٌ.",
+        "«كِتَابٌ» قَوْلٌ، وَلَيْسَ كَلَامًا."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Selon Ibn Mālik, «كِتَابٌ» tout seul est…",
+        "choix": [
+          "un قَوْلٌ, mais pas un كَلَامٌ",
+          "un كَلَامٌ",
+          "ni l'un ni l'autre"
+        ],
+        "reponse": 0,
+        "explication": "Un seul mot ne donne pas un sens complet."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَعَدَ",
+          "choix": [
+            "s'asseoir (en venant de la station debout)",
+            "se lever",
+            "s'arrêter, se tenir debout"
+          ],
+          "reponse": 0,
+          "explication": "قَعَدَ veut dire « s'asseoir (en venant de la station debout) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَرْقٌ",
+          "choix": [
+            "différence",
+            "synonyme",
+            "contexte"
+          ],
+          "reponse": 0,
+          "explication": "فَرْقٌ veut dire « différence »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَوْلٌ",
+          "choix": [
+            "(grammaire) parole, énoncé (sens large)",
+            "phrase",
+            "dictionnaire"
+          ],
+          "reponse": 0,
+          "explication": "قَوْلٌ veut dire « (grammaire) parole, énoncé (sens large) »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim resta longtemps debout, puis s'assit. »",
+          "ar": "وَقَفَ بَاسِمٌ طَوِيلًا، ثُمَّ …",
+          "choix_ar": [
+            "قَعَدَ",
+            "قَامَ",
+            "نَامَ"
+          ],
+          "reponse": 0,
+          "explication": "Venant de la station debout : قَعَدَ, selon al-Ḫalīl."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nadīm se réveilla et s'assit. »",
+          "ar": "اسْتَيْقَظَ نَدِيمٌ فَ…",
+          "choix_ar": [
+            "جَلَسَ",
+            "وَقَفَ",
+            "نَامَ"
+          ],
+          "reponse": 0,
+          "explication": "Venant de la position couchée : جَلَسَ, selon al-Ḫalīl."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La différence entre jalasa et qaʿada. »",
+          "ar": "… بَيْنَ جَلَسَ وَقَعَدَ",
+          "choix_ar": [
+            "الْفَرْقُ",
+            "الْقَوْلُ",
+            "الْكَلَامُ"
+          ],
+          "reponse": 0,
+          "explication": "الْفَرْقُ بَيْنَ… وَ…"
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète, selon Ibn Mālik : « kitābun » est un qawl, pas un kalām.",
+          "ar": "«كِتَابٌ» قَوْلٌ، وَلَيْسَ …",
+          "choix_ar": [
+            "كَلَامًا",
+            "كَلَامٌ",
+            "كَلَامٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut de لَيْسَ : accusatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Deux mots proches sont-ils toujours synonymes (مُتَرَادِفَانِ) ?",
+          "choix": [
+            "pas toujours : certains auteurs les distinguent",
+            "oui, toujours",
+            "jamais"
+          ],
+          "reponse": 0,
+          "explication": "Et les auteurs ne sont pas toujours d'accord."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Quelle est la différence entre jalasa et qaʿada ? » ?",
+          "choix_ar": [
+            "مَا الْفَرْقُ بَيْنَ جَلَسَ وَقَعَدَ؟",
+            "مَا الْفَرْقُ بَيْنُ جَلَسَ وَقَعَدَ؟",
+            "مَا الْفَرْقَ بَيْنَ جَلَسَ وَقَعَدَ؟"
+          ],
+          "reponse": 0,
+          "explication": "الْفَرْقُ, attribut de مَا ; بَيْنَ toujours avec a."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Bāsim resta debout, puis s'assit. »",
+          "tuiles": [
+            "وَقَفَ",
+            "بَاسِمٌ،",
+            "ثُمَّ",
+            "قَعَدَ"
+          ],
+          "solution": [
+            "وَقَفَ",
+            "بَاسِمٌ،",
+            "ثُمَّ",
+            "قَعَدَ"
+          ],
+          "explication": "D'abord debout, puis قَعَدَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Choisis selon al-Ḫalīl : « Le marchand se réveilla et s'assit. »",
+          "ar": "اسْتَيْقَظَ التَّاجِرُ فَ…",
+          "choix_ar": [
+            "جَلَسَ",
+            "قَعَدَ",
+            "قَامَ"
+          ],
+          "reponse": 0,
+          "explication": "Il était couché : جَلَسَ."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris trois phrases : une avec قَعَدَ (après la station debout), une avec جَلَسَ (après le sommeil), et une qui dit qui distingue les deux mots.",
+          "modele": [
+            "وَقَفَ التَّاجِرُ فِي السُّوقِ، ثُمَّ قَعَدَ.",
+            "اسْتَيْقَظَ بَاسِمٌ فَجَلَسَ.",
+            "الْخَلِيلُ فَرَّقَ بَيْنَ جَلَسَ وَقَعَدَ."
+          ],
+          "explication": "Compare : as-tu dit qui fait la distinction ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَعَدَ",
+          "choix": [
+            "s'asseoir (en venant de la station debout)",
+            "dormir",
+            "se lever"
+          ],
+          "reponse": 0,
+          "explication": "قَعَدَ veut dire « s'asseoir (en venant de la station debout) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُتَرَادِفٌ",
+          "choix": [
+            "synonyme",
+            "différence",
+            "contexte"
+          ],
+          "reponse": 0,
+          "explication": "مُتَرَادِفٌ veut dire « synonyme »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَرْقٌ",
+          "choix": [
+            "différence",
+            "synonyme",
+            "parole"
+          ],
+          "reponse": 0,
+          "explication": "فَرْقٌ veut dire « différence »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Selon al-Ḫalīl : « Bāsim resta debout, puis s'assit. »",
+          "ar": "وَقَفَ بَاسِمٌ، ثُمَّ …",
+          "choix_ar": [
+            "قَعَدَ",
+            "جَلَسَ",
+            "نَامَ"
+          ],
+          "reponse": 0,
+          "explication": "Après la station debout : قَعَدَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Selon al-Ḫalīl : « Nadīm se réveilla et s'assit. »",
+          "ar": "اسْتَيْقَظَ نَدِيمٌ فَ…",
+          "choix_ar": [
+            "جَلَسَ",
+            "قَعَدَ",
+            "وَقَفَ"
+          ],
+          "reponse": 0,
+          "explication": "Après le sommeil : جَلَسَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Deux mots proches : quelle est la différence ? »",
+          "ar": "مَا … بَيْنَهُمَا؟",
+          "choix_ar": [
+            "الْفَرْقُ",
+            "الْقَوْلُ",
+            "الْمَعْنَى"
+          ],
+          "reponse": 0,
+          "explication": "الْفَرْقُ بَيْنَ…"
+        },
+        {
+          "type": "completer",
+          "consigne": "Selon Ibn Mālik : « Le livre est neuf » est un kalām.",
+          "ar": "«الْكِتَابُ جَدِيدٌ» …",
+          "choix_ar": [
+            "كَلَامٌ",
+            "حَرْفٌ",
+            "كَلِمَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Un énoncé au sens complet : كَلَامٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Selon Ibn Mālik, le قَوْلٌ…",
+          "choix": [
+            "est plus général que le كَلَامٌ",
+            "est plus précis que le كَلَامٌ",
+            "veut dire « lettre »"
+          ],
+          "reponse": 0,
+          "explication": "وَالْقَوْلُ عَمّْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La nuance entre جَلَسَ et قَعَدَ est…",
+          "choix": [
+            "celle d'al-Ḫalīl, rapportée par al-Ḥarīrī",
+            "une règle de tous les grammairiens",
+            "inventée par IQURA"
+          ],
+          "reponse": 0,
+          "explication": "On dit toujours qui parle."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَيْنٌ",
+          "choix": [
+            "œil ; source (d'eau)",
+            "langue (l'organe) ; langue (parlée)",
+            "tête ; sommet"
+          ],
+          "reponse": 0,
+          "explication": "عَيْنٌ veut dire « œil ; source (d'eau) ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim se mit à écrire. »",
+          "ar": "أَخَذَ بَاسِمٌ …",
+          "choix_ar": [
+            "يَكْتُبُ",
+            "كَتَبَ",
+            "أَنْ يَكْتُبَ"
+          ],
+          "reponse": 0,
+          "explication": "أَخَذَ + inaccompli.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لِسَانٌ",
+          "choix": [
+            "langue (l'organe) ; langue (parlée)",
+            "œil ; source (d'eau)",
+            "propos, conversation, récit"
+          ],
+          "reponse": 0,
+          "explication": "لِسَانٌ veut dire « langue (l'organe) ; langue (parlée) ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais que deux mots proches ne sont pas toujours synonymes : قَعَدَ et جَلَسَ selon al-Ḫalīl, قَوْلٌ et كَلَامٌ selon Ibn Mālik ; et tu dis toujours qui parle.",
+      "suite": "Le chapitre B des Jardins est terminé. Suite au niveau Classique avancé 3 : analyser une phrase mot par mot."
+    }
+  ]
+}
