@@ -1,0 +1,552 @@
+{
+  "id": "sens-18",
+  "etape": 5,
+  "ordre": 18,
+  "format": 3,
+  "titre": "Lire un texte classique non vocalisé",
+  "objectif": "Lire seul un texte ancien sans voyelles, avec le dictionnaire et la méthode de l'iʿrāb.",
+  "statut": "ia_non_verifie",
+  "lieu": "bibliotheque_jardin",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-17"
+  ],
+  "apercu": [
+    "الْعَاقِلُ",
+    "بِنَجْوَةٍ",
+    "تَزَالُ",
+    "تَزَلْ",
+    "الْغَدِيرِ",
+    "حَازِمٌ",
+    "زُهَيْرٌ",
+    "بَاسِمٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "zuhayr",
+          "texte": "Les vieux livres n'ont presque pas de voyelles. Aujourd'hui, tu lis seul une fable de Kalīla, comme dans l'édition."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Tu as tous les outils : la racine, le schème, l'iʿrāb et le dictionnaire."
+        }
+      ],
+      "objectif": "Lire seul un texte ancien sans voyelles."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَعْلَبٌ",
+          "choix": [
+            "renard, chacal",
+            "poisson",
+            "tambour"
+          ],
+          "reponse": 0,
+          "explication": "ثَعْلَبٌ veut dire « renard, chacal »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets la fin : « La lettre était longue. »",
+          "ar": "كَانَتِ الرِّسَالَةُ …",
+          "choix_ar": [
+            "طَوِيلَةً",
+            "طَوِيلَةٌ",
+            "طَوِيلَةٍ"
+          ],
+          "reponse": 0,
+          "explication": "خَبَرُ كَانَ : accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets la fin : « Nadīm n'a pas écrit. »",
+          "ar": "لَمْ … نَدِيمٌ.",
+          "choix_ar": [
+            "يَكْتُبْ",
+            "يَكْتُبُ",
+            "يَكْتُبَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : jussif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "« ان »: أَنْ أَمْ إِنَّ؟",
+          "fr": "« an » sans hamza : an ou inna ?"
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "السِّيَاقُ يُخْبِرُكَ.",
+          "fr": "Le contexte te le dit."
+        },
+        {
+          "qui": "hazim",
+          "ar": "بَعْدَ زَعَمُوا: أَنَّ.",
+          "fr": "Après « zaʿamū » : anna."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans les éditions anciennes, ان sans hamza peut être…",
+        "choix": [
+          "أَنْ, إِنْ, أَنَّ ou إِنَّ : le contexte décide",
+          "toujours إِنَّ",
+          "toujours أَنْ"
+        ],
+        "reponse": 0,
+        "explication": "La hamza manque souvent : le contexte décide."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "samaka",
+        "sayyad"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "صَيَّادٌ",
+        "choix": [
+          "pêcheur, chasseur",
+          "poisson",
+          "marchand"
+        ],
+        "reponse": 0,
+        "explication": "صَيَّادٌ veut dire « pêcheur, chasseur »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La graphie des éditions",
+      "texte": "Les éditions anciennes écrivent souvent sans hamza : ان peut être أَنْ, إِنْ, أَنَّ ou إِنَّ, et الا peut être إِلَّا ou أَلَّا. La shadda manque aussi.",
+      "exemples": [
+        "زعموا ان",
+        "زَعَمُوا أَنَّ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans « زعموا ان غديرا », ان se lit…",
+        "choix": [
+          "أَنَّ",
+          "إِنْ",
+          "أَنْ"
+        ],
+        "reponse": 0,
+        "explication": "Après زَعَمُوا, puis un nom à l'accusatif : أَنَّ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La méthode",
+      "texte": "Trouve d'abord le verbe et son sujet, puis reconnais le schème ; mets les fins de mots d'après la fonction. En cas de doute, le contexte et le dictionnaire décident.",
+      "exemples": [
+        "فخرجت من مدخل الماء",
+        "فَخَرَجَتْ مِنْ مَدْخَلِ الْمَاءِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans « فخرجت من مدخل الماء », « الماء » se lit…",
+        "choix": [
+          "الْمَاءِ (مُضَافٌ إِلَيْهِ)",
+          "الْمَاءُ",
+          "الْمَاءَ"
+        ],
+        "reponse": 0,
+        "explication": "Second nom de l'iḍāfa : génitif."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Les trois poissons",
+      "texte": "Texte ancien, sans voyelles comme dans l'édition. Lis seul ; le lexique est sous le texte.",
+      "sans_voyelles": "C",
+      "phrases": [
+        "زَعَمُوا أَنَّ غَدِيرًا كَانَ فِيهِ ثَلَاثُ سَمَكَاتٍ عِظَامٍ، وَكَانَ ذَٰلِكَ الْغَدِيرُ بِنَجْوَةٍ مِنَ الْأَرْضِ لَا يَقْرَبُهَا أَحَدٌ.",
+        "فَلَمَّا كَانَ ذَاتَ يَوْمٍ مِنْ هُنَالِكَ (كَذَا) أَتَى صَيَّادَانِ مُجْتَازَانِ، فَتَوَاعَدَا أَنْ يَرْجِعَا بِشَبَكَتِهِمَا فَيَصِيدَا تِلْكَ السَّمَكَاتِ الثَّلَاثَ الَّتِي رَأَيَا فِيهِ.",
+        "وَإِنَّ سَمَكَةً مِنْهُنَّ كَانَتْ أَعْقَلَهُنَّ، وَإِنَّمَا ارْتَابَتْ وَتَخَوَّفَتْ، فَعَالَجَتِ الْأَخْذَ بِالْحَزْمِ، فَخَرَجَتْ مِنْ مَدْخَلِ الْمَاءِ الَّذِي كَانَ يَخْرُجُ مِنَ الْغَدِيرِ إِلَى النَّهْرِ، فَتَحَوَّلَتْ إِلَى مَكَانٍ غَيْرِهِ.",
+        "(…) وَأَمَّا الْعَاجِزَةُ فَلَمْ تَزَلْ فِي إِقْبَالٍ وَإِدْبَارٍ حَتَّى صِيدَتْ."
+      ],
+      "source": "Kalīla wa Dimna, trad. arabe d'Ibn al-Muqaffaʿ, éd. L. Cheikho, Beyrouth, Imprimerie catholique, 1905, p. 75-76 (domaine public), extrait · vocalisation et hamzas rédigées par IA, relues",
+      "edition": [
+        "زعموا انَّ غديرًا كان فيه ثلاث سمكات عظام وكان ذلك الغدير بنَجْوة من الارض لا يقربها احد. فلما كان ذات يوم من هنالك (كذا) اتى صيّادان مجتازان فتواعدا ان يرجعا بشبكتهما فيصيدا تلك السمكات الثلاث التي رأيا فيه. وانَّ سمكة منهنَّ كانت اعقلهنَّ وانَّما ارتابت وتخوّفت فعالجت الاخذ بالحزم فخرجت من مدخل الماء الذي كان يخرج من الغدير الى النهر فتحوّلت الى مكانٍ غيرهِ. (…) وامَّا العاجزة فلم تزل في إقبال وادبار حتى صيدت"
+      ],
+      "traduction": [
+        "On raconte qu'il y avait un étang avec trois gros poissons ; cet étang était sur une hauteur où personne ne s'approchait.",
+        "Un jour, deux pêcheurs de passage arrivèrent et convinrent de revenir avec leur filet pour prendre les trois poissons qu'ils y avaient vus.",
+        "L'un des poissons, le plus sensé, eut des soupçons et prit peur ; il agit sans tarder avec prudence, sortit par le passage d'eau qui allait de l'étang à la rivière et partit ailleurs.",
+        "(…) Quant au poisson sans ressource, il ne cessa d'aller et venir jusqu'à ce qu'il fût pris."
+      ],
+      "lexique": [
+        {
+          "ar": "غَدِيرٌ",
+          "fr": "étang, mare"
+        },
+        {
+          "ar": "عِظَامٌ",
+          "fr": "gros (pluriel de عَظِيمٌ)"
+        },
+        {
+          "ar": "نَجْوَةٌ",
+          "fr": "hauteur, terrain élevé"
+        },
+        {
+          "ar": "مُجْتَازٌ",
+          "fr": "de passage"
+        },
+        {
+          "ar": "تَوَاعَدَا",
+          "fr": "ils convinrent ensemble (duel)"
+        },
+        {
+          "ar": "شَبَكَةٌ",
+          "fr": "filet"
+        },
+        {
+          "ar": "ارْتَابَ",
+          "fr": "avoir des soupçons"
+        },
+        {
+          "ar": "الْحَزْمُ",
+          "fr": "la prudence, la décision rapide"
+        },
+        {
+          "ar": "الْعَاجِزَةُ",
+          "fr": "celle qui est sans ressource, incapable"
+        },
+        {
+          "ar": "إِقْبَالٌ وَإِدْبَارٌ",
+          "fr": "aller et venir"
+        }
+      ],
+      "note": "Coupure (…) faite ici : l'histoire du deuxième poisson, plus longue, est omise. (كَذَا) : remarque de l'éditeur, « ainsi dans le manuscrit ». Le bouton des voyelles s'ouvre après ta réponse.",
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Combien de poissons y avait-il dans l'étang ?",
+          "choix": [
+            "trois",
+            "deux",
+            "un"
+          ],
+          "reponse": 0,
+          "explication": "ثَلَاثُ سَمَكَاتٍ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que fait le poisson le plus sensé ?",
+          "choix": [
+            "il part tout de suite ailleurs par le passage d'eau",
+            "il attend les pêcheurs",
+            "il fait le mort"
+          ],
+          "reponse": 0,
+          "explication": "فَخَرَجَتْ… فَتَحَوَّلَتْ إِلَى مَكَانٍ غَيْرِهِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que devient le poisson sans ressource ?",
+          "choix": [
+            "il est pris",
+            "il s'enfuit",
+            "il devient le plus sensé"
+          ],
+          "reponse": 0,
+          "explication": "حَتَّى صِيدَتْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « كانت اعقلهن », اعقلهن se lit…",
+          "choix": [
+            "أَعْقَلَهُنَّ (خَبَرُ كَانَ, accusatif)",
+            "أَعْقَلُهُنَّ",
+            "أَعْقَلِهِنَّ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut de كَانَ : accusatif."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَمَكَةٌ",
+          "choix": [
+            "poisson",
+            "filet",
+            "étang"
+          ],
+          "reponse": 0,
+          "explication": "سَمَكَةٌ veut dire « poisson »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَيَّادٌ",
+          "choix": [
+            "pêcheur, chasseur",
+            "marchand",
+            "porteur"
+          ],
+          "reponse": 0,
+          "explication": "صَيَّادٌ veut dire « pêcheur, chasseur »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Vocalise : « ثلاث سمكات » (trois poissons).",
+          "ar": "ثَلَاثُ …",
+          "choix_ar": [
+            "سَمَكَاتٍ",
+            "سَمَكَاتٌ",
+            "سَمَكَاتَ"
+          ],
+          "reponse": 0,
+          "explication": "Après ثَلَاثُ, le compté est au génitif pluriel."
+        },
+        {
+          "type": "completer",
+          "consigne": "Vocalise : « من الغدير » (de l'étang).",
+          "ar": "مِنَ …",
+          "choix_ar": [
+            "الْغَدِيرِ",
+            "الْغَدِيرُ",
+            "الْغَدِيرَ"
+          ],
+          "reponse": 0,
+          "explication": "Après مِنْ : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Vocalise : « فلم تزل » (il ne cessa pas).",
+          "ar": "فَلَمْ …",
+          "choix_ar": [
+            "تَزَلْ",
+            "تَزَالُ",
+            "تَزَالَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : jussif ; le ā tombe."
+        },
+        {
+          "type": "completer",
+          "consigne": "Vocalise : « رأيا فيه » (ils y avaient vu) : le verbe au duel.",
+          "ar": "… فِيهِ",
+          "choix_ar": [
+            "رَأَيَا",
+            "رَأَوْا",
+            "رَأَى"
+          ],
+          "reponse": 0,
+          "explication": "Duel : رَأَيَا (les deux pêcheurs)."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Il y a un gros poisson dans la rivière. » ?",
+          "choix_ar": [
+            "فِي النَّهْرِ سَمَكَةٌ كَبِيرَةٌ.",
+            "فِي النَّهْرِ سَمَكَةً كَبِيرَةً.",
+            "فِي النَّهْرُ سَمَكَةٌ كَبِيرَةٌ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet mis après, au nominatif ; فِي + génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Vocalise : « وكان ذلك الغدير بنجوة » (cet étang était sur une hauteur).",
+          "ar": "وَكَانَ ذَٰلِكَ … بِنَجْوَةٍ",
+          "choix_ar": [
+            "الْغَدِيرُ",
+            "الْغَدِيرَ",
+            "الْغَدِيرِ"
+          ],
+          "reponse": 0,
+          "explication": "Nom de كَانَ : nominatif."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris la leçon de la fable en deux ou trois phrases simples, avec tes mots.",
+          "modele": [
+            "خَرَجَتِ السَّمَكَةُ الْأُولَى قَبْلَ وُصُولِ الصَّيَّادَيْنِ.",
+            "وَبَقِيَتِ الْأُخْرَى فِي الْغَدِيرِ.",
+            "الْعَاقِلُ لَا يَنْتَظِرُ."
+          ],
+          "explication": "Compare : as-tu dit pourquoi le premier poisson est sauvé ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَمَكَةٌ",
+          "choix": [
+            "poisson",
+            "renard, chacal",
+            "tambour"
+          ],
+          "reponse": 0,
+          "explication": "سَمَكَةٌ veut dire « poisson »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَيَّادٌ",
+          "choix": [
+            "pêcheur, chasseur",
+            "conteur",
+            "copiste"
+          ],
+          "reponse": 0,
+          "explication": "صَيَّادٌ veut dire « pêcheur, chasseur »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَجْوَفُ",
+          "choix": [
+            "creux, vide à l'intérieur",
+            "énorme",
+            "affamé"
+          ],
+          "reponse": 0,
+          "explication": "أَجْوَفُ veut dire « creux, vide à l'intérieur »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Vocalise : « في النهر » (dans la rivière).",
+          "ar": "فِي …",
+          "choix_ar": [
+            "النَّهْرِ",
+            "النَّهْرُ",
+            "النَّهْرَ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Vocalise : « لم يكتب » (il n'a pas écrit).",
+          "ar": "لَمْ …",
+          "choix_ar": [
+            "يَكْتُبْ",
+            "يَكْتُبُ",
+            "يَكْتُبَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : jussif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le pêcheur est au bord de la rivière. »",
+          "ar": "… عِنْدَ النَّهْرِ.",
+          "choix_ar": [
+            "الصَّيَّادُ",
+            "الصَّيَّادَ",
+            "الصَّيَّادِ"
+          ],
+          "reponse": 0,
+          "explication": "مُبْتَدَأٌ : nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans un texte sans hamza, « ان » suivi d'un verbe au subjonctif se lit le plus souvent…",
+          "choix": [
+            "أَنْ",
+            "إِنَّ",
+            "أَنَّ"
+          ],
+          "reponse": 0,
+          "explication": "أَنْ + subjonctif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour lire un mot sans voyelles, on commence par…",
+          "choix": [
+            "trouver le verbe et son sujet",
+            "deviner au hasard",
+            "ignorer la fin du mot"
+          ],
+          "reponse": 0,
+          "explication": "La méthode."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le poisson est dans l'étang. » ?",
+          "choix_ar": [
+            "السَّمَكَةُ فِي الْغَدِيرِ.",
+            "السَّمَكَةَ فِي الْغَدِيرِ.",
+            "السَّمَكَةُ فِي الْغَدِيرُ."
+          ],
+          "reponse": 0,
+          "explication": "مُبْتَدَأٌ au nominatif ; فِي + génitif."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَبْلٌ",
+          "choix": [
+            "tambour",
+            "branche",
+            "arbre"
+          ],
+          "reponse": 0,
+          "explication": "طَبْلٌ veut dire « tambour ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَعْلَبٌ",
+          "choix": [
+            "renard, chacal",
+            "poisson",
+            "chameau"
+          ],
+          "reponse": 0,
+          "explication": "ثَعْلَبٌ veut dire « renard, chacal ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Et sa marque de jussif est le sukūn. »",
+          "ar": "وَعَلَامَةُ جَزْمِهِ …",
+          "choix_ar": [
+            "السُّكُونُ",
+            "الضَّمَّةُ",
+            "الْفَتْحَةُ"
+          ],
+          "reponse": 0,
+          "explication": "Jussif : sukūn.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu as lu seul une fable ancienne sans voyelles, les trois poissons, en t'aidant du contexte, de l'iʿrāb et du lexique.",
+      "suite": "Prochaine étape, le Belvédère : le bilan des mots les plus fréquents."
+    }
+  ]
+}

@@ -11955,6 +11955,88 @@
    },
    "remarque": "toujours au génitif ; même racine que ضَيْفٌ (hôte) : la racine ne suffit pas pour le sens",
    "theme": "ecriture"
+  },
+  {
+   "id": "thalab",
+   "ar": "ثَعْلَبٌ",
+   "translit": "ṯaʿlabun",
+   "fr": "renard, chacal",
+   "nature": "nom",
+   "lecon": "sens-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "رَأَى بَاسِمٌ ثَعْلَبًا فِي الْقَرْيَةِ.",
+    "fr": "Bāsim a vu un renard dans le village."
+   },
+   "remarque": "mot des fables anciennes (Kalīla wa Dimna)",
+   "theme": "animaux"
+  },
+  {
+   "id": "tabl",
+   "ar": "طَبْلٌ",
+   "translit": "ṭablun",
+   "fr": "tambour",
+   "nature": "nom",
+   "lecon": "sens-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "صَوْتُ الطَّبْلِ شَدِيدٌ.",
+    "fr": "Le son du tambour est fort."
+   },
+   "theme": "maison"
+  },
+  {
+   "id": "ajwaf",
+   "ar": "أَجْوَفُ",
+   "translit": "aǧwafu",
+   "fr": "creux, vide à l'intérieur",
+   "nature": "adjectif",
+   "lecon": "sens-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jwf",
+   "exemple": {
+    "ar": "الطَّبْلُ كَبِيرٌ، وَلَٰكِنَّهُ أَجْوَفُ.",
+    "fr": "Le tambour est grand, mais il est creux."
+   },
+   "remarque": "adjectif sur le schème أَفْعَلُ (sans tanwīn) ; la racine ne suffit pas pour le sens",
+   "theme": "qualites"
+  },
+  {
+   "id": "samaka",
+   "ar": "سَمَكَةٌ",
+   "translit": "samakatun",
+   "fr": "poisson",
+   "nature": "nom",
+   "lecon": "sens-18",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "smk",
+   "exemple": {
+    "ar": "فِي النَّهْرِ سَمَكَةٌ كَبِيرَةٌ.",
+    "fr": "Il y a un gros poisson dans la rivière."
+   },
+   "remarque": "dans le Corpus, la racine a un autre emploi (hauteur, voûte) : la racine ne suffit pas pour le sens",
+   "theme": "animaux"
+  },
+  {
+   "id": "sayyad",
+   "ar": "صَيَّادٌ",
+   "translit": "ṣayyādun",
+   "fr": "pêcheur, chasseur",
+   "nature": "nom",
+   "lecon": "sens-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Syd",
+   "exemple": {
+    "ar": "الصَّيَّادُ عِنْدَ النَّهْرِ.",
+    "fr": "Le pêcheur est au bord de la rivière."
+   },
+   "remarque": "schème فَعَّالٌ, celui des métiers ; la racine ne suffit pas pour le sens",
+   "theme": "metiers"
   }
  ]
 }
