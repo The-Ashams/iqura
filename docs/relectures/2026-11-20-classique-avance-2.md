@@ -219,3 +219,94 @@ Stade : région 5, leçons 5.8 à 5.12. Notions supposées acquises : régions 1
 - Les lemmes et les fréquences du Corpus : je n'ai pas d'accès à la base. C'est `vocab.validate` qui fait foi.
 - L'audio est suspendu.
 Suite donnée (20/11/2026) : point Important de 5.11 corrigé (أَعْطَى نَدِيمٌ…), mineurs corrigés ; décisions du conseiller appliquées (combat de 5.8 sans ouverture de conte ; fiches لَوْلَا et رَأْسٌ complétées : piste 1, la remarque dit « vu en 5.12 »).
+
+---
+
+# Rapport de relecture : leçon 5.13 « Mots proches, sens distincts » et retouches de 5.8, 5.11, 5.12
+
+Fichiers relus :
+- /home/user/iqura/tools/build_content/lessons/etape5/13-mots-proches-sens-distincts.json
+- /home/user/iqura/tools/build_content/vocab/mots.json (fiches qaada, qawl, farq, mutaradif)
+- /home/user/iqura/docs/sources/durra-thorbecke-1871-p143.txt
+- /home/user/iqura/docs/sources/alfiyya-sacy-1833-p3.txt
+- /home/user/iqura/docs/relectures/decisions-classique-avance-2.md (plan de 5.13, point d)
+- Retouches : /home/user/iqura/tools/build_content/lessons/etape5/08-la-narration-classique.json, 11-le-vocabulaire-par-themes-2.json, 12-un-mot-plusieurs-sens.json
+- Lemmes et racines cherchés dans /home/user/iqura/assets/content/iqura_content.db
+
+Stade : région 5, leçon 5.13 (Classique avancé 2). Acquis supposés : régions 1 à 4, leçons 5.1 à 5.12 (dont جَلَسَ, وَقَفَ, قَامَ, نَامَ, اسْتَيْقَظَ, كَلَام, كَلِمَة, جُمْلَة, بَعْض, تَاجِر, حَدِيقَة, طَوِيل, l'impératif, لَيْسَ + accusatif, أَخَذَ + inaccompli).
+
+## Verdict par leçon
+- **5.13 : À corriger** (2 points Importants, pas de Bloquant).
+- **5.8 (retouches du mini-boss) : Validé.**
+- **5.11 (retouches) : Validé.**
+- **5.12 (retouches) : Validé.**
+
+Je n'ai trouvé aucun point de la catégorie A dans les quatre fichiers.
+
+## Bloquant
+- Aucun.
+
+## Important
+- [5.13 · règle « قَوْلٌ et كَلَامٌ », mini-boss (explication « Un seul mot ne donne pas un sens complet »), lecture d'Ibn Mālik (QCM 1, choix « un seul mot »)] **Problème** : la règle dit « un seul mot est déjà un قَوْلٌ, mais pas un كَلَامٌ ». Or le texte que l'apprenant vient de lire donne justement comme exemple de كَلَامٌ un seul mot : كَاسْتَقِمْ (« comme istaqim »). Le verbe contient son sujet (« toi ») et donne donc un sens complet. Formulée ainsi, la règle contredit la source affichée à l'écran juste avant, et elle fait apprendre une règle fausse. **Correction proposée** :
+  - règle : « Selon Ibn Mālik, le كَلَامٌ est un énoncé qui donne un sens complet (même d'un seul mot, comme اسْتَقِمْ, où le verbe contient « toi ») ; le قَوْلٌ est plus général. Un nom seul comme كِتَابٌ est un قَوْلٌ, mais pas un كَلَامٌ. » ;
+  - explication du mini-boss : « كِتَابٌ seul ne donne pas un sens complet. » ;
+  - dans le QCM 1 de la lecture, remplacer le distracteur « un seul mot » par, par exemple, « un nom sans verbe » ou « une suite de sons sans sens ».
+
+  Confiance : haute.
+- [mots.json · qaada, champ fr, repris dans les exercices « sens » de l'entraînement et du mini-boss] **Problème** : le sens de base de la fiche est « s'asseoir (en venant de la station debout) ». La fiche présente ainsi comme sens du mot la nuance d'un seul auteur (al-Ḫalīl, rapporté par al-Ḥarīrī). Cela contredit la règle de la leçon (« dans l'usage courant, les deux s'emploient souvent l'un pour l'autre ») et le point d du plan (« on dit qui parle »). Dans le dictionnaire et en révision, la fiche affichera cette nuance sans son auteur. **Correction proposée** :
+  - fr : « s'asseoir » ;
+  - la nuance reste dans la remarque, déjà correcte et attribuée ;
+  - dans les trois exercices « sens », la bonne réponse devient « s'asseoir » (les distracteurs « se lever », « dormir », « s'arrêter, se tenir debout » restent valables).
+
+  Confiance : haute.
+
+## Mineur
+- [5.13 · lecture d'Ibn Mālik, note] Il est écrit « Ce sont les deux premiers vers ». En réalité, on lit le premier vers et la moitié du deuxième : le second hémistiche وَكِلْمَةٌ بِهَا كَلَامٌ قَدْ يُؤَمّْ, présent dans la transcription, est omis sans « (…) ». Proposition : « le premier vers et le début du deuxième », et ajouter « (…) » à la fin de la phrase 3 et du champ edition, comme pour al-Ḥarīrī.
+- [5.13 · lecture d'al-Ḥarīrī, traduction 2] نَائِمًا est traduit « couché ». Le texte dit « qui dort », et les exercices construits jouent sur اسْتَيْقَظَ (« se réveiller »). Proposition : « à celui qui dort (…) », et dans la règle « quand on était endormi (couché) ».
+- [5.13 · source d'al-Ḥarīrī] La mention « vocalisation complétée par IA, relue » laisse croire à une vérification humaine. La forme prévue par le plan est « voyelles ajoutées, rédigé par IA ».
+- [5.13 · dialogue] الْخَلِيلَ employé seul peut faire penser au surnom d'un prophète (al-Ḫalīl). Proposition : à la première mention en français, écrire « al-Ḫalīl ibn Aḥmad, le grammairien ». La lecture donne déjà le nom complet.
+- [5.13 · dialogue] فِي الْكَلَامِ est traduit « Dans l'usage ». Dans une leçon qui donne à كَلَامٌ son sens technique, la tournure peut prêter à confusion. Cela reste acceptable ; « Quand on parle, oui » serait plus fidèle.
+- [mots.json · mutaradif] nature « nom » : مُتَرَادِفٌ est un participe actif de forme VI, employé comme adjectif ou nom. « adjectif » serait plus juste.
+- [5.13 · lecture d'al-Ḥarīrī, lexique] Le lexique gagnerait à inclure الِانْتِقَالُ (« le passage ») et الْقُعُودُ / الْجُلُوسُ (noms d'action de قَعَدَ / جَلَسَ), sur lesquels portent les questions. Même remarque pour الْكَلِمُ (« les mots », collectif) dans la lecture d'Ibn Mālik.
+
+## Doutes (à soumettre au conseiller, ne pas trancher)
+- [5.13 · attribution « selon Ibn Mālik : un nom seul est un قَوْلٌ »] Le vers dit seulement وَالْقَوْلُ عَمّْ. Que le قَوْلٌ couvre aussi la كَلِمَة seule est la lecture des commentateurs, Ibn ʿAqīl en tête. Le plan prévoyait de lire ce commentaire, et il n'a pas été lu. La déduction est raisonnable (« son unité est la kalima, et le qawl est général »), mais elle dépasse un peu la lettre du texte lu. Pistes : formuler « le qawl est plus général : il comprend aussi le mot seul (lecture habituelle des commentateurs) », ou lire Ibn ʿAqīl (éd. Dieterici 1851). Confiance : moyenne.
+- [5.13 · coupure de « أَوْ سَاجِدًا »] La coupure est signalée par « (…) » et expliquée dans la note. Le sens du passage n'est pas faussé : la règle de fond (« du bas vers le haut ») reste intacte. Je la juge défendable. Couper « وَلِهَٰذَا قِيلَ لِمَنْ أُصِيبَ بِرِجْلِهِ مُقْعَدٌ » est aussi correct et signalé. Confiance : moyenne (choix éditorial à confirmer).
+- [5.13 · règle « قَعَدَ et جَلَسَ »] « Dans l'usage courant, les deux s'emploient souvent l'un pour l'autre » n'est pas dit tel quel par la source. Le texte l'implique seulement par « وَيَقُولُونَ لِلْقَائِمِ: اجْلِسْ ». Acceptable avec « rédigé par IA », mais c'est une affirmation non sourcée. Confiance : moyenne.
+
+## Points vérifiés sans problème
+- **A** :
+  - aucune suite coranique repérée (vérifié notamment autour de « لِمَنْ كَانَ », où aucune suite de trois mots n'est reprise) ;
+  - اسْتَقِمْ n'apparaît que comme exemple de grammairien, sans contexte religieux ;
+  - aucun nom divin ni sens exégétique ; récits profanes.
+- **B, E** : lemmes qaEada et qawol, racines frq et rdf présents dans la base. Il existe aussi un lemme faroq, mais au sens de « séparer » : le choix de la racine seule, avec avertissement, est cohérent. Aucune fréquence n'est affichée.
+- **Lectures comparées aux transcriptions** :
+  - al-Ḥarīrī : texte conforme mot pour mot, coupures « (…) » placées exactement, fin d'extrait avant « ومنه سميت نجد » correcte ;
+  - voyelles ajoutées justes : الْخَلِيلُ بْنُ أَحْمَدَ (ibn sans alif, أَحْمَدَ diptote), أَنْ يُقَالَ (subjonctif), إِلَى normalisé ;
+  - Ibn Mālik : conforme à l'édition ; la lecture عَمّْ est signalée.
+- **C** :
+  - vocalisation complète et correcte ;
+  - accusatifs justes : وَلَيْسَ كَلَامًا ; لَيْسَ كُلُّ لَفْظَيْنِ مُتَقَارِبَيْنِ مُتَرَادِفَيْنِ ;
+  - مَا الْفَرْقُ بَيْنَ… : distracteurs بَيْنُ et الْفَرْقَ bien fautifs ;
+  - impératif اقْعُدْ correct (يَقْعُدُ).
+- **D** : traductions fidèles, sauf « couché » (voir Mineur). La paraphrase de chaque nuance est attribuée (« selon al-Ḫalīl, rapporté par al-Ḥarīrī » ; « certains l'expliquent » pour بَعْضُهُمْ).
+- **F** :
+  - QCM à 3 choix, une seule bonne réponse dans chaque cas (dans « «الْكِتَابُ جَدِيدٌ» … », قَوْلٌ est bien absent des choix) ;
+  - prérequis présents (اسْتَيْقَظَ en cite-04, بَعْض en sens-05, تَاجِر, حَدِيقَة, طَوِيل) ;
+  - phrases modèles de l'Atelier justes et vocalisées ;
+  - translittérations qaʿada, qawlun, farqun, mutarādifun correctes.
+- **G** : sources et pages affichées. Exemples marqués construits / rédigés par IA.
+- **5.8** :
+  - كَانَ بَاسِمٌ جَالِسًا فِي الْحَدِيقَةِ : attribut à l'accusatif, distracteurs justes ;
+  - حَكَيْتُ الْقِصَّةَ : accompli 1re personne d'un défectueux, correct, distracteurs حَكَتْ / يَحْكِي valables.
+- **5.11** : أَعْطَى نَدِيمٌ بَاسِمًا قَلَمًا جَدِيدًا (deux compléments à l'accusatif), cohérent dans le dialogue, la lecture et le QCM ; aperçu limité aux noms propres.
+- **5.12** :
+  - لَوْلَا سَأَلْتَ زُهَيْرًا avec les distracteurs السُّؤَالُ / سُؤَالٌ : une seule réponse possible ;
+  - consigne « Bāsim a pris le calame, puis s'est mis à écrire » cohérente ;
+  - explication de رَأْسٌ à l'échauffement juste.
+
+## Ce que je n'ai pas pu vérifier
+- Les fac-similés eux-mêmes (archive.org). J'ai comparé la leçon aux transcriptions du dépôt, pas aux images.
+- Le nombre d'occurrences des lemmes (aucun n'est affiché) ; leur présence seule a été confirmée.
+- Le passage du garde-fou `quran_guard.py` : je ne l'ai pas exécuté.
+- Le commentaire d'Ibn ʿAqīl, qui n'a pas été lu (voir Doutes).

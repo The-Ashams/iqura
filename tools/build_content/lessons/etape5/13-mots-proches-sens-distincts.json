@@ -95,7 +95,7 @@
         {
           "qui": "nura",
           "ar": "فِي الْكَلَامِ، نَعَمْ. وَلَٰكِنَّ الْخَلِيلَ فَرَّقَ بَيْنَهُمَا.",
-          "fr": "Dans l'usage, oui. Mais al-Ḫalīl les distinguait."
+          "fr": "Quand on parle, oui. Mais al-Ḫalīl ibn Aḥmad, le grammairien, les distinguait."
         },
         {
           "qui": "hazim",
@@ -107,7 +107,7 @@
         "type": "qcm",
         "consigne": "Que dit Nūra ?",
         "choix": [
-          "dans l'usage, les deux mots se valent, mais al-Ḫalīl les distinguait",
+          "quand on parle, les deux mots se valent, mais le grammairien al-Ḫalīl les distinguait",
           "les deux mots n'ont rien à voir",
           "قَعَدَ n'existe pas"
         ],
@@ -164,13 +164,13 @@
         "وَالِاخْتِيَارُ عَلَى مَا حَكَاهُ الْخَلِيلُ بْنُ أَحْمَدَ أَنْ يُقَالَ لِمَنْ كَانَ قَائِمًا: اقْعُدْ، وَلِمَنْ كَانَ نَائِمًا (…): اجْلِسْ.",
         "وَعَلَّلَ بَعْضُهُمْ لِهَٰذَا الِاخْتِيَارِ بِأَنَّ الْقُعُودَ هُوَ الِانْتِقَالُ مِنْ عُلْوٍ إِلَى سُفْلٍ (…)، وَأَنَّ الْجُلُوسَ هُوَ الِانْتِقَالُ مِنْ سُفْلٍ إِلَى عُلْوٍ."
       ],
-      "source": "al-Ḥarīrī, Durrat al-ġawwāṣ, éd. H. Thorbecke, Leipzig, 1871, p. 143 (domaine public), extrait · vocalisation complétée par IA, relue",
+      "source": "al-Ḥarīrī, Durrat al-ġawwāṣ, éd. H. Thorbecke, Leipzig, 1871, p. 143 (domaine public), extrait · voyelles ajoutées, rédigé par IA",
       "edition": [
         "ويقولون لِلْقائم ٱجْلِسْ والاخْتِيارُ على ما حَكاهُ الخَليلُ بنُ أَحْمَدَ أَن يقالَ لِمَنْ كان قائمًا ٱقْعُدْ ولِمَنْ كان نائمًا (…) ٱجْلِسْ ، وعَلَّلَ بَعْضُهم لِهذا الاختيارِ بِأَنَّ القُعودَ هو الانْتِقالُ مِنْ عُلْوٍ الى سُفْلٍ (…) وأَنَّ الجُلوسَ هو الانْتِقالُ من سُفْلٍ إلى عُلْوٍ"
       ],
       "traduction": [
         "Les gens disent à celui qui est debout : « ijlis » (assieds-toi).",
-        "Mais le meilleur usage, selon ce que rapporte al-Ḫalīl ibn Aḥmad, est de dire à celui qui est debout : « uqʿud », et à celui qui est couché (…) : « ijlis ».",
+        "Mais le meilleur usage, selon ce que rapporte al-Ḫalīl ibn Aḥmad, est de dire à celui qui est debout : « uqʿud », et à celui qui dort (…) : « ijlis ».",
         "Certains l'expliquent ainsi : le quʿūd est le passage du haut vers le bas (…), et le ǧulūs le passage du bas vers le haut."
       ],
       "lexique": [
@@ -185,6 +185,14 @@
         {
           "ar": "عُلْوٌ، سُفْلٌ",
           "fr": "le haut, le bas"
+        },
+        {
+          "ar": "الِانْتِقَالُ",
+          "fr": "le passage (d'un état à un autre)"
+        },
+        {
+          "ar": "الْقُعُودُ، الْجُلُوسُ",
+          "fr": "le fait de s'asseoir (noms d'action de قَعَدَ et جَلَسَ)"
         }
       ],
       "note": "(…) : coupures faites ici, pas par l'éditeur : un autre cas de position, puis un exemple de mot de la même racine.",
@@ -216,7 +224,7 @@
     {
       "type": "regle",
       "titre": "قَعَدَ et جَلَسَ",
-      "texte": "Selon al-Ḫalīl, rapporté par al-Ḥarīrī : on s'assoit avec قَعَدَ quand on était debout, avec جَلَسَ quand on était couché. Dans l'usage courant, les deux s'emploient souvent l'un pour l'autre.",
+      "texte": "Selon al-Ḫalīl, rapporté par al-Ḥarīrī : on s'assoit avec قَعَدَ quand on était debout, avec جَلَسَ quand on dormait. Al-Ḥarīrī note pourtant que les gens disent اجْلِسْ à celui qui est debout : dans l'usage, les deux se mêlent.",
       "exemples": [
         "وَقَفَ بَاسِمٌ طَوِيلًا، ثُمَّ قَعَدَ.",
         "اسْتَيْقَظَ نَدِيمٌ فَجَلَسَ."
@@ -225,12 +233,12 @@
         "type": "qcm",
         "consigne": "Selon cette nuance, اسْتَيْقَظَ نَدِيمٌ فَجَلَسَ convient parce que Nadīm…",
         "choix": [
-          "était couché",
+          "dormait",
           "était debout",
           "marchait"
         ],
         "reponse": 0,
-        "explication": "Il se réveille : il était couché, donc جَلَسَ."
+        "explication": "Il se réveille : il dormait, donc جَلَسَ."
       }
     },
     {
@@ -240,17 +248,17 @@
       "phrases": [
         "كَلَامُنَا لَفْظٌ مُفِيدٌ كَاسْتَقِمْ",
         "وَاسْمٌ وَفِعْلٌ ثُمَّ حَرْفٌ الْكَلِمْ",
-        "وَاحِدُهُ كَلِمَةٌ وَالْقَوْلُ عَمّْ"
+        "وَاحِدُهُ كَلِمَةٌ وَالْقَوْلُ عَمّْ (…)"
       ],
       "source": "Ibn Mālik, Alfiyya, éd. A. I. Silvestre de Sacy, Paris, 1833, texte arabe p. 3 (domaine public) · vocalisation de l'édition",
       "edition": [
         "كَلَامُنَا لَفْظٌ مُفِيدٌ كَٱسْتَقِمْ ... وَٱسْمٌ وَفِعْلٌ ثُمَّ حَرْفٌ ٱلْكَلِمْ",
-        "وَاحِدُهُ كَلِمَةٌ وَٱلْقَوْلُ عَمْ"
+        "وَاحِدُهُ كَلِمَةٌ وَٱلْقَوْلُ عَمْ (…)"
       ],
       "traduction": [
         "Notre kalām (énoncé) est un ensemble de sons qui donne un sens complet, comme « istaqim » (« tiens-toi droit »).",
         "Le nom, le verbe, puis la particule forment le kalim (les mots).",
-        "Son unité est la kalima (le mot), et le qawl est plus général."
+        "Son unité est la kalima (le mot), et le qawl est plus général. (…)"
       ],
       "lexique": [
         {
@@ -264,16 +272,20 @@
         {
           "ar": "عَمَّ",
           "fr": "être général, englober"
+        },
+        {
+          "ar": "الْكَلِمُ",
+          "fr": "les mots (collectif)"
         }
       ],
-      "note": "Ce sont les deux premiers vers d'un célèbre poème de grammaire ; « istaqim » y est un exemple de grammairien. L'édition imprime la rime عَمْ ; on lit عَمّْ.",
+      "note": "Le premier vers et le début du deuxième d'un célèbre poème de grammaire ; (…) : suite du vers coupée ici. « istaqim » est un exemple de grammairien : un seul mot, mais un énoncé complet (le verbe contient « toi »). L'édition imprime عَمْ ; on lit عَمّْ.",
       "questions": [
         {
           "type": "qcm",
           "consigne": "Selon Ibn Mālik, le كَلَامٌ est…",
           "choix": [
             "un énoncé qui donne un sens complet",
-            "un seul mot",
+            "une suite de sons sans sens",
             "une lettre"
           ],
           "reponse": 0,
@@ -295,21 +307,22 @@
     {
       "type": "regle",
       "titre": "قَوْلٌ et كَلَامٌ",
-      "texte": "Selon Ibn Mālik, le كَلَامٌ est un énoncé qui donne un sens complet ; le قَوْلٌ est plus général : un seul mot est déjà un قَوْلٌ, mais pas un كَلَامٌ.",
+      "texte": "Selon Ibn Mālik, le كَلَامٌ est un énoncé qui donne un sens complet, même d'un seul mot comme اسْتَقِمْ ; le قَوْلٌ est plus général : tout كَلَامٌ est un قَوْلٌ.",
       "exemples": [
         "«الْكِتَابُ جَدِيدٌ» كَلَامٌ.",
-        "«كِتَابٌ» قَوْلٌ، وَلَيْسَ كَلَامًا."
+        "«كِتَابٌ» كَلِمَةٌ، وَلَيْسَ كَلَامًا.",
+        "كُلُّ كَلَامٍ قَوْلٌ."
       ],
       "question": {
         "type": "qcm",
         "consigne": "Selon Ibn Mālik, «كِتَابٌ» tout seul est…",
         "choix": [
-          "un قَوْلٌ, mais pas un كَلَامٌ",
+          "une كَلِمَةٌ, mais pas un كَلَامٌ",
           "un كَلَامٌ",
-          "ni l'un ni l'autre"
+          "une particule"
         ],
         "reponse": 0,
-        "explication": "Un seul mot ne donne pas un sens complet."
+        "explication": "كِتَابٌ seul ne donne pas un sens complet."
       }
     },
     {
@@ -320,12 +333,12 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "قَعَدَ",
           "choix": [
-            "s'asseoir (en venant de la station debout)",
+            "s'asseoir",
             "se lever",
             "s'arrêter, se tenir debout"
           ],
           "reponse": 0,
-          "explication": "قَعَدَ veut dire « s'asseoir (en venant de la station debout) »."
+          "explication": "قَعَدَ veut dire « s'asseoir »."
         },
         {
           "type": "sens",
@@ -373,7 +386,7 @@
             "نَامَ"
           ],
           "reponse": 0,
-          "explication": "Venant de la position couchée : جَلَسَ, selon al-Ḫalīl."
+          "explication": "Après le sommeil : جَلَسَ, selon al-Ḫalīl."
         },
         {
           "type": "completer",
@@ -389,8 +402,8 @@
         },
         {
           "type": "completer",
-          "consigne": "Complète, selon Ibn Mālik : « kitābun » est un qawl, pas un kalām.",
-          "ar": "«كِتَابٌ» قَوْلٌ، وَلَيْسَ …",
+          "consigne": "Complète, selon Ibn Mālik : « kitābun » est un mot, pas un kalām.",
+          "ar": "«كِتَابٌ» كَلِمَةٌ، وَلَيْسَ …",
           "choix_ar": [
             "كَلَامًا",
             "كَلَامٌ",
@@ -453,7 +466,7 @@
             "قَامَ"
           ],
           "reponse": 0,
-          "explication": "Il était couché : جَلَسَ."
+          "explication": "Il dormait : جَلَسَ."
         },
         {
           "type": "ecrire",
@@ -476,12 +489,12 @@
           "consigne": "Que veut dire ce mot ?",
           "ar": "قَعَدَ",
           "choix": [
-            "s'asseoir (en venant de la station debout)",
+            "s'asseoir",
             "dormir",
             "se lever"
           ],
           "reponse": 0,
-          "explication": "قَعَدَ veut dire « s'asseoir (en venant de la station debout) »."
+          "explication": "قَعَدَ veut dire « s'asseoir »."
         },
         {
           "type": "sens",

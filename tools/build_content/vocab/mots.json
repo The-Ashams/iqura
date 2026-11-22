@@ -11660,7 +11660,7 @@
    "id": "qaada",
    "ar": "قَعَدَ",
    "translit": "qaʿada",
-   "fr": "s'asseoir (en venant de la station debout)",
+   "fr": "s'asseoir",
    "nature": "verbe",
    "lecon": "sens-13",
    "source_sens": "rédigé par IA",
@@ -11691,8 +11691,8 @@
    "genre": "m",
    "lemme": "qawol",
    "exemple": {
-    "ar": "«كِتَابٌ» قَوْلٌ، وَلَيْسَ كَلَامًا.",
-    "fr": "« kitābun » est un qawl, pas un kalām."
+    "ar": "كُلُّ كَلَامٍ قَوْلٌ.",
+    "fr": "Tout kalām est un qawl."
    },
    "remarque": "nom d'action de قَالَ ; selon Ibn Mālik, le قَوْلٌ est plus général que le كَلَامٌ",
    "theme": "parole"
@@ -11723,7 +11723,7 @@
    "ar": "مُتَرَادِفٌ",
    "translit": "mutarādifun",
    "fr": "synonyme",
-   "nature": "nom",
+   "nature": "adjectif",
    "lecon": "sens-13",
    "source_sens": "rédigé par IA",
    "genre": "m",

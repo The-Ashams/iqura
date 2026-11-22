@@ -232,6 +232,18 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Tests | Les 7 leçons jouées de bout en bout ; tests du moteur de translittération |
 | À faire | Test de l'utilisateur quand il le souhaite ; ensuite Classique avancé 2 (leçons 5.8 à 5.13) |
 
+## 1 septdecies. Niveau Classique avancé 2 (leçons 5.8 à 5.13, région 5, chapitre B, 15 au 22/11/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Monde | Lieux 5 à 8 de la région 5 : la Cour des Conteurs (5.8), la Pépinière des Formes (5.9), l'Herbier des Thèmes (5.10, 5.11), le Labyrinthe des Sens (5.12, 5.13) ; décors en pixel art ; Zuhayr, Hāla et Nūra reviennent dans les dialogues ; proposition `docs/PROPOSITION_REGION_5.md` complétée, à valider |
+| Leçons | `tools/build_content/lessons/etape5/08` à `13` (sens-08 à sens-13) : narration classique (بَيْنَمَا… إِذْ, فَلَمَّا, répliques ; وَإِذْ seulement à reconnaître), formes verbales en contexte, vocabulaire par thèmes (nature, temps ; actions et qualités), un mot à plusieurs sens (عَيْنٌ, لِسَانٌ, رَأْسٌ « chef », أَخَذَ « se mettre à », لَوْلَا + passé), mots proches (جَلَسَ / قَعَدَ, قَوْلٌ / كَلَامٌ) ; environ 30 mots nouveaux |
+| Sources | Leçon 5.13 : al-Ḥarīrī, *Durrat al-ġawwāṣ*, éd. Thorbecke 1871, p. 143, et Ibn Mālik, *Alfiyya*, éd. de Sacy 1833, p. 3 ; transcriptions mot à mot dans `docs/sources/` ; paires non lues retirées (كَلَامٌ / جُمْلَةٌ, قَلَمٌ / أُنْبُوبَةٌ, عِلْمٌ / مَعْرِفَةٌ) |
+| Plan et décisions | `docs/relectures/decisions-classique-avance-2.md` (plan, puis doutes tranchés le 20/11) |
+| Relecture | `docs/relectures/2026-11-20-classique-avance-2.md` |
+| Compilation | Le lien direct (page « derniere-version ») n'est mis à jour que par un envoi marqué pour la publication ou un lancement manuel |
+| À faire | Test de l'utilisateur quand il le souhaite ; ensuite Classique avancé 3 (leçons 5.14 à 5.20 et examen final de la région 5) |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -295,7 +307,7 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 14. Avancé 1 construit et relu (§1 quaterdecies).
 15. Avancé 2 construit et relu (§1 quindecies) : toute la région 4 est prête à tester.
 16. Classique avancé 1 construit et relu (§1 sexdecies).
-17. En cours : Classique avancé 2 (leçons 5.8 à 5.13) ; lieux 5 à 8 et leçons 5.8 à 5.12 écrits, en relecture ; 5.13 attend la lecture des sources anciennes.
+17. Classique avancé 2 construit et relu (§1 septdecies). Suivant : Classique avancé 3 (leçons 5.14 à 5.20 et examen final de la région 5).
 18. Lien de téléchargement direct (sans compte GitHub) : https://github.com/The-Ashams/iqura/releases/tag/derniere-version ; mis à jour seulement par un envoi marqué pour la publication (voir `.github/workflows/build.yml`).
 
 ## 5. Problèmes connus
