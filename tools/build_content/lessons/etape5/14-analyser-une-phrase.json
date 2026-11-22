@@ -1,0 +1,551 @@
+{
+  "id": "sens-14",
+  "etape": 5,
+  "ordre": 14,
+  "format": 3,
+  "titre": "Analyser une phrase mot par mot",
+  "objectif": "Pour chaque mot d'une phrase construite, donner sa racine, son schème, sa nature et sa fonction.",
+  "statut": "ia_non_verifie",
+  "lieu": "table_grammairiens",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-13"
+  ],
+  "apercu": [
+    "مُضَافٌ",
+    "حَازِمٌ",
+    "بَاسِمٌ",
+    "زُهَيْرٌ",
+    "هَالَةُ",
+    "نَدِيمٍ",
+    "صَبَاحًا",
+    "طَوِيلَةً"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "texte": "À cette table, on pose une phrase et on la démonte mot par mot, comme une horloge."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Pour chaque mot : sa racine, son schème, sa nature, sa fonction. Toutes nos phrases sont inventées."
+        }
+      ],
+      "objectif": "Analyser une phrase mot par mot."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَاعِلٌ",
+          "choix": [
+            "(en grammaire) sujet du verbe",
+            "(en grammaire) complément",
+            "(en grammaire) attribut"
+          ],
+          "reponse": 0,
+          "explication": "فَاعِلٌ veut dire « (en grammaire) sujet du verbe »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَصْلٌ",
+          "choix": [
+            "origine ; (en grammaire) racine d'un mot (ses lettres de base)",
+            "schème",
+            "contexte"
+          ],
+          "reponse": 0,
+          "explication": "أَصْلٌ veut dire « origine ; (en grammaire) racine d'un mot (ses lettres de base) »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a écrit la lettre » : « la lettre » est le complément.",
+          "ar": "كَتَبَ بَاسِمٌ … .",
+          "choix_ar": [
+            "الرِّسَالَةَ",
+            "الرِّسَالَةُ",
+            "الرِّسَالَةِ"
+          ],
+          "reponse": 0,
+          "explication": "Le complément direct est à l'accusatif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "ar": "كَتَبَ بَاسِمٌ رِسَالَةً طَوِيلَةً.",
+          "fr": "Bāsim a écrit une longue lettre."
+        },
+        {
+          "qui": "basim",
+          "ar": "« كَتَبَ » فِعْلٌ، وَ« بَاسِمٌ » فَاعِلٌ.",
+          "fr": "« kataba » est un verbe, et « Bāsim » le sujet."
+        },
+        {
+          "qui": "hazim",
+          "ar": "وَ« رِسَالَةً » مَفْعُولٌ بِهِ، وَ« طَوِيلَةً » نَعْتٌ.",
+          "fr": "Et « une lettre » est le complément direct, « longue » l'adjectif qui le qualifie."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans la phrase de Ḥāzim, « طَوِيلَةً » est…",
+        "choix": [
+          "un adjectif (نَعْتٌ) qui qualifie « رِسَالَةً »",
+          "le sujet",
+          "un verbe"
+        ],
+        "reponse": 0,
+        "explication": "Il suit رِسَالَةً : accusatif, féminin, indéfini."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ism_gram",
+        "harf_gram",
+        "naat",
+        "zarf",
+        "mudaf_ilayh"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "ظَرْفٌ",
+        "choix": [
+          "(en grammaire) complément de temps ou de lieu",
+          "(en grammaire) adjectif qui suit un nom",
+          "(en grammaire) particule"
+        ],
+        "reponse": 0,
+        "explication": "ظَرْفٌ veut dire « (en grammaire) complément de temps ou de lieu »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Trois natures",
+      "texte": "Pour les grammairiens arabes, chaque mot est un nom (اسْمٌ), un verbe (فِعْلٌ) ou une particule (حَرْفٌ), comme le dit Ibn Mālik. L'adjectif, le pronom et le démonstratif sont des noms.",
+      "exemples": [
+        "كِتَابٌ",
+        "كَتَبَ",
+        "فِي"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pour les grammairiens arabes, « طَوِيلٌ » (long) est…",
+        "choix": [
+          "un nom (اسْمٌ)",
+          "un verbe",
+          "une particule"
+        ],
+        "reponse": 0,
+        "explication": "L'adjectif est un اسْمٌ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La grille",
+      "texte": "Pour chaque mot : racine (أَصْلٌ), schème (وَزْنٌ), nature, puis fonction. Une particule n'a ni racine ni schème à donner ; un nom propre est seulement « nom propre ».",
+      "exemples": [
+        "كَتَبَ بَاسِمٌ رِسَالَةً طَوِيلَةً."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans cette phrase, « بَاسِمٌ » a pour racine…",
+        "choix": [
+          "aucune à donner : c'est un nom propre",
+          "ب س م",
+          "ك ت ب"
+        ],
+        "reponse": 0,
+        "explication": "Un nom propre : « nom propre », sans racine à analyser."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Trois fonctions nouvelles",
+      "texte": "نَعْتٌ : l'adjectif, qui suit le cas de son nom. ظَرْفٌ : le complément de temps ou de lieu, à l'accusatif (صَبَاحًا, أَمَامَ) ; مُضَافٌ إِلَيْهِ : le second nom de l'iḍāfa, au génitif.",
+      "exemples": [
+        "جَلَسَ زُهَيْرٌ فِي الْحَدِيقَةِ صَبَاحًا.",
+        "قَرَأَتْ هَالَةُ كِتَابَ نَدِيمٍ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans قَرَأَتْ هَالَةُ كِتَابَ نَدِيمٍ, « نَدِيمٍ » est…",
+        "choix": [
+          "مُضَافٌ إِلَيْهِ (génitif)",
+          "فَاعِلٌ",
+          "نَعْتٌ"
+        ],
+        "reponse": 0,
+        "explication": "Second nom de l'iḍāfa : génitif."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Cinq phrases sur la table",
+      "texte": "Phrases construites, rédigées par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "الْكِتَابُ الْجَدِيدُ فِي الْبَيْتِ.",
+        "جَلَسَ زُهَيْرٌ فِي الْحَدِيقَةِ صَبَاحًا.",
+        "انْتَظَرَ بَاسِمٌ صَدِيقَهُ أَمَامَ الْبَابِ.",
+        "قَرَأَتْ هَالَةُ كِتَابَ نَدِيمٍ.",
+        "هَلْ فَهِمْتَ الدَّرْسَ؟"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Phrase 1 : « الْجَدِيدُ » est…",
+          "choix": [
+            "نَعْتٌ de الْكِتَابُ",
+            "مُبْتَدَأٌ",
+            "ظَرْفٌ"
+          ],
+          "reponse": 0,
+          "explication": "Il suit الْكِتَابُ : nominatif, défini."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Phrase 2 : « صَبَاحًا » est…",
+          "choix": [
+            "ظَرْفٌ (complément de temps)",
+            "مَفْعُولٌ بِهِ",
+            "نَعْتٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le matin : complément de temps, à l'accusatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Phrase 5 : « هَلْ » est…",
+          "choix": [
+            "un حَرْفٌ (particule)",
+            "un اسْمٌ",
+            "un فِعْلٌ"
+          ],
+          "reponse": 0,
+          "explication": "هَلْ : particule de question."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَعْتٌ",
+          "choix": [
+            "(en grammaire) adjectif qui suit un nom",
+            "(en grammaire) complément de temps ou de lieu",
+            "(en grammaire) second nom de l'iḍāfa"
+          ],
+          "reponse": 0,
+          "explication": "نَعْتٌ veut dire « (en grammaire) adjectif qui suit un nom »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُضَافٌ إِلَيْهِ",
+          "choix": [
+            "(en grammaire) second nom de l'iḍāfa",
+            "(en grammaire) particule",
+            "(en grammaire) sujet du verbe"
+          ],
+          "reponse": 0,
+          "explication": "مُضَافٌ إِلَيْهِ veut dire « (en grammaire) second nom de l'iḍāfa »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans انْتَظَرَ بَاسِمٌ صَدِيقَهُ أَمَامَ الْبَابِ, « أَمَامَ » est…",
+          "choix": [
+            "ظَرْفٌ (complément de lieu)",
+            "فَاعِلٌ",
+            "حَرْفٌ"
+          ],
+          "reponse": 0,
+          "explication": "Devant : complément de lieu, à l'accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète la nature : « فِي » est…",
+          "ar": "« فِي » …",
+          "choix_ar": [
+            "حَرْفٌ",
+            "اسْمٌ",
+            "فِعْلٌ"
+          ],
+          "reponse": 0,
+          "explication": "فِي : particule."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète la nature : « كِتَابٌ » est…",
+          "ar": "« كِتَابٌ » …",
+          "choix_ar": [
+            "اسْمٌ",
+            "حَرْفٌ",
+            "فِعْلٌ"
+          ],
+          "reponse": 0,
+          "explication": "كِتَابٌ : nom."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a écrit une longue lettre » (accorde l'adjectif).",
+          "ar": "كَتَبَ بَاسِمٌ رِسَالَةً …",
+          "choix_ar": [
+            "طَوِيلَةً",
+            "طَوِيلَةٌ",
+            "طَوِيلًا"
+          ],
+          "reponse": 0,
+          "explication": "Le نَعْتٌ suit son nom : accusatif, féminin, indéfini."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Hāla a lu le livre de Nadīm. »",
+          "ar": "قَرَأَتْ هَالَةُ كِتَابَ …",
+          "choix_ar": [
+            "نَدِيمٍ",
+            "نَدِيمٌ",
+            "نَدِيمًا"
+          ],
+          "reponse": 0,
+          "explication": "مُضَافٌ إِلَيْهِ : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Zuhayr s'est assis dans le jardin le matin. »",
+          "ar": "جَلَسَ زُهَيْرٌ فِي الْحَدِيقَةِ …",
+          "choix_ar": [
+            "صَبَاحًا",
+            "صَبَاحٌ",
+            "صَبَاحٍ"
+          ],
+          "reponse": 0,
+          "explication": "ظَرْفٌ de temps : accusatif."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Construis d'après l'analyse : verbe, sujet, complément, adjectif (« Nadīm a lu un livre ancien »).",
+          "tuiles": [
+            "قَرَأَ",
+            "نَدِيمٌ",
+            "كِتَابًا",
+            "قَدِيمًا"
+          ],
+          "solution": [
+            "قَرَأَ",
+            "نَدِيمٌ",
+            "كِتَابًا",
+            "قَدِيمًا"
+          ],
+          "explication": "فِعْلٌ + فَاعِلٌ + مَفْعُولٌ بِهِ + نَعْتٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le nouveau livre est dans la maison. » ?",
+          "choix_ar": [
+            "الْكِتَابُ الْجَدِيدُ فِي الْبَيْتِ.",
+            "الْكِتَابُ جَدِيدٌ فِي الْبَيْتِ.",
+            "كِتَابُ الْجَدِيدِ فِي الْبَيْتِ."
+          ],
+          "reponse": 0,
+          "explication": "Le نَعْتٌ défini suit son nom défini : الْكِتَابُ الْجَدِيدُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Construis : « Bāsim a attendu son ami devant la porte. »",
+          "ar": "انْتَظَرَ بَاسِمٌ صَدِيقَهُ … الْبَابِ.",
+          "choix_ar": [
+            "أَمَامَ",
+            "أَمَامُ",
+            "أَمَامِ"
+          ],
+          "reponse": 0,
+          "explication": "ظَرْفٌ de lieu : أَمَامَ, à l'accusatif."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris une phrase avec un verbe, un sujet, un complément et un adjectif, puis donne la fonction de chaque mot en français.",
+          "modele": [
+            "كَتَبَ زُهَيْرٌ رِسَالَةً قَصِيرَةً.",
+            "« كَتَبَ » فِعْلٌ، وَ« زُهَيْرٌ » فَاعِلٌ.",
+            "« رِسَالَةً » مَفْعُولٌ بِهِ، وَ« قَصِيرَةً » نَعْتٌ."
+          ],
+          "explication": "Compare : l'adjectif suit-il bien le cas, le genre et l'article de son nom ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ظَرْفٌ",
+          "choix": [
+            "(en grammaire) complément de temps ou de lieu",
+            "(en grammaire) adjectif qui suit un nom",
+            "(en grammaire) particule"
+          ],
+          "reponse": 0,
+          "explication": "ظَرْفٌ veut dire « (en grammaire) complément de temps ou de lieu »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَرْفٌ",
+          "choix": [
+            "(en grammaire) particule",
+            "(en grammaire) nom",
+            "(en grammaire) verbe"
+          ],
+          "reponse": 0,
+          "explication": "حَرْفٌ veut dire « (en grammaire) particule »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَعْتٌ",
+          "choix": [
+            "(en grammaire) adjectif qui suit un nom",
+            "(en grammaire) second nom de l'iḍāfa",
+            "(en grammaire) sujet du verbe"
+          ],
+          "reponse": 0,
+          "explication": "نَعْتٌ veut dire « (en grammaire) adjectif qui suit un nom »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans الْكِتَابُ الْجَدِيدُ فِي الْبَيْتِ, « الْجَدِيدُ » est…",
+          "choix": [
+            "نَعْتٌ",
+            "خَبَرٌ",
+            "فَاعِلٌ"
+          ],
+          "reponse": 0,
+          "explication": "Il suit الْكِتَابُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans قَرَأَتْ هَالَةُ كِتَابَ نَدِيمٍ, « هَالَةُ » est…",
+          "choix": [
+            "فَاعِلٌ",
+            "مُضَافٌ إِلَيْهِ",
+            "مَفْعُولٌ بِهِ"
+          ],
+          "reponse": 0,
+          "explication": "Le sujet du verbe قَرَأَتْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a lu un livre ancien. »",
+          "ar": "قَرَأَ بَاسِمٌ كِتَابًا …",
+          "choix_ar": [
+            "قَدِيمًا",
+            "قَدِيمٌ",
+            "قَدِيمٍ"
+          ],
+          "reponse": 0,
+          "explication": "نَعْتٌ : accusatif, indéfini."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « le livre de Zuhayr »",
+          "ar": "كِتَابُ …",
+          "choix_ar": [
+            "زُهَيْرٍ",
+            "زُهَيْرٌ",
+            "زُهَيْرًا"
+          ],
+          "reponse": 0,
+          "explication": "مُضَافٌ إِلَيْهِ : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète la nature : « هَلْ » est…",
+          "ar": "« هَلْ » …",
+          "choix_ar": [
+            "حَرْفٌ",
+            "اسْمٌ",
+            "فِعْلٌ"
+          ],
+          "reponse": 0,
+          "explication": "Particule de question."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Zuhayr s'est assis dans le jardin le matin. » ?",
+          "choix_ar": [
+            "جَلَسَ زُهَيْرٌ فِي الْحَدِيقَةِ صَبَاحًا.",
+            "جَلَسَ زُهَيْرٌ فِي الْحَدِيقَةِ صَبَاحٌ.",
+            "جَلَسَ زُهَيْرٌ فِي الْحَدِيقَةُ صَبَاحًا."
+          ],
+          "reponse": 0,
+          "explication": "فِي + génitif ; ظَرْفٌ à l'accusatif."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَعَدَ",
+          "choix": [
+            "s'asseoir",
+            "se lever",
+            "dormir"
+          ],
+          "reponse": 0,
+          "explication": "قَعَدَ veut dire « s'asseoir ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُتَرَادِفٌ",
+          "choix": [
+            "synonyme",
+            "différence",
+            "contexte"
+          ],
+          "reponse": 0,
+          "explication": "مُتَرَادِفٌ veut dire « synonyme ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَيْنٌ",
+          "choix": [
+            "œil ; source (d'eau)",
+            "langue (l'organe) ; langue (parlée)",
+            "tête ; sommet ; chef (d'un groupe)"
+          ],
+          "reponse": 0,
+          "explication": "عَيْنٌ veut dire « œil ; source (d'eau) ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais démonter une phrase : la nature de chaque mot (اسْمٌ, فِعْلٌ, حَرْفٌ) et sa fonction, dont trois nouvelles : نَعْتٌ, ظَرْفٌ, مُضَافٌ إِلَيْهِ.",
+      "suite": "Prochaine leçon, à la même table : le cas de chaque mot et sa marque, l'iʿrāb appliqué."
+    }
+  ]
+}

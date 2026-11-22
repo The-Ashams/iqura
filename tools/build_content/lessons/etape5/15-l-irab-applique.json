@@ -1,0 +1,594 @@
+{
+  "id": "sens-15",
+  "etape": 5,
+  "ordre": 15,
+  "format": 3,
+  "titre": "L'iʿrāb appliqué",
+  "objectif": "Dire, pour chaque mot, sa fonction, son cas et sa marque.",
+  "statut": "ia_non_verifie",
+  "lieu": "table_grammairiens",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-14"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "وِدَادُ",
+    "بَاسِمٌ",
+    "زُهَيْرٌ",
+    "نَدِيمٌ",
+    "رَفْعِهِ",
+    "نَصْبِهِ",
+    "جَرِّهِ",
+    "جَزْمِهِ",
+    "بِلَمْ",
+    "بِأَنْ",
+    "بِفِي",
+    "يُرِيدُ",
+    "طَرْقًا"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "widad",
+          "texte": "Tu te souviens de mon tribunal des scribes ? Je reviens pour la dernière audience : chaque mot doit dire son cas."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Fonction, cas, marque : c'est l'iʿrāb. Toutes les phrases sont inventées."
+        }
+      ],
+      "objectif": "Donner la fonction, le cas et la marque de chaque mot."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَعْتٌ",
+          "choix": [
+            "(en grammaire) adjectif qui suit un nom",
+            "(en grammaire) complément de temps ou de lieu",
+            "(en grammaire) particule"
+          ],
+          "reponse": 0,
+          "explication": "نَعْتٌ veut dire « (en grammaire) adjectif qui suit un nom »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِعْرَابٌ",
+          "choix": [
+            "analyse des fins de mots (iʿrāb)",
+            "racine",
+            "schème"
+          ],
+          "reponse": 0,
+          "explication": "إِعْرَابٌ veut dire « analyse des fins de mots (iʿrāb) »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nadīm n'a pas écrit la lettre. »",
+          "ar": "لَمْ … نَدِيمٌ الرِّسَالَةَ.",
+          "choix_ar": [
+            "يَكْتُبْ",
+            "يَكْتُبُ",
+            "يَكْتُبَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : jussif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "widad",
+          "ar": "وَصَلَ زُهَيْرٌ مَسْرُورًا. مَا إِعْرَابُ « زُهَيْرٌ »؟",
+          "fr": "Zuhayr est arrivé content. Quelle est l'analyse de « Zuhayr » ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "فَاعِلٌ مَرْفُوعٌ، وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ.",
+          "fr": "Sujet au nominatif, et sa marque de nominatif est la ḍamma."
+        },
+        {
+          "qui": "widad",
+          "ar": "أَصَبْتَ. وَ« مَسْرُورًا » حَالٌ مَنْصُوبٌ.",
+          "fr": "Juste. Et « content » est un ḥāl à l'accusatif."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle est la marque du nominatif de « زُهَيْرٌ » ?",
+        "choix": [
+          "la ḍamma",
+          "la fatḥa",
+          "la kasra"
+        ],
+        "reponse": 0,
+        "explication": "وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "marfu",
+        "mansub",
+        "majrur",
+        "majzum",
+        "alama",
+        "wajh"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مَجْرُورٌ",
+        "choix": [
+          "(en grammaire) au génitif",
+          "(en grammaire) à l'accusatif ; au subjonctif",
+          "(en grammaire) au jussif"
+        ],
+        "reponse": 0,
+        "explication": "مَجْرُورٌ veut dire « (en grammaire) au génitif »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les quatre cas",
+      "texte": "Pour les noms : مَرْفُوعٌ (-u), مَنْصُوبٌ (-a), مَجْرُورٌ (-i). Pour l'inaccompli : مَرْفُوعٌ, مَنْصُوبٌ après أَنْ ou لَنْ, مَجْزُومٌ après لَمْ.",
+      "exemples": [
+        "زُهَيْرٌ",
+        "الرِّسَالَةَ",
+        "التَّاجِرِ",
+        "يَكْتُبْ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Après لَمْ, l'inaccompli est…",
+        "choix": [
+          "مَجْزُومٌ",
+          "مَنْصُوبٌ",
+          "مَجْرُورٌ"
+        ],
+        "reponse": 0,
+        "explication": "لَمْ يَكْتُبْ : jussif."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La marque",
+      "texte": "Les grammairiens disent : « وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ » (et نَصْبِهِ الْفَتْحَةُ, جَرِّهِ الْكَسْرَةُ, جَزْمِهِ السُّكُونُ). Parfois, la marque est une lettre : dans عِشْرِينَ, l'accusatif se marque par le ي.",
+      "exemples": [
+        "وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ",
+        "وَعَلَامَةُ جَزْمِهِ السُّكُونُ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Et sa marque d'accusatif est la fatḥa. »",
+        "ar": "وَعَلَامَةُ نَصْبِهِ …",
+        "choix_ar": [
+          "الْفَتْحَةُ",
+          "الضَّمَّةُ",
+          "الْكَسْرَةُ"
+        ],
+        "reponse": 0,
+        "explication": "Accusatif : fatḥa."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "كَانَ et إِنَّ",
+      "texte": "Avec كَانَ : le nom de كَانَ est مَرْفُوعٌ, son attribut مَنْصُوبٌ. Avec إِنَّ, c'est l'inverse : le nom de إِنَّ est مَنْصُوبٌ, son attribut مَرْفُوعٌ.",
+      "exemples": [
+        "كَانَ الْمَاءُ بَارِدًا.",
+        "إِنَّ الطَّرِيقَ طَوِيلٌ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans إِنَّ الطَّرِيقَ طَوِيلٌ, « الطَّرِيقَ » est…",
+        "choix": [
+          "nom de إِنَّ, مَنْصُوبٌ",
+          "attribut, مَرْفُوعٌ",
+          "مَجْرُورٌ"
+        ],
+        "reponse": 0,
+        "explication": "Après إِنَّ, le nom passe à -a."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Deux analyses",
+      "texte": "Quand deux analyses sont possibles, les grammairiens disent فِيهِ وَجْهَانِ ; IQURA les montre sans choisir. Après وَ, le mot prend le cas du mot auquel il est relié.",
+      "exemples": [
+        "فِي هَٰذِهِ الْكَلِمَةِ وَجْهَانِ."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "فِيهِ وَجْهَانِ veut dire…",
+        "choix": [
+          "deux analyses sont possibles",
+          "le mot a deux sens",
+          "il y a deux fautes"
+        ],
+        "reponse": 0,
+        "explication": "وَجْهٌ : manière d'analyser."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "L'audience de Widād",
+      "texte": "Phrases construites, rédigées par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "كَانَ الْمَاءُ بَارِدًا.",
+        "إِنَّ الطَّرِيقَ طَوِيلٌ.",
+        "يُرِيدُ بَاسِمٌ أَنْ يَقْرَأَ الْكِتَابَ.",
+        "اشْتَرَى بَاسِمٌ عِشْرِينَ كِتَابًا.",
+        "فِي كِيسِ التَّاجِرِ دِرْهَمٌ وَاحِدٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Phrase 1 : « بَارِدًا » est…",
+          "choix": [
+            "attribut de كَانَ, مَنْصُوبٌ",
+            "nom de كَانَ, مَرْفُوعٌ",
+            "حَالٌ"
+          ],
+          "reponse": 0,
+          "explication": "خَبَرُ كَانَ : accusatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Phrase 3 : « يَقْرَأَ » est…",
+          "choix": [
+            "مَنْصُوبٌ بِأَنْ",
+            "مَجْزُومٌ",
+            "مَرْفُوعٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : subjonctif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Phrase 4 : la marque d'accusatif de « عِشْرِينَ » est…",
+          "choix": [
+            "le ي",
+            "la fatḥa",
+            "le ن"
+          ],
+          "reponse": 0,
+          "explication": "وَعَلَامَةُ نَصْبِهِ الْيَاءُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Phrase 5 : « التَّاجِرِ » est…",
+          "choix": [
+            "مُضَافٌ إِلَيْهِ مَجْرُورٌ",
+            "فَاعِلٌ مَرْفُوعٌ",
+            "مَفْعُولٌ بِهِ مَنْصُوبٌ"
+          ],
+          "reponse": 0,
+          "explication": "كِيسِ التَّاجِرِ : iḍāfa."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَنْصُوبٌ",
+          "choix": [
+            "(en grammaire) à l'accusatif ; au subjonctif",
+            "(en grammaire) au nominatif ; à l'indicatif",
+            "(en grammaire) au génitif"
+          ],
+          "reponse": 0,
+          "explication": "مَنْصُوبٌ veut dire « (en grammaire) à l'accusatif ; au subjonctif »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَلَامَةٌ",
+          "choix": [
+            "marque, signe",
+            "manière d'analyser",
+            "racine"
+          ],
+          "reponse": 0,
+          "explication": "عَلَامَةٌ veut dire « marque, signe »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Zuhayr : sujet au nominatif. »",
+          "ar": "« زُهَيْرٌ » فَاعِلٌ …",
+          "choix_ar": [
+            "مَرْفُوعٌ",
+            "مَنْصُوبٌ",
+            "مَجْرُورٌ"
+          ],
+          "reponse": 0,
+          "explication": "Le sujet est au nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « la lettre : complément au cas direct. »",
+          "ar": "« الرِّسَالَةَ » مَفْعُولٌ بِهِ …",
+          "choix_ar": [
+            "مَنْصُوبٌ",
+            "مَرْفُوعٌ",
+            "مَجْزُومٌ"
+          ],
+          "reponse": 0,
+          "explication": "Complément direct : accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Et sa marque de jussif est le sukūn. »",
+          "ar": "وَعَلَامَةُ جَزْمِهِ …",
+          "choix_ar": [
+            "السُّكُونُ",
+            "الضَّمَّةُ",
+            "الْفَتْحَةُ"
+          ],
+          "reponse": 0,
+          "explication": "Jussif : sukūn."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets la fin : « L'eau était froide. »",
+          "ar": "كَانَ الْمَاءُ …",
+          "choix_ar": [
+            "بَارِدًا",
+            "بَارِدٌ",
+            "بَارِدٍ"
+          ],
+          "reponse": 0,
+          "explication": "خَبَرُ كَانَ : accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets la fin : « Le chemin est long. »",
+          "ar": "إِنَّ الطَّرِيقَ …",
+          "choix_ar": [
+            "طَوِيلٌ",
+            "طَوِيلًا",
+            "طَوِيلٍ"
+          ],
+          "reponse": 0,
+          "explication": "خَبَرُ إِنَّ : nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets la fin : « Bāsim veut lire le livre. »",
+          "ar": "يُرِيدُ بَاسِمٌ أَنْ … الْكِتَابَ.",
+          "choix_ar": [
+            "يَقْرَأَ",
+            "يَقْرَأُ",
+            "يَقْرَأْ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : subjonctif."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Zuhayr frappa à la porte d'un coup (complément absolu). » ?",
+          "choix_ar": [
+            "طَرَقَ زُهَيْرٌ الْبَابَ طَرْقًا.",
+            "طَرَقَ زُهَيْرٌ الْبَابَ طَرْقٌ.",
+            "طَرَقَ زُهَيْرٌ الْبَابُ طَرْقًا."
+          ],
+          "reponse": 0,
+          "explication": "مَفْعُولٌ مُطْلَقٌ : accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets la fin : « Dans la bourse du marchand, il y a un dirham. »",
+          "ar": "فِي كِيسِ … دِرْهَمٌ.",
+          "choix_ar": [
+            "التَّاجِرِ",
+            "التَّاجِرُ",
+            "التَّاجِرَ"
+          ],
+          "reponse": 0,
+          "explication": "مُضَافٌ إِلَيْهِ : génitif."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets l'analyse dans l'ordre : « sujet au nominatif, et sa marque est la ḍamma ».",
+          "tuiles": [
+            "فَاعِلٌ",
+            "مَرْفُوعٌ،",
+            "وَعَلَامَةُ",
+            "رَفْعِهِ",
+            "الضَّمَّةُ"
+          ],
+          "solution": [
+            "فَاعِلٌ",
+            "مَرْفُوعٌ،",
+            "وَعَلَامَةُ",
+            "رَفْعِهِ",
+            "الضَّمَّةُ"
+          ],
+          "explication": "Fonction, cas, puis la marque."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris une phrase avec كَانَ, puis donne l'analyse de son nom et de son attribut.",
+          "modele": [
+            "كَانَ الطَّرِيقُ طَوِيلًا.",
+            "« الطَّرِيقُ » اسْمُ كَانَ مَرْفُوعٌ.",
+            "« طَوِيلًا » خَبَرُ كَانَ مَنْصُوبٌ."
+          ],
+          "explication": "Compare : le nom de كَانَ est-il au nominatif, et son attribut à l'accusatif ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَرْفُوعٌ",
+          "choix": [
+            "(en grammaire) au nominatif ; à l'indicatif",
+            "(en grammaire) au génitif",
+            "(en grammaire) au jussif"
+          ],
+          "reponse": 0,
+          "explication": "مَرْفُوعٌ veut dire « (en grammaire) au nominatif ; à l'indicatif »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَجْزُومٌ",
+          "choix": [
+            "(en grammaire) au jussif",
+            "(en grammaire) à l'accusatif ; au subjonctif",
+            "(en grammaire) au nominatif ; à l'indicatif"
+          ],
+          "reponse": 0,
+          "explication": "مَجْزُومٌ veut dire « (en grammaire) au jussif »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَجْهٌ",
+          "choix": [
+            "(en grammaire) manière d'analyser",
+            "marque, signe",
+            "(en grammaire) particule"
+          ],
+          "reponse": 0,
+          "explication": "وَجْهٌ veut dire « (en grammaire) manière d'analyser »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans كَانَ الْمَاءُ بَارِدًا, « الْمَاءُ » est…",
+          "choix": [
+            "nom de كَانَ, مَرْفُوعٌ",
+            "attribut, مَنْصُوبٌ",
+            "مَجْرُورٌ"
+          ],
+          "reponse": 0,
+          "explication": "اسْمُ كَانَ : nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans لَمْ يَكْتُبْ نَدِيمٌ, la marque de « يَكْتُبْ » est…",
+          "choix": [
+            "le sukūn",
+            "la ḍamma",
+            "la fatḥa"
+          ],
+          "reponse": 0,
+          "explication": "وَعَلَامَةُ جَزْمِهِ السُّكُونُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets la fin : « Le chemin est long. »",
+          "ar": "إِنَّ … طَوِيلٌ.",
+          "choix_ar": [
+            "الطَّرِيقَ",
+            "الطَّرِيقُ",
+            "الطَّرِيقِ"
+          ],
+          "reponse": 0,
+          "explication": "اسْمُ إِنَّ : accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Et sa marque de génitif est la kasra. »",
+          "ar": "وَعَلَامَةُ جَرِّهِ …",
+          "choix_ar": [
+            "الْكَسْرَةُ",
+            "الضَّمَّةُ",
+            "السُّكُونُ"
+          ],
+          "reponse": 0,
+          "explication": "Génitif : kasra."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète l'analyse de « Zuhayr » dans وَصَلَ زُهَيْرٌ.",
+          "ar": "فَاعِلٌ مَرْفُوعٌ، وَعَلَامَةُ رَفْعِهِ …",
+          "choix_ar": [
+            "الضَّمَّةُ",
+            "الْفَتْحَةُ",
+            "الْيَاءُ"
+          ],
+          "reponse": 0,
+          "explication": "Nominatif : ḍamma."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim veut lire le livre. » ?",
+          "choix_ar": [
+            "يُرِيدُ بَاسِمٌ أَنْ يَقْرَأَ الْكِتَابَ.",
+            "يُرِيدُ بَاسِمٌ أَنْ يَقْرَأُ الْكِتَابَ.",
+            "يُرِيدُ بَاسِمٌ أَنْ يَقْرَأَ الْكِتَابُ."
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : subjonctif ; le complément à l'accusatif."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ظَرْفٌ",
+          "choix": [
+            "(en grammaire) complément de temps ou de lieu",
+            "(en grammaire) adjectif qui suit un nom",
+            "(en grammaire) particule"
+          ],
+          "reponse": 0,
+          "explication": "ظَرْفٌ veut dire « (en grammaire) complément de temps ou de lieu ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « le livre de Nadīm »",
+          "ar": "كِتَابُ …",
+          "choix_ar": [
+            "نَدِيمٍ",
+            "نَدِيمٌ",
+            "نَدِيمًا"
+          ],
+          "reponse": 0,
+          "explication": "مُضَافٌ إِلَيْهِ : génitif.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَعْتٌ",
+          "choix": [
+            "(en grammaire) adjectif qui suit un nom",
+            "(en grammaire) second nom de l'iḍāfa",
+            "(en grammaire) sujet du verbe"
+          ],
+          "reponse": 0,
+          "explication": "نَعْتٌ veut dire « (en grammaire) adjectif qui suit un nom ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu donnes l'iʿrāb d'un mot : sa fonction, son cas (مَرْفُوعٌ, مَنْصُوبٌ, مَجْرُورٌ, مَجْزُومٌ) et sa marque (وَعَلَامَةُ…), et tu sais dire فِيهِ وَجْهَانِ.",
+      "suite": "Prochaine étape, la Bibliothèque du Jardin : suivre un texte long."
+    }
+  ]
+}

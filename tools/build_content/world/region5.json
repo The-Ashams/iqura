@@ -184,7 +184,10 @@
         100,
         14
       ],
-      "lecons": [],
+      "lecons": [
+        14,
+        15
+      ],
       "scene": "scene_table_grammairiens",
       "sol": 84,
       "tranche_j1a": true,
