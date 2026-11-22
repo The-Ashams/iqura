@@ -151,7 +151,7 @@
       "texte": "Texte ancien. Lis ; le lexique est sous le texte.",
       "phrases": [
         "زَعَمُوا أَنَّ ثَعْلَبًا جَائِعًا أَتَى عَلَى أَجَمَةٍ فِيهَا طَبْلٌ مُلْقًى إِلَى جَانِبِ شَجَرَةٍ.",
-        "فَإِذَا هَبَّتِ الرِّيحُ تَحَرَّكَتْ أَغْصَانُ الشَّجَرَةِ (وَ)أَصَابَتِ الطَّبْلَ، فَصَوَّتَ صَوْتًا شَدِيدًا.",
+        "فَإِذَا هَبَّتِ الرِّيحُ تَحَرَّكَتْ أَغْصَانُ الشَّجَرَةِ (وَ) أَصَابَتِ الطَّبْلَ، فَصَوَّتَ صَوْتًا شَدِيدًا.",
         "فَسَمِعَ الثَّعْلَبُ ذَٰلِكَ الصَّوْتَ، فَتَوَجَّهَ نَحْوَهُ حَتَّى انْتَهَى إِلَى الطَّبْلِ.",
         "فَلَمَّا رَآهُ ضَخْمًا قَالَ فِي نَفْسِهِ: إِنَّ هَٰذَا لَخَلِيقٌ بِكَثْرَةِ الشَّحْمِ وَاللَّحْمِ.",
         "فَعَالَجَهُ الْعِلَاجَ حَتَّى شَقَّهُ، فَلَمَّا رَآهُ أَجْوَفَ قَالَ الثَّعْلَبُ: لَعَلَّ أَفْسَلَ الْأَشْيَاءِ أَعْظَمُهَا جُثَّةً وَأَبْعَدُهَا صَوْتًا."
@@ -209,7 +209,7 @@
           "fr": "corps, volume"
         }
       ],
-      "note": "(وَ) : mot ajouté par l'éditeur. فَإِذَا هَبَّتِ الرِّيحُ : ici « chaque fois que », pas la surprise. Le texte de Kalīla est cité, jamais imité.",
+      "note": "Le début du passage, « مثلٌ. قال دمنة: », est omis. (وَ) : mot ajouté par l'éditeur. فَإِذَا هَبَّتِ الرِّيحُ : إِذَا suivi d'un verbe, celui de la condition (« chaque fois que »), pas la surprise. Le texte est cité, jamais imité.",
       "questions": [
         {
           "type": "qcm",
@@ -242,7 +242,7 @@
             "ظَرْفٌ"
           ],
           "reponse": 0,
-          "explication": "Le nom d'action du verbe, avec un adjectif."
+          "explication": "Un nom de la même racine que le verbe, avec un adjectif : مَفْعُولٌ مُطْلَقٌ, à l'accusatif."
         },
         {
           "type": "qcm",
@@ -294,7 +294,7 @@
             "أَجْوَفٍ"
           ],
           "reponse": 0,
-          "explication": "Attribut de لَٰكِنَّ : nominatif, sans tanwīn (schème أَفْعَلُ)."
+          "explication": "Attribut de لَٰكِنَّ : nominatif, sans tanwīn (comme أَحْمَرُ)."
         },
         {
           "type": "completer",

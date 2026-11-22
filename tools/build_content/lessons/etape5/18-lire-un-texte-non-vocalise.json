@@ -184,8 +184,8 @@
       ],
       "traduction": [
         "On raconte qu'il y avait un étang avec trois gros poissons ; cet étang était sur une hauteur où personne ne s'approchait.",
-        "Un jour, deux pêcheurs de passage arrivèrent et convinrent de revenir avec leur filet pour prendre les trois poissons qu'ils y avaient vus.",
-        "L'un des poissons, le plus sensé, eut des soupçons et prit peur ; il agit sans tarder avec prudence, sortit par le passage d'eau qui allait de l'étang à la rivière et partit ailleurs.",
+        "Un jour, deux pêcheurs de passage arrivèrent par là et convinrent de revenir avec leur filet pour prendre les trois poissons qu'ils y avaient vus.",
+        "L'un des poissons, le plus sensé, eut seulement des soupçons et prit peur ; il agit sans tarder avec prudence, sortit par le passage d'eau qui allait de l'étang à la rivière et partit ailleurs.",
         "(…) Quant au poisson sans ressource, il ne cessa d'aller et venir jusqu'à ce qu'il fût pris."
       ],
       "lexique": [
@@ -230,7 +230,7 @@
           "fr": "aller et venir"
         }
       ],
-      "note": "Coupure (…) faite ici : l'histoire du deuxième poisson, plus longue, est omise. (كَذَا) : remarque de l'éditeur, « ainsi dans le manuscrit ». Le bouton des voyelles s'ouvre après ta réponse.",
+      "note": "Le début, « مثلٌ. قال دمنة: », est omis. Coupure (…) faite ici : l'histoire du deuxième poisson, plus longue, est omise. (كَذَا) : remarque de l'éditeur, « ainsi dans le manuscrit ». Le bouton des voyelles s'ouvre après ta réponse.",
       "questions": [
         {
           "type": "qcm",
@@ -343,7 +343,7 @@
         },
         {
           "type": "completer",
-          "consigne": "Vocalise : « رأيا فيه » (ils y avaient vu) : le verbe au duel.",
+          "consigne": "Vocalise : « رأيا فيه » (les deux pêcheurs y avaient vu).",
           "ar": "… فِيهِ",
           "choix_ar": [
             "رَأَيَا",
