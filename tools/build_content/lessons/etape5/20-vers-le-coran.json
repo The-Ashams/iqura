@@ -99,7 +99,7 @@
         "type": "qcm",
         "consigne": "Que dit Ḥāzim ?",
         "choix": [
-          "ce n'est qu'une porte, beaucoup d'autres suivent",
+          "c'est une porte, beaucoup d'autres suivent",
           "tout est fini",
           "il faut tout recommencer"
         ],
@@ -235,6 +235,7 @@
         "كَتَبَ بَاسِمٌ رِسَالَةً إِلَى صَدِيقِهِ:",
         "« تَعَلَّمْتُ الْحُرُوفَ أَوَّلًا، ثُمَّ الْكَلِمَاتِ. »",
         "« وَقَرَأْتُ كُتُبًا كَثِيرَةً فِي الْمَدِينَةِ، وَكِتَابًا قَدِيمًا فِي الْحَدِيقَةِ. »",
+        "« وَهَٰذِهِ مَرْحَلَةٌ جَدِيدَةٌ. »",
         "« وَبَعْدَ ذَٰلِكَ، سَأَدْرُسُ مَعَ مُعَلِّمٍ. »"
       ],
       "questions": [
@@ -530,7 +531,7 @@
     },
     {
       "type": "fin",
-      "acquis": "Tu as parcouru les cinq régions : tu lis un texte ancien, tu analyses une phrase et tu connais les mots les plus fréquents. Pour le Coran lui-même, des enseignants qualifiés prendront le relais.",
+      "acquis": "Tu as parcouru les cinq régions, étape (مَرْحَلَةٌ) après étape : tu lis un texte ancien, tu analyses une phrase et tu connais les mots les plus fréquents. Pour le Coran lui-même, des enseignants qualifiés prendront le relais.",
       "suite": "Il te reste l'examen final des Jardins, face à la Grande Impatience, à la Clairière."
     }
   ]

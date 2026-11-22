@@ -52,6 +52,10 @@ class DataExam {
     required this.repliesPass,
     this.decoding = const [],
     this.decodingPass = 1,
+    this.decodingTitle = 'Décoder',
+    this.decodingIntro = 'décoder des mots inconnus',
+    this.vocabulary = const [],
+    this.vocabularyPass = 1,
     this.storyBare = const [],
     this.storyBareLevel,
     this.dialogue = const [],
@@ -67,6 +71,7 @@ class DataExam {
     final ecoute = j['ecoute'] as Map<String, dynamic>;
     final reponses = j['reponses'] as Map<String, dynamic>;
     final decodage = j['decodage'] as Map<String, dynamic>?;
+    final vocabulaire = j['vocabulaire'] as Map<String, dynamic>?;
     final dialogue = j['dialogue'] as Map<String, dynamic>?;
     final bare = lecture['sans_voyelles'] as Map<String, dynamic>?;
     return DataExam(
@@ -103,6 +108,13 @@ class DataExam {
       decodingPass: decodage == null
           ? 1
           : (decodage['seuil'] as num).toDouble(),
+      decodingTitle: decodage?['titre'] as String? ?? 'Décoder',
+      decodingIntro:
+          decodage?['annonce'] as String? ?? 'décoder des mots inconnus',
+      vocabulary: vocabulaire == null ? const [] : questions(vocabulaire),
+      vocabularyPass: vocabulaire == null
+          ? 1
+          : (vocabulaire['seuil'] as num).toDouble(),
       storyBare: bare == null
           ? const []
           : (bare['phrases'] as List).cast<String>(),
@@ -132,6 +144,14 @@ class DataExam {
   final List<LessonQuestion> decoding;
   final double decodingPass;
 
+  /// Titre et annonce de l'épreuve 2 (région 5 : « Analyser »).
+  final String decodingTitle;
+  final String decodingIntro;
+
+  /// Bilan du vocabulaire fréquent (région 5) : mots seuls, sens général.
+  final List<LessonQuestion> vocabulary;
+  final double vocabularyPass;
+
   /// Dernière partie du récit, affichée sans voyelles (région 4 : palier B)
   /// pendant les questions ; vocalisée ensuite, au résultat.
   final List<String> storyBare;
@@ -150,6 +170,7 @@ class DataExam {
   int get repliesMark => mark(gradedReplies, repliesPass);
   int get decodingMark => mark(decoding.length, decodingPass);
   int get dialogueMark => mark(dialogue.length, dialoguePass);
+  int get vocabularyMark => mark(vocabulary.length, vocabularyPass);
 
   bool passed({
     required int reading,
@@ -157,10 +178,12 @@ class DataExam {
     required int replies,
     int decoding = 0,
     int dialogue = 0,
+    int vocabulary = 0,
   }) =>
       reading >= readingMark &&
       listening >= listeningMark &&
       replies >= repliesMark &&
       decoding >= decodingMark &&
-      dialogue >= dialogueMark;
+      dialogue >= dialogueMark &&
+      vocabulary >= vocabularyMark;
 }

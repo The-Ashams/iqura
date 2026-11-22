@@ -32,7 +32,7 @@
         },
         {
           "qui": "nura",
-          "texte": "Parmi les 200 mots les plus fréquents du Coran, tu en connais déjà près de 90. Aujourd'hui, cinq de plus."
+          "texte": "Parmi les 200 mots les plus fréquents du Coran, IQURA t'en a déjà appris près de 90. Aujourd'hui, cinq de plus."
         }
       ],
       "objectif": "Faire le bilan du vocabulaire fréquent."
@@ -89,7 +89,7 @@
         {
           "qui": "nura",
           "ar": "انْظُرْ فِي الْكِتَابِ: كَلِمَاتٌ كَثِيرَةٌ!",
-          "fr": "Regarde dans le Grimoire : beaucoup de mots !"
+          "fr": "Regarde dans le livre (le Grimoire) : beaucoup de mots !"
         },
         {
           "qui": "hala",
@@ -155,28 +155,26 @@
     {
       "type": "regle",
       "titre": "Les mots du dictionnaire seulement",
-      "texte": "Certains mots très fréquents (par exemple « croire », « messager », « créer ») ont un sens religieux : ils restent dans le dictionnaire, sans exercice. IQURA ne les explique pas : voir les ouvrages et les savants.",
+      "texte": "Certains mots très fréquents (par exemple « croire », « messager », « créer ») ont un sens religieux : IQURA ne les enseigne pas, ni en exercice ni au combat. Pour eux, voir les ouvrages et les savants.",
       "exemples": [
-        "قَالَ",
-        "كَانَ",
-        "عَلِمَ"
+        "مُعْجَمٌ"
       ],
       "question": {
         "type": "qcm",
         "consigne": "Les mots au sens religieux, dans IQURA…",
         "choix": [
-          "sont seulement dans le dictionnaire, sans exercice",
+          "ne sont pas enseignés",
           "sont expliqués en détail",
           "sont au combat"
         ],
         "reponse": 0,
-        "explication": "Sens linguistique seulement."
+        "explication": "Sens linguistique seulement ; renvoi aux savants."
       }
     },
     {
       "type": "regle",
       "titre": "Des mots et leurs fréquences",
-      "texte": "Les petits mots (مِنْ, فِي, عَلَى, إِلَى) sont les plus fréquents ; puis viennent des verbes (قَالَ, كَانَ, جَعَلَ) et des noms (يَوْمٌ, أَرْضٌ, نَاسٌ). Ces nombres viennent du Quranic Arabic Corpus.",
+      "texte": "Parmi les mots les plus fréquents, on trouve des petits mots (مِنْ, فِي, عَلَى), des verbes (قَالَ, كَانَ, جَعَلَ) et des noms (يَوْمٌ, أَرْضٌ, نَاسٌ). Ces nombres viennent du Quranic Arabic Corpus.",
       "exemples": [
         "مِنْ",
         "قَالَ",
@@ -187,9 +185,9 @@
         "type": "qcm",
         "consigne": "Selon le Corpus, lequel est le plus fréquent ?",
         "choix": [
-          "قَالَ (environ 1 600 fois)",
-          "رَأَى (environ 270 fois)",
-          "أَكَلَ (environ 90 fois)"
+          "قَالَ",
+          "رَأَى",
+          "أَكَلَ"
         ],
         "reponse": 0,
         "explication": "قَالَ : 1 618 occurrences ; رَأَى : 271 ; أَكَلَ : 93."
@@ -197,7 +195,7 @@
     },
     {
       "type": "lecture",
-      "titre": "Au marché",
+      "titre": "Bāsim et Zuhayr",
       "texte": "Récit construit, rédigé par IA. Lis ; touche un mot pour voir son sens.",
       "phrases": [
         "فِي السُّوقِ نَاسٌ كَثِيرُونَ.",
@@ -323,7 +321,7 @@
           "choix_ar": [
             "أَمْرٌ",
             "أَمَرَ",
-            "أَمْرًا"
+            "أَمْرٍ"
           ],
           "reponse": 0,
           "explication": "Le nom أَمْرٌ, pas le verbe أَمَرَ."
@@ -484,12 +482,12 @@
           "type": "qcm",
           "consigne": "Selon le Corpus, lequel est le plus fréquent ?",
           "choix": [
-            "جَعَلَ (340 fois)",
-            "مِثْلٌ (75 fois)",
-            "أَخٌ (75 fois)"
+            "جَعَلَ",
+            "مِثْلٌ",
+            "أَخٌ"
           ],
           "reponse": 0,
-          "explication": "Fréquences du Quranic Arabic Corpus."
+          "explication": "Corpus : جَعَلَ 340 fois, مِثْلٌ 75, أَخٌ 75."
         },
         {
           "type": "sens",
@@ -510,8 +508,8 @@
           "ar": "فَصْلٌ",
           "choix": [
             "section (d'un livre)",
-            "(dans un livre) chapitre",
-            "différence"
+            "rivière",
+            "lettre (que l'on envoie)"
           ],
           "reponse": 0,
           "explication": "فَصْلٌ veut dire « section (d'un livre) ».",

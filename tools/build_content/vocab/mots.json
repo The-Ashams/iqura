@@ -11935,6 +11935,110 @@
    "theme": "ecriture"
   },
   {
+   "id": "thalab",
+   "ar": "ثَعْلَبٌ",
+   "translit": "ṯaʿlabun",
+   "fr": "renard, chacal",
+   "nature": "nom",
+   "lecon": "sens-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "رَأَى بَاسِمٌ ثَعْلَبًا فِي الْقَرْيَةِ.",
+    "fr": "Bāsim a vu un renard dans le village."
+   },
+   "remarque": "mot des fables anciennes (Kalīla wa Dimna)",
+   "theme": "animaux"
+  },
+  {
+   "id": "tabl",
+   "ar": "طَبْلٌ",
+   "translit": "ṭablun",
+   "fr": "tambour",
+   "nature": "nom",
+   "lecon": "sens-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "exemple": {
+    "ar": "صَوْتُ الطَّبْلِ شَدِيدٌ.",
+    "fr": "Le son du tambour est fort."
+   },
+   "theme": "outils"
+  },
+  {
+   "id": "ajwaf",
+   "ar": "أَجْوَفُ",
+   "translit": "aǧwafu",
+   "fr": "creux, vide à l'intérieur",
+   "nature": "adjectif",
+   "lecon": "sens-17",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "jwf",
+   "exemple": {
+    "ar": "الطَّبْلُ كَبِيرٌ، وَلَٰكِنَّهُ أَجْوَفُ.",
+    "fr": "Le tambour est grand, mais il est creux."
+   },
+   "remarque": "sans tanwīn, comme أَحْمَرُ ; la racine ne suffit pas pour le sens",
+   "theme": "qualites"
+  },
+  {
+   "id": "samaka",
+   "ar": "سَمَكَةٌ",
+   "translit": "samakatun",
+   "fr": "poisson",
+   "nature": "nom",
+   "lecon": "sens-18",
+   "source_sens": "rédigé par IA",
+   "genre": "f",
+   "racine": "smk",
+   "exemple": {
+    "ar": "فِي النَّهْرِ سَمَكَةٌ كَبِيرَةٌ.",
+    "fr": "Il y a un gros poisson dans la rivière."
+   },
+   "remarque": "dans le Corpus, la racine a un autre emploi (hauteur, voûte) : la racine ne suffit pas pour le sens",
+   "theme": "animaux"
+  },
+  {
+   "id": "sayyad",
+   "ar": "صَيَّادٌ",
+   "translit": "ṣayyādun",
+   "fr": "pêcheur, chasseur",
+   "nature": "nom",
+   "lecon": "sens-18",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "Syd",
+   "exemple": {
+    "ar": "الصَّيَّادُ عِنْدَ النَّهْرِ.",
+    "fr": "Le pêcheur est au bord de la rivière."
+   },
+   "remarque": "la forme en -ayyāʾ désigne souvent un métier ; la racine ne suffit pas pour le sens",
+   "theme": "metiers"
+  },
+  {
+   "id": "fasl",
+   "ar": "فَصْلٌ",
+   "translit": "faṣlun",
+   "fr": "section (d'un livre)",
+   "nature": "nom",
+   "lecon": "sens-16",
+   "source_sens": "rédigé par IA",
+   "genre": "m",
+   "racine": "fSl",
+   "fige": true,
+   "formes": [
+    "الْفَصْلُ",
+    "الْفَصْلِ"
+   ],
+   "exemple": {
+    "ar": "فِي هَٰذَا الْفَصْلِ كَلِمَاتٌ صَعْبَةٌ.",
+    "fr": "Dans cette section, il y a des mots difficiles."
+   },
+   "remarque": "un livre ancien se divise en chapitres (بَابٌ) et en sections (فَصْلٌ) ; dans le Corpus, la racine a d'autres emplois (séparer ; décision) : la racine ne suffit pas pour le sens",
+   "theme": "ecriture"
+  },
+  {
    "id": "jaala",
    "ar": "جَعَلَ",
    "translit": "ǧaʿala",
@@ -12061,110 +12165,6 @@
    },
    "remarque": "à l'origine, la distance parcourue en un jour de voyage ; la racine ne suffit pas pour le sens",
    "theme": "voyage"
-  },
-  {
-   "id": "thalab",
-   "ar": "ثَعْلَبٌ",
-   "translit": "ṯaʿlabun",
-   "fr": "renard, chacal",
-   "nature": "nom",
-   "lecon": "sens-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "exemple": {
-    "ar": "رَأَى بَاسِمٌ ثَعْلَبًا فِي الْقَرْيَةِ.",
-    "fr": "Bāsim a vu un renard dans le village."
-   },
-   "remarque": "mot des fables anciennes (Kalīla wa Dimna)",
-   "theme": "animaux"
-  },
-  {
-   "id": "tabl",
-   "ar": "طَبْلٌ",
-   "translit": "ṭablun",
-   "fr": "tambour",
-   "nature": "nom",
-   "lecon": "sens-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "exemple": {
-    "ar": "صَوْتُ الطَّبْلِ شَدِيدٌ.",
-    "fr": "Le son du tambour est fort."
-   },
-   "theme": "outils"
-  },
-  {
-   "id": "ajwaf",
-   "ar": "أَجْوَفُ",
-   "translit": "aǧwafu",
-   "fr": "creux, vide à l'intérieur",
-   "nature": "adjectif",
-   "lecon": "sens-17",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "jwf",
-   "exemple": {
-    "ar": "الطَّبْلُ كَبِيرٌ، وَلَٰكِنَّهُ أَجْوَفُ.",
-    "fr": "Le tambour est grand, mais il est creux."
-   },
-   "remarque": "sans tanwīn, comme أَحْمَرُ ; la racine ne suffit pas pour le sens",
-   "theme": "qualites"
-  },
-  {
-   "id": "samaka",
-   "ar": "سَمَكَةٌ",
-   "translit": "samakatun",
-   "fr": "poisson",
-   "nature": "nom",
-   "lecon": "sens-18",
-   "source_sens": "rédigé par IA",
-   "genre": "f",
-   "racine": "smk",
-   "exemple": {
-    "ar": "فِي النَّهْرِ سَمَكَةٌ كَبِيرَةٌ.",
-    "fr": "Il y a un gros poisson dans la rivière."
-   },
-   "remarque": "dans le Corpus, la racine a un autre emploi (hauteur, voûte) : la racine ne suffit pas pour le sens",
-   "theme": "animaux"
-  },
-  {
-   "id": "sayyad",
-   "ar": "صَيَّادٌ",
-   "translit": "ṣayyādun",
-   "fr": "pêcheur, chasseur",
-   "nature": "nom",
-   "lecon": "sens-18",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "Syd",
-   "exemple": {
-    "ar": "الصَّيَّادُ عِنْدَ النَّهْرِ.",
-    "fr": "Le pêcheur est au bord de la rivière."
-   },
-   "remarque": "la forme en -ayyāʾ désigne souvent un métier ; la racine ne suffit pas pour le sens",
-   "theme": "metiers"
-  },
-  {
-   "id": "fasl",
-   "ar": "فَصْلٌ",
-   "translit": "faṣlun",
-   "fr": "section (d'un livre)",
-   "nature": "nom",
-   "lecon": "sens-16",
-   "source_sens": "rédigé par IA",
-   "genre": "m",
-   "racine": "fSl",
-   "fige": true,
-   "formes": [
-    "الْفَصْلُ",
-    "الْفَصْلِ"
-   ],
-   "exemple": {
-    "ar": "فِي هَٰذَا الْفَصْلِ كَلِمَاتٌ صَعْبَةٌ.",
-    "fr": "Dans cette section, il y a des mots difficiles."
-   },
-   "remarque": "un livre ancien se divise en chapitres (بَابٌ) et en sections (فَصْلٌ) ; dans le Corpus, la racine a d'autres emplois (séparer ; décision) : la racine ne suffit pas pour le sens",
-   "theme": "ecriture"
   }
  ]
 }

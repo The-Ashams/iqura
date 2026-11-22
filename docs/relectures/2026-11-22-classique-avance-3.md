@@ -184,3 +184,108 @@ Stade : région 5, leçons 5.16 à 5.18 (Classique avancé 3). Acquis supposés 
 
 
 Suite donnée (22/11/2026) : récit de 5.16 allongé ; ذَٰلِكِ remplacé ; mineurs corrigés ; doutes : فَإِذَا الْكِتَابُ الْأَحْمَرُ فِيهِ (piste du relecteur) ; distracteur وَاقِفًا ; schèmes écrits à la main retirés des fiches de racines faibles.
+
+
+---
+
+# Rapport de relecture : leçons 5.19 « Le vocabulaire fréquent : bilan » et 5.20 « Vers le Coran »
+
+Fichiers relus :
+- /home/user/iqura/tools/build_content/lessons/etape5/19-le-vocabulaire-frequent-bilan.json
+- /home/user/iqura/tools/build_content/lessons/etape5/20-vers-le-coran.json
+- /home/user/iqura/tools/build_content/vocab/mots.json : fiches jaala, amr, nafs, nas, mithl, marhala. Le fichier a changé de numéros de ligne pendant ma relecture (modification en cours ?). J'ai relu les six fiches : leur contenu n'a pas changé.
+- Référence : /home/user/iqura/docs/relectures/decisions-classique-avance-3.md (0.c, 0.d, C 5.19 et 5.20, listes ⚠) et cahier §5.9 et §5.11.
+
+Stade : région 5, leçons 5.19 et 5.20 ; notions supposées acquises : régions 1 à 4, leçons 5.1 à 5.18. J'ai vérifié dans mots.json que tous les mots employés sont déjà enseignés : نَصٌّ, أَصْلٌ, وَزْنٌ, سِيَاقٌ, مُعْجَمٌ, إِعْرَابٌ, اسْتَطَاعَ, دَرَسَ, تَعَلَّمَ, أَوَّلًا, سَـ, كَمْ, أَبْوَابٌ (2.18), سَمَكَةٌ, صَيَّادٌ, فَصْلٌ, etc.
+
+## Verdict : À corriger
+- **5.19 : À corriger** (1 point Important)
+- **5.20 : Validé avec doutes**
+
+## Bloquant
+- Aucun.
+
+## Important
+- [5.19 · écran règle « Les mots du dictionnaire seulement »]
+  - Problème : le texte parle des mots à sens religieux, gardés seulement dans le dictionnaire et sans exercice. Or les exemples affichés sont قَالَ, كَانَ, عَلِمَ, c'est-à-dire trois mots ordinaires, enseignés et exercés (عَلِمَ revient même au mini-boss de la même leçon). Un débutant comprendra que ces trois mots sont « religieux » et réservés au dictionnaire. L'écran se contredit (F5).
+  - Correction proposée : remplacer les exemples par مُعْجَمٌ seul, ou supprimer le champ si le pipeline le permet. Il ne faut pas mettre آمَنَ, رَسُولٌ ou خَلَقَ en arabe sans l'avis du conseiller : le plan (0.c) prévoit seulement une « liste française ».
+  - Confiance : haute.
+
+## Mineur
+- [5.19 · dialogue] « انْظُرْ فِي الْكِتَابِ » est traduit par « Regarde dans le Grimoire ». L'arabe dit « le livre ». Proposé : « Regarde dans le livre (le Grimoire) : beaucoup de mots ! »
+- [5.19 · entrée, Nūra] « tu en connais déjà près de 90 » : les 88 lemmes sont *enseignés*, pas forcément « connus » au sens de l'indicateur (au moins « reconnu »). Proposé : « IQURA t'en a déjà appris près de 90 ».
+- [5.19 · QCM « lequel est le plus fréquent ? » (écran règle et mini-boss)] Les choix affichent eux-mêmes le nombre d'occurrences (« قَالَ (environ 1 600 fois) »…), donc la réponse est donnée. Proposé : retirer les nombres des choix et les garder dans l'explication. Le plan (0.c) prévoyait « entre deux mots, d'après occurrence_count ».
+- [5.19 · entraînement « هَٰذَا … سَهْلٌ »] Le distracteur أَمْرًا figure dans la liste ⚠ de أَمْر (« jamais … أَمْرًا »). Proposé : remplacer par أَمْرٍ, qui garde l'opposition des cas.
+- [5.19 · lecture « Au marché »] Seule la phrase 1 se passe au marché. Titre proposé : « Au marché et à la maison », ou simplement « Bāsim et Zuhayr ». Sans gravité.
+- [5.20 · dialogue, QCM] Le choix « ce n'est qu'une porte, beaucoup d'autres suivent » ajoute « ne… que », absent de هَٰذَا بَابٌ. Proposé : « c'est une porte, beaucoup d'autres suivent ».
+- [5.20 · mot nouveau مَرْحَلَةٌ] On ne le revoit que dans un exercice d'entraînement. On pourrait l'ajouter à la lettre de Bāsim (par exemple « « وَهَٰذِهِ مَرْحَلَةٌ جَدِيدَةٌ. » », modèle déjà présent dans la fiche) et le citer dans l'écran de fin.
+
+## Doutes (à soumettre au conseiller, ne pas trancher)
+- [5.19 · règle « Des mots et leurs fréquences »]
+  - Ce qui me fait douter : la phrase « Les petits mots (مِنْ, فِي, عَلَى, إِلَى) sont les plus fréquents ; puis viennent des verbes (قَالَ, كَانَ, جَعَلَ)… » laisse entendre que إِلَى passe devant قَالَ (1 618). De mémoire, إِلَى est autour de 740 occurrences, donc derrière قَالَ et sans doute derrière كَانَ. De même, أَرْضٌ, cité parmi les noms « qui viennent ensuite », dépasse peut-être جَعَلَ (340).
+  - Je n'ai pas pu interroger la base (pas d'accès SQL dans ma session) : ces chiffres viennent de ma mémoire, pas du Corpus.
+  - Pistes : vérifier en SQL le rang de إِلَى et de أَرْضٌ ; au besoin, retirer إِلَى de la parenthèse, ou écrire « Parmi les plus fréquents, on trouve des petits mots…, des verbes… et des noms… » sans ordre.
+  - Confiance : moyenne.
+- [5.20 · lecture et carnet, « سَأَدْرُسُ مَعَ مُعَلِّمٍ »]
+  - Ce qui me fait douter : dans la langue classique, on étudie *auprès de* quelqu'un plutôt « عَلَى » (دَرَسَ / قَرَأَ عَلَى فُلَانٍ). « دَرَسَ مَعَ » sonne plutôt moderne, comme un calque de « étudier avec ». La phrase reste grammaticalement juste, et c'est le modèle proposé par le conseiller.
+  - Pistes : garder (sens compréhensible) ou passer à « سَأَدْرُسُ عَلَى مُعَلِّمٍ » avec une note, si cet emploi de عَلَى est jugé enseignable à ce stade.
+  - Confiance : moyenne.
+- [5.20 · dialogue, « هَٰذَا بَابٌ، وَبَعْدَهُ أَبْوَابٌ كَثِيرَةٌ »]
+  - Ce qui me fait douter : la liste ⚠ de 5.16 dit « بَاب "chapitre" : jamais أَبْوَاب ». Ici, le sens voulu est « porte », au figuré, mais dans un contexte de livres le lecteur peut comprendre « chapitre ». La forme أَبْوَابٌ est connue (2.18), et je ne vois aucune suite coranique de 3 mots.
+  - Pistes : garder, ou mettre « هَٰذِهِ مَرْحَلَةٌ، وَبَعْدَهَا مَرْحَلَةٌ أُخْرَى ». Cette variante emploie le mot nouveau, mais elle place le dialogue avant l'écran « mots » : il faudrait déplacer l'écran ou vérifier que أُخْرَى est acquis.
+  - Confiance : moyenne.
+- [5.19 · mini-boss, révision فَصْلٌ]
+  - Ce qui me fait douter : le distracteur « (dans un livre) chapitre ». Hors d'IQURA, les dictionnaires traduisent souvent فَصْل par « chapitre, section », et « différence » est proche du sens « séparation, distinction ». IQURA a enseigné la distinction بَاب « chapitre » / فَصْل « section » en 5.16, donc il n'y a qu'une bonne réponse *dans le cours*. Le même choix existe déjà en 5.16 et 5.17 (relues).
+  - Pistes : remplacer les deux distracteurs par des sens éloignés (« rivière », « lettre (que l'on envoie) ») ; éviter « saison », qui est aussi un sens de فَصْل.
+  - Confiance : moyenne.
+- [5.20 · règle « Pour aller plus loin »]
+  - Ce qui me fait douter : le cahier (§5.9, ligne 411) dit « aborder ensuite l'étude du Coran avec des ouvrages et des enseignants ». La leçon dit « ne te recommande ni ouvrage ni école », ce qui suit la décision 0.d du conseiller. Le plan permettait de rappeler les ouvrages de langue déjà rencontrés (*Alfiyya*, *Durrat al-ġawwāṣ*, *Kalīla*) comme des rencontres.
+  - Pistes : laisser ainsi (c'est conforme à 0.d), ou ajouter une phrase « tu as déjà rencontré l'*Alfiyya*… » sans recommandation.
+  - Confiance : moyenne (cohérence avec le cahier, pas une erreur de langue).
+
+## Points vérifiés sans problème
+- **A** :
+  - aucun verset, aucune formule, aucun الْقُرْآن dans les phrases arabes ;
+  - aucun sujet divin, aucun nom de prophète ;
+  - Ḥāzim se dit grammairien et non savant religieux ;
+  - tajwīd et tafsīr sont renvoyés aux enseignants et aux savants, sans titre d'ouvrage ni école ;
+  - aucune suite de 3 mots coranique repérée à la lecture (le garde-fou automatique fait foi).
+- **A et listes ⚠ du plan** :
+  - جَعَلَ : sujet humain nommé, ou 1re personne parmi les formes admises ; complément concret + فِي الْكِيسِ ; + يَقْرَأُ ;
+  - نَفْس : seulement بِنَفْسِهِ / بِنَفْسِهَا / نَفْسُهُ / نَفْسُهَا ;
+  - نَاس : seulement « نَاسٌ كَثِيرُونَ » ;
+  - مِثْل : seulement مِثْلُ + nom concret ;
+  - اسْتَطَاعَ : seulement + أَنْ أَقْرَأَ, conforme à la liste de 5.9 ;
+  - aucun عَلَّمَ interdit.
+- **B** :
+  - l'indicateur est libellé « familiarité avec le vocabulaire, pas une compréhension du Coran », dans les deux leçons ;
+  - les fréquences affichées (جَعَلَ 340, مِثْلٌ 75, أَخٌ 75, قَالَ 1 618, رَأَى 271, أَكَلَ 93) correspondent à ton SQL ;
+  - les cinq mots nouveaux sont dans les 200 premiers lemmes (rangs 30 à 145), conformément à la condition du plan.
+- **C** :
+  - vocalisation complète et juste ;
+  - كَمْ كَلِمَةً (accusatif singulier) ;
+  - خَمْسُ كَلِمَاتٍ جَدِيدَةٍ (nombre de genre inverse du nom compté, accord au génitif) ;
+  - مِثْلُ attribut au nominatif + génitif ;
+  - جَعَلَ + inaccompli sans أَنْ (c'est un verbe de commencement : أَنْ y est exclu, le distracteur est donc bien faux) ;
+  - الْكَلِمَاتِ coordonné à un accusatif, en -i ;
+  - أَنْ أَقْرَأَ au subjonctif ; صَبَاحًا, ظَرْف ; خَبَرُ إِنَّ au nominatif ;
+  - orthographe juste (ة, hamza, hamzat al-waṣl).
+- **D** : sens des fiches justes et généraux. مَرْحَلَةٌ « étape » avec sa remarque d'origine (distance d'une journée de voyage) est juste. نَفْسٌ est limité à « soi-même », avec une mention prudente des autres sens.
+- **E** :
+  - lemmes jaEala, >amor, nafos, n~aAs, mivol conformes au plan ;
+  - مَرْحَلَةٌ en racine seule rHl, avec l'avertissement « la racine ne suffit pas pour le sens ».
+  - Mon avis sur l'écart que tu signales : مَرْحَلَةٌ est un mot classique, défendable comme ajout. La lettre construite de Bāsim est correcte et conforme au carnet du plan.
+- **F** :
+  - QCM à 3 choix, aucun avec deux bonnes réponses (sous réserve du doute فَصْلٌ) ;
+  - production présente (Atelier, carnet sans note) ;
+  - translittérations Arabica cohérentes (ǧaʿala, amrun, nafsun, nāsun, miṯlun, marḥalatun).
+  - Les textes de 5.20 suivent le texte du conseiller. Seule la mention de ʿulūm al-Qurʾān a été retirée, ce qui est acceptable.
+- **G** : « rédigé par IA » sur les fiches et les lectures ; les lectures sont présentées comme « récit / texte construit ».
+
+## Ce que je n'ai pas pu vérifier
+- Les fréquences et les rangs en SQL : je n'ai pas d'accès à SQLite, et le Corpus est zippé. Je me suis fié à tes chiffres, sauf pour le doute sur إِلَى et أَرْضٌ.
+- L'exécution de `quran_guard.py` et du contrôle des mots connus : à lancer par toi.
+- La présence effective, dans le dictionnaire intégré, des mots exclus (آمَنَ, رَسُولٌ, خَلَقَ…) avec la note « terme à sens religieux ». L'écran de 5.19 affirme qu'« ils restent dans le dictionnaire » : à vérifier pour l'honnêteté (règle 5).
+- Le rendu de l'insertion « وَ… » + « وَزْنَهَا » dans l'Atelier de 5.20 : il ne faut pas d'espace entre وَ et le mot.
+
+Suite donnée (22/11/2026) : point Important corrigé (exemple مُعْجَمٌ ; « IQURA ne les enseigne pas », sans affirmer leur présence au dictionnaire) ; fréquences : ordre retiré de la règle (إِلَى : 13e, 742) ; mineurs corrigés.

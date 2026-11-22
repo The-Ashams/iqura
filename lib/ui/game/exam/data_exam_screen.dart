@@ -26,7 +26,16 @@ import '../lesson/fondations_views.dart' show GradedText;
 import '../lesson/question_view.dart';
 import '../pixel.dart';
 
-enum _Stage { intro, reading, decoding, dialogue, listening, replies, result }
+enum _Stage {
+  intro,
+  reading,
+  decoding,
+  vocabulary,
+  dialogue,
+  listening,
+  replies,
+  result,
+}
 
 class DataExamScreen extends ConsumerStatefulWidget {
   const DataExamScreen({super.key, required this.region, this.random});
@@ -50,6 +59,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
   int _listening = 0;
   int _replies = 0;
   int _decoding = 0;
+  int _vocabulary = 0;
   int _dialogue = 0;
   int _freeOk = 0;
   bool _showModels = false;
@@ -75,13 +85,14 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
 
   bool get _calm => ref.read(settingsProvider).learningOnly;
 
-  static const _trialsWord = ['', 'Une', 'Deux', 'Trois', 'Quatre'];
+  static const _trialsWord = ['', 'Une', 'Deux', 'Trois', 'Quatre', 'Cinq'];
 
   /// Nombre d'épreuves : lecture, décodage (région 3 et plus), écoute (si
   /// le son est actif), réponses.
   int get _trialCount =>
       2 +
       (_exam.decoding.isNotEmpty ? 1 : 0) +
+      (_exam.vocabulary.isNotEmpty ? 1 : 0) +
       (_exam.dialogue.isNotEmpty ? 1 : 0) +
       (AudioPolicy.enabled ? 1 : 0);
 
@@ -91,12 +102,15 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
   int get _foeMax =>
       (_exam.reading.length +
           _exam.decoding.length +
+          _exam.vocabulary.length +
           _exam.dialogue.length +
           _listeningCount +
           _exam.gradedReplies) *
       10;
   int get _foeHp =>
-      _foeMax - (_reading + _decoding + _dialogue + _listening + _replies) * 10;
+      _foeMax -
+      (_reading + _decoding + _vocabulary + _dialogue + _listening + _replies) *
+          10;
 
   void _restart() {
     _stage = _Stage.intro;
@@ -107,6 +121,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
     _listening = 0;
     _replies = 0;
     _decoding = 0;
+    _vocabulary = 0;
     _dialogue = 0;
     _freeOk = 0;
     _showModels = false;
@@ -121,6 +136,8 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
           _reading++;
         case _Stage.decoding:
           _decoding++;
+        case _Stage.vocabulary:
+          _vocabulary++;
         case _Stage.dialogue:
           _dialogue++;
         case _Stage.listening:
@@ -152,6 +169,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
   int get _count => switch (_stage) {
     _Stage.reading => _exam.reading.length,
     _Stage.decoding => _exam.decoding.length,
+    _Stage.vocabulary => _exam.vocabulary.length,
     _Stage.dialogue => _exam.dialogue.length,
     _Stage.listening => _exam.listening.length,
     _Stage.replies => _exam.replies.length,
@@ -174,6 +192,8 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
           _stage = _exam.decoding.isNotEmpty ? _Stage.decoding : _afterDecoding;
         case _Stage.decoding:
           _stage = _afterDecoding;
+        case _Stage.vocabulary:
+          _stage = _afterVocabulary;
         case _Stage.dialogue:
           _stage = AudioPolicy.enabled ? _Stage.listening : _Stage.replies;
         case _Stage.listening:
@@ -187,7 +207,25 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
     });
   }
 
-  _Stage get _afterDecoding => _exam.dialogue.isNotEmpty
+  /// Numéro d'une épreuve, selon celles que l'examen comporte.
+  int _trialNo(_Stage stage) {
+    var n = 1;
+    for (final (s, present) in [
+      (_Stage.decoding, _exam.decoding.isNotEmpty),
+      (_Stage.vocabulary, _exam.vocabulary.isNotEmpty),
+      (_Stage.dialogue, _exam.dialogue.isNotEmpty),
+      (_Stage.listening, AudioPolicy.enabled),
+    ]) {
+      if (present) n++;
+      if (s == stage) return n;
+    }
+    return n;
+  }
+
+  _Stage get _afterDecoding =>
+      _exam.vocabulary.isNotEmpty ? _Stage.vocabulary : _afterVocabulary;
+
+  _Stage get _afterVocabulary => _exam.dialogue.isNotEmpty
       ? _Stage.dialogue
       : AudioPolicy.enabled
       ? _Stage.listening
@@ -199,6 +237,7 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
     replies: _replies,
     decoding: _decoding,
     dialogue: _dialogue,
+    vocabulary: _vocabulary,
   );
 
   void _report() {
@@ -209,7 +248,13 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
         .read(lessonProgressProvider.notifier)
         .recordBoss(
           _exam.id,
-          score: _reading + _decoding + _dialogue + _listening + _replies,
+          score:
+              _reading +
+              _decoding +
+              _vocabulary +
+              _dialogue +
+              _listening +
+              _replies,
           passed: passed,
         );
     playSfx(ref, passed ? Sfx.victoire : Sfx.repli);
@@ -262,17 +307,22 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
                 _Stage.intro => _intro(),
                 _Stage.reading => _readingStage(),
                 _Stage.decoding => _question(
-                  'Épreuve 2 · Décoder',
+                  'Épreuve 2 · ${_exam.decodingTitle}',
                   _exam.decoding[_index],
                   _exam.decoding.length,
                 ),
+                _Stage.vocabulary => _question(
+                  'Épreuve ${_trialNo(_Stage.vocabulary)} · Vocabulaire',
+                  _exam.vocabulary[_index],
+                  _exam.vocabulary.length,
+                ),
                 _Stage.dialogue => _question(
-                  'Épreuve ${_exam.decoding.isNotEmpty ? 3 : 2} · Dialogue',
+                  'Épreuve ${_trialNo(_Stage.dialogue)} · Dialogue',
                   _exam.dialogue[_index],
                   _exam.dialogue.length,
                 ),
                 _Stage.listening => _question(
-                  'Épreuve ${2 + (_exam.decoding.isNotEmpty ? 1 : 0) + (_exam.dialogue.isNotEmpty ? 1 : 0)} · Écoute',
+                  'Épreuve ${_trialNo(_Stage.listening)} · Écoute',
                   _exam.listening[_index],
                   _exam.listening.length,
                 ),
@@ -300,7 +350,8 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
             '${_trialsWord[_trialCount]} épreuves : lire un '
             'récit et répondre à ${_exam.reading.length} questions '
             '(${_exam.readingMark} bonnes réponses nécessaires) ; '
-            '${_exam.decoding.isNotEmpty ? 'décoder des mots inconnus : ${_exam.decoding.length} questions (${_exam.decodingMark} nécessaires) ; ' : ''}'
+            '${_exam.decoding.isNotEmpty ? '${_exam.decodingIntro} : ${_exam.decoding.length} questions (${_exam.decodingMark} nécessaires) ; ' : ''}'
+            '${_exam.vocabulary.isNotEmpty ? 'revoir le vocabulaire fréquent : ${_exam.vocabulary.length} mots (${_exam.vocabularyMark} nécessaires) ; ' : ''}'
             '${_exam.dialogue.isNotEmpty ? 'dialoguer : choisir ${_exam.dialogue.length} répliques (${_exam.dialogueMark} nécessaires) ; ' : ''}'
             '${AudioPolicy.enabled ? 'écouter ${_exam.listening.length} phrases (${_exam.listeningMark} nécessaires) ; ' : ''}'
             'répondre à des '
@@ -504,8 +555,13 @@ class _DataExamScreenState extends ConsumerState<DataExamScreen> {
             ),
             if (_exam.decoding.isNotEmpty)
               Text(
-                'Décoder : $_decoding / ${_exam.decoding.length} '
+                '${_exam.decodingTitle} : $_decoding / ${_exam.decoding.length} '
                 '(${_exam.decodingMark} nécessaires).',
+              ),
+            if (_exam.vocabulary.isNotEmpty)
+              Text(
+                'Vocabulaire : $_vocabulary / ${_exam.vocabulary.length} '
+                '(${_exam.vocabularyMark} nécessaires).',
               ),
             if (_exam.dialogue.isNotEmpty)
               Text(

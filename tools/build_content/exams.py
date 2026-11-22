@@ -101,6 +101,11 @@ def arabic_parts(exam: dict) -> list[tuple[str, str, str]]:
             out.append((f"{f} · réponse {i + 1} · solution", None, " ".join(q["solution"])))
         for j, m in enumerate(q.get("modeles", [])):
             out.append((f"{f} · réponse {i + 1} · modèle {j + 1}", None, m))
+    for i, q in enumerate((exam.get("vocabulaire") or {}).get("questions", [])):
+        if q.get("ar"):
+            out.append((f"{f} · vocabulaire {i + 1}", None, q["ar"]))
+        for j, c in enumerate(q.get("choix_ar", [])):
+            out.append((f"{f} · vocabulaire {i + 1} · choix {j + 1}", None, c))
     for i, q in enumerate((exam.get("decodage") or {}).get("questions", [])):
         if q.get("ar"):
             out.append((f"{f} · décoder {i + 1}", None, q["ar"]))
@@ -238,6 +243,22 @@ def validate(exams: list[dict], lessons: list[dict], words: list[dict],
                 raise ExamError(f"{w} : type inconnu {q.get('type')}")
         if graded == 0:
             raise ExamError(f"{where} : au moins une réponse notée (ordonner)")
+
+        vocab_part = exam.get("vocabulaire")
+        if vocab_part is not None:
+            # Région 5 : bilan du vocabulaire fréquent, mots seuls (plan de
+            # Classique avancé 3, point e).
+            _seuil(vocab_part, f"{where} · vocabulaire")
+            if not vocab_part.get("questions"):
+                raise ExamError(f"{where} : vocabulaire sans questions")
+            for i, q in enumerate(vocab_part["questions"]):
+                w = f"{where} · vocabulaire {i + 1}"
+                if q.get("type") == "sens":
+                    _choices(q, "choix", w)
+                elif q.get("type") == "traduire":
+                    _choices(q, "choix_ar", w)
+                else:
+                    raise ExamError(f"{w} : type sens ou traduire attendu")
 
         known, endings = known_at_end_of_region(lessons, words, exam["region"])
         known = known | _decoding(exam, known, con)
