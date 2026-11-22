@@ -27,7 +27,14 @@ Le décor reste en français et ne reprend **aucune image du Paradis** décrit d
 | 7 | L'Herbier des Thèmes | 5.10 et 5.11 Le vocabulaire par thèmes (Hāla classe les mots) |
 | 8 | Le Labyrinthe des Sens | 5.12 Un mot, plusieurs sens ; 5.13 Mots proches, sens distincts (Nūra garde les dictionnaires) |
 
-Les lieux 9 à 11 viendront avec Classique avancé 3 (leçons 5.14 à 5.20).
+## Chapitre C — Lire seul (leçons 5.14 à 5.20, niveau Classique avancé 3 ; ajouté le 22/11/2026)
+
+| N° | Lieu | Leçons |
+| --- | --- | --- |
+| 9 | La Table des Grammairiens | 5.14 Analyser une phrase mot par mot ; 5.15 L'iʿrāb appliqué (Widād revient) |
+| 10 | La Bibliothèque du Jardin | 5.16 Suivre un texte long ; 5.17 La prose classique ; 5.18 Lire un texte non vocalisé (Zuhayr lit) |
+| 11 | Le Belvédère | 5.19 Le vocabulaire fréquent : bilan (Hāla et Nūra) ; 5.20 Vers le Coran (tous les personnages) |
+| 12 | La Clairière de l'Impatience | Examen final de la région 5 : la Grande Impatience |
 
 ## Personnages
 

@@ -1,5 +1,5 @@
 {
-  "_comment": "Région 5 « Les Jardins du Sens » (cahier §5.9, §8.2 ; proposition du 15/11/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_5.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Chapitre A (Classique avancé 1), lieux 5 à 8 (Classique avancé 2) ; les lieux 9 à 11 viendront avec Classique avancé 3.",
+  "_comment": "Région 5 « Les Jardins du Sens » (cahier §5.9, §8.2 ; proposition du 15/11/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_5.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Chapitre A (Classique avancé 1), lieux 5 à 8 (Classique avancé 2), lieux 9 à 11 (Classique avancé 3).",
   "statut": "ia",
   "region": {
     "id": "r5",
@@ -171,9 +171,64 @@
       "tranche_j1a": true,
       "liens": [
         "herbier_themes",
+        "table_grammairiens",
         "clairiere_impatience"
       ],
       "description": "Des allées de buis qui se séparent : un mot a plusieurs sens, deux mots proches ne disent pas tout à fait la même chose."
+    },
+    {
+      "id": "table_grammairiens",
+      "numero": 9,
+      "nom": "La Table des Grammairiens",
+      "position": [
+        100,
+        14
+      ],
+      "lecons": [],
+      "scene": "scene_table_grammairiens",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "labyrinthe_sens",
+        "bibliotheque_jardin"
+      ],
+      "description": "Une longue table couverte de feuilles : ici, on analyse chaque mot d'une phrase, sa nature, sa fonction et son cas."
+    },
+    {
+      "id": "bibliotheque_jardin",
+      "numero": 10,
+      "nom": "La Bibliothèque du Jardin",
+      "position": [
+        136,
+        40
+      ],
+      "lecons": [],
+      "scene": "scene_bibliotheque_jardin",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "table_grammairiens",
+        "belvedere"
+      ],
+      "description": "Des rayonnages de vieux livres sous une verrière : Zuhayr y lit de longs récits et des textes anciens, avec et sans voyelles."
+    },
+    {
+      "id": "belvedere",
+      "numero": 11,
+      "nom": "Le Belvédère",
+      "position": [
+        150,
+        10
+      ],
+      "lecons": [],
+      "scene": "scene_belvedere",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "bibliotheque_jardin",
+        "clairiere_impatience"
+      ],
+      "description": "Une terrasse en hauteur d'où l'on voit tout le chemin parcouru, des Ruines jusqu'aux Jardins."
     },
     {
       "id": "clairiere_impatience",
@@ -189,7 +244,8 @@
       "tranche_j1a": true,
       "liens": [
         "pavillon_voix",
-        "labyrinthe_sens"
+        "labyrinthe_sens",
+        "belvedere"
       ],
       "description": "Herbe brûlée et sable qui file : l'Impatience pousse à lire trop vite et à tout vouloir tout de suite."
     }
@@ -209,7 +265,10 @@
         "cour_conteurs",
         "pepiniere_formes",
         "herbier_themes",
-        "labyrinthe_sens"
+        "labyrinthe_sens",
+        "table_grammairiens",
+        "bibliotheque_jardin",
+        "belvedere"
       ]
     }
   ]
