@@ -289,3 +289,154 @@ Stade : région 5, leçons 5.19 et 5.20 ; notions supposées acquises : régions
 - Le rendu de l'insertion « وَ… » + « وَزْنَهَا » dans l'Atelier de 5.20 : il ne faut pas d'espace entre وَ et le mot.
 
 Suite donnée (22/11/2026) : point Important corrigé (exemple مُعْجَمٌ ; « IQURA ne les enseigne pas », sans affirmer leur présence au dictionnaire) ; fréquences : ordre retiré de la règle (إِلَى : 13e, 742) ; mineurs corrigés.
+
+
+---
+
+# Rapport de relecture : examen final de la région 5 (1er passage) et retouches des leçons 5.14 à 5.20
+
+Fichiers relus :
+- /home/user/iqura/tools/build_content/exams/examen-r5.json, en entier
+- /home/user/iqura/tools/build_content/lessons/etape5/14-analyser-une-phrase.json à 20-vers-le-coran.json : seulement les endroits retouchés
+- Pour vérifier les mots déjà enseignés : /home/user/iqura/tools/build_content/vocab/mots.json
+- Pour comparer : 02-les-particules.json (règle de إِنَّمَا) et 4.20 (آخَرُ)
+- Références : /home/user/iqura/docs/relectures/decisions-classique-avance-3.md (points e et B6, doutes tranchés le 22/11) et /home/user/iqura/docs/relectures/2026-11-22-classique-avance-3.md
+
+Stade : région 5, examen final après la leçon 5.20. Notions supposées acquises : régions 1 à 4 et leçons 5.1 à 5.20 (iʿrāb, termes نَعْتٌ, ظَرْفٌ, مُضَافٌ إِلَيْهِ, مَرْفُوعٌ…, serment verbe + réponse, إِنْ… إِلَّا, إِنَّمَا, لَمَّا « pas encore », mise en tête, mot sous-entendu, changement de personne, لَوْلَا de reproche, فَإِذَا de surprise).
+
+## Verdict : Bloqué
+
+**Verdict par fichier :**
+
+| Fichier | Verdict |
+| --- | --- |
+| Examen final (examen-r5) | **Bloqué** : un point de la catégorie A, très simple à corriger, et un point Important |
+| 5.14 | Validé |
+| 5.15 | Validé |
+| 5.16 | Validé |
+| 5.17 | Validé |
+| 5.18 | Validé |
+| 5.19 | Validé (1 mineur) |
+| 5.20 | Validé (1 mineur) |
+
+## Bloquant
+
+- **[examen-r5 · decodage, question 9 : « أُقْسِمُ لَأَكْتُبَنَّ الرِّسَالَةَ : la partie لَأَكْتُبَنَّ الرِّسَالَةَ est… »]**
+  - Problème : le distracteur **« le serment par Dieu »** nomme Dieu dans une question d'examen, donc de boss.
+  - C'est contraire au cahier §3.1.3 (« Noms divins … jamais dans une question de combat ») et au point e du plan (« ni serment par Dieu » à l'examen).
+  - Correction proposée : remplacer ce choix par « une condition » ou « une négation ». Garder « la réponse du serment » et « une question ».
+  - Confiance : moyenne-haute. Le point repose sur le fait que l'examen est un combat contre un boss (« adversaire » : grande_impatience). La correction est sans risque.
+
+## Important
+
+- **[examen-r5 · decodage, question 16 : « جَلَسَ الطَّالِبُ يَكْتُبُ. يَا أَيُّهَا الطَّالِبُ، أَنْتَ تَعِبٌ! » On passe…]**
+  - Problème : le distracteur « d'une personne à une autre » est **aussi juste**. Le passage de « il » à « tu » est bien un passage d'une personne grammaticale à une autre, et c'est le sens même de l'explication (« Un changement de personne »). Il y a donc deux réponses justes (F4).
+  - Correction proposée : « d'un personnage à un autre », ou « du passé au futur ».
+  - Confiance : haute.
+
+- **[examen-r5 · lecture : longueur et palier du récit]**
+  - Problème : le récit compte environ 176 mots vocalisés et 34 au palier C, soit environ 210 en tout. Le récit de 5.16 en compte 207. La décision du 22/11 (point 1) demande pour l'examen un récit **plus long que celui de 5.16, en 5 ou 6 parties**, avec un objectif d'environ 500 mots. Le point e prévoyait aussi tout le récit au palier C, avec le bouton « voir les voyelles ».
+  - Ici, seule la dernière partie est au palier C, et l'écart avec 5.16 est de 3 mots.
+  - Correction proposée :
+    - allonger le récit dans les limites du pipeline, par exemple une partie de plus le lendemain ou l'avis de Nūra, en phrases construites avec des mots connus ;
+    - ou faire acter par le conseiller la longueur actuelle et le palier mixte, si c'est une limite de l'écran d'examen.
+  - Confiance : haute pour le compte (fait à la main, à ±5 mots près).
+
+## Mineur
+
+- **[examen-r5 · récit, phrases 24 et 25]** Hāla demande « هَلْ تَقْرَأُ الْكِتَابَ الْقَدِيمَ؟ » (question oui / non), et Bāsim répond « نَعَمْ، الْكِتَابَ أَقْرَأُ، لَا الرِّسَالَةَ! ». La mise en tête de contraste ne répond à rien : personne n'a parlé de lettre. La grammaire est juste : لَا de coordination et accusatif. Proposé : faire demander à Hāla « هَلْ تَقْرَأُ الرِّسَالَةَ؟ », puis réponse « لَا، الْكِتَابَ أَقْرَأُ! ». Ou bien « مَاذَا تَقْرَأُ؟ », comme dans l'épreuve « réponses ».
+- **[examen-r5 · récit, phrase 26, « إِنَّمَا الصَّبْرُ مِفْتَاحُ الْفَهْمِ »]**
+  - La grammaire est juste.
+  - Mais selon la règle enseignée en 5.2 (« إِنَّمَا met en relief le dernier élément »), la phrase veut dire « la patience n'est que la clé de la compréhension ». Le sens voulu, « c'est la patience qui est la clé de la compréhension », se dit « إِنَّمَا مِفْتَاحُ الْفَهْمِ الصَّبْرُ ».
+  - La réponse de la question 10 (« la patience est la clé de la compréhension ») ne rend pas la restriction. Il n'y a pas deux réponses justes.
+  - Proposé : inverser la phrase, à vérifier par le garde-fou. Ou bien garder la phrase et traduire « la patience n'est que la clé… ». Voir aussi les doutes.
+- **[examen-r5 · mots « autre »]** « مَرَّةً أُخْرَى » (phrase 22) et « بَابًا آخَرَ » (palier C), sur lequel porte la question 12. Le mot آخَرُ n'a pas de fiche dans mots.json : il n'est cité qu'en remarque en 4.20 et sur une fiche. أُخْرَى n'apparaît qu'une fois, dans le texte de 5.18. La vocalisation est juste (آخَرَ sans tanwīn, diptote). À vérifier avec le contrôle des mots connus. Sinon, mettre le mot dans le lexique ou écrire « بَابًا جَدِيدًا ».
+- **[examen-r5 · réponses, question 1]** La consigne « puis le verbe « je l'ai lu » » peut orienter vers قَرَأْتُهُ. La tuile attendue, أَقْرَأْهُ, est un inaccompli au jussif. Proposé : « puis le verbe « lire » au jussif, avec « le » (ـهُ) ».
+- **[examen-r5 · decodage, répartition]** Le plan e prévoyait 8 questions de fonction et cas, 8 de tournure et 4 de racine, schème et nature. Ici : 8, 9 et 3, sans aucune question de schème (وَزْنٌ). Proposé : remplacer une question de tournure par une question de schème calculé par le pipeline (règle B3).
+- **[examen-r5 · récit, phrase 21, « وَجَعَلَ يَبْحَثُ »]** La liste ⚠ de جَعَلَ prévoyait « + يَقْرَأُ / يَكْتُبُ ». يَبْحَثُ est grammaticalement juste et le sujet est humain et nommé. L'écart avec la liste fermée est à confirmer, et le garde-fou fait foi.
+- **[5.19 · règle « Des mots et leurs fréquences »]** « Ces nombres viennent du Quranic Arabic Corpus » : le texte n'affiche plus aucun nombre, ils ne sont que dans l'explication. Proposé : « Les fréquences viennent du Quranic Arabic Corpus ».
+- **[5.20 · lecture « La lettre de Bāsim », question 2]** La bonne réponse dit toujours « il étudiera avec un enseignant », alors que l'arabe est maintenant « سَأَتَعَلَّمُ مِنْ مُعَلِّمٍ ». Proposé : « il apprendra auprès d'un enseignant » (décision 5a).
+
+## Doutes (à soumettre au conseiller, ne pas trancher)
+
+- **[examen-r5 · récit, phrase 20, « إِنْ فِي الْكِتَابِ إِلَّا كَلِمَاتٌ قَلِيلَةٌ يَعْرِفُهَا »]**
+  - Ce qui me fait douter : la phrase est grammaticale (إِنْ de négation, attribut prépositionnel en tête, sujet au nominatif après إِلَّا). Mais au pied de la lettre, la restriction dit que le livre *ne contient* que quelques mots connus, ce qui est un peu illogique pour un gros livre. Le sens voulu est « il ne connaît que peu de mots du livre ». La phrase française de la question 6 a la même ambiguïté et se comprend naturellement : l'arabe se comprend sans doute de la même façon.
+  - Pistes :
+    - garder ;
+    - ou « إِنْ يَعْرِفُ مِنْ كَلِمَاتِ الْكِتَابِ إِلَّا قَلِيلًا », plus net, à vérifier par le garde-fou.
+  - Confiance que la forme actuelle est acceptable : moyenne-haute.
+- **[examen-r5 · « إِنَّمَا الصَّبْرُ مِفْتَاحُ الْفَهْمِ »]** Faut-il inverser la phrase pour suivre la règle « relief sur le dernier élément » (voir les mineurs) ? Confiance : moyenne. La phrase actuelle n'est pas fausse, la nuance seule est en jeu.
+- **[examen-r5 · decodage, question 8, « قَرَأَ بَاسِمٌ كِتَابًا قَدِيمًا », distracteur « حَالٌ »]** Un ḥāl se rapportant à un nom indéfini est rare, mais certains grammairiens l'admettent. Ici, la lecture نَعْتٌ est évidente. Je le signale seulement pour une question de principe (F4). Confiance que la question est sûre : haute.
+
+## Points vérifiés sans problème
+
+- **A, citations et listes ⚠** :
+  - aucune suite coranique repérée à la lecture : ni وَإِذْ, ni لَا أُقْسِمُ, ni serment par Dieu en arabe, ni ouverture de conte réservée ;
+  - le serment « أُقْسِمُ لَأَقْرَأَنَّهُ » (verbe + réponse avec لَـ et nūn d'énergie) est permis par 5.1 et le point e ;
+  - فَإِذَا est employé dans le récit, comme le prévoit le point e.
+- **A, mots et personnages** :
+  - aucun mot exclu dans l'épreuve « vocabulaire » (ni إِنْ, ni لَمَّا, ni mot religieux) ;
+  - personnages profanes.
+- **C, formes verbales** : vocalisation complète et juste de :
+  - لَمَّا أَقْرَأْهُ, أَلَمْ تَعِدْ (jussif de وَعَدَ), لَأَقْرَأَنَّهُ ;
+  - لَمْ يَتْرُكِ الْكِتَابَ (kasra de liaison) ;
+  - كَانَ… قَدْ قَرَأَ, فَاقْرَأْ, لَمَّا يَصِلْ.
+- **C, accords et cas** :
+  - فَإِذَا الْكَلِمَاتُ صَعْبَةٌ ;
+  - أَمَّا… فَـ… وَأَمَّا… فَلَمْ يَجِدْهَا ;
+  - بَيْنَمَا… إِذْ ;
+  - هَالَةُ sans tanwīn ;
+  - أَلَيْسَ هَٰذَا كِتَابَكَ ;
+  - إِنْ فِي الْكِيسِ إِلَّا كِتَابٌ.
+- **C, analyses** : les analyses des questions 1 à 8 et 18 à 20 de l'épreuve « Analyser » sont exactes. تَفَكَّرَ est bien de forme V, et la racine de اسْتَقْبَلَ est ق ب ل.
+- **D** : les sens de l'épreuve « vocabulaire » sont conformes aux fiches, et leurs distracteurs sont non ambigus. Les traductions des questions de lecture sont fidèles.
+- **F4** : les réponses à remettre en ordre ont des tuiles pièges toutes fausses (أَقْرَأُهُ, نَعَمْ après une question négative, الدَّرْسُ, الْكِتَابُ, كِتَابًا), et l'ordre est donné dans la consigne.
+- **F1** : les mots du récit ont tous une fiche, sauf آخَرُ / أُخْرَى (voir les mineurs) : وَعَدَ, مِفْتَاحٌ, صَبْرٌ, فَهْمٌ, مَدِينَةٌ, سَافَرَ, حَدِيثٌ, سَاعَدَ, بَقِيَ, تَرَكَ, أَكْثَرُ, أَعْطَى, مُعْجَمٌ, بَحَثَ, جُمْلَةٌ, مَعْنًى, etc.
+- **Retouches de 5.14** : toutes appliquées.
+  - La question sur بَاسِمٌ est reformulée (« Dans la grille… ») ; son explication mentionne ب س م et ses distracteurs sont non ambigus.
+  - « الْجَدِيدُ » a maintenant le distracteur مَفْعُولٌ بِهِ.
+  - Formule « cas, genre, nombre et article » ; « en arabe » dans la consigne de l'atelier.
+- **Retouches de 5.15** :
+  - « Les quatre marques de l'iʿrāb » ;
+  - « مَرْفُوعٌ sans particule » ;
+  - écran à part « Le وَ qui relie », avec exemples et réserve ;
+  - طَرْقًا traduit « bel et bien… d'insistance » ;
+  - plus de « cas direct ».
+- **Retouches de 5.16** :
+  - ذَٰلِكِ remplacé par الَّذِي ;
+  - « فَإِذَا الْكِتَابُ الْأَحْمَرُ فِيهِ » ;
+  - distracteur فَإِذَا زُهَيْرًا وَاقِفٌ, avec l'explication « nom au nominatif + participe » ;
+  - « la paire بَيْنَمَا et إِذْ » ;
+  - plus de répétition de سَمِير.
+- **Retouches de 5.17 et 5.18** :
+  - notes sur la coupure de « قال دمنة » et sur إِذَا de condition ;
+  - explication « nom de la même racine » pour صَوْتًا ;
+  - « (وَ) أَصَابَتِ » séparé ;
+  - traductions complétées (« par là », « seulement ») ;
+  - consigne « رأيا فيه » sans indice.
+- **Retouches de 5.19** :
+  - exemple مُعْجَمٌ et « IQURA ne les enseigne pas » ;
+  - « appris près de 90 » ;
+  - « Regarde dans le livre (le Grimoire) » ;
+  - nombres retirés des choix ;
+  - distracteur أَمْرٍ ;
+  - titre « Bāsim et Zuhayr » ;
+  - فَصْلٌ avec le distracteur « rivière » ;
+  - ordre des fréquences retiré.
+- **Retouches de 5.20** :
+  - « هَٰذِهِ بِدَايَةُ الطَّرِيقِ، وَالطَّرِيقُ طَوِيلٌ » aux deux endroits, et bon choix du QCM ;
+  - سَأَتَعَلَّمُ مِنْ مُعَلِّمٍ en lecture, en exercice « compléter » et au carnet ;
+  - écran « Des livres rencontrés », conforme aux champs « source » (Alfiyya, Durrat al-ġawwāṣ, Kalīla wa Dimna) et sans recommandation ;
+  - مَرْحَلَةٌ réemployé dans la lettre.
+- **G** : les explications et les statuts sont cohérents avec les examens précédents.
+
+## Ce que je n'ai pas pu vérifier
+
+- Le passage du garde-fou des 3 mots (`quran_guard.py`) et du contrôle des mots connus sur le récit et les nouvelles phrases : je n'ai pas d'accès en exécution. C'est à lancer, en particulier pour « إِنْ فِي الْكِتَابِ », « مَرَّةً أُخْرَى », « أَلَمْ تَعِدْ » et « فَاقْرَأْ ».
+- La mention visible « récit construit, rédigé par IA » sur l'écran de lecture de l'examen : le JSON n'a que `statut: ia_non_verifie`, comme les examens r2 à r4. Il faut vérifier le libellé affiché par l'interface.
+- Le mélange de l'ordre des choix : toutes les réponses sont en position 0 dans le JSON. Un mélange semble exister dans `lib/game/exam/region_exam.dart`, mais je ne l'ai pas lu en détail.
+- L'affichage réel au palier C de la dernière partie du récit.
+- Les fréquences : l'épreuve « vocabulaire » n'en affiche aucune, et je n'ai pas interrogé la base.
+
+
+Suite donnée (23/11/2026) : bloquant corrigé (« une condition ») ; important : distracteur « d'un personnage à un autre » ; récit allongé (partie avec Nūra) ; mineurs corrigés (لَا، الْكِتَابَ أَقْرَأُ!, إِنَّمَا مِفْتَاحُ الْفَهْمِ الصَّبْرُ, جَعَلَ يَقْرَأُ, consigne du jussif, question de schème, 5.19, 5.20).

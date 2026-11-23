@@ -174,7 +174,7 @@
     {
       "type": "regle",
       "titre": "Des mots et leurs fréquences",
-      "texte": "Parmi les mots les plus fréquents, on trouve des petits mots (مِنْ, فِي, عَلَى), des verbes (قَالَ, كَانَ, جَعَلَ) et des noms (يَوْمٌ, أَرْضٌ, نَاسٌ). Ces nombres viennent du Quranic Arabic Corpus.",
+      "texte": "Parmi les mots les plus fréquents, on trouve des petits mots (مِنْ, فِي, عَلَى), des verbes (قَالَ, كَانَ, جَعَلَ) et des noms (يَوْمٌ, أَرْضٌ, نَاسٌ). Les fréquences viennent du Quranic Arabic Corpus.",
       "exemples": [
         "مِنْ",
         "قَالَ",

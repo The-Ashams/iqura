@@ -18,18 +18,21 @@
       "كَانَ الْكِتَابُ عَنْ مُدُنٍ بَعِيدَةٍ وَعَنْ تُجَّارٍ سَافَرُوا إِلَيْهَا.",
       "وَكَانَ بَاسِمٌ يُحِبُّ السَّفَرَ، وَلَٰكِنَّهُ لَمْ يَقْرَأْ كِتَابًا قَدِيمًا قَبْلَ ذَٰلِكَ.",
       "إِنْ فِي الْكِتَابِ إِلَّا كَلِمَاتٌ قَلِيلَةٌ يَعْرِفُهَا.",
-      "فَأَخَذَ بَاسِمٌ الْمُعْجَمَ، وَجَعَلَ يَبْحَثُ عَنْ كُلِّ كَلِمَةٍ.",
+      "فَأَخَذَ بَاسِمٌ الْمُعْجَمَ، وَجَعَلَ يَقْرَأُ فِيهِ.",
       "وَكَتَبَ بَاسِمٌ مَعْنَى كُلِّ كَلِمَةٍ، ثُمَّ قَرَأَ الْجُمْلَةَ مَرَّةً أُخْرَى.",
       "أَمَّا الْكَلِمَاتُ الْقَدِيمَةُ فَوَجَدَهَا فِي الْمُعْجَمِ، وَأَمَّا أَسْمَاءُ الْمُدُنِ فَلَمْ يَجِدْهَا.",
-      "ثُمَّ وَصَلَتْ هَالَةُ، فَسَأَلَتْ: « هَلْ تَقْرَأُ الْكِتَابَ الْقَدِيمَ؟ »",
-      "قَالَ بَاسِمٌ: « نَعَمْ، الْكِتَابَ أَقْرَأُ، لَا الرِّسَالَةَ! »",
-      "قَالَتْ هَالَةُ: « إِنَّمَا الصَّبْرُ مِفْتَاحُ الْفَهْمِ. »",
+      "ثُمَّ وَصَلَتْ هَالَةُ، فَسَأَلَتْ: « هَلْ تَقْرَأُ الرِّسَالَةَ؟ »",
+      "قَالَ بَاسِمٌ: « لَا، الْكِتَابَ أَقْرَأُ! »",
+      "قَالَتْ هَالَةُ: « إِنَّمَا مِفْتَاحُ الْفَهْمِ الصَّبْرُ. »",
       "وَجَلَسَتْ هَالَةُ مَعَهُ، وَسَاعَدَتْهُ قَلِيلًا.",
       "ثُمَّ ذَهَبَتْ هَالَةُ إِلَى السُّوقِ، وَبَقِيَ بَاسِمٌ فِي الْحَدِيقَةِ.",
       "قَرَأَ بَاسِمٌ وَكَتَبَ حَتَّى الْمَسَاءِ، وَلَمْ يَتْرُكِ الْكِتَابَ.",
       "وَفِي الْمَسَاءِ وَصَلَ نَدِيمٌ، فَرَأَى بَاسِمًا يَكْتُبُ.",
       "قَالَ نَدِيمٌ: « مَا هَٰذَا؟ » فَقَالَ بَاسِمٌ: « هَٰذِهِ كَلِمَاتُ الْكِتَابِ الْقَدِيمِ، وَمَعْنَى كُلِّ كَلِمَةٍ. »",
-      "فَلَمَّا انْتَهَى النَّهَارُ، كَانَ بَاسِمٌ قَدْ قَرَأَ الْبَابَ الْأَوَّلَ."
+      "فَلَمَّا انْتَهَى النَّهَارُ، كَانَ بَاسِمٌ قَدْ قَرَأَ الْبَابَ الْأَوَّلَ.",
+      "وَفِي اللَّيْلِ، جَلَسَ بَاسِمٌ مَعَ نُورَةَ، وَحَكَى لَهَا قِصَّةَ الْكِتَابِ.",
+      "قَالَتْ نُورَةُ: « كُلُّ كَلِمَةٍ صَعْبَةٍ الْيَوْمَ سَهْلَةٌ غَدًا. »",
+      "فَفَرِحَ بَاسِمٌ، وَنَامَ مَسْرُورًا."
     ],
     "sans_voyelles": {
       "palier": "C",
@@ -112,12 +115,12 @@
         "type": "qcm",
         "consigne": "Que fait Bāsim avec le dictionnaire ?",
         "choix": [
-          "il se met à chercher chaque mot",
+          "il se met à y lire",
           "il le range",
           "il le donne à Hāla"
         ],
         "reponse": 0,
-        "explication": "جَعَلَ يَبْحَثُ : il se mit à chercher."
+        "explication": "جَعَلَ يَقْرَأُ : il se mit à lire."
       },
       {
         "type": "qcm",
@@ -132,7 +135,7 @@
       },
       {
         "type": "qcm",
-        "consigne": "Dans الْكِتَابَ أَقْرَأُ، لَا الرِّسَالَةَ, le complément est placé en tête pour…",
+        "consigne": "Dans « لَا، الْكِتَابَ أَقْرَأُ! », le complément est placé en tête pour…",
         "choix": [
           "insister : c'est le livre, pas la lettre",
           "poser une question",
@@ -145,12 +148,12 @@
         "type": "qcm",
         "consigne": "Que dit Hāla ?",
         "choix": [
-          "la patience est la clé de la compréhension",
+          "la clé de la compréhension, c'est la patience, et rien d'autre",
           "il faut lire vite",
           "le livre est facile"
         ],
         "reponse": 0,
-        "explication": "إِنَّمَا الصَّبْرُ مِفْتَاحُ الْفَهْمِ."
+        "explication": "إِنَّمَا met en relief le dernier mot : الصَّبْرُ."
       },
       {
         "type": "qcm",
@@ -275,7 +278,7 @@
         "consigne": "أُقْسِمُ لَأَكْتُبَنَّ الرِّسَالَةَ : la partie لَأَكْتُبَنَّ الرِّسَالَةَ est…",
         "choix": [
           "la réponse du serment",
-          "le serment par Dieu",
+          "une condition",
           "une question"
         ],
         "reponse": 0,
@@ -294,14 +297,14 @@
       },
       {
         "type": "qcm",
-        "consigne": "إِنَّمَا الْكِتَابُ فِي الْكِيسِ veut dire…",
+        "consigne": "Le schème (وَزْنٌ) de كَاتِبٌ est…",
         "choix": [
-          "le livre n'est que dans le sac (et nulle part ailleurs)",
-          "le livre n'est pas dans le sac",
-          "est-ce que le livre est dans le sac ?"
+          "فَاعِلٌ",
+          "مَفْعُولٌ",
+          "فَعِيلٌ"
         ],
         "reponse": 0,
-        "explication": "إِنَّمَا : restriction."
+        "explication": "كَاتِبٌ : celui qui écrit, schème فَاعِلٌ."
       },
       {
         "type": "qcm",
@@ -353,7 +356,7 @@
         "choix": [
           "de « il » à « tu » pour la même personne",
           "de « je » à « il »",
-          "d'une personne à une autre"
+          "d'un personnage à un autre"
         ],
         "reponse": 0,
         "explication": "Un changement de personne."
@@ -690,7 +693,7 @@
     "questions": [
       {
         "type": "ordonner",
-        "consigne": "Zuhayr demande si tu as lu le livre. Réponds « pas encore » : لَمَّا, puis le verbe « je l'ai lu ».",
+        "consigne": "Zuhayr demande si tu as lu le livre. Réponds « pas encore » : لَمَّا, puis le verbe « lire » au jussif, avec « le » (ـهُ).",
         "replique": {
           "qui": "zuhayr",
           "ar": "هَلْ قَرَأْتَ الْكِتَابَ؟"
