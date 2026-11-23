@@ -1,6 +1,8 @@
 # Proposition : région 2 « L'Oasis des Fondations »
 
 > Rédigé par IA, le 25/10/2026. Proposition à faire valider par l'utilisateur, comme le demandent le cahier §8.2 (noms des lieux et personnages) et le cahier §6.1 (écrans d'une leçon de la région 2). À la demande de l'utilisateur (« ne m'attends pas »), Claude Code avance avec cette proposition. Tout est en fichiers de données : les noms et l'ordre des écrans peuvent changer sans rien refaire.
+>
+> **Validée par l'utilisateur le 23/11/2026** (noms des lieux et des personnages).
 
 ## 1. Le cadre
 

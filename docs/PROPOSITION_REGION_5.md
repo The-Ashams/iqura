@@ -1,6 +1,8 @@
 # Proposition : région 5 « Les Jardins du Sens » (chapitre A)
 
 > Rédigé par IA, le 15/11/2026. Proposition à faire valider par l'utilisateur (cahier §8.2 : noms des lieux et personnages). Comme pour les régions 2 à 4, Claude Code avance avec cette proposition ; tout est en fichiers de données (`tools/build_content/world/region5.json`) : un nom ou un ordre se change sans rien refaire.
+>
+> **Validée par l'utilisateur le 23/11/2026** (noms des lieux et des personnages).
 
 ## Le cadre (cahier §5.9, §8.2)
 

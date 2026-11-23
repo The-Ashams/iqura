@@ -1,6 +1,8 @@
 # Proposition : région 3 « Les Montagnes du Moteur » (chapitre A)
 
 > Rédigé par IA, le 05/11/2026. Proposition à faire valider par l'utilisateur (cahier §8.2 : noms des lieux et personnages). Comme pour la région 2, Claude Code avance avec cette proposition ; tout est en fichiers de données (`tools/build_content/world/region3.json`) : un nom ou un ordre se change sans rien refaire.
+>
+> **Validée par l'utilisateur le 23/11/2026** (noms des lieux et des personnages).
 
 ## Le cadre (cahier §8.2)
 
