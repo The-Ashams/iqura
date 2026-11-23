@@ -244,6 +244,19 @@ Conflit avec l'existant validé : aucun pour l'instant. L'équilibre de la régi
 | Compilation | Le lien direct (page « derniere-version ») n'est mis à jour que par un envoi marqué pour la publication ou un lancement manuel |
 | À faire | Test de l'utilisateur quand il le souhaite ; ensuite Classique avancé 3 (leçons 5.14 à 5.20 et examen final de la région 5) |
 
+## 1 octodecies. Niveau Classique avancé 3 (leçons 5.14 à 5.20 et examen final de la région 5, 22/11/2026)
+
+| Élément | Détail |
+| --- | --- |
+| Monde | Lieux 9 à 11 de la région 5 : la Table des Grammairiens (5.14, 5.15), la Bibliothèque du Jardin (5.16 à 5.18), le Belvédère (5.19, 5.20) ; examen à la Clairière de l'Impatience (lieu 12) ; Widād revient en 5.15 ; proposition `docs/PROPOSITION_REGION_5.md` complétée, à valider |
+| Leçons | `tools/build_content/lessons/etape5/14` à `20` (sens-14 à sens-20) : analyser une phrase (nature, fonction ; نَعْتٌ, ظَرْفٌ, مُضَافٌ إِلَيْهِ), l'iʿrāb appliqué (cas, marques, وَجْهَانِ), suivre un texte long (207 mots, فَإِذَا de surprise), deux fables de Kalīla (éd. Cheikho 1905, p. 62 et 75-76 ; l'une vocalisée, l'autre sans voyelles), bilan des mots fréquents (5 mots parmi les 200 premiers du Corpus, calculés en SQL), « Vers le Coran » (ce que l'on sait faire ; tajwīd et tafsīr renvoyés à des enseignants qualifiés, aucun ouvrage recommandé) |
+| Examen | `tools/build_content/exams/examen-r5.json` « La Grande Impatience » : récit construit de 210 mots (fin sans voyelles), épreuve « Analyser » (20), épreuve « Vocabulaire » (20, nouvelle dans le moteur d'examen), 5 phrases à remettre en ordre ; écoute masquée (audio suspendu) |
+| Application | Moteur d'examen : épreuve « vocabulaire » et titre configurable de l'épreuve 2 (`lib/game/exam/data_exam.dart`, `lib/ui/game/exam/data_exam_screen.dart`) ; pipeline `tools/build_content/exams.py` |
+| Sources | `docs/sources/kalila-cheikho-1905-p62-p75.txt` ; licences dans `THIRD_PARTY_LICENSES.md` |
+| Plan et décisions | `docs/relectures/decisions-classique-avance-3.md` |
+| Relecture | `docs/relectures/2026-11-22-classique-avance-3.md` |
+| À faire | Test de l'utilisateur ; toutes les leçons du cahier (région 1 à 5) sont construites ; ensuite : phase audio (jalon J6) et points à revoir (`docs/DECISIONS_A_REVOIR.md`) |
+
 ## 2. Ce qui doit changer pour suivre le cahier v3 (cahier §0.1 point 5)
 
 ### A. Modifications fortes ou suppressions — **acceptées par l'utilisateur le 22/10/2026**
@@ -307,7 +320,8 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 14. Avancé 1 construit et relu (§1 quaterdecies).
 15. Avancé 2 construit et relu (§1 quindecies) : toute la région 4 est prête à tester.
 16. Classique avancé 1 construit et relu (§1 sexdecies).
-17. Classique avancé 2 construit et relu (§1 septdecies). Suivant : Classique avancé 3 (leçons 5.14 à 5.20 et examen final de la région 5).
+17. Classique avancé 2 construit et relu (§1 septdecies).
+19. Classique avancé 3 construit et relu (§1 octodecies) : tous les cours du cahier sont construits. Suivant : phase audio (J6), selon la décision de l'utilisateur.
 18. Lien de téléchargement direct (sans compte GitHub) : https://github.com/The-Ashams/iqura/releases/tag/derniere-version ; mis à jour seulement par un envoi marqué pour la publication (voir `.github/workflows/build.yml`).
 
 ## 5. Problèmes connus
