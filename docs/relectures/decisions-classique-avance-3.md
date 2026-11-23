@@ -503,3 +503,10 @@ Fichiers concernés (aucun modifié) :
 - /home/user/iqura/tools/build_content/lessons/etape5/19-le-vocabulaire-frequent-bilan.json
 - /home/user/iqura/tools/build_content/lessons/etape5/13-mots-proches-sens-distincts.json et 18-lire-un-texte-non-vocalise.json (coupures gardées)
 - À enregistrer dans /home/user/iqura/docs/relectures/decisions-classique-avance-3.md
+
+---
+
+## Examen final : deux doutes tranchés (23/11/2026)
+
+1. « إِنْ فِي الْكِتَابِ إِلَّا كَلِمَاتٌ قَلِيلَةٌ يَعْرِفُهَا » remplacé par « إِنْ فِي الْكِتَابِ إِلَّا كَلِمَاتٌ صَعْبَةٌ » (modèle de 5.4 ; le sens littéral de l'ancienne phrase contredisait le récit), question 6 adaptée.
+2. Point e adapté à l'écran d'examen : récit vocalisé, puis une fin au palier C, sans bouton pendant les questions (comme l'examen de la région 4) ; les questions sur la partie sans voyelles ne portent sur aucune désinence. Confiance : haute.
