@@ -323,6 +323,7 @@ Changements du v3 notés sans question, car le v3 fait foi : option IA décidée
 17. Classique avancé 2 construit et relu (§1 septdecies).
 19. Classique avancé 3 construit et relu (§1 octodecies) : tous les cours du cahier sont construits. Suivant : phase audio (J6), selon la décision de l'utilisateur.
 18. Lien de téléchargement direct (sans compte GitHub) : https://github.com/The-Ashams/iqura/releases/tag/derniere-version ; mis à jour seulement par un envoi marqué pour la publication (voir `.github/workflows/build.yml`).
+20. Phase audio (J6), lancée le 27/11/2026 : voix générées sur GitHub Actions (`.github/workflows/audio.yml`, déclenché par `tools/build_audio/demande.json`, 20 parts en parallèle ; « reprendre » livre les voix d'une exécution précédente). Région 3 générée le 27/11/2026 (444 mots et syllabes, 540 phrases) ; pages d'écoute (`tools/build_audio/ecoute.py`, hors dépôt) : [mots](https://claude.ai/artifact/WG79658RAeww9FFvW3zqqn), [phrases](https://claude.ai/artifact/MS7u3e2SFgij847WcTF6FT), en attente de l'écoute de l'utilisateur. Région 4 en cours ; région 5 ensuite. Les boutons d'écoute restent masqués jusqu'à la validation d'une région.
 
 ## 5. Problèmes connus
 
