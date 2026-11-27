@@ -1353,6 +1353,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-241380432d8833e3": {
+   "genre": "syllabe",
+   "texte": "بِعْ",
+   "fichier": "assets/audio/lecons/ar-241380432d8833e3.mp3",
+   "sha256": "0de36869c165dcc249586aab2c9018747fc18c9fbe9d82b383fbec8d07cb5922",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-11-27"
+  },
   "ar-2422b5d927b039bf": {
    "genre": "mot",
    "texte": "وِسَادَتَانِ",
@@ -1370,6 +1379,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-23"
+  },
+  "ar-25509cddec32a6d6": {
+   "genre": "syllabe",
+   "texte": "قُمْ",
+   "fichier": "assets/audio/lecons/ar-25509cddec32a6d6.mp3",
+   "sha256": "c8463424eb5e2dff8d89518752e8154c28ae982e700a8a758850d804efd25224",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-11-27"
   },
   "ar-2569d0c97d578ce6": {
    "genre": "phrase",
@@ -4671,6 +4689,15 @@
    "a_ecouter": false,
    "genere_le": "2026-10-24"
   },
+  "ar-7dc2507db9a07cf1": {
+   "genre": "syllabe",
+   "texte": "قِفْ",
+   "fichier": "assets/audio/lecons/ar-7dc2507db9a07cf1.mp3",
+   "sha256": "e2731904b804fe69021bd18b26db8399d27f5bf5b1a30e066f504031808d84bb",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-11-27"
+  },
   "ar-7e363b4b23fc9b4e": {
    "genre": "syllabe",
    "texte": "مُ",
@@ -5941,6 +5968,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-25"
+  },
+  "ar-99fdd9a3533a0f2b": {
+   "genre": "syllabe",
+   "texte": "ضَعْ",
+   "fichier": "assets/audio/lecons/ar-99fdd9a3533a0f2b.mp3",
+   "sha256": "bca7d32c5e9b32deeb0c61e66e32fd75c6583cc9722c557b5e64e2eccedace9c",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-11-27"
   },
   "ar-9a337c79e5ffc163": {
    "genre": "phrase",
