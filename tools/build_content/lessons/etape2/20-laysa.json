@@ -1,0 +1,547 @@
+{
+  "id": "fondations-20",
+  "etape": 2,
+  "ordre": 20,
+  "format": 3,
+  "titre": "« Il n'est pas… »",
+  "objectif": "Nier une phrase nominale avec لَيْسَ.",
+  "statut": "ia_non_verifie",
+  "lieu": "balance",
+  "maitre": "salma",
+  "prerequis": [
+    "fondations-19"
+  ],
+  "terminaisons": [
+    "accusatif"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "salma",
+          "texte": "Le changeur pèse nos pièces. « Ce dinar n'est pas lourd », dit-il."
+        },
+        {
+          "qui": "salma",
+          "texte": "Pour dire « il n'est pas », l'arabe a un mot un peu spécial : لَيْسَ. Les vrais verbes commencent bientôt !"
+        }
+      ],
+      "objectif": "Dire « il n'est pas »."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « trois livres ».",
+          "ar": "ثَلَاثَةُ …",
+          "choix_ar": [
+            "كُتُبٍ",
+            "كُتُبٌ",
+            "كِتَابٍ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel indéfini au génitif (leçon 2.19)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَدِيمٌ",
+          "choix": [
+            "vieux, ancien",
+            "neuf",
+            "lourd"
+          ],
+          "reponse": 0,
+          "explication": "قَدِيمٌ veut dire « vieux » (leçon 2.9)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans la leçon 2.12, la fin -a (accusatif) était…",
+          "choix": [
+            "vue en tableau seulement",
+            "après une préposition",
+            "pour le sujet"
+          ],
+          "reponse": 0,
+          "explication": "L'accusatif était seulement montré : tu vas l'employer ici."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "أَيْنَ الدِّينَارُ؟",
+          "fr": "Où est le dinar ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "الدِّينَارُ لَيْسَ فِي الْكِيسِ، هُوَ عَلَى الْكِفَّةِ.",
+          "fr": "Le dinar n'est pas dans la bourse, il est sur le plateau."
+        },
+        {
+          "qui": "basim",
+          "ar": "هَلِ الدِّينَارُ ثَقِيلٌ؟",
+          "fr": "Le dinar est-il lourd ?"
+        },
+        {
+          "qui": "salma",
+          "ar": "لَا، الدِّينَارُ لَيْسَ ثَقِيلًا.",
+          "fr": "Non, le dinar n'est pas lourd."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Où est le dinar ?",
+        "choix": [
+          "sur le plateau",
+          "dans la bourse",
+          "dans le coffre"
+        ],
+        "reponse": 0,
+        "explication": "هُوَ عَلَى الْكِفَّةِ : sur le plateau."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "laysa",
+        "sarraf",
+        "mizan",
+        "kiffa",
+        "thaqil",
+        "khafif"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "خَفِيفٌ",
+        "choix": [
+          "léger",
+          "lourd",
+          "rare"
+        ],
+        "reponse": 0,
+        "explication": "خَفِيفٌ veut dire « léger »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "لَيْسَ",
+      "texte": "Pour nier une phrase nominale, on emploie لَيْسَ, ou لَيْسَتْ si le sujet est féminin. Dans cette leçon, le sujet vient d'abord : الدِّينَارُ لَيْسَ فِي الْكِيسِ.",
+      "exemples": [
+        "الدِّينَارُ لَيْسَ فِي الْكِيسِ.",
+        "الْكِفَّةُ لَيْسَتْ هُنَا."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « La bourse n'est pas ici. »",
+        "ar": "الْكِيسُ … هُنَا.",
+        "choix_ar": [
+          "لَيْسَ",
+          "لَيْسَتْ",
+          "لَا"
+        ],
+        "reponse": 0,
+        "explication": "كِيسٌ est masculin : لَيْسَ. Ici, لَا seul voudrait dire « non »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'attribut en -a",
+      "texte": "Après لَيْسَ, l'attribut prend la fin -a de l'accusatif : الْبَيْتُ لَيْسَ كَبِيرًا. Le -an s'écrit avec un alif (كَبِيرًا), sauf quand le mot finit par ة (ثَقِيلَةً).",
+      "exemples": [
+        "الْبَيْتُ لَيْسَ كَبِيرًا.",
+        "الْكِفَّةُ لَيْسَتْ ثَقِيلَةً."
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « L'or n'est pas léger. »",
+        "ar": "الذَّهَبُ لَيْسَ …",
+        "choix_ar": [
+          "خَفِيفًا",
+          "خَفِيفٌ",
+          "خَفِيفٍ"
+        ],
+        "reponse": 0,
+        "explication": "Après لَيْسَ : accusatif, خَفِيفًا."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مِيزَانٌ",
+          "choix": [
+            "balance",
+            "plateau",
+            "bourse"
+          ],
+          "reponse": 0,
+          "explication": "مِيزَانٌ veut dire « balance »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَرَّافٌ",
+          "choix": [
+            "changeur",
+            "forgeron",
+            "vendeur"
+          ],
+          "reponse": 0,
+          "explication": "صَرَّافٌ veut dire « changeur »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « lourd » ?",
+          "choix_ar": [
+            "ثَقِيلٌ",
+            "خَفِيفٌ",
+            "كَثِيرٌ"
+          ],
+          "reponse": 0,
+          "explication": "« lourd » se dit ثَقِيلٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La chemise n'est pas neuve. »",
+          "ar": "الْقَمِيصُ لَيْسَ …",
+          "choix_ar": [
+            "جَدِيدًا",
+            "جَدِيدٌ",
+            "جَدِيدَةً"
+          ],
+          "reponse": 0,
+          "explication": "قَمِيصٌ est masculin ; après لَيْسَ : جَدِيدًا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La tente n'est pas grande. »",
+          "ar": "الْخَيْمَةُ … كَبِيرَةً.",
+          "choix_ar": [
+            "لَيْسَتْ",
+            "لَيْسَ",
+            "لَا"
+          ],
+          "reponse": 0,
+          "explication": "Sujet féminin : لَيْسَتْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le changeur n'est pas au marché. »",
+          "ar": "الصَّرَّافُ لَيْسَ فِي …",
+          "choix_ar": [
+            "السُّوقِ",
+            "السُّوقَ",
+            "السُّوقُ"
+          ],
+          "reponse": 0,
+          "explication": "Avec une préposition, rien ne change : فِي السُّوقِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi كَبِيرًا et non كَبِيرٌ dans « الْبَيْتُ لَيْسَ كَبِيرًا » ?",
+          "choix": [
+            "après لَيْسَ, l'attribut est à l'accusatif",
+            "كَبِيرٌ est féminin",
+            "il vient après une préposition"
+          ],
+          "reponse": 0,
+          "explication": "لَيْسَ met l'attribut en -a."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "لَيْسَتْ",
+          "choix_ar": [
+            "لَيْسَتْ",
+            "لَيْسَ",
+            "لَا"
+          ],
+          "reponse": 0,
+          "explication": "C'était لَيْسَتْ, pour un sujet féminin."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris, en commençant par le sujet : « Le dinar n'est pas dans la bourse. »",
+          "tuiles": [
+            "لَيْسَ",
+            "الدِّينَارُ",
+            "فِي",
+            "الْكِيسِ",
+            "لَا"
+          ],
+          "solution": [
+            "الدِّينَارُ",
+            "لَيْسَ",
+            "فِي",
+            "الْكِيسِ"
+          ],
+          "explication": "Sujet, لَيْسَ, puis l'attribut ; لَيْسَ الدِّينَارُ فِي الْكِيسِ se dit aussi."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "الذَّهَبُ لَيْسَ خَفِيفًا."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La balance du changeur",
+      "texte": "Le changeur pèse l'or et l'argent. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "الصَّرَّافُ فِي السُّوقِ، وَالْمِيزَانُ عِنْدَهُ.",
+        "الْمِيزَانُ لَيْسَ قَدِيمًا.",
+        "فِي الْكِفَّةِ دِينَارٌ وَاحِدٌ، وَالْكِفَّةُ لَيْسَتْ ثَقِيلَةً.",
+        "الذَّهَبُ لَيْسَ خَفِيفًا، وَالْفِضَّةُ لَيْسَتْ كَثِيرَةً."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Comment est la balance ?",
+          "choix": [
+            "elle n'est pas vieille",
+            "elle est vieille",
+            "elle est lourde"
+          ],
+          "reponse": 0,
+          "explication": "الْمِيزَانُ لَيْسَ قَدِيمًا : elle n'est pas vieille."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'y a-t-il sur le plateau ?",
+          "choix": [
+            "un seul dinar",
+            "deux dirhams",
+            "un dirham"
+          ],
+          "reponse": 0,
+          "explication": "فِي الْكِفَّةِ دِينَارٌ وَاحِدٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "repondre",
+          "consigne": "Bāsim te demande si le coffre est lourd. Il ne l'est pas.",
+          "replique": {
+            "qui": "basim",
+            "ar": "هَلِ الصُّنْدُوقُ ثَقِيلٌ؟"
+          },
+          "choix_ar": [
+            "لَا، الصُّنْدُوقُ لَيْسَ ثَقِيلًا.",
+            "لَا، الصُّنْدُوقُ لَيْسَ ثَقِيلٌ.",
+            "لَا، الصُّنْدُوقُ لَا ثَقِيلٌ."
+          ],
+          "reponse": 0,
+          "explication": "لَيْسَ, puis l'attribut à l'accusatif : ثَقِيلًا."
+        },
+        {
+          "type": "repondre",
+          "consigne": "Salmā te demande si tu es marchand. Tu ne l'es pas : tu es voyageur.",
+          "replique": {
+            "qui": "salma",
+            "ar": "هَلْ أَنْتَ تَاجِرٌ؟"
+          },
+          "choix_ar": [
+            "لَا، أَنَا مُسَافِرٌ.",
+            "لَا، أَنْتَ مُسَافِرٌ.",
+            "نَعَمْ، أَنَا مُسَافِرٌ."
+          ],
+          "reponse": 0,
+          "explication": "لَا répond à la question ; أَنَا مُسَافِرٌ dit ce que tu es."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la bourse n'est pas légère » ?",
+          "choix_ar": [
+            "الْكِيسُ لَيْسَ خَفِيفًا.",
+            "الْكِيسُ لَيْسَ خَفِيفٌ.",
+            "الْكِيسُ لَيْسَتْ خَفِيفًا."
+          ],
+          "reponse": 0,
+          "explication": "كِيسٌ est masculin : لَيْسَ, puis خَفِيفًا."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris, en commençant par le sujet : « Le plateau n'est pas lourd. »",
+          "tuiles": [
+            "لَيْسَتْ",
+            "الْكِفَّةُ",
+            "ثَقِيلَةً",
+            "ثَقِيلَةٌ"
+          ],
+          "solution": [
+            "الْكِفَّةُ",
+            "لَيْسَتْ",
+            "ثَقِيلَةً"
+          ],
+          "explication": "كِفَّةٌ est féminin : لَيْسَتْ, puis ثَقِيلَةً."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَيْسَ",
+          "choix": [
+            "ne pas être",
+            "non",
+            "est-ce que… ?"
+          ],
+          "reponse": 0,
+          "explication": "لَيْسَ veut dire « ne pas être »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كِفَّةٌ",
+          "choix": [
+            "plateau (de balance)",
+            "balance",
+            "bourse"
+          ],
+          "reponse": 0,
+          "explication": "كِفَّةٌ veut dire « plateau (de balance) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَقِيلٌ",
+          "choix": [
+            "lourd",
+            "léger",
+            "long"
+          ],
+          "reponse": 0,
+          "explication": "ثَقِيلٌ veut dire « lourd »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « léger » ?",
+          "choix_ar": [
+            "خَفِيفٌ",
+            "ثَقِيلٌ",
+            "قَلِيلٌ"
+          ],
+          "reponse": 0,
+          "explication": "« léger » se dit خَفِيفٌ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le changeur » ?",
+          "choix_ar": [
+            "الصَّرَّافُ",
+            "الْبَائِعُ",
+            "الْحَدَّادُ"
+          ],
+          "reponse": 0,
+          "explication": "« le changeur » se dit الصَّرَّافُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La maison n'est pas loin. »",
+          "ar": "الْبَيْتُ لَيْسَ …",
+          "choix_ar": [
+            "بَعِيدًا",
+            "بَعِيدٌ",
+            "بَعِيدٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَيْسَ : بَعِيدًا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La chambre n'est pas petite. »",
+          "ar": "الْغُرْفَةُ … صَغِيرَةً.",
+          "choix_ar": [
+            "لَيْسَتْ",
+            "لَيْسَ",
+            "لَا"
+          ],
+          "reponse": 0,
+          "explication": "Sujet féminin : لَيْسَتْ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après لَيْسَ, l'attribut est…",
+          "choix": [
+            "à l'accusatif (-a)",
+            "au nominatif (-u)",
+            "au génitif (-i)"
+          ],
+          "reponse": 0,
+          "explication": "لَيْسَ met l'attribut à l'accusatif."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quel mot entends-tu ?",
+          "audio": "مِيزَانٌ",
+          "choix_ar": [
+            "مِيزَانٌ",
+            "دِينَارٌ",
+            "صَرَّافٌ"
+          ],
+          "reponse": 0,
+          "explication": "C'était مِيزَانٌ « balance »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "سَبْعَةٌ",
+          "choix": [
+            "sept",
+            "six",
+            "neuf"
+          ],
+          "reponse": 0,
+          "explication": "سَبْعَةٌ veut dire « sept ».",
+          "revision": true
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « des épées » ?",
+          "choix_ar": [
+            "سُيُوفٌ",
+            "سَيْفَانِ",
+            "سَيْفٌ"
+          ],
+          "reponse": 0,
+          "explication": "« des épées » se dit سُيُوفٌ.",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les boulangers sont occupés. »",
+          "ar": "الْخَبَّازُونَ …",
+          "choix_ar": [
+            "مَشْغُولُونَ",
+            "مَشْغُولٌ",
+            "مَشْغُولَاتٌ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel de personnes.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu nies une phrase nominale avec لَيْسَ / لَيْسَتْ, et tu mets l'attribut à l'accusatif : الْبَيْتُ لَيْسَ كَبِيرًا. Le marché n'a plus de secret pour toi !",
+      "suite": "Prochain chapitre : le caravansérail et les verbes."
+    }
+  ]
+}

@@ -1,0 +1,506 @@
+{
+  "id": "cite-21",
+  "etape": 4,
+  "ordre": 21,
+  "format": 3,
+  "titre": "Donner son avis",
+  "objectif": "Donner son avis, le justifier, approuver ou refuser poliment.",
+  "statut": "ia_non_verifie",
+  "lieu": "maison_nadim",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-20"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Ce soir, deux étudiants viennent débattre chez moi : une longue histoire est-elle belle, ou difficile ?"
+        },
+        {
+          "qui": "nadim",
+          "texte": "Regarde comment on donne son avis, et comment on refuse poliment."
+        }
+      ],
+      "objectif": "Donner son avis et le justifier."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je pense que l'histoire est longue. »",
+          "ar": "أَظُنُّ أَنَّ … طَوِيلَةٌ.",
+          "choix_ar": [
+            "الْقِصَّةَ",
+            "الْقِصَّةُ",
+            "الْقِصَّةِ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنَّ : nom en -a (leçon 4.3)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « parce que le chemin est difficile »",
+          "ar": "لِأَنَّ … صَعْبٌ",
+          "choix_ar": [
+            "الطَّرِيقَ",
+            "الطَّرِيقُ",
+            "الطَّرِيقِ"
+          ],
+          "reponse": 0,
+          "explication": "Après لِأَنَّ : nom en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « D'abord, je suis allé au marché. »",
+          "ar": "… ذَهَبْتُ إِلَى السُّوقِ.",
+          "choix_ar": [
+            "أَوَّلًا",
+            "أَوَّلُ",
+            "ثُمَّ"
+          ],
+          "reponse": 0,
+          "explication": "« d'abord » : أَوَّلًا (leçon 4.20)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "ar": "مَا رَأْيُكَ فِي هَٰذِهِ الْقِصَّةِ؟",
+          "fr": "Que penses-tu de cette histoire ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "أَرَى أَنَّ الْقِصَّةَ جَمِيلَةٌ، لِأَنَّ كَلِمَاتِهَا سَهْلَةٌ.",
+          "fr": "Je pense que l'histoire est belle, parce que ses mots sont faciles."
+        },
+        {
+          "qui": "nadim",
+          "ar": "أُوَافِقُكَ، لَٰكِنَّ الْقِصَّةَ طَوِيلَةٌ.",
+          "fr": "Je suis d'accord avec toi, mais l'histoire est longue."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pourquoi Bāsim trouve-t-il l'histoire belle ?",
+        "choix": [
+          "ses mots sont faciles",
+          "elle est longue",
+          "elle est courte"
+        ],
+        "reponse": 0,
+        "explication": "لِأَنَّ كَلِمَاتِهَا سَهْلَةٌ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ray",
+        "wafaqa",
+        "sahih",
+        "dalil",
+        "munazara",
+        "asabta"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "دَلِيلٌ",
+        "choix": [
+          "preuve, argument",
+          "chemin",
+          "débat"
+        ],
+        "reponse": 0,
+        "explication": "دَلِيلٌ veut dire « preuve, argument »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Donner son avis",
+      "texte": "Avis : أَرَى أَنَّ ou أَظُنُّ أَنَّ + nom en -a ; raison : لِأَنَّ. Nuance : لَٰكِنَّ ; attention, أَرَى أَنْ + verbe veut dire « je suis d'avis de », d'où « je propose de ».",
+      "exemples": [
+        "أَرَى أَنَّ الْقِصَّةَ جَمِيلَةٌ",
+        "لِأَنَّ كَلِمَاتِهَا سَهْلَةٌ",
+        "لَٰكِنَّ الْقِصَّةَ طَوِيلَةٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire أَرَى أَنَّ الْقِصَّةَ جَمِيلَةٌ ?",
+        "choix": [
+          "Je pense que l'histoire est belle.",
+          "J'ai vu une belle histoire.",
+          "Je propose une belle histoire."
+        ],
+        "reponse": 0,
+        "explication": "أَرَى أَنَّ + phrase : « je pense que »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Approuver, refuser poliment",
+      "texte": "Pour approuver : أُوَافِقُكَ, أَصَبْتَ, هَٰذَا صَحِيحٌ. Pour refuser poliment : لَا أُوَافِقُكَ, puis la raison avec لِأَنَّ ou دَلِيلِي أَنَّ.",
+      "exemples": [
+        "أُوَافِقُكَ",
+        "لَا أُوَافِقُكَ",
+        "دَلِيلِي أَنَّ الطَّرِيقَ صَعْبٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pour dire poliment que tu n'es pas d'accord, tu dis…",
+        "choix_ar": [
+          "لَا أُوَافِقُكَ",
+          "أَصَبْتَ",
+          "هَٰذَا صَحِيحٌ"
+        ],
+        "reponse": 0,
+        "explication": "لَا أُوَافِقُكَ, puis la raison."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَأْيٌ",
+          "choix": [
+            "opinion, avis",
+            "preuve, argument",
+            "débat"
+          ],
+          "reponse": 0,
+          "explication": "رَأْيٌ veut dire « opinion, avis »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَحِيحٌ",
+          "choix": [
+            "juste, exact",
+            "facile",
+            "difficile"
+          ],
+          "reponse": 0,
+          "explication": "صَحِيحٌ veut dire « juste, exact »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُنَاظَرَةٌ",
+          "choix": [
+            "débat",
+            "lettre",
+            "voyage"
+          ],
+          "reponse": 0,
+          "explication": "مُنَاظَرَةٌ veut dire « débat »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Que penses-tu de cette histoire ? » ?",
+          "choix_ar": [
+            "مَا رَأْيُكَ فِي هَٰذِهِ الْقِصَّةِ؟",
+            "مَا دَلِيلُكَ فِي هَٰذِهِ الْقِصَّةِ؟",
+            "مَتَى رَأْيُكَ فِي هَٰذِهِ الْقِصَّةِ؟"
+          ],
+          "reponse": 0,
+          "explication": "« ton avis » : رَأْيُكَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je suis d'accord avec toi, mais l'histoire est longue. »",
+          "ar": "أُوَافِقُكَ، لَٰكِنَّ … طَوِيلَةٌ.",
+          "choix_ar": [
+            "الْقِصَّةَ",
+            "الْقِصَّةُ",
+            "الْقِصَّةِ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَٰكِنَّ : nom en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je ne suis pas d'accord avec toi. »",
+          "ar": "… أُوَافِقُكَ.",
+          "choix_ar": [
+            "لَا",
+            "لَنْ",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Refuser au présent : لَا + inaccompli."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « C'est exact, tu as raison. »",
+          "ar": "هَٰذَا صَحِيحٌ، …",
+          "choix_ar": [
+            "أَصَبْتَ",
+            "أَصَبْتُ",
+            "أُوَافِقُ"
+          ],
+          "reponse": 0,
+          "explication": "« tu as raison » : أَصَبْتَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle phrase justifie un avis ?",
+          "choix_ar": [
+            "لِأَنَّ الطَّرِيقَ صَعْبٌ",
+            "أُوَافِقُكَ",
+            "مَا رَأْيُكَ؟"
+          ],
+          "reponse": 0,
+          "explication": "La raison vient avec لِأَنَّ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le débat chez Nadīm",
+      "texte": "Deux étudiants débattent des longues histoires. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "قَالَ طَالِبٌ: « أَرَى أَنَّ الْقِصَّةَ الطَّوِيلَةَ جَمِيلَةٌ. »",
+        "قَالَ صَدِيقُهُ: « لَا أُوَافِقُكَ؛ دَلِيلِي أَنَّ كَلِمَاتِهَا صَعْبَةٌ. »",
+        "اخْتَلَفَ الطَّالِبَانِ فِي الْمُنَاظَرَةِ.",
+        "قَالَ نَدِيمٌ: « هَٰذَا رَأْيٌ، وَذَٰلِكَ رَأْيٌ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que pense l'étudiant qui parle en premier ?",
+          "choix": [
+            "une longue histoire est belle",
+            "une longue histoire est difficile",
+            "le débat est long"
+          ],
+          "reponse": 0,
+          "explication": "أَرَى أَنَّ الْقِصَّةَ الطَّوِيلَةَ جَمِيلَةٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que dit Nadīm ?",
+          "choix": [
+            "chacun a son avis",
+            "le premier a raison",
+            "le second a tort"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذَا رَأْيٌ، وَذَٰلِكَ رَأْيٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Je pense que le chemin est difficile, parce qu'il est long. » ?",
+          "choix_ar": [
+            "أَرَى أَنَّ الطَّرِيقَ صَعْبٌ، لِأَنَّهُ طَوِيلٌ.",
+            "أَرَى أَنَّ الطَّرِيقُ صَعْبٌ، لِأَنَّهُ طَوِيلٌ.",
+            "أَرَى أَنِ الطَّرِيقَ صَعْبٌ، لِأَنَّهُ طَوِيلٌ."
+          ],
+          "reponse": 0,
+          "explication": "أَنَّ (avec shadda) + nom en -a."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Je ne suis pas d'accord avec toi, parce que l'histoire est longue. »",
+          "tuiles": [
+            "طَوِيلَةٌ",
+            "الْقِصَّةَ",
+            "لِأَنَّ",
+            "أُوَافِقُكَ",
+            "لَا"
+          ],
+          "solution": [
+            "لَا",
+            "أُوَافِقُكَ",
+            "لِأَنَّ",
+            "الْقِصَّةَ",
+            "طَوِيلَةٌ"
+          ],
+          "explication": "D'abord le refus, puis la raison."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ma preuve, c'est que le chemin est difficile. »",
+          "ar": "… أَنَّ الطَّرِيقَ صَعْبٌ.",
+          "choix_ar": [
+            "دَلِيلِي",
+            "رَأْيِي",
+            "طَرِيقِي"
+          ],
+          "reponse": 0,
+          "explication": "« ma preuve » : دَلِيلِي."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "وَافَقَ",
+          "choix": [
+            "être d'accord avec",
+            "répéter",
+            "marchander"
+          ],
+          "reponse": 0,
+          "explication": "وَافَقَ veut dire « être d'accord avec »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "دَلِيلٌ",
+          "choix": [
+            "preuve, argument",
+            "opinion, avis",
+            "débat"
+          ],
+          "reponse": 0,
+          "explication": "دَلِيلٌ veut dire « preuve, argument »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « je suis d'accord avec toi » ?",
+          "choix_ar": [
+            "أُوَافِقُكَ",
+            "لَا أُوَافِقُكَ",
+            "أَصَبْتُ"
+          ],
+          "reponse": 0,
+          "explication": "أُوَافِقُكَ : je suis d'accord avec toi."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je pense que l'histoire est belle. »",
+          "ar": "أَرَى أَنَّ الْقِصَّةَ …",
+          "choix_ar": [
+            "جَمِيلَةٌ",
+            "جَمِيلَةً",
+            "جَمِيلٌ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif, accordé au féminin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Que penses-tu ? »",
+          "ar": "مَا … ؟",
+          "choix_ar": [
+            "رَأْيُكَ",
+            "رَأْيَكَ",
+            "رَأْيِكَ"
+          ],
+          "reponse": 0,
+          "explication": "مَا + nom au nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « parce que ses mots sont faciles »",
+          "ar": "… كَلِمَاتِهَا سَهْلَةٌ",
+          "choix_ar": [
+            "لِأَنَّ",
+            "لَٰكِنَّ",
+            "أَوَّلًا"
+          ],
+          "reponse": 0,
+          "explication": "La raison : لِأَنَّ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "أَرَى أَنَّ + phrase veut dire…",
+          "choix": [
+            "je pense que",
+            "j'ai vu que",
+            "je propose de"
+          ],
+          "reponse": 0,
+          "explication": "أَرَى أَنَّ : donner son avis."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour approuver, on dit…",
+          "choix_ar": [
+            "أَصَبْتَ",
+            "لَا أُوَافِقُكَ",
+            "دَلِيلِي"
+          ],
+          "reponse": 0,
+          "explication": "أَصَبْتَ : tu as raison."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire هَٰذَا صَحِيحٌ ?",
+          "choix": [
+            "C'est exact.",
+            "C'est difficile.",
+            "C'est un débat."
+          ],
+          "reponse": 0,
+          "explication": "صَحِيحٌ : juste, exact."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَادَةٌ",
+          "choix": [
+            "habitude",
+            "journée",
+            "règle"
+          ],
+          "reponse": 0,
+          "explication": "عَادَةٌ veut dire « habitude ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'étais fatigué, alors je me suis un peu reposé. »",
+          "ar": "كُنْتُ تَعِبًا، … قَلِيلًا.",
+          "choix_ar": [
+            "فَاسْتَرَحْتُ",
+            "أَوِ اسْتَرَحْتُ",
+            "وَلَٰكِنِ اسْتَرَحْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Une cause et sa suite : فَـ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَخِيصٌ",
+          "choix": [
+            "bon marché",
+            "cher",
+            "neuf"
+          ],
+          "reponse": 0,
+          "explication": "رَخِيصٌ veut dire « bon marché ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu donnes ton avis (أَرَى أَنَّ, أَظُنُّ أَنَّ), tu le justifies (لِأَنَّ, دَلِيلِي أَنَّ), tu approuves (أُوَافِقُكَ, أَصَبْتَ) ou tu refuses poliment (لَا أُوَافِقُكَ).",
+      "suite": "Prochaine leçon : mener une conversation."
+    }
+  ]
+}

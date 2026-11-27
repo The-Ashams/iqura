@@ -1,0 +1,524 @@
+{
+  "id": "sens-06",
+  "etape": 5,
+  "ordre": 6,
+  "format": 3,
+  "titre": "Les mots sous-entendus",
+  "objectif": "Repérer un mot sous-entendu et le rétablir quand le contexte le rend certain.",
+  "statut": "ia_non_verifie",
+  "lieu": "verger_ordre",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-05"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ",
+    "تَقْدِيرُهُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "texte": "L'arabe aime aller vite : il omet souvent un mot évident."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Pour bien comprendre, on rétablit ce mot, mais seulement quand c'est certain."
+        }
+      ],
+      "objectif": "Rétablir un mot sous-entendu."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Comment vas-tu ? »",
+          "ar": "كَيْفَ …؟",
+          "choix_ar": [
+            "حَالُكَ",
+            "حَالَكَ",
+            "حَالِكَ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet : nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets en tête : « C'est la lettre que j'ai écrite. »",
+          "ar": "… كَتَبْتُ.",
+          "choix_ar": [
+            "الرِّسَالَةَ",
+            "الرِّسَالَةُ",
+            "الرِّسَالَةِ"
+          ],
+          "reponse": 0,
+          "explication": "Accusatif, même en tête : vu juste avant."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il est au marché. »",
+          "ar": "هُوَ فِي …",
+          "choix_ar": [
+            "السُّوقِ",
+            "السُّوقُ",
+            "السُّوقَ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : génitif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "ar": "مَنْ كَتَبَ الرِّسَالَةَ؟",
+          "fr": "Qui a écrit la lettre ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "سَمِيرٌ.",
+          "fr": "Samīr."
+        },
+        {
+          "qui": "hazim",
+          "ar": "وَأَيْنَ سَمِيرٌ الْآنَ؟",
+          "fr": "Et où est Samīr maintenant ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "فِي السُّوقِ.",
+          "fr": "Au marché."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans la réponse « سَمِيرٌ. », quel est le mot sous-entendu ?",
+        "choix": [
+          "le verbe كَتَبَ (et la lettre)",
+          "le mot « marché »",
+          "rien"
+        ],
+        "reponse": 0,
+        "explication": "سَمِيرٌ = كَتَبَهَا سَمِيرٌ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "hadhf",
+        "mahdhuf",
+        "taqdir",
+        "bab_kitab"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "حَذْفٌ",
+        "choix": [
+          "(grammaire) omission",
+          "(grammaire) mise en tête",
+          "(grammaire) négation"
+        ],
+        "reponse": 0,
+        "explication": "حَذْفٌ veut dire « (grammaire) omission »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Omettre et rétablir",
+      "texte": "L'arabe omet volontiers un mot évident (حَذْفٌ) ; pour comprendre, on le rétablit (تَقْدِيرٌ). On le fait seulement quand le contexte rend le sens certain, avec la restitution la plus simple.",
+      "exemples": [
+        "سَمِيرٌ",
+        "كَتَبَهَا سَمِيرٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "« مَنْ كَتَبَ الرِّسَالَةَ؟ — سَمِيرٌ. » Restitue la réponse :",
+        "choix_ar": [
+          "كَتَبَهَا سَمِيرٌ",
+          "سَمِيرٌ فِي السُّوقِ",
+          "كَتَبَ سَمِيرًا"
+        ],
+        "reponse": 0,
+        "explication": "On reprend le verbe de la question."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les cas sûrs",
+      "texte": "Cas sûrs : la réponse courte (verbe de la question) ; le sujet omis (هُوَ, أَنَا, هَٰذَا), y compris dans un titre ; le pronom omis après un second verbe. IQURA ne rétablit jamais un mot dans un texte sacré.",
+      "exemples": [
+        "فِي السُّوقِ",
+        "هُوَ فِي السُّوقِ",
+        "بَابُ الْحُرُوفِ",
+        "هَٰذَا بَابُ الْحُرُوفِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "« كَيْفَ حَالُكَ؟ — بِخَيْرٍ. » Le mot sous-entendu est…",
+        "choix_ar": [
+          "أَنَا",
+          "هُوَ",
+          "أَنْتَ"
+        ],
+        "reponse": 0,
+        "explication": "أَنَا بِخَيْرٍ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les formules",
+      "texte": "Les formules مَرْحَبًا, أَهْلًا وَسَهْلًا, شُكْرًا ont aussi un verbe sous-entendu ; pour مَرْحَبًا et أَهْلًا وَسَهْلًا, les grammairiens le rétablissent de plusieurs façons. On le sait, sans écrire de restitution.",
+      "exemples": [
+        "مَرْحَبًا",
+        "شُكْرًا"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pour مَرْحَبًا, les grammairiens…",
+        "choix": [
+          "rétablissent un verbe de plusieurs façons",
+          "ne voient aucun mot omis",
+          "rétablissent toujours le même mot"
+        ],
+        "reponse": 0,
+        "explication": "Plusieurs restitutions : on n'en écrit aucune."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Le livre de Ḥāzim",
+      "texte": "Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فَتَحَ حَازِمٌ كِتَابًا قَدِيمًا، وَقَرَأَ: « بَابُ الْحُرُوفِ ».",
+        "قَالَ بَاسِمٌ: « مَا مَعْنَى هَٰذَا؟ » قَالَ حَازِمٌ: « تَقْدِيرُهُ: هَٰذَا بَابُ الْحُرُوفِ. »",
+        "ثُمَّ قَرَأَ سَمِيرٌ الرِّسَالَةَ وَفَهِمَ.",
+        "قَالَ حَازِمٌ: « تَقْدِيرُهُ: وَفَهِمَهَا. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire « بَابُ الْحُرُوفِ » dans le livre ?",
+          "choix": [
+            "chapitre des lettres",
+            "la porte des lettres",
+            "les lettres sont ouvertes"
+          ],
+          "reponse": 0,
+          "explication": "بَابٌ : chapitre, ici."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « قَرَأَ سَمِيرٌ الرِّسَالَةَ وَفَهِمَ », qu'est-ce qui est omis ?",
+          "choix": [
+            "le pronom « la » (la lettre) après فَهِمَ",
+            "le sujet",
+            "le verbe قَرَأَ"
+          ],
+          "reponse": 0,
+          "explication": "وَفَهِمَهَا : le pronom est omis."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَحْذُوفٌ",
+          "choix": [
+            "(grammaire) sous-entendu, omis",
+            "(grammaire) mis en tête",
+            "écrit"
+          ],
+          "reponse": 0,
+          "explication": "مَحْذُوفٌ veut dire « (grammaire) sous-entendu, omis »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَقْدِيرٌ",
+          "choix": [
+            "(grammaire) restitution du mot sous-entendu",
+            "(grammaire) omission",
+            "(grammaire) affirmation (sens d'une question)"
+          ],
+          "reponse": 0,
+          "explication": "تَقْدِيرٌ veut dire « (grammaire) restitution du mot sous-entendu »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Restitue : « أَيْنَ بَاسِمٌ؟ — فِي السُّوقِ. »",
+          "ar": "… فِي السُّوقِ.",
+          "choix_ar": [
+            "هُوَ",
+            "أَنَا",
+            "أَنْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Bāsim : هُوَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Restitue : « كَيْفَ حَالُكَ؟ — بِخَيْرٍ. »",
+          "ar": "… بِخَيْرٍ.",
+          "choix_ar": [
+            "أَنَا",
+            "هُوَ",
+            "هِيَ"
+          ],
+          "reponse": 0,
+          "explication": "Celui qui répond parle de lui : أَنَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Restitue le titre : « بَابُ الْحُرُوفِ »",
+          "ar": "… بَابُ الْحُرُوفِ.",
+          "choix_ar": [
+            "هَٰذَا",
+            "هَٰذِهِ",
+            "هَٰؤُلَاءِ"
+          ],
+          "reponse": 0,
+          "explication": "بَابٌ est masculin singulier : هَٰذَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Restitue : « قَرَأَ سَمِيرٌ الرِّسَالَةَ وَفَهِمَ. »",
+          "ar": "قَرَأَ سَمِيرٌ الرِّسَالَةَ وَ…",
+          "choix_ar": [
+            "فَهِمَهَا",
+            "فَهِمَهُ",
+            "فَهِمَهُمْ"
+          ],
+          "reponse": 0,
+          "explication": "الرِّسَالَة est féminin : ـهَا."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Chapitre des lettres. » ?",
+          "choix_ar": [
+            "بَابُ الْحُرُوفِ.",
+            "بَابٌ الْحُرُوفِ.",
+            "بَابَ الْحُرُوفُ."
+          ],
+          "reponse": 0,
+          "explication": "Annexion : بَابُ sans tanwīn, الْحُرُوفِ au génitif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "On rétablit un mot sous-entendu…",
+          "choix": [
+            "seulement quand le contexte rend le sens certain",
+            "toujours, même s'il y a plusieurs choix",
+            "jamais"
+          ],
+          "reponse": 0,
+          "explication": "Le contexte doit rendre le sens certain."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Il est au marché. » ?",
+          "choix_ar": [
+            "هُوَ فِي السُّوقِ.",
+            "هُوَ فِي السُّوقُ.",
+            "هِيَ فِي السُّوقِ."
+          ],
+          "reponse": 0,
+          "explication": "Le sujet rétabli : هُوَ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Restitue et remets dans l'ordre, en commençant par le verbe : « Samīr l'a écrite. »",
+          "tuiles": [
+            "سَمِيرٌ",
+            "كَتَبَهَا",
+            "سَمِيرًا"
+          ],
+          "solution": [
+            "كَتَبَهَا",
+            "سَمِيرٌ"
+          ],
+          "explication": "Le verbe avec son pronom, puis le sujet au nominatif."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Rétablis le mot sous-entendu dans ces réponses courtes : « فِي السُّوقِ » (de Bāsim), « بِخَيْرٍ » (ta réponse à كَيْفَ حَالُكَ), « سَمِيرٌ » (l'auteur de la lettre).",
+          "modele": [
+            "هُوَ فِي السُّوقِ.",
+            "أَنَا بِخَيْرٍ.",
+            "كَتَبَهَا سَمِيرٌ."
+          ],
+          "explication": "Compare : le sujet ou le verbe de la question, rétabli."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَذْفٌ",
+          "choix": [
+            "(grammaire) omission",
+            "(grammaire) mise en tête",
+            "(grammaire) négation"
+          ],
+          "reponse": 0,
+          "explication": "حَذْفٌ veut dire « (grammaire) omission »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَابٌ",
+          "choix": [
+            "(dans un livre) chapitre",
+            "texte",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "بَابٌ veut dire « (dans un livre) chapitre »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Restitue : « أَيْنَ سَمِيرٌ؟ — فِي الْبَيْتِ. »",
+          "ar": "… فِي الْبَيْتِ.",
+          "choix_ar": [
+            "هُوَ",
+            "أَنَا",
+            "هِيَ"
+          ],
+          "reponse": 0,
+          "explication": "Samīr : هُوَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Restitue : « مَنْ كَتَبَ الرِّسَالَةَ؟ — بَاسِمٌ. »",
+          "ar": "… بَاسِمٌ.",
+          "choix_ar": [
+            "كَتَبَهَا",
+            "كَتَبَهُ",
+            "كَتَبْتُهَا"
+          ],
+          "reponse": 0,
+          "explication": "Le verbe de la question, avec ـهَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Restitue le titre : « بَابُ الْأَسْمَاءِ »",
+          "ar": "… بَابُ الْأَسْمَاءِ.",
+          "choix_ar": [
+            "هَٰذَا",
+            "هَٰذِهِ",
+            "هَٰؤُلَاءِ"
+          ],
+          "reponse": 0,
+          "explication": "بَابٌ : masculin."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Je vais bien. » ?",
+          "choix_ar": [
+            "أَنَا بِخَيْرٍ.",
+            "أَنَا بِخَيْرٌ.",
+            "هُوَ بِخَيْرٍ."
+          ],
+          "reponse": 0,
+          "explication": "Le sujet rétabli : أَنَا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans un texte sacré, IQURA…",
+          "choix": [
+            "ne rétablit jamais de mot",
+            "rétablit toujours les mots",
+            "change les mots"
+          ],
+          "reponse": 0,
+          "explication": "C'est le travail des commentateurs."
+        },
+        {
+          "type": "qcm",
+          "consigne": "On ne rétablit un mot que si…",
+          "choix": [
+            "le contexte rend le sens certain",
+            "le texte est long",
+            "le mot est un verbe"
+          ],
+          "reponse": 0,
+          "explication": "Le contexte doit le rendre certain."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans « قَرَأَ سَمِيرٌ الرِّسَالَةَ وَفَهِمَ », ce qui manque est…",
+          "choix": [
+            "le pronom complément",
+            "le sujet",
+            "la préposition"
+          ],
+          "reponse": 0,
+          "explication": "وَفَهِمَهَا."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَعْضٌ",
+          "choix": [
+            "une partie, quelques-uns",
+            "chose",
+            "tout"
+          ],
+          "reponse": 0,
+          "explication": "بَعْضٌ veut dire « une partie, quelques-uns ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets en tête : « C'est au marché que Bāsim est allé. »",
+          "ar": "… ذَهَبَ بَاسِمٌ.",
+          "choix_ar": [
+            "إِلَى السُّوقِ",
+            "السُّوقُ",
+            "السُّوقَ إِلَى"
+          ],
+          "reponse": 0,
+          "explication": "La préposition et son nom ensemble.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَمَّا",
+          "choix": [
+            "(+ jussif) pas encore",
+            "jamais (au passé)",
+            "si"
+          ],
+          "reponse": 0,
+          "explication": "لَمَّا veut dire « (+ jussif) pas encore ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu repères un mot sous-entendu (حَذْفٌ) et tu le rétablis (تَقْدِيرٌ) quand c'est certain : réponses courtes, sujet omis, titres, pronom omis.",
+      "suite": "Prochaine leçon : le changement de personne, au Pavillon des Voix."
+    }
+  ]
+}

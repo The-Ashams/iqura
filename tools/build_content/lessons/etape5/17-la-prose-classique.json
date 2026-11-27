@@ -1,0 +1,530 @@
+{
+  "id": "sens-17",
+  "etape": 5,
+  "ordre": 17,
+  "format": 3,
+  "titre": "La prose classique",
+  "objectif": "Lire et comprendre un court texte classique profane vocalisé, avec son lexique.",
+  "statut": "ia_non_verifie",
+  "lieu": "bibliotheque_jardin",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-16"
+  ],
+  "apercu": [
+    "مُفِيدٌ",
+    "مُفِيدًا",
+    "حَازِمٌ",
+    "زُهَيْرٌ",
+    "بَاسِمٌ",
+    "دِمْنَةُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "zuhayr",
+          "texte": "Te souviens-tu de la tortue et des deux canards ? Ce livre ancien, Kalīla wa Dimna, a bien d'autres fables."
+        },
+        {
+          "qui": "zuhayr",
+          "texte": "Aujourd'hui, celle du renard et du tambour, recopiée d'une édition de 1905. Les voyelles sont ajoutées pour toi."
+        }
+      ],
+      "objectif": "Lire une fable ancienne vocalisée."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَوْتٌ",
+          "choix": [
+            "son, voix",
+            "vent",
+            "branche"
+          ],
+          "reponse": 0,
+          "explication": "صَوْتٌ veut dire « son, voix »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chameau a faim. »",
+          "ar": "الْجَمَلُ …",
+          "choix_ar": [
+            "جَائِعٌ",
+            "جَائِعًا",
+            "جَائِعٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Mets la fin : « Il a entendu un son fort. »",
+          "ar": "سَمِعَ صَوْتًا …",
+          "choix_ar": [
+            "شَدِيدًا",
+            "شَدِيدٌ",
+            "شَدِيدٍ"
+          ],
+          "reponse": 0,
+          "explication": "Le نَعْتٌ suit son nom : accusatif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "مَا هَٰذَا الصَّوْتُ؟",
+          "fr": "Qu'est-ce que ce bruit ?"
+        },
+        {
+          "qui": "zuhayr",
+          "ar": "طَبْلٌ! وَالطَّبْلُ كَبِيرٌ، وَلَٰكِنَّهُ أَجْوَفُ.",
+          "fr": "Un tambour ! Le tambour est grand, mais il est creux."
+        },
+        {
+          "qui": "hazim",
+          "ar": "وَفِي الْكِتَابِ الْقَدِيمِ ثَعْلَبٌ ظَنَّ غَيْرَ ذَٰلِكَ.",
+          "fr": "Et dans le livre ancien, un renard a pensé autrement."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que dit Zuhayr du tambour ?",
+        "choix": [
+          "il est grand, mais creux",
+          "il est petit et plein",
+          "il est cassé"
+        ],
+        "reponse": 0,
+        "explication": "الطَّبْلُ كَبِيرٌ، وَلَٰكِنَّهُ أَجْوَفُ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "thalab",
+        "tabl",
+        "ajwaf"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "أَجْوَفُ",
+        "choix": [
+          "creux, vide à l'intérieur",
+          "énorme",
+          "affamé"
+        ],
+        "reponse": 0,
+        "explication": "أَجْوَفُ veut dire « creux, vide à l'intérieur »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Lire un texte ancien",
+      "texte": "Le texte vient d'une édition ancienne, recopiée mot à mot : tu peux voir sa graphie. Les tournures anciennes sont expliquées, jamais corrigées ; le lexique donne les mots que tu ne connais pas.",
+      "exemples": [
+        "زَعَمُوا أَنَّ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "زَعَمُوا أَنَّ, au début d'une fable, veut dire…",
+        "choix": [
+          "on raconte que",
+          "ils ont juré que",
+          "il est certain que"
+        ],
+        "reponse": 0,
+        "explication": "Formule des fables, vue en 4.28."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Le renard et le tambour",
+      "texte": "Texte ancien. Lis ; le lexique est sous le texte.",
+      "phrases": [
+        "زَعَمُوا أَنَّ ثَعْلَبًا جَائِعًا أَتَى عَلَى أَجَمَةٍ فِيهَا طَبْلٌ مُلْقًى إِلَى جَانِبِ شَجَرَةٍ.",
+        "فَإِذَا هَبَّتِ الرِّيحُ تَحَرَّكَتْ أَغْصَانُ الشَّجَرَةِ (وَ) أَصَابَتِ الطَّبْلَ، فَصَوَّتَ صَوْتًا شَدِيدًا.",
+        "فَسَمِعَ الثَّعْلَبُ ذَٰلِكَ الصَّوْتَ، فَتَوَجَّهَ نَحْوَهُ حَتَّى انْتَهَى إِلَى الطَّبْلِ.",
+        "فَلَمَّا رَآهُ ضَخْمًا قَالَ فِي نَفْسِهِ: إِنَّ هَٰذَا لَخَلِيقٌ بِكَثْرَةِ الشَّحْمِ وَاللَّحْمِ.",
+        "فَعَالَجَهُ الْعِلَاجَ حَتَّى شَقَّهُ، فَلَمَّا رَآهُ أَجْوَفَ قَالَ الثَّعْلَبُ: لَعَلَّ أَفْسَلَ الْأَشْيَاءِ أَعْظَمُهَا جُثَّةً وَأَبْعَدُهَا صَوْتًا."
+      ],
+      "source": "Kalīla wa Dimna, trad. arabe d'Ibn al-Muqaffaʿ, éd. L. Cheikho, Beyrouth, Imprimerie catholique, 1905, p. 62 (domaine public), extrait · vocalisation et hamzas rédigées par IA, relues",
+      "edition": [
+        "زعموا انَّ ثعلبًا جائعًا اتى على اجمة فيها طبل ملقى الى جانب شجرة فاذا هبَّت الريح تحركت اغصان الشجرة (و) اصابت الطبل فصوَّت صوتًا شديدًا فسمع الثعلب ذلك الصوت فتوجَّه نحوهُ حتى انتهى الى الطبل. فلمَّا رآه ضخمًا قال في نفسهِ: انَّ هذا لخليق بكثرة الشحم واللحم. فعالجهُ العلاج حتى شقَّهُ فلما رآه اجوف قال الثعلب: لعلَّ افسل الاشياء اعظمها جثَّةً وابعدها صوتًا"
+      ],
+      "traduction": [
+        "On raconte qu'un renard affamé arriva dans un fourré où un tambour était posé à côté d'un arbre.",
+        "Chaque fois que le vent soufflait, les branches de l'arbre bougeaient et frappaient le tambour, qui faisait un grand bruit.",
+        "Le renard entendit ce bruit et se dirigea vers lui jusqu'à arriver au tambour.",
+        "Quand il le vit si gros, il se dit : « Celui-ci doit être plein de graisse et de viande. »",
+        "Il s'acharna sur lui jusqu'à le fendre ; quand il le vit creux, le renard dit : « Peut-être que les choses les plus viles sont les plus grosses et les plus bruyantes. »"
+      ],
+      "lexique": [
+        {
+          "ar": "ثَعْلَبٌ",
+          "fr": "renard, chacal"
+        },
+        {
+          "ar": "أَجَمَةٌ",
+          "fr": "fourré, bosquet épais"
+        },
+        {
+          "ar": "طَبْلٌ",
+          "fr": "tambour"
+        },
+        {
+          "ar": "أَغْصَانٌ",
+          "fr": "branches (pluriel de غُصْنٌ)"
+        },
+        {
+          "ar": "ضَخْمٌ",
+          "fr": "énorme, gros"
+        },
+        {
+          "ar": "خَلِيقٌ بِـ",
+          "fr": "qui doit avoir, digne de"
+        },
+        {
+          "ar": "الشَّحْمُ",
+          "fr": "la graisse"
+        },
+        {
+          "ar": "أَجْوَفُ",
+          "fr": "creux"
+        },
+        {
+          "ar": "أَفْسَلُ",
+          "fr": "le plus vil, le moins utile"
+        },
+        {
+          "ar": "جُثَّةٌ",
+          "fr": "corps, volume"
+        }
+      ],
+      "note": "Le début du passage, « مثلٌ. قال دمنة: », est omis. (وَ) : mot ajouté par l'éditeur. فَإِذَا هَبَّتِ الرِّيحُ : إِذَا suivi d'un verbe, celui de la condition (« chaque fois que »), pas la surprise. Le texte est cité, jamais imité.",
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi le tambour fait-il du bruit ?",
+          "choix": [
+            "les branches le frappent quand le vent souffle",
+            "le renard joue du tambour",
+            "un homme le frappe"
+          ],
+          "reponse": 0,
+          "explication": "تَحَرَّكَتْ أَغْصَانُ الشَّجَرَةِ وَأَصَابَتِ الطَّبْلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que croit le renard en voyant le tambour ?",
+          "choix": [
+            "qu'il est plein de graisse et de viande",
+            "qu'il est dangereux",
+            "qu'il est vide"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّ هَٰذَا لَخَلِيقٌ بِكَثْرَةِ الشَّحْمِ وَاللَّحْمِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans فَصَوَّتَ صَوْتًا شَدِيدًا, « صَوْتًا » est…",
+          "choix": [
+            "مَفْعُولٌ مُطْلَقٌ (complément absolu)",
+            "فَاعِلٌ",
+            "ظَرْفٌ"
+          ],
+          "reponse": 0,
+          "explication": "Un nom de la même racine que le verbe, avec un adjectif : مَفْعُولٌ مُطْلَقٌ, à l'accusatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la leçon de la fable ?",
+          "choix": [
+            "ce qui fait le plus de bruit n'est pas toujours ce qui a le plus de valeur",
+            "il faut toujours écouter le vent",
+            "les renards aiment les tambours"
+          ],
+          "reponse": 0,
+          "explication": "لَعَلَّ أَفْسَلَ الْأَشْيَاءِ أَعْظَمُهَا جُثَّةً وَأَبْعَدُهَا صَوْتًا."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَعْلَبٌ",
+          "choix": [
+            "renard, chacal",
+            "tambour",
+            "chameau"
+          ],
+          "reponse": 0,
+          "explication": "ثَعْلَبٌ veut dire « renard, chacal »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَبْلٌ",
+          "choix": [
+            "tambour",
+            "branche",
+            "arbre"
+          ],
+          "reponse": 0,
+          "explication": "طَبْلٌ veut dire « tambour »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le tambour est grand, mais il est creux. »",
+          "ar": "الطَّبْلُ كَبِيرٌ، وَلَٰكِنَّهُ …",
+          "choix_ar": [
+            "أَجْوَفُ",
+            "أَجْوَفًا",
+            "أَجْوَفٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut de لَٰكِنَّ : nominatif, sans tanwīn (comme أَحْمَرُ)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a vu un renard dans le village. »",
+          "ar": "رَأَى بَاسِمٌ … فِي الْقَرْيَةِ.",
+          "choix_ar": [
+            "ثَعْلَبًا",
+            "ثَعْلَبٌ",
+            "ثَعْلَبٍ"
+          ],
+          "reponse": 0,
+          "explication": "Complément direct : accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le son du tambour est fort. »",
+          "ar": "صَوْتُ … شَدِيدٌ.",
+          "choix_ar": [
+            "الطَّبْلِ",
+            "الطَّبْلُ",
+            "الطَّبْلَ"
+          ],
+          "reponse": 0,
+          "explication": "مُضَافٌ إِلَيْهِ : génitif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans زَعَمُوا أَنَّ ثَعْلَبًا جَائِعًا, « جَائِعًا » est…",
+          "choix": [
+            "نَعْتٌ de ثَعْلَبًا",
+            "حَالٌ",
+            "خَبَرٌ"
+          ],
+          "reponse": 0,
+          "explication": "Il suit ثَعْلَبًا : accusatif, indéfini."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le tambour est grand, mais il est creux. » ?",
+          "choix_ar": [
+            "الطَّبْلُ كَبِيرٌ، وَلَٰكِنَّهُ أَجْوَفُ.",
+            "الطَّبْلُ كَبِيرًا، وَلَٰكِنَّهُ أَجْوَفُ.",
+            "الطَّبْلُ كَبِيرٌ، وَلَٰكِنَّهُ أَجْوَفًا."
+          ],
+          "reponse": 0,
+          "explication": "Attributs au nominatif ; أَجْوَفُ sans tanwīn."
+        },
+        {
+          "type": "completer",
+          "consigne": "Redis la leçon de la fable : « Tout ce qui est grand n'est pas utile. »",
+          "ar": "لَيْسَ كُلُّ كَبِيرٍ …",
+          "choix_ar": [
+            "مُفِيدًا",
+            "مُفِيدٌ",
+            "مُفِيدٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut de لَيْسَ : accusatif."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Raconte la fable en trois phrases simples, avec tes mots.",
+          "modele": [
+            "سَمِعَ ثَعْلَبٌ صَوْتَ طَبْلٍ.",
+            "ظَنَّ الثَّعْلَبُ أَنَّ الطَّبْلَ فِيهِ لَحْمٌ.",
+            "فَلَمَّا فَتَحَهُ وَجَدَهُ أَجْوَفَ."
+          ],
+          "explication": "Compare : as-tu gardé le début, l'erreur du renard et la fin ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَعْلَبٌ",
+          "choix": [
+            "renard, chacal",
+            "tambour",
+            "lion"
+          ],
+          "reponse": 0,
+          "explication": "ثَعْلَبٌ veut dire « renard, chacal »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَجْوَفُ",
+          "choix": [
+            "creux, vide à l'intérieur",
+            "énorme",
+            "fort"
+          ],
+          "reponse": 0,
+          "explication": "أَجْوَفُ veut dire « creux, vide à l'intérieur »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "طَبْلٌ",
+          "choix": [
+            "tambour",
+            "arbre",
+            "son, voix"
+          ],
+          "reponse": 0,
+          "explication": "طَبْلٌ veut dire « tambour »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le renard est affamé. »",
+          "ar": "الثَّعْلَبُ …",
+          "choix_ar": [
+            "جَائِعٌ",
+            "جَائِعًا",
+            "جَائِعٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « un tambour creux »",
+          "ar": "طَبْلٌ …",
+          "choix_ar": [
+            "أَجْوَفُ",
+            "أَجْوَفَ",
+            "أَجْوَفٍ"
+          ],
+          "reponse": 0,
+          "explication": "نَعْتٌ au nominatif, sans tanwīn."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le son du tambour est fort. »",
+          "ar": "صَوْتُ الطَّبْلِ …",
+          "choix_ar": [
+            "شَدِيدٌ",
+            "شَدِيدًا",
+            "شَدِيدٍ"
+          ],
+          "reponse": 0,
+          "explication": "خَبَرٌ : nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Kalīla wa Dimna est…",
+          "choix": [
+            "un livre ancien de fables",
+            "un dictionnaire",
+            "un livre de grammaire"
+          ],
+          "reponse": 0,
+          "explication": "Traduit en arabe par Ibn al-Muqaffaʿ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans IQURA, un texte ancien est…",
+          "choix": [
+            "recopié d'une édition ancienne, jamais imité",
+            "réécrit à la manière ancienne",
+            "inventé"
+          ],
+          "reponse": 0,
+          "explication": "On cite, on n'imite pas."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim a vu un renard. » ?",
+          "choix_ar": [
+            "رَأَى بَاسِمٌ ثَعْلَبًا.",
+            "رَأَى بَاسِمٌ ثَعْلَبٌ.",
+            "رَأَى بَاسِمًا ثَعْلَبٌ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet au nominatif, complément à l'accusatif."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَصْلٌ",
+          "choix": [
+            "section (d'un livre)",
+            "(dans un livre) chapitre",
+            "différence"
+          ],
+          "reponse": 0,
+          "explication": "فَصْلٌ veut dire « section (d'un livre) ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَجْرُورٌ",
+          "choix": [
+            "(en grammaire) au génitif",
+            "(en grammaire) au jussif",
+            "(en grammaire) au nominatif ; à l'indicatif"
+          ],
+          "reponse": 0,
+          "explication": "مَجْرُورٌ veut dire « (en grammaire) au génitif ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Après cela, Zuhayr rentra. »",
+          "ar": "… ذَٰلِكَ، رَجَعَ زُهَيْرٌ.",
+          "choix_ar": [
+            "بَعْدَ",
+            "فَإِذَا",
+            "إِذْ"
+          ],
+          "reponse": 0,
+          "explication": "بَعْدَ ذَٰلِكَ.",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu as lu une fable ancienne, recopiée d'une édition de 1905 : le renard et le tambour ; tu connais ثَعْلَبٌ, طَبْلٌ et أَجْوَفُ.",
+      "suite": "Prochaine leçon : un autre texte ancien, cette fois sans voyelles."
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "id": "dechiffrer-11",
+  "etape": 1,
+  "ordre": 11,
+  "format": 2,
+  "titre": "La fontaine aux échos",
+  "objectif": "Lire une consonne doublée, marquée par la shadda ّ, seule ou avec une voyelle ; lire أُمّ, سُكَّر, قِطَّة, جَدَّة, مُعَلِّم.",
+  "statut": "ia_non_verifie",
+  "lieu": "fontaine",
+  "maitre": "layla",
+  "prerequis": [
+    "dechiffrer-10"
+  ],
+  "introduit": {
+    "lettres": [],
+    "signes": [
+      "shadda"
+    ]
+  },
+  "apercu": [],
+  "elements": {
+    "syllabes": [
+      {
+        "ar": "سُكْ",
+        "translit": "suk"
+      },
+      {
+        "ar": "سُكَّ",
+        "translit": "sukka"
+      },
+      {
+        "ar": "قِطْ",
+        "translit": "qiṭ"
+      },
+      {
+        "ar": "قِطَّ",
+        "translit": "qiṭṭa"
+      }
+    ],
+    "mots": [
+      {
+        "ar": "أُمّ",
+        "translit": "umm",
+        "fr": "mère"
+      },
+      {
+        "ar": "سُكَّر",
+        "translit": "sukkar",
+        "fr": "sucre"
+      },
+      {
+        "ar": "قِطَّة",
+        "translit": "qiṭṭa",
+        "fr": "chatte"
+      },
+      {
+        "ar": "جَدَّة",
+        "translit": "ǧadda",
+        "fr": "grand-mère"
+      },
+      {
+        "ar": "مُعَلِّم",
+        "translit": "muʿallim",
+        "fr": "maître, enseignant"
+      }
+    ]
+  },
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "layla",
+          "texte": "Bonjour, voyageur ! Ici, chaque son revient deux fois, comme un écho."
+        },
+        {
+          "qui": "layla",
+          "texte": "Sur le bord de la fontaine, des mots portent un petit signe d'écho. Lis-les avec moi."
+        }
+      ],
+      "objectif": "Lire les mots qui font écho."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "مَدِينَة",
+          "choix_audio": [
+            "مَدِينَة",
+            "وَرَقَة",
+            "شَجَرَة"
+          ],
+          "reponse": 0,
+          "explication": "مَدِينَة se lit « madīna » (leçon 10)."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "عَلَى",
+          "choix_audio": [
+            "فَتَى",
+            "عَلَى",
+            "عَيْن"
+          ],
+          "reponse": 1,
+          "explication": "عَلَى se lit « ʿalā » (leçon 10)."
+        },
+        {
+          "type": "ecouter",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "بَدْ",
+          "choix_ar": [
+            "بَ",
+            "بَدْ",
+            "دَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « bad » : د porte un sukūn (leçon 4)."
+        }
+      ]
+    },
+    {
+      "type": "decouverte",
+      "support": [
+        "سُكَّر"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Au-dessus de ك, il y a un petit signe en forme de w. À ton avis, que veut-il dire ?",
+        "choix": [
+          "La lettre est doublée : on la tient plus longtemps",
+          "La lettre ne se prononce pas",
+          "C'est une voyelle « o »"
+        ],
+        "reponse": 0,
+        "explication": "C'est la shadda : la consonne est doublée. سُكَّر se lit « sukkar », le sucre."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La shadda",
+      "texte": "La shadda ّ double la consonne : la même lettre est lue deux fois, d'abord sans voyelle, puis avec sa voyelle. سُكَّ, c'est سُكْ suivi de كَ.",
+      "exemples": [
+        "سُكْ",
+        "سُكَّ"
+      ],
+      "question": {
+        "type": "paires",
+        "consigne": "Quelle syllabe entends-tu ?",
+        "audio": "سُكَّ",
+        "choix_ar": [
+          "سُكَ",
+          "سُكَّ",
+          "سُكْ"
+        ],
+        "reponse": 1,
+        "explication": "C'était « sukka » : ك est doublé."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La shadda et sa voyelle",
+      "texte": "La shadda porte aussi la voyelle de la lettre : la fatḥa et la ḍamma au-dessus, la kasra en dessous. Dans le Mushaf, la kasra se place souvent juste sous la shadda.",
+      "exemples": [
+        "قِطَّ",
+        "مُعَلِّم"
+      ],
+      "question": {
+        "type": "lire",
+        "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+        "ar": "مُعَلِّم",
+        "choix_audio": [
+          "مُعَلِّم",
+          "سُكَّر",
+          "جَدَّة"
+        ],
+        "reponse": 0,
+        "explication": "مُعَلِّم se lit « muʿallim » : ل est doublé."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "À la fin du mot",
+      "texte": "Quand on s'arrête sur un mot qui finit par une shadda, on tient la consonne un peu plus longtemps : أُمّ se lit « umm ».",
+      "exemples": [
+        "أُمّ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans أُمّ, que fait la shadda ?",
+        "choix": [
+          "Elle double le م",
+          "Elle allonge le « u »",
+          "Elle remplace la hamza"
+        ],
+        "reponse": 0,
+        "explication": "La shadda double le م : « umm », la mère."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Comment s'appelle le signe ّ ?",
+          "choix": [
+            "shadda",
+            "sukūn",
+            "madda"
+          ],
+          "reponse": 0,
+          "explication": "ّ est la shadda : la consonne est doublée."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "قِطَّ",
+          "choix_ar": [
+            "قِطَ",
+            "قِطَّ",
+            "قِطْ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « qiṭṭa » : ط est doublé."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "سُكْ",
+          "choix_ar": [
+            "سُكْ",
+            "سُكَّ",
+            "سُكَ"
+          ],
+          "reponse": 0,
+          "explication": "C'était « suk » : ك porte un sukūn, sans être doublé."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "جَدَّة",
+          "choix_audio": [
+            "جَدَّة",
+            "قِطَّة",
+            "مَدِينَة"
+          ],
+          "reponse": 0,
+          "explication": "جَدَّة se lit « ǧadda », la grand-mère."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "قِطَّة",
+          "choix_audio": [
+            "جَدَّة",
+            "وَرَقَة",
+            "قِطَّة"
+          ],
+          "reponse": 2,
+          "explication": "قِطَّة se lit « qiṭṭa » : ط est doublé."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ? Écoute les trois sons et choisis.",
+          "ar": "سُكَّر",
+          "choix_audio": [
+            "سُكَّر",
+            "صَبْر",
+            "شَجَر"
+          ],
+          "reponse": 0,
+          "explication": "سُكَّر se lit « sukkar »."
+        },
+        {
+          "type": "reconstruire",
+          "consigne": "Écoute le mot, puis assemble-le.",
+          "audio": "سُكَّر",
+          "tuiles": [
+            "سُ",
+            "كَّ",
+            "ر",
+            "كَ"
+          ],
+          "solution": [
+            "سُ",
+            "كَّ",
+            "ر"
+          ],
+          "explication": "سُكَّر : سُ, كَ doublé par la shadda, puis ر."
+        },
+        {
+          "type": "repeter",
+          "consigne": "Écoute, répète à voix haute, enregistre-toi et compare.",
+          "ar": "مُعَلِّم"
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Les mots de la fontaine",
+      "texte": "Sur le bord de la fontaine, des enfants ont écrit des mots. Compte les shadda et trouve la mère.",
+      "inscription": [
+        "أُمّ",
+        "سُكَّر",
+        "قِطَّة",
+        "جَدَّة",
+        "مُعَلِّم"
+      ],
+      "questions": [
+        {
+          "type": "compter",
+          "consigne": "Combien de shadda vois-tu dans ce mot ?",
+          "mot": 1,
+          "lettre": "ّ"
+        },
+        {
+          "type": "compter",
+          "consigne": "Combien de shadda vois-tu dans ce mot ?",
+          "mot": 4,
+          "lettre": "ّ"
+        },
+        {
+          "type": "reperer_mot",
+          "consigne": "Touche le mot qui veut dire « mère ».",
+          "mot": 0,
+          "explication": "أُمّ se lit « umm » : mère."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "سُكَّ",
+          "choix_ar": [
+            "سُكَ",
+            "سُكَّ",
+            "سُكْ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « sukka »."
+        },
+        {
+          "type": "paires",
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "قِطْ",
+          "choix_ar": [
+            "قِطَّ",
+            "قِطْ",
+            "قِطَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « qiṭ », sans doublement."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "أُمّ",
+          "choix_audio": [
+            "أُمّ",
+            "جَدَّة",
+            "أَرْض"
+          ],
+          "reponse": 0,
+          "explication": "أُمّ se lit « umm »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "مُعَلِّم",
+          "choix_audio": [
+            "سُكَّر",
+            "مُعَلِّم",
+            "مَدِينَة"
+          ],
+          "reponse": 1,
+          "explication": "مُعَلِّم se lit « muʿallim »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "قِطَّة",
+          "choix_audio": [
+            "قِطَّة",
+            "جَدَّة",
+            "وَرَقَة"
+          ],
+          "reponse": 0,
+          "explication": "قِطَّة se lit « qiṭṭa »."
+        },
+        {
+          "type": "lire",
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "جَدَّة",
+          "choix_audio": [
+            "قِطَّة",
+            "مَدِينَة",
+            "جَدَّة"
+          ],
+          "reponse": 2,
+          "explication": "جَدَّة se lit « ǧadda »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La shadda veut dire que la consonne…",
+          "choix": [
+            "est doublée",
+            "n'a pas de voyelle",
+            "ne se prononce pas"
+          ],
+          "reponse": 0,
+          "explication": "La shadda double la consonne."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans مُعَلِّم, quelle voyelle porte la lettre doublée ل ?",
+          "choix": [
+            "une kasra",
+            "une fatḥa",
+            "aucune voyelle"
+          ],
+          "reponse": 0,
+          "explication": "ل doublé porte une kasra : « muʿallim »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "سُكَّ se lit comme…",
+          "choix": [
+            "سُكْ suivi de كَ",
+            "سُ suivi de كَ",
+            "سُكْ seulement"
+          ],
+          "reponse": 0,
+          "explication": "La lettre doublée se lit deux fois : sans voyelle, puis avec sa voyelle."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "وَرَقَة",
+          "choix_audio": [
+            "وَرَقَة",
+            "شَجَرَة",
+            "مَدِينَة"
+          ],
+          "reponse": 0,
+          "explication": "وَرَقَة se lit « waraqa » (leçon 10)."
+        },
+        {
+          "type": "lire",
+          "revision": true,
+          "consigne": "Comment se lit ce mot ?",
+          "ar": "سُؤَال",
+          "choix_audio": [
+            "سَمَاء",
+            "سُؤَال",
+            "سُكَّر"
+          ],
+          "reponse": 1,
+          "explication": "سُؤَال se lit « suʾāl » (leçon 9)."
+        },
+        {
+          "type": "paires",
+          "revision": true,
+          "consigne": "Quelle syllabe entends-tu ?",
+          "audio": "هَ",
+          "choix_ar": [
+            "حَ",
+            "هَ",
+            "خَ"
+          ],
+          "reponse": 1,
+          "explication": "C'était « ha » (leçon 8)."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais lire une consonne doublée par la shadda : أُمّ, سُكَّر, قِطَّة, جَدَّة, مُعَلِّم.",
+      "suite": "L'écho de la fontaine se tait, et le onzième sceau de la porte se brise."
+    }
+  ]
+}

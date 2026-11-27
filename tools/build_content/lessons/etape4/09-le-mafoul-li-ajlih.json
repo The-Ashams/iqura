@@ -1,0 +1,524 @@
+{
+  "id": "cite-09",
+  "etape": 4,
+  "ordre": 9,
+  "format": 3,
+  "titre": "« Il l'a fait par peur » : le mafʿūl li-aǧlih",
+  "objectif": "Dire le motif d'une action avec un nom d'action en -a.",
+  "statut": "ia_non_verifie",
+  "lieu": "conteurs",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-08"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Dernière histoire sur ma place : pourquoi le marchand est-il parti, pourquoi l'enfant a-t-il pleuré ?"
+        },
+        {
+          "qui": "nadim",
+          "texte": "Un seul nom d'action, en -a, suffit à dire le motif."
+        }
+      ],
+      "objectif": "Employer le mafʿūl li-aǧlih."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a frappé doucement à la porte. »",
+          "ar": "طَرَقَ بَاسِمٌ الْبَابَ … خَفِيفًا.",
+          "choix_ar": [
+            "طَرْقًا",
+            "طَرْقٌ",
+            "الطَّرْقَ"
+          ],
+          "reponse": 0,
+          "explication": "Mafʿūl muṭlaq (leçon 4.8)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لِمَاذَا",
+          "choix": [
+            "pourquoi ?",
+            "comment ?",
+            "quand ?"
+          ],
+          "reponse": 0,
+          "explication": "لِمَاذَا veut dire « pourquoi ? »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le nom d'action de خَافَ est…",
+          "choix_ar": [
+            "خَوْفٌ",
+            "خَافَ",
+            "يَخَافُ"
+          ],
+          "reponse": 0,
+          "explication": "خَافَ → خَوْفٌ."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "لِمَاذَا سَافَرَ التَّاجِرُ؟",
+          "fr": "Pourquoi le marchand est-il parti ?"
+        },
+        {
+          "qui": "nadim",
+          "ar": "سَافَرَ إِلَى بَغْدَادَ طَلَبًا لِلرِّبْحِ.",
+          "fr": "Il est parti pour Bagdad en quête de profit."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَلَبِسْتُ ثَوْبَيْنِ خَوْفًا مِنَ الْبَرْدِ.",
+          "fr": "Et j'ai mis deux vêtements par crainte du froid."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pourquoi le marchand est-il parti ?",
+        "choix": [
+          "en quête de profit",
+          "par crainte du froid",
+          "pour voir Bāsim"
+        ],
+        "reponse": 0,
+        "explication": "طَلَبًا لِلرِّبْحِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "li_ajli",
+        "faala",
+        "tijara",
+        "ribh"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "رِبْحٌ",
+        "choix": [
+          "gain, profit",
+          "commerce",
+          "argent"
+        ],
+        "reponse": 0,
+        "explication": "رِبْحٌ veut dire « gain, profit »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le mafʿūl li-aǧlih",
+      "texte": "Le mafʿūl li-aǧlih est un nom d'action en -a, souvent un sentiment ou une intention, qui dit pourquoi l'on agit ; il répond à لِمَاذَا : بَكَى الطِّفْلُ خَوْفًا مِنَ الْكَلْبِ.",
+      "exemples": [
+        "خَوْفًا مِنَ الْكَلْبِ",
+        "طَلَبًا لِلرِّبْحِ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « L'enfant a pleuré de peur du chien. »",
+        "ar": "بَكَى الطِّفْلُ … مِنَ الْكَلْبِ.",
+        "choix_ar": [
+          "خَوْفًا",
+          "خَوْفٌ",
+          "خَوْفِ"
+        ],
+        "reponse": 0,
+        "explication": "Motif : nom d'action en -a."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Trois compléments en -a",
+      "texte": "Le ḥāl dit comment (رَجَعَ فَرِحًا), le mafʿūl muṭlaq répète le verbe (طَرَقَ طَرْقًا), le mafʿūl li-aǧlih dit pourquoi (خَوْفًا مِنَ الْبَرْدِ).",
+      "exemples": [
+        "رَجَعَ فَرِحًا",
+        "طَرَقَ طَرْقًا",
+        "خَوْفًا مِنَ الْبَرْدِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans لَبِسْتُ ثَوْبَيْنِ خَوْفًا مِنَ الْبَرْدِ, خَوْفًا dit…",
+        "choix": [
+          "pourquoi",
+          "comment",
+          "combien"
+        ],
+        "reponse": 0,
+        "explication": "Le motif : mafʿūl li-aǧlih."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Avec مِنْ ou لِـ",
+      "texte": "On peut dire la même chose avec مِنْ ou لِـ : بَكَى مِنَ الْخَوْفِ « il a pleuré de peur ».",
+      "exemples": [
+        "بَكَى خَوْفًا",
+        "بَكَى مِنَ الْخَوْفِ",
+        "سَافَرَ لِلتِّجَارَةِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire بَكَى الطِّفْلُ مِنَ الْخَوْفِ ?",
+        "choix": [
+          "L'enfant a pleuré de peur.",
+          "L'enfant a eu peur de pleurer.",
+          "L'enfant a pleuré comme un peureux."
+        ],
+        "reponse": 0,
+        "explication": "مِنَ الْخَوْفِ = خَوْفًا."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تِجَارَةٌ",
+          "choix": [
+            "commerce",
+            "gain",
+            "marché"
+          ],
+          "reponse": 0,
+          "explication": "تِجَارَةٌ veut dire « commerce »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَعَلَ",
+          "choix": [
+            "faire",
+            "dire",
+            "partir"
+          ],
+          "reponse": 0,
+          "explication": "فَعَلَ veut dire « faire »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لِأَجْلِ",
+          "choix": [
+            "pour, à cause de",
+            "avec",
+            "jusqu'à"
+          ],
+          "reponse": 0,
+          "explication": "لِأَجْلِ veut dire « pour, à cause de »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le marchand est parti en quête de profit » ?",
+          "choix_ar": [
+            "سَافَرَ التَّاجِرُ طَلَبًا لِلرِّبْحِ",
+            "سَافَرَ التَّاجِرُ طَلَبٌ لِلرِّبْحِ",
+            "سَافَرَ التَّاجِرُ طَلَبِ الرِّبْحِ"
+          ],
+          "reponse": 0,
+          "explication": "Motif : nom d'action en -a, le plus souvent indéfini."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a porté le sac du maître pour l'honorer. »",
+          "ar": "حَمَلَ بَاسِمٌ كِيسَ الْمُعَلِّمِ … لَهُ.",
+          "choix_ar": [
+            "إِكْرَامًا",
+            "إِكْرَامٌ",
+            "الْإِكْرَامِ"
+          ],
+          "reponse": 0,
+          "explication": "Motif : إِكْرَامًا, nom d'action de أَكْرَمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a mis deux vêtements par crainte du froid. »",
+          "ar": "لَبِسَ بَاسِمٌ ثَوْبَيْنِ … مِنَ الْبَرْدِ.",
+          "choix_ar": [
+            "خَوْفًا",
+            "خَوْفٌ",
+            "خَوْفِ"
+          ],
+          "reponse": 0,
+          "explication": "Motif : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand est parti pour le commerce. »",
+          "ar": "سَافَرَ التَّاجِرُ طَلَبًا …",
+          "choix_ar": [
+            "لِلتِّجَارَةِ",
+            "التِّجَارَةُ",
+            "تِجَارَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "طَلَبًا لِـ + nom au génitif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le mafʿūl li-aǧlih répond à…",
+          "choix": [
+            "لِمَاذَا ? (pourquoi ?)",
+            "كَيْفَ ? (comment ?)",
+            "كَمْ ? (combien ?)"
+          ],
+          "reponse": 0,
+          "explication": "Il dit le motif."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le voyage du marchand",
+      "texte": "Nadīm raconte le départ d'un marchand. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "سَافَرَ التَّاجِرُ إِلَى بَغْدَادَ طَلَبًا لِلرِّبْحِ.",
+        "لَبِسَ ثَوْبَيْنِ خَوْفًا مِنَ الْبَرْدِ.",
+        "فِي بَغْدَادَ، حَمَلَ بَاسِمٌ كِيسَ الْمُعَلِّمِ إِكْرَامًا لَهُ.",
+        "لَمَّا وَصَلَ التَّاجِرُ إِلَى بَيْتِهِ، سَأَلَهُ بَاسِمٌ عَنْ بَغْدَادَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi le marchand a-t-il mis deux vêtements ?",
+          "choix": [
+            "par crainte du froid",
+            "pour honorer le maître",
+            "pour le commerce"
+          ],
+          "reponse": 0,
+          "explication": "خَوْفًا مِنَ الْبَرْدِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi Bāsim a-t-il porté le sac du maître ?",
+          "choix": [
+            "pour l'honorer",
+            "par peur",
+            "pour gagner de l'argent"
+          ],
+          "reponse": 0,
+          "explication": "إِكْرَامًا لَهُ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « L'enfant a pleuré de peur du chien. » ?",
+          "choix_ar": [
+            "بَكَى الطِّفْلُ خَوْفًا مِنَ الْكَلْبِ.",
+            "بَكَى الطِّفْلُ خَوْفِ مِنَ الْكَلْبِ.",
+            "بَكَى الطِّفْلُ خَوْفٌ مِنَ الْكَلْبِ."
+          ],
+          "reponse": 0,
+          "explication": "Motif : خَوْفًا, en -a."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Le marchand est parti en quête de profit. »",
+          "tuiles": [
+            "لِلرِّبْحِ",
+            "طَلَبًا",
+            "التَّاجِرُ",
+            "سَافَرَ",
+            "طَلَبٌ"
+          ],
+          "solution": [
+            "سَافَرَ",
+            "التَّاجِرُ",
+            "طَلَبًا",
+            "لِلرِّبْحِ"
+          ],
+          "explication": "Motif : طَلَبًا, en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je suis parti pour le commerce. »",
+          "ar": "سَافَرْتُ لِأَجْلِ …",
+          "choix_ar": [
+            "التِّجَارَةِ",
+            "التِّجَارَةُ",
+            "التِّجَارَةَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لِأَجْلِ : génitif."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رِبْحٌ",
+          "choix": [
+            "gain, profit",
+            "perte",
+            "chemin"
+          ],
+          "reponse": 0,
+          "explication": "رِبْحٌ veut dire « gain, profit »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لِأَجْلِ",
+          "choix": [
+            "pour, à cause de",
+            "jusqu'à",
+            "avant"
+          ],
+          "reponse": 0,
+          "explication": "لِأَجْلِ veut dire « pour, à cause de »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « l'enfant a pleuré de peur du chien » ?",
+          "choix_ar": [
+            "بَكَى الطِّفْلُ خَوْفًا مِنَ الْكَلْبِ",
+            "بَكَى الطِّفْلُ خَوْفِ الْكَلْبِ",
+            "بَكَى الطِّفْلُ خَوْفٌ مِنَ الْكَلْبِ"
+          ],
+          "reponse": 0,
+          "explication": "Motif : en -a, le plus souvent indéfini."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a porté le sac pour l'honorer. »",
+          "ar": "حَمَلَ الْكِيسَ … لَهُ.",
+          "choix_ar": [
+            "إِكْرَامًا",
+            "إِكْرَامٌ",
+            "الْإِكْرَامِ"
+          ],
+          "reponse": 0,
+          "explication": "Motif : -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il est parti en quête de profit. »",
+          "ar": "سَافَرَ طَلَبًا …",
+          "choix_ar": [
+            "لِلرِّبْحِ",
+            "الرِّبْحُ",
+            "رِبْحٌ"
+          ],
+          "reponse": 0,
+          "explication": "طَلَبًا لِـ + génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a mis deux vêtements par crainte du froid. »",
+          "ar": "لَبِسَ ثَوْبَيْنِ … مِنَ الْبَرْدِ.",
+          "choix_ar": [
+            "خَوْفًا",
+            "خَوْفٌ",
+            "خَوْفِ"
+          ],
+          "reponse": 0,
+          "explication": "Motif : -a."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans رَجَعَ فَرِحًا, فَرِحًا dit…",
+          "choix": [
+            "comment",
+            "pourquoi",
+            "combien de fois"
+          ],
+          "reponse": 0,
+          "explication": "C'est un ḥāl."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans بَكَى خَوْفًا, خَوْفًا dit…",
+          "choix": [
+            "pourquoi",
+            "comment",
+            "combien"
+          ],
+          "reponse": 0,
+          "explication": "C'est un mafʿūl li-aǧlih."
+        },
+        {
+          "type": "qcm",
+          "consigne": "بَكَى خَوْفًا veut dire la même chose que…",
+          "choix_ar": [
+            "بَكَى مِنَ الْخَوْفِ",
+            "خَافَ مِنَ الْبُكَاءِ",
+            "خَافَ بُكَاءً"
+          ],
+          "reponse": 0,
+          "explication": "مِنَ الْخَوْفِ = خَوْفًا."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَرَّةٌ",
+          "choix": [
+            "fois",
+            "coup",
+            "porte"
+          ],
+          "reponse": 0,
+          "explication": "مَرَّةٌ veut dire « fois ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il a frappé deux coups. »",
+          "ar": "طَرَقَ الْبَابَ …",
+          "choix_ar": [
+            "طَرْقَتَيْنِ",
+            "طَرْقَةً",
+            "طَرْقَتَانِ"
+          ],
+          "reponse": 0,
+          "explication": "Duel en -ayni.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَيْفَ",
+          "choix": [
+            "comment ?",
+            "pourquoi ?",
+            "combien ?"
+          ],
+          "reponse": 0,
+          "explication": "كَيْفَ veut dire « comment ? ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu dis pourquoi on agit avec un nom d'action en -a (mafʿūl li-aǧlih), et tu distingues le ḥāl, le mafʿūl muṭlaq et le mafʿūl li-aǧlih.",
+      "suite": "Au Jardin des maximes, Hāla t'apprend à dire « sauf »."
+    }
+  ]
+}

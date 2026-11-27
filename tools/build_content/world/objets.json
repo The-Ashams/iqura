@@ -1,0 +1,19 @@
+{
+  "_comment": "Objets de la boutique (cahier v3 §8.6). Les objets changent le combat, jamais l'apprentissage. Valeurs initiales, à équilibrer. Descriptions rédigées par IA.",
+  "statut": "ia",
+  "emplacements": ["arme", "armure", "casque", "cape", "bouclier", "accessoire"],
+  "raretes": ["commun", "rare", "epique", "legendaire"],
+  "ensembles": {
+    "desert": {"nom": "Voyageur du désert", "pieces": 3, "bonus": {"pv": 10, "attaque": 1}}
+  },
+  "objets": [
+    {"id": "baton", "nom": "Bâton de voyageur", "emplacement": "arme", "rarete": "commun", "prix": 30, "region": "r1", "ensemble": "desert", "stats": {"attaque": 2}, "description": "Un bâton de marche solide, poli par les longues routes."},
+    {"id": "cape", "nom": "Cape de laine", "emplacement": "cape", "rarete": "commun", "prix": 30, "region": "r1", "ensemble": "desert", "stats": {"pv": 8}, "description": "Chaude la nuit, légère le jour."},
+    {"id": "turban", "nom": "Turban du désert", "emplacement": "casque", "rarete": "commun", "prix": 30, "region": "r1", "ensemble": "desert", "stats": {"defense": 1}, "description": "Il protège du soleil et du sable."},
+    {"id": "tunique", "nom": "Tunique de cuir", "emplacement": "armure", "rarete": "commun", "prix": 50, "region": "r1", "stats": {"pv": 5, "defense": 1}, "description": "Une tunique renforcée de cuir tanné."},
+    {"id": "bouclier_palme", "nom": "Bouclier de palme", "emplacement": "bouclier", "rarete": "commun", "prix": 40, "region": "r1", "stats": {"defense": 2}, "description": "Des palmes tressées serré, étonnamment résistantes."},
+    {"id": "sandales", "nom": "Sandales de caravanier", "emplacement": "accessoire", "rarete": "commun", "prix": 40, "region": "r1", "stats": {"concentration": 1}, "description": "On y garde le pas sûr et l'esprit tranquille."},
+    {"id": "plume", "nom": "Plume de copiste", "emplacement": "arme", "rarete": "rare", "prix": 120, "region": "r1", "stats": {"attaque": 4, "critique": 5}, "description": "Taillée par Samīr. Plus tranchante qu'elle n'en a l'air."},
+    {"id": "amulette", "nom": "Amulette de sable", "emplacement": "accessoire", "rarete": "rare", "prix": 100, "region": "r1", "stats": {"pv": 15}, "description": "Un grain de sable du désert enfermé dans du verre."}
+  ]
+}

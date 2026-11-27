@@ -1,0 +1,310 @@
+{
+  "_comment": "Région 4 « La Cité des Lecteurs » (cahier §5.8, §8.2 ; proposition du 12/11/2026 à valider par l'utilisateur : docs/PROPOSITION_REGION_4.md). Positions : pixels de la carte (160 × 90). Descriptions rédigées par IA. Chapitres A à C (Avancé 1 et 2).",
+  "statut": "ia",
+  "region": {
+    "id": "r4",
+    "numero": 4,
+    "nom": "La Cité des Lecteurs",
+    "competence": "Lire et parler couramment",
+    "adversaire": "La Distraction",
+    "carte": "scene_carte_r4"
+  },
+  "lieux": [
+    {
+      "id": "porte_cite",
+      "numero": 1,
+      "nom": "La Porte de la Cité",
+      "position": [
+        30,
+        58
+      ],
+      "lecons": [
+        1,
+        2
+      ],
+      "scene": "scene_porte_cite",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "messagers"
+      ],
+      "description": "À l'entrée de la Cité des Lecteurs, Nadīm le conteur accueille les voyageurs : ici, on apprend à dire « si… »."
+    },
+    {
+      "id": "messagers",
+      "numero": 2,
+      "nom": "La Maison des messagers",
+      "position": [
+        70,
+        58
+      ],
+      "lecons": [
+        3,
+        4,
+        5
+      ],
+      "scene": "scene_messagers",
+      "sol": 82,
+      "tranche_j1a": true,
+      "liens": [
+        "porte_cite",
+        "conteurs"
+      ],
+      "description": "Les lettres arrivent de partout : on y apprend à rapporter ce que les autres ont dit, à dire quand et pourquoi."
+    },
+    {
+      "id": "conteurs",
+      "numero": 3,
+      "nom": "La Place des conteurs",
+      "position": [
+        72,
+        32
+      ],
+      "lecons": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "scene": "scene_conteurs",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "messagers",
+        "jardin_maximes"
+      ],
+      "description": "Assis sur son tapis, Nadīm raconte : comment on arrive, combien, de quelle façon et pour quelle raison."
+    },
+    {
+      "id": "jardin_maximes",
+      "numero": 4,
+      "nom": "Le Jardin des maximes",
+      "position": [
+        100,
+        58
+      ],
+      "lecons": [
+        10,
+        11,
+        12
+      ],
+      "scene": "scene_jardin_maximes",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "conteurs",
+        "bureau_comptes"
+      ],
+      "description": "Près du bassin, Hāla lit les maximes gravées : « sauf… », « ô vous… », et les mots qui insistent."
+    },
+    {
+      "id": "bureau_comptes",
+      "numero": 5,
+      "nom": "Le Bureau des comptes",
+      "position": [
+        119,
+        42
+      ],
+      "lecons": [
+        13,
+        14
+      ],
+      "scene": "scene_bureau_comptes",
+      "sol": 82,
+      "tranche_j1a": true,
+      "liens": [
+        "jardin_maximes",
+        "place_debats",
+        "labyrinthe"
+      ],
+      "description": "Au comptoir des registres, Hāla apprend à relier les idées et à compter jusqu'à mille."
+    },
+    {
+      "id": "place_debats",
+      "numero": 6,
+      "nom": "La Place des débats",
+      "position": [
+        40,
+        30
+      ],
+      "lecons": [
+        15,
+        16
+      ],
+      "scene": "scene_debats",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "bureau_comptes",
+        "marche_couvert"
+      ],
+      "description": "Sous la colonnade, on parle en arabe classique : se présenter, parler des siens, donner son avis."
+    },
+    {
+      "id": "marche_couvert",
+      "numero": 7,
+      "nom": "Le Marché couvert",
+      "position": [
+        30,
+        72
+      ],
+      "lecons": [
+        17,
+        18,
+        19
+      ],
+      "scene": "scene_marche_couvert",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "place_debats",
+        "maison_nadim"
+      ],
+      "description": "Sous la toile rayée, on demande son chemin, on compte les jours et on marchande avec politesse."
+    },
+    {
+      "id": "maison_nadim",
+      "numero": 8,
+      "nom": "La Maison de Nadīm",
+      "position": [
+        55,
+        46
+      ],
+      "lecons": [
+        20,
+        21,
+        22
+      ],
+      "scene": "scene_maison_nadim",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "marche_couvert",
+        "atelier_copistes"
+      ],
+      "description": "Chez Nadīm, autour d'un plat de dattes, on raconte sa journée et on apprend à mener une conversation."
+    },
+    {
+      "id": "atelier_copistes",
+      "numero": 9,
+      "nom": "L'Atelier des copistes",
+      "position": [
+        100,
+        24
+      ],
+      "lecons": [
+        23,
+        24
+      ],
+      "scene": "scene_atelier_copistes",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "maison_nadim",
+        "salle_dictionnaire"
+      ],
+      "description": "Les copistes lisent sans voyelles : la racine, le moule et le contexte suffisent."
+    },
+    {
+      "id": "salle_dictionnaire",
+      "numero": 10,
+      "nom": "La Salle du dictionnaire",
+      "position": [
+        132,
+        28
+      ],
+      "lecons": [
+        25,
+        26
+      ],
+      "scene": "scene_dictionnaire",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "atelier_copistes",
+        "grande_salle"
+      ],
+      "description": "Des murs de gros volumes : on y apprend à trouver un mot par sa racine, puis à écrire un message."
+    },
+    {
+      "id": "grande_salle",
+      "numero": 11,
+      "nom": "La Grande Salle de lecture",
+      "position": [
+        80,
+        18
+      ],
+      "lecons": [
+        27,
+        28
+      ],
+      "scene": "scene_grande_salle",
+      "sol": 84,
+      "tranche_j1a": true,
+      "liens": [
+        "salle_dictionnaire",
+        "labyrinthe"
+      ],
+      "description": "Sous la coupole, lieu calme et sans combat, on résume un récit et on lit un texte classique."
+    },
+    {
+      "id": "labyrinthe",
+      "numero": 12,
+      "nom": "Le Labyrinthe de la Distraction",
+      "position": [
+        137,
+        70
+      ],
+      "lecons": [],
+      "scene": "scene_labyrinthe",
+      "sol": 80,
+      "tranche_j1a": true,
+      "liens": [
+        "bureau_comptes",
+        "grande_salle"
+      ],
+      "description": "Des murs qui se croisent et des lueurs qui détournent le regard : la Distraction mélange tout pour faire perdre le fil."
+    }
+  ],
+  "personnages": [
+    {
+      "id": "nadim",
+      "nom": "Nadīm",
+      "nom_ar": "نَدِيم",
+      "role": "Le conteur et écrivain public",
+      "sprite": "nadim",
+      "lieux": [
+        "porte_cite",
+        "messagers",
+        "conteurs",
+        "place_debats",
+        "marche_couvert",
+        "maison_nadim"
+      ]
+    },
+    {
+      "id": "hala",
+      "nom": "Hāla",
+      "nom_ar": "هَالَة",
+      "role": "La gardienne des maximes et des comptes",
+      "sprite": "hala",
+      "lieux": [
+        "jardin_maximes",
+        "bureau_comptes",
+        "marche_couvert"
+      ]
+    },
+    {
+      "id": "zuhayr",
+      "nom": "Zuhayr",
+      "nom_ar": "زُهَيْرٌ",
+      "role": "Le maître copiste",
+      "sprite": "zuhayr",
+      "lieux": [
+        "atelier_copistes",
+        "salle_dictionnaire",
+        "grande_salle"
+      ]
+    }
+  ]
+}

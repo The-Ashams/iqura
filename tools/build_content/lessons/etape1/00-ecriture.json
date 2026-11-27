@@ -2,116 +2,342 @@
   "id": "dechiffrer-00",
   "etape": 1,
   "ordre": 0,
-  "titre": "Découvrir l'écriture arabe",
-  "objectif": "Comprendre comment fonctionne l'écriture arabe avant d'apprendre les lettres.",
+  "format": 2,
+  "titre": "L'énigme du puits",
+  "objectif": "Savoir comment l'arabe s'écrit : sens de lecture, rôle des points, lettres liées, formes, petits signes des voyelles.",
   "statut": "ia_non_verifie",
+  "lieu": "puits",
+  "maitre": "nura",
   "prerequis": [],
   "introduit": {
     "lettres": [],
     "signes": []
   },
-  "sections": [
+  "apercu": [
+    "ثَبَتَ",
+    "ث",
+    "ب",
+    "ت",
+    "بـ",
+    "ـبـ",
+    "ـب",
+    "بَ",
+    "بِ",
+    "بُ"
+  ],
+  "elements": {
+    "syllabes": [],
+    "mots": []
+  },
+  "ecrans": [
     {
-      "type": "texte",
-      "titre": "De droite à gauche",
-      "corps": "L'arabe s'écrit et se lit de droite à gauche. Un livre arabe s'ouvre donc « à l'envers » pour un lecteur français."
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nura",
+          "texte": "Bienvenue au Puits de l'arrivée, voyageur. Je suis Nūra, gardienne des registres de la bibliothèque."
+        },
+        {
+          "qui": "nura",
+          "texte": "Regarde le bord du puits : une inscription que plus personne ne sait lire. Commençons par comprendre comment on écrit ici."
+        }
+      ],
+      "objectif": "Percer le secret de l'inscription du puits."
     },
     {
-      "type": "texte",
-      "titre": "Des consonnes et de petits signes",
-      "corps": "L'alphabet compte 28 lettres, presque toutes des consonnes. Les voyelles brèves (a, i, u) ne sont pas des lettres : ce sont de petits signes placés au-dessus ou au-dessous des consonnes. Un texte qui porte tous ces signes est dit « vocalisé ». Le Coran et les manuels pour débutants sont entièrement vocalisés : c'est ce que vous apprendrez à lire."
+      "type": "decouverte",
+      "support": [
+        "ثَبَتَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "À ton avis, par quel côté commence-t-on à lire cette inscription ?",
+        "choix": [
+          "Par la droite",
+          "Par la gauche",
+          "Par le milieu"
+        ],
+        "reponse": 0,
+        "explication": "L'arabe se lit et s'écrit de droite à gauche. Le premier signe de l'inscription est celui de droite."
+      }
     },
     {
-      "type": "texte",
-      "titre": "Des lettres liées, jusqu'à quatre formes",
-      "corps": "Dans un mot, les lettres se lient entre elles, un peu comme l'écriture cursive. Une même lettre change donc de forme selon sa place : seule (isolée), au début, au milieu ou à la fin du mot. Ces formes se ressemblent : c'est la même lettre, raccourcie ou prolongée pour se lier. Six lettres ne se lient jamais à la lettre qui les suit : ا د ذ ر ز و."
-    },
-    {
-      "type": "decomposition",
-      "ar": "ثَبَتَ",
-      "translit": "ṯabata",
-      "fr": "il est resté ferme",
-      "lettres": [
+      "type": "decouverte",
+      "support": [
         "ث",
         "ب",
         "ت"
       ],
-      "note": "Trois lettres séparées, puis liées dans le mot. Vous apprendrez à les lire dans la leçon 1."
+      "question": {
+        "type": "qcm",
+        "consigne": "Ces trois signes ont la même forme de barque. Qu'est-ce qui les distingue ?",
+        "choix": [
+          "Leurs points",
+          "Leur taille",
+          "Leur épaisseur"
+        ],
+        "reponse": 0,
+        "explication": "Seuls les points changent : ث en a trois dessus, ب un dessous, ت deux dessus. Un point de plus ou de moins, et c'est une autre lettre."
+      }
     },
     {
-      "type": "texte",
-      "titre": "Les points font la différence",
-      "corps": "Beaucoup de lettres ont la même silhouette et ne se distinguent que par le nombre et la place de leurs points. Par exemple ب, ت et ث ont le même dessin : un point dessous, deux points dessus, trois points dessus. Regardez toujours les points."
+      "type": "decouverte",
+      "support": [
+        "ثَبَتَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Sur le bord du puits, ces trois mêmes signes sont…",
+        "choix": [
+          "attachés les uns aux autres",
+          "séparés par des espaces",
+          "écrits de haut en bas"
+        ],
+        "reponse": 0,
+        "explication": "Dans un mot, les lettres s'attachent entre elles. Leur forme se raccourcit un peu pour se lier."
+      }
     },
     {
-      "type": "texte",
-      "titre": "La translittération",
-      "corps": "Pour vous aider, chaque mot est aussi écrit en lettres latines : c'est la translittération. Par défaut, IQURA utilise la norme savante Arabica (ṯ, ǧ, ḫ, ā…), précise : une lettre arabe = un signe latin. Vous pouvez choisir une version simplifiée (th, j, kh, â…) dans les paramètres. La translittération est une béquille : l'objectif est de lire l'écriture arabe."
+      "type": "regle",
+      "titre": "Jusqu'à quatre formes",
+      "texte": "Une lettre change de forme selon sa place : seule, au début, au milieu ou à la fin d'un mot.",
+      "exemples": [
+        "ب",
+        "بـ",
+        "ـبـ",
+        "ـب"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Laquelle est la forme du début d'un mot ?",
+        "choix_ar": [
+          "بـ",
+          "ـب",
+          "ـبـ"
+        ],
+        "reponse": 0,
+        "explication": "Au début, la lettre s'ouvre vers la gauche pour s'attacher à la suivante : بـ."
+      }
     },
     {
-      "type": "texte",
-      "titre": "Écouter et répéter",
-      "corps": "Chaque lettre, syllabe et mot des leçons a un enregistrement à écouter, puis à répéter à voix haute : écoutez, répétez, enregistrez-vous et comparez. Quand l'enregistrement est produit par une voix de synthèse, c'est indiqué. Pour les sons qui n'existent pas en français, une description écrite et un petit schéma montrent en plus où et comment le son se forme."
+      "type": "regle",
+      "titre": "Les petits signes",
+      "texte": "Les lettres notent surtout les consonnes. Les voyelles brèves a, i, u sont de petits signes au-dessus ou au-dessous de la lettre.",
+      "exemples": [
+        "بَ",
+        "بِ",
+        "بُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans بَ, le petit trait au-dessus de la barque est…",
+        "choix": [
+          "une voyelle",
+          "un point",
+          "une autre lettre"
+        ],
+        "reponse": 0,
+        "explication": "C'est une voyelle brève, la fatḥa, qui se lit « a ». Tu l'apprendras à la porte de la bibliothèque."
+      }
     },
     {
-      "type": "coran",
-      "titre": "Un verset du Coran",
-      "corps": "Voici un verset très court. Ne cherchez pas encore à le lire : observez le sens de l'écriture, les lettres liées et les petits signes au-dessus et au-dessous des lettres. L'écriture du Coran comporte aussi quelques signes particuliers, que vous apprendrez à reconnaître dans la leçon 14.",
-      "extraits": [
+      "type": "entrainement",
+      "exercices": [
         {
-          "verset": "89:1"
-        }
-      ]
-    }
-  ],
-  "exercices": [
-    {
-      "type": "qcm",
-      "items": [
-        {
-          "question": "Dans quel sens s'écrit l'arabe ?",
+          "type": "qcm",
+          "consigne": "Dans quel sens se lit l'arabe ?",
           "choix": [
             "De droite à gauche",
-            "De gauche à droite"
+            "De gauche à droite",
+            "De haut en bas"
           ],
           "reponse": 0,
-          "explication": "L'arabe s'écrit et se lit de droite à gauche."
+          "explication": "De droite à gauche : on commence par le signe le plus à droite."
         },
         {
-          "question": "Comment sont notées les voyelles brèves a, i, u ?",
-          "choix": [
-            "Par de petits signes au-dessus ou au-dessous des lettres",
-            "Par des lettres comme en français"
+          "type": "points",
+          "consigne": "Laquelle a trois points ?",
+          "choix_ar": [
+            "ث",
+            "ب",
+            "ت"
           ],
           "reponse": 0,
-          "explication": "Les voyelles brèves sont de petits signes ; un texte qui les porte tous est « vocalisé »."
+          "explication": "ث porte trois points au-dessus."
         },
         {
-          "question": "Pourquoi une lettre arabe peut-elle avoir plusieurs formes ?",
+          "type": "qcm",
+          "consigne": "Combien de formes une lettre peut-elle avoir ?",
           "choix": [
-            "Elle change selon sa place dans le mot",
-            "Elle change selon le sens du mot"
+            "Jusqu'à quatre",
+            "Une seule",
+            "Toujours deux"
           ],
           "reponse": 0,
-          "explication": "Isolée, au début, au milieu ou à la fin : la forme dépend de la position, pas du sens."
+          "explication": "Jusqu'à quatre : seule, au début, au milieu, à la fin."
         },
         {
-          "question": "Qu'est-ce qui distingue ب, ت et ث ?",
+          "type": "points",
+          "consigne": "Laquelle a un seul point, dessous ?",
+          "choix_ar": [
+            "ت",
+            "ث",
+            "ب"
+          ],
+          "reponse": 2,
+          "explication": "ب porte un seul point, sous la barque."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Les voyelles brèves s'écrivent…",
           "choix": [
-            "Leurs points",
-            "Leur longueur"
+            "avec de petits signes",
+            "avec des lettres",
+            "jamais"
           ],
           "reponse": 0,
-          "explication": "Même silhouette ; un point dessous, deux dessus, trois dessus."
+          "explication": "Ce sont de petits signes au-dessus ou au-dessous des lettres."
         }
       ]
     },
     {
-      "type": "controle_final",
-      "sources": [
-        "qcm"
+      "type": "lecture",
+      "titre": "Les signes de la margelle",
+      "texte": "Sur la margelle du puits, trois signes sont gravés. L'arabe se lit de droite à gauche.",
+      "inscription": [
+        "بَ",
+        "بِ",
+        "بُ"
       ],
-      "seuil": 0.75
+      "questions": [
+        {
+          "type": "reperer_mot",
+          "consigne": "Touche le signe par lequel on commence la lecture.",
+          "mot": 0,
+          "explication": "On commence par celui de droite."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Le premier signe d'un mot arabe est…",
+          "choix": [
+            "à droite",
+            "à gauche",
+            "en haut"
+          ],
+          "reponse": 0,
+          "explication": "L'arabe se lit de droite à gauche."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle a trois points ?",
+          "choix_ar": [
+            "ب",
+            "ث",
+            "ت"
+          ],
+          "reponse": 1,
+          "explication": "ث porte trois points au-dessus."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle a deux points au-dessus ?",
+          "choix_ar": [
+            "ت",
+            "ب",
+            "ث"
+          ],
+          "reponse": 0,
+          "explication": "ت porte deux points au-dessus."
+        },
+        {
+          "type": "points",
+          "consigne": "Laquelle a un seul point, dessous ?",
+          "choix_ar": [
+            "ث",
+            "ت",
+            "ب"
+          ],
+          "reponse": 2,
+          "explication": "ب porte un seul point, dessous."
+        },
+        {
+          "type": "formes",
+          "consigne": "Laquelle est la forme du début ?",
+          "choix_ar": [
+            "ـب",
+            "بـ",
+            "ـبـ"
+          ],
+          "reponse": 1,
+          "explication": "Au début, la lettre s'ouvre vers la gauche : بـ."
+        },
+        {
+          "type": "formes",
+          "consigne": "Laquelle est la forme de la fin ?",
+          "choix_ar": [
+            "ـب",
+            "بـ",
+            "ـبـ"
+          ],
+          "reponse": 0,
+          "explication": "À la fin, la lettre est attachée à droite seulement : ـب."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans un mot, les lettres…",
+          "choix": [
+            "s'attachent entre elles",
+            "restent séparées",
+            "s'écrivent l'une sous l'autre"
+          ],
+          "reponse": 0,
+          "explication": "Elles s'attachent, et leur forme change un peu."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Ce qui distingue ب, ت et ث, ce sont…",
+          "choix": [
+            "leurs points",
+            "leurs tailles",
+            "leurs couleurs"
+          ],
+          "reponse": 0,
+          "explication": "Même barque, points différents."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Une lettre peut avoir…",
+          "choix": [
+            "jusqu'à quatre formes",
+            "une seule forme",
+            "dix formes"
+          ],
+          "reponse": 0,
+          "explication": "Seule, au début, au milieu, à la fin."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Le petit trait au-dessus de بَ est…",
+          "choix": [
+            "une voyelle brève",
+            "un point",
+            "une lettre"
+          ],
+          "reponse": 0,
+          "explication": "C'est la fatḥa, une voyelle brève."
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais maintenant que l'arabe se lit de droite à gauche, que les points distinguent les lettres, qu'elles s'attachent et changent de forme, et que les voyelles brèves sont de petits signes.",
+      "suite": "L'inscription du puits s'éclaire : le chemin de la bibliothèque est ouvert."
     }
   ]
 }

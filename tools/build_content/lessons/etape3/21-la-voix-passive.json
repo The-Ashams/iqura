@@ -1,0 +1,589 @@
+{
+  "id": "moteur-21",
+  "etape": 3,
+  "ordre": 21,
+  "format": 3,
+  "titre": "La voix passive",
+  "objectif": "Comprendre le passif au passé (فُعِلَ) et à l'inaccompli (يُفْعَلُ).",
+  "statut": "ia_non_verifie",
+  "lieu": "tour",
+  "maitre": "rabab",
+  "prerequis": [
+    "moteur-20"
+  ],
+  "apercu": [
+    "رَبَابُ",
+    "الْمَبْنِيُّ",
+    "لِلْمَجْهُولِ",
+    "قُدِّمَ",
+    "يُقَدَّمُ",
+    "أُدْخِلَ",
+    "يُدْخَلُ",
+    "اسْتُخْرِجَ",
+    "يُسْتَخْرَجُ"
+  ],
+  "schemes": [
+    "فُعِلَ",
+    "يُفْعَلُ",
+    "فَعِلَ",
+    "فَعُلَ",
+    "يُفْعِلُ",
+    "مُفْعَل",
+    "مُفَعَّل",
+    "مُتَفَعِّل",
+    "اسْتِفْعَال",
+    "افْتِعَال",
+    "إِفْعَال",
+    "فَعَلَ",
+    "يَفْعُلُ",
+    "يَفْعَلُ",
+    "مَفْعُول",
+    "فُعِّلَ",
+    "يُفَعَّلُ",
+    "أُفْعِلَ",
+    "اسْتُفْعِلَ",
+    "يُسْتَفْعَلُ",
+    "فَاعِل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "texte": "Dernière leçon de la tour. Parfois, on ne sait pas qui a agi, ou cela n'a pas d'importance."
+        },
+        {
+          "qui": "rabab",
+          "texte": "Alors l'arabe change les voyelles du verbe : c'est la voix passive, الْمَبْنِيُّ لِلْمَجْهُولِ."
+        }
+      ],
+      "objectif": "Reconnaître un verbe au passif et comprendre la phrase."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق ط ع dans le moule مُفَعَّل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مُقَطَّعٌ",
+            "قَطَّعَ",
+            "قِطْعَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "ق ط ع dans مُفَعَّل : مُقَطَّعٌ (leçon 3.20)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de مَكْتُوبٌ ?",
+          "choix_ar": [
+            "مَفْعُول",
+            "فَاعِل",
+            "مُفْعَل"
+          ],
+          "reponse": 0,
+          "explication": "مَفْعُول : ce qui est fait (leçon 3.3)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَفْتُوحٌ",
+          "choix": [
+            "ouvert",
+            "clé",
+            "il a ouvert"
+          ],
+          "reponse": 0,
+          "explication": "مَفْتُوحٌ : « ouvert » (leçon 3.3)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "فُتِحَ الصُّنْدُوقُ! مَنْ فَتَحَ الصُّنْدُوقَ؟",
+          "fr": "Le coffre a été ouvert ! Qui a ouvert le coffre ?"
+        },
+        {
+          "qui": "rabab",
+          "ar": "لَا أَعْرِفُ. وَفِي الصُّنْدُوقِ رِسَالَةٌ.",
+          "fr": "Je ne sais pas. Et il y a une lettre dans le coffre."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Sait-on qui a ouvert le coffre ?",
+        "choix": [
+          "non",
+          "oui, Bāsim",
+          "oui, Rabāb"
+        ],
+        "reponse": 0,
+        "explication": "لَا أَعْرِفُ : on ne le sait pas."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "majhul",
+        "malum",
+        "masnu",
+        "mazru",
+        "mafhum",
+        "matlub"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مَجْهُولٌ",
+        "choix": [
+          "inconnu",
+          "connu",
+          "compris"
+        ],
+        "reponse": 0,
+        "explication": "مَجْهُولٌ veut dire « inconnu »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le passé passif : فُعِلَ",
+      "texte": "Au passif, on ne dit pas qui agit : le complément devient sujet, au nominatif. Passé فُعِلَ (u puis i) : فَتَحَ الْحَارِسُ الْبَابَ → فُتِحَ الْبَابُ « la porte a été ouverte ».",
+      "exemples": [
+        "فُتِحَ",
+        "كُتِبَ",
+        "حُمِلَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire كُتِبَتِ الرِّسَالَةُ ?",
+        "choix": [
+          "La lettre a été écrite.",
+          "Elle a écrit la lettre.",
+          "Les lettres."
+        ],
+        "reponse": 0,
+        "explication": "كُتِبَتْ : passif (u puis i), sujet الرِّسَالَةُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'inaccompli passif : يُفْعَلُ",
+      "texte": "Inaccompli passif يُفْعَلُ (u puis a) : يُصْنَعُ الْخُبْزُ « le pain est fait ». On vocalise toujours : يَفْهَمُ « il comprend » ≠ يُفْهَمُ « il est compris ».",
+      "exemples": [
+        "يُصْنَعُ",
+        "يُفْتَحُ",
+        "يُفْهَمُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Lequel veut dire « il est compris » ?",
+        "choix_ar": [
+          "يُفْهَمُ",
+          "يَفْهَمُ",
+          "فَهِمَ"
+        ],
+        "reponse": 0,
+        "explication": "Inaccompli passif : u puis a."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Un verbe avec complément direct",
+      "texte": "Ici, on met au passif un verbe qui a un complément direct : ce complément devient le sujet. جَلَسَ ou ذَهَبَ, sans complément direct, ne peuvent pas avoir ainsi un sujet au passif.",
+      "exemples": [
+        "فُتِحَ الْبَابُ",
+        "كُتِبَ الدَّرْسُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Peut-on dire جُلِسَ الرَّجُلُ ?",
+        "choix": [
+          "non : جَلَسَ n'a pas de complément direct qui devienne sujet",
+          "oui, au passif",
+          "oui, au pluriel"
+        ],
+        "reponse": 0,
+        "explication": "Le sujet du passif est l'ancien complément direct."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Aperçu : les autres formes",
+      "texte": "Les formes dérivées ont aussi un passif : au passé, il commence par u (قُدِّمَ, أُدْخِلَ, اسْتُخْرِجَ) ; à l'inaccompli, il a u au début et a avant la dernière lettre (يُقَدَّمُ, يُدْخَلُ, يُسْتَخْرَجُ).",
+      "exemples": [
+        "قُدِّمَ",
+        "أُدْخِلَ",
+        "اسْتُخْرِجَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire قُدِّمَ الطَّعَامُ لِلضُّيُوفِ ?",
+        "choix": [
+          "Le repas a été servi aux invités.",
+          "Il a servi le repas.",
+          "Le repas est ancien."
+        ],
+        "reponse": 0,
+        "explication": "قُدِّمَ : passif de قَدَّمَ."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَعْلُومٌ",
+          "choix": [
+            "connu",
+            "inconnu",
+            "maître"
+          ],
+          "reponse": 0,
+          "explication": "مَعْلُومٌ veut dire « connu »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَطْلُوبٌ",
+          "choix": [
+            "demandé, recherché",
+            "étudiant",
+            "il a demandé"
+          ],
+          "reponse": 0,
+          "explication": "مَطْلُوبٌ veut dire « demandé, recherché »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la porte a été ouverte » ?",
+          "choix_ar": [
+            "فُتِحَ الْبَابُ",
+            "فَتَحَ الْبَابَ",
+            "الْبَابُ مِفْتَاحٌ"
+          ],
+          "reponse": 0,
+          "explication": "« la porte a été ouverte » se dit فُتِحَ الْبَابُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le pain est fait le matin » ?",
+          "choix_ar": [
+            "يُصْنَعُ الْخُبْزُ فِي الصَّبَاحِ",
+            "يَصْنَعُ الْخُبْزَ فِي الصَّبَاحِ",
+            "صَنَعَ الْخُبْزَ فِي الصَّبَاحِ"
+          ],
+          "reponse": 0,
+          "explication": "« le pain est fait le matin » se dit يُصْنَعُ الْخُبْزُ فِي الصَّبَاحِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule du passé passif ?",
+          "choix_ar": [
+            "فُعِلَ",
+            "فَعَلَ",
+            "فَعِلَ"
+          ],
+          "reponse": 0,
+          "explication": "u puis i : فُعِلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans فُتِحَ الصُّنْدُوقُ, qui a ouvert le coffre ?",
+          "choix": [
+            "on ne le dit pas",
+            "le coffre",
+            "un gardien"
+          ],
+          "reponse": 0,
+          "explication": "Au passif, on ne dit pas qui agit."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ه م dans le moule مَفْعُول. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَفْهُومٌ",
+            "فَهْمٌ",
+            "فَهِمَ"
+          ],
+          "reponse": 0,
+          "explication": "ف ه م dans مَفْعُول : مَفْهُومٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ص ن ع dans le moule مَفْعُول. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَصْنُوعٌ",
+            "صَانِعٌ",
+            "صَنَعَ"
+          ],
+          "reponse": 0,
+          "explication": "ص ن ع dans مَفْعُول : مَصْنُوعٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La lettre a été écrite le matin. »",
+          "ar": "… الرِّسَالَةُ فِي الصَّبَاحِ.",
+          "choix_ar": [
+            "كُتِبَتِ",
+            "كَتَبَتِ",
+            "كُتُبُ"
+          ],
+          "reponse": 0,
+          "explication": "Passé passif, sujet féminin : كُتِبَتِ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les fleurs sont plantées dans le jardin. »",
+          "ar": "… الْأَزْهَارُ فِي الْحَدِيقَةِ.",
+          "choix_ar": [
+            "تُزْرَعُ",
+            "تَزْرَعُ",
+            "زَرَعَ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli passif (u puis a) ; pluriel de choses : تُزْرَعُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le coffre de la tour",
+      "texte": "Rabāb raconte le mystère du coffre. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الصَّبَاحِ، فُتِحَ صُنْدُوقٌ قَدِيمٌ.",
+        "الصُّنْدُوقُ مَصْنُوعٌ مِنَ الْحَدِيدِ.",
+        "فِي الصُّنْدُوقِ رِسَالَةٌ، وَالْمُرْسِلُ مَجْهُولٌ.",
+        "فُهِمَتِ الرِّسَالَةُ فِي الْمَجْلِسِ، وَحُفِظَتْ فِي الصُّنْدُوقِ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "De quoi le coffre est-il fait ?",
+          "choix": [
+            "de fer",
+            "de bois",
+            "d'or"
+          ],
+          "reponse": 0,
+          "explication": "الصُّنْدُوقُ مَصْنُوعٌ مِنَ الْحَدِيدِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Connaît-on l'expéditeur de la lettre ?",
+          "choix": [
+            "non, il est inconnu",
+            "oui, c'est un marchand",
+            "oui, c'est Rabāb"
+          ],
+          "reponse": 0,
+          "explication": "وَالْمُرْسِلُ مَجْهُولٌ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « La leçon est comprise. » ?",
+          "choix_ar": [
+            "الدَّرْسُ مَفْهُومٌ.",
+            "فَهِمَ الدَّرْسَ.",
+            "الدَّرْسُ فَهْمٌ."
+          ],
+          "reponse": 0,
+          "explication": "« La leçon est comprise. » se dit الدَّرْسُ مَفْهُومٌ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet : « Le coffre a été ouvert. »",
+          "tuiles": [
+            "الصُّنْدُوقُ",
+            "فُتِحَ",
+            "فَتَحَ",
+            "الصُّنْدُوقَ"
+          ],
+          "solution": [
+            "فُتِحَ",
+            "الصُّنْدُوقُ"
+          ],
+          "explication": "Passif : le verbe (u puis i), puis le sujet au nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La porte est ouverte le matin. »",
+          "ar": "… الْبَابُ فِي الصَّبَاحِ.",
+          "choix_ar": [
+            "يُفْتَحُ",
+            "يَفْتَحُ",
+            "فَتَحَ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli passif : يُفْتَحُ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَصْنُوعٌ",
+          "choix": [
+            "fabriqué",
+            "artisan",
+            "il a fabriqué"
+          ],
+          "reponse": 0,
+          "explication": "مَصْنُوعٌ veut dire « fabriqué »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَفْهُومٌ",
+          "choix": [
+            "compris",
+            "compréhension",
+            "il a fait comprendre"
+          ],
+          "reponse": 0,
+          "explication": "مَفْهُومٌ veut dire « compris »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مَزْرُوعٌ",
+          "choix": [
+            "semé, cultivé",
+            "ferme",
+            "il a semé"
+          ],
+          "reponse": 0,
+          "explication": "مَزْرُوعٌ veut dire « semé, cultivé »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « la leçon a été écrite » ?",
+          "choix_ar": [
+            "كُتِبَ الدَّرْسُ",
+            "كَتَبَ الدَّرْسَ",
+            "كُتُبُ الدَّرْسِ"
+          ],
+          "reponse": 0,
+          "explication": "« la leçon a été écrite » se dit كُتِبَ الدَّرْسُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Au passif, le complément du verbe devient…",
+          "choix": [
+            "sujet, au nominatif",
+            "complément, à l'accusatif",
+            "un nom d'action"
+          ],
+          "reponse": 0,
+          "explication": "فُتِحَ الْبَابُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de l'inaccompli passif ?",
+          "choix_ar": [
+            "يُفْعَلُ",
+            "يَفْعُلُ",
+            "يُفْعِلُ"
+          ],
+          "reponse": 0,
+          "explication": "u puis a : يُفْعَلُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ج ه ل dans le moule مَفْعُول. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَجْهُولٌ",
+            "مَعْلُومٌ",
+            "مَفْهُومٌ"
+          ],
+          "reponse": 0,
+          "explication": "ج ه ل dans مَفْعُول : مَجْهُولٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ط ل ب dans le moule مَفْعُول. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مَطْلُوبٌ",
+            "طَالِبٌ",
+            "طَلَبَ"
+          ],
+          "reponse": 0,
+          "explication": "ط ل ب dans مَفْعُول : مَطْلُوبٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le coffre a été ouvert. »",
+          "ar": "… الصُّنْدُوقُ.",
+          "choix_ar": [
+            "فُتِحَ",
+            "فَتَحَ",
+            "مِفْتَاحُ"
+          ],
+          "reponse": 0,
+          "explication": "Passé passif : فُتِحَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ع ل م dans le moule مُتَفَعِّل. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "مُتَعَلِّمٌ",
+            "مُعَلِّمٌ",
+            "تَعَلَّمَ"
+          ],
+          "reponse": 0,
+          "explication": "مُتَفَعِّل : مُتَعَلِّمٌ (leçon 3.20).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُخْتَلِفٌ",
+          "choix": [
+            "différent",
+            "dispersé",
+            "auditeur"
+          ],
+          "reponse": 0,
+          "explication": "مُخْتَلِفٌ veut dire « différent ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le nom d'action de la forme X ?",
+          "choix_ar": [
+            "اسْتِفْعَال",
+            "افْتِعَال",
+            "إِفْعَال"
+          ],
+          "reponse": 0,
+          "explication": "Forme X : اسْتِفْعَال, comme اسْتِفْهَامٌ (leçon 3.20).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais la voix passive : فُعِلَ (فُتِحَ الْبَابُ) et يُفْعَلُ (يُصْنَعُ الْخُبْزُ), et les participes مَفْعُول.",
+      "suite": "Le chapitre des formes verbales est terminé. Au chapitre suivant : les verbes à lettres faibles."
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "id": "sens-11",
+  "etape": 5,
+  "ordre": 11,
+  "format": 3,
+  "titre": "Le vocabulaire par thèmes (2)",
+  "objectif": "Apprendre et classer les mots fréquents des actions, des qualités et du récit, et décrire quelqu'un.",
+  "statut": "ia_non_verifie",
+  "lieu": "herbier_themes",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-10"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "هَالَةُ",
+    "بَاسِمٌ",
+    "نَدِيمٌ",
+    "زُهَيْرٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hala",
+          "texte": "Après le ciel et le temps, voici une autre planche : ce que font les gens et ce qu'ils sont."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Et un mot pour toi, voyageur : la patience. C'est elle qui répond à l'Impatience."
+        }
+      ],
+      "objectif": "Décrire quelqu'un : ses actions et ses qualités."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "À quel thème appartient صَادِقٌ ?",
+          "choix": [
+            "les qualités",
+            "le temps",
+            "la nature"
+          ],
+          "reponse": 0,
+          "explication": "صَادِقٌ, « sincère » : une qualité."
+        },
+        {
+          "type": "qcm",
+          "consigne": "À quel thème appartient سَاعَدَ ?",
+          "choix": [
+            "les actions",
+            "les qualités",
+            "le temps"
+          ],
+          "reponse": 0,
+          "explication": "سَاعَدَ, « aider » : une action."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim est un ami sincère. »",
+          "ar": "بَاسِمٌ صَدِيقٌ …",
+          "choix_ar": [
+            "صَادِقٌ",
+            "صَادِقَةٌ",
+            "صَادِقًا"
+          ],
+          "reponse": 0,
+          "explication": "Adjectif accordé : صَادِقٌ."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hala",
+          "ar": "أَعْطَى نَدِيمٌ بَاسِمًا قَلَمًا جَدِيدًا!",
+          "fr": "Nadīm a donné un calame neuf à Bāsim !"
+        },
+        {
+          "qui": "basim",
+          "ar": "نَدِيمٌ صَدِيقٌ صَادِقٌ.",
+          "fr": "Nadīm est un ami sincère."
+        },
+        {
+          "qui": "basim",
+          "ar": "وَهُوَ صَدِيقٌ أَمِينٌ.",
+          "fr": "Et c'est un ami digne de confiance."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'a donné Nadīm à Bāsim ?",
+        "choix": [
+          "un calame neuf",
+          "un livre",
+          "un dirham"
+        ],
+        "reponse": 0,
+        "explication": "أَعْطَى نَدِيمٌ بَاسِمًا قَلَمًا جَدِيدًا."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "aata",
+        "sabr",
+        "sidq",
+        "kadhib",
+        "amin",
+        "hadith"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "صَبْرٌ",
+        "choix": [
+          "patience, endurance",
+          "sincérité, vérité (dans la parole)",
+          "propos, conversation, récit"
+        ],
+        "reponse": 0,
+        "explication": "صَبْرٌ veut dire « patience, endurance »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Ce que tu connais déjà",
+      "texte": "Actions : عَمِلَ, صَنَعَ, وَجَدَ, طَلَبَ, سَاعَدَ, وَعَدَ, تَرَكَ ; qualités : صَادِقٌ, ضَعِيفٌ, فَقِيرٌ ; récit : قِصَّةٌ, خَبَرٌ, كَلَامٌ.",
+      "exemples": [
+        "سَاعَدَ",
+        "صَادِقٌ",
+        "قِصَّةٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Lequel de ces mots est une qualité ?",
+        "choix": [
+          "ضَعِيفٌ",
+          "طَلَبَ",
+          "خَبَرٌ"
+        ],
+        "reponse": 0,
+        "explication": "ضَعِيفٌ, « faible »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Dire une qualité",
+      "texte": "Une qualité se dit avec un nom (صَبْرٌ, صِدْقٌ ; un défaut : كَذِبٌ) ou avec un adjectif (أَمِينٌ, صَادِقٌ). أَعْطَى a deux compléments à l'accusatif : la personne, puis la chose.",
+      "exemples": [
+        "صَبْرُ بَاسِمٍ عَجِيبٌ.",
+        "نَدِيمٌ صَدِيقٌ أَمِينٌ.",
+        "أَعْطَى بَاسِمٌ زُهَيْرًا كِتَابًا."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans أَعْطَى بَاسِمٌ زُهَيْرًا كِتَابًا, qui reçoit le livre ?",
+        "choix": [
+          "Zuhayr",
+          "Bāsim",
+          "personne"
+        ],
+        "reponse": 0,
+        "explication": "La personne d'abord (زُهَيْرًا), puis la chose (كِتَابًا)."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Portrait de Nadīm",
+      "texte": "Portrait construit, rédigé par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "نَدِيمٌ صَدِيقٌ أَمِينٌ، وَلَا يُحِبُّ الْكَذِبَ.",
+        "أَعْطَى نَدِيمٌ بَاسِمًا قَلَمًا جَدِيدًا.",
+        "وَصَبْرُهُ عَجِيبٌ: صَبَرَ فِي السُّوقِ حَتَّى وَصَلَتِ الْقَافِلَةُ.",
+        "وَيُحِبُّ الصِّدْقَ فِي الْكَلَامِ، وَحَدِيثُهُ جَمِيلٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'a donné Nadīm à Bāsim ?",
+          "choix": [
+            "un calame neuf",
+            "un livre",
+            "une lettre"
+          ],
+          "reponse": 0,
+          "explication": "أَعْطَى بَاسِمًا قَلَمًا جَدِيدًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Jusqu'à quand Nadīm a-t-il patienté au marché ?",
+          "choix": [
+            "jusqu'à l'arrivée de la caravane",
+            "jusqu'au soir",
+            "jusqu'à l'aube"
+          ],
+          "reponse": 0,
+          "explication": "حَتَّى وَصَلَتِ الْقَافِلَةُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'est-ce que Nadīm n'aime pas ?",
+          "choix": [
+            "le mensonge",
+            "la sincérité",
+            "les longs propos"
+          ],
+          "reponse": 0,
+          "explication": "لَا يُحِبُّ الْكَذِبَ."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَعْطَى",
+          "choix": [
+            "donner (à quelqu'un, quelque chose)",
+            "prendre",
+            "porter"
+          ],
+          "reponse": 0,
+          "explication": "أَعْطَى veut dire « donner (à quelqu'un, quelque chose) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَذِبٌ",
+          "choix": [
+            "mensonge",
+            "sincérité, vérité (dans la parole)",
+            "patience, endurance"
+          ],
+          "reponse": 0,
+          "explication": "كَذِبٌ veut dire « mensonge »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَدِيثٌ",
+          "choix": [
+            "propos, conversation, récit",
+            "patience, endurance",
+            "mensonge"
+          ],
+          "reponse": 0,
+          "explication": "حَدِيثٌ veut dire « propos, conversation, récit »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صِدْقٌ",
+          "choix": [
+            "sincérité, vérité (dans la parole)",
+            "patience, endurance",
+            "mensonge"
+          ],
+          "reponse": 0,
+          "explication": "صِدْقٌ veut dire « sincérité, vérité (dans la parole) »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Nadīm est un ami digne de confiance. »",
+          "ar": "نَدِيمٌ صَدِيقٌ …",
+          "choix_ar": [
+            "أَمِينٌ",
+            "أَمِينَةٌ",
+            "أَمِينًا"
+          ],
+          "reponse": 0,
+          "explication": "Adjectif accordé avec صَدِيقٌ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a donné un livre à Zuhayr. »",
+          "ar": "أَعْطَى بَاسِمٌ … كِتَابًا.",
+          "choix_ar": [
+            "زُهَيْرًا",
+            "زُهَيْرٌ",
+            "لِزُهَيْرٍ"
+          ],
+          "reponse": 0,
+          "explication": "La personne : 1er complément, à l'accusatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'aime la sincérité dans les paroles. »",
+          "ar": "أُحِبُّ … فِي الْكَلَامِ.",
+          "choix_ar": [
+            "الصِّدْقَ",
+            "الصَّبْرَ",
+            "الْحَدِيثَ"
+          ],
+          "reponse": 0,
+          "explication": "La sincérité : الصِّدْقُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a patienté jusqu'à l'arrivée de la caravane. »",
+          "ar": "… بَاسِمٌ حَتَّى وَصَلَتِ الْقَافِلَةُ.",
+          "choix_ar": [
+            "صَبَرَ",
+            "أَعْطَى",
+            "صَنَعَ"
+          ],
+          "reponse": 0,
+          "explication": "Patienter : صَبَرَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « La patience de Bāsim est étonnante. » ?",
+          "choix_ar": [
+            "صَبْرُ بَاسِمٍ عَجِيبٌ.",
+            "صَبْرُ بَاسِمٌ عَجِيبٌ.",
+            "الصَّبْرُ بَاسِمٍ عَجِيبٌ."
+          ],
+          "reponse": 0,
+          "explication": "Annexion : صَبْرُ بَاسِمٍ, sans article sur le 1er nom."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Je n'aime pas le mensonge. »",
+          "tuiles": [
+            "لَا",
+            "أُحِبُّ",
+            "الْكَذِبَ"
+          ],
+          "solution": [
+            "لَا",
+            "أُحِبُّ",
+            "الْكَذِبَ"
+          ],
+          "explication": "لَا, puis le verbe et son complément."
+        },
+        {
+          "type": "completer",
+          "consigne": "Décris : « Hāla est digne de confiance. »",
+          "ar": "هَالَةُ …",
+          "choix_ar": [
+            "أَمِينَةٌ",
+            "أَمِينٌ",
+            "أَمِينًا"
+          ],
+          "reponse": 0,
+          "explication": "Au féminin : أَمِينَةٌ."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Décris un ami en trois phrases : une action, puis deux qualités (avec أَمِينٌ, صَبْرٌ, صِدْقٌ ou كَذِبٌ).",
+          "modele": [
+            "أَعْطَى صَدِيقِي زُهَيْرًا كِتَابًا.",
+            "صَدِيقِي أَمِينٌ، وَلَا يُحِبُّ الْكَذِبَ.",
+            "وَصَبْرُهُ عَجِيبٌ."
+          ],
+          "explication": "Compare : as-tu accordé les adjectifs avec la personne ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَمِينٌ",
+          "choix": [
+            "digne de confiance",
+            "sincère, qui dit vrai",
+            "faible"
+          ],
+          "reponse": 0,
+          "explication": "أَمِينٌ veut dire « digne de confiance »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَبْرٌ",
+          "choix": [
+            "patience, endurance",
+            "sincérité, vérité (dans la parole)",
+            "propos, conversation, récit"
+          ],
+          "reponse": 0,
+          "explication": "صَبْرٌ veut dire « patience, endurance »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَدِيثٌ",
+          "choix": [
+            "propos, conversation, récit",
+            "mensonge",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "حَدِيثٌ veut dire « propos, conversation, récit »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a donné un livre à Zuhayr. »",
+          "ar": "… بَاسِمٌ زُهَيْرًا كِتَابًا.",
+          "choix_ar": [
+            "أَعْطَى",
+            "أَخَذَ",
+            "حَمَلَ"
+          ],
+          "reponse": 0,
+          "explication": "Donner : أَعْطَى."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand est digne de confiance. »",
+          "ar": "التَّاجِرُ …",
+          "choix_ar": [
+            "أَمِينٌ",
+            "أَمِينَةٌ",
+            "أَمِينًا"
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif, masculin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Les propos de Zuhayr étaient longs. »",
+          "ar": "كَانَ … زُهَيْرٍ طَوِيلًا.",
+          "choix_ar": [
+            "حَدِيثُ",
+            "حَدِيثَ",
+            "الْحَدِيثُ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet de كَانَ, en annexion : حَدِيثُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « J'aime la sincérité dans les paroles. » ?",
+          "choix_ar": [
+            "أُحِبُّ الصِّدْقَ فِي الْكَلَامِ.",
+            "أُحِبُّ الصَّبْرَ فِي الْكَلَامِ.",
+            "أُحِبُّ الصِّدْقُ فِي الْكَلَامِ."
+          ],
+          "reponse": 0,
+          "explication": "Complément d'objet : الصِّدْقَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans أَعْطَى بَاسِمٌ زُهَيْرًا كِتَابًا, كِتَابًا est…",
+          "choix": [
+            "la chose donnée",
+            "celui qui donne",
+            "celui qui reçoit"
+          ],
+          "reponse": 0,
+          "explication": "La personne, puis la chose."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَذِبٌ",
+          "choix": [
+            "mensonge",
+            "sincérité, vérité (dans la parole)",
+            "propos, conversation, récit"
+          ],
+          "reponse": 0,
+          "explication": "كَذِبٌ veut dire « mensonge »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَجْرٌ",
+          "choix": [
+            "aube",
+            "pluie",
+            "vent"
+          ],
+          "reponse": 0,
+          "explication": "فَجْرٌ veut dire « aube ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le vent est fort. »",
+          "ar": "الرِّيحُ …",
+          "choix_ar": [
+            "شَدِيدَةٌ",
+            "شَدِيدٌ",
+            "شَدِيدًا"
+          ],
+          "reponse": 0,
+          "explication": "رِيحٌ est féminin.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَفَكَّرَ",
+          "choix": [
+            "réfléchir (à)",
+            "séjourner, demeurer (dans un lieu)",
+            "raconter"
+          ],
+          "reponse": 0,
+          "explication": "تَفَكَّرَ veut dire « réfléchir (à) ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu sais décrire quelqu'un : ce qu'il donne (أَعْطَى) et ce qu'il est (صَبْرٌ, صِدْقٌ, أَمِينٌ ; le contraire, كَذِبٌ), et rapporter ses propos (حَدِيثٌ).",
+      "suite": "Prochaine étape, le Labyrinthe des Sens : un mot peut avoir plusieurs sens."
+    }
+  ]
+}

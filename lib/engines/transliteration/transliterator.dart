@@ -122,6 +122,18 @@ class Transliterator {
     return b.toString();
   }
 
+  static const _sunLetters = 'تثدذرزسشصضطظلن';
+
+  /// ال + sukūn + lettre solaire sans shadda : alif de liaison, pas l'article.
+  bool _waslNotArticle(List<String> chars) {
+    if (chars.length < 5 || chars[2] != _sukun) return false;
+    if (!_sunLetters.contains(chars[3])) return false;
+    for (var k = 4; k < chars.length && _isMark(chars[k]); k++) {
+      if (chars[k] == _shadda) return false;
+    }
+    return true;
+  }
+
   String _word(String raw, {required bool afterVowel}) {
     final chars = [for (final r in raw.runes) String.fromCharCode(r)]
         .where((c) => c != _tatweel)
@@ -130,10 +142,24 @@ class Transliterator {
     var i = 0;
     var skipNextShadda = false;
 
-    // Article : ال / ٱل en début de mot.
+    // Relatifs الَّذِي، الَّتِي، الَّذِينَ : un seul lām, qui porte la shadda
+    // et la voyelle. Ce n'est pas l'article : allaḏī, et non al-ḏī.
+    if (chars.length > 3 &&
+        (chars[0] == _alif || chars[0] == _alifWasla) &&
+        chars[1] == _lam &&
+        _isMark(chars[2]) &&
+        chars[2] != _sukun) {
+      if (!afterVowel) b.write('a');
+      i = 1;
+    } else
+    // Article : ال / ٱل en début de mot. Exception : lām au sukūn suivi
+    // d'une lettre solaire sans shadda, ce n'est pas l'article mais un alif
+    // de liaison (الْتِفَاتٌ, iltifātun ; الْتَقَى) : après l'article, une
+    // lettre solaire porte toujours la shadda.
     if (chars.length > 2 &&
         (chars[0] == _alif || chars[0] == _alifWasla) &&
-        chars[1] == _lam) {
+        chars[1] == _lam &&
+        !_waslNotArticle(chars)) {
       b.write(afterVowel ? 'l-' : 'al-');
       i = 2;
       if (i < chars.length && chars[i] == _sukun) i++;
@@ -180,6 +206,10 @@ class Transliterator {
           // alif du tanwīn : non noté
         } else if (c == _alif && i == 0 && hasVowel) {
           // alif initial portant une voyelle : hamza non notée en début
+        } else if (c == _alif && i == 0 && !afterVowel) {
+          // Alif de liaison d'un nom (اسْمٌ) : « i » en début de lecture,
+          // muet après une voyelle (décision du conseiller, 25/10/2026).
+          b.write('i');
         }
       } else if (c == _alifMadda) {
         b.write(isFirst ? 'ā' : 'ʾā');

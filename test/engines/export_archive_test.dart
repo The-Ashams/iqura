@@ -177,6 +177,23 @@ void main() {
     expect(() => decode(bad), throwsArchiveError('incomplète'));
   });
 
+  test('accepte une sauvegarde du schéma 1, sans la progression des leçons '
+      '(table créée au schéma 2)', () {
+    Uint8List withoutProgress(int schema) => rewrite(bytes, (f) {
+      f.remove('tables/lesson_progress.json');
+      final m = manifestOf(f)..['schema_version'] = schema;
+      (m['files']! as List).removeWhere(
+        (e) => (e as Map)['path'] == 'tables/lesson_progress.json',
+      );
+      setManifest(f, m);
+    });
+    final old = decode(withoutProgress(1));
+    expect(old.tables['profile'], sample().tables['profile']);
+    expect(old.tables['lesson_progress'], isNull);
+    // Une sauvegarde du schéma 2 doit, elle, contenir la table.
+    expect(() => decode(withoutProgress(2)), throwsArchiveError('incomplète'));
+  });
+
   test('refuse une archive d’une version plus récente', () {
     final bad = rewrite(bytes, (f) {
       final m = manifestOf(f)..['schema_version'] = userSchemaVersion + 1;

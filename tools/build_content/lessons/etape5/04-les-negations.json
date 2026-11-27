@@ -1,0 +1,527 @@
+{
+  "id": "sens-04",
+  "etape": 5,
+  "ordre": 4,
+  "format": 3,
+  "titre": "Les négations classiques",
+  "objectif": "Distinguer لَمْ, لَمَّا, لَنْ, مَا et إِنْ de négation ; dire « jamais » au passé.",
+  "statut": "ia_non_verifie",
+  "lieu": "fontaine_questions",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-03"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ",
+    "لَمَا"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "texte": "Les textes anciens ont plusieurs façons de dire « non » : chacune a sa nuance."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Regarde bien la forme du verbe : c'est elle qui décide du sens de لَمَّا."
+        }
+      ],
+      "objectif": "Distinguer les négations classiques."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim n'est pas arrivé. »",
+          "ar": "… يَصِلْ بَاسِمٌ.",
+          "choix_ar": [
+            "لَمْ",
+            "لَنْ",
+            "لَا"
+          ],
+          "reponse": 0,
+          "explication": "Passé nié : لَمْ + jussif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je ne voyagerai pas. »",
+          "ar": "… أُسَافِرَ.",
+          "choix_ar": [
+            "لَنْ",
+            "لَمْ",
+            "مَا"
+          ],
+          "reponse": 0,
+          "explication": "Futur nié : لَنْ + subjonctif, vu en région 3."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim n'est qu'un étudiant. »",
+          "ar": "إِنَّمَا بَاسِمٌ …",
+          "choix_ar": [
+            "طَالِبٌ",
+            "طَالِبًا",
+            "طَالِبٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après إِنَّمَا : nominatif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "ar": "أَيْنَ بَاسِمٌ؟",
+          "fr": "Où est Bāsim ?"
+        },
+        {
+          "qui": "samir",
+          "ar": "لَمَّا يَصِلْ، وَلَٰكِنَّهُ قَرِيبٌ.",
+          "fr": "Il n'est pas encore arrivé, mais il est tout près."
+        },
+        {
+          "qui": "hazim",
+          "ar": "وَهَلْ فِي كِيسِكَ دَرَاهِمُ؟",
+          "fr": "Et as-tu des dirhams dans ta bourse ?"
+        },
+        {
+          "qui": "samir",
+          "ar": "إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ.",
+          "fr": "Il n'y a dans la bourse qu'un dirham."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que dit Samīr de Bāsim ?",
+        "choix": [
+          "il n'est pas encore arrivé, mais il va venir",
+          "il ne viendra jamais",
+          "il est déjà parti"
+        ],
+        "reponse": 0,
+        "explication": "لَمَّا يَصِلْ : pas encore."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "lamma_jazm",
+        "in_nafy",
+        "nafy",
+        "shay",
+        "qattu"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "قَطُّ",
+        "choix": [
+          "jamais (au passé)",
+          "toujours",
+          "pas encore"
+        ],
+        "reponse": 0,
+        "explication": "قَطُّ veut dire « jamais (au passé) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "لَمَّا « pas encore »",
+      "texte": "لَمَّا suivi du jussif veut dire « pas encore » : l'action n'a pas eu lieu, et on l'attend. Suivi d'un passé, لَمَّا veut dire « lorsque » : la forme du verbe décide.",
+      "exemples": [
+        "لَمَّا يَصِلْ بَاسِمٌ",
+        "لَمْ يَصِلْ بَاسِمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "لَمَّا يَصِلْ بَاسِمٌ veut dire…",
+        "choix": [
+          "Bāsim n'est pas encore arrivé.",
+          "Lorsque Bāsim est arrivé.",
+          "Bāsim n'arrivera jamais."
+        ],
+        "reponse": 0,
+        "explication": "لَمَّا + jussif : pas encore."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "إِنْ de négation",
+      "texte": "إِنْ peut nier comme مَا, le plus souvent avec إِلَّا : إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ. En général, si إِلَّا suit, c'est une négation ; si un verbe et une réponse suivent, c'est une condition.",
+      "exemples": [
+        "إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ",
+        "إِنْ بَاسِمٌ إِلَّا طَالِبٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans إِنْ بَاسِمٌ إِلَّا طَالِبٌ, إِنْ est…",
+        "choix": [
+          "une négation",
+          "une condition",
+          "إِنَّ d'insistance"
+        ],
+        "reponse": 0,
+        "explication": "إِلَّا suit : négation."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "لَمَا et قَطُّ",
+      "texte": "La réponse niée de لَوْ prend لَمَا : لَوْ كَانَ الطَّرِيقُ قَصِيرًا لَمَا تَأَخَّرْنَا. قَطُّ (« jamais ») suit un passé nié ; pour l'avenir, on dit أَبَدًا.",
+      "exemples": [
+        "لَوْ كَانَ الطَّرِيقُ قَصِيرًا لَمَا تَأَخَّرْنَا",
+        "مَا رَكِبْتُ جَمَلًا قَطُّ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Je ne suis jamais monté sur un chameau. »",
+        "ar": "مَا رَكِبْتُ جَمَلًا …",
+        "choix_ar": [
+          "قَطُّ",
+          "غَدًا",
+          "لَمَّا"
+        ],
+        "reponse": 0,
+        "explication": "Au passé : قَطُّ."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "La lettre qui n'est pas partie",
+      "texte": "Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "الرِّسَالَةُ مَكْتُوبَةٌ، وَلَٰكِنْ لَمَّا يُرْسِلْهَا سَمِيرٌ.",
+        "قَالَ سَمِيرٌ: « مَا سَافَرْتُ قَطُّ، وَإِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ. »",
+        "قَالَ حَازِمٌ: « لَوْ كَانَ الطَّرِيقُ قَصِيرًا لَمَا تَأَخَّرَتِ الْقَافِلَةُ. »",
+        "ثُمَّ قَدَّمَ لَهُ حَازِمٌ دِرْهَمًا، فَلَمْ يَبْقَ فِي كِيسِ حَازِمٍ شَيْءٌ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "La lettre de Samīr est-elle partie ?",
+          "choix": [
+            "pas encore",
+            "oui, hier",
+            "elle ne partira jamais"
+          ],
+          "reponse": 0,
+          "explication": "لَمَّا يُرْسِلْهَا سَمِيرٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Combien de dirhams Samīr avait-il d'abord dans sa bourse ?",
+          "choix": [
+            "un seul",
+            "aucun",
+            "beaucoup"
+          ],
+          "reponse": 0,
+          "explication": "إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَفْيٌ",
+          "choix": [
+            "(grammaire) négation",
+            "(grammaire) restriction",
+            "(grammaire) appel à l'attention"
+          ],
+          "reponse": 0,
+          "explication": "نَفْيٌ veut dire « (grammaire) négation »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "شَيْءٌ",
+          "choix": [
+            "chose ; (avec une négation) rien",
+            "étonnant",
+            "une partie"
+          ],
+          "reponse": 0,
+          "explication": "شَيْءٌ veut dire « chose ; (avec une négation) rien »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim n'est pas encore arrivé. »",
+          "ar": "… يَصِلْ بَاسِمٌ.",
+          "choix_ar": [
+            "لَمَّا",
+            "لَمَا",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "« pas encore » : لَمَّا + jussif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'y a dans la bourse qu'un dirham. »",
+          "ar": "إِنْ فِي الْكِيسِ … دِرْهَمٌ.",
+          "choix_ar": [
+            "إِلَّا",
+            "أَلَا",
+            "لَا"
+          ],
+          "reponse": 0,
+          "explication": "إِنْ de négation, avec إِلَّا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Si le chemin avait été court, nous n'aurions pas été en retard. »",
+          "ar": "لَوْ كَانَ الطَّرِيقُ قَصِيرًا … تَأَخَّرْنَا.",
+          "choix_ar": [
+            "لَمَا",
+            "لَمَّا",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "Réponse niée de لَوْ : لَمَا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il ne reste rien dans la bourse. »",
+          "ar": "لَمْ يَبْقَ فِي الْكِيسِ …",
+          "choix_ar": [
+            "شَيْءٌ",
+            "شَيْءٍ",
+            "دِرْهَمًا"
+          ],
+          "reponse": 0,
+          "explication": "Sujet de يَبْقَ : nominatif."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim n'est qu'un étudiant. » ?",
+          "choix_ar": [
+            "إِنْ بَاسِمٌ إِلَّا طَالِبٌ.",
+            "إِنْ بَاسِمًا إِلَّا طَالِبٌ.",
+            "إِنْ بَاسِمٌ إِلَّا طَالِبًا."
+          ],
+          "reponse": 0,
+          "explication": "إِنْ de négation : le nominatif ne change pas."
+        },
+        {
+          "type": "qcm",
+          "consigne": "لَمَّا et لَمَا…",
+          "choix": [
+            "sont deux mots différents",
+            "veulent dire la même chose",
+            "s'écrivent pareil avec les voyelles"
+          ],
+          "reponse": 0,
+          "explication": "لَمَّا (avec shadda) ; لَمَا : réponse niée de لَوْ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « La lettre est écrite, mais Samīr ne l'a pas encore envoyée. » ?",
+          "choix_ar": [
+            "الرِّسَالَةُ مَكْتُوبَةٌ، وَلَٰكِنْ لَمَّا يُرْسِلْهَا سَمِيرٌ.",
+            "الرِّسَالَةُ مَكْتُوبَةٌ، وَلَٰكِنْ لَمَا يُرْسِلْهَا سَمِيرٌ.",
+            "الرِّسَالَةُ مَكْتُوبَةٌ، وَلَٰكِنْ لَمَّا أَرْسَلَهَا سَمِيرٌ."
+          ],
+          "reponse": 0,
+          "explication": "« pas encore » : لَمَّا + jussif."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre, en commençant par مَا : « Je ne suis jamais monté sur un chameau. »",
+          "tuiles": [
+            "قَطُّ",
+            "جَمَلًا",
+            "رَكِبْتُ",
+            "مَا",
+            "غَدًا"
+          ],
+          "solution": [
+            "مَا",
+            "رَكِبْتُ",
+            "جَمَلًا",
+            "قَطُّ"
+          ],
+          "explication": "Passé nié, puis قَطُّ à la fin."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Dis de trois façons que Bāsim n'est qu'un étudiant.",
+          "modele": [
+            "مَا بَاسِمٌ إِلَّا طَالِبٌ.",
+            "إِنَّمَا بَاسِمٌ طَالِبٌ.",
+            "إِنْ بَاسِمٌ إِلَّا طَالِبٌ."
+          ],
+          "explication": "Compare : مَا avec إِلَّا, إِنَّمَا, إِنْ avec إِلَّا ; partout le nominatif."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Dans إِنْ فِي الْكِيسِ إِلَّا دِرْهَمٌ, que veut dire إِنْ ?",
+          "choix": [
+            "une négation : ne… que, avec إِلَّا",
+            "si",
+            "que"
+          ],
+          "reponse": 0,
+          "explication": "إِلَّا suit : c'est une négation."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَطُّ",
+          "choix": [
+            "jamais (au passé)",
+            "toujours",
+            "pas encore"
+          ],
+          "reponse": 0,
+          "explication": "قَطُّ veut dire « jamais (au passé) »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Samīr n'a pas encore compris. »",
+          "ar": "… يَفْهَمْ سَمِيرٌ.",
+          "choix_ar": [
+            "لَمَّا",
+            "لَمَا",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "« pas encore » : لَمَّا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'y a dans la bourse qu'un dirham. »",
+          "ar": "… فِي الْكِيسِ إِلَّا دِرْهَمٌ.",
+          "choix_ar": [
+            "إِنْ",
+            "إِنَّ",
+            "أَنْ"
+          ],
+          "reponse": 0,
+          "explication": "إِنْ de négation."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je n'ai jamais voyagé. »",
+          "ar": "مَا سَافَرْتُ …",
+          "choix_ar": [
+            "قَطُّ",
+            "لَمَّا",
+            "غَدًا"
+          ],
+          "reponse": 0,
+          "explication": "Au passé : قَطُّ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Il ne reste rien dans la bourse. » ?",
+          "choix_ar": [
+            "لَمْ يَبْقَ فِي الْكِيسِ شَيْءٌ.",
+            "لَمْ يَبْقَ فِي الْكِيسِ شَيْءٍ.",
+            "لَنْ يَبْقَ فِي الْكِيسِ شَيْءٌ."
+          ],
+          "reponse": 0,
+          "explication": "لَمْ + jussif ; sujet au nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "لَمَّا suivi d'un passé veut dire…",
+          "choix": [
+            "lorsque",
+            "pas encore",
+            "jamais"
+          ],
+          "reponse": 0,
+          "explication": "لَمَّا + passé : lorsque."
+        },
+        {
+          "type": "qcm",
+          "consigne": "En général, si إِلَّا suit إِنْ, إِنْ est…",
+          "choix": [
+            "une négation",
+            "une condition",
+            "une question"
+          ],
+          "reponse": 0,
+          "explication": "إِنْ avec إِلَّا : ne que."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La réponse niée de لَوْ prend…",
+          "choix_ar": [
+            "لَمَا",
+            "لَمَّا",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَوْ, la réponse niée : لَمَا."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَجِيبٌ",
+          "choix": [
+            "étonnant",
+            "sincère, qui dit vrai",
+            "ancien"
+          ],
+          "reponse": 0,
+          "explication": "عَجِيبٌ veut dire « étonnant ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « N'as-tu pas compris la leçon ? »",
+          "ar": "أَلَمْ … الدَّرْسَ؟",
+          "choix_ar": [
+            "تَفْهَمِ",
+            "تَفْهَمُ",
+            "فَهِمْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَلَمْ : jussif.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَلَى",
+          "choix": [
+            "si ! (contre une négation)",
+            "non ! pas du tout",
+            "ne… que, seulement"
+          ],
+          "reponse": 0,
+          "explication": "بَلَى veut dire « si ! (contre une négation) ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu distingues لَمْ, لَمَّا (« pas encore »), لَنْ, مَا, إِنْ de négation (avec إِلَّا), لَمَا après لَوْ, et قَطُّ (« jamais » au passé).",
+      "suite": "Prochaine leçon : l'ordre des mots, au Verger de l'Ordre."
+    }
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "id": "sens-09",
+  "etape": 5,
+  "ordre": 9,
+  "format": 3,
+  "titre": "Les formes verbales en contexte",
+  "objectif": "Dans un court texte, repérer chaque verbe dérivé, en dire la forme et le sens probable, puis vérifier par le contexte.",
+  "statut": "ia_non_verifie",
+  "lieu": "pepiniere_formes",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-08"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "زُهَيْرٌ",
+    "بَاسِمٌ",
+    "أَحْمِلَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "texte": "Dans cette pépinière, chaque pot porte une racine, et plusieurs plants en sortent : ce sont les formes du verbe."
+        },
+        {
+          "qui": "basim",
+          "texte": "Les formes II à X, je les ai vues dans les Montagnes ! Mais dans un vrai texte, je m'y perds."
+        }
+      ],
+      "objectif": "Reconnaître les formes des verbes dans un texte."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète avec la forme II de ع ل م : « Zuhayr a enseigné l'écriture à Bāsim. »",
+          "ar": "… زُهَيْرٌ بَاسِمًا الْكِتَابَةَ.",
+          "choix_ar": [
+            "عَلَّمَ",
+            "عَلِمَ",
+            "تَعَلَّمَ"
+          ],
+          "reponse": 0,
+          "explication": "Forme II, فَعَّلَ : عَلَّمَ « enseigner »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "اسْتَقْبَلَ est de forme…",
+          "choix": [
+            "X (اسْتَـ ajouté)",
+            "VIII",
+            "V"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَقْبَلَ : اسْتَفْعَلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La racine de تَعَلَّمَ est…",
+          "choix": [
+            "ع ل م",
+            "ت ع ل",
+            "ع ل ت"
+          ],
+          "reponse": 0,
+          "explication": "On enlève تَـ et la shadda : ع ل م."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "ar": "أَقْبَلَتِ الْقَافِلَةُ، فَاسْتَقْبَلَهَا التُّجَّارُ.",
+          "fr": "La caravane s'avança, et les marchands allèrent à sa rencontre."
+        },
+        {
+          "qui": "basim",
+          "ar": "أَقْبَلَتْ، اسْتَقْبَلَ: ق ب ل!",
+          "fr": "« S'avança », « alla à la rencontre » : ق ب ل, la même racine !"
+        },
+        {
+          "qui": "hazim",
+          "ar": "أَصَبْتَ، وَالْمَعْنَى مُخْتَلِفٌ.",
+          "fr": "Tu as raison, et le sens est différent."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quelle racine ont أَقْبَلَ et اسْتَقْبَلَ ?",
+        "choix": [
+          "ق ب ل",
+          "س ت ق",
+          "ق ل ب"
+        ],
+        "reponse": 0,
+        "explication": "On enlève أَ, اسْتَـ : ق ب ل."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "aqbala",
+        "adraka",
+        "istataa",
+        "aqama",
+        "tafakkara"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "اسْتَطَاعَ",
+        "choix": [
+          "pouvoir (+ أَنْ + subjonctif)",
+          "séjourner, demeurer (dans un lieu)",
+          "réfléchir (à)"
+        ],
+        "reponse": 0,
+        "explication": "اسْتَطَاعَ veut dire « pouvoir (+ أَنْ + subjonctif) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Trouver la forme",
+      "texte": "Sans les lettres ajoutées (أَ, تَـ, انْـ, ت glissé, اسْتَـ, ā, shadda), reste la racine (أَقْبَلَ : ق ب ل, IV ; تَفَكَّرَ : ف ك ر, V). Verbe faible : d'abord la racine (اسْتَطَاعَ : ط و ع, X).",
+      "exemples": [
+        "أَقْبَلَ",
+        "تَفَكَّرَ",
+        "اسْتَطَاعَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "أَدْرَكَ est de forme…",
+        "choix": [
+          "IV (أَ ajouté)",
+          "I",
+          "VIII"
+        ],
+        "reponse": 0,
+        "explication": "أَفْعَلَ : forme IV."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La forme donne une piste",
+      "texte": "Une même racine donne plusieurs verbes dans un récit : قَامَ et أَقَامَ, عَلِمَ, عَلَّمَ et تَعَلَّمَ. La forme donne une piste ; le contexte et le dictionnaire décident.",
+      "exemples": [
+        "قَامَ بَاسِمٌ.",
+        "أَقَامَ زُهَيْرٌ فِي دِمَشْقَ شَهْرًا."
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans أَقَامَ زُهَيْرٌ فِي دِمَشْقَ شَهْرًا, le verbe veut dire…",
+        "choix": [
+          "séjourner",
+          "se lever",
+          "s'avancer"
+        ],
+        "reponse": 0,
+        "explication": "Le contexte (un lieu, une durée) : « séjourner »."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "Les verbes de la pépinière",
+      "texte": "Texte construit, rédigé par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "أَقْبَلَتِ الْقَافِلَةُ فِي الْمَسَاءِ، فَاسْتَقْبَلَهَا التُّجَّارُ.",
+        "أَقَامَ زُهَيْرٌ فِي دِمَشْقَ شَهْرًا.",
+        "تَعَلَّمَ بَاسِمٌ الْكِتَابَةَ، ثُمَّ عَلَّمَهَا أَخَاهُ.",
+        "تَفَكَّرَ بَاسِمٌ فِي الْجَوَابِ، ثُمَّ كَتَبَهُ.",
+        "قَالَ بَاسِمٌ: « لَا أَسْتَطِيعُ أَنْ أَحْمِلَ هَٰذَا الْكِيسَ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Dans la phrase 1, أَقْبَلَتْ est de forme…",
+          "choix": [
+            "IV",
+            "X",
+            "II"
+          ],
+          "reponse": 0,
+          "explication": "أَفْعَلَ : forme IV."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans la phrase 3, combien de formes de la racine ع ل م ?",
+          "choix": [
+            "deux : تَعَلَّمَ (V) et عَلَّمَ (II)",
+            "une seule",
+            "trois"
+          ],
+          "reponse": 0,
+          "explication": "تَعَلَّمَ et عَلَّمَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans la phrase 5, que dit Bāsim ?",
+          "choix": [
+            "qu'il ne peut pas porter ce sac",
+            "qu'il a séjourné un mois",
+            "qu'il a réfléchi à la réponse"
+          ],
+          "reponse": 0,
+          "explication": "لَا أَسْتَطِيعُ أَنْ أَحْمِلَ هَٰذَا الْكِيسَ."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَقَامَ",
+          "choix": [
+            "séjourner, demeurer (dans un lieu)",
+            "se lever",
+            "s'avancer, venir (vers)"
+          ],
+          "reponse": 0,
+          "explication": "أَقَامَ veut dire « séjourner, demeurer (dans un lieu) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَدْرَكَ",
+          "choix": [
+            "rattraper, atteindre",
+            "réfléchir (à)",
+            "pouvoir (+ أَنْ + subjonctif)"
+          ],
+          "reponse": 0,
+          "explication": "أَدْرَكَ veut dire « rattraper, atteindre »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَفَكَّرَ",
+          "choix": [
+            "réfléchir (à)",
+            "rattraper, atteindre",
+            "raconter"
+          ],
+          "reponse": 0,
+          "explication": "تَفَكَّرَ veut dire « réfléchir (à) »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète avec la forme V de ف ك ر : « Bāsim a réfléchi à la réponse. »",
+          "ar": "… بَاسِمٌ فِي الْجَوَابِ.",
+          "choix_ar": [
+            "تَفَكَّرَ",
+            "أَدْرَكَ",
+            "أَقَامَ"
+          ],
+          "reponse": 0,
+          "explication": "تَفَعَّلَ, forme V : تَفَكَّرَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La racine de اسْتَطَاعَ est…",
+          "choix": [
+            "ط و ع",
+            "س ط ع",
+            "ت ط ع"
+          ],
+          "reponse": 0,
+          "explication": "On enlève اسْتَـ ; le ā vient du و de la racine."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je ne peux pas porter ce sac. »",
+          "ar": "لَا … أَنْ أَحْمِلَ هَٰذَا الْكِيسَ.",
+          "choix_ar": [
+            "أَسْتَطِيعُ",
+            "اسْتَطَعْتُ",
+            "يَسْتَطِيعُ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli, 1re personne : أَسْتَطِيعُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim s'est appliqué à la leçon. »",
+          "ar": "أَقْبَلَ بَاسِمٌ … الدَّرْسِ.",
+          "choix_ar": [
+            "عَلَى",
+            "فِي",
+            "مِنْ"
+          ],
+          "reponse": 0,
+          "explication": "أَقْبَلَ عَلَى : s'appliquer à."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a rattrapé la caravane avant le soir. »",
+          "ar": "… بَاسِمٌ الْقَافِلَةَ قَبْلَ الْمَسَاءِ.",
+          "choix_ar": [
+            "أَدْرَكَ",
+            "أَقَامَ",
+            "تَفَكَّرَ"
+          ],
+          "reponse": 0,
+          "explication": "Rattraper : أَدْرَكَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Change la forme : « Bāsim a appris l'écriture » devient « Bāsim a enseigné l'écriture à son frère ».",
+          "ar": "… بَاسِمٌ أَخَاهُ الْكِتَابَةَ.",
+          "choix_ar": [
+            "عَلَّمَ",
+            "تَعَلَّمَ",
+            "عَلِمَ"
+          ],
+          "reponse": 0,
+          "explication": "Enseigner : forme II, عَلَّمَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Zuhayr a séjourné un mois à Damas. » ?",
+          "choix_ar": [
+            "أَقَامَ زُهَيْرٌ فِي دِمَشْقَ شَهْرًا.",
+            "أَدْرَكَ زُهَيْرٌ دِمَشْقَ شَهْرًا.",
+            "أَقْبَلَ زُهَيْرٌ فِي دِمَشْقَ شَهْرًا."
+          ],
+          "reponse": 0,
+          "explication": "Séjourner : أَقَامَ (IV)."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Bāsim a réfléchi à la réponse. »",
+          "tuiles": [
+            "تَفَكَّرَ",
+            "بَاسِمٌ",
+            "فِي",
+            "الْجَوَابِ"
+          ],
+          "solution": [
+            "تَفَكَّرَ",
+            "بَاسِمٌ",
+            "فِي",
+            "الْجَوَابِ"
+          ],
+          "explication": "تَفَكَّرَ + فِي."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris trois phrases avec trois verbes de la même racine ع ل م (عَلِمَ, عَلَّمَ, تَعَلَّمَ).",
+          "modele": [
+            "عَلِمَ بَاسِمٌ الْخَبَرَ.",
+            "عَلَّمَ زُهَيْرٌ بَاسِمًا الْكِتَابَةَ.",
+            "تَعَلَّمَ بَاسِمٌ الْكِتَابَةَ."
+          ],
+          "explication": "Compare : la forme change le sens ; vérifie chaque verbe dans le dictionnaire."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَقْبَلَ",
+          "choix": [
+            "s'avancer, venir (vers) ; أَقْبَلَ عَلَى : s'appliquer à",
+            "séjourner, demeurer (dans un lieu)",
+            "rattraper, atteindre"
+          ],
+          "reponse": 0,
+          "explication": "أَقْبَلَ veut dire « s'avancer, venir (vers) ; أَقْبَلَ عَلَى : s'appliquer à »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "اسْتَطَاعَ",
+          "choix": [
+            "pouvoir (+ أَنْ + subjonctif)",
+            "réfléchir (à)",
+            "raconter"
+          ],
+          "reponse": 0,
+          "explication": "اسْتَطَاعَ veut dire « pouvoir (+ أَنْ + subjonctif) »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "أَقَامَ est de forme…",
+          "choix": [
+            "IV",
+            "I",
+            "X"
+          ],
+          "reponse": 0,
+          "explication": "أَفْعَلَ (racine ق و م) : forme IV."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La racine de تَفَكَّرَ est…",
+          "choix": [
+            "ف ك ر",
+            "ت ف ك",
+            "ك ر ت"
+          ],
+          "reponse": 0,
+          "explication": "On enlève تَـ et la shadda."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans أَقْبَلَتِ الْقَافِلَةُ, le verbe veut dire…",
+          "choix": [
+            "s'avancer",
+            "accepter",
+            "séjourner"
+          ],
+          "reponse": 0,
+          "explication": "Le contexte : la caravane s'avance."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je ne peux pas porter ce sac. »",
+          "ar": "لَا أَسْتَطِيعُ أَنْ … هَٰذَا الْكِيسَ.",
+          "choix_ar": [
+            "أَحْمِلَ",
+            "أَحْمِلُ",
+            "حَمَلْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : subjonctif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Zuhayr a séjourné un mois à Damas. »",
+          "ar": "… زُهَيْرٌ فِي دِمَشْقَ شَهْرًا.",
+          "choix_ar": [
+            "أَقَامَ",
+            "قَامَ",
+            "أَدْرَكَ"
+          ],
+          "reponse": 0,
+          "explication": "Séjourner : أَقَامَ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim a réfléchi à la réponse, puis l'a écrite. » ?",
+          "choix_ar": [
+            "تَفَكَّرَ بَاسِمٌ فِي الْجَوَابِ، ثُمَّ كَتَبَهُ.",
+            "تَفَكَّرَ بَاسِمٌ الْجَوَابَ، ثُمَّ كَتَبَهُ.",
+            "تَفَكَّرَ بَاسِمٌ فِي الْجَوَابِ، ثُمَّ كَتَبَهَا."
+          ],
+          "reponse": 0,
+          "explication": "تَفَكَّرَ + فِي ; الْجَوَابُ est masculin : كَتَبَهُ."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَيْنَمَا",
+          "choix": [
+            "tandis que, pendant que",
+            "quand, alors que (au passé)",
+            "lorsque"
+          ],
+          "reponse": 0,
+          "explication": "بَيْنَمَا veut dire « tandis que, pendant que ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Réponse de لَمَّا : « les marchands se reposèrent ».",
+          "ar": "… التُّجَّارُ.",
+          "choix_ar": [
+            "اسْتَرَاحَ",
+            "فَاسْتَرَاحَ",
+            "يَسْتَرِيحُ"
+          ],
+          "reponse": 0,
+          "explication": "Réponse de لَمَّا sans فَـ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَكَى",
+          "choix": [
+            "raconter",
+            "réfléchir (à)",
+            "rattraper, atteindre"
+          ],
+          "reponse": 0,
+          "explication": "حَكَى veut dire « raconter ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu retrouves la racine et la forme d'un verbe dans un texte (أَقْبَلَ, أَدْرَكَ, اسْتَطَاعَ, أَقَامَ, تَفَكَّرَ), et tu laisses le contexte décider du sens.",
+      "suite": "Prochaine étape, l'Herbier des Thèmes : les mots du ciel, de la nature et du temps."
+    }
+  ]
+}

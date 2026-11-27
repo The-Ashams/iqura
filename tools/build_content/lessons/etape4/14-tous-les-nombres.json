@@ -1,0 +1,577 @@
+{
+  "id": "cite-14",
+  "etape": 4,
+  "ordre": 14,
+  "format": 3,
+  "titre": "Tous les nombres",
+  "objectif": "Dire et écrire les nombres jusqu'à 99, puis cent et mille, avec le nom compté.",
+  "statut": "ia_non_verifie",
+  "lieu": "bureau_comptes",
+  "maitre": "hala",
+  "prerequis": [
+    "cite-13"
+  ],
+  "apercu": [
+    "هَالَةُ",
+    "بَاسِمٌ",
+    "سَمِيرٌ",
+    "ثَلَاثُ",
+    "ثَلَاثَ",
+    "خَمْسٌ",
+    "خَمْسًا",
+    "خَمْسَ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hala",
+          "texte": "Au Bureau des comptes, on compte tout : dirhams, chameaux, lettres et tapis."
+        },
+        {
+          "qui": "hala",
+          "texte": "Tu sais compter jusqu'à dix ; allons jusqu'à 99, puis cent et mille."
+        }
+      ],
+      "objectif": "Compter jusqu'à 99, puis cent et mille, avec le bon nom compté."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a vingt dirhams dans la bourse. »",
+          "ar": "فِي الْكِيسِ عِشْرُونَ …",
+          "choix_ar": [
+            "دِرْهَمًا",
+            "دَرَاهِمَ",
+            "دِرْهَمٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après عِشْرُونَ : singulier en -a (leçon 4.7)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَلَاثَةٌ",
+          "choix": [
+            "trois",
+            "trente",
+            "treize"
+          ],
+          "reponse": 0,
+          "explication": "ثَلَاثَةٌ veut dire « trois »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Comment dit-on « trois livres » ?",
+          "choix_ar": [
+            "ثَلَاثَةُ كُتُبٍ",
+            "ثَلَاثُ كُتُبٍ",
+            "ثَلَاثَةُ كِتَابٍ"
+          ],
+          "reponse": 0,
+          "explication": "Avec un nom masculin : ثَلَاثَةُ + pluriel au génitif (leçon 2.19)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hala",
+          "ar": "كَمْ دِينَارًا فِي الصُّنْدُوقِ؟",
+          "fr": "Combien de dinars y a-t-il dans le coffre ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "فِي الصُّنْدُوقِ أَلْفُ دِينَارٍ.",
+          "fr": "Il y a mille dinars dans le coffre."
+        },
+        {
+          "qui": "hala",
+          "ar": "وَثَمَنُ الْبِسَاطِ مِائَةُ دِرْهَمٍ.",
+          "fr": "Et le prix du tapis est de cent dirhams."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Combien y a-t-il de dinars dans le coffre ?",
+        "choix": [
+          "mille",
+          "cent",
+          "onze"
+        ],
+        "reponse": 0,
+        "explication": "أَلْفُ دِينَارٍ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "ahada_ashar",
+        "ithna_ashar",
+        "mia",
+        "alf"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مِائَةٌ",
+        "choix": [
+          "cent",
+          "mille",
+          "dix"
+        ],
+        "reponse": 0,
+        "explication": "مِائَةٌ veut dire « cent »."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "thalathun",
+        "arbaun",
+        "khamsun",
+        "sittun",
+        "sabun",
+        "thamanun",
+        "tisun"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "أَرْبَعُونَ",
+        "choix": [
+          "quarante",
+          "quatorze",
+          "quatre"
+        ],
+        "reponse": 0,
+        "explication": "أَرْبَعُونَ veut dire « quarante »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "De 3 à 10",
+      "texte": "De 3 à 10, le nombre prend le genre inverse du singulier : ثَلَاثَةُ كُتُبٍ, mais ثَلَاثُ غُرَفٍ.",
+      "exemples": [
+        "ثَلَاثَةُ كُتُبٍ",
+        "ثَلَاثُ غُرَفٍ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Il y a trois pièces à l'école. »",
+        "ar": "فِي الْمَدْرَسَةِ … غُرَفٍ.",
+        "choix_ar": [
+          "ثَلَاثُ",
+          "ثَلَاثَةُ",
+          "ثَلَاثُونَ"
+        ],
+        "reponse": 0,
+        "explication": "غُرْفَةٌ est féminin : le nombre est au masculin, ثَلَاثُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "De 11 à 19",
+      "texte": "11 et 12 s'accordent avec le nom ; de 13 à 19, la 1re partie prend le genre inverse et عَشَرَ s'accorde : ثَلَاثَةَ عَشَرَ قَلَمًا, ثَلَاثَ عَشْرَةَ وَرَقَةً.",
+      "exemples": [
+        "أَحَدَ عَشَرَ دِرْهَمًا",
+        "ثَلَاثَةَ عَشَرَ قَلَمًا",
+        "ثَلَاثَ عَشْرَةَ وَرَقَةً"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Il y a quinze dirhams dans la bourse. »",
+        "ar": "فِي الْكِيسِ … عَشَرَ دِرْهَمًا.",
+        "choix_ar": [
+          "خَمْسَةَ",
+          "خَمْسَ",
+          "خَمْسُونَ"
+        ],
+        "reponse": 0,
+        "explication": "دِرْهَمٌ est masculin : خَمْسَةَ (genre inverse), et عَشَرَ s'accorde."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "De 11 à 99, puis 100 et 1 000",
+      "texte": "De 11 à 99, le nom compté est un singulier indéfini en -a : خَمْسَةٌ وَعِشْرُونَ دِرْهَمًا. مِائَةٌ et أَلْفٌ sont suivis d'un singulier au génitif : مِائَةُ دِرْهَمٍ, أَلْفُ دِينَارٍ.",
+      "exemples": [
+        "خَمْسَةٌ وَعِشْرُونَ دِرْهَمًا",
+        "مِائَةُ دِرْهَمٍ",
+        "أَلْفُ دِينَارٍ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Le prix du tapis est de cent dirhams. »",
+        "ar": "ثَمَنُ الْبِسَاطِ مِائَةُ …",
+        "choix_ar": [
+          "دِرْهَمٍ",
+          "دِرْهَمًا",
+          "دَرَاهِمَ"
+        ],
+        "reponse": 0,
+        "explication": "Après مِائَةٌ : singulier au génitif."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les dizaines",
+      "texte": "Les dizaines ne changent pas de genre ; l'unité vient d'abord, reliée par وَ, et suit la règle de 3 à 10 : خَمْسٌ وَعِشْرُونَ رِسَالَةً. Comme complément ou après une préposition, ـُونَ devient ـِينَ.",
+      "exemples": [
+        "ثَلَاثُونَ",
+        "ثَلَاثِينَ",
+        "خَمْسٌ وَعِشْرُونَ رِسَالَةً"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Samīr a écrit vingt-cinq lettres. »",
+        "ar": "كَتَبَ سَمِيرٌ خَمْسًا وَ… رِسَالَةً.",
+        "choix_ar": [
+          "عِشْرِينَ",
+          "عِشْرُونَ",
+          "عِشْرِينَ مِنْ"
+        ],
+        "reponse": 0,
+        "explication": "Complément : ـِينَ ; رِسَالَةٌ est féminin, d'où خَمْسًا."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَلْفٌ",
+          "choix": [
+            "mille",
+            "cent",
+            "dix"
+          ],
+          "reponse": 0,
+          "explication": "أَلْفٌ veut dire « mille »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ثَلَاثُونَ",
+          "choix": [
+            "trente",
+            "treize",
+            "trois"
+          ],
+          "reponse": 0,
+          "explication": "ثَلَاثُونَ veut dire « trente »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تِسْعُونَ",
+          "choix": [
+            "quatre-vingt-dix",
+            "dix-neuf",
+            "neuf"
+          ],
+          "reponse": 0,
+          "explication": "تِسْعُونَ veut dire « quatre-vingt-dix »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « le marchand a trente chameaux » ?",
+          "choix_ar": [
+            "عِنْدَ التَّاجِرِ ثَلَاثُونَ جَمَلًا",
+            "عِنْدَ التَّاجِرِ ثَلَاثُونَ جِمَالٌ",
+            "عِنْدَ التَّاجِرِ ثَلَاثَةُ جَمَلٍ"
+          ],
+          "reponse": 0,
+          "explication": "De 11 à 99 : singulier en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a onze dirhams dans la bourse. »",
+          "ar": "فِي الْكِيسِ … عَشَرَ دِرْهَمًا.",
+          "choix_ar": [
+            "أَحَدَ",
+            "إِحْدَى",
+            "أَحَدٌ"
+          ],
+          "reponse": 0,
+          "explication": "11 s'accorde avec le nom : دِرْهَمٌ est masculin, أَحَدَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a mille dinars dans le coffre. »",
+          "ar": "فِي الصُّنْدُوقِ أَلْفُ …",
+          "choix_ar": [
+            "دِينَارٍ",
+            "دِينَارًا",
+            "دَنَانِيرَ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَلْفٌ : singulier au génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a treize feuilles ici. »",
+          "ar": "هُنَا ثَلَاثَ … وَرَقَةً.",
+          "choix_ar": [
+            "عَشْرَةَ",
+            "عَشَرَ",
+            "عَشَرَةُ"
+          ],
+          "reponse": 0,
+          "explication": "وَرَقَةٌ est féminin : عَشْرَةَ s'accorde (avec sukūn)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a quarante étudiants à l'école. »",
+          "ar": "فِي الْمَدْرَسَةِ أَرْبَعُونَ …",
+          "choix_ar": [
+            "طَالِبًا",
+            "طُلَّابٌ",
+            "طَالِبٍ"
+          ],
+          "reponse": 0,
+          "explication": "De 11 à 99 : singulier en -a."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le registre des comptes",
+      "texte": "Hāla lit le registre du Bureau. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الصُّنْدُوقِ أَلْفُ دِينَارٍ.",
+        "عِنْدَ التَّاجِرِ ثَلَاثُونَ جَمَلًا وَخَمْسَةَ عَشَرَ كِيسًا.",
+        "ثَمَنُ الْبِسَاطِ مِائَةُ دِرْهَمٍ، وَثَمَنُ الْقَمِيصِ خَمْسُونَ دِرْهَمًا.",
+        "كَتَبَ سَمِيرٌ خَمْسًا وَعِشْرِينَ رِسَالَةً."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Combien coûte le tapis ?",
+          "choix": [
+            "cent dirhams",
+            "cinquante dirhams",
+            "mille dinars"
+          ],
+          "reponse": 0,
+          "explication": "مِائَةُ دِرْهَمٍ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Combien de lettres Samīr a-t-il écrites ?",
+          "choix": [
+            "vingt-cinq",
+            "quinze",
+            "trente"
+          ],
+          "reponse": 0,
+          "explication": "خَمْسًا وَعِشْرِينَ رِسَالَةً."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Il y a mille dinars dans le coffre. » ?",
+          "choix_ar": [
+            "فِي الصُّنْدُوقِ أَلْفُ دِينَارٍ.",
+            "فِي الصُّنْدُوقِ أَلْفُ دِينَارًا.",
+            "فِي الصُّنْدُوقِ أَلْفُ دَنَانِيرَ."
+          ],
+          "reponse": 0,
+          "explication": "Après أَلْفٌ : singulier au génitif."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Le prix du tapis est de cent dirhams. »",
+          "tuiles": [
+            "دِرْهَمٍ",
+            "مِائَةُ",
+            "الْبِسَاطِ",
+            "ثَمَنُ",
+            "دِرْهَمًا"
+          ],
+          "solution": [
+            "ثَمَنُ",
+            "الْبِسَاطِ",
+            "مِائَةُ",
+            "دِرْهَمٍ"
+          ],
+          "explication": "Après مِائَةٌ : génitif, دِرْهَمٍ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a trois pièces à l'école. »",
+          "ar": "فِي الْمَدْرَسَةِ ثَلَاثُ …",
+          "choix_ar": [
+            "غُرَفٍ",
+            "غُرْفَةً",
+            "غُرْفَةٍ"
+          ],
+          "reponse": 0,
+          "explication": "De 3 à 10 : pluriel au génitif."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "خَمْسُونَ",
+          "choix": [
+            "cinquante",
+            "quinze",
+            "cinq"
+          ],
+          "reponse": 0,
+          "explication": "خَمْسُونَ veut dire « cinquante »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire اثْنَا عَشَرَ قَلَمًا ?",
+          "choix": [
+            "douze calames",
+            "deux calames",
+            "vingt calames"
+          ],
+          "reponse": 0,
+          "explication": "اثْنَا عَشَرَ : douze."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il y a quinze dirhams dans la bourse » ?",
+          "choix_ar": [
+            "فِي الْكِيسِ خَمْسَةَ عَشَرَ دِرْهَمًا",
+            "فِي الْكِيسِ خَمْسَ عَشْرَةَ دِرْهَمًا",
+            "فِي الْكِيسِ خَمْسَةَ عَشَرَ دَرَاهِمَ"
+          ],
+          "reponse": 0,
+          "explication": "دِرْهَمٌ est masculin : خَمْسَةَ عَشَرَ + singulier en -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il y a trois pièces à l'école. »",
+          "ar": "فِي الْمَدْرَسَةِ … غُرَفٍ.",
+          "choix_ar": [
+            "ثَلَاثُ",
+            "ثَلَاثَةُ",
+            "ثَلَاثُونَ"
+          ],
+          "reponse": 0,
+          "explication": "Nom féminin : nombre au masculin."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « cent dirhams »",
+          "ar": "مِائَةُ …",
+          "choix_ar": [
+            "دِرْهَمٍ",
+            "دِرْهَمًا",
+            "دَرَاهِمَ"
+          ],
+          "reponse": 0,
+          "explication": "Après مِائَةٌ : génitif singulier."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le marchand a trente chameaux. »",
+          "ar": "عِنْدَ التَّاجِرِ ثَلَاثُونَ …",
+          "choix_ar": [
+            "جَمَلًا",
+            "جِمَالٌ",
+            "جَمَلٍ"
+          ],
+          "reponse": 0,
+          "explication": "De 11 à 99 : singulier en -a."
+        },
+        {
+          "type": "qcm",
+          "consigne": "De 3 à 10, le nombre prend…",
+          "choix": [
+            "le genre inverse du singulier",
+            "le même genre que le nom",
+            "toujours le masculin"
+          ],
+          "reponse": 0,
+          "explication": "ثَلَاثَةُ كُتُبٍ, ثَلَاثُ غُرَفٍ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après مِائَةٌ et أَلْفٌ, le nom est…",
+          "choix": [
+            "singulier, au génitif",
+            "pluriel, au génitif",
+            "singulier, en -a"
+          ],
+          "reponse": 0,
+          "explication": "مِائَةُ دِرْهَمٍ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans كَتَبَ خَمْسًا وَعِشْرِينَ رِسَالَةً, pourquoi عِشْرِينَ ?",
+          "choix": [
+            "le nombre est complément : ـِينَ",
+            "رِسَالَةٌ est féminin",
+            "après وَ, toujours ـِينَ"
+          ],
+          "reponse": 0,
+          "explication": "Complément : -īna."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَلْ",
+          "choix": [
+            "mais plutôt, au contraire",
+            "ou",
+            "puis"
+          ],
+          "reponse": 0,
+          "explication": "بَلْ veut dire « mais plutôt, au contraire ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Quant à Bāsim, il est occupé. »",
+          "ar": "أَمَّا بَاسِمٌ …",
+          "choix_ar": [
+            "فَمَشْغُولٌ",
+            "مَشْغُولٌ",
+            "ثُمَّ مَشْغُولٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَمَّا : فَـ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَمْ",
+          "choix": [
+            "combien ?",
+            "comment ?",
+            "quand ?"
+          ],
+          "reponse": 0,
+          "explication": "كَمْ veut dire « combien ? ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu connais les nombres jusqu'à 99, puis 100 et 1 000 : genre inverse de 3 à 10, singulier en -a de 11 à 99, singulier au génitif après مِائَةٌ et أَلْفٌ. Le premier chapitre de la Cité des Lecteurs est terminé !",
+      "suite": "Bientôt, sur la Place des débats : parler, raconter, donner son avis."
+    }
+  ]
+}

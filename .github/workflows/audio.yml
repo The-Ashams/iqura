@@ -1,0 +1,116 @@
+# Phase audio (J6) : génération des voix sur les serveurs de GitHub, en
+# parallèle, sans dépendre d'une session de travail. Lancée à la main.
+# Chaque part génère une partie des enregistrements manquants d'une région ;
+# la dernière étape les livre (MP3 + manifeste), vérifie la base de contenu
+# et enregistre le tout sur la branche.
+name: Voix (phase audio)
+
+# Déclenchée par la modification de tools/build_audio/demande.json
+# ({"region": 3, "genre": "mot", "parts": 20} ; « "reprendre": N » livre
+# les voix de l'exécution N sans les régénérer).
+on:
+  push:
+    paths:
+      - tools/build_audio/demande.json
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: voix-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  PYTHONUTF8: "1"
+
+jobs:
+  demande:
+    name: Lire la demande
+    runs-on: ubuntu-latest
+    outputs:
+      region: ${{ steps.d.outputs.region }}
+      genre: ${{ steps.d.outputs.genre }}
+      parts: ${{ steps.d.outputs.parts }}
+      reprendre: ${{ steps.d.outputs.reprendre }}
+    steps:
+      - uses: actions/checkout@v5
+      - id: d
+        run: |
+          python3 -c "import json;d=json.load(open('tools/build_audio/demande.json'));r=d.get('reprendre','');print(f\"region={d['region']}\ngenre={d.get('genre','')}\nparts={0 if r else d.get('parts',20)}\nreprendre={r}\")" >> "$GITHUB_OUTPUT"
+
+  parts:
+    name: Part ${{ matrix.part }}
+    needs: demande
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix:
+        part: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    steps:
+      - uses: actions/checkout@v5
+        if: matrix.part < fromJSON(needs.demande.outputs.parts)
+      - uses: actions/setup-python@v5
+        if: matrix.part < fromJSON(needs.demande.outputs.parts)
+        with:
+          python-version: "3.12"
+      - name: Environnement de synthèse
+        if: matrix.part < fromJSON(needs.demande.outputs.parts)
+        run: |
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q "setuptools<81" numpy soundfile librosa "transformers==4.46.3" "diffusers==0.29.0" resemble-perth conformer safetensors s3tokenizer pyloudnorm huggingface_hub omegaconf
+          pip install -q --no-deps chatterbox-tts==0.1.7
+      - name: Générer la part
+        if: matrix.part < fromJSON(needs.demande.outputs.parts)
+        run: python tools/build_audio/part.py out --region ${{ needs.demande.outputs.region }} --genre "${{ needs.demande.outputs.genre }}" --part ${{ matrix.part }} --parts ${{ needs.demande.outputs.parts }}
+      - uses: actions/upload-artifact@v4
+        if: matrix.part < fromJSON(needs.demande.outputs.parts)
+        with:
+          name: voix-part-${{ matrix.part }}
+          path: out/
+          if-no-files-found: ignore
+
+  livrer:
+    name: Livrer et enregistrer
+    needs: [demande, parts]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      # « reprendre » (numéro d'une exécution précédente) : livrer les voix
+      # déjà générées par cette exécution, sans rien régénérer.
+      - uses: actions/download-artifact@v4
+        with:
+          path: parts
+          run-id: ${{ needs.demande.outputs.reprendre || github.run_id }}
+          github-token: ${{ github.token }}
+      - name: Rassembler les parts
+        run: |
+          mkdir -p tout
+          python3 - <<'PY'
+          import glob, json, os, shutil
+          rep = []
+          for d in sorted(glob.glob("parts/*")):
+              p = os.path.join(d, "rapport.json")
+              if not os.path.exists(p):
+                  continue
+              rep += json.load(open(p, encoding="utf-8"))
+              for w in glob.glob(os.path.join(d, "*.wav")):
+                  shutil.copy(w, "tout")
+          json.dump(rep, open("tout/rapport.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+          print(len(rep), "enregistrements")
+          PY
+      - name: Livrer (MP3 et manifeste)
+        run: |
+          sudo apt-get update -q >/dev/null
+          sudo apt-get install -y -q ffmpeg >/dev/null
+          python3 tools/build_audio/package.py tout
+          python3 tools/build_content/build_content.py
+      - name: Enregistrer sur la branche
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/audio/lecons tools/build_audio/clips.json
+          git commit -q -m "Phase audio : région ${{ needs.demande.outputs.region }} ${{ needs.demande.outputs.genre }}, voix générées par GitHub Actions" || exit 0
+          for i in 1 2 3 4; do git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep $((i*5)); done

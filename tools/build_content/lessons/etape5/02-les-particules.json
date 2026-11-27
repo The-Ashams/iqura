@@ -1,0 +1,526 @@
+{
+  "id": "sens-02",
+  "etape": 5,
+  "ordre": 2,
+  "format": 3,
+  "titre": "Les particules fréquentes",
+  "objectif": "Comprendre et employer إِنَّمَا, كَلَّا, بَلَى et أَلَا.",
+  "statut": "ia_non_verifie",
+  "lieu": "porte_jardins",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-01"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "texte": "Quatre petits mots changent tout le sens d'une phrase, comme « seulement » ou « pas du tout »."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Lis ce que se disent Bāsim et Samīr, et observe ces quatre mots."
+        }
+      ],
+      "objectif": "Comprendre quatre particules fréquentes."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim n'est qu'un étudiant. »",
+          "ar": "مَا بَاسِمٌ … طَالِبٌ.",
+          "choix_ar": [
+            "إِلَّا",
+            "لَمْ",
+            "لَا"
+          ],
+          "reponse": 0,
+          "explication": "« seulement » : مَا et إِلَّا, vus en région 4."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Samīr n'a pas écrit la lettre. »",
+          "ar": "… يَكْتُبْ سَمِيرٌ الرِّسَالَةَ.",
+          "choix_ar": [
+            "لَمْ",
+            "لَنْ",
+            "لَا"
+          ],
+          "reponse": 0,
+          "explication": "Passé nié : لَمْ + jussif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je jure que la caravane est bien arrivée. »",
+          "ar": "أُقْسِمُ … وَصَلَتِ الْقَافِلَةُ.",
+          "choix_ar": [
+            "لَقَدْ",
+            "فَقَدْ",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "Réponse du serment au passé, vue juste avant."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "basim",
+          "ar": "هَلْ نَسِيتَ الْمِفْتَاحَ يَا سَمِيرُ؟",
+          "fr": "As-tu oublié la clé, Samīr ?"
+        },
+        {
+          "qui": "samir",
+          "ar": "كَلَّا، الْمِفْتَاحُ فِي الْكِيسِ.",
+          "fr": "Pas du tout, la clé est dans la bourse."
+        },
+        {
+          "qui": "basim",
+          "ar": "لَمْ تَكْتُبِ الرِّسَالَةَ.",
+          "fr": "Tu n'as pas écrit la lettre."
+        },
+        {
+          "qui": "samir",
+          "ar": "بَلَى، كَتَبْتُهَا أَمْسِ.",
+          "fr": "Si, je l'ai écrite hier."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Samīr a-t-il écrit la lettre ?",
+        "choix": [
+          "oui, hier",
+          "non",
+          "il va l'écrire demain"
+        ],
+        "reponse": 0,
+        "explication": "بَلَى، كَتَبْتُهَا أَمْسِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "innama",
+        "kalla",
+        "bala",
+        "ala_tanbih",
+        "hasr",
+        "tanbih"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "بَلَى",
+        "choix": [
+          "si ! (contre une négation)",
+          "non ! pas du tout",
+          "ne… que, seulement"
+        ],
+        "reponse": 0,
+        "explication": "بَلَى veut dire « si ! (contre une négation) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "إِنَّمَا « seulement »",
+      "texte": "إِنَّمَا veut dire « ne que, seulement » et met en relief le dernier élément : c'est إِنَّ + مَا, et مَا annule l'effet de إِنَّ. Le nom qui suit est donc au nominatif : إِنَّمَا بَاسِمٌ طَالِبٌ.",
+      "exemples": [
+        "إِنَّمَا بَاسِمٌ طَالِبٌ",
+        "إِنَّمَا فِي الْكِيسِ دِرْهَمٌ وَاحِدٌ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Bāsim n'est qu'un étudiant. »",
+        "ar": "إِنَّمَا … طَالِبٌ.",
+        "choix_ar": [
+          "بَاسِمٌ",
+          "بَاسِمًا",
+          "بَاسِمٍ"
+        ],
+        "reponse": 0,
+        "explication": "Après إِنَّمَا : nominatif."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "كَلَّا et بَلَى",
+      "texte": "كَلَّا rejette fortement ce qui vient d'être dit ou supposé : « non, pas du tout » (un autre sens, discuté, n'est pas enseigné ici). بَلَى répond « si » à une phrase négative ; نَعَمْ la confirme.",
+      "exemples": [
+        "كَلَّا، الْمِفْتَاحُ فِي الْكِيسِ",
+        "بَلَى، كَتَبْتُهَا أَمْسِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "« Tu n'as pas écrit la lettre. » Tu l'as écrite : tu réponds…",
+        "choix_ar": [
+          "بَلَى",
+          "نَعَمْ",
+          "أَلَا"
+        ],
+        "reponse": 0,
+        "explication": "بَلَى annule la négation : « si ! »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "أَلَا « eh bien ! »",
+      "texte": "En tête de phrase, أَلَا attire l'attention (« eh bien, sachez que »), souvent suivi de إِنَّ. Ne le confonds pas avec أَلَّا (أَنْ + لَا) ni avec إِلَّا (« sauf »).",
+      "exemples": [
+        "أَلَا إِنَّ الْقَافِلَةَ قَدْ وَصَلَتْ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans أَلَا إِنَّ الْقَافِلَةَ قَدْ وَصَلَتْ, أَلَا sert à…",
+        "choix": [
+          "attirer l'attention",
+          "nier",
+          "dire « sauf »"
+        ],
+        "reponse": 0,
+        "explication": "أَلَا : appel à l'attention."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "La bourse de Samīr",
+      "texte": "Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "قَالَ بَاسِمٌ: « لَمْ تَشْتَرِ الْقِرْطَاسَ يَا سَمِيرُ. »",
+        "قَالَ سَمِيرٌ: « بَلَى، اشْتَرَيْتُهُ، وَلَٰكِنْ إِنَّمَا فِي الْكِيسِ الْآنَ دِرْهَمٌ وَاحِدٌ. »",
+        "قَالَ بَاسِمٌ: « هَلْ نَسِيتَ الْمِفْتَاحَ؟ »",
+        "قَالَ سَمِيرٌ: « كَلَّا، الْمِفْتَاحُ فِي الْكِيسِ. أَلَا إِنَّ الْقَافِلَةَ قَدْ وَصَلَتْ! »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Samīr a-t-il acheté le papier ?",
+          "choix": [
+            "oui",
+            "non",
+            "il ne sait pas"
+          ],
+          "reponse": 0,
+          "explication": "بَلَى، اشْتَرَيْتُهُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Combien reste-t-il dans la bourse ?",
+          "choix": [
+            "un seul dirham",
+            "dix dirhams",
+            "rien"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّمَا فِي الْكِيسِ دِرْهَمٌ وَاحِدٌ."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَلَّا",
+          "choix": [
+            "non ! pas du tout",
+            "si ! (contre une négation)",
+            "eh bien !"
+          ],
+          "reponse": 0,
+          "explication": "كَلَّا veut dire « non ! pas du tout »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِنَّمَا",
+          "choix": [
+            "ne… que, seulement",
+            "parce que",
+            "si"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّمَا veut dire « ne… que, seulement »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَصْرٌ",
+          "choix": [
+            "(grammaire) restriction",
+            "(grammaire) appel à l'attention",
+            "(grammaire) négation"
+          ],
+          "reponse": 0,
+          "explication": "حَصْرٌ veut dire « (grammaire) restriction »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'y a dans la bourse qu'un seul dirham. »",
+          "ar": "إِنَّمَا فِي الْكِيسِ … وَاحِدٌ.",
+          "choix_ar": [
+            "دِرْهَمٌ",
+            "دِرْهَمًا",
+            "دِرْهَمٍ"
+          ],
+          "reponse": 0,
+          "explication": "Après إِنَّمَا : nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Réponds « pas du tout » à « As-tu oublié la clé ? »",
+          "ar": "…، الْمِفْتَاحُ فِي الْكِيسِ.",
+          "choix_ar": [
+            "كَلَّا",
+            "بَلَى",
+            "أَلَا"
+          ],
+          "reponse": 0,
+          "explication": "Rejet fort : كَلَّا."
+        },
+        {
+          "type": "completer",
+          "consigne": "Réponds « si » à « Tu n'as pas écrit la lettre ? »",
+          "ar": "…، كَتَبْتُهَا أَمْسِ.",
+          "choix_ar": [
+            "بَلَى",
+            "نَعَمْ",
+            "أَلَا"
+          ],
+          "reponse": 0,
+          "explication": "Contre une négation : بَلَى."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Bāsim n'est qu'un étudiant. » ?",
+          "choix_ar": [
+            "إِنَّمَا بَاسِمٌ طَالِبٌ.",
+            "إِنَّمَا بَاسِمًا طَالِبٌ.",
+            "إِنَّ بَاسِمٌ طَالِبٌ."
+          ],
+          "reponse": 0,
+          "explication": "إِنَّمَا + nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "أَلَا, أَلَّا et إِلَّا…",
+          "choix": [
+            "sont trois mots différents",
+            "veulent dire la même chose",
+            "sont tous des négations"
+          ],
+          "reponse": 0,
+          "explication": "أَلَا : eh bien ; أَلَّا : que… ne pas ; إِلَّا : sauf."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Eh bien, la caravane est arrivée. » ?",
+          "choix_ar": [
+            "أَلَا إِنَّ الْقَافِلَةَ قَدْ وَصَلَتْ.",
+            "إِلَّا إِنَّ الْقَافِلَةَ قَدْ وَصَلَتْ.",
+            "أَلَا إِنَّ الْقَافِلَةُ قَدْ وَصَلَتْ."
+          ],
+          "reponse": 0,
+          "explication": "أَلَا, puis إِنَّ + nom en -a."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre, en commençant par إِنَّمَا : « Bāsim n'est qu'un étudiant. »",
+          "tuiles": [
+            "طَالِبٌ",
+            "بَاسِمٌ",
+            "إِنَّمَا",
+            "بَاسِمًا"
+          ],
+          "solution": [
+            "إِنَّمَا",
+            "بَاسِمٌ",
+            "طَالِبٌ"
+          ],
+          "explication": "Après إِنَّمَا : nominatif."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Dis de deux façons que Bāsim n'est qu'un étudiant, puis de deux façons que Samīr n'est qu'un marchand.",
+          "modele": [
+            "مَا بَاسِمٌ إِلَّا طَالِبٌ.",
+            "إِنَّمَا بَاسِمٌ طَالِبٌ.",
+            "مَا سَمِيرٌ إِلَّا تَاجِرٌ.",
+            "إِنَّمَا سَمِيرٌ تَاجِرٌ."
+          ],
+          "explication": "Compare : مَا et إِلَّا, puis إِنَّمَا, avec le nominatif."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَلَى",
+          "choix": [
+            "si ! (contre une négation)",
+            "non ! pas du tout",
+            "ne… que, seulement"
+          ],
+          "reponse": 0,
+          "explication": "بَلَى veut dire « si ! (contre une négation) »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَنْبِيهٌ",
+          "choix": [
+            "(grammaire) appel à l'attention",
+            "(grammaire) restriction",
+            "(grammaire) négation"
+          ],
+          "reponse": 0,
+          "explication": "تَنْبِيهٌ veut dire « (grammaire) appel à l'attention »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim n'est qu'un étudiant. »",
+          "ar": "إِنَّمَا بَاسِمٌ …",
+          "choix_ar": [
+            "طَالِبٌ",
+            "طَالِبًا",
+            "طَالِبٍ"
+          ],
+          "reponse": 0,
+          "explication": "Attribut au nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Réponds « si, j'ai compris » à « Tu n'as pas compris ? »",
+          "ar": "…، فَهِمْتُ.",
+          "choix_ar": [
+            "بَلَى",
+            "نَعَمْ",
+            "إِنَّمَا"
+          ],
+          "reponse": 0,
+          "explication": "بَلَى annule la négation."
+        },
+        {
+          "type": "completer",
+          "consigne": "Réponds « pas du tout » à « As-tu oublié la clé ? »",
+          "ar": "…!",
+          "choix_ar": [
+            "كَلَّا",
+            "بَلَى",
+            "إِنَّمَا"
+          ],
+          "reponse": 0,
+          "explication": "Rejet fort : كَلَّا."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Il n'y a dans la bourse qu'un dirham. » ?",
+          "choix_ar": [
+            "إِنَّمَا فِي الْكِيسِ دِرْهَمٌ.",
+            "إِنَّمَا فِي الْكِيسِ دِرْهَمًا.",
+            "إِنَّمَا فِي الْكِيسِ دِرْهَمٍ."
+          ],
+          "reponse": 0,
+          "explication": "إِنَّمَا + nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Après une négation, نَعَمْ…",
+          "choix": [
+            "confirme la négation",
+            "annule la négation",
+            "pose une question"
+          ],
+          "reponse": 0,
+          "explication": "نَعَمْ : « en effet, non »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "إِنَّمَا est formé de…",
+          "choix": [
+            "إِنَّ et مَا",
+            "إِنْ et مَا",
+            "أَنْ et مَا"
+          ],
+          "reponse": 0,
+          "explication": "مَا annule l'effet de إِنَّ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "أَلَا en tête de phrase…",
+          "choix": [
+            "attire l'attention",
+            "veut dire « sauf »",
+            "nie le verbe"
+          ],
+          "reponse": 0,
+          "explication": "Appel à l'attention."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَسَمٌ",
+          "choix": [
+            "serment ; جَوَابُ الْقَسَمِ : la réponse du serment",
+            "partage",
+            "promesse"
+          ],
+          "reponse": 0,
+          "explication": "قَسَمٌ veut dire « serment ; جَوَابُ الْقَسَمِ : la réponse du serment ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'ai juré de ne pas être en retard. »",
+          "ar": "حَلَفْتُ … أَتَأَخَّرُ.",
+          "choix_ar": [
+            "لَا",
+            "فَلَا",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Réponse niée au futur : لَا.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَادِقٌ",
+          "choix": [
+            "sincère, qui dit vrai",
+            "ami",
+            "patient"
+          ],
+          "reponse": 0,
+          "explication": "صَادِقٌ veut dire « sincère, qui dit vrai ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu comprends إِنَّمَا (« seulement »), كَلَّا (« pas du tout »), بَلَى (« si ! ») et أَلَا (« eh bien ! »).",
+      "suite": "Prochaine leçon : la question qui affirme, à la Fontaine des Questions."
+    }
+  ]
+}

@@ -1,0 +1,531 @@
+{
+  "id": "cite-22",
+  "etape": 4,
+  "ordre": 22,
+  "format": 3,
+  "titre": "Mener une conversation",
+  "objectif": "Relancer, faire répéter, demander le sens d'un mot, conclure.",
+  "statut": "ia_non_verifie",
+  "lieu": "maison_nadim",
+  "maitre": "nadim",
+  "prerequis": [
+    "cite-21"
+  ],
+  "apercu": [
+    "نَدِيمٌ",
+    "بَاسِمٌ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "texte": "Je parle vite, je le sais : si tu ne suis pas, fais-moi répéter."
+        },
+        {
+          "qui": "nadim",
+          "texte": "Si tu ne comprends pas un mot, demande son sens : personne ne se moquera de toi."
+        }
+      ],
+      "objectif": "Mener une conversation jusqu'au bout."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je ne suis pas d'accord avec toi. »",
+          "ar": "… أُوَافِقُكَ.",
+          "choix_ar": [
+            "لَا",
+            "لَمْ",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "Refuser : لَا أُوَافِقُكَ (leçon 4.21)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je te prie de m'attendre un peu. »",
+          "ar": "أَرْجُو أَنْ … قَلِيلًا.",
+          "choix_ar": [
+            "تَنْتَظِرَنِي",
+            "تَنْتَظِرُنِي",
+            "انْتَظَرْتَنِي"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : subjonctif (leçon 4.19)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je n'ai pas compris. »",
+          "ar": "لَمْ …",
+          "choix_ar": [
+            "أَفْهَمْ",
+            "أَفْهَمُ",
+            "فَهِمْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : jussif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "nadim",
+          "ar": "كَانَتِ الْمُنَاظَرَةُ جَمِيلَةً. وَأَنْتَ، مَا رَأْيُكَ؟",
+          "fr": "Le débat était beau. Et toi, qu'en penses-tu ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "لَمْ أَفْهَمْ. أَرْجُو أَنْ تُكَرِّرَ الْكَلَامَ عَلَى مَهْلٍ.",
+          "fr": "Je n'ai pas compris. Je te prie de répéter tes paroles lentement."
+        },
+        {
+          "qui": "nadim",
+          "ar": "كَانَتِ الْمُنَاظَرَةُ جَمِيلَةً. وَأَنْتَ، مَا رَأْيُكَ؟",
+          "fr": "Le débat était beau. Et toi, qu'en penses-tu ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "الْآنَ فَهِمْتُ. أُوَافِقُكَ، كَانَتْ جَمِيلَةً.",
+          "fr": "Maintenant, j'ai compris. Je suis d'accord avec toi, il était beau."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'a demandé Bāsim ?",
+        "choix": [
+          "de répéter lentement",
+          "le sens d'un mot",
+          "le prix d'un tapis"
+        ],
+        "reponse": 0,
+        "explication": "أَرْجُو أَنْ تُكَرِّرَ الْكَلَامَ عَلَى مَهْلٍ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "karrara",
+        "maana",
+        "ala_mahl",
+        "kalam",
+        "hiwar",
+        "idhan",
+        "naltaqi"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "مَعْنًى",
+        "choix": [
+          "sens (d'un mot)",
+          "paroles, propos",
+          "conversation, dialogue"
+        ],
+        "reponse": 0,
+        "explication": "مَعْنًى veut dire « sens (d'un mot) »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Relancer, faire répéter, demander un sens",
+      "texte": "Pour relancer : وَأَنْتَ؟ ou ثُمَّ مَاذَا؟ Pour faire répéter : لَمْ أَفْهَمْ, puis أَرْجُو أَنْ تُكَرِّرَ ; pour demander un sens : مَا مَعْنَى + mot.",
+      "exemples": [
+        "وَأَنْتَ؟",
+        "ثُمَّ مَاذَا؟",
+        "مَا مَعْنَى هَٰذِهِ الْكَلِمَةِ؟"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Pour demander le sens d'un mot, on dit…",
+        "choix_ar": [
+          "مَا مَعْنَى هَٰذِهِ الْكَلِمَةِ؟",
+          "ثُمَّ مَاذَا؟",
+          "وَأَنْتَ؟"
+        ],
+        "reponse": 0,
+        "explication": "مَا مَعْنَى + mot."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Conclure",
+      "texte": "Pour conclure : شُكْرًا لَكَ عَلَى الْحِوَارِ, puis نَلْتَقِي غَدًا إِذَنْ « alors nous nous retrouvons demain » ; ici, إِذَنْ vient à la fin de la phrase. Attention, إِذَنْ « donc » n'est pas إِذَا « si, quand ».",
+      "exemples": [
+        "نَلْتَقِي غَدًا إِذَنْ",
+        "شُكْرًا لَكَ عَلَى الْحِوَارِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire نَلْتَقِي غَدًا إِذَنْ ?",
+        "choix": [
+          "Alors nous nous retrouvons demain.",
+          "Si nous nous retrouvons demain.",
+          "Quand nous nous retrouverons demain."
+        ],
+        "reponse": 0,
+        "explication": "إِذَنْ : donc, alors."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "مَعْنًى garde sa fin",
+      "texte": "مَعْنًى finit par ى : son cas ne s'entend pas, on dit maʿnan aux trois cas ; ce n'est pas un mot invariable comme هَٰذَا. Avec l'article : الْمَعْنَى, devant un nom : مَعْنَى الْكَلِمَةِ.",
+      "exemples": [
+        "مَعْنًى",
+        "الْمَعْنَى",
+        "مَعْنَى الْكَلِمَةِ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Que veut dire ce mot ? »",
+        "ar": "مَا … هَٰذِهِ الْكَلِمَةِ؟",
+        "choix_ar": [
+          "مَعْنَى",
+          "مَعْنًى",
+          "كَلَامُ"
+        ],
+        "reponse": 0,
+        "explication": "Devant un nom : مَعْنَى, sans tanwīn."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَرَّرَ",
+          "choix": [
+            "répéter",
+            "comprendre",
+            "marchander"
+          ],
+          "reponse": 0,
+          "explication": "كَرَّرَ veut dire « répéter »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حِوَارٌ",
+          "choix": [
+            "conversation, dialogue",
+            "débat",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "حِوَارٌ veut dire « conversation, dialogue »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَلَى مَهْلٍ",
+          "choix": [
+            "lentement",
+            "vite",
+            "souvent"
+          ],
+          "reponse": 0,
+          "explication": "عَلَى مَهْلٍ veut dire « lentement »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Je n'ai pas compris ; je te prie de répéter tes paroles lentement. » ?",
+          "choix_ar": [
+            "لَمْ أَفْهَمْ. أَرْجُو أَنْ تُكَرِّرَ الْكَلَامَ عَلَى مَهْلٍ.",
+            "لَمْ أَفْهَمْ. أَرْجُو أَنْ تُكَرِّرُ الْكَلَامَ عَلَى مَهْلٍ.",
+            "لَمْ أَفْهَمْ. أَرْجُو أَنْ تَكْتُبَ الْكَلَامَ عَلَى مَهْلٍ."
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : subjonctif, تُكَرِّرَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Répète cette phrase. »",
+          "ar": "… هَٰذِهِ الْجُمْلَةَ.",
+          "choix_ar": [
+            "كَرِّرْ",
+            "كَرَّرَ",
+            "تُكَرِّرَ"
+          ],
+          "reponse": 0,
+          "explication": "Demander à quelqu'un : l'impératif كَرِّرْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Merci pour la conversation. »",
+          "ar": "شُكْرًا لَكَ عَلَى …",
+          "choix_ar": [
+            "الْحِوَارِ",
+            "الْحِوَارُ",
+            "الْحِوَارَ"
+          ],
+          "reponse": 0,
+          "explication": "Après عَلَى : génitif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Alors nous nous retrouvons demain. »",
+          "ar": "نَلْتَقِي غَدًا … .",
+          "choix_ar": [
+            "إِذَنْ",
+            "إِذَا",
+            "لَمَّا"
+          ],
+          "reponse": 0,
+          "explication": "Pour conclure : إِذَنْ, à la fin."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour relancer la conversation, on dit…",
+          "choix_ar": [
+            "وَأَنْتَ؟",
+            "لَمْ أَفْهَمْ.",
+            "شُكْرًا لَكَ."
+          ],
+          "reponse": 0,
+          "explication": "وَأَنْتَ؟ « et toi ? »"
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Bāsim ne comprend pas",
+      "texte": "Après le débat, Bāsim parle avec Nadīm. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "قَالَ نَدِيمٌ كَلِمَةً صَعْبَةً، فَلَمْ يَفْهَمْهَا بَاسِمٌ.",
+        "قَالَ بَاسِمٌ: « مَا مَعْنَى هَٰذِهِ الْكَلِمَةِ؟ أَرْجُو أَنْ تُكَرِّرَهَا عَلَى مَهْلٍ. »",
+        "كَرَّرَ نَدِيمٌ الْكَلِمَةَ، ثُمَّ ذَكَرَ مَعْنَى الْكَلِمَةِ.",
+        "قَالَ بَاسِمٌ: « شُكْرًا لَكَ عَلَى الْحِوَارِ. نَلْتَقِي غَدًا إِذَنْ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Pourquoi Bāsim demande-t-il de répéter ?",
+          "choix": [
+            "il n'a pas compris un mot difficile",
+            "Nadīm parlait trop bas",
+            "il voulait partir"
+          ],
+          "reponse": 0,
+          "explication": "فَلَمْ يَفْهَمْهَا بَاسِمٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a fait Nadīm ?",
+          "choix": [
+            "il a répété le mot puis dit son sens",
+            "il est parti",
+            "il a écrit une lettre"
+          ],
+          "reponse": 0,
+          "explication": "كَرَّرَ نَدِيمٌ الْكَلِمَةَ، ثُمَّ ذَكَرَ مَعْنَى الْكَلِمَةِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Que veut dire ce mot ? » ?",
+          "choix_ar": [
+            "مَا مَعْنَى هَٰذِهِ الْكَلِمَةِ؟",
+            "مَا مَعْنًى هَٰذِهِ الْكَلِمَةِ؟",
+            "مَا كَلَامُ هَٰذِهِ الْكَلِمَةِ؟"
+          ],
+          "reponse": 0,
+          "explication": "Devant un nom : مَعْنَى, sans tanwīn."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre : « Merci pour la conversation. »",
+          "tuiles": [
+            "الْحِوَارِ",
+            "لَكَ",
+            "عَلَى",
+            "شُكْرًا"
+          ],
+          "solution": [
+            "شُكْرًا",
+            "لَكَ",
+            "عَلَى",
+            "الْحِوَارِ"
+          ],
+          "explication": "شُكْرًا, puis لَكَ, puis عَلَى + ce pour quoi on remercie."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète, pour relancer : « Et toi ? »",
+          "ar": "أَنَا مِنْ هَٰذِهِ الْمَدِينَةِ. … ؟",
+          "choix_ar": [
+            "وَأَنْتَ",
+            "وَأَنَا",
+            "ثُمَّ"
+          ],
+          "reponse": 0,
+          "explication": "Pour relancer : وَأَنْتَ ؟"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَلَامٌ",
+          "choix": [
+            "paroles, propos",
+            "sens (d'un mot)",
+            "débat"
+          ],
+          "reponse": 0,
+          "explication": "كَلَامٌ veut dire « paroles, propos »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِذَنْ",
+          "choix": [
+            "donc, alors (pour conclure)",
+            "si, quand",
+            "parce que"
+          ],
+          "reponse": 0,
+          "explication": "إِذَنْ veut dire « donc, alors (pour conclure) »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « répète lentement » ?",
+          "choix_ar": [
+            "كَرِّرْ عَلَى مَهْلٍ",
+            "كَرَّرَ عَلَى مَهْلٍ",
+            "تُكَرِّرَ عَلَى مَهْلٍ"
+          ],
+          "reponse": 0,
+          "explication": "Impératif : كَرِّرْ ; « lentement » : عَلَى مَهْلٍ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je n'ai pas compris. »",
+          "ar": "لَمْ …",
+          "choix_ar": [
+            "أَفْهَمْ",
+            "أَفْهَمُ",
+            "أَفْهَمَ"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ : jussif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je te prie de répéter. »",
+          "ar": "أَرْجُو أَنْ …",
+          "choix_ar": [
+            "تُكَرِّرَ",
+            "تُكَرِّرُ",
+            "كَرِّرْ"
+          ],
+          "reponse": 0,
+          "explication": "Après أَنْ : subjonctif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Et ensuite ? »",
+          "ar": "ثُمَّ … ؟",
+          "choix_ar": [
+            "مَاذَا",
+            "مَتَى",
+            "أَيْنَ"
+          ],
+          "reponse": 0,
+          "explication": "Pour relancer : ثُمَّ مَاذَا ؟"
+        },
+        {
+          "type": "qcm",
+          "consigne": "إِذَنْ et إِذَا…",
+          "choix": [
+            "n'ont pas le même sens",
+            "veulent dire la même chose",
+            "se prononcent pareil"
+          ],
+          "reponse": 0,
+          "explication": "إِذَنْ : donc ; إِذَا : si, quand."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Pour finir poliment une conversation, on dit…",
+          "choix_ar": [
+            "شُكْرًا لَكَ عَلَى الْحِوَارِ",
+            "لَمْ أَفْهَمْ",
+            "ثُمَّ مَاذَا؟"
+          ],
+          "reponse": 0,
+          "explication": "On remercie, puis on se donne rendez-vous."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Que veut dire نَلْتَقِي غَدًا ?",
+          "choix": [
+            "Nous nous retrouvons demain.",
+            "Nous nous sommes retrouvés hier.",
+            "Retrouve-moi demain."
+          ],
+          "reponse": 0,
+          "explication": "نَلْتَقِي : nous nous retrouvons."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "رَأْيٌ",
+          "choix": [
+            "opinion, avis",
+            "preuve, argument",
+            "débat"
+          ],
+          "reponse": 0,
+          "explication": "رَأْيٌ veut dire « opinion, avis ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « C'est exact, tu as raison. »",
+          "ar": "هَٰذَا صَحِيحٌ، …",
+          "choix_ar": [
+            "أَصَبْتَ",
+            "أَصَبْتُ",
+            "أُوَافِقُ"
+          ],
+          "reponse": 0,
+          "explication": "« tu as raison » : أَصَبْتَ.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "غَسَلَ",
+          "choix": [
+            "laver",
+            "porter",
+            "se reposer"
+          ],
+          "reponse": 0,
+          "explication": "غَسَلَ veut dire « laver ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu relances (وَأَنْتَ ؟ ثُمَّ مَاذَا ؟), tu fais répéter (لَمْ أَفْهَمْ، أَرْجُو أَنْ تُكَرِّرَ), tu demandes un sens (مَا مَعْنَى) et tu conclus (إِذَنْ، شُكْرًا لَكَ عَلَى الْحِوَارِ).",
+      "suite": "Prochaine leçon : lire sans voyelles, chez Zuhayr le copiste."
+    }
+  ]
+}

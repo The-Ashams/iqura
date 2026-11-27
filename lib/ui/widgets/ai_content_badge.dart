@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class AiContentBadge extends StatelessWidget {
   const AiContentBadge({super.key});
 
-  static const String label = 'Rédigé par IA — non vérifié';
+  static const String label = 'Rédigé par IA';
 
   @override
   Widget build(BuildContext context) {

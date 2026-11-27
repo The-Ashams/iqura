@@ -48,6 +48,7 @@ class TableDef {
     required this.primaryKey,
     required this.columns,
     this.uniqueColumns = const [],
+    this.sinceSchema = 1,
   });
 
   final String name;
@@ -57,6 +58,10 @@ class TableDef {
 
   /// Colonnes avec contrainte d'unicité (en plus de la clé primaire).
   final List<String> uniqueColumns;
+
+  /// Version du schéma qui a créé la table : une sauvegarde plus ancienne
+  /// ne la contient pas, et reste importable.
+  final int sinceSchema;
 
   /// Colonne HLC d'une table [SyncKind.lastWriterWins].
   static const String hlcColumn = 'updated_hlc';

@@ -1,0 +1,515 @@
+{
+  "id": "sens-07",
+  "etape": 5,
+  "ordre": 7,
+  "format": 3,
+  "titre": "Le changement de personne",
+  "objectif": "Repérer, dans un passage, le passage soudain d'une personne grammaticale à une autre pour parler du même être.",
+  "statut": "ia_non_verifie",
+  "lieu": "pavillon_voix",
+  "maitre": "hazim",
+  "prerequis": [
+    "sens-06"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ",
+    "ضَمِيرُ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "texte": "Sous cette coupole, écoute les voix : un auteur parle de quelqu'un, puis soudain lui parle directement."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Ce changement de personne a un nom, الْتِفَاتٌ. Tous les exemples d'aujourd'hui sont inventés."
+        }
+      ],
+      "objectif": "Repérer un changement de personne."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Tu es fatigué. »",
+          "ar": "… تَعِبٌ.",
+          "choix_ar": [
+            "أَنْتَ",
+            "هُوَ",
+            "أَنَا"
+          ],
+          "reponse": 0,
+          "explication": "À qui l'on parle : أَنْتَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Ô étudiant ! »",
+          "ar": "يَا أَيُّهَا …",
+          "choix_ar": [
+            "الطَّالِبُ",
+            "الطَّالِبَ",
+            "الطَّالِبِ"
+          ],
+          "reponse": 0,
+          "explication": "Après يَا أَيُّهَا : nominatif, vu en région 4."
+        },
+        {
+          "type": "completer",
+          "consigne": "Restitue : « أَيْنَ بَاسِمٌ؟ — فِي السُّوقِ. »",
+          "ar": "… فِي السُّوقِ.",
+          "choix_ar": [
+            "هُوَ",
+            "أَنَا",
+            "أَنْتَ"
+          ],
+          "reponse": 0,
+          "explication": "Le sujet omis, vu juste avant."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "ar": "اسْمَعْ: « جَلَسَ الطَّالِبُ يَكْتُبُ حَتَّى الْمَسَاءِ. يَا أَيُّهَا الطَّالِبُ، أَنْتَ تَعِبٌ! »",
+          "fr": "Écoute : « L'étudiant est resté à écrire jusqu'au soir. Ô étudiant, tu es fatigué ! »"
+        },
+        {
+          "qui": "basim",
+          "ar": "ذَكَرَ الطَّالِبَ، ثُمَّ كَلَّمَهُ!",
+          "fr": "Il a mentionné l'étudiant, puis il lui a parlé !"
+        },
+        {
+          "qui": "hazim",
+          "ar": "أَصَبْتَ، هَٰذَا الْتِفَاتٌ.",
+          "fr": "Tu as raison : c'est un changement de personne."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans l'exemple de Ḥāzim, on passe…",
+        "choix": [
+          "de « il » à « tu »",
+          "de « je » à « nous »",
+          "de « tu » à « je »"
+        ],
+        "reponse": 0,
+        "explication": "جَلَسَ الطَّالِبُ (il), puis أَنْتَ تَعِبٌ (tu)."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "iltifat",
+        "damir",
+        "mutakallim",
+        "mukhatab",
+        "ghaib"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "ضَمِيرٌ",
+        "choix": [
+          "(grammaire) pronom",
+          "(grammaire) omission",
+          "(grammaire) négation"
+        ],
+        "reponse": 0,
+        "explication": "ضَمِيرٌ veut dire « (grammaire) pronom »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les trois personnes",
+      "texte": "Le pronom dit qui parle (الْمُتَكَلِّمُ, 1re personne), à qui l'on parle (الْمُخَاطَبُ, 2e) et de qui l'on parle (الْغَائِبُ, 3e). Quand un auteur passe soudain de l'une à l'autre pour la même personne, c'est un الْتِفَاتٌ.",
+      "exemples": [
+        "أَنَا",
+        "أَنْتَ",
+        "هُوَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "« هُوَ » est le pronom de…",
+        "choix": [
+          "la 3e personne (celui dont on parle)",
+          "la 1re personne",
+          "la 2e personne"
+        ],
+        "reponse": 0,
+        "explication": "هُوَ : ضَمِيرُ الْغَائِبِ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Ce qu'en disent les rhétoriciens",
+      "texte": "Selon les rhétoriciens, ce changement réveille l'attention de l'auditeur. Dans un texte réel, sa raison précise relève de l'interprétation : IQURA ne l'explique pas.",
+      "exemples": [
+        "يَا سَمِيرُ، أَنْتَ صَدِيقٌ صَادِقٌ، وَسَمِيرٌ لَا يَنْسَى أَصْدِقَاءَهُ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans l'exemple, on passe…",
+        "choix": [
+          "de « tu » à « il », pour Samīr",
+          "de « je » à « tu »",
+          "de Samīr à un autre homme"
+        ],
+        "reponse": 0,
+        "explication": "أَنْتَ (tu), puis سَمِيرٌ لَا يَنْسَى (il), pour le même Samīr."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Ce qui n'est pas un iltifāt",
+      "texte": "Pas de الْتِفَاتٌ quand une autre personne parle (avec قَالَ, ou كَتَبَ avant une lettre : son auteur parle), ni quand on parle d'une autre personne. La signature d'une lettre (صَدِيقُكَ بَاسِمٌ) est une formule, pas un الْتِفَاتٌ.",
+      "exemples": [
+        "قَالَ بَاسِمٌ: « أَنَا تَعِبٌ. »"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "قَالَ بَاسِمٌ: « أَنَا تَعِبٌ. » contient-il un الْتِفَاتٌ ?",
+        "choix": [
+          "non : c'est Bāsim qui parle",
+          "oui, de « il » à « je »",
+          "oui, de « tu » à « il »"
+        ],
+        "reponse": 0,
+        "explication": "Discours rapporté avec قَالَ : pas d'iltifāt."
+      }
+    },
+    {
+      "type": "lecture",
+      "titre": "La lettre de Bāsim",
+      "texte": "Exemple construit, rédigé par IA. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "كَتَبَ بَاسِمٌ إِلَى سَمِيرٍ: « أَنَا بِخَيْرٍ فِي الْمَدِينَةِ. »",
+        "« وَبَاسِمٌ لَا يَنْسَى الْقَرْيَةَ، وَلَا يَنْسَى أَصْدِقَاءَهُ. »",
+        "« يَا سَمِيرُ، أَنْتَ صَدِيقٌ صَادِقٌ. »",
+        "« صَدِيقُكَ بَاسِمٌ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Dans la phrase 2, de qui parle « بَاسِمٌ لَا يَنْسَى » ?",
+          "choix": [
+            "de Bāsim lui-même, qui écrit",
+            "de Samīr",
+            "d'un autre Bāsim"
+          ],
+          "reponse": 0,
+          "explication": "Bāsim parle de lui par son nom : de « je » à « il ». Dans la lettre, c'est un الْتِفَاتٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La signature « صَدِيقُكَ بَاسِمٌ » est…",
+          "choix": [
+            "une formule de lettre",
+            "un الْتِفَاتٌ",
+            "un serment"
+          ],
+          "reponse": 0,
+          "explication": "La signature est une formule."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "الْتِفَاتٌ",
+          "choix": [
+            "(rhétorique) changement de personne",
+            "(grammaire) pronom",
+            "(grammaire) omission"
+          ],
+          "reponse": 0,
+          "explication": "الْتِفَاتٌ veut dire « (rhétorique) changement de personne »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "غَائِبٌ",
+          "choix": [
+            "(grammaire) 3e personne, celui dont on parle",
+            "(grammaire) 2e personne, celui à qui l'on parle",
+            "(grammaire) 1re personne, celui qui parle"
+          ],
+          "reponse": 0,
+          "explication": "غَائِبٌ veut dire « (grammaire) 3e personne, celui dont on parle »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُخَاطَبٌ",
+          "choix": [
+            "(grammaire) 2e personne, celui à qui l'on parle",
+            "(grammaire) 3e personne, celui dont on parle",
+            "(grammaire) 1re personne, celui qui parle"
+          ],
+          "reponse": 0,
+          "explication": "مُخَاطَبٌ veut dire « (grammaire) 2e personne, celui à qui l'on parle »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « أَنَا » est le pronom de la 1re personne.",
+          "ar": "« أَنَا » ضَمِيرُ …",
+          "choix_ar": [
+            "الْمُتَكَلِّمِ",
+            "الْمُخَاطَبِ",
+            "الْغَائِبِ"
+          ],
+          "reponse": 0,
+          "explication": "Celui qui parle : الْمُتَكَلِّمُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « أَنْتَ » est le pronom de la 2e personne.",
+          "ar": "« أَنْتَ » ضَمِيرُ …",
+          "choix_ar": [
+            "الْمُخَاطَبِ",
+            "الْمُتَكَلِّمِ",
+            "الْغَائِبِ"
+          ],
+          "reponse": 0,
+          "explication": "Celui à qui l'on parle : الْمُخَاطَبُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Réécris le passage à la 3e personne : la 2e phrase devient « l'étudiant est fatigué ».",
+          "ar": "… تَعِبٌ.",
+          "choix_ar": [
+            "الطَّالِبُ",
+            "أَنْتَ",
+            "أَنَا"
+          ],
+          "reponse": 0,
+          "explication": "À la 3e personne : الطَّالِبُ تَعِبٌ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quand une autre personne parle avec قَالَ, c'est…",
+          "choix": [
+            "un discours rapporté, pas un الْتِفَاتٌ",
+            "toujours un الْتِفَاتٌ",
+            "une omission"
+          ],
+          "reponse": 0,
+          "explication": "Le الْتِفَاتٌ concerne la même personne."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Selon les rhétoriciens, le الْتِفَاتٌ…",
+          "choix": [
+            "réveille l'attention de l'auditeur",
+            "corrige une faute",
+            "remplace un serment"
+          ],
+          "reponse": 0,
+          "explication": "C'est ce qu'ils disent en général."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « « هُوَ » est le pronom de la 3e personne. » ?",
+          "choix_ar": [
+            "« هُوَ » ضَمِيرُ الْغَائِبِ.",
+            "« هُوَ » ضَمِيرُ الْمُخَاطَبِ.",
+            "« هُوَ » ضَمِيرُ الْمُتَكَلِّمِ."
+          ],
+          "reponse": 0,
+          "explication": "Celui dont on parle : الْغَائِبُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Réécris à une seule personne : « Samīr, tu es un ami sincère, et Samīr n'oublie pas ses amis » devient « Samīr, tu es un ami sincère, et tu n'oublies pas tes amis ».",
+          "ar": "يَا سَمِيرُ، أَنْتَ صَدِيقٌ صَادِقٌ، وَأَنْتَ لَا … أَصْدِقَاءَكَ.",
+          "choix_ar": [
+            "تَنْسَى",
+            "يَنْسَى",
+            "أَنْسَى"
+          ],
+          "reponse": 0,
+          "explication": "Toujours à la 2e personne : تَنْسَى."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris trois phrases sur l'étudiant : deux à la 3e personne (« il »), puis une où tu lui parles directement (« tu »).",
+          "modele": [
+            "جَلَسَ الطَّالِبُ فِي الْحَدِيقَةِ.",
+            "كَتَبَ الطَّالِبُ رِسَالَةً طَوِيلَةً.",
+            "يَا أَيُّهَا الطَّالِبُ، أَنْتَ تَعِبٌ!"
+          ],
+          "explication": "Compare : as-tu bien changé de personne pour le même étudiant ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "ضَمِيرٌ",
+          "choix": [
+            "(grammaire) pronom",
+            "(grammaire) omission",
+            "(grammaire) négation"
+          ],
+          "reponse": 0,
+          "explication": "ضَمِيرٌ veut dire « (grammaire) pronom »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُتَكَلِّمٌ",
+          "choix": [
+            "(grammaire) 1re personne, celui qui parle",
+            "(grammaire) 2e personne, celui à qui l'on parle",
+            "(grammaire) 3e personne, celui dont on parle"
+          ],
+          "reponse": 0,
+          "explication": "مُتَكَلِّمٌ veut dire « (grammaire) 1re personne, celui qui parle »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « هُوَ » est le pronom de la 3e personne.",
+          "ar": "« هُوَ » ضَمِيرُ …",
+          "choix_ar": [
+            "الْغَائِبِ",
+            "الْمُخَاطَبِ",
+            "الْمُتَكَلِّمِ"
+          ],
+          "reponse": 0,
+          "explication": "Celui dont on parle."
+        },
+        {
+          "type": "completer",
+          "consigne": "Réécris le passage à la 3e personne : la 2e phrase devient « l'étudiant est fatigué ».",
+          "ar": "… تَعِبٌ.",
+          "choix_ar": [
+            "الطَّالِبُ",
+            "أَنْتَ",
+            "أَنَا"
+          ],
+          "reponse": 0,
+          "explication": "À la 3e personne."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Samīr, tu es un ami sincère, et tu n'oublies pas tes amis. »",
+          "ar": "يَا سَمِيرُ، أَنْتَ صَدِيقٌ صَادِقٌ، وَأَنْتَ لَا … أَصْدِقَاءَكَ.",
+          "choix_ar": [
+            "تَنْسَى",
+            "يَنْسَى",
+            "أَنْسَى"
+          ],
+          "reponse": 0,
+          "explication": "2e personne : تَنْسَى."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Dans ce texte, il y a un changement de personne. » ?",
+          "choix_ar": [
+            "فِي هَٰذَا النَّصِّ الْتِفَاتٌ.",
+            "فِي هَٰذَا النَّصِّ الْتِفَاتًا.",
+            "فِي هَٰذَا النَّصُّ الْتِفَاتٌ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet indéfini placé après : nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Un الْتِفَاتٌ parle…",
+          "choix": [
+            "de la même personne, à une autre personne grammaticale",
+            "d'une autre personne",
+            "de deux personnes à la fois"
+          ],
+          "reponse": 0,
+          "explication": "Même personne, autre pronom."
+        },
+        {
+          "type": "qcm",
+          "consigne": "قَالَ سَمِيرٌ: « أَنَا بِخَيْرٍ. » est…",
+          "choix": [
+            "un discours rapporté",
+            "un الْتِفَاتٌ",
+            "une omission"
+          ],
+          "reponse": 0,
+          "explication": "Avec قَالَ, une autre personne parle."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans un texte réel, la raison précise d'un الْتِفَاتٌ…",
+          "choix": [
+            "relève de l'interprétation",
+            "est toujours la même",
+            "n'existe pas"
+          ],
+          "reponse": 0,
+          "explication": "IQURA ne l'explique pas."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَذْفٌ",
+          "choix": [
+            "(grammaire) omission",
+            "(grammaire) mise en tête",
+            "(grammaire) négation"
+          ],
+          "reponse": 0,
+          "explication": "حَذْفٌ veut dire « (grammaire) omission ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Restitue : « كَيْفَ حَالُكَ؟ — بِخَيْرٍ. »",
+          "ar": "… بِخَيْرٍ.",
+          "choix_ar": [
+            "أَنَا",
+            "هُوَ",
+            "هِيَ"
+          ],
+          "reponse": 0,
+          "explication": "Celui qui répond : أَنَا.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "تَقْدِيمٌ",
+          "choix": [
+            "(grammaire) mise en tête",
+            "(grammaire) mise après",
+            "(grammaire) négation"
+          ],
+          "reponse": 0,
+          "explication": "تَقْدِيمٌ veut dire « (grammaire) mise en tête ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu connais les trois personnes (الْمُتَكَلِّمُ, الْمُخَاطَبُ, الْغَائِبُ) et tu repères un الْتِفَاتٌ, un changement de personne pour parler du même être.",
+      "suite": "Le chapitre A des Jardins est terminé : la suite, la narration classique, viendra au niveau Classique avancé 2."
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "id": "moteur-12",
+  "etape": 3,
+  "ordre": 12,
+  "format": 3,
+  "titre": "La forme II",
+  "objectif": "Comprendre la forme II فَعَّلَ : l'action renforcée ou que l'on fait faire.",
+  "statut": "ia_non_verifie",
+  "lieu": "moulin",
+  "maitre": "rabab",
+  "prerequis": [
+    "moteur-11"
+  ],
+  "apercu": [
+    "رَبَابُ",
+    "الْمَزِيدُ",
+    "قَطَعَ"
+  ],
+  "schemes": [
+    "فَعَّلَ",
+    "يُفَعِّلُ",
+    "تَفْعِيل",
+    "فَعَلَ",
+    "فَعِلَ",
+    "فَعُلَ",
+    "يَفْعَلُ",
+    "يَفْعُلُ",
+    "مُفَعِّل",
+    "فَعَّال",
+    "فَاعِل"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "texte": "Regarde la roue : elle double la lettre du milieu. Une shadda, et le verbe change de sens."
+        },
+        {
+          "qui": "rabab",
+          "texte": "عَلِمَ, c'est « savoir ». عَلَّمَ, c'est « faire savoir » : enseigner."
+        }
+      ],
+      "objectif": "Reconnaître la forme II et son inaccompli."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ث ق ل dans le moule فَعُلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "ثَقُلَ",
+            "ثَقِيلٌ",
+            "يَثْقُلُ"
+          ],
+          "reponse": 0,
+          "explication": "ث ق ل dans فَعُلَ : ثَقُلَ (leçon 3.11)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَلِمَ",
+          "choix": [
+            "il a su",
+            "il a travaillé",
+            "il a regardé"
+          ],
+          "reponse": 0,
+          "explication": "عَلِمَ : « savoir » (leçon 3.11)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de نَظَرَ ?",
+          "choix_ar": [
+            "يَنْظُرُ",
+            "يُنْظِرُ",
+            "نَظَرٌ"
+          ],
+          "reponse": 0,
+          "explication": "نَظَرَ يَنْظُرُ (leçon 3.11)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "rabab",
+          "ar": "عَلِمَ الطُّلَّابُ الْجَوَابَ.",
+          "fr": "Les étudiants ont su la réponse."
+        },
+        {
+          "qui": "basim",
+          "ar": "مَنْ عَلَّمَ الطُّلَّابَ؟",
+          "fr": "Qui a enseigné aux étudiants ?"
+        },
+        {
+          "qui": "rabab",
+          "ar": "الْمُعَلِّمُ عَلَّمَ الطُّلَّابَ، وَفَهَّمَ الطُّلَّابَ الدَّرْسَ.",
+          "fr": "C'est le maître qui a enseigné aux étudiants, et il leur a fait comprendre la leçon."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qui a fait comprendre la leçon ?",
+        "choix": [
+          "le maître",
+          "les étudiants",
+          "Bāsim"
+        ],
+        "reponse": 0,
+        "explication": "الْمُعَلِّمُ … فَهَّمَ الطُّلَّابَ الدَّرْسَ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "allama",
+        "fahhama",
+        "qattaa",
+        "farraqa",
+        "qaddama",
+        "haddatha",
+        "kallama"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "قَطَّعَ",
+        "choix": [
+          "il a coupé en morceaux",
+          "il a enseigné",
+          "il a offert"
+        ],
+        "reponse": 0,
+        "explication": "قَطَّعَ veut dire « il a coupé en morceaux »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La shadda du milieu",
+      "texte": "Forme II, moule فَعَّلَ : la shadda du milieu rend souvent l'action plus forte, ou la fait faire. قَطَعَ « couper » → قَطَّعَ « couper en morceaux » ; عَلِمَ « savoir » → عَلَّمَ « enseigner ».",
+      "exemples": [
+        "عَلَّمَ",
+        "فَهَّمَ",
+        "قَطَّعَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que veut dire فَهَّمَ ?",
+        "choix": [
+          "faire comprendre",
+          "comprendre",
+          "la compréhension"
+        ],
+        "reponse": 0,
+        "explication": "La forme II de فَهِمَ : faire comprendre."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'inaccompli en u",
+      "texte": "À l'inaccompli, u puis i : يُعَلِّمُ « il enseigne », à distinguer de يَعْلَمُ « il sait ». Le nom d'action suit تَفْعِيل (تَعْلِيمٌ), et مُعَلِّمٌ, que tu connais, remplace يُ par مُ.",
+      "exemples": [
+        "يُعَلِّمُ",
+        "تَعْلِيمٌ",
+        "مُعَلِّمٌ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Quel est l'inaccompli de قَدَّمَ ?",
+        "choix_ar": [
+          "يُقَدِّمُ",
+          "يَقْدَمُ",
+          "يَقْدِمُ"
+        ],
+        "reponse": 0,
+        "explication": "Forme II : يُفَعِّلُ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Une tendance",
+      "texte": "Le sens de la forme est une tendance, pas une loi : كَلَّمَ « adresser la parole » et حَدَّثَ « parler à » ne renforcent aucun verbe que tu connais. On vérifie toujours le sens dans le dictionnaire.",
+      "exemples": [
+        "كَلَّمَ",
+        "حَدَّثَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Le sens d'une forme…",
+        "choix": [
+          "est une tendance, à vérifier",
+          "se déduit toujours",
+          "ne change jamais"
+        ],
+        "reponse": 0,
+        "explication": "Une tendance : on vérifie dans le dictionnaire."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَلَّمَ",
+          "choix": [
+            "il a enseigné",
+            "il a su",
+            "il a écrit"
+          ],
+          "reponse": 0,
+          "explication": "عَلَّمَ veut dire « il a enseigné »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَدَّمَ",
+          "choix": [
+            "il a offert, présenté",
+            "il a coupé",
+            "il a séparé"
+          ],
+          "reponse": 0,
+          "explication": "قَدَّمَ veut dire « il a offert, présenté »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il enseigne » ?",
+          "choix_ar": [
+            "يُعَلِّمُ",
+            "يَعْلَمُ",
+            "عَلَّمَ"
+          ],
+          "reponse": 0,
+          "explication": "« il enseigne » se dit يُعَلِّمُ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il parle à (quelqu'un) » ?",
+          "choix_ar": [
+            "يُكَلِّمُ",
+            "كَلِمَةٌ",
+            "كَلَّمَ"
+          ],
+          "reponse": 0,
+          "explication": "« il parle à (quelqu'un) » se dit يُكَلِّمُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de فَرَّقَ ?",
+          "choix_ar": [
+            "فَعَّلَ",
+            "فَاعِل",
+            "فَعَّال"
+          ],
+          "reponse": 0,
+          "explication": "فَ رَّ قَ : shadda sur la 2e lettre, فَعَّلَ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de حَدَّثَ ?",
+          "choix_ar": [
+            "يُحَدِّثُ",
+            "حَدَّثَ",
+            "تَحْدِيثٌ"
+          ],
+          "reponse": 0,
+          "explication": "Forme II : يُفَعِّلُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق ط ع dans le moule فَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "قَطَّعَ",
+            "يُقَطِّعُ",
+            "قِطْعَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "ق ط ع dans فَعَّلَ : قَطَّعَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ف ه م dans le moule فَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "فَهَّمَ",
+            "فَهِمَ",
+            "فَهْمٌ"
+          ],
+          "reponse": 0,
+          "explication": "ف ه م dans فَعَّلَ : فَهَّمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le cuisinier a coupé la viande en morceaux. »",
+          "ar": "… الطَّبَّاخُ اللَّحْمَ.",
+          "choix_ar": [
+            "قَطَّعَ",
+            "يُقَطِّعُ",
+            "قِطْعَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Passé, verbe en tête : قَطَّعَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le vieil homme parle aux voyageurs. »",
+          "ar": "… الشَّيْخُ الْمُسَافِرِينَ.",
+          "choix_ar": [
+            "يُكَلِّمُ",
+            "كَلَّمَ",
+            "كَلِمَةٌ"
+          ],
+          "reponse": 0,
+          "explication": "Inaccompli de la forme II : يُكَلِّمُ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Le repas du moulin",
+      "texte": "Rabāb raconte le repas offert aux voyageurs. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "قَطَّعَ الطَّبَّاخُ اللَّحْمَ فِي الْمَطْبَخِ.",
+        "قَدَّمَ الْخَبَّازُ الْخُبْزَ لِلضُّيُوفِ.",
+        "حَدَّثَ الشَّيْخُ الضُّيُوفَ، وَكَلَّمَ الْمُسَافِرِينَ.",
+        "فِي الْمَسَاءِ، فَرَّقَ الْحَمَّالُ الْأَحْمَالَ."
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qui a offert le pain ?",
+          "choix": [
+            "le boulanger",
+            "le cuisinier",
+            "le porteur"
+          ],
+          "reponse": 0,
+          "explication": "قَدَّمَ الْخَبَّازُ الْخُبْزَ لِلضُّيُوفِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Qu'a fait le porteur le soir ?",
+          "choix": [
+            "il a réparti les charges",
+            "il a coupé la viande",
+            "il a parlé aux invités"
+          ],
+          "reponse": 0,
+          "explication": "فَرَّقَ الْحَمَّالُ الْأَحْمَالَ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le maître a enseigné aux étudiants. » ?",
+          "choix_ar": [
+            "عَلَّمَ الْمُعَلِّمُ الطُّلَّابَ.",
+            "عَلِمَ الْمُعَلِّمُ الطُّلَّابُ.",
+            "الطُّلَّابُ عَلَّمَ الْمُعَلِّمَ."
+          ],
+          "reponse": 0,
+          "explication": "« Le maître a enseigné aux étudiants. » se dit عَلَّمَ الْمُعَلِّمُ الطُّلَّابَ."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément : « Le boulanger a offert le pain aux invités. »",
+          "tuiles": [
+            "لِلضُّيُوفِ",
+            "الْخَبَّازُ",
+            "قَدَّمَ",
+            "الْخُبْزَ",
+            "يُقَدِّمُ"
+          ],
+          "solution": [
+            "قَدَّمَ",
+            "الْخَبَّازُ",
+            "الْخُبْزَ",
+            "لِلضُّيُوفِ"
+          ],
+          "explication": "Verbe, sujet, complément, puis لِـ et les invités."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Rabāb a enseigné l'écriture aux étudiants. »",
+          "ar": "… رَبَابُ الطُّلَّابَ الْكِتَابَةَ.",
+          "choix_ar": [
+            "عَلَّمَتْ",
+            "عَلَّمَ",
+            "عَلِمَتْ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet féminin : عَلَّمَتْ. عَلَّمَ peut avoir deux compléments : الطُّلَّابَ et الْكِتَابَةَ."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَرَّقَ",
+          "choix": [
+            "il a séparé",
+            "il a offert",
+            "il a compris"
+          ],
+          "reponse": 0,
+          "explication": "فَرَّقَ veut dire « il a séparé »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "كَلَّمَ",
+          "choix": [
+            "il a adressé la parole à",
+            "il a écrit",
+            "un mot"
+          ],
+          "reponse": 0,
+          "explication": "كَلَّمَ veut dire « il a adressé la parole à »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَدَّثَ",
+          "choix": [
+            "il a parlé à, raconté à",
+            "il a enseigné",
+            "il a regardé"
+          ],
+          "reponse": 0,
+          "explication": "حَدَّثَ veut dire « il a parlé à, raconté à »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « il fait comprendre » ?",
+          "choix_ar": [
+            "يُفَهِّمُ",
+            "يَفْهَمُ",
+            "فَهْمٌ"
+          ],
+          "reponse": 0,
+          "explication": "« il fait comprendre » se dit يُفَهِّمُ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans la forme II, où est la shadda ?",
+          "choix": [
+            "sur la 2e lettre de la racine",
+            "sur la 1re lettre",
+            "sur la dernière lettre"
+          ],
+          "reponse": 0,
+          "explication": "فَعَّلَ : sur le ع."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est l'inaccompli de فَرَّقَ ?",
+          "choix_ar": [
+            "يُفَرِّقُ",
+            "يَفْرُقُ",
+            "فَرَّقَ"
+          ],
+          "reponse": 0,
+          "explication": "Forme II : يُفَعِّلُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ق د م dans le moule فَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "قَدَّمَ",
+            "قَدِيمٌ",
+            "يُقَدِّمُ"
+          ],
+          "reponse": 0,
+          "explication": "ق د م dans فَعَّلَ : قَدَّمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ع ل م dans le moule فَعَّلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "عَلَّمَ",
+            "عَلِمَ",
+            "مُعَلِّمٌ"
+          ],
+          "reponse": 0,
+          "explication": "ع ل م dans فَعَّلَ : عَلَّمَ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le maître enseigne aux étudiants. »",
+          "ar": "الْمُعَلِّمُ … الطُّلَّابَ.",
+          "choix_ar": [
+            "يُعَلِّمُ",
+            "يَعْلَمُ",
+            "عَلِمَ"
+          ],
+          "reponse": 0,
+          "explication": "Forme II : يُعَلِّمُ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Forge : racine ك ث ر dans le moule فَعُلَ. Quel mot obtiens-tu ?",
+          "ar": "…",
+          "choix_ar": [
+            "كَثُرَ",
+            "كَثِيرٌ",
+            "أَكْثَرُ"
+          ],
+          "reponse": 0,
+          "explication": "فَعُلَ : كَثُرَ (leçon 3.11).",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَمِلَ",
+          "choix": [
+            "il a travaillé",
+            "il a su",
+            "il a regardé"
+          ],
+          "reponse": 0,
+          "explication": "عَمِلَ veut dire « il a travaillé ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel est le moule de طَبَّاخٌ ?",
+          "choix_ar": [
+            "فَعَّال",
+            "فَاعِل",
+            "فَعَّلَ"
+          ],
+          "reponse": 0,
+          "explication": "فَعَّال : le métier (leçon 3.6).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais la forme II فَعَّلَ / يُفَعِّلُ : عَلَّمَ « enseigner », فَهَّمَ « faire comprendre », قَطَّعَ « couper en morceaux ».",
+      "suite": "Au moulin, la roue tourne encore : la forme III, avec un ā."
+    }
+  ]
+}

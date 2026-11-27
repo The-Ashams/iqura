@@ -1,0 +1,509 @@
+{
+  "id": "sens-01",
+  "etape": 5,
+  "ordre": 1,
+  "format": 3,
+  "titre": "Les serments",
+  "objectif": "Reconnaître un serment et construire sa réponse.",
+  "statut": "ia_non_verifie",
+  "lieu": "porte_jardins",
+  "maitre": "hazim",
+  "prerequis": [
+    "cite-28"
+  ],
+  "apercu": [
+    "حَازِمٌ",
+    "بَاسِمٌ",
+    "سَمِيرٌ",
+    "جَوَابُ الْقَسَمِ"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "texte": "Bienvenue dans les Jardins du Sens. Je suis Ḥāzim : ici, on lit les grands livres sans se presser."
+        },
+        {
+          "qui": "hazim",
+          "texte": "Les textes anciens contiennent des serments. Apprenons à les reconnaître, et surtout à comprendre leur réponse."
+        }
+      ],
+      "objectif": "Reconnaître un serment et sa réponse."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « J'écrirai certainement la lettre. »",
+          "ar": "… الرِّسَالَةَ.",
+          "choix_ar": [
+            "لَأَكْتُبَنَّ",
+            "لَأَكْتُبُ",
+            "فَكَتَبْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Promesse ferme : لَـ + inaccompli + ـَنَّ (leçon 4.12)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « La caravane est bien arrivée. »",
+          "ar": "… وَصَلَتِ الْقَافِلَةُ.",
+          "choix_ar": [
+            "لَقَدْ",
+            "لَنْ",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Insistance sur un passé : لَقَدْ (leçon 4.12)."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le chemin est vraiment long. »",
+          "ar": "إِنَّ الطَّرِيقَ …",
+          "choix_ar": [
+            "لَطَوِيلٌ",
+            "لَطَوِيلًا",
+            "طَوِيلًا"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّ … لَـ : l'attribut reste au nominatif."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "hazim",
+          "ar": "هَلْ تَكْتُبُ الرِّسَالَةَ غَدًا؟",
+          "fr": "Écriras-tu la lettre demain ?"
+        },
+        {
+          "qui": "basim",
+          "ar": "أُقْسِمُ لَأَكْتُبَنَّ الرِّسَالَةَ غَدًا.",
+          "fr": "Je jure que j'écrirai la lettre demain."
+        },
+        {
+          "qui": "hazim",
+          "ar": "قَسَمُكَ صَادِقٌ، أَنَا أَعْرِفُكَ.",
+          "fr": "Ton serment est sincère, je te connais."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Qu'a juré Bāsim ?",
+        "choix": [
+          "d'écrire la lettre demain",
+          "de partir demain",
+          "de lire un livre"
+        ],
+        "reponse": 0,
+        "explication": "أُقْسِمُ لَأَكْتُبَنَّ الرِّسَالَةَ غَدًا."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "qasam",
+        "aqsama",
+        "halafa",
+        "sadiq_sincere"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "قَسَمٌ",
+        "choix": [
+          "serment ; جَوَابُ الْقَسَمِ : la réponse du serment",
+          "promesse",
+          "lettre"
+        ],
+        "reponse": 0,
+        "explication": "قَسَمٌ veut dire « serment ; جَوَابُ الْقَسَمِ : la réponse du serment »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les trois parties d'un serment",
+      "texte": "Trois parties : l'outil (وَ, بِـ, تَ, avec le génitif) ou un verbe (أُقْسِمُ, حَلَفْتُ) ; ce par quoi l'on jure ; la réponse, جَوَابُ الْقَسَمِ. Ici, la deuxième partie n'est pas écrite (sauf « par Dieu », plus loin).",
+      "exemples": [
+        "أُقْسِمُ لَأَكْتُبَنَّ الرِّسَالَةَ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans أُقْسِمُ لَأَكْتُبَنَّ الرِّسَالَةَ, la réponse du serment est…",
+        "choix": [
+          "لَأَكْتُبَنَّ الرِّسَالَةَ",
+          "أُقْسِمُ",
+          "الرِّسَالَةَ seulement"
+        ],
+        "reponse": 0,
+        "explication": "La réponse dit ce que l'on jure de faire."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "La réponse du serment",
+      "texte": "Futur : لَـ + inaccompli + ـَنَّ ; passé : لَقَدْ ; phrase nominale : إِنَّ, avec لَـ devant l'attribut. Au négatif : لَا + inaccompli (futur), مَا + passé (passé) ; la réponse ne prend jamais فَـ.",
+      "exemples": [
+        "أُقْسِمُ لَقَدْ وَصَلَتِ الْقَافِلَةُ",
+        "حَلَفْتُ لَا أَتَأَخَّرُ غَدًا"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « J'ai juré de ne pas être en retard demain. »",
+        "ar": "حَلَفْتُ … أَتَأَخَّرُ غَدًا.",
+        "choix_ar": [
+          "لَا",
+          "لَمْ",
+          "فَلَا"
+        ],
+        "reponse": 0,
+        "explication": "Futur négatif : لَا + inaccompli, sans فَـ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le serment par Dieu",
+      "texte": "Les deux mots ci-dessous veulent dire « par Dieu » ; fait de grammaire, le تَ de serment ne s'emploie, sauf rares exceptions, qu'avec le nom de Dieu. Pour savoir quand et comment jurer, IQURA renvoie aux savants.",
+      "formule": true,
+      "exemples": [
+        "وَاللَّهِ",
+        "تَاللَّهِ"
+      ]
+    },
+    {
+      "type": "regle",
+      "titre": "Une tournure solennelle",
+      "texte": "لَا أُقْسِمُ est une tournure solennelle de l'arabe classique, à reconnaître seulement. Les grammairiens ont proposé plusieurs analyses de ce لَا ; IQURA ne choisit pas et renvoie aux ouvrages et aux savants.",
+      "formule": true,
+      "exemples": [
+        "لَا أُقْسِمُ"
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "La promesse de Bāsim",
+      "texte": "Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "تَأَخَّرَ بَاسِمٌ أَمْسِ عَنِ الدَّرْسِ.",
+        "قَالَ لَهُ حَازِمٌ: « لَا تَتَأَخَّرْ غَدًا. »",
+        "قَالَ بَاسِمٌ: « أُقْسِمُ لَا أَتَأَخَّرُ غَدًا. »",
+        "وَفِي الصَّبَاحِ وَصَلَ بَاسِمٌ قَبْلَ حَازِمٍ، فَقَالَ حَازِمٌ: « قَسَمُكَ صَادِقٌ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Qu'a juré Bāsim ?",
+          "choix": [
+            "de ne pas être en retard demain",
+            "de ne plus venir",
+            "d'écrire une lettre"
+          ],
+          "reponse": 0,
+          "explication": "أُقْسِمُ لَا أَتَأَخَّرُ غَدًا."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Bāsim a-t-il tenu son serment ?",
+          "choix": [
+            "oui, il est arrivé avant Ḥāzim",
+            "non, il est encore en retard",
+            "on ne le sait pas"
+          ],
+          "reponse": 0,
+          "explication": "وَصَلَ بَاسِمٌ قَبْلَ حَازِمٍ."
+        }
+      ]
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "أَقْسَمَ",
+          "choix": [
+            "jurer",
+            "partager",
+            "promettre"
+          ],
+          "reponse": 0,
+          "explication": "أَقْسَمَ veut dire « jurer »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "صَادِقٌ",
+          "choix": [
+            "sincère, qui dit vrai",
+            "ami",
+            "patient"
+          ],
+          "reponse": 0,
+          "explication": "صَادِقٌ veut dire « sincère, qui dit vrai »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je jure que la caravane est bien arrivée. »",
+          "ar": "أُقْسِمُ … وَصَلَتِ الْقَافِلَةُ.",
+          "choix_ar": [
+            "لَقَدْ",
+            "لَنْ",
+            "فَقَدْ"
+          ],
+          "reponse": 0,
+          "explication": "Passé affirmatif : لَقَدْ, sans فَـ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Je jure que le chemin est vraiment long. »",
+          "ar": "أُقْسِمُ إِنَّ الطَّرِيقَ …",
+          "choix_ar": [
+            "لَطَوِيلٌ",
+            "طَوِيلًا",
+            "لَطَوِيلًا"
+          ],
+          "reponse": 0,
+          "explication": "إِنَّ … لَـ : attribut au nominatif."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a juré qu'il apprendrait la leçon. »",
+          "ar": "حَلَفَ بَاسِمٌ … الدَّرْسَ.",
+          "choix_ar": [
+            "لَيَحْفَظَنَّ",
+            "فَحَفِظَ",
+            "فَيَحْفَظُ"
+          ],
+          "reponse": 0,
+          "explication": "Futur affirmatif : لَـ + inaccompli + ـَنَّ."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Je jure que j'écrirai la lettre demain. » ?",
+          "choix_ar": [
+            "أُقْسِمُ لَأَكْتُبَنَّ الرِّسَالَةَ غَدًا.",
+            "أُقْسِمُ فَأَكْتُبُ الرِّسَالَةَ غَدًا.",
+            "أُقْسِمُ كَتَبْتُ الرِّسَالَةَ غَدًا."
+          ],
+          "reponse": 0,
+          "explication": "Futur affirmatif : لَأَكْتُبَنَّ ; jamais فَـ dans la réponse."
+        },
+        {
+          "type": "qcm",
+          "consigne": "La réponse d'un serment prend-elle فَـ ?",
+          "choix": [
+            "non, jamais",
+            "oui, toujours",
+            "seulement au passé"
+          ],
+          "reponse": 0,
+          "explication": "La réponse du serment ne prend pas فَـ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "ordonner",
+          "consigne": "Remets dans l'ordre, en commençant par le verbe de serment : « J'ai juré de ne pas être en retard demain. »",
+          "tuiles": [
+            "غَدًا",
+            "أَتَأَخَّرُ",
+            "لَا",
+            "حَلَفْتُ",
+            "لَمْ"
+          ],
+          "solution": [
+            "حَلَفْتُ",
+            "لَا",
+            "أَتَأَخَّرُ",
+            "غَدًا"
+          ],
+          "explication": "Le verbe de serment, puis la réponse : لَا + inaccompli."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Samīr a juré qu'il n'avait pas compris la leçon. »",
+          "ar": "أَقْسَمَ سَمِيرٌ … فَهِمَ الدَّرْسَ.",
+          "choix_ar": [
+            "مَا",
+            "لَا",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "Passé négatif : مَا + passé."
+        },
+        {
+          "type": "ecrire",
+          "consigne": "Écris deux serments de Bāsim : une promesse pour demain, et un fait passé.",
+          "modele": [
+            "أُقْسِمُ لَأَكْتُبَنَّ الرِّسَالَةَ غَدًا.",
+            "أُقْسِمُ لَقَدْ وَصَلَتِ الْقَافِلَةُ.",
+            "حَلَفْتُ لَا أَتَأَخَّرُ غَدًا."
+          ],
+          "explication": "Compare : as-tu le verbe de serment, puis une réponse (لَـ…ـَنَّ, لَقَدْ, لَا) sans فَـ ?"
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "حَلَفَ",
+          "choix": [
+            "jurer",
+            "promettre",
+            "partager"
+          ],
+          "reponse": 0,
+          "explication": "حَلَفَ veut dire « jurer »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَسَمٌ",
+          "choix": [
+            "serment ; جَوَابُ الْقَسَمِ : la réponse du serment",
+            "partage",
+            "promesse"
+          ],
+          "reponse": 0,
+          "explication": "قَسَمٌ veut dire « serment ; جَوَابُ الْقَسَمِ : la réponse du serment »."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète la réponse du serment : « que j'écrirai la lettre »",
+          "ar": "… الرِّسَالَةَ.",
+          "choix_ar": [
+            "لَأَكْتُبَنَّ",
+            "فَأَكْتُبُ",
+            "كَتَبْتُ"
+          ],
+          "reponse": 0,
+          "explication": "Futur affirmatif : لَـ, l'inaccompli et ـَنَّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète la réponse du serment : « que la caravane est bien arrivée »",
+          "ar": "… وَصَلَتِ الْقَافِلَةُ.",
+          "choix_ar": [
+            "لَقَدْ",
+            "فَقَدْ",
+            "لَنْ"
+          ],
+          "reponse": 0,
+          "explication": "Passé affirmatif : لَقَدْ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète la réponse du serment : « de ne pas être en retard »",
+          "ar": "… أَتَأَخَّرُ.",
+          "choix_ar": [
+            "لَا",
+            "فَلَا",
+            "لَمْ"
+          ],
+          "reponse": 0,
+          "explication": "Futur négatif : لَا."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le serment de Bāsim est sincère. » ?",
+          "choix_ar": [
+            "قَسَمُ بَاسِمٍ صَادِقٌ.",
+            "قَسَمُ بَاسِمٌ صَادِقٌ.",
+            "قَسَمَ بَاسِمٍ صَادِقًا."
+          ],
+          "reponse": 0,
+          "explication": "Annexion : بَاسِمٍ au génitif ; attribut au nominatif."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Combien de parties a un serment ?",
+          "choix": [
+            "trois",
+            "deux",
+            "quatre"
+          ],
+          "reponse": 0,
+          "explication": "L'outil ou le verbe, ce par quoi l'on jure, la réponse."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Au passé négatif, la réponse du serment prend…",
+          "choix_ar": [
+            "مَا",
+            "لَنْ",
+            "فَمَا"
+          ],
+          "reponse": 0,
+          "explication": "Passé négatif : مَا + passé."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quel mot peut ouvrir un serment, suivi directement de sa réponse ?",
+          "choix_ar": [
+            "أُقْسِمُ",
+            "لَقَدْ",
+            "إِنَّ"
+          ],
+          "reponse": 0,
+          "explication": "Le verbe de serment, suivi de la réponse."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "لَخَّصَ",
+          "choix": [
+            "résumer",
+            "recopier",
+            "expliquer"
+          ],
+          "reponse": 0,
+          "explication": "لَخَّصَ veut dire « résumer ».",
+          "revision": true
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « dans les airs »",
+          "ar": "فِي …",
+          "choix_ar": [
+            "الْهَوَاءِ",
+            "الْهَوَاءُ",
+            "الْهَوَاءَ"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : génitif.",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُعْجَمٌ",
+          "choix": [
+            "dictionnaire",
+            "texte",
+            "lettre"
+          ],
+          "reponse": 0,
+          "explication": "مُعْجَمٌ veut dire « dictionnaire ».",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu reconnais un serment (أُقْسِمُ, حَلَفْتُ) et tu construis sa réponse : لَـ…ـَنَّ, لَقَدْ, إِنَّ…لَـ, لَا, مَا.",
+      "suite": "Prochaine leçon : les petits mots fréquents (إِنَّمَا, كَلَّا, بَلَى, أَلَا)."
+    }
+  ]
+}

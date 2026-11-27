@@ -1,0 +1,585 @@
+{
+  "id": "moteur-27",
+  "etape": 3,
+  "ordre": 27,
+  "format": 3,
+  "titre": "Les trois cas",
+  "objectif": "Expliquer la fin d'un mot par sa fonction dans la phrase.",
+  "statut": "ia_non_verifie",
+  "lieu": "tribunal",
+  "maitre": "widad",
+  "prerequis": [
+    "moteur-26"
+  ],
+  "apercu": [
+    "وِدَادُ",
+    "مَرْفُوعٌ",
+    "مَنْصُوبٌ",
+    "مَجْرُورٌ",
+    "مَبْنِيٌّ"
+  ],
+  "schemes": [
+    "فَاعِل",
+    "مَفْعُول"
+  ],
+  "ecrans": [
+    {
+      "type": "entree",
+      "repliques": [
+        {
+          "qui": "widad",
+          "texte": "Bienvenue au Tribunal des scribes. Je suis Widād : ici, chaque fin de mot doit se justifier."
+        },
+        {
+          "qui": "widad",
+          "texte": "Pourquoi الْبَابُ ici, et الْبَابَ là ? La réponse est toujours la fonction du mot."
+        }
+      ],
+      "objectif": "Dire pourquoi un mot finit par -u, -a ou -i."
+    },
+    {
+      "type": "echauffement",
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complète : « Il n'a pas marché. »",
+          "ar": "لَمْ …",
+          "choix_ar": [
+            "يَمْشِ",
+            "يَمْشِي",
+            "مَشَى"
+          ],
+          "reponse": 0,
+          "explication": "Après لَمْ, ī devient i bref (leçon 3.26)."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de دَعَا ?",
+          "choix_ar": [
+            "د ع و",
+            "د ع ي",
+            "د ع ا"
+          ],
+          "reponse": 0,
+          "explication": "ا final : racine en و (leçon 3.26)."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بَنَى",
+          "choix": [
+            "construire",
+            "rester",
+            "pleurer"
+          ],
+          "reponse": 0,
+          "explication": "بَنَى (leçon 3.26)."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "repliques": [
+        {
+          "qui": "widad",
+          "ar": "فَتَحَ الْحَارِسُ بَابَ الْبَيْتِ.",
+          "fr": "Le gardien a ouvert la porte de la maison."
+        },
+        {
+          "qui": "basim",
+          "ar": "الْحَارِسُ فَاعِلٌ؟",
+          "fr": "الْحَارِسُ est le sujet du verbe ?"
+        },
+        {
+          "qui": "widad",
+          "ar": "نَعَمْ. وَبَابَ مَفْعُولٌ بِهِ.",
+          "fr": "Oui. Et بَابَ est le complément direct."
+        }
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Selon Widād, quelle est la fonction de بَابَ ?",
+        "choix": [
+          "complément direct",
+          "sujet du verbe",
+          "second nom d'une iḍāfa"
+        ],
+        "reponse": 0,
+        "explication": "بَابَ مَفْعُولٌ بِهِ."
+      }
+    },
+    {
+      "type": "mots",
+      "mots": [
+        "bi",
+        "an",
+        "khabar",
+        "jumla",
+        "fail",
+        "maful",
+        "mubtada",
+        "irab"
+      ],
+      "question": {
+        "type": "sens",
+        "consigne": "Que veut dire ce mot ?",
+        "ar": "جُمْلَةٌ",
+        "choix": [
+          "phrase",
+          "mot",
+          "nouvelle"
+        ],
+        "reponse": 0,
+        "explication": "جُمْلَةٌ veut dire « phrase »."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Une fin pour chaque fonction",
+      "texte": "-u pour le sujet du verbe, et pour le sujet et l'attribut de la phrase nominale ; -a pour le complément direct ; -i après une préposition et pour le second nom d'une iḍāfa.",
+      "exemples": [
+        "الْحَارِسُ",
+        "بَابَ",
+        "الْبَيْتِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Dans فَتَحَ الْحَارِسُ بَابَ الْبَيْتِ, pourquoi الْبَيْتِ finit-il par -i ?",
+        "choix": [
+          "second nom de l'iḍāfa",
+          "complément direct",
+          "sujet du verbe"
+        ],
+        "reponse": 0,
+        "explication": "بَابَ الْبَيْتِ : الْبَيْتِ est le second nom de l'iḍāfa."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "L'adjectif suit son nom",
+      "texte": "L'adjectif prend le cas de son nom : رَأَيْتُ بَيْتًا كَبِيرًا, فِي بَيْتٍ كَبِيرٍ.",
+      "exemples": [
+        "بَيْتًا كَبِيرًا",
+        "بَيْتٍ كَبِيرٍ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « J'ai vu une grande maison. »",
+        "ar": "رَأَيْتُ بَيْتًا …",
+        "choix_ar": [
+          "كَبِيرًا",
+          "كَبِيرٌ",
+          "كَبِيرٍ"
+        ],
+        "reponse": 0,
+        "explication": "L'adjectif suit le cas de son nom : -an."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Le pluriel féminin en -āt",
+      "texte": "Le pluriel féminin en -āt (كَلِمَةٌ → كَلِمَاتٌ) fait -i au cas direct : حَفِظَ الطُّلَّابُ الْكَلِمَاتِ. Un pluriel interne comme أَصْوَاتٌ garde -a : سَمِعْتُ الْأَصْوَاتَ.",
+      "exemples": [
+        "الْكَلِمَاتِ",
+        "الْأَصْوَاتَ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Les étudiants ont appris les mots par cœur. »",
+        "ar": "حَفِظَ الطُّلَّابُ …",
+        "choix_ar": [
+          "الْكَلِمَاتِ",
+          "الْكَلِمَاتَ",
+          "الْكَلِمَاتُ"
+        ],
+        "reponse": 0,
+        "explication": "Pluriel féminin en -āt, complément direct : -i, الْكَلِمَاتِ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Deux prépositions : بِـ et عَنْ",
+      "texte": "بِـ « avec, au moyen de » se colle au mot ; عَنْ veut dire « de » (en s'éloignant) ou « au sujet de ». Comme فِي et مِنْ, elles mettent le nom en -i : بِالْقَلَمِ, عَنِ النَّهْرِ.",
+      "exemples": [
+        "بِالْقَلَمِ",
+        "عَنِ النَّهْرِ"
+      ],
+      "question": {
+        "type": "completer",
+        "consigne": "Complète : « Samīr a écrit la lettre avec le calame. »",
+        "ar": "كَتَبَ سَمِيرٌ الرِّسَالَةَ …",
+        "choix_ar": [
+          "بِالْقَلَمِ",
+          "بِالْقَلَمُ",
+          "الْقَلَمَ"
+        ],
+        "reponse": 0,
+        "explication": "Après بِـ : -i, بِالْقَلَمِ."
+      }
+    },
+    {
+      "type": "regle",
+      "titre": "Les mots qui ne changent pas",
+      "texte": "Certains mots ont toujours la même fin, quelle que soit leur fonction : هَٰذَا, الَّذِي, هُنَا, et أَمْسِ employé seul. On dit qu'ils sont مَبْنِيٌّ.",
+      "exemples": [
+        "هَٰذَا",
+        "الَّذِي",
+        "أَمْسِ"
+      ],
+      "question": {
+        "type": "qcm",
+        "consigne": "Que fait هَٰذَا quand il est complément direct ?",
+        "choix": [
+          "il ne change pas",
+          "il prend -a",
+          "il prend -i"
+        ],
+        "reponse": 0,
+        "explication": "هَٰذَا est مَبْنِيٌّ : sa fin ne change pas."
+      }
+    },
+    {
+      "type": "entrainement",
+      "exercices": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "عَنْ",
+          "choix": [
+            "de, au sujet de",
+            "avec",
+            "vers"
+          ],
+          "reponse": 0,
+          "explication": "عَنْ veut dire « de, au sujet de »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "فَاعِلٌ",
+          "choix": [
+            "sujet du verbe",
+            "complément direct",
+            "phrase"
+          ],
+          "reponse": 0,
+          "explication": "فَاعِلٌ veut dire « sujet du verbe »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « au moyen de la clé » ?",
+          "choix_ar": [
+            "بِالْمِفْتَاحِ",
+            "بِالْمِفْتَاحُ",
+            "مَعَ الْمِفْتَاحَ"
+          ],
+          "reponse": 0,
+          "explication": "Après بِـ : -i. مَعَ est suivi lui aussi de -i, jamais de -a."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « au sujet du prix » ?",
+          "choix_ar": [
+            "عَنِ الثَّمَنِ",
+            "عَنِ الثَّمَنُ",
+            "عَنْ ثَمَنٌ"
+          ],
+          "reponse": 0,
+          "explication": "Après عَنْ : -i, عَنِ الثَّمَنِ ; -u est impossible après une préposition."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans كَتَبَ سَمِيرٌ الرِّسَالَةَ, quelle est la fonction de الرِّسَالَةَ ?",
+          "choix": [
+            "complément direct (-a)",
+            "sujet du verbe (-u)",
+            "après préposition (-i)"
+          ],
+          "reponse": 0,
+          "explication": "الرِّسَالَةَ est مَفْعُولٌ بِهِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans الْقَرْيَةُ بَعِيدَةٌ, quelle est la fonction de بَعِيدَةٌ ?",
+          "choix": [
+            "attribut (-u)",
+            "complément direct (-a)",
+            "sujet du verbe"
+          ],
+          "reponse": 0,
+          "explication": "Phrase nominale : l'attribut est en -u."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a demandé le prix au marchand. »",
+          "ar": "سَأَلَ بَاسِمٌ التَّاجِرَ عَنِ …",
+          "choix_ar": [
+            "الثَّمَنِ",
+            "الثَّمَنَ",
+            "الثَّمَنُ"
+          ],
+          "reponse": 0,
+          "explication": "Après عَنْ : -i."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le gardien a ouvert la porte. »",
+          "ar": "فَتَحَ … الْبَابَ.",
+          "choix_ar": [
+            "الْحَارِسُ",
+            "الْحَارِسَ",
+            "الْحَارِسِ"
+          ],
+          "reponse": 0,
+          "explication": "Sujet du verbe : -u."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le village est loin du fleuve. »",
+          "ar": "الْقَرْيَةُ بَعِيدَةٌ … النَّهْرِ.",
+          "choix_ar": [
+            "عَنِ",
+            "بِـ",
+            "عَلَى"
+          ],
+          "reponse": 0,
+          "explication": "« loin de » : بَعِيدٌ عَنْ."
+        }
+      ]
+    },
+    {
+      "type": "lecture",
+      "titre": "Au tribunal",
+      "texte": "Widād raconte une séance du tribunal. Lis ; touche un mot pour voir son sens.",
+      "phrases": [
+        "فِي الصَّبَاحِ، جَلَسَ الْكُتَّابُ فِي الْمَجْلِسِ.",
+        "كَتَبَتْ وِدَادُ جُمْلَةً بِالْقَلَمِ: « فَتَحَ الْحَارِسُ بَابَ الْبَيْتِ. »",
+        "سَأَلَ طَالِبٌ عَنْ إِعْرَابِ الْجُمْلَةِ.",
+        "قَالَتْ وِدَادُ: « الْحَارِسُ فَاعِلٌ، وَبَابَ مَفْعُولٌ بِهِ. »"
+      ],
+      "questions": [
+        {
+          "type": "qcm",
+          "consigne": "Avec quoi Widād a-t-elle écrit la phrase ?",
+          "choix": [
+            "avec le calame",
+            "avec la main",
+            "avec de l'encre rouge"
+          ],
+          "reponse": 0,
+          "explication": "كَتَبَتْ وِدَادُ جُمْلَةً بِالْقَلَمِ."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Sur quoi l'étudiant a-t-il posé une question ?",
+          "choix": [
+            "l'analyse de la phrase",
+            "la porte de la maison",
+            "le gardien"
+          ],
+          "reponse": 0,
+          "explication": "سَأَلَ طَالِبٌ عَنْ إِعْرَابِ الْجُمْلَةِ."
+        }
+      ]
+    },
+    {
+      "type": "atelier",
+      "exercices": [
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « Le village est loin du fleuve. » ?",
+          "choix_ar": [
+            "الْقَرْيَةُ بَعِيدَةٌ عَنِ النَّهْرِ.",
+            "الْقَرْيَةَ بَعِيدَةٌ عَنِ النَّهْرُ.",
+            "الْقَرْيَةُ بَعِيدٌ بِالنَّهْرِ."
+          ],
+          "reponse": 0,
+          "explication": "Sujet et attribut en -u, l'attribut au féminin comme الْقَرْيَةُ, puis عَنْ + -i."
+        },
+        {
+          "type": "ordonner",
+          "consigne": "Écris dans l'ordre verbe, sujet, complément direct, puis بِالْقَلَمِ : « Samīr a écrit la lettre avec le calame. »",
+          "tuiles": [
+            "بِالْقَلَمِ",
+            "سَمِيرٌ",
+            "كَتَبَ",
+            "الرِّسَالَةَ",
+            "الرِّسَالَةُ"
+          ],
+          "solution": [
+            "كَتَبَ",
+            "سَمِيرٌ",
+            "الرِّسَالَةَ",
+            "بِالْقَلَمِ"
+          ],
+          "explication": "Verbe, sujet (-u), complément direct (-a), puis بِـ (-i). الرِّسَالَةُ (-u) ne convient pas : le complément direct prend -a."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Le vieil homme a parlé de l'histoire. »",
+          "ar": "تَكَلَّمَ الشَّيْخُ عَنِ …",
+          "choix_ar": [
+            "الْقِصَّةِ",
+            "الْقِصَّةَ",
+            "الْقِصَّةُ"
+          ],
+          "reponse": 0,
+          "explication": "Après عَنْ : -i."
+        }
+      ]
+    },
+    {
+      "type": "mini_boss",
+      "seuil": 0.8,
+      "questions": [
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "بِـ",
+          "choix": [
+            "avec, au moyen de",
+            "de, au sujet de",
+            "sur"
+          ],
+          "reponse": 0,
+          "explication": "بِـ veut dire « avec, au moyen de »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "إِعْرَابٌ",
+          "choix": [
+            "analyse des fins de mots",
+            "langue arabe",
+            "phrase"
+          ],
+          "reponse": 0,
+          "explication": "إِعْرَابٌ veut dire « analyse des fins de mots »."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "مُبْتَدَأٌ",
+          "choix": [
+            "sujet de la phrase nominale",
+            "attribut",
+            "complément direct"
+          ],
+          "reponse": 0,
+          "explication": "مُبْتَدَأٌ veut dire « sujet de la phrase nominale »."
+        },
+        {
+          "type": "traduire",
+          "consigne": "Comment dit-on « au moyen du marteau » ?",
+          "choix_ar": [
+            "بِالْمِطْرَقَةِ",
+            "بِالْمِطْرَقَةُ",
+            "الْمِطْرَقَةَ"
+          ],
+          "reponse": 0,
+          "explication": "Après بِـ : -i ; sans بِـ, الْمِطْرَقَةَ ne dit plus « au moyen de »."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Un complément direct comme الْبَابَ finit par…",
+          "choix": [
+            "-a",
+            "-u",
+            "-i"
+          ],
+          "reponse": 0,
+          "explication": "مَفْعُولٌ بِهِ : -a."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Dans جَلَسَ الطِّفْلُ فِي الْبَيْتِ, pourquoi الْبَيْتِ finit-il par -i ?",
+          "choix": [
+            "après une préposition",
+            "complément direct",
+            "sujet du verbe"
+          ],
+          "reponse": 0,
+          "explication": "Après فِي : -i."
+        },
+        {
+          "type": "qcm",
+          "consigne": "Lequel de ces mots ne change jamais de fin ?",
+          "choix_ar": [
+            "هَٰذَا",
+            "الْبَابُ",
+            "كِتَابٌ"
+          ],
+          "reponse": 0,
+          "explication": "هَٰذَا est مَبْنِيٌّ."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « Bāsim a demandé le chemin au vieil homme. »",
+          "ar": "سَأَلَ بَاسِمٌ الشَّيْخَ عَنِ …",
+          "choix_ar": [
+            "الطَّرِيقِ",
+            "الطَّرِيقَ",
+            "الطَّرِيقُ"
+          ],
+          "reponse": 0,
+          "explication": "Après عَنْ : -i."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complète : « L'étudiant a écrit les mots. »",
+          "ar": "كَتَبَ الطَّالِبُ …",
+          "choix_ar": [
+            "الْكَلِمَاتِ",
+            "الْكَلِمَاتَ",
+            "الْكَلِمَاتُ"
+          ],
+          "reponse": 0,
+          "explication": "Pluriel féminin en -āt, complément direct : -i."
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "نَسِيَ",
+          "choix": [
+            "oublier",
+            "rester",
+            "rencontrer"
+          ],
+          "reponse": 0,
+          "explication": "نَسِيَ veut dire « oublier ».",
+          "revision": true
+        },
+        {
+          "type": "sens",
+          "consigne": "Que veut dire ce mot ?",
+          "ar": "قَامَ",
+          "choix": [
+            "se lever",
+            "dire",
+            "revenir"
+          ],
+          "reponse": 0,
+          "explication": "قَامَ veut dire « se lever ».",
+          "revision": true
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la racine de يَصِلُ ?",
+          "choix_ar": [
+            "و ص ل",
+            "ي ص ل",
+            "ص ل"
+          ],
+          "reponse": 0,
+          "explication": "Le و est tombé (leçon 3.24).",
+          "revision": true
+        }
+      ]
+    },
+    {
+      "type": "fin",
+      "acquis": "Tu expliques la fin d'un mot par sa fonction : -u (sujet, attribut), -a (complément direct), -i (après préposition, iḍāfa). Tu connais بِـ et عَنْ. Le pluriel féminin en -āt fait -i au cas direct.",
+      "suite": "Au Tribunal : les noms qui n'acceptent pas le tanwīn, et أَبُو, أَخُو."
+    }
+  ]
+}

@@ -36,7 +36,19 @@ void main() {
       // article : al- sans assimilation, voyelle élidée après voyelle
       'الشَّمْسُ': 'al-šamsu',
       'الْقَمَرُ': 'al-qamaru',
+      // Relatifs : un seul lām avec shadda, ce n'est pas l'article.
+      'الَّذِي': 'allaḏī',
+      'الَّتِي': 'allatī',
+      'الَّذِينَ': 'allaḏīna',
       'صَبَاحُ الْخَيْرِ': 'ṣabāḥu l-ḫayri',
+      // alif de liaison d'un nom : « i » en début, muet après une voyelle
+      'اسْمٌ': 'ismun',
+      'هُوَ اسْمٌ': 'huwa smun',
+      // ال + sukūn + lettre solaire sans shadda : alif de liaison, pas
+      // l'article (après l'article, la lettre solaire porte la shadda)
+      'الْتِفَاتٌ': 'iltifātun',
+      'التِّجَارَةُ': 'al-tiǧāratu',
+      'الْكِتَابُ': 'al-kitābu',
     };
     cases.forEach((ar, expected) {
       test('$ar → $expected', () => expect(s(ar), expected));
