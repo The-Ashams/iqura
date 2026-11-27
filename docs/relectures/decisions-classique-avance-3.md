@@ -510,3 +510,5 @@ Fichiers concernés (aucun modifié) :
 
 1. « إِنْ فِي الْكِتَابِ إِلَّا كَلِمَاتٌ قَلِيلَةٌ يَعْرِفُهَا » remplacé par « إِنْ فِي الْكِتَابِ إِلَّا كَلِمَاتٌ صَعْبَةٌ » (modèle de 5.4 ; le sens littéral de l'ancienne phrase contredisait le récit), question 6 adaptée.
 2. Point e adapté à l'écran d'examen : récit vocalisé, puis une fin au palier C, sans bouton pendant les questions (comme l'examen de la région 4) ; les questions sur la partie sans voyelles ne portent sur aucune désinence. Confiance : haute.
+
+- 27/11/2026 : deux tournures de l'examen signalées par le contrôle des paires remplacées (« مَرَّةً أُخْرَى », « كُلَّ يَوْمٍ ») ; relecteur : « Validé avec doutes » ; conseiller : « مِنْ جَدِيدٍ » (surtout moderne) remplacé par « ثُمَّ رَجَعَ إِلَى الْجُمْلَةِ فَقَرَأَهَا ».
