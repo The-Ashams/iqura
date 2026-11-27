@@ -1885,6 +1885,15 @@
    "genere_le": "2026-10-26",
    "ecrit": "الكتاب"
   },
+  "ar-31d8a6737774c51a": {
+   "genre": "phrase",
+   "texte": "هَٰذِهِ مَدِينَةٌ.",
+   "fichier": "assets/audio/lecons/ar-31d8a6737774c51a.mp3",
+   "sha256": "648bbf59aa5f85a9df3f427ee44cc70ab78cb19c21cbd7a29bfe90070835d074",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-11-27"
+  },
   "ar-31fc2e8f811d7a2f": {
    "genre": "syllabe",
    "texte": "مَ",
@@ -2398,6 +2407,15 @@
    "graine": 0,
    "a_ecouter": false,
    "genere_le": "2026-10-30"
+  },
+  "ar-404bb2ca0a80ebe5": {
+   "genre": "mot",
+   "texte": "مَدِينَةٌ",
+   "fichier": "assets/audio/lecons/ar-404bb2ca0a80ebe5.mp3",
+   "sha256": "efdd792aaaf8ac5d4acfaa6592e2a95c419efc6378f31e3cac9e414db39119e7",
+   "graine": 0,
+   "a_ecouter": false,
+   "genere_le": "2026-11-27"
   },
   "ar-4054d217883afa3c": {
    "genre": "syllabe",
